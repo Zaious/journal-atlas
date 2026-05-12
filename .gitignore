@@ -1,0 +1,20 @@
+# Cache
+.cache/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+*.env
+
+# Workspace (external to repo)
+.ark/
