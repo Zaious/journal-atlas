@@ -29,14 +29,14 @@ Extract or ask for these attributes:
 
 | Attribute | Example |
 |-----------|---------|
-| **Topic keywords** | self-state, BDSM, ritualized containers |
+| **Topic keywords** | embodied cognition, collaborative learning, identity |
 | **Methodology** | autoethnography, theoretical, mixed methods |
 | **Word count** | ~12,000 |
 | **APC budget** | $0 (no institutional funding) |
 | **AI usage** | Yes — writing assistance, disclosed |
-| **Sensitive content?** | Yes — BDSM, kink |
-| **IRB status** | No IRB (single-author autoethnography) |
-| **Data transparency** | Limited (OPSEC concerns) |
+| **Sensitive content?** | No / Yes — specify if applicable |
+| **IRB status** | No IRB (theoretical paper) |
+| **Data transparency** | Full / Limited |
 | **Preprint intent** | Yes, PsyArXiv pre-submission |
 | **Timeline priority** | Fast review preferred |
 
@@ -121,7 +121,7 @@ When asked to compare two specific journals, produce a head-to-head table:
 1. **Never recommend a journal you haven't read the file for.** If a journal
    isn't in the knowledge base, say so.
 2. **Cite specific evidence** from the journal file
-   (e.g. "3 BDSM articles published 2015-2025").
+   (e.g. "12 embodied cognition articles published 2020-2025").
 3. **Flag uncertainty.** If a field says "community estimate" or data is older
    than 12 months, warn the user.
 4. **Don't rank by Impact Factor alone.** Soft metadata (reviewer culture,
@@ -132,11 +132,12 @@ When asked to compare two specific journals, produce a head-to-head table:
 
 ## Coverage
 
-This knowledge base currently covers journals in:
+This knowledge base is community-maintained and growing. Initial seed coverage:
 - Psychology (clinical, cognitive, theoretical, qualitative)
 - HCI (Human-Computer Interaction)
 - Qualitative methodology
-- Adjacent: cognitive science, philosophy of mind
+- Cognitive science & philosophy of mind
 
-If the user's field isn't covered, say so honestly and suggest they
-[contribute a journal entry](CONTRIBUTING.md).
+**Any academic discipline is welcome.** If the user's field isn't covered yet,
+say so honestly and suggest they [contribute journal entries](CONTRIBUTING.md)
+to expand coverage. The template and workflow are field-agnostic by design.

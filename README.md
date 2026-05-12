@@ -20,14 +20,11 @@ Each journal entry is a structured Markdown file covering 7 dimensions:
 
 **Soft Metadata is the core differentiator.** Everything else you can find on Scimago. The information in Soft Metadata is what saves you a rejection and 6 months.
 
-## Coverage (v1.0)
+## Coverage
 
-- Psychology (clinical, cognitive, theoretical, qualitative)
-- HCI (Human-Computer Interaction)
-- Qualitative methodology
-- Cognitive science & philosophy of mind
+**Any academic discipline is welcome.** The template and workflow are field-agnostic.
 
-~30-50 journals at launch. Growing with community contributions.
+Initial seed coverage includes psychology, HCI, qualitative methodology, and cognitive science — but we actively welcome contributions from all fields. If your discipline isn't represented yet, you can be the one to start it.
 
 ---
 
