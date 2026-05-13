@@ -10,6 +10,11 @@
 > **Status (2026-05): Pre-release.** Schema is stable at v1.2; we are currently
 > seeding the initial journal entries. Expect limited coverage until first
 > contributors land. Contributions, feedback, and journal nominations all welcome.
+>
+> 22 seed entries across psychology, HCI, and qualitative methods are split into
+> Tier 1 (14 evidence-backed) and Tier 2 (11 community-estimate) — see
+> [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md) for the methodology and how to
+> help upgrade Tier 2 entries to Tier 1.
 
 Journal Atlas fills a gap that Impact Factor and Scimago don't cover: **soft metadata** — the unwritten rules about reviewer culture, framing expectations, sensitive topic tolerance, AI policy nuances, and methodological preferences that researchers currently learn only through experience or word of mouth.
 

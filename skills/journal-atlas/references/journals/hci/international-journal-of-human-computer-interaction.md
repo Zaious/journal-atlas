@@ -144,6 +144,18 @@
 
 ## Soft Metadata
 
+> [!WARNING]
+> **Tier 2 (community estimate)** — The Soft Metadata below was authored from
+> community knowledge of HCI as a field rather than journal-specific evidence
+> harvesting. Claims with cited article counts (under Subject Density, or
+> methodology receptiveness rows with numbers attached) are evidence-backed.
+> Subjective assessments (Reviewer Pool Characteristics, Framing Requirements,
+> sensitive-topic receptiveness without article counts) should be treated as
+> initial community estimates pending contributor validation — including via
+> `scripts/topic_trend_scan.py` to fact-check keyword presence. See
+> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Tier 1 /
+> Tier 2 distinction.
+
 ### Epistemological & Political Leanings
 
 | Dimension | Assessment |
