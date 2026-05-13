@@ -1,0 +1,43 @@
+name: Validate Journal Entries
+
+on:
+  pull_request:
+    paths:
+      - 'references/journals/**/*.md'
+      - 'TEMPLATE.md'
+      - 'scripts/validate_structure.py'
+      - '.github/workflows/validate.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'references/journals/**/*.md'
+      - 'TEMPLATE.md'
+      - 'scripts/validate_structure.py'
+
+jobs:
+  validate:
+    name: Schema validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate all journal entries
+        run: python scripts/validate_structure.py
+
+      - name: Validation summary (JSON, for tooling)
+        if: always()
+        run: python scripts/validate_structure.py --json > validate-results.json
+
+      - name: Upload validation results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: validate-results.json
+          retention-days: 14

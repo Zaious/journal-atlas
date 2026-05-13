@@ -1,6 +1,15 @@
 # Journal Atlas
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
+[![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](TEMPLATE.md)
+[![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#status)
+
 **A community-maintained, AI-native knowledge base of academic journal fit metadata.**
+
+> **Status (2026-05): Pre-release.** Schema is stable at v1.2; we are currently
+> seeding the initial journal entries. Expect limited coverage until first
+> contributors land. Contributions, feedback, and journal nominations all welcome.
 
 Journal Atlas fills a gap that Impact Factor and Scimago don't cover: **soft metadata** — the unwritten rules about reviewer culture, framing expectations, sensitive topic tolerance, AI policy nuances, and methodological preferences that researchers currently learn only through experience or word of mouth.
 
