@@ -6,7 +6,7 @@ labels: update-needed
 
 ## Journal
 
-<!-- Which journal file? e.g. references/journals/psychology/theory-and-psychology.md -->
+<!-- Which journal file? e.g. skills/journal-atlas/references/journals/psychology/theory-and-psychology.md -->
 
 ## What's wrong or outdated?
 

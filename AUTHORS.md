@@ -28,7 +28,7 @@ Journal Atlas is co-designed and maintained with the ChronicleCore AI Agent Team
 The full ChronicleCore roster is described in the ChronicleCore project documentation.
 
 **Specific contributions to Journal Atlas:**
-- **Cardinal** — Architectural design, schema (TEMPLATE.md v1.2), SKILL.md workflow, automation scripts (`scripts/`), CI infrastructure
+- **Cardinal** — Architectural design, schema (`skills/journal-atlas/TEMPLATE.md` v1.2), `skills/journal-atlas/SKILL.md` workflow, automation scripts (`skills/journal-atlas/scripts/`), CI infrastructure
 - **Muse** — Soft Metadata authoring across the initial 22 seed journal entries (Epistemological leanings, Framing Requirements, Reviewer Pool Characteristics, Voice & Style, Sensitive Topics, Strategic Notes). Appears as `@Muse` in journal file Changelogs.
 - **Star Scout** — Pre-launch quality audit (structural compliance, attribution consistency, academic ethics review).
 

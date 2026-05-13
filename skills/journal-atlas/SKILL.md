@@ -242,6 +242,6 @@ This knowledge base is community-maintained and growing.
 - HCI (Human-Computer Interaction)
 - Qualitative methodology
 
-**Any academic discipline is welcome.** If the user's field isn't covered yet, or if the relevant field directory contains few entries, say so honestly and suggest they [contribute journal entries](CONTRIBUTING.md). The template and workflow are field-agnostic by design.
+**Any academic discipline is welcome.** If the user's field isn't covered yet, or if the relevant field directory contains few entries, say so honestly and suggest they [contribute journal entries](../../CONTRIBUTING.md). The template and workflow are field-agnostic by design.
 
 > ⚠️ **Pre-release status**: as of this version, the knowledge base is being actively seeded. If `references/journals/` contains no entries for the user's field, do not fabricate recommendations — tell them honestly and point them to CONTRIBUTING.md.

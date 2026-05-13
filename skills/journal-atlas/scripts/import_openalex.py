@@ -292,7 +292,7 @@ def render_markdown(meta: JournalMetadata) -> str:
 
 ## Soft Metadata
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 

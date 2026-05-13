@@ -2,7 +2,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
-[![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](TEMPLATE.md)
+[![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#status)
 
 **A community-maintained, AI-native knowledge base of academic journal fit metadata.**
@@ -74,34 +74,35 @@ Then restart Claude Code (or start a new session). The skill becomes available t
 
 1. Clone this repo: `git clone https://github.com/Zaious/journal-atlas.git`
 2. Create a new Project in Claude Desktop
-3. Upload the `.md` files from `references/journals/` as Project Knowledge
-4. Copy the contents of `SKILL.md` into Project Instructions
+3. Upload the `.md` files from `skills/journal-atlas/references/journals/` as Project Knowledge
+4. Copy the contents of `skills/journal-atlas/SKILL.md` into Project Instructions
 
 ### Option 3: ChatGPT (GPT Builder)
 
 1. Clone this repo
-2. Run `python scripts/bundle-for-upload.py` to merge journal files into uploadable chunks
+2. From the repo root, run `cd skills/journal-atlas && python scripts/bundle_for_upload.py` to merge journal files into uploadable chunks
 3. Upload the output files to your GPT's Knowledge section
-4. Copy the contents of `SKILL.md` into your GPT's Instructions
+4. Copy the contents of `skills/journal-atlas/SKILL.md` into your GPT's Instructions
 
 ### Option 4: Just read it
 
-Browse [`references/journals/`](references/journals/) on GitHub. Every journal is a readable Markdown page. No AI required.
+Browse [`skills/journal-atlas/references/journals/`](skills/journal-atlas/references/journals/) on GitHub. Every journal is a readable Markdown page. No AI required.
 
 ---
 
-## Automation (scripts/)
+## Automation (skills/journal-atlas/scripts/)
 
 | Script | Purpose | Status |
 |--------|---------|--------|
 | `import_openalex.py` | Auto-populate a new journal entry from OpenAlex API (Identity / Metrics / Subject Density / OA fields). Uses pyalex (MIT). | ✅ Available |
-| `validate-structure.py` | Check that journal `.md` files match the template schema. Runs on every PR. | 🔲 Planned |
-| `fit-score.py` | Compute a numerical fit score given your paper's attributes vs. each journal. | 🔲 Planned |
-| `update-metrics.py` | Fetch latest IF / h-index / CiteScore from OpenAlex API. Proposes a PR draft — never auto-writes. | 🔲 Planned |
-| `topic-trend-scan.py` | Scan a journal's recent publications to detect topic trend shifts. | 🔲 Planned |
-| `bundle-for-upload.py` | Merge journal files into larger chunks for platforms with file count limits (e.g. ChatGPT). | 🔲 Planned |
+| `validate_structure.py` | Check that journal `.md` files match the template schema. Runs on every PR. | ✅ Available |
+| `fit_score.py` | Compute a numerical fit score given your paper's attributes vs. each journal. | ⚠️ v0.1 — needs backtest validation |
+| `bundle_for_upload.py` | Merge journal files into larger chunks for platforms with file count limits (e.g. ChatGPT). | ✅ Available |
+| `update_metrics.py` | Fetch latest IF / h-index / CiteScore from OpenAlex API. Proposes a PR draft — never auto-writes. | ✅ Available |
+| `topic_trend_scan.py` | Scan a journal's recent publications to detect topic trend shifts. | ✅ Available |
 
-See [scripts/README.md](scripts/README.md) for setup instructions and usage examples.
+Run scripts from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
+See [skills/journal-atlas/scripts/README.md](skills/journal-atlas/scripts/README.md) for setup and usage examples.
 
 ---
 
@@ -110,7 +111,7 @@ See [scripts/README.md](scripts/README.md) for setup instructions and usage exam
 We need your journal expertise. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 **Quick version:**
-1. Copy [TEMPLATE.md](TEMPLATE.md)
+1. Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md)
 2. Fill in what you know (partial entries welcome — others can fill gaps)
 3. Open a PR
 
@@ -178,7 +179,7 @@ We are complementary to B!SON, not competing — use B!SON to discover candidate
 Journal Atlas uses a **dual-license** model:
 
 - **Content** (Markdown files, journal entries, documentation, templates) — [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0)
-- **Code** (everything under `scripts/`) — [MIT License](LICENSE-CODE)
+- **Code** (everything under `skills/journal-atlas/scripts/`) — [MIT License](LICENSE-CODE)
 
 **Attribution is required for all uses, commercial or non-commercial.** See [CITATION.cff](CITATION.cff) for the preferred citation format and [AUTHORS.md](AUTHORS.md) for the full credits.
 

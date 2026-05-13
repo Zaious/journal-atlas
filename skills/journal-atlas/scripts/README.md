@@ -1,6 +1,8 @@
 # Scripts
 
-Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed under MIT (see [LICENSE-CODE](../LICENSE-CODE)).
+Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed under MIT (see [LICENSE-CODE](../../../LICENSE-CODE)).
+
+**Working directory**: run scripts from the skill root (`skills/journal-atlas/`). The default `references/journals/` path resolves relative to that directory.
 
 | Script | Purpose | Status |
 |--------|---------|--------|

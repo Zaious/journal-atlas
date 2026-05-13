@@ -3,16 +3,16 @@ name: Validate Journal Entries
 on:
   pull_request:
     paths:
-      - 'references/journals/**/*.md'
-      - 'TEMPLATE.md'
-      - 'scripts/validate_structure.py'
+      - 'skills/journal-atlas/references/journals/**/*.md'
+      - 'skills/journal-atlas/TEMPLATE.md'
+      - 'skills/journal-atlas/scripts/validate_structure.py'
       - '.github/workflows/validate.yml'
   push:
     branches: [main]
     paths:
-      - 'references/journals/**/*.md'
-      - 'TEMPLATE.md'
-      - 'scripts/validate_structure.py'
+      - 'skills/journal-atlas/references/journals/**/*.md'
+      - 'skills/journal-atlas/TEMPLATE.md'
+      - 'skills/journal-atlas/scripts/validate_structure.py'
 
 jobs:
   validate:
@@ -28,11 +28,15 @@ jobs:
           python-version: '3.11'
 
       - name: Validate all journal entries
-        run: python scripts/validate_structure.py
+        run: |
+          cd skills/journal-atlas
+          python scripts/validate_structure.py
 
       - name: Validation summary (JSON, for tooling)
         if: always()
-        run: python scripts/validate_structure.py --json > validate-results.json
+        run: |
+          cd skills/journal-atlas
+          python scripts/validate_structure.py --json > ../../validate-results.json
 
       - name: Upload validation results
         if: always()

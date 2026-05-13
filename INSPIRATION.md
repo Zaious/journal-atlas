@@ -8,8 +8,8 @@ Journal Atlas stands on a 20-year tradition of journal recommender tools and a w
 
 | Tool | Purpose | License | How we use it |
 |------|---------|---------|---------------|
-| [**OpenAlex API**](https://openalex.org/) | Bibliometric data source | **CC0** (public domain) | Auto-populate Identity / Metrics / Subject Density / OA via `scripts/import_openalex.py`. No attribution required, but we cite it. |
-| [**pyalex**](https://github.com/J535D165/pyalex) | Python client for OpenAlex | MIT | Imported in `scripts/import_openalex.py`. |
+| [**OpenAlex API**](https://openalex.org/) | Bibliometric data source | **CC0** (public domain) | Auto-populate Identity / Metrics / Subject Density / OA via `skills/journal-atlas/scripts/import_openalex.py`. No attribution required, but we cite it. |
+| [**pyalex**](https://github.com/J535D165/pyalex) | Python client for OpenAlex | MIT | Imported in `skills/journal-atlas/scripts/import_openalex.py`. |
 | [**DOAJ**](https://doaj.org/) | Open Access journal directory | CC0 (data dumps) | Used for cross-validating OA model and APC data. |
 | [**SCImago Journal & Country Rank**](https://www.scimagojr.com/) | Bibliometric quartile data | Freely downloadable CSV | Used for cross-validating Quartile field. We do not redistribute SCImago data; users fetch their own. |
 
@@ -96,7 +96,7 @@ We owe these systems gratitude too — for showing what to avoid.
 | **Black-box AI scoring** | Trinka, Researcher.Life | Transparent, human-readable Markdown |
 | **Single-maintainer production system** | OJM (died of burnout, not technology) | Community-first, zero-cost infra |
 | **Grant-dependent cloud services** | Multiple academic recommenders | Pure Git + Markdown, no runtime cost |
-| **Closed source ranking algorithms** | ABS AJG | Open scoring logic in `scripts/fit-score.py` |
+| **Closed source ranking algorithms** | ABS AJG | Open scoring logic in `skills/journal-atlas/scripts/fit_score.py` |
 
 ---
 
@@ -117,7 +117,7 @@ We will issue a versioned release with a formal citation (CITATION.cff) once v1.
 
 Journal Atlas uses a dual-license model:
 - **Content** — CC BY-NC-SA 4.0
-- **Code** (`scripts/`) — MIT
+- **Code** (`skills/journal-atlas/scripts/`) — MIT
 
 Compatibility audit for our dependencies and references:
 

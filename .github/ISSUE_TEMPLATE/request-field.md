@@ -6,7 +6,7 @@ labels: schema
 
 ## Proposed change
 
-<!-- What field do you want to add/remove/modify in TEMPLATE.md? -->
+<!-- What field do you want to add/remove/modify in skills/journal-atlas/TEMPLATE.md? -->
 
 ## Why?
 

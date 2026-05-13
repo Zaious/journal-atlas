@@ -27,7 +27,7 @@ Cite these in your `Evidence` columns when relevant. They give your contribution
 
 ### Adding a New Journal
 
-1. Copy [`TEMPLATE.md`](TEMPLATE.md) to `references/journals/<field>/<journal-name>.md`
+1. Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md) to `skills/journal-atlas/references/journals/<field>/<journal-name>.md`
 2. Fill in what you know. **Partial entries are welcome** — leave unknown fields blank rather than guessing
 3. Open a PR
 
@@ -84,7 +84,7 @@ If you notice something wrong but don't have time to fix it, [open an issue](../
 
 ## Review Process
 
-1. **Automated check**: CI runs `scripts/validate-structure.py` to ensure template compliance
+1. **Automated check**: CI runs `skills/journal-atlas/scripts/validate_structure.py` to ensure template compliance
 2. **Maintainer review**: A field maintainer checks factual accuracy
 3. **Merge**: Once approved, your contribution is live
 
@@ -112,7 +112,7 @@ This is an academic knowledge base. We expect:
 Journal Atlas uses a **dual-license** model:
 
 - **Content** (your journal entries, documentation contributions) — **CC BY-NC-SA 4.0**. Attribution required, non-commercial use only by default, derivatives must share alike.
-- **Code** (scripts/) — **MIT License**.
+- **Code** (`skills/journal-atlas/scripts/`) — **MIT License**.
 
 By submitting a contribution, you agree to license it under these terms. You retain copyright to your contribution; the license grants Journal Atlas and downstream users the rights described above.
 
