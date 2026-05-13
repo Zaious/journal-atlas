@@ -8,8 +8,8 @@ Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed un
 | `validate_structure.py` | Check journal `.md` files match TEMPLATE schema. Runs in CI on every PR via `.github/workflows/validate.yml`. | ✅ Implemented |
 | `bundle_for_upload.py` | Merge journal files into bundles for ChatGPT GPTs (20-file limit) or Claude Desktop projects. | ✅ Implemented |
 | `fit_score.py` | Compute fit score for a paper vs. journals (regex-based parser, default weights). | ⚠️ v0.1 — needs validation against backtest data once seed grows |
-| `update_metrics.py` | Fetch latest metrics from OpenAlex API; propose diffs for existing entries. | 🔲 Planned |
-| `topic_trend_scan.py` | Scan recent publication topics for trend shifts. | 🔲 Planned |
+| `update_metrics.py` | Refresh OpenAlex-derived metrics in existing entries; propose diffs (dry-run by default; `--apply` to write). | ✅ Implemented |
+| `topic_trend_scan.py` | Scan a journal's recent publication topics; optionally check for specific keyword presence. Cached 30 days. | ✅ Implemented |
 
 ## Setup
 
@@ -70,6 +70,39 @@ python scripts/bundle_for_upload.py
 
 # Single mega-file (for very small knowledge bases)
 python scripts/bundle_for_upload.py --single-file
+```
+
+### Refreshing metrics from OpenAlex
+
+```bash
+# Dry-run: show diffs for all entries
+python scripts/update_metrics.py
+
+# Limit to one field
+python scripts/update_metrics.py --field psychology
+
+# Apply changes (rewrites files + bumps Last verified + adds Changelog row)
+python scripts/update_metrics.py --apply
+
+# Then review with git diff before committing
+git diff references/journals/
+```
+
+### Scanning a journal's recent topic distribution
+
+```bash
+# Default: last 3 years, top 15 topics
+python scripts/topic_trend_scan.py --issn 0959-3543
+
+# Longer window
+python scripts/topic_trend_scan.py --issn 0959-3543 --years 5
+
+# Specifically check for topic keywords (useful for "is journal X still publishing on Y?")
+python scripts/topic_trend_scan.py --issn 0959-3543 \
+    --keywords "embodied cognition,autoethnography,collaborative learning"
+
+# Refresh cache
+python scripts/topic_trend_scan.py --issn 0959-3543 --refresh
 ```
 
 ## Design Principles
