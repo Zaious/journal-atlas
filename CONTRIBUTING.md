@@ -12,6 +12,17 @@ Examples of high-value contributions:
 - "They say they accept autoethnography but the last 5 years show only 2 articles"
 - "AI policy says 'follow publisher guidelines' but the editor told me they want explicit disclosure emails"
 
+### Frameworks That Help You Write Soft Metadata
+
+You don't need to invent assessments from scratch. Several existing frameworks can help you describe a journal's culture systematically:
+
+- **Reviewer culture** — Trubble et al. (2020), *"What feedback do reviewers give when reviewing qualitative manuscripts?"* ([Birmingham meta-review](https://link.springer.com/article/10.1186/s12874-020-01005-y)) identified 30 recurring themes in reviewer reports on qualitative work. If you've reviewed for or been reviewed by a journal, these themes can structure what you observed.
+- **Discourse community framing** — Pat Thomson's [Patter blog](https://patthomson.net/2023/12/04/publishing-in-top-ranked-journals/) frames journal choice as "choosing a community of researchers, writers and readers." Useful for filling in *Editorial Board Discourse Community Signals*.
+- **Editor decision-making** — Achilleas Kostoulas's [How to avoid desk rejections](https://achilleaskostoulas.com/2014/02/13/how-to-avoid-desk-rejections/) gives editor-side perspective on what triggers desk rejection. Useful for filling in *Hard Blockers* and *Desk Rejection Rate*.
+- **Submission ladder** — Terence Tao's [Submit to an appropriate journal](https://terrytao.wordpress.com/advice-on-writing-papers/submit-to-an-appropriate-journal/) frames journal choice as a tiered strategy. Useful for filling in *Best Suited For* / *Not Recommended For*.
+
+Cite these in your `Evidence` columns when relevant. They give your contribution academic grounding.
+
 ## How to Contribute
 
 ### Adding a New Journal

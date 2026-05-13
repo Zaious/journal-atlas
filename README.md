@@ -99,9 +99,77 @@ The most valuable contributions are **Soft Metadata** — the stuff that isn't i
 
 ---
 
+## Lineage
+
+Journal Atlas stands on a 20-year tradition of journal recommenders. We acknowledge the work that came before, and we situate ourselves within it rather than against it.
+
+| Year | System | Approach | Status |
+|------|--------|----------|--------|
+| 2007 | [JANE](https://jane.biosemantics.org/) (Schuemie & Kors, *Bioinformatics*) | PubMed text similarity | Operational, biomedical-only |
+| 2007 | [eTBLAST](https://pubmed.ncbi.nlm.nih.gov/17452348/) (Errami et al., *Nucleic Acids Research*) | Three-in-one: reviewer + journal + duplicate detection | Server offline |
+| 2015 | [Elsevier Journal Finder](https://journalfinder.elsevier.com/) (Kang et al., *RecSys*) | NLP + Okapi BM25 over Elsevier's catalog | Operational, vendor-locked |
+| 2018 | [Maglet](https://ieeexplore.ieee.org/document/8660987/) (Mohtaj & Tavakkoli, *IST*) | Persian-language regional recommender | Academic publication, no public deployment |
+| 2022 | [Open Journal Matcher](https://github.com/MarkEEaton/open-journal-matcher) (Eaton, CUNY) | spaCy word vectors over DOAJ; pioneered "[pervious technology](https://academicworks.cuny.edu/kb_pubs/261)" framing | Service offline 2022/07 (single-maintainer + grant ended) |
+| 2021– | [B!SON](https://service.tib.eu/bison/) (TIB + SLUB Dresden, BMBF-funded) | Elasticsearch + BM25 + OpenCitations bibliographic coupling + ML semantic | **Currently the state of the art** for OA recommendation |
+
+### Where Journal Atlas Fits
+
+Every system above answers the same question — *given an abstract, which journals match?* — using metric similarity over publication data. None of them capture the knowledge a senior colleague would share over coffee:
+
+- *"That journal's reviewer pool expects Heidegger literacy."*
+- *"This one desk-rejects anything without IRB, even theoretical work."*
+- *"They say single-blind, but the editor leaks identity to friendly reviewers."*
+- *"First-person voice gets you flagged here, but it's expected next door."*
+
+Journal Atlas is the first system to make this knowledge **structured, contributable, and machine-readable**. We are complementary to B!SON, not competing — use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission to each *actually involves*.
+
+Two design choices distinguish us from the lineage:
+
+1. **Per-journal knowledge base, not per-query app** — predecessors compute fresh similarity scores at query time; we maintain persistent, citable journal profiles that humans and AI agents both consume.
+2. **Markdown + Git, not service infrastructure** — predecessors that depended on cloud services (OJM) or grant funding cycles (B!SON's BMBF period ended 2023/01) face structural risks; we have zero hosting cost and zero single point of failure. Anyone can fork.
+
+We learned the maintenance lesson from OJM's offline notice: *single maintainers do not survive*. Journal Atlas is community-first by design.
+
+---
+
 ## License
 
 [TBD — see CONTRIBUTING.md for discussion]
+
+---
+
+## Lineage
+
+Journal Atlas builds on a 20-year tradition of journal recommender tools. Each previous attempt taught us something:
+
+- **JANE** *(Schuemie & Kors, 2008)* — the first widely-used PubMed-based recommender. Showed that journal matching could be algorithmically assisted. Limited to biomedical fields.
+- **ETBLAST** *(Errami et al., 2007)* — pioneered three-in-one recommendation (reviewer + journal + similar papers). Now offline.
+- **Elsevier Journal Finder** *(Kang et al., 2015)* — established NLP + BM25 as a baseline. Limited to one publisher's catalog.
+- **Maglet** *(Mohtaj & Tavakkoli, 2018)* — proved that regional / language-specific recommenders have real value (Persian-language journals).
+- **B!SON** *(TIB + SLUB Dresden, 2021–)* — the current state of the art for OA journal recommendation. Transparent algorithms, multi-institutional governance. Strongly recommended as a complementary tool to Journal Atlas: B!SON gives you query-time recommendations; Journal Atlas gives you per-journal context.
+
+### Honoring Open Journal Matcher (OJM)
+
+This project owes particular intellectual debt to **Mark E. Eaton's Open Journal Matcher** *(2020-2022)*, an open-source DOAJ journal recommender built at CUNY Kingsborough.
+
+In 2022, Eaton took OJM offline, writing:
+
+> *"My hope is that someone will pick up where I left off, and build something similar, or perhaps adapt the code for the OJM. There's a place for a tool like the OJM; and we shouldn't leave this space entirely to the big journal publishing companies."*
+> — Eaton (2022), [The last days of the Open Journal Matcher](https://kingsboroughlibtech.commons.gc.cuny.edu/2022/07/29/the-last-days-of-the-open-journal-matcher/)
+
+**Journal Atlas is one response to that invitation.**
+
+Eaton's 2022 paper [*On the ethics of working with library technology: the case of the Open Journal Matcher*](https://academicworks.cuny.edu/kb_pubs/261) introduced the concept of **"pervious technology"** — tools that users can reach into, tinker with, and adapt, in contrast to impervious black-box systems. Eaton argued that pervious tools, combined with diverse perspectives, are how ethical problems in technology become apparent.
+
+Journal Atlas extends this idea further: where OJM was pervious *at the code layer* (Flask + spaCy, open source on GitHub), Journal Atlas is pervious *at the data layer* — every journal entry is a plain-text Markdown file that any researcher can read, edit, and discuss. The knowledge itself is the product, not a service that can be turned off when one maintainer burns out.
+
+### What Journal Atlas Adds to the Lineage
+
+Across all previous systems, two patterns held:
+1. **All recommenders computed metric similarity from abstracts.** None captured reviewer culture, framing requirements, methodological preferences, or sensitive topic receptiveness.
+2. **All were query-time applications** — running services that needed someone to maintain them. None were durable, community-maintained per-journal knowledge bases.
+
+Journal Atlas addresses both gaps. The soft metadata captured here is information that algorithms cannot extract from publication metadata — it requires human community knowledge, and it requires durability beyond any single maintainer's commitment.
 
 ---
 
@@ -110,3 +178,5 @@ The most valuable contributions are **Soft Metadata** — the stuff that isn't i
 Built by researchers, for researchers. Maintained by the community.
 
 Initial seed data drawn from journal evaluations conducted during active manuscript submission processes in psychology, HCI, and qualitative methodology (2025-2026).
+
+See [INSPIRATION.md](INSPIRATION.md) for a full list of tools, papers, and concepts that influenced this project's design.

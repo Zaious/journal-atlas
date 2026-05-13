@@ -17,4 +17,11 @@ desktop.ini
 *.env
 
 # Workspace (external to repo)
+# These directories live in the parent workspace (P:\MyOpenSource\JournalMatchEvaluator\)
+# and contain internal strategic analysis, competitive research, and source material
+# that must never be committed to this public repo.
 .ark/
+ref/
+ref-research/
+skill-forge/
+AGENTS.md

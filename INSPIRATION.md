@@ -1,0 +1,112 @@
+# Inspiration & Acknowledgments
+
+Journal Atlas stands on a 20-year tradition of journal recommender tools and a wider scholarship on academic publishing ethics. This document lists every project, paper, and concept that influenced our design — with explicit notes on what we use, what we only reference, and what licenses apply.
+
+---
+
+## Direct Tool Dependencies (used in code)
+
+| Tool | Purpose | License | How we use it |
+|------|---------|---------|---------------|
+| [**OpenAlex API**](https://openalex.org/) | Bibliometric data source | **CC0** (public domain) | Auto-populate Identity / Metrics / Subject Density / OA via `scripts/import_openalex.py`. No attribution required, but we cite it. |
+| [**pyalex**](https://github.com/J535D165/pyalex) | Python client for OpenAlex | MIT | Imported in `scripts/import_openalex.py`. |
+| [**DOAJ**](https://doaj.org/) | Open Access journal directory | CC0 (data dumps) | Used for cross-validating OA model and APC data. |
+| [**SCImago Journal & Country Rank**](https://www.scimagojr.com/) | Bibliometric quartile data | Freely downloadable CSV | Used for cross-validating Quartile field. We do not redistribute SCImago data; users fetch their own. |
+
+We may add `habanero` (Crossref Python client, BSD) in a future release for DOI-level metadata.
+
+---
+
+## Predecessor Systems (referenced, not adapted)
+
+Journal Atlas is the latest in a 20-year lineage of journal recommender tools. We reference these systems in our [Lineage](README.md#lineage) section but do **not** incorporate their code.
+
+### Open Journal Matcher (OJM) — Mark E. Eaton, 2020–2022
+
+The most direct predecessor in spirit. OJM was an open-source DOAJ journal recommender built by a single librarian at CUNY Kingsborough. It went offline in July 2022, with its maintainer writing:
+
+> *"My hope is that someone will pick up where I left off… we shouldn't leave this space entirely to the big journal publishing companies."*
+> — Eaton (2022), [*The last days of the Open Journal Matcher*](https://kingsboroughlibtech.commons.gc.cuny.edu/2022/07/29/the-last-days-of-the-open-journal-matcher/)
+
+**Journal Atlas is one response to that invitation.** We do not adapt OJM's code (Flask + spaCy on Google Cloud Functions); we adapt its *mission*. Where OJM was pervious at the code layer, Journal Atlas is pervious at the data layer (Markdown + Git).
+
+**Citation**:
+- Eaton, M. E. (2022). *On the ethics of working with library technology: the case of the Open Journal Matcher*. CUNY Academic Works. https://academicworks.cuny.edu/kb_pubs/261
+- Eaton, M. E. (2022, July 29). *The last days of the Open Journal Matcher* [Blog post]. CUNY Kingsborough Library Technology Blog.
+
+We owe Eaton's "pervious technology" concept particular intellectual debt — it is one of the clearest articulations of why open, modifiable tools matter for ethical algorithmic systems in academia.
+
+### Other Predecessor Systems
+
+| System | Year | Reference | What we learned |
+|--------|------|-----------|----------------|
+| **JANE** (Journal/Author Name Estimator) | 2007 | Schuemie & Kors, *Bioinformatics* (2008) | First widely-adopted PubMed-based recommender. Showed algorithmic matching is feasible. Biomedical-limited. |
+| **ETBLAST** | 2007 | Errami et al., *Bioinformatics* (2007) | Pioneered three-in-one recommendation (reviewer + journal + similar paper). Now offline. |
+| **Elsevier Journal Finder** | 2015 | Kang et al., *RecSys* (2015) | Established NLP + Okapi BM25 as baseline algorithm. Limited to one publisher. |
+| **Maglet** | 2018 | Mohtaj & Tavakkoli, *IST* (2018) | Proved regional/language-specific recommenders have value (Persian). |
+| **B!SON** | 2021– | Eppelin et al. (TIB + SLUB Dresden) | Current state of the art for OA recommendation. Transparent algorithms, multi-institutional governance. **Complementary to us**, not competitor. |
+
+---
+
+## Methodological Inspiration (referenced in CONTRIBUTING.md guidance)
+
+These works inform how contributors should think about and write Soft Metadata. None are incorporated into the repo as code; they are cited as guidance.
+
+| Work | Author(s) | What it informs |
+|------|-----------|----------------|
+| *"What feedback do reviewers give when reviewing qualitative manuscripts?"* [(BMC Medical Research Methodology, 2020)](https://link.springer.com/article/10.1186/s12874-020-01005-y) | Trubble et al. (Birmingham meta-review) | Reviewer Pool Characteristics; the Quantitative Mindset Bias detection field |
+| [*Publishing in top-ranked journals*](https://patthomson.net/2023/12/04/publishing-in-top-ranked-journals/) (blog post, 2023) | Pat Thomson | Discourse Community framing in Soft Metadata |
+| [*How to avoid desk rejections*](https://achilleaskostoulas.com/2014/02/13/how-to-avoid-desk-rejections/) (blog post, 2014) | Achilleas Kostoulas | Hard Blockers / Desk Rejection Rate fields |
+| [*Submit to an appropriate journal*](https://terrytao.wordpress.com/advice-on-writing-papers/submit-to-an-appropriate-journal/) (blog post) | Terence Tao | Submission Ladder framing for Strategic Notes |
+| [*Better Practices in Journal Metadata*](https://www.erudit.org/public/documents/Better_Practices_Metadata_CP.pdf) (PDF, 2023) | Coalition Publica / Érudit | General journal metadata best practices |
+| [*Open Journal Systems schema*](https://github.com/pkp/ojs) (GPL) | Public Knowledge Project | Inspired what fields a "journal record" should contain. We do **not** incorporate OJS code (GPL); we only studied its data model. |
+
+---
+
+## Related but Independent Projects
+
+Tools that share part of our problem space but operate differently. We may eventually propose integration with some of these, but currently they are independent:
+
+- [**Journal-Recommendation-Agent**](https://github.com/jinjinbenjin/Journal-Recommendation-Agent) — query-time AI recommender (Streamlit + Ollama). Different from us: per-query app vs per-journal knowledge base.
+- [**findpapers**](https://github.com/jonatasgrosman/findpapers) — multi-source academic paper finder. Adjacent: useful for contributors finding example papers from a journal.
+- [**Wispar**](https://github.com/Scriptbash/Wispar) — academic journal update tracker. Adjacent: could inform our "Last verified" maintenance workflow.
+- [**metaknowledge**](https://github.com/UWNETLAB/metaknowledge) — Python bibliometric analysis. Adjacent: useful if Journal Atlas adds inter-journal relationship dimensions later.
+
+---
+
+## Anti-Patterns We Avoid
+
+We owe these systems gratitude too — for showing what to avoid.
+
+| Pattern | Source | What we do instead |
+|---------|--------|-------------------|
+| **Publisher lock-in recommenders** | Elsevier / Springer / T&F Journal Finders | Cross-publisher, vendor-neutral |
+| **Black-box AI scoring** | Trinka, Researcher.Life | Transparent, human-readable Markdown |
+| **Single-maintainer production system** | OJM (died of burnout, not technology) | Community-first, zero-cost infra |
+| **Grant-dependent cloud services** | Multiple academic recommenders | Pure Git + Markdown, no runtime cost |
+| **Closed source ranking algorithms** | ABS AJG | Open scoring logic in `scripts/fit-score.py` |
+
+---
+
+## How to Reference Journal Atlas
+
+If you use Journal Atlas in your research workflow or build on it, please cite:
+
+```
+Journal Atlas: A community-maintained knowledge base of academic journal fit metadata.
+https://github.com/Zaious/journal-atlas (Year accessed: 2026).
+```
+
+We will issue a versioned release with a formal citation (CITATION.cff) once v1.0 stabilizes.
+
+---
+
+## License Compatibility Notes
+
+- **Our license** is TBD; current candidates are CC-BY-4.0, MIT, or Apache-2.0. See discussion in [CONTRIBUTING.md](CONTRIBUTING.md#license-discussion).
+- **OpenAlex data** (CC0) places no restrictions on our use.
+- **pyalex** (MIT) is compatible with any license we ultimately choose.
+- **DOAJ data** (CC0) is freely usable.
+- We do **not** incorporate code from any GPL-licensed predecessor (notably OJS), to keep our license choice open.
+
+If you find a license incompatibility we missed, please [open an issue](../../issues/new).

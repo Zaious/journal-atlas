@@ -1,4 +1,4 @@
-<!-- schema: v1.0 -->
+<!-- schema: v1.1 -->
 
 # {Journal Full Name}
 
@@ -34,12 +34,39 @@
 | **h-index** | | |
 | **CiteScore** | | |
 | **Acceptance Rate** | *(if known)* | |
-| **Typical Review Time** | *(weeks/months)* | |
+| **Desk Rejection Rate** | *(if known, %)* | |
 | **Quartile (by field)** | e.g. Q1 History & Philosophy of Science | |
+
+### Review Cycle Time
+
+| Stage | Typical Time | Notes |
+|-------|-------------|-------|
+| **Time to first decision** | *(days/weeks, editorial screen)* | |
+| **Time to first review** | *(weeks/months, peer review returned)* | |
+| **Time to acceptance (total)** | *(months)* | |
+| **Time to publication (after acceptance)** | *(weeks/months)* | |
+
+### Publication Frequency
+
+| Aspect | Detail |
+|--------|--------|
+| **Schedule** | Continuous (rolling) / Weekly / Monthly / Bimonthly / Quarterly / Triannual / Semiannual / Annual / Irregular / Special issues only |
+| **Articles per year (approx.)** | |
+| **Special issues?** | Yes / No / Occasionally |
 
 ---
 
 ## Policies
+
+### Peer Review
+
+| Aspect | Detail |
+|--------|--------|
+| **Type** | Single-blind / Double-blind / Triple-blind / Open / Transparent / Post-publication / Editor-only / Hybrid (author choice) |
+| **Transferable / Cascade?** | Yes / No — *(can review be transferred to sister journals upon rejection?)* |
+| **Reviewer reports published?** | Yes / No — *(does the journal publish review reports alongside the article?)* |
+| **Typical R+R rounds** | 0 / 1 / 2 / 3+ |
+| **Reviewer recommendations** | Required / Optional / Not accepted — *(can authors suggest or oppose reviewers?)* |
 
 ### AI Policy
 
@@ -76,6 +103,7 @@
 |--------|--------|
 | **Article types accepted** | e.g. Research, Theoretical, Methodological, Commentary, Review |
 | **Word limit** | *(per article type if different)* |
+| **Word limit negotiability** | Hard limit / Soft (extensions possible) / Flexible (case-by-case) |
 | **Abstract limit** | words |
 | **Reference limit** | *(if any)* |
 | **Supplementary material** | Accepted / Not accepted |
@@ -156,6 +184,13 @@ What intellectual tradition do reviewers typically come from?
 
 *(e.g. "Heavily phenomenological; expect Husserl/Merleau-Ponty literacy.
 Cognitive science reviewers less common but present.")*
+
+| Aspect | Detail | Evidence |
+|--------|--------|----------|
+| **Dominant tradition** | *(e.g. phenomenology, cognitive psychology, critical theory)* | |
+| **Reviewer competence variance** | Low / Medium / High — *(do reviewers self-acknowledge expertise gaps?)* | |
+| **Quantitative mindset bias on qualitative work?** | Yes / No / Mixed | e.g. *"Reviewers requested 'representative sample' on purposive sampling — Birmingham 2020 pattern"* |
+| **Discourse community signals (editorial board)** | *(narrative)* | URL to editorial board page |
 
 ### Sensitive Topics
 
