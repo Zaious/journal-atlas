@@ -37,12 +37,21 @@ Extract or ask for these attributes:
 | **Methodology** | autoethnography, theoretical, mixed methods |
 | **Word count** | ~12,000 |
 | **APC budget** | $0 (no institutional funding) |
+| **OA required?** | No (subscription path acceptable) / Yes (must be open at publication) |
 | **AI usage** | Yes — writing assistance, disclosed |
 | **Sensitive content?** | No / Yes — specify if applicable |
 | **IRB status** | No IRB (theoretical paper) |
 | **Data transparency** | Full / Limited |
 | **Preprint intent** | Yes, PsyArXiv pre-submission |
 | **Timeline priority** | Fast review preferred |
+
+> **Why "OA required" matters separately from "APC budget"**: Hybrid journals
+> offer **two submission paths** — Subscription (free for authors, but readers
+> behind paywall) and Open Access (author pays APC, readers free). If the user
+> can accept a paywall, hybrid journals are effectively $0 APC. If the user
+> needs immediate open visibility (e.g., practitioner audiences without
+> institutional access), only the OA path is viable and the listed APC applies.
+> Always ask both questions when budget is tight.
 
 If the user hasn't provided enough, ask. Don't guess.
 
@@ -56,11 +65,20 @@ Scan **Subject Density** and **Soft Metadata** sections to identify candidates.
 Eliminate journals that fail any hard constraint:
 
 - Word limit too low for the paper
-- APC exceeds budget
+- **APC exceeds budget** — apply this carefully:
+  - Subscription-only journal → effective cost = $0
+  - **Hybrid journal + user accepts paywall** → effective cost = $0 (subscription path); only eliminate if user explicitly required OA
+  - **Hybrid journal + user requires OA** → effective cost = listed OA APC; eliminate if it exceeds budget
+  - Full-OA journal → effective cost = listed APC; eliminate if it exceeds budget
 - AI policy has explicit permission gate (and user won't email ahead)
 - IRB hard gate (and user has no IRB)
 - Data transparency requirement conflicts with OPSEC
 - Mandatory framing the user can't or won't adopt
+
+When you eliminate a hybrid journal for cost, state both prices in the
+elimination reason so the user can revisit the decision ("Eliminated:
+hybrid OA path costs $3,190; user required OA. Subscription path would be
+$0 if user reconsiders OA need.").
 
 ### Step 4: Rank by Soft Fit
 
@@ -87,7 +105,8 @@ Output a ranked list with rejection-fallback chains:
 ### 🥇 [Journal Name]
 - **Why it fits**: [2-3 sentences with specific evidence from the journal file]
 - **Watch out for**: [risks or adaptation needed]
-- **Key stats**: IF X.X | h-index XX | Review ~X months | APC $X
+- **Key stats**: IF X.X | h-index XX | Review ~X months
+- **Cost**: [Subscription-only: $0 / Hybrid: $0 sub or $X OA / Full OA: $X]
 - **If rejected, try next**: [Fallback A] → [Fallback B] → [Fallback C]
   *(pulled from the Rejection Fallback Chain section of [Journal Name]'s file)*
 

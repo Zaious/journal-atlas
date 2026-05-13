@@ -84,6 +84,7 @@ class Paper:
     methodology: Optional[str] = None
     word_count: Optional[int] = None
     apc_budget: Optional[int] = None
+    oa_required: bool = False  # True = author needs immediate OA (no paywall acceptable)
     ai_usage: bool = False
     ai_disclosed: bool = True
     sensitive_content: list[str] = field(default_factory=list)
@@ -100,6 +101,7 @@ class Paper:
             methodology=data.get("methodology"),
             word_count=data.get("word_count"),
             apc_budget=data.get("apc_budget"),
+            oa_required=data.get("oa_required", False),
             ai_usage=data.get("ai_usage", False),
             ai_disclosed=data.get("ai_disclosed", True),
             sensitive_content=data.get("sensitive_content", []),
@@ -120,6 +122,22 @@ class JournalScore:
     eliminated: bool = False
     elimination_reason: Optional[str] = None
     warnings: list[str] = field(default_factory=list)
+    # Cost annotation for hybrid journals — surfaced in output so user sees both paths
+    oa_model: Optional[str] = None
+    apc_subscription_usd: Optional[int] = None
+    apc_oa_usd: Optional[int] = None
+
+    def cost_note(self) -> str:
+        """Short human-readable cost annotation."""
+        if self.oa_model == "hybrid":
+            oa = f"${self.apc_oa_usd:,}" if self.apc_oa_usd else "?"
+            return f"$0 via subscription / {oa} via OA"
+        if self.oa_model == "subscription":
+            return "$0 (subscription only — paywalled)"
+        if self.oa_model == "full_oa":
+            oa = f"${self.apc_oa_usd:,}" if self.apc_oa_usd else "?"
+            return f"{oa} (full OA)"
+        return "unknown"
 
     def as_dict(self) -> dict:
         return {
@@ -130,6 +148,10 @@ class JournalScore:
             "eliminated": self.eliminated,
             "elimination_reason": self.elimination_reason,
             "warnings": self.warnings,
+            "oa_model": self.oa_model,
+            "apc_subscription_usd": self.apc_subscription_usd,
+            "apc_oa_usd": self.apc_oa_usd,
+            "cost_note": self.cost_note(),
         }
 
 
@@ -150,10 +172,17 @@ def parse_journal_file(path: Path) -> dict[str, Any]:
 
     name = _extract_h1(content) or path.stem
 
+    listed_apc = _extract_listed_apc(content)
+    has_subscription_path = _detect_subscription_path(content)
+    oa_model = _detect_oa_model(content, has_subscription_path)
+
     return {
         "name": name,
         "word_limit": _extract_word_limit(content),
-        "apc_usd": _extract_apc(content),
+        "apc_usd_oa": listed_apc,  # Cost if OA path is chosen
+        "apc_usd_subscription": 0 if has_subscription_path else None,  # $0 if available
+        "oa_model": oa_model,  # "subscription" / "hybrid" / "full_oa" / "unknown"
+        "has_subscription_path": has_subscription_path,
         "has_ai_permission_gate": _detect_ai_permission_gate(content),
         "irb_strictness": _extract_irb_strictness(content),
         "topics": _extract_top_topics(content),
@@ -183,26 +212,34 @@ def _extract_word_limit(content: str) -> Optional[int]:
         return None
 
 
-def _extract_apc(content: str) -> Optional[int]:
-    """Find the effective APC the author would actually pay (USD).
+def _extract_listed_apc(content: str) -> Optional[int]:
+    """Find the listed OA APC (the price an author pays if they choose OA).
 
-    Hybrid journals (Subscription + optional OA) have a $0 subscription path;
-    authors only pay APC if they explicitly choose OA. Treat the effective
-    APC as $0 in that case — authors can submit without paying.
-
-    Full-OA journals charge APC regardless. Use the listed APC.
-
-    Subscription-only journals charge $0.
+    For hybrid journals this is the OA-path cost; for full-OA journals this
+    is the only price. Subscription-only journals have no listed APC.
     """
     oa_section = _extract_subsection(content, "Open Access")
     text = oa_section or content
+    pattern = re.search(r"APC.*?\$\s*([\d,]+)", text, re.IGNORECASE)
+    if not pattern:
+        return None
+    try:
+        return int(pattern.group(1).replace(",", ""))
+    except ValueError:
+        return None
 
-    # Detect a $0 subscription pathway. Common phrasings in TEMPLATE entries:
-    #   "Subscription submission cost | $0"
-    #   "subscription publishing model, no APC charges apply"
-    #   "Model | Subscription"
-    #   "Model | Hybrid" + any of the above
-    has_subscription_path = bool(
+
+def _detect_subscription_path(content: str) -> bool:
+    """True if the journal offers a $0 subscription submission path.
+
+    Recognized phrasings:
+      "Subscription submission cost | $0"
+      "subscription publishing model, no APC charges apply"
+      "Model | Subscription" / "Model | Hybrid"
+    """
+    oa_section = _extract_subsection(content, "Open Access")
+    text = oa_section or content
+    return bool(
         re.search(
             r"(subscription[^|]*\|\s*\$?\s*0\b"
             r"|subscription[^.]*no APC"
@@ -212,17 +249,48 @@ def _extract_apc(content: str) -> Optional[int]:
             re.IGNORECASE,
         )
     )
-    if has_subscription_path:
-        return 0
 
-    # Otherwise: find the listed APC (full-OA case, or unknown model).
-    pattern = re.search(r"APC.*?\$\s*([\d,]+)", text, re.IGNORECASE)
-    if not pattern:
-        return None
-    try:
-        return int(pattern.group(1).replace(",", ""))
-    except ValueError:
-        return None
+
+def _detect_oa_model(content: str, has_subscription_path: bool) -> str:
+    """Classify the journal's OA model.
+
+    Returns: "subscription" / "hybrid" / "full_oa" / "unknown"
+    """
+    oa_section = _extract_subsection(content, "Open Access") or content
+    if re.search(r"\bModel\b[^|]*\|\s*Full OA", oa_section, re.IGNORECASE):
+        return "full_oa"
+    if re.search(r"\bModel\b[^|]*\|\s*Hybrid", oa_section, re.IGNORECASE):
+        return "hybrid"
+    if re.search(r"\bModel\b[^|]*\|\s*Subscription", oa_section, re.IGNORECASE):
+        return "subscription"
+    # Heuristic fallback when explicit Model row is missing
+    if has_subscription_path:
+        return "hybrid"
+    return "unknown"
+
+
+def effective_apc(journal: dict, oa_required: bool) -> Optional[int]:
+    """Compute the price the user would actually pay given their OA preference.
+
+    - subscription journals: $0 (regardless of oa_required, but flagged elsewhere)
+    - hybrid + oa_required=False: $0 via subscription path
+    - hybrid + oa_required=True: listed OA APC (must pay)
+    - full_oa: listed APC regardless
+    """
+    model = journal.get("oa_model", "unknown")
+    listed = journal.get("apc_usd_oa")
+    sub = journal.get("apc_usd_subscription")
+
+    if model == "subscription":
+        return 0
+    if model == "hybrid":
+        return 0 if not oa_required else listed
+    if model == "full_oa":
+        return listed
+    # Unknown model: be conservative — if subscription path exists, use it
+    if sub is not None and not oa_required:
+        return sub
+    return listed
 
 
 def _detect_ai_permission_gate(content: str) -> bool:
@@ -365,12 +433,13 @@ def check_hard_constraints(paper: Paper, journal: dict[str, Any]) -> Optional[st
                 f"paper {paper.word_count:,})"
             )
 
-    if paper.apc_budget is not None and journal.get("apc_usd"):
-        if journal["apc_usd"] > paper.apc_budget:
-            return (
-                f"APC ${journal['apc_usd']:,} exceeds budget "
-                f"${paper.apc_budget:,}"
-            )
+    if paper.apc_budget is not None:
+        eff_apc = effective_apc(journal, paper.oa_required)
+        if eff_apc is not None and eff_apc > paper.apc_budget:
+            reason = f"APC ${eff_apc:,} exceeds budget ${paper.apc_budget:,}"
+            if paper.oa_required and journal.get("oa_model") == "hybrid":
+                reason += " (hybrid OA path required — subscription path unavailable per user preference)"
+            return reason
 
     if paper.ai_usage and journal.get("has_ai_permission_gate"):
         return "AI policy requires explicit permission (user did not indicate willingness to email ahead)"
@@ -512,6 +581,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--methodology", type=str, help="e.g. theoretical, autoethnography")
     parser.add_argument("--word-count", type=int)
     parser.add_argument("--apc-budget", type=int)
+    parser.add_argument(
+        "--require-oa",
+        action="store_true",
+        help=(
+            "Require immediate Open Access (no paywall acceptable). Without this flag, "
+            "hybrid journals are treated as $0-cost via their subscription path."
+        ),
+    )
     parser.add_argument("--fields", type=str, help="Comma-separated field directories to search")
     parser.add_argument(
         "--journals-root", type=Path, default=Path("references/journals")
@@ -533,6 +610,7 @@ def build_paper(args: argparse.Namespace) -> Paper:
         methodology=args.methodology,
         word_count=args.word_count,
         apc_budget=args.apc_budget,
+        oa_required=args.require_oa,
         fields=[f.strip() for f in (args.fields or "").split(",") if f.strip()],
     )
 
@@ -561,7 +639,13 @@ def main() -> int:
             print(f"Skipping {path}: parse error: {exc}", file=sys.stderr)
             continue
 
-        js = JournalScore(path=path, name=journal_data["name"])
+        js = JournalScore(
+            path=path,
+            name=journal_data["name"],
+            oa_model=journal_data.get("oa_model"),
+            apc_subscription_usd=journal_data.get("apc_usd_subscription"),
+            apc_oa_usd=journal_data.get("apc_usd_oa"),
+        )
 
         elim = check_hard_constraints(paper, journal_data)
         if elim:
@@ -590,9 +674,14 @@ def main() -> int:
             "all_passing_count": len(passing),
         }, indent=2))
     else:
-        print(f"=== Top {min(args.top_n, len(passing))} of {len(passing)} candidates ===")
+        oa_note = " [OA REQUIRED]" if paper.oa_required else ""
+        print(
+            f"=== Top {min(args.top_n, len(passing))} of {len(passing)} "
+            f"candidates{oa_note} ==="
+        )
         for i, r in enumerate(passing[:args.top_n], 1):
             print(f"\n{i}. {r.name}  ({r.score:.1f}/100)")
+            print(f"     Cost: {r.cost_note()}")
             for dim, score in r.dimension_scores.items():
                 print(f"     {dim:30s} {score:.1f}")
         if eliminated:
