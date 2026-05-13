@@ -63,6 +63,18 @@ These works inform how contributors should think about and write Soft Metadata. 
 
 ---
 
+## Workflow Concepts Borrowed (not code)
+
+### Rejection Fallback Chain — adapted from AutoResearchClaw
+
+The **Rejection Fallback Chain** section in our journal template and the **Rejection Recovery Mode** in our SKILL.md are conceptually adapted from the multi-stage gate/pivot mechanism in [AutoResearchClaw](https://github.com/) — an autonomous research pipeline that explicitly handles failure modes with `PROCEED / PIVOT / ITERATE` decisions at critical stages.
+
+We don't use any AutoResearchClaw code or infrastructure. We borrowed one idea: **realistic submission workflows are tiered**. A recommender that only outputs "best match" misses the actual practitioner question, which is "and if this doesn't work?" Journal Atlas treats every journal entry as a node in a directed graph of fallback links, letting the AI traverse the graph as a rejection-recovery strategy.
+
+This idea also independently echoes Terence Tao's submission ladder advice (cited in CONTRIBUTING.md): aim high, fall down the ladder. We make that ladder explicit and per-journal.
+
+---
+
 ## Related but Independent Projects
 
 Tools that share part of our problem space but operate differently. We may eventually propose integration with some of these, but currently they are independent:

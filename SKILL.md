@@ -73,7 +73,7 @@ For automated scoring, run `scripts/fit-score.py` with the paper attributes.
 
 ### Step 5: Present Recommendations
 
-Output a ranked list:
+Output a ranked list with rejection-fallback chains:
 
 ```
 ## Recommendations for: [Paper Title / Description]
@@ -82,18 +82,40 @@ Output a ranked list:
 - **Why it fits**: [2-3 sentences with specific evidence from the journal file]
 - **Watch out for**: [risks or adaptation needed]
 - **Key stats**: IF X.X | h-index XX | Review ~X months | APC $X
+- **If rejected, try next**: [Fallback A] → [Fallback B] → [Fallback C]
+  *(pulled from the Rejection Fallback Chain section of [Journal Name]'s file)*
 
 ### 🥈 [Journal Name]
 ...
-
-### Fallback Options
-...
+- **If rejected, try next**: [Fallback A] → [Fallback B]
 
 ### Journals Considered but Eliminated
 | Journal | Reason |
 |---------|--------|
 | ... | ... |
 ```
+
+### Step 6: Walk the Fallback Chain (when asked)
+
+If the user asks "what if I get rejected from my top pick?" — read the **Rejection Fallback Chain** section of that journal's file and walk it:
+
+1. Present the chain as a ladder: 1st fallback → 2nd → 3rd
+2. For each fallback, give a 1-sentence summary of why it's a good next-step (pulled from its "Why this fallback works" cell)
+3. If the user is interested, recursively walk the fallback's own chain ("If even that one rejects you...")
+
+This turns a single recommendation into a **rejection-recovery strategy map**, which mirrors how experienced researchers actually plan submissions (top pick + 2-3 backups in order).
+
+If a journal's Fallback Chain is empty in the knowledge base, say so — and suggest the user use the regular recommendation workflow with relaxed constraints.
+
+## Rejection Recovery Mode
+
+When the user says "my paper was rejected from X, where should I try next?":
+
+1. Read the file for journal X
+2. Check the **Rejection Fallback Chain** section
+3. Present those fallbacks as the primary recommendation
+4. Add a note: if the user's paper was rejected for a *specific* reason (e.g. "reviewer 2 demanded a cultural framing"), filter the fallback chain to journals whose Soft Metadata profile differs on that dimension
+5. If journal X has no Fallback Chain populated, fall back to the standard recommendation workflow with the rejection reason added as an attribute
 
 ## Comparison Mode
 

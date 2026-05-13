@@ -1,4 +1,4 @@
-<!-- schema: v1.1 -->
+<!-- schema: v1.2 -->
 
 # {Journal Full Name}
 
@@ -232,6 +232,20 @@ Cognitive science reviewers less common but present.")*
 ### Not Recommended For
 
 *(What kind of paper should avoid this journal?)*
+
+### Rejection Fallback Chain
+
+If your paper is rejected here, these journals are reasonable next-step targets. List in priority order with a short reason for each fallback link.
+
+| Rank | Journal | Why this fallback works |
+|------|---------|------------------------|
+| 1 | *(link to its .md file or full name)* | *(e.g. "similar scope but more flexible word limit", "lower acceptance bar", "accepts the same methodology")* |
+| 2 | | |
+| 3 | | |
+
+**Reverse direction** *(optional)*: If your paper was rejected from a more selective journal, this one may be a better fit because: *(brief reason)*
+
+> 💡 **Why this matters**: Most journal recommender tools stop at "best match." Real submission workflows are tiered — top pick + 2-3 fallbacks. Filling this section is a high-leverage contribution because the AI skill uses these links to build rejection-recovery strategies.
 
 ---
 
