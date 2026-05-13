@@ -37,11 +37,10 @@ Cite these in your `Evidence` columns when relevant. They give your contribution
 - Drop leading articles: `journal-of-personality.md` not `the-journal-of-personality.md`
 - Ampersand → "and": `culture-and-psychology.md`
 
-**Field directories:**
-- `psychology/` — clinical, cognitive, theoretical, social
+**Field directories (initial seed):**
+- `psychology/` — clinical, cognitive, theoretical, social, and cross-disciplinary phenomenology / cognitive-science venues
 - `hci/` — human-computer interaction
 - `qualitative-methods/` — methodology-focused journals
-- `cognitive-science/` — cognitive science, philosophy of mind
 
 If none fits, open an issue to discuss adding a new field directory.
 

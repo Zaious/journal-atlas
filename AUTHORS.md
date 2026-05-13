@@ -21,9 +21,16 @@ Journal Atlas is co-designed and maintained with the ChronicleCore AI Agent Team
 | Role | Codename | Title |
 |------|----------|-------|
 | **Architect** | Cardinal (樞機師) — *Yui* | Expert System Architect |
+| **Persona Designer** | Muse (靈範師) | Soft Metadata Author & Persona/Voice Calibrator |
+| **Chief People Officer** | Star Scout (星探) — *Ran* | Skill Quality Auditor |
 | *(future agents will be credited here as they contribute)* | | |
 
-The full ChronicleCore roster is described in the ChronicleCore project documentation. Specific agent contributions to Journal Atlas (architectural design, schema development, automation tooling) are credited under Cardinal.
+The full ChronicleCore roster is described in the ChronicleCore project documentation.
+
+**Specific contributions to Journal Atlas:**
+- **Cardinal** — Architectural design, schema (TEMPLATE.md v1.2), SKILL.md workflow, automation scripts (`scripts/`), CI infrastructure
+- **Muse** — Soft Metadata authoring across the initial 22 seed journal entries (Epistemological leanings, Framing Requirements, Reviewer Pool Characteristics, Voice & Style, Sensitive Topics, Strategic Notes). Appears as `@Muse` in journal file Changelogs.
+- **Star Scout** — Pre-launch quality audit (structural compliance, attribution consistency, academic ethics review).
 
 ## Community Contributors
 

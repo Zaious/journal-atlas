@@ -33,7 +33,7 @@ Each journal entry is a structured Markdown file covering 7 dimensions:
 
 **Any academic discipline is welcome.** The template and workflow are field-agnostic.
 
-Initial seed coverage includes psychology, HCI, qualitative methodology, and cognitive science — but we actively welcome contributions from all fields. If your discipline isn't represented yet, you can be the one to start it.
+Initial seed coverage includes psychology (including cross-disciplinary phenomenology / cognitive-science venues), HCI, and qualitative methodology — but we actively welcome contributions from all fields. If your discipline isn't represented yet, you can be the one to start it.
 
 ---
 

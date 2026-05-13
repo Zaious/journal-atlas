@@ -176,7 +176,7 @@ To illustrate the workflow end-to-end, here is how a typical session looks.
 **Your reasoning trace**:
 
 1. *Extracted attributes*: topic=embodied cognition + HCI; methodology=theoretical; word_count=12000; APC=$0; AI_usage=disclosed; IRB=none; timeline=fast.
-2. *Load candidates*: read entries in `references/journals/hci/` and `references/journals/cognitive-science/`.
+2. *Load candidates*: read entries in `references/journals/hci/` and `references/journals/psychology/` (the latter includes cross-disciplinary venues like Phenomenology and the Cognitive Sciences).
 3. *Filter by hard constraints*: eliminate journals with word_limit < 12,000, with APC > 0, with AI explicit-permission gates, with IRB hard requirements for theoretical work.
 4. *Rank remaining 5 candidates* across the 6 dimensions, citing evidence per journal.
 
@@ -218,11 +218,10 @@ This knowledge base is community-maintained and growing.
 
 **Always check `references/journals/` for the actual list of available journals before responding.** The directory structure reflects target fields, but individual journal entries are added incrementally.
 
-**Planned seed fields**:
-- Psychology (clinical, cognitive, theoretical, qualitative)
+**Initial seed fields**:
+- Psychology (clinical, cognitive, theoretical, qualitative — includes cross-disciplinary phenomenology / cognitive-science venues)
 - HCI (Human-Computer Interaction)
 - Qualitative methodology
-- Cognitive science & philosophy of mind
 
 **Any academic discipline is welcome.** If the user's field isn't covered yet, or if the relevant field directory contains few entries, say so honestly and suggest they [contribute journal entries](CONTRIBUTING.md). The template and workflow are field-agnostic by design.
 

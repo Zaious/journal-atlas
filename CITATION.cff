@@ -45,6 +45,11 @@ references:
         orcid: "https://orcid.org/0009-0007-1685-0877"
     year: 2025
     journal: "Frontiers in Computer Science — Human-Media Interaction"
-    notes: "Submitted, under peer review."
+    notes: >-
+      Theoretical foundation. Journal Atlas emerged during the manuscript
+      submission process of this paper and is itself an instantiation of ASAF's
+      agent-identity-as-collaboration-interface principles: each journal entry
+      acts as a structured affordance surface that human and AI agents can
+      jointly reason over.
     doi: "10.5281/zenodo.19652278"
     url: "https://doi.org/10.5281/zenodo.19652278"
