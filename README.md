@@ -88,6 +88,10 @@ Then restart Claude Code (or start a new session). The skill becomes available t
 
 Browse [`skills/journal-atlas/references/journals/`](skills/journal-atlas/references/journals/) on GitHub. Every journal is a readable Markdown page. No AI required.
 
+### Want to see Journal Atlas in action first?
+
+[**`use-cases/`**](use-cases/) contains full multi-turn session transcripts showing what the skill produces with real(istic) papers — including how constraint changes cascade, how the rejection-fallback chain gets walked, and how the skill admits when it can't help. The [Self-state Dynamics use case](use-cases/self-state-altered-states-autoethnography.md) covers all six end-to-end scenarios.
+
 ---
 
 ## Automation (skills/journal-atlas/scripts/)
