@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "journal-atlas",
+  "description": "Journal Atlas marketplace — a single-plugin marketplace exposing the journal-atlas skill (academic journal fit assessment) for /plugin marketplace add Zaious/journal-atlas installs.",
+  "owner": {
+    "name": "Meng-Han Lee (Zaious)",
+    "email": "zaious.design@gmail.com",
+    "url": "https://zaious.dev/"
+  },
+  "plugins": [
+    {
+      "name": "journal-atlas",
+      "description": "Academic journal fit assessment and submission strategy. Knowledge base of per-journal soft metadata (reviewer culture, framing requirements, sensitive topic tolerance, rejection fallback chains).",
+      "author": {
+        "name": "Meng-Han Lee (Zaious)"
+      },
+      "category": "academic",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Zaious/journal-atlas.git"
+      },
+      "homepage": "https://github.com/Zaious/journal-atlas"
+    }
+  ]
+}

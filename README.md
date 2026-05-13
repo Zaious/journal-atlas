@@ -39,21 +39,36 @@ Initial seed coverage includes psychology (including cross-disciplinary phenomen
 
 ## How to Use
 
-### Option 1: Claude Code (recommended)
+### Option 1: Claude Code via plugin marketplace (recommended)
 
-Install as a skill plugin:
+In a Claude Code session (main session, not a worktree sub-session, which doesn't expose `/plugin`):
 
-```bash
-claude /plugin marketplace add Zaious/journal-atlas
-claude /plugin install journal-atlas
+```
+/plugin marketplace add Zaious/journal-atlas
+/plugin install journal-atlas@journal-atlas
 ```
 
-Then ask naturally:
+Then restart Claude Code. The skill is auto-discovered when relevant.
+
+Ask naturally:
 
 > "I have a 12,000-word theoretical paper on embodied cognition.
-> No IRB, no APC budget, I used AI for writing assistance. Which journals fit?"
+> No IRB, no APC budget, I used AI for writing assistance, no immediate
+> OA needed. Which journals fit?"
 
-The skill reads the knowledge base, filters by your constraints, and ranks by soft fit.
+### Option 1b: Claude Code via manual `git clone` (fallback if `/plugin` unavailable)
+
+If you're in a worktree session or otherwise don't have `/plugin` available, install the skill directly:
+
+```bash
+# Windows PowerShell
+git clone https://github.com/Zaious/journal-atlas.git $HOME\.claude\skills\journal-atlas
+
+# macOS / Linux
+git clone https://github.com/Zaious/journal-atlas.git ~/.claude/skills/journal-atlas
+```
+
+Then restart Claude Code (or start a new session). The skill becomes available the same way as Option 1.
 
 ### Option 2: Claude Desktop
 

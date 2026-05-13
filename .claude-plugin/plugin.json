@@ -1,0 +1,20 @@
+{
+  "name": "journal-atlas",
+  "description": "Academic journal fit assessment and submission strategy. Community-maintained AI-native knowledge base of per-journal soft metadata (reviewer culture, framing requirements, sensitive topic tolerance, rejection fallback chains) that bibliometric tools like Impact Factor and SCImago do not cover.",
+  "author": {
+    "name": "Meng-Han Lee (Zaious)",
+    "email": "zaious.design@gmail.com",
+    "url": "https://zaious.dev/"
+  },
+  "homepage": "https://github.com/Zaious/journal-atlas",
+  "license": "CC-BY-NC-SA-4.0 (content) + MIT (scripts)",
+  "keywords": [
+    "academic-publishing",
+    "journal-recommender",
+    "peer-review",
+    "open-science",
+    "skill",
+    "knowledge-base",
+    "human-agent-collaboration"
+  ]
+}
