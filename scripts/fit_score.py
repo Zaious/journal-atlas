@@ -184,10 +184,39 @@ def _extract_word_limit(content: str) -> Optional[int]:
 
 
 def _extract_apc(content: str) -> Optional[int]:
-    """Find APC USD amount."""
-    pattern = re.search(
-        r"APC.*?\$\s*([\d,]+)", content, re.IGNORECASE
+    """Find the effective APC the author would actually pay (USD).
+
+    Hybrid journals (Subscription + optional OA) have a $0 subscription path;
+    authors only pay APC if they explicitly choose OA. Treat the effective
+    APC as $0 in that case — authors can submit without paying.
+
+    Full-OA journals charge APC regardless. Use the listed APC.
+
+    Subscription-only journals charge $0.
+    """
+    oa_section = _extract_subsection(content, "Open Access")
+    text = oa_section or content
+
+    # Detect a $0 subscription pathway. Common phrasings in TEMPLATE entries:
+    #   "Subscription submission cost | $0"
+    #   "subscription publishing model, no APC charges apply"
+    #   "Model | Subscription"
+    #   "Model | Hybrid" + any of the above
+    has_subscription_path = bool(
+        re.search(
+            r"(subscription[^|]*\|\s*\$?\s*0\b"
+            r"|subscription[^.]*no APC"
+            r"|\bModel\b[^|]*\|\s*Subscription\b"
+            r"|\bModel\b[^|]*\|\s*Hybrid\b)",
+            text,
+            re.IGNORECASE,
+        )
     )
+    if has_subscription_path:
+        return 0
+
+    # Otherwise: find the listed APC (full-OA case, or unknown model).
+    pattern = re.search(r"APC.*?\$\s*([\d,]+)", text, re.IGNORECASE)
     if not pattern:
         return None
     try:
