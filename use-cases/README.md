@@ -1,5 +1,7 @@
 # Use Cases
 
+> 🌐 **Languages**: English | [繁體中文](zh-Hant/README.md)
+
 Real(istic) walkthroughs of Journal Atlas in action — full session transcripts showing how an AI agent reasons over the journal knowledge base to produce submission strategy.
 
 These aren't abstract feature lists. They are end-to-end demonstrations of what the skill actually does when an author describes their paper and asks for help.

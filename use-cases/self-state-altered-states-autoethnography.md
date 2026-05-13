@@ -1,5 +1,7 @@
 # Self-state Dynamics in Altered-State Autoethnography
 
+> 🌐 **Languages**: English | [繁體中文](zh-Hant/self-state-altered-states-autoethnography.md)
+>
 > **Submitted by**: @Zaious (initial seed case)
 > **Date**: 2026-05-13
 > **Field**: psychology (with phenomenology / qualitative-methods adjacency)
