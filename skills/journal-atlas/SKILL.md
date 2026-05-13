@@ -55,10 +55,25 @@ Extract or ask for these attributes:
 
 If the user hasn't provided enough, ask. Don't guess.
 
-### Step 2: Load Relevant Journals
+### Step 2: Narrow the Candidate Set
 
-Read the journal files in `references/journals/` that match the user's field.
-Scan **Subject Density** and **Soft Metadata** sections to identify candidates.
+The right approach depends on how many entries the knowledge base currently
+holds. Count files under `references/journals/`:
+
+| Entry count | Approach |
+|-------------|----------|
+| **≤ 20** | Read all matching field directories directly. Manageable for full-context reasoning. |
+| **21 – 50** | Strongly prefer `scripts/fit_score.py` to pre-rank; read only the top 10 entries fully. |
+| **> 50** | **Mandatory**: run `scripts/fit_score.py` to pre-rank, then read only the top 10–15 entries. Reading all entries would saturate context. |
+| **> 200** | Sub-field filter first (e.g. `scripts/query_journals.py --field <X>`), then fit_score, then read top 10. |
+
+For **structured boolean queries** (e.g. "list all Q1 psychology journals",
+"only Sage journals with zero embargo", "h-index ≥ 100") — use
+`scripts/query_journals.py` directly. Don't waste AI reasoning on what is
+deterministic filtering. See **Query Mode** below.
+
+Once you have a narrowed candidate set, scan their **Subject Density** and
+**Soft Metadata** sections to identify the strongest matches for Step 3+.
 
 ### Step 3: Filter by Hard Constraints
 
@@ -119,6 +134,42 @@ Output a ranked list with rejection-fallback chains:
 |---------|--------|
 | ... | ... |
 ```
+
+## Query Mode
+
+When the user asks a **structured deterministic question** (not a "fit my paper to a journal" question), bypass the 6-step recommendation workflow and run `scripts/query_journals.py` directly. The user's question is a database query, not a strategic decision.
+
+### Recognizable query patterns
+
+| Query phrasing | Use `query_journals.py` flags |
+|----------------|-------------------------------|
+| "Q1 journals in psychology" | `--field psychology --quartile Q1` |
+| "All Sage journals" | `--publisher Sage` |
+| "Journals with h-index above 100 in HCI" | `--field hci --min-h-index 100` |
+| "Full open-access psychology journals" | `--field psychology --oa-model full_oa` |
+| "Journals without AI permission gate" | `--no-ai-permission-gate` |
+| "Zero-embargo journals in qualitative methods" | `--field qualitative-methods --zero-embargo` |
+| "Journals that accept autoethnography (≥3/5)" | `--methodology autoethnography --min-methodology-score 3` |
+| "Sage journals with word limit ≥ 10,000" | `--publisher Sage --min-word-limit 10000` |
+| "Show me HCI journals sorted by impact" | `--field hci --sort-by h_index` |
+
+### Action
+
+1. Map the user's natural language to one or more `--filter` flags
+2. Run `python scripts/query_journals.py <flags>`
+3. Present the result table directly (or render as markdown if going into a written response)
+4. Add a one-line summary above the table:
+   *"Found N journals matching: [filter description]"*
+5. If the user follows up with "now recommend the best one for my paper" — switch to the full 6-step workflow with those journals as the candidate set
+
+### Why this matters
+
+The 6-step workflow is for **paper-vs-journal fit reasoning** — it needs paper attributes, Soft Metadata judgment, and Rejection Fallback Chain traversal. The full workflow is overkill (and wasteful of tokens) when the user just wants a filtered list.
+
+If the user is unclear ("show me good psychology journals"), ask whether they want a filtered list or a fit-based recommendation. The two answer different questions:
+
+- **Query Mode** answers: *"Which journals satisfy criteria X, Y, Z?"*
+- **Recommendation workflow** answers: *"Given my paper, which journals should I target?"*
 
 ## Rejection Handling
 

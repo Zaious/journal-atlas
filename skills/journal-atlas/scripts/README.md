@@ -6,12 +6,21 @@ Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed un
 
 | Script | Purpose | Status |
 |--------|---------|--------|
+| `query_journals.py` | **Structured boolean queries** over the knowledge base (publisher, OA model, h-index, quartile, AI policy, embargo, methodology). Outputs table/csv/json/markdown. | ✅ Implemented |
+| `fit_score.py` | **Paper-vs-journal fit scoring** with weighted soft-fit dimensions and hard-constraint elimination. Use for full recommendation workflow. | ⚠️ v0.1 — needs validation against backtest data once seed grows |
 | `import_openalex.py` | Auto-populate a new journal entry from OpenAlex (Identity / Metrics / Subject Density / OA). Uses pyalex (MIT). | ✅ Implemented |
 | `validate_structure.py` | Check journal `.md` files match TEMPLATE schema. Runs in CI on every PR via `.github/workflows/validate.yml`. | ✅ Implemented |
 | `bundle_for_upload.py` | Merge journal files into bundles for ChatGPT GPTs (20-file limit) or Claude Desktop projects. | ✅ Implemented |
-| `fit_score.py` | Compute fit score for a paper vs. journals (regex-based parser, default weights). | ⚠️ v0.1 — needs validation against backtest data once seed grows |
 | `update_metrics.py` | Refresh OpenAlex-derived metrics in existing entries; propose diffs (dry-run by default; `--apply` to write). | ✅ Implemented |
 | `topic_trend_scan.py` | Scan a journal's recent publication topics; optionally check for specific keyword presence. Cached 30 days. | ✅ Implemented |
+
+### When to use `query_journals.py` vs `fit_score.py`
+
+| You need to... | Use |
+|----------------|-----|
+| List journals matching criteria (Q1, Sage, h-index > 100, no AI gate, etc.) | `query_journals.py` |
+| Rank journals by how well they match a specific paper | `fit_score.py` |
+| Both: filter first, then rank survivors | `query_journals.py` → `fit_score.py --fields <filtered>` |
 
 ## Setup
 
@@ -88,6 +97,31 @@ python scripts/update_metrics.py --apply
 
 # Then review with git diff before committing
 git diff references/journals/
+```
+
+### Structured queries (no AI needed)
+
+```bash
+# All Sage journals
+python scripts/query_journals.py --publisher Sage
+
+# HCI journals with h-index >= 100, sorted by h-index
+python scripts/query_journals.py --field hci --min-h-index 100 --sort-by h_index
+
+# Psychology journals without AI permission gate
+python scripts/query_journals.py --field psychology --no-ai-permission-gate
+
+# Q1 or Q2 journals (when Quartile is populated)
+python scripts/query_journals.py --quartile Q1,Q2
+
+# Journals that accept autoethnography at 3/5 or higher
+python scripts/query_journals.py --methodology autoethnography --min-methodology-score 3
+
+# Markdown output for embedding in docs
+python scripts/query_journals.py --field psychology --format markdown
+
+# JSON for tooling
+python scripts/query_journals.py --field psychology --format json
 ```
 
 ### Scanning a journal's recent topic distribution
