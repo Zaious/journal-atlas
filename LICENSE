@@ -1,0 +1,60 @@
+Journal Atlas — License
+
+Copyright (c) 2026 Meng-Han Lee (Zaious) and the ChronicleCore AI Agent Team.
+
+This repository uses a dual-license model:
+
+================================================================================
+CONTENT (all Markdown files, journal entries, documentation, templates)
+================================================================================
+
+The content of this repository is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+(CC BY-NC-SA 4.0).
+
+Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to Meng-Han Lee (Zaious)
+    and the ChronicleCore AI Agent Team, provide a link to the license, and
+    indicate if changes were made. See CITATION.cff for the preferred citation
+    format.
+  - NonCommercial — You may not use the material for commercial purposes
+    without explicit permission. For commercial licensing, contact
+    zaious.design@gmail.com.
+  - ShareAlike — If you remix, transform, or build upon the material, you
+    must distribute your contributions under the same license as the original.
+
+================================================================================
+CODE (everything under the scripts/ directory)
+================================================================================
+
+The code in this repository (Python scripts, automation tools, etc.) is
+licensed under the MIT License. See LICENSE-CODE for full text.
+
+================================================================================
+COMMERCIAL USE
+================================================================================
+
+If you wish to use Journal Atlas content for commercial purposes (including
+but not limited to: integration into paid products, redistribution within
+commercial services, or use in fee-based research-as-a-service offerings),
+please contact Meng-Han Lee at zaious.design@gmail.com to discuss commercial
+licensing terms.
+
+We welcome discussions about partnerships, integrations, and sustainable
+ecosystem participation.
+
+================================================================================
+ATTRIBUTION REQUIREMENT
+================================================================================
+
+All uses of Journal Atlas — commercial or non-commercial — must preserve
+attribution to Meng-Han Lee (Zaious) and the ChronicleCore AI Agent Team.
+Removal or obscuring of authorship credit is not permitted under any
+circumstances. See CITATION.cff for the preferred citation format.

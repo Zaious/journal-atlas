@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use Journal Atlas in your research or work, please cite it as below."
+title: "Journal Atlas: A Community-Maintained Knowledge Base of Academic Journal Fit Metadata"
+abstract: >-
+  Journal Atlas is an AI-native, community-maintained knowledge base that
+  captures the soft metadata of academic journals — reviewer culture, framing
+  requirements, methodological preferences, sensitive topic receptiveness, and
+  rejection fallback chains — that existing bibliometric tools (Impact Factor,
+  SCImago, JCR) do not cover. Distributed as a Claude Agent Skill compatible
+  with Claude Desktop, Claude Code, ChatGPT, and other agent platforms.
+type: dataset
+authors:
+  - family-names: "Lee"
+    given-names: "Meng-Han"
+    alias: "Zaious"
+    email: "zaious.design@gmail.com"
+    orcid: "https://orcid.org/0009-0007-1685-0877"
+    affiliation: "Independent HCI Researcher; ChronicleCore AI Agent Architect"
+    website: "https://zaious.dev/"
+  - name: "ChronicleCore AI Agent Team"
+    website: "https://zaious.dev/"
+contact:
+  - family-names: "Lee"
+    given-names: "Meng-Han"
+    email: "zaious.design@gmail.com"
+repository-code: "https://github.com/Zaious/journal-atlas"
+url: "https://github.com/Zaious/journal-atlas"
+license: "CC-BY-NC-SA-4.0"
+license-url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+keywords:
+  - academic publishing
+  - journal recommender
+  - scholarly metadata
+  - peer review
+  - open science
+  - AI agent skill
+  - human-agent collaboration
+  - knowledge base
+references:
+  - type: article
+    title: "Agentic Social Affordance Framework (ASAF): Agent Identity Design as a Collaboration Interface in Multi-Agent Systems"
+    authors:
+      - family-names: "Lee"
+        given-names: "Meng-Han"
+        orcid: "https://orcid.org/0009-0007-1685-0877"
+    year: 2025
+    journal: "Frontiers in Computer Science — Human-Media Interaction"
+    notes: "Submitted, under peer review."
+    doi: "10.5281/zenodo.19652278"
+    url: "https://doi.org/10.5281/zenodo.19652278"

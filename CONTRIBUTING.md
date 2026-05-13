@@ -108,11 +108,15 @@ This is an academic knowledge base. We expect:
 - No promotional content for or against any journal
 - Sensitivity when discussing editorial biases — describe, don't judge
 
-## License Discussion
+## License
 
-We're evaluating license options. The goal is:
-- Free for anyone to use (researchers, AI tools, institutions)
-- Attribution required (credit the community)
-- Contributions remain open
+Journal Atlas uses a **dual-license** model:
 
-Current candidates: CC-BY-4.0, MIT, Apache-2.0. Input welcome via issues.
+- **Content** (your journal entries, documentation contributions) — **CC BY-NC-SA 4.0**. Attribution required, non-commercial use only by default, derivatives must share alike.
+- **Code** (scripts/) — **MIT License**.
+
+By submitting a contribution, you agree to license it under these terms. You retain copyright to your contribution; the license grants Journal Atlas and downstream users the rights described above.
+
+**Attribution is preserved across all use cases.** Your contribution will be credited in the journal file's `Maintainer` field, in git history, and (for substantive contributions) in [AUTHORS.md](AUTHORS.md).
+
+**Commercial use** of the content requires separate licensing — see [LICENSE](LICENSE) for details. Contact zaious.design@gmail.com for commercial inquiries.

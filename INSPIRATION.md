@@ -115,10 +115,16 @@ We will issue a versioned release with a formal citation (CITATION.cff) once v1.
 
 ## License Compatibility Notes
 
-- **Our license** is TBD; current candidates are CC-BY-4.0, MIT, or Apache-2.0. See discussion in [CONTRIBUTING.md](CONTRIBUTING.md#license-discussion).
-- **OpenAlex data** (CC0) places no restrictions on our use.
-- **pyalex** (MIT) is compatible with any license we ultimately choose.
-- **DOAJ data** (CC0) is freely usable.
-- We do **not** incorporate code from any GPL-licensed predecessor (notably OJS), to keep our license choice open.
+Journal Atlas uses a dual-license model:
+- **Content** — CC BY-NC-SA 4.0
+- **Code** (`scripts/`) — MIT
+
+Compatibility audit for our dependencies and references:
+
+- **OpenAlex data** (CC0) places no restrictions on our use. ✅
+- **pyalex** (MIT) is compatible with both our content and code licenses. ✅
+- **DOAJ data** (CC0) is freely usable. ✅
+- **SCImago CSV** is freely downloadable; we do not redistribute it. ✅
+- We do **not** incorporate code from any GPL-licensed predecessor (notably OJS), so our license choice is not constrained by copyleft propagation. ✅
 
 If you find a license incompatibility we missed, please [open an issue](../../issues/new).

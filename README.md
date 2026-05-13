@@ -41,7 +41,7 @@ claude /plugin install journal-atlas
 
 Then ask naturally:
 
-> "I have a 12,000-word theoretical paper on self-state switching in BDSM contexts.
+> "I have a 12,000-word theoretical paper on embodied cognition.
 > No IRB, no APC budget, I used AI for writing assistance. Which journals fit?"
 
 The skill reads the knowledge base, filters by your constraints, and ranks by soft fit.
@@ -68,13 +68,16 @@ Browse [`references/journals/`](references/journals/) on GitHub. Every journal i
 
 ## Automation (scripts/)
 
-| Script | Purpose |
-|--------|---------|
-| `validate-structure.py` | Check that journal `.md` files match the template schema. Runs on every PR. |
-| `update-metrics.py` | Fetch latest IF / h-index / CiteScore from OpenAlex API. Proposes a PR draft — never auto-writes. |
-| `topic-trend-scan.py` | Scan a journal's recent publications to detect topic trend shifts. |
-| `fit-score.py` | Compute a numerical fit score given your paper's attributes vs. each journal. |
-| `bundle-for-upload.py` | Merge journal files into larger chunks for platforms with file count limits (e.g. ChatGPT). |
+| Script | Purpose | Status |
+|--------|---------|--------|
+| `import_openalex.py` | Auto-populate a new journal entry from OpenAlex API (Identity / Metrics / Subject Density / OA fields). Uses pyalex (MIT). | ✅ Available |
+| `validate-structure.py` | Check that journal `.md` files match the template schema. Runs on every PR. | 🔲 Planned |
+| `fit-score.py` | Compute a numerical fit score given your paper's attributes vs. each journal. | 🔲 Planned |
+| `update-metrics.py` | Fetch latest IF / h-index / CiteScore from OpenAlex API. Proposes a PR draft — never auto-writes. | 🔲 Planned |
+| `topic-trend-scan.py` | Scan a journal's recent publications to detect topic trend shifts. | 🔲 Planned |
+| `bundle-for-upload.py` | Merge journal files into larger chunks for platforms with file count limits (e.g. ChatGPT). | 🔲 Planned |
+
+See [scripts/README.md](scripts/README.md) for setup instructions and usage examples.
 
 ---
 
@@ -112,7 +115,20 @@ Journal Atlas stands on a 20-year tradition of journal recommenders. We acknowle
 | 2022 | [Open Journal Matcher](https://github.com/MarkEEaton/open-journal-matcher) (Eaton, CUNY) | spaCy word vectors over DOAJ; pioneered "[pervious technology](https://academicworks.cuny.edu/kb_pubs/261)" framing | Service offline 2022/07 (single-maintainer + grant ended) |
 | 2021– | [B!SON](https://service.tib.eu/bison/) (TIB + SLUB Dresden, BMBF-funded) | Elasticsearch + BM25 + OpenCitations bibliographic coupling + ML semantic | **Currently the state of the art** for OA recommendation |
 
-### Where Journal Atlas Fits
+### Honoring Open Journal Matcher (OJM)
+
+This project owes particular intellectual debt to **Mark E. Eaton's Open Journal Matcher** *(2020-2022)*. In July 2022, Eaton took OJM offline, writing:
+
+> *"My hope is that someone will pick up where I left off, and build something similar, or perhaps adapt the code for the OJM. There's a place for a tool like the OJM; and we shouldn't leave this space entirely to the big journal publishing companies."*
+> — Eaton (2022), [The last days of the Open Journal Matcher](https://kingsboroughlibtech.commons.gc.cuny.edu/2022/07/29/the-last-days-of-the-open-journal-matcher/)
+
+**Journal Atlas is one response to that invitation.**
+
+Eaton's companion paper [*On the ethics of working with library technology*](https://academicworks.cuny.edu/kb_pubs/261) introduced the concept of **"pervious technology"** — tools that users can reach into, tinker with, and adapt, in contrast to impervious black-box systems. Eaton argued that pervious tools, combined with diverse perspectives, are how ethical problems in technology become apparent.
+
+Journal Atlas extends this idea further: where OJM was pervious *at the code layer* (Flask + spaCy, open source on GitHub), Journal Atlas is pervious *at the data layer* — every journal entry is a plain-text Markdown file that any researcher can read, edit, and discuss. The knowledge itself is the product, not a service that can be turned off when one maintainer burns out.
+
+### What Journal Atlas Adds to the Lineage
 
 Every system above answers the same question — *given an abstract, which journals match?* — using metric similarity over publication data. None of them capture the knowledge a senior colleague would share over coffee:
 
@@ -121,59 +137,38 @@ Every system above answers the same question — *given an abstract, which journ
 - *"They say single-blind, but the editor leaks identity to friendly reviewers."*
 - *"First-person voice gets you flagged here, but it's expected next door."*
 
-Journal Atlas is the first system to make this knowledge **structured, contributable, and machine-readable**. We are complementary to B!SON, not competing — use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission to each *actually involves*.
+Three design choices distinguish Journal Atlas from the lineage:
 
-Two design choices distinguish us from the lineage:
+1. **Per-journal knowledge base, not per-query app.** Predecessors compute fresh similarity scores at query time; Journal Atlas maintains persistent, citable journal profiles — soft metadata that algorithms cannot extract from publication data and that improves monotonically as the community contributes. This information requires human community knowledge, and it requires durability beyond any single maintainer's commitment.
 
-1. **Per-journal knowledge base, not per-query app** — predecessors compute fresh similarity scores at query time; we maintain persistent, citable journal profiles that humans and AI agents both consume.
-2. **Markdown + Git, not service infrastructure** — predecessors that depended on cloud services (OJM) or grant funding cycles (B!SON's BMBF period ended 2023/01) face structural risks; we have zero hosting cost and zero single point of failure. Anyone can fork.
+2. **Markdown + Git, not service infrastructure.** Predecessors that depended on cloud services (OJM) or grant funding cycles (B!SON's BMBF period ended 2023/01) face structural maintenance risks. Journal Atlas has zero hosting cost and zero single point of failure. Anyone can fork. We learned this lesson from OJM's offline notice — *single maintainers do not survive without community*. Journal Atlas is community-first by design.
 
-We learned the maintenance lesson from OJM's offline notice: *single maintainers do not survive*. Journal Atlas is community-first by design.
+3. **Designed for the agent era, not the search-bar era.** Previous systems are web applications: users open a browser, submit a query, read results. Journal Atlas is structured as a [Claude Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) — the machine-readable skill convention now adopted across Claude Desktop, Claude Code, and increasingly ChatGPT GPTs and other AI agent platforms. When an autonomous research agent plans a submission strategy, it doesn't visit a website; it loads `SKILL.md`, consults the relevant journal files, and reasons over them. By packaging journal knowledge in the lingua franca of contemporary AI agents, Journal Atlas joins the research-pipeline ecosystem natively — installable in one command, consumable by any tool that speaks the skill convention, and durable across whatever interface comes next.
+
+We are complementary to B!SON, not competing — use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission to each *actually involves*.
 
 ---
 
 ## License
 
-[TBD — see CONTRIBUTING.md for discussion]
+Journal Atlas uses a **dual-license** model:
 
----
+- **Content** (Markdown files, journal entries, documentation, templates) — [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0)
+- **Code** (everything under `scripts/`) — [MIT License](LICENSE-CODE)
 
-## Lineage
+**Attribution is required for all uses, commercial or non-commercial.** See [CITATION.cff](CITATION.cff) for the preferred citation format and [AUTHORS.md](AUTHORS.md) for the full credits.
 
-Journal Atlas builds on a 20-year tradition of journal recommender tools. Each previous attempt taught us something:
+**Commercial use** — non-commercial use is free under CC BY-NC-SA 4.0. For commercial licensing (integration into paid products, redistribution within commercial services, fee-based research-as-a-service offerings, or similar), please contact **Meng-Han Lee at zaious.design@gmail.com** to discuss terms. We welcome conversations about partnerships and sustainable ecosystem integration.
 
-- **JANE** *(Schuemie & Kors, 2008)* — the first widely-used PubMed-based recommender. Showed that journal matching could be algorithmically assisted. Limited to biomedical fields.
-- **ETBLAST** *(Errami et al., 2007)* — pioneered three-in-one recommendation (reviewer + journal + similar papers). Now offline.
-- **Elsevier Journal Finder** *(Kang et al., 2015)* — established NLP + BM25 as a baseline. Limited to one publisher's catalog.
-- **Maglet** *(Mohtaj & Tavakkoli, 2018)* — proved that regional / language-specific recommenders have real value (Persian-language journals).
-- **B!SON** *(TIB + SLUB Dresden, 2021–)* — the current state of the art for OA journal recommendation. Transparent algorithms, multi-institutional governance. Strongly recommended as a complementary tool to Journal Atlas: B!SON gives you query-time recommendations; Journal Atlas gives you per-journal context.
-
-### Honoring Open Journal Matcher (OJM)
-
-This project owes particular intellectual debt to **Mark E. Eaton's Open Journal Matcher** *(2020-2022)*, an open-source DOAJ journal recommender built at CUNY Kingsborough.
-
-In 2022, Eaton took OJM offline, writing:
-
-> *"My hope is that someone will pick up where I left off, and build something similar, or perhaps adapt the code for the OJM. There's a place for a tool like the OJM; and we shouldn't leave this space entirely to the big journal publishing companies."*
-> — Eaton (2022), [The last days of the Open Journal Matcher](https://kingsboroughlibtech.commons.gc.cuny.edu/2022/07/29/the-last-days-of-the-open-journal-matcher/)
-
-**Journal Atlas is one response to that invitation.**
-
-Eaton's 2022 paper [*On the ethics of working with library technology: the case of the Open Journal Matcher*](https://academicworks.cuny.edu/kb_pubs/261) introduced the concept of **"pervious technology"** — tools that users can reach into, tinker with, and adapt, in contrast to impervious black-box systems. Eaton argued that pervious tools, combined with diverse perspectives, are how ethical problems in technology become apparent.
-
-Journal Atlas extends this idea further: where OJM was pervious *at the code layer* (Flask + spaCy, open source on GitHub), Journal Atlas is pervious *at the data layer* — every journal entry is a plain-text Markdown file that any researcher can read, edit, and discuss. The knowledge itself is the product, not a service that can be turned off when one maintainer burns out.
-
-### What Journal Atlas Adds to the Lineage
-
-Across all previous systems, two patterns held:
-1. **All recommenders computed metric similarity from abstracts.** None captured reviewer culture, framing requirements, methodological preferences, or sensitive topic receptiveness.
-2. **All were query-time applications** — running services that needed someone to maintain them. None were durable, community-maintained per-journal knowledge bases.
-
-Journal Atlas addresses both gaps. The soft metadata captured here is information that algorithms cannot extract from publication metadata — it requires human community knowledge, and it requires durability beyond any single maintainer's commitment.
+Full license details: [LICENSE](LICENSE) | [LICENSE-CODE](LICENSE-CODE)
 
 ---
 
 ## Acknowledgments
+
+**Founding author**: Meng-Han Lee ([Zaious](https://zaious.dev/)), Independent HCI Researcher and AI Agent Architect. Originator of the [Agentic Social Affordance Framework (ASAF)](https://doi.org/10.5281/zenodo.19652278).
+
+**AI Agent Team**: ChronicleCore — a multi-agent system collaborating under Zaious's direction. Architect: Cardinal (樞機師 / Yui). Other agents will be credited as they contribute. See [AUTHORS.md](AUTHORS.md) for the full team and contributor roster.
 
 Built by researchers, for researchers. Maintained by the community.
 
