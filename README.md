@@ -133,6 +133,27 @@ The most valuable contributions are **Soft Metadata** — the stuff that isn't i
 - **Not a journal ranking.** We provide metadata; you decide what matters.
 - **Not a predatory journal blacklist.** Use [Cabells](https://www2.cabells.com/) for that.
 - **Not a replacement for Scimago/JCR.** We aggregate their quantitative metrics as a convenience. Our value is the soft metadata they don't have.
+- **Not a paper-discovery tool.** For finding papers across the web related to your research, use [Connected Papers](https://www.connectedpapers.com/), [Research Rabbit](https://www.researchrabbit.ai/), [Litmaps](https://www.litmaps.com/), or [Semantic Scholar](https://www.semanticscholar.org/). Journal Atlas does help you find papers **within a specific journal** via `scripts/related_papers.py` — useful for cover-letter prep (`"we engage with their recent X, Y, Z"`).
+
+## Adjacent Tools
+
+Journal Atlas plays well with these tools — each answers a different question:
+
+| Tool | Question it answers |
+|------|---------------------|
+| **Journal Atlas** (this) | "Which journal fits my paper, and what should I expect submitting there?" |
+| [B!SON](https://service.tib.eu/bison/) | "Given my abstract, which OA journals algorithmically match?" |
+| [Cabells](https://www2.cabells.com/) | "Is this journal predatory?" |
+| [Scimago](https://www.scimagojr.com/) / [JCR](https://jcr.clarivate.com/) | "What's the bibliometric ranking of this journal?" |
+| [Connected Papers](https://www.connectedpapers.com/) | "What papers cluster around my key paper?" |
+| [Research Rabbit](https://www.researchrabbit.ai/) | "Show me my paper's intellectual neighborhood." |
+| [Semantic Scholar](https://www.semanticscholar.org/) | "Find papers across the literature on this topic." |
+
+A typical workflow combines several:
+1. Discover candidate venues with B!SON
+2. Read Journal Atlas entries for those candidates to understand soft metadata
+3. Cross-check predatory status with Cabells
+4. Use `related_papers.py` to find what to cite within the chosen venue
 
 ---
 

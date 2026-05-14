@@ -8,6 +8,8 @@ Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed un
 |--------|---------|--------|
 | `query_journals.py` | **Structured boolean queries** over the knowledge base (publisher, OA model, h-index, quartile, AI policy, embargo, methodology). Outputs table/csv/json/markdown. | ✅ Implemented |
 | `fit_score.py` | **Paper-vs-journal fit scoring** with weighted soft-fit dimensions and hard-constraint elimination. Use for full recommendation workflow. | ⚠️ v0.1 — needs validation against backtest data once seed grows |
+| `similar_journals.py` | **Find journals most similar to a target** across topics, methodology, publisher, OA model, h-index, word limit, AI policy, embargo. Useful for "what's like PCS?" lateral discovery. | ✅ Implemented |
+| `related_papers.py` | **Find papers within a target journal** most relevant to user keywords. Useful for cover-letter prep ("we engage with their recent X, Y, Z"). | ✅ Implemented |
 | `import_openalex.py` | Auto-populate a new journal entry from OpenAlex (Identity / Metrics / Subject Density / OA). Uses pyalex (MIT). | ✅ Implemented |
 | `validate_structure.py` | Check journal `.md` files match TEMPLATE schema. Runs in CI on every PR via `.github/workflows/validate.yml`. | ✅ Implemented |
 | `bundle_for_upload.py` | Merge journal files into bundles for ChatGPT GPTs (20-file limit) or Claude Desktop projects. | ✅ Implemented |
@@ -122,6 +124,40 @@ python scripts/query_journals.py --field psychology --format markdown
 
 # JSON for tooling
 python scripts/query_journals.py --field psychology --format json
+```
+
+### Finding journals similar to a target
+
+```bash
+# What journals are most like PCS?
+python scripts/similar_journals.py --target phenomenology-and-the-cognitive-sciences
+
+# Limit search to one field, show top 10
+python scripts/similar_journals.py --target qualitative-inquiry --field qualitative-methods --top-n 10
+
+# JSON for tooling
+python scripts/similar_journals.py --target theory-and-psychology --format json
+```
+
+### Finding related papers within a target journal
+
+```bash
+# What has PCS published on embodied cognition recently?
+python scripts/related_papers.py \
+    --journal phenomenology-and-the-cognitive-sciences \
+    --keywords "embodied cognition,self-state,4E"
+
+# Limit to last 3 years, top 5
+python scripts/related_papers.py \
+    --journal review-of-general-psychology \
+    --keywords "autoethnography,integrative theory" \
+    --years 3 --top-n 5
+
+# Markdown for embedding in a cover-letter draft
+python scripts/related_papers.py \
+    --journal qualitative-inquiry \
+    --keywords "autoethnography,sensitive topics" \
+    --format markdown
 ```
 
 ### Scanning a journal's recent topic distribution

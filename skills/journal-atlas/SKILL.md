@@ -171,6 +171,45 @@ If the user is unclear ("show me good psychology journals"), ask whether they wa
 - **Query Mode** answers: *"Which journals satisfy criteria X, Y, Z?"*
 - **Recommendation workflow** answers: *"Given my paper, which journals should I target?"*
 
+## Lateral Discovery: Similar Journals & Related Papers
+
+Two narrower-scope auxiliary workflows that don't require the full 6-step recommendation flow.
+
+### "What journals are similar to X?"
+
+When the user asks "what's like Theory & Psychology?" or "PCS rejected me, what's most like PCS?" — run `scripts/similar_journals.py`:
+
+```bash
+python scripts/similar_journals.py --target <journal-slug> --top-n 5
+```
+
+The script computes weighted similarity across topic overlap (Jaccard), methodology cosine, publisher match, OA model match, h-index proximity, word-limit proximity, AI policy alignment, and embargo match. It often surfaces lateral candidates that the human-curated Rejection Fallback Chain doesn't list — useful for broader exploration.
+
+Distinction from Rejection Fallback Chain:
+- **Fallback Chain**: human-curated, 2-3 ranked options, encodes reasons
+- **similar_journals.py**: algorithmically computed, all entries scored, complements the fallback list
+
+Use both when answering "PCS rejected me, what's next?": present the curated fallback first (it's intentional), then offer "for broader exploration, the algorithm also surfaces X, Y" as lateral candidates.
+
+### "What has this journal published on my topic recently?"
+
+When the user is preparing a submission to a known target journal and needs to:
+- Find papers to cite in their cover letter ("we engage with their recent X, Y, Z")
+- Verify the journal is still active on their topic (vs. just a historical reputation)
+- Identify the editorial board's recent intellectual direction
+
+Run `scripts/related_papers.py`:
+
+```bash
+python scripts/related_papers.py --journal <slug> --keywords "kw1,kw2,kw3" --years 5
+```
+
+The script queries OpenAlex Works API filtered by source, scores each paper by keyword match (with title-position bonus) + recency + citation count, and returns ranked results with DOIs.
+
+Two especially valuable uses:
+- **Cover letter drafting**: `--format markdown` produces a ready-to-paste citation block
+- **Reputation sanity check**: if the user assumes a journal still publishes on topic X but the script returns 0 matches in 5 years, that's a red flag the journal has shifted
+
 ## Rejection Handling
 
 There are two entry points where the user wants rejection-related help. Detect which one and respond accordingly.
