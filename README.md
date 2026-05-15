@@ -114,16 +114,21 @@ Browse [`skills/journal-atlas/references/journals/`](skills/journal-atlas/refere
 
 ## Automation (skills/journal-atlas/scripts/)
 
+**9 scripts**, covering recommendation, discovery, contribution infrastructure, and maintenance:
+
 | Script | Purpose | Status |
 |--------|---------|--------|
-| `import_openalex.py` | Auto-populate a new journal entry from OpenAlex API (Identity / Metrics / Subject Density / OA fields). Uses pyalex (MIT). | ✅ Available |
-| `validate_structure.py` | Check that journal `.md` files match the template schema. Runs on every PR. | ✅ Available |
-| `fit_score.py` | Compute a numerical fit score given your paper's attributes vs. each journal. | ⚠️ v0.1 — needs backtest validation |
-| `bundle_for_upload.py` | Merge journal files into larger chunks for platforms with file count limits (e.g. ChatGPT). | ✅ Available |
-| `update_metrics.py` | Fetch latest IF / h-index / CiteScore from OpenAlex API. Proposes a PR draft — never auto-writes. | ✅ Available |
-| `topic_trend_scan.py` | Scan a journal's recent publications to detect topic trend shifts. | ✅ Available |
+| `query_journals.py` | Structured boolean filter (Q1, publisher, h-index, AI policy, OA, embargo...) | ✅ |
+| `fit_score.py` | Paper-vs-journal weighted soft-fit scoring + hard constraint elimination | ⚠️ v0.1 |
+| `similar_journals.py` | Find journals most similar to a target (8-dim weighted similarity) | ✅ |
+| `related_papers.py` | Find papers within a journal matching keywords (cover-letter prep) | ✅ |
+| `import_openalex.py` | Auto-populate a new entry from OpenAlex API | ✅ |
+| `validate_structure.py` | Check `.md` files match TEMPLATE schema (CI on every PR) | ✅ |
+| `bundle_for_upload.py` | Merge journal files for ChatGPT GPTs / Claude Desktop upload | ✅ |
+| `update_metrics.py` | Refresh OpenAlex metrics; proposes diffs, never auto-writes | ✅ |
+| `topic_trend_scan.py` | Scan recent publication topics; check keyword presence | ✅ |
 
-Run scripts from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
+Run from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
 See [skills/journal-atlas/scripts/README.md](skills/journal-atlas/scripts/README.md) for setup and usage examples.
 
 ---
@@ -132,7 +137,17 @@ See [skills/journal-atlas/scripts/README.md](skills/journal-atlas/scripts/README
 
 We need your journal expertise. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-**Quick version:**
+**Easiest way to contribute** — just talk about your experience:
+
+```
+/ja-validate Theory & Psychology
+```
+
+The `/ja-validate` command reads our existing entry, quotes claims back to you one at a time, and you confirm or correct from your experience. It generates a PR-ready patch. No Markdown editing needed.
+
+To add a journal we don't have yet: `/ja-contribute`.
+
+**Traditional PR workflow:**
 1. Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md)
 2. Fill in what you know (partial entries welcome — others can fill gaps)
 3. Open a PR
