@@ -55,7 +55,20 @@ In a Claude Code session (main session, not a worktree sub-session, which doesn'
 
 Then restart Claude Code. The skill is auto-discovered when relevant.
 
-Ask naturally:
+**Slash commands** (all prefixed `ja-` to avoid conflicts):
+
+| Command | What it does |
+|---------|-------------|
+| `/ja-recommend` | Full journal recommendation workflow |
+| `/ja-compare` | Head-to-head comparison of specific journals |
+| `/ja-fallback` | Rejection recovery — walk the fallback chain |
+| `/ja-query` | Structured filter query (Q1, Sage, h-index ≥ 100, etc.) |
+| `/ja-similar` | Find journals most similar to a target |
+| `/ja-related` | Find recent papers in a target journal matching your keywords |
+| `/ja-contribute` | Contribute a new journal entry from your experience |
+| `/ja-validate` | Validate/improve an existing entry using your experience |
+
+Or just ask naturally:
 
 > "I have a 12,000-word theoretical paper on embodied cognition.
 > No IRB, no APC budget, I used AI for writing assistance, no immediate

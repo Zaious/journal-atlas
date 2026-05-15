@@ -1,6 +1,6 @@
 {
   "name": "journal-atlas",
-  "description": "Academic journal fit assessment and submission strategy. Community-maintained AI-native knowledge base of per-journal soft metadata (reviewer culture, framing requirements, sensitive topic tolerance, rejection fallback chains) that bibliometric tools like Impact Factor and SCImago do not cover.",
+  "description": "Academic journal fit assessment, submission strategy, and community knowledge contribution. Two skills: journal-atlas (recommend/compare/query/fallback/discover) and journal-atlas-contribute (interview-driven data contribution and entry validation). Eight slash commands prefixed /ja-*.",
   "author": {
     "name": "Meng-Han Lee (Zaious)",
     "email": "zaious.design@gmail.com",
@@ -15,6 +15,7 @@
     "open-science",
     "skill",
     "knowledge-base",
-    "human-agent-collaboration"
+    "human-agent-collaboration",
+    "community-contribution"
   ]
 }
