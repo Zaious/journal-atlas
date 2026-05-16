@@ -99,6 +99,18 @@ These are external knowledge bases whose factual content we have referenced when
 
 **Attribution convention in our entries**: Changelog rows reference adapted content as `data adapted from ScienceClaw venue-templates (MIT)` with the specific date and contributor.
 
+**Entries currently incorporating ScienceClaw data** (Format fields — Word limit / Abstract limit / Article types):
+
+| Field directory | Journals |
+|-----------------|----------|
+| `multidisciplinary/` (new) | Nature, Nature Communications, Nature Human Behaviour, Science, Science Advances, PNAS, PLOS ONE |
+| `biology/` (new) | Cell, Neuron, Immunity, Molecular Cell, Developmental Cell, PLOS Biology, PLOS Computational Biology, Nature Methods, Nature Biotechnology |
+| `medical/` (new) | NEJM, The Lancet, JAMA, BMJ, Annals of Internal Medicine |
+| `physics/` (new) | Physical Review Letters |
+| `hci/` (existing) | Nature Machine Intelligence, IEEE Access (added via ScienceClaw scope expansion) |
+
+Each affected entry's Changelog references the specific ScienceClaw source file. None of these entries' Soft Metadata, Strategic Notes, or Rejection Fallback Chain has been populated yet — they carry the Skeleton banner pending contributor input.
+
 **Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 
 ---

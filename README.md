@@ -11,10 +11,10 @@
 > seeding the initial journal entries. Expect limited coverage until first
 > contributors land. Contributions, feedback, and journal nominations all welcome.
 >
-> 22 seed entries across psychology, HCI, and qualitative methods are split into
-> Tier 1 (14 evidence-backed) and Tier 2 (11 community-estimate) — see
-> [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md) for the methodology and how to
-> help upgrade Tier 2 entries to Tier 1.
+> 114 seed entries across 8 field directories. Quality breakdown: 11 Tier 1
+> (evidence-backed), 11 Tier 2 (community estimate), and 92 Skeleton (structural
+> scaffold awaiting Soft Metadata). See [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)
+> for the Skeleton → Tier 2 → Tier 1 lifecycle and how to help upgrade entries.
 
 Journal Atlas fills a gap that Impact Factor and Scimago don't cover: **soft metadata** — the unwritten rules about reviewer culture, framing expectations, sensitive topic tolerance, AI policy nuances, and methodological preferences that researchers currently learn only through experience or word of mouth.
 
@@ -38,7 +38,18 @@ Each journal entry is a structured Markdown file covering 7 dimensions:
 
 **Any academic discipline is welcome.** The template and workflow are field-agnostic.
 
-Initial seed coverage includes psychology (including cross-disciplinary phenomenology / cognitive-science venues), HCI, and qualitative methodology — but we actively welcome contributions from all fields. If your discipline isn't represented yet, you can be the one to start it.
+Current field directories:
+
+- `psychology/` (53) — clinical, cognitive, theoretical, social, cross-disciplinary phenomenology
+- `hci/` (23) — human-computer interaction
+- `cognitive-science/` (12)
+- `multidisciplinary/` (7) — Nature / Science / PNAS / PLOS ONE family
+- `biology/` (9) — Cell Press, PLOS Biology, Nature Methods family
+- `medical/` (5) — NEJM, Lancet, JAMA, BMJ, Annals
+- `qualitative-methods/` (4)
+- `physics/` (1) — Physical Review Letters
+
+If your discipline isn't represented yet, you can be the one to start it.
 
 ---
 

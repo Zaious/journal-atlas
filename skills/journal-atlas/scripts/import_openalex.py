@@ -448,7 +448,8 @@ def main() -> int:
     parser.add_argument(
         "--field",
         required=True,
-        choices=["psychology", "hci", "qualitative-methods", "cognitive-science"],
+        choices=["psychology", "hci", "qualitative-methods", "cognitive-science",
+                 "multidisciplinary", "medical", "biology", "physics"],
         help="Field directory under references/journals/",
     )
     parser.add_argument(

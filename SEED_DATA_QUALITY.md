@@ -46,16 +46,30 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
-| **Skeleton** | 68 | `> [!NOTE]` | Mostly new entries from the Q1 expansion run — Identity / Metrics / Subject Density / OA filled by OpenAlex, Soft Metadata sections are placeholders awaiting contributor input |
+| **Skeleton** | 92 | `> [!NOTE]` | New entries from the Q1 expansion (68) and the ScienceClaw absorption (24). Identity / Metrics / Subject Density / OA filled by OpenAlex; the 24 ScienceClaw-derived entries additionally have Format fields (Word limit / Abstract / Article types) populated from ScienceClaw venue-templates (MIT). Soft Metadata still awaiting contributor input. |
 | **Tier 2** | 11 | `> [!WARNING]` | The 11 original HCI entries — Soft Metadata written from field knowledge but without journal-specific evidence harvesting |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **Total** | **90** | | |
+| **Total** | **114** | | |
+
+### Field-directory breakdown (post-ScienceClaw absorption)
+
+| Field | Count | Notes |
+|-------|-------|-------|
+| `psychology/` | 53 | Includes cross-disciplinary phenomenology / cognitive-science venues |
+| `hci/` | 23 | Added Nature Machine Intelligence + IEEE Access from ScienceClaw |
+| `qualitative-methods/` | 4 | |
+| `cognitive-science/` | 12 | |
+| `multidisciplinary/` (new) | 7 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE |
+| `biology/` (new) | 9 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech |
+| `medical/` (new) | 5 | NEJM / Lancet / JAMA / BMJ / Annals of Internal Medicine |
+| `physics/` (new) | 1 | Physical Review Letters |
+| **Total** | **114** | |
 
 ## Confidence tiers
 
 Each journal entry under `skills/journal-atlas/references/journals/` was authored through a structured process. The depth of evidentiary backing varies by source:
 
-### Skeleton — Auto-generated scaffold (68 entries)
+### Skeleton — Auto-generated scaffold (92 entries)
 
 **Backing**: Identity / Metrics / Subject Density / Open Access fields populated automatically via `scripts/import_openalex.py` from the OpenAlex API. Soft Metadata sections (Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, Sensitive Topics, Practical Concerns) and Strategic Notes are placeholder text awaiting contributor input.
 
