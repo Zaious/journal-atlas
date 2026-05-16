@@ -2,15 +2,73 @@
 
 > 🌐 **Languages**: English | *(Traditional Chinese version welcome via PR)*
 
-This document explains how the initial 22 seed journal entries were authored, the differences in evidentiary backing between them, and how the community can help upgrade lower-confidence entries.
+This document explains how the seed journal entries were authored, the differences in evidentiary backing between them, and how the community can help upgrade lower-confidence entries.
 
 We believe a community-maintained knowledge base only earns trust if it is honest about what it doesn't yet know. This page is that honesty.
+
+## Two orthogonal dimensions
+
+To avoid confusion, we track entry quality across **two independent axes**:
+
+1. **Evidence Quality** (`Tier 1` vs `Tier 2`) — how trustworthy are the Soft Metadata claims that have been written?
+2. **Completeness** (`Skeleton` vs filled) — has Soft Metadata been written at all, or is the entry still a structural scaffold?
+
+A Skeleton entry has **no Tier assignment yet** because there's nothing to evaluate. Tier 1 / Tier 2 only apply once Soft Metadata has been authored.
+
+## Lifecycle
+
+```
+            ┌─────────────┐
+            │  Skeleton   │  Auto-generated from OpenAlex.
+            │  (no Tier)  │  Soft Metadata = placeholders.
+            └──────┬──────┘  Banner: > [!NOTE]
+                   │
+       /ja-validate │ /ja-contribute / direct PR
+                   │
+                   ▼
+            ┌─────────────┐
+            │   Tier 2    │  Soft Metadata written from community
+            │ (community  │  knowledge; no per-claim evidence cited.
+            │  estimate)  │  Banner: > [!WARNING]
+            └──────┬──────┘
+                   │
+       evidence    │ accumulates (article counts, source URLs,
+                   │ first-hand submission/review experience)
+                   ▼
+            ┌─────────────┐
+            │   Tier 1    │  Soft Metadata claims have specific
+            │ (evidence-  │  cited evidence (article counts,
+            │  backed)    │  source URLs, publication patterns).
+            └─────────────┘  No banner (default state).
+```
+
+## Current distribution (2026-05)
+
+| State | Count | Banner | Where |
+|-------|-------|--------|-------|
+| **Skeleton** | 68 | `> [!NOTE]` | Mostly new entries from the Q1 expansion run — Identity / Metrics / Subject Density / OA filled by OpenAlex, Soft Metadata sections are placeholders awaiting contributor input |
+| **Tier 2** | 11 | `> [!WARNING]` | The 11 original HCI entries — Soft Metadata written from field knowledge but without journal-specific evidence harvesting |
+| **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
+| **Total** | **90** | | |
 
 ## Confidence tiers
 
 Each journal entry under `skills/journal-atlas/references/journals/` was authored through a structured process. The depth of evidentiary backing varies by source:
 
-### Tier 1 — Evidence-backed (14 entries)
+### Skeleton — Auto-generated scaffold (68 entries)
+
+**Backing**: Identity / Metrics / Subject Density / Open Access fields populated automatically via `scripts/import_openalex.py` from the OpenAlex API. Soft Metadata sections (Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, Sensitive Topics, Practical Concerns) and Strategic Notes are placeholder text awaiting contributor input.
+
+**What Skeleton means in practice**:
+- Structural data is reliable (Identity, h-index, OA model, etc.)
+- Soft Metadata sections display `*(community estimate)*` or `*(fill manually)*` placeholders — these are **not** estimates, they are markers that no human has written anything yet
+- The recommendation workflow's `Step 4.5: Pre-Conclusion Self-Check` requires AI agents to flag Skeleton entries to the user
+- These entries should not be ranked or recommended as if their Soft Metadata existed
+- Estimated subjective-judgment uncertainty: **N/A — no judgment yet recorded**
+
+**How to upgrade a Skeleton entry to Tier 2**: write at least 5 of the 7 Soft Metadata subsections with community-knowledge-level information (no per-claim evidence required yet). This can be done conversationally via `/ja-validate <journal>` or `/ja-contribute`.
+
+### Tier 1 — Evidence-backed (11 entries)
 
 **Backing**: Deep evidence harvesting via author submission research + targeted OpenAlex topic queries + reading of recent publications + publisher policy primary sources.
 
@@ -20,7 +78,6 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 |-------|----------|
 | psychology (8) | Collabra: Psychology, Culture & Psychology, Frontiers in Psychology, New Ideas in Psychology, Phenomenology and the Cognitive Sciences, Review of General Psychology, Self and Identity, Theory & Psychology |
 | qualitative-methods (3) | Cultural Studies ↔ Critical Methodologies, Qualitative Inquiry, Qualitative Research in Psychology |
-| *implicit*: 3 of the 11 HCI entries received partial Tier 1 evidence from HCI Venue Map work, but all 11 are tagged Tier 2 below pending broader validation. |
 
 **What Tier 1 means in practice**:
 - Soft Metadata claims often include specific article counts ("48 articles on self-state ecosystem 2020–2025") with source attribution

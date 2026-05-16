@@ -79,10 +79,27 @@ This idea also independently echoes Terence Tao's submission ladder advice (cite
 
 Tools that share part of our problem space but operate differently. We may eventually propose integration with some of these, but currently they are independent:
 
+- [**ScienceClaw**](https://github.com/beita6969/ScienceClaw) (MIT, Peter Steinberger 2025) — A self-evolving AI research colleague built on the OpenClaw engine. 285+ skills covering 28 academic disciplines, runtime skill evolution, persistent research memory, zero-hallucination protocol. **Different product class**: ScienceClaw is an autonomous research agent (handles literature search, database queries, statistical analysis, paper writing); Journal Atlas is a per-journal soft-metadata knowledge base. Their `venue-templates` skill (formatting requirements + reviewer expectations + writing styles for 50+ venues, ~5,600 lines of structured Markdown) is a particularly useful **data source** for upgrading our entries. See "Data Sources" section below for how we use it.
 - [**Journal-Recommendation-Agent**](https://github.com/jinjinbenjin/Journal-Recommendation-Agent) — query-time AI recommender (Streamlit + Ollama). Different from us: per-query app vs per-journal knowledge base.
 - [**findpapers**](https://github.com/jonatasgrosman/findpapers) — multi-source academic paper finder. Adjacent: useful for contributors finding example papers from a journal.
 - [**Wispar**](https://github.com/Scriptbash/Wispar) — academic journal update tracker. Adjacent: could inform our "Last verified" maintenance workflow.
 - [**metaknowledge**](https://github.com/UWNETLAB/metaknowledge) — Python bibliometric analysis. Adjacent: useful if Journal Atlas adds inter-journal relationship dimensions later.
+
+---
+
+## Data Sources (used as evidence base, adapted into our schema)
+
+These are external knowledge bases whose factual content we have referenced when populating or validating journal entries. Per MIT license terms, content is adapted into our TEMPLATE v1.2 schema (not copy-pasted), and source attribution is recorded in each affected entry's Changelog.
+
+- [**ScienceClaw `venue-templates`**](https://github.com/beita6969/ScienceClaw/tree/main/skills/venue-templates) — MIT-licensed structured Markdown covering Nature / Science / Cell Press / PLOS / IEEE / ACM / Frontiers and ~50 other major venues. Files used:
+  - `references/journals_formatting.md` (486 lines) — word counts, abstract limits, citation styles, structural requirements → adapted into our `## Format` section
+  - `references/reviewer_expectations.md` (417 lines) — what reviewers prioritize per venue family, common desk-reject patterns → adapted into `Soft Metadata > Reviewer Pool Characteristics` + `Strategic Notes > Hard Blockers`
+  - `references/venue_writing_styles.md` (321 lines) — style spectrum across venue types → adapted into `Soft Metadata > Voice & Style` + `Framing Requirements`
+  - `references/nature_science_style.md`, `cell_press_style.md`, `medical_journal_styles.md`, `cs_conference_style.md`, `ml_conference_style.md` — venue-family deep dives, used selectively when an entry covers one of these venues
+
+**Attribution convention in our entries**: Changelog rows reference adapted content as `data adapted from ScienceClaw venue-templates (MIT)` with the specific date and contributor.
+
+**Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 
 ---
 

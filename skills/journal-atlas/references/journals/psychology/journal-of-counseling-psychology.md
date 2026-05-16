@@ -146,6 +146,17 @@
 
 ## Soft Metadata
 
+> [!NOTE]
+> **Skeleton entry** — Auto-generated structural scaffold from OpenAlex
+> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
+> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
+> Methodological Preferences / Practical Concerns) are placeholders
+> awaiting contributor input. **Do not treat placeholders as recommendations.**
+> Use `/ja-validate` to upgrade this entry from your experience, or
+> `/ja-contribute` if you have new evidence. See
+> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
+> Skeleton → Tier 2 → Tier 1 lifecycle.
+
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings

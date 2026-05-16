@@ -110,6 +110,20 @@ For remaining candidates, assess fit across these dimensions. Each maps to a spe
 
 *(For automated scoring, `scripts/fit-score.py` is planned. When available, it computes a numerical fit score across all candidate journals using the dimensions above with default weights. Until then, reason about these dimensions narratively and give your weighting visible to the user.)*
 
+### Step 4.5: Pre-Conclusion Self-Check (mandatory)
+
+Before producing the final recommendation in Step 5, verify ALL of the following. If any item is unchecked, **go back to the relevant step** rather than presenting a half-baked recommendation.
+
+- [ ] **Read the actual journal file** for every journal you plan to recommend (not just metadata you remember)
+- [ ] **Every evidence citation** has a specific source in the journal file (e.g. "48 articles 2020-2025" from Subject Density, not vague claims)
+- [ ] **Hard constraints applied correctly** — especially the 4-case APC logic for hybrid OA (subscription vs OA path)
+- [ ] **Tier status checked** — for Skeleton or Tier 2 (community-estimate) entries, you flagged the uncertainty to the user
+- [ ] **Fallback chain considered** — at least the top recommendation's Rejection Fallback Chain section was read
+- [ ] **At least one eliminated journal listed** with reason (transparency over what was considered)
+- [ ] **No fabrication** — if Soft Metadata is `*(pending)*` or `*(fill manually)*`, you did NOT fill in a guess from training data
+
+This checklist prevents the most common failure modes: surface-level matching, fabricated evidence, ignored fallback chains, and missing tier-status warnings.
+
 ### Step 5: Present Recommendations
 
 Output a ranked list with rejection-fallback chains:
@@ -264,11 +278,26 @@ When asked to compare two specific journals, produce a head-to-head table:
 ## Rules
 
 1. **Never recommend a journal you haven't read the file for.** If a journal
-   isn't in the knowledge base, say so.
+   isn't in the knowledge base, say so. **Zero-hallucination self-check**
+   before every response containing journal claims:
+   - Does every journal name come from a file I actually read this session?
+     If no, remove it.
+   - Does every evidence claim (article counts, h-index, embargo months,
+     APC amounts) come from a specific row of a journal file? If no,
+     remove it or mark explicitly "not verified".
+   - Does every "Reviewer Pool / Framing Requirement / Sensitive Topic
+     Receptiveness" claim cite the journal file, not training-data memory?
+     If no, replace with "the entry doesn't specify" rather than guessing.
+   - Did I treat `*(pending)*` and `*(fill manually)*` placeholders as
+     genuinely unknown (not opportunities to fill in plausible values)?
 2. **Cite specific evidence** from the journal file
-   (e.g. "12 embodied cognition articles published 2020-2025").
+   (e.g. "12 embodied cognition articles published 2020-2025"). Never use
+   round numbers or vague descriptors as substitutes for specific
+   citations.
 3. **Flag uncertainty.** If a field says "community estimate" or data is older
-   than 12 months, warn the user.
+   than 12 months, warn the user. For Skeleton entries (Soft Metadata not
+   yet filled), explicitly say so rather than recommending based on
+   structural metadata alone.
 4. **Don't rank by Impact Factor alone.** Soft metadata (reviewer culture,
    framing requirements, sensitive topic tolerance) often matters more than IF
    for non-mainstream research.
