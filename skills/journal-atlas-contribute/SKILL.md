@@ -139,6 +139,33 @@ When **no entry exists** for the journal the user mentions.
    identifiable details about editors or reviewers, ask: "Do you want
    this included as-is, anonymized ('a reviewer in 2024'), or omitted?"
 
+## Output Persistence (mandatory)
+
+A contribution session is **not complete until the generated patch has been written to a file**. Displaying the patch in chat is not enough — it gets lost when the user closes the session and they have to rewrite from memory.
+
+### Required output workflow
+
+When the patch is ready (either Mode A full entry or Mode B diff):
+
+1. Determine the output path:
+   - **Mode A** (new entry): `dist/contributed_<slug>.md` containing the full TEMPLATE-conformant entry
+   - **Mode B** (update existing): `dist/patch_<slug>_<YYYY-MM-DD>.md` containing a diff-style block showing only the changed lines plus the new Changelog row
+
+2. **Write the file using the Write tool** before concluding the session. Create the `dist/` directory if it doesn't exist.
+
+3. After writing, tell the user:
+   - The exact file path
+   - A copy-paste instruction: "Open this file, copy the content, and paste into a new PR on https://github.com/Zaious/journal-atlas — fork the repo, edit `skills/journal-atlas/references/journals/<field>/<slug>.md`, replace/add the section, and open the PR."
+   - Offer to walk them through the GitHub PR mechanics if they're not familiar
+
+4. Do NOT mark the session done until step 2 is verified complete.
+
+### Why this matters
+
+Without persisted output, a 30-minute interview becomes throwaway work the moment the chat closes. The `dist/` file is the contributor's portable artifact — they can revisit it, share it with collaborators, or actually open the PR a week later.
+
+`dist/` is `.gitignore`-friendly (we don't commit contributed drafts to the journal-atlas repo; only the PR-submitted final version reaches `references/journals/`).
+
 ## What This Skill Does NOT Do
 
 - Does not recommend journals (that's `/ja-recommend`)

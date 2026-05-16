@@ -110,6 +110,27 @@ For remaining candidates, assess fit across these dimensions. Each maps to a spe
 
 *(For automated scoring, `scripts/fit-score.py` is planned. When available, it computes a numerical fit score across all candidate journals using the dimensions above with default weights. Until then, reason about these dimensions narratively and give your weighting visible to the user.)*
 
+#### Cross-dimension verification rule (mandatory for multi-criteria queries)
+
+When the user's query combines **three or more dimensions** (e.g. "find Q1 + autoethnography-accepting + zero-embargo journals", or "compare on topic + methodology + reviewer culture + word limit"), the response **must explicitly quote specific data from each contributing TEMPLATE section** before concluding.
+
+Single-dimension claims like "this journal accepts autoethnography" are insufficient when the query depends on three dimensions agreeing. Without per-dimension evidence quotes:
+
+- The user can't tell which dimension you actually checked
+- A misranking traces back ambiguously
+- Soft Metadata claims may be smuggled in without their evidence rows
+
+For multi-criteria queries, structure the per-journal justification as:
+
+```
+- Topic density: [quote from Subject Density > Top Topics, with article count]
+- Methodology fit: [quote from Soft Metadata > Methodological Preferences, with 0-5 score]
+- [Constraint dimension]: [quote from relevant Policies / Format / Metrics row]
+- Combined verdict: [synthesis]
+```
+
+This is the same anti-conflation discipline as Rule #2, scaled up: a 3-dimension query needs 3 evidence quotes, not 1 synthesis with implicit handwaving.
+
 ### Step 4.5: Pre-Conclusion Self-Check (mandatory)
 
 Before producing the final recommendation in Step 5, verify ALL of the following. If any item is unchecked, **go back to the relevant step** rather than presenting a half-baked recommendation.
