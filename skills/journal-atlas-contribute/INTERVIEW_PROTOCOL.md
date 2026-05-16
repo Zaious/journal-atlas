@@ -78,6 +78,22 @@ For each method the user mentions, try to pin a 0-5 receptiveness score:
 
 ---
 
+## Reference: venue-family reviewer patterns
+
+For high-coverage venue families, the following adapted patterns may help calibrate questions before talking with the contributor. These are family-level defaults; per-journal experience overrides them.
+
+| Venue family | Reviewer expectation pattern | Common desk-reject signal |
+|--------------|----------------------------|--------------------------|
+| **High-impact multidisciplinary** (Nature, Science, Cell, PNAS) | Broad significance over technical depth; ≥1 non-specialist reviewer; cross-disciplinary accessibility | Findings too specialized; incremental advance; inaccessible writing |
+| **Cell Press family** | Mechanism focus; multiple complementary approaches; in vivo validation; figure-by-figure scrutiny | Single-method mechanism claims; descriptive without mechanism |
+| **Medical** (NEJM/Lancet/JAMA/BMJ/Annals) | Clinical relevance / practice change; CONSORT/STROBE; dedicated statistical reviewer; effect-size + CI reporting | Underpowered; selective outcomes; claims exceed evidence |
+| **ML conferences** (NeurIPS/ICML/ICLR) | Technical novelty; reproducibility; ablations mandatory; benchmark comparisons | Missing ablations; unclear novelty; no released code |
+| **HCI conferences** (CHI/CSCW) | User impact; design implications; qualitative methods accepted; participant reporting standards | Generic "we built a tool" without user study; small-N quant claims |
+
+*Reference adapted from ScienceClaw venue-templates `reviewer_expectations.md` (MIT). Use these only as priors — always verify against the contributor's first-hand experience.*
+
+---
+
 ## 5. Reviewer Pool Characteristics
 
 > "What was your impression of the reviewers? What tradition did they seem

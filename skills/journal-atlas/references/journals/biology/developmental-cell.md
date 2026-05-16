@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — The Soft Metadata below has been adapted from family-level reference material rather than journal-specific evidence harvesting. Structural data (Identity / Metrics / Format) is evidence-backed; subjective assessments (Reviewer Pool / Framing / Hard Blockers / Voice & Style) are community-estimate framings derived from venue-family conventions. Use `/ja-validate` if you've submitted to this specific journal to upgrade individual claims with first-hand evidence. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton -> Tier 2 -> Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -172,9 +164,9 @@
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes
+- **If yes, what kind?** Mechanistic framing — paper must answer 'how does this work?' at a mechanism level
+- **Consequences of ignoring it**: Reviewers will request additional experiments to establish mechanism if framing is descriptive-only. Multiple rounds of major revision are normal.
 
 ### Methodological Preferences
 
@@ -191,19 +183,19 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
+| **First-person voice acceptance (0-5)** | 2 — third-person scientific register dominant |
 | **Expected density** | |
-| **Writing style notes** | |
+| **Writing style notes** | Mechanism-focused, precise. Highly structured Results section with figure-by-figure narrative. Summary (not Abstract), Graphical Abstract required, Highlights bullets, eTOC blurb, In Brief paragraph |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Mechanism-focused biological reviewers. Expect figure-by-figure scrutiny, demand for multiple complementary approaches (e.g. RNAi + CRISPR + rescue), in vivo validation, and quantification rather than representative images. 3+ reviewers typical, with multiple revision cycles common.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
+| **Dominant tradition** | Mechanism-driven cell / molecular biology with emphasis on convergent evidence | |
+| **Reviewer competence variance** | Low-medium — reviewers tend to share methodological standards (extensive validation, quantification expected) | |
+| **Quantitative mindset bias on qualitative work?** | Strong — qualitative observations are insufficient; quantification, statistics, and replication are expected. Image-based claims must be backed by quantified biological replicates | |
 | **Discourse community signals (editorial board)** | | |
 
 ### Sensitive Topics
@@ -228,19 +220,22 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Single-method evidence for a mechanism claim (RNAi-only without CRISPR/rescue)
+- Descriptive observations without mechanistic insight
+- Missing in vivo validation for cell biology claims
+- Representative images without quantification across biological replicates
 
 ### Soft Tax
 
-*(fill manually)*
+Very high — Cell Press revisions routinely request major new experiments. Budget months, not weeks. Plan for multiple complementary approaches before initial submission
 
 ### Best Suited For
 
-*(fill manually)*
+Mechanism-rich biology papers with multiple complementary approaches already in hand; developmental, immunological, molecular, or neural mechanism studies with in vivo validation
 
 ### Not Recommended For
 
-*(fill manually)*
+Descriptive studies; bioinformatics-only work without wet-lab validation; single-method mechanism claims; clinical correlation studies without mechanism
 
 ### Rejection Fallback Chain
 
@@ -258,3 +253,4 @@
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Cell Press family (MIT) | @cardinal |
+| 2026-05-16 | Soft Metadata adapted at family level (Reviewer Pool / Framing / Voice / Hard Blockers / Best & Not Recommended For) — data adapted from ScienceClaw venue-templates reviewer_expectations.md + cell_press_style.md (MIT) | @cardinal |

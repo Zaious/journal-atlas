@@ -46,8 +46,8 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
-| **Skeleton** | 92 | `> [!NOTE]` | New entries from the Q1 expansion (68) and the ScienceClaw absorption (24). Identity / Metrics / Subject Density / OA filled by OpenAlex; the 24 ScienceClaw-derived entries additionally have Format fields (Word limit / Abstract / Article types) populated from ScienceClaw venue-templates (MIT). Soft Metadata still awaiting contributor input. |
-| **Tier 2** | 11 | `> [!WARNING]` | The 11 original HCI entries — Soft Metadata written from field knowledge but without journal-specific evidence harvesting |
+| **Skeleton** | 75 | `> [!NOTE]` | Auto-generated structural scaffolds; Soft Metadata still placeholder. Includes 68 Q1-expansion entries + 7 ScienceClaw entries whose family had no adapted Soft Metadata content (PLOS Biology/Comp Bio, Nature Methods/Biotech, PRL, Nature Machine Intelligence, IEEE Access) |
+| **Tier 2** | 28 | `> [!WARNING]` | 11 original HCI entries + 17 ScienceClaw entries with family-level Soft Metadata adapted from venue-templates (7 multidisciplinary + 5 Cell Press biology + 5 medical). Family-level claims; per-journal evidence not yet collected. |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
 | **Total** | **114** | | |
 
@@ -69,7 +69,7 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 
 Each journal entry under `skills/journal-atlas/references/journals/` was authored through a structured process. The depth of evidentiary backing varies by source:
 
-### Skeleton — Auto-generated scaffold (92 entries)
+### Skeleton — Auto-generated scaffold (75 entries)
 
 **Backing**: Identity / Metrics / Subject Density / Open Access fields populated automatically via `scripts/import_openalex.py` from the OpenAlex API. Soft Metadata sections (Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, Sensitive Topics, Practical Concerns) and Strategic Notes are placeholder text awaiting contributor input.
 

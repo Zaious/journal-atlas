@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — The Soft Metadata below has been adapted from family-level reference material rather than journal-specific evidence harvesting. Structural data (Identity / Metrics / Format) is evidence-backed; subjective assessments (Reviewer Pool / Framing / Hard Blockers / Voice & Style) are community-estimate framings derived from venue-family conventions. Use `/ja-validate` if you've submitted to this specific journal to upgrade individual claims with first-hand evidence. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton -> Tier 2 -> Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -172,9 +164,9 @@
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes
+- **If yes, what kind?** Clinical-relevance framing — every finding must connect to patient outcomes or practice change
+- **Consequences of ignoring it**: Editorial desk-reject if clinical implications are unclear; reviewers will demand explicit practice-change implications
 
 ### Methodological Preferences
 
@@ -191,19 +183,19 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
+| **First-person voice acceptance (0-5)** | 1 — strictly third-person clinical register |
 | **Expected density** | |
-| **Writing style notes** | |
+| **Writing style notes** | Formal evidence-focused tone. Structured abstract mandatory (Background / Methods / Results / Conclusions). Hedged conclusions where confidence intervals are wide. Causal language only when randomized evidence supports it. Absolute risk reductions preferred over relative; NNT often expected |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Dedicated statistical reviewer plus subspecialty clinical experts. Reviews focus on clinical relevance (will this change practice?), CONSORT/STROBE compliance, statistical power, and generalizability to broader populations. Multiple revision rounds common
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
+| **Dominant tradition** | Evidence-based medicine with structured reporting (CONSORT, STROBE, PRISMA) | |
+| **Reviewer competence variance** | Low — reviewers share a common evidence-grading framework | |
+| **Quantitative mindset bias on qualitative work?** | Very high — RCTs and prospective cohort designs are the dominant register. Effect sizes with confidence intervals expected; p-values alone insufficient. Power calculations and sample size justification required | |
 | **Discourse community signals (editorial board)** | | |
 
 ### Sensitive Topics
@@ -228,19 +220,24 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Underpowered study without explicit power calculation
+- Inappropriate control or comparator group
+- Confounding not addressed in design or analysis
+- Selective outcome reporting; protocol deviations not pre-specified
+- Missing safety data for interventional studies
+- Claims exceed evidence; causal language without randomized support
 
 ### Soft Tax
 
-*(fill manually)*
+Medium-high — adapting a non-medical paper for these venues requires substantial framing work (clinical relevance section, structured abstract, CONSORT/STROBE compliance check)
 
 ### Best Suited For
 
-*(fill manually)*
+Randomized clinical trials with practice-change implications, large prospective cohorts, systematic reviews with meta-analysis, health policy analyses with clinical translation
 
 ### Not Recommended For
 
-*(fill manually)*
+Mechanism-only basic research; small case series without broader implications; qualitative-only studies (consider BMJ Open or specialty qualitative venues); modelling studies without clinical validation
 
 ### Rejection Fallback Chain
 
@@ -258,3 +255,4 @@
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw medical_journal_styles.md > Annals of Internal Medicine (MIT) | @cardinal |
+| 2026-05-16 | Soft Metadata adapted at family level (Reviewer Pool / Framing / Voice / Hard Blockers / Best & Not Recommended For) — data adapted from ScienceClaw venue-templates reviewer_expectations.md + medical_journal_styles.md + venue_writing_styles.md (MIT) | @cardinal |

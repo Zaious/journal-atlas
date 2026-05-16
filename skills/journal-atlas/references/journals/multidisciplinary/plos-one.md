@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — The Soft Metadata below has been adapted from family-level reference material rather than journal-specific evidence harvesting. Structural data (Identity / Metrics / Format) is evidence-backed; subjective assessments (Reviewer Pool / Framing / Hard Blockers / Voice & Style) are community-estimate framings derived from venue-family conventions. Use `/ja-validate` if you've submitted to this specific journal to upgrade individual claims with first-hand evidence. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton -> Tier 2 -> Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -172,9 +164,9 @@
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes
+- **If yes, what kind?** Broad-significance framing — findings must be relevant beyond the immediate subfield
+- **Consequences of ignoring it**: Editorial desk-reject is the dominant gatekeeper. Nature rejects ~92% of submissions without external review; this filter screens primarily for 'broad significance', not technical merit
 
 ### Methodological Preferences
 
@@ -191,19 +183,19 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
+| **First-person voice acceptance (0-5)** | 3 — used selectively for narrative flow, not as methodological positioning |
 | **Expected density** | |
-| **Writing style notes** | |
+| **Writing style notes** | Accessible to educated non-specialists. Active voice acceptable, first-person occasional. Avoid jargon. Open with broad significance, not field-specific motivation. Conceptual figures preferred over raw data plots. |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Cross-disciplinary panel. Reviewers prioritize broad significance over technical specialization; at least one reviewer is typically a non-specialist evaluating accessibility to a general scientific audience. Selection emphasizes findings that reframe understanding for readers outside the immediate subfield.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
+| **Dominant tradition** | Multidisciplinary natural / behavioural sciences with emphasis on broad-significance framing | |
+| **Reviewer competence variance** | High — by design, one or more reviewers will be outside the paper's narrow subfield | |
+| **Quantitative mindset bias on qualitative work?** | Mixed — quantitative methodology is the default in these venues, but qualitative work is accepted when the contribution is methodologically distinctive or addresses a broad-significance question. Expect reviewers to probe whether the finding generalizes. | |
 | **Discourse community signals (editorial board)** | | |
 
 ### Sensitive Topics
@@ -228,19 +220,23 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Findings significant only within a specialized subfield without broader implications
+- Incremental advance over prior work without a major conceptual shift
+- Topic outside current editorial interests (check recent issues)
+- Writing inaccessible to non-specialists (heavy domain-specific terminology)
+- Missing critical controls or alternative interpretations
 
 ### Soft Tax
 
-*(fill manually)*
+High — adapting a specialized paper for a general-audience framing typically requires substantial rewriting of introduction and discussion sections, plus addition of conceptual figures. Allow multiple revision passes.
 
 ### Best Suited For
 
-*(fill manually)*
+Papers whose findings genuinely reframe understanding for non-specialists, with strong methodological rigor and clear cross-disciplinary implications
 
 ### Not Recommended For
 
-*(fill manually)*
+Incremental subfield advances; replication studies; methodology-focused papers without broader claims; qualitative work without strong methodological innovation argument
 
 ### Rejection Fallback Chain
 
@@ -258,3 +254,4 @@
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > PLOS ONE (MIT) | @cardinal |
+| 2026-05-16 | Soft Metadata adapted at family level (Reviewer Pool / Framing / Voice / Hard Blockers / Best & Not Recommended For) — data adapted from ScienceClaw venue-templates reviewer_expectations.md + venue_writing_styles.md + nature_science_style.md (MIT) | @cardinal |

@@ -12,7 +12,7 @@
 > contributors land. Contributions, feedback, and journal nominations all welcome.
 >
 > 114 seed entries across 8 field directories. Quality breakdown: 11 Tier 1
-> (evidence-backed), 11 Tier 2 (community estimate), and 92 Skeleton (structural
+> (evidence-backed), 28 Tier 2 (community estimate), and 75 Skeleton (structural
 > scaffold awaiting Soft Metadata). See [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)
 > for the Skeleton → Tier 2 → Tier 1 lifecycle and how to help upgrade entries.
 
