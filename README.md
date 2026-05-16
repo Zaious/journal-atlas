@@ -1,103 +1,86 @@
 # Journal Atlas
 
+> 🌐 **Languages**: English | [繁體中文](README.zh-Hant.md)
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
 [![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](skills/journal-atlas/TEMPLATE.md)
-[![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#status)
+[![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#tier-system)
 
 **A community-maintained, AI-native knowledge base of academic journal fit metadata.**
 
-> **Status (2026-05): Pre-release.** Schema is stable at v1.2; we are currently
-> seeding the initial journal entries. Expect limited coverage until first
-> contributors land. Contributions, feedback, and journal nominations all welcome.
->
-> 114 seed entries across 8 field directories. Quality breakdown: 11 Tier 1
-> (evidence-backed), 28 Tier 2 (community estimate), and 75 Skeleton (structural
-> scaffold awaiting Soft Metadata). See [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)
-> for the Skeleton → Tier 2 → Tier 1 lifecycle and how to help upgrade entries.
+Journal Atlas captures what bibliometric tools like Impact Factor and Scimago don't: the **soft metadata** of academic journals — reviewer culture, framing expectations, sensitive-topic tolerance, AI policy nuances, methodological preferences, and rejection-fallback strategies — encoded as a Claude Agent Skill installable across Claude Code, Claude Desktop, and ChatGPT.
 
-Journal Atlas fills a gap that Impact Factor and Scimago don't cover: **soft metadata** — the unwritten rules about reviewer culture, framing expectations, sensitive topic tolerance, AI policy nuances, and methodological preferences that researchers currently learn only through experience or word of mouth.
-
-## What's Inside
-
-Each journal entry is a structured Markdown file covering 7 dimensions:
-
-| Dimension | What it tells you |
-|-----------|-------------------|
-| **Identity** | Name, publisher, ISSN, editorial board location |
-| **Metrics** | IF, h-index, CiteScore, acceptance rate, review timeline |
-| **Policies** | AI policy, preprint rules, OA/APC, embargo periods |
-| **Format** | Word limits, article types, reference limits |
-| **Subject Density** | What topics this journal actually publishes (OpenAlex data) |
-| **Soft Metadata** | Reviewer culture, framing requirements, sensitive topic tolerance, epistemological leanings |
-| **Strategic Notes** | Hard blockers, adaptation effort, best/worst fit |
-
-**Soft Metadata is the core differentiator.** Everything else you can find on Scimago. The information in Soft Metadata is what saves you a rejection and 6 months.
-
-## Coverage
-
-**Any academic discipline is welcome.** The template and workflow are field-agnostic.
-
-Current field directories:
-
-- `psychology/` (53) — clinical, cognitive, theoretical, social, cross-disciplinary phenomenology
-- `hci/` (23) — human-computer interaction
-- `cognitive-science/` (12)
-- `multidisciplinary/` (7) — Nature / Science / PNAS / PLOS ONE family
-- `biology/` (9) — Cell Press, PLOS Biology, Nature Methods family
-- `medical/` (5) — NEJM, Lancet, JAMA, BMJ, Annals
-- `qualitative-methods/` (4)
-- `physics/` (1) — Physical Review Letters
-
-If your discipline isn't represented yet, you can be the one to start it.
+> **Status (2026-05): Pre-release.** 114 seed entries across 8 field directories.
+> Quality breakdown: **11 Tier 1** (evidence-backed) · **28 Tier 2** (community
+> estimate) · **75 Skeleton** (structural scaffold awaiting Soft Metadata).
+> See [Tier System](#tier-system) and [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 
 ---
 
-## How to Use
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Skills Overview](#skills-overview)
+- [Slash Commands](#slash-commands)
+- [Workflows (with examples)](#workflows)
+- [Tier System](#tier-system)
+- [Automation Scripts](#automation-scripts)
+- [Contributing](#contributing)
+- [Use Cases](#use-cases)
+- [What This Is NOT](#what-this-is-not)
+- [Adjacent Tools](#adjacent-tools)
+- [Lineage](#lineage)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+---
+
+## Quick Start
+
+```bash
+# 1. Install (Claude Code main session)
+/plugin marketplace add Zaious/journal-atlas
+/plugin install journal-atlas@journal-atlas
+# Restart Claude Code
+
+# 2. Ask anything
+/ja-recommend
+> "I have a 12,000-word theoretical paper on embodied cognition.
+>  No IRB, no APC budget. Which journals fit?"
+```
+
+You'll get a ranked recommendation with evidence citations from the knowledge base, hard-constraint elimination, rejection-fallback chains, and strategic notes.
+
+---
+
+## Installation
 
 ### Option 1: Claude Code via plugin marketplace (recommended)
 
-In a Claude Code session (main session, not a worktree sub-session, which doesn't expose `/plugin`):
+In a Claude Code **main session** (not a worktree sub-session — those don't expose `/plugin`):
 
 ```
 /plugin marketplace add Zaious/journal-atlas
 /plugin install journal-atlas@journal-atlas
 ```
 
-Then restart Claude Code. The skill is auto-discovered when relevant.
+Restart Claude Code. Both skills (`journal-atlas` + `journal-atlas-contribute`) and all 8 slash commands become available.
 
-**Slash commands** (all prefixed `ja-` to avoid conflicts):
+### Option 1b: Claude Code via manual `git clone` (fallback)
 
-| Command | What it does |
-|---------|-------------|
-| `/ja-recommend` | Full journal recommendation workflow |
-| `/ja-compare` | Head-to-head comparison of specific journals |
-| `/ja-fallback` | Rejection recovery — walk the fallback chain |
-| `/ja-query` | Structured filter query (Q1, Sage, h-index ≥ 100, etc.) |
-| `/ja-similar` | Find journals most similar to a target |
-| `/ja-related` | Find recent papers in a target journal matching your keywords |
-| `/ja-contribute` | Contribute a new journal entry from your experience |
-| `/ja-validate` | Validate/improve an existing entry using your experience |
-
-Or just ask naturally:
-
-> "I have a 12,000-word theoretical paper on embodied cognition.
-> No IRB, no APC budget, I used AI for writing assistance, no immediate
-> OA needed. Which journals fit?"
-
-### Option 1b: Claude Code via manual `git clone` (fallback if `/plugin` unavailable)
-
-If you're in a worktree session or otherwise don't have `/plugin` available, install the skill directly:
+If you're in a worktree session or otherwise don't have `/plugin`:
 
 ```bash
 # Windows PowerShell
-git clone https://github.com/Zaious/journal-atlas.git $HOME\.claude\skills\journal-atlas
+git clone https://github.com/Zaious/journal-atlas.git $HOME\.claude\plugins\journal-atlas
 
 # macOS / Linux
-git clone https://github.com/Zaious/journal-atlas.git ~/.claude/skills/journal-atlas
+git clone https://github.com/Zaious/journal-atlas.git ~/.claude/plugins/journal-atlas
 ```
 
-Then restart Claude Code (or start a new session). The skill becomes available the same way as Option 1.
+Restart Claude Code. The plugin (skills + commands) becomes available.
 
 ### Option 2: Claude Desktop
 
@@ -105,65 +88,383 @@ Then restart Claude Code (or start a new session). The skill becomes available t
 2. Create a new Project in Claude Desktop
 3. Upload the `.md` files from `skills/journal-atlas/references/journals/` as Project Knowledge
 4. Copy the contents of `skills/journal-atlas/SKILL.md` into Project Instructions
+5. (Optional) Repeat with `skills/journal-atlas-contribute/SKILL.md` if you want the contribution workflow
 
 ### Option 3: ChatGPT (GPT Builder)
 
 1. Clone this repo
-2. From the repo root, run `cd skills/journal-atlas && python scripts/bundle_for_upload.py` to merge journal files into uploadable chunks
-3. Upload the output files to your GPT's Knowledge section
+2. From the repo root, run `cd skills/journal-atlas && python scripts/bundle_for_upload.py` — merges journal files into bundles within ChatGPT's 20-file limit
+3. Upload the bundles from `dist/` to your GPT's Knowledge section
 4. Copy the contents of `skills/journal-atlas/SKILL.md` into your GPT's Instructions
 
-### Option 4: Just read it
+### Option 4: Just browse the knowledge base
 
 Browse [`skills/journal-atlas/references/journals/`](skills/journal-atlas/references/journals/) on GitHub. Every journal is a readable Markdown page. No AI required.
 
-### Want to see Journal Atlas in action first?
+---
 
-[**`use-cases/`**](use-cases/) contains full multi-turn session transcripts showing what the skill produces with real(istic) papers — including how constraint changes cascade, how the rejection-fallback chain gets walked, and how the skill admits when it can't help. The [Self-state Dynamics use case](use-cases/self-state-altered-states-autoethnography.md) covers all six end-to-end scenarios.
+## Skills Overview
+
+The plugin contains **two skills**, each addressing a different workflow:
+
+### `journal-atlas` — The Advisor
+
+Use when you have a paper and need decisions: recommendations, comparisons, rejection recovery, structured queries, lateral discovery.
+
+**Capabilities**:
+- Read the journal knowledge base
+- Apply hard constraints (word limit, APC budget, AI policy, IRB, OA requirement)
+- Rank candidates by soft fit across 6 dimensions
+- Walk Rejection Fallback Chains
+- Present recommendations with cited evidence and Tier-aware confidence flags
+
+**Entry-count-aware design** scales from current 114 entries to 200+:
+- ≤20 entries: direct read
+- 21–50: `scripts/fit_score.py` pre-ranking
+- 50+: mandatory pre-ranking; AI reads top 10–15
+- 200+: `scripts/query_journals.py` field-filter first
+
+### `journal-atlas-contribute` — The Contributor
+
+Use when you have experience to share: validating an existing entry, contributing a new journal, generating a PR-ready patch.
+
+**Two modes**:
+
+| Mode | When | What happens |
+|------|------|--------------|
+| **Mode B — Validate & Augment** *(preferred)* | Entry exists for the journal you mention | AI reads the existing entry, quotes claims back to you one at a time, captures your confirmations / corrections / additions, generates a Markdown patch with evidence-source upgrades (e.g. `(community estimate)` → `(personal experience 2024)`). Highest leverage for Tier 2 → Tier 1 promotion. |
+| **Mode A — Cold Contribute** | No entry exists | AI offers OpenAlex-based scaffold, then walks through a 7-section structured interview filling Soft Metadata + Strategic Notes. |
+
+**Output persistence is mandatory** — patches are written to `dist/contributed_<slug>.md` or `dist/patch_<slug>_<date>.md` for portable PR submission.
 
 ---
 
-## Automation (skills/journal-atlas/scripts/)
+## Slash Commands
 
-**9 scripts**, covering recommendation, discovery, contribution infrastructure, and maintenance:
+All commands prefixed `ja-` to avoid namespace conflicts. `$ARGUMENTS` passthrough lets you invoke directly with details.
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| `query_journals.py` | Structured boolean filter (Q1, publisher, h-index, AI policy, OA, embargo...) | ✅ |
-| `fit_score.py` | Paper-vs-journal weighted soft-fit scoring + hard constraint elimination | ⚠️ v0.1 |
-| `similar_journals.py` | Find journals most similar to a target (8-dim weighted similarity) | ✅ |
-| `related_papers.py` | Find papers within a journal matching keywords (cover-letter prep) | ✅ |
-| `import_openalex.py` | Auto-populate a new entry from OpenAlex API | ✅ |
-| `validate_structure.py` | Check `.md` files match TEMPLATE schema (CI on every PR) | ✅ |
-| `bundle_for_upload.py` | Merge journal files for ChatGPT GPTs / Claude Desktop upload | ✅ |
-| `update_metrics.py` | Refresh OpenAlex metrics; proposes diffs, never auto-writes | ✅ |
-| `topic_trend_scan.py` | Scan recent publication topics; check keyword presence | ✅ |
+### Advisor commands (route to `journal-atlas`)
 
-Run from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
-See [skills/journal-atlas/scripts/README.md](skills/journal-atlas/scripts/README.md) for setup and usage examples.
+#### `/ja-recommend`
+
+Full 6-step recommendation workflow. Asks for your paper attributes if not provided.
+
+**Example**:
+```
+/ja-recommend
+> "12,000-word theoretical paper on embodied cognition. No IRB. $0 APC budget.
+>  AI-assisted writing (will disclose). No immediate OA needed."
+```
+
+**You get back**: top 3 ranked recommendations with `Why it fits` evidence quotes, `Watch out for` risks, `Key stats`, `Cost` (subscription/OA paths), `If rejected, try next` fallback chain, and a `Journals Considered but Eliminated` transparency table.
+
+#### `/ja-compare`
+
+Head-to-head comparison of 2+ named journals.
+
+**Example**:
+```
+/ja-compare
+> "PCS vs RGP vs T&P — for a 12K theoretical paper, AI-disclosed,
+>  immediate OA required, $0 budget"
+```
+
+**You get back**: a per-dimension table (Topic / Methodology / AI policy / Word limit / APC / Embargo / Reviewer culture / Sensitive topics) with explicit verdict per journal.
+
+#### `/ja-fallback`
+
+Rejection recovery — walks the Rejection Fallback Chain for a journal that rejected you.
+
+**Example**:
+```
+/ja-fallback
+> "PCS rejected me — reviewer said framing wasn't phenomenological enough.
+>  Where should I try next?"
+```
+
+**You get back**: the journal's official Fallback Chain, filtered by your rejection reason if provided, plus a "pivot strategy" for adapting your paper to the next target.
+
+#### `/ja-query`
+
+Structured boolean filter — runs `scripts/query_journals.py` and presents the table.
+
+**Example queries**:
+```
+/ja-query → "Show all Q1 psychology journals without AI permission gates"
+/ja-query → "List Sage journals with zero embargo"
+/ja-query → "Find journals accepting autoethnography at 3/5 or higher"
+/ja-query → "Show me HCI journals sorted by h-index, top 10"
+```
+
+**You get back**: a filtered table with the specific data points that match. No AI reasoning over individual journals — pure deterministic filtering, scales to thousands of entries.
+
+#### `/ja-similar`
+
+Find journals algorithmically similar to a target — broader than the curated Rejection Fallback Chain.
+
+**Example**:
+```
+/ja-similar → "What journals are most like PCS?"
+/ja-similar → "Show me 10 closest to Qualitative Inquiry"
+```
+
+**You get back**: ranked similar journals with per-dimension contribution breakdown (topic Jaccard, methodology cosine, publisher match, OA model, h-index proximity, word-limit proximity, AI policy, embargo). Often surfaces lateral candidates the human-curated chain misses.
+
+#### `/ja-related`
+
+Find papers within a target journal matching your keywords — for cover-letter prep ("we engage with their recent X, Y, Z").
+
+**Example**:
+```
+/ja-related → "Recent embodied-cognition papers in PCS, last 5 years"
+/ja-related → "Self-state autoethnography papers in QRP, top 3"
+```
+
+**You get back**: ranked papers (title, authors, year, citation count, DOI) scored by keyword match + recency + citations. Markdown format ready to paste into a cover letter.
+
+### Contributor commands (route to `journal-atlas-contribute`)
+
+#### `/ja-contribute`
+
+Cold Contribute mode — propose a new journal entry from scratch.
+
+**Example**:
+```
+/ja-contribute
+> "I want to add an entry for Behavioral and Brain Sciences. I've published there."
+```
+
+**Flow**: AI offers OpenAlex scaffold → structured interview across 7 Soft Metadata sub-sections (Epistemological Leanings / Framing / Methodological Preferences / Voice & Style / Reviewer Pool / Sensitive Topics / Practical Concerns) + Strategic Notes → generates full TEMPLATE-conformant entry → writes to `dist/contributed_<slug>.md` → guides you through PR submission.
+
+#### `/ja-validate`
+
+Validate & Augment mode — improve an existing entry from your experience.
+
+**Example**:
+```
+/ja-validate
+> "I submitted to PCS last year. Our entry's Reviewer Pool description —
+>  is it accurate?"
+```
+
+**Flow**: AI reads PCS entry → quotes the Reviewer Pool claim → asks you to confirm/correct/expand → continues through other Soft Metadata sections relevant to your experience → generates a Markdown patch → writes to `dist/patch_pcs_2026-05-16.md` → guides you through PR submission.
+
+**This is the recommended contribution path** — most efficient way to upgrade Tier 2 entries to Tier 1.
+
+---
+
+## Workflows
+
+End-to-end examples. Each shows the conversation, what the skill does internally, and the typical output.
+
+### Workflow 1: Find a journal for your paper
+
+**Scenario**: You have a paper, you need a target journal.
+
+```
+> /ja-recommend
+< What's your paper about? Share: topic, methodology, word count, APC budget,
+< AI usage, IRB status, sensitive content, OA requirement, timeline.
+
+> 12,000-word theoretical paper on embodied cognition.
+> No IRB (theoretical only). $0 APC budget. AI-assisted writing (will disclose).
+> No immediate OA needed. Sensitive content: ritualized altered states.
+
+< [AI reads psychology/, cognitive-science/, hci/ entries; filters by hard
+<  constraints; ranks remaining by 6-dimension soft fit; walks fallback chain]
+
+< 🥇 Phenomenology and the Cognitive Sciences
+<   Why it fits: 205 articles on embodied/self-state cognition 2020-2025...
+<   Cost: $0 via subscription / $3,190 via OA
+<   If rejected, try next: Theory & Psychology → Review of General Psychology
+<                         → New Ideas in Psychology
+< 🥈 ...
+```
+
+### Workflow 2: Compare specific journals
+
+**Scenario**: You're choosing between 2–3 journals.
+
+```
+> /ja-compare PCS vs RGP vs T&P for a 12K theoretical paper with AI use disclosed,
+> $0 APC, immediate OA required
+
+< [Per-dimension table generated; each cell quotes specific TEMPLATE data]
+< Verdict: RGP — sole survivor of all hard constraints (Sage zero embargo
+< grants immediate OA at $0; word limit 15K accommodates 12K; AI policy
+< disclosure-based; T&P blocked by AI permission gate + 10K word limit;
+< PCS blocked by 12-month Springer embargo destroying the immediate-OA need)
+```
+
+### Workflow 3: Rejection recovery
+
+**Scenario**: A reviewer rejected you. What's next?
+
+```
+> /ja-fallback PCS rejected — reviewer 2 said not phenomenological enough
+
+< [AI reads PCS's Rejection Fallback Chain section; filters by rejection reason]
+< Hard-blocked official fallbacks:
+<   Theory & Psychology: blocked by AI gate + 10K word limit
+<   New Ideas in Psychology: blocked by 7.5K word ceiling + 24-month embargo
+<
+< 🏆 Sole survivor: Review of General Psychology
+<   Why it works: Sage zero-embargo grants immediate OA at $0; 15K word room;
+<   doesn't require phenomenology. Pivot strategy: drop continental philosophy
+<   vocabulary, repackage altered-state autoethnography as "extreme theoretical
+<   case study illuminating self-state mechanisms in general psychology".
+```
+
+### Workflow 4: Structured query (filter by criteria)
+
+**Scenario**: You want a filtered list, not a recommendation.
+
+```
+> /ja-query Show all Q1 psychology journals with zero embargo and no AI gate
+
+< [Runs scripts/query_journals.py with --field psychology --quartile Q1
+<  --zero-embargo --no-ai-permission-gate]
+<
+< 6 of 114 journals match:
+< | Journal | h-index | OA model | Word limit |
+< |---------|---------|----------|------------|
+< | Review of General Psychology | 158 | hybrid | 15,000 |
+< | Culture & Psychology | 75 | hybrid | 12,000 |
+< | ...
+```
+
+### Workflow 5: Find similar journals (lateral discovery)
+
+**Scenario**: You're exploring; the curated fallback chain doesn't help.
+
+```
+> /ja-similar What's most like PCS?
+
+< Most similar (algorithmic, 8-dimension weighted):
+< 1. AI & Society (0.508) — Springer + cognitive science cross-disciplinary
+<    overlap; 90% h-index proximity. NOT in PCS's curated fallback chain,
+<    surfaces as a lateral candidate.
+< 2. Culture & Psychology (0.441) — methodology cosine 0.97...
+< ...
+```
+
+### Workflow 6: Cover-letter preparation
+
+**Scenario**: You've chosen a journal; you want to find papers to engage with.
+
+```
+> /ja-related PCS embodied cognition self-state 4E, last 5 years
+
+< [Queries OpenAlex Works API filtered by PCS, scored by keyword + recency
+<  + citations]
+< Top 3:
+< 1. "The exceptionality of enactivism within 4E cognition" (2026)
+<    DOI: 10.1007/s11097-025-10131-1
+< 2. "What is 4E cognitive science?" (2025) - 6 citations
+< 3. ...
+
+# Paste markdown into your cover letter draft.
+```
+
+### Workflow 7: Contribute your submission experience
+
+**Scenario**: You've published in (or been rejected by) a journal. Your experience is evidence.
+
+```
+> /ja-validate I submitted to PCS last year. Want to share what I learned.
+
+< Reading the PCS entry... Our entry says "reviewer pool drawn primarily from
+< phenomenology and 4E-cognition communities; expect deep literacy in Husserl,
+< Merleau-Ponty, Gallagher, Zahavi". Does that match what you saw?
+
+> Reviewer 2 was clearly Husserl-focused; reviewer 1 was more from predictive
+> processing tradition. Reviewer 3 was a methodologist who wanted clearer
+> phenomenological-method justification.
+
+< Capturing as: "Reviewer mix observed 2024: phenomenological-tradition focus
+< (Husserl + predictive processing + phenomenological method)". This is
+< first-hand experience evidence — upgrades the entry from community-estimate
+< to personal-experience. Move to next claim?
+
+[... continues through other Soft Metadata claims ...]
+
+< Patch written to dist/patch_phenomenology-and-the-cognitive-sciences_2026-05-16.md
+< Open this file, copy the content, and paste into a new PR at
+< https://github.com/Zaious/journal-atlas. Need help with the PR mechanics?
+```
+
+---
+
+## Tier System
+
+Each entry has two orthogonal axes:
+
+**Evidence Quality** (`Tier 1` ↔ `Tier 2`) — how trustworthy are the Soft Metadata claims?
+
+**Completeness** (`Skeleton` ↔ filled) — has Soft Metadata been written at all?
+
+Lifecycle:
+
+```
+Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
+   (no Tier yet, > [!NOTE] banner)                            (> [!WARNING] banner)
+                                                                     │
+                                              [evidence accumulates: article counts,
+                                               source URLs, first-hand experience]
+                                                                     ▼
+                                                                  Tier 1
+                                                              (no banner)
+```
+
+Current distribution: **11 Tier 1 · 28 Tier 2 · 75 Skeleton = 114 total**.
+
+Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
+
+---
+
+## Automation Scripts
+
+9 scripts in `skills/journal-atlas/scripts/` — all Python 3.10+, MIT-licensed. Run from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
+
+| Script | Purpose | Typical use |
+|--------|---------|-------------|
+| `query_journals.py` | Structured boolean filter (publisher, OA model, h-index, quartile, AI policy, embargo, methodology) | `--field psychology --quartile Q1 --no-ai-permission-gate` |
+| `fit_score.py` | Weighted soft-fit scoring + hard constraint elimination | `--topics "embodied cognition" --methodology theoretical --word-count 12000` |
+| `similar_journals.py` | 8-dimension weighted similarity to a target | `--target phenomenology-and-the-cognitive-sciences --top-n 5` |
+| `related_papers.py` | OpenAlex Works API search within a target journal | `--journal pcs --keywords "embodied cognition,self-state"` |
+| `import_openalex.py` | Generate a v1.2-conformant entry from OpenAlex | `--issn 1568-7759 --field psychology --dry-run` |
+| `validate_structure.py` | Schema validation; runs in CI on every PR | (run without arguments to validate everything) |
+| `bundle_for_upload.py` | Merge journal files for ChatGPT GPT (20-file limit) | `--out-dir dist/` |
+| `update_metrics.py` | Refresh OpenAlex metrics in existing entries; propose diffs | `--field psychology --apply` |
+| `topic_trend_scan.py` | Scan a journal's recent publication topics; keyword presence check | `--issn 0959-3543 --keywords "BDSM,autoethnography"` |
+
+Full setup and example workflows in [scripts/README.md](skills/journal-atlas/scripts/README.md).
 
 ---
 
 ## Contributing
 
-We need your journal expertise. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+The lowest-friction contribution path is **`/ja-validate <journal>`** — share your submission experience conversationally, the skill generates a PR-ready Markdown patch in `dist/`.
 
-**Easiest way to contribute** — just talk about your experience:
+Other paths:
 
-```
-/ja-validate Theory & Psychology
-```
+- **`/ja-contribute`** — Cold-contribute a new journal entry from scratch
+- **[Submission Experience report](.github/ISSUE_TEMPLATE/submission-experience.md)** — Structured GitHub Issue for post-submission retrospectives (acts as a community pattern library)
+- **Traditional PR** — Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md), fill what you know, open a PR
 
-The `/ja-validate` command reads our existing entry, quotes claims back to you one at a time, and you confirm or correct from your experience. It generates a PR-ready patch. No Markdown editing needed.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for quality standards, naming conventions, and reviewer guidelines.
 
-To add a journal we don't have yet: `/ja-contribute`.
+**What we need most**: Soft Metadata. The unwritten rules — reviewer culture, framing requirements, sensitive-topic tolerance. If you've published in or reviewed for a journal, that knowledge is evidence no algorithm can extract.
 
-**Traditional PR workflow:**
-1. Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md)
-2. Fill in what you know (partial entries welcome — others can fill gaps)
-3. Open a PR
+---
 
-The most valuable contributions are **Soft Metadata** — the stuff that isn't in any database. If you've published in a journal and know its unwritten rules, that knowledge helps every researcher who comes after you.
+## Use Cases
+
+Full multi-turn session transcripts demonstrating the skill end-to-end:
+
+- **[Self-State Dynamics in Altered-State Autoethnography](use-cases/self-state-altered-states-autoethnography.md)** *(EN)* / **[繁體中文](use-cases/zh-Hant/self-state-altered-states-autoethnography.md)** — 8-turn session covering recommendation, constraint changes, rejection recovery, comparison verdict, and out-of-coverage honesty
+
+See [`use-cases/`](use-cases/) for the contribution template and how to submit your own case study.
 
 ---
 
@@ -172,7 +473,9 @@ The most valuable contributions are **Soft Metadata** — the stuff that isn't i
 - **Not a journal ranking.** We provide metadata; you decide what matters.
 - **Not a predatory journal blacklist.** Use [Cabells](https://www2.cabells.com/) for that.
 - **Not a replacement for Scimago/JCR.** We aggregate their quantitative metrics as a convenience. Our value is the soft metadata they don't have.
-- **Not a paper-discovery tool.** For finding papers across the web related to your research, use [Connected Papers](https://www.connectedpapers.com/), [Research Rabbit](https://www.researchrabbit.ai/), [Litmaps](https://www.litmaps.com/), or [Semantic Scholar](https://www.semanticscholar.org/). Journal Atlas does help you find papers **within a specific journal** via `scripts/related_papers.py` — useful for cover-letter prep (`"we engage with their recent X, Y, Z"`).
+- **Not a paper-discovery tool.** For finding papers across the web related to your research, use [Connected Papers](https://www.connectedpapers.com/), [Research Rabbit](https://www.researchrabbit.ai/), [Litmaps](https://www.litmaps.com/), or [Semantic Scholar](https://www.semanticscholar.org/). Journal Atlas does help you find papers **within a specific journal** via `/ja-related` — useful for cover-letter prep.
+
+---
 
 ## Adjacent Tools
 
@@ -189,25 +492,26 @@ Journal Atlas plays well with these tools — each answers a different question:
 | [Semantic Scholar](https://www.semanticscholar.org/) | "Find papers across the literature on this topic." |
 
 A typical workflow combines several:
+
 1. Discover candidate venues with B!SON
 2. Read Journal Atlas entries for those candidates to understand soft metadata
 3. Cross-check predatory status with Cabells
-4. Use `related_papers.py` to find what to cite within the chosen venue
+4. Use `/ja-related` to find papers to cite within the chosen venue
 
 ---
 
 ## Lineage
 
-Journal Atlas stands on a 20-year tradition of journal recommenders. We acknowledge the work that came before, and we situate ourselves within it rather than against it.
+Journal Atlas stands on a 20-year tradition of journal recommenders. We acknowledge the work that came before, and situate ourselves within it rather than against it.
 
 | Year | System | Approach | Status |
 |------|--------|----------|--------|
 | 2007 | [JANE](https://jane.biosemantics.org/) (Schuemie & Kors, *Bioinformatics*) | PubMed text similarity | Operational, biomedical-only |
 | 2007 | [eTBLAST](https://pubmed.ncbi.nlm.nih.gov/17452348/) (Errami et al., *Nucleic Acids Research*) | Three-in-one: reviewer + journal + duplicate detection | Server offline |
 | 2015 | [Elsevier Journal Finder](https://journalfinder.elsevier.com/) (Kang et al., *RecSys*) | NLP + Okapi BM25 over Elsevier's catalog | Operational, vendor-locked |
-| 2018 | [Maglet](https://ieeexplore.ieee.org/document/8660987/) (Mohtaj & Tavakkoli, *IST*) | Persian-language regional recommender | Academic publication, no public deployment |
-| 2022 | [Open Journal Matcher](https://github.com/MarkEEaton/open-journal-matcher) (Eaton, CUNY) | spaCy word vectors over DOAJ; pioneered "[pervious technology](https://academicworks.cuny.edu/kb_pubs/261)" framing | Service offline 2022/07 (single-maintainer + grant ended) |
-| 2021– | [B!SON](https://service.tib.eu/bison/) (TIB + SLUB Dresden, BMBF-funded) | Elasticsearch + BM25 + OpenCitations bibliographic coupling + ML semantic | **Currently the state of the art** for OA recommendation |
+| 2018 | [Maglet](https://ieeexplore.ieee.org/document/8660987/) (Mohtaj & Tavakkoli, *IST*) | Persian-language regional recommender | Academic publication |
+| 2022 | [Open Journal Matcher](https://github.com/MarkEEaton/open-journal-matcher) (Eaton, CUNY) | spaCy word vectors over DOAJ; "[pervious technology](https://academicworks.cuny.edu/kb_pubs/261)" framing | Service offline 2022/07 |
+| 2021– | [B!SON](https://service.tib.eu/bison/) (TIB + SLUB Dresden, BMBF-funded) | Elasticsearch + BM25 + OpenCitations + ML semantic | **Currently state of the art** for OA recommendation |
 
 ### Honoring Open Journal Matcher (OJM)
 
@@ -218,28 +522,17 @@ This project owes particular intellectual debt to **Mark E. Eaton's Open Journal
 
 **Journal Atlas is one response to that invitation.**
 
-Eaton's companion paper [*On the ethics of working with library technology*](https://academicworks.cuny.edu/kb_pubs/261) introduced the concept of **"pervious technology"** — tools that users can reach into, tinker with, and adapt, in contrast to impervious black-box systems. Eaton argued that pervious tools, combined with diverse perspectives, are how ethical problems in technology become apparent.
+Eaton's companion paper [*On the ethics of working with library technology*](https://academicworks.cuny.edu/kb_pubs/261) introduced the concept of **"pervious technology"** — tools that users can reach into, tinker with, and adapt. Journal Atlas extends this idea: where OJM was pervious at the code layer, Journal Atlas is pervious at the data layer. The knowledge itself is the product, not a service that can be turned off when one maintainer burns out.
 
-Journal Atlas extends this idea further: where OJM was pervious *at the code layer* (Flask + spaCy, open source on GitHub), Journal Atlas is pervious *at the data layer* — every journal entry is a plain-text Markdown file that any researcher can read, edit, and discuss. The knowledge itself is the product, not a service that can be turned off when one maintainer burns out.
-
-### What Journal Atlas Adds to the Lineage
-
-Every system above answers the same question — *given an abstract, which journals match?* — using metric similarity over publication data. None of them capture the knowledge a senior colleague would share over coffee:
-
-- *"That journal's reviewer pool expects Heidegger literacy."*
-- *"This one desk-rejects anything without IRB, even theoretical work."*
-- *"They say single-blind, but the editor leaks identity to friendly reviewers."*
-- *"First-person voice gets you flagged here, but it's expected next door."*
+### What Journal Atlas Adds
 
 Three design choices distinguish Journal Atlas from the lineage:
 
-1. **Per-journal knowledge base, not per-query app.** Predecessors compute fresh similarity scores at query time; Journal Atlas maintains persistent, citable journal profiles — soft metadata that algorithms cannot extract from publication data and that improves monotonically as the community contributes. This information requires human community knowledge, and it requires durability beyond any single maintainer's commitment.
+1. **Per-journal knowledge base, not per-query app.** Persistent, citable profiles that improve monotonically with community contribution. Soft metadata algorithms cannot extract from publication data.
+2. **Markdown + Git, not service infrastructure.** Zero hosting cost. Zero single point of failure. Anyone can fork.
+3. **Designed for the agent era.** Structured as a Claude Agent Skill — installable in one command, consumable by any tool that speaks the skill convention, durable across whatever interface comes next.
 
-2. **Markdown + Git, not service infrastructure.** Predecessors that depended on cloud services (OJM) or grant funding cycles (B!SON's BMBF period ended 2023/01) face structural maintenance risks. Journal Atlas has zero hosting cost and zero single point of failure. Anyone can fork. We learned this lesson from OJM's offline notice — *single maintainers do not survive without community*. Journal Atlas is community-first by design.
-
-3. **Designed for the agent era, not the search-bar era.** Previous systems are web applications: users open a browser, submit a query, read results. Journal Atlas is structured as a [Claude Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) — the machine-readable skill convention now adopted across Claude Desktop, Claude Code, and increasingly ChatGPT GPTs and other AI agent platforms. When an autonomous research agent plans a submission strategy, it doesn't visit a website; it loads `SKILL.md`, consults the relevant journal files, and reasons over them. By packaging journal knowledge in the lingua franca of contemporary AI agents, Journal Atlas joins the research-pipeline ecosystem natively — installable in one command, consumable by any tool that speaks the skill convention, and durable across whatever interface comes next.
-
-We are complementary to B!SON, not competing — use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission to each *actually involves*.
+We are complementary to B!SON, not competing. Use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission *actually* involves. See [INSPIRATION.md](INSPIRATION.md) for the full data sources and reference materials.
 
 ---
 
@@ -252,7 +545,7 @@ Journal Atlas uses a **dual-license** model:
 
 **Attribution is required for all uses, commercial or non-commercial.** See [CITATION.cff](CITATION.cff) for the preferred citation format and [AUTHORS.md](AUTHORS.md) for the full credits.
 
-**Commercial use** — non-commercial use is free under CC BY-NC-SA 4.0. For commercial licensing (integration into paid products, redistribution within commercial services, fee-based research-as-a-service offerings, or similar), please contact **Meng-Han Lee at zaious.design@gmail.com** to discuss terms. We welcome conversations about partnerships and sustainable ecosystem integration.
+**Commercial use** — non-commercial use is free under CC BY-NC-SA 4.0. For commercial licensing (integration into paid products, redistribution within commercial services, fee-based research-as-a-service offerings, or similar), please contact **Meng-Han Lee at zaious.design@gmail.com** to discuss terms.
 
 Full license details: [LICENSE](LICENSE) | [LICENSE-CODE](LICENSE-CODE)
 
@@ -266,6 +559,4 @@ Full license details: [LICENSE](LICENSE) | [LICENSE-CODE](LICENSE-CODE)
 
 Built by researchers, for researchers. Maintained by the community.
 
-Initial seed data drawn from journal evaluations conducted during active manuscript submission processes in psychology, HCI, and qualitative methodology (2025-2026).
-
-See [INSPIRATION.md](INSPIRATION.md) for a full list of tools, papers, and concepts that influenced this project's design.
+See [INSPIRATION.md](INSPIRATION.md) for a full list of tools, papers, and concepts that influenced this project's design — including the ScienceClaw venue-templates corpus that contributed Format and family-level Soft Metadata to several entries.
