@@ -250,7 +250,7 @@ Low for env-psych tradition. Cross-disciplinary accessibility valued.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(Environment and Behavior — community contribution welcome)* | SAGE peer; env-psych specialty |
+| 1 | [Environment and Behavior](../psychology/environment-and-behavior.md) | SAGE peer; env-psych specialty |
 | 2 | [Health Psychology](./health-psychology.md) | If health-environment angle |
 | 3 | [Frontiers in Psychology env-psych section](../psychology/frontiers-in-psychology.md) | OA alternative |
 

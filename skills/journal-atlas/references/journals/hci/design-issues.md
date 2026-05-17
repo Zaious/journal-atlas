@@ -248,7 +248,7 @@ Low for design history / theory tradition authors.
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Design Studies](./design-studies.md) | Empirical design peer; Elsevier |
-| 2 | *(Journal of Design History — community contribution welcome)* | OUP design history peer |
+| 2 | [Journal of Design History](../hci/journal-of-design-history.md) | OUP design history peer |
 | 3 | [AI & Society](./ai-and-society.md) | If design + AI/STS focus |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Design Studies as "too humanities / not empirical," Design Issues is the MIT Press home.

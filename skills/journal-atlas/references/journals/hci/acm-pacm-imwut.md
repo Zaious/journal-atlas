@@ -238,7 +238,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|---------|------------------------|
 | 1 | [ACM CHI](../conferences/hci/acm-chi.md) | Broader HCI venue; if interaction-design angle dominates |
 | 2 | [Personal and Ubiquitous Computing](./personal-and-ubiquitous-computing.md) | Springer ubicomp peer journal |
-| 3 | *(IEEE Pervasive Computing — community contribution welcome)* | IEEE peer with shorter format |
+| 3 | [IEEE Pervasive Computing](../hci/ieee-pervasive-computing.md) | IEEE peer with shorter format |
 
 ---
 

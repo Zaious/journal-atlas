@@ -255,7 +255,7 @@ Low for dementia / geriatric cognitive research tradition.
 |------|---------|------------------------|
 | 1 | [Neuropsychology](../cognitive-science/neuropsychology.md) | APA Division 40 |
 | 2 | [Psychology and Aging](./psychology-and-aging.md) | If broader aging focus; APA Division 20 |
-| 3 | *(Alzheimer's & Dementia — community contribution welcome)* | Wiley flagship for Alzheimer's |
+| 3 | [Alzheimer's & Dementia](../psychology/alzheimers-and-dementia.md) | Wiley flagship for Alzheimer's |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top dementia / neurology venue as "too narrowly clinical-cognitive," DGCD is the Karger home for clinical cognitive aging.
 

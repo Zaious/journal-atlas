@@ -248,7 +248,7 @@ Low for composition / rhetoric tradition.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(College Composition and Communication — community contribution welcome)* | 4Cs/CCCC flagship |
+| 1 | [College Composition and Communication](../qualitative-methods/college-composition-and-communication.md) | 4Cs/CCCC flagship |
 | 2 | [Cultural Studies ↔ Critical Methodologies](../qualitative-methods/cultural-studies-critical-methodologies.md) | If critical-rhetoric focus |
 | 3 | [Qualitative Inquiry](../qualitative-methods/qualitative-inquiry.md) | If qualitative-methodology dominates |
 

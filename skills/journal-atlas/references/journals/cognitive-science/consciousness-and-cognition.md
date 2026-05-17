@@ -258,7 +258,7 @@ Low for consciousness-research tradition authors.
 |------|---------|------------------------|
 | 1 | [Journal of Cognitive Neuroscience](./journal-of-cognitive-neuroscience.md) | MIT Press; cognitive neuroscience |
 | 2 | [Cognition](./cognition.md) | Elsevier peer; theoretical-cognitive advance |
-| 3 | *(Neuroscience of Consciousness — community contribution welcome)* | OA peer; ASSC affiliated |
+| 3 | [Neuroscience of Consciousness](../cognitive-science/neuroscience-of-consciousness.md) | OA peer; ASSC affiliated |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a general cognitive venue as "too consciousness-specialized," C&C is the Elsevier ASSC-affiliated home.
 

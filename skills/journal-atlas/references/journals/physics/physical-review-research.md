@@ -235,7 +235,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|---------|------------------------|
 | 1 | [Physical Review Letters](./physical-review-letters.md) | APS rapid-communication flagship |
 | 2 | *(Specialty Physical Review journal — community contribution welcome)* | PRA / PRB / PRD / PRE per subfield |
-| 3 | *(Scientific Reports — community contribution welcome)* | Nature Portfolio OA generalist |
+| 3 | [Scientific Reports](../multidisciplinary/scientific-reports.md) | Nature Portfolio OA generalist |
 
 ---
 

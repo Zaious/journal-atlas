@@ -255,7 +255,7 @@ Low for psychometric / assessment tradition authors.
 |------|---------|------------------------|
 | 1 | [Journal of Personality](./journal-of-personality.md) | Wiley peer; broader personality focus |
 | 2 | [Personality and Individual Differences](./personality-and-individual-differences.md) | Elsevier peer; individual differences scope |
-| 3 | *(Assessment — community contribution welcome)* | SAGE peer for clinical assessment |
+| 3 | [Assessment](../psychology/assessment.md) | SAGE peer for clinical assessment |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a broader personality venue as "too measurement-focused," JPA is the SPA-affiliated home for assessment research.
 

@@ -253,8 +253,8 @@ Low for counseling-tradition authors. Multicultural / positionality framing expe
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Journal of Consulting and Clinical Psychology](./journal-of-consulting-and-clinical-psychology.md) | If treatment-focused; APA family |
-| 2 | *(Counselling Psychology Quarterly — community contribution welcome)* | T&F counseling peer |
-| 3 | *(Journal of Vocational Behavior — community contribution welcome)* | If career-focused |
+| 2 | [Counselling Psychology Quarterly](../psychology/counselling-psychology-quarterly.md) | T&F counseling peer |
+| 3 | [Journal of Vocational Behavior](../psychology/journal-of-vocational-behavior.md) | If career-focused |
 
 **Reverse direction** *(optional)*: If your paper was rejected from JCCP as "too counseling-focused," J Counseling Psychology is the natural APA Division 17 home.
 

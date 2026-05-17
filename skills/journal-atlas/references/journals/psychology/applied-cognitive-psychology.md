@@ -254,7 +254,7 @@ Low for applied cognitive tradition authors.
 |------|---------|------------------------|
 | 1 | [Journal of Experimental Psychology Learning Memory and Cognition](../cognitive-science/journal-of-experimental-psychology-learning-memory-and-cognition.md) | If basic cognitive reframing; APA |
 | 2 | [Cognitive Psychology](../cognitive-science/cognitive-psychology.md) | If theoretical-cognitive contribution; Elsevier |
-| 3 | *(Memory & Cognition — community contribution welcome)* | Psychonomic Society peer |
+| 3 | [Memory & Cognition](../psychology/memory-and-cognition.md) | Psychonomic Society peer |
 
 **Reverse direction** *(optional)*: If your paper was rejected from JEP:LMC as "too applied," ACP is the Wiley SARMAC-affiliated home.
 

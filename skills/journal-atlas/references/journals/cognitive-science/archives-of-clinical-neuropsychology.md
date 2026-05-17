@@ -255,7 +255,7 @@ Low for NAN clinical practice tradition.
 |------|---------|------------------------|
 | 1 | [Journal of Clinical and Experimental Neuropsychology](./journal-of-clinical-and-experimental-neuropsychology.md) | INS peer; T&F |
 | 2 | [Neuropsychology](./neuropsychology.md) | APA Division 40 |
-| 3 | *(Clinical Neuropsychologist — community contribution welcome)* | T&F NAN peer journal |
+| 3 | [Clinical Neuropsychologist](../cognitive-science/clinical-neuropsychologist.md) | T&F NAN peer journal |
 
 **Reverse direction** *(optional)*: If your paper was rejected from JCEN as "too clinical-practice / not experimental enough," ACN is the OUP NAN-affiliated home for clinical neuropsychology practice.
 

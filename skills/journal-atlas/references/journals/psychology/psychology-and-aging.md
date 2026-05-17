@@ -254,7 +254,7 @@ Low for aging-tradition empirical authors. Long APA review cycle.
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Developmental Psychology](./developmental-psychology.md) | APA family; lifespan developmental scope |
-| 2 | *(Journals of Gerontology B Psychological Sciences — community contribution welcome)* | Gerontological Society of America peer |
+| 2 | [Journals of Gerontology B Psychological Sciences](../psychology/journals-of-gerontology-b-psychological-sciences.md) | Gerontological Society of America peer |
 | 3 | [Health Psychology](./health-psychology.md) | If aging × health |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Developmental Psychology as "too aging-specialized," Psychology and Aging is the natural APA Division 20 home.

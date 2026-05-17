@@ -256,7 +256,7 @@ Low for SANS tradition authors. OA available via OUP.
 |------|---------|------------------------|
 | 1 | [Journal of Cognitive Neuroscience](../cognitive-science/journal-of-cognitive-neuroscience.md) | MIT Press; broader cognitive-neuroscience |
 | 2 | [Neuropsychology](../cognitive-science/neuropsychology.md) | If clinical-population focused; APA |
-| 3 | *(Cerebral Cortex / NeuroImage — community contribution welcome)* | Broader neuroscience venues |
+| 3 | [Cerebral Cortex](../cognitive-science/cerebral-cortex.md) / [NeuroImage](../cognitive-science/neuroimage.md) | Broader neuroscience venues |
 
 **Reverse direction** *(optional)*: If your paper was rejected from JoCN as "too social-affective," SCAN is the OUP SANS-affiliated home.
 

@@ -239,7 +239,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|---------|------------------------|
 | 1 | [Nucleic Acids Research](./nucleic-acids-research.md) | OUP sister OA flagship; broader scope incl. databases |
 | 2 | [PLOS Computational Biology](./plos-computational-biology.md) | OA peer; methods-application acceptable |
-| 3 | *(Briefings in Bioinformatics — community contribution welcome)* | OUP review-format peer |
+| 3 | [Briefings in Bioinformatics](../biology/briefings-in-bioinformatics.md) | OUP review-format peer |
 
 ---
 

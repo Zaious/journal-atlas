@@ -139,7 +139,21 @@ Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences,
 
 ScienceClaw attribution is captured in each entry's Changelog where applicable.
 
-Each affected entry's Changelog references the specific source file. Tier 2 (community estimate) banner is applied to all 131 family-adapted entries.
+**D. P3-4 niche-venue additions (2026-05-17):**
+
+21 additional entries built to plug remaining fallback-chain markers identified by the post-P3-2 audit (38→25 markers, 50→29 venue mentions):
+
+| Subset | Entries | Family template |
+|--------|---------|-----------------|
+| Biology OA (3) | Briefings in Bioinformatics, eLife, Genome Research | `biology-oa` (reused from P3-2) + new `biology-elife` for eLife's Reviewed Preprints model |
+| Multidisciplinary OA (1) | Scientific Reports | New `multidisciplinary-oa-generalist` family (soundness-over-significance review culture) |
+| Neuroscience (4) | Cerebral Cortex, NeuroImage, Neuroscience of Consciousness, Clinical Neuropsychologist | New `neuroscience-flagship` family |
+| Psychology society-flagship (7) | Memory & Cognition, Alzheimer's & Dementia, Counselling Psych Quarterly, J Vocational Behavior, Environment & Behavior, Assessment, J Gerontology B Psych Sci | New `psychology-society` family |
+| HCI magazine-design (3) | IEEE Pervasive Computing, J Design History, IJ Design | New `hci-magazine-design` family |
+| Writing studies (1) | College Composition and Communication | New `qualitative-writing` family (NCTE/4Cs norms) |
+| Accessibility/affective conferences (2) | ACM ASSETS, ACII | New `accessibility-conference` family (participatory + affective-validity norms) |
+
+Each affected entry's Changelog references the specific family source. Tier 2 (community estimate) banner is applied to all 152 family-adapted entries.
 
 **Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 

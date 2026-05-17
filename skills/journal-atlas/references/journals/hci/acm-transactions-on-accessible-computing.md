@@ -234,7 +234,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(ACM ASSETS conference proceedings — community contribution welcome)* | Premier accessibility conference |
+| 1 | [ACM ASSETS conference proceedings](../conferences/hci/acm-assets.md) | Premier accessibility conference |
 | 2 | [Universal Access in the Information Society](./universal-access-in-the-information-society.md) | Springer accessibility peer journal |
 | 3 | [ACM CHI](../conferences/hci/acm-chi.md) | Broader HCI venue; if HCI contribution dominates |
 

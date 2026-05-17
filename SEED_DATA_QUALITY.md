@@ -47,36 +47,39 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
 | **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Tier 2 in Phase 4. |
-| **Tier 2** | 131 | `> [!WARNING]` | 113 journals + 18 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
+| **Tier 2** | 152 | `> [!WARNING]` | 132 journals + 20 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **Total** | **142** | | |
+| **Total** | **163** | | |
 
 ### Field-directory breakdown
 
 | Field | Count | Notes |
 |-------|-------|-------|
-| `psychology/` | 53 | Includes cross-disciplinary phenomenology / cognitive-science venues |
-| `hci/` | 27 | Original HCI + ScienceClaw additions + P3-2 (PACM CSCW, PACM IMWUT, TOHRI, TACCESS) |
-| `qualitative-methods/` | 4 | |
-| `cognitive-science/` | 13 | Includes P3-2 TACL (Transactions of ACL) |
-| `multidisciplinary/` | 7 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE |
-| `biology/` | 12 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech + P3-2 (Bioinformatics, NAR, Cell Reports) |
+| `psychology/` | 60 | Includes cross-disciplinary phenomenology venues + P3-4 (Memory & Cog / Alzheimer's & Dementia / Counselling Psych Q / JVB / Env & Beh / Assessment / J Gerontol B) |
+| `hci/` | 30 | Original HCI + ScienceClaw additions + P3-2 (PACM CSCW/IMWUT, TOHRI, TACCESS) + P3-4 (IEEE Pervasive Comp / J Design History / IJ Design) |
+| `qualitative-methods/` | 5 | Includes P3-4 College Composition and Communication |
+| `cognitive-science/` | 17 | Includes P3-2 TACL + P3-4 (Cerebral Cortex / NeuroImage / Neurosci of Consciousness / Clinical Neuropsych) |
+| `multidisciplinary/` | 8 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE + P3-4 Scientific Reports |
+| `biology/` | 15 | Cell Press family + PLOS + Nature Methods/Biotech + P3-2 (Bioinformatics, NAR, Cell Reports) + P3-4 (Briefings in Bioinformatics / eLife / Genome Research) |
 | `medical/` | 5 | NEJM / Lancet / JAMA / BMJ / Annals of Internal Medicine |
 | `physics/` | 3 | Physical Review Letters + P3-2 (Nature Physics, Physical Review Research) |
-| `conferences/hci/` | 8 | ACM CHI, CSCW, UIST, DIS, IUI, IDC, CHI PLAY, IEEE HRI |
+| `conferences/hci/` | 10 | CHI / CSCW / UIST / DIS / IUI / IDC / CHI PLAY / IEEE HRI + P3-4 (ACM ASSETS / ACII) |
 | `conferences/ml/` | 5 | NeurIPS, ICML, ICLR, CVPR, AAAI |
 | `conferences/nlp/` | 3 | ACL, EMNLP, NAACL |
 | `conferences/data-mining/` | 2 | KDD, WWW |
-| **Total** | **142** | |
+| **Total** | **163** | |
 
-### Fallback-chain coverage (P3-2 ledger)
+### Fallback-chain coverage (P3-2 + P3-4 ledger)
 
-P3-2 systematically swept the 51 entries containing `community contribution welcome` markers (38 marker positions, 50 venue mentions):
+P3-2 + P3-4 systematically swept the entries containing `community contribution welcome` markers across three passes:
 
-- **Pass 1 (linker)**: replaced 17 venue mentions with relative-path links to existing Atlas entries (12 markers fully resolved → marker styling dropped; remainder kept partial-marker styling)
-- **Pass 2 (build + relink)**: added 10 high-leverage new entries (Bioinformatics / NAR / Cell Reports / Nature Physics / Physical Review Research / ACM PACM CSCW / ACM PACM IMWUT / ACM TOHRI / ACM TACCESS / TACL) and re-ran the linker, picking up 6 more venue mentions
+- **P3-2 Pass 1 (linker)**: replaced 17 venue mentions with relative-path links to existing Atlas entries
+- **P3-2 Pass 2 (build + relink)**: added 10 high-leverage new entries + 6 more venues linked
+- **P3-4 (build + relink)**: added 21 niche entries (19 journals + 2 conferences) + 21 more venues linked
 
-Remaining: 26 markers / 29 venue mentions across 23 entries — all niche venues (e.g. Memory & Cognition, NeuroImage, American Sociological Review, Sensors MDPI). These intentionally stay as community-contribution markers and represent the entry points for future contributors.
+After all three passes, 44 venue mentions have been resolved across 51 originally-marked entries.
+
+**Remaining**: 25 markers / 29 venue mentions across 22 entries — these are deeper-niche venues (Briefings in Functional Genomics, Genome Biology, Journal of Neuroscience, Heliyon, Imaging Neuroscience, Career Development Quarterly, Sustainability Science, Educational Researcher, etc.) or generic-tag references ("other educational-research journals" / "Specialty IEEE Transactions in relevant subfield" / "Specialty Physical Review journal" / "other topics") that cannot be resolved to a single entry. These intentionally stay as community-contribution markers and represent the entry points for future contributors.
 
 ### Schema version
 
@@ -121,13 +124,13 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - Reviewer pool characteristics and framing requirements informed by recent publication patterns and (where available) published reviewer reports
 - Estimated subjective-judgment uncertainty: ~15%
 
-### Tier 2 — Community estimate (131 entries)
+### Tier 2 — Community estimate (152 entries)
 
 **Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community / family-level knowledge rather than per-entry evidence harvesting.
 
-**Composition** (131 entries):
-- **Journals (113)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories) + 10 P3-2 high-leverage additions (Bioinformatics / NAR / Cell Reports / Nature Physics / PRR / 4 ACM HCI journals / TACL)
-- **Conferences (18)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW)
+**Composition** (152 entries):
+- **Journals (132)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories) + 10 P3-2 high-leverage additions (Bioinformatics / NAR / Cell Reports / Nature Physics / PRR / 4 ACM HCI journals / TACL) + 19 P3-4 niche additions (3 biology / 1 multidisciplinary / 4 neuroscience / 7 psychology / 3 hci / 1 qual-methods)
+- **Conferences (20)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW) + 2 P3-4 (ACM ASSETS / ACII)
 
 **What Tier 2 means in practice**:
 - Identity / Metrics / Policies are reliable (OpenAlex + publisher / conference CFP)

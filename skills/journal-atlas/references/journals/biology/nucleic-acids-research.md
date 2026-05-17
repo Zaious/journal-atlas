@@ -238,7 +238,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|---------|------------------------|
 | 1 | [Bioinformatics](./bioinformatics.md) | OUP computational sister; if computational-method-focused |
 | 2 | [PLOS Biology](./plos-biology.md) | OA broad-scope biology peer |
-| 3 | *(Genome Research — community contribution welcome)* | CSHL Press genomics peer |
+| 3 | [Genome Research](../biology/genome-research.md) | CSHL Press genomics peer |
 
 ---
 

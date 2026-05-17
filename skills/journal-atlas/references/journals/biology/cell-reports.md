@@ -239,7 +239,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|---------|------------------------|
 | 1 | [PLOS Biology](./plos-biology.md) | OA broad biology peer |
 | 2 | [Nature Communications](../multidisciplinary/nature-communications.md) | OA broad-scope alternative |
-| 3 | *(eLife — community contribution welcome)* | OA peer with public review reports |
+| 3 | [eLife](../biology/elife.md) | OA peer with public review reports |
 
 ---
 

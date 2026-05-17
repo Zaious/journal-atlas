@@ -254,7 +254,7 @@ Low for affective computing tradition.
 |------|---------|------------------------|
 | 1 | [IEEE Transactions on Human-Machine Systems](./ieee-transactions-on-human-machine-systems.md) | IEEE peer |
 | 2 | [IEEE Access](./ieee-access.md) | IEEE OA mega-journal |
-| 3 | *(ACII conference proceedings — community contribution welcome)* | Affective computing conference venue |
+| 3 | [ACII conference proceedings](../conferences/hci/acii.md) | Affective computing conference venue |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a general AI venue as "too affect-specialized," IEEE TAC is the IEEE ACII-affiliated home.
 

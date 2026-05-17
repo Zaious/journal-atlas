@@ -11,9 +11,9 @@
 
 Journal Atlas captures what bibliometric tools like Impact Factor and Scimago don't: the **soft metadata** of academic journals — reviewer culture, framing expectations, sensitive-topic tolerance, AI policy nuances, methodological preferences, and rejection-fallback strategies — encoded as a Claude Agent Skill installable across Claude Code, Claude Desktop, and ChatGPT.
 
-> **Status (2026-05): Pre-release.** 142 seed entries — 124 journals across 8 field
-> directories + 18 conferences across 4 sub-domains (HCI / ML / NLP / Data Mining).
-> Quality breakdown: **11 Tier 1** (evidence-backed) · **131 Tier 2** (community
+> **Status (2026-05): Pre-release.** 163 seed entries — 143 journals across 8 field
+> directories + 20 conferences across 4 sub-domains (HCI / ML / NLP / Data Mining).
+> Quality breakdown: **11 Tier 1** (evidence-backed) · **152 Tier 2** (community
 > estimate) · **0 Skeleton** (all promoted in Phase 4).
 > Schema **v1.3** — adds `Venue type` field + `Conference Specifics` section.
 > See [Tier System](#tier-system) and [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
@@ -120,7 +120,7 @@ Use when you have a paper and need decisions: recommendations, comparisons, reje
 - Walk Rejection Fallback Chains
 - Present recommendations with cited evidence and Tier-aware confidence flags
 
-**Entry-count-aware design** scales from current 142 entries to 200+:
+**Entry-count-aware design** scales from current 163 entries to 200+:
 - ≤20 entries: direct read
 - 21–50: `scripts/fit_score.py` pre-ranking
 - 50+: mandatory pre-ranking; AI reads top 10–15
@@ -327,7 +327,7 @@ End-to-end examples. Each shows the conversation, what the skill does internally
 < [Runs scripts/query_journals.py with --field psychology --quartile Q1
 <  --zero-embargo --no-ai-permission-gate]
 <
-< 6 of 142 entries match:
+< 6 of 163 entries match:
 < | Journal | h-index | OA model | Word limit |
 < |---------|---------|----------|------------|
 < | Review of General Psychology | 158 | hybrid | 15,000 |
@@ -418,7 +418,7 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
                                                               (no banner)
 ```
 
-Current distribution: **11 Tier 1 · 131 Tier 2 · 0 Skeleton = 142 total** (124 journals + 18 conferences).
+Current distribution: **11 Tier 1 · 152 Tier 2 · 0 Skeleton = 163 total** (143 journals + 20 conferences).
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 

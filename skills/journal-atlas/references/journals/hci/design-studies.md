@@ -256,7 +256,7 @@ Low for design research tradition authors.
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Design Issues](./design-issues.md) | MIT Press peer; design history and theory |
-| 2 | *(International Journal of Design — community contribution welcome)* | OA design research peer |
+| 2 | [International Journal of Design](../hci/international-journal-of-design.md) | OA design research peer |
 | 3 | [ACM Transactions on Computer-Human Interaction](./acm-transactions-on-computer-human-interaction.md) | If HCI angle dominates |
 
 **Reverse direction** *(optional)*: If your paper was rejected from TOCHI as "too design-process-focused," Design Studies is the Elsevier DRS-affiliated home for design research.
