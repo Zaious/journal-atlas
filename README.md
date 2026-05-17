@@ -16,6 +16,8 @@ Journal Atlas captures what bibliometric tools like Impact Factor and Scimago do
 > Quality breakdown: **11 Tier 1** (evidence-backed) · **152 Tier 2** (community
 > estimate) · **0 Skeleton** (all promoted in Phase 4).
 > Schema **v1.3** — adds `Venue type` field + `Conference Specifics` section.
+> Plus 8 Society Registry entries (`references/societies/`, schema `society-v1`)
+> covering ACM SIGCHI / SIGACCESS / ACL / APS / APA / Cell Press / Nature Portfolio / PLOS.
 > See [Tier System](#tier-system) and [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 
 ---

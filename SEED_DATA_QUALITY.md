@@ -83,10 +83,27 @@ After all three passes, 44 venue mentions have been resolved across 51 originall
 
 ### Schema version
 
-All 132 entries conform to **schema v1.3**, which introduces:
+All 163 entries conform to **schema v1.3**, which introduces:
 - **`Venue type`** required field in Identity (`Journal` / `Conference` / `Proceedings-Journal`)
 - **`Conference Specifics`** required H2 section for `conferences/` subtree (4 sub-tables: Submission Cycle, Program Committee, Submission Format, Review Format) + Conference Calendar
 - Path-aware validation: `validate_structure.py` enforces Conference Specifics only on `conferences/` entries.
+
+### Society Registry (P3-3, schema `society-v1`)
+
+A separate Society Registry under `references/societies/` provides reverse-index metadata: for each major society / publisher in the Atlas, the registry lists all owned venues, society-wide policies (AI / Authorship / OA / Ethics), editorial culture norms, and cross-venue submission strategy (rejection cascade paths).
+
+| Society | Type | Atlas venues | Path |
+|---------|------|-------------|------|
+| ACM SIGCHI | Society | 8 conferences + 5 journals | [→](skills/journal-atlas/references/societies/acm-sigchi.md) |
+| ACM SIGACCESS | Society | 1 conference + 1 journal | [→](skills/journal-atlas/references/societies/acm-sigaccess.md) |
+| ACL | Society | 3 conferences + 2 journals | [→](skills/journal-atlas/references/societies/acl.md) |
+| APS | Society | 2 journals | [→](skills/journal-atlas/references/societies/aps.md) |
+| APA | Society | 12 journals | [→](skills/journal-atlas/references/societies/apa.md) |
+| Cell Press | Publisher | 6 journals | [→](skills/journal-atlas/references/societies/cell-press.md) |
+| Nature Portfolio | Publisher | 8 journals | [→](skills/journal-atlas/references/societies/nature-portfolio.md) |
+| PLOS | Publisher | 3 journals | [→](skills/journal-atlas/references/societies/plos.md) |
+
+The registry has its own lightweight validator (`scripts/validate_societies.py`) checking schema marker + required H2 sections. Society entries are not subject to the journal/conference Venue type or Conference Specifics validation.
 
 ## Confidence tiers
 

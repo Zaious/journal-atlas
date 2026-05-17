@@ -15,6 +15,8 @@ Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法
 > 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
 > 品質分層：**11 Tier 1**（有實證後盾）· **152 Tier 2**（社群推估）· **0 Skeleton**（Phase 4 已全數晉升）。
 > Schema **v1.3** — 新增 `Venue type` 欄位 + `Conference Specifics` 區塊。
+> 另外 8 個 Society Registry entries（`references/societies/`，schema `society-v1`）
+> 涵蓋 ACM SIGCHI / SIGACCESS / ACL / APS / APA / Cell Press / Nature Portfolio / PLOS。
 > 見 [版本與品質分層](#%E7%89%88%E6%9C%AC%E8%88%87%E5%93%81%E8%B3%AA%E5%88%86%E5%B1%A4-tier-system) 與 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 
 ---
