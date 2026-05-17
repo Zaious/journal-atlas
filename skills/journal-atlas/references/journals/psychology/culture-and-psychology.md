@@ -253,4 +253,4 @@ Moderate when manuscripts originate outside cultural-psychology paradigm. Author
 |------|--------|----|
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

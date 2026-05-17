@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices and community-aggregator evidence (manusights.com Nature Methods acceptance rate / under-consideration / review-time guides) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,69 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High — international methods-development authorship |
+| **Non-Western epistemology openness** | N/A — methods-focused venue |
+| **Diversity topic receptiveness** | Medium — diversity in benchmarking datasets and applications encouraged |
+| **Dominant theoretical tradition** | Method / tool development across biology — imaging, sequencing, computational biology, single-cell, structural biology, neuroscience methods |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (very strong)
+- **If yes, what kind?** Manuscripts must demonstrate **community-adoptable method** with rigorous benchmarking against existing alternatives. Editor/reviewer test: "Will the community adopt this method, not just solve one lab's problem?" Method must be accessible to non-specialists (cross-discipline readability).
+- **Consequences of ignoring it**: ~75% desk-rejected (community evidence: manusights 2026-05). 8–10% raw acceptance rate; 32.1 IF (2024 JCR). Median 7 days to first editorial decision; median 239 days to final acceptance.
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core method |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 2 | Pure theory rare; method advances welcomed |
+| Mixed methods | 1 | Outside scope |
+| Meta-analysis | 2 | Method benchmarking welcomed; effect-size meta-analysis rare |
+| New methods + benchmarking | 5 | Flagship format |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — Nature-family standard |
+| **Expected density** | Low |
+| **Writing style notes** | Nature-family broad-significance opening; accessible to non-specialists (cell biologist must follow computational paper; vice versa); figures-heavy; benchmarking tables expected |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Full-time professional editors handle initial triage (decisive screening). External reviewers from method-development community across biology. Editors are fast, experienced, with strong intuition for what survives peer review. Common reviewer demands: "Head-to-head benchmarking against existing methods?", "Will the community adopt this?", "Cross-discipline accessibility?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Biology-methods development — multi-subfield | https://manusights.com/blog/nature-methods-acceptance-rate |
+| **Reviewer competence variance** | Low — professional editorial curation |
+| **Quantitative mindset bias on qualitative work?** | N/A |
+| **Discourse community signals (editorial board)** | Nature Portfolio professional editors |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| Single-cell methods | Very High | Core topic |
+| Imaging methods | Very High | Core topic |
+| Computational biology methods | Very High | Core topic |
+| Sequencing methods | Very High | Core topic |
+| Structural biology methods | Very High | Core topic |
+| AI / ML methods for biology | Very High | Hot topic |
+| Neuroscience methods | Very High | Core topic |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-subjects component |
+| **Single-author acceptance** | Uncommon |
+| **Independent scholar friendliness** | Low — lab + infrastructure required for benchmarking |
+| **Data transparency requirement** | Very High — code, data, materials sharing expected |
+| **OPSEC compatibility** | Medium — proprietary methods can be partially protected via supplementary materials |
 
 ---
 
@@ -228,27 +227,41 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- ~75% desk-rejected before review (community evidence: manusights 2026-05)
+- Methods lacking rigorous benchmarking against existing alternatives
+- Methods not accessible to cross-disciplinary readers
+- Single-lab solutions without community-adoption potential
+- Failure to disclose AI use per Nature Portfolio policy
 
 ### Soft Tax
 
-*(fill manually)*
+High. Benchmarking demands are extensive — head-to-head comparisons with state-of-the-art methods using standardized/realistic datasets. Cross-discipline accessibility demands substantial rewriting. Median submission-to-acceptance 239 days (community evidence 2026-05).
 
 ### Best Suited For
 
-*(fill manually)*
+- Method / tool development with community-adoption potential
+- Imaging, sequencing, single-cell, structural biology methods
+- Computational biology and AI methods
+- Cross-discipline benchmarking studies
+- Authors comfortable with Nature-family broad-significance framing and rigorous benchmarking demands
 
 ### Not Recommended For
 
-*(fill manually)*
+- Incremental method refinements (consider subfield-specific methods journals)
+- Pure applications without method novelty (consider domain-specific venues)
+- Authors prioritizing rapid turnaround
+- Pure theoretical work
+- Single-author work
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | [Nature Biotechnology](./nature-biotechnology.md) | If method has translational biotech angle; sister Nature Portfolio journal |
+| 2 | [PLOS Computational Biology](./plos-computational-biology.md) | If method is computational; OA alternative |
+| 3 | *(Nature Communications / Cell Reports Methods / Bioinformatics — community contribution welcome)* | Broader scope fallbacks |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too methods-specialized," Nature Methods is often a better fit because: it specializes in methods development with deep editorial expertise; community-adoption framing is reusable; and 32.1 IF provides high-prestige methods outlet.
 
 ---
 
@@ -257,4 +270,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |

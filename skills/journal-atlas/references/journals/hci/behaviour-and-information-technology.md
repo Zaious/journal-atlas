@@ -269,4 +269,4 @@ Low for technology-adoption / social-media empirical authors. Moderate for HCI-c
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

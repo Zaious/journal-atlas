@@ -275,4 +275,4 @@ Low for quantitative-psychology authors. Very high for qualitative or design-res
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. High-volume psychology-leaning HCI journal. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

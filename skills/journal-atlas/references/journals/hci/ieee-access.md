@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (ieeeaccess.ieee.org peer review stages + reviewer guidelines) and community-aggregator evidence (manusights.com, scirev.org) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,69 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High — global IEEE engineering authorship |
+| **Non-Western epistemology openness** | N/A — engineering venue |
+| **Diversity topic receptiveness** | Medium — IEEE diversity initiatives but engineering-empirical focus |
+| **Dominant theoretical tradition** | Broad IEEE scope — electrical, electronics, computer engineering, AI/ML, signal processing, communications, biomedical engineering, robotics, materials |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (soft)
+- **If yes, what kind?** Manuscripts must demonstrate **technical novelty within broad IEEE scope** (electrical / electronics / computer engineering). Multidisciplinary OA mega-journal — broader than specialty IEEE Transactions.
+- **Consequences of ignoring it**: Desk reject in 1–2 weeks for scope misfit, formatting/language issues, minor extensions of existing work, or insufficient technical novelty (community evidence: manusights / ieeeaccess.ieee.org 2026-05).
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core method |
+| Qualitative interviews | 1 | Rare; engineering venue |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 3 | Accepted with empirical or simulation validation |
+| Mixed methods | 2 | Accepted with quantitative dominance |
+| Meta-analysis | 3 | Engineering systematic reviews welcomed |
+| Simulation / Computational | 5 | Common |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — IEEE engineering convention is third-person; first-person occasional |
+| **Expected density** | Low |
+| **Writing style notes** | IEEE format; engineering technical register; mathematical notation expected; figures/tables heavy; supplementary materials supported |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Associate Editors (AE) provide initial vetting + invite reviewers. Final decision rests with the AE; reviewers provide recommendations only. ~27% average acceptance rate (community evidence: manusights 2026-05). First decision typically 3–6 weeks. Mixed reviewer experience reported on SciRev — most reviews of good quality, some inconsistencies between reviewer recommendations and AE decisions.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Broad IEEE engineering — multi-subfield | https://ieeeaccess.ieee.org/authors/stages-of-peer-review/ |
+| **Reviewer competence variance** | Medium-High — broad scope means variable specialist depth |
+| **Quantitative mindset bias on qualitative work?** | Yes — engineering empirical focus |
+| **Discourse community signals (editorial board)** | IEEE-affiliated AE network across engineering subfields |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| AI / Machine learning | Very High | Core scope |
+| Signal processing / Communications | Very High | Core scope |
+| Robotics / Autonomous systems | Very High | Core scope |
+| Biomedical engineering | High | Core scope |
+| Cybersecurity | Very High | Core scope |
+| HCI applied | Medium-High — HCI-engineering crossover only |
+| Sustainability / Energy | High |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-subjects component |
+| **Single-author acceptance** | Possible in theoretical / simulation work |
+| **Independent scholar friendliness** | Medium — APC barrier (consider IEEE membership discounts) |
+| **Data transparency requirement** | Medium |
+| **OPSEC compatibility** | Medium — engineering data typically aggregable |
 
 ---
 
@@ -228,27 +227,42 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Papers outside broad IEEE engineering scope (community evidence: manusights 2026-05)
+- Insufficient technical novelty / minor extensions of existing work
+- Formatting or English-language issues failing initial vetting
+- AI-generated content without disclosure per IEEE policy
+- Manuscripts targeting non-engineering audiences
 
 ### Soft Tax
 
-*(fill manually)*
+Low for engineering-tradition authors. APC ($1,950+ range) is a barrier for low-budget research; IEEE membership provides discounts. Mixed reviewer experiences suggest preparing for AE-driven decisions that may diverge from individual reviewer recommendations.
 
 ### Best Suited For
 
-*(fill manually)*
+- AI / ML engineering applications
+- Signal processing, communications, networking advances
+- Robotics and autonomous systems
+- Biomedical engineering work
+- Cybersecurity research
+- Engineering interdisciplinary work (electronics + biology, electronics + materials, etc.)
+- HCI work with strong engineering / system contribution
 
 ### Not Recommended For
 
-*(fill manually)*
+- Pure HCI design without engineering / system advance (consider TOCHI, HCI journal)
+- Pure psychology / behavioral work
+- Non-engineering audiences as primary readers
+- Authors prioritizing high-prestige specialty IEEE Transactions
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | *(IEEE Transactions on Human-Machine Systems — community contribution welcome)* | If HCI-engineering angle |
+| 2 | *(Specialty IEEE Transactions in relevant subfield — community contribution welcome)* | IEEE specialty venues |
+| 3 | *(Sensors / Electronics MDPI — community contribution welcome)* | OA alternative outside IEEE family |
+
+**Reverse direction** *(optional)*: If your paper was rejected from a specialty IEEE Transactions as "outside narrow specialty scope," IEEE Access is often a better fit because: it explicitly bridges IEEE subfields; multidisciplinary scope accommodates broader work; OA visibility supplements specialty venues; and 3–6 week first decision provides faster turnaround.
 
 ---
 
@@ -257,4 +271,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (ieeeaccess.ieee.org) + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > IEEE Access (MIT) | @cardinal |

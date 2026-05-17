@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (journals.aps.org/prl/about) and community-aggregator evidence (manusights.com, scirev.org, arxiv.org 1308.1552) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,69 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | Medium-High — international physics authorship; APS member-affiliated but global submission base |
+| **Non-Western epistemology openness** | N/A — physics is paradigm-unified; non-Western interpretive frameworks not applicable |
+| **Diversity topic receptiveness** | N/A — venue is physics-empirical; identity-diversity papers outside scope |
+| **Dominant theoretical tradition** | Mainstream physics — superconductivity/magnetism (16,351 articles), quantum transport (14,635), particle physics (12,662), cold-atom/BEC (11,733), QCD (11,061), quantum information (8,698) per OpenAlex |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (very strong)
+- **If yes, what kind?** Manuscripts must demonstrate **"broad interest to the physics community"** — PRL's defining editorial test (community evidence: journals.aps.org/prl/about 2026-05). Findings significant only within narrow subfield are systematically desk-rejected.
+- **Consequences of ignoring it**: Desk rejection typically within 1–2 weeks (community evidence: manusights.com 2026-05). Scope misfit drives most desk rejections, not weak methodology.
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core method — physics-experimental work |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 5 | Theoretical physics equally welcomed |
+| Mixed methods | 0 | Outside scope |
+| Meta-analysis | 0 | Outside scope for physics-empirical work |
+| Computational simulation | 5 | Distinctive PRL strength |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — physics convention is third-person passive; first-person occasional |
+| **Expected density** | Low |
+| **Writing style notes** | Strict 4-page limit (including figures, references); abstract ≤600 characters; physics-formal register; broad-interest opening expected; APS LaTeX template |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Reviewers drawn from APS-affiliated physics community — expert referees in topic subfield. PRL has a reputation for thorough review from expert referees (community evidence: scirev.org 2026-05). First-decision typically 6–10 weeks for papers sent to peer review. Common reviewer demands: "Broad-interest claim justified?", "Novelty?", "Generalizability beyond your specific system?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Mainstream physics — experimental + theoretical + computational | https://journals.aps.org/prl/about |
+| **Reviewer competence variance** | Low — APS-curated expert reviewer pool |
+| **Quantitative mindset bias on qualitative work?** | N/A — venue is quantitative-physics |
+| **Discourse community signals (editorial board)** | American Physical Society; international physics leadership |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| Superconductivity / Magnetism | Very High | Core topic (16,351 articles) |
+| Quantum information | Very High | Core topic (8,698 articles) |
+| Particle physics | Very High | Core topic (12,662 articles) |
+| Cold atoms / BEC | Very High | Core topic (11,733 articles) |
+| Astrophysics | Medium-High | Adjacent precedent |
+| Biophysics | Medium | Adjacent venue (consider PRX Life, PRE) |
+| Soft matter | Very High |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | N/A — physics venue (no human-subjects work) |
+| **Single-author acceptance** | Common in theoretical / computational work |
+| **Independent scholar friendliness** | Low-Medium — experimental work requires lab infrastructure |
+| **Data transparency requirement** | High — APS data-sharing norms; supplementary materials encouraged |
+| **OPSEC compatibility** | N/A for physics; high for theoretical work |
 
 ---
 
@@ -228,27 +227,42 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Manuscripts lacking "broad interest to the physics community" (community evidence: journals.aps.org/prl 2026-05 — the defining editorial test)
+- Findings significant only within a narrow subfield
+- Submissions exceeding 4-page limit (strict including figures and references)
+- Abstracts exceeding 600 characters
+- AI-generated content without disclosure per APS policy
 
 ### Soft Tax
 
-*(fill manually)*
+Moderate-High. The 4-page hard limit (including figures and references) demands ruthless compression — most submissions originate at 8–10 pages and require substantial cutting. Broad-interest framing also adds substantial rewriting if originating from subfield-specialist tradition. PRL's desk-rejection rate is high but rapid (1–2 weeks), so authors get fast feedback.
 
 ### Best Suited For
 
-*(fill manually)*
+- High-impact physics findings with broad-community implications
+- Theoretical physics advances bridging subfields
+- Quantum information / quantum computing breakthroughs
+- Condensed matter, particle physics, cold-atom, astrophysics work
+- Computational physics with novel methods
+- Authors comfortable with strict 4-page format
 
 ### Not Recommended For
 
-*(fill manually)*
+- Incremental subfield advances (consider Physical Review B, D, or E)
+- Long-form theoretical derivations (consider Physical Review X or PRD/PRE)
+- Pedagogical / review work (consider Reviews of Modern Physics)
+- Authors needing flexible length
+- Cross-disciplinary work primarily targeting non-physics audiences (consider Nature Physics, Science, PNAS)
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | *(Physical Review B / D / E / X — community contribution welcome to develop subfield-specific fallback chains)* | APS family covers subfield-specific journals (B: condensed matter, D: particles/fields, E: statistical/biological/soft matter, X: long-form high-impact); no AAM embargo within APS |
+| 2 | *(Nature Physics — community contribution welcome)* | If broad-interest is maintained but PRL format too restrictive |
+| 3 | *(Physical Review Research — community contribution welcome)* | APS open-access general-physics journal; same APS family editorial culture |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Nature Physics or Science as "too physics-specialized," PRL is often a better fit because: it specializes in physics with deep reviewer-pool expertise across all subfields; APS family provides cross-journal transfer pathway; and 4-page format forces sharp claim articulation.
 
 ---
 
@@ -257,4 +271,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (journals.aps.org/prl/about) + community aggregators (manusights, scirev, arxiv 1308.1552) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Physical Review Letters (MIT) | @cardinal |

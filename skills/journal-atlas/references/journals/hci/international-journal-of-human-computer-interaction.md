@@ -272,4 +272,4 @@ Low for technology-adoption empirical authors. Moderate for HCI-canonical empiri
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Disambiguation note added to distinguish IJHCI from IJHCS. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

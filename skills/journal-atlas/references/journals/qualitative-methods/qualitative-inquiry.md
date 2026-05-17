@@ -262,4 +262,4 @@ Low for autoethnographic / reflexive manuscripts originating in the qualitative-
 |------|--------|----|
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

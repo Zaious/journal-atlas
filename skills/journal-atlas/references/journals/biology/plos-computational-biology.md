@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (journals.plos.org/ploscompbiol editorial process + reviewer guidelines) and PLOS-wide metrics page gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,69 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High — global computational-biology authorship |
+| **Non-Western epistemology openness** | N/A — paradigm-unified computational science |
+| **Diversity topic receptiveness** | Medium — PLOS-wide diversity initiatives |
+| **Dominant theoretical tradition** | Computational biology — bioinformatics, systems biology, computational neuroscience, evolutionary computation, structural bioinformatics, ML in biology |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (soft)
+- **If yes, what kind?** Manuscripts must demonstrate **significance, originality, rigorous methodology, substantial evidence** with biological insight. Pure ML methods without biology, or pure biology without computational advance, less aligned.
+- **Consequences of ignoring it**: ~35% acceptance rate; 44 days to first decision; 227 days to publication (community evidence: PLOS metrics 2026-05).
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 4 | Computational-experimental hybrid common |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 4 | Theoretical / mathematical biology welcomed |
+| Mixed methods | 1 | Outside scope |
+| Meta-analysis | 3 | Computational meta-analyses welcomed |
+| Bioinformatics / Computational | 5 | Core method |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — third-person scientific register; first-person occasional |
+| **Expected density** | Low |
+| **Writing style notes** | OA format; mathematical notation; code-data availability emphasized; biological insight required alongside computational method |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Reviewers from computational biology, bioinformatics, computational neuroscience, systems biology communities. PLOS editorial assessment + 2+ external reviewers. Single-anonymized by default; opt-in published peer review. Common reviewer demands: "Biological insight beyond method?", "Code/data availability?", "Benchmarking against existing computational approaches?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Computational biology — multi-subfield | https://journals.plos.org/ploscompbiol/s/editorial-and-peer-review-process |
+| **Reviewer competence variance** | Medium |
+| **Quantitative mindset bias on qualitative work?** | N/A |
+| **Discourse community signals (editorial board)** | PLOS-affiliated; ISCB (International Society for Computational Biology) overlap |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| Bioinformatics | Very High | Core scope |
+| Systems biology | Very High | Core scope |
+| Computational neuroscience | Very High | Core scope |
+| ML / AI in biology | Very High | Hot topic |
+| Structural bioinformatics | Very High | Core scope |
+| Evolutionary computation | High |
+| Single-cell computational | Very High | Hot topic |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-data components |
+| **Single-author acceptance** | Possible — computational work often single-authored |
+| **Independent scholar friendliness** | Medium — APC barrier; computational work feasible without lab |
+| **Data transparency requirement** | Very High — PLOS open-data policy; code-sharing expected |
+| **OPSEC compatibility** | Medium — code/data sharing requirement |
 
 ---
 
@@ -228,27 +227,41 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Methods without biological insight (community evidence: PLOS editorial scope 2026-05)
+- Failure to share code per PLOS computational reporting standards
+- Failure to disclose AI use
+- 2-year-old computational work in fast-moving subfields may be considered outdated
 
 ### Soft Tax
 
-*(fill manually)*
+Moderate. APC barrier; open-code/open-data demands. Editorial cycle 44 days to first decision is reasonable but full path to publication 227 days. ISCB community ties provide visibility.
 
 ### Best Suited For
 
-*(fill manually)*
+- Computational biology methods with biological application
+- Bioinformatics tool papers with biological validation
+- Systems biology modeling
+- Computational neuroscience theoretical/modeling work
+- ML / AI applied to biological problems
+- Single-cell computational methods
+- Authors comfortable with OA + open-code + opt-in published peer review
 
 ### Not Recommended For
 
-*(fill manually)*
+- Pure ML method papers without biology (consider ML venues)
+- Pure biology without computational method (consider PLOS Biology, specialty biology venues)
+- Authors needing closed peer review
+- Low-budget research without OA funding
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | [PLOS Biology](./plos-biology.md) | If biology insight dominates over computational method; same PLOS family |
+| 2 | [Nature Methods](./nature-methods.md) | If computational method has cross-subfield impact; Nature Portfolio |
+| 3 | *(Bioinformatics / Nucleic Acids Research / NeurIPS — community contribution welcome)* | Specialty venues depending on subfield |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Bioinformatics or Nature Methods as "too specialized application," PLOS Computational Biology is often a better fit because: it specializes in computational biology with broad scope; OA visibility + ISCB ties provide community reach; and methodology + biological insight together are explicitly valued.
 
 ---
 
@@ -257,4 +270,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (PLOS Comp Bio editorial process + PLOS metrics) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > PLOS Biology et al. (MIT) | @cardinal |

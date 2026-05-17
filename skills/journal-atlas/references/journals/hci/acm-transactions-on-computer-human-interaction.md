@@ -274,4 +274,4 @@ Variable. For HCI-canonical empirical papers: low. For third-wave / critical / a
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + ACM Author Guidelines. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

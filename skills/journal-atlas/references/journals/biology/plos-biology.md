@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (journals.plos.org/plosbiology editorial process + reviewer guidelines, theplosblog 2024 published peer review retrospective) and community-aggregator evidence (scirev.org) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,68 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High — global OA biology authorship |
+| **Non-Western epistemology openness** | N/A — biology paradigm-unified |
+| **Diversity topic receptiveness** | Medium-High — PLOS-wide diversity and equity initiatives |
+| **Dominant theoretical tradition** | Broad biology — molecular, cellular, developmental, evolutionary, ecological, neuroscience, computational across organisms |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (soft)
+- **If yes, what kind?** Manuscripts must demonstrate **broad biological significance with rigorous methodology**. PLOS Biology is the most selective biological PLOS title; selectivity comparable to Nature subfield journals.
+- **Consequences of ignoring it**: ~60% of submissions receive initial decision within 5 days; ~80% within a week (community evidence: PLOS editorial process 2026-05). Rapid desk-rejection for scope misfit.
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core method |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 3 | Accepted with empirical grounding |
+| Mixed methods | 1 | Outside scope |
+| Meta-analysis | 3 | Biology meta-analyses welcomed |
+| Computational biology | 5 | Core method |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — third-person scientific register; first-person occasional |
+| **Expected density** | Low |
+| **Writing style notes** | Open-access format; broad-biology accessibility; supplementary materials extensive; OA visible figures encouraged |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Reviewers selected based on topic expertise; invitations via Editorial Manager. Single-anonymized peer review by default; opt-in published peer review available (one of PLOS's highest opt-in rates among biology titles). Common reviewer demands: "Broad biological significance?", "Methodological rigor?", "Generalizability?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Broad biology — multi-subfield | https://journals.plos.org/plosbiology/s/editorial-and-peer-review-process |
+| **Reviewer competence variance** | Medium |
+| **Quantitative mindset bias on qualitative work?** | N/A — venue is biology-empirical |
+| **Discourse community signals (editorial board)** | PLOS-affiliated biology research community |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| Molecular / Cell biology | Very High | Core topic |
+| Neuroscience | Very High | Core topic |
+| Evolutionary biology | Very High | Core topic |
+| Ecology | Very High | Core topic |
+| Computational biology | Very High | Core topic |
+| Dual-use research | High — careful framing | Standard biosecurity reporting |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-subjects work |
+| **Single-author acceptance** | Uncommon |
+| **Independent scholar friendliness** | Medium — APC barrier but waivers available |
+| **Data transparency requirement** | Very High — PLOS open-data policy strict |
+| **OPSEC compatibility** | Medium-Low — full OA + open-data; sensitive research may need careful planning |
 
 ---
 
@@ -228,27 +226,41 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Manuscripts lacking broad biological significance (community evidence: PLOS editorial scope 2026-05)
+- Pure technical / clinical papers (consider PLOS Medicine, PLOS Pathogens)
+- Failure to share data per PLOS open-data policy
+- Failure to disclose AI use
 
 ### Soft Tax
 
-*(fill manually)*
+Moderate. PLOS Biology APC is substantial (community evidence: ~$5K range, check current rates). Open-data requirements demand preparation. Published peer review is opt-in but increasingly the norm.
 
 ### Best Suited For
 
-*(fill manually)*
+- Broad-biology research with cross-subfield implications
+- High-impact molecular, cellular, developmental biology
+- Evolutionary and ecological breakthroughs
+- Computational biology with biological insight
+- Authors comfortable with OA + open-data + opt-in published peer review
+- Cross-disciplinary biology spanning organisms
 
 ### Not Recommended For
 
-*(fill manually)*
+- Highly clinical / medical work (consider PLOS Medicine)
+- Computational-only work without biological insight (consider PLOS Computational Biology)
+- Pathogen-specific work (consider PLOS Pathogens)
+- Authors needing closed peer review
+- Low-budget research without OA funding
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | [PLOS Computational Biology](./plos-computational-biology.md) | If method or computational-biology focused; same PLOS family |
+| 2 | *(PLOS ONE — community contribution welcome)* | Broader-scope OA fallback; same publisher; lower selectivity |
+| 3 | [Nature Methods](./nature-methods.md) | If methods-development angle; Nature Portfolio |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Nature, Cell, or Science as "too subfield-broad / not flagship-impact," PLOS Biology is often a better fit because: it specializes in broad biology with OA visibility; similar selectivity to Nature subfield journals; and open-data + opt-in published peer review provides transparency advantage.
 
 ---
 
@@ -257,4 +269,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (PLOS editorial process) + scirev (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > PLOS Biology et al. (MIT) | @cardinal |

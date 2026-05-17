@@ -274,4 +274,4 @@ Low for cognitive-engineering empirical authors. Moderate for design-research or
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Elsevier defaults. APC and 24-month AAM embargo confirmed. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

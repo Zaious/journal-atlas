@@ -260,4 +260,4 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 |------|--------|----|
 | 2026-05-13 | Initial entry — structural fields populated. Format details derived from empirical sampling of recent publications (official PDF appears outdated). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

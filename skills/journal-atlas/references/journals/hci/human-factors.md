@@ -273,4 +273,4 @@ Low for HFES-tradition authors. Very high for HCI design or critical work — ty
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. HFES-affiliated ergonomics/human factors anchor noted. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

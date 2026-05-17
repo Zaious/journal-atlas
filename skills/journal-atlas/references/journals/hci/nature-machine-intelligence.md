@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from Nature Portfolio publisher pages and domain knowledge of AI / ML high-impact venue editorial culture. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,69 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High |
+| **Non-Western epistemology openness** | N/A — paradigm-unified AI/ML |
+| **Diversity topic receptiveness** | Medium-High — AI fairness, ethical AI |
+| **Dominant theoretical tradition** | AI / Machine Intelligence — ML, deep learning, neural networks, AI applications, AI ethics, AI in science |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (very strong)
+- **If yes, what kind?** Manuscripts must demonstrate **substantial AI/ML advance with broad cross-disciplinary impact**. Nature Portfolio broad-significance editorial standard applies.
+- **Consequences of ignoring it**: ~85%+ desk rejection. Scope misfit drives most.
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core — ML benchmarking |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 3 | With empirical validation |
+| Mixed methods | 1 | Outside scope |
+| Meta-analysis | 3 | ML surveys welcomed |
+| ML / Algorithm development | 5 | Core |
+| AI in science | 5 | Distinctive strength |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — Nature-family slightly more open |
+| **Expected density** | Low |
+| **Writing style notes** | Nature-family broad-significance opening; accessible to non-specialists; mathematical notation; benchmark tables; code availability emphasized |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Reviewers from international AI/ML research community — professional Nature Portfolio editors filter initially; external reviewers from leading ML labs. Common demands: "Substantial advance over state of the art?", "Cross-disciplinary impact?", "Reproducibility?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | AI / ML — Nature Portfolio professional editorial curation |
+| **Reviewer competence variance** | Low |
+| **Quantitative mindset bias on qualitative work?** | N/A |
+| **Discourse community signals (editorial board)** | Nature Portfolio + international AI/ML leadership |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| ML / Deep learning advances | Very High | Core |
+| AI in science | Very High | Core |
+| AI ethics / Fairness | Very High | Hot topic |
+| Foundation models / LLMs | Very High | Hot topic |
+| AI safety | Very High | Hot topic |
+| Reinforcement learning | Very High | Core |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-AI interaction |
+| **Single-author acceptance** | Uncommon |
+| **Independent scholar friendliness** | Low — computational infrastructure required |
+| **Data transparency requirement** | Very High — code + data + benchmarks expected |
+| **OPSEC compatibility** | Medium |
 
 ---
 
@@ -228,27 +227,37 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- Incremental ML advances without cross-disciplinary impact
+- AI use without disclosure per Nature Portfolio policy
+- Code / data not shared
 
 ### Soft Tax
 
-*(fill manually)*
+High. Nature-family broad-significance framing demands substantial rewriting from specialist register.
 
 ### Best Suited For
 
-*(fill manually)*
+- Foundation models / LLMs with broad impact
+- AI for scientific discovery
+- AI ethics / safety / fairness research
+- ML method breakthroughs with cross-discipline applications
+- Reinforcement learning advances
 
 ### Not Recommended For
 
-*(fill manually)*
+- Incremental ML method papers (consider NeurIPS, ICML, ICLR)
+- Pure theoretical ML (consider JMLR)
+- HCI without ML method advance (consider TOCHI)
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | [AI & Society](./ai-and-society.md) | If AI ethics / society focus; Springer |
+| 2 | *(NeurIPS / ICML / ICLR proceedings — community contribution welcome)* | Top ML conference venues |
+| 3 | [Frontiers in Computer Science](./frontiers-in-computer-science.md) | OA CS venue; broader scope |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too AI/ML-specialized," Nature Machine Intelligence is the natural Nature Portfolio home.
 
 ---
 
@@ -257,4 +266,5 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
+| 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Nature Portfolio publisher + AI/ML high-impact editorial culture domain knowledge | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |

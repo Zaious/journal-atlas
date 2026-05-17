@@ -271,4 +271,4 @@ Low for thought pieces and reflective essays. Moderate for academic researchers 
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — practitioner magazine format flagged distinctly from research journal pattern. Schema v1.2 from inception. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

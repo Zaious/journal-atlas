@@ -271,4 +271,4 @@ Low for niche-specialty researchers. Moderate for mainstream HCI authors — req
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Specialty journal at HRI/linguistics/cognitive science crossover. Multiple fields flagged pending due to less-documented publisher (Benjamins). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

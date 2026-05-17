@@ -285,4 +285,4 @@ Variable. For HCI-conceptual papers fitting Hypothesis & Theory: low-moderate. F
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Frontiers in CS is a younger journal with lower APC than Frontiers in Psychology PSP. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -271,4 +271,4 @@ Low for classical-HCI empirical papers. Moderate for design-research or critical
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + T&F default policies. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

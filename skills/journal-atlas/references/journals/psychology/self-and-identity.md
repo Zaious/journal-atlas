@@ -261,4 +261,4 @@ High for qualitative / first-person authors. Adapting a primarily qualitative ma
 | 2026-05-13 | Initial entry — structural fields populated. Several metrics flagged as pending due to limited initial reconnaissance depth; recommend OpenAlex API fetch for h-index, citedness, and full topic ranking. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 99, i10 595, 2yr_citedness 1.53, works_count 953; Top 5 topics filled. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

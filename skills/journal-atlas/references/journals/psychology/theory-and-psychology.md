@@ -266,4 +266,4 @@ Minimal for theoretically-oriented manuscripts. Empirical authors typically inve
 |------|--------|----|
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Sage Author Instructions. Soft Metadata and Strategic Notes reserved for community contributions. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Rejection Fallback Chain (Strategic Notes). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Zaious |

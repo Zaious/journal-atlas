@@ -148,16 +148,8 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **Skeleton entry** - Auto-generated structural scaffold from OpenAlex
-> (Identity / Metrics / Subject Density / OA are reliable). Soft Metadata
-> sections below (Reviewer Pool / Framing / Sensitive Topics / Voice /
-> Methodological Preferences / Practical Concerns) are placeholders
-> awaiting contributor input. **Do not treat placeholders as recommendations.**
-> Use `/ja-validate` to upgrade this entry from your experience, or
-> `/ja-contribute` if you have new evidence. See
-> [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the
-> Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (nature.com/nbt/submission-guidelines, peer-review policy) and community-aggregator evidence (manusights.com, scirev.org) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
 
@@ -165,62 +157,68 @@
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | *(community estimate)* |
-| **Non-Western epistemology openness** | *(community estimate)* |
-| **Diversity topic receptiveness** | *(community estimate)* |
-| **Dominant theoretical tradition** | *(fill manually)* |
+| **Cross-cultural friendliness** | High — international biotechnology authorship |
+| **Non-Western epistemology openness** | N/A — biotechnology paradigm-unified |
+| **Diversity topic receptiveness** | Medium — workforce diversity and access topics published in editorials |
+| **Dominant theoretical tradition** | Translational biotechnology, genetic engineering, biomanufacturing, biopharma, computational biology applied to biotechnology |
 
 ### Framing Requirements
 
-- **Mandatory framing?** *(fill manually)*
-- **If yes, what kind?** *(fill manually)*
-- **Consequences of ignoring it**: *(fill manually)*
+- **Mandatory framing?** Yes (very strong)
+- **If yes, what kind?** Manuscripts must demonstrate **substantial advance + wide relevance to biotechnology readership**. Editor evaluates degree of field advance, soundness of conclusions, and breadth before peer review.
+- **Consequences of ignoring it**: ~90% rejection at submission (community evidence: manusights / nature.com peer-review policy 2026-05). Most rejections driven by scope/framing fit, not weak methodology. Initial editorial decision 1–3 weeks.
 
 ### Methodological Preferences
 
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | | |
-| Qualitative interviews | | |
-| Autoethnography | | |
-| Theoretical / Conceptual | | |
-| Mixed methods | | |
-| Meta-analysis | | |
+| Quantitative experimental | 5 | Core method — translational biotech |
+| Qualitative interviews | 0 | Outside scope |
+| Autoethnography | 0 | Outside scope |
+| Theoretical / Conceptual | 2 | Pure theory rare; method advances welcomed |
+| Mixed methods | 1 | Outside scope |
+| Meta-analysis | 2 | Uncommon as primary article |
+| Computational / Methods | 5 | Core scope |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | |
-| **Expected density** | |
-| **Writing style notes** | |
+| **First-person voice acceptance (0-5)** | 2 — Nature-family allows occasional first-person; broadly third-person |
+| **Expected density** | Low |
+| **Writing style notes** | Nature-family broad-significance opening; accessible to non-specialists; figures-heavy; supplementary materials extensive |
 
 ### Reviewer Pool Characteristics
 
-*(fill manually — see CONTRIBUTING.md for Birmingham 2020 framework guidance)*
+Reviewers are full-time professional editors (initial triage) + 2–3 external expert referees (often more for special advice). Transparent peer review scheme: review reports published with article. Common reviewer demands: "Advance over state of the art?", "Generalizability to wider biotech community?", "Methodological rigor for translation?".
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | | |
-| **Reviewer competence variance** | | |
-| **Quantitative mindset bias on qualitative work?** | | |
-| **Discourse community signals (editorial board)** | | |
+| **Dominant tradition** | Translational biotechnology, applied molecular biology, biopharma | https://www.nature.com/nbt/editorial-policies/peer-review |
+| **Reviewer competence variance** | Low — Nature Portfolio professional editorial curation |
+| **Quantitative mindset bias on qualitative work?** | N/A — venue is quantitative-experimental |
+| **Discourse community signals (editorial board)** | Nature Portfolio (Springer Nature); international biotechnology leadership |
 
 ### Sensitive Topics
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| | | |
+| Gene editing / CRISPR | Very High | Core topic |
+| Biomanufacturing | Very High | Core topic |
+| Clinical / Translational | Very High | Core topic |
+| AI / ML in biotech | Very High | Hot topic |
+| Cell therapy | Very High | Core topic |
+| Dual-use research | High — careful framing required | Standard biosecurity reporting expected |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | |
-| **Single-author acceptance** | |
-| **Independent scholar friendliness** | |
-| **Data transparency requirement** | |
-| **OPSEC compatibility** | |
+| **IRB requirement strictness** | Hard gate for human-subjects work; ethics review for clinical research |
+| **Single-author acceptance** | Uncommon — biotech research typically multi-author |
+| **Independent scholar friendliness** | Low — lab infrastructure required |
+| **Data transparency requirement** | Very High — Nature Portfolio data-sharing policies; transparent peer review reports published |
+| **OPSEC compatibility** | Medium — proprietary methods can be protected via supplementary materials embargoes |
 
 ---
 
@@ -228,27 +226,42 @@
 
 ### Hard Blockers
 
-*(fill manually)*
+- ~90% rejection at submission; ~75% desk-rejected before review (community evidence: manusights 2026-05)
+- Manuscripts lacking "substantial advance + wide relevance" framing
+- Pure theoretical work without translational implications
+- Failure to disclose AI use per Nature Portfolio policy
 
 ### Soft Tax
 
-*(fill manually)*
+High. Nature-family broad-significance framing demands substantial rewriting from subfield-specialist register. Transparent peer review means review reports are public — this affects how authors and reviewers engage. 12–20 weeks for first decision after review (community evidence 2026-05).
 
 ### Best Suited For
 
-*(fill manually)*
+- High-impact biotechnology advances with translational potential
+- Methods / tools with wide applicability across biotech subfields
+- Gene editing, CRISPR breakthroughs
+- Cell therapy and immunotherapy advances
+- Biomanufacturing innovations
+- AI / ML methods applied to biotechnology
+- Authors comfortable with Nature-family broad-significance demands
 
 ### Not Recommended For
 
-*(fill manually)*
+- Incremental subfield advances (consider Nature subfield journals or specialty venues)
+- Pure mechanism work without translation (consider Nature Cell Biology, Nature Genetics)
+- Authors prioritizing rapid OA visibility without high APC budget
+- Single-author work
+- Negative-result studies
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(fill manually)* | *(fill manually)* |
-| 2 | | |
-| 3 | | |
+| 1 | *(Nature Methods — community contribution welcome)* | If method-focused rather than translation-focused; sister Nature Portfolio journal |
+| 2 | [PLOS Biology](./plos-biology.md) | OA broad-biology alternative; lower APC; faster decisions |
+| 3 | *(Nature Communications / Cell Reports — community contribution welcome)* | Broader scope fallbacks within Nature Portfolio / Cell Press |
+
+**Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too biotech-specialized," Nature Biotechnology is often a better fit because: it specializes in biotechnology advances with deep editorial expertise; same broad-significance framing reusable; and Nature Portfolio family provides cross-journal transfer.
 
 ---
 
@@ -258,3 +271,4 @@
 |------|--------|----|
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |
+| 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (nature.com/nbt) + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |

@@ -272,4 +272,4 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 | Date | Change | By |
 |------|--------|----|
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

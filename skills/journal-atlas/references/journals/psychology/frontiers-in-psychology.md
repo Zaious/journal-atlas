@@ -293,4 +293,4 @@ Variable. For empirical PSP-aligned papers: low. For conceptual / theoretical pa
 | 2026-05-13 | Initial entry — structural fields populated. APC flagged with currency risk (CHF-based invoicing). Reputational note included for transparency. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 302, i10 26,156, 2yr_citedness 3.001, works_count 50,856; Top 5 topics filled. Caveat added: metrics reflect whole Frontiers in Psychology megajournal, not just PSP section. | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -281,4 +281,4 @@ Variable. For mainstream empirical authors aligned with SIPS values: minimal. Fo
 | 2026-05-13 | Initial entry — structural fields populated. SIPS membership discount window flagged (expires 2026-07-01). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 42, i10 213, 2yr_citedness 2.18, works_count 733; Top 5 topics filled. APC $975 confirmed via OpenAlex (matches SIPS member rate). | @Zaious |
-| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Muse |
+| 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
