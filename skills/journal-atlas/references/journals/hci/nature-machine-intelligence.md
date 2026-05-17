@@ -255,7 +255,7 @@ High. Nature-family broad-significance framing demands substantial rewriting fro
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [AI & Society](./ai-and-society.md) | If AI ethics / society focus; Springer |
-| 2 | *(NeurIPS / ICML / ICLR proceedings — community contribution welcome)* | Top ML conference venues |
+| 2 | [NeurIPS](../conferences/ml/neurips.md) / [ICML](../conferences/ml/icml.md) / [ICLR proceedings](../conferences/ml/iclr.md) | Top ML conference venues |
 | 3 | [Frontiers in Computer Science](./frontiers-in-computer-science.md) | OA CS venue; broader scope |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too AI/ML-specialized," Nature Machine Intelligence is the natural Nature Portfolio home.

@@ -252,7 +252,7 @@ Low for entertainment computing tradition.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(ACM CHI Play conference proceedings — community contribution welcome)* | ACM CHI Play games HCI flagship |
+| 1 | [ACM CHI Play conference proceedings](../conferences/hci/acm-chi-play.md) | ACM CHI Play games HCI flagship |
 | 2 | [International Journal of Human-Computer Interaction](./international-journal-of-human-computer-interaction.md) | Broader applied HCI |
 | 3 | [Computers in Human Behavior](./computers-in-human-behavior.md) | If psychology of games angle |
 

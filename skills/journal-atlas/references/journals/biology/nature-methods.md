@@ -260,7 +260,7 @@ High. Benchmarking demands are extensive — head-to-head comparisons with state
 |------|---------|------------------------|
 | 1 | [Nature Biotechnology](./nature-biotechnology.md) | If method has translational biotech angle; sister Nature Portfolio journal |
 | 2 | [PLOS Computational Biology](./plos-computational-biology.md) | If method is computational; OA alternative |
-| 3 | *(Nature Communications / Cell Reports Methods / Bioinformatics — community contribution welcome)* | Broader scope fallbacks |
+| 3 | *([Nature Communications](../multidisciplinary/nature-communications.md) / Cell Reports Methods / Bioinformatics — community contribution welcome for remaining)* | Broader scope fallbacks |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too methods-specialized," Nature Methods is often a better fit because: it specializes in methods development with deep editorial expertise; community-adoption framing is reusable; and 32.1 IF provides high-prestige methods outlet.
 

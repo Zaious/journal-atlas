@@ -258,9 +258,9 @@ High. Nature-family broad-significance framing demands substantial rewriting fro
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(Nature Methods — community contribution welcome)* | If method-focused rather than translation-focused; sister Nature Portfolio journal |
+| 1 | [Nature Methods](../biology/nature-methods.md) | If method-focused rather than translation-focused; sister Nature Portfolio journal |
 | 2 | [PLOS Biology](./plos-biology.md) | OA broad-biology alternative; lower APC; faster decisions |
-| 3 | *(Nature Communications / Cell Reports — community contribution welcome)* | Broader scope fallbacks within Nature Portfolio / Cell Press |
+| 3 | *([Nature Communications](../multidisciplinary/nature-communications.md) / Cell Reports — community contribution welcome for remaining)* | Broader scope fallbacks within Nature Portfolio / Cell Press |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Nature or Science as "too biotech-specialized," Nature Biotechnology is often a better fit because: it specializes in biotechnology advances with deep editorial expertise; same broad-significance framing reusable; and Nature Portfolio family provides cross-journal transfer.
 

@@ -259,7 +259,7 @@ Low for engineering-tradition authors. APC ($1,950+ range) is a barrier for low-
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(IEEE Transactions on Human-Machine Systems — community contribution welcome)* | If HCI-engineering angle |
+| 1 | [IEEE Transactions on Human-Machine Systems](../hci/ieee-transactions-on-human-machine-systems.md) | If HCI-engineering angle |
 | 2 | *(Specialty IEEE Transactions in relevant subfield — community contribution welcome)* | IEEE specialty venues |
 | 3 | *(Sensors / Electronics MDPI — community contribution welcome)* | OA alternative outside IEEE family |
 

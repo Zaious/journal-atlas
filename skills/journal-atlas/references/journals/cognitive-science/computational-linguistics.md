@@ -252,8 +252,8 @@ Low for ACL-tradition computational linguistics authors.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(TACL — Transactions of ACL — community contribution welcome)* | ACL OA peer venue |
-| 2 | *(ACL / EMNLP / NAACL proceedings — community contribution welcome)* | ACL conference venues |
+| 1 | [TACL — Transactions of ACL](../conferences/nlp/acl.md) | ACL OA peer venue |
+| 2 | [ACL](../conferences/nlp/acl.md) / [EMNLP](../conferences/nlp/emnlp.md) / [NAACL proceedings](../conferences/nlp/naacl.md) | ACL conference venues |
 | 3 | [Cognition](./cognition.md) | If cognitive-linguistic theoretical contribution |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top general ML venue as "too linguistic," Computational Linguistics is the ACL flagship home for formal CL.

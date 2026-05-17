@@ -258,7 +258,7 @@ Moderate. PLOS Biology APC is substantial (community evidence: ~$5K range, check
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [PLOS Computational Biology](./plos-computational-biology.md) | If method or computational-biology focused; same PLOS family |
-| 2 | *(PLOS ONE — community contribution welcome)* | Broader-scope OA fallback; same publisher; lower selectivity |
+| 2 | [PLOS ONE](../multidisciplinary/plos-one.md) | Broader-scope OA fallback; same publisher; lower selectivity |
 | 3 | [Nature Methods](./nature-methods.md) | If methods-development angle; Nature Portfolio |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Nature, Cell, or Science as "too subfield-broad / not flagship-impact," PLOS Biology is often a better fit because: it specializes in broad biology with OA visibility; similar selectivity to Nature subfield journals; and open-data + opt-in published peer review provides transparency advantage.

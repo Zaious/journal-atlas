@@ -252,7 +252,7 @@ Low for env-psych tradition. Cross-disciplinary accessibility valued.
 |------|---------|------------------------|
 | 1 | *(Environment and Behavior — community contribution welcome)* | SAGE peer; env-psych specialty |
 | 2 | [Health Psychology](./health-psychology.md) | If health-environment angle |
-| 3 | *(Frontiers in Psychology env-psych section — community contribution welcome)* | OA alternative |
+| 3 | [Frontiers in Psychology env-psych section](../psychology/frontiers-in-psychology.md) | OA alternative |
 
 **Reverse direction** *(optional)*: If your paper was rejected from general-psychology as "too environment-focused," J Env Psych is the Elsevier home for place / behavior / design psychology.
 

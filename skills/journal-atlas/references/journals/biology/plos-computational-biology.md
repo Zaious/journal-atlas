@@ -260,7 +260,7 @@ Moderate. APC barrier; open-code/open-data demands. Editorial cycle 44 days to f
 |------|---------|------------------------|
 | 1 | [PLOS Biology](./plos-biology.md) | If biology insight dominates over computational method; same PLOS family |
 | 2 | [Nature Methods](./nature-methods.md) | If computational method has cross-subfield impact; Nature Portfolio |
-| 3 | *(Bioinformatics / Nucleic Acids Research / NeurIPS — community contribution welcome)* | Specialty venues depending on subfield |
+| 3 | *(Bioinformatics / Nucleic Acids Research / [NeurIPS](../conferences/ml/neurips.md) — community contribution welcome for remaining)* | Specialty venues depending on subfield |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Bioinformatics or Nature Methods as "too specialized application," PLOS Computational Biology is often a better fit because: it specializes in computational biology with broad scope; OA visibility + ISCB ties provide community reach; and methodology + biological insight together are explicitly valued.
 

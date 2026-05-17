@@ -253,7 +253,7 @@ Low for IUI tradition.
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [ACM Transactions on Computer-Human Interaction](../hci/acm-transactions-on-computer-human-interaction.md) | ACM SIGCHI peer |
-| 2 | *(ACM IUI conference proceedings — community contribution welcome)* | ACM IUI flagship venue |
+| 2 | [ACM IUI conference proceedings](../conferences/hci/acm-iui.md) | ACM IUI flagship venue |
 | 3 | [AI & Society](../hci/ai-and-society.md) | If AI ethics / society focus |
 
 **Reverse direction** *(optional)*: If your paper was rejected from TOCHI as "too AI-focused," ACM TIIS is the ACM IUI home.

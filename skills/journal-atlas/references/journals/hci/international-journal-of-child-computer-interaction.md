@@ -250,7 +250,7 @@ Low for IDC tradition.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(ACM IDC conference proceedings — community contribution welcome)* | IDC flagship venue |
+| 1 | [ACM IDC conference proceedings](../conferences/hci/acm-idc.md) | IDC flagship venue |
 | 2 | [International Journal of Human-Computer Interaction](./international-journal-of-human-computer-interaction.md) | Broader applied HCI |
 | 3 | [ACM Transactions on Computer-Human Interaction](./acm-transactions-on-computer-human-interaction.md) | ACM SIGCHI |
 
