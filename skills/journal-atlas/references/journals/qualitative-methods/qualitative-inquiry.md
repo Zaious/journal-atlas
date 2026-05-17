@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Qualitative Inquiry
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | QI |
+| **Venue type** | Journal |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 1077-8004 |
 | **ISSN (Online)** | 1552-7565 |

@@ -1,9 +1,10 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
-# {Journal Full Name}
+# {Journal / Conference Full Name}
 
 > **Last verified**: YYYY-MM-DD
 > **Maintainer**: @github-handle
+> **Venue type**: Journal / Conference / Proceedings-Journal
 
 ---
 
@@ -12,12 +13,14 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | |
+| **Venue type** | Journal / Conference / Proceedings-Journal *(required since v1.3)* |
 | **Publisher** | |
-| **ISSN (Print)** | |
+| **ISSN (Print)** | *(journals; conferences use Series ID)* |
 | **ISSN (Online)** | |
+| **Series ID** | *(conferences: ISSN of proceedings series, or ACM/IEEE catalog ID)* |
 | **Founded** | |
 | **URL** | |
-| **Author Guidelines** | |
+| **Author / Submission Guidelines** | |
 | **Society / Association** | *(if any)* |
 | **Editorial Board Location** | *(country, institution)* |
 
@@ -212,6 +215,60 @@ Cognitive science reviewers less common but present.")*
 | **Independent scholar friendliness** | Low / Medium / High |
 | **Data transparency requirement** | Full / Partial / Flexible |
 | **OPSEC compatibility** | *(does it require exposing raw data?)* |
+
+---
+
+## Conference Specifics
+
+> **Required for conferences (Venue type: Conference or Proceedings-Journal).**
+> Skip this entire H2 section for traditional Journal venues.
+
+### Submission Cycle
+
+| Aspect | Detail |
+|--------|--------|
+| **Submission deadline pattern** | e.g., "Annual September abstracts + October full papers" / "Biannual May + November" |
+| **Acceptance rate (recent year)** | % (cite year) |
+| **Notification timeline** | Weeks from submission to first decision |
+| **Camera-ready deadline** | Weeks after notification |
+| **Rebuttal allowed?** | Yes / No (and word/page limit if yes) |
+
+### Program Committee
+
+| Aspect | Detail |
+|--------|--------|
+| **PC Structure** | Single-tier PC / SAC + AC + PC / 3-tier hierarchical / etc. |
+| **Track / Subcommittee structure** | e.g., "CHI: 11 subcommittees by topic" |
+| **Reviewer count per paper** | Typical N (e.g., 3-4) |
+| **Meta-review process** | Brief description |
+
+### Submission Format
+
+| Aspect | Detail |
+|--------|--------|
+| **Page limit (submission)** | e.g., "10 pages + unlimited references" |
+| **Page limit (camera-ready)** | If different from submission |
+| **Format requirements** | LaTeX template / ACM Class / IEEE / etc. |
+| **Supplementary material** | Allowed / Not allowed; size limit |
+| **Code / data sharing requirement** | Required / Encouraged / Optional |
+| **Anonymous submission** | Yes / No / Optional |
+
+### Review Format
+
+| Aspect | Detail |
+|--------|--------|
+| **Anonymization** | Single-blind / Double-blind / Open |
+| **Author response (rebuttal)** | Allowed / Not allowed; format / word limit |
+| **Discussion phase** | Reviewer-only discussion before decision? |
+| **Re-submission policy** | New submission required / Revise-and-resubmit cycle? |
+| **Multiple rounds** | Single decision / Two-round (e.g., R&R cycles) |
+
+### Conference Calendar (recent + upcoming)
+
+| Year | Submission deadline | Notification | Conference dates | Location |
+|------|---------------------|--------------|------------------|----------|
+| 2025 | | | | |
+| 2026 | | | | |
 
 ---
 

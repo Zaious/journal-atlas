@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Review of General Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | RGP |
+| **Venue type** | Journal |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 1089-2680 |
 | **ISSN (Online)** | *(pending)* |

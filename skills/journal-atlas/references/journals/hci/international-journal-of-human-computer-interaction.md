@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # International Journal of Human-Computer Interaction
 
@@ -14,6 +14,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | IJHCI |
+| **Venue type** | Journal |
 | **Publisher** | Taylor & Francis |
 | **ISSN (Print)** | 1044-7318 |
 | **ISSN (Online)** | 1532-7590 |

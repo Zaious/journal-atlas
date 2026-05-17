@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Human Factors
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Human Factors |
+| **Venue type** | Journal |
 | **Full name** | Human Factors: The Journal of the Human Factors and Ergonomics Society |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 0018-7208 |

@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # New Ideas in Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | NIP |
+| **Venue type** | Journal |
 | **Publisher** | Elsevier BV |
 | **ISSN (Print)** | 0732-118X |
 | **ISSN (Online)** | *(pending)* |

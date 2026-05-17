@@ -99,17 +99,28 @@ These are external knowledge bases whose factual content we have referenced when
 
 **Attribution convention in our entries**: Changelog rows reference adapted content as `data adapted from ScienceClaw venue-templates (MIT)` with the specific date and contributor.
 
-**Entries currently incorporating ScienceClaw data** (Format fields — Word limit / Abstract limit / Article types):
+**Entries currently incorporating ScienceClaw data**:
+
+**A. Journal entries (Format fields — Word limit / Abstract limit / Article types):**
 
 | Field directory | Journals |
 |-----------------|----------|
-| `multidisciplinary/` (new) | Nature, Nature Communications, Nature Human Behaviour, Science, Science Advances, PNAS, PLOS ONE |
-| `biology/` (new) | Cell, Neuron, Immunity, Molecular Cell, Developmental Cell, PLOS Biology, PLOS Computational Biology, Nature Methods, Nature Biotechnology |
-| `medical/` (new) | NEJM, The Lancet, JAMA, BMJ, Annals of Internal Medicine |
-| `physics/` (new) | Physical Review Letters |
-| `hci/` (existing) | Nature Machine Intelligence, IEEE Access (added via ScienceClaw scope expansion) |
+| `multidisciplinary/` | Nature, Nature Communications, Nature Human Behaviour, Science, Science Advances, PNAS, PLOS ONE |
+| `biology/` | Cell, Neuron, Immunity, Molecular Cell, Developmental Cell, PLOS Biology, PLOS Computational Biology, Nature Methods, Nature Biotechnology |
+| `medical/` | NEJM, The Lancet, JAMA, BMJ, Annals of Internal Medicine |
+| `physics/` | Physical Review Letters |
+| `hci/` | Nature Machine Intelligence, IEEE Access (added via ScienceClaw scope expansion) |
 
-Each affected entry's Changelog references the specific ScienceClaw source file. None of these entries' Soft Metadata, Strategic Notes, or Rejection Fallback Chain has been populated yet — they carry the Skeleton banner pending contributor input.
+**B. Conference entries (Soft Metadata family-level adaptation, P3-1 2026-05-17):**
+
+All 18 conference entries under `conferences/` use family-level Soft Metadata templates adapted from:
+- `references/cs_conference_style.md` — ACM HCI conference conventions (CHI / CSCW / UIST / DIS / IUI / IDC / CHI PLAY / IEEE HRI)
+- `references/ml_conference_style.md` — ML conference conventions (NeurIPS / ICML / ICLR / CVPR / AAAI)
+- `references/reviewer_expectations.md` — Cross-venue reviewer expectations (used for NLP family: ACL / EMNLP / NAACL; Data Mining family: KDD / WWW)
+
+Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, and Hard Blockers / Soft Tax / Best-suited-for / Not-recommended-for narratives for the 18 conference entries are family-level adaptations of the above ScienceClaw files. Per-conference Identity / Submission Cycle / Program Committee / Submission Format / Review Format details were authored from public CFP and community knowledge.
+
+Each affected entry's Changelog references the specific ScienceClaw source file. Tier 2 (community estimate) banner is applied to all 121 family-adapted entries.
 
 **Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 

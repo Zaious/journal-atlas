@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Qualitative Research in Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | QRP |
+| **Venue type** | Journal |
 | **Publisher** | Taylor & Francis |
 | **ISSN (Print)** | 1478-0887 |
 | **ISSN (Online)** | *(pending)* |

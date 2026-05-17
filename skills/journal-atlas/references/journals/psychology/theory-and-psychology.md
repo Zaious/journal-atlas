@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Theory & Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | T&P |
+| **Venue type** | Journal |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 0959-3543 |
 | **ISSN (Online)** | 1461-7447 |

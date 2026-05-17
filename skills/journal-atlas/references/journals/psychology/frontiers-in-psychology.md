@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Frontiers in Psychology — Personality and Social Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Frontiers PSP |
+| **Venue type** | Journal |
 | **Publisher** | Frontiers Media SA (Switzerland) |
 | **ISSN (Print)** | — (online only) |
 | **ISSN (Online)** | 1664-1078 |

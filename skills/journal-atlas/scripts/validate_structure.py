@@ -47,7 +47,7 @@ from pathlib import Path
 from typing import Optional
 
 
-# ---------- Required structure (must match TEMPLATE.md v1.2) ----------
+# ---------- Required structure (must match TEMPLATE.md v1.3) ----------
 
 REQUIRED_H2_SECTIONS: list[str] = [
     "Identity",
@@ -58,6 +58,18 @@ REQUIRED_H2_SECTIONS: list[str] = [
     "Soft Metadata",
     "Strategic Notes",
     "Changelog",
+]
+
+# v1.3: Conference entries (under conferences/ subtree) also require this H2
+CONFERENCE_REQUIRED_H2: list[str] = [
+    "Conference Specifics",
+]
+
+CONFERENCE_REQUIRED_H3_UNDER_CONFSPECS: list[str] = [
+    "Submission Cycle",
+    "Program Committee",
+    "Submission Format",
+    "Review Format",
 ]
 
 REQUIRED_H3_UNDER_POLICIES: list[str] = [
@@ -160,11 +172,29 @@ def validate_file(path: Path, expected_schema: Optional[str]) -> FileResult:
             f"current TEMPLATE is {expected_schema}. Consider updating."
         )
 
-    # 2. Required H2 sections
+    # 2. Required H2 sections (all entries)
     h2_sections = set(re.findall(r"^## +(.+?)\s*$", content, re.MULTILINE))
     for required in REQUIRED_H2_SECTIONS:
         if required not in h2_sections:
             result.errors.append(f"Missing required H2 section: '{required}'")
+
+    # 2b. Conference-specific H2 (only for conferences/ subtree entries)
+    is_conference_entry = "conferences" in path.parts
+    if is_conference_entry:
+        for required in CONFERENCE_REQUIRED_H2:
+            if required not in h2_sections:
+                result.errors.append(
+                    f"Missing required H2 section: '{required}' "
+                    "(required for entries under conferences/)"
+                )
+        # Also check H3 under Conference Specifics
+        _check_h3_under_h2(
+            content,
+            "Conference Specifics",
+            CONFERENCE_REQUIRED_H3_UNDER_CONFSPECS,
+            result,
+            severity="error",
+        )
 
     # 3. Required H3 subsections under specific H2s
     _check_h3_under_h2(

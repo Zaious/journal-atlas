@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Cultural Studies ↔ Critical Methodologies
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | CSCM |
+| **Venue type** | Journal |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 1532-7086 |
 | **ISSN (Online)** | 1552-356X |

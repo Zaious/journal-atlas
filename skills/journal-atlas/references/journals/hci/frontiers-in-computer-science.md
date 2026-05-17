@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Frontiers in Computer Science — Human-Media Interaction
 
@@ -14,6 +14,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Frontiers in CS (HMI section) |
+| **Venue type** | Journal |
 | **Publisher** | Frontiers Media SA (Switzerland) |
 | **ISSN (Print)** | — (online only) |
 | **ISSN (Online)** | 2624-9898 |

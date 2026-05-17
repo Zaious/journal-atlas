@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Interaction Studies
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Interaction Studies |
+| **Venue type** | Journal |
 | **Publisher** | John Benjamins Publishing Company |
 | **ISSN (Print)** | 1572-0373 |
 | **ISSN (Online)** | 1572-0381 |

@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Self and Identity
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | S&I |
+| **Venue type** | Journal |
 | **Publisher** | Taylor & Francis (Routledge) |
 | **ISSN (Print)** | 1529-8868 |
 | **ISSN (Online)** | 1529-8876 |

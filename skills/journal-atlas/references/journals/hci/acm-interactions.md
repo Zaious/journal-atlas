@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # ACM Interactions
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Interactions |
+| **Venue type** | Journal |
 | **Publisher** | Association for Computing Machinery (ACM) |
 | **ISSN (Print)** | 1072-5520 |
 | **ISSN (Online)** | 1558-3449 |

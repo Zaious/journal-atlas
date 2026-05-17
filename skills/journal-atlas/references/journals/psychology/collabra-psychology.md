@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Collabra: Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | Collabra |
+| **Venue type** | Journal |
 | **Publisher** | University of California Press |
 | **ISSN (Print)** | — (online only) |
 | **ISSN (Online)** | 2474-7394 |

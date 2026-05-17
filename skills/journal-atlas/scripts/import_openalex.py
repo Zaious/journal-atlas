@@ -449,7 +449,9 @@ def main() -> int:
         "--field",
         required=True,
         choices=["psychology", "hci", "qualitative-methods", "cognitive-science",
-                 "multidisciplinary", "medical", "biology", "physics"],
+                 "multidisciplinary", "medical", "biology", "physics",
+                 "conferences/hci", "conferences/ml", "conferences/nlp",
+                 "conferences/data-mining"],
         help="Field directory under references/journals/",
     )
     parser.add_argument(

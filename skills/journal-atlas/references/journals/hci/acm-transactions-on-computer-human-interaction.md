@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # ACM Transactions on Computer-Human Interaction
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | TOCHI |
+| **Venue type** | Journal |
 | **Publisher** | Association for Computing Machinery (ACM) |
 | **ISSN (Print)** | 1073-0516 |
 | **ISSN (Online)** | 1557-7325 |

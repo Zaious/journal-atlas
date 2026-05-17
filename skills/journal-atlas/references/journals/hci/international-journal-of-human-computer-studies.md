@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # International Journal of Human-Computer Studies
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | IJHCS |
+| **Venue type** | Journal |
 | **Publisher** | Elsevier BV |
 | **ISSN (Print)** | 1071-5819 |
 | **ISSN (Online)** | 1095-9300 |

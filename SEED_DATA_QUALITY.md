@@ -46,12 +46,12 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
-| **Skeleton** | 75 | `> [!NOTE]` | Auto-generated structural scaffolds; Soft Metadata still placeholder. Includes 68 Q1-expansion entries + 7 ScienceClaw entries whose family had no adapted Soft Metadata content (PLOS Biology/Comp Bio, Nature Methods/Biotech, PRL, Nature Machine Intelligence, IEEE Access) |
-| **Tier 2** | 28 | `> [!WARNING]` | 11 original HCI entries + 17 ScienceClaw entries with family-level Soft Metadata adapted from venue-templates (7 multidisciplinary + 5 Cell Press biology + 5 medical). Family-level claims; per-journal evidence not yet collected. |
+| **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Tier 2 in Phase 4. |
+| **Tier 2** | 121 | `> [!WARNING]` | 103 journals (originally HCI + ScienceClaw-adapted + Phase 4 promotions) + 18 conferences (HCI / ML / NLP / Data Mining family-adapted). Family-level claims; per-journal/per-conference evidence not yet collected. |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **Total** | **114** | | |
+| **Total** | **132** | | |
 
-### Field-directory breakdown (post-ScienceClaw absorption)
+### Field-directory breakdown
 
 | Field | Count | Notes |
 |-------|-------|-------|
@@ -59,17 +59,30 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 | `hci/` | 23 | Added Nature Machine Intelligence + IEEE Access from ScienceClaw |
 | `qualitative-methods/` | 4 | |
 | `cognitive-science/` | 12 | |
-| `multidisciplinary/` (new) | 7 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE |
-| `biology/` (new) | 9 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech |
-| `medical/` (new) | 5 | NEJM / Lancet / JAMA / BMJ / Annals of Internal Medicine |
-| `physics/` (new) | 1 | Physical Review Letters |
-| **Total** | **114** | |
+| `multidisciplinary/` | 7 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE |
+| `biology/` | 9 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech |
+| `medical/` | 5 | NEJM / Lancet / JAMA / BMJ / Annals of Internal Medicine |
+| `physics/` | 1 | Physical Review Letters |
+| `conferences/hci/` (new) | 8 | ACM CHI, CSCW, UIST, DIS, IUI, IDC, CHI PLAY, IEEE HRI |
+| `conferences/ml/` (new) | 5 | NeurIPS, ICML, ICLR, CVPR, AAAI |
+| `conferences/nlp/` (new) | 3 | ACL, EMNLP, NAACL |
+| `conferences/data-mining/` (new) | 2 | KDD, WWW |
+| **Total** | **132** | |
+
+### Schema version
+
+All 132 entries conform to **schema v1.3**, which introduces:
+- **`Venue type`** required field in Identity (`Journal` / `Conference` / `Proceedings-Journal`)
+- **`Conference Specifics`** required H2 section for `conferences/` subtree (4 sub-tables: Submission Cycle, Program Committee, Submission Format, Review Format) + Conference Calendar
+- Path-aware validation: `validate_structure.py` enforces Conference Specifics only on `conferences/` entries.
 
 ## Confidence tiers
 
 Each journal entry under `skills/journal-atlas/references/journals/` was authored through a structured process. The depth of evidentiary backing varies by source:
 
-### Skeleton — Auto-generated scaffold (75 entries)
+### Skeleton — Auto-generated scaffold (0 entries — historical reference)
+
+> Phase 4 (2026-05) promoted all earlier Skeleton entries to Tier 2 via family-level Soft Metadata adaptation. This section is retained as documentation for future contributions that introduce new Skeleton entries (e.g., via `scripts/import_openalex.py --field <new-field>`).
 
 **Backing**: Identity / Metrics / Subject Density / Open Access fields populated automatically via `scripts/import_openalex.py` from the OpenAlex API. Soft Metadata sections (Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, Sensitive Topics, Practical Concerns) and Strategic Notes are placeholder text awaiting contributor input.
 
@@ -99,18 +112,20 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - Reviewer pool characteristics and framing requirements informed by recent publication patterns and (where available) published reviewer reports
 - Estimated subjective-judgment uncertainty: ~15%
 
-### Tier 2 — Community estimate (11 entries)
+### Tier 2 — Community estimate (121 entries)
 
-**Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community knowledge of HCI as a field rather than journal-specific evidence harvesting.
+**Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community / family-level knowledge rather than per-entry evidence harvesting.
 
-**Entries**: All 11 HCI journals
-- ACM Interactions, ACM Transactions on Computer-Human Interaction (TOCHI), AI and Society, Behaviour & Information Technology, Computers in Human Behavior, Frontiers in Computer Science, Human-Computer Interaction (Journal), Human Factors, Interaction Studies, International Journal of Human-Computer Interaction, International Journal of Human-Computer Studies
+**Composition** (121 entries):
+- **Journals (103)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories)
+- **Conferences (18)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW)
 
 **What Tier 2 means in practice**:
-- Identity / Metrics / Policies are reliable (OpenAlex + publisher guidelines)
-- Subject Density top topics are reliable (OpenAlex output)
-- **Reviewer Pool Characteristics, Framing Requirements, sensitive-topic receptiveness without article counts, and methodology receptiveness scores without numbered evidence are community estimates**
+- Identity / Metrics / Policies are reliable (OpenAlex + publisher / conference CFP)
+- Subject Density top topics are reliable (OpenAlex output for journals; CFP topic areas for conferences)
+- **Reviewer Pool Characteristics, Framing Requirements, sensitive-topic receptiveness without article counts, and methodology receptiveness scores without numbered evidence are family-level community estimates**
 - Each Tier 2 entry includes a visible warning banner in its Soft Metadata section
+- Conference entries additionally use family-level (HCI / ML / NLP / Data Mining) Soft Metadata templates adapted from ScienceClaw `cs_conference_style.md`, `ml_conference_style.md`, `reviewer_expectations.md` (MIT)
 - Estimated subjective-judgment uncertainty: ~40-50%
 
 A representative example of Tier 2 calibration limits: a `topic_trend_scan.py` audit of TOCHI's last 5 years (374 publications) found 0 articles tagged `autoethnography`, even though the Tier 2 entry rated autoethnography receptiveness at 3/5 based on third-wave HCI generalizations. This is exactly the kind of gap Tier 2 banner contributors are invited to close.
@@ -165,7 +180,7 @@ A Tier 2 entry transitions to Tier 1 when:
 
 ## Metrics freshness
 
-All quantitative metrics in the 22 seed entries were sourced from OpenAlex on 2026-05-13 / 2026-05-14. `scripts/update_metrics.py` (run dry-run on 2026-05-14) found no significant metric drift beyond formatting differences. Re-running this script monthly is recommended; we will set up a scheduled GitHub Action after launch.
+All quantitative metrics in the original 22 seed entries were sourced from OpenAlex on 2026-05-13 / 2026-05-14. Subsequent batches (Q1 expansion, ScienceClaw absorption, Phase 4 family-promotion, P3-1 conferences) were captured 2026-05-15 through 2026-05-17. Conference acceptance rates / submission cycle details for the 18 P3-1 entries are drawn from public CFP / conference websites (last verified 2026-05-17), not OpenAlex. `scripts/update_metrics.py` should be re-run monthly; we will schedule a GitHub Action after launch.
 
 ## Acknowledgments
 

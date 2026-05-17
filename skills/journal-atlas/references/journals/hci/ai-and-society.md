@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # AI & Society
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | AI & Society |
+| **Venue type** | Journal |
 | **Publisher** | Springer Nature |
 | **ISSN (Print)** | 0951-5666 |
 | **ISSN (Online)** | 1435-5655 |

@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Human-Computer Interaction (Journal)
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | HCI (journal) |
+| **Venue type** | Journal |
 | **Publisher** | Taylor & Francis (Routledge) |
 | **ISSN (Print)** | 0737-0024 |
 | **ISSN (Online)** | 1532-7051 |

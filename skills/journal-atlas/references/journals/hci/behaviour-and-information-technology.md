@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Behaviour & Information Technology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | BIT |
+| **Venue type** | Journal |
 | **Publisher** | Taylor & Francis |
 | **ISSN (Print)** | 0144-929X |
 | **ISSN (Online)** | 1362-3001 |

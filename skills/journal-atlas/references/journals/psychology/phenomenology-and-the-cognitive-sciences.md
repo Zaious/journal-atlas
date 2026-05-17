@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Phenomenology and the Cognitive Sciences
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | PCS |
+| **Venue type** | Journal |
 | **Publisher** | Springer Nature |
 | **ISSN (Print)** | 1568-7759 |
 | **ISSN (Online)** | *(pending)* |

@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Computers in Human Behavior
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | CHB |
+| **Venue type** | Journal |
 | **Publisher** | Elsevier BV |
 | **ISSN (Print)** | 0747-5632 |
 | **ISSN (Online)** | 1873-7692 |

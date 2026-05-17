@@ -1,4 +1,4 @@
-<!-- schema: v1.2 -->
+<!-- schema: v1.3 -->
 
 # Culture & Psychology
 
@@ -12,6 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Abbreviation** | C&P |
+| **Venue type** | Journal |
 | **Publisher** | SAGE Publishing |
 | **ISSN (Print)** | 1354-067X |
 | **ISSN (Online)** | *(pending)* |
