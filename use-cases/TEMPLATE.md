@@ -81,4 +81,4 @@ This helps reviewers verify that the strategic logic still holds even with the s
 
 ## License
 
-By submitting this use case you agree to license it under CC BY-NC-SA 4.0 (the same license as the rest of Journal Atlas content). See [LICENSE](../LICENSE).
+By submitting this use case you agree to license it under CC BY-SA 4.0 (the same license as the rest of Journal Atlas content). See [LICENSE](../LICENSE).

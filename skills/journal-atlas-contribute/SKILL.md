@@ -18,7 +18,7 @@ algorithms cannot extract (reviewer culture, framing requirements, sensitive
 topic tolerance, methodological preferences, submission practicalities).
 
 The journal data lives at `../journal-atlas/references/journals/`. The schema
-is defined by `../journal-atlas/TEMPLATE.md` (currently v1.2).
+is defined by `../journal-atlas/TEMPLATE.md` (currently v1.3).
 
 ## When This Skill Activates
 
@@ -106,7 +106,7 @@ When **no entry exists** for the journal the user mentions.
      you try next?"
 
 5. **Generate full entry**: output a complete `.md` file conforming to
-   TEMPLATE v1.2. Mark all auto-filled fields with their source ("OpenAlex",
+   TEMPLATE v1.3. Mark all auto-filled fields with their source ("OpenAlex",
    "publisher guidelines") and all interview-derived fields with
    `(personal experience YYYY, contributed by @handle)`.
 
@@ -184,7 +184,7 @@ highest-leverage targets for Mode B — they need community validation most.
 ## Output Quality
 
 Every generated patch must:
-- Conform to TEMPLATE v1.2 structure (validate with `scripts/validate_structure.py`)
+- Conform to TEMPLATE v1.3 structure (validate with `scripts/validate_structure.py`)
 - Include evidence source for every Soft Metadata claim
 - Include a Changelog row
 - Not contain personally identifiable information about third parties

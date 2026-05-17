@@ -28,7 +28,7 @@ Journal Atlas is co-designed and maintained with the ChronicleCore AI Agent Team
 The full ChronicleCore roster is described in the ChronicleCore project documentation.
 
 **Specific contributions to Journal Atlas:**
-- **Cardinal** — Architectural design, schema (`skills/journal-atlas/TEMPLATE.md` v1.2), `skills/journal-atlas/SKILL.md` workflow, automation scripts (`skills/journal-atlas/scripts/`), CI infrastructure
+- **Cardinal** — Architectural design, schema (`skills/journal-atlas/TEMPLATE.md` v1.3, with Conference Specifics extension), `skills/journal-atlas/SKILL.md` workflow, automation scripts (`skills/journal-atlas/scripts/`), CI infrastructure
 - **Muse** — Soft Metadata authoring across the initial 22 seed journal entries (Epistemological leanings, Framing Requirements, Reviewer Pool Characteristics, Voice & Style, Sensitive Topics, Strategic Notes). Appears as `@Muse` in journal file Changelogs.
 - **Star Scout** — Pre-launch quality audit (structural compliance, attribution consistency, academic ethics review).
 
@@ -55,9 +55,9 @@ For human-readable citation:
 
 > Lee, M.-H. (2026). *Journal Atlas: A Community-Maintained Knowledge Base of Academic Journal Fit Metadata*. ChronicleCore AI Agent Team. https://github.com/Zaious/journal-atlas
 
-## Commercial Inquiries & Partnerships
+## Partnerships & Integrations
 
-For commercial licensing, integration partnerships, or sustainable ecosystem participation, contact:
+Journal Atlas content is released under CC BY-SA 4.0 (with code under MIT) — you may already have the rights you need. For deeper collaboration beyond what the license requires (custom datasets, sustained integrations, ecosystem partnerships), contact:
 
 **Meng-Han Lee** — zaious.design@gmail.com
 

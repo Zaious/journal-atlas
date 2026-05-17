@@ -2,9 +2,9 @@
 
 > 🌐 **Languages**: [English](README.md) | 繁體中文
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
-[![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](skills/journal-atlas/TEMPLATE.md)
+[![Schema](https://img.shields.io/badge/Schema-v1.3-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#%E7%89%88%E6%9C%AC%E8%88%87%E5%93%81%E8%B3%AA%E5%88%86%E5%B1%A4-tier-system)
 
 **一個由社群維護、為 AI 而生的學術期刊適配性知識庫。**
@@ -432,7 +432,7 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
 | `fit_score.py` | 加權軟性適配評分 + 硬性條件淘汰 | `--topics "embodied cognition" --methodology theoretical --word-count 12000` |
 | `similar_journals.py` | 8 維度加權相似度 | `--target phenomenology-and-the-cognitive-sciences --top-n 5` |
 | `related_papers.py` | OpenAlex Works API 在指定期刊內搜尋 | `--journal pcs --keywords "embodied cognition,self-state"` |
-| `import_openalex.py` | 從 OpenAlex 生成符合 v1.2 schema 的 entry | `--issn 1568-7759 --field psychology --dry-run` |
+| `import_openalex.py` | 從 OpenAlex 生成符合 v1.3 schema 的 entry | `--issn 1568-7759 --field psychology --dry-run` |
 | `validate_structure.py` | Schema 驗證；CI 每個 PR 都會跑 | （不帶參數即驗證全部） |
 | `bundle_for_upload.py` | 合併 journal 檔案上傳 ChatGPT GPT（20 檔上限） | `--out-dir dist/` |
 | `update_metrics.py` | 從 OpenAlex 刷新既有 entries metrics；提出 diff | `--field psychology --apply` |
@@ -538,14 +538,18 @@ Eaton 的對應論文 [*On the ethics of working with library technology*](https
 
 ## 授權
 
-Journal Atlas 採**雙授權**模式：
+Journal Atlas 採**雙 libre/open 授權**模式：
 
-- **內容**（Markdown 檔、期刊條目、文件、模板）—— [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)（CC BY-NC-SA 4.0）
+- **內容**（Markdown 檔、期刊條目、文件、模板）—— [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)（CC BY-SA 4.0）—— 與 Wikipedia 採用相同的 copyleft 授權。
 - **程式碼**（`skills/journal-atlas/scripts/` 下所有檔案）—— [MIT License](LICENSE-CODE)
 
-**所有使用（商業或非商業）都必須保留 attribution。** 偏好引用格式見 [CITATION.cff](CITATION.cff)，完整作者清單見 [AUTHORS.md](AUTHORS.md)。
+**所有使用都必須保留 attribution。** 偏好引用格式見 [CITATION.cff](CITATION.cff)，完整作者清單見 [AUTHORS.md](AUTHORS.md)。
 
-**商業使用** —— 非商業使用依 CC BY-NC-SA 4.0 免費。若你要做商業整合（整合進付費產品、商業服務重新分發、付費 research-as-a-service 等），請聯絡 **Meng-Han Lee：zaious.design@gmail.com** 討論條款。
+**ShareAlike（copyleft）保護知識共享。** 你可以為任何目的（包括商業用途）分享與修改 Journal Atlas 的內容，但衍生作品必須以同樣的 CC BY-SA 4.0 授權釋出。這阻止了專屬軟體的吸收，確保知識庫真正自由。
+
+此雙授權模式與 Free Software Foundation 的 Four Freedoms、Open Source Initiative 的 Open Source Definition、以及 Creative Commons 的 Definition of Free Cultural Works 對齊。
+
+**合作與整合** —— 若你需要超越授權範圍的深度合作（客製化資料集、長期整合等），請聯絡 **Meng-Han Lee：zaious.design@gmail.com**。
 
 完整授權細節：[LICENSE](LICENSE) | [LICENSE-CODE](LICENSE-CODE)
 

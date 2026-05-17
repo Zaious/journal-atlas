@@ -89,7 +89,7 @@ Tools that share part of our problem space but operate differently. We may event
 
 ## Data Sources (used as evidence base, adapted into our schema)
 
-These are external knowledge bases whose factual content we have referenced when populating or validating journal entries. Per MIT license terms, content is adapted into our TEMPLATE v1.2 schema (not copy-pasted), and source attribution is recorded in each affected entry's Changelog.
+These are external knowledge bases whose factual content we have referenced when populating or validating journal entries. Per MIT license terms, content is adapted into our TEMPLATE v1.3 schema (not copy-pasted), and source attribution is recorded in each affected entry's Changelog.
 
 - [**ScienceClaw `venue-templates`**](https://github.com/beita6969/ScienceClaw/tree/main/skills/venue-templates) — MIT-licensed structured Markdown covering Nature / Science / Cell Press / PLOS / IEEE / ACM / Frontiers and ~50 other major venues. Files used:
   - `references/journals_formatting.md` (486 lines) — word counts, abstract limits, citation styles, structural requirements → adapted into our `## Format` section
@@ -155,7 +155,7 @@ ScienceClaw attribution is captured in each entry's Changelog where applicable.
 
 Each affected entry's Changelog references the specific family source. Tier 2 (community estimate) banner is applied to all 152 family-adapted entries.
 
-**Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
+**Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 
 ---
 
@@ -188,8 +188,8 @@ We will issue a versioned release with a formal citation (CITATION.cff) once v1.
 
 ## License Compatibility Notes
 
-Journal Atlas uses a dual-license model:
-- **Content** — CC BY-NC-SA 4.0
+Journal Atlas uses a dual libre/open-license model:
+- **Content** — CC BY-SA 4.0
 - **Code** (`skills/journal-atlas/scripts/`) — MIT
 
 Compatibility audit for our dependencies and references:

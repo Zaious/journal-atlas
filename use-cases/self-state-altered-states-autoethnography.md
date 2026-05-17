@@ -288,4 +288,4 @@ This use case shows what happens when an author with a difficult paper — sensi
 
 ## License
 
-This use case is licensed under [CC BY-NC-SA 4.0](../LICENSE).
+This use case is licensed under [CC BY-SA 4.0](../LICENSE).

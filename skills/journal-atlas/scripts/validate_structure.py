@@ -164,7 +164,7 @@ def validate_file(path: Path, expected_schema: Optional[str]) -> FileResult:
     schema_match = re.match(r"<!--\s*schema:\s*(v\d+\.\d+)\s*-->", first_line)
     if not schema_match:
         result.errors.append(
-            "First line must be a schema marker like '<!-- schema: v1.2 -->'"
+            "First line must be a schema marker like '<!-- schema: v1.3 -->'"
         )
     elif expected_schema and schema_match.group(1) != expected_schema:
         result.warnings.append(

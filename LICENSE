@@ -2,33 +2,40 @@ Journal Atlas — License
 
 Copyright (c) 2026 Meng-Han Lee (Zaious) and the ChronicleCore AI Agent Team.
 
-This repository uses a dual-license model:
+This repository uses a dual libre/open-license model that aligns with the
+Free Software Foundation's Four Freedoms, the Open Source Initiative's
+Open Source Definition, and Creative Commons' Definition of Free Cultural
+Works.
 
 ================================================================================
 CONTENT (all Markdown files, journal entries, documentation, templates)
 ================================================================================
 
 The content of this repository is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-(CC BY-NC-SA 4.0).
+Creative Commons Attribution-ShareAlike 4.0 International License
+(CC BY-SA 4.0).
 
-Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
-Human-readable summary: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-sa/4.0/
 
 You are free to:
-  - Share — copy and redistribute the material in any medium or format
-  - Adapt — remix, transform, and build upon the material
+  - Share — copy and redistribute the material in any medium or format,
+    for any purpose, including commercial use.
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    including commercial use.
 
 Under the following terms:
   - Attribution — You must give appropriate credit to Meng-Han Lee (Zaious)
     and the ChronicleCore AI Agent Team, provide a link to the license, and
     indicate if changes were made. See CITATION.cff for the preferred citation
     format.
-  - NonCommercial — You may not use the material for commercial purposes
-    without explicit permission. For commercial licensing, contact
-    zaious.design@gmail.com.
   - ShareAlike — If you remix, transform, or build upon the material, you
-    must distribute your contributions under the same license as the original.
+    must distribute your contributions under the same license (CC BY-SA 4.0)
+    as the original. This is the copyleft principle: derivatives must remain
+    in the commons.
+  - No additional restrictions — You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the license
+    permits.
 
 ================================================================================
 CODE (everything under the scripts/ directory)
@@ -38,17 +45,27 @@ The code in this repository (Python scripts, automation tools, etc.) is
 licensed under the MIT License. See LICENSE-CODE for full text.
 
 ================================================================================
-COMMERCIAL USE
+WHY CC BY-SA 4.0 (NOT CC BY-NC-SA)
 ================================================================================
 
-If you wish to use Journal Atlas content for commercial purposes (including
-but not limited to: integration into paid products, redistribution within
-commercial services, or use in fee-based research-as-a-service offerings),
-please contact Meng-Han Lee at zaious.design@gmail.com to discuss commercial
-licensing terms.
+Earlier revisions of Journal Atlas used CC BY-NC-SA 4.0 for content. As of
+the v0.x-license-upgrade-cc-by-sa milestone (2026-05), we have upgraded to
+CC BY-SA 4.0 to align with libre/open standards:
 
-We welcome discussions about partnerships, integrations, and sustainable
-ecosystem participation.
+  - CC BY-SA 4.0 is on Creative Commons' Free Cultural Works whitelist;
+    CC BY-NC-SA is not.
+  - The NonCommercial clause conflicts with FSF Four Freedoms (freedom 0:
+    "any purpose") and OSI Open Source Definition (clause 6: no
+    field-of-endeavor restrictions).
+  - ShareAlike (copyleft) still protects the commons: any derivative work,
+    commercial or non-commercial, must be released under the same license.
+    Closed-source absorption of Journal Atlas into proprietary products
+    remains prohibited by the copyleft mechanism.
+
+This change broadens compatibility with libre-aligned funding programs
+(e.g., NGI Zero Commons Fund, CZI Essential Open Source Software, Wellcome
+Open Research) and aligns with the open-knowledge tradition of Wikipedia
+(also CC BY-SA).
 
 ================================================================================
 ATTRIBUTION REQUIREMENT
@@ -58,3 +75,13 @@ All uses of Journal Atlas — commercial or non-commercial — must preserve
 attribution to Meng-Han Lee (Zaious) and the ChronicleCore AI Agent Team.
 Removal or obscuring of authorship credit is not permitted under any
 circumstances. See CITATION.cff for the preferred citation format.
+
+================================================================================
+PARTNERSHIPS & INTEGRATIONS
+================================================================================
+
+The libre license above grants you the right to use Journal Atlas content
+in any context, including commercial, provided you comply with Attribution
+and ShareAlike. For deeper integrations, custom datasets, or sustained
+partnership conversations beyond what the license requires, contact
+Meng-Han Lee at zaious.design@gmail.com.

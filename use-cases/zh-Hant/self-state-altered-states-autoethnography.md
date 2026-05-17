@@ -344,4 +344,4 @@
 
 ## License
 
-本案例採用 [CC BY-NC-SA 4.0](../../LICENSE) 授權。
+本案例採用 [CC BY-SA 4.0](../../LICENSE) 授權。

@@ -2,9 +2,9 @@
 
 > 🌐 **Languages**: English | [繁體中文](README.zh-Hant.md)
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/Content-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
-[![Schema](https://img.shields.io/badge/Schema-v1.2-green.svg)](skills/journal-atlas/TEMPLATE.md)
+[![Schema](https://img.shields.io/badge/Schema-v1.3-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#tier-system)
 
 **A community-maintained, AI-native knowledge base of academic journal fit metadata.**
@@ -436,7 +436,7 @@ Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.
 | `fit_score.py` | Weighted soft-fit scoring + hard constraint elimination | `--topics "embodied cognition" --methodology theoretical --word-count 12000` |
 | `similar_journals.py` | 8-dimension weighted similarity to a target | `--target phenomenology-and-the-cognitive-sciences --top-n 5` |
 | `related_papers.py` | OpenAlex Works API search within a target journal | `--journal pcs --keywords "embodied cognition,self-state"` |
-| `import_openalex.py` | Generate a v1.2-conformant entry from OpenAlex | `--issn 1568-7759 --field psychology --dry-run` |
+| `import_openalex.py` | Generate a v1.3-conformant entry from OpenAlex | `--issn 1568-7759 --field psychology --dry-run` |
 | `validate_structure.py` | Schema validation; runs in CI on every PR | (run without arguments to validate everything) |
 | `bundle_for_upload.py` | Merge journal files for ChatGPT GPT (20-file limit) | `--out-dir dist/` |
 | `update_metrics.py` | Refresh OpenAlex metrics in existing entries; propose diffs | `--field psychology --apply` |
@@ -542,14 +542,18 @@ We are complementary to B!SON, not competing. Use B!SON to discover candidate OA
 
 ## License
 
-Journal Atlas uses a **dual-license** model:
+Journal Atlas uses a **dual libre/open-license** model:
 
-- **Content** (Markdown files, journal entries, documentation, templates) — [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0)
+- **Content** (Markdown files, journal entries, documentation, templates) — [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0) — the same copyleft license used by Wikipedia.
 - **Code** (everything under `skills/journal-atlas/scripts/`) — [MIT License](LICENSE-CODE)
 
-**Attribution is required for all uses, commercial or non-commercial.** See [CITATION.cff](CITATION.cff) for the preferred citation format and [AUTHORS.md](AUTHORS.md) for the full credits.
+**Attribution is required for all uses.** See [CITATION.cff](CITATION.cff) for the preferred citation format and [AUTHORS.md](AUTHORS.md) for the full credits.
 
-**Commercial use** — non-commercial use is free under CC BY-NC-SA 4.0. For commercial licensing (integration into paid products, redistribution within commercial services, fee-based research-as-a-service offerings, or similar), please contact **Meng-Han Lee at zaious.design@gmail.com** to discuss terms.
+**ShareAlike (copyleft) protects the commons.** You may share and adapt Journal Atlas content for any purpose, including commercial use, but derivative works must be released under the same CC BY-SA 4.0 license. This prevents proprietary absorption while keeping the knowledge base genuinely free.
+
+This dual model aligns with the Free Software Foundation's Four Freedoms, the Open Source Initiative's Open Source Definition, and Creative Commons' Definition of Free Cultural Works.
+
+**Partnerships & integrations** — for deeper collaboration beyond what the license requires (custom datasets, sustained integrations, etc.), contact **Meng-Han Lee at zaious.design@gmail.com**.
 
 Full license details: [LICENSE](LICENSE) | [LICENSE-CODE](LICENSE-CODE)
 

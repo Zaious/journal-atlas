@@ -25,8 +25,8 @@ contact:
     email: "zaious.design@gmail.com"
 repository-code: "https://github.com/Zaious/journal-atlas"
 url: "https://github.com/Zaious/journal-atlas"
-license: "CC-BY-NC-SA-4.0"
-license-url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+license: "CC-BY-SA-4.0"
+license-url: "https://creativecommons.org/licenses/by-sa/4.0/"
 keywords:
   - academic publishing
   - journal recommender
