@@ -252,7 +252,7 @@ Low for HRI tradition.
 |------|---------|------------------------|
 | 1 | [Interaction Studies](./interaction-studies.md) | HRI + linguistics; Benjamins |
 | 2 | [AI & Society](./ai-and-society.md) | If robot ethics focus; Springer |
-| 3 | *(ACM Transactions on Human-Robot Interaction — community contribution welcome)* | ACM HRI flagship |
+| 3 | [ACM Transactions on Human-Robot Interaction](../hci/acm-transactions-on-human-robot-interaction.md) | ACM HRI flagship |
 
 **Reverse direction** *(optional)*: If your paper was rejected from ACM/IEEE robotics as "too HCI-focused," IJSR is the Springer HRI community home.
 

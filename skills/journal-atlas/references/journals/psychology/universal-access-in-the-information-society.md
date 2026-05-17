@@ -249,7 +249,7 @@ Low for accessibility tradition.
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | *(ACM Transactions on Accessible Computing — community contribution welcome)* | ACM SIGACCESS flagship |
+| 1 | [ACM Transactions on Accessible Computing](../hci/acm-transactions-on-accessible-computing.md) | ACM SIGACCESS flagship |
 | 2 | [International Journal of Human-Computer Interaction](../hci/international-journal-of-human-computer-interaction.md) | Broader applied HCI |
 | 3 | [ACM Transactions on Computer-Human Interaction](../hci/acm-transactions-on-computer-human-interaction.md) | ACM SIGCHI |
 

@@ -11,9 +11,9 @@
 
 Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法觸及的東西：學術期刊的**軟性元資料（soft metadata）**——審稿人文化、framing 期待、敏感主題接受度、AI 政策細節、方法論偏好、拒稿後備策略。所有內容封裝為一個 Claude Agent Skill，可跨 Claude Code、Claude Desktop、ChatGPT 安裝。
 
-> **狀態（2026-05）：Pre-release。** 132 個種子 entries：114 篇期刊跨 8 個領域 +
+> **狀態（2026-05）：Pre-release。** 142 個種子 entries：124 篇期刊跨 8 個領域 +
 > 18 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
-> 品質分層：**11 Tier 1**（有實證後盾）· **121 Tier 2**（社群推估）· **0 Skeleton**（Phase 4 已全數晉升）。
+> 品質分層：**11 Tier 1**（有實證後盾）· **131 Tier 2**（社群推估）· **0 Skeleton**（Phase 4 已全數晉升）。
 > Schema **v1.3** — 新增 `Venue type` 欄位 + `Conference Specifics` 區塊。
 > 見 [版本與品質分層](#%E7%89%88%E6%9C%AC%E8%88%87%E5%93%81%E8%B3%AA%E5%88%86%E5%B1%A4-tier-system) 與 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 
@@ -119,7 +119,7 @@ Plugin 包含**兩個 skill**，各自處理不同工作流：
 - 走拒稿後備鏈條（Rejection Fallback Chain）
 - 推薦時附證據引用 + Tier 可信度標記
 
-**Entry-count-aware 設計**：從現在 132 entries 規劃到 200+：
+**Entry-count-aware 設計**：從現在 142 entries 規劃到 200+：
 - ≤20 entries：直接全讀
 - 21–50：`scripts/fit_score.py` 預排
 - 50+：強制預排，AI 只讀 top 10–15
@@ -324,7 +324,7 @@ Validate & Augment 模式 —— 用你的經驗升級既有 entry。
 < [跑 scripts/query_journals.py，flags：--field psychology --quartile Q1
 <  --zero-embargo --no-ai-permission-gate]
 <
-< 132 個 entries 中有 6 個符合：
+< 142 個 entries 中有 6 個符合：
 < | Journal | h-index | OA model | Word limit |
 < |---------|---------|----------|------------|
 < | Review of General Psychology | 158 | hybrid | 15,000 |
@@ -414,7 +414,7 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
                                         （無 banner）
 ```
 
-當前分佈：**11 Tier 1 · 121 Tier 2 · 0 Skeleton = 共 132**（114 期刊 + 18 會議）。
+當前分佈：**11 Tier 1 · 131 Tier 2 · 0 Skeleton = 共 142**（124 期刊 + 18 會議）。
 
 完整方法論與升級路徑見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 

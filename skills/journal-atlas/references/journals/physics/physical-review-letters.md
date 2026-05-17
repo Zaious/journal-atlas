@@ -260,8 +260,8 @@ Moderate-High. The 4-page hard limit (including figures and references) demands 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | *(Physical Review B / D / E / X — community contribution welcome to develop subfield-specific fallback chains)* | APS family covers subfield-specific journals (B: condensed matter, D: particles/fields, E: statistical/biological/soft matter, X: long-form high-impact); no AAM embargo within APS |
-| 2 | *(Nature Physics — community contribution welcome)* | If broad-interest is maintained but PRL format too restrictive |
-| 3 | *(Physical Review Research — community contribution welcome)* | APS open-access general-physics journal; same APS family editorial culture |
+| 2 | [Nature Physics](../physics/nature-physics.md) | If broad-interest is maintained but PRL format too restrictive |
+| 3 | [Physical Review Research](../physics/physical-review-research.md) | APS open-access general-physics journal; same APS family editorial culture |
 
 **Reverse direction** *(optional)*: If your paper was rejected from Nature Physics or Science as "too physics-specialized," PRL is often a better fit because: it specializes in physics with deep reviewer-pool expertise across all subfields; APS family provides cross-journal transfer pathway; and 4-page format forces sharp claim articulation.
 

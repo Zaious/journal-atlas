@@ -253,7 +253,7 @@ Low for ubicomp tradition.
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [ACM Transactions on Computer-Human Interaction](./acm-transactions-on-computer-human-interaction.md) | ACM SIGCHI flagship |
-| 2 | *(ACM PACM IMWUT — community contribution welcome)* | UbiComp/ISWC proceedings journal |
+| 2 | [ACM PACM IMWUT](../hci/acm-pacm-imwut.md) | UbiComp/ISWC proceedings journal |
 | 3 | [International Journal of Human-Computer Studies](./international-journal-of-human-computer-studies.md) | Elsevier cognitive-HCI |
 
 **Reverse direction** *(optional)*: If your paper was rejected from TOCHI as "too ubicomp-specialized," PUC is the Springer home for personal/ubicomp HCI.

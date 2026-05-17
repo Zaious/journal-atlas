@@ -120,7 +120,26 @@ All 18 conference entries under `conferences/` use family-level Soft Metadata te
 
 Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, and Hard Blockers / Soft Tax / Best-suited-for / Not-recommended-for narratives for the 18 conference entries are family-level adaptations of the above ScienceClaw files. Per-conference Identity / Submission Cycle / Program Committee / Submission Format / Review Format details were authored from public CFP and community knowledge.
 
-Each affected entry's Changelog references the specific ScienceClaw source file. Tier 2 (community estimate) banner is applied to all 121 family-adapted entries.
+**C. P3-2 Pass 2 high-leverage journal additions (2026-05-17):**
+
+10 additional journal entries were built to plug fallback-chain gaps identified by the P3-2 audit:
+
+| Entry | Field | Soft Metadata family source |
+|-------|-------|-----------------------------|
+| Bioinformatics | biology | New `biology-oa` family template (Cardinal-authored, informed by OUP / PLOS / Cell Press OA norms) |
+| Nucleic Acids Research | biology | Same `biology-oa` family |
+| Cell Reports | biology | Same `biology-oa` family |
+| Nature Physics | physics | New `physics-flagship` family (Cardinal-authored, modeled on Nature Portfolio editorial culture) |
+| Physical Review Research | physics | New `physics-apos-oa` family (Cardinal-authored, APS conventions) |
+| ACM PACM CSCW | hci (Proceedings-Journal) | ScienceClaw `cs_conference_style.md` (ACM SIGCHI family) adapted to proceedings-journal format |
+| ACM PACM IMWUT | hci (Proceedings-Journal) | Same — adapted to UbiComp/ISWC proceedings-journal context |
+| ACM TOHRI | hci | New `acm-hci-journal` family (Cardinal-authored, ACM Transactions editorial conventions) |
+| ACM TACCESS | hci | Same `acm-hci-journal` family |
+| TACL (Transactions of ACL) | cognitive-science | ScienceClaw `reviewer_expectations.md` (ACL community) adapted to journal-format |
+
+ScienceClaw attribution is captured in each entry's Changelog where applicable.
+
+Each affected entry's Changelog references the specific source file. Tier 2 (community estimate) banner is applied to all 131 family-adapted entries.
 
 **Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-NC-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 

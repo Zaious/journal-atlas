@@ -254,7 +254,7 @@ Low for CSCW tradition authors. CSCW journal (Springer JCSCW) distinct from PACM
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [ACM Transactions on Computer-Human Interaction](./acm-transactions-on-computer-human-interaction.md) | If reframed as broader HCI |
-| 2 | *(ACM PACM CSCW — community contribution welcome)* | ACM CSCW proceedings journal |
+| 2 | [ACM PACM CSCW](../hci/acm-pacm-cscw.md) | ACM CSCW proceedings journal |
 | 3 | [Human-Computer Interaction (T&F)](./human-computer-interaction.md) | T&F HCI peer |
 
 **Reverse direction** *(optional)*: If your paper was rejected from TOCHI as "too workplace-ethnographic," CSCW (Springer JCSCW) is the natural CSCW community home.

@@ -47,27 +47,36 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
 | **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Tier 2 in Phase 4. |
-| **Tier 2** | 121 | `> [!WARNING]` | 103 journals (originally HCI + ScienceClaw-adapted + Phase 4 promotions) + 18 conferences (HCI / ML / NLP / Data Mining family-adapted). Family-level claims; per-journal/per-conference evidence not yet collected. |
+| **Tier 2** | 131 | `> [!WARNING]` | 113 journals + 18 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **Total** | **132** | | |
+| **Total** | **142** | | |
 
 ### Field-directory breakdown
 
 | Field | Count | Notes |
 |-------|-------|-------|
 | `psychology/` | 53 | Includes cross-disciplinary phenomenology / cognitive-science venues |
-| `hci/` | 23 | Added Nature Machine Intelligence + IEEE Access from ScienceClaw |
+| `hci/` | 27 | Original HCI + ScienceClaw additions + P3-2 (PACM CSCW, PACM IMWUT, TOHRI, TACCESS) |
 | `qualitative-methods/` | 4 | |
-| `cognitive-science/` | 12 | |
+| `cognitive-science/` | 13 | Includes P3-2 TACL (Transactions of ACL) |
 | `multidisciplinary/` | 7 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE |
-| `biology/` | 9 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech |
+| `biology/` | 12 | Cell Press family + PLOS Bio/Comp Bio + Nature Methods/Biotech + P3-2 (Bioinformatics, NAR, Cell Reports) |
 | `medical/` | 5 | NEJM / Lancet / JAMA / BMJ / Annals of Internal Medicine |
-| `physics/` | 1 | Physical Review Letters |
-| `conferences/hci/` (new) | 8 | ACM CHI, CSCW, UIST, DIS, IUI, IDC, CHI PLAY, IEEE HRI |
-| `conferences/ml/` (new) | 5 | NeurIPS, ICML, ICLR, CVPR, AAAI |
-| `conferences/nlp/` (new) | 3 | ACL, EMNLP, NAACL |
-| `conferences/data-mining/` (new) | 2 | KDD, WWW |
-| **Total** | **132** | |
+| `physics/` | 3 | Physical Review Letters + P3-2 (Nature Physics, Physical Review Research) |
+| `conferences/hci/` | 8 | ACM CHI, CSCW, UIST, DIS, IUI, IDC, CHI PLAY, IEEE HRI |
+| `conferences/ml/` | 5 | NeurIPS, ICML, ICLR, CVPR, AAAI |
+| `conferences/nlp/` | 3 | ACL, EMNLP, NAACL |
+| `conferences/data-mining/` | 2 | KDD, WWW |
+| **Total** | **142** | |
+
+### Fallback-chain coverage (P3-2 ledger)
+
+P3-2 systematically swept the 51 entries containing `community contribution welcome` markers (38 marker positions, 50 venue mentions):
+
+- **Pass 1 (linker)**: replaced 17 venue mentions with relative-path links to existing Atlas entries (12 markers fully resolved → marker styling dropped; remainder kept partial-marker styling)
+- **Pass 2 (build + relink)**: added 10 high-leverage new entries (Bioinformatics / NAR / Cell Reports / Nature Physics / Physical Review Research / ACM PACM CSCW / ACM PACM IMWUT / ACM TOHRI / ACM TACCESS / TACL) and re-ran the linker, picking up 6 more venue mentions
+
+Remaining: 26 markers / 29 venue mentions across 23 entries — all niche venues (e.g. Memory & Cognition, NeuroImage, American Sociological Review, Sensors MDPI). These intentionally stay as community-contribution markers and represent the entry points for future contributors.
 
 ### Schema version
 
@@ -112,12 +121,12 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - Reviewer pool characteristics and framing requirements informed by recent publication patterns and (where available) published reviewer reports
 - Estimated subjective-judgment uncertainty: ~15%
 
-### Tier 2 — Community estimate (121 entries)
+### Tier 2 — Community estimate (131 entries)
 
 **Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community / family-level knowledge rather than per-entry evidence harvesting.
 
-**Composition** (121 entries):
-- **Journals (103)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories)
+**Composition** (131 entries):
+- **Journals (113)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories) + 10 P3-2 high-leverage additions (Bioinformatics / NAR / Cell Reports / Nature Physics / PRR / 4 ACM HCI journals / TACL)
 - **Conferences (18)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW)
 
 **What Tier 2 means in practice**:

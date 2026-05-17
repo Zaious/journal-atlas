@@ -1,0 +1,248 @@
+<!-- schema: v1.3 -->
+
+# Transactions of the Association for Computational Linguistics
+
+> **Last verified**: 2026-05-17
+> **Maintainer**: @Zaious
+> **Venue type**: Journal
+
+---
+
+## Identity
+
+| Field | Value |
+|-------|-------|
+| **Abbreviation** | TACL |
+| **Venue type** | Journal |
+| **Publisher** | Association for Computational Linguistics (MIT Press distribution) |
+| **ISSN (Print)** | *(N/A — online only)* |
+| **ISSN (Online)** | 2307-387X |
+| **Founded** | 2013 |
+| **URL** | https://transacl.org/ |
+| **Author / Submission Guidelines** | https://transacl.org/index.php/tacl/about/submissions |
+| **Society / Association** | Association for Computational Linguistics (ACL) |
+| **Editorial Board Location** | International |
+
+---
+
+## Metrics
+
+> Source: publisher / JCR / community trackers. Retrieved 2026-05-17.
+
+| Metric | Value | Date |
+|--------|-------|------|
+| **Impact Factor** | *(tracked via ACL community h-index; not separately JCR-indexed)* | 2026-05-17 |
+| **5-Year IF** | *(see JCR)* | |
+| **h-index** | ~80+ | 2026-05-17 |
+| **CiteScore** | *(see Scopus)* | |
+| **Acceptance Rate** | *(community estimate; varies by year)* | |
+| **Desk Rejection Rate** | *(community estimate)* | |
+| **Quartile (by field)** | *(see SCImago)* | |
+
+### Review Cycle Time
+
+| Stage | Typical Time | Notes |
+|-------|-------------|-------|
+| **Time to first decision** | *(community estimate)* | |
+| **Time to first review** | *(community estimate)* | |
+| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to publication (after acceptance)** | *(typical for OA journals: 2-6 weeks after acceptance)* | |
+
+### Publication Frequency
+
+| Aspect | Detail |
+|--------|--------|
+| **Schedule** | Continuous online (rolling) |
+| **Articles per year (approx.)** | *(see publisher / journal homepage)* |
+| **Special issues?** | Yes (themed issues / database issues per journal-specific tradition) |
+
+---
+
+## Policies
+
+### Peer Review
+
+| Aspect | Detail |
+|--------|--------|
+| **Type** | Single-blind (typical journal default; check publisher policy) |
+| **Transferable / Cascade?** | *(varies by publisher)* |
+| **Reviewer reports published?** | *(varies; some journals offer transparent review)* |
+| **Typical R+R rounds** | 1-2 |
+| **Reviewer recommendations** | Optional (most journals accept author suggestions) |
+
+### AI Policy
+
+| Aspect | Detail |
+|--------|--------|
+| **Has journal-specific AI policy?** | Yes (follows publisher default + may have journal-specific overlay) |
+| **Explicit permission gate?** | No — disclosure-based |
+| **Leniency (1-5)** | 3-4 |
+| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at the journal's author guidelines. |
+| **Source URL** | https://2025.aclweb.org/calls/main_conference_papers/ |
+
+### Preprint Policy
+
+| Stage | Allowed? | Notes |
+|-------|----------|-------|
+| Pre-submission | Yes | arXiv / bioRxiv / similar preprint servers permitted by most publishers |
+| Under review | Yes | Most journals permit preprint update; verify journal-specific policy |
+| Post-acceptance (AAM) | Yes | Embargo varies by publisher (0-12 months) |
+| Version of Record | OA model determines | |
+
+### Open Access
+
+| Aspect | Detail |
+|--------|--------|
+| **Model** | Full Open Access (no APC) |
+| **APC (if OA chosen)** | $0 |
+| **Read & Publish agreements** | *(publisher-level; check institutional library)* |
+
+---
+
+## Format
+
+| Aspect | Detail |
+|--------|--------|
+| **Article types accepted** | Long-format research articles (journal-format complement to ACL/EMNLP/NAACL proceedings) |
+| **Word limit** | Submission: no strict length cap; recommend ≤16 pages |
+| **Word limit negotiability** | Soft (extensions possible with editor approval) |
+| **Abstract limit** | 150 words |
+| **Reference limit** | None (or generous; verify per article type) |
+| **Supplementary material** | Accepted |
+| **Figure/Table limits** | *(per article type; verify author guidelines)* |
+
+---
+
+## Subject Density
+
+> Subject coverage per journal scope statement. Retrieved 2026-05-17.
+
+### Top Topics (last 5 years)
+
+| Topic | Article Count (2020-2025) |
+|-------|--------------------------|
+| Computational linguistics | *(community estimate)* |
+| NLP theory and methods | *(community estimate)* |
+| LLM evaluation / analysis | *(community estimate)* |
+| Multilingual / Cross-lingual NLP | *(community estimate)* |
+| Discourse and semantics | *(community estimate)* |
+| Reproducibility / Benchmarks | *(community estimate)* |
+
+### Orientation
+
+| Dimension | Assessment |
+|-----------|------------|
+| **Empirical vs. Theoretical** | Primarily empirical with theoretical sections welcomed |
+| **Quantitative vs. Qualitative** | Primarily quantitative |
+| **Cross-disciplinary openness** | Medium-High within field bounds |
+
+---
+
+## Soft Metadata
+
+> [!WARNING]
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from ACL community conventions (TACL editorial norms + ACL/EMNLP/NAACL review culture in journal format). Specific journal may diverge; submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+
+### Epistemological & Political Leanings
+
+| Dimension | Assessment |
+|-----------|------------|
+| **Cross-cultural friendliness** | Medium-High (ACL is internationally diverse) |
+| **Non-Western epistemology openness** | Medium-High (multilingual / cross-lingual NLP welcomed; non-English work increasing) |
+| **Diversity topic receptiveness** | Medium-High |
+| **Dominant theoretical tradition** | Empirical NLP + computational linguistics + (more recently) LLM research |
+
+### Framing Requirements
+
+- **Mandatory framing?** Yes — must position task contribution + dataset / method novelty + multilingual considerations where applicable
+- **Consequences of ignoring it**: Reviewer pushback on monolingual-only claims (multilingual fairness expected at ACL family); unclear task formulation triggers AC concern
+
+### Methodological Preferences
+
+| Method | Receptiveness (0-5) | Evidence |
+|--------|---------------------|----------|
+| Quantitative experimental | 5 | Family norm |
+| Qualitative interviews | 2 | Family norm |
+| Autoethnography | 1 | Family norm |
+| Theoretical / Conceptual | 4 | Family norm |
+| Mixed methods | 3 | Family norm |
+| Meta-analysis | 3 | Family norm |
+
+### Voice & Style
+
+| Aspect | Detail |
+|--------|--------|
+| **First-person voice acceptance (0-5)** | 3 |
+| **Expected density** | Standard ACL community style; longer-format than conferences |
+| **Writing style notes** | Technical, dense; benchmark tables prominent; LaTeX-typeset; first-person plural standard |
+
+### Reviewer Pool Characteristics
+
+ACL community reviewers (overlaps with ACL/EMNLP/NAACL pool). Reviewer expectations: linguistic awareness, dataset documentation, multilingual considerations, error analysis. Longer-format allows more thorough evaluation than conference 8pp limit.
+
+| Aspect | Detail | Evidence |
+|--------|--------|----------|
+| **Dominant tradition** | ACL community NLP | Family norm |
+| **Reviewer competence variance** | Medium | |
+| **Quantitative mindset bias on qualitative work?** | High | |
+| **Discourse community signals (editorial board)** | ACL community leadership | https://transacl.org/ |
+
+### Sensitive Topics
+
+| Topic Category | Receptiveness | Evidence |
+|----------------|---------------|----------|
+| Hate speech / Toxicity | High | Family norm |
+| Privacy / Dataset deanonymization | High | Family norm |
+| Low-resource / Endangered languages | High | Family norm |
+| LLM safety / Red-teaming | Medium-High | Family norm |
+
+### Practical Concerns
+
+| Concern | Detail |
+|---------|--------|
+| **IRB requirement strictness** | Soft expectation |
+| **Single-author acceptance** | Possible (TACL is more author-flexible than conference venues) |
+| **Independent scholar friendliness** | Medium-High (no APC + journal-format makes it independent-scholar friendly) |
+| **Data transparency requirement** | Medium-High |
+| **OPSEC compatibility** | Medium |
+
+---
+
+## Strategic Notes
+
+### Hard Blockers
+
+- *(community estimate based on family norm; submission experience welcome to refine)*
+
+### Soft Tax
+
+Variable; depends on closeness of fit between manuscript framing and the journal's scope statement.
+
+### Best Suited For
+
+- Longer-format NLP research that doesn't fit ACL/EMNLP 8-page proceedings limit
+- Reproducibility studies and rigorous benchmark / evaluation papers
+- Theoretical computational linguistics with extended derivations
+- NLP work needing journal venue (e.g., for tenure track) without APC barrier
+
+### Not Recommended For
+
+- Short empirical NLP work better fit for ACL/EMNLP short papers
+- Non-NLP computational work (consider Computational Linguistics journal)
+- Application papers without methodological contribution
+
+### Rejection Fallback Chain
+
+| Rank | Journal | Why this fallback works |
+|------|---------|------------------------|
+| 1 | [Computational Linguistics](./computational-linguistics.md) | MIT Press CL flagship journal; broader-scope sister venue |
+| 2 | [ACL Conference](../conferences/nlp/acl.md) | Premier ACL conference; if shorter / time-sensitive |
+| 3 | [EMNLP Conference](../conferences/nlp/emnlp.md) | ACL family conference; methodology / empirical focus |
+
+---
+
+## Changelog
+
+| Date | Change | By |
+|------|--------|----|
+| 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACL community conventions (TACL editorial norms + ACL/EMNLP/NAACL review culture in journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |
