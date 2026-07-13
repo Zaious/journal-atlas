@@ -1,0 +1,4 @@
+# Bulk source downloads (regenerate with --fetch-bulk) and build artifacts
+bulk/
+*.db
+__pycache__/

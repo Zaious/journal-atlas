@@ -16,6 +16,19 @@ Automation tools for Journal Atlas. All scripts are Python 3.10+ and licensed un
 | `update_metrics.py` | Refresh OpenAlex-derived metrics in existing entries; propose diffs (dry-run by default; `--apply` to write). | ✅ Implemented |
 | `topic_trend_scan.py` | Scan a journal's recent publication topics; optionally check for specific keyword presence. Cached 30 days. | ✅ Implemented |
 
+### `spine/` — coverage backbone (v2)
+
+The [`spine/`](spine/) subsystem builds an ISSN-keyed database of *facts* joined
+from six license-clean sources (OpenAlex · DOAJ · JUFO · CAS 中科院分区 ·
+Retraction Watch · Norwegian Register) — the **breadth** half of the atlas,
+scaling toward ~228k journals. The curated `references/journals/**.md` entries
+remain the **depth** half. See [spine/README.md](spine/README.md) and the
+architecture in [docs/ATLAS_V2_DESIGN.md](../../../docs/ATLAS_V2_DESIGN.md).
+
+```bash
+python spine/build_spine.py --sample-issns 0028-0836,1046-1310 --out sample_spine.db
+```
+
 ### When to use `query_journals.py` vs `fit_score.py`
 
 | You need to... | Use |
