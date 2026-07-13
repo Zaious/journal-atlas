@@ -1,0 +1,1685 @@
+[
+ {
+  "openalex_id": "S9692511",
+  "name": "Frontiers in Psychology",
+  "works_in_field": 18491,
+  "issn": "1664-1078",
+  "type": "journal",
+  "works_count": 52232,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S147670119",
+  "name": "Psychological Reports",
+  "works_in_field": 14003,
+  "issn": "0033-2941",
+  "type": "journal",
+  "works_count": 31534,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S151331055",
+  "name": "Personality and Individual Differences",
+  "works_in_field": 10805,
+  "issn": "0191-8869",
+  "type": "journal",
+  "works_count": 17187,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S110965136",
+  "name": "Perceptual and Motor Skills",
+  "works_in_field": 10631,
+  "issn": "0031-5125",
+  "type": "journal",
+  "works_count": 29039,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S2765073098",
+  "name": "Contemporary Psychology",
+  "works_in_field": 10315,
+  "issn": "0010-7549",
+  "type": "journal",
+  "works_count": 34030,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S80146597",
+  "name": "American Psychologist",
+  "works_in_field": 9700,
+  "issn": "0003-066X",
+  "type": "journal",
+  "works_count": 21799,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S171176648",
+  "name": "Psychiatric Services",
+  "works_in_field": 8858,
+  "issn": "1075-2730",
+  "type": "journal",
+  "works_count": 27214,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S15239247",
+  "name": "International Journal of Environmental Research and Public Health",
+  "works_in_field": 8015,
+  "issn": "1660-4601",
+  "type": "journal",
+  "works_count": 66809,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S109723506",
+  "name": "Child Development",
+  "works_in_field": 7528,
+  "issn": "0009-3920",
+  "type": "journal",
+  "works_count": 17378,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S640450",
+  "name": "Journal of Clinical Psychology",
+  "works_in_field": 6957,
+  "issn": "0021-9762",
+  "type": "journal",
+  "works_count": 12586,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S60711021",
+  "name": "Journal of the American Academy of Child & Adolescent Psychiatry",
+  "works_in_field": 6879,
+  "issn": "0890-8567",
+  "type": "journal",
+  "works_count": 23443,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S118719888",
+  "name": "Journal of Consulting and Clinical Psychology",
+  "works_in_field": 6851,
+  "issn": "0022-006X",
+  "type": "journal",
+  "works_count": 12323,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S126635229",
+  "name": "Developmental Psychology",
+  "works_in_field": 6284,
+  "issn": "0012-1649",
+  "type": "journal",
+  "works_count": 12361,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210176815",
+  "name": "Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+  "works_in_field": 6206,
+  "issn": "1071-1813",
+  "type": "journal",
+  "works_count": 16307,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S203585231",
+  "name": "Current Psychology",
+  "works_in_field": 5922,
+  "issn": "1046-1310",
+  "type": "journal",
+  "works_count": 11325,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S61026369",
+  "name": "American Journal of Psychotherapy",
+  "works_in_field": 5778,
+  "issn": "0002-9564",
+  "type": "journal",
+  "works_count": 8731,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S42921845",
+  "name": "SLEEP",
+  "works_in_field": 5619,
+  "issn": "0161-8105",
+  "type": "journal",
+  "works_count": 20143,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S186589312",
+  "name": "Behaviour Research and Therapy",
+  "works_in_field": 5277,
+  "issn": "0005-7967",
+  "type": "journal",
+  "works_count": 8796,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S61703936",
+  "name": "Journal of Educational Psychology",
+  "works_in_field": 4917,
+  "issn": "0022-0663",
+  "type": "journal",
+  "works_count": 12617,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S53055215",
+  "name": "Child Abuse & Neglect",
+  "works_in_field": 4865,
+  "issn": "0145-2134",
+  "type": "journal",
+  "works_count": 8730,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S74080386",
+  "name": "International Journal of Eating Disorders",
+  "works_in_field": 4747,
+  "issn": "0276-3478",
+  "type": "journal",
+  "works_count": 6603,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S135831435",
+  "name": "Journal of Counseling Psychology",
+  "works_in_field": 4654,
+  "issn": "0022-0167",
+  "type": "journal",
+  "works_count": 7745,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S84156235",
+  "name": "American Journal of Orthopsychiatry",
+  "works_in_field": 4177,
+  "issn": "0002-9432",
+  "type": "journal",
+  "works_count": 10383,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S121947241",
+  "name": "Journal of Abnormal Psychology",
+  "works_in_field": 4063,
+  "issn": "0021-843X",
+  "type": "journal",
+  "works_count": 7266,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S205482884",
+  "name": "Biological Psychiatry",
+  "works_in_field": 4058,
+  "issn": "0006-3223",
+  "type": "journal",
+  "works_count": 31958,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S59628311",
+  "name": "Behavioral and Brain Sciences",
+  "works_in_field": 4009,
+  "issn": "0140-525X",
+  "type": "journal",
+  "works_count": 17167,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S37480348",
+  "name": "Mind",
+  "works_in_field": 3908,
+  "issn": "0026-4423",
+  "type": "journal",
+  "works_count": 16713,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210227222",
+  "name": "Journal of Mental Science",
+  "works_in_field": 3893,
+  "issn": "0368-315X",
+  "type": "journal",
+  "works_count": 22060,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S206630335",
+  "name": "The American Journal of Psychology",
+  "works_in_field": 3802,
+  "issn": "0002-9556",
+  "type": "journal",
+  "works_count": 12653,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S173207956",
+  "name": "Revue française de psychanalyse",
+  "works_in_field": 3787,
+  "issn": "0035-2942",
+  "type": "journal",
+  "works_count": 5138,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S183718435",
+  "name": "Sleep Medicine",
+  "works_in_field": 3749,
+  "issn": "1389-9457",
+  "type": "journal",
+  "works_count": 16651,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S40137911",
+  "name": "Journal of Personality Assessment",
+  "works_in_field": 3652,
+  "issn": "0022-3891",
+  "type": "journal",
+  "works_count": 5411,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S137468011",
+  "name": "Journal of Vision",
+  "works_in_field": 3606,
+  "issn": "1534-7362",
+  "type": "journal",
+  "works_count": 36556,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S168850678",
+  "name": "Journal of the Experimental Analysis of Behavior",
+  "works_in_field": 3548,
+  "issn": "0022-5002",
+  "type": "journal",
+  "works_count": 5610,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S75627607",
+  "name": "Psychological Bulletin",
+  "works_in_field": 3490,
+  "issn": "0033-2909",
+  "type": "journal",
+  "works_count": 11606,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S61821002",
+  "name": "Psychology in the Schools",
+  "works_in_field": 3487,
+  "issn": "0033-3085",
+  "type": "journal",
+  "works_count": 6980,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S133322011",
+  "name": "Psychotherapy",
+  "works_in_field": 3337,
+  "issn": "0033-3204",
+  "type": "journal",
+  "works_count": 4705,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S201005279",
+  "name": "Journal of Experimental Child Psychology",
+  "works_in_field": 3314,
+  "issn": "0022-0965",
+  "type": "journal",
+  "works_count": 6289,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S193694675",
+  "name": "Professional Psychology Research and Practice",
+  "works_in_field": 3244,
+  "issn": "0735-7028",
+  "type": "journal",
+  "works_count": 5787,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S110744938",
+  "name": "Journal of Speech Language and Hearing Research",
+  "works_in_field": 3201,
+  "issn": "1092-4388",
+  "type": "journal",
+  "works_count": 7439,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S35369596",
+  "name": "Psychological Assessment",
+  "works_in_field": 3141,
+  "issn": "1040-3590",
+  "type": "journal",
+  "works_count": 4953,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210185917",
+  "name": "Bulletin de psychologie",
+  "works_in_field": 3074,
+  "issn": "0007-4403",
+  "type": "journal",
+  "works_count": 7319,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S2595931848",
+  "name": "Frontiers in Public Health",
+  "works_in_field": 3056,
+  "issn": "2296-2565",
+  "type": "journal",
+  "works_count": 29033,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S186249623",
+  "name": "International Journal of Group Psychotherapy",
+  "works_in_field": 3055,
+  "issn": "0020-7284",
+  "type": "journal",
+  "works_count": 4577,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S203799486",
+  "name": "Journal of the American Psychoanalytic Association",
+  "works_in_field": 3011,
+  "issn": "0003-0651",
+  "type": "journal",
+  "works_count": 6316,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S194752149",
+  "name": "American Journal of Primatology",
+  "works_in_field": 3000,
+  "issn": "0275-2565",
+  "type": "journal",
+  "works_count": 5757,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S68436342",
+  "name": "Psychiatric Bulletin",
+  "works_in_field": 2986,
+  "issn": "0955-6036",
+  "type": "journal",
+  "works_count": 12189,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S180067919",
+  "name": "Acta Psychologica",
+  "works_in_field": 2946,
+  "issn": "0001-6918",
+  "type": "journal",
+  "works_count": 10041,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S125122479",
+  "name": "Journal of Applied Behavior Analysis",
+  "works_in_field": 2907,
+  "issn": "0021-8855",
+  "type": "journal",
+  "works_count": 4446,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S87914957",
+  "name": "Journal of Child and Family Studies",
+  "works_in_field": 2880,
+  "issn": "1062-1024",
+  "type": "journal",
+  "works_count": 4915,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S191833357",
+  "name": "The American Biology Teacher",
+  "works_in_field": 2876,
+  "issn": "0002-7685",
+  "type": "journal",
+  "works_count": 19595,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S56240272",
+  "name": "Behavior Therapy",
+  "works_in_field": 2857,
+  "issn": "0005-7894",
+  "type": "journal",
+  "works_count": 4967,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S167407068",
+  "name": "Physiology & Behavior",
+  "works_in_field": 2846,
+  "issn": "0031-9384",
+  "type": "journal",
+  "works_count": 21134,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S73786128",
+  "name": "Journal of Personality",
+  "works_in_field": 2840,
+  "issn": "0022-3506",
+  "type": "journal",
+  "works_count": 4788,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S61687237",
+  "name": "PsycCRITIQUES",
+  "works_in_field": 2835,
+  "issn": "1554-0138",
+  "type": "journal",
+  "works_count": 9190,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S176794141",
+  "name": "Journal of Traumatic Stress",
+  "works_in_field": 2806,
+  "issn": "0894-9867",
+  "type": "journal",
+  "works_count": 4329,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S177929781",
+  "name": "Journal of Child Psychology and Psychiatry",
+  "works_in_field": 2779,
+  "issn": "0021-9630",
+  "type": "journal",
+  "works_count": 7912,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210168021",
+  "name": "Journal of Experimental Psychology",
+  "works_in_field": 2764,
+  "issn": "0022-1015",
+  "type": "journal",
+  "works_count": 7622,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210239295",
+  "name": "Tidsskrift for Den norske legeforening",
+  "works_in_field": 2723,
+  "issn": "0029-2001",
+  "type": "journal",
+  "works_count": 17082,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S189995291",
+  "name": "Social Psychiatry and Psychiatric Epidemiology",
+  "works_in_field": 2686,
+  "issn": "0933-7954",
+  "type": "journal",
+  "works_count": 5771,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S94432539",
+  "name": "Applied Ergonomics",
+  "works_in_field": 2604,
+  "issn": "0003-6870",
+  "type": "journal",
+  "works_count": 11662,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210194710",
+  "name": "Behavioral Sciences",
+  "works_in_field": 2518,
+  "issn": "2076-328X",
+  "type": "journal",
+  "works_count": 6577,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S126644992",
+  "name": "Journal of Youth and Adolescence",
+  "works_in_field": 2493,
+  "issn": "0047-2891",
+  "type": "journal",
+  "works_count": 4722,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S50147421",
+  "name": "Journal of Family Psychology",
+  "works_in_field": 2489,
+  "issn": "0893-3200",
+  "type": "journal",
+  "works_count": 4561,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S47649111",
+  "name": "Cognitive Therapy and Research",
+  "works_in_field": 2459,
+  "issn": "0147-5916",
+  "type": "journal",
+  "works_count": 3188,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S2764871139",
+  "name": "BMC Psychology",
+  "works_in_field": 2441,
+  "issn": "2050-7283",
+  "type": "journal",
+  "works_count": 5103,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S55286453",
+  "name": "The Psychoanalytic Quarterly",
+  "works_in_field": 2425,
+  "issn": "0033-2828",
+  "type": "journal",
+  "works_count": 4205,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S117021518",
+  "name": "Journal of Behavior Therapy and Experimental Psychiatry",
+  "works_in_field": 2416,
+  "issn": "0005-7916",
+  "type": "journal",
+  "works_count": 4137,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S92508993",
+  "name": "International Journal of Social Psychiatry",
+  "works_in_field": 2352,
+  "issn": "0020-7640",
+  "type": "journal",
+  "works_count": 5395,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S35223124",
+  "name": "Psychological Review",
+  "works_in_field": 2347,
+  "issn": "0033-295X",
+  "type": "journal",
+  "works_count": 7469,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S118198609",
+  "name": "Emotion",
+  "works_in_field": 2338,
+  "issn": "1528-3542",
+  "type": "journal",
+  "works_count": 4082,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210179681",
+  "name": "OMEGA - Journal of Death and Dying",
+  "works_in_field": 2335,
+  "issn": "0030-2228",
+  "type": "journal",
+  "works_count": 3503,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S88198767",
+  "name": "Cognition",
+  "works_in_field": 2298,
+  "issn": "0010-0277",
+  "type": "journal",
+  "works_count": 6600,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S135207330",
+  "name": "Psychological Trauma Theory Research Practice and Policy",
+  "works_in_field": 2290,
+  "issn": "1942-9681",
+  "type": "journal",
+  "works_count": 3275,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S47477353",
+  "name": "Mindfulness",
+  "works_in_field": 2289,
+  "issn": "1868-8527",
+  "type": "journal",
+  "works_count": 2993,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S156995526",
+  "name": "Journal of Research in Personality",
+  "works_in_field": 2286,
+  "issn": "0092-6566",
+  "type": "journal",
+  "works_count": 3398,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S70609798",
+  "name": "Psychoanalytic Psychology",
+  "works_in_field": 2278,
+  "issn": "0736-9735",
+  "type": "journal",
+  "works_count": 3183,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S55618883",
+  "name": "Psychology and Aging",
+  "works_in_field": 2265,
+  "issn": "0882-7974",
+  "type": "journal",
+  "works_count": 4775,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S110204754",
+  "name": "Journal of Anxiety Disorders",
+  "works_in_field": 2261,
+  "issn": "0887-6185",
+  "type": "journal",
+  "works_count": 3231,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S179289126",
+  "name": "Journal of Adolescence",
+  "works_in_field": 2259,
+  "issn": "0140-1971",
+  "type": "journal",
+  "works_count": 4731,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S50059124",
+  "name": "Suicide and Life-Threatening Behavior",
+  "works_in_field": 2230,
+  "issn": "0363-0234",
+  "type": "journal",
+  "works_count": 3428,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S72159247",
+  "name": "Ergonomics",
+  "works_in_field": 2208,
+  "issn": "0014-0139",
+  "type": "journal",
+  "works_count": 9082,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S18666220",
+  "name": "Journal of Experimental Psychology Learning Memory and Cognition",
+  "works_in_field": 2196,
+  "issn": "0278-7393",
+  "type": "journal",
+  "works_count": 7350,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S28964699",
+  "name": "Archives of Sexual Behavior",
+  "works_in_field": 2194,
+  "issn": "0004-0002",
+  "type": "journal",
+  "works_count": 6379,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S67039580",
+  "name": "Infant Behavior and Development",
+  "works_in_field": 2184,
+  "issn": "0163-6383",
+  "type": "journal",
+  "works_count": 5594,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S19117828",
+  "name": "The International Journal of Psychoanalysis",
+  "works_in_field": 2168,
+  "issn": "0020-7578",
+  "type": "journal",
+  "works_count": 4186,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S45104564",
+  "name": "Journal of Abnormal & Social Psychology",
+  "works_in_field": 2161,
+  "issn": "0096-851X",
+  "type": "journal",
+  "works_count": 4289,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S204419675",
+  "name": "Death Studies",
+  "works_in_field": 2144,
+  "issn": "0748-1187",
+  "type": "journal",
+  "works_count": 3518,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S96638545",
+  "name": "Brain Research",
+  "works_in_field": 2136,
+  "issn": "0006-8993",
+  "type": "journal",
+  "works_count": 66637,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S1374498",
+  "name": "Journal of Counseling & Development",
+  "works_in_field": 2127,
+  "issn": "0748-9633",
+  "type": "journal",
+  "works_count": 3825,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S91612243",
+  "name": "Primates",
+  "works_in_field": 2127,
+  "issn": "0032-8332",
+  "type": "journal",
+  "works_count": 3633,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4387286376",
+  "name": "Clinical Psychology Forum",
+  "works_in_field": 2117,
+  "issn": "1747-5732",
+  "type": "journal",
+  "works_count": 5593,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210240362",
+  "name": "International Journal of Indian Psychology",
+  "works_in_field": 2110,
+  "issn": "2348-5396",
+  "type": "journal",
+  "works_count": 4017,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S2764865314",
+  "name": "Counselor Education and Supervision",
+  "works_in_field": 2100,
+  "issn": "0011-0035",
+  "type": "journal",
+  "works_count": 2879,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S14586973",
+  "name": "Journal of Analytical Psychology",
+  "works_in_field": 2098,
+  "issn": "0021-8774",
+  "type": "journal",
+  "works_count": 4229,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S2764680450",
+  "name": "Psychonomic Science",
+  "works_in_field": 2065,
+  "issn": "0033-3131",
+  "type": "journal",
+  "works_count": 5914,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S52407911",
+  "name": "Journal of Consulting Psychology",
+  "works_in_field": 2061,
+  "issn": "0095-8891",
+  "type": "journal",
+  "works_count": 3768,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S12430390",
+  "name": "Journal of Social and Personal Relationships",
+  "works_in_field": 2044,
+  "issn": "0265-4075",
+  "type": "journal",
+  "works_count": 3179,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S58854535",
+  "name": "Psychological Science",
+  "works_in_field": 2041,
+  "issn": "0956-7976",
+  "type": "journal",
+  "works_count": 6122,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S103225281",
+  "name": "NeuroImage",
+  "works_in_field": 2025,
+  "issn": "1053-8119",
+  "type": "journal",
+  "works_count": 28560,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S167491010",
+  "name": "Family Process",
+  "works_in_field": 2021,
+  "issn": "0014-7370",
+  "type": "journal",
+  "works_count": 4031,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S26008998",
+  "name": "Journal of Experimental Psychology Human Perception & Performance",
+  "works_in_field": 2013,
+  "issn": "0096-1523",
+  "type": "journal",
+  "works_count": 7871,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S146364893",
+  "name": "Frontiers in Human Neuroscience",
+  "works_in_field": 1973,
+  "issn": "1662-5161",
+  "type": "journal",
+  "works_count": 13921,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S139016016",
+  "name": "International Journal of Primatology",
+  "works_in_field": 1964,
+  "issn": "0164-0291",
+  "type": "journal",
+  "works_count": 3004,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S92682373",
+  "name": "The Psychological Record",
+  "works_in_field": 1955,
+  "issn": "0033-2933",
+  "type": "journal",
+  "works_count": 3683,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S58220144",
+  "name": "Journal of Abnormal Child Psychology",
+  "works_in_field": 1944,
+  "issn": "0091-0627",
+  "type": "journal",
+  "works_count": 3215,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S983763965",
+  "name": "Journal of Marital and Family Therapy",
+  "works_in_field": 1931,
+  "issn": "0194-472X",
+  "type": "journal",
+  "works_count": 3263,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S1030938293",
+  "name": "Mental Health Weekly",
+  "works_in_field": 1916,
+  "issn": "1058-1103",
+  "type": "journal",
+  "works_count": 6401,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S31497010",
+  "name": "Journal of Child Language",
+  "works_in_field": 1913,
+  "issn": "0305-0009",
+  "type": "journal",
+  "works_count": 3200,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S6115874",
+  "name": "Development and Psychopathology",
+  "works_in_field": 1912,
+  "issn": "0954-5794",
+  "type": "journal",
+  "works_count": 3610,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S108318183",
+  "name": "The Journal of General Psychology",
+  "works_in_field": 1906,
+  "issn": "0022-1309",
+  "type": "journal",
+  "works_count": 4808,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S4210214101",
+  "name": "Healthcare",
+  "works_in_field": 1905,
+  "issn": "2227-9032",
+  "type": "journal",
+  "works_count": 16754,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S90160718",
+  "name": "The Journal of Genetic Psychology",
+  "works_in_field": 1892,
+  "issn": "0022-1325",
+  "type": "journal",
+  "works_count": 3883,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S31827231",
+  "name": "Journal of Psychosocial Nursing and Mental Health Services",
+  "works_in_field": 1882,
+  "issn": "0279-3695",
+  "type": "journal",
+  "works_count": 7902,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S81625862",
+  "name": "British Journal of Psychotherapy",
+  "works_in_field": 1860,
+  "issn": "0265-9883",
+  "type": "journal",
+  "works_count": 2967,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S125585695",
+  "name": "European Eating Disorders Review",
+  "works_in_field": 1856,
+  "issn": "1072-4133",
+  "type": "journal",
+  "works_count": 2675,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S26220619",
+  "name": "Journal of Learning Disabilities",
+  "works_in_field": 1852,
+  "issn": "0022-2194",
+  "type": "journal",
+  "works_count": 5502,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S104827148",
+  "name": "The Counseling Psychologist",
+  "works_in_field": 1849,
+  "issn": "0011-0000",
+  "type": "journal",
+  "works_count": 3325,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S114265899",
+  "name": "Memory & Cognition",
+  "works_in_field": 1845,
+  "issn": "0090-502X",
+  "type": "journal",
+  "works_count": 5638,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S121299002",
+  "name": "Analysis",
+  "works_in_field": 1845,
+  "issn": "0003-2638",
+  "type": "journal",
+  "works_count": 8251,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S131954271",
+  "name": "Psychology of sport and exercise",
+  "works_in_field": 1839,
+  "issn": "1469-0292",
+  "type": "journal",
+  "works_count": 3005,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": "S78750095",
+  "name": "Psychosomatic Medicine",
+  "works_in_field": 1834,
+  "issn": "0033-3174",
+  "type": "journal",
+  "works_count": 10418,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S129135363",
+  "name": "International Journal of Psychophysiology",
+  "works_in_field": 1831,
+  "issn": "0167-8760",
+  "type": "journal",
+  "works_count": 11363,
+  "primary_field": "28"
+ },
+ {
+  "openalex_id": "S204777700",
+  "name": "Psychotherapy Research",
+  "works_in_field": 1826,
+  "issn": "1050-3307",
+  "type": "journal",
+  "works_count": 2335,
+  "primary_field": "32"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Interactive Intelligent Systems",
+  "works_in_field": null,
+  "issn": "2160-6455",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Alzheimer's & Dementia",
+  "works_in_field": null,
+  "issn": "1552-5260",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "The American Journal of Psychology",
+  "works_in_field": null,
+  "issn": "1939-8298",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Annual Review of Psychology",
+  "works_in_field": null,
+  "issn": "0066-4308",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Applied Cognitive Psychology",
+  "works_in_field": null,
+  "issn": "0888-4080",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Assessment",
+  "works_in_field": null,
+  "issn": "1073-1911",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "British Journal of Educational Psychology",
+  "works_in_field": null,
+  "issn": "0007-0998",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "British Journal of Social Psychology",
+  "works_in_field": null,
+  "issn": "0144-6665",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Clinical Psychology Review",
+  "works_in_field": null,
+  "issn": "0272-7358",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cognitive Therapy and Research",
+  "works_in_field": null,
+  "issn": "1573-2819",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Collabra: Psychology",
+  "works_in_field": null,
+  "issn": "2474-7394",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Computers & composition/Computers and composition",
+  "works_in_field": null,
+  "issn": "1873-2011",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Contemporary Educational Psychology",
+  "works_in_field": null,
+  "issn": "0361-476X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Counselling Psychology Quarterly",
+  "works_in_field": null,
+  "issn": "0951-5070",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Culture & Psychology",
+  "works_in_field": null,
+  "issn": "1354-067X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Dementia and Geriatric Cognitive Disorders",
+  "works_in_field": null,
+  "issn": "1420-8008",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Developmental Psychology",
+  "works_in_field": null,
+  "issn": "1939-0599",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Educational Psychology Review",
+  "works_in_field": null,
+  "issn": "1040-726X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Environment and Behavior",
+  "works_in_field": null,
+  "issn": "0013-9165",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "European Journal of Personality",
+  "works_in_field": null,
+  "issn": "0890-2070",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "European Journal of Social Psychology",
+  "works_in_field": null,
+  "issn": "0046-2772",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Health Psychology",
+  "works_in_field": null,
+  "issn": "0278-6133",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Interacting with Computers",
+  "works_in_field": null,
+  "issn": "0953-5438",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Abnormal Child Psychology",
+  "works_in_field": null,
+  "issn": "1573-2835",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Applied Psychology",
+  "works_in_field": null,
+  "issn": "0021-9010",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Applied Social Psychology",
+  "works_in_field": null,
+  "issn": "0021-9029",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Child Psychology and Psychiatry",
+  "works_in_field": null,
+  "issn": "1469-7610",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Consulting and Clinical Psychology",
+  "works_in_field": null,
+  "issn": "1939-2117",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Counseling Psychology",
+  "works_in_field": null,
+  "issn": "1939-2168",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Educational Psychology",
+  "works_in_field": null,
+  "issn": "1939-2176",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Environmental Psychology",
+  "works_in_field": null,
+  "issn": "0272-4944",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Child Psychology",
+  "works_in_field": null,
+  "issn": "1096-0457",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Psychology Human Perception & Performance",
+  "works_in_field": null,
+  "issn": "1939-1277",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Psychology",
+  "works_in_field": null,
+  "issn": "1946-1941",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Social Psychology",
+  "works_in_field": null,
+  "issn": "0022-1031",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Occupational Health Psychology",
+  "works_in_field": null,
+  "issn": "1076-8998",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Personality and Social Psychology",
+  "works_in_field": null,
+  "issn": "0022-3514",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Personality Assessment",
+  "works_in_field": null,
+  "issn": "1532-7752",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Personality",
+  "works_in_field": null,
+  "issn": "1467-6494",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Psychopathology and Clinical Science",
+  "works_in_field": null,
+  "issn": "1939-1846",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Research in Personality",
+  "works_in_field": null,
+  "issn": "1095-7251",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Social and Clinical Psychology",
+  "works_in_field": null,
+  "issn": "0736-7236",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Vocational Behavior",
+  "works_in_field": null,
+  "issn": "0001-8791",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Journals of Gerontology: Series B (Psychological Sciences)",
+  "works_in_field": null,
+  "issn": "1079-5014",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Memory & Cognition",
+  "works_in_field": null,
+  "issn": "1532-5946",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "New Ideas in Psychology",
+  "works_in_field": null,
+  "issn": "0732-118X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Personality and Individual Differences",
+  "works_in_field": null,
+  "issn": "1873-3549",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Personality and Social Psychology Bulletin",
+  "works_in_field": null,
+  "issn": "0146-1672",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Personality and Social Psychology Review",
+  "works_in_field": null,
+  "issn": "1088-8683",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Personnel Psychology",
+  "works_in_field": null,
+  "issn": "0031-5826",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Phenomenology and the Cognitive Sciences",
+  "works_in_field": null,
+  "issn": "1568-7759",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Psychology and Aging",
+  "works_in_field": null,
+  "issn": "1939-1498",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Review of General Psychology",
+  "works_in_field": null,
+  "issn": "1089-2680",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Self and Identity",
+  "works_in_field": null,
+  "issn": "1529-8868",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Social and Personality Psychology Compass",
+  "works_in_field": null,
+  "issn": "1751-9004",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Social Cognitive and Affective Neuroscience",
+  "works_in_field": null,
+  "issn": "1749-5016",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Social Psychology Quarterly",
+  "works_in_field": null,
+  "issn": "0190-2725",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Theory & Psychology",
+  "works_in_field": null,
+  "issn": "0959-3543",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Universal Access in the Information Society",
+  "works_in_field": null,
+  "issn": "1615-5289",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Archives of Clinical Neuropsychology",
+  "works_in_field": null,
+  "issn": "0887-6177",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cerebral Cortex",
+  "works_in_field": null,
+  "issn": "1047-3211",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Clinical Neuropsychologist",
+  "works_in_field": null,
+  "issn": "1385-4046",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cognition",
+  "works_in_field": null,
+  "issn": "1873-7838",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cognitive Psychology",
+  "works_in_field": null,
+  "issn": "0010-0285",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cognitive Science",
+  "works_in_field": null,
+  "issn": "0364-0213",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Computational Linguistics",
+  "works_in_field": null,
+  "issn": "0891-2017",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Consciousness and Cognition",
+  "works_in_field": null,
+  "issn": "1053-8100",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Clinical and Experimental Neuropsychology",
+  "works_in_field": null,
+  "issn": "1380-3395",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Cognitive Neuroscience",
+  "works_in_field": null,
+  "issn": "0898-929X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Psychology General",
+  "works_in_field": null,
+  "issn": "0096-3445",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Experimental Psychology Learning Memory and Cognition",
+  "works_in_field": null,
+  "issn": "1939-1285",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "NeuroImage",
+  "works_in_field": null,
+  "issn": "1095-9572",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Neuropsychology",
+  "works_in_field": null,
+  "issn": "0894-4105",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Neuroscience of Consciousness",
+  "works_in_field": null,
+  "issn": "2057-2107",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Transactions of the Association for Computational Linguistics",
+  "works_in_field": null,
+  "issn": "2307-387X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Trends in Cognitive Sciences",
+  "works_in_field": null,
+  "issn": "1364-6613",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "College Composition and Communication",
+  "works_in_field": null,
+  "issn": "0010-096X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cultural Studies ↔ Critical Methodologies",
+  "works_in_field": null,
+  "issn": "1532-7086",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Qualitative Health Research",
+  "works_in_field": null,
+  "issn": "1049-7323",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Qualitative Inquiry",
+  "works_in_field": null,
+  "issn": "1077-8004",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Qualitative Research in Psychology",
+  "works_in_field": null,
+  "issn": "1478-0887",
+  "source": "repo-curated"
+ }
+]
