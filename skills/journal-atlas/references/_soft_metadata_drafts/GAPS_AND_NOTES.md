@@ -105,18 +105,43 @@ exists in the untouched majority of `consolidated_all.json` beyond this
   raw research output. Not the deliverable; superseded by `consolidated_*`.
 - **`targets_*.json`** — the input target lists (unchanged, for reference).
 
-## Not yet done (next decision point)
+## Update (later same day): merged into the permanent KB
 
-These consolidated JSON files are **research drafts**, not yet merged into
-the permanent knowledge base (`references/journals/**.md`). Per
-`docs/ATLAS_V2_DESIGN.md` §9, before merging into public-facing curated
-entries the project still owes:
-1. A quality/rule-compliance audit (facts-only, no verbatim, no unsourced
-   subjective claims) — spot-checked a sample during this merge (see session
-   notes), not yet 100% audited.
+Everything above described the research-draft state. Since then, both halves
+of the merge were completed:
+
+**236 new entries created** (`scripts/spine/merge_soft_metadata.py`): spine
+facts (Identity/Metrics/Subject Density) + WO2 draft (Policies/Positioning/
+Experiential), `(pending)` everywhere else, tagged with a new "AI-Researched
+(WO2)" banner distinct from Tier 1/Tier 2 — see SEED_DATA_QUALITY.md. New
+`philosophy/` field directory created (106 entries). 399/399 total entries
+pass `validate_structure.py`.
+
+**112 existing entries reconciled via per-file comparison** (not bulk
+templating): a dedicated agent per journal read both the existing curated
+entry and its WO2 draft side-by-side, following a strict rule set — fill
+ONLY genuinely-placeholder in-scope cells (Metrics Acceptance/Desk-Reject,
+Review Cycle Time, Peer Review Type, AI Policy, Preprint Policy), never touch
+anything with real content already, and flag disagreements instead of
+picking a winner. Result: **148 surgical fills applied** (each verified to
+match the existing file byte-for-byte before writing — 0 skipped as
+not-found or ambiguous) and **193 conflicts flagged** across 98 journals,
+written to `EXISTING_ENTRY_CONFLICTS.md` for a maintainer to resolve by hand.
+One journal identity check ("Journal of Psychopathology and Clinical
+Science", formerly "Journal of Abnormal Psychology") confirmed a legitimate
+rename lineage via ISSN match before applying WO2 content — worth knowing
+this pattern exists in the corpus (renamed titles, not just defunct ones).
+
+Full audit trail kept: `_merge_patch_proposals.json` (every agent's proposal,
+applied or not), `_apply_log.json` (what was actually written).
+
+## Remaining before public release
+
+Per `docs/ATLAS_V2_DESIGN.md` §9:
+1. Resolve the 193 flagged conflicts in `EXISTING_ENTRY_CONFLICTS.md` (human
+   judgment calls — several involve claimed 2026 publisher-policy changes,
+   e.g. ACM converting some titles to full OA, that should be verified
+   against primary sources before trusting either side).
 2. A dispute/rebuttal mechanism for subjective Layer-E claims (political
    leaning, reviewer culture) before public release.
-3. For the ~165 journals with no existing `.md` file, new entries need to be
-   scaffolded from the spine (`journal_spine.db`) for Identity/Metrics before
-   the soft-metadata draft can be merged in — the two data layers (spine facts
-   + soft-metadata draft) haven't been joined yet.
+3. OPSEC de-fingerprinting of examples that reference the founder's own paper.

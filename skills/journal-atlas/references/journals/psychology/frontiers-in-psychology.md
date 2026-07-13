@@ -50,7 +50,7 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(pending)* | |
-| **Time to first review** | *(pending)* | Part of Frontiers' 3–6 month total cycle |
+| **Time to first review** | ~2.2 months (SciRev survey, n=33) | Part of Frontiers' 3–6 month total cycle; SciRev survey (n=33) reports ~2.2 months to first review, avg. 2.3 review rounds |
 | **Time to acceptance (total)** | 3–6 months | |
 | **Time to publication (after acceptance)** | Rapid (typically within weeks) | OA continuous publication |
 
@@ -91,7 +91,7 @@
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes | |
-| Under review | *(pending)* | |
+| Under review | Yes | Explicitly permitted and encouraged; integrates with bioRxiv/medRxiv/ChemRxiv. Requires correct citation of the preprint; preprint server must not restrict author copyright/reuse. |
 | Post-acceptance | N/A — fully OA | |
 | Version of Record | Immediately accessible (OA) | |
 

@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~21.7 days (median) | MDPI self-reported stat (H2 2025); publisher-level figure, not journal-specific first-party verification; signal_quality 1/5 |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

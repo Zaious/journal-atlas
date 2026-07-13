@@ -35,16 +35,16 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~400+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
-| **Desk Rejection Rate** | *(community estimate)* | |
+| **Acceptance Rate** | *(Not officially disclosed. SciRev sample n=8: ~12.5% (1/8 accepted); one muchong.com user estimate ~20% for domestic-author submissions — both small-sample/unofficial, see Soft Metadata § AI-Research Notes)* | |
+| **Desk Rejection Rate** | *(Not officially disclosed. SciRev sample n=8: ~75% (6/8) desk-rejected; desk-reject turnaround 3–41 days — small sample, see Soft Metadata § AI-Research Notes)* | |
 | **Quartile (by field)** | *(see SCImago)* | |
 
 ### Review Cycle Time
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
+| **Time to first decision** | *(Not officially disclosed. SciRev n=8 average ~6.1 weeks (non-reject cases 3.0–8.4 weeks); muchong.com users report ~2 months, unofficial — see Soft Metadata § AI-Research Notes)* | |
+| **Time to first review** | *(Not officially disclosed. Academic-accelerator aggregator reports ~41.5 days to first revision report, ~13.8 days to first editorial decision — aggregator methodology unclear, cross-reference only, see Soft Metadata § AI-Research Notes)* | |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 

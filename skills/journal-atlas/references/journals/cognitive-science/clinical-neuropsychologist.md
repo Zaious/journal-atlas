@@ -35,7 +35,7 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~80+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
+| **Acceptance Rate** | ~30% (publisher self-reported, 2024 metric; unverified — SciRev shows 0 user reviews) | 2026-07-13 |
 | **Desk Rejection Rate** | *(community estimate)* | |
 | **Quartile (by field)** | *(see SCImago)* | |
 
@@ -43,8 +43,8 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
+| **Time to first decision** | ~4 days | Publisher self-reported average (may include desk rejections); not independently verified (SciRev: 0 reviews) |
+| **Time to first review** | ~47 days (to post-review first decision) | Publisher self-reported average; not independently verified |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 

@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~4.4 months avg (17.3 weeks in latest logged case) | Per SciRev self-reported data (n=2 reviews only) — low confidence, small sample |
+| **Time to acceptance (total)** | ~7.7 months (accepted case) | Per SciRev self-reported data (n=2 reviews, average 2.5 review rounds) — low confidence, single data point |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

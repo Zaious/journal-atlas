@@ -43,8 +43,8 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
+| **Time to first decision** | ~4.6 months | Per SciRev aggregate data; based on a very small sample (3 submitted reviews total) — low statistical confidence |
+| **Time to first review** | ~3.0 months (12.1 weeks) | First-round average per SciRev; based on a very small sample (3 submitted reviews total) — low statistical confidence |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 

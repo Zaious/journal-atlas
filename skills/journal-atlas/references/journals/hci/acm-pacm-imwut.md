@@ -44,8 +44,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to first review** | ~2.0 months (8.7 weeks) average first-review-round | WO2 pass, 2026-07-13; based on a single SciRev self-report (n=1), signal_quality 2/5 — indicative only |
+| **Time to acceptance (total)** | ~3.9 months average total handling time to decision for accepted manuscripts | WO2 pass, 2026-07-13; based on a single SciRev self-report (n=1), signal_quality 2/5 — indicative only |
 | **Time to publication (after acceptance)** | *(typical for OA journals: 2-6 weeks after acceptance)* | |
 
 ### Publication Frequency

@@ -91,7 +91,7 @@
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes | |
-| Under review | *(pending)* | |
+| Under review | Yes | Permitted on preprint servers during review, provided the server does not restrict authors' full copyright/reuse rights; the version posted must not carry the Frontiers logo and must correctly cite the original source (this is a group-level Frontiers policy, not section-specific) |
 | Post-acceptance | N/A — fully OA | |
 | Version of Record | Immediately accessible (OA) | |
 

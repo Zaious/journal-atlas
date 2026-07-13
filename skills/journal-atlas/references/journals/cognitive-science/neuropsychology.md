@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~2.6 months (~10.6 weeks) | WO2 finding: n=1 SciRev self-report, signal quality low (2/5) — see Soft Metadata > AI-Research Notes |
+| **Time to acceptance (total)** | ~5.6 months | WO2 finding: n=1 SciRev self-report, signal quality low (2/5) — see Soft Metadata > AI-Research Notes |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

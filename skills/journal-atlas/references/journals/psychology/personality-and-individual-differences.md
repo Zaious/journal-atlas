@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first decision** | ~1 week (decision to send to external review) | Chinese-forum self-reported estimate (fabiaoji/papertrans); SciRev (n=13) reports a longer first-round average of ~2.5 months — sources diverge, treat as rough range |
+| **Time to first review** | ~1 month | Chinese-forum self-reported estimate; review-cycle distribution per papertrans (n=1009): 2-4wk 17.9%, 4-6wk 29.2%, 6-8wk 29.2%, 8-10wk 14.2% |
+| **Time to acceptance (total)** | ~3.3 months | SciRev (n=13) average full cycle for accepted manuscripts; desk-reject-only average ~17 days |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

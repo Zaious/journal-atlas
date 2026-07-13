@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 107 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~25% *(low-confidence third-party estimate — LetPub aggregator, 2024: 483 submitted / 110 accepted; not first-hand or official publisher data)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.25 | 2026-05-16 |

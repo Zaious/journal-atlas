@@ -38,8 +38,8 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 248 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~25% *(SciRev self-reported sample, n=5 reviews — low confidence; see AI-Research Notes)* | |
+| **Desk Rejection Rate** | ~30% *(SciRev self-reported sample, n=5 reviews — low confidence; see AI-Research Notes)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.40 | 2026-05-16 |
 | **i10-index** | 2217 | 2026-05-16 |
@@ -50,7 +50,7 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
+| **Time to first review** | ~3.0 months (~11.6 weeks) *(SciRev self-reported sample, n=5 reviews — low confidence)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 

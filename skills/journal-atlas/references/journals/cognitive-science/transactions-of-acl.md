@@ -43,9 +43,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to first decision** | ~50–60 days | Community-reported (知乎, ~50 days) and official quarterly-report figures cited by Ehud Reiter (2023) show overall first-decision time fluctuating ~50–60 days; official process theoretical minimum ~5 weeks (7-day Action Editor assignment + 7-day reviewer assignment + 21-day review deadline). Sources: https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/, https://www.zhihu.com/question/518956455 |
+| **Time to first review** | ~24.4 days (avg) | Per official quarterly reports (cited by Ehud Reiter, 2023): reviews average ~24.4 days to complete, against the 21-day formal deadline. Source: https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/ |
+| **Time to acceptance (total)** | Highly variable; can run to ~1 year if R&R required | Ehud Reiter (2023): if a submission is rejected with encouragement to revise-and-resubmit (R&R), total time from initial submission to eventual publication can reach ~1 year. No quantitative overall acceptance rate was found. Source: https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/ |
 | **Time to publication (after acceptance)** | *(typical for OA journals: 2-6 weeks after acceptance)* | |
 
 ### Publication Frequency

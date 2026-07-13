@@ -45,9 +45,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
+| **Time to first decision** | ~2.3 months (indicative only) | SciRev self-reported average review time; SciRev page shows submission-volume and acceptance-rate fields as n/a, implying an extremely small sample — treat as a rough indicator, not a verified statistic |
 | **Time to first review** | *(pending)* | |
-| **Time to acceptance (total)** | *(pending)* | |
+| **Time to acceptance (total)** | ~3.8 months (indicative only) | SciRev self-reported average total processing time to acceptance; same small-sample caveat as Time to first decision |
 | **Time to publication (after acceptance)** | *(pending)* | |
 
 ### Publication Frequency

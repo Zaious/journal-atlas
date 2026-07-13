@@ -48,9 +48,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~2.3 months (median) | SciRev, n=4 reviews only — very small sample; low confidence |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to acceptance (total)** | ~3.5 months (mean) | SciRev, n=4 reviews only — very small sample; low confidence |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -69,7 +69,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(fill manually)* |
+| **Type** | Single-anonymized by default; double-anonymized available as an author-selected option (authors must opt in and self-anonymize the manuscript) |
 | **Transferable / Cascade?** | *(fill manually)* |
 | **Reviewer reports published?** | *(fill manually)* |
 | **Typical R+R rounds** | *(fill manually)* |
@@ -79,17 +79,17 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | *(fill manually — check author guidelines)* |
-| **Explicit permission gate?** | *(fill manually)* |
-| **Leniency (1-5)** | *(fill manually)* |
-| **Summary** | *(fill manually)* |
-| **Source URL** | *(fill manually)* |
+| **Has journal-specific AI policy?** | No NMI-specific policy page could be verified (blocked by cookie/SSO redirect loop); journal follows the Nature Portfolio group-wide AI policy |
+| **Explicit permission gate?** | Conditional — disclosure required if AI/LLM used to generate manuscript content (in Methods or relevant section); AI/LLM cannot be listed as author; disclosure NOT required for AI-assisted copyediting/polishing only. Not a strict pre-approval gate. |
+| **Leniency (1-5)** | 3 |
+| **Summary** | 此為 Nature Portfolio 通用 AI 政策(非 NMI 專屬頁,NMI 專屬 editorial-policies 頁因 cookie/SSO 重導向迴圈無法直接讀取):LLM/生成式 AI 不得列為作者(無法承擔問責);若用於論文寫作內容生成須在 Methods 或適當章節揭露;僅用於「AI 輔助文字潤飾/copy editing」(改善可讀性與風格,非生成新內容)則不需揭露。 |
+| **Source URL** | https://www.nature.com/nature-portfolio/editorial-policies/ai (general Nature Portfolio policy; NMI-specific page unverified) |
 
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | *(fill manually)* | |
+| Pre-submission | Allowed | Encouraged — may post to arXiv, bioRxiv, or other recognized preprint platforms before submission; not considered prior publication; does not affect subsequent submission to NMI |
 | Under review | *(fill manually)* | |
 | Post-acceptance (AAM) | *(fill manually)* | Embargo: __ months |
 | Version of Record | *(fill manually)* | |

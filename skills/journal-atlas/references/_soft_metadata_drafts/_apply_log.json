@@ -1,0 +1,1042 @@
+{
+ "applied": [
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-interactions.md",
+   "field": "Policies > Preprint Policy > Under review row",
+   "name": "ACM Interactions",
+   "source": "https://www.acm.org/publications/policies/publication-rights-and-licensing-policy ; https://authors.acm.org/author-resources/author-rights",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\applied-cognitive-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Applied Cognitive Psychology",
+   "source": "https://scirev.org/journal/applied-cognitive-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\applied-cognitive-psychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Applied Cognitive Psychology",
+   "source": "https://scirev.org/journal/applied-cognitive-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Alzheimer's & Dementia: The Journal of the Alzheimer's Association",
+   "source": "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=385&xuanxiangk_id=2",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Alzheimer's & Dementia: The Journal of the Alzheimer's Association",
+   "source": "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=385&xuanxiangk_id=2; https://www.medsci.cn/sci/submit.do?id=4ff39790",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Alzheimer's & Dementia: The Journal of the Alzheimer's Association",
+   "source": "https://muchong.com/bbs/journal.php?view=detail&jid=387",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Assessment",
+   "source": "https://scirev.org/journal/assessment/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "Assessment",
+   "source": "https://scirev.org/journal/assessment/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Assessment",
+   "source": "https://scirev.org/journal/assessment/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Assessment",
+   "source": "https://scirev.org/journal/assessment/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cerebral-cortex.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Cerebral Cortex",
+   "source": "https://academic.oup.com/cercor/pages/About",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cerebral-cortex.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Cerebral Cortex",
+   "source": "https://scirev.org/journal/cerebral-cortex/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cerebral-cortex.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Cerebral Cortex",
+   "source": "https://scirev.org/journal/cerebral-cortex/; https://muchong.com/bbs/journal.php?view=detail&jid=1628",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognition.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Cognition",
+   "source": "https://scirev.org/journal/cognition/ ; https://scirev.org/reviews/cognition/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognition.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Cognition",
+   "source": "https://scirev.org/journal/cognition/ ; https://scirev.org/reviews/cognition/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\clinical-psychology-review.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Clinical Psychology Review",
+   "source": "https://scirev.org/journal/clinical-psychology-review/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\clinical-psychology-review.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Clinical Psychology Review",
+   "source": "https://scirev.org/journal/clinical-psychology-review/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\behaviour-and-information-technology.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Behaviour & Information Technology",
+   "source": "https://letpub.com.cn/index.php?journalid=1051&page=journalapp&view=detail",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\computational-linguistics.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Computational Linguistics",
+   "source": "https://scirev.org/journal/computational-linguistics/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\computational-linguistics.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Computational Linguistics",
+   "source": "https://scirev.org/journal/computational-linguistics/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-science.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Cognitive Science",
+   "source": "https://scirev.org/journal/cognitive-science/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-science.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "Cognitive Science",
+   "source": "https://scirev.org/journal/cognitive-science/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-science.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Cognitive Science",
+   "source": "https://scirev.org/journal/cognitive-science/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\cognitive-therapy-and-research.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Cognitive Therapy and Research",
+   "source": "https://scirev.org/journal/cognitive-therapy-and-research/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\cognitive-therapy-and-research.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Cognitive Therapy and Research",
+   "source": "https://scirev.org/journal/cognitive-therapy-and-research/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "College Composition and Communication",
+   "source": "https://cccc.ncte.org/cccc/ccc/write",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "College Composition and Communication",
+   "source": "https://cccc.ncte.org/cccc/ccc/write",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "College Composition and Communication",
+   "source": "https://cccc.ncte.org/cccc/ccc/write",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Counselling Psychology Quarterly",
+   "source": "https://www.tandfonline.com/journals/ccpq20/about-this-journal",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Counselling Psychology Quarterly",
+   "source": "https://www.tandfonline.com/journals/ccpq20/about-this-journal",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Counselling Psychology Quarterly",
+   "source": "https://www.tandfonline.com/journals/ccpq20/about-this-journal",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\contemporary-educational-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Contemporary Educational Psychology",
+   "source": "https://scirev.org/journal/contemporary-educational-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\contemporary-educational-psychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Contemporary Educational Psychology",
+   "source": "https://scirev.org/journal/contemporary-educational-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computers-in-human-behavior.md",
+   "field": "Policies > Preprint Policy > Under review",
+   "name": "Computers in Human Behavior",
+   "source": "https://www.sciencedirect.com/journal/computers-in-human-behavior/publish/guide-for-authors",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computers-in-human-behavior.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Computers in Human Behavior",
+   "source": "https://scirev.org/journal/computers-in-human-behavior/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > Peer Review > Type",
+   "name": "Collabra: Psychology",
+   "source": "https://online.ucpress.edu/collabra/pages/journalpolicies",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "name": "Collabra: Psychology",
+   "source": "https://www.ucpress.edu/about/ai-guidelines",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "name": "Collabra: Psychology",
+   "source": "https://www.ucpress.edu/about/ai-guidelines",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "name": "Collabra: Psychology",
+   "source": "https://www.ucpress.edu/about/ai-guidelines",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > AI Policy > Summary",
+   "name": "Collabra: Psychology",
+   "source": "https://www.ucpress.edu/about/ai-guidelines",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > AI Policy > Source URL",
+   "name": "Collabra: Psychology",
+   "source": "https://www.ucpress.edu/about/ai-guidelines",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+   "field": "Policies > Preprint Policy > Under review",
+   "name": "Collabra: Psychology",
+   "source": "https://online.ucpress.edu/collabra/pages/journalpolicies",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computer-supported-cooperative-work-cscw.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Computer Supported Cooperative Work (CSCW)",
+   "source": "https://www.letpub.com.cn/index.php?journalid=1996&page=journalapp&view=detail; https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=1996&xuanxiangk_id=2",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computer-supported-cooperative-work-cscw.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Computer Supported Cooperative Work (CSCW)",
+   "source": "https://scirev.org/journal/computer-supported-cooperative-work-cscw/; https://scirev.org/reviews/computer-supported-cooperative-work-cscw/; https://www.letpub.com.cn/index.php?journalid=1996&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computer-supported-cooperative-work-cscw.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Computer Supported Cooperative Work (CSCW)",
+   "source": "WO2 draft experiential.review_time_months (third aggregator, source URL not individually captured in draft)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\educational-psychology-review.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Educational Psychology Review",
+   "source": "https://link.springer.com/journal/10648",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "European Journal of Personality",
+   "source": "https://journals.sagepub.com/author-instructions/erp (via search snippet, original page paywalled/blocked for direct fetch)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "European Journal of Personality",
+   "source": "https://journals.sagepub.com/author-instructions/erp (via search snippet, original page paywalled/blocked for direct fetch)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "European Journal of Personality",
+   "source": "https://journals.sagepub.com/author-instructions/erp (via search snippet, original page paywalled/blocked for direct fetch)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "European Journal of Personality",
+   "source": "https://scirev.org/journal/european-journal-of-personality/; https://www.fabiao.com/sci/08902070.html",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "European Journal of Personality",
+   "source": "https://scirev.org/journal/european-journal-of-personality/; https://www.fabiao.com/sci/08902070.html",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\frontiers-in-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Frontiers in Psychology",
+   "source": "https://scirev.org/journal/frontiers-in-psychology/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\frontiers-in-psychology.md",
+   "field": "Policies > Preprint Policy > Under review row",
+   "name": "Frontiers in Psychology",
+   "source": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\health-psychology.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Health Psychology",
+   "source": "https://www.apa.org/pubs/journals/features/2023-statistics.pdf",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\health-psychology.md",
+   "field": "Review Cycle Time > Time to publication (after acceptance)",
+   "name": "Health Psychology",
+   "source": "https://www.apa.org/pubs/journals/features/2023-statistics.pdf",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-social-psychology.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "European Journal of Social Psychology",
+   "source": "https://scirev.org/journal/european-journal-of-social-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-social-psychology.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "European Journal of Social Psychology",
+   "source": "https://scirev.org/journal/european-journal-of-social-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\frontiers-in-computer-science.md",
+   "field": "Policies > Preprint Policy > Under review row",
+   "name": "Frontiers in Computer Science",
+   "source": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\interacting-with-computers.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Interacting with Computers",
+   "source": "https://academic.oup.com/iwc/pages/General_Instructions",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\interacting-with-computers.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Interacting with Computers",
+   "source": "https://scirev.org/journal/interacting-with-computers/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\interacting-with-computers.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Interacting with Computers",
+   "source": "https://scirev.org/journal/interacting-with-computers/; https://letpub.com.cn/index.php?journalid=3615&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\interaction-studies.md",
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "name": "Interaction Studies",
+   "source": "https://benjamins.com/content/authors/ethics",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\interaction-studies.md",
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "name": "Interaction Studies",
+   "source": "https://benjamins.com/content/authors/ethics",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\interaction-studies.md",
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "name": "Interaction Studies",
+   "source": "https://benjamins.com/content/authors/ethics",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\interaction-studies.md",
+   "field": "Policies > AI Policy > Summary",
+   "name": "Interaction Studies",
+   "source": "https://benjamins.com/content/authors/ethics",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\interaction-studies.md",
+   "field": "Policies > AI Policy > Source URL",
+   "name": "Interaction Studies",
+   "source": "https://benjamins.com/content/authors/ethics",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "IEEE Access",
+   "source": "https://ieeeaccess.ieee.org/about/rapid-peer-review/; https://scirev.org/journal/ieee-access/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "IEEE Access",
+   "source": "https://scirev.org/journal/ieee-access/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > Peer Review > Type",
+   "name": "IEEE Access",
+   "source": "https://ieeeaccess.ieee.org/about/rapid-peer-review/",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "name": "IEEE Access",
+   "source": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "name": "IEEE Access",
+   "source": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "name": "IEEE Access",
+   "source": "WO2 research pass 2026-07-13 (signal_quality 4/5)",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > AI Policy > Summary",
+   "name": "IEEE Access",
+   "source": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > AI Policy > Source URL",
+   "name": "IEEE Access",
+   "source": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > Preprint Policy > Pre-submission",
+   "name": "IEEE Access",
+   "source": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > Preprint Policy > Under review",
+   "name": "IEEE Access",
+   "source": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > Preprint Policy > Post-acceptance (AAM)",
+   "name": "IEEE Access",
+   "source": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+   "field": "Policies > Preprint Policy > Version of Record",
+   "name": "IEEE Access",
+   "source": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-social-robotics.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "International Journal of Social Robotics",
+   "source": "https://www.letpub.com/index.php?page=journalapp&view=detail&journalid=9796",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-abnormal-child-psychology.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Journal of Abnormal Child Psychology",
+   "source": "https://scirev.org/journal/journal-of-abnormal-child-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-psychology.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Journal of Applied Psychology",
+   "source": "https://scirev.org/journal/journal-of-applied-psychology/ ; https://www.fabiaoji.com/periodicalDetail?id=aabfacba25714686bc5143f9fb5cf949",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-social-psychology.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Journal of Applied Social Psychology",
+   "source": "https://scirev.org/journal/journal-of-applied-social-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-social-psychology.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Applied Social Psychology",
+   "source": "https://scirev.org/journal/journal-of-applied-social-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-transactions-on-human-machine-systems.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "IEEE Transactions on Human-Machine Systems",
+   "source": "https://muchong.com/bbs/journal.php?view=detail&jid=3438 ; https://scirev.org/journal/ieee-transactions-on-human-machine-systems/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-transactions-on-human-machine-systems.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "IEEE Transactions on Human-Machine Systems",
+   "source": "https://www.ieeesmc.org/publications/transactions-on-human-machine-systems/information-for-authors-2/ ; https://scirev.org/journal/ieee-transactions-on-human-machine-systems/ ; https://zhuanlan.zhihu.com/p/1939292452537237938 (secondhand, 403 on fetch) ; https://www.letpub.com.cn/index.php?journalid=9468&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-transactions-on-human-machine-systems.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "IEEE Transactions on Human-Machine Systems",
+   "source": "https://scirev.org/journal/ieee-transactions-on-human-machine-systems/ ; https://zhuanlan.zhihu.com/p/1939292452537237938 (secondhand, 403 on fetch) ; https://www.letpub.com.cn/index.php?journalid=9468&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-child-psychology-and-psychiatry.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "Journal of Child Psychology and Psychiatry",
+   "source": "https://acamh.onlinelibrary.wiley.com/hub/journal/14697610/forauthors.html",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-child-psychology-and-psychiatry.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Child Psychology and Psychiatry",
+   "source": "https://scirev.org/journal/journal-of-child-psychology-and-psychiatry/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Journal of Environmental Psychology",
+   "source": "https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors ; https://scirev.org/journal/journal-of-environmental-psychology/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Journal of Environmental Psychology",
+   "source": "https://scirev.org/journal/journal-of-environmental-psychology/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Environmental Psychology",
+   "source": "https://scirev.org/journal/journal-of-environmental-psychology/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-child-psychology.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Journal of Experimental Child Psychology",
+   "source": "WO2 experiential.review_time_months — https://scirev.org/journal/journal-of-experimental-child-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-child-psychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Experimental Child Psychology",
+   "source": "WO2 experiential.review_time_months — https://scirev.org/journal/journal-of-experimental-child-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-educational-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Journal of Educational Psychology",
+   "source": "https://scirev.org/journal/journal-of-educational-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-general.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Journal of Experimental Psychology: General",
+   "source": "https://scirev.org/journal/journal-of-experimental-psychology-general/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-general.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Experimental Psychology: General",
+   "source": "https://scirev.org/journal/journal-of-experimental-psychology-general/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Journal of Personality",
+   "source": "https://scirev.org/journal/journal-of-personality/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Journal of Personality",
+   "source": "https://scirev.org/journal/journal-of-personality/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality-and-social-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Journal of Personality and Social Psychology",
+   "source": "https://scirev.org/reviews/journal-of-personality-and-social-psychology/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\memory-and-cognition.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Memory & Cognition",
+   "source": "https://scirev.org/journal/memory-and-cognition/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\memory-and-cognition.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Memory & Cognition",
+   "source": "https://scirev.org/journal/memory-and-cognition/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-vocational-behavior.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Journal of Vocational Behavior",
+   "source": "https://scirev.org/journal/journal-of-vocational-behavior/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-vocational-behavior.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Journal of Vocational Behavior",
+   "source": "https://scirev.org/journal/journal-of-vocational-behavior/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\multimodal-technologies-and-interaction.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Multimodal Technologies and Interaction",
+   "source": "https://www.mdpi.com/journal/mti/stats (via WebSearch summary, direct fetch blocked by 403/anti-crawler)",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuropsychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Neuropsychology",
+   "source": "https://scirev.org/journal/neuropsychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuropsychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Neuropsychology",
+   "source": "https://scirev.org/journal/neuropsychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroscience-of-consciousness.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Neuroscience of Consciousness",
+   "source": "https://academic.oup.com/nc/pages/journal_policies ; https://www.ablesci.com/journal/detail?id=r8azqp ; https://www.fabiao.com.cn/sci/20572107/42.html ; https://www.scirev.org/journal/neuroscience-of-consciousness/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "NeuroImage",
+   "source": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_per_journal\\neuroimage.json (experiential.acceptance_note); https://scirev.org/reviews/neuroimage/; https://muchong.com/bbs/journal.php?view=detail&jid=6178",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "NeuroImage",
+   "source": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_per_journal\\neuroimage.json (experiential.desk_reject_pct); https://scirev.org/reviews/neuroimage/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "NeuroImage",
+   "source": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_per_journal\\neuroimage.json (experiential.review_time_months); https://scirev.org/reviews/neuroimage/; https://muchong.com/bbs/journal.php?view=detail&jid=6178",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "NeuroImage",
+   "source": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_per_journal\\neuroimage.json (experiential.review_time_months); https://academic-accelerator.com/Review-Speed/NeuroImage",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-individual-differences.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Personality and Individual Differences",
+   "source": "https://www.fabiaoji.com/periodicalDetail?id=84cd5f963c3f45938d6a858a18218793 ; http://bbs.papertrans.cn/thread-17723-1-1.html ; https://scirev.org/journal/personality-and-individual-differences/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-individual-differences.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Personality and Individual Differences",
+   "source": "https://www.fabiaoji.com/periodicalDetail?id=84cd5f963c3f45938d6a858a18218793 ; http://bbs.papertrans.cn/thread-17723-1-1.html",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-individual-differences.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Personality and Individual Differences",
+   "source": "https://scirev.org/journal/personality-and-individual-differences/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-social-psychology-bulletin.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Personality and Social Psychology Bulletin",
+   "source": "https://scirev.org/journal/personality-and-social-psychology-bulletin/ ; https://scirev.org/reviews/personality-and-social-psychology-bulletin/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Nature Machine Intelligence",
+   "source": "https://scirev.org/journal/nature-machine-intelligence/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Nature Machine Intelligence",
+   "source": "https://scirev.org/journal/nature-machine-intelligence/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > Peer Review > Type",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/natmachintell/submission-guidelines/dapr",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > AI Policy > Summary",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > AI Policy > Source URL",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+   "field": "Policies > Preprint Policy > Pre-submission",
+   "name": "Nature Machine Intelligence",
+   "source": "https://www.nature.com/natmachintell/editorial-policies/preprints-conference-proceedings",
+   "confidence": "high"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personnel-psychology.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Personnel Psychology",
+   "source": "https://scirev.org/journal/personnel-psychology/ ; https://letpub.com.cn/index.php?journalid=11422&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personnel-psychology.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Personnel Psychology",
+   "source": "https://scirev.org/journal/personnel-psychology/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\personal-and-ubiquitous-computing.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Personal and Ubiquitous Computing",
+   "source": "https://www.letpub.com.cn/index.php?journalid=6564&page=journalapp&view=detail",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-imwut.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+   "source": "https://scirev.org/journal/proceedings-of-the-acm-on-interactive-mobile-wearable-and-ubiquitous-technologies/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-imwut.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+   "source": "https://scirev.org/journal/proceedings-of-the-acm-on-interactive-mobile-wearable-and-ubiquitous-technologies/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\psychology-and-aging.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Psychology and Aging",
+   "source": "https://scirev.org/journal/psychology-and-aging/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\psychology-and-aging.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Psychology and Aging",
+   "source": "https://scirev.org/journal/psychology-and-aging/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-cscw.md",
+   "field": "Metrics > Desk Rejection Rate",
+   "name": "Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)",
+   "source": "https://cscw.acm.org/2026/blog/reviewprocess.html",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-cognitive-and-affective-neuroscience.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Social Cognitive and Affective Neuroscience",
+   "source": "https://scirev.org/journal/social-cognitive-and-affective-neuroscience/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-cognitive-and-affective-neuroscience.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Social Cognitive and Affective Neuroscience",
+   "source": "https://scirev.org/journal/social-cognitive-and-affective-neuroscience/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-health-research.md",
+   "field": "Metrics > Review Cycle Time > Time to first review",
+   "name": "Qualitative Health Research",
+   "source": "https://scirev.org/journal/qualitative-health-research/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-health-research.md",
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "name": "Qualitative Health Research",
+   "source": "https://scirev.org/journal/qualitative-health-research/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-and-personality-psychology-compass.md",
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "name": "Social and Personality Psychology Compass",
+   "source": "https://scirev.org/journal/social-and-personality-psychology-compass/ (n=1 review, cited in WO2 draft experiential.review_time_months)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-psychology-quarterly.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Social Psychology Quarterly",
+   "source": "https://scirev.org/journal/social-psychology-quarterly/ (n=2 reviews)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-psychology-quarterly.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Social Psychology Quarterly",
+   "source": "https://scirev.org/journal/social-psychology-quarterly/ (n=2 reviews)",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "The Clinical Neuropsychologist",
+   "source": "https://www.tandfonline.com/journals/ntcn20/about-this-journal ; https://scirev.org",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "The Clinical Neuropsychologist",
+   "source": "https://www.tandfonline.com/journals/ntcn20/about-this-journal",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "The Clinical Neuropsychologist",
+   "source": "https://www.tandfonline.com/journals/ntcn20/about-this-journal",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+   "field": "Review Cycle Time > Time to first decision",
+   "name": "Transactions of the Association for Computational Linguistics",
+   "source": "https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/ ; https://www.zhihu.com/question/518956455",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Transactions of the Association for Computational Linguistics",
+   "source": "https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Transactions of the Association for Computational Linguistics",
+   "source": "https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\trends-in-cognitive-sciences.md",
+   "field": "Metrics > Acceptance Rate",
+   "name": "Trends in Cognitive Sciences",
+   "source": "https://www.ablesci.com/journal/detail?id=p3GANp ; https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=7918 ; https://zhuanlan.zhihu.com/p/572652434 ; https://scirev.org/journal/trends-in-cognitive-sciences/",
+   "confidence": "medium"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\trends-in-cognitive-sciences.md",
+   "field": "Review Cycle Time > Time to first review",
+   "name": "Trends in Cognitive Sciences",
+   "source": "https://scirev.org/journal/trends-in-cognitive-sciences/ ; https://www.ablesci.com/journal/detail?id=p3GANp ; https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=7918",
+   "confidence": "low"
+  },
+  {
+   "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\trends-in-cognitive-sciences.md",
+   "field": "Review Cycle Time > Time to acceptance (total)",
+   "name": "Trends in Cognitive Sciences",
+   "source": "https://scirev.org/journal/trends-in-cognitive-sciences/",
+   "confidence": "low"
+  }
+ ],
+ "skipped_notfound": [],
+ "skipped_multiple": []
+}

@@ -50,7 +50,7 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
+| **Time to first review** | ~16–25 weeks (~4–6 months), per SciRev | SciRev (n=4, 2014–2017): 16.1 / 21.1 / 25.3 weeks; small, dated sample — no official figure published by journal (source: https://scirev.org/reviews/journal-of-personality-and-social-psychology/) |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 

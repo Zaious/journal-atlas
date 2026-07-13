@@ -43,8 +43,8 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
+| **Time to first decision** | ~1.4 months (SciRev survey) | n=6 respondents only — low sample size, treat as indicative not authoritative |
+| **Time to first review** | ~1.0 month (SciRev survey) | n=6 respondents only — low sample size, treat as indicative not authoritative |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 

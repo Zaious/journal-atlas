@@ -50,7 +50,7 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
+| **Time to first review** | ~2.0 months *(SciRev, n=3 — low confidence)* | See Soft Metadata > AI-Research Notes for caveats (second-hand ~60-day figure not independently verifiable, not used) |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 

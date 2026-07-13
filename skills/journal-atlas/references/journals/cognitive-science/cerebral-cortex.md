@@ -43,9 +43,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to first decision** | ~15 days (OUP official publisher metric) | Publisher-stated figure; may be optimistic vs. community-reported review times below. Source: WO2 research pass, https://academic.oup.com/cercor/pages/About |
+| **Time to first review** | ~1.8 months avg (SciRev, n=3; one recent report: 6.3 weeks) | Chinese forums (letpub.com.cn, muchong.com) independently cite ~3-6 weeks for first-round review. Sources: https://scirev.org/journal/cerebral-cortex/, http://letpub.com.cn/index.php?journalid=1616&page=journalapp&view=detail |
+| **Time to acceptance (total)** | ~3.5 months avg (SciRev, n=3; avg 2.3 review rounds) | One dated (2015) muchong.com first-hand case: submission-to-acceptance ~6.5 months, incl. slow author-side revision. Small-sample, self-reported data — treat as indicative, not definitive. Source: https://scirev.org/journal/cerebral-cortex/ |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 
 ### Publication Frequency

@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~6-12 weeks *(per LetPub aggregated submitter reports; single low-confidence source, no sample size disclosed)* | See Soft Metadata > AI-Research Notes |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

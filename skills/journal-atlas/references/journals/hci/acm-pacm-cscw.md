@@ -36,7 +36,7 @@
 | **h-index** | ~80+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate; varies by year)* | |
-| **Desk Rejection Rate** | *(community estimate)* | |
+| **Desk Rejection Rate** | CSCW track only, 2026-cycle projection (official ACM CSCW process page — not a community estimate): ~15–20% desk-rejected at first round; a further ~30% rejected at the assisted-desk-reject stage; ~50% proceed to external review | 2026-07-13 |
 | **Quartile (by field)** | *(see SCImago)* | |
 
 ### Review Cycle Time

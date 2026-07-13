@@ -35,7 +35,7 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~250+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
+| **Acceptance Rate** | *(no numeric rate found; WO2 pass 2026-07-13: LetPub community reports describe acceptance as competitive/"difficult", no percentage cited, unverified)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
 | **Quartile (by field)** | *(see SCImago)* | |
 
@@ -43,9 +43,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
+| **Time to first decision** | ~2-3 months *(low confidence)* | WO2 pass 2026-07-13: Chinese-forum reports conflict — LetPub cites 6-12 weeks; MedSci cites ~96 days; unverified, treat as rough range only |
 | **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to acceptance (total)** | ~5 months *(single case, low confidence)* | WO2 pass 2026-07-13: based on one 2017-2018 muchong.com forum submission timeline (incl. one major-revision round); dated and unverified |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 
 ### Publication Frequency

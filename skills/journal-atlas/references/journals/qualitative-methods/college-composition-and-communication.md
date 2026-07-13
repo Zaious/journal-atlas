@@ -35,15 +35,15 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~70+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
-| **Desk Rejection Rate** | *(community estimate)* | |
+| **Acceptance Rate** | ~10-15% (per publisher submission guidance; overall rejection ~75% incl. desk rejects, ~25% receive Revise & Resubmit) | 2026-07-13 |
+| **Desk Rejection Rate** | *(not separately quantified)* — common desk-reject triggers per publisher: failure to anonymize manuscript, exceeding ~8,000-word limit, insufficient engagement with recent composition/rhetoric field literature | 2026-07-13 |
 | **Quartile (by field)** | *(see SCImago)* | |
 
 ### Review Cycle Time
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
+| **Time to first decision** | ~75-90 days (~2.5-3 months), per publisher submission guidance | 2026-07-13 |
 | **Time to first review** | *(community estimate)* | |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |

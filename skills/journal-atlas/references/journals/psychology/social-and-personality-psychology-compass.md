@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~3 months (12.9 weeks) | SciRev n=1 only — low-confidence single data point, not confirmed via official journal source |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

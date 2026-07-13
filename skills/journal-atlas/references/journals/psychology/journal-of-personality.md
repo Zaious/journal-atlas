@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~2.9 months (SciRev self-reported average; one recent case reported 17.4 weeks ≈ 4 months) | Low-N estimate from SciRev — self-reported, small sample, not a stable statistic |
+| **Time to acceptance (total)** | ~3.2 months total processing time (SciRev self-reported) | Low-N estimate from SciRev — self-reported, small sample; ~1.5 average review rounds reported, not a stable statistic |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

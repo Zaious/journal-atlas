@@ -43,7 +43,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
+| **Time to first decision** | Conflicting figures reported: publisher's Journal Policies page states an average of ~6 weeks to first decision; multiple Chinese aggregator sites (ablesci / fabiao, possibly same underlying database) report ~19 weeks. SciRev shows 0 reviewer submissions, so neither figure is independently corroborated. | |
 | **Time to first review** | *(community estimate)* | |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |

@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 274 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~26% (APA Division 38 official 'Summary Report of Division Journal Operations, 2023': 697 manuscripts received, 77 accepted, ~74% rejection rate among decided manuscripts) | 2023 (publisher-issued statistic) |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.98 | 2026-05-16 |
@@ -52,7 +52,7 @@
 | **Time to first decision** | *(fill manually)* | |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
-| **Time to publication (after acceptance)** | *(fill manually)* | |
+| **Time to publication (after acceptance)** | 2.3 months (Online First) / 4.6 months (print) | Publisher-reported, APA Division 38 2023 Journal Operations report |
 
 ### Publication Frequency
 

@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first decision** | ~3 weeks | Per OUP General Instructions: initial decision (which may include desk rejection) is typically within 3 weeks; no rate/percentage given (WO2 research pass, 2026-07-13) |
+| **Time to first review** | ~3.2 months (~14 weeks) | SciRev small-sample aggregate (single documented reviewer account); low signal quality — WO2 research pass, 2026-07-13 |
+| **Time to acceptance (total)** | ~3.5 months | SciRev small-sample aggregate; LetPub independently states review cycle '>12 weeks' (~2.8+ months), broadly consistent — WO2 research pass, 2026-07-13 |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

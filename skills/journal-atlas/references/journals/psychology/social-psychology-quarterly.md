@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~1.7 months (avg, low confidence) | WO2 finding: SciRev self-reported data, n=2 reviews only (most recent case ~4.4 weeks). Source: https://scirev.org/journal/social-psychology-quarterly/ |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to acceptance (total)** | ~3.6 months (avg, low confidence) | WO2 finding: SciRev self-reported data, n=2 reviews only. Source: https://scirev.org/journal/social-psychology-quarterly/ |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~3 days (median, publisher self-reported statistic) | Per Springer journal page; low-confidence, publisher-reported figure, not community-forum data — see Soft Metadata > AI-Research Notes for caveat |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

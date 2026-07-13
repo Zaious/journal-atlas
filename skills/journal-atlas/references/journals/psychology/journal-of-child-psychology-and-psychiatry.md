@@ -39,7 +39,7 @@
 | **h-index** | 344 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | *(fill manually if known)* | |
+| **Desk Rejection Rate** | ~50% of submissions rejected without external review, typically within the first week of submission (source: JCPP Author Guidelines, ACAMH/Wiley) | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.64 | 2026-05-16 |
 | **i10-index** | 4951 | 2026-05-16 |
@@ -51,7 +51,7 @@
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to acceptance (total)** | ~3.6 months, submission to publication decision (SciRev aggregate, n=5 reviews; small sample) | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

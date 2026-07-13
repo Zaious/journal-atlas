@@ -39,7 +39,7 @@
 | **h-index** | 88 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | *(fill manually if known)* | |
+| **Desk Rejection Rate** | ~0% (low-confidence, single unverified data point) | WO2 finding: cited as 0% per one muchong.com forum post (no sample size disclosed); SciRev lists rejection rate as "n/a" (0 usable reviews, n=1 journal-wide). Signal quality 2/5 — not a settled figure, treat with caution. |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.44 | 2026-05-16 |
 | **i10-index** | 710 | 2026-05-16 |
@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | Contested: publisher target ~2.5–3 months vs. observed ~5–8.9 months (low-n) | Publisher-stated goal ~10 weeks (ieeesmc.org policy target, not an observed outcome); SciRev (n=1) reports 8.9 months for round 1; one unverified secondhand Chinese-language source (Zhihu, WebFetch blocked 403, only WebSearch snippet available) cites ~5 months for first round. WO2 signal_quality 2/5 — no reliable consensus, treat with caution. |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to acceptance (total)** | Contested: ~10–12.4 months per limited/unverified sources (publisher target elsewhere cited as ~3 months) | SciRev (n=1) reports 12.4 months total handling; one unverified secondhand Chinese-language source (Zhihu, 403 on fetch) cites a 10-12 month total cycle. LetPub states a publisher target of ~3 months but no user-submitted numeric data surfaced on this fetch. WO2 signal_quality 2/5 — treat with caution. |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

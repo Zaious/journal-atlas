@@ -65,7 +65,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(pending verification — Collabra emphasizes open science; may use open or transparent review)* |
+| **Type** | Default double-blind, with an option for non-anonymous review (reviewers may sign their reports). Review correspondence/reports are published alongside accepted articles; authors retain full control over the review history for rejected manuscripts. |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | *(pending — some Collabra workflows publish reports per open science principles)* |
 | **Typical R+R rounds** | *(pending)* |
@@ -75,18 +75,18 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | *(pending — recommend checking journal page directly)* |
-| **Explicit permission gate?** | *(pending)* |
-| **Leniency (1-5)** | *(pending)* |
-| **Summary** | Journal-specific AI policy not yet confirmed; expected to align with open science / reproducibility values. Contact editorial office for current policy. |
-| **Source URL** | https://online.ucpress.edu/collabra |
+| **Has journal-specific AI policy?** | No — no Collabra-specific AI policy page found; governed instead by UC Press's publisher-wide AI guidelines. |
+| **Explicit permission gate?** | Conditional — generative AI may assist with readability, formatting, style, and error correction without a disclosure requirement; using AI to generate original text/images or to process data requires the author to disclose this to the editor and transparently in the manuscript. AI cannot be listed as an author; authors remain fully responsible for the text. |
+| **Leniency (1-5)** | 3 |
+| **Summary** | 出版商 UC Press 統一 AI 政策(非期刊專屬):允許以生成式 AI 輔助可讀性、格式、風格與錯誤修正;但未經揭露不得用 AI 生成原創文字或圖像。凡以 AI 產出內容或處理資料,作者須告知編輯並在稿件中透明揭露。AI 不得列為作者,作者對全文負完全責任。屬「助理可、生成受限、揭露為門檻」的中等開放。 |
+| **Source URL** | https://www.ucpress.edu/about/ai-guidelines |
 
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes (per OA journal norms) | |
-| Under review | *(pending)* | |
+| Under review | Yes — preprint may remain posted during review; double-blind review does not require removing identifying preprint traces | SIPS-Collabra Registered Reports process also expects an OSF preregistration or PsyArXiv preprint |
 | Post-acceptance | N/A — fully Open Access | All articles published OA |
 | Version of Record | Immediately accessible (OA) | |
 

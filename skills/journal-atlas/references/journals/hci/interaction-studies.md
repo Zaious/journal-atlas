@@ -75,11 +75,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | *(pending — recommend checking publisher current policy)* |
-| **Explicit permission gate?** | *(pending)* |
-| **Leniency (1-5)** | *(pending)* |
-| **Summary** | *(pending — Benjamins AI policy not as widely documented as Big Five publishers)* |
-| **Source URL** | https://benjamins.com |
+| **Has journal-specific AI policy?** | No — publisher-level policy (John Benjamins Author Ethics / Statement on AI), not a journal-specific page (per WO2 research pass, 2026-07-13; signal quality 2/5) |
+| **Explicit permission gate?** | Conditional — AI may not be listed as an author; no explicit author-disclosure clause found for AI-assisted writing (per WO2 research pass, 2026-07-13) |
+| **Leniency (1-5)** | 2 (per WO2 research pass, 2026-07-13) |
+| **Summary** | Publisher-level (John Benjamins) policy, not journal-specific: no AI may be listed as an author ("no Artificial Intelligence qualifies as author", per Author's Responsibilities). Reviewers explicitly barred from using generative AI (e.g. ChatGPT) to produce review reports, citing confidentiality risk. No clear clause found on whether authors must disclose AI-assisted writing. See Soft Metadata > AI-Research Notes below for full WO2 finding (signal quality: 2/5). |
+| **Source URL** | https://benjamins.com/content/authors/ethics |
 
 ### Preprint Policy
 

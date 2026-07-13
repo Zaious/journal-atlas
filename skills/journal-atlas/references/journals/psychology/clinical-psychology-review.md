@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~2.4 months (10.3 weeks) | Per SciRev (n=3 reviews) — small sample, treat as indicative only |
+| **Time to acceptance (total)** | ~3.8 months | Per SciRev (n=3 reviews), avg. ~2.0 review rounds; small sample, treat as indicative only |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

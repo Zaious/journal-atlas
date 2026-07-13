@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first decision** | ~2 months (publisher target, unverified) | Guide for Authors states the editorial team aims to give a first accept/reject-direction decision within ~2 months of submission (official stated target, not a measured average). SciRev data (n=2, low-confidence sample) shows desk-reject decisions averaging ~29 days. Sources: https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors ; https://scirev.org/journal/journal-of-environmental-psychology/ |
+| **Time to first review** | ~4.1 months (SciRev average; n=2, low-confidence sample) | WO2 signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
+| **Time to acceptance (total)** | ~6.7 months (SciRev average; n=2, low-confidence sample) | WO2 signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

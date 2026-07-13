@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 457 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | *(Not meaningfully quantifiable as a percentage — TiCS operates primarily via editorial commissioning of review/opinion essays rather than open competitive submission, per convergent community sources (科研通/LetPub/知乎); no quantitative acceptance-rate figure found)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 8.73 | 2026-05-16 |
@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | *(Low-confidence community estimates only: ~4.6 weeks per SciRev, but only 2 reviews on file — very small sample; separately, 科研通/LetPub/小木虫 users describe review speed as "slow, 6-12 weeks". No publisher-verified figure.)* | |
+| **Time to acceptance (total)** | *(Low-confidence community estimate: SciRev cites a median of roughly 6-10 months from submission to acceptance, based on only 2 reviews — not independently verified.)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

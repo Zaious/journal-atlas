@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~14.3 weeks (SciRev, n=1 detailed review; low confidence) | Source: https://scirev.org/journal/journal-of-abnormal-child-psychology/ — SciRev sample is thin (only 2 submitted reviews total, 1 detailed) |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

@@ -35,7 +35,7 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~50+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
+| **Acceptance Rate** | ~21% (T&F official, journal metrics page) | 2026-07-13 |
 | **Desk Rejection Rate** | *(community estimate)* | |
 | **Quartile (by field)** | *(see SCImago)* | |
 
@@ -43,8 +43,8 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
+| **Time to first decision** | ~11 days (T&F official) | Avg. submission-to-first-decision per publisher's journal metrics page; may include editorial-screening decisions |
+| **Time to first review** | ~125 days (T&F official) | Avg. submission-to-first-post-review-decision per publisher's journal metrics page; publisher's own label, may not map 1:1 onto 'first review' if R&R rounds are involved |
 | **Time to acceptance (total)** | *(community estimate)* | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 

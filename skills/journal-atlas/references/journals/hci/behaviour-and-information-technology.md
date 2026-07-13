@@ -44,7 +44,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
+| **Time to first decision** | ~6.0 months (avg., self-reported, LetPub aggregator) | Self-reported average across respondent submissions on LetPub; not officially disclosed by publisher. Individual case reports vary — see muchong.com (~2 months to first review in one case) and fabiaoji.com (~1–2 months to desk rejection in two cases). |
 | **Time to first review** | *(pending)* | |
 | **Time to acceptance (total)** | *(pending)* | |
 | **Time to publication (after acceptance)** | *(pending)* | |

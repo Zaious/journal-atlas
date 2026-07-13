@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~2.4 months *(low confidence)* | Per SciRev (n=3 reviews only, small sample); roughly cross-checked by a single fabiaoji.com first-hand author account (~2–2.5 months to a rejection decision, 2021 submission) |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

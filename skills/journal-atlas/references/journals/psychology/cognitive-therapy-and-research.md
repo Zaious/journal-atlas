@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~2.0 months (WO2 estimate) | SciRev n=2 sample only (scirev.org/journal/cognitive-therapy-and-research) — not statistically representative; average 2.0 review rounds per submission. |
+| **Time to acceptance (total)** | ~3.1 months (WO2 estimate) | SciRev n=2 sample only (scirev.org/journal/cognitive-therapy-and-research) — not statistically representative; total processing time including multiple review rounds. |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

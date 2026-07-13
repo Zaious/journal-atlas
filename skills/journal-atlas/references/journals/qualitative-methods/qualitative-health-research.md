@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~1.8 months | WO2 finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
+| **Time to acceptance (total)** | ~3.5 months | WO2 finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

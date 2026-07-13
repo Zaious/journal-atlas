@@ -44,7 +44,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
+| **Time to first decision** | SciRev sample (n=6, very small): review duration to first decision averages ~3.7 months | Low confidence — tiny sample; same sample's immediate desk-reject decisions averaged ~11 days (WO2 finding) |
 | **Time to first review** | *(pending)* | |
 | **Time to acceptance (total)** | *(pending — Elsevier typical 4-6 months)* | |
 | **Time to publication (after acceptance)** | Rapid (online-first on ScienceDirect) | |
@@ -86,7 +86,7 @@
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes (per Elsevier sharing policy) | |
-| Under review | *(pending)* | |
+| Under review | Yes | Posting a preprint (e.g., via Elsevier's free SSRN deposit) does not affect the editorial process or acceptance outcome (WO2 finding, medium confidence — coverage of non-SSRN servers such as arXiv not directly verified) |
 | Post-acceptance | Yes | Can update preprint to AAM |
 | Self-archived AAM | Yes | **24-month embargo** before public self-archiving |
 | Version of Record | Restricted unless OA APC paid | |

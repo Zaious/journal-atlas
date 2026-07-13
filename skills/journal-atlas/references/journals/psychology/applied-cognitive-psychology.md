@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~2.7 months (~11.7 weeks) | WO2: based on 1 SciRev self-reported case (n=1); not representative of journal norm |
+| **Time to acceptance (total)** | ~7.6 months (incl. 2 review rounds) | WO2: based on 1 SciRev self-reported case (n=1); not representative of journal norm |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

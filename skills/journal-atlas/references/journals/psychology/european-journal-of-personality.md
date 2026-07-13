@@ -38,8 +38,8 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 152 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~12% (implied by journal's self-reported ~88% overall rejection rate — low confidence, publisher self-report obtained via WebSearch summary, original page 402-blocked, not independently verified; see Soft Metadata > AI-Research Notes) | 2026-07-13 (WO2 pass) |
+| **Desk Rejection Rate** | ~55% (journal self-report via WebSearch summary of publisher "For Authors" page; original page blocked by 402 paywall, not independently verified — see Soft Metadata > AI-Research Notes) | 2026-07-13 (WO2 pass) |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.83 | 2026-05-16 |
 | **i10-index** | 1180 | 2026-05-16 |
@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first decision** | ~20 days (avg., all manuscripts); ~40 days for manuscripts sent to external review | Journal self-report via WebSearch summary (original page 402-blocked, not independently verified) — low confidence, see Soft Metadata > AI-Research Notes |
+| **Time to first review** | ~44–64 days (Chinese journal-aggregator sites, e.g. fabiao.com); SciRev (n=1 review): ~1.4 months (~6 weeks) for first review round | Small sample / secondary sources — low confidence, see Soft Metadata > AI-Research Notes |
+| **Time to acceptance (total)** | ~54–82 days (Chinese journal-aggregator sites); SciRev (n=1 review): ~1.5 months total handling time to accepted manuscripts | Small sample / secondary sources — low confidence, see Soft Metadata > AI-Research Notes |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

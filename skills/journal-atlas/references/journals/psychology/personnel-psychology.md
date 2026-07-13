@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~6.9 weeks (~1.6 months) | Per SciRev (n=3, very small sample); LetPub speed rating 7.0/10 (n=50, no specific weeks given) is directionally consistent (fast) |
+| **Time to acceptance (total)** | ~2.1 months | Per SciRev, total processing time for accepted manuscripts (n=3, very small sample) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency

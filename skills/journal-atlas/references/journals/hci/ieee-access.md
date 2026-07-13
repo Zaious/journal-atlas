@@ -48,9 +48,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~4-6 weeks (initial review to first decision) | IEEE Access self-reported average ~4 weeks submission→accept/reject; SciRev community data ~1.5 months for first review round (cross-source synthesis by WO2). Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/, https://scirev.org/journal/ieee-access/ (WO2 research pass 2026-07-13) |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to acceptance (total)** | ~2-3 months (average) | SciRev community data: avg ~2.8 months for accepted manuscripts (avg 2.8 review reports, 1.7 review rounds). Source: https://scirev.org/journal/ieee-access/ (WO2 research pass 2026-07-13) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -69,7 +69,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(fill manually)* |
+| **Type** | Single-anonymized (single-blind); minimum 2 independent reviewers; binary accept/reject decision; editorial-board Associate Editor managed rapid review. Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/ (WO2 research pass 2026-07-13) |
 | **Transferable / Cascade?** | *(fill manually)* |
 | **Reviewer reports published?** | *(fill manually)* |
 | **Typical R+R rounds** | *(fill manually)* |
@@ -79,20 +79,20 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | *(fill manually — check author guidelines)* |
-| **Explicit permission gate?** | *(fill manually)* |
-| **Leniency (1-5)** | *(fill manually)* |
-| **Summary** | *(fill manually)* |
-| **Source URL** | *(fill manually)* |
+| **Has journal-specific AI policy?** | No IEEE Access-specific policy page found; the IEEE publisher-wide (company-level) AI policy applies to this journal. |
+| **Explicit permission gate?** | Conditional — AI-generated content (text/figures/images/code) must be disclosed in acknowledgments (AI system used, sections involved, extent of use); grammar/editing-only AI use is generally exempt from this disclosure requirement (though disclosure is still recommended); AI/AI tools cannot be listed as author or co-author; reviewers may not input manuscript content into public AI platforms (treated as a confidentiality breach). |
+| **Leniency (1-5)** | 3 |
+| **Summary** | IEEE-wide policy (applies to IEEE Access): AI-generated content must be disclosed in acknowledgments (system used, sections involved, extent); AI/AI tools cannot be author or co-author; reviewers barred from inputting manuscripts into public AI platforms. No IEEE Access-specific stricter version found — this is a company-level policy extrapolation, not a journal-specific one. |
+| **Source URL** | https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/ |
 
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | *(fill manually)* | |
-| Under review | *(fill manually)* | |
-| Post-acceptance (AAM) | *(fill manually)* | Embargo: __ months |
-| Version of Record | *(fill manually)* | |
+| Pre-submission | Allowed | arXiv and TechRxiv are IEEE-recognized third-party preprint repositories; authors may freely post preprints before acceptance. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Under review | Allowed | Same policy as pre-submission — preprint may remain posted while the manuscript is under review, until acceptance. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Post-acceptance (AAM) | Allowed, with condition | After signing the IEEE copyright transfer, the posted preprint must be updated to include the IEEE copyright notice. No specific embargo period disclosed in sources. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Version of Record | Not permitted as full text | After formal publication, the preprint must be replaced with citation info (DOI/IEEE Xplore link) or with the copyright-noticed accepted version — the full Version-of-Record text may not be reposted. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
 
 ### Open Access
 

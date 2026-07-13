@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~2.7 months average (SciRev, n=5) | Community-reported via SciRev; very small sample (5 reviews) including one extreme outlier of 17.3 weeks. Chinese journal-aggregator sites claim 5–13 months but lack traceable first-hand submitter accounts (lower reliability than SciRev). WO2 signal quality: 2/5. |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |

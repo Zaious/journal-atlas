@@ -86,7 +86,7 @@
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes (per ACM default) | |
-| Under review | *(pending)* | |
+| Under review | Yes (per ACM publication-wide policy — submitted/under-review versions may be posted to arXiv or other non-commercial repositories, no embargo) | |
 | Post-acceptance (AAM) | Yes (per ACM default) | |
 | Version of Record | Restricted unless ACM Open paid | |
 

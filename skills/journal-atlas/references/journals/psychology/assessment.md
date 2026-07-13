@@ -35,8 +35,8 @@
 | **5-Year IF** | *(see JCR)* | |
 | **h-index** | ~130+ | 2026-05-17 |
 | **CiteScore** | *(see Scopus)* | |
-| **Acceptance Rate** | *(community estimate)* | |
-| **Desk Rejection Rate** | *(community estimate)* | |
+| **Acceptance Rate** | ~22% (SciRev 樣本 n=4,信心度低) | 2026-07-13 |
+| **Desk Rejection Rate** | ~15% (SciRev 樣本 n=4,信心度低) | 2026-07-13 |
 | **Quartile (by field)** | *(see SCImago)* | |
 
 ### Review Cycle Time
@@ -44,8 +44,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(community estimate)* | |
-| **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to first review** | ~3.2 months (~14 weeks) (SciRev 樣本 n=4,信心度低) | |
+| **Time to acceptance (total)** | ~8.3 months (~36 weeks) (SciRev 樣本 n=4,信心度低) | |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
 
 ### Publication Frequency

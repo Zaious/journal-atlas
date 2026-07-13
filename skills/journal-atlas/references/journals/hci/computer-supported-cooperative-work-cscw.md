@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 98 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | *(no numeric rate found)* — aggregators describe it as high/easy: LetPub rates "平均录用比例：容易" (average acceptance ratio: easy); a separate Chinese ranking-guide aggregator states "录用比例很高，投稿比较容易，但影响因子不算高" (very high acceptance ratio, comparatively easy to get accepted, though IF is not high). Directional aggregator characterization only, not a publisher-disclosed or first-hand figure. | WO2 draft, signal quality 3/5, 2026-07-13 |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.02 | 2026-05-16 |
@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first review** | ~30.7 weeks (~7.1 months) per SciRev (small/undisclosed sample size; 1.0 avg review rounds, 2.0 reviewer reports per submission); LetPub separately reports avg review speed ">12周" (>12 weeks) | WO2 draft, signal quality 3/5 — approximate, figures from different aggregators broadly agree but are not first-hand accounts (2026-07-13) |
+| **Time to acceptance (total)** | ~5 months (review-to-acceptance cycle), per one Chinese ranking-guide aggregator summary | WO2 draft, signal quality 3/5 — single aggregator source, low confidence (2026-07-13) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
