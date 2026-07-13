@@ -1,0 +1,500 @@
+[
+ {
+  "openalex_id": null,
+  "name": "Multimedia Tools and Applications",
+  "works_in_field": 21788,
+  "issn": "1380-7501",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Applied Ergonomics",
+  "works_in_field": 11662,
+  "issn": "0003-6870",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Transactions on Visualization and Computer Graphics",
+  "works_in_field": 8015,
+  "issn": "1077-2626",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Computer Graphics and Applications",
+  "works_in_field": 6361,
+  "issn": "0272-1716",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "International Journal of Industrial Ergonomics",
+  "works_in_field": 4215,
+  "issn": "0169-8141",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Transactions on Robotics",
+  "works_in_field": 4176,
+  "issn": "1552-3098",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Frontiers in Robotics and AI",
+  "works_in_field": 2474,
+  "issn": "2296-9144",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Autonomous Robots",
+  "works_in_field": 1727,
+  "issn": "0929-5593",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Cognition Technology & Work",
+  "works_in_field": 1070,
+  "issn": "1435-5558",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S71913804",
+  "name": "interactions",
+  "works_in_field": 751,
+  "issn": "1072-5520",
+  "type": "journal",
+  "works_count": 4396,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": null,
+  "name": "User Modeling and User-Adapted Interaction",
+  "works_in_field": 696,
+  "issn": "0924-1868",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4210183893",
+  "name": "Proceedings of the ACM on Human-Computer Interaction",
+  "works_in_field": 694,
+  "issn": "2573-0142",
+  "type": "journal",
+  "works_count": 3793,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Computing Education",
+  "works_in_field": 661,
+  "issn": "1946-6226",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S2495878607",
+  "name": "Virtual Reality",
+  "works_in_field": 547,
+  "issn": "1359-4338",
+  "type": "journal",
+  "works_count": 1759,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210190811",
+  "name": "International Journal of Human-Computer Studies",
+  "works_in_field": 495,
+  "issn": "1071-5819",
+  "type": "journal",
+  "works_count": 3222,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal on Multimodal User Interfaces",
+  "works_in_field": 482,
+  "issn": "1783-7677",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Interactive Intelligent Systems",
+  "works_in_field": 468,
+  "issn": "2160-6455",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4220651901",
+  "name": "Electronic workshops in computing",
+  "works_in_field": 463,
+  "issn": "1477-9358",
+  "type": "journal",
+  "works_count": 4071,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S23117883",
+  "name": "Interacting with Computers",
+  "works_in_field": 437,
+  "issn": "0953-5438",
+  "type": "journal",
+  "works_count": 1675,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S975621743",
+  "name": "PRESENCE Virtual and Augmented Reality",
+  "works_in_field": 403,
+  "issn": "1054-7460",
+  "type": "journal",
+  "works_count": 1459,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210228137",
+  "name": "Frontiers in Virtual Reality",
+  "works_in_field": 363,
+  "issn": "2673-4192",
+  "type": "journal",
+  "works_count": 966,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": null,
+  "name": "Technology Mind and Behavior",
+  "works_in_field": 341,
+  "issn": "2689-0208",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S89276529",
+  "name": "ACM Transactions on Computer-Human Interaction",
+  "works_in_field": 329,
+  "issn": "1073-0516",
+  "type": "journal",
+  "works_count": 1129,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210208874",
+  "name": "ACM SIGCHI Bulletin",
+  "works_in_field": 313,
+  "issn": "0736-6906",
+  "type": "journal",
+  "works_count": 1756,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S30338973",
+  "name": "Universal Access in the Information Society",
+  "works_in_field": 219,
+  "issn": "1615-5289",
+  "type": "journal",
+  "works_count": 1466,
+  "primary_topic": "3307"
+ },
+ {
+  "openalex_id": "S2481449237",
+  "name": "Human-Computer Interaction",
+  "works_in_field": 188,
+  "issn": "0737-0024",
+  "type": "journal",
+  "works_count": 1033,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210189112",
+  "name": "CoDesign",
+  "works_in_field": 183,
+  "issn": "1571-0882",
+  "type": "journal",
+  "works_count": 648,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S2502673154",
+  "name": "Journal of Eye Movement Research",
+  "works_in_field": 169,
+  "issn": "1995-8692",
+  "type": "journal",
+  "works_count": 699,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210226272",
+  "name": "Multimodal Technologies and Interaction",
+  "works_in_field": 155,
+  "issn": "2414-4088",
+  "type": "journal",
+  "works_count": 901,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S189631880",
+  "name": "Mind Culture and Activity",
+  "works_in_field": 144,
+  "issn": "1074-9039",
+  "type": "journal",
+  "works_count": 1030,
+  "primary_topic": "3307"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Social Computing",
+  "works_in_field": 126,
+  "issn": "2469-7818",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S72842422",
+  "name": "Digital Creativity",
+  "works_in_field": 117,
+  "issn": "1462-6268",
+  "type": "journal",
+  "works_count": 805,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S2764907355",
+  "name": "Information technology and disabilities",
+  "works_in_field": 78,
+  "issn": "1073-5127",
+  "type": "journal",
+  "works_count": 173,
+  "primary_topic": "3307"
+ },
+ {
+  "openalex_id": "S4387283679",
+  "name": "Computers & Education X Reality",
+  "works_in_field": 77,
+  "issn": "2949-6780",
+  "type": "journal",
+  "works_count": 170,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S8087957",
+  "name": "International Journal of Mobile Human Computer Interaction",
+  "works_in_field": 76,
+  "issn": "1942-390X",
+  "type": "journal",
+  "works_count": 313,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S2739104894",
+  "name": "Interaction design & architecture(s)/ID&A Interaction design & architecture(s)",
+  "works_in_field": 75,
+  "issn": "1826-9745",
+  "type": "journal",
+  "works_count": 714,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S2913259631",
+  "name": "International Journal of Virtual Reality",
+  "works_in_field": 72,
+  "issn": "1081-1451",
+  "type": "journal",
+  "works_count": 323,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4210211086",
+  "name": "Frontiers in Computer Science",
+  "works_in_field": 69,
+  "issn": "2624-9898",
+  "type": "journal",
+  "works_count": 1098,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S4387280281",
+  "name": "Virtual Worlds",
+  "works_in_field": 68,
+  "issn": "2813-2084",
+  "type": "journal",
+  "works_count": 153,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": "S156498152",
+  "name": "Advances in Human-Computer Interaction",
+  "works_in_field": 61,
+  "issn": "1687-5893",
+  "type": "journal",
+  "works_count": 326,
+  "primary_topic": "1709"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Interactions",
+  "works_in_field": null,
+  "issn": "1558-3449",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+  "works_in_field": null,
+  "issn": "2474-9567",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Accessible Computing",
+  "works_in_field": null,
+  "issn": "1936-7228",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "ACM Transactions on Human-Robot Interaction",
+  "works_in_field": null,
+  "issn": "2573-9522",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "AI & Society",
+  "works_in_field": null,
+  "issn": "0951-5666",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Behaviour & Information Technology",
+  "works_in_field": null,
+  "issn": "0144-929X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Computer Supported Cooperative Work (CSCW)",
+  "works_in_field": null,
+  "issn": "0925-9724",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Computers in Human Behavior",
+  "works_in_field": null,
+  "issn": "0747-5632",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Design Issues",
+  "works_in_field": null,
+  "issn": "0747-9360",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Design Studies",
+  "works_in_field": null,
+  "issn": "0142-694X",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Entertainment Computing",
+  "works_in_field": null,
+  "issn": "1875-9521",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Human Factors",
+  "works_in_field": null,
+  "issn": "0018-7208",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Access",
+  "works_in_field": null,
+  "issn": "2169-3536",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Pervasive Computing",
+  "works_in_field": null,
+  "issn": "1536-1268",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Transactions on Affective Computing",
+  "works_in_field": null,
+  "issn": "1949-3045",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "IEEE Transactions on Human-Machine Systems",
+  "works_in_field": null,
+  "issn": "2168-2291",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Interaction Studies",
+  "works_in_field": null,
+  "issn": "1572-0373",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "International Journal of Child-Computer Interaction",
+  "works_in_field": null,
+  "issn": "2212-8689",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "International Journal of Design",
+  "works_in_field": null,
+  "issn": "1991-3761",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "International Journal of Human-Computer Interaction",
+  "works_in_field": null,
+  "issn": "1044-7318",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "International Journal of Social Robotics",
+  "works_in_field": null,
+  "issn": "1875-4791",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Design History",
+  "works_in_field": null,
+  "issn": "0952-4649",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Nature Machine Intelligence",
+  "works_in_field": null,
+  "issn": "2522-5839",
+  "source": "repo-curated"
+ },
+ {
+  "openalex_id": null,
+  "name": "Personal and Ubiquitous Computing",
+  "works_in_field": null,
+  "issn": "1617-4909",
+  "source": "repo-curated"
+ }
+]

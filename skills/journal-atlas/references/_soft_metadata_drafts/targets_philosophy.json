@@ -1,0 +1,843 @@
+[
+ {
+  "openalex_id": null,
+  "name": "Mind",
+  "works_in_field": 16713,
+  "issn": "0026-4423",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Symbolic Logic",
+  "works_in_field": 14783,
+  "issn": "0022-4812",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Ethics",
+  "works_in_field": 11641,
+  "issn": "0014-1704",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Analysis",
+  "works_in_field": 8251,
+  "issn": "0003-2638",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Medical Ethics",
+  "works_in_field": 8151,
+  "issn": "0306-6800",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy of Science",
+  "works_in_field": 7672,
+  "issn": "0031-8248",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Monist",
+  "works_in_field": 5896,
+  "issn": "0026-9662",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Hypatia",
+  "works_in_field": 4793,
+  "issn": "0887-5367",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy East and West",
+  "works_in_field": 4613,
+  "issn": "0031-8221",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "The British Journal for the Philosophy of Science",
+  "works_in_field": 4378,
+  "issn": "0007-0882",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Australasian Journal of Philosophy",
+  "works_in_field": 4212,
+  "issn": "0004-8402",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Bioethics",
+  "works_in_field": 4014,
+  "issn": "0269-9702",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Erkenntnis",
+  "works_in_field": 4000,
+  "issn": "0165-0106",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Studia Logica",
+  "works_in_field": 3504,
+  "issn": "0039-3215",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Southern Journal of Philosophy",
+  "works_in_field": 3335,
+  "issn": "0038-4283",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S35579339",
+  "name": "The Philosophical Review",
+  "works_in_field": 3322,
+  "issn": "0031-8108",
+  "type": "journal",
+  "works_count": 10458,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Inquiry",
+  "works_in_field": 3114,
+  "issn": "0020-174X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S80702723",
+  "name": "Journal of the history of philosophy",
+  "works_in_field": 3057,
+  "issn": "0022-5053",
+  "type": "journal",
+  "works_count": 5584,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "dialectica",
+  "works_in_field": 2900,
+  "issn": "0012-2017",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Canadian Journal of Philosophy",
+  "works_in_field": 2881,
+  "issn": "0045-5091",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Notre Dame Journal of Formal Logic",
+  "works_in_field": 2807,
+  "issn": "0029-4527",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S204374153",
+  "name": "Philosophy and Phenomenological Research",
+  "works_in_field": 2750,
+  "issn": "0031-8205",
+  "type": "journal",
+  "works_count": 8443,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S81959571",
+  "name": "The Philosophical Quarterly",
+  "works_in_field": 2746,
+  "issn": "0031-8094",
+  "type": "journal",
+  "works_count": 6417,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Grazer Philosophische Studien",
+  "works_in_field": 2743,
+  "issn": "0165-9227",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Philosophy of Education",
+  "works_in_field": 2669,
+  "issn": "0309-8249",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Business Ethics Quarterly",
+  "works_in_field": 2447,
+  "issn": "1052-150X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy & Social Criticism",
+  "works_in_field": 2416,
+  "issn": "0191-4537",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S41650241",
+  "name": "The Journal of Philosophy",
+  "works_in_field": 2408,
+  "issn": "0022-362X",
+  "type": "journal",
+  "works_count": 12831,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy of the Social Sciences",
+  "works_in_field": 2340,
+  "issn": "0048-3931",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Environmental Ethics",
+  "works_in_field": 2260,
+  "issn": "0163-4275",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "British Journal for the History of Philosophy",
+  "works_in_field": 2151,
+  "issn": "0960-8788",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Social Philosophy",
+  "works_in_field": 2088,
+  "issn": "0047-2786",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Applied Philosophy",
+  "works_in_field": 2044,
+  "issn": "0264-3758",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S66032519",
+  "name": "The Thomist: A Speculative Quarterly Review",
+  "works_in_field": 2035,
+  "issn": "0040-6325",
+  "type": "journal",
+  "works_count": 4381,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Topoi",
+  "works_in_field": 1939,
+  "issn": "0167-7411",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S124201077",
+  "name": "Religious Studies",
+  "works_in_field": 1907,
+  "issn": "0034-4125",
+  "type": "journal",
+  "works_count": 4307,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy Compass",
+  "works_in_field": 1867,
+  "issn": "1747-9991",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Ethical Theory and Moral Practice",
+  "works_in_field": 1861,
+  "issn": "1386-2820",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4210212870",
+  "name": "Dialogue",
+  "works_in_field": 1836,
+  "issn": "0012-2173",
+  "type": "journal",
+  "works_count": 6240,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Continental Philosophy Review",
+  "works_in_field": 1824,
+  "issn": "1387-2842",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Philosophical Logic",
+  "works_in_field": 1769,
+  "issn": "0022-3611",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S23081197",
+  "name": "The Modern Schoolman",
+  "works_in_field": 1750,
+  "issn": "0026-8402",
+  "type": "journal",
+  "works_count": 5728,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S38817601",
+  "name": "Revue Philosophique de Louvain",
+  "works_in_field": 1710,
+  "issn": "0035-3841",
+  "type": "journal",
+  "works_count": 6793,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal for the Theory of Social Behaviour",
+  "works_in_field": 1709,
+  "issn": "0021-8308",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Mind & Language",
+  "works_in_field": 1612,
+  "issn": "0268-1064",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4210194496",
+  "name": "Kant-Studien",
+  "works_in_field": 1601,
+  "issn": "0022-8877",
+  "type": "journal",
+  "works_count": 4775,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Social Theory and Practice",
+  "works_in_field": 1588,
+  "issn": "0037-802X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Utilitas",
+  "works_in_field": 1582,
+  "issn": "0953-8208",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Journal of Speculative Philosophy",
+  "works_in_field": 1364,
+  "issn": "0891-625X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S53902421",
+  "name": "International Philosophical Quarterly",
+  "works_in_field": 1348,
+  "issn": "0019-0365",
+  "type": "journal",
+  "works_count": 4082,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Moral Philosophy",
+  "works_in_field": 1342,
+  "issn": "1740-4681",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Phenomenology and the Cognitive Sciences",
+  "works_in_field": 1285,
+  "issn": "1568-7759",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S146017412",
+  "name": "Ancient Philosophy",
+  "works_in_field": 1278,
+  "issn": "0740-2007",
+  "type": "journal",
+  "works_count": 2155,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S156100525",
+  "name": "The review of metaphysics",
+  "works_in_field": 1256,
+  "issn": "0034-6632",
+  "type": "journal",
+  "works_count": 2688,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210182543",
+  "name": "New Scholasticism",
+  "works_in_field": 1217,
+  "issn": "0028-6621",
+  "type": "journal",
+  "works_count": 3799,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Kennedy Institute of Ethics Journal",
+  "works_in_field": 1138,
+  "issn": "1054-6863",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4210167481",
+  "name": "Proceedings of the Aristotelian Society (Hardback)",
+  "works_in_field": 1136,
+  "issn": "0066-7374",
+  "type": "journal",
+  "works_count": 2346,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S135026094",
+  "name": "International Studies in Philosophy",
+  "works_in_field": 1115,
+  "issn": "0270-5664",
+  "type": "journal",
+  "works_count": 3431,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Philosophical Forum",
+  "works_in_field": 1085,
+  "issn": "0031-806X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S184888067",
+  "name": "The British Journal of Aesthetics",
+  "works_in_field": 1079,
+  "issn": "0007-0904",
+  "type": "journal",
+  "works_count": 4954,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S21282222",
+  "name": "International Journal for Philosophy of Religion",
+  "works_in_field": 1040,
+  "issn": "0020-7047",
+  "type": "journal",
+  "works_count": 2002,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophical Papers",
+  "works_in_field": 1037,
+  "issn": "0556-8641",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Journal of Consciousness Studies",
+  "works_in_field": 1035,
+  "issn": "1355-8250",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S202455293",
+  "name": "Philosophy Today",
+  "works_in_field": 1032,
+  "issn": "0031-8256",
+  "type": "journal",
+  "works_count": 3293,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210234774",
+  "name": "Fichte-Studien",
+  "works_in_field": 1032,
+  "issn": "0925-0166",
+  "type": "journal",
+  "works_count": 2079,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S33792061",
+  "name": "Archiv für Geschichte der Philosophie",
+  "works_in_field": 998,
+  "issn": "0003-9101",
+  "type": "journal",
+  "works_count": 3230,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210184680",
+  "name": "Phronesis",
+  "works_in_field": 997,
+  "issn": "0031-8868",
+  "type": "journal",
+  "works_count": 1283,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S62126955",
+  "name": "Metaphilosophy",
+  "works_in_field": 960,
+  "issn": "0026-1068",
+  "type": "journal",
+  "works_count": 2582,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210171306",
+  "name": "Nietzsche Studien",
+  "works_in_field": 929,
+  "issn": "0342-1422",
+  "type": "journal",
+  "works_count": 1570,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophy & Public Affairs",
+  "works_in_field": 893,
+  "issn": "0048-3915",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S4210170197",
+  "name": "Augustinus",
+  "works_in_field": 890,
+  "issn": "0004-802X",
+  "type": "journal",
+  "works_count": 2223,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S124026647",
+  "name": "Philosophical Investigations",
+  "works_in_field": 866,
+  "issn": "0190-0536",
+  "type": "journal",
+  "works_count": 1753,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S20068380",
+  "name": "The Journal of Nietzsche Studies",
+  "works_in_field": 865,
+  "issn": "0968-8005",
+  "type": "journal",
+  "works_count": 1068,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S192930876",
+  "name": "Faith and Philosophy",
+  "works_in_field": 863,
+  "issn": "0739-7046",
+  "type": "journal",
+  "works_count": 1872,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210174753",
+  "name": "Proceedings of the American Catholic Philosophical Association",
+  "works_in_field": 846,
+  "issn": "0065-7638",
+  "type": "journal",
+  "works_count": 2643,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S151304531",
+  "name": "Sophia",
+  "works_in_field": 828,
+  "issn": "0038-1527",
+  "type": "journal",
+  "works_count": 1849,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "American Philosophical Quarterly",
+  "works_in_field": 828,
+  "issn": "0003-0481",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "The Review of Symbolic Logic",
+  "works_in_field": 816,
+  "issn": "1755-0203",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S206769501",
+  "name": "American Catholic Philosophical Quarterly",
+  "works_in_field": 809,
+  "issn": "1051-3558",
+  "type": "journal",
+  "works_count": 1839,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S14411630",
+  "name": "European Journal of Philosophy",
+  "works_in_field": 798,
+  "issn": "0966-8373",
+  "type": "journal",
+  "works_count": 1971,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S105007214",
+  "name": "Philosophy and literature",
+  "works_in_field": 783,
+  "issn": "0190-0013",
+  "type": "journal",
+  "works_count": 2563,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S187520691",
+  "name": "Educational Theory",
+  "works_in_field": 777,
+  "issn": "0013-2004",
+  "type": "journal",
+  "works_count": 3520,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S195774317",
+  "name": "Apeiron",
+  "works_in_field": 739,
+  "issn": "0003-6390",
+  "type": "journal",
+  "works_count": 1471,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Notre Dame Philosophical Reviews",
+  "works_in_field": 739,
+  "issn": "1538-1617",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "European Journal for Philosophy of Science",
+  "works_in_field": 731,
+  "issn": "1879-4912",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S15273895",
+  "name": "Philosophy and Rhetoric",
+  "works_in_field": 726,
+  "issn": "0031-8213",
+  "type": "journal",
+  "works_count": 1320,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Husserl Studies",
+  "works_in_field": 723,
+  "issn": "0167-9848",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S122938855",
+  "name": "Augustinian Studies",
+  "works_in_field": 719,
+  "issn": "0094-5323",
+  "type": "journal",
+  "works_count": 1274,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210201953",
+  "name": "Philosophical Studies",
+  "works_in_field": 666,
+  "issn": "0554-0739",
+  "type": "journal",
+  "works_count": 2179,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S1025762778",
+  "name": "Philosophy, psychiatry & psychology",
+  "works_in_field": 634,
+  "issn": "1071-6076",
+  "type": "journal",
+  "works_count": 1534,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S81604740",
+  "name": "The Journal of Value Inquiry",
+  "works_in_field": 627,
+  "issn": "0022-5363",
+  "type": "journal",
+  "works_count": 2811,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S159387410",
+  "name": "Kantian Review",
+  "works_in_field": 601,
+  "issn": "1369-4154",
+  "type": "journal",
+  "works_count": 1076,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S4210205327",
+  "name": "Hegel-Jahrbuch",
+  "works_in_field": 596,
+  "issn": "0073-1579",
+  "type": "journal",
+  "works_count": 1513,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S978343507",
+  "name": "Nova Religio The Journal of Alternative and Emergent Religions",
+  "works_in_field": 588,
+  "issn": "1092-6690",
+  "type": "journal",
+  "works_count": 2741,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Ergo: an Open Access Journal of Philosophy",
+  "works_in_field": 584,
+  "issn": "2330-4014",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": "S21248793",
+  "name": "Pacific philosophical quarterly",
+  "works_in_field": 554,
+  "issn": "0031-5621",
+  "type": "journal",
+  "works_count": 1624,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": "S116734912",
+  "name": "Episteme",
+  "works_in_field": 545,
+  "issn": "1742-3600",
+  "type": "journal",
+  "works_count": 1024,
+  "primary_topic": "1211"
+ },
+ {
+  "openalex_id": null,
+  "name": "Analytic Philosophy",
+  "works_in_field": 545,
+  "issn": "2153-9596",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Radical Philosophy",
+  "works_in_field": 530,
+  "issn": "0300-211X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Erasmus Journal for Philosophy and Economics",
+  "works_in_field": 493,
+  "issn": "1876-9098",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Res Philosophica",
+  "works_in_field": 431,
+  "issn": "2168-9105",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "History of Philosophy Quarterly",
+  "works_in_field": 406,
+  "issn": "0740-0675",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Logique et Analyse",
+  "works_in_field": 214,
+  "issn": "0024-5836",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Feminist Philosophy Quarterly",
+  "works_in_field": 204,
+  "issn": "2371-2570",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Philosophers Imprint",
+  "works_in_field": 167,
+  "issn": "1533-628X",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "JOLMA (Journal for the Philosophy of Language, Mind and the Arts)",
+  "works_in_field": 149,
+  "issn": "2723-9640",
+  "source": "manual-supplement-verified"
+ },
+ {
+  "openalex_id": null,
+  "name": "Theoretical Medicine and Bioethics",
+  "works_in_field": 3,
+  "issn": "1386-7415",
+  "source": "manual-supplement-verified"
+ }
+]

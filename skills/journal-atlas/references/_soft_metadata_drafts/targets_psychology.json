@@ -1131,13 +1131,6 @@
  },
  {
   "openalex_id": null,
-  "name": "The American Journal of Psychology",
-  "works_in_field": null,
-  "issn": "1939-8298",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Annual Review of Psychology",
   "works_in_field": null,
   "issn": "0066-4308",
@@ -1176,13 +1169,6 @@
   "name": "Clinical Psychology Review",
   "works_in_field": null,
   "issn": "0272-7358",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Cognitive Therapy and Research",
-  "works_in_field": null,
-  "issn": "1573-2819",
   "source": "repo-curated"
  },
  {
@@ -1229,13 +1215,6 @@
  },
  {
   "openalex_id": null,
-  "name": "Developmental Psychology",
-  "works_in_field": null,
-  "issn": "1939-0599",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Educational Psychology Review",
   "works_in_field": null,
   "issn": "1040-726X",
@@ -1278,13 +1257,6 @@
  },
  {
   "openalex_id": null,
-  "name": "Journal of Abnormal Child Psychology",
-  "works_in_field": null,
-  "issn": "1573-2835",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Journal of Applied Psychology",
   "works_in_field": null,
   "issn": "0021-9010",
@@ -1299,58 +1271,9 @@
  },
  {
   "openalex_id": null,
-  "name": "Journal of Child Psychology and Psychiatry",
-  "works_in_field": null,
-  "issn": "1469-7610",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Consulting and Clinical Psychology",
-  "works_in_field": null,
-  "issn": "1939-2117",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Counseling Psychology",
-  "works_in_field": null,
-  "issn": "1939-2168",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Educational Psychology",
-  "works_in_field": null,
-  "issn": "1939-2176",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Journal of Environmental Psychology",
   "works_in_field": null,
   "issn": "0272-4944",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Experimental Child Psychology",
-  "works_in_field": null,
-  "issn": "1096-0457",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Experimental Psychology Human Perception & Performance",
-  "works_in_field": null,
-  "issn": "1939-1277",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Experimental Psychology",
-  "works_in_field": null,
-  "issn": "1946-1941",
   "source": "repo-curated"
  },
  {
@@ -1376,30 +1299,9 @@
  },
  {
   "openalex_id": null,
-  "name": "Journal of Personality Assessment",
-  "works_in_field": null,
-  "issn": "1532-7752",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Personality",
-  "works_in_field": null,
-  "issn": "1467-6494",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Journal of Psychopathology and Clinical Science",
   "works_in_field": null,
   "issn": "1939-1846",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Research in Personality",
-  "works_in_field": null,
-  "issn": "1095-7251",
   "source": "repo-curated"
  },
  {
@@ -1425,23 +1327,9 @@
  },
  {
   "openalex_id": null,
-  "name": "Memory & Cognition",
-  "works_in_field": null,
-  "issn": "1532-5946",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "New Ideas in Psychology",
   "works_in_field": null,
   "issn": "0732-118X",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Personality and Individual Differences",
-  "works_in_field": null,
-  "issn": "1873-3549",
   "source": "repo-curated"
  },
  {
@@ -1470,13 +1358,6 @@
   "name": "Phenomenology and the Cognitive Sciences",
   "works_in_field": null,
   "issn": "1568-7759",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Psychology and Aging",
-  "works_in_field": null,
-  "issn": "1939-1498",
   "source": "repo-curated"
  },
  {
@@ -1551,13 +1432,6 @@
  },
  {
   "openalex_id": null,
-  "name": "Cognition",
-  "works_in_field": null,
-  "issn": "1873-7838",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
   "name": "Cognitive Psychology",
   "works_in_field": null,
   "issn": "0010-0285",
@@ -1603,20 +1477,6 @@
   "name": "Journal of Experimental Psychology General",
   "works_in_field": null,
   "issn": "0096-3445",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "Journal of Experimental Psychology Learning Memory and Cognition",
-  "works_in_field": null,
-  "issn": "1939-1285",
-  "source": "repo-curated"
- },
- {
-  "openalex_id": null,
-  "name": "NeuroImage",
-  "works_in_field": null,
-  "issn": "1095-9572",
   "source": "repo-curated"
  },
  {
