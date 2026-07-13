@@ -217,6 +217,37 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 | **Data transparency requirement** | Medium *(community estimate)* |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+
+**WO2 AI policy finding:** 查無此刊或其出版社(University of Illinois Press／Scholarly Publishing Collective／Scholastica投稿系統)公開發布的AI/生成式AI使用政策頁面。UI Press官方投稿頁與Scholastica「For Authors」頁均只列出APA第7版格式、雙盲審稿、題頁匿名化等要求,未提及AI/ChatGPT使用規範。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://scholarlypublishingcollective.org/uip/ajp
+- https://scirev.org/journal/american-journal-of-psychology/
+- https://www.fabiao.com.cn/sci/00029556/
+- https://www.hfabiao.com/sci/47833.html
+- https://www.press.uillinois.edu/journals/ajp/ajpsubmissions.html
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy**: 出版社(University of Illinois Press)與投稿系統(Scholastica)之官方投稿頁均未提及AI/生成式AI使用政策；未找到期刊層級的專屬AI政策頁，故不虛構寬容度分數或許可門檻
+- **positioning.methods_welcome / accepts_now / framing_required**: scholarlypublishingcollective.org/uip/ajp（近期期次/文章清單頁）回傳HTTP 403 Forbidden，無法抓取2024-2026近期文章標題與CFP，僅有『aims & scope』的制式描述(experimental psychology原創研究、理論分析、歷史評論、書評)，不足以推斷『現在實際接受什麼』或方法學/框架要求
+- **experiential.review_time_months**: SciRev該刊頁面明確顯示『尚無人提交評論』，所有時間指標為n/a
+- **experiential.desk_reject_pct / acceptance_note**: SciRev同頁面acceptance% 與immediate rejection% 均為n/a；小木虫搜尋未命中該刊專文；hfabiao/fabiao.com.cn等中文鏡像頁僅列出影響因子與分區資訊，無審稿週期或投稿心得
+- **experiential.reviewer_culture**: 查無任何一手來源(SciRev、小木虫、知乎、fabiaoji、Reddit r/AskAcademia)有具體、可引用的審稿文化描述；知乎搜尋僅命中該刊出現在心理學SSCI期刊彙總清單與中科院分區問答中，非投稿經驗分享；Reddit搜尋無結果
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/american-journal-of-psychology/) — 0 reviews submitted, all metrics n/a
+- 小木虫 muchong.com — 搜尋『"American Journal of Psychology" 小木虫』未命中任何該論壇專文討論
+- 知乎 zhihu.com — 搜尋『"American Journal of Psychology" 知乎 投稿』僅命中該刊出現於SSCI期刊彙總清單、中科院分區問答頁，無具體投稿經驗分享文章
+- fabiaoji.com / hfabiao.com / fabiao.com.cn（中文期刊資訊鏡像站）— 僅提供影響因子、分區(中科院4區/JCR Q4)等制式資料，無審稿週期、拒稿率或投稿心得內容
+- Reddit r/AskAcademia — 搜尋『"American Journal of Psychology" reddit r/AskAcademia review』無任何結果
+
 ---
 
 ## Strategic Notes
@@ -264,5 +295,6 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — limited evidence per community-source review (deep-search not done for this venue); community contribution especially welcome | @Zaious |

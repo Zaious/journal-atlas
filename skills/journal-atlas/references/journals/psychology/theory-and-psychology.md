@@ -219,6 +219,35 @@ Reviewers are drawn primarily from the International Society for Theoretical Psy
 | **Data transparency requirement** | Flexible — qualitative work follows reasonable-consent norms; no mandatory data deposition |
 | **OPSEC compatibility** | High — qualitative interpretive work does not require exposing raw transcripts; pseudonymization is standard |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 採用 SAGE 全社 AI 政策(期刊投稿須知亦重述)。三層制:輔助型 AI(改善語言、文法、結構)免揭露;生成型 AI 若產出直接影響研究方法、分析、結果或結論的內容(文字、參考文獻、圖像等)須於投稿時揭露供編輯評估;AI 不得列為作者,禁止用 AI 進行同儕審查、捏造資料或不當影像處理。未揭露的濫用可於出版流程任何階段導致退稿。
+
+**WO2 positioning finding (what the journal accepts now):** 純理論/後設理論期刊,非實證取向。接受對心理學的哲學、批判、歷史與後設理論分析;概念性論證優先。近期(2025-2026, Vol. 36)實際刊登主題包含:馬克思女性主義對生殖勞動與墮胎禁令的批判、延伸 Ian Hacking「looping effects」概念於心理學、Q 方法論的哲學深度再探與評論、女性主義理論。繁體中文書寫可。
+
+**WO2 experiential finding:** *(not researched)* SciRev 單一投稿者評分:整體處理品質 5.0/5.0、審查報告品質 4.5/5.0(樣本極小 n=2 篇評論,不足以概化)
+
+**Sources cited in this pass:**
+- CFP: https://journals.sagepub.com/page/tap/call-for-papers (special issue 'Bridging Theory and Practice as a Feminist Concern', abstract deadline 2025-02-28)
+- SciRev (n=2 reviews): https://scirev.org/journal/theory-and-psychology/ — 首輪 3.1 月、總計 3.4 月、2 份審稿意見、2.0 輪、整體 5.0/5.0、報告品質 4.5/5.0
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+- publisher-scope: https://journals.sagepub.com/home/tap
+- recent-articles: https://journals.sagepub.com/toc/tap/current
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev 顯示 rejection rate 與 immediate rejection 皆為 n/a;無其他公開一手來源
+- **experiential.acceptance_note**: 無論壇(小木虫/知乎/Reddit)一手投稿經驗貼文可佐證錄用率或錄用細節
+- **experiential.reviewer_culture**: 僅 SciRev n=2 評分,無質性描述來源;不足以做審稿文化敘述,僅列數字
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 0 條 Theory & Psychology 專屬投稿/審稿貼文(僅一般論文投稿版與其他期刊)
+- 知乎 zhihu — 0 條該刊專屬投稿經驗(搜尋僅回傳其他心理學期刊如 Psychological Science)
+- fabiaoji / 中文期刊點評 — 未見該刊專屬點評
+- Reddit r/AskAcademia — 0 results(該刊名查詢無任何討論串)
+- SciRev(英文)— 有資料,n=2 篇評論,已抽取數字(首輪 3.1 月/總 3.4 月/整體 5.0)
+
 ---
 
 ## Strategic Notes
@@ -265,6 +294,7 @@ Minimal for theoretically-oriented manuscripts. Empirical authors typically inve
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Sage Author Instructions. Soft Metadata and Strategic Notes reserved for community contributions. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Zaious |

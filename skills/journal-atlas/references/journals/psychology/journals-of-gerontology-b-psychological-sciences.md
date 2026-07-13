@@ -206,6 +206,37 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 期刊指引(2026-07 查詢)採 COPE/ICMJE 立場：AI 工具不得列為作者；作者使用生成式 AI(如 ChatGPT)協助寫作/資料處理時，須在 Methods 中揭露所用工具與用途，作者對含 AI 產出內容之全文負完全責任。未見該刊獨立公告的『全面禁止』或『完全自由』字樣，屬「揭露即可用」的中度寬容政策，故評 3/5。Oxford Academic 旗下另一期刊 Journal of Pediatric Psychology 有更完整的 AI 專頁範例，但 JGB:Psych Sci 頁面本身即為期刊專屬指引，非泛用轉貼。
+
+**WO2 positioning finding (what the journal accepts now):** 2024-2026 實際刊出主題以量化橫斷/縱貫老化心理學研究為主：社會認知隨老化的多向變化、中年至老年的『控制感』如何緩衝認知衰退、憂鬱-快感缺失症狀隨年齡的關聯轉變、亞太地區死亡率的跨國社經梯度比較等。偏好具理論意義的實證研究，也接受統合分析(meta-analysis)、混合方法、及分析方法創新之研究。
+
+**WO2 experiential finding:** 中文聚合站(學術之家)聲稱『收稿率低於 20%』，但該說法無法追溯到期刊官方數據或第一手投稿者證言，僅供參考不採信為硬數字。SciRev 上唯一一筆完整評論回報結果為 Accepted，整體流程評分 5/5，但樣本數過小(n=1 完整敘述)不足以代表通案。 SciRev 單一評論(近期)原文大意：處理編輯非常專業，流程順暢，審稿人提供了具建設性的批評意見以改進論文；此為單一樣本第一手評論，非通案結論。未在小木虫、知乎、fabiaoji 或 Reddit r/AskAcademia 找到針對本刊審稿人風格/立場的具體第一手討論串。
+
+**Sources cited in this pass:**
+- http://www.letpub.com.cn/index.php?journalid=5466&page=journalapp&view=detail
+- https://academic.oup.com/psychsocgerontology/article/78/1/62/6672575
+- https://academic.oup.com/psychsocgerontology/article/80/7/gbaf081/8139653
+- https://academic.oup.com/psychsocgerontology/article/81/2/gbaf252/8376340
+- https://academic.oup.com/psychsocgerontology/pages/general_instruction_2
+- https://scirev.org/journal/journals-of-gerontology-series-b/
+- https://www.xueshu.com/sci/45591/08.html
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev 該期刊頁面未單獨列出 desk-reject 百分比(僅有 immediate rejection decision time = 42 天，無比例)；小木虫未搜到相關第一手討論串；未找到任何可信的具體百分比，故留白而非套用通案數字。
+- **experiential.acceptance_note (精確接受率數字)**: 唯一提及具體比率的是中文聚合站『收稿率低於20%』，來源非期刊官方公告也非第一手投稿者證言，可信度不足以作為硬事實填入，故僅在 acceptance_note 中以附註方式呈現、不單獨列為 fact。
+- **positioning.accepts_now (現行徵稿 special issue CFP)**: 官方 general_instruction 頁面指向 GSA 集中式 Calls for Papers 頁面，但該頁未列出 Series B: Psychological Sciences 專屬且仍開放中的特刊徵稿，故未納入具體 CFP 主題。
+- **cross_language forums (小木虫/知乎/Reddit 第一手審稿貼文)**: 三個平台皆未搜得針對本刊的第一手『我投了這期刊、審稿過程如何』論壇貼文，僅有 SEO 聚合站(好期刊/學術之家/letpub)轉述的通則性審稿週期描述，不算嚴格第一手經驗。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 直接站內搜尋無結果；改以廣泛搜尋引擎查詢仍僅命中 SEO 聚合站(好期刊/學術之家/peipusci/klxksci)而非小木虫論壇原生貼文
+- 知乎 zhihu.com: 找到 1 篇相關專欄文章(zhuanlan.zhihu.com/p/1950998237445067366，談聯合多老化資料庫發表本刊文章)，但內容偏向研究方法心得而非審稿流程/文化第一手描述
+- fabiaoji (fabiao.com.cn): 有期刊資訊頁但為聚合站數據轉載，非論壇討論
+- Reddit r/AskAcademia: 0 results，未搜得任何討論串
+
 ---
 
 ## Strategic Notes
@@ -245,4 +276,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

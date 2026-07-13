@@ -227,6 +227,33 @@ N/A — historical entry. Current experimental-psychology reviewers participate 
 | **Data transparency requirement** | N/A |
 | **OPSEC compatibility** | N/A |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **0/5**.
+
+**WO2 AI policy finding:** 期刊已於 1974/1975 停刊並分拆為多本後繼期刊,不存在現行 AI 使用政策(APA 現行政策掛在各後繼期刊 xge/xhp/xlm/xap/xan 名下,不適用於本 ISSN)。
+
+**WO2 positioning finding (what the journal accepts now):** 否 — 此刊已停刊,不接受任何投稿
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://en.wikipedia.org/wiki/Journal_of_Experimental_Psychology
+- https://portal.issn.org/resource/ISSN/0022-1015
+- https://www.apa.org/pubs/databases/psycarticles/title-history.pdf
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.leniency_1_5 / gate / source_url**: 期刊已停刊逾50年,APA 未對此已停用刊名發布 AI 政策;現行 APA AI 政策掛在各後繼期刊(JEP:General 0096-3445, JEP:HPP 0096-1523, JEP:LMC, JEP:Applied, JEP:ABP)名下,套用到本 ISSN 屬張冠李戴,故留空。
+- **positioning.accepts_now / methods_welcome / framing_required**: 期刊自1975年起不再接受新投稿(已分拆為五本獨立編輯的後繼期刊),因此沒有2024-2026年的新文章題目或現行 aims&scope 可供分析。
+- **experiential.review_time_months / desk_reject_pct / acceptance_note / reviewer_culture**: SciRev 與論壇(小木虫/fabiaoji/知乎/r/AskAcademia)不會有針對此停刊刊名的投稿經驗討論,因為近50年沒有新投稿;查詢均為0結果或指向後繼期刊,不可張冠李戴。
+- **peer_review.type / preprint.allowed**: 同上,期刊已停刊,無現行同行評審或預印本政策可查證,历史政策已隨1975年分拆失效。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 未查(期刊已停刊50年,任何早期出現的'Journal of Experimental Psychology'討論實質指向現行分拆後繼期刊如JEP:General,非本ISSN,無法歸屬,故未計入0結果之外的資料)
+- 知乎 zhihu — 同上,未見針對此已停刊刊名本身的獨立討論
+- fabiaoji — 未見獨立針對本停刊ISSN的討論
+- Reddit r/AskAcademia — 未見針對此停刊刊名的獨立討論(該領域討論指向現行的JEP系列子刊)
+
 ---
 
 ## Strategic Notes
@@ -265,6 +292,7 @@ N/A — historical reference only.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata upgraded to Tier 2 as HISTORICAL CROSS-REFERENCE INDEX — preserved IMPORTANT banner; clarified that this is the pre-1975 historical journal and routed users to successor JEP titles. | @Zaious |
 | 2026-05-16 | Marked HISTORICAL — JEP was split into 5 successors in 1975. Entry retained as cross-reference index pointing to the correct successor for submission. | @Zaious |

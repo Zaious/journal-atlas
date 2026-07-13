@@ -219,6 +219,39 @@ Reviewers from social-clinical psychology interface — APA Division 8 (SPSP) + 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** Publisher-wide (Guilford Press) policy, not JSCP-specific: Guilford journals currently do not allow AI to be used to create article content, including figures, tables, images, and other materials. No JSCP-specific AI policy page was found separately from this Guilford-wide 'Information for Authors' statement; treat as inherited from publisher level.
+
+**WO2 positioning finding (what the journal accepts now):** Quarterly (bimonthly per one Chinese-language source) journal applying social-psychology theory/methods to human adjustment and adaptation, with emphasis on psychopathology-related phenomena; prioritizes theory-driven empirical research, also accepts theoretical/review articles. Explicitly does NOT want new-scale-development or scale-revision papers (stated in author guidelines).
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://guilfordjournals.com/about
+- https://guilfordjournals.com/doi/10.1521/jscp.2025.44.4.273
+- https://guilfordjournals.com/doi/10.1521/jscp.2025.44.4.300
+- https://guilfordjournals.com/doi/10.1521/jscp.2025.44.5.373
+- https://guilfordjournals.com/doi/10.1521/jscp.2025.44.5.408
+- https://guilfordjournals.com/journal/jscp/authors (aims/scope + excluded topic, via cached search snippet)
+- https://scirev.org/journal/journal-of-social-and-clinical-psychology/ (page exists but all metrics 'n/a', 'No reviews have yet been submitted for this journal')
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev page for this journal exists (scirev.org/journal/journal-of-social-and-clinical-psychology) but every metric field reads 'n/a' and states 'No reviews have yet been submitted for this journal' - zero first-hand data points.
+- **experiential.desk_reject_pct**: No publisher-disclosed rate; SciRev shows 'n/a'; no forum/Reddit/muchong/zhihu thread discussing this specific journal's desk-reject behavior was found.
+- **experiential.reviewer_culture**: No first-hand accounts found on Reddit r/AskAcademia (site-restricted search returned zero results), 小木虫 muchong.com (no thread matching this journal name), or 知乎 (searches surfaced only the Chinese-language Wikipedia-style journal description, no submitter reviews).
+- **experiential.acceptance_note**: No SciRev reviews and no forum posts describing an actual acceptance/rejection experience were located.
+- **positioning.framing_required**: No current (2024-2026) special-issue CFP was found for this journal via search; cannot state a required framing beyond the journal's standing aims (social-psychological approaches to adjustment/psychopathology).
+- **peer_review.type - certainty**: Only a search-engine-cached snippet of guilfordjournals.com/journal/jscp/authors was obtainable (direct WebFetch returned HTTP 403 bot-block both for /journal/jscp/authors and /about and /loi/jscp); the 'double-blind on request, single-blind by default' description could not be directly re-verified against the live page text, only via a search snippet quoting it.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com (site search + general search 'site:muchong.com "Journal of Social and Clinical Psychology"'): 0 relevant results - no thread found discussing this journal
+- 知乎 zhihu.com (searches for 审稿/投稿 + journal name, and Chinese translated journal name): 0 first-hand results - only generic journal-directory or unrelated Chinese-journal content surfaced
+- Reddit r/AskAcademia (site:reddit.com search + general 'reddit AskAcademia' search): 0 results - no thread found mentioning this journal by name
+- fabiaoji (not independently queryable via available search; no results surfaced incidentally in any query) - 0 results
+
 ---
 
 ## Strategic Notes
@@ -264,5 +297,6 @@ Low for social-clinical tradition authors. Guilford venue tends to value theoret
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Guilford publisher + social-clinical psychology interface editorial culture domain knowledge | @Zaious |

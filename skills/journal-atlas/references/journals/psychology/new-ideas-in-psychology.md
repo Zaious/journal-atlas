@@ -220,6 +220,43 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 | **Data transparency requirement** | Flexible for theoretical work; Elsevier data-sharing norms apply for empirical work |
 | **OPSEC compatibility** | Medium — note that AAM has 24-month embargo, so preprint strategy becomes more important for early visibility |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 採 Elsevier 出版社通用政策(非期刊特化)。作者可在投稿前的寫作準備階段使用生成式 AI/AI 輔助工具,但僅限提升語言與可讀性,不得取代作者的批判思考與原創貢獻;必須在參考文獻前加註「Declaration of generative AI...」揭露聲明。AI 不得列為作者;不得直接把 AI 產出當作稿件正文。審稿人端另有更嚴格政策(禁止將稿件上傳至生成式 AI)。
+
+**WO2 positioning finding (what the journal accepts now):** 理論/概念取向的心理學(最廣義的 theoretical psychology)。徵求心理學內部及跨領域帶入的新穎、原創理論觀點。文類:全長理論或方法論文(≤7500 字)、討論短文與訪談(≤2500 字)、同儕評論與反駁(≤1000 字)、批判性回顧、辯論、書評。經驗性/實驗性研究亦收,但必須展現理論新意。當前開放的特刊 CFP(2025-2026)顯示活躍徵稿:『Aesthetic Dis/interestedness and Affects』(截 2026-03-30)、『Control and Commitment: Philosophical, Psychological, and Neuroscientific Perspectives』(截 2026-02-23)、『Engendering Embodiment in Disability and Neurodiversity』(截 2025-09-15)、『Probabilistic nature of perception and cognition』(截 2025-05-05)。近期主題涵蓋 enactivism、具身認知、意識、能動性(agency)。
+
+**WO2 experiential finding:** 中文彙整來源(知乎專欄/CSDN,二手)稱錄用率約 17%,未經一手投稿實錄佐證;SciRev 唯一一筆(n=1)結果為 Rejected。 僅有 SciRev 單一評論(n=1)描述該次審稿意見『簡短且草率(short and careless)』,總評分 0/5;樣本過小,不足以概括審稿文化。
+
+**Sources cited in this pass:**
+- CSDN(同源二手彙整): https://blog.csdn.net/weixin_40052256/article/details/126899185
+- SciRev(n=1): https://scirev.org/journal/new-ideas-in-psychology/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- open CFPs: https://www.sciencedirect.com/journal/new-ideas-in-psychology
+- recent topics: https://en.wikipedia.org/wiki/New_Ideas_in_Psychology
+- scope+article-types+peer-review: https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors
+- scope/metrics 中文彙整(知乎專欄): https://zhuanlan.zhihu.com/p/565234238
+- 知乎專欄(scope/metrics 二手彙整): https://zhuanlan.zhihu.com/p/565234238
+- 科研通 ablesci(0 筆網友經驗): https://www.ablesci.com/journal/detail?id=52glyD
+
+**Fields WO2 could not find evidence for:**
+- **desk_reject_pct**: 無任何一手或公開來源;SciRev desk-reject 時間為 n/a,論壇 0 討論
+- **review_time_months (一手)**: SciRev 僅 n=1(4.7 週);中文/英文論壇無投稿實錄;科研通經驗欄 0 筆。3 個月數字僅來自二手彙整(知乎/CSDN),非投稿者實錄
+- **acceptance_note (可信錄用率)**: 17% 僅出自二手彙整來源,無一手投稿統計佐證;SciRev n=1 不具代表性
+- **reviewer_culture**: 僅 SciRev 單筆評論可據;樣本過小,依規不做概括性審稿文化敘述
+- **ai_policy (期刊特化)**: 查無期刊層級 AI 政策;僅能引用 Elsevier 出版社通用政策,故 policy 層 signal_quality 偏低
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com:0 相關投稿實錄(搜尋僅回傳指南/彙整頁,無論壇討論串)
+- fabiaoji(發表吧):0 結果
+- 知乎 zhihu:無一手投稿實錄;僅一篇專欄介紹文(範疇/指標),其稱審稿約 3 個月、錄用率約 17%(二手)
+- CSDN:同源二手彙整(審稿週期/範疇),非投稿經驗
+- 科研通 ablesci:網友分享經驗欄位 0 筆(審稿週期與錄用率皆空白)
+- Reddit r/AskAcademia:0 結果
+- SciRev(英文):僅 1 筆評論(首輪 4.7 週、1 輪、評分 0/5、Rejected、意見簡短草率)
+
 ---
 
 ## Strategic Notes
@@ -267,6 +304,7 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. AI Policy notably restrictive on AI-generated images; 24-month AAM embargo flagged as a significant departure from Sage publisher norms. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

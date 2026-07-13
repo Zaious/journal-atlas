@@ -217,6 +217,36 @@ Reviewers from IAPS (International Association for People-Environment Studies), 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 遵循 Elsevier 集團通用 GenAI 政策(非期刊專屬頁面):寫作準備階段可用 AI/AI輔助工具(文獻整理、語言潤飾等),但投稿時須揭露使用情況;圖像/artwork 禁止用生成式AI創作或修改,除非AI本身是研究方法的一部分且須在方法段落詳述模型名稱/版本/廠商。未見 JEP 專屬(與集團政策不同)之加嚴或放寬條款。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)徵稿與期刊範疇顯示 JEP 目前積極徵求:建成環境與健康行為的自然實驗(natural experiments)、氣候變遷調適心理學(psychology of climate change adaptation)、特定族群/時期的家庭環境心理學(home environment for specific populations and times)等主題的實證研究。期刊長期範疇涵蓋人與建成/社會/自然/虛擬環境的心理互動:場所依附/認同、環境風險感知、親環境行為理論、永續與氣候心理、空間認知與尋路、擁擠/隱私/領域性等社會空間使用議題,聚焦個體與小群體層次分析。
+
+**WO2 experiential finding:** SciRev 上最新一筆審稿結果為「立即拒稿」，投稿人對處理流程評價 4.0/5(「Very good process」)，但整體接受/拒絕比例欄位皆為 n/a(樣本量僅 2 則，不具統計意義)。 SciRev 樣本顯示審稿意見「困難度」評為 5.0/5.0(極嚴格)，審稿報告品質評 4.0/5.0；但此僅基於單一評論者，不足以推論全期刊審稿文化。知乎與 Reddit r/AskAcademia 均未搜得任何針對本刊的實質討論串。
+
+**Sources cited in this pass:**
+- https://en.wikipedia.org/wiki/Journal_of_Environmental_Psychology
+- https://scirev.org/journal/journal-of-environmental-psychology/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11346763/
+- https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors
+- https://www.sciencedirect.com/journal/journal-of-environmental-psychology/special-issues
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.gate**: Elsevier集團政策要求揭露AI使用但未明訂「禁止/需editor批准/自由使用」的明確gate等級,故標記為conditional並將signal_quality壓低,無法確認JEP是否有超出集團標準的專屬規定
+- **experiential.desk_reject_pct**: SciRev該刊評論僅2則，接受/拒絕百分比欄位原始頁面即顯示 n/a，無其他公開來源(小木虫/知乎/Reddit)提供可引用的具體拒稿率數字
+- **experiential.reviewer_culture**: 唯一數據來源為SciRev單一評論者的主觀評分(difficulty 5.0/5.0)，跨語言來源(小木虫/知乎/Reddit)均未搜得可獨立佐證或補充的第一手審稿文化描述，故此欄位信心低
+- **peer_review.source_url policy detail beyond guide-for-authors**: Guide for authors原始頁面WebFetch回傳403,審稿類型資訊改由WebSearch聚合摘要取得，未能直接核對逐字原文，建議之後有機會時人工核實
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 未直接抓到原始討論串,經WebSearch聚合摘要顯示零星貼文提及 1-2 天 desk reject 與數月審查案例並存,未取得可引用之逐字內容或URL
+- fabiaoji.com: 搜尋命中期刊介紹頁 (https://www.fabiaoji.com/periodicalDetail?id=8130e6ed90da4b8f817fd973c3bccbdc) 但WebSearch摘要未回傳審稿經驗數據,0 條具體經驗分享
+- 知乎 zhihu: 0 results — 搜尋未命中任何針對本刊審稿週期/拒稿的知乎討論
+- Reddit r/AskAcademia: 0 results — 未搜得任何針對本刊的討論串
+
 ---
 
 ## Strategic Notes
@@ -262,5 +292,6 @@ Low for env-psych tradition. Cross-disciplinary accessibility valued.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + IAPS / EDRA env-psych editorial culture domain knowledge | @Zaious |

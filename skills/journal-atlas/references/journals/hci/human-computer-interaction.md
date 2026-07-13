@@ -225,6 +225,39 @@ Reviewers are drawn primarily from the international HCI research community — 
 | **Data transparency requirement** | Medium — encouraged, not mandatory |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** No journal-specific AI policy page found for HHCI (hhci20) itself; this is the publisher-wide Taylor & Francis policy that applies by default. T&F allows generative AI for idea generation, language/grammar polishing, literature search/classification and coding support, but prohibits generating or manipulating research data/images/figures, prohibits listing AI as an author, and requires a mandatory disclosure statement (tool name, version, purpose) in the methods/acknowledgments section. Direct fetch of the T&F AI-policy page returned HTTP 403; content reconstructed from WebSearch result snippets, not read verbatim on-page.
+
+**WO2 positioning finding (what the journal accepts now):** Confirmed recent (2025-2026) content in HHCI itself: (1) an empirical AI-trust/algorithmic-bias study — 'Communicating and combating algorithmic bias: effects of data diversity, labeler diversity, performance bias, and user feedback on AI trust' (Cheng Chen et al., 2025); (2) a methodological/critical debate thread — Crabtree (2025) 'H is for human and how (not) to evaluate qualitative research in HCI' followed by a January 2026 commentary 'Qualitative research as science.' This indicates the journal actively runs both empirical human-AI-interaction studies and theoretical/methodological critique pieces, consistent with its stated aims.
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- http://muchong.com/bbs/journal.php?view=detail&jid=3297 (stale directory page, only 2007-2009 impact-factor data, no review-experience posts)
+- https://research.com/journal/human-computer-interaction-1
+- https://scispace.com/journals/human-computer-interaction-jhbvw2st
+- https://taylorandfrancis.com/our-policies/ai-policy/ ; https://authorservices.taylorandfrancis.com/editorial-policies/defining-authorship-research-paper/
+- https://www.fabiao.com/sci/07370024.html (Chinese SCI-directory aggregator, not a forum thread: states '>12週' review time and 'very high quality bar / difficult to get accepted' — attributed only to unspecified crowdsourced experience reports with no visible individual posts, so treated as low-confidence secondary aggregation, not genuine first-hand testimony)
+- https://www.scirev.org/journal/human-computer-interaction/ (0 reviews submitted — confirmed absence of first-hand data)
+- https://www.tandfonline.com/toc/hhci20/current (title-level via search snippet only, direct fetch 403)
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type (blind protocol)**: Journal's own about-page and instructions-for-authors PDF both returned HTTP 403 on fetch; only generic T&F/sister-journal boilerplate language surfaced via search, not a hhci20-specific statement of single- vs double-anonymous review.
+- **preprint.allowed**: Sherpa/Romeo lookup (v2.sherpa.ac.uk) returned HTTP 403; no alternate first-hand source for hhci20's preprint/self-archiving policy was found in the time available.
+- **experiential.review_time_months**: SciRev shows 0 submitted reviews for this journal (confirmed absence, not a search failure). The only numeric figure found ('>12 weeks') comes from a Chinese SCI-directory aggregator site (fabiao.com) that does not show individual first-hand submitter posts, so it does not meet the bar for a genuine experiential data point and was left out of the numeric field.
+- **experiential.desk_reject_pct**: No source (SciRev, muchong, zhihu, Reddit) had any figure; SciRev page explicitly shows 'n/a' for this metric with zero submitted reviews.
+- **experiential.reviewer_culture**: No first-hand forum thread (小木蟲/知乎/Reddit r/AskAcademia) discussing actual reviewer behavior for this journal was found — searches for 小木蟲, 知乎, and Reddit all returned only SCI-directory listing pages or unrelated results, not discussion threads.
+- **ai_policy (journal-specific override)**: Could not confirm whether HHCI has published its own AI-use statement distinct from the T&F group-wide policy; the journal's about-page/author-instructions could not be fetched (403), so the group-wide policy is reported as the best available proxy, with signal_quality downgraded to 2 to reflect this gap.
+
+**Cross-language checks performed:**
+- 小木蟲 muchong.com — found only a stale journal-directory page (2007-2009 IF data), no first-hand review-experience posts for this ISSN
+- 知乎 zhihu — search returned zero genuine zhihu discussion threads; only SCI-directory aggregator sites (fabiao.com, haofabiao.com, haotougao.com, iikx.com, peipusci.com) surfaced
+- fabiaoji/SCI-directory aggregators (fabiao.com, letpub.com.cn) — yielded a crowdsourced '>12 weeks' review-time figure and a 'high quality bar / hard to get accepted' characterization, but with no visible individual first-hand posts, so treated as low-confidence secondary data
+- Reddit r/AskAcademia — 0 results; no thread specifically discussing this journal found
+
 ---
 
 ## Strategic Notes
@@ -271,5 +304,6 @@ Low for classical-HCI empirical papers. Moderate for design-research or critical
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + T&F default policies. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

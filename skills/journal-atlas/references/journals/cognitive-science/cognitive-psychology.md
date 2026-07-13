@@ -220,6 +220,34 @@ Reviewers drawn from cognitive psychology theoretical community — senior resea
 | **Data transparency requirement** | High — Elsevier data-sharing |
 | **OPSEC compatibility** | Medium — 24-month AAM embargo on subscription path |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 生成式 AI 可用於協助寫作(如語言潤飾、文獻整理、找研究缺口),但不得取代人類判斷;作者須對內容負全責並逐句查核 AI 輸出(含引用是否捏造)。若使用(單純文法/拼字檢查除外),須在參考文獻前加註「Declaration of Generative AI and AI-assisted technologies in the writing process」聲明,載明工具名稱、用途與監督程度。AI 不得列為作者或共同作者。禁止用 AI 生成/修改圖片(研究方法本身需要者除外),禁止把受著作權保護或未發表內容上傳至外部 AI 工具。此為 Elsevier 出版社通用政策,期刊 Guide for Authors 頁面引用同一政策,未見該刊獨有的加嚴或放寬條款,故 signal_quality 定為 2(僅出版社政策層級,非期刊獨有第一手資料)。
+
+**WO2 positioning finding (what the journal accepts now):** 期刊定位為認知領域(記憶、注意力、知覺、語言處理、分類、思考與推理,含發展/老化面向)的『重大理論貢獻』文章,偏好篇幅較長、整合性強、對認知理論有重大影響的論文,而非零星的短篇實證報告。近期(2025年11月–2026年1月)刊出文章主題涵蓋知覺判斷、決策與價值學習、語言/韻律處理、序列學習等,顯示仍以理論驅動之實驗與建模研究為主力,未查得該刊本身(區別於同名但不同出版社之 Applied Cognitive Psychology / Journal of Cognitive Psychology / Memory & Cognition)有進行中的特刊徵稿(2025-2026)。
+
+**WO2 experiential finding:** *(not researched)* 僅查得 SciRev 上單一筆(n=1)投稿者評論,提及『編輯審查流程偏長,但回覆流於形式(perfunctory),拒稿理由僅寫「理論貢獻有限」過於籠統,未提供足夠具體說明以利改稿』。樣本數極小,不足以代表整體審稿文化,僅供參考。
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/cognitive-psychology/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.sciencedirect.com/journal/cognitive-psychology
+- https://www.sciencedirect.com/journal/cognitive-psychology/publish/guide-for-authors
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 該刊頁面目前無足夠評論提供首輪審稿時間統計(顯示 n/a);僅有『立即拒稿決定時間 30 天』一項數據,非完整審稿週期;小木虫/知乎/Reddit r/AskAcademia 均未查得針對本刊(Elsevier, ISSN 0010-0285)的具體討論串
+- **experiential.desk_reject_pct**: 期刊官方未公布拒稿率數字;SciRev 該刊頁面此欄位為 n/a,無足夠投稿樣本可推算
+- **experiential.acceptance_note**: 未查得任何第一手來源(SciRev/小木虫/知乎/Reddit)描述接受後流程或條件性接受經驗,故留空以避免杜撰
+- **ai_policy journal-specific detail**: 期刊 Guide for Authors 頁面直接存取回傳 403,僅能透過搜尋引擎快取片段與 Elsevier 通用 AI 政策頁交叉確認,未能百分之百確認該刊是否有偏離集團政策的獨有條款
+
+**Cross-language checks performed:**
+- muchong.com (小木虫) — 搜尋『Cognitive Psychology 0010-0285 投稿经验』與『Cognitive Psychology 期刊 审稿周期 拒稿率』均無針對本刊的討論串,0 results
+- zhihu.com (知乎) — 搜尋『Cognitive Psychology 投稿 審稿』僅返回其他同名/相關期刊(如認知心理學進展 ISSN 1895-1171、SSCI心理學期刊列表)之泛論文章,無本刊(Elsevier 0010-0285)專門討論,實質 0 results
+- reddit.com/r/AskAcademia — 搜尋『Cognitive Psychology journal Elsevier review experience desk reject』無任何返回結果,0 results
+- scirev.org — 查得本刊頁面,僅 1 筆使用者評論(定性描述可用,量化統計多為 n/a)
+
 ---
 
 ## Strategic Notes
@@ -268,5 +296,6 @@ Moderate. Long-form theoretical-empirical writing demands; computational modelin
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (Elsevier guide-for-authors) + cognitive psychology theoretical-empirical editorial culture domain knowledge | @Zaious |

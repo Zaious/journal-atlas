@@ -220,6 +220,36 @@ Reviewers and authors are selected through the Editorial Committee structure: Ed
 | **Data transparency requirement** | N/A for synthesis articles |
 | **OPSEC compatibility** | High — synthesis work does not expose primary data |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+
+**WO2 AI policy finding:** Annual Reviews (publisher-wide, applies to all journals incl. Annual Review of Psychology): generative AI 'should not replace expert authors in initial generation of the article outline/précis and first draft (including text and figures) but can be used to query completeness of content and to improve the readability of text.' Invited authors are told to check with their Annual Reviews Production Editor on AI use in manuscript creation. This is a publisher-level policy, not confirmed as journal-specific to Annual Review of Psychology.
+
+**WO2 positioning finding (what the journal accepts now):** Annual Review of Psychology does NOT accept unsolicited manuscripts of any kind. All articles are invited synthesis/review essays commissioned by the Editorial Committee (chaired by Susan Fiske as of the most recent confirmed data), covering the discipline broadly: biological bases of behavior, sensation/perception, cognition, learning, human development, psychopathology, clinical/counseling psychology, social psychology, personality, environmental and community psychology.
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://en.wikipedia.org/wiki/Annual_Review_of_Psychology
+- https://manusights.com/blog/annual-review-of-psychology-submission-guide
+- https://www.annualreviews.org/content/journals/psych/76/1
+- https://www.annualreviews.org/content/journals/psych/77/1
+- https://www.annualreviews.org/page/authors/editorial-policies
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev has no dedicated page/review-count for Annual Review of Psychology (searched directly; only other psych journals like British Journal of Psychology, Frontiers in Psychology returned). No forum thread reports a first-hand review timeline. Because the journal is invitation-only (no open submission queue), the concept of a standard external 'review time' largely does not apply the way it does for open-submission journals.
+- **experiential.desk_reject_pct**: No public source reports a desk-reject rate. Desk rejection is not a meaningful concept here since manuscripts are commissioned by invitation rather than submitted for screening.
+- **experiential.acceptance_note**: No first-hand author account found describing the acceptance experience (checked zhihu article on the journal — journal-intro content only, no submission narrative; muchong.com journal page — impact-factor history only, explicitly no review-timeline/acceptance data; Reddit r/AskAcademia search returned no on-topic threads).
+- **experiential.reviewer_culture**: No concrete first-hand source (forum post, review, or interview) describing reviewer/editorial-committee culture for this journal was found in English or Chinese sources searched.
+- **peer_review.type validation**: Description of editorial-committee-led review is inferred from publisher-level submission-guide summaries (manusights.com, Wikipedia) rather than a directly fetched Annual Reviews policy page — the annualreviews.org editorial-policies and general-information pages returned HTTP 403 to automated fetch, so the exact policy wording could not be independently verified beyond search-engine snippets.
+
+**Cross-language checks performed:**
+- muchong.com (小木虫) journal detail page (jid=692): found — but contains only impact-factor history (2007-2009) and indexing info, explicitly 0 results for review time/desk-reject/acceptance/reviewer-culture
+- zhihu.com (知乎) article 心理学综述期刊介绍《Annual Review Of Psychology》 (zhuanlan.zhihu.com/p/578971253): found via search snippet (direct fetch blocked, HTTP 403) — content is a generic journal introduction (scope, IF, indexing), 0 first-hand submission/review experience reported
+- reddit.com r/AskAcademia: 0 results — search returned no on-topic Reddit threads about this journal's invited-review process
+- scirev.org: 0 results — no dedicated SciRev journal page/review-count exists for Annual Review of Psychology
+
 ---
 
 ## Strategic Notes
@@ -265,5 +295,6 @@ For invited authors: low — committee selection has already validated the autho
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

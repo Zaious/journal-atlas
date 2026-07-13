@@ -220,6 +220,37 @@ Reviewers from I/O psychology research community — SIOP-affiliated faculty and
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — organizational data anonymization required |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 找不到 Personnel Psychology 期刊專屬的 AI 政策頁（forauthors.html 回傳 402 無法直接抓取）。適用的是 Wiley 出版社通用政策：AI 不得列為作者/共同作者，僅能用於語言潤飾、結構調整、文獻分類等輔助工作，且須在 Methods 或 Acknowledgements 中「透明揭露」使用細節；基礎編輯工具豁免揭露。未見到針對本刊的加嚴或放寬條款，故標記為「僅出版社層級政策，非刊物專屬證實」。
+
+**WO2 positioning finding (what the journal accepts now):** 涵蓋工業組織心理學(I-O)、人力資源管理、組織行為全領域：職務與工作設計、選才與評估、訓練發展、績效管理、薪酬、職涯、工作家庭議題、領導、團隊、員工健康福祉、DEI、科技與工作、跨文化、策略性人資系統。接受實證研究、理論建構、後設分析(meta-analysis)、文獻回顧，強調「meaningfully inform real-world working lives」（需真實世界實務意涵）。近期(2025-2026)中國學者發表主題含：職場八卦(work gossip)、團隊策略、領導、人資管理系統(見 LetPub 列表)。
+
+**WO2 experiential finding:** SciRev 樣本(3筆)中至少1筆最終被拒（「審稿意見具攻擊性但編輯優秀」的評論）；未找到可靠的整體接受率或退稿率數字。曾見網路二手來源聲稱「4%接受率」，但無法在原始頁面(Editage/manusights)驗證出處，故不採用、視為不可信。 SciRev 單一評論提及：Associate Editor 表現優異，但審稿人意見「aggressive without constructive suggestions」（積極/嚴厲但缺乏建設性）——樣本僅1筆，不足以代表整體文化。小木虫、知乎、Reddit r/AskAcademia 均未搜到針對本刊的專門討論串。
+
+**Sources cited in this pass:**
+- https://letpub.com.cn/index.php?journalid=11422&page=journalapp&view=detail
+- https://onlinelibrary.wiley.com/journal/17446570
+- https://onlinelibrary.wiley.com/page/journal/17446570/call-for-papers/special-issues
+- https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf
+- https://scirev.org/journal/personnel-psychology/
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.summary/gate**: Wiley 期刊專屬頁 (onlinelibrary.wiley.com/page/journal/17446570/homepage/forauthors.html) 回傳 HTTP 402，無法直接驗證是否有本刊特殊AI條款，僅能引用 Wiley 出版社通用政策 PDF，故 signal_quality 降為 2。
+- **preprint.allowed**: 同上，forauthors.html 402 無法抓取，找不到本刊專屬 preprint 頁面原文，只有二手網站間接推論，未直接引用官方原文，故留為不確定描述而非明確 yes/no。
+- **experiential.desk_reject_pct**: SciRev 該欄位標示 n/a（編輯未填），LetPub 未提供具體退稿率數字，小木虫/知乎/Reddit 均無討論串命中，因此留空。
+- **experiential.acceptance_note (整體接受率)**: 找不到可信的官方或社群整體接受率數字；網路上流傳的「4%」數字經查證(Editage、manusights頁面)並未實際出現該數字，判斷為AI摘要幻覺，故不採用並留空。
+- **experiential.reviewer_culture**: 僅 SciRev 1筆評論提及審稿風格，小木虫/知乎/Reddit r/AskAcademia 搜尋均未命中本刊專屬討論，樣本太小不足以下結論，故標記低信度。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com：搜尋未命中本刊專屬討論串，僅命中通用「論文投稿」板塊入口，0筆針對Personnel Psychology的第一手心得
+- fabiaoji.com：出現 Journal of Personnel Psychology（易與本刊 Personnel Psychology 混淆的姊妹/相似名稱期刊，Hogrefe出版）頁面，非本刊，未採用
+- 知乎 zhihu.com：搜尋未命中針對本刊的專屬投稿經驗文章，僅有心理學期刊總論文章提及列表
+- LetPub (中國學術社群，功能類似小木虫)：命中本刊專屬頁面，取得 7.2/10 總評分(50人)、聲譽8.7、速度7.0，以及近期中國學者發表清單，視為有效中文社群信號
+- Reddit r/AskAcademia：搜尋未命中任何討論本刊的貼文，0 results
+
 ---
 
 ## Strategic Notes
@@ -268,5 +299,6 @@ Low for I/O empirical tradition authors. Wiley editorial cycle moderate; meta-an
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher pages + SIOP-affiliated I/O editorial culture domain knowledge | @Zaious |

@@ -206,6 +206,41 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 期刊採 Wiley/COPE 標準 AI 政策:AI/AI輔助工具(如ChatGPT)可用於改善拼字與文法,但不得列為作者或共同作者,不具備原創研究發起與問責能力。若作者使用此類工具產出手稿任何部分,須在 Methods 或 Acknowledgments 段落揭露。政策為期刊層級公開頁面文字,非該刊獨有(全 Wiley 期刊通用),未見該刊對圖像生成式AI或AI輔助審稿的專屬額外規定。
+
+**WO2 positioning finding (what the journal accepts now):** 旗艦刊(ISSN 1552-5260)為阿茲海默症協會(Alzheimer's Association)官方期刊,涵蓋 bench-to-bedside 全光譜:基礎科學/分子機轉、遺傳體學與體學(omics)、影像與生物標記、臨床試驗與藥物治療、AI/數位健康應用於失智症研究(2023年曾有一系列 AI in dementia research 專題文章,如 AI for dementia genetics/omics、AI for dementia prevention、AI for applied models & digital health)、社會/行為/照護面向、跨領域研究、深度綜述與評論。要求每篇文章附 150 字以內 'Research in Context' 摘要段落,置於前序研究脈絡中。搜尋到的近期 Call for Papers(如 Multilingualism and Literacy、Real-World Evidence on Amyloid-Targeting Treatments)主要掛在姊妹刊 DADM(ISSN 2352-8729)頁面下,未能確認是否同時適用旗艦刊,故未列為此刊專屬徵稿證據。
+
+**WO2 experiential finding:** LetPub網友評語形容「錄用比例:很難」(即競爭激烈、不易錄取),但未附具體百分比數字。SciRev 直接頁面(scirev.org/journal/alzheimers-dementia/)嘗試存取回傳404,無法確認該刊在SciRev上的評論數與滿分/拒稿率數據,故此欄位視為未查得。 
+
+**Sources cited in this pass:**
+- https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.13463
+- https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.13391
+- https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.13427
+- https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.13441
+- https://alz-journals.onlinelibrary.wiley.com/hub/journal/15525279/homepage/author-guidelines
+- https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=385&xuanxiangk_id=2
+- https://muchong.com/bbs/journal.php?view=detail&jid=387
+- https://www.medsci.cn/sci/submit.do?id=4ff39790
+
+**Fields WO2 could not find evidence for:**
+- **experiential.reviewer_culture**: 無任何具體來源(小木虫個別留言、知乎討論串、Reddit r/AskAcademia)描述審稿人風格/文化的具體記述;搜尋僅返回期刊官方流程描述(編輯初篩+2名審稿人),非第一手審稿人風格評論,故不捏造敘事,留空。
+- **experiential.desk_reject_pct**: SciRev 該刊頁面(scirev.org/journal/alzheimers-dementia/)存取回傳404,無法確認樣本數與拒稿率；中文論壇僅有定性描述「很難」，無百分比數字，故留空避免捏造。
+- **experiential.review_time_months**: 雖然提供了範圍(未設為null),但需註明:三個中文來源數字互相矛盾(6-12週 vs 8週 vs 96天 vs 個案5個月)，且最詳細的個案記錄(muchong)已是2017-2018年8年前資料，時效性存疑，讀者應視為低信度區間而非精確值。
+- **positioning.accepts_now special-issue CFP**: 搜尋到的具體CFP(Multilingualism and Literacy; Real-World Evidence on Amyloid-Targeting Treatments)頁面顯示掛於姊妹刊 Alzheimer's & Dementia: DADM (ISSN 2352-8729)而非本刊(ISSN 1552-5260)的CFP頁面下；旗艦刊本身的 call-for-papers 頁面(alz-journals.onlinelibrary.wiley.com/hub/journal/15525279/call-for-papers)因訂閱牆(HTTP 402)無法直接存取確認，故未將這些CFP列為本刊之確定證據。
+- **ai_policy.journal_specific_addendum**: 查得的AI政策文字為Wiley出版社/期刊集團通用頁面內容，未發現此刊(相對於同系列其他Alzheimer's & Dementia姊妹刊)有任何獨有的額外AI細則，故policy欄位標註為通用政策而非期刊特有。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com (ALZHEIMERS & DEMENTIA 期刊點評頁, jid=387): 查得一則2017-2018年個案投稿時間軸(投稿10/31→有條件接受2/2→修回3/12→終審4/2,約5個月),及模糊敘述'40 submissions received small decision letters within 10 months'(來源可信度存疑,未附原始留言連結)
+- LetPub letpub.com.cn (journalid=385): 查得網友分享'審稿較慢,6-12週'及'錄用比例:很難'的定性評語,無具體拒稿率百分比
+- 知乎 zhihu.com: 搜尋未返回針對此刊具體投稿經驗的知乎專欄/回答連結(僅返回一篇泛論阿茲海默症研究可關注期刊的清單文章zhuanlan.zhihu.com/p/504768937,未含本刊審稿細節),視為0條可用第一手discussion
+- fabiaoji/sfabiao/yfabiao 系列SCI導航站: 多次出現在搜尋結果中但均為期刊基本資訊(影響因子、分區)彙整頁,非投稿人第一手經驗貼文,未採用其定量數字
+- Reddit r/AskAcademia: 搜尋'reddit AskAcademia Alzheimer's & Dementia journal review time desk reject'0筆相關討論串命中,僅返回期刊官方頁面,判定為0 results
+- SciRev scirev.org: 直接URL存取回傳404 Not Found,無法確認該刊在SciRev資料庫是否存在條目或其樣本數,視為未查得(0 results/無法驗證)
+
 ---
 
 ## Strategic Notes
@@ -245,4 +280,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

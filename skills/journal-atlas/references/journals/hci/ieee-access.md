@@ -222,6 +222,36 @@ Associate Editors (AE) provide initial vetting + invite reviewers. Final decisio
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium — engineering data typically aggregable |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** IEEE 全刊通用政策(IEEE Access 適用): AI 生成內容(文字/圖/圖像/程式碼)須在 acknowledgments 揭露,需標明使用的 AI 系統、涉及段落與使用程度說明;文法/編輯用途的 AI 一般不在此揭露要求範圍內(但建議揭露);AI/AI輔助工具不得列為作者或共同作者;審稿人不得將待審稿件內容輸入公開 AI 平台(視為機密外洩)。此為 IEEE 出版社層級政策,未見 IEEE Access 期刊專屬加嚴版本,故標記為公司層級政策外推。
+
+**WO2 positioning finding (what the journal accepts now):** IEEE Access 為跨領域(multidisciplinary)、線上開放取用金色 OA 期刊,涵蓋所有 IEEE 技術領域,強調應用導向與跨領域研究;近年併入依 IEEE 技術社群劃分的 discipline-specific sections。截至查詢時(2026-07),官方 Special Sections 頁面顯示目前無開放中的專刊徵稿(no Special Sections open for submission at this time),故無法引用近期(2024-2026)具體專刊 CFP 作為佐證。
+
+**WO2 experiential finding:** SciRev 未揭露 %accepted last year(n/a)。中文論壇(小木虫、知乎)普遍反映 IEEE Access 錄取門檻近年提升,不再像早年「幾乎照單全收」;常見拒稿理由為範疇不合與比較基準過舊,而非方法學致命缺陷。 小木虫討論串(muchong.com/t-13608696-1)一手發文者形容部分收到的審稿意見「潦草(sloppy)」,並質疑期刊對創新性/英文品質把關不夠嚴謹,但也有使用者指出審稿速度快、審稿人要求一週內完成審查。SciRev 量化評分:審查報告品質 3.4/5.0,整體稿件處理 3.4/5.0,審稿意見難度 3.0/5.0(中等)。未查到 Reddit r/AskAcademia 上的相關討論(搜尋 0 結果)。
+
+**Sources cited in this pass:**
+- http://muchong.com/t-13608696-1
+- https://ieeeaccess.ieee.org/about/
+- https://ieeeaccess.ieee.org/about/rapid-peer-review/
+- https://ieeeaccess.ieee.org/sections/special-sections/
+- https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/
+- https://scirev.org/journal/ieee-access/
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.gate/leniency**: 查無 IEEE Access 期刊專屬的 AI 政策頁面,僅有 IEEE 出版社(journals.ieeeauthorcenter.ieee.org)通用政策,已標記為公司層級外推,非期刊專屬一手來源。
+- **positioning.accepts_now (2024-2026 具體文章/CFP)**: 官方 Special Sections 頁面顯示查詢當下(2026-07-13)無開放中專刊徵稿,且未取得可存取的近期期刊文章標題清單或已關閉專刊列表作為近期選題佐證,故 positioning 僅能依 aims & scope 泛層級描述,signal_quality 定為 2。
+- **experiential.desk_reject_pct (精確數字)**: 唯一數字來源為非一手部落格(manusights)估計值與中文論壇二手轉述,並非 SciRev 原始統計或作者一手發文的具體百分比,故列為軟性參考而非確定數字。
+- **experiential Reddit r/AskAcademia**: WebSearch 對 'IEEE Access reddit AskAcademia review experience' 查詢回傳 0 結果,英文論壇端交叉驗證缺失。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 找到討論串 t-13608696-1,一手發文者分享投稿到決定約25天、審稿意見品質參差、對創新性把關寬鬆之評論
+- 知乎 zhihu: 多篇文章討論 IEEE Access 審稿速度快、錄取率近年由約50%降至約30%、被稱為「水刊」「畢業神刊」
+- fabiaoji.com 發表記: 搜尋命中頁面存在但未逐條擷取一手評論(僅列為搜尋結果標題)
+- Reddit r/AskAcademia: 搜尋 0 結果,未找到相關討論
+
 ---
 
 ## Strategic Notes
@@ -271,6 +301,7 @@ Low for engineering-tradition authors. APC ($1,950+ range) is a barrier for low-
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (ieeeaccess.ieee.org) + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > IEEE Access (MIT) | @cardinal |

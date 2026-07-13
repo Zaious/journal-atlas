@@ -219,6 +219,38 @@ Reviewers from VR/AR + multimodal HCI community. MDPI OA fast publication. Commo
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為MDPI出版社統一政策，非期刊專屬條款（MTI官網未見額外加碼規定）。事實：(1) 生成式AI/LLM不得列為作者；(2) 若作者使用ChatGPT等工具產生內容，須在Materials & Methods章節揭露並說明使用方式；(3) 僅做基礎語言潤飾（文法/標點/格式）則免揭露；(4) 審稿人被禁止將稿件全文/部分內容、圖表上傳至任何GenAI工具（保密政策）。屬有條件放行（disclosure gate），非全面禁止也非完全開放，故評leniency 3/5。因是通用出版社政策而非本刊獨有立場，且mdpi.com/ethics原頁因反爬蟲機制回傳403無法直接一手截取，資訊透過WebSearch摘要交叉比對取得，signal_quality定為2（政策頁/範疇層級，非期刊獨有一手資料）。
+
+**WO2 positioning finding (what the journal accepts now):** 根據2026年開放中的Special Issue主題，本刊目前積極徵稿方向包含：uHealth介入與數位療法（截止2026-06-30）、行為網路安全與欺騙偵測/安全設計（截止2026-06-30）、智慧互動設計：創新模型與人機經驗未來（截止2026-06-30）、多模態學習環境/線上與混合教育/學習分析（截止2026-05-31）。搜尋結果亦顯示近期文章含生成式AI原型設計工具可用性評估等主題，顯示本刊對AI驅動之HCI應用研究持開放態度。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://www.mdpi.com/journal/mti/about (期刊頁面引用MDPI出版社統一政策，原始政策見 https://www.mdpi.com/ethics)
+- https://www.mdpi.com/journal/mti/special_issues
+- https://www.mdpi.com/journal/mti/special_issues/AI_People
+- https://www.mdpi.com/journal/mti/special_issues/Multimodal_Learning
+- https://www.mdpi.com/journal/mti/special_issues/deep_learning
+- https://www.mdpi.com/journal/mti/stats（出版社自報首次決定天數，透過WebSearch摘要取得，非直接一手截取，因mdpi.com反爬蟲機制阻擋WebFetch）
+- https://www.scirev.org/journal/multimodal-technologies-and-interaction/ — 0則使用者評論，審稿時長/桌拒率/接受率等欄位均顯示n/a
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev該刊頁面0則評論，所有數據皆為n/a；未見任何一手使用者揭露之桌拒率
+- **experiential.acceptance_note**: SciRev無評論；Reddit r/AskAcademia搜尋無相關討論串；小木虫/知乎/fabiaoji搜尋未命中任何針對本刊的具體投稿心得
+- **experiential.reviewer_culture**: 無任何論壇（中/英文）發現針對本刊審稿人風格/文化之具體一手描述，依規則不得杜撰通用敘事
+- **positioning.framing_required**: 未查得MTI期刊獨有的強制框架要求文件（如必須含使用者研究段落之明文規定），僅有通用MDPI寫作規範，證據不足以列為期刊專屬事實，故留空
+- **ai_policy 期刊專屬條款 vs 通用MDPI政策之區別**: mdpi.com/ethics與mdpi.com/journal/mti/about兩頁面均因反爬蟲機制回傳403，無法直接一手引用原文；現有事實均透過WebSearch摘要交叉比對取得，未能確認MTI是否有超出MDPI通用政策之額外規定
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — WebSearch查詢「MTI MDPI 投稿 审稿」未返回任何小木虫論壇貼文命中（0 results）
+- 知乎 zhihu.com — WebSearch查詢未返回任何知乎針對本刊之具體討論（0 results）
+- fabiaoji — WebSearch查詢未返回任何fabiaoji相關結果（0 results）
+- Reddit r/AskAcademia — WebSearch查詢「Multimodal Technologies and Interaction journal reddit AskAcademia review experience」未返回任何相關討論串，僅返回一般期刊資訊頁（0 results）
+
 ---
 
 ## Strategic Notes
@@ -263,5 +295,6 @@ Low. MDPI APC required. Fast publication cycle.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from MDPI publisher + multimodal HCI / VR-AR editorial culture domain knowledge | @Zaious |

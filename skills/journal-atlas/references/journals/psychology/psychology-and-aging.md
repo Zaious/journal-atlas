@@ -220,6 +220,37 @@ Reviewers from APA Division 20 (Adult Development and Aging) and broader geronto
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** This is a publisher-wide (APA) policy, not Psychology-and-Aging-specific. Disclosure of generative AI use is mandatory (drafting, literature review assist, code, data viz all allowed with disclosure); AI-assisted copyediting for readability/style needs no disclosure; AI cannot be an author; confidential/submitted material must not be entered into AI tools by anyone in the process.
+
+**WO2 positioning finding (what the journal accepts now):** Active special-issue CFPs (as of 2026-07) show the journal currently soliciting: (1) aging and career development/retirement (deadline 2026-09-01), (2) aging and motivation across the adult lifespan, (3) age-related changes in memory for gist vs. detail (episodic memory representational quality) — alongside its standing scope of empirical, biobehavioral, clinical, methodological, and psychosocial research on adult development/aging.
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/psychology-and-aging/
+- https://www.apa.org/pubs/journals/pag
+- https://www.apa.org/pubs/journals/pag/age-related-changes-representational-quality-episodic-memory
+- https://www.apa.org/pubs/journals/pag/aging-motivation
+- https://www.apa.org/pubs/journals/pag/evolving-aging-careers
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: No SciRev desk-reject figure surfaced on the fetched page (marked n/a); no forum discussion (muchong/zhihu/fabiaoji/reddit) mentioned a desk-reject rate for this journal
+- **experiential.acceptance_note**: No first-hand acceptance-rate or 'what got accepted' commentary found in SciRev, Chinese forums, or Reddit — journal does not publish an acceptance rate
+- **experiential.reviewer_culture**: No concrete first-hand account of reviewer tone/culture found in any cross-language source checked; SciRev only gives a numeric 'difficulty' score (4.0/5.0) with no narrative, which is not concrete enough to characterize culture
+- **preprint.allowed (journal-specific nuance)**: Only a publisher-wide (APA) preprint statement was found; no Psychology-and-Aging-specific preprint clause was located on the journal's own pages
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — no Psychology-and-Aging-specific submission/review thread found; search only surfaced an unrelated journal (Aging & Mental Health) review page, 0 direct results
+- 知乎 zhihu — 0 results specific to Psychology and Aging review/rejection experience; only generic Nature/Science rejection discussions and an unrelated SSCI gerontology journal list surfaced
+- fabiaoji.com 发表机 — 0 results for Psychology and Aging specifically; only Current Psychology and Frontiers in Psychology pages surfaced
+- Reddit r/AskAcademia — 0 results found via web search for Psychology and Aging desk-reject/review discussion
+- LetPub letpub.com.cn — has a journal page with impact factor/CiteScore but explicitly no review-cycle time and no independent Chinese-author submission narratives; page is mostly a self-promotional LetPub editing-service page, not first-hand author testimony
+
 ---
 
 ## Strategic Notes
@@ -265,5 +296,6 @@ Low for aging-tradition empirical authors. Long APA review cycle.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from APA publisher pages + APA Division 20 aging-psychology editorial culture domain knowledge | @Zaious |

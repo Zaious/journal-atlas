@@ -219,6 +219,36 @@ Reviewers from SARMAC (Society for Applied Research in Memory and Cognition) and
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 無期刊專屬 AI 政策頁；沿用 Wiley 出版社通用政策：允許生成式 AI 協助語言潤飾、結構調整、構思發想、文獻檢索,但禁止列為作者、禁止用於生成/變造圖像與原始數據、禁止生成未經查證的內容(如摘要/結果/結論);要求投稿時揭露 AI 工具使用情形(cover letter + 揭露附錄)。
+
+**WO2 positioning finding (what the journal accepts now):** 以真實情境(real-world/authentic contexts)中的記憶、學習、思考、問題解決、語言、意識之心理學實證研究為主軸;強調將實驗室理論與日常應用結合並附實務意涵。近期(2025)刊出主題包含記憶從眾效應(memory conformity)、以 AI 聊天機器人訓練醫療/牙科人員的資訊蒐集技巧(pilot study)等。目前(截至查詢時)有開放中的特刊徵稿「Cognitive Processes and Educational Outcomes: Bridging Theory and Practice」,聚焦注意力、記憶、語言、知覺如何影響學習,以及後設認知與自我調節學習。
+
+**WO2 experiential finding:** SciRev 該筆評論將流程評為「very good process」,審查報告品質 4.0/5.0,整體處理評分 4.0/5.0,最終結果為接受(accepted)。因僅 1 筆評論,無法代表期刊整體接受率或退稿率。 
+
+**Sources cited in this pass:**
+- https://onlinelibrary.wiley.com/page/journal/10990720/call-for-papers/si-2025-000225
+- https://onlinelibrary.wiley.com/page/journal/10990720/homepage/guide.htm
+- https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf
+- https://scirev.org/journal/applied-cognitive-psychology/
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.source_url (journal-specific full text)**: Wiley forauthors 頁面回傳 HTTP 402(需認證),僅能透過 WebSearch 摘要片段確認為雙盲審,未能直接讀取原始頁面全文核對細節。
+- **experiential.desk_reject_pct**: SciRev 該筆審查資料未提供立即退稿(immediate rejection)時間或比例欄位,且僅 1 筆樣本,無其他公開論壇提及具體數字。
+- **experiential.reviewer_culture**: SciRev 僅 1 筆評論且未描述審稿人風格/文化;小木虫、知乎、Reddit、fabiao、LetPub 均查無使用者對本刊審稿人風格的具體描述,故留空避免捏造通用敘事。
+- **ai_policy (journal-specific policy page)**: Applied Cognitive Psychology 未見獨立於 Wiley 集團通用政策之外的期刊專屬 AI 使用規範頁面;此處記錄的是 Wiley 出版社層級政策,已於 summary 中註明。
+- **positioning special-issue submission deadline**: Wiley 特刊 CFP 頁面(si-2025-000225)回傳 HTTP 402,僅能依 WebSearch 摘要取得主題與範疇,無法核對確切截稿日期等頁面細節。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋與 site: 搜尋均未找到針對本刊的具體審稿討論串(0 results)
+- 知乎 zhihu — 未找到針對本刊投稿經驗的專門文章或討論,僅有間接提及本刊刊登過眼動相關研究的綜述文章(0 直接經驗分享)
+- LetPub letpub.com.cn — 期刊資訊頁存在「平均審稿速度」「平均錄用比例」欄位但均為空,顯示「網友分享經驗：」後無使用者填寫內容(0 results,誠實留空)
+- fabiao.com.cn — 僅提供期刊基本指標(分區、影響因子等),無審稿經驗性內容
+- Reddit r/AskAcademia — site:reddit.com 與一般搜尋均未找到針對本刊的討論串(0 results)
+
 ---
 
 ## Strategic Notes
@@ -264,5 +294,6 @@ Low for applied cognitive tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher + SARMAC applied cognitive psychology editorial culture domain knowledge | @Zaious |

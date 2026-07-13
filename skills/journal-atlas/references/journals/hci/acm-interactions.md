@@ -224,6 +224,37 @@ Editorial review by Interactions editorial board (not double-anonymized peer rev
 | **Data transparency requirement** | N/A |
 | **OPSEC compatibility** | Very High — no data sharing required |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is an ACM-wide policy, not Interactions-specific (no separate Interactions AI policy page found). ACM permits authors to use generative AI/LLM tools to create content, provided the use is fully disclosed (e.g. in Acknowledgements); GenAI tools cannot be listed as authors; basic word processors are exempt from disclosure; authors remain fully responsible for any fabricated/plagiarized AI-generated content (e.g. fake citations). No explicit editor pre-approval step beyond mandatory disclosure, so coded 'conditional' rather than fully open. Search snippets indicate ACM issued an updated authorship policy around June 2026 revising the 2023 version; could not directly read the live page (403 on WebFetch), so this is reconstructed from secondary/cached sources, hence signal_quality capped at 3.
+
+**WO2 positioning finding (what the journal accepts now):** Interactions is a bimonthly SIGCHI-affiliated trade/practice magazine (not a research journal) bridging HCI research and practice. Recent (2025-2026) content includes forum pieces on AI-simulated users in UX research, child-centered AI design principles, generative-AI discourse critique in design research, and a recurring 'Climate for Change' forum on climate-focused HCI/design work. Content is organized into standing forums (each editor-curated, appearing roughly 3 issues/year) rather than open topical calls.
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://authors.acm.org/magazines/interactions
+- https://interactions.acm.org/archive/toc/january-february-2026
+- https://interactions.acm.org/archive/view/september-october-2025/child-centered-ai-contextualizing-principles-and-design-in-hci
+- https://interactions.acm.org/submissions
+- https://www.acm.org/publications/policies/roles-and-responsibilities (ACM-wide authorship policy; the more specific acm.org/publications/policies/new-acm-policy-on-authorship page returned HTTP 403 on direct fetch)
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: No SciRev entry for this title and no forum/Reddit/muchong/zhihu discussion found describing turnaround time. Left null rather than inventing a figure.
+- **experiential.desk_reject_pct**: No first-hand source quantifies desk-reject rate; only qualitative fact found is that editors 'retain the right to desk-reject' policy-violating submissions, with no rate given.
+- **experiential.acceptance_note**: No public first-hand account (forum post, Reddit thread, blog) describing an actual acceptance/rejection experience with Interactions was found.
+- **experiential.reviewer_culture**: Because Interactions is not peer-reviewed (internal editorial board only), there is no 'reviewer culture' analogous to journal peer review to report, and no concrete source discusses editorial-board tone/culture beyond the generic self-description ('direct, inclusive, conversational') already captured in positioning.framing_required.
+- **ai_policy.source_url (primary)**: acm.org policy pages (roles-and-responsibilities, new-acm-policy-on-authorship) returned HTTP 403 to direct WebFetch; the AI-policy summary is reconstructed from search-engine snippets/secondary citations (library guides, SIGCHI Medium post) rather than a direct read of the live ACM page, and no Interactions-specific AI policy page exists separately from the ACM-wide one.
+
+**Cross-language checks performed:**
+- SciRev (scirev.org): no dedicated entry found for 'Interactions' -- searches only surfaced a different ACM title (Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies); 0 usable review-time/desk-reject data points for this journal
+- 小木虫 muchong.com: searched 'ACM Interactions magazine 投稿'; 0 results specific to Interactions -- only threads about other ACM journals (e.g. ACM Transactions on Multimedia Computing, Communications of the ACM), consistent with Interactions not being an SCI-indexed research journal that Chinese PhD/postdoc communities target
+- fabiaoji: not separately queryable via general search; treated as 0 results given muchong yielded nothing and Interactions is not a typical target for the SCI-publication-counting audience these sites serve
+- 知乎 zhihu: searched via combined query; 0 dedicated discussion threads on ACM Interactions surfaced (only a generic 小木虫 topic page)
+- Reddit r/AskAcademia: searched 'ACM Interactions magazine publish'; 0 results -- only official ACM/Wikipedia pages returned, no first-hand author experience threads found
+
 ---
 
 ## Strategic Notes
@@ -271,5 +302,6 @@ Low for thought pieces and reflective essays. Moderate for academic researchers 
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — practitioner magazine format flagged distinctly from research journal pattern. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

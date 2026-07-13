@@ -205,6 +205,39 @@ ACM journal review (independent of conference cycle). 2-3 external reviewers + A
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is ACM's org-wide Policy on Authorship (not THRI-specific — THRI's author guidelines page links out to it). Fact: use of generative AI tools to create content (text, tables, graphs, code, data, citations) is permitted but must be fully disclosed, typically in the Acknowledgements section; generative AI tools cannot be listed as authors; basic word-processing/grammar tools are exempt from disclosure. No THRI-specific stricter or looser variant found in this search pass, so confidence is publisher-policy-level, not journal-verified.
+
+**WO2 positioning finding (what the journal accepts now):** Could not complete a systematic scan of 2024-2026 THRI article titles/ToCs or an active special-issue CFP within this pass beyond secondary search snippets (systematic reviews on trust assessments, social norms, human-robot teaming surveys, robotic vision for HRI collaboration surfaced incidentally). A dedicated pass through dl.acm.org/journal/thri recent issues and dl.acm.org/journal/thri/CFP-AI-HRI (existing AI-HRI special issue track) was not completed with full-text confirmation, so this is not a reliable accepts_now inference.
+
+**WO2 experiential finding:** THRI author guidelines state editors-in-chief first triage submissions and return-without-review anything deemed out of scope before full review begins (a desk-reject stage exists), and that minor revisions are expected back within 2 months, major revisions within 3 months — these are process/policy statements, not first-hand experiential data points. 
+
+**Sources cited in this pass:**
+- https://dl.acm.org/doi/10.1145/3706123
+- https://dl.acm.org/doi/10.1145/3722120
+- https://dl.acm.org/doi/10.1145/3776548
+- https://dl.acm.org/journal/thri
+- https://dl.acm.org/journal/thri/CFP-AI-HRI
+- https://dl.acm.org/journal/thri/author-guidelines
+- https://www.acm.org/publications/policies/new-acm-policy-on-authorship
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: No SciRev page found for THRI (search for scirev.org + journal name returned no matching SciRev entry); no Reddit r/AskAcademia thread found; no 小木虫/知乎 first-hand post found discussing actual submission-to-decision timing for this journal
+- **experiential.desk_reject_pct**: No quantitative desk-reject rate published or discussed anywhere found; only the qualitative process description that an EIC triage/return-without-review stage exists
+- **experiential.reviewer_culture**: No forum thread (Chinese or English) describing reviewer tone/culture at THRI was found in this search pass; fabricating a generic HCI/robotics reviewer-culture narrative was avoided per hard rules
+- **positioning.methods_welcome**: Did not complete a systematic pull of >=10 recent (2024-2026) THRI article titles/abstracts to derive a reliable methods_welcome list within this research pass; leaving empty rather than guessing from a handful of incidentally-surfaced titles
+- **ai_policy journal-specificity**: Could not confirm via direct fetch of dl.acm.org/journal/thri/author-guidelines (returned HTTP 403 to WebFetch) whether THRI adds any journal-specific AI clause beyond linking to the general ACM Policy on Authorship; treating the general ACM policy as the applicable fact but flagging it is not journal-verified verbatim
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — searched '小木虫 OR 知乎 THRI 人机交互 期刊 审稿'; returned only generic forum navigation pages and unrelated Chinese-journal review pages (电子学报, 计算机工程, 计算机学报); 0 results specific to ACM THRI
+- 知乎 zhihu — same query returned 0 THRI-specific results
+- fabiaoji — not queried as a standalone search in this pass; folded into the combined muchong/zhihu query which returned 0 relevant hits; recommend a standalone follow-up query
+- Reddit r/AskAcademia — searched 'reddit AskAcademia "Transactions on Human-Robot Interaction" review'; returned only ACM/SCImago/arXiv paper links, 0 Reddit threads surfaced
+- SciRev — searched 'scirev.org "Transactions on Human-Robot Interaction"'; no matching SciRev journal page found in results, 0 data points
+
 ---
 
 ## Strategic Notes
@@ -243,4 +276,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

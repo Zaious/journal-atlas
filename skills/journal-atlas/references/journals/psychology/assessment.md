@@ -206,6 +206,38 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 SAGE 出版社統一的期刊層級 AI 政策(未找到 Assessment 期刊專屬的加嚴或放寬條款,journal-specific author-instructions 頁面因 SPA 前端無法直接擷取內容,僅能透過搜尋引擎快照佐證)。政策把 AI 使用分三類:輔助性(潤色文字/文法)不需揭露;生成性(影響研究方法、分析、結果或結論的用途,如文獻回顧輔助、程式碼生成、資料視覺化)投稿時必須揭露使用的工具、用途與理由;禁止用途包括:生成虛構文字或捏造數據、以 AI 取代真實受試者進行訪談、將 AI 生成圖像充當原始研究成果、偽造引用文獻、在編輯決策或同行評審過程使用 GenAI、未揭露的不當使用。AI/LLM 一律不得列名為作者或共同作者。已揭露的 GenAI 使用不會單獨導致退稿,但編輯在任何階段發現未揭露的不當使用可拒稿並依 COPE 指引調查。
+
+**WO2 positioning finding (what the journal accepts now):** 2025-2026 年實際刊出主題涵蓋:(1) 兒童/成人心理病理與神經心理評估的心理計量研究(量表建構、信效度驗證,如 psychological/cognitive flexibility 測量結構釐清、軍人污名化量表);(2) 機器學習/大型語言模型輔助的行為與臨床風險偵測(如比較 ML 與 LLM 對青少年自殺意念的預測、嬰兒哭聲音訊分析偵測苦惱訊號、AI 輔助量表驗證的假設生成);(3) 跨文化/大樣本常模研究(如以 GAMLSS 方法建立中國全國性閱讀障礙常模);(4) 臨床應用與診斷效度研究(ADHD 評估效度、焦慮測量、持續作業測驗評估)。整體上高度歡迎「傳統心理計量方法 + AI/ML 作為輔助工具或研究對象」的論文,尚未見到「以 LLM 本身作為評估對象」的心理計量效度研究專刊,但 SAGE 旗下姊妹刊(如 Evaluation Review)已有 AI 教育評估專刊徵稿(2025 年 8-10 月截止),顯示集團層級對 AI+評估主題的興趣正在上升。
+
+**WO2 experiential finding:** LetPub(letpub.com.cn)頁面上「平均審稿速度」與「平均錄用比例」欄位均為空,且「同領域作者分享投稿經驗」顯示 0 則,顯示中文學術社群對此刊的第一手經驗分享極少。 唯一具體的第一手負評來自 SciRev 最新一筆評論:投稿人稱審稿人在修改後給予正面回饋(認可其修訂充分回應了統計分析等問題),但最終仍遭拒稿,投稿人形容為「不尊重已接受修訂版本的審稿人」的不道德/不良做法;該刊在 SciRev 上的整體「稿件處理」評分僅 1.5/5.0(屬於'Moderate process'等級),但個別審稿品質評分達 4.0/5.0——顯示審稿內容尚可,但編輯端流程/決策一致性受到質疑。此為單一評論,不足以代表普遍審稿文化。
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/page/erx/artificial-intelligence
+- https://letpub.com.cn/index.php?journalid=11524&page=journalapp&view=detail
+- https://pubmed.ncbi.nlm.nih.gov/?term=%22Assessment%22%5Bjour%5D+AND+2025%5Bpdat%5D&sort=date
+- https://scirev.org/journal/assessment/
+- https://www.sagepub.com/en-us/nam/journal/assessment
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (期刊專屬條款)**: Assessment 期刊自己的 author-instructions 頁面 (journals.sagepub.com/author-instructions/asm) 因該站為 SPA 前端,WebFetch 無法擷取實際內容,只能透過搜尋引擎快照間接佐證存在 AI 揭露要求,但未能確認是否有超出 SAGE 集團統一政策的期刊特化條款,故 leniency 與 gate 判斷主要基於出版社層級政策,signal_quality 相應降低。
+- **experiential.review_time_months / desk_reject_pct / acceptance_note**: SciRev 該刊僅有 4 筆評論(樣本量極小),數字存在但統計效力低,不宜視為穩定分布。
+- **cross_language: 小木虫 muchong.com**: 以「Assessment 1073-1911 投稿 审稿」搜尋未命中任何小木虫具體討論串,論壇搜尋僅返回泛用審稿討論頁面,無法確認該刊在小木虫是否有討論——判定為 0 results。
+- **cross_language: 知乎 zhihu.com**: 以中文關鍵字搜尋僅得到泛用 SAGE 出版社介紹與其他心理學期刊(如 Journal of Career Assessment)討論,未找到針對 Assessment(ISSN 1073-1911)本刊的知乎投稿經驗文章——判定為 0 results(僅泛用資訊)。
+- **cross_language: Reddit r/AskAcademia**: 以英文關鍵字搜尋(含 site:reddit.com 限定)未返回任何討論此刊審稿時間/拒稿率/編輯文化的 Reddit 貼文——判定為 0 results。
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/assessment/): 找到 4 筆評論,含具體審稿時間、接受率、desk reject 比例與一則質性負評(編輯流程評分低)。
+- 小木虫 muchong.com: 0 results,查無此刊專屬討論串。
+- 知乎 zhihu.com: 0 results(僅泛用 SAGE/其他心理學期刊資訊,無此刊專屬第一手經驗)。
+- Reddit r/AskAcademia: 0 results,查無相關貼文。
+- LetPub letpub.com.cn (journalid=11524): 頁面存在但「平均審稿速度」「平均錄用比例」「同領域作者分享投稿經驗」欄位均為空/0 筆。
+
 ---
 
 ## Strategic Notes
@@ -245,4 +277,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

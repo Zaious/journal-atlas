@@ -220,6 +220,39 @@ Reviewers from NAN (National Academy of Neuropsychology) and broader clinical ne
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — clinical data anonymization rigorous |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+
+**WO2 AI policy finding:** 查到的是 Oxford University Press 出版社層級的通用 Gen AI 政策，非本刊獨立頁面（本刊 General Instructions 頁未列出 AI 專屬條款）。OUP 通用政策：Gen AI 不得列為作者、不得用於產生論點/科學洞見/分析結論等『主要著作責任』；若使用須在投稿時揭露使用地點、工具、版本、使用方式與驗證步驟；若要提交 Gen AI 生成內容（含圖像）需另取得 OUP 書面許可；作者對內容之準確性與原創性負全責。因是出版社層級而非本刊訂製條款，寬容度評為 2（近乎需事前許可 gate，但非全面禁止），信心不高。
+
+**WO2 positioning finding (what the journal accepts now):** 以實證研究報告 (empirical reports) 與重要文獻回顧 (key reviews) 為優先；亦接受簡短研究報告 (brief research reports)、對已刊文章的評論 (commentaries)、以及能對腦-行為關係提供新見解的個案研究 (case studies)；偶爾接受理論性論文。核心範疇為中樞神經系統功能障礙所致病症之心理層面（病因、診斷、治療），亦涵蓋神經心理學服務的提供與評估、倫理與法律議題、教育訓練取向。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://academic.oup.com/acn/article-abstract/38/7/1352/7299732
+- https://academic.oup.com/acn/pages/About
+- https://academic.oup.com/acn/pages/General_Instructions
+- https://academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence
+- https://scirev.org/journal/archives-of-clinical-neuropsychology/ (0 reviews submitted / n/a on all metrics)
+
+**Fields WO2 could not find evidence for:**
+- **preprint.allowed**: 查無本刊獨立的 preprint 政策頁面；General Instructions 頁面未包含此條款，未找到本刊專屬 preprint 頁面內容。
+- **experiential.review_time_months**: SciRev 該刊條目顯示 0 筆評論，所有欄位為 n/a；小木虫/知乎/Reddit AskAcademia 均查無本刊專門討論串。
+- **experiential.desk_reject_pct**: 同上，SciRev 無資料，中英文論壇皆查無具體數字。
+- **experiential.acceptance_note**: 無第一手投稿者經驗貼文可查（exediting.com 該刊詳情頁 404，sinoscript 頁面搜尋摘要未含具體審稿週期數字，僅期刊基本資訊）。
+- **experiential.reviewer_culture**: 無任何論壇（小木虫、知乎、Reddit r/AskAcademia）命中本刊專屬討論，無法產出具體來源支持的審稿文化描述。
+- **ai_policy (journal-specific)**: 僅找到 OUP 出版社層級通用 Gen AI 政策頁面，本刊自身 General Instructions 頁未見期刊訂製 AI 條款，故此評分信心有限（signal_quality=2）。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — Google 搜尋 "Archives of Clinical Neuropsychology 小木虫" 未命中任何小木虫討論串（0 results）
+- fabiaoji — 未查得該平台上關於此刊的獨立條目或討論（0 results）
+- 知乎 zhihu — 搜尋 "Archives of Clinical Neuropsychology 知乎" 0 筆相關討論命中
+- Reddit r/AskAcademia — 搜尋未命中任何提及本刊的貼文或留言（0 results）
+- SciRev — 該刊條目存在但顯示 0 reviews，審稿時間/退稿率/接受率欄位皆為 n/a
+- 中文投稿經驗站 (exediting.com, sinoscript.com, wanweixueshu.com) — 有基本期刊資訊條目但未含具體審稿週期或作者一手經驗文字（exediting 詳情頁連結已404）
+
 ---
 
 ## Strategic Notes
@@ -265,5 +298,6 @@ Low for NAN clinical practice tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from OUP publisher + NAN clinical neuropsychology practice editorial culture domain knowledge | @Zaious |

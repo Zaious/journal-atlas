@@ -217,6 +217,37 @@ Reviewers from design history / theory / criticism humanities community. Common 
 | **Data transparency requirement** | N/A |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 依 MIT Press 政策(非期刊自訂),作者若在稿件撰寫過程使用 AI 工具(如 ChatGPT)產生文字/圖像或蒐集資料,須於投稿信告知編輯,並於稿件內以透明方式揭露給讀者。AI 不得列為作者。同一 MIT Press 通用政策明文禁止在同行評審過程使用 LLM/AI 工具協助審稿(來源:MIT Press Publication Ethics 頁,https://direct.mit.edu/journals/pages/publication-ethics)。未見 Design Issues 專屬(不同於 MIT Press 通用政策)之加嚴或放寬條款,故此為出版社層級政策套用於本刊,非期刊獨有裁量。leniency 給 3(允許使用但需揭露,非全面禁止亦非放任),因未見對特定使用情境(如僅用於語言潤色 vs 內容生成)有差異化規則,可信度中高但非期刊獨家細則。
+
+**WO2 positioning finding (what the journal accepts now):** 現行(2024-2026)徵稿與期刊定位顯示:本刊持續徵求關於設計歷史、理論與批評之原創、嚴謹且具重要性之稿件,主題不限特定設計次領域;2025年有明確徵稿的特刊主題 'Tangible Archives'(有形檔案/設計檔案研究),截稿 2025-06-30,要求全文 5,500 字(不含註腳與圖說)+摘要+關鍵字+圖片版權說明,經客座編輯初審後由編輯委員會做最終出版決定。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://direct.mit.edu/DocumentLibrary/CallForPapers/Design%20Issues%20CFP%20Special%20Issue_Tangible%20Archives_2025.pdf (title/deadline only, PDF fetch blocked 403)
+- https://direct.mit.edu/desi (aims & scope, WebSearch snippet)
+- https://direct.mit.edu/desi/pages/submission-guidelines
+- https://direct.mit.edu/desi/pages/submission-guidelines (WebSearch snippet, direct fetch blocked 403)
+- https://scirev.org/journal/design-issues/ — 查詢時 0 筆使用者評論,所有量化欄位(平均審稿時長、稿件退回時間、審稿品質評分)皆顯示 'n/a'
+
+**Fields WO2 could not find evidence for:**
+- **preprint.allowed**: 未找到 Design Issues 或 MIT Press 對本刊 preprint/self-archiving 政策之公開頁面;SHERPA/RoMEO 頁面抓取被 403 阻擋,WebSearch 亦未返回本刊專屬條款,故留空。
+- **peer_review.type (blind status)**: 公開投稿指南僅述及'confidential process'與編委每月會議三階段流程,未明確聲明 single-blind/double-blind/open review,無法確認,故僅記錄已知事實,盲審類型留白。
+- **experiential.review_time_months**: SciRev 該刊頁面查詢時顯示 0 筆評論、'n/a'。WebSearch 查詢小木虫、知乎、Reddit r/AskAcademia 均未返回任何針對 Design Issues 投稿經驗的一手討論串。
+- **experiential.desk_reject_pct**: 同上,無 SciRev 數據、無論壇討論可查。
+- **experiential.acceptance_note**: 無任何公開一手投稿者經驗分享(中英文皆未查獲)。
+- **experiential.reviewer_culture**: 無具體來源可佐證審稿人文化/傾向之主觀描述,依規則不可捏造,故留空。
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/design-issues/) — 查得頁面但 0 reviews,所有統計為 n/a
+- 小木虫 muchong.com — WebSearch 查詢多組關鍵字(繁簡體、英文刊名),僅返回論壇首頁與無關期刊列表,0 筆針對 Design Issues 的討論
+- 知乎 zhihu.com — 查得 1 篇文章談論該刊之內容定位/書籍推薦(zhuanlan.zhihu.com/p/538318730),但無審稿時效/退稿率等經驗性資訊
+- Reddit r/AskAcademia — WebSearch 未返回任何關於 Design Issues 投稿經驗的討論串,0 results
+
 ---
 
 ## Strategic Notes
@@ -259,5 +290,6 @@ Low for design history / theory tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from MIT Press publisher + design history / theory / criticism humanities editorial culture domain knowledge | @Zaious |

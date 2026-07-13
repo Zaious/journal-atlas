@@ -227,6 +227,38 @@ Reviewers are drawn primarily from the cognitive-engineering and applied-HCI com
 | **Data transparency requirement** | Medium — Elsevier data-sharing norms apply |
 | **OPSEC compatibility** | Medium — 24-month AAM embargo on subscription path |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 屬 Elsevier 全刊通用政策(非期刊專屬)。作者:可用生成式 AI 輔助語言潤飾,但若 AI 對句構/內容有實質修改需在正文最後、參考文獻前以「Declaration of Generative AI and AI-assisted technologies in the writing process」聲明揭露;不得取代人類判斷,作者對內容負全責。編輯:不得將作者稿件上傳至生成式 AI 工具(保密/資料隱私考量),也不得用 AI 協助評估稿件實質內容。審稿人:稿件視為機密,同樣不得上傳至 AI 工具;可用 AI 輔助潤飾審查報告文字或做背景文獻搜尋。
+
+**WO2 positioning finding (what the journal accepts now):** 根據 ScienceDirect 期刊介紹與投稿指南所述宗旨:刊登與「創新互動系統」(innovative interactive systems)相關之原創研究,涵蓋運算、人工智慧、心理學、語言學、傳播、設計、工程與社會組織等跨領域邊界的研究皆特別歡迎。近期(2024-2025)曾有 Special Issue「User Perspectives in Human-Centered Artificial Intelligence」(投稿截止 2024-11-18,編輯決定截止 2025-02-20)。小木虫論壇(muchong.com)使用者建議聚焦 VR/AR、智慧介面、無障礙設計、多模態資料驗證等熱門方向,並提及 2025 年「AI-Driven Adaptive Interactive Systems」專刊(此條為論壇二手轉述,未經期刊官方頁面直接核實,信心較低)。
+
+**WO2 experiential finding:** SciRev 上「接受率」「拒絕率」欄位標示為 n/a(編輯未提供)。LetPub 使用者以主觀詞「容易」(favorable/easy)描述錄取,但無具體百分比,信心低。 SciRev(僅 3 筆評論)顯示「審查報告品質」評分 2.0/5.0、「整體稿件處理滿意度」評分 2.0/5.0,偏低,但樣本量極小(n=3),不足以代表整體審稿人文化,不應過度推論。小木虫論壇提及「審稿速度偏慢、版面費較高」但未附具體數字佐證(單一轉述,未見原始留言完整脈絡)。
+
+**Sources cited in this pass:**
+- https://mailman.isti.cnr.it/hyperkitty/list/hcitaly@isti.cnr.it/thread/35YHHETHGO2A5ATWVFSG3HSLJ2GS27HT/
+- https://muchong.com/bbs/journal.php?view=detail&jid=3784
+- https://scirev.org/journal/international-journal-of-human-computer-studies/
+- https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+- https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=3769
+- https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 未能直接開啟 IJHCS 專屬 Guide for Authors 頁面(ScienceDirect 回傳 403 Forbidden),僅能依 Elsevier 期刊慣例推測為 single-blind,未經該刊頁面文字直接核實
+- **experiential.desk_reject_pct**: SciRev 對此刊該欄位標示 n/a;小木虫/LetPub/知乎均未提供具體桌拒百分比數字
+- **experiential.acceptance_note (具體數字)**: 無公開來源提供具體接受率百分比,僅有 LetPub 使用者主觀詞「容易」,無法量化,故不編造具體數字
+- **zhihu 來源**: zhuanlan.zhihu.com/p/1896312573927854489 抓取回傳 403 Forbidden,無法直接核實其標題所稱「对国人友好」等說法的具體依據,故未採用其論斷,僅在 WebSearch 摘要層級略提及不予正式採信
+- **positioning special issue 2025 AI-Driven Adaptive Interactive Systems**: 僅見於小木虫論壇二手轉述,未能在期刊官方 CFP 頁面直接核實,故列為低信心附註而非正式事實
+- **cross_language: Reddit r/AskAcademia**: WebSearch 未返回任何 Reddit AskAcademia 討論串提及本刊,查無結果
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com 期刊點評頁 (jid=3784): 有 1 則舊評論(2012),提及平均約3個月錄用週期、綜合評分,無桌拒率/接受率具體數字
+- LetPub letpub.com.cn 期刊詳情頁: 有數據,審查週期3.0個月(用戶)/20.8週(官方統計),接受率僅主觀詞「容易」無百分比
+- 知乎 zhihu.com 專欄文章 (p/1896312573927854489): 標題提及「对国人友好」但頁面抓取403無法核實內文細節,未採信具體論斷
+- Reddit r/AskAcademia: WebSearch 查無任何討論串提及此刊,0 results
+
 ---
 
 ## Strategic Notes
@@ -274,5 +306,6 @@ Low for cognitive-engineering empirical authors. Moderate for design-research or
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Elsevier defaults. APC and 24-month AAM embargo confirmed. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

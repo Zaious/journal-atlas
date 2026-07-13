@@ -11,10 +11,11 @@
 
 Journal Atlas captures what bibliometric tools like Impact Factor and Scimago don't: the **soft metadata** of academic journals — reviewer culture, framing expectations, sensitive-topic tolerance, AI policy nuances, methodological preferences, and rejection-fallback strategies — encoded as a Claude Agent Skill installable across Claude Code, Claude Desktop, and ChatGPT.
 
-> **Status (2026-05): Pre-release.** 163 seed entries — 143 journals across 8 field
-> directories + 20 conferences across 4 sub-domains (HCI / ML / NLP / Data Mining).
-> Quality breakdown: **11 Tier 1** (evidence-backed) · **152 Tier 2** (community
-> estimate) · **0 Skeleton** (all promoted in Phase 4).
+> **Status (2026-07): Pre-release.** 399 seed entries — 379 journals across 9 field
+> directories (including new `philosophy/`) + 20 conferences across 4 sub-domains
+> (HCI / ML / NLP / Data Mining). Quality breakdown: **11 Tier 1** (evidence-backed) ·
+> **152 Tier 2** (community estimate) · **236 AI-Researched** (per-journal AI research
+> with cited `signal_quality`, v2 coverage-first pivot) · **0 Skeleton**.
 > Schema **v1.3** — adds `Venue type` field + `Conference Specifics` section.
 > Plus 8 Society Registry entries (`references/societies/`, schema `society-v1`)
 > covering ACM SIGCHI / SIGACCESS / ACL / APS / APA / Cell Press / Nature Portfolio / PLOS.
@@ -122,11 +123,11 @@ Use when you have a paper and need decisions: recommendations, comparisons, reje
 - Walk Rejection Fallback Chains
 - Present recommendations with cited evidence and Tier-aware confidence flags
 
-**Entry-count-aware design** scales from current 163 entries to 200+:
+**Entry-count-aware design** scales from current 399 entries and beyond:
 - ≤20 entries: direct read
 - 21–50: `scripts/fit_score.py` pre-ranking
 - 50+: mandatory pre-ranking; AI reads top 10–15
-- 200+: `scripts/query_journals.py` field-filter first
+- 200+: `scripts/query_journals.py` field-filter first (now the default path at 399)
 
 ### `journal-atlas-contribute` — The Contributor
 
@@ -420,7 +421,7 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
                                                               (no banner)
 ```
 
-Current distribution: **11 Tier 1 · 152 Tier 2 · 0 Skeleton = 163 total** (143 journals + 20 conferences).
+Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched (WO2) · 0 Skeleton = 399 total** (379 journals + 20 conferences). AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-wo2-pipeline-2026-07) for what it means.
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 

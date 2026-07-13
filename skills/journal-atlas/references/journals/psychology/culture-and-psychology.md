@@ -205,6 +205,38 @@ Reviewers are drawn primarily from the dialogical self and cultural-psychology c
 | **Data transparency requirement** | Flexible for qualitative work; pseudonymization is standard |
 | **OPSEC compatibility** | High — interpretive cultural-psychology work does not require raw-data exposure |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 SAGE 出版社層級的通用 AI 政策(未查到 Culture & Psychology 期刊專屬版本，本刊網頁亦未見額外聲明)。輔助性 AI(文法/語言潤飾)免揭露；生成式 AI 產出主要內容(文字、參考文獻、圖像、方法段落)須於投稿時揭露使用之模型；禁止用生成式 AI 捏造資料、頂替研究參與者、產生虛假引用；編輯與審稿人禁止用 GenAI 撰寫決議信或審稿意見。政策未明確說明 AI 是否可列為作者。
+
+**WO2 positioning finding (what the journal accepts now):** 本刊定位為文化心理學旗艦期刊，以理論性論文為主軸，強調文化、認同、社會行為、主體/互為主體經驗、情緒與符號創造力等主題的跨學科(心理學、哲學、人類學、社會學、教育、民族誌、文化史、語言學、女性主義研究、批判研究、傳播研究)探討。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/author-instructions/cap
+- https://journals.sagepub.com/home/cap
+- https://letpub.com.cn/index.php?journalid=13113&page=journalapp&view=detail (框架存在但「網友分享經驗」欄位無實際數據)
+- https://www.fabiao.com.cn/sci/1354067X/ (審稿週期等欄位未填)
+- https://www.haoqikan.com/sci/1354067X/ (審稿時間顯示「—」，無數據)
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **review_time_months**: SciRev 資料庫未收錄此刊(多種 URL/搜尋嘗試皆無結果)；LetPub、fabiao.com.cn、haoqikan.com 等中文彙整站雖有本刊頁面框架，但審稿週期欄位均為空或顯示「—」；muchong 論壇、知乎、Reddit r/AskAcademia 搜尋均未找到針對本刊的第一手投稿經驗討論串
+- **desk_reject_pct**: 同上，所有查證來源(SciRev/LetPub/fabiao/haoqikan/muchong/知乎/Reddit)均無此刊的退稿率第一手數據
+- **acceptance_note**: 未找到任何作者第一手投稿/接受經驗分享(中英文皆無)，故不編造通用敘述
+- **reviewer_culture**: 無任何論壇或社群討論可佐證審稿人風格或文化，依規則不可在無具體來源下做主觀論斷
+
+**Cross-language checks performed:**
+- SciRev (scirev.org): 查無此刊頁面，多次搜尋與直接 URL 嘗試皆 404/無結果 — 0 筆
+- 小木虫 muchong.com: 一般搜尋僅返回論壇版面首頁連結，未找到針對 Culture & Psychology 的具體討論串 — 0 筆有效結果
+- fabiaoji/fabiao.com.cn: 找到期刊介紹頁，但審稿週期/接受率/退稿率欄位皆為空白或「—」
+- 知乎 zhihu.com: 僅找到 SSCI 心理學期刊彙總文章列出本刊基本資料(ISSN、季刊)，無投稿經驗貼文 — 0 筆經驗分享
+- Reddit r/AskAcademia (site:reddit.com): 搜尋無任何相關討論串 — 0 筆結果
+- LetPub: 期刊頁面框架存在(平均審稿速度/平均錄用比例等統計位)，但「網友分享經驗」尚未被填入任何實際數據
+
 ---
 
 ## Strategic Notes
@@ -252,6 +284,7 @@ Moderate when manuscripts originate outside cultural-psychology paradigm. Author
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

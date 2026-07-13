@@ -219,6 +219,36 @@ Reviewers from CBT research community — ABCT (Association for Behavioral and C
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — clinical data anonymization rigorous |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 採用 Springer Nature 通用 AI 政策(非期刊專屬客製條款):LLM(如 ChatGPT)不符合作者資格認定,因其無法承擔問責。使用 LLM 需在 Methods 段落(或適當替代處)揭露。「AI 輔助文字潤色」(僅改善可讀性/文法/拼字/語氣,不變更內容)免揭露。生成式 AI 圖像/影片原則禁止發表,僅有限例外(內容本身即關於 AI 主題)需個案審查。此為 Springer 集團共通政策,非本刊獨有條款,故信心中等。
+
+**WO2 positioning finding (what the journal accepts now):** 跨學科期刊,聚焦認知歷程在人類適應與調適中的角色,涵蓋臨床、認知、諮商、發展、實驗、學習、人格與社會心理學。主題含情緒障礙、焦慮症、思覺失調症、飲食障礙、物質濫用、兒童青少年心理障礙、老化相關心理功能障礙、人格。近期編輯方向鼓勵跨領域尖端臨床科學,如轉譯研究、複雜網路分析(complex network analyses)、機器學習(machine learning)、以及新興藥物治療(如迷幻藥 psychedelics)的治療機轉研究,亦重視治療的可近性推廣(dissemination)與發展/文化面向。
+
+**WO2 experiential finding:** SciRev 上唯一近期紀錄顯示一篇稿件經「Excellent process」5.0/5.0 高評價但最終仍被「立即拒絕 (Rejected im.)」,顯示即使流程評價良好也可能快速拒稿,但因僅單一案例,不可推論為普遍模式。 
+
+**Sources cited in this pass:**
+- https://link.springer.com/journal/10608 (Springer Nature general journal AI policy, redirected from https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500)
+- https://link.springer.com/journal/10608/aims-and-scope (aims & scope page content obtained via search snippet; direct fetch was blocked by login redirect)
+- https://research.com/journal/cognitive-therapy-and-research
+- https://scirev.org/journal/cognitive-therapy-and-research/ (SciRev, n=2 reviews)
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: Springer submission-guidelines and journal-home pages both redirected to an authentication wall (idp.springer.com); no public non-authenticated source confirmed single- vs double-blind for this specific journal. A WebSearch AI-generated summary claiming single-blind (referencing a garbled 'CTG' abbreviation, likely conflated with a different Springer journal's double-blind announcement page) was discarded as unreliable.
+- **preprint.allowed**: No journal-specific or reachable Springer-general preprint policy page was retrievable (submission-guidelines page paywalled by login redirect); no public statement located via search.
+- **experiential.desk_reject_pct**: SciRev shows only n=2 reviews for this journal; no aggregate desk-reject percentage is reported, and no other public source was found.
+- **experiential.reviewer_culture**: No first-hand discussion found on 小木虫 muchong.com (0 relevant results), 知乎 zhihu (search returned only journal-metric aggregator pages, no personal reviewer-culture accounts), fabiaoji (same), or Reddit r/AskAcademia (0 relevant threads). Chinese review-comment site eshukan.com explicitly states '暫無點評信息' (no comments yet posted) for this journal.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: site-restricted search returned 0 relevant results (only off-target clinical-trial/PMC pages)
+- 知乎 zhihu: search returned only journal-metric database pages (eshukan, xueshu, ablesci, iikx, 21ks, lmlearning); no personal submission/review narrative found
+- fabiaoji: search returned only aggregator/metrics pages (scispace, scimagojr, resurchify, EBSCO); 0 first-hand submission accounts
+- Reddit r/AskAcademia: 0 relevant threads found via search
+- SciRev (scirev.org/journal/cognitive-therapy-and-research): n=2 reviews only — review-time and process-rating numbers extracted, but no acceptance rate, no desk-reject %, no free-text reviewer-culture commentary
+- eshukan.com (期刊點評/review-comment page): explicitly '暫無點評信息' (no comments posted) — confirmed absence, not a search miss
+
 ---
 
 ## Strategic Notes
@@ -265,5 +295,6 @@ Low for CBT research tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + ABCT / EABCT CBT research editorial culture domain knowledge | @Zaious |

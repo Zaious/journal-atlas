@@ -219,6 +219,40 @@ Reviewers from ARP-affiliated personality research community. Common demands: "T
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 採 Elsevier 出版社通用政策(非本刊特定)。作者僅可用生成式 AI 改善語言與可讀性,且必須揭露;不得用 AI 產生/撰寫論文內容,AI 不得列為作者。唯一例外:若 AI 為研究設計/方法之一部分,須於方法段可重現地說明(工具名、版本、廠商)。屬「有條件許可+強制揭露」的閘門,故 leniency 偏低(2)。
+
+**WO2 positioning finding (what the journal accepts now):** 人格心理學的實證與理論研究:特質取向與動態歷程取向並收,及與人格理解相關的遺傳、生理、動機、認知、跨文化、發展、社會歷程。收錄整合多研究的論文、理論/方法學評論、單一具創新性的嚴謹研究,以及含複製與無效結果的簡短報告(brief reports)。近期(2024-2026)實際刊出主題含自戀(grandiose/vulnerable)、自尊動態、Big Five、跨時間後設分析。
+
+**WO2 experiential finding:** *(not researched)* 僅有 SciRev 單一第一手回報(1 則),為一次 desk rejection:作者稱編輯耗時約 5 週(SciRev 記錄即時拒稿決定時間 35 天)才給出僅一兩句回饋的桌拒,並批評『不該花 5 週只讀完、拒稿並給一兩句意見』。此為單一軼事,不足以概化審稿文化,僅如實記錄。
+
+**Sources cited in this pass:**
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- type:Chinese-directory(fabiao, 年發文量68/6期一年, 無審稿週期或錄用率, 無投稿經驗); url:https://www.fabiao.com.cn/sci/00926566/
+- type:Chinese-directory(iikx, IF/分區, 投稿經驗欄位空白); url:https://www.iikx.com/sci/medcine/34998.html
+- type:SciRev(1 review, desk-reject anecdote, 35-day immediate-reject decision time); url:https://scirev.org/journal/journal-of-research-in-personality/
+- type:aims-scope; url:https://www.sciencedirect.com/journal/journal-of-research-in-personality
+- type:recent-article(ESM narcissism/self-esteem,2025-26); url:https://www.sciencedirect.com/science/article/pii/S0191886926000371
+- type:recent-article(vol117,2025); url:https://www.sciencedirect.com/journal/journal-of-research-in-personality/vol/117/suppl/C
+- type:wikipedia-scope; url:https://en.wikipedia.org/wiki/Journal_of_Research_in_Personality
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 僅 1 則且為 desk-reject 軼事,無已接受稿件的完整處理時間;中英論壇皆無討論,無法給出審稿月數。
+- **experiential.desk_reject_pct**: SciRev 僅 1 則評論,樣本不足以計算桌拒百分比;無其他來源。
+- **experiential.acceptance_note**: 無任何第一手『接受』經驗來源(SciRev 唯一記錄為拒稿)。
+- **peer_review.type**: Elsevier/ScienceDirect 作者指南頁面均回傳 403,無法直接驗證本刊為單盲或雙盲;僅能確認為 peer-reviewed。
+- **ai_policy(journal-specific)**: 僅找到 Elsevier 出版社通用生成式 AI 政策,無 JRP 本刊特定 AI 條款。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com:搜尋 JRP 投稿/審稿經驗,僅得論壇版面索引,0 則本刊第一手投稿討論串。
+- 爱科学 iikx.com:期刊目錄頁,列 IF 3.4/中科院2區/ISSN,『投稿經驗分享』欄位為空,0 則經驗。
+- fabiao.com.cn:期刊目錄頁,列年發文量約68、一年6期,無審稿週期/錄用率,0 則第一手經驗。
+- 知乎 zhihu:0 則 JRP 專屬投稿/審稿討論(結果多為 JPSP 等鄰近期刊)。
+- Reddit r/AskAcademia:0 則 JRP 專屬投稿經驗(結果多指向 JPSP/Journal of Personality)。
+
 ---
 
 ## Strategic Notes
@@ -264,5 +298,6 @@ Low for personality-tradition empirical authors. 24-month AAM embargo on subscri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + ARP-affiliated personality research editorial culture domain knowledge | @Zaious |

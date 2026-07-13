@@ -205,6 +205,38 @@ Design research + HCI practitioner-bridge community. Reviewer expectations: cros
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium-High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此頁面為 Oxford University Press 出版社層級的通用 AI 政策(非 JDH 期刊專屬頁面;嘗試存取 https://academic.oup.com/jdh/pages/ai-policy 得到 404,故 JDH 本身未見獨立 AI 政策頁)。OUP 政策要點(轉述,非逐字):生成式 AI 不得列為作者;不得用於執行「主要著者責任」(如產生論點、科學洞見、撰寫分析或下結論);若在投稿中使用生成式 AI,須在 cover letter 及正文 Methods/Acknowledgements 註明使用地點、工具、版本、使用方式與驗證步驟;AI 生成內容需經 OUP 書面許可,必要時須以人工內容替換;作者對內容準確性與原創性負全責。因為找不到 JDH 專屬版本,評級保守(2/5=偏嚴,需揭露且需許可),signal_quality 偏低因為是出版社通用政策而非期刊專屬確認。
+
+**WO2 positioning finding (what the journal accepts now):** 2026年6月出刊(Vol.39 Issue 2)含「Design History and Digital Material Culture」專題,以及跨地域研究(中國平面設計史、阿根廷設計檔案實踐)。近期 CFP 主題包括 2024年10月發布的「Designing for Disability Futures」特刊徵稿(SAH 轉載,原始頁面 403 無法直接讀取全文)。2026年3月25日起徵求 Virtual Special Issue(VSI)提案。期刊另設 Explorations 欄目,鼓勵實驗性、反思性、詩意或跨學科的另類學術書寫形式。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://academic.oup.com/jdh/issue
+- https://academic.oup.com/jdh/pages/explorations
+- https://academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence
+- https://scirev.org/journal/journal-of-design-history/
+- https://www.designhistorysociety.org/news/view/journal-of-design-history-special-issue-call-for-papers
+- https://www.sah.org/jobs-opportunities/opportunities/recent-opportunities/2024/10/04/default-calendar/call-for-papers-journal-of-design-history-designing-for-disability-futures
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 該期刊頁面顯示 'Duration first review round'、'Tot. handling time acc. manuscripts'、'Average number of review rounds' 全為 n/a;查無其他第一手投稿者資料。
+- **experiential.desk_reject_pct**: SciRev 該期刊 '% immediately rejected last year' 顯示 n/a,無公開數據。
+- **experiential.acceptance_note**: SciRev 頁面明確標示 'No reviews have yet been submitted for this journal',無任何投稿者評論可引用。
+- **experiential.reviewer_culture**: 小木虫、知乎、fabiaoji、Reddit r/AskAcademia 搜尋均未找到針對本刊的第一手審稿文化討論;僅有一篇知乎文章列出設計類期刊清單但未含具體審稿經驗描述,故不採用作為主觀評語依據。
+- **ai_policy (journal-specific page)**: https://academic.oup.com/jdh/pages/ai-policy 回傳 404,JDH 未見期刊專屬 AI 政策頁,僅能引用 OUP 出版社層級通用政策,可能與期刊實際執行細節有出入。
+- **positioning special-issue CFP full text**: SAH 轉載的 'Designing for Disability Futures' CFP 原始連結回傳 403 Forbidden,僅能得知徵稿標題,無法讀取徵稿範圍/方法細節全文。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 搜尋「Journal of Design History 小木虫」未見期刊專屬討論串,僅有站台首頁與無關期刊點評結果 (0 relevant results)
+- 知乎 zhihu.com — 找到一篇列出設計類期刊清單的文章提及本刊名稱,但無審稿時間/desk reject/審稿文化等第一手經驗描述 (0 usable experiential results)
+- fabiaoji — 搜尋未返回任何與本刊相關結果 (0 results)
+- Reddit r/AskAcademia — 站內搜尋與 site:reddit.com 搜尋均無相關討論串 (0 results)
+
 ---
 
 ## Strategic Notes
@@ -244,4 +276,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

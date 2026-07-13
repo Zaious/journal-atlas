@@ -220,6 +220,36 @@ Reviewers from CSCW / ECSCW community. Common demands: "Cooperative phenomena sp
 | **Data transparency requirement** | Flexible — qualitative pseudonymization |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is Springer Nature's PUBLISHER-WIDE policy (not a CSCW-journal-specific page — the journal's own submission-guidelines page redirected to a login wall and could not be directly verified). LLMs do not qualify for authorship (no accountability). Use of an LLM/AI tool in producing the manuscript must be disclosed in the Methods section (or equivalent). Exception: 'AI-assisted copy editing' (grammar/style/wording polish of human-written text, no autonomous content generation) does NOT need to be declared. AI-generated images are subject to a separate Springer image policy. No CSCW-journal-specific deviation from this default was found.
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** LetPub rates '平均录用比例：容易' (average acceptance ratio: easy) and a separate Chinese ranking-guide aggregator describes the journal as low-IF and comparatively easy to get accepted ('录用比例很高，投稿比较容易，但影响因子不算高'). These are aggregator/ranking-guide characterizations, not individual first-hand submission narratives, so treat as directional only. 
+
+**Sources cited in this pass:**
+- https://link.springer.com/journal/10606/aims-and-scope (content reached only via search-engine cache/snippet, not direct fetch — Springer login wall blocked direct verification)
+- https://scirev.org/journal/computer-supported-cooperative-work-cscw/
+- https://scirev.org/reviews/computer-supported-cooperative-work-cscw/
+- https://www.letpub.com.cn/index.php?journalid=1996&page=journalapp&view=detail
+- https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=1996&xuanxiangk_id=2
+- https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now**: Could not retrieve actual 2024-2026 article titles: link.springer.com/journal/10606/articles and /volumes-and-issues both redirect to a Springer IDP login wall, and the EUSSET JCSCW digital-library mirror only points back to Springer without listing titles. Web search surfaced only aggregate stats (e.g. '20 articles published in 2025') and no verifiable individual titles from THIS journal (search hits for 'generative AI + CSCW' were mostly the separate ACM CSCW conference or the sister journal ijCSCL, not this Springer journal).
+- **experiential.reviewer_culture**: No first-hand forum discussion found in any mandated cross-language source: 0 results on muchong.com (小木虫), no first-hand submission-experience threads on zhihu (only aggregator/ranking-guide pages surfaced), 0 results on Reddit r/AskAcademia for this specific journal.
+- **experiential.desk_reject_pct**: SciRev's journal page has no populated desk-reject or acceptance-rate field for this title ('n/a').
+- **peer_review.type / positioning confidence**: Springer's own CSCW-journal submission-guidelines and aims-and-scope pages are behind an IDP login redirect and could not be directly fetched; these facts rely on search-engine cached snippets rather than a directly verified live page, so confidence is lower than a normal source_url citation would imply.
+
+**Cross-language checks performed:**
+- muchong.com (小木虫): searched for CSCW submission/review threads — 0 relevant results found
+- zhihu (知乎): searched for submission-experience posts — no first-hand accounts found, only aggregator/ranking-guide articles (e.g. IF-region listicles) referencing the journal in passing
+- Reddit r/AskAcademia: searched via site:reddit.com — 0 relevant results found
+- LetPub (Chinese SCI-journal aggregator, supplementary to the mandated list): yielded concrete review-speed (>12 weeks) and acceptance-ease ('容易') data points
+
 ---
 
 ## Strategic Notes
@@ -265,5 +295,6 @@ Low for CSCW tradition authors. CSCW journal (Springer JCSCW) distinct from PACM
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + CSCW / ECSCW community editorial culture domain knowledge | @Zaious |

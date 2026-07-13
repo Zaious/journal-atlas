@@ -221,6 +221,39 @@ Reviewers drawn primarily from APA Division 3 (Experimental Psychology) and Psyc
 | **Data transparency requirement** | High — APA open-science badges encouraged |
 | **OPSEC compatibility** | Medium — memory-task data typically aggregable |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 APA 全出版社通用政策，非本刊專屬頁面。允許使用生成式 AI 協助撰稿，但要求依用途在對應章節揭露並引註（文獻回顧→前言、翻譯潤色→作者註、程式碼/資料分析→方法、圖表製作→結果）；AI 不得列為作者；作者需自行查核 AI 產出內容與引文正確性；純文字潤色（文法/拼寫/語調）不需揭露。JEP:LMC 期刊頁面僅連結至此通用政策，未見期刊專屬加註條款。
+
+**WO2 positioning finding (what the journal accepts now):** 以人類認知（學習、記憶、語言、高階認知）之原創實驗與理論研究為主，強調方法嚴謹性、分析嚴密性、可重複性/可複現性；採用 TOP (Transparency and Openness Promotion) Guidelines。
+
+**WO2 experiential finding:** LetPub 頁面標示整體「接受難度：容易」，但未附具體百分比或樣本數，可信度低，未採信為正式數據。2013 年舊部落格資料顯示拒稿率 78%（含大修再議者），來源為 mindingthebrain.blogspot.com，非期刊自報且已過時，僅供背景參考不採信為現況。 
+
+**Sources cited in this pass:**
+- http://mindingthebrain.blogspot.com/2016/02/acceptance-and-rejection-rates.html
+- https://letpub.com.cn/index.php?journalid=4521&page=journalapp&view=detail&xuanxiangk_id=2
+- https://scirev.org/journal/journal-of-experimental-psychology-learning-memory-and-cognition/
+- https://www.apa.org/pubs/journals/resources/jep-lmc-registered-reports-flowchart.pdf
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+- https://www.apa.org/pubs/journals/xlm
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 平台該刊頁面僅 1 筆評論、且無完整審稿週期資料（唯一數字為立即拒稿 3 天，非代表性首輪/總審稿時長）。LetPub 頁面提供兩組互相矛盾且未經交叉驗證的數字（'4-8週' 定性標籤 vs 頁面摘要提及 '6-9.5個月' 投稿至接受觀察），量級差異過大且無法確認是否指同一階段，故不採信任一數字，留白。
+- **experiential.desk_reject_pct**: SciRev 僅 1 筆評論不足以統計；LetPub 僅給定性標籤「容易」，無具體百分比或樣本數，未達可信門檻。
+- **experiential.reviewer_culture**: 遍尋小木虫(muchong.com)、知乎(zhihu.com)、fabiaoji/sfabiao、Reddit r/AskAcademia，均未命中任何針對本刊審稿人態度/文化的一手討論帖，僅命中期刊基本資料轉載頁，故留白。
+- **ai_policy (journal-specific nuance)**: 僅查得 APA 出版社層級通用生成式 AI 政策頁，JEP:LMC 期刊自身頁面未見任何加註或例外條款，故 ai_policy 標記為出版社層級政策而非期刊一手來源，signal_quality 因此僅 2。
+- **positioning special-issue CFP**: 未查得 2024-2026 任何本刊當前開放中的專刊徵稿；僅見一則舊主題 'Conflict adaptation across single-task and multi-tasking paradigms'，無法確認其徵稿狀態是否仍開放，故未列入 accepts_now 佐證。
+
+**Cross-language checks performed:**
+- SciRev (scirev.org) — 1 則評論，僅含立即拒稿 3 天紀錄，無完整審稿週期/接受率/審稿人評語數據
+- 小木虫 muchong.com — 搜尋「JEP LMC 投稿 审稿」「学习记忆与认知 期刊」均為 0 筆本刊專屬結果，僅命中其他無關期刊討論串
+- 知乎 zhihu.com — 命中 1 篇期刊介紹文（zhuanlan.zhihu.com/p/579505707），僅為期刊基本資料轉載，非投稿經驗一手貼文
+- fabiaoji/sfabiao.com — 命中期刊資料頁，含「預計審稿時間：偏慢,4-8週」定性標籤，但無具體評論來源
+- letpub.com.cn — 命中專屬頁面（journalid=4521），含「審稿周期4-8週」「接受難度：容易」標籤，頁面聲明僅5則使用者分享且未提供可查證逐字引用
+- Reddit r/AskAcademia — 搜尋「reddit AskAcademia JEP LMC review time reject」0 筆本刊專屬結果
+
 ---
 
 ## Strategic Notes
@@ -270,5 +303,6 @@ Low for experimental memory/cognition tradition authors. APA-style formatting st
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (apa.org/pubs/journals/xlm) + APA Division 3 / Psychonomic Society editorial culture domain knowledge | @Zaious |

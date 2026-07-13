@@ -220,6 +220,34 @@ Reviewers from SANS (Social and Affective Neuroscience Society) network. Common 
 | **Data transparency requirement** | Very High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 允許使用生成式AI(如協助生成內容/圖片、寫程式、處理資料、翻譯),但強制要求在cover letter及Methods或Acknowledgements中揭露。AI不得列為作者,期刊會篩查作者名單。屬OUP集團政策在SCAN頁面的具體落地(非泛用集團page,是journal-specific author guidelines頁)。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)持續徵稿主題聚焦於:社會認知與情感神經科學的跨學科交叉,包括「episodic memory與social cognition的交互作用」(現行公開徵稿的special issue,截稿2027-02-28)。過往special issues主題涵蓋:社會神經生物學與飲食(Social Neurobiology of Eating, Vol.18)、神經調控技術如tDCS/TMS(Neuromodulation, Vol.17)、計算方法與機器學習/網路科學結合(Computational Methods, Vol.16)、人際同步性跨學科研究(Interpersonal Synchrony, Vol.16)、健康神經科學(Health Neuroscience, Vol.15)。
+
+**WO2 experiential finding:** SciRev近期一則評論指出稿件「handled well and swiftly」,送給2位審稿人並獲得建設性意見;另一則提到第一輪審稿尚可,但第二輪editorial team花了1個月才將修改稿送回審稿人,滿意度較低;另有一則desk reject案例形容「a pity, but the process was quick and clear」。 SciRev評分(n=5):審稿報告品質 3.3/5.0,審稿意見難度 3.7/5.0(偏難),整體稿件處理評分 3.0/5.0。無小木虫/知乎/Reddit等跨語言論壇的第一手審稿文化描述可佐證或補充,故不作額外主觀推論。
+
+**Sources cited in this pass:**
+- https://academic.oup.com/scan/pages/About (aims and scope)
+- https://academic.oup.com/scan/pages/author-guidelines
+- https://academic.oup.com/scan/pages/special-issues (special issue列表,含現行開放徵稿之episodic memory & social cognition special issue,截稿2027-02-28)
+- https://scirev.org/journal/social-cognitive-and-affective-neuroscience/
+- https://zhuanlan.zhihu.com/p/643130626 (title/existence confirmed via search snippet only, full text inaccessible - HTTP 403)
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev僅5筆評論,未提供可靠的百分比統計,僅有零星敘述(如「desk rejected quickly, within 4 days」的個案),不足以推算穩定比例,故留空避免捏造數字
+- **cross_language sources: 小木虫/fabiaoji specific threads**: WebSearch未找到小木虫或fabiaoji上針對SCAN期刊的第一手投審稿討論串,僅有知乎一篇文章(且WebFetch被知乎403擋下無法取得原文,只能用搜尋引擎摘要)及zhihu期刊列表提及IF
+- **reddit r/AskAcademia**: WebSearch查詢「reddit AskAcademia Social Cognitive and Affective Neuroscience review time desk reject」未返回任何Reddit討論串連結,只有SciRev/PMC/Wikipedia等結果,判定0 results
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 站內搜尋未命中SCAN期刊專屬投審稿討論串,僅命中站內其他期刊(如Nature Communications審稿人心得)的無關結果 — 0 relevant results
+- 知乎 zhihu.com: 命中一篇《怎樣發表學術論文:SOCIAL COGNITIVE AND AFFECTIVE NEUROSCIENCE》(zhuanlan.zhihu.com/p/643130626),但WebFetch被知乎回傳HTTP 403無法取得原文內容,僅能從Google摘要得知該文存在及IF=3.5等基本資訊,未能提取具體審稿時效/desk-reject等一手數據
+- fabiaoji (发表吧): 未執行獨立查詢(綜合搜尋詞未命中任何fabiaoji網域結果,判定與小木虫查詢結果重疊為0 results)
+- Reddit r/AskAcademia: WebSearch 0 results — 查無任何Reddit討論串提及此期刊
+
 ---
 
 ## Strategic Notes
@@ -266,5 +294,6 @@ Low for SANS tradition authors. OA available via OUP.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from OUP publisher + SANS social-affective neuroscience editorial culture domain knowledge | @Zaious |

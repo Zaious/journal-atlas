@@ -220,6 +220,37 @@ Reviewers drawn primarily from the general experimental psychology community —
 | **Data transparency requirement** | High — APA open-science badges encouraged |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 APA 出版社層級（非本刊獨有）政策：AI 不得列為作者；作者若用生成式 AI 產生想法/內容/分析/程式碼等，須在方法或引言段落揭露並引註；純粹的『延伸式 AI 校對潤稿』僅需在 author note 註明，不強制正文揭露；編輯與審稿人被明文禁止將投稿內容輸入 AI 工具（保密考量）。未見 XGE 期刊頁對此政策做任何加嚴或放寬的期刊專屬聲明，故判定為 APA 通用政策沿用。
+
+**WO2 positioning finding (what the journal accepts now):** 官方 Aims & Scope：刊登廣泛心理學領域中，具跨社群（跨兩個以上心理學傳統次領域）興趣的實證與理論研究，主題可涉及社會歷程、發展歷程、精神疾病、神經科學或計算建模等；另收 Brief Reports（≤3000字），但此類稿件未經審查即拒稿比例較高，需展現高度結果穩健性且優先偏好跨多個心理學領域的影響力。
+
+**WO2 experiential finding:** 無具體接受率數字來源。APA 官方頁面提及 Brief Reports 類型『未經審查即拒稿的比例較高』，但未給出百分比，僅為定性描述，非可引用之接受率。 SciRev 彙整之量化評分：審稿報告品質 3.8/5.0；整體投稿處理流程評價 3.6/5.0（『流程良好』）；其中一筆評論將審稿難度評為 4.7/5.0（『非常困難』）。SciRev 摘要敘述審稿人『非常專業並提供大量有用建議』（此為 SciRev 平台對多筆評論的摘要措辭，樣本量小僅 6 筆，需謹慎採信）。
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/journal-of-experimental-psychology-general/
+- https://scirev.org/reviews/journal-of-experimental-psychology-general/
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+- https://www.apa.org/pubs/journals/xge
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev 該刊頁面此欄位標示為 n/a；小木虫、fabiaoji、知乎搜尋均未查得具體拒稿率數字。
+- **cross_language: 小木虫 (muchong.com)**: 以 site:muchong.com 加期刊名搜尋未回傳任何 muchong.com 站內結果，判定為查無可索引討論串。
+- **cross_language: fabiaoji**: 查得的是 fabiao.com.cn / ifabiao.com 等期刊資訊頁，內容為投稿格式規範，並非一手審稿週期或拒稿經驗分享。
+- **cross_language: Reddit r/AskAcademia**: WebSearch 未回傳任何 reddit.com 網域結果，0 results。
+- **preprint.allowed**: XGE 期刊專屬頁面未提及 preprint 政策；僅有 APA 通用原則片段，無法確認是否逐字適用於本刊。
+- **positioning (recent 2024-2026 article titles / full CFP text)**: APA 期刊頁僅顯示一則被截斷的特刊徵稿標題，未能取得完整 CFP 或近期文章標題列表佐證 accepts_now 的具體方法學趨勢。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — site:muchong.com 搜尋：0 個站內結果
+- fabiaoji (fabiao.com.cn/ifabiao.com) — 查得期刊基本資料與投稿格式規範頁面，但無一手審稿經驗/週期分享
+- 知乎 zhihu.com — 查得的是同系列 JEP 期刊介紹性專欄文章，非本刊 XGE 的一手審稿經驗討論
+- letpub.com.cn（補充中文投稿經驗源）— 頁面明確標示『同領域作者分享投稿經驗：共0條』
+- Reddit r/AskAcademia — WebSearch 查詢回傳 0 個 reddit.com 網域結果
+
 ---
 
 ## Strategic Notes
@@ -269,5 +300,6 @@ Moderate. Long-form preference adds writing time; desk-reject delay (4+ weeks du
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05). Note: community-source review attributes this entry to psychology/ but actual location is cognitive-science/. | @Zaious |

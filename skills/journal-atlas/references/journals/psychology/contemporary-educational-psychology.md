@@ -220,6 +220,34 @@ Reviewers from educational-psychology research community — APA Division 15 / A
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** publisher-level (Elsevier) policy, not journal-specific: authors may use generative AI tools in a limited, supportive way during manuscript preparation but must disclose use (tool name, purpose, extent of oversight) in a mandatory 'Declaration of Generative AI and AI-assisted technologies' statement placed above references; grammar/spelling checks are exempt from disclosure; AI may NOT be listed as an author; AI must not be used to create/alter images (exception: if AI is part of the research design/methods itself, which must then be described in the methods section). No Contemporary-Educational-Psychology-specific AI clause was found beyond this Elsevier-wide policy referenced from the journal's guide-for-authors page (that page itself returned HTTP 403 on fetch, so this is inferred as applying via Elsevier's standard journal template, not confirmed word-for-word on the CEP page).
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** SciRev's single logged review (rejected outcome) rated overall manuscript-handling 2.5/5, with reviewer comment: process quality was high but very slow, 'holdup was primarily due to the handling editor.' N=1-2 data points only — not a reliable acceptance-rate proxy. Only source is the single SciRev comment above; no corroborating cross-language forum discussion found (see blanks/cross_language_checked).
+
+**Sources cited in this pass:**
+- https://research.com/journal/contemporary-educational-psychology (aggregated aims/scope text, not directly verified against 2024-2026 article titles)
+- https://scirev.org/journal/contemporary-educational-psychology/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now / recent article title analysis**: Could not directly browse ScienceDirect's live TOC or a current CFP page for CEP — sciencedirect.com/.../about/call-for-papers and the guide-for-authors page both returned HTTP 403 on WebFetch; only third-party aggregator summaries of aims/scope were retrievable, so no verified list of 2024-2026 titles/topics exists in this draft.
+- **experiential.desk_reject_pct**: No SciRev, forum, or Reddit source reported a desk-reject percentage for this journal; nothing found on 小木虫/muchong, 知乎, fabiaoji, or Reddit r/AskAcademia specific to this journal (see cross_language_checked).
+- **peer_review.type**: Journal's own guide-for-authors page (sciencedirect.com) returned HTTP 403 Forbidden, so 'double-anonymized' comes only from a WebSearch-engine-generated summary citing scispace/letpub aggregator pages, not a directly fetched primary source; treat as low-confidence.
+- **ai_policy specific-to-CEP clause**: Could not fetch the CEP guide-for-authors page directly (403); the AI policy reported is Elsevier's publisher-wide generative-AI policy, assumed to apply via the standard journal template but not confirmed verbatim on CEP's own page.
+- **experiential.reviewer_culture (political/topical leaning)**: No concrete source found; per hard rules, not fabricating a narrative.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — site-restricted WebSearch returned 0 results specific to Contemporary Educational Psychology (only generic journal-info pages surfaced)
+- 知乎 zhihu.com — found one general SSCI-journal-list article mentioning CEP by name in passing, but no first-hand review-experience post found
+- fabiaoji — not searched successfully; no results surfaced via general queries, no dedicated fabiaoji query returned journal-specific content
+- Reddit r/AskAcademia — site:reddit.com search returned 0 results for this journal
+
 ---
 
 ## Strategic Notes
@@ -266,5 +294,6 @@ Low for educational-psychology tradition authors. 24-month AAM embargo on subscr
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + educational-psychology editorial culture domain knowledge | @Zaious |

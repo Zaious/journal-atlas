@@ -220,6 +220,34 @@ Reviewers from qualitative health research community — SAGE qualitative family
 | **Data transparency requirement** | Flexible — qualitative pseudonymization standard |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** SAGE 出版社整體政策:LLM/生成式AI(如ChatGPT)可作為寫作生產力工具(構思結構、摘要、改寫、潤色),不得列為作者。QHR 期刊投稿須知進一步要求:凡使用生成式AI協助構思、研究設計、資料生成、分析協助或呈現研究發現等『構成質性研究要素』的活動,須在正文中明確標示,並在 Acknowledgements 中揭露所用技術名稱、存取時間與用途。允許使用範圍相對寬(涵蓋研究設計/分析輔助),但強制揭露,屬有條件開放而非全面禁止或無限制開放。
+
+**WO2 positioning finding (what the journal accepts now):** 疾病/患病經驗(illness experience)、健康與就醫行為(health and health-seeking behaviors)、照顧者經驗、健康照護之社會文化組織、健康照護政策等議題的質性研究,強調 novelty、方法論嚴謹度與分析深度。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/author-instructions/qhr
+- https://journals.sagepub.com/home/qhr
+- https://journals.sagepub.com/page/qhr/advancing-interpretative-phenomenological
+- https://scirev.org/journal/qualitative-health-research/
+- https://www.ifabiao.com/sci/10497323/
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev 該期刊頁面 acceptance rate 欄位標示為 n/a,且未找到任何論壇/社群提供具體退稿率數字,故留空。
+- **experiential.acceptance_note**: WebSearch 摘要曾聲稱 SAGE 官方頁面列出常見退稿原因(scope不符、novelty不足、缺乏詮釋深度、倫理問題),但直接 WebFetch 該 uk.sagepub.com 期刊頁面時未能在頁面內容中復現此段文字,來源無法一次性驗證,故不採信、留空,避免誤植未經核實內容為事實。
+- **experiential.reviewer_culture**: 跨語言查核(小木虫 muchong.com、知乎 zhihu、發表記/ifabiao 等中文學術論壇、Reddit r/AskAcademia)均未找到針對本刊審稿人風格/文化的第一手心得貼文,僅有期刊代辦/資訊聚合站的制式介紹(影響因子、分區等),不構成審稿文化的具體證據,依規則留空。
+
+**Cross-language checks performed:**
+- muchong.com (小木虫): 搜尋『Qualitative Health Research 期刊點評』未找到針對本刊的論壇討論串,僅間接連結至其他期刊點評版面 — 0 first-hand結果
+- zhihu.com (知乎): 找到 SSCI 期刊列表提及本刊(僅列名+影響因子),未找到具體投稿經驗文章 — 0 first-hand結果
+- fabiaoji / ifabiao.com / peipusci.com (中文期刊代辦/資訊聚合站): 找到制式期刊介紹頁,含影響因子、分區、『投稿相對容易』等籠統評語,無具體審稿人/退稿率一手數據 — 僅聚合資訊,非一手經驗
+- reddit.com/r/AskAcademia: 搜尋未返回任何提及本刊的討論串 — 0 results
+
 ---
 
 ## Strategic Notes
@@ -266,5 +294,6 @@ Low for qualitative health tradition authors. Sustained reflexive engagement exp
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE publisher + Morse / Charmaz / IIQM qualitative health research editorial culture domain knowledge | @Zaious |

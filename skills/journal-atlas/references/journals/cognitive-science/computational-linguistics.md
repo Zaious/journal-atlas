@@ -219,6 +219,39 @@ Reviewers from ACL community — senior NLP researchers. Common demands: "Lingui
 | **Data transparency requirement** | Very High — code + data + benchmark expected |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** No AI/LLM-specific policy text found on the Computational Linguistics journal's own submissions pages (cljournal.org/submissions.html, submissions.cljournal.org) as of 2026-07-13 — confirmed by direct fetch, no mention of AI, ChatGPT, or generative AI. CL is published for the Association for Computational Linguistics (ACL), whose 2024 ACL Policy on Publication Ethics states authors must disclose use of AI writing assistants/LLMs; generative AI cannot be listed as an author. The ACL 2023 conference-specific policy (a precursor, for ACL conferences not necessarily CL journal) explicitly said the AI-use question 'is not meant for automatic desk-rejections' — case-by-case, not gated. Because none of this is confirmed as CL-journal-specific (it is org-level ACL policy of uncertain direct applicability to the journal), leniency/gate are inferred, not journal-confirmed.
+
+**WO2 positioning finding (what the journal accepts now):** Strongly LLM/contemporary-NLP focused as of Vol.51 (Mar 2025) onward: journal statement says it 'strongly encourages research that engages with emerging paradigms, with particular emphasis on contemporary language model technologies (e.g., LLMs)' while still welcoming theoretical/foundational linguistics work. Actual 2025-2026 article titles confirm heavy LLM/interpretability/evaluation focus: e.g. 'Truth or Mirage? Towards End-to-End Factuality Evaluation with LLM-Oasis', 'Are Formal and Functional Linguistic Mechanisms Dissociated in Language Models?', 'Anthropocentric Bias in Language Model Evaluation', 'Rethinking Data Use in Large Language Models', 'Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models', 'Tokenization as Finite-State Transduction', alongside more classical CL topics like grammatical-diversity measurement, temporal-expression normalization, dictionary expansion, minimal-pair acceptability corpora (Dutch BLiMP-NL).
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://aclanthology.org/volumes/2025.cl-4/
+- https://aclanthology.org/volumes/2026.cl-1/
+- https://aiweekly.co/alerts/computational-linguistics-journal-opens-ethics-special-issue
+- https://muchong.com/bbs/journal.php?view=detail&jid=1981
+- https://scirev.org/journal/computational-linguistics/
+- https://submissions.cljournal.org/index.php/cljournal/about/submissions
+- https://www.aclweb.org/adminwiki/images/f/fe/ACL_Publication_Ethics_Policy.pdf
+- https://www.aclweb.org/portal/content/2nd-call-papers-special-issue-computational-linguistics-language-learning-representation-and
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.leniency_1_5 and gate**: No AI/generative-AI/ChatGPT/LLM policy text exists on the journal's own submissions/author-guidelines pages (verified by direct fetch of cljournal.org/submissions.html and submissions.cljournal.org). The leniency/gate given are extrapolated from the org-level ACL Publication Ethics Policy (2024) and the ACL 2023 conference AI-writing policy, whose direct applicability to the CL journal specifically is unconfirmed.
+- **preprint.allowed**: No explicit preprint/arXiv statement found on cljournal.org or submissions.cljournal.org after direct fetch. Field norm in NLP/CL strongly permits arXiv preprinting (papers routinely posted, e.g. one CL-adjacent case study author uploaded their rejected manuscript to arXiv after review), but no first-hand CL-journal-specific policy statement was located, so left null rather than inferred.
+- **experiential.desk_reject_pct**: No SciRev data field populated (rejection rate listed as 'n/a'), no forum thread (muchong, zhihu, Reddit r/AskAcademia) discussing desk-reject rate for this specific journal was found.
+- **experiential.acceptance_note**: No first-hand acceptance/rejection narrative found in any queried source with concrete detail beyond one vague muchong comment ('few publications but each is high quality', 2010) which is too old and non-specific to use as a fact.
+- **experiential.reviewer_culture**: SciRev has only 1 review (no aggregate signal); muchong.com page has exactly 2 comments (2010, 2013), both generic praise with zero concrete process detail; zhihu search returned only unrelated ACL2026-conference discussion, no CL-journal-specific thread; Reddit r/AskAcademia search for this journal returned 0 results. No concrete source exists to support any reviewer-culture claim, so left null per hard rule against inventing generic narrative. One tangential arXiv case-study (2407.12026, 'The Pitfalls of Publishing in the Age of LLMs') describes a reviewer submitting an LLM-generated review at 'a prominent journal in natural language processing / computational linguistics' in 2023, but the paper never names the journal explicitly (redacted as '[your journal]'/'[this journal]') and 'computational linguistics' is used as the field name, not confirmed as this specific journal (ISSN 0891-2017) — too ambiguous to attribute as fact to this journal.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com (COMPUTATIONAL LINGUISTICS journal review page, jid=1981): 2 comments found (2010, 2013), both generic positive ratings with zero concrete review-time/desk-reject/reviewer-culture data.
+- 知乎 zhihu.com: search returned only tangential ACL2026-conference submission-group posts, no thread specifically discussing the Computational Linguistics journal (ISSN 0891-2017) review/acceptance experience — 0 usable results.
+- Reddit r/AskAcademia: 0 results found for this specific journal's review time/desk-reject experience.
+- fabiaoji: not separately queried — no results surfaced via broader Chinese-language searches that referenced fabiaoji-specific content for this journal.
+
 ---
 
 ## Strategic Notes
@@ -264,5 +297,6 @@ Low for ACL-tradition computational linguistics authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from MIT Press publisher + ACL computational linguistics editorial culture domain knowledge | @Zaious |

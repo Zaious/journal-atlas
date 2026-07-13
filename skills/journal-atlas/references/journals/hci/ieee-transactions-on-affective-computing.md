@@ -220,6 +220,40 @@ Reviewers from ACII and IEEE affective computing community. Common demands: "Alg
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 查無 T-AFFC 期刊專屬 AI 政策頁；適用 IEEE 全社通用規則（2023 年生效，涵蓋所有 IEEE 期刊含本刊）：AI 不得列名作者；使用 AI 生成內容（文字/圖/程式碼）須於 acknowledgments 揭露並註明使用的 AI 系統與程度；僅供文法潤飾/編輯用途則不強制揭露（建議揭露）；審稿中的稿件內容不得上傳至公開 AI 平台（視為違反保密義務）。因是 publisher-wide 而非 journal-specific 頁面，signal_quality 定為 2。
+
+**WO2 positioning finding (what the journal accepts now):** 情感運算跨領域研究：多模態情緒辨識（臉部/語音/生理訊號如EEG）、情感LLM與心理健康應用、社交媒體情感/情緒推理分析。近期(2025) special issue 主題可作為目前徵稿重點的直接證據。
+
+**WO2 experiential finding:** 一則經WebSearch聚合之知乎/CSDN文章聲稱拒稿率約70%，但直接抓取該知乎原文(zhuanlan.zhihu.com/p/674046111)遭403拒絕，僅能以搜尋引擎摘要間接佐證，可信度中等，未列為高信度數字。 SciRev唯一一則評論(2.5/5.0整體評分)指出審查過程「不必要地冗長」，且審稿意見疑似對錯稿件（引用非投稿內容的陳述），顯示可能存在審稿混亂個案（樣本數=1，不可泛化）。CSDN/知乎文章形容審稿「較為嚴格」「國人評價高」，中國大陸作者占該刊發文23.3%，中國科學院為主要投稿機構之一，但這些屬於行銷性部落格文字，非嚴謹統計。
+
+**Sources cited in this pass:**
+- http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=186558&copyownerid=71031 (TAC_SI 2025: Affective Impact of Next-Generation Intelligent Health Systems)
+- https://blog.csdn.net/Kyzy_1919/article/details/142785423
+- https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/
+- https://muchong.com/html/201704/11294188.html
+- https://scirev.org/journal/ieee-transactions-on-affective-computing/
+- https://sn.committees.comsoc.org/journal-conference-publications/ieee-transactions-on-affective-computing-special-issue-on-affective-reasoning-for-big-social-data-analysis/
+- https://www.computer.org/digital-library/journals/ta/tac-general-call-for-papers
+- https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=9466
+- https://zhuanlan.zhihu.com/p/674046111 (indirect, fetch blocked 403, via search snippet only)
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 查無 T-AFFC 或 IEEE Computer Society 官方頁面明確聲明 single-blind 或 double-blind／double-anonymous；WebSearch摘要出現「double-blind」字樣但無法追溯到具體官方來源頁面，判定為AI幻覺風險過高，故留白。
+- **experiential.desk_reject_pct**: SciRev 僅2筆評論未提供 desk-reject 數據；LetPub/知乎/小木虫/CSDN 來源均未提供明確的初篩拒稿百分比，未見任何具體數字，故留白而非套用通用值。
+- **positioning.framing_required**: 未找到期刊要求特定投稿包裝/框架(如必須強調臨床應用或必須含資料集釋出)的具體聲明，故留白。
+- **ai_policy source journal-specific page**: 多次搜尋未能找到 T-AFFC 或 IEEE Computer Society 針對本刊獨有(有別於IEEE全社通用規則)的AI使用政策頁面，僅能引用IEEE Author Center通用政策，layer signal_quality因此降為2。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 找到1篇相關投稿經驗文(2017年,三輪審查約8個月),站內搜尋僅此1筆具體可查證的討論串
+- 知乎 zhihu.com: 找到多篇相關文章(如 zhuanlan.zhihu.com/p/674046111 討論CCF-B類IEEE Trans系列口碑; zhihu.com/question/545689458 討論審稿修改時間)，惟部分原文頁面直接抓取遭403阻擋，僅取得WebSearch摘要層級之資訊
+- fabiaoji: 0 results — 搜尋未命中任何 fabiaoji 站內關於本刊的討論
+- Reddit r/AskAcademia: 0 results — 未找到任何提及 'Transactions on Affective Computing' 的討論串
+- LetPub (中英版): 找到期刊頁面含111則網友分享入口，惟WebFetch多次嘗試僅取得頁面框架(JS動態載入)，未能直接讀取逐條評論內容，僅透過WebSearch摘要取得聚合數字(初審約45天/7-9個月修改週期)
+
 ---
 
 ## Strategic Notes
@@ -264,5 +298,6 @@ Low for affective computing tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from IEEE publisher + ACII affective computing editorial culture domain knowledge | @Zaious |

@@ -218,6 +218,37 @@ Reviewers from ACM IDC community + child development HCI overlap. Common demands
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策，非該刊獨立頁面(guide-for-authors 頁面回傳 403 無法直接驗證期刊專屬版本)。文字生成類 AI 工具用於文獻整理、內容組織、語言潤飾等須揭露(投稿須附「Declaration of Generative AI and AI-assisted technologies」聲明,註明工具名稱與用途)；基礎文法/拼字檢查與傳統(非生成式)文獻管理工具免揭露。AI 不得列為作者。禁止使用生成式 AI 製作或修改圖片/圖像摘要(除非 AI 本身是研究方法的一部分,須在方法章節詳述模型名稱、版本、廠商)。門檻判定為「conditional」：允許使用但強制揭露＋人類監督責任聲明，非全面禁止亦非完全開放。
+
+**WO2 positioning finding (what the journal accepts now):** 2025-2026 刊出主題涵蓋：兒童數位安全(社交VR中的騷擾防護設計)、K-12運算思維與網路安全教育、學步兒/幼兒臉部情緒辨識(app互動情境)、青少年參與式設計(社區能源永續)、makerspace中兒童電路與身分認同的民族誌研究、CCI領域研究方法論反思(關係轉向scoping review)、CCI研究影響力框架(TREF)、數位應用中對幼兒的操縱性/欺騙性設計模式(dark patterns)揭露。另有進行中的特刊徵稿：兒童使用擴增實境/虛擬實境(XR)技術的風險、機會與倫理。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://dblp.org/db/journals/ijcci/ijcci47.html
+- https://dblp.org/db/journals/ijcci/ijcci49.html
+- https://scirev.org/journal/international-journal-of-child-computer-interaction/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.sciencedirect.com/journal/international-journal-of-child-computer-interaction/about/call-for-papers
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev該刊條目顯示 n/a（0篇審稿人回報），中英文論壇(小木虫/知乎/發表機/Reddit)搜尋均無相關第一手討論，無可靠來源可引用
+- **experiential.desk_reject_pct**: 同上，SciRev『% immediately rejected last year』為 n/a，無其他第一手來源
+- **experiential.acceptance_note**: SciRev『% accepted last year』為 n/a；跨語言論壇搜尋(小木虫/知乎/發表機/Reddit)均無命中此刊的作者經驗分享
+- **experiential.reviewer_culture**: 無任何論壇貼文或SciRev評論提及審稿人風格/文化，不編造通用敘事
+- **ai_policy journal-specific page**: sciencedirect guide-for-authors 頁面回傳 HTTP 403，無法直接驗證該刊是否有偏離Elsevier集團通用AI政策的專屬條款，故以集團通用政策作為代理來源並標註signal_quality較低
+
+**Cross-language checks performed:**
+- SciRev — 查得該刊頁面，但『尚無審稿人提交評論』，審稿時長/退稿率/接受率/編輯提供之範疇說明全部顯示 n/a，0 筆真實使用者資料
+- 小木虫 muchong.com — 站內搜尋與 Google 搜尋皆未找到任何針對此刊的討論串，0 results
+- 知乎 zhihu — 搜尋『Child-Computer Interaction 期刊投稿』僅返回HCI領域泛用期刊列表/分區文章，無此刊專屬討論，0 relevant results
+- 發表機 fabiaoji / fabiao.com — 搜尋未命中此刊專屬條目(僅命中Human-Computer Interaction、Children and Youth Services Review等鄰近期刊)，0 results for this exact journal
+- Reddit r/AskAcademia — site:reddit.com 搜尋『Child-Computer Interaction』0 results
+
 ---
 
 ## Strategic Notes
@@ -262,5 +293,6 @@ Low for IDC tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + ACM IDC child-computer interaction editorial culture domain knowledge | @Zaious |

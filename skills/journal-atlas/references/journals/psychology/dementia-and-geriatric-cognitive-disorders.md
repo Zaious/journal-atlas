@@ -220,6 +220,42 @@ Reviewers from clinical neurology / geriatric psychiatry / dementia research com
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** Karger（本刊出版社）政策為出版社統一政策，非本刊獨有：允許作者使用生成式AI/LLM協助寫作（含語言潤飾），但強制要求在Methods或Acknowledgements揭露所用工具、說明如何驗證輸出正確性、並比照軟體引用規範列入參考文獻；AI不得列為作者；審稿人被明文禁止將待審稿件內容輸入LLM（違反保密義務）；出版社內部篩選流程可用AI但一律人工做最終決定。未見本刊（Dementia and Geriatric Cognitive Disorders）獨有的AI政策頁面，僅有出版社層級政策適用。
+
+**WO2 positioning finding (what the journal accepts now):** 近期（2024-2025）實際刊出內容以：認知篩檢工具心理計量驗證（如ACE-III/CBI-R/EMQ）、衰弱(frailty)與輕度認知障礙轉銜失智症之關聯、失智/認知障礙長者及照顧者之孤獨感等心理社會議題、壓力與motoric cognitive risk syndrome之關聯、特定族裔（如越裔美人）高齡研究參與觀感、以及失智可改變風險因子之傘型review/統合分析(umbrella review & meta-analysis)為主，橫跨臨床、流行病學與心理社會研究。
+
+**WO2 experiential finding:** 無官方公佈之量化接受率。中文投稿社群（medsci.cn 論壇）有零星一手案例：2020年一投稿者稱「5天左右就開始找reviewer，到2.24還是沒找到reviewer，就拒了。不會拖稿，蠻負責的」；另一留言稱審稿意見「很專業，寫了滿滿1篇半」。多筆留言另提及編輯部有時會建議作者改投其旗下姊妹刊（如 Dementia and Geriatric Cognitive Disorders Extra）。iikx.com/klxksci.com 等鏡像站標註「網友分享經驗：約50%」錄取率，但明確非官方數據，未與其他一手來源交叉驗證，可信度有限。 
+
+**Sources cited in this pass:**
+- https://karger.com/dem/issue/53/2
+- https://karger.com/dem/pages/details
+- https://karger.com/dem/pages/guidelines
+- https://karger.com/pages/karger-ai-principles
+- https://sci.justscience.cn/details.html?sci=1&id=2071
+- https://scirev.org/journal/dementia-and-geriatric-cognitive-disorders/
+- https://www.iikx.com/sci/medcine/11878.html
+- https://www.medsci.cn/sci/submit.do?id=11521755
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type journal-specific confirmation page**: 本刊審稿類型（single-anonymous）僅見於 karger.com/dem/pages/guidelines 之通用敘述，未見期刊獨立聲明頁單獨強調；已採信該頁文字。
+- **preprint.allowed — journal-specific version**: 找到的是 Karger 出版社層級的預印本政策（非商業性預印本平台可、AAM 需12個月禁運期後才能上傳公開OA典藏庫），未找到本刊（dem）頁面對預印本政策的獨立聲明，故此欄位標記為出版社政策推定適用於本刊，非本刊獨有一手來源。
+- **experiential.review_time_months**: SciRev 上本刊 0 筆評論（無資料）；sci.justscience.cn 官方頁面審稿天數欄位均顯示 0.0（無效佔位資料，非真實數字）；僅有 iikx.com / klxksci.com 等鏡像網站標註「網友分享經驗：平均2個月」，明確標示為非官方、群眾估計數據，未見具體審稿人/作者一手貼文佐證，可信度低但保留作為弱信號。
+- **experiential.desk_reject_pct**: 無法取得具體桌拒率數字；SciRev 無資料；medsci.cn 論壇僅有單一2020年案例描述「約5天內找審稿人未果，2/24前後被拒」，屬個案不足以推估比例，未強行換算成統計數字。
+- **experiential.acceptance_note (quantitative)**: 「約50%」錄取率同樣僅為 iikx.com/klxksci.com 標註之網友群眾估計（非本刊官方公佈），未找到PubMed/期刊官方或多篇一手投稿貼文交叉驗證此數字，故不作為可信量化事實填入，改以定性描述呈現。
+- **reviewer_culture**: 查無足夠具體、可歸因來源的評語描述特定政治立場或審稿人風格模式；僅 medsci.cn 論壇一則留言稱「意見很專業，寫了滿滿1篇半」及另一則稱「不會拖稿，蠻負責的」，屬零星個案評論，非可概括為「文化」的多來源交叉驗證，故僅在 acceptance_note 引用原文而不寫入 reviewer_culture 欄位的一般化敘述。
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/dementia-and-geriatric-cognitive-disorders) — 0 reviews submitted, no data (n/a on all fields)
+- 小木虫/中文SCI論壇聚合站 sci.justscience.cn — 官方審稿天數欄位全部顯示 0.0（無效資料），僅有影響因子等文獻計量數據
+- MedSci.cn 中文投稿論壇 (medsci.cn/sci/submit.do?id=11521755) — 14則留言；找到具體案例：2020/1/17投稿、約5天內尋找審稿人未果、2/24前後被拒，另有留言稱「不會拖稿，蠻負責的」及「意見也很專業，寫了滿滿1篇半」；亦有多則反映編輯部會建議轉投旗下姊妹期刊
+- iikx.com / klxksci.com 中文SCI資訊站 — 標註為「網友分享經驗」（非官方）：平均審稿速度約2個月、平均錄取率約50%
+- 知乎 zhihu.com — 搜尋未見本刊專門投稿經驗文章，僅有老年醫學SCI期刊總覽文章順帶列出本刊，0筆針對本刊的一手投稿心得
+- Reddit r/AskAcademia — 搜尋未見任何討論本刊審稿流程或投稿經驗的貼文，0 results
+
 ---
 
 ## Strategic Notes
@@ -265,5 +301,6 @@ Low for dementia / geriatric cognitive research tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Karger publisher + clinical dementia / geriatric cognitive disorders editorial culture domain knowledge | @Zaious |

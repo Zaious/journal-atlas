@@ -219,6 +219,38 @@ Reviewers from SOHP and broader work-stress / burnout research community. Common
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 APA 全出版社通用政策(非期刊專屬頁面另訂),要求:AI 不得列為作者;若用於草擬手稿需在 Methods 揭露並引用工具/提示;作者對 AI 產出內容之正確性負全責;不得將機密受試者資料輸入公開 AI 工具。屬「揭露制」而非「禁止制」或「事前核准制」,故評 3/5(中度寬容:允許但要揭露)。JOHP 期刊頁(apa.org/pubs/journals/ocp)僅連結到此通用政策頁,未見期刊專屬加嚴或放寬條款。
+
+**WO2 positioning finding (what the journal accepts now):** 無法從公開頁面直接取得 2024-2026 具體文章標題清單(APA PsycNet 目錄頁為 JS 動態載入,WebFetch 抓不到內容;多次搜尋僅取得期刊總覽介紹,未取得逐篇標題)。Aims & Scope 頁明確列出三大範疇:工作組織(organization of work)、個人心理特質(individual psychological attributes)、工作與非工作介面(work-nonwork interface),皆連結至員工健康/安全/福祉。徵稿類型分兩種:標準手稿(上限40頁雙倍行距)與 Research Notes 短文(上限20頁,暱稱'Kevin's Corner')。未查到現行 Special Issue CFP。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://www.apa.org/pubs/journals/ocp
+- https://www.apa.org/pubs/journals/ocp/submit
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+- https://www.scirev.org/journal/journal-of-occupational-health-psychology/ (n=2 reviews)
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now (逐篇文章標題)**: APA PsycNet 目次頁為動態載入頁面,WebFetch/WebSearch 均無法取得 2024-2026 實際發表文章標題清單,僅能取得期刊層級的 aims & scope 敘述,故 positioning.signal_quality 評為 1(僅有 scope 層級資訊,無實際近期文章佐證)。
+- **positioning.methods_welcome**: 因未能取得逐篇文章標題/摘要,無法歸納出期刊實際偏好的研究方法(量化/質化/縱貫/介入研究等),故留空避免臆測。
+- **experiential.desk_reject_pct**: SciRev 樣本僅2筆評論,未提供整體 desk-reject 比例統計;LetPub 頁面顯示「同領域作者分享投稿經驗:共0條」,即中文審稿經驗資料庫為零筆,查無可用數據。
+- **experiential.acceptance_note**: 無任何一手投稿經驗描述接受/拒稿決策細節(SciRev僅2筆無詳細敘述,LetPub 0筆,知乎/小木虫搜尋未命中具體討論串,Reddit r/AskAcademia 搜尋亦未命中)。
+- **experiential.reviewer_culture**: 未查到任何具體來源描述審稿人文化/風格(無政治傾向或審稿風格的具體一手證據),依規則不可用通用敘事填補,故留空。
+- **experiential.review_time_months (精確化)**: 唯一數字來源(SciRev)僅2筆評論,信度低,已如實標註樣本數,未把其當作穩定期刊常態值使用。
+
+**Cross-language checks performed:**
+- SciRev (scirev.org): 命中,但僅2筆評論 — 已擷取第一輪1.5個月/總處理3.1個月/最新6.6週/滿意度5.0等數字。
+- LetPub (letpub.com.cn，中文審稿經驗庫): 命中期刊頁,但「同領域作者分享投稿經驗:共0條」— 0 results，僅有期刊基本指標(影響因子/分區)無審稿經驗。
+- 小木虫 muchong.com: 搜尋未命中任何該期刊專屬討論串 — 0 results。
+- 知乎 zhihu.com: 搜尋未命中該期刊專屬投稿經驗討論 — 0 results（僅命中期刊介紹類聚合站）。
+- Reddit r/AskAcademia: 搜尋未命中該期刊專屬討論串 — 0 results。
+- fabiaoji/其他中文期刊資訊站 (haofabiao, xueshu.com, iikx.com, tougaozixun.com): 均僅提供影響因子/分區等聚合資訊，無一手審稿經驗敘述。
+
 ---
 
 ## Strategic Notes
@@ -265,5 +297,6 @@ Low for OHP tradition authors. Diary / ESM designs are distinctive editorial str
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from APA publisher + SOHP-affiliated occupational health psychology editorial culture domain knowledge | @Zaious |

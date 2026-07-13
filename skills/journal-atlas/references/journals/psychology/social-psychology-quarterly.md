@@ -220,6 +220,37 @@ Reviewers from ASA Social Psychology Section + broader sociological social-psych
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 SAGE 出版社統一政策(非 SPQ 期刊專屬頁面明載)。政策區分三類 AI 使用:輔助型(語言潤飾/文法/結構調整)免揭露;生成型(內容生成、影響方法論/分析/結論)須揭露(通常於 Methods 或 Acknowledgements);禁止型(生成造假內容/文獻、以 AI 產生數據、以 AI 取代人類受試者、將 AI 圖像當研究成果、以 AI 撰寫同儕評論或編輯決策)。未強制事前許可審批(no pre-approval gate),但未揭露的不當使用可能導致拒稿或撤稿,審稿人若違規使用 AI 會被除名。SPQ 投稿指南頁(journals.sagepub.com/author-instructions/spq)本身在可抓取內容中未見獨立 AI 條款,推定沿用 SAGE 集團政策。
+
+**WO2 positioning finding (what the journal accepts now):** SPQ 是社會學與心理學交叉的期刊(ASA 官方期刊),聚焦個人與社會的連結——包含個人與他人、群體、集體、制度之關係,以及受社會結構/歷程影響的個體內在歷程。近期(2024-2025)已發表/確認題目涵蓋:跨文化性別刻板印象與社會規範違反後的八卦/排斥/對峙反應(2025-06, Simpson/Hazin/Eriksson)、2024 Cooley-Mead 獎得主 Brian Powell 的獲獎演說反思(2025-09)、資訊頻率/價值/難度作為社會不平等來源之 Jeopardy! 益智節目分析(2025-12, Kyle Siler)。2021-2023 曾有「種族、種族主義與歧視」20週年紀念特刊(已出版於 2023-09,非現行 CFP)。目前(查詢當下)未找到 2025-2026 尚在徵稿中的新特刊。
+
+**WO2 experiential finding:** SciRev 最新一筆評論(單一案例)描述為「流程非常快、編輯投入高、審查意見品質良好」,整體滿意度評分 5.0/5.0,結果為接受;另有一筆評論提及雖遭拒稿,但編輯的決定信整理審查意見清楚並提供明確修改方向——樣本數不足以量化。 
+
+**Sources cited in this pass:**
+- WebSearch aggregation of ASA-listed 2025 SPQ article titles
+- https://journals.sagepub.com/doi/full/10.1177/01902725231191643
+- https://scirev.org/journal/social-psychology-quarterly/ (n=2 reviews)
+- https://www.asanet.org/publications/journals/social-psychology-quarterly/
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.desk_reject_pct**: SciRev 樣本僅 2 筆評論且未提供拒稿率數據;editage.cn 概覽文章(約2015年資料)未提供量化退稿率;查無小木虫/知乎/PTT/fabiaoji/Reddit AskAcademia 上針對 SPQ 的具體退稿率討論
+- **experiential.reviewer_culture**: 跨語言檢索(小木虫 muchong.com、知乎、fabiaoji、Reddit r/AskAcademia)均未找到針對 SPQ 審稿人文化/風格的具體第一手討論串,僅有期刊官方雙盲審查制度說明,不足以支撐主觀敘述,故留白
+- **ai_policy (journal-specific page)**: 未找到 SPQ 期刊自身獨立公布的 AI 政策頁面,僅能引用 SAGE 出版社集團層級政策,已於 summary 註明
+- **positioning.accepts_now (current 2025-2026 CFP)**: 檢索未發現 SPQ 目前(2026-07)有進行中的特刊徵稿;僅查到 2021-2023 已完成出版的種族主題特刊,非現行機會
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋(site:muchong.com Social Psychology Quarterly)0 相關結果,僅返回不相關的一般心理學文獻
+- 知乎 zhihu — 找到 SSCI 期刊清單提及 SPQ 分區資訊(Q3,近三年 IF 約 2.1-2.7,資料年份不詳可能已過時),但無投稿/審稿經驗第一手貼文
+- fabiaoji.com — 站內未見 SPQ 專屬頁面(僅檢索到同類期刊如 Asian Journal of Social Psychology 的頁面),0 相關結果
+- wdcsci.com — 找到 SPQ 投稿經驗分享頁面標題,但未能取得頁面具體量化內容
+- editage.cn — 有 SPQ 投稿指南概覽文章,但為約2015年資料,缺乏審稿時長/拒稿率量化數據,僅重複官網基本資訊
+- Reddit r/AskAcademia — 搜尋 Social Psychology Quarterly review 0 直接相關討論串
+
 ---
 
 ## Strategic Notes
@@ -265,5 +296,6 @@ Low for sociological social-psychology tradition. Psychological authors may need
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE/ASA publisher + ASA Social Psychology Section sociological social-psychology editorial culture domain knowledge | @Zaious |

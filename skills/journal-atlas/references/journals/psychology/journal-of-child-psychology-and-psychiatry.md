@@ -221,6 +221,38 @@ Reviewers drawn primarily from the child and adolescent psychiatry community —
 | **Data transparency requirement** | High — data must be available on request; failure → rejection or retraction (community evidence: ACAMH author guide 2026-05) |
 | **OPSEC compatibility** | Medium — child-clinical data anonymization rigorous; mandatory reporting may apply |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 未找到 JCPP 期刊專屬 AI 政策頁面(作者指南頁 onlinelibrary.wiley.com/page/journal/14697610/homepage/forauthors.html 兩次抓取皆回 HTTP 402,無法直接驗證期刊層級文字)。查到的是 Wiley 出版社通用政策:生成式 AI/LLM 不得列為作者或共同作者,作者須對內容負全責、揭露 AI 工具使用於方法/致謝欄,並自行檢視智財風險。leniency=2 為推斷值(僅到出版社通用規範,未見期刊特化文字或明確「禁止 AI 生成內文/僅允許潤色」的分級聲明),故 signal_quality 僅 2。
+
+**WO2 positioning finding (what the journal accepts now):** Clinically-relevant empirical research on child/adolescent psychopathology and mental health across the developmental-psychopathology spectrum: RCTs/intervention trials, prospective longitudinal cohort studies, epidemiology, neuroscience/neurobiology/genetics of childhood disorders, and psychometric/measure-development papers. Recent 2025-2026 exemplars: co-produced self-report measure validation for ADHD/autism emotional burden (Lukito 2025, doi:10.1111/jcpp.70003); prospective longitudinal infant-sibling study of autism/ADHD family-history outcomes at mid-childhood (Charman 2026, doi:10.1111/jcpp.70048); methodology editorial on longitudinal data analysis in child/adolescent mental health.
+
+**WO2 experiential finding:** No first-hand/verifiable overall acceptance-rate figure found; a ~15% figure surfaced in aggregated search-engine synthesis but could not be traced to a primary citable page after two follow-up searches, so it is NOT reported as fact (see blanks). 
+
+**Sources cited in this pass:**
+- https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70003
+- https://acamh.onlinelibrary.wiley.com/doi/pdf/10.1111/jcpp.70048
+- https://acamh.onlinelibrary.wiley.com/hub/journal/14697610/forauthors.html
+- https://acamh.onlinelibrary.wiley.com/journal/14697610 (aims & scope, general search snippet)
+- https://authorservices.wiley.com/editors/journal-editors/best-practice-guidelines-on-research-integrity-and-publishing-ethics/generative-ai-and-your-submission.html
+- https://scirev.org/journal/journal-of-child-psychology-and-psychiatry/
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9574384/
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (journal-specific text)**: JCPP-specific author-guidelines page (onlinelibrary.wiley.com/page/journal/14697610/homepage/forauthors.html and the ACAMH hub mirror) returned HTTP 402 Payment Required on both direct WebFetch attempts; only the Wiley-wide generic AI/authorship policy could be confirmed via search snippets, not a JCPP-specific clause or leniency gradient.
+- **peer_review.type (single- vs double-blind confirmation)**: Could not directly load the author guidelines page (402 error) to confirm blinding type in the journal's own words; inferred 'single-blind' from a search-engine-synthesized snippet referencing 'single blind peer review by multiple referees' but this is one step removed from primary text.
+- **experiential.acceptance_note (numeric acceptance rate)**: A ~15%/18% acceptance-rate figure appeared repeatedly in WebSearch AI-synthesized answers but never resolved to one identifiable primary source URL after being searched for directly; per the honest-blank rule this unverified figure is excluded rather than reported as fact.
+- **experiential.reviewer_culture**: Zero first-hand forum/Reddit/知乎/muchong posts describing actual referee tone, political leaning, or review culture were found; only aggregate SciRev numeric ratings (difficulty 3.0/5, review quality 3.5/5) exist, which are process-quality scores, not a culture narrative — left null rather than inferred.
+- **positioning.accepts_now (special issue CFP)**: No current (2025-2026) live special-issue call for papers could be located; only an old Blackwell-era JCPP CFP PDF surfaced, which is not current and was not used.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 0 results (site: search returned no muchong.com pages about JCPP; general web search also surfaced no muchong threads)
+- 知乎 zhihu — 1 hit (zhuanlan.zhihu.com/p/614683636, general intro post about JCPP's scope) but page returned HTTP 403 on fetch, so no verifiable first-hand submission/review-experience content extracted; treated as no usable signal
+- fabiaoji — no dedicated results surfaced in searches (queries returned only muchong/zhihu/general listings, no fabiaoji.com hits)
+- Reddit r/AskAcademia — 0 results; two targeted searches for JCPP + reddit/review-wait returned no Reddit threads
+
 ---
 
 ## Strategic Notes
@@ -271,5 +303,6 @@ Low for child-psychiatry research authors with strong methodology and data-shari
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

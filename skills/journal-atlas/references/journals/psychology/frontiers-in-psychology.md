@@ -244,6 +244,39 @@ Reviewers are drawn from the international personality and social-psychology com
 | **Data transparency requirement** | Medium-High — open data encouraged; Frontiers supports open-science badges |
 | **OPSEC compatibility** | Medium — OA visibility is high; data-sharing norms apply but can be negotiated for sensitive research |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **4/5**.
+
+**WO2 AI policy finding:** Generative AI/LLMs permitted for writing and editing on condition of mandatory disclosure in the Acknowledgments (tool name/version/source); AI may NOT be listed as an author (cannot meet accountability criteria); authors remain fully responsible for factual accuracy of AI-generated text, citations, and figures. Not a ban and not fully open -> conditional gate. Publisher-wide policy that applies to this journal.
+
+**WO2 positioning finding (what the journal accepts now):** 心理學全領域，分 30 個 specialty sections，涵蓋認知心理、社會心理、臨床心理、發展心理、知覺、意識、人因、動物認知、組織心理等。每篇必須有明確的心理學核心基礎 (fundamental psychological basis)。明確排除：教育學/語言學/商業/經濟/管理/AI/環境等無心理學基礎的稿件、純技術性 (數位科技、神經網路分析) 研究、以及單純的文獻計量 (bibliometric) 研究。
+
+**WO2 experiential finding:** 知乎資料：2024 年接受率約 37%，近年拒稿率上升、審查趨嚴，非「易發」期刊 (儘管發文量大)。APC：Original Research 約 US$2,950、B 類 (如 case report) 約 US$1,850。 SciRev 綜合評分 3.8/5、審稿難度 3.2/5、報告品質 3.7/5；多數描述為速度快、互動式線上審稿論壇、審稿建設性。負評：有作者收到冷淡制式拒信、編輯中途退出後久候替補。聲譽爭議 (有具體來源)：Frontiers Media 曾列入 Beall 潛在掠奪性出版商清單；挪威科學索引 2023 年將其下調至 X 名單 (存疑渠道)；社群有『Frontiers 系列水刊』之辯。
+
+**Sources cited in this pass:**
+- SciRev journal stats (n=33): https://scirev.org/journal/frontiers-in-psychology/
+- SciRev reviews: https://scirev.org/reviews/frontiers-in-psychology/
+- article-types list: https://www.frontiersin.org/journals/psychology
+- fabiaoji 發表記: https://www.fabiaoji.com/periodicalDetail?id=49b5ff63342247c997e8008ff3446b73
+- https://www.frontiersin.org/guidelines/policies-and-publication-ethics
+- publisher aims&scope: https://www.frontiersin.org/journals/psychology/about
+- recent-topics + scope synthesis (research.com): https://research.com/journal/frontiers-in-psychology
+- reputation/predatory 爭議 (Wikipedia, 引 Beall/挪威索引): https://en.wikipedia.org/wiki/Frontiers_in_Psychology
+- 小木虫 muchong 投稿討論串: https://muchong.com/html/201605/10326757.html
+- 知乎投稿攻略 (接受率/審稿人數/APC): https://zhuanlan.zhihu.com/p/501241722
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: 無 journal-specific 桌拒率的第一手公開來源；SciRev 未列即時退稿『率』(僅列即時退稿決定時間約16天)。網路上 54% 桌拒率為 Frontiers 全出版社 2022 數據 (publisher-wide)，非本刊專屬，故留空以免誤植。
+- **experiential (Reddit)**: r/AskAcademia 兩次英文查詢 0 命中，無第一手 Reddit 討論可佐證；跨語言證據改由 SciRev(英) + 小木虫/知乎(中) 支撐。
+- **peer_review.exact_blinding**: Frontiers 採協作式/透明審稿 (審稿人與編輯姓名於刊出後公開、審稿期間作者匿名)，非標準 single/double-blind；已據 publisher 指南如實描述而非強套分類。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 命中多條真實投稿進度討論串 — 首輪約1個月、後續往返1-2週、有人3個月內接受、末端編輯階段偶有延遲
+- 知乎 zhihu: 命中投稿攻略與期刊介紹 — 2024接受率約37%、約3位審稿人、修回約25天、APC US$2,950、『水刊』與拒稿率上升之辯
+- fabiaoji.com: 命中『Frontiers in Psychology 發表記』條目 (存在使用者投稿紀錄，未逐條抽取細節)
+- English Reddit r/AskAcademia: 0 直接命中 — WebSearch 兩次查詢均未回傳 Reddit 連結，無第一手 Reddit 討論可引用
+
 ---
 
 ## Strategic Notes
@@ -291,6 +324,7 @@ Variable. For empirical PSP-aligned papers: low. For conceptual / theoretical pa
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. APC flagged with currency risk (CHF-based invoicing). Reputational note included for transparency. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 302, i10 26,156, 2yr_citedness 3.001, works_count 50,856; Top 5 topics filled. Caveat added: metrics reflect whole Frontiers in Psychology megajournal, not just PSP section. | @Zaious |

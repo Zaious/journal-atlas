@@ -212,6 +212,37 @@ Reviewers are drawn primarily from the International Society for Self and Identi
 | **Data transparency requirement** | Open data / open materials increasingly expected (T&F open science badges) |
 | **OPSEC compatibility** | Medium — survey data typically aggregable and anonymizable, but transparency norms apply |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is publisher-wide (Taylor & Francis) policy, not journal-specific — no separate AI clause found on the Self and Identity journal page itself. Generative AI tools cannot be listed as author/co-author (no accountability/copyright capacity). Permitted uses: idea generation/exploration, language/grammar improvement, LLM-enhanced literature search, literature classification, coding/script assistance. Prohibited: generating or manipulating research data, images, or figures. Mandatory disclosure of tool name, version, purpose and how it was used, placed in Methods or Acknowledgments. Author remains fully accountable for accuracy/originality of AI-assisted content. Leniency scored 3 (moderate/conditional) rather than full ban or fully open — allowed for defined support tasks with disclosure, banned for data/figures and for authorship credit.
+
+**WO2 positioning finding (what the journal accepts now):** Self and Identity (official journal of the International Society for Self and Identity, ed.-in-chief Shira Gabriel, U Buffalo) publishes empirical articles of all lengths plus occasional theoretical pieces on social/psychological processes of self and identity — spanning social, personality, clinical, developmental and cognitive psychology as well as sociology, family studies, anthropology and neuroscience. Aggregated 2025 output (~52 articles/year, 6 issues) skews toward social psychology, developmental psychology, self-esteem, and self-compassion topics per a third-party bibliometric aggregator (not a first-hand scan of full-text methods, since tandfonline TOC/article pages returned HTTP 403 to automated fetch and could not be directly verified article-by-article).
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://files.taylorandfrancis.com/psaiauth.pdf
+- https://research.com/journal/self-and-identity
+- https://taylorandfrancis.com/our-policies/ai-policy/
+- https://www.tandfonline.com/journals/psai20/about-this-journal
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: No first-hand SciRev entry located, no muchong/zhihu/Reddit threads found, and the T&F 'Time to first decision' journal metrics page (tandfonline.com/journals/psai20/about-this-journal, speed section) returned HTTP 403 to automated fetch so the actual current figure could not be verified — a search-engine-summarized number (9 days first decision / 64 days review / 82 days to acceptance, attributed to ablesci.com) was found but could NOT be corroborated on direct fetch of that same ablesci page (which showed zero populated values), so it is treated as unreliable and excluded rather than reported.
+- **experiential.desk_reject_pct**: No source (SciRev, forums, publisher stats) with a concrete desk-reject percentage was found.
+- **experiential.acceptance_note**: No first-hand acceptance/rejection narrative found in any checked source; only generic 'rigorous peer review' boilerplate from the journal's own about-page, which is not experiential evidence.
+- **experiential.reviewer_culture**: No concrete, attributable community discussion of reviewer tone/culture was found in any of the mandated cross-language sources.
+- **ai_policy.gate (journal-specific)**: Could not confirm whether Self and Identity has published a journal-specific AI policy distinct from the general Taylor & Francis publisher policy; tandfonline about-this-journal page blocked automated fetch (403), so this is inferred from the group-wide T&F policy only.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — no thread/discussion found specifically about Self and Identity (site: search returned zero on-site matches)
+- 知乎 zhihu — no first-hand submission-experience posts found; only journal-metrics aggregator sites (xueshu.com, sozazhi.com, sfabiao.com, kanzhiwang.com) surfaced, none with concrete review-time/acceptance data attributed to actual submitters
+- 學術之家/xueshu.com — page has a 'how long is review cycle' FAQ prompt but the actual answer/value is not populated (confirmed via direct fetch) — 0 usable data
+- 科研通/ablesci.com — journal detail page explicitly labeled review time and acceptance rate as '網友分享經驗' (crowd-sourced) but had zero submitted data points at time of check (confirmed via direct fetch)
+- Reddit r/AskAcademia — targeted search returned no threads mentioning Self and Identity journal specifically
+- SciRev — could not locate a Self and Identity entry with review data via search; not independently verified
+
 ---
 
 ## Strategic Notes
@@ -259,6 +290,7 @@ High for qualitative / first-person authors. Adapting a primarily qualitative ma
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Several metrics flagged as pending due to limited initial reconnaissance depth; recommend OpenAlex API fetch for h-index, citedness, and full topic ranking. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 99, i10 595, 2yr_citedness 1.53, works_count 953; Top 5 topics filled. | @Zaious |

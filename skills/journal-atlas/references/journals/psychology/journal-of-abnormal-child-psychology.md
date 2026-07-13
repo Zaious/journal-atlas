@@ -220,6 +220,37 @@ Reviewers from child / adolescent clinical-psychology community — Society of C
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — child-clinical data anonymization rigorous |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is Springer Nature's standard publisher-wide AI policy applied to journal 10802 (no journal-specific AI clause found). LLMs do not qualify as authors. Substantive LLM use (e.g. drafting content) must be disclosed in the Methods section (or a suitable alternative section). 'AI-assisted copy editing' (grammar/style/readability polishing of human-written text) is explicitly EXEMPT from disclosure. AI-generated images are barred from publication, and AI-hallucinated/non-existent references are treated as an ethics violation. Journal-specific confirmation could not be independently verified because the journal's own ethics-and-disclosures page 303-redirected to a Springer login wall and could not be fetched directly; this is the generic Springer Nature policy that the journal's submission-guidelines page points to.
+
+**WO2 positioning finding (what the journal accepts now):** Empirical studies with strong theoretical framing on child/adolescent psychopathology: disruptive behavior disorders, depression, anxiety disorders, ASD, ADHD, covering epidemiology, etiology, assessment, treatment, prognosis, developmental course, risk/protective factors, and prevention/treatment advances. Active 2026 special issue theme: representation/diversity in the field.
+
+**WO2 experiential finding:** Not available; SciRev lists acceptance rate, rejection rate, articles-published, and manuscripts-received fields all as 'n/a' for this journal due to tiny sample size (2 reviews). 
+
+**Sources cited in this pass:**
+- https://link.springer.com/collections/cieabigbdf (representation/diversity collection)
+- https://link.springer.com/journal/10802/submission-guidelines
+- https://link.springer.com/journal/10802/updates/26047364 (special issue CFP, deadline 2026-10-01)
+- https://link.springer.com/journal/10802/updates/26200074 (additional RCAP special issue CFP found in search, not individually verified)
+- https://scirev.org/journal/journal-of-abnormal-child-psychology/ (2 reviews only; 1 detailed: first round 14.3 weeks, overall rating 3/5 'good', outcome rejected, 1.0 review rounds, 3.0 avg reviewer reports, review-quality rated 2.5/5, handling rated 2.0/5)
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (journal-specific confirmation)**: Could not fetch link.springer.com/journal/10802/ethics-and-disclosures directly (303-redirects to an authenticated Springer login page); relying on the generic Springer Nature AI policy that the journal's own submission-guidelines page references, plus a WebSearch snippet of that generic text. No journal-specific deviation or leniency note found.
+- **preprint.allowed (journal-specific text)**: No journal-10802-specific preprint policy page could be fetched (login-wall redirect); only the generic Springer Nature publisher stance is documented here.
+- **experiential.desk_reject_pct**: SciRev shows 'n/a' for this metric; sample size is only 2 submitted reviews, too thin to extract a percentage.
+- **experiential.reviewer_culture**: No first-hand discussion found on SciRev, 小木虫 (muchong.com; searches returned no journal-specific threads), 科研通/ablesci.com (checked directly; page has an empty 'network experience' field for this journal), 知乎, or Reddit r/AskAcademia. Leaving null rather than inventing a narrative.
+- **experiential.acceptance_note**: No first-hand acceptance-difficulty commentary found in any cross-language source checked; SciRev's acceptance-rate field itself is 'n/a'.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — WebSearch query returned no journal-specific discussion threads (0 usable results)
+- 科研通 ablesci.com — journal page fetched directly; '网友分享经验' (user-shared experience) fields for review time and acceptance rate are both empty/blank (0 results)
+- 知乎 zhihu — no dedicated zhihu hits surfaced in the WebSearch queries attempted (0 results)
+- Reddit r/AskAcademia — site:reddit.com search for the journal (old or new name) returned 0 links
+- SciRev (English, query-time crowd-sourced facts layer) — 2 reviews on file, 1 detailed with concrete numbers (used above)
+
 ---
 
 ## Strategic Notes
@@ -266,5 +297,6 @@ Low for child clinical-psychology empirical authors. Springer Nature Choice OA a
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + child clinical-psychology editorial culture domain knowledge. Note: journal renamed to Research on Child and Adolescent Psychopathology in 2021. | @Zaious |

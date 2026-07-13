@@ -222,6 +222,39 @@ Reviewers from ASSC and broader consciousness-research community. Common demands
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** Elsevier-wide policy (applies to this journal; no journal-specific AI policy page found): generative AI may be used to help prepare a manuscript prior to submission, with human oversight, and must be disclosed; AI must not be listed as an author and authors remain fully accountable. Generative AI/AI-assisted tools may NOT be used to create or alter images/artwork (e.g., graphical abstracts) except where AI is itself part of the research design/methods. Separately, Elsevier states reviewers and editors are currently not permitted to upload manuscripts into generative AI tools (e.g. ChatGPT) during peer review/evaluation.
+
+**WO2 positioning finding (what the journal accepts now):** Empirical articles and theoretical reviews taking a natural-science approach to consciousness, voluntary control, and self (per journal aims/scope). Current (2025) special issue call focuses on veridical vs. non-veridical conscious perception and underlying neural mechanisms/markers, including predictive coding, cognitive penetrability, and phenomenal overflow, and welcomes novel experimental designs distinguishing veridical vs. non-veridical experience.
+
+**WO2 experiential finding:** No acceptance-rate or desk-reject figures found on SciRev, 科研通(ablesci), or ifabiao — those fields showed blank/"--" placeholders where user-submitted data would go. One Chinese aggregator note (via search snippet, unverified original source) mentioned the journal has slipped from JCR Tier 1 to Tier 2 in recent years and that editors reportedly give constructive feedback even on rejected manuscripts, but this could not be traced to a specific first-hand post to quote/verify. 
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/consciousness-and-cognition/
+- https://scirev.org/reviews/consciousness-and-cognition/
+- https://www.ablesci.com/journal/detail?id=Db2ZnD
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.ifabiao.com/sci/10538100/
+- https://www.journals.elsevier.com/consciousness-and-cognition/call-for-papers
+- https://www.sciencedirect.com/journal/consciousness-and-cognition
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: ScienceDirect Guide for Authors page returned HTTP 403 Forbidden when fetched directly in this session; no other primary source located confirming single- vs double-anonymized review for this specific journal.
+- **experiential.desk_reject_pct**: SciRev, ablesci (科研通), and ifabiao all show this field as blank/unavailable — no first-hand submitter data exists for this journal on any checked platform.
+- **experiential.acceptance_note (quantitative rate)**: No acceptance-rate figure found on SciRev or Chinese aggregators; only a secondhand, unverifiable search-snippet claim about JCR tier decline and editor feedback style, which was not traced to an original quotable post so it is reported only as a caveat, not as fact.
+- **experiential.reviewer_culture**: No first-hand forum post (小木虫, zhihu, ablesci, or Reddit) describing reviewer tone/culture could be retrieved/verified in this session; the SciRev sample is only 3 reviews and contains no reviewer-culture commentary beyond one comment about slow final editorial decisions.
+- **ai_policy.gate exact wording / journal-specific page**: No Consciousness and Cognition-specific AI policy page was found; the policy cited is Elsevier's general/publisher-wide generative AI policy, which the journal is presumed to follow but this was not confirmed on a journal-specific page.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: no dedicated thread located for this journal in this pass (search surfaced only the general submission subforum, not journal-specific posts) — 0 usable results
+- 知乎 zhihu.com: found one relevant question thread (zhihu.com/question/50893581) asking about journal tier/quartile, but WebFetch returned HTTP 403 and content could not be retrieved directly; a search-snippet paraphrase suggested the journal moved from JCR Tier 1 to Tier 2 and that editors give feedback even on rejections, but this is unverified/second-hand and not quoted as fact
+- 科研通 ablesci.com: journal page exists but the user-experience fields for review time and acceptance rate were explicitly blank (no submitted data) — 0 results
+- ifabiao.com (Chinese SCI aggregator, used in place of/alongside fabiaoji): journal page exists but '平均审稿速度' (avg review speed) field showed '--' i.e. no data — 0 results
+- Reddit r/AskAcademia: search did not surface any thread specifically discussing this journal — 0 results
+
 ---
 
 ## Strategic Notes
@@ -268,5 +301,6 @@ Low for consciousness-research tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + ASSC consciousness research editorial culture domain knowledge | @Zaious |

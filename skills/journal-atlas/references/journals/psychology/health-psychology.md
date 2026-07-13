@@ -218,6 +218,36 @@ Reviewers from APA Division 38 (Health Psychology) and broader behavioral-medici
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — health data anonymization strict |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** This is an APA-wide policy applied across all APA journals (not Health Psychology-specific). Authors MAY use generative AI (e.g., for editing, idea generation, coding/analysis support) but MUST disclose the specific tool and how it was used (typically in the Methods or an equivalent section), and must verify all AI-generated content/citations against original sources. AI cannot be listed as an author. No prior editorial permission is required before use, but editors may request additional documentation during review (hence 'conditional' gate rather than a flat yes). Separately, reviewers/editors are explicitly barred from entering submitted manuscript text into AI tools, citing confidentiality.
+
+**WO2 positioning finding (what the journal accepts now):** Biobehavioral/psychosocial mechanisms linking psychology and physical health, social determinants of health, health-behavior intervention development, dissemination/implementation science, and population-level health disparities/equity research. Registered RCTs are explicitly welcome; unregistered or retrospectively registered RCT reports are subject to rejection without external review per the journal's own submission guidelines.
+
+**WO2 experiential finding:** APA official 'Summary Report of Division Journal Operations, 2023' (published in American Psychologist, 2024, Vol. 79, No. 5, pp. 777-778): Health Psychology (Division 38) received 697 manuscripts, accepted 77, had 179 pending, rejection rate 74% (i.e., acceptance ≈26%); 90 items published; average lag from acceptance to publication was 2.3 months (Online First) / 4.6 months (print). This is a first-hand publisher-issued statistic, not a submission-to-decision timeline. 
+
+**Sources cited in this pass:**
+- https://muchong.com/bbs/journal.php?view=detail&jid=3182 (小木虫 journal metadata page, no first-hand experience posts)
+- https://scirev.org/journal/health-psychology/ (SciRev — 0 full reviews; only 'immediate rejection: 6 days' data point, all other fields n/a)
+- https://www.apa.org/pubs/journals/features/2023-statistics.pdf (APA Summary Report of Division Journal Operations, 2023 — official acceptance/rejection/lag numbers)
+- https://www.apa.org/pubs/journals/hea (aims & scope)
+- https://www.apa.org/pubs/journals/hea/submit (RCT registration / desk-reject rule, masked review, preprint policy)
+- https://www.apa.org/pubs/journals/resources/calls-for-papers (checked directly: no currently-open call for papers listed for this journal as of July 2026 — special issue topics above are from recently published/announced issues, not an active open CFP)
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: No public submission-to-first-decision figure exists for this journal. SciRev (scirev.org/journal/health-psychology) shows 0 full reviews and only one data point ('immediate rejection: 6 days'); the APA official 2023 Journal Operations report gives only acceptance-to-publication lag (2.3 mo online-first / 4.6 mo print), not submission-to-decision time. No muchong/zhihu/fabiaoji/Reddit thread with a first-hand timeline was found.
+- **experiential.desk_reject_pct**: No numeric desk-rejection rate is published anywhere found. The journal's own submission guidelines confirm desk rejection occurs (e.g., automatically for unregistered or retrospectively registered RCT reports, and for out-of-scope/masking violations) but give no percentage, and no forum post quantified it.
+- **experiential.reviewer_culture**: Zero first-hand accounts surfaced on muchong.com (journal page found, but only bibliographic metadata, no reviewer/author testimony), zhihu (search returned only results about the unrelated Taylor & Francis journal 'Health Psychology Review'), fabiaoji (same conflation issue, no APA-journal-specific hits), or Reddit r/AskAcademia (no thread found). Fabricating a reviewer-culture narrative was avoided per instructions.
+
+**Cross-language checks performed:**
+- muchong.com (小木虫) — found a dedicated SCI-journal metadata page for 'HEALTH PSYCHOLOGY' (muchong.com/bbs/journal.php?view=detail&jid=3182) listing publisher/indexing/frequency, but zero first-hand review-experience posts or comments.
+- zhihu.com (知乎) — search returned only tangential/unrelated hits, mainly discussing the different journal 'Health Psychology Review' (Taylor & Francis) and unrelated psychology journals; 0 relevant results for APA's Health Psychology (ISSN 0278-6133).
+- fabiao.com.cn (fabiaoji) — same conflation; only found a page for 'Health Psychology Review', not this journal; 0 results for this specific journal.
+- Reddit r/AskAcademia — 0 results; no thread discussing this journal's review process was found via web search.
+
 ---
 
 ## Strategic Notes
@@ -263,5 +293,6 @@ Low for health-psychology empirical authors. Moderate for adjacent psychology �
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (apa.org/pubs/journals/hea) + APA Division 38 domain knowledge (web search 2026-05) | @Zaious |

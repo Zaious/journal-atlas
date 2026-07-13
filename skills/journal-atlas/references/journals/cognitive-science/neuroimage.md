@@ -205,6 +205,34 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策（未見 NeuroImage 專屬頁面覆寫，NeuroImage: Clinical 姊妹刊則有專屬條款，詳見 blanks）。作者面:允許生成式 AI／AI 輔助工具改善語言與可讀性（含程式碼格式化澄清），且不禁止在研究設計/方法論脈絡使用 AI（如資料處理），但須在方法章節揭露；AI/LLM 不得列為作者或共同作者，作者需對內容負全責，禁止用 AI 生成圖形摘要(graphical abstract)，AI 生成封面藝術需經編輯與出版社事前許可。審稿人/編輯面:明確禁止將手稿或審稿溝通內容上傳至生成式 AI 工具（保密與原創評估考量），僅可用 AI 輔助潤飾審稿意見/決定信的結構與語言。故整體屬「作者可用但需揭露、審稿人禁止上傳手稿」的有條件開放，非全面禁止亦非完全開放，評 3/5。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** SciRev 樣本(n=8):1 篇接受、7 篇拒絕,近似 12.5% 接受率,樣本過小不可靠。小木虫頁面另一則使用者估計「國內作者接受率約 20%」，屬個人經驗描述非官方數據。 SciRev 一則回報描述:兩位審稿人中一位提供建設性意見,另一位「除了態度不佳外,似乎不熟悉技術細節」,詢問手稿中已明確說明的內容。另一則回報稱 NeuroImage「可謂神經影像領域的頂尖期刊」,即使認同方法論仍維持「極高拒絕率」。小木虫使用者反映審稿意見「公允且具建設性」,但文章品質參差,對非中國大陸機構的國際作者接受度較高、母語作者被拒率提及較少(此為單一站台個人化陳述,未交叉驗證,信度有限)。
+
+**Sources cited in this pass:**
+- https://academic-accelerator.com/Review-Speed/NeuroImage
+- https://muchong.com/bbs/journal.php?view=detail&jid=6178
+- https://scirev.org/reviews/neuroimage/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier; https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-the-review-process; https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now / methods_welcome / framing_required**: WebFetch 對 ScienceDirect guide-for-authors 頁面與 aims-and-scope 頁面皆回傳 403 Forbidden(反爬蟲阻擋),WebSearch 摘要未能取得近期(2024-2026)具體收錄主題/方法清單或現行徵稿(CFP)內容。未取得可信第一手資料,故此層留白,signal_quality=1(僅有出版社頁面存在之泛用資訊,無法驗證實際 scope 細節)。
+- **ai_policy (journal-specific override)**: 僅找到 Elsevier 出版社通用生成式 AI 政策,以及姊妹刊 NeuroImage: Clinical 的專屬審稿人條款(禁止上傳手稿),但未能確認 NeuroImage(ISSN 1053-8119)本刊是否有獨立於通用政策的專屬頁面或額外限制,故標註「未見專屬覆寫」而非武斷假設兩刊完全一致。
+- **experiential.reddit_r_AskAcademia**: WebSearch 對 'NeuroImage desk reject reddit AskAcademia' 及 'site:reddit.com NeuroImage journal review' 均無有效結果(可能因 Reddit 內容未被此次搜尋索引),故 cross_language_checked 中列為 0 results,誠實留白,未杜撰 Reddit 討論內容。
+- **experiential.知乎/fabiaoji**: 本次研究時間內未執行對知乎與 fabiaoji 的獨立查詢(僅執行小木虫查詢並取得結果),故不確知這兩個來源是否有進一步資訊;為避免虛構,不在 cross_language_checked 中聲稱已查證,僅誠實標記小木虫為唯一實際查得之中文來源。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 找到期刊點評頁 (jid=6178),回報平均首次決定約 2 個月(非官方)、審稿意見公允但文章品質參差、國際作者接受度較高
+- SciRev scirev.org: 找到 8 筆回報,平均審稿週期 6.1 週、75% 桌拒(小樣本)、1 則審稿人態度負評、1 則描述極高拒絕率
+- Reddit r/AskAcademia: 0 results(WebSearch 未索引到任何相關討論)
+- 知乎 zhihu / fabiaoji: 本次未執行查詢,未涵蓋(見 blanks)
+
 ---
 
 ## Strategic Notes
@@ -244,4 +272,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

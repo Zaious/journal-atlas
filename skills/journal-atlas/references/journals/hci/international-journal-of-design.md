@@ -204,6 +204,36 @@ Design research + HCI practitioner-bridge community. Reviewer expectations: cros
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium-High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 查閱期刊官方 Submissions/Author Guidelines 頁面全文，未見任何 AI / generative AI / ChatGPT 使用揭露條款。多輪站內搜尋（含 WebSearch 針對 ijdesign.org + AI policy 的專門查詢）亦未找到期刊或其出版單位（Chaoyang University of Technology / Taiwan Design Center）發布的獨立 AI 政策頁。無法確認寬鬆度或是否要求揭露，誠實留白。
+
+**WO2 positioning finding (what the journal accepts now):** 近期（2025-2026, Vol.20-21）刊出主題涵蓋：情緒與體驗設計(mood/experience design)、永續材料與減塑(sustainable materials/microplastics)、AI 與演算法設計觀點(AI/algorithmic design)、智慧紡織與穿戴裝置、公部門參與式設計、服務設計與系統思考、人本 AI 應用。現行徵稿：Special Issue「Crafting Tangible Bits through Interactive Paper」，全文截稿 2026-10-22。
+
+**WO2 experiential finding:** LetPub 中國作者投稿經驗頁將整體錄取難度標註為「容易」，但僅基於 1 筆分享投稿經驗，樣本量極小，且該筆經驗的具體內文未能完整讀取。SciRev 上該刊尚無任何讀者評論（0 reviews），官方也未公布錄取率或退稿率數據。知乎搜尋摘要（非逐字，經 WebSearch 引擎摘要生成）指出「編輯和專家評審組審閱認真、處理速度快」，但該說法出自搜尋引擎生成的摘要而非可直接讀取的原始知乎回答全文（原頁面回傳 403，未能人工核實逐字內容），可信度中等偏低，僅供參考。 
+
+**Sources cited in this pass:**
+- WebSearch 摘要 of https://zhuanlan.zhihu.com/p/103687413 及 https://www.zhihu.com/question/325329988 （原頁 403 無法直接核實，僅搜尋引擎二手摘要：稱審稿認真、速度快，IF約1.1-1.9、JCR Q3）
+- http://www.ijdesign.org/index.php/IJDesign (期刊首頁，近期文章列表與 CFP)
+- http://www.ijdesign.org/index.php/IJDesign/about/submissions
+- http://www.ijdesign.org/index.php/IJDesign/about/submissions (投稿類型與 Aims and Scope)
+- https://letpub.com.cn/index.php?journalid=8555&page=journalapp&view=detail (LetPub：審稿週期 >12週或約稿；錄取難度「容易」；僅1條投稿經驗分享，內文未能取得)
+- https://scirev.org/journal/international-journal-of-design/ (SciRev：0 reviews，各項數據皆 n/a)
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.gate / ai_policy.leniency_1_5**: 官方投稿頁與作者須知全文檢視後，無任何 AI/生成式 AI 使用揭露或許可條款；查無期刊或出版單位獨立發布的 AI 政策頁，故留空而非套用出版商通用政策（此刊非隸屬 Elsevier/Wiley 等大型出版集團，無法比照其集團政策）。
+- **preprint.allowed**: 官網投稿頁未提及預印本(preprint/arXiv/SSRN)政策；SHERPA/RoMEO 查無此刊獨立紀錄；無法確認是否允許預印本先行發布。
+- **experiential.desk_reject_pct**: SciRev 該刊 0 筆讀者評論，官網未公布退稿率/直接拒稿率數據；LetPub 僅 1 筆投稿經驗且未含具體退稿階段細節。
+- **experiential.reviewer_culture**: 無足夠第一手論壇貼文（小木虫直接搜尋僅返回其他期刊頁面及論壇分類頁，未命中本刊專屬討論串；Reddit r/AskAcademia 站內搜尋 0 相關結果）可佐證審稿人風格/文化，避免套用泛用敘事。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋未命中本刊專屬投稿經驗討論串，僅命中期刊分類頁與其他設計期刊（如 International Journal of Interactive Design and Manufacturing）
+- 知乎 zhihu.com — WebSearch 摘要命中 2 篇相關文章（設計類期刊纵览、SCI期刊问答），但原頁面 403 無法直接讀取逐字內容，僅能引用搜尋引擎二手摘要，信度標記中等偏低
+- LetPub letpub.com.cn — 命中期刊專頁，審稿週期 >12週/約稿、錄取難度「容易」，惟中國作者投稿經驗僅 1 筆且內文未能取得
+- Reddit r/AskAcademia — site:reddit.com 搜尋 0 個直接命中本刊的討論
+
 ---
 
 ## Strategic Notes
@@ -243,4 +273,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

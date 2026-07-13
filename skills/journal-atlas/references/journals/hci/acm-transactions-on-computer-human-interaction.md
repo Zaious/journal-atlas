@@ -226,6 +226,39 @@ Reviewers are drawn primarily from the ACM SIGCHI community — international HC
 | **Data transparency requirement** | Medium-High — ACM Open Science increasingly expected; supplementary materials encouraged |
 | **OPSEC compatibility** | Medium — research with vulnerable populations may be incompatible with full data sharing; pseudonymization standard |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is an ACM publisher-wide policy (ACM Policy on Authorship), not TOCHI-specific. Use of generative AI tools to create content (text, tables, graphs, code, data, citations) is PERMITTED but must be fully disclosed (e.g., an Acknowledgements statement such as "ChatGPT was utilized to generate sections of this Work..."). Generative AI tools cannot be listed as authors; all co-authors must meet ACM's authorship criteria. Separately, ACM prohibits reviewers from submitting papers to LLMs/plagiarism detectors/summarizers or using generative AI to write reviews. Basic word-processing/grammar tools are exempt from disclosure. No TOCHI-specific supplementary AI policy was found beyond this ACM-wide policy referenced on the journal's pages.
+
+**WO2 positioning finding (what the journal accepts now):** Flagship general HCI journal; recent scope/CFP signals show breadth across: interaction techniques and interactive systems, accessibility, human-AI/generative-AI interaction (esp. in healthcare and design contexts), VR/AR and embodied interaction, computational/quantitative HCI methods, qualitative and Research-through-Design work, critical/theoretical HCI (e.g. 'unmaking' HCI), and HCI history/theory. Also runs themed special issues (e.g., 'HCI and the Body - Reimagining Women's Health', 'Human-centred AI in healthcare', 'Digital Touch and HCI').
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://dl.acm.org/journal/tochi/calls-for-papers
+- https://dl.acm.org/journal/tochi/digitaltouchhci
+- https://dl.acm.org/journal/tochi/hci-and-the-body
+- https://dl.acm.org/journal/tochi/special-issues
+- https://muchong.com/bbs/journal.php?view=detail&jid=28 (journal listing page exists with only ISSN/frequency metadata, no reviewer-experience posts)
+- https://scirev.org/journal/acm-transactions-on-computer-human-interaction/ (0 reviews submitted, all metrics 'n/a')
+- https://www.acm.org/publications/policies/new-acm-policy-on-authorship
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev shows 0 reviews for this journal (all fields n/a); no first-hand forum posts found on muchong, zhihu, fabiaoji, or Reddit r/AskAcademia. The only number available (~60 days to first decision) comes from TOCHI's own official author guidelines, not from author/reviewer experiential reports, so per the hard rule it is excluded from this experiential-only field rather than reported as if it were experiential data.
+- **experiential.desk_reject_pct**: No SciRev data (0 reviews) and no forum/community discussion (Chinese or English) mentioning a desk-reject rate for TOCHI was found.
+- **experiential.acceptance_note**: No first-hand acceptance/rejection narratives found in any of the checked cross-language sources.
+- **experiential.reviewer_culture**: No concrete first-hand accounts of reviewer tone/culture were found in muchong, zhihu, fabiaoji, or Reddit; fabricating a generic narrative is disallowed by the work order's hard rules.
+- **positioning.accepts_now**: Could not directly fetch dl.acm.org/journal/tochi (403 Forbidden on WebFetch) to review an actual recent table-of-contents/article-title list; positioning is inferred from CFP/special-issue titles and aims-and-scope snippets surfaced via search only, hence signal_quality capped at 2.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — found journal listing page (jid=28) but it contains only bibliographic metadata, no submission/review experience posts; targeted search for TOCHI-specific threads returned 0 relevant results
+- 知乎 zhihu.com — multiple general HCI-journal-recommendation threads mention TOCHI as a top-tier venue, but 0 threads found describing first-hand submission/review/desk-reject experience
+- fabiaoji (发表记) — no TOCHI-specific pages or discussion found in search
+- Reddit r/AskAcademia — 0 TOCHI-specific threads found; one loosely related Facebook HCI-META group post title surfaced ('Any insights on ACM Tochi review process and timeline?') but Facebook content is inaccessible/unverifiable and was not used as a source
+- SciRev — journal page exists but shows 0 submitted reviews, all quantitative fields 'n/a'
+
 ---
 
 ## Strategic Notes
@@ -274,5 +307,6 @@ Variable. For HCI-canonical empirical papers: low. For third-wave / critical / a
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + ACM Author Guidelines. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

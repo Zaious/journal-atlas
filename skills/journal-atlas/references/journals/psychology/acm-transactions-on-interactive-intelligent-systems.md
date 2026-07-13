@@ -219,6 +219,39 @@ Reviewers from ACM IUI + RecSys community. Common demands: "AI + interaction con
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** ACM (publisher level, applies to TiiS): generative AI use to create content is allowed with mandatory disclosure; word-processing/grammar tools exempted from disclosure; AI cannot be an author; reviewers are separately barred from uploading confidential submissions to LLMs. No TiiS-journal-specific AI clause was found beyond this ACM-wide policy.
+
+**WO2 positioning finding (what the journal accepts now):** Human-AI interaction / interactive intelligent systems work that satisfies BOTH of TiiS's two defining criteria: 'Intelligence' (the system incorporates AI/ML/inference/language-vision understanding/recommendation/decision support) AND 'Interaction' (a human user can influence, interpret, or act on the system's behavior) — papers must clearly connect both sides, not just one.
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- Design Research Society CFP listing: 'ACM TIIS Special Issue on Conversational Agents for Healthcare and Well-being'
+- LetPub journal page (letpub.com.cn, journalid=11069) — review-speed/acceptance-rate fields present but empty of user data; only non-narrative submission tally (13/14/3)
+- ResearchGate CFP PDF: 'ACM TiiS Special Issue on Systematizing Knowledge in Interactive Intelligent Technologies'
+- SciRev journal page (scirev.org) — all fields n/a, 0 reviews submitted
+- dl.acm.org/journal/tiis (About/CFP pages, via search-engine snippet — direct fetch blocked 403)
+- https://www.acm.org/publications/policies/new-acm-policy-on-authorship (publisher-wide; corroborated via search snippets, direct fetch blocked 403)
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.leniency exact wording from TiiS-specific page**: dl.acm.org/journal/tiis/author-guidelines returned HTTP 403 to WebFetch and a bot-check wall to the browser tool; relied on ACM publisher-wide policy page and search-engine snippets quoting it instead of a TiiS-specific AI clause
+- **experiential.review_time_months**: SciRev page for this journal shows all timing fields as 'n/a' and 0 submitted reviews; LetPub author-experience page shows the '平均审稿速度' (avg review speed) field present but empty (no user-submitted data); no Reddit r/AskAcademia thread found
+- **experiential.desk_reject_pct**: SciRev shows '% immediately rejected last year: n/a'; no other first-hand source found
+- **experiential.reviewer_culture**: No forum thread (小木虫/知乎/fabiaoji/Reddit) with concrete first-hand reviewer-culture commentary was found for this specific journal; search results for 小木虫 and 知乎 queries returned only generic aggregator/index pages or results for an unrelated journal (IEEE TII), not TiiS-specific discussion threads
+- **experiential.acceptance_note**: No first-hand acceptance-rate discussion found on SciRev, LetPub, muchong, or zhihu specific to TiiS; only publisher-side counts (e.g. LetPub shows 13 considering / 14 submitted / 3 published self-reported tallies with no narrative detail) which are too thin to state as a fact
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/acm-transactions-on-interactive-intelligent-systems): all review-time/acceptance/desk-reject fields 'n/a', 0 user reviews submitted — 0 usable results
+- LetPub (letpub.com.cn, journalid=11069, Chinese, first-hand author-experience aggregator): page structure for '平均审稿速度' (avg review speed) and '平均录用比例' (avg acceptance rate) exists but is empty/unfilled by users; only non-narrative tally '13 considering submission, 14 submitted, 3 published' — near-0 usable results
+- 小木虫 muchong.com: targeted search for a TiiS-specific journal review-detail page (jid) did not surface one; only unrelated ACM journal detail pages (ACM TOIS jid=34, ACM TECS jid=31, ACM TISSEC jid=33) appeared — 0 results for TiiS
+- 知乎 zhihu.com: search for TiiS + 投稿 returned no TiiS-specific threads; results were entirely about a different, unrelated journal (IEEE Transactions on Industrial Informatics, also abbreviated 'TII') — 0 results for TiiS
+- fabiaoji: not surfaced by search engine for this journal — 0 results
+- Reddit r/AskAcademia: search for TiiS + journal + review returned no relevant threads (only generic peer-review academic papers) — 0 results
+
 ---
 
 ## Strategic Notes
@@ -264,5 +297,6 @@ Low for IUI tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from ACM publisher + ACM IUI / RecSys editorial culture domain knowledge | @Zaious |

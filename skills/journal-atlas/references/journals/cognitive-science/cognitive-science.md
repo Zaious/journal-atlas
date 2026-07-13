@@ -219,6 +219,33 @@ Reviewers from Cognitive Science Society network — international interdiscipli
 | **Data transparency requirement** | High — code-sharing for models expected |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Wiley 出版社通用政策(非本刊專屬頁面,本刊 forauthors.html 未見加碼條款)。AI 不得列為作者,不得被視為能獨立發起原創研究;人類作者需對內容正確性與誠信負全責。若使用生成式 AI 工具(如 ChatGPT)協助寫作,須在 Methods 或 Acknowledgements 段落「透明且詳細」揭露;基礎文字編輯工具(如文法檢查)豁免揭露。作者亦被要求檢查所用 AI 工具的條款是否與出版合約有智慧財產衝突。因為是政策允許使用但要求揭露(非全面禁止,也非完全開放),故評為 3/5(有條件許可)。未找到本刊(Cognitive Science Society/Wiley)針對此政策的期刊專屬加註頁面,故 signal_quality 僅 2。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** SciRev 樣本回報接受率約 25%;平均審查輪數 1.7 輪,平均每案 2.7 位審稿人;審稿意見「困難度」評 4.5/5.0(偏嚴格) 
+
+**Sources cited in this pass:**
+- https://cognitivesciencesociety.org/submissions/
+- https://en.wikipedia.org/wiki/Cognitive_Science_(journal)
+- https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf
+- https://scirev.org/journal/cognitive-science/ (SciRev, n=5 reviews on file — 樣本數極小,需謹慎解讀)
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now / framing_required**: 無法在不觸發 Wiley 付費牆的情況下取得本刊近期(2024-2026)實際目錄或具體收錄文章標題清單;WebFetch 對 onlinelibrary.wiley.com 回傳 402 Payment Required,搜尋引擎摘要多混入姊妹刊(WIREs Cognitive Science、Topics in Cognitive Science)之文章,無法確認為本刊(ISSN 0364-0213)專屬,故留空避免誤植。
+- **experiential.reviewer_culture**: 跨語言查核(小木蟲 muchong.com、知乎、Reddit r/AskAcademia)均未找到針對本刊(區別於 Trends in Cognitive Sciences 等同名/近名刊物)的第一手審稿文化描述,故留空。
+- **ai_policy journal-specific page**: 僅取得 Wiley 出版社通用生成式 AI 政策(2023-09),未能存取本刊 forauthors.html 全文(402 付費牆)確認是否有期刊層級加註,故標記為出版社層級政策,signal_quality 降為 2。
+
+**Cross-language checks performed:**
+- 小木蟲 muchong.com SCI期刊點評庫:站內搜尋與 site: 搜尋均未找到「COGNITIVE SCIENCE」(區別於 Trends in Cognitive Sciences、Cognitive Psychology 等近名刊)之獨立條目 — 0 results
+- 知乎 zhihu.com:搜尋僅返回 Trends in Cognitive Sciences、Cognitive Systems Research 等近名期刊之投稿經驗文章,未見本刊(Cognitive Science, ISSN 0364-0213)第一手審稿週期或文化討論 — 0 first-hand results
+- Reddit r/AskAcademia:一般與 site:reddit.com 搜尋均未返回本刊相關討論串,結果多為 WIREs Cognitive Science 之百科/指標頁面 — 0 results
+- SciRev.org:找到本刊專屬條目,提取到量化數字(n=5 reviews,詳見 experiential),但樣本數極小,解讀需謹慎
+
 ---
 
 ## Strategic Notes
@@ -265,5 +292,6 @@ Low for cognitive-science tradition authors. Interdisciplinary breadth demands a
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher + Cognitive Science Society editorial culture domain knowledge | @Zaious |

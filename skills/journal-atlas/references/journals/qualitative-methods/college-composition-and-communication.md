@@ -205,6 +205,34 @@ NCTE / 4Cs writing-studies community. Reviewer expectations: field-specific theo
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium-High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 期刊專屬政策(CCC Generative AI Policy,2025年10月採行)。作者可使用GenAI工具「支援」而非「取代」學術勞動,須附不超過200字的揭露聲明,列出使用的工具、支援的任務、人類作者比例,並確認對原創性與倫理負全責。揭露本身不構成拒稿理由。審稿人則被明確禁止將手稿任何部分輸入GenAI平台做摘要或評估;僅能在不外洩手稿內容的前提下用AI輔助撰寫自己的審稿意見。整體屬「有條件開放、需揭露」的中度寬容政策,非全面禁止但管制嚴格,故評3/5。
+
+**WO2 positioning finding (what the journal accepts now):** CCC為修辭與寫作研究(composition/rhetoric studies)旗艦期刊,聚焦高等教育中寫作的教學與實務。近期(2025)刊出多篇GenAI相關研究專題(Symposium: On Generative AI),包含AI生成文本的句法複雜度分析、AI寫作中隱形人力勞動批判、AI修辭氣候(rhetorical climates of AI)等議題,顯示期刊目前積極歡迎AI/寫作交叉主題的投稿。
+
+**WO2 experiential finding:** 目前無稿件積壓(no backlog),獲接受的稿件通常在接下來兩期內刊出。 
+
+**Sources cited in this pass:**
+- https://cccc.ncte.org/cccc/ccc-generative-ai-policy/
+- https://cccc.ncte.org/cccc/ccc/write
+- https://publicationsncte.org/content/journals/10.58680/ccc202577113
+- https://publicationsncte.org/content/journals/10.58680/ccc2025771170
+- https://publicationsncte.org/content/journals/10.58680/ccc202577139
+
+**Fields WO2 could not find evidence for:**
+- **preprint.allowed**: NCTE/CCCC官網及Write for CCC投稿頁均未提及preprint/SSRN政策,查無公開文件
+- **experiential.reviewer_culture**: SciRev無此期刊條目(0 reviews/無頁面);Reddit r/AskAcademia、知乎、小木虫、fabiaoji搜尋均無討論結果,查無可歸因來源的評審文化描述
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 0 results — 查無該期刊相關討論(非中文學界常見投稿目標,屬美國修辭寫作學研究小眾期刊)
+- 知乎 zhihu: 0 results — 無相關投稿經驗或討論串
+- fabiaoji: 未檢索到獨立可用結果(搜尋未返回fabiaoji站內內容)
+- Reddit r/AskAcademia: 0 results — 未找到針對此期刊的討論串
+- SciRev: 該期刊無獨立頁面/無評論(0 reviews),非通訊/社科類SciRev收錄範圍典型對象
+
 ---
 
 ## Strategic Notes
@@ -244,4 +272,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from rhetoric and composition / writing-studies family conventions (NCTE / 4Cs / CCCC norms). | @Zaious |

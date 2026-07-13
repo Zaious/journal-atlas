@@ -210,6 +210,37 @@ Reviewers are drawn primarily from the phenomenology and 4E-cognition communitie
 | **Data transparency requirement** | Flexible for phenomenological work; standard ethics for empirical components |
 | **OPSEC compatibility** | Medium-High — note 12-month AAM embargo (Springer default), so preprint strategy recommended for early visibility |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 期刊提交指南頁面明列 AI 使用規則(引用 Springer Nature 集團政策,非該刊獨有制度):LLM 不得列為作者(因無法承擔問責);若用於內容生成/資料分析須在 Methods 或替代段落揭露;'AI-assisted copy editing'(僅文法/可讀性潤飾)不需揭露;AI 生成圖像原則禁止發表(僅少數例外,如圖像本身即研究對象且來源合法)。同源:Springer Nature 集團 AI 指引 https://group.springernature.com/gp/group/ai/ai-guidance-for-our-researchers-and-communities 亦述明審稿人不得將稿件上傳至生成式 AI 工具。
+
+**WO2 positioning finding (what the journal accepts now):** 以理論/概念性現象學論文為主軸(現象學傳統與心靈哲學、知覺、能動主義 enactivism、社會存有論的交叉討論),但明確歡迎採用實驗、量化、質化或混合方法的實徵研究——條件是實徵結果必須直接回應「現象學與認知科學交界處的理論爭議」(例如檢驗某個現象學假說),而非單純的實徵報告。近期(2024-2026)已結案的徵稿主題涵蓋:AI 與現象學的橋接(Phenomenology and Artificial Intelligence: Bridges and New Paths,含 2024 文章 'Phenomenology and artificial intelligence: introductory notes')、數位時代的悲傷經驗(Grief in the Digital Age,截稿 2025-02-01)、Alva Noë 能動主義20年後的重估、Mark Bickhard 的 interactivism、聯合行動現象學、現象學訪談研究法、實用主義與能動主義的對話等。目前(查詢時)Springer 頁面列出的徵稿專輯全部顯示為 Closed,無現行開放中的 special issue CFP。
+
+**WO2 experiential finding:** SciRev 上「接受百分比」「立即拒絕率(immediate rejection rate)」「去年發表文章數」「收到稿件數」等欄位均顯示 n/a,無法得知真實拒稿/秒拒比例。唯一具體紀錄的一筆審稿結果為 Accepted,審稿人給予整體評分 5/5(excellent)、審稿報告品質 5/5、審稿意見難度 2/5(easy)——但因僅單一樣本,不足以推論常態。 
+
+**Sources cited in this pass:**
+- https://ispr.info/2024/04/03/call-grief-in-the-digital-age-special-issue-of-phenomenology-and-the-cognitive-sciences/
+- https://link.springer.com/article/10.1007/s11097-024-10040-9
+- https://link.springer.com/collections/cgifedcdaj
+- https://link.springer.com/journal/11097/aims-and-scope
+- https://link.springer.com/journal/11097/collections
+- https://link.springer.com/journal/11097/submission-guidelines
+- https://scirev.org/journal/phenomenology-and-the-cognitive-sciences/
+
+**Fields WO2 could not find evidence for:**
+- **preprint.allowed**: Springer 投稿指南頁面（經 r.jina.ai 代理讀取，原始 link.springer.com 頁面對未登入請求會 303 導向 idp.springer.com 認證牆）未提及該刊的 preprint/預印本政策，也查無該刊獨立聲明；未查得即誠實留空，不套用 Springer 集團通用預印本政策（因未見該刊明確引用）。
+- **experiential.desk_reject_pct**: SciRev 頁面該欄位本身即顯示 n/a，且無任何小木虫/知乎/Reddit 貼文提及本刊秒拒經驗，故留空。
+- **experiential.reviewer_culture**: 跨語言查核（小木虫、知乎、fabiaoji、Reddit r/AskAcademia）均未命中任何具體、可歸因來源的審稿人風格/文化描述，僅 SciRev 的極小樣本（疑似僅 1 筆）評分，不足以支撐審稿文化的主觀論斷，故留空以避免捏造。
+- **experiential.review_time_months (precise single figure)**: SciRev 頁面同時給出「平均 2.3 個月」與「最新一筆 13.0 週」兩組不完全一致的數字，且投稿量等關鍵欄位為 n/a，暗示樣本數極小（可能僅 1-2 筆），故以區間/附註方式呈現而非給出單一「確定」數字，避免誤導成穩定統計。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — WebSearch 命中該站一則關於「投稿」的貼文(scientific reporter 主題,與本刊審稿經驗不直接相關);另一中文投稿經驗頁 wdcsci.com/sci/detail/12564 標題顯示含「審稿週期/時間、版面費、修改意見」等欄位,但實際 WebFetch 回傳 HTTP 403 Forbidden,無法讀取內容驗證,故未採用其數據
+- 知乎 zhihu.com — 搜尋未命中任何直接討論本刊審稿/投稿經驗的文章或回答，僅命中不相關的現象學科普文
+- fabiaoji — 未搜得相關結果（0 results）
+- Reddit r/AskAcademia — 搜尋未命中任何討論本刊的貼文或留言（0 results）
+
 ---
 
 ## Strategic Notes
@@ -257,6 +288,7 @@ Low for well-framed phenomenology-cognitive-science manuscripts. Authors typical
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -219,6 +219,37 @@ Reviewers drawn primarily from the personality and social psychology research co
 | **Data transparency requirement** | High — open data encouraged (SAGE open-science badges) |
 | **OPSEC compatibility** | Medium — confidentiality norm: authors discouraged from public discussion of reviews |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 遵循 Sage 集團通用 AI 政策(非期刊專屬頁面):AI 分「assistive」(潤稿/文法,不需揭露)與「generative」(生成內容/文獻回顧/程式碼/資料視覺化等,投稿時必須揭露)。禁止:AI 生成不實內容、捏造數據或引用、以 AI 取代真實訪談、將 AI 圖像充作原始研究、未揭露使用、審稿人/編輯以 AI 撰寫決議信或審稿意見。AI 聊天工具不得列為作者。屬 Sage 全站政策,PSPB 投稿頁未見期刊專屬加嚴或放寬條款。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** *(not researched)* SciRev(僅 5 筆評論)：審稿意見難度評分 5.0/5.0(極困難)，審稿報告品質 3.3/5.0，整體投稿流程評分 3.0/5.0；最新一筆評論摘要為「流程尚可(3分/good process)但結果為拒稿」。樣本量過小，不足以形成可靠的審稿人文化描述。
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/home/PSP
+- https://scirev.org/journal/personality-and-social-psychology-bulletin/
+- https://scirev.org/reviews/personality-and-social-psychology-bulletin/
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now**: 未找到 2024-2026 具體近期文章標題清單或當前 special issue CFP 專屬於 PSPB(僅找到姊妹刊 Personality and Social Psychology Review 及其他期刊的 CFP)，故不推斷「現在實際接受什麼」，留白避免捏造。
+- **positioning.framing_required**: 沒有找到 PSPB 專屬的投稿框架/敘事要求說明，僅有通用 aims & scope，不足以推斷具體 framing 要求。
+- **experiential.acceptance_note**: SciRev 僅 5 筆評論且多為拒稿結果，未見任何『接受』個案的具體敘述可供摘要，無法給出誠實的 acceptance_note。
+- **peer_review 期刊專屬頁全文**: WebFetch 對 journals.sagepub.com/author-instructions/psp 多次僅回傳導覽頁而非期刊專屬政策全文，雙盲審與 preprint 事實是透過 WebSearch 摘要間接取得，未能直接核對原始頁面全文，信賴度打折。
+- **cross_language: 小木虫 muchong.com 一手帖**: 搜尋僅命中期刊資訊聚合站(学术之家/万维书刊网/letpub)之二手轉述數據，letpub 詳細頁因 IP 限流無法讀取，未取得小木虫論壇原始投稿人一手發文連結。
+- **cross_language: zhihu 一手經驗**: 搜尋命中一篇 zhihu 專欄文章網址但未展開讀取內容驗證是否含一手投稿經驗，故未採信具體數字，留白。
+- **cross_language: Reddit r/AskAcademia**: WebSearch 未回傳任何 PSPB 專屬的 Reddit 討論串，0 results。
+
+**Cross-language checks performed:**
+- 小木虫/中文期刊聚合站 (学术之家, 万维书刊网, fabiao.com.cn): 命中二手期刊資訊頁，聲稱審稿週期 5-13 個月/發表週期 6-16 個月，但無具體投稿人一手發文可溯源，可信度低
+- fabiaoji (letpub.com.cn): 目標頁被 IP 限流阻擋，0 可用內容取得
+- 知乎 zhihu: 搜尋命中 1 篇專欄文章網址(zhuanlan.zhihu.com/p/638755839)但未展開驗證含一手審稿經驗，未採信具體數字
+- Reddit r/AskAcademia: 0 results，未找到任何討論串
+
 ---
 
 ## Strategic Notes
@@ -268,5 +299,6 @@ Low for SPSP-aligned multi-study quantitative authors. Free OA option likely via
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

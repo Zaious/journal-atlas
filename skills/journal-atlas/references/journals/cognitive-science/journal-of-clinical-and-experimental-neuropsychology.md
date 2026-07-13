@@ -220,6 +220,36 @@ Reviewers from INS (International Neuropsychological Society) and broader clinic
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** This is the PUBLISHER-WIDE Taylor & Francis policy (dated 2024-06-12), not a journal-specific page for JCEN (JCEN has no separate AI policy page found; its own 'Instructions for Authors' page on tandfonline.com/journals/ncen20 returned HTTP 403 to automated fetch, so journal-level reproduction could not be independently confirmed). Per T&F: generative AI is permitted for idea generation, coding, language improvement, and research dissemination; AI cannot be credited as author; authors must disclose/acknowledge AI use; AI use that risks inaccuracy, bias, IP violation, or breaches of confidentiality is prohibited; editors/reviewers barred from using AI in ways that undermine peer-review confidentiality/quality. No explicit statement found on AI-generated images/figures. Scored 3/5: broadly permissive with mandatory disclosure gate, not a ban, not fully open.
+
+**WO2 positioning finding (what the journal accepts now):** Empirical clinical/experimental neuropsychology research: brain-behavior relationships, cognitive aging, neurodegenerative disease (Alzheimer's, Parkinson's), performance/symptom validity testing, training/education in neuropsychology, biomarkers, and psychometrics. Recent 2025-2026 PubMed-listed articles include: cognitive outcomes in former college athletes, childhood disadvantage and late-life cognition (Swedish longitudinal cohort), facial emotion recognition in social anxiety disorder, longitudinal stability of specific learning disability diagnoses, performance validity test failure rates in long-COVID cognitive complaints, a systematic review of the gut-brain axis in Alzheimer's/Parkinson's, sex-specific reproductive history and cognitive aging, and an ethics discussion of blood-based Alzheimer's biomarkers. A 2025 special issue covered Society for Clinical Neuropsychology / APA 2024 convention programming, with several papers on neuropsychology training/education (doctoral coursework syllabi, digital-platform training equity, trainee survey).
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://newsroom.taylorandfrancisgroup.com/expanded-guidance-on-ai-application-for-authors-editors-and-reviewers/
+- https://pubmed.ncbi.nlm.nih.gov/?term=%22J+Clin+Exp+Neuropsychol%22&sort=date
+- https://scirev.org/journal/journal-of-clinical-and-experimental-neuropsychology/ (0 reviews submitted, all fields n/a)
+- https://www.tandfonline.com/journals/ncen20/about-this-journal
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.gate / journal-specific confirmation**: Could not confirm on tandfonline.com/journals/ncen20 (author guidelines page returned HTTP 403 to automated fetch); recorded is the publisher-wide T&F policy only, not verified as reproduced verbatim on JCEN's own instructions-for-authors page.
+- **experiential.review_time_months**: SciRev page for this journal shows 0 submitted reviews and 'n/a' for handling time / acceptance % / desk-reject %. A third-party aggregator claimed '43 days review speed, 36% acceptance rate' but this is a secondary metrics site of unclear methodology/provenance, not a first-hand author report or the publisher's own stat, so it was excluded per the facts-only/no-filler rule.
+- **experiential.desk_reject_pct**: No first-hand source; SciRev shows 'n/a', no forum discussion found.
+- **experiential.acceptance_note**: No first-hand author accounts found in any searched source.
+- **experiential.reviewer_culture**: Zero results on 小木虫 (muchong.com), zhihu, fabiaoji, and Reddit r/AskAcademia for this specific journal name in both English and Chinese searches; no subjective claim can be sourced.
+- **positioning.accepts_now (active special issue CFP)**: No active 2025-2026 special-issue CFP with a public deadline was located; only a past special issue tied to the 2024 APA/SCN convention was found (already reflected above), and a Facebook mention of a 'mentoring in neuropsychology' special issue could not be verified with dates/details.
+
+**Cross-language checks performed:**
+- 小木虫 (muchong.com) via site:muchong.com search — 0 relevant results (only unrelated NCBI/arXiv items returned)
+- 知乎 (zhihu) — no zhihu hits surfaced in general web searches for this journal name
+- fabiaoji — no direct fabiaoji hits surfaced in general web searches
+- Reddit r/AskAcademia — site:reddit.com search for the journal's full name returned 0 results
+
 ---
 
 ## Strategic Notes
@@ -265,5 +295,6 @@ Low for INS clinical-experimental tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from T&F publisher + INS clinical neuropsychology editorial culture domain knowledge | @Zaious |

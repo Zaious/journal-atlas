@@ -224,6 +224,40 @@ Reviewers from STS, philosophy of technology, AI ethics, and critical-HCI commun
 | **Data transparency requirement** | Flexible for theoretical work |
 | **OPSEC compatibility** | High — interpretive STS and philosophical work does not require data exposure |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Springer Nature 全出版社通用政策，非 AI & Society 期刊專屬頁面（該刊 Submission guidelines 頁需登入，未能一手核實期刊層級文字）。要點：AI/LLM 不得列為作者（"SN does not attribute authorship to AI"，因無法承擔究責）；作者可用 AI 做語言潤飾/格式調整，但不得用於生成或實質貢獻內容；超出基本潤飾的 AI 使用須在 Methods（或適當替代段落）揭露；審稿人不得將稿件上傳至生成式 AI 工具；出版品不得用生成式 AI 圖像。leniency=3：允許潤飾類使用但禁止內容生成、且要求揭露，屬中等寬鬆。
+
+**WO2 positioning finding (what the journal accepts now):** 廣泛跨領域：AI 對社會/文化/倫理/認知/經濟的影響、生成式 AI 與著作權/作者身分議題（如 2024 年刊出之 "Can ChatGPT be an author?" 與 "The role of generative AI in academic and scientific authorship: an autopoietic perspective" 兩篇）、AI 治理與政策、AI 與工作/勞動、文化工作者與生成式 AI 關係
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://en.wikipedia.org/wiki/AI_%26_Society
+- https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=13257&xuanxiangk_id=2 (平均審稿速度/錄用比例欄位皆為空模板，僅顯示「共2條」投稿經驗分享但內文未展開)
+- https://link.springer.com/article/10.1007/s00146-024-02081-0
+- https://link.springer.com/article/10.1007/s00146-024-02174-w
+- https://link.springer.com/journal/146/updates/17229944 (Special Issue: Cultural Workers and Generative AI，摘要截止2025-06-30，稿件截止延至2026-02-10，客座編輯 Rafael Grohmann, Daphne Idiz, Zoë Glatt)
+- https://scirev.org/journal/ai-and-society (頁面存在但 WebFetch 無法讀取內容，未能確認評論數，須人工複查)
+- https://www.springernature.com/gp/policies/editorial-policies
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 僅來自 Wikipedia 詞條描述，官方 Springer Submission guidelines 頁面因登入牆無法一手核實
+- **preprint.allowed**: 未找到期刊或 Springer Nature 對此刊的明確 preprint 政策公開頁面（登入牆阻擋），無公開一手來源
+- **experiential.review_time_months**: SciRev 頁面抓取失敗；LetPub 審稿速度/錄用比例欄位為空模板；未搜到知乎/小木虫/PTT/Reddit r/AskAcademia 針對此刊的具體討論串
+- **experiential.desk_reject_pct**: 無任何公開來源（SciRev/LetPub/中英論壇）提供具體退稿率數字
+- **experiential.reviewer_culture**: 無具體一手論壇討論佐證審稿人風格或文化傾向，僅有期刊自我描述的跨領域定位（非審稿經驗）
+- **ai_policy(journal-level)**: 政策取自 Springer Nature 集團通用頁面，非本刊 Submission guidelines（登入牆擋住），未確認是否有期刊層級額外規定
+
+**Cross-language checks performed:**
+- 知乎 (zhihu.com)：搜尋「AI and Society 期刊 审稿」「小木虫 投稿」，僅返回一般 SCI 分區介紹文，未見此刊審稿經驗討論串
+- 小木虫 (muchong.com)：搜尋未直接命中此刊 SCI期刊點評頁（jid 未知），僅命中不相關期刊（Artificial Intelligence, JAIR）點評頁
+- fabiao.com / fabiaoji：僅顯示影響因子/分區資訊，未含審稿經驗數字
+- LetPub (letpub.com.cn)：抓取成功，平均審稿速度與平均錄用比例欄位皆為空，僅顯示「共2條」投稿經驗分享但未展開內文
+- Reddit r/AskAcademia：site:reddit.com 搜尋「AI and Society journal Springer peer review」與直接搜尋皆為 0 相關結果
+
 ---
 
 ## Strategic Notes
@@ -272,5 +306,6 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

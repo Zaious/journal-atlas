@@ -217,6 +217,35 @@ Reviewers from BCS HCI Group + broader UK / European HCI community. Common deman
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** Journal-specific General Instructions page (citing OUP's group AI policy) states AI tool use (content/image generation, code, data processing, translation) must be disclosed in the cover letter and in the Methods/Acknowledgements section. AI tools cannot be listed as authors; the journal screens author lists for this. No pre-submission permission/approval step is required beyond disclosure — use is allowed, gated on disclosure, not banned or requiring editor pre-clearance.
+
+**WO2 positioning finding (what the journal accepts now):** 2024-2026 advance articles and special-issue activity cluster around: human-AI interaction and trust (e.g. voice assistants, 'In generative AI we trust', anthropomorphism and disclosure), explainable AI (XAI) in workplace/production settings, AI's effect on professional identity and work (AI competency/proactivity, human work in the age of AI and automation), accessibility and neurodivergence (autistic-participant research methods, assistive tech, inclusive software engineering), UX evaluation methods (child UX measures, longitudinal assessment), and speculative/critical design in HCI. A 2026 special issue is specifically on 'The Quality of Speculation in Human-Computer Interaction' (extended abstracts due 17 Sept 2026, full papers 17 Dec 2026), and there is an open, standing call 'Ways of Knowing' inviting methodological-contribution papers.
+
+**WO2 experiential finding:** SciRev's single documented reviewer rated the overall process 4/5 ('Very good process') and review-report quality 5/5, noting the first round took ~14 weeks but feedback from all three reviewers and the editor was 'thorough and helpful,' and post-acceptance production was efficient. Separately, LetPub's Chinese-author aggregator page tags the journal's acceptance difficulty as '容易' (easy) but gives no rejection rate or sample size — treat as weak/low-confidence signal, not corroborated by any forum discussion. Only one first-hand account exists (SciRev): reviewers and editor described as thorough and providing high-quality, helpful feedback across 3 reviewers. No cross-language (muchong/zhihu) or Reddit corroboration was found, so this should be read as a single data point, not a pattern.
+
+**Sources cited in this pass:**
+- http://muchong.com/bbs/journal.php?view=detail&jid=3630
+- https://academic.oup.com/iwc/advance-articles
+- https://academic.oup.com/iwc/pages/General_Instructions
+- https://academic.oup.com/iwc/pages/call-for-papers
+- https://academic.oup.com/iwc/pages/special-issues
+- https://letpub.com.cn/index.php?journalid=3615&page=journalapp&view=detail
+- https://scirev.org/journal/interacting-with-computers/
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: No public source (SciRev, muchong, LetPub, zhihu, reddit) gives an actual desk-reject percentage for this journal; OUP General Instructions only says an initial decision (which may be a desk rejection) is 'usually within 3 weeks' but gives no rate.
+- **experiential.reviewer_culture**: Only one first-hand data point exists (a single SciRev submitter review calling the process 'very good' and reviewers 'thorough and helpful'); no muchong, zhihu, or Reddit r/AskAcademia threads about this specific journal were found, so a general reviewer-culture narrative would be fabrication beyond that one quote.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com journal detail page (jid=3630): 0 first-hand review/acceptance comments found — only a 2012 note that the article log updates in batches of ~50; no recent submission experiences.
+- LetPub 期刊库 (Chinese aggregator, not a discussion forum): lists review cycle '>12 weeks or by invitation' and a crowd-tag of acceptance difficulty '容易' (easy) with no sample size given — low-confidence, not first-hand forum testimony.
+- 知乎 zhihu.com: search for 'Interacting with Computers 知乎 期刊 投稿经验' returned no dedicated first-hand post about this journal, only generic CS-journal submission guides that do not mention it specifically — 0 relevant results.
+- Reddit r/AskAcademia (via site:reddit.com search): 0 results mentioning this journal by name.
+
 ---
 
 ## Strategic Notes
@@ -258,5 +287,6 @@ Low for UK HCI tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from OUP publisher + BCS HCI Group editorial culture domain knowledge | @Zaious |

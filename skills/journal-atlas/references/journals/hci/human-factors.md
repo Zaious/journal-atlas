@@ -225,6 +225,35 @@ Reviewers from HFES (Human Factors and Ergonomics Society) network and adjacent 
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** SAGE(出版社統一政策,未見 Human Factors 期刊專屬加嚴版本): assistive AI(文法/語言潤飾)免揭露;generative AI(文獻整理、翻譯、程式碼生成、資料視覺化、圖表、程式除錯、參考文獻整理)須在 Methods 或 Acknowledgements 揭露;禁止用 AI 生成造假內容/整篇稿件/取代真實受試者訪談/生成主題分析/編輯決策或同行評審。已揭露且正當使用不會僅因此被拒稿;未揭露的不當使用可在流程任何階段導致拒稿。未找到 Human Factors 期刊自訂的加嚴版本,視為採用 SAGE 集團預設政策。
+
+**WO2 positioning finding (what the journal accepts now):** 2025年實際刊出主題(Vol 67 No 3, 2025-03)涵蓋:外骨骼於間歇彎腰任務的肌肉負荷與使用者觀感、diminished reality 認知輔助設計以降低分心、部分自動駕駛對心智負荷/視覺行為/次要任務投入的統合分析(meta-analysis)。另有進行中之特刊徵稿:'Investigating the Human Factors of AI Use'(截止2025-10-01,徵求理論/方法/實證三類投稿,聚焦AI對人類表現與行為之影響、職場效益與非預期後果、組織意涵、安全風險、倫理考量)及'Human Factors in Healthcare'特刊(聚焦生醫資料的人因議題)。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/toc/hfs/current
+- https://scirev.org/journal/human-factors/ (0 reviews submitted, all fields 'n/a')
+- https://www.hfes.org/About/Latest-News/call-for-papers-special-issue-in-human-factors-investigating-the-human-factors-of-ai-use
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 該刊頁面顯示 0 筆評論提交,所有時間欄位為 n/a;中文論壇(小木虫/知乎)與 Reddit r/AskAcademia 均未搜到針對本刊的一手討論
+- **experiential.desk_reject_pct**: 同上,SciRev 無數據,跨語言論壇亦無討論串可引用
+- **experiential.acceptance_note**: 無任何公開一手投稿經驗來源(SciRev/小木虫/知乎/Reddit)提及本刊
+- **experiential.reviewer_culture**: 規則要求主觀性論述須有具體來源佐證;未找到任何論壇貼文描述本刊審稿人風格,故留空避免捏造
+- **ai_policy(journal-specific override)**: 只找到 SAGE 集團層級 AI 政策頁與集團層級前印本慣例(以 SAGE Open 頁面為例),未找到 Human Factors/HFES 專屬頁面明確覆寫或補充此政策,故標註為集團政策推論而非期刊自訂確認
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 搜尋「Human Factors SAGE 期刊」僅命中期刊評分頁 (jid=3283) 但未取得可用審稿經驗文字內容,0條可引用一手經驗
+- 知乎 zhihu: 搜尋「Human Factors 期刊 审稿 投稿经验」無針對本刊之直接討論,0結果
+- Reddit r/AskAcademia: 搜尋「Human Factors journal review time desk reject SAGE」無針對本刊之討論串,0結果
+- fabiaoji: 未執行到有效查詢(工具搜尋未返回該站台關於本刊的內容),視為0結果
+
 ---
 
 ## Strategic Notes
@@ -273,5 +302,6 @@ Low for HFES-tradition authors. Very high for HCI design or critical work — ty
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. HFES-affiliated ergonomics/human factors anchor noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

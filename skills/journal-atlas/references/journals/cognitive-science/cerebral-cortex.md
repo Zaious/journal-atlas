@@ -206,6 +206,35 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** Disclosure-based, not pre-approval-based. Publisher (OUP) policy on the journal's own author-guidelines page states AI tools (e.g., to help generate content/images, write code, process data, or translate) do NOT need advance permission but MUST be disclosed in the cover letter and in the Methods/Acknowledgements section. AI tools cannot be listed as authors and the journal screens author lists for this. No separate AI policy statement for reviewers was found on this page.
+
+**WO2 positioning finding (what the journal accepts now):** Multidisciplinary neuroscience of the cerebral cortex (incl. hippocampus) and related structures (thalamocortical, cortico-subcortical). Journal explicitly states it spans classical neurobiology through computational/AI modeling and behavioral/neuropsychological work.
+
+**WO2 experiential finding:** letpub.com.cn community rating (n=2 self-reported submitters) labels acceptance difficulty '较難' (rather difficult). No verifiable first-hand percentage-based acceptance/rejection rate was found on SciRev (marked n/a) or any forum; a numeric 'publication rate' figure surfaced in one WebSearch AI-generated summary but could not be traced to a checkable primary source, so it is excluded here rather than reported as fact. 
+
+**Sources cited in this pass:**
+- http://letpub.com.cn/index.php?journalid=1616&page=journalapp&view=detail
+- https://academic.oup.com/cercor/pages/About
+- https://academic.oup.com/cercor/pages/author-guidelines
+- https://muchong.com/bbs/journal.php?view=detail&jid=1628
+- https://scirev.org/journal/cerebral-cortex/
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev shows rejection-rate field as 'n/a' for this journal; no forum (muchong/letpub/zhihu) or Reddit thread stated a concrete desk-reject percentage.
+- **experiential.reviewer_culture**: Only one first-hand account exists (muchong.com, dated 2015, single author) mentioning reviewers declining and 'review mechanism problematic' — too old (11 years) and too thin (n=1) to generalize into a reviewer-culture claim per the no-fabrication rule; left null rather than extrapolated.
+- **positioning.framing_required**: No current (2024-2026) special-issue CFP or editorial framing statement was found for Cerebral Cortex in this research pass.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 1 detailed first-hand submission timeline found (dated 2015, review speed + revision cycle), plus aggregate difficulty tag '较难'
+- letpub.com.cn (Chinese SCI submission-experience aggregator, functionally adjacent to fabiaoji-style sites) — aggregate community data from 2 self-reported submitters: review speed '一般,3-6周', difficulty '较难'
+- ifabiao.com (fabiaoji-equivalent site) — page located (ifabiao.com/sci/10473211) but no extractable first-hand review/experience quotes retrieved in this pass
+- 知乎 zhihu.com — 0 first-hand review-experience results; only general impact-factor/ranking commentary articles surfaced
+- Reddit r/AskAcademia — 0 results found specific to Cerebral Cortex
+
 ---
 
 ## Strategic Notes
@@ -245,4 +274,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

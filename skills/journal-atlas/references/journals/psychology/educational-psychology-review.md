@@ -219,6 +219,40 @@ Reviewers from educational psychology and learning sciences communities — APA 
 | **Data transparency requirement** | N/A — synthesis venue |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 沿用 Springer Nature 通用政策(期刊層未見客製化額外限制):LLM 不得列為作者;若對成果有實質性使用(如生成內容/協助分析),須在 Methods 段落揭露;僅做文法/拼字/標點的「AI輔助潤稿」不需申報;AI生成圖像須另查 Springer 的生成式AI圖像政策並符合其原則。無需事前申請許可,屬事後揭露制,故 gate 標記 conditional(有條件揭露,非全面禁止也非完全放任)。
+
+**WO2 positioning finding (what the journal accepts now):** 以整合性回顧文獻(integrative reviews)、後設分析(meta-analysis)、主題專刊(thematic issues)、實務指引(research-based practitioner advice)為主軸,亦刊登實徵研究(empirical studies)。2026年7月近期文章涵蓋:國小學生抑制控制、智慧型教學系統與自我調節學習(SRL)、具身詞彙學習後設分析、教師對SRL的知識、沉浸式VR中的眼動追蹤效度。
+
+**WO2 experiential finding:** 投稿經驗分享(发表记, 2024/01/07單一使用者):處理速度快,常見送3位審稿人;審稿人對回顧/後設分析類稿件的規範性與理論要求偏嚴格。樣本數僅1筆,不可外推。 
+
+**Sources cited in this pass:**
+- https://link.springer.com/journal/10648
+- https://link.springer.com/journal/10648/submission-guidelines
+- https://scirev.org/journal/educational-psychology-review/ (0 reviews submitted)
+- https://www.ablesci.com/journal/detail?id=5QaBR5 (無使用者填寫資料)
+- https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4
+- https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4 (1筆使用者投稿經驗)
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev 該刊 0 筆評論;ablesci 科研通該刊審稿週期/錄用比例欄位均為空白(僅有欄位框架、無使用者填寫);未查得具體拒稿率數字,故留空避免捏造。
+- **experiential.reviewer_culture**: 未找到任何具體、可歸因來源(論壇貼文/評論)描述該刊審稿人風格或文化;僅有單一則2天內桌拒/送審速度描述及對回顧類稿件要求偏嚴格的間接推論,不足以支撐『reviewer culture』這一主觀敘事欄位,故留空而非編造通用敘述。
+- **cross_language_checked: muchong.com**: 站內/Google站內搜尋 site:muchong.com 'Educational Psychology Review' 查無相關討論串,誠實記為0結果。
+- **cross_language_checked: zhihu.com**: 知乎搜尋僅找到同名但不同刊物(Journal of Educational Psychology、Educational Research Review)的討論,未find到本刊(Educational Psychology Review, ISSN 1040-726X)專屬討論串,故本刊在知乎上視為0直接命中。
+- **cross_language_checked: reddit r/AskAcademia**: WebSearch 對 'Educational Psychology Review reddit AskAcademia' 查無任何連結命中,誠實記為0結果。
+- **experiential.review_time_months (完整週期)**: 僅有『送審決定約2天』與 Springer 官方『中位數3天到首次決定』兩個數字,均非完整的『投稿到最終決定』週期,且官方統計非本工單要求的第一手論壇數據,故該欄位標註為近似值並降低 signal_quality,不視為完整可信數字。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: site:搜尋查無 Educational Psychology Review (ISSN 1040-726X) 專屬討論串,0結果
+- 发表记 fabiaoji.com: 找到1筆使用者投稿經驗(2024/01/07),含審稿速度與方法論要求描述
+- 科研通 ablesci.com: 該刊頁面存在審稿週期/錄用比例欄位,但均為使用者未填寫的空白狀態,0筆數據
+- 知乎 zhihu.com: 搜尋結果多指向同名但不同刊(Journal of Educational Psychology、Educational Research Review),本刊無直接命中
+- Reddit r/AskAcademia: 搜尋無任何結果,0結果
+- SciRev.org: 該刊頁面顯示'No reviews have yet been submitted for this journal',0筆
+
 ---
 
 ## Strategic Notes
@@ -263,5 +297,6 @@ Moderate. Integrative-review writing demands extensive engagement with multiple 
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + educational-psychology review editorial culture domain knowledge | @Zaious |

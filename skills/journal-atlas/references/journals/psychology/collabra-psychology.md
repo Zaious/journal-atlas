@@ -233,6 +233,38 @@ Reviewers are drawn primarily from the SIPS (Society for the Improvement of Psyc
 | **Data transparency requirement** | High (open science framework — preregistration, open data, open code strongly expected) |
 | **OPSEC compatibility** | Low — open-data requirements may conflict with sensitive research subjects; pseudonymization may be insufficient |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 出版商 UC Press 統一 AI 政策(非期刊專屬):允許以生成式 AI 輔助可讀性、格式、風格與錯誤修正;但未經揭露不得用 AI 生成原創文字或圖像。凡以 AI 產出內容或處理資料,作者須告知編輯並在稿件中透明揭露。AI 不得列為作者,作者對全文負完全責任。屬「助理可、生成受限、揭露為門檻」的中等開放。
+
+**WO2 positioning finding (what the journal accepts now):** 涵蓋心理學多數領域,分 7 個 section:Cognitive、Social、Personality、Clinical、Developmental、Organizational Behavior,以及重點強調的 Methodology and Research Practice。收錄實證論文、綜述與後設分析、理論論文、方法學論文、模擬、評論(commentary)與資料論文(data paper);並經 SIPS-Collabra RRFP 收註冊報告(Registered Reports)。近期文章例:2026-01〈Person-Group Political Orientation Fit: Relations With Workplace Friendships, Job Satisfaction, Organizational Identification, and Turnover Intentions〉(組織行為)。
+
+**WO2 experiential finding:** Action Editor 可不送外審直接 desk reject;因投稿量大,desk reject 多為制式決定信。提供 streamlined review:過去 365 天內因非科學/方法/倫理嚴謹性問題被他刊拒稿者,可附前次審稿意見與決定信,於 cover letter 申請加速審查。 SciRev 單一回報(n=1)描述『三份高品質審查、樂於協助的 action editor、周轉極快』,審稿品質與整體評分皆 5/5。因僅 1 筆,不足以概括審稿文化。
+
+**Sources cited in this pass:**
+- CFP: https://online.ucpress.edu/collabra/pages/sips-collabra_rrfp_call_for_proposals
+- SciRev(1 則, 2016): https://scirev.org/reviews/collabra/
+- https://www.ucpress.edu/about/ai-guidelines
+- policy(desk reject / streamlined review): https://online.ucpress.edu/collabra/pages/journalpolicies
+- policy: https://online.ucpress.edu/collabra/pages/journalpolicies
+- publisher-scope: https://online.ucpress.edu/collabra/pages/About
+- 中文聚合站(16週自報+APC~975USD, CAS 3區, Q1, 非第一手): https://wdcsci.com/sci/detail/15198
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: 無公開第一手 desk-reject 百分比;政策僅定性說明可直接 desk reject 且量大,未給數字。
+- **experiential.review_time_months(第一手)**: SciRev 僅 1 則(2016,4.3 週),樣本過小;16 週為期刊自報經聚合站轉述,非投稿人回報。
+- **experiential.reviewer_culture(可概括)**: 跨語言(小木虫/知乎/fabiaoji/Reddit)皆 0 則第一手審稿文化討論;僅 SciRev n=1,不足以下概括結論。
+- **ai_policy(期刊專屬)**: 無 Collabra 專屬 AI 政策頁;採用 UC Press 出版商層級指引,故標為非期刊專屬。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com:未見 Collabra 專屬第一手投稿/審稿討論串;僅命中期刊資料聚合頁(xueshu.com、wanweixueshu、21ks)與一則泛用『審稿人要求公開資料與程式碼如何處理』串(t-5409335,未明確指向本刊)。第一手審稿經驗 ≈ 0 則。
+- 知乎 zhihu.com:未見 Collabra 專屬串;僅命中泛用『哪些 SSCI 期刊好發』問題(386583438)。0 則專屬。
+- fabiaoji:搜尋結果未出現可用條目,0 則。
+- Reddit r/AskAcademia:0 則第一手投稿討論;唯一命中為一篇使用 Reddit 資料的 Collabra 論文,非論壇經驗貼。
+- 中文期刊聚合站(wdcsci / iikx / haoqikan / 學術之家):非第一手,轉述期刊自報『平均 ~16 週出版』、APC ~975 USD、中科院 3 區、Q1、SCIE/SSCI 收錄。
+
 ---
 
 ## Strategic Notes
@@ -279,6 +311,7 @@ Variable. For mainstream empirical authors aligned with SIPS values: minimal. Fo
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. SIPS membership discount window flagged (expires 2026-07-01). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 42, i10 213, 2yr_citedness 2.18, works_count 733; Top 5 topics filled. APC $975 confirmed via OpenAlex (matches SIPS member rate). | @Zaious |

@@ -203,6 +203,38 @@ Reviewers are drawn primarily from the APA Division 1 (Society for General Psych
 | **Data transparency requirement** | Flexible for reviews; standard PRISMA reporting expected for systematic reviews / meta-analyses |
 | **OPSEC compatibility** | High — synthesis articles do not expose primary data |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 生成式 AI 允許使用但須強制揭露 (disclose AI use);ChatGPT 等聊天機器人不得列為作者;附有禁止用途清單。屬「有條件開放」——揭露為前置門檻,非全禁亦非全開。政策見於 Sage 出版商作者須知頁 (期刊已由 APA 移至 Sage 平台),非期刊獨有客製政策。
+
+**WO2 positioning finding (what the journal accepts now):** 理論性、概念性與方法學論文 (theoretical / conceptual / methodological)。聚焦人類主體性 (human subjectivity)、心理學的歷史/理論/批判研究、以及全球/國際/原住民 (indigenous) 視角;涵蓋研究文獻的整合與評估、歷史分析,並鼓勵心理科學與心理學人文 (psychological humanities) 及相關社會/人文學科的對話。稿件通常 5,000–10,000 字,視主題可延伸至 15,000 字。演化心理學為該刊歷史上常見主題之一。近期辦有特刊『The Next Big Idea』(2025 年 8 月出刊),並規劃 2027 年再辦一次同主題特刊。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- SciRev (0 完整評論,但記錄到一筆即時退稿 outcome,其『即時退稿決定時間』欄位顯示 35 天): https://scirev.org/journal/review-of-general-psychology/
+- aims&scope+wiki: https://en.wikipedia.org/wiki/Review_of_General_Psychology
+- https://journals.sagepub.com/author-instructions/rgp
+- publisher-scope: https://journals.sagepub.com/author-instructions/rgp
+- special-issue-CFP: https://apadiv15.org/2026/05/03/call-for-the-next-big-idea-papers-division-1/
+
+**Fields WO2 could not find evidence for:**
+- **review_time_months**: SciRev 該刊 0 篇完整評論(僅一筆即時退稿紀錄),無完整審稿輪次時長;中文站 sfabiao/iikx/eshukan 之『平均審稿速度』欄位全為空;無論壇討論。
+- **desk_reject_pct**: 無任何來源提供退稿率百分比;SciRev 僅有單一即時退稿事件、無比率統計。
+- **acceptance_note**: 無第一手公開錄用率或投稿經驗來源;中文聚合站錄用比例欄位皆空。
+- **reviewer_culture**: 無任何具體來源描述審稿人風格/文化;不憑空編造敘述。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 搜尋該刊投稿/審稿經驗:0 則相關討論串
+- fabiaoji.com (发表记) — 無該刊發表記條目
+- 知乎 zhihu — 搜尋普通心理学评论 审稿周期/录用:0 則實質經驗貼
+- sfabiao.com(中文期刊頁)— 有條目但『平均審稿速度/平均录用比例』欄位皆空,無用戶投稿
+- iikx.com(爱科学)— 有條目但審稿速度/录用比例/投稿经验分享欄位皆空
+- eshukan.com(万维书刊)— 有條目但無用戶審稿經驗或評分留言
+- Reddit r/AskAcademia — 搜尋該刊審稿/投稿經驗:0 則結果
+
 ---
 
 ## Strategic Notes
@@ -250,6 +282,7 @@ Low for well-framed integrative work. Authors typically invest ~1 revision sessi
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Zaious |

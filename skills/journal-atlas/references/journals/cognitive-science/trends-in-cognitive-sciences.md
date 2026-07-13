@@ -219,6 +219,38 @@ Reviewers are commissioned by the editorial team — leading cognitive scientist
 | **Data transparency requirement** | N/A for synthesis articles |
 | **OPSEC compatibility** | High — synthesis work does not expose primary data |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Elsevier 出版社通用 AI 政策(適用於 Trends in Cognitive Sciences,未見期刊專屬版本)。允許作者用生成式 AI 輔助語言潤飾、文獻整理、可讀性改善,但不得直接產出正文而未經實質修改,不得用 AI 生成/修改圖像(研究方法論紀錄除外),AI 不得列名作者。投稿時須揭露使用的工具名稱與用途(聲明置於正文末、參考文獻前)。基礎文法/拼字檢查免揭露。TiCS 本身另有一篇 2024 年發表的評論文章'Towards an AI policy framework in scholarly publishing'(cell.com/trends/cognitive-sciences/abstract/S1364-6613(23)00288-7)討論 AI 政策框架,但那是內容文章而非期刊自身投稿規範,故不採用其文字作為政策依據。
+
+**WO2 positioning finding (what the journal accepts now):** TiCS 是月刊回顧型期刊(review journal),核心稿件『多為編輯邀稿』(约稿),涵蓋認知科學跨學科主題:心理學、神經科學、語言學、哲學、AI、電腦科學。
+
+**WO2 experiential finding:** 多筆中文來源(科研通/LetPub/小木虫)一致指出『多是約稿』,即多數正式發表文章來自編輯主動邀稿而非公開自由投稿,故傳統『接受率』統計對此期刊意義有限;未找到量化的桌拒(desk-reject)百分比。 
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/trends-in-cognitive-sciences/
+- https://www.ablesci.com/journal/detail?id=p3GANp
+- https://www.cell.com/trends/cognitive-sciences/authors
+- https://www.cell.com/trends/cognitive-sciences/presubmission
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=7918
+- https://zhuanlan.zhihu.com/p/572652434
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 無法確認是單盲或雙盲;cell.com/trends/cognitive-sciences/authors 頁面WebFetch回傳403無法直接讀取原文審稿類型聲明,WebSearch摘要僅提及『stringent peer review』字樣,未指明盲審類型,不足以下定論
+- **experiential.reviewer_culture**: 所有中文/英文來源(科研通、LetPub、知乎、Reddit)均未提供具體審稿人態度/文化的第一手敘述,僅有審稿週期數字,故不編造審稿文化描述
+- **experiential.desk_reject_pct**: SciRev僅2筆評論且未列出桌拒率;中文論壇來源(科研通/LetPub/知乎)均未提及桌拒百分比
+- **preprint.allowed (投稿前掛preprint是否被接受)**: cell.com/trends/cognitive-sciences/authors 原頁403無法直接讀取完整preprint政策條文,僅WebSearch摘要取得『preprint可作參考文獻』片段,未取得『投稿前掛preprint是否影響審稿資格』的明確陳述
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 未直接搜到小木虫論壇原生討論串(搜尋結果導向科研通/LetPub/知乎等其他中文平台,視為同層級中文社群來源替代)
+- 科研通 ablesci.com — 有結果:審稿速度『較慢,6-12週』、『多是約稿』
+- LetPub — 有結果:速度評分7.0/10,綜合評分9.3/10,審稿週期6-12週,聲譽10.0
+- 知乎 zhihu — 有結果(zhuanlan.zhihu.com/p/572652434):期刊介紹+審稿速度6-12週+多為邀稿,無具體審稿人風格描述
+- Reddit r/AskAcademia — 0 results,未找到任何相關討論串
+
 ---
 
 ## Strategic Notes
@@ -267,5 +299,6 @@ Variable. For established cognitive-science synthesists: low — commissioning t
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

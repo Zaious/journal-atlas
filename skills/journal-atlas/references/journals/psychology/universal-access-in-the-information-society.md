@@ -218,6 +218,40 @@ Reviewers from accessibility / inclusive design community. Common demands: "Disa
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 此為 Springer Nature 出版社通用政策（未找到本刊專屬 AI 政策頁）。LLM 不可列為作者（無法承擔究責）。若使用 LLM/生成式 AI 協助撰寫內容，須在 Methods 章節（或適當替代處）揭露；純粹的「AI 輔助文字潤色」（文法/拼字/語氣校對，非生成新內容）則免揭露。AI 生成圖像/圖表一律不接受發表，僅有限例外（如有合約授權的圖庫、以 AI 為研究主題本身的圖片、可歸因驗證之科學數據生成圖）。故評為條件式允許（3/5）：非全面禁止，但生成內容需揭露、生成圖像被禁。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)主題聚焦身心障礙者/高齡者之資訊科技可及性(accessibility)、可用性(usability)研究，近年明顯納入 AI/生成式AI 於無障礙情境的應用與倫理議題（如AI輔助輔具、演算法偏誤、AI於身心障礙者生活品質影響之敘事性回顧）。
+
+**WO2 experiential finding:** 中文投稿經驗聚合站(letpub/ablesci，僅2筆網友分享)標註接受難度為「容易」，但樣本量極小(2筆)，不足以視為可靠統計 
+
+**Sources cited in this pass:**
+- WebSearch: 2025 narrative review on AI revolutionizing accessibility (title/topic level, not full-text verified)
+- http://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=8716&xuanxiangk_id=2 (2筆網友經驗)
+- https://link.springer.com/journal/10209/aims-and-scope
+- https://www.ablesci.com/journal/detail?id=p1amap (同一批網友經驗數據的鏡像)
+- https://www.ifabiao.com/sci/16155289/ (聚合站二手審稿週期數字)
+- https://www.scirev.org/journal/universal-access-in-the-information-society/ (0篇網友評論，全部n/a)
+- https://www.springernature.com/gp/researchers/ai-policy (publisher-wide policy; not journal-specific page found)
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (journal-specific)**: 找不到本刊(UAIS)自訂的AI政策頁，僅能引用Springer Nature出版社層級通用政策做外推，非本刊逐字確認
+- **experiential.desk_reject_pct**: SciRev本刊頁面0篇評論、全部欄位顯示n/a；中文聚合站(小木虫/letpub/ablesci)均未提供具體退稿率數字
+- **experiential.reviewer_culture**: 查無小木虫、知乎、Reddit r/AskAcademia針對本刊審稿人風格/文化的具體第一手討論串；搜尋均未命中相關實質內容
+- **experiential.review_time_months**: 僅有中文論文情報聚合站(非一手投稿人)的兩組互相矛盾之數字(>12週 vs 平均82天)，且來源疑似互相轉載同一數據庫，未經獨立第一手投稿人驗證，故數值保留但標記低信度
+- **preprint.allowed (journal-specific)**: 未找到UAIS期刊專屬頁面(link.springer.com投稿指南頁需登入牆擋下)，僅能以Springer出版社通用預印本政策外推
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 未直接檢索到本刊專屬討論串(搜尋改導向聚合鏡像站xueshu.com/fabiao.com/ifabiao.com等，非muchong本體)
+- 知乎 zhihu: 0 直接命中結果，搜尋僅返回聚合資訊站(letpub/ablesci/peeref)而非知乎討論串本身
+- Reddit r/AskAcademia: 0 results，未找到任何針對本刊的討論帖
+- letpub.com.cn: 命中，取得2筆網友投稿經驗(審稿週期>12週、接受難度「容易」)
+- ablesci.com/科研通: 命中，與letpub數據重複(疑似同一資料庫鏡像)
+- ifabiao.com/fabiao聚合站群: 命中，提供審稿週期聚合數字(初審9天/審稿64天/投稿至接收82天)，但與letpub的>12週數字不一致
+
 ---
 
 ## Strategic Notes
@@ -261,5 +295,6 @@ Low for accessibility tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + accessibility research / ACM SIGACCESS community editorial culture domain knowledge | @Zaious |

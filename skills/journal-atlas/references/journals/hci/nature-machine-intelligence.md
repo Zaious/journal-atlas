@@ -222,6 +222,36 @@ Reviewers from international AI/ML research community — professional Nature Po
 | **Data transparency requirement** | Very High — code + data + benchmarks expected |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Nature Portfolio 通用 AI 政策(非 NMI 專屬頁,NMI 專屬 editorial-policies 頁因 cookie/SSO 重導向迴圈無法直接讀取):LLM/生成式 AI 不得列為作者(無法承擔問責);若用於論文寫作內容生成須在 Methods 或適當章節揭露;僅用於「AI 輔助文字潤飾/copy editing」(改善可讀性與風格,非生成新內容)則不需揭露。編輯部本身偶爾用 AI 輔助摘要/檢索,但決策仍由人類編輯做出。屬於『可用但需揭露』模式而非強制事前許可,故列為 conditional gate、寬鬆度中等(3/5)。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://muchong.com/t-15456313-1 (小木虫論壇,單一投稿者時間軸,無具體審稿意見內容)
+- https://scirev.org/journal/nature-machine-intelligence/ (SciRev, n=4 reviews)
+- https://www.nature.com/natmachintell/aims (aims & scope, via WebSearch summary — 原頁面因 cookie 牆無法直接讀取)
+- https://www.nature.com/nature-portfolio/editorial-policies/ai
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now**: 無法直接讀取 nature.com 該刊首頁近期文章列表(cookie 牆重導向失敗多次),僅有 aims&scope 摘要,不足以推斷『現在實際在收什麼』的具體題材/方法趨勢,故留空避免臆測
+- **positioning.framing_required**: 未查得任何近期 CFP 或 special issue 徵稿要求特定 framing 的證據
+- **experiential.desk_reject_pct**: SciRev 僅提供桌拒平均決定天數(11天),未提供桌拒比例;LetPub 頁面該欄位使用者未填寫;muchong/zhihu 討論串均未給出具體百分比
+- **experiential.acceptance_note**: SciRev 未提供接受率;zhihu 討論串因 403 無法讀取內容,無法確認是否含相關第一手經驗
+- **experiential.reviewer_culture**: SciRev n=4 樣本過小且唯一提及的是『Nature 系統可將被拒稿件轉投同集團其他期刊』,屬平台功能敘述而非審稿人文化描述;無 Reddit 或知乎第一手內容佐證,不足以支撐主觀敘事,故留空
+- **ai_policy.source_url (NMI-specific page)**: NMI 專屬的 editorial-policies 頁面(nature.com/natmachintell/editorial-policies)因 Nature 網站 cookie/SSO 重導向迴圈,WebFetch 無法直接取得內文,只能依賴 Nature Portfolio 通用 AI 政策頁的 WebSearch 摘要,未能確認 NMI 是否有額外於通用政策之外的專屬規定
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: 找到 1 則相關討論串(t-15456313),僅記錄投稿狀態時間軸(manuscript received → editor assigned → editor decision started,約11天),無審稿意見內容或桌拒率
+- 知乎 zhihu.com: 搜尋命中「如何評價現在的 Nature Machine Intelligence?」討論串,但頁面回傳 HTTP 403 無法讀取內容,標記為未能驗證(0 可用內容)
+- LetPub letpub.com.cn: 期刊頁面「平均審稿速度」「平均錄用比例」欄位為空,無使用者填寫具體數字 (0 results,誠實留空)
+- Reddit r/AskAcademia: WebSearch 未找到任何專門討論 Nature Machine Intelligence 審稿經驗的貼文 (0 results)
+
 ---
 
 ## Strategic Notes
@@ -266,6 +296,7 @@ High. Nature-family broad-significance framing demands substantial rewriting fro
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Nature Portfolio publisher + AI/ML high-impact editorial culture domain knowledge | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |

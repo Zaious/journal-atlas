@@ -218,6 +218,35 @@ Reviewers from APA Division 17 (Society of Counseling Psychology) and broader co
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** APA公司統一政策適用於旗下所有期刊(含本刊，未見期刊層級加嚴版本)。允許作者使用生成式AI輔助草擬、編輯、翻譯、程式碼、文獻回顧、圖表製作，但強制要求在方法/作者註或相關位置揭露並引用所用AI工具；AI不得列為作者；作者須自行驗證AI產生內容的正確性並負全責。審稿人與編輯被明文禁止將投稿內容輸入生成式AI工具(視為違反同行評審保密性)。故評為「有條件開放」：允許使用+強制揭露，屬中等寬容度(3/5)，非全面禁止亦非完全不設限。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://www.apa.org/pubs/journals/cou/
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now / methods_welcome / framing_required**: APA journal page only gave general aims-and-scope text (counseling activities, career/vocational development, diversity, measure development, theoretical reviews); no 2024-2026 recent article titles, no current special-issue CFP were retrieved via WebFetch/WebSearch in this session. Would need PsycNet table-of-contents scraping (not accessible/rate-limited here) to populate accepts_now and methods_welcome with real evidence.
+- **experiential.review_time_months**: No dedicated SciRev page exists for this journal (confirmed via direct search — only related journals like Journal of Counseling and Development have SciRev entries). LetPub's Chinese-author-experience page for this journal explicitly states '同领域作者分享投稿经验：共0条' (0 shared submission experiences) — zero first-hand entries. A third-party aggregator (tougaozixun.com) surfaced numbers via search snippet (~6 days first decision, ~44 days review, ~54 days to acceptance) but the source page returned HTTP 403 on fetch, so provenance/methodology could not be verified as first-hand rather than auto-scraped/estimated; excluded per facts-only rule rather than risk citing unverified/possibly-fabricated aggregator math.
+- **experiential.desk_reject_pct**: No source (SciRev, zhihu, muchong, Reddit, letpub) returned any concrete desk-reject percentage for this journal.
+- **experiential.acceptance_note**: No first-hand acceptance-experience post was retrievable; the one Zhihu thread found (zhihu.com/question/271956591) returned HTTP 403 on WebFetch and could not be read for content.
+- **experiential.reviewer_culture**: No concrete first-hand source (forum post, Reddit thread) describing reviewer culture was found. Only vague third-party aggregator language ('journal has relatively high requirements') surfaced in a WebSearch AI-summary, which is not a traceable primary quote/URL, so excluded per no-subjective-claim-without-concrete-source rule.
+- **peer_review.type (JCP-specific)**: APA-wide masked-review policy documented, but no JCP-specific instructions-for-authors excerpt was retrieved confirming whether masking is mandatory or optional specifically for this journal (the apa.org/pubs/journals/cou/ page fetched did not state it explicitly).
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com: searched "muchong.com Journal of Counseling Psychology" — 0 relevant forum results returned (only unrelated academic/index pages)
+- 知乎 zhihu.com: found one directly relevant thread (zhihu.com/question/271956591, "Journal of Counseling Psychology 这个期刊怎么样？") but WebFetch returned HTTP 403 Forbidden — content could not be read/verified, so not used as a source
+- fabiaoji/sfabiao.com: appeared in search results (sfabiao.com/sci/00220167) as a journal-info aggregator page but no first-hand submission-experience content was surfaced in snippets; not fetched due to low signal expectation given letpub (same category site) showed 0 entries
+- Reddit r/AskAcademia: site:reddit.com search for "Journal of Counseling Psychology" returned 0 Reddit results (only unrelated PDFs/arxiv papers)
+- LetPub (letpub.com.cn) Chinese-author experience-sharing page: fetched directly — explicitly states 0 shared submission experiences ("共0条") for this journal
+
 ---
 
 ## Strategic Notes
@@ -264,5 +293,6 @@ Low for counseling-tradition authors. Multicultural / positionality framing expe
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from APA publisher + APA Division 17 / SCP counseling-psychology editorial culture domain knowledge | @Zaious |

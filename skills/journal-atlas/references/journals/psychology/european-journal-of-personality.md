@@ -219,6 +219,38 @@ Reviewers from EAPP and broader European personality research community. Common 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 發表方為 SAGE(EJP 現由 SAGE 出版,原 Wiley)。依 SAGE 通用 AI 政策(EJP 未見期刊專屬 AI 政策頁,套用 SAGE 通則):AI 聊天機器人(如 ChatGPT)不得列為作者;若使用生成式 AI 產出文字/圖表/資料摘要等內容,須揭露所用模型與用途(建議寫在 Methods 或 Acknowledgements);作者對 AI 產出內容之正確性、原創性負全責;僅用於語言潤飾/文法/結構改善者可不揭露;僅因使用 AI 不會被直接拒稿。因此判定為「有條件許可」(conditional gate=需揭露,非全面禁止亦非完全自由)。leniency 給 3(可用但要揭露,非全開放)。未能直接抓到 EJP 專屬 AI 政策子頁(嘗試 journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404),故 signal_quality 偏低,屬 publisher-level 政策推論,非期刊逐字頁面。
+
+**WO2 positioning finding (what the journal accepts now):** 以實證研究為主,涵蓋人格結構、評估工具、人格差異之成因與後果、個體內變異與發展變化、及其與經驗的交互作用;近年(2023-2025)刊出主題包括:超越自陳式 Big Five 的人格評量(Rauthmann 2024)、IPIP-NEO 人格階層之 Taxonomic Graph Analysis 重新檢視、跨 16 個縱貫樣本的 Big Five 特質軌跡協調分析(Graham et al.)、孤獨感與 Big Five 之統合分析。方法學上明顯歡迎:網絡心理計量(network psychometrics)、Taxonomic Graph Analysis 等新興計算心理學方法、統合分析(meta-analysis)、縱貫研究協調分析(coordinated/integrative data analysis)。
+
+**WO2 experiential finding:** 期刊自我定位為高選擇性(highly selective),強調審稿快且具建設性回饋('committed to constructive and fast in-depth feedback')。此為期刊自述,非投稿者第一手經驗。 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/author-instructions/erp
+- https://journals.sagepub.com/author-instructions/erp (via search snippet, original page paywalled/blocked for direct fetch)
+- https://journals.sagepub.com/doi/10.1002/per.2259
+- https://journals.sagepub.com/doi/full/10.1177/08902070231221853
+- https://scirev.org/journal/european-journal-of-personality/
+- https://www.fabiao.com/sci/08902070.html
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (期刊專屬頁面)**: journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404,無法確認 EJP 是否有專屬於 SAGE 通則之外的加註;僅能以 SAGE 出版社通用 AI 政策 + 二手摘要(WebSearch 生成摘要,非逐字頁面)推論,故只給 leniency 中等偏低信心
+- **peer_review.type 是否為 single- or double-anonymized**: 多個 WebSearch 摘要用詞不一(有稱 anonymized peer review、有稱 traditional peer review),未能用 WebFetch 逐字核對原始頁面(頁面多次回傳僅 nav/footer 或 402),故匿名方式的具體層級未能百分之百確認
+- **experiential.reviewer_culture**: SciRev 僅 1 筆評論,無質性描述可引;PTT/小木虫/知乎/muchong.com 搜尋均未找到具體投稿者的審稿文化敘述(僅找到期刊自我行銷用語與二手期刊資料庫頁面);Reddit r/AskAcademia 站內搜尋 'European Journal of Personality' 完全 0 結果。故此欄位誠實留空,不編造
+- **positioning.framing_required 細節**: 期刊提及投稿須符合其 'Evaluation Criteria',但該準則具體內容未在本次檢索中取得逐字文本,僅知其存在
+- **experiential.acceptance_note 的第一手來源**: 目前僅有期刊官方自述的統計數字(88%拒絕/55%桌拒/20天首次決定),缺乏獨立投稿者經驗貼文佐證這些數字是否為近期(2024-2026)實況,故列為期刊自報而非第一手交叉驗證
+
+**Cross-language checks performed:**
+- SciRev (scirev.org/journal/european-journal-of-personality/): 1 筆使用者評論,首輪審查約1.4個月,總處理時間約1.5個月,審稿品質評分5.0/5.0,審稿難度3.0/5.0(中等),結果為Accepted
+- 小木虫 muchong.com: 站內搜尋未找到 EJP 專屬投稿討論串(僅找到其他期刊如 European Journal of Operational Research 的投稿帖),0 個直接相關結果
+- 知乎 zhihu.com: WebSearch 未回傳知乎上關於此期刊的具體討論串,0 個直接相關結果
+- fabiao.com / sfabiao.com / haozazhi.com / fabiao.com.cn (中文期刊資料庫聚合站): 提供審稿週期粗略區間(首次決定6-9天、審稿44-64天、投稿到接受54-82天)及基本期刊資訊(創刊1987、SAGE出版、SCIE/SSCI收錄、IF 3.6),但無質性審稿文化描述,且未逐字核對原始頁面
+- Reddit r/AskAcademia: site:reddit.com 搜尋 'European Journal of Personality' 回傳 0 個結果
+
 ---
 
 ## Strategic Notes
@@ -264,5 +296,6 @@ Low for EAPP-tradition / within-person designs.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE/EAPP publisher + European personality psychology editorial culture domain knowledge | @Zaious |

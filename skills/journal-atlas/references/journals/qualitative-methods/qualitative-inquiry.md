@@ -214,6 +214,35 @@ Reviewers are drawn primarily from the autoethnography, qualitative-methodology,
 | **Data transparency requirement** | Flexible — qualitative work does not require open data; pseudonymization standard |
 | **OPSEC compatibility** | High — interpretive autoethnographic work can pseudonymize subjects, including the author |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Sage 出版社通用 AI 政策（非 Qualitative Inquiry 專屬頁面，未找到該刊獨立 AI 政策頁）。不需事前許可；區分 assistive AI（潤飾語言/文法，免揭露）與 generative AI（產生內容影響方法論、分析、結果或結論，須在投稿時揭露供編輯評估，並在正文引用+列入參考文獻）。允許的 generative 用途包括文獻回顧輔助、材料翻譯、程式碼生成、資料視覺化、示意圖、程式除錯、參考文獻整理，但作者須核實準確性、以原始來源為主要引用對象、AI 不得列名作者。未揭露的不當使用可能依 COPE 指引觸發調查甚至撤稿。
+
+**WO2 positioning finding (what the journal accepts now):** 跨學科質性方法論論壇，聚焦方法論本身而非僅使用質性方法的研究內容/結果。近年主題涵蓋 ethnography、autoethnography、Indigenous methodologies、arts as research、reflexive thematic analysis、participatory action research，以及 postmodern、poststructural、new materialist、post-qualitative 相關的跨學科辯論。強調方法論發展本身，而非「僅是用了某個質性技巧來做研究」的論文。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/home/QIX
+- https://us.sagepub.com/en-us/nam/qualitative-inquiry/journal200797
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+
+**Fields WO2 could not find evidence for:**
+- **review_time_months**: SciRev 該刊頁面顯示「No reviews have yet been submitted」；小木虫/xueshu.com/wdcsci 中文投稿經驗頁面明確寫出「未查询到审稿周期相关数据」；未搜尋到 Reddit r/AskAcademia 或知乎上的具體討論串。
+- **desk_reject_pct**: 同上，SciRev 無數據，中英文論壇皆無具體數字。
+- **acceptance_note**: 未找到任何一手投稿者對接受/拒絕流程的具體敘述（僅有二手期刊資訊聚合站的制式排版介紹）。
+- **reviewer_culture**: 無任何具體論壇貼文描述審稿人風格或文化，拒絕臆造通用敘述。
+- **preprint.allowed (journal-specific confirmation)**: WebFetch 無法擷取 journals.sagepub.com/author-instructions/QIX 的實際內文（僅回傳導覽列/頁首頁尾），故僅能以 Sage 集團層級政策代替，未能確認 QIX 是否有例外條款。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 搜尋「Qualitative Inquiry 期刊 投稿 审稿 小木虫」僅返回論壇分類頁與第三方聚合站連結，未找到具體討論串內容
+- xueshu.com（学术之家）— 有一頁專門問「审稿周期是多久」，內文明說「未查询到审稿周期相关数据，可能是数据未更新」（0 具體結果）
+- wdcsci.com — 有專頁列出「审稿周期/时间」欄位但存取遭 403 Forbidden，無法確認是否含實質數字
+- 知乎 zhihu.com — 搜尋「Qualitative Inquiry 期刊 知乎 投稿经验」僅返回泛用 SSCI 投稿經驗文章與期刊清單分類文，未見針對本刊的具體投稿心得（0 具體結果）
+- Reddit r/AskAcademia — 搜尋「Qualitative Inquiry journal reddit AskAcademia review experience desk reject」無任何結果（0 results）
+
 ---
 
 ## Strategic Notes
@@ -261,6 +290,7 @@ Low for autoethnographic / reflexive manuscripts originating in the qualitative-
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

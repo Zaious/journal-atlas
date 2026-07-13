@@ -207,6 +207,40 @@ ACM SIGCHI community; reviewer pipeline identical to CSCW / UbiComp conferences 
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** PACM HCI 遵循 ACM 全站的《Policy on Authorship》(2026-06 更新版),非期刊專屬政策。核心規則:生成式 AI 工具不得列名為作者;用生成式 AI 產出研究內容(非純文書處理)須揭露,作者對 AI 產出內容(含抄襲/捏造)負全責。WebSearch 摘要指出 2026-06 更新後,對『純輔助寫作』(如文法潤飾)的 AI 使用不再要求揭露,僅『用於研究本身』的 AI 使用仍須揭露——但因 ACM 官方頁面回傳 403,此更新細節僅來自 WebSearch 摘要轉述,未能直接讀取原文逐字核實,信心中等。CSCW track 額外要求投稿完全匿名化(雙盲審)。
+
+**WO2 positioning finding (what the journal accepts now):** PACM HCI 為傘型期刊,實際上是多個 HCI 子社群會議的期刊化出版管道,分軌道各自審稿發表:CSCW(協作科技、社會運算)、EICS(互動系統工程)、MobileHCI(行動人機互動)、ISS(互動介面/桌面)、CHI PLAY/GAMES(玩家經驗、遊戲設計)等。各軌道各自有徵稿週期與範疇聲明,論文最終同時掛在該子社群會議與 PACM HCI 期刊卷期下。
+
+**WO2 experiential finding:** 各軌道各自計算,非統一期刊層級數字。範例(公開會議/期刊發布數字,非論壇來源):CSCW 主軌歷年約 25-36%(2013-2019,openaccept.org 統計,未涵蓋近年 rolling 制改版後數據);MobileHCI 2025 軌道 27.2%(147 投稿、40 接受);ISS/ETRA 等特刊約 30% 上下。這些是公開統計數字,不是使用者第一手評審經驗分享。 
+
+**Sources cited in this pass:**
+- https://cscw.acm.org/2026/blog/reviewprocess.html
+- https://cscw.acm.org/2026/papers.html
+- https://dl.acm.org/journal/pacmhci/about
+- https://dl.acm.org/journal/pacmhci/tracks/cscw
+- https://dl.acm.org/journal/pacmhci/tracks/eics
+- https://dl.acm.org/journal/pacmhci/tracks/games
+- https://openaccept.org/c/chi/cscw/
+- https://scirev.org/journal/proceedings-of-the-acm-on-human-computer-interaction/ (0 reviews)
+- https://www.acm.org/publications/policies/new-acm-policy-on-authorship
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 該期刊頁面顯示 0 筆審稿人評價,所有處理時間欄位皆為 n/a;Reddit r/AskAcademia、知乎、小木虫、fabiaoji 搜尋均未找到針對 PACM HCI/CSCW 審稿時長的第一手討論串
+- **experiential.reviewer_culture**: 無任何論壇(中文或英文)第一手審稿人文化描述可查;僅有官方流程頁描述制度設計(如雙輪審、資深 AC 制),非參與者主觀評價,故不予填入避免臆測
+- **ai_policy.summary (2026-06 更新逐字條款)**: ACM 官方政策頁 acm.org/publications/policies/new-acm-policy-on-authorship 對 WebFetch 回傳 403,無法直接讀取原文核實 WebSearch 摘要轉述的『寫作輔助免揭露』細節是否準確,僅能標註為間接來源
+- **preprint.allowed (逐字條款)**: 同上,ACM 官方 preprint 政策頁 403,僅有 WebSearch 摘要轉述,未直接核實原文
+
+**Cross-language checks performed:**
+- SciRev (scirev.org): 該期刊頁面查得,但顯示 0 reviews,所有量化欄位 n/a
+- 小木虫 muchong.com: site 搜尋僅命中一篇 2017 年會議排名列表提及 CSCW 為 ACM 會議名稱,無投稿/審稿經驗討論串
+- fabiaoji: 搜尋未返回任何 fabiaoji 站內結果
+- 知乎 zhihu.com: 搜尋『PACM HCI CSCW 投稿 审稿 知乎』未返回任何知乎站內結果
+- Reddit r/AskAcademia: 搜尋『CSCW paper review desk reject』與『reddit AskAcademia review experience』均未返回 reddit.com 站內相關討論串,僅有 arXiv 論文與官方頁面
+
 ---
 
 ## Strategic Notes
@@ -246,4 +280,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM SIGCHI conference family conventions (CHI / CSCW / UbiComp norms applied in proceedings-journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

@@ -219,6 +219,41 @@ Reviewers from HRI conference community + IEEE robotics overlap. Common demands:
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 跟隨 Springer Nature 標準政策(非期刊特有客製條款)。LLM(如 ChatGPT)不符合作者資格認定標準(因無法承擔當責),但可用於寫作輔助,須在 Methods 章節(或適當替代處)揭露使用情形。「AI 輔助文字潤色」(改善可讀性、文法、拼寫,不涉及內容生成)則免揭露。生成式 AI 圖像:依 Springer Nature 通用政策,原則上不允許出版品中含 AI 生成圖像。此為 permission gate=conditional(可用但需揭露,非全開放亦非全面禁止)。
+
+**WO2 positioning finding (what the journal accepts now):** 2024-2026近期發表主題明顯轉向LLM與生成式AI在社交機器人上的應用與倫理審視: 'LLM-Driven Robots Risk Enacting Discrimination, Violence, and Unlawful Actions'、'Focus Group-Led Refinement of an LLM-Enabled Companion Robot for Older People'、'Socially Assistive Robots in Mental Healthcare: Principles and Conceptual Framework for User-Centered Design'、'Concerns and Values in Human-Robot Interactions: A Focus on Social Robotics'。傳統範疇涵蓋核心賦能技術、系統整合、美學設計、應用與社會意涵,橫跨工程、計算、藝術與社會科學。
+
+**WO2 experiential finding:** 第三方(非首手)聚合站LetPub估算2024年投稿483篇、接受110篇,約25%接受率;此為聚合估算而非期刊官方或首手投稿人數據,可信度中等。 
+
+**Sources cited in this pass:**
+- https://link.springer.com/article/10.1007/s12369-025-01301-x
+- https://link.springer.com/article/10.1007/s12369-025-01323-5
+- https://link.springer.com/article/10.1007/s12369-025-01351-1
+- https://link.springer.com/article/10.1007/s12369-026-01407-w
+- https://link.springer.com/journal/12369/aims-and-scope
+- https://link.springer.com/journal/12369/submission-guidelines
+- https://www.gwyoo.com/sci/773926.html
+- https://www.letpub.com/index.php?page=journalapp&view=detail&journalid=9796
+- https://www.scirev.org/journal/international-journal-of-social-robotics/
+- https://www.youfabiao.com/sci/18754791/
+
+**Fields WO2 could not find evidence for:**
+- **review_time_months**: SciRev頁面明確顯示0篇評論,所有數據為'n/a'。中文聚合站(gwyoo、youfabiao)僅泛稱審稿時間較長、請預留充裕時間,無具體月數且非首手投稿人陳述,不採信為具體數字。
+- **desk_reject_pct**: 所有查詢來源(SciRev、LetPub、gwyoo、youfabiao)皆未提供具體退稿率數據,LetPub頁面顯示7則評論但內容需登入才能檢視,未能取得。
+- **reviewer_culture**: 未在小木蟲(muchong.com)、知乎、Reddit r/AskAcademia找到任何針對此期刊的具體投稿人討論串或評論;僅有期刊本身及聚合站的制式介紹文字,無首手審稿文化描述可徵引。
+- **preprint.allowed**: 該刊submission-guidelines完整頁面需登入跳轉,僅取得片段引用(AI政策部分),未能確認期刊/Springer對此刊的preprint政策具體條款,未查證前不填入假設性數據。
+
+**Cross-language checks performed:**
+- 小木蟲muchong.com — WebSearch未找到針對此期刊的具體投稿經驗討論串,0 first-hand results
+- 知乎zhihu — WebSearch未返回任何知乎相關結果,0 results
+- Reddit r/AskAcademia — WebSearch未返回任何相關討論串,0 results
+- 中文審稿聚合站(youfabiao.com, gwyoo.com, sfabiao.com) — 有頁面但審稿時間/退稿率欄位皆為空值或僅有制式描述,無具體數字或首手經驗
+- SciRev — 頁面存在但0 reviews,所有量化欄位為n/a
+
 ---
 
 ## Strategic Notes
@@ -262,5 +297,6 @@ Low for HRI tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + HRI conference community editorial culture domain knowledge | @Zaious |

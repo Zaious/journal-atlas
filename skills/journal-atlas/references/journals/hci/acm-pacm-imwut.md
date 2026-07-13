@@ -207,6 +207,35 @@ ACM SIGCHI community; reviewer pipeline identical to CSCW / UbiComp conferences 
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** IMWUT follows the general ACM (publisher-wide) generative-AI policy, not a journal-specific one: generative AI tools (e.g. ChatGPT) may be used to help create content but their use must be disclosed (e.g. in Acknowledgements, level of disclosure proportional to how much content was AI-generated); AI tools cannot be listed as authors; authors remain fully responsible for accuracy, plagiarism, and fabricated references. Separately, an arXiv survey on CS-venue Gen-AI policies documents IMWUT as one of a small number of ACM SIGCHI-family venues with an explicit Gen-AI policy for reviewers, prohibiting reviewers from uploading submissions to LLM tools. Because this is the ACM-wide policy applied to IMWUT rather than a bespoke IMWUT clause, a distinct IMWUT-only AI policy page could not be confirmed (dl.acm.org/journal/imwut/author-policies returned HTTP 403 to automated fetch).
+
+**WO2 positioning finding (what the journal accepts now):** Not directly confirmed via 2024-2026 title sampling: dl.acm.org listing/TOC pages returned HTTP 403 to automated fetch, and dblp's IMWUT index page plus the UbiComp-ISWC 2025 papers page returned only metadata/navigation (no actual titles) when fetched. This field relies on the journal's stated charter/scope rather than an observed-title survey — lower confidence.
+
+**WO2 experiential finding:** Single SciRev reviewer report (as of 2026-07-13): overall process rated 5.0/5.0 ('Excellent'), review difficulty 5.0/5.0 ('very difficult'), quality of reports 5.0/5.0, ~4 review reports in first round, ~2 review rounds; the reporting author's paraphrased comment: reviews were very high-quality/professional and substantially improved the paper. This is a single self-reported data point (n=1 on SciRev), not a stable statistic. 
+
+**Sources cited in this pass:**
+- https://dl.acm.org/journal/imwut (scope description via search snippet only; direct fetch blocked 403)
+- https://scirev.org/journal/proceedings-of-the-acm-on-interactive-mobile-wearable-and-ubiquitous-technologies/ (1 review submitted, checked 2026-07-13)
+- https://www.acm.org/publications/policies/frequently-asked-questions
+- https://www.ubicomp.org/ubicomp-iswc-2025/imwut_papers/ (fetch returned no titles, only publication-model description)
+
+**Fields WO2 could not find evidence for:**
+- **positioning.accepts_now (title-level detail)**: dl.acm.org article listing and TOC pages return HTTP 403 to automated fetch; dblp and UbiComp-ISWC 2025 pages returned only navigation/metadata, no actual 2024-2026 titles could be sampled. Only the journal's stated charter/scope description could be used, which is policy/scope-only, not an observed-title survey.
+- **experiential.desk_reject_pct**: SciRev shows only 1 total review submitted for this journal and does not report a desk-reject percentage; no forum discussion (小木虫/知乎/Reddit) surfaced a concrete desk-reject rate.
+- **experiential.reviewer_culture**: No first-hand forum post (小木虫 muchong.com, 知乎 zhihu, Reddit r/AskAcademia) specifically about IMWUT review culture was found in this search pass — searches returned only generic 大修/拒稿 advice threads not tied to IMWUT, or unrelated results. Fabiaoji could not be queried directly (no dedicated search access) and no results surfaced organically; treating as unchecked/0-result rather than inventing a culture narrative.
+- **experiential.acceptance_note (statistical robustness)**: SciRev's numbers derive from a single self-reported review (n=1), so they are one anecdote rather than a stable average; flagged explicitly in the note rather than presented as a solid statistic.
+- **positioning.framing_required**: No current special-issue CFP or explicit 'preferred framing' language was found in this search pass (dl.acm.org CFP/about pages blocked at 403); left null rather than inferring a framing requirement from generic scope text.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — searched '小木虫 IMWUT 投稿 审稿 UbiComp' and '小木虫 IMWUT 大修 拒稿 经验': 0 results specific to IMWUT; only generic unrelated journal revision/rejection threads surfaced.
+- 知乎 zhihu.com — searched '知乎 IMWUT 投稿经验': found background/informational posts only (e.g. Tsinghua team's IMWUT Best Paper announcement, an explainer on IMWUT-vs-UbiComp equivalence); no first-hand review-experience or reviewer-culture threads.
+- fabiaoji — not independently queryable via general web search in this pass; no results surfaced organically alongside 小木虫/知乎 queries, treated as 0 results rather than skipped.
+- Reddit r/AskAcademia — searched 'reddit AskAcademia IMWUT review experience': 0 relevant results; search returned unrelated patent/document-review and open-science papers.
+
 ---
 
 ## Strategic Notes
@@ -246,4 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM SIGCHI conference family conventions (CHI / CSCW / UbiComp norms applied in proceedings-journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

@@ -206,6 +206,36 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 SAGE 出版社統一的 AI 政策，非 Environment and Behavior 期刊專屬頁面（未找到該刊獨立 AI 政策頁）。政策區分 assistive AI（語言/文法潤飾，免揭露）與 generative AI（產生內容如文字/圖像/參考文獻，須揭露且僅限特定用途如文獻回顧輔助、翻譯、程式碼生成、資料視覺化、參考文獻整理）。明文禁止：生成錯誤內容、以連續提示生成資料或投稿、以 GenAI 取代受訪者進行訪談、將 AI 生成圖像當作原創研究圖像、捏造引用文獻。審稿人若使用 ChatGPT 等 GenAI 生成審稿報告將不再被邀請審稿；編輯不得用 GenAI 生成決議信或未發表研究摘要。未揭露或不當使用可能依 COPE 準則導致退稿或調查。
+
+**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+
+**WO2 experiential finding:** SciRev 頁面僅顯示一項數據：立即退稿（desk reject）決定時間約 3 天；審稿輪數、送審後拒絕率、平均審稿時長等欄位皆為 n/a（評論數不足，SciRev 尚未累積足夠使用者提交的評論）。 
+
+**Sources cited in this pass:**
+- https://journals.sagepub.com/home/eab (aims & scope, via search snippet)
+- https://scirev.org/journal/environment-and-behavior/
+- https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
+- https://zhuanlan.zhihu.com/p/678524195 (中科院分區2023: 環境研究/心理學 2區)
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy (期刊專屬)**: 找不到 Environment and Behavior 或其編輯部獨立公布的 AI 政策頁；僅有 SAGE 集團通用政策，且該政策聲明各期刊可有專屬細則，但未查獲 EAB 專屬版本
+- **preprint.allowed (期刊專屬)**: EAB 的 author-instructions 頁面因為是 JS 渲染，WebFetch 無法取得完整內文以確認該刊對投稿前已張貼 preprint 稿件的具體立場；只有 SAGE 通用政策可引
+- **experiential.review_time_months**: SciRev 該刊頁面審稿時長欄位為 n/a（樣本數不足）；未在小木虫/知乎/Reddit r/AskAcademia 查到針對此刊審稿時長的第一手討論串
+- **experiential.desk_reject_pct**: SciRev 只給出立即退稿決定時間（約3天），未給出立即退稿比例數字；也無其他來源提供百分比
+- **experiential.reviewer_culture**: 跨語言檢索（小木虫、知乎、Reddit r/AskAcademia）均未找到針對本刊審稿人風格/文化的具體第一手討論，僅查到該刊在中科院分區表中的排名資訊，非審稿文化描述，故不編造
+- **positioning.accepts_now / framing_required**: 無法取得該刊近期(2024-2026)實際文章標題列表（SAGE TOC 頁面為 JS 渲染，WebFetch 只回傳導覽外殼），也未查到近期 CFP 專屬於本刊（搜到的 AI in environmental governance CFP 頁面實際上也是 SAGE 平台首頁殼，無法確認是否為本刊或哪個刊物的 CFP），故未做仅scope層級以上的推論
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 搜尋 "Environment and Behavior" 期刊 無專屬討論串命中，僅泛用環境科學投稿頁面
+- 知乎 zhihu.com — 命中的是中科院期刊分區彙整文章（分區資訊: 2023年環境研究1-4區, 心理學2區），非審稿經驗討論，0 條第一手審稿經驗分享
+- Reddit r/AskAcademia — site:reddit.com 搜尋 0 results，未查到任何討論串
+- fabiaoji — 未執行到獨立可用搜尋結果（一般查詢未返回該站點內容，視為 0 results）
+
 ---
 
 ## Strategic Notes
@@ -245,4 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

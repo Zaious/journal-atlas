@@ -11,9 +11,10 @@
 
 Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法觸及的東西：學術期刊的**軟性元資料（soft metadata）**——審稿人文化、framing 期待、敏感主題接受度、AI 政策細節、方法論偏好、拒稿後備策略。所有內容封裝為一個 Claude Agent Skill，可跨 Claude Code、Claude Desktop、ChatGPT 安裝。
 
-> **狀態（2026-05）：Pre-release。** 163 個種子 entries：143 篇期刊跨 8 個領域 +
-> 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
-> 品質分層：**11 Tier 1**（有實證後盾）· **152 Tier 2**（社群推估）· **0 Skeleton**（Phase 4 已全數晉升）。
+> **狀態（2026-07）：Pre-release。** 399 個種子 entries：379 篇期刊跨 9 個領域
+> （新增 `philosophy/`）+ 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
+> 品質分層：**11 Tier 1**（有實證後盾）· **152 Tier 2**（社群推估）·
+> **236 AI-Researched**（v2 覆蓋優先轉向、逐刊 AI 研究並附 signal_quality）· **0 Skeleton**。
 > Schema **v1.3** — 新增 `Venue type` 欄位 + `Conference Specifics` 區塊。
 > 另外 8 個 Society Registry entries（`references/societies/`，schema `society-v1`）
 > 涵蓋 ACM SIGCHI / SIGACCESS / ACL / APS / APA / Cell Press / Nature Portfolio / PLOS。
@@ -121,11 +122,11 @@ Plugin 包含**兩個 skill**，各自處理不同工作流：
 - 走拒稿後備鏈條（Rejection Fallback Chain）
 - 推薦時附證據引用 + Tier 可信度標記
 
-**Entry-count-aware 設計**：從現在 163 entries 規劃到 200+：
+**Entry-count-aware 設計**：從現在 399 entries 繼續擴張：
 - ≤20 entries：直接全讀
 - 21–50：`scripts/fit_score.py` 預排
 - 50+：強制預排，AI 只讀 top 10–15
-- 200+：先用 `scripts/query_journals.py` 領域篩選
+- 200+：先用 `scripts/query_journals.py` 領域篩選（399 已是預設路徑）
 
 ### `journal-atlas-contribute` —— 貢獻者（Contributor）
 
@@ -416,7 +417,7 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
                                         （無 banner）
 ```
 
-當前分佈：**11 Tier 1 · 152 Tier 2 · 0 Skeleton = 共 163**（143 期刊 + 20 會議）。
+當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched (WO2) · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-wo2-pipeline-2026-07)。
 
 完整方法論與升級路徑見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 

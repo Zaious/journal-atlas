@@ -212,6 +212,39 @@ Reviewers are drawn primarily from the qualitative-psychology community — stro
 | **Data transparency requirement** | Flexible — qualitative pseudonymization standard; no mandatory open data |
 | **OPSEC compatibility** | High — interpretive qualitative work does not require raw transcript exposure |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 適用出版社 Taylor & Francis 全社 AI 政策(非期刊專屬)。作者可於研究流程中使用生成式 AI/AI 輔助工具,但須有人為監督(human oversight)並透明揭露/聲明使用情形;AI 不得列為作者;同儕審查者不得用生成式 AI 分析或摘要投稿稿件,亦不得將未發表稿件上傳至 AI 工具。因此屬「有條件開放、需揭露」而非全禁或全開。
+
+**WO2 positioning finding (what the journal accepts now):** 各心理學領域的質性研究,偏好推進方法論的創新與開創性工作;接受方法/分析技術本身的論文(方法論、教學與訓練)。小樣本可被接受,前提是資料充分、發現豐富且有正當理由。目前設有特刊「Interrogating Artificial Intelligence in Qualitative Research」,徵求關於 AI 對質性研究之本體論、認識論與方法論衝擊的稿件。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- SciRev (English): https://scirev.org/journal/qualitative-research-in-psychology/ — 頁面存在但 0 篇評論,無審稿時間/拒稿率/文化資料
+- https://taylorandfrancis.com/our-policies/ai-policy/
+- publisher-scope: https://www.tandfonline.com/journals/uqrp20/about-this-journal
+- recent-topics-search: IPA theme-naming / thematic-analysis vs IPA methodological debates (2025)
+- special-issue-CFP: https://think.taylorandfrancis.com/special_issues/interrogating-artificial-intelligence-in-qualitative-research-2/
+
+**Fields WO2 could not find evidence for:**
+- **experiential.review_time_months**: SciRev 0 reviews;小木虫/知乎/fabiaoji/Reddit 皆 0 討論串;無 first-hand 公開來源
+- **experiential.desk_reject_pct**: 無任何 first-hand 或官方拒稿率來源;第三方聚合站未列 acceptance rate
+- **experiential.acceptance_note**: 無投稿者經驗貼文可佐證
+- **experiential.reviewer_culture**: 無具體來源;拒絕在無來源下杜撰審查文化敘述
+- **preprint.allowed**: 未取得期刊專屬或已驗證之 preprint 政策來源(tandfonline 頁面 403 無法擷取);不以 T&F 通則臆測填入
+- **special_issue_deadline**: 特刊 CFP 頁面 403 無法擷取,搜尋摘要未含截稿日期
+
+**Cross-language checks performed:**
+- SciRev (English): 期刊頁存在但 0 篇 review,無任何 first-hand 審稿數據
+- 小木虫 muchong.com (Chinese): 0 results — 搜尋僅回傳質性研究方法的學術文章,無此期刊投稿/審稿討論串
+- 知乎 zhihu (Chinese): 0 results — 無此期刊投稿經驗貼文
+- fabiaoji / 发表ji (Chinese): 0 results — 無此期刊條目或討論
+- Reddit r/AskAcademia (English): 0 results — 無相關投稿經驗討論
+- 第三方聚合站 (Editage/Researcher.Life/Resurchify): 有指標數據 (CiteScore 4.7, SNIP 1.64, IF≈4.4, Q1/Q2) 但無 first-hand 審稿經驗;所列『3-4 週審稿』為通用樣板文字非期刊專屬,故不採計
+
 ---
 
 ## Strategic Notes
@@ -259,6 +292,7 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Format details derived from empirical sampling of recent publications (official PDF appears outdated). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

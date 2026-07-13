@@ -206,6 +206,36 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策，未見 JVB 期刊專屬頁面內容（Guide for Authors 頁面 403 無法讀取）。政策要點：作者可用生成式 AI 輔助撰寫（如整理文獻、產生想法、潤飾語言），但投稿時須揭露使用情形；AI 工具不得列為作者或共同作者；生成式 AI 不得用於製作或修改圖像（研究方法本身涉及 AI 者除外）。屬「有條件允許」（conditional gate = 需揭露），寬容度中等（3/5：允許輔助寫作但明確禁止圖像生成與掛名）。因是出版社層級政策而非期刊專屬頁，signal_quality 訂為 2。
+
+**WO2 positioning finding (what the journal accepts now):** 聚焦於個人層次（非組織層次）之職涯選擇、職涯發展與工作適應研究，涵蓋生涯選擇（如主修選擇、初次求職、組織吸引力）、生涯發展、工作轉換、工作—家庭管理、工作適應與態度（工作承諾、多重角色管理、離職）等主題，涵蓋實證與理論性文章，強調對諮商與生涯發展實務的應用價值。
+
+**WO2 experiential finding:** *(not researched)* SciRev評分：審查意見難度4.0/5.0（偏嚴格）、審查報告品質4.0/5.0、整體投稿處理體驗4.3/5.0（'Very good process'）。樣本僅6筆評論，代表性有限。
+
+**Sources cited in this pass:**
+- https://research.com/journal/journal-of-vocational-behavior
+- https://scirev.org/journal/journal-of-vocational-behavior/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.sciencedirect.com/journal/journal-of-vocational-behavior
+- https://www.youfabiao.com/sci/00018791/119.html
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 官方 Guide for Authors 頁面回傳 403 無法讀取；WebSearch 未找到明確標示 JVB 採單盲或雙盲審查的一手來源，故留空避免臆測。
+- **experiential.desk_reject_pct**: SciRev 頁面該欄位標示為 n/a（編輯部尚未提交數據）；小木虫、知乎、Reddit r/AskAcademia 搜尋均未找到針對本刊的具體桌拒比例討論。
+- **experiential.acceptance_note**: 未找到任何一手投稿者分享的接受信/接受經驗描述（中英文論壇搜尋均無結果）。
+- **experiential.reviewer_culture (政治立場等主觀描述)**: 未找到具體來源提及審稿人政治傾向或特定文化偏好之一手證據，依規則不予臆測，僅保留 SciRev 量化評分。
+- **cross_language: 小木虫/知乎/PTT 專屬討論串**: 多次搜尋（'小木虫 JVB 投稿'、'知乎 JVB 审稿'）僅返回期刊資訊聚合站（万维学术、優發表、學術之家等），未找到論壇原生一手討論串連結。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com：搜尋未直接命中期刊專屬討論串，僅命中聚合型學術服務網站（万维学术、優發表、學術之家、科研通）之期刊資訊頁，非論壇原生投稿經驗分享
+- 知乎 zhihu：搜尋未找到針對本刊審稿經驗的具體回答，僅命中同一批聚合型中文學術服務網站
+- 優發表 youfabiao.com（中文期刊評論站）：找到一則發表難度評論，指出高影響因子/佳分區代表『發表難度較大』，但未提供審稿時間、接受率、桌拒率等具體數字
+- Reddit r/AskAcademia（及 site:reddit.com 全站搜尋）：0 結果，僅返回引用本刊論文的學術論文（非論壇貼文）
+
 ---
 
 ## Strategic Notes
@@ -245,4 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

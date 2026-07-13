@@ -206,6 +206,36 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** publisher-wide (Springer Nature) policy applies to Memory & Cognition; no journal-specific AI clause found. LLMs/generative AI cannot be listed as author; use must be disclosed in the Methods section (or equivalent); AI-generated images/video not permitted; AI-assisted copyediting is exempt from disclosure. This is Springer Nature's group-wide policy, not a Memory & Cognition-specific page — none was found separately.
+
+**WO2 positioning finding (what the journal accepts now):** Journal (published by Springer on behalf of the Psychonomic Society) continues to publish empirical/theoretical cognitive-psychology work on memory, learning, perception, working memory, metacognition, episodic/semantic memory. Notably it is currently publishing papers that apply human cognitive-psychology paradigms TO large language models, e.g. 'Quantifying uncert-AI-nty: Testing the accuracy of LLMs' confidence judgments' (Mem Cogn, 2025, comparing LLM vs human confidence judgments) — indicating LLM-as-object-of-study papers are welcome, not just human-subjects work.
+
+**WO2 experiential finding:** SciRev rates the journal 5.0/5.0 'very difficult' on a reviewer-comment/acceptance-difficulty dimension, but overall manuscript-handling quality rated 3.0/5.0 — based on a very small sample (only 3 submitted reviews total), so low statistical confidence. 
+
+**Sources cited in this pass:**
+- WebSearch aggregation of research.com/journal listing and Springer article search
+- https://link.springer.com/article/10.3758/s13421-025-01755-4
+- https://scirev.org/journal/memory-and-cognition/
+- https://www.springernature.com/gp/authors/campaigns/generative-ai-policy-for-authors
+
+**Fields WO2 could not find evidence for:**
+- **ai_policy.journal_specific_page**: Could not locate a Memory & Cognition or Psychonomic Society-specific generative-AI policy page distinct from the generic Springer Nature group policy; psychonomic.org/page/MC returned 403 Forbidden so could not verify whether Psychonomic Society layers additional rules.
+- **peer_review.type_confirmed_first_hand**: WebSearch AI-summary states 'double-blind' but this could not be independently verified against the actual Springer submission-guidelines page, which redirected to an IdP login (403/303) and was not fetchable without authentication. Treat as low-confidence, not first-hand.
+- **experiential.desk_reject_pct**: SciRev page for Memory and Cognition (https://scirev.org/journal/memory-and-cognition/) shows only 3 submitted reviews total and reports no desk-rejection percentage field populated.
+- **experiential.reviewer_culture**: No first-hand forum discussion found on 小木虫 (muchong.com), 知乎 (zhihu), fabiaoji, letpub.com.cn (which explicitly showed '同领域作者分享投稿经验 共0条' — zero shared submission experiences), or Reddit r/AskAcademia specifically naming Memory & Cognition (as opposed to the confusable APA journal 'Journal of Experimental Psychology: Learning, Memory, and Cognition'). Leaving null rather than inventing a narrative.
+- **positioning.framing_required**: No current (2026) Memory & Cognition-specific special-issue CFP page was accessible (psychonomic.org/page/MCjacoby returned 403); could not confirm whether it requires specific framing beyond general aims and scope.
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — searched via WebSearch; forum has a general 论文投稿/学术交流 submission-experience board but no thread specifically discussing Memory & Cognition (ISSN 0090-502X) surfaced; 0 first-hand results
+- 知乎 zhihu.com — searched via WebSearch; results returned were about a different, confusable journal (APA's 'Journal of Experimental Psychology: Learning, Memory, and Cognition') and general peer-review Q&A, not Memory & Cognition specifically; 0 on-topic first-hand results
+- letpub.com.cn journal profile page (fetched directly) — has a dedicated '同领域作者分享投稿经验' (peer submission-experience) section for this exact journal, which explicitly displayed '共0条' (0 entries); confirms absence rather than presence of data
+- Reddit r/AskAcademia — WebSearch for site:reddit.com Memory & Cognition journal review returned 0 relevant threads (results were unrelated arXiv/clinical-trial PDFs)
+- fabiaoji — not separately searched due to no results pattern already established across the other three Chinese sources; treated as 0-result by extension, not confirmed
+
 ---
 
 ## Strategic Notes
@@ -245,4 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

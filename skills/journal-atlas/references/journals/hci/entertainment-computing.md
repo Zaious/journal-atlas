@@ -220,6 +220,39 @@ Reviewers from IFIP TC14 Entertainment Computing community + ACM CHI Play overla
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 採 Elsevier 通用政策(非期刊專屬頁面,查無 Entertainment Computing 專屬 AI 政策頁):作者可用生成式 AI 輔助寫作(如語言潤飾、文獻綜述輔助),但須人類監督、對內容負全責、投稿時需揭露聲明;基本文法/拼字檢查免揭露;AI 不得列為作者。審稿人/編輯僅能用「不留存資料」的私有 AI 工具做語言潤飾或背景文獻搜尋,禁止將稿件內容上傳至公開 AI 工具(保密考量),且須揭露使用情形。WebSearch 摘要另指出 Entertainment Computing 目前不允許審稿人/編輯在同行評審過程使用生成式 AI,但該說法來自搜尋引擎聚合摘要,未能在期刊官方頁面(Guide for Authors 因 403 無法直接讀取)一次性核實,故信心中等。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2025-2026)徵稿與會議聯動顯示,該刊實際收稿方向聚焦:遊戲/互動敘事設計與分析、嚴肅遊戲(學習/健康福祉/社會影響/運動遊戲)、XR(VR/AR/MR、元宇宙娛樂)、AI/機器學習於娛樂應用(含生成式 AI 於遊戲開發/內容生成)、程序化內容生成、電腦圖學與視覺特效、數位藝術與互動裝置、無障礙與包容性設計、情感與社會文化影響、新型互動介面與安全性。2026 IFIP ICEC Journal Track(投稿截止 2026-01-24)與 IPSJ JIP 特刊(截止 2026-02-20)均以此刊為目標期刊,顯示這些主題是當前實際收稿重點。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://ci2s-enterprise.com.ar/2025/12/17/ifip-icec-2026-journal-track-call-for-papers-elsevier-entertainment-computing-journal/
+- https://icec2025.entcomp.org/cfp/
+- https://letpub.com.cn/index.php?journalid=10775&page=journalapp&view=detail (審稿速度/錄用比例欄位均無用戶填寫數據,僅顯示 3 人標記「已投稿」,無具體心得)
+- https://scirev.org/journal/entertainment-computing/ (0 reviews submitted)
+- https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+- https://www.ipsj.or.jp/english/jip/cfp/26-T.html
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: ScienceDirect 官方 Guide for Authors 與期刊主頁均回傳 403,無法直接核實審稿類型(single/double blind);搜尋引擎摘要亦未找到期刊專屬明確聲明,故留空而非臆測。
+- **experiential.review_time_months**: SciRev 該刊頁面顯示 0 筆審稿人回報,LetPub 中文頁面「平均審稿速度」欄位無使用者填寫數據,無小木蟲/知乎/Reddit 一手討論串可查證,故留空。
+- **experiential.desk_reject_pct**: SciRev 顯示 n/a(無資料),無其他一手來源。
+- **experiential.acceptance_note**: LetPub 僅顯示「3 人已投稿、0 人已錄用」的統計,無具體心得文字;無法構成有意義的錄用敘述。
+- **experiential.reviewer_culture**: 未找到任何小木蟲/fabiaoji/知乎/Reddit r/AskAcademia 討論串提及此刊審稿人風格或文化,零一手資料,依規則不得臆測。
+- **ai_policy.gate (reviewer-AI-ban claim)**: 「審稿人/編輯禁用生成式 AI」一說僅見於 WebSearch 聚合摘要,未能在期刊官方頁面重複核實(guide-for-authors 403),故 ai_policy 部分僅標記信心 3/5 而非 5。
+
+**Cross-language checks performed:**
+- 小木蟲 muchong.com: WebSearch 站內查詢無相關結果(0 results)
+- 知乎 zhihu.com: 查到通用「計算機水刊清單」提及該刊,但無具體投稿/審稿經驗貼(視為 0 個一手心得)
+- fabiaoji: 未查得該站對此刊的獨立頁面或討論(0 results)
+- Reddit r/AskAcademia: WebSearch 未返回任何該版對此刊的討論(0 results)
+- LetPub 中文版 (letpub.com.cn): 有期刊頁面,但「審稿週期」「錄用比例」欄位均無使用者填寫數據,僅有「3人已投稿」的匯總計數,無敘述性心得
+
 ---
 
 ## Strategic Notes
@@ -264,5 +297,6 @@ Low for entertainment computing tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + IFIP TC14 Entertainment Computing editorial culture domain knowledge | @Zaious |

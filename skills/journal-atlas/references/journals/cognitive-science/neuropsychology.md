@@ -221,6 +221,34 @@ Reviewers from clinical-neuropsychology community — APA Division 40 (Society f
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — clinical neuropsychological data anonymization rigorous |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** APA-wide policy (applies to Neuropsychology, no journal-specific override found): generative AI may be used to help draft manuscript content (e.g., literature summaries, outlines) but its use must be disclosed (typically in Method/Introduction or an author note) including prompts/tools used; AI cannot be listed as an author; authors remain fully responsible for verifying AI-generated content/citations; peer reviewers are barred from feeding manuscripts into AI tools (confidentiality). No Neuropsychology-specific AI clause found separate from the APA-wide policy.
+
+**WO2 positioning finding (what the journal accepts now):** Journal scope (per official aims/scope and submission-guidelines pages, not corroborated against actual 2024-2026 published article titles): original empirical research on brain-cognition/emotion/behavior relations across the lifespan and in healthy and disordered populations; systematic reviews and meta-analyses; theoretical articles; direct replications; brief reports; case studies (only if they raise questions beyond the single case). Journal explicitly runs an ongoing 'Call for papers: Contemporary reviews' track.
+
+**WO2 experiential finding:** Only one first-hand review record exists on SciRev: authors received 2 reviewer reports (one more favorable than the other, both recommending resubmission/revision), rated review-report quality 5/5 and comment difficulty 3/5, overall handling rated 3/5 ('excellent handling by the editor and reviewers'). Manuscript was ultimately accepted after 2 rounds. 
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/neuropsychology/
+- https://www.apa.org/pubs/journals/neu/
+- https://www.apa.org/pubs/journals/neu/submit
+- https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev lists desk-rejection decision time as n/a for this journal; no forum discussion (Chinese or English) surfaced any desk-reject percentage.
+- **positioning.accepts_now (article-level corroboration)**: Only official aims/scope and submission-guidelines pages were available; no 2024-2026 published article titles or table-of-contents were pulled to corroborate actual accepted topics, and no current non-'Contemporary reviews' special-issue CFP was found.
+- **experiential.reviewer_culture**: Only a single SciRev review report exists for this journal (n=1); one anecdote is insufficient to characterize a reviewer culture. No muchong.com, zhihu, fabiaoji, or r/AskAcademia threads specific to this journal were found (see cross_language_checked).
+- **experiential.acceptance rate (numeric)**: APA does not publish per-journal acceptance rates on its public pages; the 2019 APA Summary Report of Journal Operations PDF was fetched but its statistical tables are embedded in a non-extractable format, so no verified figure could be sourced.
+
+**Cross-language checks performed:**
+- muchong.com (小木虫) — targeted site: search for 'Neuropsychology APA 审稿' returned 0 relevant results (only an unrelated Neurocomputing journal-review page)
+- zhihu.com (知乎) — general search for APA/Neuropsychology submission discussion returned only meta-pages about journal-review sites in general, 0 journal-specific results
+- fabiaoji.com (发表记) — journal-search page for 'Neuropsychology' returned HTTP 404 / journal not listed on the platform
+- reddit.com r/AskAcademia — search for Neuropsychology APA review time / desk reject returned 0 results
+
 ---
 
 ## Strategic Notes
@@ -268,5 +296,6 @@ Low for clinical-neuropsychology tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from APA publisher + APA Division 40 / INS clinical neuropsychology editorial culture domain knowledge | @Zaious |

@@ -217,6 +217,35 @@ Reviewers from social and personality psychology research community valuing acce
 | **Data transparency requirement** | N/A |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 找不到 SPPC 期刊專屬的 AI 政策頁面；適用的是 Wiley 出版社通用政策(未見期刊層級覆寫)。政策要點(經二手摘要確認,原始 PDF 因 402 付費牆無法直接讀取全文):生成式 AI 工具(如 ChatGPT)不得列名為作者(理由:無法在無人類指導下發起原創研究,依循 COPE 立場聲明);若作者使用 AIGC 工具產出手稿任何部分,須在 Methods 或 Acknowledgements 段落透明揭露使用的工具、原因與人工查核方式。屬於「允許使用但強制揭露、禁止掛名」型政策,故列為 conditional gate、寬容度中等(3/5)。因無法確認是否有 SPPC 期刊層級的補充規定,且原始政策全文未能直接讀取(僅靠 WebSearch 摘要),信號品質定為 2。
+
+**WO2 positioning finding (what the journal accepts now):** 傳統上為「同儕評閱的文獻回顧/立場性綜述」期刊(不刊登原創實徵研究),但近期(依 2025-2026 搜尋結果)已開放「簡潔實徵報告」(concise submissions reporting research findings based on high quality datasets),包括資料驅動的理論發展、科學創新、重複驗證研究(replication studies)、期中發現(interim findings)等,字數上限 5000 字(不含摘要與參考文獻),通常落在 3000-4000 字。另有現行 Special Issue CFP「Policy Impacts on Social Psychology」(摘要截止 2025-04-21,聯絡人 Debbie Ma),要求論文對非科學背景讀者(non-science audiences)可讀。
+
+**WO2 experiential finding:** SciRev 唯一一筆評論(n=1)：審稿意見被評為「Professional and helpful reviews that helped significantly improve the manuscript」,審稿品質評分 5.0/5.0、期刊整體處理評分 5.0/5.0,但該篇稿件最終被建議拒絕(reject recommendation)。樣本數極小(僅1筆),不足以代表期刊整體。 
+
+**Sources cited in this pass:**
+- WebSearch snippet citing compass.onlinelibrary.wiley.com forauthors.html (accepted article types incl. concise empirical reports)
+- https://compass.onlinelibrary.wiley.com/hub/journal/17519004/call-for-papers/si-2025-000412 (Special Issue CFP: Policy Impacts on Social Psychology; page returned HTTP 402 on direct WebFetch, info via WebSearch snippet only)
+- https://scirev.org/journal/social-and-personality-psychology-compass/ (n=1 review)
+- https://www.thesify.ai/blog/ai-policies-academic-publishing-2025 (secondary summary of Wiley general policy; primary Wiley PDF at https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf returned HTTP 402 on direct fetch)
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 未能在可存取頁面找到明確標示(單盲/雙盲/開放),Wiley 期刊頁面 forauthors.html 對此稿件的直接 WebFetch 回傳 HTTP 402(付費牆),WebSearch 摘要亦未提及審稿制度細節
+- **preprint.allowed**: 無法取得期刊專屬的 preprint 政策原文；僅查到一般投稿聲明(未曾發表過)，未見對 preprint server(如 PsyArXiv)存放前發表的明確允許/禁止表述
+- **experiential.desk_reject_pct**: SciRev 對此期刊的 immediate rejection rate 欄位顯示 n/a(僅1筆評論且該欄未填)
+- **experiential.reviewer_culture**: 小木虫(muchong.com)、知乎、Reddit r/AskAcademia 均查無與此期刊相關的具體審稿文化討論(見 cross_language_checked，皆為0筆)，唯一可用的第一手資料只有 SciRev 的單一筆評論，不足以描述審稿文化
+- **ai_policy.source_url (primary)**: Wiley 官方 Generative AI Policy PDF 與 authors.wiley.com 政策頁在直接 WebFetch 時均回傳 HTTP 402(付費牆/需授權),僅能透過 WebSearch 對該文件的二手摘要取得政策內容,未讀到政策全文原文
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋(site:muchong.com + 期刊名)0筆相關結果
+- 知乎 zhihu — 關鍵字「Social and Personality Psychology Compass 知乎 审稿」與「审稿经验/投稿经验 spc3」均0筆針對本刊的第一手討論
+- Reddit r/AskAcademia — site:reddit.com 搜尋「Social and Personality Psychology Compass」0筆結果
+- SciRev — 找到期刊專屬頁面，1筆評論(first review round 12.9週,審稿品質5.0/5.0,建議拒絕)
+
 ---
 
 ## Strategic Notes
@@ -260,5 +289,6 @@ Low for review tradition authors comfortable with accessible writing.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher + Wiley Compass series accessible-review editorial culture domain knowledge | @Zaious |

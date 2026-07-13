@@ -206,6 +206,37 @@ ACL community reviewers (overlaps with ACL/EMNLP/NAACL pool). Reviewer expectati
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+
+**WO2 AI policy finding:** 沒有找到 TACL 期刊自己專屬的生成式 AI 政策頁面；transacl.org 的 Submission Guidelines / Editorial Policies 全文讀過，未提及 AI 工具使用規範。適用的是 MIT Press 出版社層級的通用政策(direct.mit.edu/journals/pages/publication-ethics)：AI 工具（ChatGPT/LLM）不得列為作者；若使用 AI 產生文字、圖像或蒐集資料，作者必須告知編輯並在稿件中揭露，作者對 AI 產出內容仍負全責；該頁明載「個別 MIT Press 期刊可能有更嚴格的專屬規定，請查閱該刊投稿須知」——但 TACL 自己的投稿須知並未列出更嚴格版本，故目前對 TACL 而言就是這條通用規則。另外可能相關但未確認是否適用於 TACL（僅確認適用於 ACL 系列會議）的是 ACL 2023 Policy on AI Writing Assistance (https://2023.aclweb.org/blog/ACL-2023-policy/)：語言潤飾類工具（如 Grammarly）免揭露；產生大段新內容須揭露範圍與性質；用 AI 同時生成新想法與新內容則不鼓勵。此政策明確只寫給 ACL 2023 會議，未見聲明適用 TACL 期刊。
+
+**WO2 positioning finding (what the journal accepts now):** 官方 Aims & Scope（direct.mit.edu/tacl/pages/submission-guidelines）明列接受四大類：理論計算語言學(theoretical computational linguistics)、經驗/資料驅動方法(empirical/data-driven approaches)、資源與評測(resources/evaluation)、應用與工具(applications/tools)，範圍涵蓋 NLP/CL 任一子領域，要求「substantial, original, completed, unpublished」且對 related work 調查要求高（中文投稿經驗文章：知乎'我的NLP梦中情刊TACL投稿指南'與'NLP顶刊：Transactions of ACL介绍'均提到审稿对创新性、严谨性、相关工作调研要求高）。未找到近期(2024-2026) TACL 專屬 CFP 或 special issue —— TACL 官方頁面未見特刊徵稿機制的證據。
+
+**WO2 experiential finding:** 官方4種決議之一：(a)直接接受、(b)有條件接受(2個月內完成修改)、(c)拒絕但鼓勵3-6個月內修改重投(R&R)、(d)拒絕且1年內禁止重投。知乎投稿經驗文章指出『很少直接接受或直接拒绝，多数收到鼓励重投的意见』(即多落在b/c類)，但未找到量化的整體接受率數字。 Ehud Reiter部落格(2023, 第一手比較ACL會議與TACL審稿經驗)：TACL審稿人皆從Standing Reviewer Team中由Action Editor手動指派，多為資深研究者(相當於Area Chair等級)，非會議式的演算法自動配對(可能含博士生)；審稿目標『改進論文並把關』，修改要求在接受前會被覆核，比會議審稿更嚴謹但也更花時間。知乎社群('自然语言处理顶刊TACL的难度如何？'2022年提問46人關注)使用者評論：『根据实际投稿体验和网友的评论，TACL的审稿过程十分靠谱，reviewer的分配更加精确，review意见中肯且较为详细，比较有建设性』；同頁亦有一則匿名酸評『顶刊个屁，期刊直接就是二流』，僅單一匿名意見、無佐證，可信度低，不採用為結論依據。另有知乎社群提到TACL未被中國CCF推薦目錄收錄，對部分中國大陸學者的吸引力/職涯採認度較低。
+
+**Sources cited in this pass:**
+- https://direct.mit.edu/journals/pages/publication-ethics
+- https://direct.mit.edu/tacl/pages/submission-guidelines
+- https://ehudreiter.com/2023/06/06/acl-vs-tacl-reviewing/
+- https://scirev.org/journal/transactions-of-the-association-for-computational-linguistics/
+- https://www.zhihu.com/question/518956455
+- https://zhuanlan.zhihu.com/p/516037530
+
+**Fields WO2 could not find evidence for:**
+- **experiential.desk_reject_pct**: SciRev該期刊頁面顯示0篇評論、無'% immediately rejected last year'數據；中英文論壇均未見量化的桌拒率討論，僅官方文件提及'格式不合規會不經審查逕行拒絕'的定性說明，無比例數字。
+- **experiential.acceptance rate (quantitative)**: 官方每季/年報(如2022Q1 Reports)雖存在但未在本次查核中取得具體接受率數字；知乎文章提及'汇报接收率'但未附上實際數字，故不採用估計值。
+- **ai_policy (TACL-specific policy page)**: transacl.org的Submission Guidelines/Editorial Policies全文讀過，未見任何AI/生成式AI/LLM使用規範專屬條文；只能引用MIT Press出版社層級通用政策，故該欄位標記為publisher-level非journal-specific，signal_quality刻意壓低為2。
+- **cross_language: 小木虫(muchong.com)**: 以'TACL site:muchong.com'及中文關鍵字搜尋均未找到muchong上關於TACL投稿/審稿的專屬討論串，僅有論文投稿版的通用入口頁，誠實記錄為0結果。
+- **cross_language: Reddit r/AskAcademia**: WebSearch與嘗試直接開啟reddit.com搜尋頁(遭政策封鎖)均未取得任何提及TACL的r/AskAcademia討論串，誠實記錄為0結果。
+
+**Cross-language checks performed:**
+- 知乎(zhihu.com)：找到至少3篇相關文章/問答，含首次決議週期(~50天)、決議分類(a/b/c/d)、審稿人風格正面評價(靠谱/精确/建设性)、CCF未收錄對陸生吸引力較低等具體資訊，來源: https://www.zhihu.com/question/518956455 與 https://zhuanlan.zhihu.com/p/516037530
+- 小木虫(muchong.com)：多次搜尋(WebSearch與嘗試瀏覽器Google搜尋)均未找到針對TACL的專屬投稿/審稿討論串，0結果
+- fabiaoji：未搜尋到任何相關結果，未特別查證(建議後續補查)
+- Reddit r/AskAcademia：WebSearch與直接訪問均未取得任何提及TACL的討論串，0結果；reddit.com在瀏覽器工具中被政策封鎖無法直接瀏覽
+
 ---
 
 ## Strategic Notes
@@ -245,4 +276,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACL community conventions (TACL editorial norms + ACL/EMNLP/NAACL review culture in journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

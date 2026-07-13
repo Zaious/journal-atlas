@@ -224,6 +224,40 @@ Reviewers from social-robotics (HRI), interactional-linguistics, comparative-cog
 | **Data transparency requirement** | Medium — transcript / corpus sharing increasingly expected |
 | **OPSEC compatibility** | Medium — interactional data pseudonymization standard |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+
+**WO2 AI policy finding:** 發布者(John Benjamins)層級政策,非期刊專屬頁面。明文:任何 AI 不得列為作者("no Artificial Intelligence qualifies as author"),此為 Author's Responsibilities 段落明載。審稿人明文禁止使用生成式 AI(如 ChatGPT)產生審稿意見,理由是上傳稿件內容到 AI 訓練/知識庫會破壞保密義務(此句取自搜尋引擎擷取之政策摘要,非逐字引用原文,原始頁面 'Statement on Artificial Intelligence' 完整章節內容因頁面渲染/交互限制未能直接讀取全文,僅讀到導覽錨點與旁註 '► See our statement on AI use')。未查到作者撰寫論文時使用生成式 AI 輔助寫作是否需要揭露的明確條款,故 permission_gate 標記為 conditional 且信心不高。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2025)刊出主題聚焦人機互動中的信任議題,如 human-AI team trust、生成式AI增能的倫理機器人顧問之可信度與道德能力(GenAI-enabled ethical robot advisor)。整體期刊定位涵蓋生物與人工系統中互動研究的跨學科主題:演化/發展/神經生物學面向的社會行為與溝通、互動的具身性、社會與敘事智能的起源、動態環境中的知覺與行動、社會學習與適應、人機互動中的社會行為、同理理解與行為、文化因素在社會行為與溝通中的角色。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://benjamins.com/catalog/is/guidelines
+- https://benjamins.com/content/authors/ethics
+- https://scirev.org/journal/interaction-studies/
+- https://www.jbe-platform.com/content/journals/10.1075/is.00025.edi
+- https://www.jbe-platform.com/content/journals/10.1075/is.25072.mom
+
+**Fields WO2 could not find evidence for:**
+- **peer_review.type**: 未能在 benjamins.com/catalog/is/guidelines 或 jbe-platform 頁面取得明確標示(如 double-blind/single-blind);WebFetch 對 benjamins.com 回傳 403,瀏覽器工具讀取該頁時內容未完整渲染出審稿類型說明,故留空。
+- **preprint.allowed**: John Benjamins 有「Author Rights Policy」提及預印本相關權利，但未能成功讀取該頁具體條款(WebFetch 403,瀏覽器渲染未完整),故留空避免臆測。
+- **experiential.review_time_months**: SciRev 期刊頁面顯示 0 筆使用者評論，所有時效與比例欄位皆為 n/a；跨語言論壇(小木虫/知乎/fabiaoji/Reddit)搜尋亦無任何一手經驗分享。
+- **experiential.desk_reject_pct**: 同上，SciRev 顯示「% immediately rejected last year」為 n/a，無其他來源提供數字。
+- **experiential.acceptance_note**: 無任何公開一手經驗描述接受/拒絕決策細節，避免套用通用期刊敘事。
+- **experiential.reviewer_culture**: 無具體來源支持任何審稿人文化描述(語氣嚴厲/寬鬆、地域偏好等),依規則不得無來源臆測。
+- **positioning.framing_required**: 未查到明確的投稿框架要求(如必須強調跨學科貢獻的具體格式規定),僅有一般 aims & scope 描述,故留空。
+- **ai_policy.gate 完整原文**: benjamins.com 的『Statement on Artificial Intelligence』完整章節內容因該頁 403(WebFetch)及瀏覽器渲染異常(computer 工具逾時、get_page_text 未能擷取該子章節全文)未能直接讀取,僅能依賴搜尋引擎摘要重建關鍵事實點,故此層 signal_quality 打折為 2。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋「Interaction Studies」無相關討論結果，僅返回論壇一般導覽頁與其他期刊(如 International Journal on Artificial Intelligence Tools)的點評頁，0 條與本刊直接相關
+- 知乎 zhihu — 未透過搜尋引擎索引到任何針對本刊的討論串,0 results
+- fabiaoji — 搜尋未返回任何專屬頁面或討論,0 results
+- Reddit r/AskAcademia — WebSearch 未返回任何提及本刊名稱的討論串,0 results
+- SciRev — 期刊頁面存在但顯示「尚無人提交評論」(No reviews have yet been submitted),所有量化欄位(審稿時長、拒稿率、通過率、審稿品質)均為 n/a
+
 ---
 
 ## Strategic Notes
@@ -271,5 +305,6 @@ Low for niche-specialty researchers. Moderate for mainstream HCI authors — req
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Specialty journal at HRI/linguistics/cognitive science crossover. Multiple fields flagged pending due to less-documented publisher (Benjamins). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

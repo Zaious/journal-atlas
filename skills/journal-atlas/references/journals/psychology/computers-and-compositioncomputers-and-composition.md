@@ -218,6 +218,35 @@ Reviewers from Computers and Writing community + 4Cs / CCCC overlap. Common dema
 | **Data transparency requirement** | Flexible |
 | **OPSEC compatibility** | High |
 
+### AI-Research Notes (WO2 supplement, 2026-07-13)
+
+> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+
+**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策，非期刊獨立撰寫的政策頁（期刊 Guide for Authors 頁面引用同一套出版社規範，故標記為 publisher-level, journal-referenced）。作者投稿前可用生成式AI/AI輔助工具潤飾語言與可讀性，但須揭露使用情形；圖片/圖表禁止用生成式AI產生或修改（研究方法本身涉及AI者除外）。審稿人與編輯目前『不允許』在同行評審與稿件評估過程中使用生成式AI工具（如ChatGPT），Elsevier表示正評估合規工具、未來可能調整此限制。leniency=2：作者端為條件式允許(僅潤飾+揭露)，圖像生成與審稿端皆封閉，屬中低度寬容。
+
+**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)收稿明顯轉向生成式AI與寫作教學/專業寫作交會的實證與批判研究（例：2026年6月文章討論多語寫作者使用生成式AI協助專業寫作的'article laundry'現象）；多模態/UX與新興技術（GenAI、AR、VR、混合實境、語音使用者介面）於寫作/作文脈絡中的應用（2024年9月特刊CFP：Multimodal User Experience Composition）；數位素養、線上/遠距寫作教學、寫作科技的倫理與可及性議題。2025年全年約發表37篇文章。一篇以結構化主題模型分析該刊1983-2025共1607篇文章的計量研究顯示反覆出現的主題：自動化焦慮、數位落差與近用、作者身分與原創性問題，顯示AI/GenAI相關投稿目前是期刊高度歡迎、甚至優先徵稿的方向。
+
+**WO2 experiential finding:** *(not researched)* 
+
+**Sources cited in this pass:**
+- https://scirev.org/journal/computers-and-composition/ （查詢時：'No reviews have yet been submitted for this journal' — SciRev上零筆評論）
+- https://wpa-announcements.tracigardner.com/2024/09/06/cfp-computers-and-composition-special-issue-multimodal-user-experience-composition/
+- https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+- https://www.sciencedirect.com/journal/computers-and-composition/publish/guide-for-authors
+- https://www.sciencedirect.com/science/article/abs/pii/S8755461526000204
+
+**Fields WO2 could not find evidence for:**
+- **review_time_months**: SciRev該期刊頁面查詢時顯示零筆評論(no reviews submitted)，無首輪審稿時間或總處理時間數據；小木虫、fabiaoji、知乎搜尋均未找到針對此期刊的具體投稿討論串（該等平台社群以理工科為主，人文/修辭寫作類期刊討論極少）；Reddit r/AskAcademia搜尋亦無結果。
+- **desk_reject_pct**: SciRev無數據；未見任何論壇或部落格公開討論此期刊的桌拒率。
+- **acceptance_note**: 無公開發表的投稿者經驗貼文（英文或中文皆未搜得），僅有期刊官方年發表篇數(2025年約37篇)，不足以推論接受率或編輯偏好敘事。
+- **reviewer_culture**: 無任何具體、可引用來源描述審稿人風格/文化；為避免虛構敘事，此欄位留空。
+
+**Cross-language checks performed:**
+- 小木虫 muchong.com — 站內搜尋與site:搜尋均查無'Computers and Composition'相關投稿討論串（僅命中同名含'Computers'的其他工程類期刊）
+- fabiaoji.com 發表記 — 搜尋查無此期刊之投稿經驗頁面（收錄多為工程/計算機類'Computers & X'期刊，未見此人文修辭類期刊）
+- 知乎 zhihu — 搜尋未命中任何針對此期刊的專門討論
+- Reddit r/AskAcademia — 搜尋0結果，無相關討論串
+
 ---
 
 ## Strategic Notes
@@ -260,5 +289,6 @@ Low for composition / rhetoric tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + Computers and Writing / 4Cs digital rhetoric editorial culture domain knowledge | @Zaious |
