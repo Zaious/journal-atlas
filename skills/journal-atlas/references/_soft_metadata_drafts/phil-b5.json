@@ -1,0 +1,771 @@
+{
+ "batch": "phil-b5",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0739-7046",
+   "name": "Faith and Philosophy: Journal of the Society of Christian Philosophers",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": "No AI/generative-AI use policy could be found on the journal's Aims/Scope, About, or Submit Article pages (Asbury Theological Seminary Digital Commons host), and the detailed PDC Net submission-guidelines page returned HTTP 403 and could not be fetched. No journal-specific or SCP-level AI policy statement was located via web search."
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": "https://place.asburyseminary.edu/faithandphilosophy/aimsandscope.html"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Analytic philosophy of religion and Christian philosophical theology: papers advancing or critiquing arguments for/against theism, historical-figure engagement (Kierkegaard, Newman, Malebranche), theodicy/problem-of-evil and divine-hiddenness work, and philosophy-and-science-of-religion crossover (e.g. origins-of-life research). Also runs regular book-review sections on new philosophy-of-religion/theology monographs.",
+    "framing_required": "Explicitly welcomes submissions from authors who do not share the journal's Christian commitment, per its Aims & Scope statement, but the bulk of published output engages Christian theism specifically.",
+    "methods_welcome": [
+     "analytic argument-based philosophy of religion",
+     "historical philosophy (close readings of Kierkegaard, Newman, Malebranche, etc.)",
+     "philosophical theology / doctrinal metaphysics (e.g. Trinity, hypostatic structure)",
+     "science-and-religion / philosophy-of-science crossover (e.g. origins-of-life rationality)",
+     "book reviews and critical discussion pieces"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://place.asburyseminary.edu/faithandphilosophy/aimsandscope.html",
+     "https://place.asburyseminary.edu/faithandphilosophy/vol42/iss1/ (Vol 42 Iss 1, Jan 2026 TOC via search)",
+     "https://place.asburyseminary.edu/faithandphilosophy/vol42/iss2/ (Vol 42 Iss 2, Apr 2026 TOC via search)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/faith-and-philosophy/ (0 reviews submitted, all fields n/a)",
+     "https://philosopherscocoon.com/2025/12/11/grappling-with-the-shortage-of-highly-regarded-philosophy-of-religion-journals/ (prestige/positioning commentary only, no timing/rate data: journal described as ranked above most other philosophy-of-religion outlets, with 'Religious Studies' as the next-tier fallback venue)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate/leniency/source_url",
+     "why": "No AI-use policy text found on journal's own pages (Aims&Scope, About, Submit Article); PDC Net submission-guidelines page (likely most detailed) returned HTTP 403 and could not be verified. No secondary discussion of an F&P-specific AI policy found via search."
+    },
+    {
+     "field": "peer_review.type",
+     "why": "Journal confirmed 'peer-reviewed' but no page states blind/double-blind/open review explicitly; one search-engine-generated summary claimed 'blind reviewing' but this could not be traced to an actual quoted source sentence, so it is excluded as unverified."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint/self-archiving policy found on any accessible journal page; SCP and Asbury pages are silent on this."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for this journal shows 0 submitted reviews (all fields n/a); no Reddit r/AskAcademia thread found; no Chinese-forum discussion found (niche English-language Christian philosophy journal, low Chinese-author submission volume)."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above - SciRev has zero data points for this journal."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand author accounts located in English or Chinese forums; only secondary prestige/ranking commentary (Philosophers' Cocoon) which does not describe reviewer behavior or culture."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched via WebSearch for '\"Faith and Philosophy\" 期刊 投稿 审稿 小木虫': 0 relevant results (returned unrelated journal pages)",
+    "知乎 zhihu — searched via WebSearch for '\"Faith and Philosophy\" 知乎 投稿': 0 relevant results",
+    "fabiaoji — not separately queryable via WebSearch (no dedicated fabiaoji hits surfaced); treated as 0 results",
+    "Reddit r/AskAcademia — searched via WebSearch for '\"Faith and Philosophy\" journal reddit AskAcademia review experience': 0 results",
+    "SciRev — direct fetch of https://scirev.org/journal/faith-and-philosophy/: journal profile exists but 0 reviews submitted, all metrics n/a"
+   ],
+   "sensitive_topics_note": "Journal is explicitly a confessional/advocacy venue for Christian philosophy of religion (Society of Christian Philosophers); positioning data reflects that religious framing, not a neutral general-philosophy journal.",
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0038-1527",
+   "name": "Sophia (International Journal of Philosophy and Traditions / Philosophy and Traditions)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://link.springer.com/journal/11841/submission-guidelines",
+    "summary": "此為 Springer Nature 集團標準政策(非 Sophia 獨有措辭),刊登於 Sophia 官方投稿頁「Title Page / Author information」段落。LLM(如 ChatGPT)不符合作者資格,不得列為作者。若僅用 AI 工具做「AI assisted copy editing」(潤飾可讀性,非生成內容)則免揭露;若用於生成實質內容則需在稿件中揭露使用情形與所用工具。頁面未提供 Sophia 專屬的加嚴或放寬條款,故判定為 Springer 集團通用政策套用於本刊,signal_quality 因此偏低(2)。"
+   },
+   "peer_review": {
+    "type": "double-blind (作者對審稿人匿名;需自行將稿件與 title page 分離匿名化)",
+    "source_url": "https://link.springer.com/journal/11841/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許。採用 Springer Nature 2019 年統一政策:張貼於 preprint server、機構網站或作者個人網站不視為重複發表,不影響本刊審稿資格;但作者應在投稿時或審稿期間揭露 preprint 的 DOI 與授權條款。此為集團通用政策頁面所述,未見 Sophia 專屬變體。",
+    "source_url": "https://link.springer.com/brands/springer/journal-policies"
+   },
+   "positioning": {
+    "accepts_now": "2024-2026 年實際刊登內容顯示:比較哲學/跨文化宗教哲學為主軸,近期特刊包括「印度傳統中的神/神聖概念」(2024 Vol.63 Iss.3)、「Paul Ricoeur 比較詮釋新探」(2025 Vol.64 Iss.3)、「文化多樣性中的氣氛與呼吸」(2026 Vol.65 Iss.2)。整體維持分析與歐陸宗教哲學並重,亞洲/原住民觀點、女性主義與後殖民宗教哲學為特色。",
+    "framing_required": "投稿需明確定位在「形上學與神學思考的交界」,且鼓勵跨文化/跨傳統比較框架而非單一傳統的內部論述;特刊常圍繞特定思想家或跨文化主題徵稿。",
+    "methods_welcome": [
+     "分析哲學進路的宗教哲學論證",
+     "歐陸/現象學進路(如 Ricoeur 詮釋學)",
+     "非西方傳統比較研究(印度、亞洲、原住民宗教哲學)",
+     "女性主義與後殖民宗教哲學",
+     "跨學科進路:結合自然科學/社會科學與倫理公共議題的宗教哲學討論"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/11841/aims-and-scope",
+     "https://link.springer.com/journal/11841/volumes-and-issues"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "首次回覆(response time)平均 6.6 個月;錄取後到出版(publication time)平均 2.5 個月(N=12 份調查回報,APA Journal Survey Project,無法確定各回報年份分布,可能含較舊資料)",
+    "desk_reject_pct": null,
+    "acceptance_note": "APA Journal Survey Project 統計錄取率 66.67%(N=12),平均審稿人數 2.3 人/稿。另,SciRev 平台上該刊「尚無任何審稿人提交評論」(0 reviews),故無法交叉驗證此錄取率與審稿時間數字。",
+    "reviewer_culture": null,
+    "signal_quality": 3,
+    "sources": [
+     "https://apasurvey.philx.org/?direction=desc&order=acceptance_rate",
+     "https://scirev.org/journal/sophia/",
+     "https://philosopherscocoon.com/2025/12/11/grappling-with-the-shortage-of-highly-regarded-philosophy-of-religion-journals/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該刊頁面顯示 0 reviews,無資料;APA 調查未拆分 desk-reject 比例(僅給整體錄取率與回覆時間);中文論壇(小木虫/知乎)與 Reddit r/AskAcademia 搜尋均無此刊相關第一手貼文(哲學宗教研究小眾期刊,非中文學界常見投稿目標)。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何論壇/社群第一手描述審稿人風格或文化;僅一則 Philosophers' Cocoon 部落格留言將 Sophia 列為「次於三大頂尖宗教哲學期刊」之列,屬名聲排序而非審稿文化描述,不足以支撐具體敘述,故留空。"
+    },
+    {
+     "field": "preprint.source_url (journal-specific)",
+     "why": "Sophia 投稿頁本身未含獨立 preprint 段落,僅能引用 Springer Nature 集團 2019 年統一政策頁面,非本刊專屬確認。"
+    },
+    {
+     "field": "ai_policy (journal-specific nuance)",
+     "why": "AI 政策文字出現在 Sophia 投稿頁,但與其他 Springer Nature 期刊完全相同的集團標準模板,未見任何 Sophia 編輯部加註的特殊限制或放寬,故無法斷定是否有刊物層級的額外裁量。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋「Sophia 期刊 投稿 審稿」無對應此刊之第一手討論(該論壇以理工科 SCI 投稿為主,哲學宗教類小眾期刊幾乎不見蹤跡) — 0 results",
+    "知乎 zhihu.com — 搜尋未見針對 Sophia(0038-1527)本刊的具體討論串,僅有泛用投稿指南文章 — 0 relevant results",
+    "Reddit r/AskAcademia / general reddit search — site:reddit.com 搜尋 Sophia + philosophy + religion 無結果 — 0 results",
+    "SciRev scirev.org/journal/sophia — 頁面存在但「No reviews have yet been submitted for this journal」,所有量化欄位(審稿時長、拒稿率)均為 n/a — 0 first-hand reviews",
+    "Philosophers' Cocoon (英文哲學社群部落格,非官方指定來源但屬相關領域論壇) — 一則留言提及 Sophia 排名層級,無審稿細節 — 1 tangential mention",
+    "APA Journal Survey Project (philx.org) — 找到 N=12 份第一手作者調查回報,含錄取率/回覆時間/出版時間數據 — usable data found"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0190-0013",
+   "name": "Philosophy and Literature",
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "summary": "無法找到 Philosophy and Literature 期刊層級專屬 AI 政策頁面(WebFetch 被 press.jhu.edu 擋 403,僅能透過搜尋引擎摘要取得)。但出版社 Johns Hopkins University Press 有一份 2023 年發布、適用其旗下期刊的通用《Generative AI Policy for Authors》:AI/LLM 工具不得列為作者;不接受「實質上由 AI/LLM 撰寫」的稿件;作者須揭露使用 AI/LLM 的情形;作者對全文內容負完全責任。這是條件式允許(可用於潤色/輔助,但須揭露,不可實質代寫),對應 leniency 3。因無法確認此政策是否有 Philosophy and Literature 期刊專屬的加註或例外,證據強度中等。",
+    "source_url": "https://www.press.jhu.edu/sites/default/files/media/2023/07/Generative%20AI%20for%20Authors_final_0.pdf",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "編輯主導式審查(非傳統雙盲外審)——依期刊 Hopkins Press 頁面文字:所有投稿先由主編初閱,部分在此階段即退回;較多數進入第二階段由主編做更細緻審查,通常(但非必然)會諮詢編輯委員會成員或其他專家意見,最終由主編定奪。未見「double-blind」或正式外部審稿人制度的明確宣告。",
+    "source_url": "https://www.press.jhu.edu/journals/philosophy-and-literature"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "以英美分析/歐陸哲學與文學交會為主的傳統論文:文學文本的哲學詮釋(莎士比亞、梅爾維爾、喬伊斯、普魯斯特等)、美學理論、心靈/知識論議題與文學認知、詩與哲學交錯的創作(Notes and Fragments、In Focus 專欄)、書評。2025 年兩期(Vol.49 No.1 April, No.2 October)實際刊出篇目涵蓋:尼采《查拉圖斯特拉》悲劇性、梅爾維爾《書記員巴托比》與《騙子》的懷疑論、莎劇(Much Ado About Nothing, Macbeth)政治哲學與虛無主義、T.S. 艾略特/喬伊斯/亨利·詹姆斯的知識論式文學分析、翻譯與跨語言書寫(Steven Kellman)、閱讀虛構作品的知識論風險等。",
+    "methods_welcome": [
+     "文學文本的哲學詮釋(close reading + 概念分析)",
+     "美學與批評理論",
+     "作者研究(單一經典作家的哲學面向,如 Melville, Joyce, Shakespeare, Nietzsche)",
+     "知識論/心靈哲學與文學認知交叉研究",
+     "哲學性詩作與創作(Notes and Fragments 專欄)",
+     "書評/評論文章(Reviews)"
+    ],
+    "framing_required": "強調『概念清晰、人文深度、呈現優雅』(conceptual clarity, humane depth, elegance of presentation);評選標準明言排除機構聲望、學術頭銜、政治/社會/宗教身分等外部考量,僅看論文本身的智識深度與寫作品質。格式須依最新版 Chicago Manual of Style,使用endnotes而非footnotes,不用Works Cited清單,建議附100字以內摘要。2024/10/15–2025/8/31 期間曾暫停徵稿(已於2025/9/1恢復),以消化累積稿件、縮短接受到出版的時間。",
+    "signal_quality": 4,
+    "sources": [
+     "https://www.press.jhu.edu/journals/philosophy-and-literature",
+     "https://muse.jhu.edu/issue/56317",
+     "https://muse.jhu.edu/issue/55068/print"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "2024/10/15 至 2025/8/31 曾實施投稿暫停(moratorium),官方說法是為了消化已接受但未出版的稿件、將接受到出版的等候時間縮回一年以內——側面顯示稿件累積量大、出版排隊時間曾超過一年。此為出版社官方聲明,非第一手投稿者經驗。",
+    "reviewer_culture": null,
+    "sources": [
+     "https://www.press.jhu.edu/journals/philosophy-and-literature (SciRev fetch confirmed 0 reviews)"
+    ],
+    "signal_quality": 1
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate / leniency",
+     "why": "找不到 Philosophy and Literature 期刊層級專屬 AI 政策頁面(press.jhu.edu 對 WebFetch 回傳 403,只能靠搜尋引擎摘要間接取得出版社通用政策文字,非直接讀取原文核實);目前引用的是 Johns Hopkins University Press 出版社層級 2023 通用政策,不確定是否有本刊專屬加註。"
+    },
+    {
+     "field": "peer_review.type",
+     "why": "期刊網頁文字描述的是主編主導、視情況諮詢編委的審查流程,未見『peer review』『double-blind』等正式字眼的明確宣告,故標記為『編輯主導式審查』而非標準雙盲外審,但無法100%確認是否另有未公開的外部審稿人制度。"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "搜尋未能找到本刊或 Hopkins Press 對 Philosophy and Literature 的預印本(preprint)政策說明,無第一手來源,故留白。"
+    },
+    {
+     "field": "experiential.review_time_months / desk_reject_pct / reviewer_culture",
+     "why": "SciRev.org 該刊頁面明確顯示『尚無使用者提交評論』(0 reviews, review duration/desk reject/quality rating 均為 n/a)。Reddit r/AskAcademia 搜尋未找到任何提及本刊的討論。小木虫、知乎、fabiaoji 等中文學術社群搜尋亦無任何提及本刊的第一手投稿經驗(此刊屬純英美人文哲學/文學期刊,非中文學界常見投稿目標,查證顯示 0 筆相關結果而非查證失敗)。故此三欄位誠實留白。"
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫) — 站內搜尋「Philosophy and Literature」無相關討論結果",
+    "zhihu.com (知乎) — 搜尋「Philosophy and Literature 期刊 投稿」未見任何專門討論本刊的文章或問答,僅有泛用投稿平台/CSSCI核心期刊列表等不相關內容",
+    "fabiaoji — 搜尋未直接命中本刊頁面或討論",
+    "Reddit r/AskAcademia — 搜尋「philosophy and literature journal review time」無相關討論串",
+    "SciRev.org — 本刊頁面存在但顯示 0 reviews,duration/desk-reject/quality 均為 n/a(已直接 WebFetch 確認)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0003-6390",
+   "name": "Apeiron: A Journal for Ancient Philosophy and Science",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence",
+    "summary": "此為 De Gruyter Brill 出版社統一政策(非 Apeiron 期刊專屬頁面,Apeiron 官方頁未見獨立 AI 政策):不接受由生成式AI/機器學習工具主要生成的稿件(AI 不能作為作者、不能承擔責任);嚴禁使用生成式AI創建或操縱圖片、圖表或研究數據;若AI工具用於研究方法/設計,須在致謝(acknowledgements)章節揭露;同行評審責任完全歸屬人類審稿人,不得使用AI執行審稿判斷。因未見Apeiron專屬加嚴或放寬條款,評為leniency 2(出版社統一保守政策,非期刊客製),permission gate標為conditional(揭露即可用於輔助流程,但完全依賴生成內容被禁)。"
+   },
+   "peer_review": {
+    "type": "double-blind",
+    "source_url": "https://www.degruyterbrill.com/journal/key/apeiron/html"
+   },
+   "preprint": {
+    "allowed": "允許:投稿版本(submitted preprint)可隨時自行典藏(self-archive);接受版本(accepted peer-reviewed version)須經過禁運期(embargo)後方可自行典藏。屬 Apeiron/De Gruyter 期刊層級的 Repository Policy,非泛用出版社頁面。",
+    "source_url": "https://www.degruyter.com/publishing/services/rights-and-permissions/repository-policy-for-journal-publications"
+   },
+   "positioning": {
+    "accepts_now": "古希臘羅馬哲學與科學(至西元七世紀左右古典時期結束)之高品質研究論文;亦歡迎探討古代哲學與科學思想在後世西方傳統中「接受史(reception)」的稿件。季刊,雙盲審。稿件上限 15,000 字,超過 12,000 字者審稿時間傾向拉長。投稿須匿名化(不得含可識別作者身分之內部引用/致謝)。",
+    "framing_required": "須做匿名化處理以符合雙盲審查(移除可識別作者身分的引註與致謝,改用如「[reference omitted for blind review]」等佔位);投稿時須聲明未同時在他處編輯審查中。",
+    "methods_welcome": [
+     "古希臘羅馬哲學文本詮釋與考據",
+     "古代科學史(天文、醫學、自然哲學等)研究",
+     "古代哲學/科學思想在西方後世傳統中的接受史(reception studies)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.degruyterbrill.com/journal/key/apeiron/html",
+     "https://www.degruyterbrill.com/publication/journal_key/APEIRON/downloadAsset/APEIRON_APEIRON_Style_Sheet.pdf"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "存在矛盾但均為第一手來源的資料:(a) 舊調查(APA Journal Surveys,Endoxa 2018 部落格引用):20筆回報平均決審時間8.5個月,其中6筆超過一年;(b) 期刊副主編Luis Salas於2020年提供的內部統計(Endoxa 2020更新):約75%(345/約460)稿件在3個月內獲得決審,約40筆需6個月以上,平均約3個月。兩者時間點不同(2018 vs 2020),可能反映期刊編輯團隊更替後流程改善。SciRev該刊頁面目前0筆讀者評論,無法交叉驗證。",
+    "desk_reject_pct": null,
+    "acceptance_note": "Endoxa 部落格作者本人經驗:投稿後約2-3個月內獲回覆,審稿意見優良,修改後獲接受(單一個案,非統計)。",
+    "reviewer_culture": "學者Diego Machuca於Endoxa部落格留言指出:Apeiron「回覆速度尚可,但審稿報告品質不穩定,有時很好、有時極差(sometimes very good and sometimes extremely poor)」。此為古代哲學圈內學者具名第一手評論,非匿名論壇貼文。",
+    "signal_quality": 3,
+    "sources": [
+     "https://endoxa.blog/2018/12/20/best-and-worst-ancient-philosophy-journal-experiences/",
+     "https://endoxa.blog/2020/06/22/ancient-philosophy-journal-experiences-and-time-frames-june-2020-update/",
+     "https://scirev.org/journal/apeiron/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (期刊專屬版本)",
+     "why": "Apeiron官方期刊頁面未見獨立於De Gruyter Brill集團政策之外的專屬AI政策文字,只能引用出版社統一頁面,無法確認該刊編輯部是否有加嚴或放寬的實務做法。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無任何公開來源(SciRev 0筆評論、Endoxa部落格、學術論壇)提供Apeiron的具體退稿率或桌拒比例數字,僅有籠統的『2個月內可能無附評語桌拒』之投稿須知敘述,非統計數字,故留白。"
+    },
+    {
+     "field": "cross_language(小木蟲/知乎/fabiaoji)",
+     "why": "此為冷門的西方古典學/哲學史期刊,中文學術論壇與問答社群幾乎沒有針對此刊的投稿討論,搜尋僅命中詞源『apeiron(無定)』的哲學概念科普文,與期刊投稿經驗無關。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木蟲 muchong.com: 0 results — 搜尋『Apeiron 期刊 投稿』未命中任何該刊專屬討論串,僅命中論壇通用頁面",
+    "知乎 zhihu.com: 0 results — 搜尋結果全為『無定(apeiron)』哲學概念科普文章,非期刊投稿經驗",
+    "fabiaoji: 0 results — 未搜尋到任何相關頁面(該平台主要服務中文核心期刊圈,此冷門西方古典學刊未見收錄)",
+    "Reddit r/AskAcademia: 0 direct results — 搜尋未命中Reddit討論串,改為命中英文學術部落格Endoxa(非Reddit但屬古代哲學學者社群第一手分享,已採用)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": null,
+    "gate": null,
+    "signal_quality": 1,
+    "summary": "No NDPR-specific or University of Notre Dame Press AI-use policy for reviewers/reviews could be located on ndpr.nd.edu (About, Editorial Board, For Reviewers pages) or via search. Only general Notre Dame *university/student honor-code* AI policies exist (honorcode.nd.edu, ai.nd.edu), which are unrelated to journal editorial policy and were NOT used to infer a journal-level stance.",
+    "source_url": "https://ndpr.nd.edu/for-reviewers/"
+   },
+   "peer_review": {
+    "type": "Editorial-board vetting of invited/commissioned book reviews (not conventional peer review of research manuscripts). Since April 2024, unsolicited *proposals* to review a book are accepted and vetted by the Editorial Board; if approved, the proposer is then invited to submit the review. NDPR does not accept unsolicited full reviews.",
+    "source_url": "https://ndpr.nd.edu/editorial-board/"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Scholarly book reviews (1500-2000 words) of newly released academic philosophy books/anthologies (not reprints unless substantially revised). Recent (as of 2026-07-13) homepage reviews span metaphysics/social ontology, phenomenology, history of philosophy (Franciscan thought, Plotinus, Herder), Kantian ethics, political philosophy (legitimacy, nonideal theory), and philosophy of science.",
+    "framing_required": "Review must open with 1-2 paragraphs characterizing the book for a browsing reader, then offer substantive evaluation of key aspects (not mere summary); negative evaluations must include reasons.",
+    "methods_welcome": [
+     "Invited/commissioned critical book review",
+     "Reviewer-proposed review (post-2024 policy) subject to Editorial Board approval"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://ndpr.nd.edu/for-reviewers/",
+     "https://ndpr.nd.edu/editorial-board/",
+     "https://ndpr.nd.edu/",
+     "https://dailynous.com/2024/04/08/ndpr-now-welcomes-book-review-proposals/",
+     "https://leiterreports.typepad.com/blog/2024/04/new-reviews-policy-at-notre-dame-philosophical-reviews.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "Formal rule found: reviewer has up to 3 months after receiving the book to submit the review (deadline for writing, not an editorial review-time/acceptance metric). No revisions permitted after submission.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://ndpr.nd.edu/for-reviewers/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 and gate",
+     "why": "No journal- or publisher-specific generative-AI policy page exists for NDPR; it is a book-review outlet with no manuscript-submission AI disclosure workflow found. Only unrelated Notre Dame student/honor-code AI policies exist, which were correctly excluded as not applicable to journal editorial policy."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Not applicable/not addressed: NDPR publishes solicited book reviews, not original research articles, so no preprint-deposit policy was found or appears relevant."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no listing for Notre Dame Philosophical Reviews (page not found), and no submission-to-decision timeline exists because NDPR does not process manuscript submissions in the conventional sense — only the 3-month reviewer writing deadline is documented."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public data: SciRev not listed for this journal; no forum discussion found on Reddit r/AskAcademia, 小木虫/muchong, 知乎, or fabiaoji specifically about NDPR proposal acceptance/rejection rates."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum or community account of NDPR's editorial/reviewer culture was found in any language searched."
+    }
+   ],
+   "cross_language_checked": [
+    "Reddit r/AskAcademia / r/askphilosophy — 0 relevant results for \"Notre Dame Philosophical Reviews\"",
+    "知乎 (zhihu.com) — 0 relevant results specific to NDPR (only generic philosophy/forum discussion unrelated to this journal)",
+    "小木虫 muchong.com — 0 relevant results (search did not surface any muchong threads mentioning NDPR)",
+    "fabiaoji — not searched directly (no results surfaced via general query; site appears to focus on STEM/social-science journals, not philosophy book-review venues; treated as 0 results)",
+    "SciRev.org — journal page for Notre Dame Philosophical Reviews returns 404 / not listed, i.e. 0 reviews on file"
+   ],
+   "issn": "1538-1617",
+   "name": "Notre Dame Philosophical Reviews",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1879-4912",
+   "name": "European Journal for Philosophy of Science",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.springernature.com/gp/policies/editorial-policies",
+    "summary": "無此期刊專屬 AI 政策頁；適用 Springer Nature 集團通用政策：AI/LLM 不得列為作者（no authorship attribution to AI），生成式 AI 影像不得用於出版品。政策未明文要求「事前許可」，而是採用「使用後於 Methods 或適當章節揭露」的事後揭露模式（單純文字潤飾/copy-editing 可免揭露）。因未找到 EJPS（journal 13194）自身的 AI 政策頁（Springer 提交指南頁需登入跳轉，WebFetch 被導向 idp.springer.com 登入頁，無法直接讀取期刊專屬條款），故 leniency 以集團預設政策估計，非期刊實測值。"
+   },
+   "peer_review": {
+    "type": "雙盲（double-blind）— 依中文 SCI 投稿經驗彙整站 fabiao.com/gwyoo.com 描述；未能以 Springer 官方提交指南頁原文（登入牆阻擋）交叉確認，可信度中等",
+    "source_url": "https://www.gwyoo.com/sci/773892.html"
+   },
+   "preprint": {
+    "allowed": "未在期刊專屬頁面確認；Springer Nature 集團層級政策為「鼓勵於 preprint 伺服器發表」的統一政策（unified policy encouraging preprint posting）。哲學科學領域慣例上 PhilSci-Archive 為常見預印本平台，EJPS 論文常見於 PhilSci-Archive 索引，但未找到 EJPS 官方明文允許/限制條款",
+    "source_url": "https://www.springernature.com/gp/policies/editorial-policies"
+   },
+   "positioning": {
+    "accepts_now": "科學哲學各領域之一流研究（\"first-rate research in all areas of philosophy of science\"），並收錄 EPSA（European Philosophy of Science Association，歐洲科學哲學學會）雙年會精選論文",
+    "framing_required": null,
+    "methods_welcome": [
+     "科學哲學一般理論性論文（無法從公開來源確認具體方法論偏好或近期特刊主題，未找到 2024-2026 具體文章標題清單或現行 CFP）"
+    ],
+    "signal_quality": 1,
+    "sources": [
+     "https://philsci.eu/EJPS",
+     "https://link.springer.com/journal/13194"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "僅有中文 SCI 投稿代寫/彙整站（fabiao.com、gwyoo.com）聲稱雙盲審查，非期刊官方頁面原文確認（Springer submission-guidelines 頁被登入牆阻擋，WebFetch 收到 303 導向 idp.springer.com 登入頁未能繞過）；建議視為中信度而非高信度"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "找不到 EJPS 或 Springer 13194 期刊頁的具體預印本條款文字，只有集團層級『鼓勵預印本』的通則"
+    },
+    {
+     "field": "ai_policy.leniency_1_5",
+     "why": "沒有 EJPS 專屬 AI 政策頁，只能套用 Springer Nature 集團通用政策，非期刊實測"
+    },
+    {
+     "field": "positioning.methods_welcome / accepts_now 細節",
+     "why": "未取得 2024-2026 近期文章標題清單或現行特刊 CFP；WebSearch 對『special issue call for papers 2026』查詢無相關結果，Springer 期刊首頁因登入牆無法讀取近期目錄"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 上僅有『Philosophy of Science』（Cambridge/PSA 出版的另一本同名近似期刊）條目，3.5 個月/2.3 份審稿意見，但這不是 European Journal for Philosophy of Science（ISSN 1879-4912）本刊，故不可混用；本刊在 SciRev 無獨立條目（0 reviews）"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無任何公開來源（SciRev、小木虫、知乎、Reddit r/AskAcademia）找到本刊具體退稿率數字"
+    },
+    {
+     "field": "experiential.acceptance_note / reviewer_culture",
+     "why": "小木虫（muchong.com）site-search 無結果；知乎搜尋無相關討論；Reddit 搜尋未命中本刊專屬討論串；唯一相關中文彙整站片段為殘缺句『一般投稿過審時間都較長，投稿過審時間平均-』（數字缺失/斷尾），視為雜訊不予採用"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/philosophy-of-science) — 有條目但屬於另一本同名期刊（Cambridge/PSA 出版的 Philosophy of Science），非本刊，不可用；本刊本身 0 reviews / 無獨立條目",
+    "小木虫 muchong.com — WebSearch site:muchong.com 對『Philosophy of Science 投稿』查詢 0 相關結果",
+    "知乎 zhihu — 查詢『philosophy of science 期刊 AI 揭露』0 相關結果",
+    "fabiao.com / gwyoo.com（中文 SCI 投稿經驗彙整站）— 有頁面但內容多為模板化描述（相似度、參考文獻篇數等通用規則），審稿速度頁的關鍵數字缺失/斷尾，僅『雙盲審查』一句可用，信度中等",
+    "Reddit r/AskAcademia — WebSearch 未命中任何提及本刊的討論串"
+   ],
+   "overall_signal_quality": 1,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0031-8213",
+   "name": "Philosophy and Rhetoric",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.pennpress.org/about/for-authors/policy-on-the-use-of-artificial-intelligence/",
+    "summary": "No journal-specific AI policy page found for Philosophy and Rhetoric or its actual publisher Penn State University Press / Scholarly Publishing Collective (scholarlypublishingcollective.org/psup/p-n-r/about returned HTTP 403, could not be verified). The only concrete publisher-level generative-AI policy found via search belongs to a DIFFERENT press with a similarly named brand — University of Pennsylvania Press (pennpress.org) — not Penn State University Press which actually publishes this journal — so it is reported only as an analogous industry data point, NOT as this journal's verified policy. That Penn Press policy: authors must disclose transformative generative-AI use and get editor sign-off before it is deemed acceptable; no publication accepts AI-generated work outright. Leniency and gate here are low-confidence estimates by loose analogy only."
+   },
+   "peer_review": {
+    "type": "Peer-reviewed; author-anonymized submission required (all self-identifying material must be stripped), consistent with double-blind review, though the publisher page does not explicitly use the label 'double-blind'.",
+    "source_url": "https://www.psupress.org/Journals/SubmissionGuidelines/PhilosophyRhetoric.pdf"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": "https://www.psupress.org/journals/jnls_pr.html"
+   },
+   "positioning": {
+    "accepts_now": "Continental philosophy, rhetorical theory, argumentation/informal logic, political theory, and critical social theory with a strong philosophical emphasis on rhetoric. Vol. 58 No. 1 (2025) issue (themed around Hannah Arendt / speech and democratic persuasion) included articles such as 'The Problem of Democratic Persuasion,' 'The Preconditions for Judgment: Constitutions and Institutions in the Work of Hannah Arendt,' 'Normative Pluralism and the Other,' 'Speaking with Each Other: A Beauvoirian Model,' and 'Outsiders, Liars, Scamsters: Hannah Arendt on \"Schwindel\" and Free Speech,' plus a book-review section.",
+    "framing_required": "Work should engage the philosophy-rhetoric intersection (argumentation theory, philosophy of rhetoric, political/legal theory with a rhetorical dimension) rather than purely empirical communication studies; recent issues lean toward continental philosophy (Arendt, Beauvoir) and normative/political theory.",
+    "methods_welcome": [
+     "conceptual/theoretical philosophical argument",
+     "historical-textual analysis of philosophical/rhetorical figures",
+     "argumentation theory / informal logic analysis",
+     "critical social and political theory",
+     "book review essays"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://muse.jhu.edu/issue/55685 (Vol 58 No 1, 2025 table of contents)",
+     "https://www.psupress.org/journals/jnls_pr.html (aims and scope, editor Omedi Ochieng)",
+     "https://en.wikipedia.org/wiki/Philosophy_%26_Rhetoric"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/philosophy-and-rhetoric/ (page exists but explicitly states 'No reviews have yet been submitted for this journal' — all metrics n/a)"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — targeted search for 'Philosophy and Rhetoric' returned no journal-specific threads; only generic forum/section pages surfaced (0 direct results)",
+    "fabiaoji.com/发表记 — targeted search returned no results referencing this journal specifically (0 results)",
+    "知乎 zhihu.com — no thread or answer specifically discussing Philosophy and Rhetoric found; only generic journal-ranking discussion pages surfaced (0 direct results)",
+    "Reddit r/AskAcademia — targeted search returned zero results for this journal's review process or desk-reject experience (0 results)"
+   ],
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 / gate / summary",
+     "why": "No AI-use policy page could be located for Philosophy and Rhetoric or its actual publisher Penn State University Press / Scholarly Publishing Collective; the scholarlypublishingcollective.org about page returned HTTP 403 and could not be checked. The only policy text found (pennpress.org) belongs to University of Pennsylvania Press, a distinct entity, so the leniency score is a low-confidence analogy, not a verified journal-specific fact."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No explicit preprint policy statement found on psupress.org or in the submission-guidelines PDF; only that the journal will not consider manuscripts under review elsewhere or previously published, which does not directly address preprint servers."
+    },
+    {
+     "field": "peer_review.type exact label",
+     "why": "Publisher page does not use the words 'double-blind'; inferred only from the instruction to strip self-identifying material from submissions."
+    },
+    {
+     "field": "experiential.review_time_months, desk_reject_pct, acceptance_note, reviewer_culture",
+     "why": "SciRev has a page for this journal but zero submitted reviews (explicitly 'no reviews have yet been submitted'); APA Journal Survey Project list did not include this journal; no Reddit, Zhihu, muchong, or fabiaoji discussion found. No first-hand public data exists as of 2026-07-13."
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0094-5323",
+   "name": "Augustinian Studies",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": null
+   },
+   "peer_review": {
+    "type": "Peer-reviewed (described generically as \"peer-reviewed scholarly journal\" on publisher pages); no detail found on single/double-blind or number of reviewers",
+    "source_url": "https://www.pdcnet.org/augstudies/Augustinian-Studies"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Journal of the Augustinian Institute (Villanova University), published by Philosophy Documentation Center, ISSN 0094-5323 (print) / 2153-7917 (online), semi-annual. Primary focus is Augustine of Hippo studied from theological, philosophical, and historical perspectives; also accepts studies of figures, groups, or issues from Augustine's era when they illuminate his life or thought. Also publishes the annual Saint Augustine Lecture (Villanova, each fall) and article-length book reviews.",
+    "framing_required": "Submissions should be framed around Augustine himself or explicitly connect to Augustinian thought/reception, per stated scope (\"while the primary focus... is Augustine himself, articles illuminating aspects of Augustinian studies more broadly conceived are also included when they contribute to the understanding of Augustine's life or thought\").",
+    "methods_welcome": [
+     "historical-theological analysis",
+     "philosophical/textual analysis of Augustine's writings",
+     "history (patristic/late antique)",
+     "classics",
+     "reception history",
+     "article-length critical book reviews"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.pdcnet.org/augstudies/Augustinian-Studies (publisher scope page, direct fetch blocked HTTP 403, content surfaced via WebSearch snippet)",
+     "https://www.pdcnet.org/augstudies/Submission-Guidelines (word count 4,000-8,000 incl. footnotes; publisher page, direct fetch blocked HTTP 403, surfaced via WebSearch snippet)",
+     "https://en.wikipedia.org/wiki/Augustinian_Studies"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/augustinian-studies/ — page exists but shows zero submitted reviews (\"n/a\" for review time, desk-reject %, acceptance rate)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (leniency, gate, summary, source_url)",
+     "why": "No journal-specific or Philosophy Documentation Center (PDC) publisher-wide generative-AI/authorship policy page was locatable via search; pdcnet.org's own Submission Guidelines and journal pages returned HTTP 403 to direct fetch and no cached/indexed text mentioning AI use was found. Left null rather than assuming a generic humanities-publisher default."
+    },
+    {
+     "field": "preprint.allowed / preprint.source_url",
+     "why": "No preprint policy statement found for Augustinian Studies or PDC generally in any searchable page; PDC's own pages blocked direct fetch (403) and no secondary source quoted a preprint clause."
+    },
+    {
+     "field": "peer_review.type (blind type / reviewer count)",
+     "why": "Only the generic descriptor \"peer-reviewed scholarly journal\" was found; no page specifying single-blind, double-blind, or number of reviewers was located."
+    },
+    {
+     "field": "experiential.review_time_months, desk_reject_pct, acceptance_note, reviewer_culture",
+     "why": "SciRev page for this journal exists but has zero submitted reviews (explicitly \"n/a\" across all metrics). No discussion threads found on muchong.com, 知乎, fabiaoji-style sites, or Reddit r/AskAcademia mentioning this journal by name — searches returned zero relevant hits, only generic journal-directory/metadata pages (Wikipedia, SCImago, Resurchify, ScholarNine, etc.). Consistent with a small niche patristics/theology journal with negligible online first-hand author discussion; leaving these fields null rather than inferring generic small-journal norms."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched \"muchong.com \\\"Augustinian Studies\\\"\": 0 relevant results (only generic journal-metadata pages surfaced, none from muchong.com itself)",
+    "知乎 zhihu — searched \"知乎 \\\"Augustinian Studies\\\" 期刊\": 0 relevant results (only generic journal-metadata pages, no zhihu.com hits)",
+    "fabiaoji — not queried as a separate distinct search; no results surfaced in broader Chinese-language searches (folded into muchong/zhihu queries which returned nothing journal-specific)",
+    "Reddit r/AskAcademia — searched \"reddit AskAcademia \\\"Augustinian Studies\\\" journal\": 0 results from reddit.com",
+    "SciRev (query-time facts source, mandated) — page exists (scirev.org/journal/augustinian-studies/) but shows 0 submitted reviews, all metrics \"n/a\""
+   ],
+   "overall_signal_quality": 1,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "no",
+    "summary": "Springer Nature 出版社統一政策(套用於本刊 Submission Guidelines 頁面):LLM 不得列為作者(無法承擔責任);使用 LLM 需在 Methods 或適當章節揭露;唯獨「AI 輔助潤稿」(改善可讀性/文法/拼字/語氣,不含生成性編輯或自主內容創作)豁免揭露義務。無需事先申請許可(non-gated,揭露制而非許可制)。未見 Philosophical Studies 期刊層級的加嚴或放寬客製條款,即與 Springer 集團政策相同。",
+    "source_url": "https://link.springer.com/journal/11098/submission-guidelines",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Double-blind (雙盲審):作者需將姓名與單位另置獨立頁面,審稿人身分同樣對作者匿名。",
+    "source_url": "https://link.springer.com/journal/11098/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許。依 Springer Nature 通用政策,投稿前後皆可張貼 preprint,不視為重複發表;但需在投稿時或審稿期間揭露 preprint 之 DOI 與授權條款。",
+    "source_url": "https://support.springer.com/en/support/solutions/articles/6000258807-preprints"
+   },
+   "positioning": {
+    "accepts_now": "以分析哲學(analytic tradition)核心議題為主:知識論(Epistemology)、心靈哲學(Philosophy of mind)、語言哲學(Philosophy of language)、形上學(Metaphysics)與論證理論(Argument)。",
+    "methods_welcome": [
+     "傳統分析哲學論證/概念分析",
+     "應用形式技巧(formal techniques)處理哲學問題的論文",
+     "實驗哲學方法(experimental methods),尤其在語言哲學/指稱研究領域漸受歡迎"
+    ],
+    "framing_required": "強調清晰精確(clarity and precision)處理具重要性的哲學議題;需嚴格分析論證寫法,非泛論式或純歷史詮釋取向。",
+    "sources": [
+     "https://link.springer.com/journal/11098/aims-and-scope (經 WebSearch 摘要,原頁面需 Springer 登入才能直接 WebFetch)",
+     "https://en.wikipedia.org/wiki/Philosophical_Studies"
+    ],
+    "signal_quality": 2
+   },
+   "experiential": {
+    "review_time_months": "首輪決定平均約 4.2 個月(APA Journal Survey Project,n=748 筆投稿回報,2026-07 查詢);另一資料源 SciRev(僅 5 筆評論,樣本小)顯示首輪 18.7 週(≈4.3 個月)、整體流程 4.6 個月,與 APA 數據互相印證。",
+    "desk_reject_pct": null,
+    "acceptance_note": "APA Journal Survey Project 回報整體接受率 20.32%(n=748,含各階段結果,非純初審通過率)。",
+    "reviewer_culture": "Philosophers' Cocoon 部落格(2025-05)有兩則匿名留言:一位稱「過去一年 Phil Studies 和 Australasian 這類原本很快的期刊變慢很多」;另一位(2025-05-13)稱「最近在 Philosophical Studies 有不好的經驗,身邊的人也這樣說」。屬少量匿名軼事,非系統性資料,僅供參考不宜過度推論。",
+    "sources": [
+     "https://apasurvey.philx.org/?direction=desc&order=average_response_time",
+     "https://scirev.org/journal/philosophical-studies/",
+     "https://philosopherscocoon.com/2025/05/09/journals-with-quick-turnaround-times/"
+    ],
+    "signal_quality": 4
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 precision / journal-specific gate",
+     "why": "查無 Philosophical Studies 期刊層級獨立 AI 政策頁面,僅有套用 Springer Nature 集團統一政策的 Submission Guidelines,故 leniency 評分帶有推論成分(signal_quality 已降為 2)。"
+    },
+    {
+     "field": "positioning.accepts_now (近期 CFP / 特刊)",
+     "why": "link.springer.com/journal/11098/collections 頁面需要 Springer 登入才能被 WebFetch 讀取(重導向至 idp.springer.com 認證頁),WebSearch 亦未找到 2024-2026 特刊 CFP 的具體資訊,故無法確認是否有近期 special issue。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev(僅5筆評論)與 APA Survey 皆未拆分「桌拒(desk reject)」與「送外審後拒絕」的個別比例或天數,僅有整體接受率與整體回應時間,故此欄位留白。"
+    },
+    {
+     "field": "cross_language_checked (小木虫/fabiaoji/知乎)",
+     "why": "此三個中文平台以理工科/醫學投稿經驗為主,搜尋「Philosophical Studies」+各平台關鍵字無直接命中結果(英美分析哲學期刊在中文學術論壇討論度極低),誠實記錄為 0 results 而非留白揣測。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋「Philosophical Studies」相關投稿經驗,0 個直接命中結果(平台以理工/醫學科為主流社群)",
+    "知乎 zhihu.com — 搜尋「Philosophical Studies 投稿」,0 個直接命中結果,僅泛論學術期刊評價網站的通用文章",
+    "fabiaoji 發表記 — 搜尋未見獨立頁面或具體討論,0 個命中結果",
+    "Reddit r/AskAcademia — WebSearch 查詢「Philosophical Studies journal review experience」回傳 0 個結果",
+    "Philosophers' Cocoon(英文哲學圈部落格,替代英文論壇來源)— 命中 2 則 2025 年匿名留言,提及審稿變慢與負面經驗"
+   ],
+   "issn": "0554-0739",
+   "name": "Philosophical Studies",
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1071-6076",
+   "name": "Philosophy, Psychiatry, & Psychology (PPP)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.press.jhu.edu/sites/default/files/media/2023/07/Generative%20AI%20for%20Authors_final_0.pdf",
+    "summary": "This is the publisher-wide (Johns Hopkins University Press) generative AI policy applying to all JHU Press journals including PPP; no PPP-specific AI policy page was found. Direct fetch of the PDF returned HTTP 403, so facts are drawn from WebSearch snippet summaries of the PDF, not a first-hand read of the PDF itself: AI/LLM tools do not qualify as authors and cannot be credited as such; Press will not accept work 'substantially written' by AI/LLM; authors must disclose AI/LLM use via a general statement at the start of the article; author bears full responsibility/liability for AI-assisted content. Reads as moderate/conditional allowance (assistive use permitted with mandatory disclosure, not a full ban, not unrestricted)."
+   },
+   "peer_review": {
+    "type": "Double-anonymous (blinded) peer review, editorial pre-screening, typically 2 reviewers (editors may seek more)",
+    "source_url": "https://www.press.jhu.edu/journals/philosophy-psychiatry-psychology"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "2024-2026 issues show phenomenological/philosophical psychopathology, axiological/value-based models of depression, conceptual analysis of psychiatric diagnosis/reification, philosophy of eating disorders, and a distinct recent cluster on psychedelics (metaphysics of self, transformative experience, informed consent in psychedelic-assisted therapy).",
+    "framing_required": "Interdisciplinary philosophy-and-mental-health framing required; pieces should engage clinical/psychiatric material philosophically (conceptual, phenomenological, or ethical analysis), not pure empirical psychiatry or pure analytic philosophy detached from clinical relevance. Feature articles submitted via ScholarOne; commentaries/reviews/Key Concepts pieces are normally editor-commissioned rather than open submissions.",
+    "methods_welcome": [
+     "conceptual/philosophical analysis",
+     "phenomenological description and analysis",
+     "case-based philosophical/clinical commentary",
+     "cross-disciplinary commentary/debate format (target article + commentaries)",
+     "ethics and philosophy of psychedelic-assisted therapy",
+     "philosophy of diagnosis/nosology"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://muse.jhu.edu/issue/55705 (Vol 32, No 3, Sept 2025 TOC)",
+     "https://muse.jhu.edu/journal/164 (aims/scope, special issue history: 'Time, Chaos, and Evil', 'Mild Cognitive Impairment')",
+     "https://inpponline.com/publications/ppp/ (submission mechanics, article types)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "cross_language_checked": [
+    "SciRev (scirev.org) — no journal entry found for Philosophy, Psychiatry & Psychology (direct page 404; no reviews on file)",
+    "小木虫 muchong.com — 0 first-hand results; search surfaced only general forum-topic pages and an unrelated psychiatry journal (BMC Psychiatry) thread, nothing PPP-specific",
+    "知乎 zhihu.com — 0 results (site:zhihu.com query returned no Zhihu-hosted pages at all)",
+    "Reddit r/AskAcademia — 0 results for this journal",
+    "fabiaoji fabiao.com.cn — not directly queried for this journal; general philosophy-journal search surfaced only an unrelated journal (Philosophical Psychology) entry"
+   ],
+   "blanks": [
+    {
+     "field": "review_time_months",
+     "why": "No SciRev entry (404/no reviews logged) and zero cross-language forum discussion (muchong, zhihu, Reddit) mentioning turnaround time for this journal."
+    },
+    {
+     "field": "desk_reject_pct",
+     "why": "No SciRev data and no forum posts quantifying desk-reject rate; publisher page gives only a qualitative peer-review description, no numbers."
+    },
+    {
+     "field": "acceptance_note",
+     "why": "No first-hand author accounts found in any searched forum (muchong/zhihu/Reddit) describing an actual submission/acceptance experience at this journal."
+    },
+    {
+     "field": "reviewer_culture",
+     "why": "No concrete first-hand source describing reviewer tone/culture; fabricating a narrative here would violate the no-generic-claims rule."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Neither the Hopkins Press journal page nor the INPP/AAPP journal page states a preprint-sharing policy for PPP; left null rather than guessed."
+    },
+    {
+     "field": "ai_policy exact verbatim gate mechanics",
+     "why": "Primary PDF (press.jhu.edu Generative AI for Authors) returned HTTP 403 on direct fetch; policy facts are reconstructed from WebSearch snippet summaries of that PDF, not a verified first-hand read, and no PPP-specific (vs. publisher-wide) AI statement was located."
+    }
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": "Journal covers psychiatric diagnosis critique, eating disorders, psychedelics/informed consent, and depression conceptualization as scholarly topic areas; no political/clinical stance attributed to the journal beyond documented editorial scope."
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 10,
+  "failed_count": 8,
+  "failed_issns": [
+   "0968-8005",
+   "1755-0203",
+   "0013-2004",
+   "1051-3558",
+   "0003-0481",
+   "0065-7638",
+   "0966-8373",
+   "0167-9848"
+  ],
+  "run_task_id": "wri2da3rz"
+ }
+}

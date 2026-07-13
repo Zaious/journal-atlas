@@ -1,0 +1,485 @@
+{
+ "batch": "hci-b2",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0736-6906",
+   "name": "ACM SIGCHI Bulletin",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": "No AI-use policy found. The journal is defunct as an active submission venue (see positioning layer), so no current-era policy page specific to it exists; ACM's general Digital Library AI policies were not found tied to this ISSN."
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "No - not an active submission venue in 2026. Evidence: (1) ACM DL current TOC (https://dl.acm.org/toc/sigchi/current) shows the latest indexed issue is Vol 32 No 2 (~April 2000); (2) Wikipedia (https://en.wikipedia.org/wiki/SIGCHI_Bulletin) states SIGCHI made 'interactions' its member publication starting in 2000, with the Bulletin continuing only as a supplement to interactions and later becoming online-only in 2003 rather than a normal peer-reviewed research journal; (3) WebSearch confirms 'Until 2000, the SIGCHI Bulletin was published as a membership publication... no longer actively published' and that SIGCHI's current member publications are ACM Interactions and ACM TechNews - SIGCHI Edition. No 2024-2026 article titles, aims-and-scope page for active submissions, or CFP could be located.",
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://dl.acm.org/toc/sigchi/current",
+     "https://en.wikipedia.org/wiki/SIGCHI_Bulletin",
+     "https://dblp.org/db/journals/sigchi/index.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "cross_language_checked": [
+    "muchong.com (小木虫) - not queried; journal confirmed defunct as submission venue since ~2000 so no plausible first-hand author experience to find (0 expected)",
+    "zhihu - not queried, same rationale",
+    "fabiaoji - not queried, same rationale",
+    "Reddit r/AskAcademia - not queried, same rationale"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1,
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 / gate / source_url",
+     "why": "No publisher policy page found specific to SIGCHI Bulletin; journal is not an active submission venue so no current editorial policy exists."
+    },
+    {
+     "field": "peer_review.type",
+     "why": "No source describing review type found; last indexed issue is c. 2000, predating any documented modern peer-review workflow for this title."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No ACM policy page found tied specifically to this ISSN/title."
+    },
+    {
+     "field": "positioning.methods_welcome / framing_required",
+     "why": "No 2024-2026 articles, CFP, or active aims-and-scope page exist to infer accepted methods - journal appears inactive as a research submission outlet since ~2000, superseded by ACM Interactions."
+    },
+    {
+     "field": "experiential.review_time_months / desk_reject_pct / acceptance_note / reviewer_culture",
+     "why": "SciRev and forum searches were not run because there is no active submission pipeline for this title in 2024-2026; authors would have no recent first-hand experience to report. Flagging as a confirmed structural blank rather than an unsearched one."
+    }
+   ]
+  },
+  {
+   "issn": "2414-4088",
+   "name": "Multimodal Technologies and Interaction",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.mdpi.com/journal/mti/about (期刊頁面引用MDPI出版社統一政策，原始政策見 https://www.mdpi.com/ethics)",
+    "summary": "此為MDPI出版社統一政策，非期刊專屬條款（MTI官網未見額外加碼規定）。事實：(1) 生成式AI/LLM不得列為作者；(2) 若作者使用ChatGPT等工具產生內容，須在Materials & Methods章節揭露並說明使用方式；(3) 僅做基礎語言潤飾（文法/標點/格式）則免揭露；(4) 審稿人被禁止將稿件全文/部分內容、圖表上傳至任何GenAI工具（保密政策）。屬有條件放行（disclosure gate），非全面禁止也非完全開放，故評leniency 3/5。因是通用出版社政策而非本刊獨有立場，且mdpi.com/ethics原頁因反爬蟲機制回傳403無法直接一手截取，資訊透過WebSearch摘要交叉比對取得，signal_quality定為2（政策頁/範疇層級，非期刊獨有一手資料）。"
+   },
+   "peer_review": {
+    "type": "single-blind",
+    "source_url": "https://www.mdpi.com/journal/mti/about"
+   },
+   "preprint": {
+    "allowed": "MDPI通用政策允許預印本（如arXiv），但同行評審期間不得更新預印本版本（保密考量），且預印本與正式投稿間之作者異動須向期刊說明；未見MTI專屬條款覆蓋此通用規定。",
+    "source_url": "https://www.mdpi.com/ethics（通用政策，MTI未見加碼；本頁因反爬被擋無法直接一手截取原文，資訊取自WebSearch摘要交叉比對）"
+   },
+   "positioning": {
+    "accepts_now": "根據2026年開放中的Special Issue主題，本刊目前積極徵稿方向包含：uHealth介入與數位療法（截止2026-06-30）、行為網路安全與欺騙偵測/安全設計（截止2026-06-30）、智慧互動設計：創新模型與人機經驗未來（截止2026-06-30）、多模態學習環境/線上與混合教育/學習分析（截止2026-05-31）。搜尋結果亦顯示近期文章含生成式AI原型設計工具可用性評估等主題，顯示本刊對AI驅動之HCI應用研究持開放態度。",
+    "framing_required": null,
+    "methods_welcome": [
+     "human-computer interaction (HCI) 使用者研究",
+     "multimodal interfaces 與 multimodal perception 研究",
+     "human-robot interaction",
+     "生成式AI於原型設計/介面設計之應用評估（如GenAI-driven prototyping usability studies）",
+     "數位健康/uHealth 介入與數位療法",
+     "行為網路安全與詐騙式安全設計（deception-based secure design）",
+     "多模態學習環境、線上與混合式教育、學習分析",
+     "深度學習應用於多模態技術（Special Issue: Deep Learning）"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.mdpi.com/journal/mti/special_issues",
+     "https://www.mdpi.com/journal/mti/special_issues/AI_People",
+     "https://www.mdpi.com/journal/mti/special_issues/deep_learning",
+     "https://www.mdpi.com/journal/mti/special_issues/Multimodal_Learning"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "約0.7個月（中位數；MDPI官方統計：投稿至首次決定中位數21.7天，2025下半年資料）；此為出版社自報統計，非第三方使用者一手經驗",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://www.mdpi.com/journal/mti/stats（出版社自報首次決定天數，透過WebSearch摘要取得，非直接一手截取，因mdpi.com反爬蟲機制阻擋WebFetch）",
+     "https://www.scirev.org/journal/multimodal-technologies-and-interaction/ — 0則使用者評論，審稿時長/桌拒率/接受率等欄位均顯示n/a"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev該刊頁面0則評論，所有數據皆為n/a；未見任何一手使用者揭露之桌拒率"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "SciRev無評論；Reddit r/AskAcademia搜尋無相關討論串；小木虫/知乎/fabiaoji搜尋未命中任何針對本刊的具體投稿心得"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何論壇（中/英文）發現針對本刊審稿人風格/文化之具體一手描述，依規則不得杜撰通用敘事"
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "未查得MTI期刊獨有的強制框架要求文件（如必須含使用者研究段落之明文規定），僅有通用MDPI寫作規範，證據不足以列為期刊專屬事實，故留空"
+    },
+    {
+     "field": "ai_policy 期刊專屬條款 vs 通用MDPI政策之區別",
+     "why": "mdpi.com/ethics與mdpi.com/journal/mti/about兩頁面均因反爬蟲機制回傳403，無法直接一手引用原文；現有事實均透過WebSearch摘要交叉比對取得，未能確認MTI是否有超出MDPI通用政策之額外規定"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — WebSearch查詢「MTI MDPI 投稿 审稿」未返回任何小木虫論壇貼文命中（0 results）",
+    "知乎 zhihu.com — WebSearch查詢未返回任何知乎針對本刊之具體討論（0 results）",
+    "fabiaoji — WebSearch查詢未返回任何fabiaoji相關結果（0 results）",
+    "Reddit r/AskAcademia — WebSearch查詢「Multimodal Technologies and Interaction journal reddit AskAcademia review experience」未返回任何相關討論串，僅返回一般期刊資訊頁（0 results）"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1074-9039",
+   "name": "Mind, Culture, and Activity",
+   "ai_policy": {
+    "gate": "no (disclosure-based, not permission-gated, for journal articles; book authors must seek editor approval)",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://taylorandfrancis.com/our-policies/ai-policy/",
+    "summary": "本刊未見期刊專屬 AI 政策頁,適用 Taylor & Francis 出版社通用政策(此刊由 T&F/Routledge 出版,hmca20)。政策允許 Generative AI 用於語言潤飾、文獻分類初篩、輔助程式撰寫、LLM 強化搜尋;禁止:AI 不得列為作者、不得用於未經驗證的內容生成(如摘要、補充材料)、不得用於生成合成數據(除非有嚴謹方法論)。要求作者在 Methods 或 Acknowledgments 章節揭露工具全名、版本、用途與理由。文章投稿為「揭露制」而非「事前核准制」;書籍作者則須在提案階段或寫作階段先取得編輯同意(gate=conditional for books)。未找到 MCA 期刊層級的專屬加嚴或放寬條款。"
+   },
+   "peer_review": {
+    "source_url": "https://lchc.ucsd.edu/mca/Journal/instructions-to-authors.html",
+    "type": "Anonymous/blind peer review — journal's own Instructions to Authors states authors must submit a separate cover page with identifying info to enable anonymous review; T&F journal page also states \"All submissions go through an anonymous review process.\" Not explicitly labeled single- vs double-blind, but the cover-page mechanism indicates reviewer-blind-to-author (at minimum single-anonymous, likely double)."
+   },
+   "preprint": {
+    "allowed": "Yes, per general T&F Green OA policy (no journal-specific override found): authors may share their Author's Original Manuscript (preprint) freely at any time; Accepted Manuscript can be posted to personal website after publication (embargo applies for repository deposit, per journal-agnostic T&F policy).",
+    "source_url": "https://authorservices.taylorandfrancis.com/frequently-asked-questions/open-access-faq/"
+   },
+   "positioning": {
+    "accepts_now": "文化-歷史活動理論(CHAT)/Vygotskian 心理學為核心陣地,近期(2024-2026)實際刊出文章涵蓋:Change Laboratory/expansive learning 介入研究(教師培訓、教育變革)、gesture 與具身認知的數學學習、早期幼兒照護中的共同活動、社區行動中的戲劇/角色扮演與 Perezhivanie 概念、家庭遷移敘事的資料呈現、家務勞動的歷史唯物主義分析、批判種族/性別/身心障礙視角的教育研究、Maturana 語言情緒理論在教育中的應用。理論性論文(concept papers)與純質性實證研究並重,質化方法(民族誌、個案研究、話語分析)為主流,亦接受量化與混合方法。",
+    "framing_required": "強調批判立場(critical stance)、對壓迫的挑戰、解放認識論(liberatory epistemologies)、種族/階級/性別/身心障礙軸線的交織分析,以及與行動主義議程(activist agendas)、社會運動的連結;純描述性或去政治化的實證報告較不吻合其定位。",
+    "methods_welcome": [
+     "Change Laboratory 介入方法論 (formative intervention)",
+     "民族誌/田野觀察",
+     "個案研究",
+     "話語分析與互動微觀分析(含手勢/具身分析)",
+     "歷史唯物主義理論分析",
+     "理論綜述/概念性論文",
+     "混合方法",
+     "量化方法(較少見但期刊聲明歡迎)",
+     "創作型作品(creative works)",
+     "受邀書評"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://www.tandfonline.com/journals/hmca20/about-this-journal (aims & scope, live 2026-07-13 fetch)",
+     "https://www.tandfonline.com/toc/hmca20/current (Vol 31 issue 3-4 TOC, 2024-2025 publication dates)",
+     "current CFPs listed on journal page: \"Enacted Utopias and Collective Futures\" and \"special issue on play\" (Beth Ferholt, Carrie Lobman & Fernanda Coelho Liberali)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "官方公布(non-experiential 但為出版社一手數據): 平均 95 天(≈3.1 個月)投稿至第一決定(含桌拒);平均 230 天(≈7.6 個月)投稿至送審後第一決定;平均 33 天接受至線上發表。",
+    "desk_reject_pct": null,
+    "acceptance_note": "官方公布接受率 17%(近一年數據,涵蓋所有決定類型)。SciRev 上該刊無任何使用者評論(0 reviews),故無第一手作者評述可佐證審稿品質或體驗。",
+    "reviewer_culture": null,
+    "signal_quality": 3,
+    "sources": [
+     "https://www.tandfonline.com/journals/hmca20/about-this-journal (Journal metrics/Speed & acceptance panel, live browser fetch 2026-07-13: '95 days avg. from submission to first decision', '230 days avg. from submission to first post-review decision', '33 days avg. from acceptance to online publication', '17% acceptance rate')",
+     "https://scirev.org/journal/mind-culture-and-activity/ (all fields n/a, 'No reviews have yet been submitted for this journal')"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — WebSearch site-targeted query for 'Mind Culture and Activity' 期刊: 0 直接討論串命中,僅出現於一則知乎 SSCI 期刊清單文章的間接提及,無審稿經驗分享",
+    "知乎 zhihu — 搜尋 '審稿週期'/'Mind, Culture' 相關詞:0 筆該刊專屬結果,僅泛用審稿週期教學文",
+    "fabiaoji — 未見任何可搜尋到之獨立條目或討論(搜尋未返回該站命中)",
+    "Reddit r/AskAcademia — 搜尋 'Mind, Culture, and Activity' journal review:0 筆 Reddit 討論串命中"
+   ],
+   "blanks": [
+    {
+     "field": "peer_review.type (single-anonymous vs double-anonymous 明確標籤)",
+     "why": "官方頁面與 Instructions to Authors 均只稱『anonymous review』並描述作者需另附身份頁以利匿名審查,但未明文使用 'double-blind'/'double-anonymous' 字樣,故不做過度推斷。"
+    },
+    {
+     "field": "ai_policy 期刊專屬頁面",
+     "why": "MCA/hmca20 的 about-this-journal 頁與 lchc.ucsd.edu 的 Instructions to Authors 均未提及 AI 使用政策,僅能套用 T&F 出版社通用政策,已於 summary 註明此為推定適用而非期刊明文。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "T&F 官方僅提供『投稿到第一決定』與『投稿到送審後第一決定』兩項天數指標,兩者差距雖暗示相當比例為未送審之桌拒,但官方未直接公布桌拒百分比數字,SciRev 該項亦為 n/a,故留空避免臆測。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev 零評論,小木虫/知乎/fabiaoji/Reddit 均搜尋不到任何一手審稿人風格或審稿文化的具體討論,無可靠來源可引,故留空。"
+    }
+   ],
+   "sensitive_topics_note": "MCA 期刊定位明確要求批判種族(critical race)、性別、身心障礙、階級等交織分析視角,並與行動主義/社會運動議程掛鉤,editorial stance 屬於偏左翼/批判教育學傳統(此為期刊 aims & scope 官方自述之立場性框架要求,非本報告主觀政治判斷,來源:https://www.tandfonline.com/journals/hmca20/about-this-journal)。",
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1462-6268",
+   "name": "Digital Creativity",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://taylorandfrancis.com/our-policies/ai-policy/",
+    "summary": "Publisher-level (Taylor & Francis Group) policy applies to Digital Creativity; no journal-specific AI page found. T&F: generative AI/LLM tools (e.g. ChatGPT) cannot be credited as author; permitted uses include idea generation/exploration, language/grammar polishing, LLM-enhanced literature search, and coding/script-writing assistance; prohibited for unverified content generation (e.g. abstracts, supplementary text) and for generating/manipulating research data, images, figures. Any AI use must be disclosed (tool name, version, purpose) in Methods/Acknowledgments. This is publisher-wide guidance (per Taylor & Francis Newsroom announcements), not confirmed as customized for this specific journal."
+   },
+   "peer_review": {
+    "type": "double-blind (anonymous)",
+    "source_url": "https://www.tandfonline.com/doi/full/10.1080/14626268.2011.634262"
+   },
+   "preprint": {
+    "allowed": "Yes (publisher-level T&F policy) - authors may post/share their Author's Original Manuscript (preprint) at any time, including on preprint servers/repositories prior to and during submission; Accepted Manuscript can be self-archived after publication under green OA with an embargo. Journal is also hybrid Open Select (gold OA option available).",
+    "source_url": "https://authorservices.taylorandfrancis.com/choose-open/publishing-open-access/oa-green-gold/"
+   },
+   "positioning": {
+    "accepts_now": "Journal is publishing work engaging with AI/generative-AI and digital creative practice: 'Another kind of authenticity: the visual simulacra of artificial intelligence' (Vol 36 No 1, Feb 2025), 'A knotwork for alternative AI: pursuing community-centred and co-creative technological practices' (2025), alongside participatory/placemaking methodology pieces ('Co-creating future narratives: a participatory methodology for digital placemaking', Vol 37 No 2, Oct 2025) and craft/education pieces (e.g. 'Using artificial intelligence in craft education: crafting with text-to-image generative models', 2023). Core scope per about-page: visual arts, interaction design, physical computing/making, computational materials, textile/fashion design, film/animation, game design, music, dance, drama, architecture and urban design.",
+    "framing_required": "Submissions engaging AI topics tend to be framed critically/reflexively (authenticity, alternative/community-centred AI, craft pedagogy) rather than purely technical AI-systems papers - consistent with the journal's arts/design/critical-theory orientation, not a computer-science HCI venue.",
+    "methods_welcome": [
+     "practice-based / practice-led research",
+     "participatory and co-design methodology",
+     "critical/theoretical essays on digital media and creative practice",
+     "case studies in interaction design, craft, game design, film/animation",
+     "scoping reviews (e.g. 'How to Enrich Digital Creativity? A Scoping Review', 2025)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.tandfonline.com/journals/ndcr20/about-this-journal",
+     "https://www.tandfonline.com/doi/full/10.1080/14626268.2025.2467087",
+     "https://www.tandfonline.com/doi/full/10.1080/14626268.2025.2573349",
+     "https://www.tandfonline.com/doi/full/10.1080/14626268.2025.2595421"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/digital-creativity/ (0 reviews submitted, all fields n/a)",
+     "https://www.letpub.com.cn/index.php?journalid=16637&page=journalapp&view=detail (average review speed / acceptance rate sections present but empty, '共0条' shared experiences)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 submitted reviews for this journal (n/a on all metrics); LetPub Chinese crowdsourced page has the data fields but 0 shared entries; no Reddit r/AskAcademia, 小木虫, 知乎, or 發表之家 threads with concrete first-hand review-time numbers were found."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev or forum data available (same 0-review situation as review_time)."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance/rejection accounts found on SciRev, LetPub, 小木虫, 知乎, or Reddit; only generic SEO-style journal-info pages (fabiao.com.cn, iikx.com, ivysci.com) with no actual submitter testimony."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post, SciRev comment, or interview) describing reviewer behavior/culture for this journal was located; fabricating a narrative was avoided per hard rule."
+    },
+    {
+     "field": "ai_policy journal-specific confirmation",
+     "why": "Could not confirm whether Digital Creativity's own instructions-for-authors page (behind Taylor & Francis submission portal, which returned 403 to WebFetch) restates or modifies the group-wide AI policy; leniency/gate rating is inferred from the publisher-wide T&F AI Policy page only."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com - searched 'Digital Creativity 期刊 投稿 審稿'; no relevant journal-specific thread found (0 on-topic results)",
+    "fabiao.com / fabiao.com.cn - journal exists as an auto-generated SEO metrics page (impact factor, submission cycle listed as quarterly) but no first-hand submitter review-time or rejection accounts; excluded from experiential facts as non-first-hand",
+    "知乎 zhihu.com - searched '投稿 审稿周期'; no thread specifically discussing Digital Creativity found (0 relevant results, only generic peer-review methodology essays)",
+    "Reddit r/AskAcademia - searched directly and via site query; 0 results mentioning this journal",
+    "LetPub letpub.com.cn - journal profile page exists with empty crowdsourced review-speed/acceptance-rate fields ('共0条' shared experiences)",
+    "SciRev scirev.org - journal page exists, explicitly '0 reviews submitted', all metrics n/a"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "2949-6780",
+   "name": "Computers & Education: X Reality",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "此為 Elsevier 出版社統一政策（非本刊獨有客製條款，Guide for Authors 頁面套用同一套規則，直接 fetch 該頁遭 403，改以搜尋快照確認內容一致）。文字寫作：僅允許用於語言潤飾/可讀性改善，禁止用於生成科學內容或取代人類判斷；投稿時須在正文末、參考文獻前加入『Declaration of Generative AI and AI-assisted technologies in the writing process』聲明段落；AI 不得列為作者。圖像：禁止使用生成式AI創建或修改manuscript中的圖片/圖形（含美化、遮蔽、增刪特徵），唯一例外是AI屬於研究方法本身，須在方法段落可重現地揭露工具名稱/版本/廠商；graphical abstract 同樣禁止AI生成。審稿人與編輯層級：目前政策不允許審稿人/編輯在同行評審與稿件評估過程中使用生成式AI工具（如ChatGPT）。leniency=2（允許有限度使用但限定用途、強制揭露、圖像幾乎全面禁止，屬偏嚴格但非全面禁止）。"
+   },
+   "peer_review": {
+    "type": "double anonymous (double-blind) peer review",
+    "source_url": "https://library.wur.nl/WebQuery/utbrowser/88401"
+   },
+   "preprint": {
+    "allowed": "允許：預印本張貼（含在Elsevier提供的SSRN免費預印本服務）不算作優先發表，屬Elsevier全出版社通用的article sharing / preprint政策，非本刊獨有規定。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals"
+   },
+   "positioning": {
+    "accepts_now": "2026年（Vol.8, Vol.9）近期刊出文章顯示：VR/AR/MR/XR於教育情境的實證研究（empirical study）為主流，涵蓋語言教學、STEM/物理/計算思維、醫療與外科培訓模擬、職業/技職訓練、建築工程教育、文化資產、metaverse協作學習、AI整合式沉浸環境（如embodied AI機器人、AI驅動metaverse）、VR/AR authoring tools開發、文獻回顧/系統性回顧。整體高度聚焦「教育成效/學習結果」而非純技術展示。",
+    "framing_required": "投稿須明確扣連教育/學習成效（learning outcomes, engagement, cognitive load, self-efficacy, computational thinking等）並置於沉浸式技術（VR/AR/MR/XR/metaverse）脈絡下；純技術論文（無教育情境或無實證/系統性評估）不符合期刊定位。",
+    "methods_welcome": [
+     "empirical/quantitative study (with learning outcome measures)",
+     "systematic review / literature review",
+     "mixed-methods study",
+     "case study",
+     "design & development / authoring system papers (VR/AR/MR tools)",
+     "SEM (structural equation modeling) analysis",
+     "AI-integrated immersive learning systems (embodied AI, gesture/ML recognition)"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://dblp.org/db/journals/cexr/cexr8.html",
+     "https://dblp.org/db/journals/cexr/cexr9.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev.org 對此期刊無條目（scirev.org/journal/computers-education-x-reality/ 回傳404，站內查詢也無結果）；小木虫/知乎/Reddit r/AskAcademia 搜尋均未找到針對本刊（非母刊Computers & Education，是姊妹刊）的第一手投稿經驗討論。唯一找到的週數數字（DOAJ鏡像頁如 library.wur.nl 顯示『平均19週』，另一DOAJ快照顯示『31週』，兩者互相矛盾）屬期刊自報的DOAJ metadata，非審稿人/作者第一手經驗，且規則指定experiential層僅採SciRev與論壇來源，故不採用，欄位留空。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無SciRev條目、無小木虫/知乎/Reddit討論串提及本刊退稿率或桌拒率，查無任何第一手資料來源。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "同上，查無作者發表本刊後的公開心得文（中英文皆無）。本刊2022年創刊，規模小，尚未形成足夠論壇討論量。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何具體來源（forum帖、SciRev評論）描述審稿人風格/傾向，依規則不得憑空生成通用敘事，故留空。"
+    },
+    {
+     "field": "peer_review.type (confidence caveat)",
+     "why": "「double anonymous」資訊來自DOAJ鏡像頁（library.wur.nl）而非Elsevier官方Guide for Authors原始頁（sciencedirect.com/.../guide-for-authors 直接fetch遭403 Forbidden無法驗證原文用詞），建議之後有機會時以官方頁面覆核措辭是否為'double-blind'或'single-blind'。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋『X Reality 投稿 审稿周期』與『journal.php X Reality』均查無本刊專屬討論串（僅查到其他不相關期刊點評頁），0 first-hand results",
+    "知乎 zhihu — 搜尋『Computers Education X Reality 期刊 审稿』僅查到母刊(Computers & Education，中科院1區，不同ISSN)之影響因子/分區文章，與本刊(X Reality姊妹刊)本身審稿經驗無關，0 relevant results",
+    "Reddit r/AskAcademia — 搜尋『reddit AskAcademia Computers Education X Reality』僅查到期刊官方X(Twitter)帳號，0 forum discussion results",
+    "SciRev — scirev.org/journal/computers-education-x-reality/ 回傳404，站內亦無此刊條目，0 reviews on file"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1942-390X",
+   "name": "International Journal of Mobile Human Computer Interaction (IJMHCI)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.igi-global.com/publish/contributor-resources/open-access-journal-editorial-policy/ (also referenced: https://www.igi-global.com/newsroom/archive/don-let-write-your-credibility/6649/)",
+    "summary": "This is IGI Global's PUBLISHER-WIDE policy (no journal-level AI policy page found for IJMHCI itself). Facts: (1) Authors may use generative AI/AI-assisted tools for data-analysis support and for improving readability (translation, grammar, language polish), but must maintain oversight/control and disclose the tool and how it was used in an AI-disclosure statement included in every manuscript -> disclosure-gated, not free-use, not outright banned. (2) AI-generated images or videos are explicitly prohibited. (3) Editors/reviewers are barred from uploading unpublished manuscripts to generative AI tools (confidentiality breach)."
+   },
+   "peer_review": {
+    "type": "Double-anonymized (double-blind) peer review, minimum 2-3 comparable reviews per paper via IGI Global's eEditorial Discovery system; publisher-wide desk review ~1 week, preliminary decision typically 30-45 days after submission, full cycle historically cited at 12-16 weeks",
+    "source_url": "https://www.igi-global.com/publish/peer-review-process/"
+   },
+   "preprint": {
+    "allowed": "Conditional / discouraged at submission. IGI Global's open-access journal editorial policy states manuscripts posted openly on repositories such as ResearchGate, SSRN, or arXiv 'should not be considered until they have been removed from those respective sites' -- i.e., concurrent preprints block consideration for review. A separate, lower-confidence search result (not independently verified against a live SHERPA/RoMEO record page) suggested IGI Global permits preprint deposit post-acceptance if the deposited copy states it has not undergone peer review and cites the published version. These two facts describe different stages (pre-submission vs. post-acceptance) and were not reconciled against one authoritative page.",
+    "source_url": "https://www.igi-global.com/publish/contributor-resources/open-access-journal-editorial-policy/"
+   },
+   "positioning": {
+    "accepts_now": "Recent 2025-2026 published articles skew toward quantitative/computational methods applied to mobile-device user behavior and media/tourism/driving contexts rather than classic qualitative UX fieldwork.",
+    "framing_required": null,
+    "methods_welcome": [
+     "Machine learning / classification analysis of user behavior (e.g., 'Behavioral Classification of Mobile Device Users in Digital Communication Contexts,' 2026)",
+     "Computer vision frameworks for interactive visual communication in mobile environments (2026)",
+     "Mixed-methods field trials of human-AI collaborative systems (e.g., 'Human-AI Collaborative Recommenders for On-Site Cultural Tourism,' 2025)",
+     "Customer/user satisfaction survey analysis (e.g., mobile games satisfaction study, 2025)",
+     "Driver cognitive-preference / in-vehicle HCI studies (2025)",
+     "Case studies on handheld/mobile/wearable technology design and evaluation (long-standing journal scope per aims & scope)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://dblp.org/db/journals/ijmhci/ijmhci17.html",
+     "https://dblp.org/db/journals/ijmhci/ijmhci16.html",
+     "https://www.igi-global.com/journal/international-journal-mobile-human-computer/1126"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "No first-hand review-time or acceptance-rate data found. LetPub's China-facing journal profile page for this exact journal exists but its '平均审稿速度' (average review speed) and '平均录用比例' (average acceptance ratio) fields were both empty placeholder text ('网友分享经验' / user experience to be shared) with zero submitted data points -- a real page with zero reviews, not an absent page. LetPub does independently confirm the journal actively publishes Chinese-author papers (10+ listed 2026 entries spanning AI-in-education, mobile health, cultural-heritage interfaces), which is a positioning fact, not a timing/acceptance fact.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://letpub.com.cn/index.php?journalid=18610&page=journalapp&view=detail (0 review-time/acceptance data points, but confirms active Chinese-author publication activity)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "No SciRev entry found for this journal (searches for the exact title on scirev.org returned no dedicated journal page); LetPub's dedicated page for this journal has an empty user-submitted review-speed field (0 data points)."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev entry and no forum/community post (小木虫, 知乎, Reddit r/AskAcademia) discussing desk-reject rate for this specific journal was found; only publisher-wide generic IGI Global timelines exist, which are policy claims not experiential reports."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand reviewer-experience narrative found in 小木虫 muchong.com, 知乎, fabiaoji, or Reddit specifically naming this journal (searches returned only generic journal-metadata pages, or results for the differently-titled Taylor & Francis 'International Journal of Human-Computer Interaction', which is a different journal and was excluded to avoid conflation)."
+    },
+    {
+     "field": "ai_policy (journal-specific layer)",
+     "why": "No IJMHCI-specific AI-use policy page was found; the AI policy reported is IGI Global's publisher-wide policy applied to all its journals, not a policy tailored to IJMHCI."
+    },
+    {
+     "field": "preprint.allowed (precise mechanism)",
+     "why": "Found two partially conflicting fragments (pre-submission preprint-site restriction vs. general SHERPA/RoMEO-style post-acceptance archiving rights) that were not reconciled against one authoritative IGI Global preprint-specific policy page; treat with reduced confidence."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 0 direct results for IJMHCI specifically (search only surfaced the differently-named/differently-published 'International Journal of Human-Computer Interaction' from Taylor & Francis, which was excluded as a different journal)",
+    "知乎 zhihu.com: 0 direct results for IJMHCI; search surfaced zhihu posts about the unrelated Taylor & Francis 'International Journal of Human-Computer Interaction' (excluded, different journal) and a general LetPub aggregator page",
+    "fabiaoji: no dedicated search performed separately from LetPub (LetPub is a comparable China-facing journal-metrics/experience site and was checked directly, returning 0 populated review-time/acceptance data points)",
+    "Reddit r/AskAcademia: 0 results found naming this journal",
+    "LetPub (China-facing journal database, used as fabiaoji-equivalent proxy): dedicated page for this exact journal exists (ISSN 1942-390X entry) but review-time and acceptance-rate fields are empty; confirms Chinese-author publication activity"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 6,
+  "failed_count": 12,
+  "failed_issns": [
+   "1571-0882",
+   "2689-0208",
+   "1995-8692",
+   "0737-0024",
+   "2673-4192",
+   "0953-5438",
+   "1615-5289",
+   "1073-0516",
+   "1054-7460",
+   "2469-7818",
+   "1826-9745",
+   "1073-5127"
+  ],
+  "run_task_id": "wgijf4g9e"
+ }
+}

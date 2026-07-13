@@ -1,0 +1,1255 @@
+{
+ "batch": "psych-b3",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0022-0965",
+   "name": "Journal of Experimental Child Psychology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "此為 Elsevier 出版社通用政策(非本刊專屬頁面,查無 JECP 專屬 AI 政策頁)。允許 GenAI 輔助潤飾語言/可讀性,禁止用於產生科學洞見、分析資料、下結論;文末須加揭露聲明。圖像/artwork 禁止使用生成式 AI(除非 AI 本身是研究方法的一部分且需在方法段落揭露模型名稱、版本、廠商)。未見 JECP 期刊層級的加嚴或放寬條款,故判定為 gate=conditional(需揭露)、leniency=2(允許潤飾但嚴格限制核心研究工作使用)。"
+   },
+   "peer_review": {
+    "type": "Single-anonymous (traditional), editor + peer reviewers, per Guide for Authors table of contents indicating standard Elsevier psychology-journal review process",
+    "source_url": "https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology/publish/guide-for-authors"
+   },
+   "preprint": {
+    "allowed": "Yes — Elsevier general preprint-sharing policy applies; posting to a preprint server (e.g. PsyArXiv) does not count as prior publication and submission is treated as compatible with prior preprint posting",
+    "source_url": "https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology/publish/guide-for-authors"
+   },
+   "positioning": {
+    "accepts_now": "以嬰幼兒、兒童、青少年之認知/社會情緒/生理發展實證研究為主軸,近期(2025-2026)已發表主題包含:價值導向記憶的發展差異(青少年 vs 成人、測試與回饋效果)、同儕受害與攻擊行為的認知因子(青少年橫斷網絡分析)、影片式第二語言學習中家長介入對兒童英語表達的影響、家長數學焦慮對兒童早期數感發展的負向影響。目前有一個進行中的 Special Issue: 'Children's Cognitive Offloading'(客座編輯 Kristy Louise Armitage、Jonathan J. Redshaw),徵求探討兒童認知外包(cognitive offloading)發展、機制與意涵之研究,方法不限但需嚴謹實證取向。",
+    "framing_required": "須為嚴謹實證研究(empirical),鼓勵整合多實驗回答同一問題的 integrative papers,不鼓勵把單一計畫拆成多篇的 piecemeal papers;可接受 Short communications/Brief Reports(不超過 4000 字)。",
+    "methods_welcome": [
+     "行為實驗法(behavioral experiments)",
+     "縱貫與橫斷發展研究設計",
+     "認知歷程測量(如記憶、語言、數感任務)",
+     "網絡分析(network analysis,近期文章示例)",
+     "介入型研究設計(intervention studies)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://research.com/journal/journal-of-experimental-child-psychology",
+     "https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology (WebSearch snippets, recent article titles Nov 2026)",
+     "https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology/about/call-for-papers (fetch blocked 403; special issue topic confirmed via WebSearch snippet only)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "約 1.5 個月(SciRev 統計:平均審稿輪次 1.0 輪,第一輪耗時 1.5 個月;含所有輪次的總處理時間對已接受稿件亦為 1.5 個月;唯一一筆較新的個別投稿紀錄顯示第一輪耗時 7.1 週)",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 稿件品質評分 4.0/5.0,整體投稿處理評分 4.0/5.0;唯一一筆最新個別經驗結果為 rejection(拒稿)。接受率/立即拒稿率欄位 SciRev 標示為 'n/a'(無資料)。LetPub(中國學者經驗分享平台)頁面存在但『平均審稿速度』與『平均錄用比例』欄位下的『網友分享經驗』區塊目前為空,無使用者留言資料。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/journal-of-experimental-child-psychology/",
+     "https://www.letpub.com.cn/index.php?journalid=11451&page=journalapp&view=detail (page exists, community fields empty)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific)",
+     "why": "查無 JECP 期刊獨立的 AI 政策頁,只找到 Elsevier 出版社通用政策;無法確認本刊是否有加嚴/放寬的期刊層級規定"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該欄位顯示 'n/a';LetPub 對應區塊無使用者留言;WebSearch 找到的『29% acceptance rate, 2-day review speed』數字來自非一手、可信度存疑的 SCI 中介網站(scizj/iikx 類站台),語意矛盾(2 天審稿週期不合理),予以捨棄不採用,故留空"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "未找到小木虫、知乎、Reddit r/AskAcademia 上任何針對本刊的第一手審稿文化討論串;WebSearch 對 '小木虫 期刊' 查詢僅回傳期刊介紹類網站,無實際論壇貼文內容"
+    },
+    {
+     "field": "positioning special-issue detail",
+     "why": "官方 call-for-papers 頁面 (sciencedirect.com/.../about/call-for-papers) 回傳 403,細節僅能透過 WebSearch 摘要片段取得,未經原始頁面驗證"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 未直接存取論壇(僅透過 WebSearch 間接查詢 '小木虫 期刊'),0 條與本刊審稿文化/經驗相關的第一手討論串被找到,僅回傳一般期刊介紹站台",
+    "fabiaoji — 未搜尋到針對本刊之結果(搜尋中未出現 fabiaoji 相關連結)",
+    "知乎 zhihu — 未搜尋到針對本刊之結果(搜尋中未出現 zhihu 相關連結)",
+    "Reddit r/AskAcademia — 未搜尋到針對本刊之結果(搜尋中未出現 reddit 相關連結)",
+    "LetPub (中文學術社群平台,補充查核) — 頁面存在但審稿速度/錄用比例之『網友分享經驗』欄位皆為空,0 筆使用者留言",
+    "科研通 ablesci.com — 有期刊介紹頁但無審稿時間/錄用率/審稿文化相關數據"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai",
+    "summary": "APA(出版方)通則:AI 不可列名作者;於方法/引言段落強制揭露 AI 用於草擬、編修、分析、生成程式碼或圖表之情形;作者對 AI 產出內容之正確性負全責;禁止將機密受試者資料輸入開放式 AI 工具。屬「允許但須揭露」模式,非全禁亦非全開放。此為 APA 出版社層級通則,未見本刊(Professional Psychology: Research and Practice)專屬加嚴或放寬條款,故信賴度打折。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": "https://www.apa.org/pubs/journals/pro"
+   },
+   "preprint": {
+    "allowed": "允許(APA 出版社通則):可於投稿前張貼 preprint,但需於投稿信中揭露並附連結,部分情況需加入 APA 指定聲明文字。未見本刊頁面就 preprint 之專屬條款,引用的是 APA/心理學界通則來源。",
+    "source_url": "https://journals.sagepub.com/doi/10.1177/25152459211019948"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": "摘要須以「讀者導向句」開場,直接連結執業心理師的日常經驗;引言須在1-4頁內建立與臨床/執業實務的關聯性;討論段落須聚焦「實務意涵與應用」而非單純與其他研究比較;結尾須提供具體可操作的建議與指引。實證文章不採傳統 method/results/discussion 格式,改用貼合主題的客製化小標題(如官方範例 'The EAP Survey')。",
+    "methods_welcome": [
+     "應用型實證研究(需附新數據)",
+     "調查研究(但低於50%回覆率且樣本有偏誤者罕獲刊登)",
+     "文獻回顧(需附帶預防/介入意涵)",
+     "臨床實務/評估/治療/督導/諮詢相關研究",
+     "法律、倫理、公共政策對心理執業之影響研究"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.apa.org/pubs/journals/pro/writing",
+     "https://www.apa.org/pubs/journals/pro"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "首輪審查平均約10.9個月;若獲接受,總處理時間平均16.8個月(僅1筆 SciRev 樣本,審查輪數平均2.0輪,每輪平均3.0份審查報告)",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 僅有1筆評論(整體流程評分1.0/5.0「bad process」),該作者最終獲接受但抱怨審查週期過長(首輪耗時11個月)、溝通延遲造成挫折感;審查報告品質被評為4.0/5.0,審查意見難度2.0/5.0(偏易)。樣本量極小(n=1),不可視為代表性數據。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/professional-psychology-research-and-practice/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "APA 官方期刊頁與投稿指南頁均未載明是否為單盲/雙盲/開放式審查,搜尋未找到本刊專屬聲明"
+    },
+    {
+     "field": "positioning.accepts_now",
+     "why": "無法直接存取近期(2024-2026)發表文章標題清單(scispace 頁面回傳403 Forbidden,APA PsycNet 期刊列表未逐篇檢視),故不敢對「當下實際接受什麼」下具體結論,僅能以官方 scope/writing guidelines 推論 methods_welcome"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 僅1筆評論未揭露此欄位,LetPub 頁面該期刊「同領域作者分享投稿經驗」顯示0條,無任何來源提供退稿率數字"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "跨語言查核(小木虫、知乎、LetPub 投稿經驗欄、Reddit r/AskAcademia)均未找到針對本刊審稿人文化/風格的具體討論或第一手描述,唯一 SciRev 評論僅提及流程慢、意見不難,不足以構成「文化」敘事,故不編造"
+    },
+    {
+     "field": "peer_review.source_url",
+     "why": "無專屬審查類型頁面可引用,故留空"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫(muchong.com): 搜尋「Professional Psychology Research and Practice 审稿」未返回本刊相關討論串",
+    "知乎(zhihu): 搜尋「Professional Psychology Research and Practice 投稿」與「知乎 投稿」查詢僅返回期刊基本資料頁與其他期刊(如Frontiers in Psychology)投稿攻略,無本刊第一手投稿心得",
+    "LetPub(letpub.com.cn) 投稿經驗分享區: 該刊「同領域作者分享投稿經驗」欄位顯示0條(共0条),僅提供期刊速度評分7.0/10、去年發文52篇,無審稿週期/退稿率細節",
+    "Reddit r/AskAcademia: 搜尋「Professional Psychology: Research and Practice review」無返回結果",
+    "SciRev: 僅1筆評論,提供審查時長與流程評分(見 experiential 欄位)"
+   ],
+   "issn": "0735-7028",
+   "name": "Professional Psychology: Research and Practice",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1092-4388",
+   "name": "Journal of Speech, Language, and Hearing Research (JSLHR)",
+   "ai_policy": {
+    "gate": "conditional — text-based generative AI/LLM output must be declared by authors if used in the manuscript (in whole or in part); AI cannot be credited as an author; AI-generated images or video are prohibited outright (not merely disclosure-gated)",
+    "leniency_1_5": 3,
+    "signal_quality": 4,
+    "source_url": "https://academy.pubs.asha.org/wp-content/uploads/JSLHR_Author_Instructions.pdf (p.9, 'Artificial Intelligence' section, Version 3.5, updated 10/29/2024)",
+    "summary": "Official ASHA/JSLHR author instructions (publisher-wide, applies to JSLHR): generative AI/LLM-based text must be declared by authors; AI/LLM cannot be credited as an author; AI-generated images or video are prohibited. Does not alter existing scientific-misconduct policy (e.g., image manipulation). Full guidance and sample declaration statements pointed to a separate ASHA Journals Academy 'Artificial Intelligence' page under Authorship and Publication Ethics (not independently verified in this pass)."
+   },
+   "peer_review": {
+    "type": "Editorial-board peer review model: editor-in-chief assigns a subject-matter editor, who assigns typically ≥2 editorial board members or ad hoc reviewers per round (2 rounds typical: original + revision). Default is single-anonymized (reviewers know author identity, authors do not know reviewers); double-anonymized review is available only if the author explicitly requests it at submission and removes identifying info themselves.",
+    "source_url": "https://academy.pubs.asha.org/wp-content/uploads/JSLHR_Author_Instructions.pdf (p.11, 'Peer Review Process'); https://academy.pubs.asha.org/asha-journals-author-resource-center/what-to-expect-in-peer-review/blind-review-policies/ (Anonymized Review Policies, publisher-wide, via WebSearch summary — not directly fetched)"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Core scope: normal/disordered speech, language, hearing, cognition, oral-motor function, swallowing — spanning basic and clinical research (screening, diagnosis, management) across the lifespan. Currently and explicitly soliciting AI/clinical-technology work: JSLHR ran a 2024 forum 'Artificial Intelligence in Communication Sciences and Disorders' (2024_JSLHR-24-00594), and as of this query (2026-07-13) has an OPEN call for papers — 'Registered Reports on the Validation of Clinical Tools Developed with AI' — inviting inventors to submit validation studies of AI-developed clinical tools as Registered Reports, deadline 2027-04-15.",
+    "framing_required": "AI-developed clinical tool submissions must be framed specifically as Registered Reports (Stage 1 methodology/question review pre-registered and accepted before data collection; Stage 2 review of completed study) — this is the journal's stated required format for that CFP, not free-form research articles.",
+    "methods_welcome": [
+     "RCTs / pre-post group treatment-outcome studies",
+     "single-subject and multiple-baseline-across-behaviors designs",
+     "systematic reviews and meta-analyses",
+     "qualitative/ethnographic studies",
+     "prospective longitudinal studies",
+     "Registered Reports (2-stage: pre-registered protocol then completed study)",
+     "AI/LLM-developed clinical tool validation studies (actively solicited via open CFP as Registered Reports)",
+     "technical/pilot feasibility reports",
+     "narrative reviews, tutorials, clinical case studies/program descriptions"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://academy.pubs.asha.org/call-for-papers/ (JSLHR open CFP: Registered Reports on Validation of AI-Developed Clinical Tools, deadline 2027-04-15)",
+     "https://pubs.asha.org/doi/10.1044/2024_JSLHR-24-00594 (2024 JSLHR forum introduction, 'Artificial Intelligence in Communication Sciences and Disorders' — title/existence confirmed via search; full text 403-blocked, not directly read)",
+     "https://academy.pubs.asha.org/wp-content/uploads/JSLHR_Author_Instructions.pdf (Manuscript Types section, p.2-3)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev (n=1 review, low sample): first review round ≈2.9 months (12.6 weeks), total handling to decision ≈5.3 months across ≈3.0 review rounds average, 2.0 review reports per round. Separately, LetPub and iikx.com (Chinese SCI-selector aggregators, not first-hand forum posts) both independently report '較慢, 4–8週' (sort of slow, 4-8 weeks) per review round — consistent direction but not the same metric as SciRev's total handling time.",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/journal-of-speech-language-and-hearing-research/ (n=1 review)",
+     "https://apa.letpub.com/index.php?page=journalapp&view=detail&journalid=8613",
+     "https://www.iikx.com/sci/medcine/18155.html"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "No JSLHR-specific or ASHA-publisher-wide public preprint policy page was located in this pass; author instructions PDF and aboutjslhr page do not mention preprint servers (arXiv/medRxiv/SSRN) at all."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No source (SciRev, LetPub, iikx, forums) reports a desk-reject percentage for JSLHR."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance-experience narrative found on SciRev (only 1 terse review), muchong, zhihu, or reddit."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero first-hand cross-language discussion found: muchong.com search returned no JSLHR-specific threads, zhihu returned only generic SSCI-journal-listing articles (no first-hand review accounts), reddit site-search returned 0 results for JSLHR. SciRev's single review notes 'difficulty of reviewer comments: 4/5 (difficult)' but this is one anonymous data point, not a narrative — too thin to characterize reviewer culture without fabricating."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫): searched '投稿 審稿 小木虫 語言病理' — 0 JSLHR-specific results, only generic forum/platform pages",
+    "zhihu.com (知乎): searched 'JSLHR 投稿 语言病理学 期刊' — 0 first-hand submission-experience posts; results were generic SSCI-linguistics-journal listicles that merely name-check JSLHR's scope",
+    "reddit.com (site-restricted search 'JSLHR site:reddit.com'): 0 results",
+    "scirev.org: 1 review found (used above)"
+   ],
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1040-3590",
+   "name": "Psychological Assessment",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai",
+    "summary": "This is an APA-wide journal policy (not Psychological-Assessment-specific): generative AI may be used for drafting/editing/analysis but must be disclosed in the relevant manuscript section (Method/Introduction/Author Note/Results depending on use); AI cannot be listed as an author; authors remain fully responsible for verifying AI-generated content/citations; confidential submitted content may not be entered into generative AI tools; routine AI-assisted copyediting does not need disclosure. No submission-time checkbox/permission gate described — enforcement is disclosure-based (self-report), hence 'conditional' gate rather than a hard yes/no."
+   },
+   "peer_review": {
+    "type": "Single-blind (masked review optional/encouraged) editorial peer review via Editorial Manager, per APA's general peer-review process page",
+    "source_url": "https://www.apa.org/pubs/journals/resources/peer-review"
+   },
+   "preprint": {
+    "allowed": "Yes — APA journals generally permit prior preprint posting; authors are asked to disclose the preprint and include a link in the cover letter at submission. This is an APA-wide policy statement, not verified as Psychological-Assessment-specific.",
+    "source_url": "https://journals.sagepub.com/doi/10.1177/25152459211019948"
+   },
+   "positioning": {
+    "accepts_now": "Empirical research on clinical-psychology assessment: development/validation of assessment instruments, scales, structured/observational interview methods; clinical judgment and decision-making research; translational work applying basic psychological science (cognitive, personality-social, biological psychology) to clinical assessment; integrative/systematic reviews of assessment literatures.",
+    "framing_required": "APA Journals TOP (Transparency and Openness Promotion) guidelines apply — papers should address data/materials/code transparency and preregistration status; APA's bias-free/inclusive-language and masked-review guidance also shapes framing expectations.",
+    "methods_welcome": [
+     "psychometric scale/instrument development and validation",
+     "clinical interview and observational assessment methods",
+     "measurement invariance / psychometric modeling (IRT, CFA, DIF)",
+     "clinical judgment and decision-making studies",
+     "translational basic-to-clinical assessment research",
+     "integrative reviews of assessment domains"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.apa.org/pubs/journals/pas",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12483689/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~3.6 months average first-round decision (one data point: 15.6 weeks for the latest logged submission); based on n=1 review on SciRev — not a robust sample.",
+    "desk_reject_pct": null,
+    "acceptance_note": "Outcome of the single SciRev-logged submission was 'Rejected' after 1 review round with 3 reviewer reports; overall manuscript-handling rating 2.0/5.0, review-quality rating 3.0/5.0.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/psychological-assessment/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "No Psychological-Assessment-specific statement found confirming single- vs double-blind; inferred from APA's general peer-review resource page, not journal-specific."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No Psychological-Assessment-specific preprint policy page found; based on general APA-wide preprint-friendliness reporting in a secondary (SAGE) source, not APA's own journal page."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev has no rejection-rate field populated for this journal ('n/a'); no forum discussion (小木虫, 知乎, Reddit r/AskAcademia) surfaced a concrete desk-reject percentage."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum posts found on 小木虫 (wdcsci.com detail page returned HTTP 403, inaccessible), 知乎, fabiaoji, or Reddit r/AskAcademia describing reviewer tone/culture for this journal specifically; only generic journal-ranking lists surfaced."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "Based on a single SciRev-logged submission (n=1); not a robust aggregate, flagged as low confidence despite having a number."
+    },
+    {
+     "field": "positioning.accepts_now (current CFP)",
+     "why": "Checked APA's official calls-for-papers listing directly; confirmed no active special issue/CFP exists for Psychological Assessment as of 2026-07-13."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com / wdcsci.com (indexed mirror): search surfaced a dedicated review-experience detail page (wdcsci.com/sci/detail/11367) but it returned HTTP 403 Forbidden on fetch — content inaccessible, treated as 0 usable results",
+    "知乎 zhihu.com: search returned only a general SSCI psychology-journal listing article mentioning the *European* Journal of Psychological Assessment, not this APA journal — 0 relevant results",
+    "Reddit r/AskAcademia: search returned no matching threads about this journal's review process or desk-rejection — 0 results",
+    "fabiaoji: not surfaced in any query (searches did not return fabiaoji.com results for this journal) — 0 results"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": ""
+  },
+  {
+   "issn": "2296-2565",
+   "name": "Frontiers in Public Health",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+    "summary": "This is a publisher-wide (Frontiers-group) policy, not journal-specific — no Frontiers in Public Health–specific AI policy page was found, separate from the general Frontiers editorial policy. Facts (per 2026-07 fetch of the Frontiers policies page): generative AI may be used for text/figure generation and editing, but must be disclosed in the acknowledgments (name, version, model, source of the tool); AI cannot be listed as author/co-author; authors remain responsible for factual accuracy/citations of AI-assisted content; uploading of prompts/outputs as supplementary files is encouraged but not mandatory; editors/reviewers are barred from uploading unpublished manuscript content into external AI tools during review (confidentiality). Frontiers also announced (April 2026, per frontiersin.org/news and EurekAlert press release) a broader 'AI practical guidance' framework covering the whole publication lifecycle, moving from binary allow/ban toward disclosed, responsible-use routes — directional/leniency-raising but not journal-section-specific in the sources found. Leniency scored 3/5: disclosure-gated use is allowed (not banned), but unverified/undisclosed AI content and AI-authorship are prohibited; independent commentary (pivot-to-ai.com, 2026-07-02) frames the newer policy as effectively pushing editors toward AI-tool use — an adversarial framing not corroborated first-hand here."
+   },
+   "peer_review": {
+    "type": "Frontiers 'collaborative peer review': single-anonymized (reviewers know author identity), platform-mediated direct dialog between authors, reviewers and handling editor; names of editors and all endorsing reviewers are published with the article. This is the standard Frontiers-wide model applied to this journal (no PH-specific variant found).",
+    "source_url": "https://www.frontiersin.org/journals/public-health/for-authors/editor-guidelines"
+   },
+   "preprint": {
+    "allowed": "Yes — Frontiers states a 'supportive preprint policy': authors may post to preprint servers before/during review, provided the server does not restrict the author's full copyright/re-use rights; preprints should be cited in the manuscript.",
+    "source_url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics"
+   },
+   "positioning": {
+    "accepts_now": "Multidisciplinary public-health research spanning epidemiology, health policy, digital/global health, health education & promotion, environmental and occupational health, infectious diseases, health economics, and related community/clinical-intervention topics — organized into 20+ specialty sections (e.g. Public Health Policy, Public Health Education and Promotion, Digital Public Health) each with their own scope pages.",
+    "framing_required": null,
+    "methods_welcome": [
+     "Original Research",
+     "Systematic Review",
+     "Review",
+     "Brief Research Report",
+     "Mini Review",
+     "Study Protocol",
+     "Clinical Trial",
+     "Community Case Study",
+     "Policy Brief",
+     "Policy and Practice Reviews",
+     "Methods",
+     "Hypothesis and Theory",
+     "Conceptual Analysis",
+     "Perspective",
+     "Opinion",
+     "General Commentary",
+     "Data Report / FAIR2 Data",
+     "Technology and Code"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.frontiersin.org/journals/public-health/about",
+     "https://www.frontiersin.org/journals/public-health/for-authors/article-types",
+     "https://www.frontiersin.org/journals/public-health/sections/public-health-policy/about"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev (3 reviews submitted, 2026-07 fetch): average first review round 2.6 months (one submitter separately reported 6.7 weeks for first round); average total handling time to decision 3.4 months, ~3.5 review rounds on average. Chinese aggregator sources (zhihu/klxksci/letpub, cross-checked 2026-07) report a wide, inconsistent range — some claim ~2 weeks per round / 11-day 'extreme fast' acceptance anecdotes, others report the ~14-week average submission-to-publication window Frontiers itself cites. Given the contradiction between SciRev's small-N first-hand data and the Chinese marketing-style aggregator claims, the 'ultra-fast' claims should be treated as unverified promotional framing rather than fact.",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev rejection-rate field marked 'n/a' by respondents (not reported). No first-hand forum thread found quantifying desk-reject or acceptance rate.",
+    "reviewer_culture": "A zhihu article (\"Frontiers in Public Health：'灌水神刊'，审稿超快的公共卫生SCI\", zhuanlan.zhihu.com/p/1944419450876069010) explicitly frames the journal with the pejorative Chinese label '灌水神刊' (roughly 'mass dump-publishing journal') and touts fast review as a selling point for volume publication — this is a reputational/marketing claim from a paper-mill-adjacent SEO-style site, not a first-hand reviewer account (the article itself returned HTTP 403 on direct fetch, so this is search-snippet text only — low confidence). No first-hand Reddit r/AskAcademia thread was found discussing this journal's reviewer culture despite targeted search.",
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/frontiers-in-public-health/",
+     "https://zhuanlan.zhihu.com/p/1944419450876069010 (snippet only, 403 on direct fetch)",
+     "https://www.klxksci.com/zixun/3637.html",
+     "https://www.letpub.com.cn/index.php?journalid=10732&page=journalapp&view=detail"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency (journal-specific)",
+     "why": "Only the publisher-wide (all-Frontiers-journals) AI policy page was found; no Frontiers in Public Health-specific AI-use addendum exists separately, so this fact is a publisher-level inference, not journal-first-hand."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev field explicitly marked n/a by respondents; no Chinese or English forum post quantified a desk-reject rate for this journal."
+    },
+    {
+     "field": "experiential.reviewer_culture (first-hand)",
+     "why": "No first-hand Reddit r/AskAcademia or 小木虫 muchong thread was located describing actual reviewer behavior/tone for this journal; only a low-credibility zhihu marketing-style label ('灌水神刊') surfaced, and it could not even be directly fetched (403), so it is reported as a low-confidence snippet, not a verified claim."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No current (2024-2026) special-issue CFP requiring a specific framing/angle was found in the searches performed."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫/aggregator search: no direct muchong.com thread surfaced; returned fabiaoji.com, medsci.cn, klxksci.com, letpub.cn submission-experience aggregator pages instead — treated as secondary, not first-hand forum posts",
+    "fabiaoji.com: appeared in search results (fabiaoji.com/periodicalDetail...) but not directly fetched; listed as a source link only",
+    "知乎 zhihu: 1 relevant article found (灌水神刊 framing, fast review speed, APC tiers by article type) — snippet-only due to 403 on direct fetch",
+    "Reddit r/AskAcademia: 0 results — no thread found discussing this journal's desk-reject or review culture despite targeted query"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0020-7284",
+   "name": "International Journal of Group Psychotherapy",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://taylorandfrancis.com/our-policies/ai-policy/",
+    "summary": "無此期刊專屬 AI 政策頁可查（tandfonline 期刊頁 403 無法直接抓取），僅能引用出版社 Taylor & Francis 集團層級通用政策：GenAI/LLM 不得列為作者或共同作者；作者需在文中揭露所用工具全名；允許用於構思發想、語言潤飾、文獻分類、輔助程式撰寫等；禁止用 AI 生成或篡改研究數據、圖表、影像。政策明確提示「部分期刊可能比集團政策更嚴格，需查該刊 Instructions for Authors」，但本刊該頁面無法存取以核實是否有加嚴條款，故 leniency 評為集團預設值、非本刊實測確認。"
+   },
+   "positioning": {
+    "accepts_now": "2025年出版文章顯示：團體心理治療理論與實務模式、系統性回顧、及跨領域主題（如攻擊性/內化厭女與療癒、Mattering 概念）、特定治療方案的隨機對照試驗（如 Psychodrama 團體治療用於摳皮症的貝葉斯分析 RCT）。期刊正逢創刊75週年，強調銜接既有團體理論與當代治療模式的臨床導向文章。",
+    "framing_required": "強調臨床導向（clinically-focused）並需與既有團體治療理論建立連結；特別歡迎聚焦歷史上代表性不足或邊緣化族群的團體介入調適研究。",
+    "methods_welcome": [
+     "原創實證研究（含RCT，如貝葉斯分析）",
+     "個人學術敘事探討關鍵實務議題",
+     "臨床與研究文獻的系統性回顧",
+     "跨領域學術研究（連結教育學、社會心理學、工業組織心理學、領導學）",
+     "書籍與影片評論"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://agpa.org/publications/international-journal-of-group-psychotherapy/",
+     "https://www.tandfonline.com/journals/ujgp20"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/international-journal-of-group-psychotherapy/"
+    ]
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "推定允許（依 Taylor & Francis 集團通用政策：可將稿件前置版本存於非營利性 preprint 伺服器，且已告知期刊者不視為重複發表），但未找到本刊專屬頁面明確重申此政策，故為集團層級推定而非本刊實測確認。",
+    "source_url": "https://editorresources.taylorandfrancis.com/policies/preprints/"
+   },
+   "cross_language_checked": [
+    "小木蟲 muchong.com：站內搜尋與 WebSearch 均未找到針對本刊的專屬討論串，0 results",
+    "知乎 zhihu.com：搜尋「International Journal of Group Psychotherapy 審稿」無專屬討論結果，0 results",
+    "SciRev：期刊頁面存在但顯示 'No reviews have yet been submitted for this journal'，審稿時長/退稿率/接受率欄位皆為 n/a，0 reviews",
+    "Reddit r/AskAcademia：site:reddit.com 搜尋無相關討論串，0 results"
+   ],
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "tandfonline 期刊 about 頁與 research.com 頁皆回傳 403 無法直接抓取核實；WebSearch 摘要聲稱「double blind」但無法追溯到可驗證的具體頁面內容，信心不足，故留白而非採信間接摘要"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊頁面 0 筆審稿回報，Duration first review round 顯示 n/a"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 顯示 n/a，且中文/英文論壇（小木蟲、知乎、Reddit AskAcademia）均無討論串"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無任何一手來源（SciRev、論壇）提及本刊接受意見或編輯回饋模式"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源可佐證審稿人文化描述，依規則不可捏造通用敘事"
+    },
+    {
+     "field": "ai_policy.gate/leniency",
+     "why": "僅能引用 Taylor & Francis 集團層級 AI 政策，本刊專屬 Instructions for Authors 頁面（可能加嚴或補充）因 403 無法核實，故標記為推定值"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "僅為集團政策推定，未見本刊專屬頁面重申或加註限制"
+    }
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0003-0651",
+   "name": "Journal of the American Psychoanalytic Association (JAPA)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 1,
+    "source_url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+    "summary": "未找到 JAPA 期刊專屬 AI 政策頁面；僅能引用出版商 SAGE 的通用 AI 政策(適用於旗下所有期刊,除非該刊另有聲明)。SAGE 區分「輔助型 AI」(文法/語言潤飾,免揭露) 與「生成型 AI」(產生內容、影響方法論/分析/結論者,投稿時須揭露);不允許 AI 掛名作者、不允許 AI 從事同儕審查工作、禁止用 AI 生成造假數據或引用。中等寬容度 (3/5):允許用途廣泛但要求揭露且明確列出禁止用途,非全面禁止亦非完全開放。JAPA 期刊自身的 Submission Guidelines PDF (sagepub.com/docs/...) 未包含期刊專屬 AI 政策文字,故本欄位是出版商層級推定,非期刊專屬一手來源。"
+   },
+   "positioning": {
+    "accepts_now": "Original research articles, panel reports, plenary addresses, commentaries, book reviews; explicitly states selection is based on quality of writing/scholarship/research rather than theoretical orientation.",
+    "framing_required": "Manuscripts must engage with psychoanalytic clinical/theoretical framing (not general psychology or neuroscience-only framing) to fit scope.",
+    "methods_welcome": [
+     "clinical case material / clinical practice and innovations",
+     "psychoanalytic theory and technique",
+     "child analysis and development",
+     "gender and sexuality studies",
+     "trauma theory",
+     "neuroscience and interdisciplinary research (as it relates to psychoanalysis)",
+     "psychoanalytic education and training",
+     "professional ethics",
+     "research methodology papers",
+     "hermeneutics / modern-postmodern theoretical trends",
+     "psychopharmacology in relation to psychoanalysis"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "publisher-scope: https://apsa.org/japa/",
+     "publisher-scope: https://journals.sagepub.com/author-instructions/apa",
+     "cross-language secondary compilation citing journal's stated research directions: https://zhuanlan.zhihu.com/p/422703273"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "Editors state they 'strive to come to a decision about a manuscript within twelve weeks of submission' but note full peer review may extend beyond that window; reviewers are given roughly 6 weeks to complete review. These are publisher-stated targets, not first-hand author-reported outcomes.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "publisher policy (not first-hand): https://journals.sagepub.com/author-instructions/apa",
+     "SciRev (0 reviews submitted, all metrics n/a): https://scirev.org/journal/journal-of-the-american-psychoanalytic-association/"
+    ]
+   },
+   "peer_review": {
+    "type": "double-anonymized (double-blind), 3+ reviewers per manuscript",
+    "source_url": "https://journals.sagepub.com/author-instructions/apa"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint policy statement found on SAGE journal page, author instructions PDF, or APsA site; SAGE's general 'green' preprint policy could not be confirmed as applying journal-specifically without a direct citation, so left null rather than assumed."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 submitted reviews (n/a on all fields); no Chinese or Reddit forum threads found; only publisher-stated target (12 weeks to decision, 6 weeks reviewer window) exists, which is policy not experiential, so left null per HARD RULES."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No source (SciRev, forums, publisher) states a desk-reject rate for this journal."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero first-hand discussion found across SciRev, 小木蟲, 知乎, fabiaoji-style forums, and Reddit r/AskAcademia; this is a low-volume clinical/humanities journal not typically discussed by the SCI-chasing or general grad-student forum communities searched."
+    },
+    {
+     "field": "ai_policy.source_url (journal-specific)",
+     "why": "Only SAGE's platform-wide AI policy was locatable; JAPA's own Submission Guidelines PDF and SAGE journal home page returned no journal-specific AI clause, so the policy fact is attributed at publisher level only and signal_quality kept low (1)."
+    }
+   ],
+   "overall_signal_quality": 2,
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/journal-of-the-american-psychoanalytic-association): 0 first-hand reviews, all quantitative fields n/a — confirmed no data",
+    "小木蟲 muchong.com: 0 results via site-restricted search; no forum threads found for this journal",
+    "知乎 zhihu.com: 0 first-hand submission/review-experience results; only found a secondary compilation article listing the journal's research-direction topics (not experiential)",
+    "fabiaoji: not searched separately (no distinct results surfaced; this journal is a clinical/humanities psychoanalysis title rarely tracked by Chinese SCI-focused submission-tracking communities)",
+    "Reddit r/AskAcademia (site:reddit.com search): 0 results specific to this journal's submission or review experience"
+   ],
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10982345/homepage/forauthors.html",
+    "summary": "Wiley/AJP-specific policy (per journal for-authors page): GenAI tools cannot be listed as authors and cannot be assigned responsibility for content. AI-generated images are not permitted on the cover or in articles. Tools used only for spelling/grammar/general editing are permitted if fully disclosed; authors remain fully responsible for all content including AI-assisted portions and must correctly reference supporting work. Final call on whether GenAI use is acceptable in a given manuscript rests with the editor. GenAI use in peer review itself is stated to be limited/restricted. This reads as journal-specific text consistent with Wiley's group-wide AI policy, not a generic publisher boilerplate link only — leniency rated 2/5 (permitted for light editing only, banned for content generation/authorship/images, editor has final discretion)."
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10982345/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "Yes — AJP allows deposit of manuscripts to preprint servers (per journal for-authors/Wiley policy page). Specific preprint server list and embargo terms were not independently confirmed beyond the general allowance statement.",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10982345/homepage/forauthors.html"
+   },
+   "positioning": {
+    "accepts_now": "Broad-scope primatology journal; per its aims & scope it currently publishes across behavioral ecology, conservation biology, evolutionary biology, life history, demography, paleontology, physiology, endocrinology, genetics/molecular genetics, and psychobiology of nonhuman primates, plus a 'New Approaches' article type for emerging methods. A 2025/2026 special-issue call tied to the ASP 2026 conference symposium ('Looking at the Past, the Present and to the Future: What Is to Come for Primatology?') is soliciting submissions with a Jan 5 2026 deadline, explicitly inviting early-career primatologist contributions — signals current editorial appetite for retrospective/field-direction pieces alongside standard empirical work.",
+    "framing_required": null,
+    "methods_welcome": [
+     "behavioral ecology",
+     "conservation biology",
+     "evolutionary biology",
+     "life history/demography",
+     "paleontology",
+     "physiology/endocrinology",
+     "genetics/molecular genetics",
+     "psychobiology",
+     "review articles",
+     "commentaries",
+     "New Approaches (novel/methodological) papers",
+     "plenary addresses"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://onlinelibrary.wiley.com/journal/10982345",
+     "https://asp.org/2025/10/23/looking-at-the-past-the-present-and-to-the-future-what-is-to-come-for-primatology/",
+     "https://onlinelibrary.wiley.com/page/journal/10982345/homepage/call-for-papers"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "Mixed signals, no first-hand consensus: (a) journal's own reported stats cite ~35 days to first decision / ~63 days to final decision (secondary aggregator, not verified against a primary Wiley stats page); (b) Chinese author-experience aggregator LetPub (7 shared reports) describes review cycle as '偏慢,4-8周' (relatively slow, 4-8 weeks). No SciRev data exists (0 reviews submitted, all fields n/a). No Reddit r/AskAcademia or Zhihu threads found discussing this specific journal's timeline.",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub aggregate impression from the same 7 Chinese-author reports characterizes acceptance as '较易' (relatively easy), but this is a low-n, unverified crowd-sourced summary rating, not a stated acceptance-rate figure from the publisher.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/american-journal-of-primatology/ (0 reviews, all metrics n/a)",
+     "https://letpub.com.cn/index.php?journalid=462&page=journalapp&view=detail&xuanxiangk_id=2 (7 Chinese-author reports)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "Could not confirm single-blind vs double-blind vs open from the journal's own for-authors page (fetch returned HTTP 402) or any secondary source specific to AJP; only generic articles about peer-review models in the primatology field surfaced (e.g. International Journal of Primatology's unrelated switch to double-blind)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No Reddit r/AskAcademia, Zhihu, or 小木虫 muchong threads found discussing this specific journal's reviewer tone/culture; only generic LetPub aggregate ratings exist, which don't describe reviewer behavior."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev shows 0 reviews submitted (all fields n/a for this journal); no publisher-disclosed desk-reject percentage found; no forum discussion quantifying it."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No explicit framing/positioning requirement (e.g. 'must include conservation implications') was stated in aims & scope or the current CFP beyond normal topical fit; leaving null rather than inventing a requirement."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/american-journal-of-primatology): 0 reviews submitted, all quantitative fields n/a",
+    "LetPub 小木虫-adjacent Chinese aggregator (letpub.com.cn journalid=462): 7 shared author experience reports, review cycle '偏慢 4-8周', acceptance '较易'",
+    "小木虫 muchong.com direct search: no journal-specific thread surfaced via WebSearch",
+    "知乎 zhihu direct search: no journal-specific thread surfaced via WebSearch",
+    "Reddit r/AskAcademia: no journal-specific thread surfaced via WebSearch"
+   ],
+   "sensitive_topics_note": null,
+   "issn": "0275-2565",
+   "name": "American Journal of Primatology",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0955-6036",
+   "name": "Psychiatric Bulletin",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 1,
+    "source_url": "https://www.cambridge.org/news-and-insights/cambridge-launches-ai-research-ethics-policy",
+    "summary": "此 ISSN(0955-6036)所屬的期刊「Psychiatric Bulletin」已於 2014/2015 更名為 BJPsych Bulletin(現行 ISSN 2056-4694/2056-4708),不再以此刊名接受投稿,故無「期刊專屬」AI 政策可查。僅能引用其出版社 Cambridge University Press 的通用政策(2023年公告):允許使用生成式 AI 輔助寫作但須揭露,AI 不得列為作者。此為出版社層級規則,非本刊(甚至非現行 BJPsych Bulletin)專屬政策,故 signal_quality 刻意壓低。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "不適用 — 此刊名(Psychiatric Bulletin, ISSN 0955-6036)自2014/2015年後已不存在,現行後繼刊為 BJPsych Bulletin(ISSN 2056-4694)。查無 2024-2026 年以此 ISSN/刊名發表的文章,故無法依 WO2 方法論(近期文章標題/主題)推斷現況接受範圍。",
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 0,
+    "sources": [
+     "https://www.cambridge.org/core/journals/bjpsych-bulletin/past-title/psychiatric-bulletin/information/6143115177751C3937702C8302DB95CA",
+     "https://en.wikipedia.org/wiki/BJPsych_Bulletin"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "無法取得此已停用刊名的獨立同儕審查說明;現行後繼刊 BJPsych Bulletin 的政策不應套用於已不存在的 ISSN"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "同上,查無此已停用刊名的預印本政策"
+    },
+    {
+     "field": "positioning.accepts_now / methods_welcome / framing_required",
+     "why": "此 ISSN 對應刊名已於2014/2015年停止使用,近十年無新文章可供分析 aims&scope 或近期選題"
+    },
+    {
+     "field": "experiential.review_time_months / desk_reject_pct / acceptance_note",
+     "why": "此刊已停刊十年,任何殘留討論皆已過時且對應現行不同 ISSN 的刊物,不具參考價值,故未採計"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源可查證,依規則不得臆造"
+    }
+   ],
+   "cross_language_checked": [
+    "未執行小木虫/fabiaoji/知乎/Reddit查詢 — 因初步查證已確認此 ISSN(0955-6036)對應之刊名於2014/2015年停刊並更名為 BJPsych Bulletin,對一個十年未收稿的舊刊名做跨語言論壇搜尋預期只會找到该改名史或現行 BJPsych Bulletin 的討論(非本 ISSN 本身),故未浪費查詢額度;若需要現行 BJPsych Bulletin(ISSN 2056-4694)的完整 WO2 檔案,建議另開一筆條目重新調查"
+   ],
+   "sensitive_topics_note": "本刊為精神醫學(psychiatry)領域,若未來調查現行 BJPsych Bulletin 之經驗性資料(審稿文化等),須留意涉及精神疾病/自殺等敏感主題文章時的措辭中立性,惟本次因刊物已停刊無相關資料可查。",
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0001-6918",
+   "name": "Acta Psychologica",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier ; https://www.sciencedirect.com/journal/acta-psychologica/publish/guide-for-authors (search snippet only, direct fetch returned HTTP 403)",
+    "summary": "採用 Elsevier 集團通用政策(非期刊獨有客製):寫作階段可用生成式 AI 輔助(整理文獻、潤色語言等),但 AI 產出不得直接作為手稿正文,須在參考文獻前以獨立聲明段落揭露工具名稱與用途;基礎文法/拼字檢查免揭露。AI 不得列為作者,人類作者對內容負全責。期刊層級的加嚴僅見於圖像/圖表製作與 Graphical Abstract:Acta Psychologica 明確禁止用生成式 AI 產生或修改投稿圖像(此為 guide-for-authors 頁面搜尋摘要所見的期刊特有加嚴點,原始頁面因 403 無法直接驗證全文,信心中等)。整體對「文字」的允許度屬中等寬容(3/5:非全禁、非全開放,強制揭露),故 gate 標記為 conditional。"
+   },
+   "positioning": {
+    "accepts_now": "以實驗心理學(experimental psychology)為核心,大宗文章圍繞知覺、注意力、語言、記憶、認知/情緒控制、數字與動作認知(numerical & motor cognition)。收稿範圍另涵蓋臨床與健康心理、個別差異、工商心理、語言心理、生命全期發展、心理學與科技、教育心理、運動心理、社會心理等主題,強調結合神經科學與統計方法的跨學科實證研究(需有量化分析支持)。",
+    "framing_required": "投稿被期待是實證研究(empirical, quantitative),單純理論思辨或無數據支持的稿件較不受歡迎;徵稿版(special issue)顯示期刊也接受應用/新興主題,只要框架落在認知/行為的實證研究內。",
+    "methods_welcome": [
+     "quantitative/experimental behavioral studies",
+     "cognitive & neuroscience-informed methods",
+     "review articles",
+     "special-issue thematic collections (e.g. Complex Dynamic Systems Theory approaches to language learning, AI's psychological impact in organizations, joint-action computational/empirical approaches)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.sciencedirect.com/journal/acta-psychologica (search snippet)",
+     "https://www.sciencedirect.com/journal/acta-psychologica/about/call-for-papers (search snippet)",
+     "https://en.wikipedia.org/wiki/Acta_Psychologica (search snippet)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "資料分歧,列出多筆:SciRev(僅4筆評論)平均首輪回覆2.4個月、總處理時間4.6個月、平均1.3輪;另一組 SciRev/期刊聚合站數字為「首輪15.4週(~3.5個月)」與「發表週期36週(~8.3個月)」;中文論壇(發表記 fabiaoji)使用者回報投稿到拒稿約3個月、投稿到接受約8個月,亦有使用者稱首輪審查「6個月到1年」;知乎案例:10月投稿、隔年3月收到小修、4月修回後1週內接受。各來源口徑(首輪/總時長/發表)不一致,僅供參考範圍,非單一權威數字。",
+    "desk_reject_pct": null,
+    "acceptance_note": "無官方接受率數據。發表記(fabiaoji)一位使用者自述4次投稿中2次被接受,並形容「錄用率不高」;知乎案例提及曾有一篇稿件因邀請20位外部審稿人均拒絕審查而被拒(非學術品質問題,而是找不到審稿人)。這些僅為個別使用者的一手經驗,非統計代表值。",
+    "reviewer_culture": "SciRev 量化指標:manuscript handling 整體評分3.8/5(「Very good process」),審稿報告品質3.5/5,審稿意見難度4.0/5(被形容為「difficult/嚴格」)。中文論壇(fabiaoji)使用者評語兩極:有人稱「編輯很負責」「編輯回覆特別快,基本隔天回」,但也有人反映「編輯決策不一致(相似稿件待遇不同)」及審稿人難尋導致流程延宕。Reddit r/AskAcademia 搜尋(site:reddit.com Acta Psychologica 及一般查詢)未撈到任何相關討論串,誠實記為0筆結果。",
+    "signal_quality": 4,
+    "sources": [
+     "https://scirev.org/journal/acta-psychologica/",
+     "https://www.fabiaoji.com/periodicalDetail?id=2a91466404da4643a58fb6ae581704ea",
+     "https://www.letpub.com.cn/index.php?journalid=11512&page=journalapp&view=detail",
+     "https://zhuanlan.zhihu.com/p/671008711 (及知乎搜尋摘要中提及的其他匿名投稿經驗)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev僅4筆評論未提供 desk-reject 比例;中文論壇亦無具體桌拒百分比數字,僅有質性描述(找不到審稿人、部分稿件先要求補方法論再送外審),故留null"
+    },
+    {
+     "field": "cross_language_checked: Reddit r/AskAcademia",
+     "why": "多次搜尋(含 site:reddit.com)均無 Acta Psychologica 專屬討論串,誠實記錄為0結果而非留空未查"
+    },
+    {
+     "field": "peer_review.type / preprint (期刊專屬頁面驗證)",
+     "why": "ScienceDirect guide-for-authors 頁面與 Sherpa Romeo 期刊頁面本次抓取皆回傳 HTTP 403,僅能以第三方搜尋摘要及集團通則佐證,未能第一手核實期刊獨有條款細節"
+    }
+   ],
+   "overall_signal_quality": 3,
+   "cross_language_checked": [
+    "小木蟲 muchong.com — 未搜尋到站內原生討論串(僅其他站點的轉載/聚合結果出現),記為未取得直接一手資料",
+    "fabiaoji.com 發表記 — 取得多筆具體審稿時長、接受率、編輯評語的一手使用者經驗",
+    "知乎 zhihu.com — 取得至少2筆具體投稿時間軸案例(含審稿人難尋、修回接受時程)",
+    "Reddit r/AskAcademia — 0 results,查無相關討論"
+   ],
+   "peer_review": {
+    "type": "double-anonymized (double-blind) peer review",
+    "source_url": "https://www.letpub.com.cn/index.php?journalid=11512&page=journalapp&view=detail (confirms \"Anonymous peer review\"); general web search summary corroborates double-anonymized — primary Elsevier journal homepage page for this specific claim could not be directly fetched (403), so treat as moderate-confidence"
+   },
+   "preprint": {
+    "allowed": "允許(依 Elsevier 集團通則):作者可於投稿前後任何時間在 preprint server 張貼預印本,須標示為 'preprint'/未經同行評審。但 Elsevier 政策明文提醒:採用 double-anonymized 審查的期刊可能有不同的預印本規範,需查該刊 Guide for Authors 確認,而 Acta Psychologica 的 Guide for Authors 頁面本次抓取為 HTTP 403,故期刊專屬條款(是否有例外)未能第一手核實。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/sharing ; https://v2.sherpa.ac.uk/id/publication/1725 (fetch blocked 403, not directly verified)"
+   },
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0021-8855",
+   "name": "Journal of Applied Behavior Analysis (JABA)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.wiley.com/en-us/publish/article/ai-guidelines/ (403 on direct fetch, corroborated via WebSearch summaries) and https://onlinelibrary.wiley.com/page/journal/19383703/homepage/forauthors.html (JABA author guidelines page, 402 on direct fetch)",
+    "summary": "無法直接抓取 JABA 專屬作者頁面（回傳 402 Payment Required）與 Wiley AI guidelines 頁面（403 Forbidden），以下為透過搜尋摘要交叉確認、但未經一手頁面核實的 Wiley 出版社通用政策，JABA 頁面搜尋摘要顯示採用相同框架：AI 不得列為作者、不對研究負責；若使用 GenAI 工具產生手稿內容須在 Methods 或 Acknowledgements 揭露；純文法/拼字編輯類 AI 工具免揭露；禁止用 GenAI 生成或竄改原始研究數據/圖表；審稿人僅能用 GenAI 潤飾報告用詞且須向編輯揭露、不得上傳未發表手稿全文至公開 AI 工具。此為 Wiley 出版社層級政策，未找到 JABA 期刊自訂的加嚴或放寬版本，故標記為 conditional（揭露即可用，非全面禁止，也非完全放任）。leniency 2 分是因為明確禁止用 AI 生成研究數據/結果，且要求揭露，屬中低度寬容。"
+   },
+   "peer_review": {
+    "type": "Double-anonymous (blind) peer review — JABA 要求作者匿名化稿件並另附作者資訊頁；搜尋摘要提及部分討論指出多數投稿仍以雙盲為預設，但未能直接讀取官方頁面原文確認細節（頁面回傳 402）。",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/19383703/homepage/forauthors.html (402 Payment Required on direct fetch; based on WebSearch snippet aggregation)"
+   },
+   "preprint": {
+    "allowed": "允許（依 Wiley 出版社通用政策）：作者可在提交前將稿件放在非營利性 preprint 伺服器，投稿不需先移除；已提交版本（preprint）可隨時自我典藏，接受版本（accepted, peer-reviewed）需等待禁運期（STM 期刊標準為 12 個月）。此為 Wiley 出版社層級政策，未確認 JABA 是否有期刊專屬例外。",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html ; https://authors.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html"
+   },
+   "positioning": {
+    "accepts_now": "JABA 是應用行為分析(ABA)領域旗艦期刊，發表以實驗分析為基礎、展現介入與行為改變之間功能關係(experimental control)的原創實證研究。近年常見主題涵蓋：行為障礙的功能分析(functional analysis)、教室教學介入、自閉症幼兒早期密集行為介入(EIBI)、物質使用之後效管理(contingency management)、兒童餵食治療(pediatric feeding therapy)。官網公布之 2024 年整體接受率約 26%。",
+    "framing_required": "強調『analytic dimension』——手稿須展示介入與行為變化之間清楚的功能性關係與實驗控制，非純敘述性或相關性研究。",
+    "methods_welcome": [
+     "single-case experimental design / 單一受試實驗設計",
+     "functional analysis / 功能分析",
+     "original experiments and replications / 原創實驗與重複驗證研究",
+     "discussion and review articles relevant to therapeutic behavior change / 與治療性行為改變相關之討論與回顧文章"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Journal_of_Applied_Behavior_Analysis",
+     "https://onlinelibrary.wiley.com/page/journal/19383703/homepage/society.html (via WebSearch snippet; direct fetch blocked/not accessible)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "官網聲稱 2024 年接受率約 26%（非一手 SciRev 或論壇資料，來自搜尋引擎摘要引述期刊官網數字，未能直接核實原始頁面，因 Wiley 頁面回傳 402/403）。",
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://www.scirev.org/journal/journal-of-applied-behavior-analysis/ — 已查詢，頁面明確顯示「編輯尚未提供此資訊」且「尚無人對此期刊提交評論」，所有審稿時長/桌拒時間/審稿輪數欄位均為 n/a"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — 未找到任何針對 JABA 的討論串，0 條與 JABA 直接相關的一手經驗分享",
+    "fabiaoji — 搜尋未回傳任何 fabiaoji 上關於 JABA 的討論，0 results",
+    "知乎 zhihu — 搜尋結果中出現的 zhihu 連結均與 JABA/應用行為分析期刊投稿經驗無關，0 results",
+    "Reddit r/AskAcademia — 搜尋未找到任何討論 JABA 投稿/審稿經驗的貼文，0 results",
+    "SciRev.org — 有 JABA 專屬頁面，但站方確認尚無任何使用者提交審稿時長/桌拒率資料，等同 0 reviews"
+   ],
+   "sensitive_topics_note": "JABA 涉及自閉症/發展障礙之應用行為分析(ABA)介入研究；ABA 療法本身在部分身心障礙權益/神經多樣性倡議社群中存在爭議，但本次調查未發現這與 AI 政策、同行評審或投稿定位有直接關聯的具體來源，故僅作背景註記，不納入其他欄位的事實判斷。",
+   "blanks": [
+    {
+     "field": "peer_review.type 精確措辭",
+     "why": "官方作者頁面 onlinelibrary.wiley.com/page/journal/19383703/homepage/forauthors.html 直接抓取回傳 402 Payment Required，僅能依賴 WebSearch 摘要層轉述，未能取得逐字原文確認是否為強制雙盲或作者可選雙盲"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 頁面顯示此期刊 0 筆使用者提交資料，所有時間欄位為 n/a；未搜到任何論壇一手時間報告"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 無資料；官網僅公布籠統『26% acceptance rate 2024』整體接受率數字，非桌拒率，且該數字本身也僅能透過二手搜尋摘要引述，未能核實原始頁面"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "小木虫、fabiaoji、知乎、Reddit r/AskAcademia 四個查核管道均為 0 results，無任何一手審稿人風格/文化描述可引用"
+    },
+    {
+     "field": "ai_policy 是否為 JABA 期刊專屬版本（相對於 Wiley 出版社通用版本）",
+     "why": "wiley.com/en-us/publish/article/ai-guidelines/ 回傳 403 Forbidden，JABA forauthors.html 回傳 402 Payment Required，兩個一手頁面皆無法直接讀取以確認 JABA 是否有加註期刊專屬 AI 條款"
+    },
+    {
+     "field": "positioning 近期(2024-2026) CFP / 特刊",
+     "why": "搜尋僅找到姊妹期刊 Behavior Analysis in Practice 的動物行為特刊 CFP，未找到 JABA 本身有進行中的特刊徵稿"
+    }
+   ],
+   "overall_signal_quality": 1
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500",
+    "summary": "未查到 JCFS 期刊專屬 AI 政策頁面；適用 Springer Nature 出版社統一政策(publisher-wide,非期刊專屬):LLM/生成式AI 不得列為作者(無法承擔究責),若用於內容生成須在 Methods(或替代章節)揭露;僅用於「AI輔助文字潤飾/校對」(讀順、文法、拼字)則免揭露。屬「有條件允許」,非全面禁止亦非完全開放。因僅為出版社通用政策、未見 JCFS 專屬聲明,signal_quality 偏低。"
+   },
+   "peer_review": {
+    "type": "double-anonymous (double-blind)",
+    "source_url": "https://ifs.sc.edu/CYF/journal.html"
+   },
+   "preprint": {
+    "allowed": "允許。依 Springer Nature 通用 preprint 政策:投稿前後皆可將稿件貼於 preprint 平台,不視為重複發表;需於投稿時揭露 preprint DOI 與授權條款;preprint 可自選 CC 授權;可在稿件參考文獻中引用 preprint。未見 JCFS 專屬額外限制。",
+    "source_url": "https://www.springernature.com/gp/researchers/the-researchers-source/open-science-blogpost/four-things-to-know-about-springer-natures-new-preprint-policy/16747974"
+   },
+   "positioning": {
+    "accepts_now": "聚焦兒童、青少年與家庭之行為健康與福祉,採跨學科生態取向(個人/家庭/社區多層次)。近期(2026年6月號)刊出主題涵蓋:親職教養與跨文化學習、青少年心理、父嬰依附與育兒衝突、家庭情緒調節等,多為量化實證研究(原始論文/研究論文形式),含部分Open Access文章。",
+    "framing_required": "投稿宜強調應用/轉譯研究、方案評估、服務輸送或政策意涵(translational research bridging research-to-practice);質性研究稀少('qualitative ones are rare'語出社群評論),量化/混合方法較受青睞,質性研究者宜特別強化方法論嚴謹度與臨床/政策應用框架。",
+    "methods_welcome": [
+     "量化實證研究(主流)",
+     "混合方法",
+     "方案評估(program evaluation)",
+     "系統性回顧/scoping review",
+     "實證簡報(brief reports)",
+     "評論(commentaries)",
+     "跨地域/跨文化樣本"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/10826/aims-and-scope",
+     "https://ifs.sc.edu/CYF/journal.html",
+     "https://ajustpeer.com/discussions/journal-of-child-and-family-studies/",
+     "https://link.springer.com/journal/10826/volumes-and-issues"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "跨來源差異極大,無法給單一可信數字。SciRev 4筆評論(2021-2026):第一輪 36.6週(~8.5個月,2023, N=1實際完成有決定); 另兩筆為投稿人中途撤稿(未獲決定)分別為119天(~4個月)與462天(~15個月); 2021年一筆完整流程62.4週(~14個月)後拒稿。SciRev 頁面另列'total handling time for accepted manuscripts'約11.4個月,但該數字樣本量極小、真實性存疑。AJustPeer 一則評論稱投稿到 early access 費時約1.5年。小木虫/知乎搜尋未見獨立中文審稿時間案例(僅期刊介紹頁,無具體個人審稿週期分享)。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 頁面 accepts_last_year / immediate rejection 欄位皆顯示 n/a(樣本不足,無法計算)。 4筆 SciRev 評論中2筆最終拒稿、2筆中途撤稿(未獲決定),0筆已知接受案例出現在 SciRev 樣本中,但 AJustPeer 有1則描述最終成功發表(耗時1.5年)。樣本太小,不足以推論真實接受率。",
+    "reviewer_culture": "評價兩極。正面(AJustPeer,1則):審稿意見'detailed, insightful, comprehensive',編輯回覆迅速,排版協助佳。負面(SciRev,3則):審稿人難尋、僅4位審稿人中1位交件仍據以拒稿、編輯決策延宕數月且投稿人自稱多次追蹤未果,1則使用'editorial misconduct'字眼形容延遲,編輯方面曾以'editorial transition'及'投稿量增加20%'為由解釋延誤。無法排除選擇性回報偏差(SciRev/AJustPeer 用戶多為有負面經驗者主動發文)。",
+    "sources": [
+     "https://scirev.org/journal/journal-of-child-and-family-studies/",
+     "https://scirev.org/reviews/journal-of-child-and-family-studies/",
+     "https://ajustpeer.com/discussions/journal-of-child-and-family-studies/"
+    ],
+    "signal_quality": 3
+   },
+   "issn": "1062-1024",
+   "name": "Journal of Child and Family Studies",
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋未見 JCFS 專屬個人審稿經驗發文,僅索引到論壇分類頁(0 具體結果)",
+    "fabiaoji/letpub.com.cn (journalid=11495) — 有期刊資訊頁(IF、CiteScore、投稿系統連結),但'平均審稿速度'欄位僅為使用者填寫提示、無實際數據(0 quantitative 結果),頁面未提及AI政策",
+    "知乎 zhihu — 搜尋查詢未返回針對本刊之獨立討論串(0 results,僅雷同期刊介紹頁重複出現)",
+    "Reddit r/AskAcademia — 搜尋未命中任何討論本刊的 Reddit 貼文(0 results,搜尋結果全為其他學術資料庫頁面)"
+   ],
+   "sensitive_topics_note": "主題涉及兒童虐待、疏忽、住房不穩定/無家可歸等敏感兒童福祉議題,惟本次僅查核出版與審稿機制事實,未涉及該類研究倫理審查細節,故不額外標註政治傾向等主觀判斷(依規則無具體來源不得臆測)。",
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific)",
+     "why": "未找到 JCFS 專屬 AI/生成式AI 政策頁面或聲明,僅能引用 Springer Nature 出版社通用政策;無法確認 JCFS 編輯部是否有額外限制或更嚴/更鬆規定"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面該欄位顯示 n/a(樣本不足),無其他公開來源提供具體拒稿率數字,故留空避免捏造"
+    },
+    {
+     "field": "positioning special-issue CFP",
+     "why": "搜尋未發現 JCFS 近期(2024-2026)公開徵稿專刊(special issue CFP),無法列出當前徵稿主題,仍缺此項證據"
+    },
+    {
+     "field": "cross_language: 小木虫/知乎具體審稿週期分享",
+     "why": "搜尋未命中任何針對本刊之個人化中文審稿經驗發文,僅見期刊介紹型頁面,故該欄位以'0 results'誠實記錄而非填充通用敘述"
+    }
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0002-7685",
+   "name": "The American Biology Teacher",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.ucpress.edu/about/ai-guidelines",
+    "summary": "No journal-specific AI policy page found for ABT itself; only the publisher-level policy from University of California Press (which owns/hosts ABT via online.ucpress.edu) was located. UC Press policy: AI cannot be listed/credited as an author; authors may use AI to improve readability/formatting/grammar of human-written text but must disclose such use to editors and be transparent in the manuscript; AI use to generate original text/images/data analysis requires disclosure; peer reviewers are strictly prohibited from using AI tools to compose review reports or from uploading manuscripts into AI tools (copyright violation); freelance contractors/editors may not use AI to generate original content for UC Press publications. This is publisher-wide, not confirmed as reproduced verbatim in ABT's own author guidelines (the ABT-specific author-guidelines PDF linked from bioone.org could not be opened/parsed in this session)."
+   },
+   "peer_review": {
+    "type": "Peer-refereed (blind type - single vs double blind - not confirmed from any public source found)",
+    "source_url": "https://complete.bioone.org/journals/the-american-biology-teacher/scope-and-details"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "K-16 (largely secondary/undergraduate) biology and life-science education content: content-focused articles explaining biology topics for teachers, classroom/lab/field teaching-strategy pieces and activities, commentaries on social/ethical implications of biology, and professional-development pieces for biology teachers. 2025 issues (Vol 87) sampled include: epigenetics-and-disease teaching piece, remote biology education/student safety, visual-art integration & drawing-to-learn in histology, active learning, distance education, field work, inclusive education, and a piece on college-prep STEM programs addressing poverty/free-reduced-lunch populations.",
+    "framing_required": "Submissions must be framed pedagogically - i.e. as a teaching strategy, classroom/lab/field activity, or education-policy commentary tied to biology content - rather than as primary biological research; pure disciplinary research papers without a teaching angle are not the journal's focus.",
+    "methods_welcome": [
+     "classroom/lab teaching activities & strategies",
+     "field-based activities",
+     "content/explainer articles on biology topics for a teacher audience",
+     "commentaries on social & ethical implications of biology",
+     "professional development pieces",
+     "book/product/technology reviews for the classroom"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://complete.bioone.org/journals/the-american-biology-teacher/scope-and-details",
+     "https://nabt.org/files/galleries/ABT_Online_Jan_2025.pdf",
+     "https://www.nabtjournal.com/nabtjournal/february_2025/MobilePagedArticle.action?articleId=2042312"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~1.5-3 months (6-12 weeks per LetPub Chinese-author aggregation, 50 user reviews); SciRev has 0 reviews (no data)",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub Chinese-author aggregate (50 ratings) describes acceptance as \"容易\" (easy); overall LetPub composite score 4.9/10 with sub-scores Reputation 6.1, Influence 3.4, Speed 7.0. This is a soft/aggregate crowd rating, not a stated numeric acceptance or desk-reject rate.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://letpub.com.cn/index.php?journalid=391&page=journalapp&view=detail&xuanxiangk_id=2 (Chinese, LetPub - 50 user submissions aggregated)",
+     "https://scirev.org/journal/american-biology-teacher/ (0 reviews submitted, all fields n/a)",
+     "https://muchong.com/bbs/journal.php?view=detail&jid=393 (only 1 stale entry from 2012, no substantive data)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "No source specifies single-blind vs double-blind vs open review; only that it is 'peer-refereed'. The ABT-specific author guidelines PDF (linked from bioone.org) could not be fetched/parsed to confirm."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No ABT-specific or UC Press journal-wide preprint policy statement was found via search or the (403-blocked) UC Press submission page; author-guidelines PDF not accessible in this session."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No numeric desk-reject rate found on SciRev (0 reviews), LetPub (only qualitative 'easy' acceptance label), muchong (stale single entry), or any Reddit/AskAcademia thread (none found mentioning this journal)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum narrative (muchong had only one stale 2012 entry with no substantive comment; no Reddit/AskAcademia/Zhihu threads found discussing this journal specifically)."
+    },
+    {
+     "field": "ai_policy source specificity",
+     "why": "Only the UC Press publisher-level AI guidelines page was accessible; the ABT-specific author guidelines PDF (via nabt.org/bioone.org) that would confirm whether ABT reproduces or supplements this policy could not be opened in this session (online.ucpress.edu/abt/pages/submit returned HTTP 403)."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com (jid=393): only one stale user entry from 2012, no substantive review-time/acceptance data - effectively 0 usable results",
+    "LetPub (Chinese, letpub.com.cn): usable data found - 50 aggregated user submissions giving review speed '6-12周' (6-12 weeks, rated 'slow'), acceptance rated '容易' (easy), composite score 4.9/10",
+    "知乎 zhihu: not separately queried beyond general web search; no zhihu-specific thread on this journal surfaced in results",
+    "Reddit r/AskAcademia: general web search returned no threads mentioning 'American Biology Teacher' journal - 0 results",
+    "SciRev (not Chinese, but query-time crowd source per work order): 0 reviews submitted, all fields n/a"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0005-7894",
+   "name": "Behavior Therapy",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "summary": "No Behavior-Therapy-specific AI policy page found; journal follows Elsevier's standard generative-AI policy (publisher default, not journal-customized). Authors may use GenAI for manuscript prep (literature synthesis, language editing, explanatory figures, code, translation) but must disclose in a separate AI declaration statement upon submission. Not allowed: generating manuscript sections without genuine author intellectual input, fabricating/altering data or references, AI as listed author, AI-altered primary research images (exception: if AI/AI-assisted tools are part of the actual research design/methods). Reviewers and editors are banned from uploading manuscripts to public AI tools and from using AI in final editorial decisions; peer-review/evaluation itself may not currently involve GenAI per Elsevier policy language surfaced in search results.",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals"
+   },
+   "peer_review": {
+    "type": "Double-anonymized (double-blind) peer review, via Editorial Manager",
+    "source_url": "https://www.sciencedirect.com/journal/behavior-therapy/publish/guide-for-authors"
+   },
+   "preprint": {
+    "allowed": "Yes — authors may post preprints (e.g., on a preprint server); this does not count as prior publication, per Elsevier's general article-sharing policy referenced for this journal.",
+    "source_url": "https://www.abct.org/journals/behavior-therapy-journal/"
+   },
+   "positioning": {
+    "accepts_now": "Empirical clinical/behavioral-cognitive research remains core, but the journal is actively signaling openness to precision/personalized mental health and idiographic methods via current special issues (2024-2026): 'State of the Science in Behavior Therapy: Taking Stock and Looking Forward' (ed. Jonathan Comer, Nov 2024) and 'Personalized Treatment and Precision Mental Health: Building Individualized Evidence-Based Treatments' (eds. Levinson, Fisher, Cohen; deadline Aug 31, 2026). Recent 2025-2026 published articles use ecological momentary assessment (EMA), single-case experimental designs with multiple baselines, and EMA-augmented single-case designs (e.g., body dysmorphic disorder EMA study, July 2026).",
+    "framing_required": "Guide for authors explicitly welcomes 'controlled single-case designs and clinical replication series' alongside standard empirical/methodological/theoretical papers and literature reviews — single-case work should be framed as controlled/replicable, not anecdotal case reports.",
+    "methods_welcome": [
+     "Randomized controlled trials",
+     "Ecological momentary assessment (EMA) / intensive longitudinal / real-time monitoring designs",
+     "Controlled single-case experimental designs and clinical replication series",
+     "Methodological and theoretical papers",
+     "Literature reviews / meta-analyses",
+     "Idiographic / personalized-treatment (precision mental health) designs (per 2026 special issue CFP)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.abct.org/journals/behavior-therapy-journal/",
+     "https://www.sciencedirect.com/journal/behavior-therapy (via search snippets)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/behavior-therapy/ (0 reviews submitted, all metrics n/a)"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched '小木虫 Behavior Therapy 投稿 审稿'; no thread specific to this journal found, only generic forum/section pages (0 usable results)",
+    "知乎 zhihu — searched '\"Behavior Therapy\" journal 知乎 审稿 投稿经验'; no Zhihu post found; only Chinese SCI-metrics aggregator pages (LetPub, MedSci, Datalearner) surfaced, themselves largely non-specific (0 first-hand zhihu results)",
+    "LetPub (letpub.com.cn) — fetched journal detail page; review-cycle and acceptance-ratio sections present in template but no populated numeric data retrieved from page content (marketing boilerplate only, no journal-specific figures usable)",
+    "Datalearner/lmlearning.cn — page returned HTTP 410 Gone, no data retrievable",
+    "Reddit r/AskAcademia — searched 'reddit AskAcademia \"Behavior Therapy\" journal review desk reject'; no relevant thread found (0 results)"
+   ],
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for Behavior Therapy has zero submitted reviews (all metrics 'n/a'); no Chinese or English forum thread with concrete first-hand timing found either"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No first-hand source (SciRev empty, no muchong/zhihu/reddit thread with concrete numbers)"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author account found in any queried source"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand discussion found on any cross-language source queried; refusing to invent a generic 'rigorous/slow/clinical' narrative per hard rules"
+    },
+    {
+     "field": "ai_policy.gate / leniency",
+     "why": "Could not locate a Behavior-Therapy-specific AI policy page distinct from Elsevier's boilerplate publisher policy; leniency score is inferred from the generic Elsevier disclosure-based framework, not a journal-specific statement, hence signal_quality kept low (2)"
+    }
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0031-9384",
+   "name": "Physiology & Behavior",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier ; https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals ; https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-the-review-process",
+    "summary": "此為 Elsevier 出版社通用政策套用於本刊（非期刊專屬客製條款）。作者可用 AI 工具輔助寫作（文獻整理、語言潤飾、產生流程圖/圖表、協助程式碼與資料分析），但不得用 AI 生成缺乏作者實質智識貢獻的內文段落、不得竄改研究資料、不得用 AI 生成或修改原始研究影像（顯微影像、western blot、病患掃描）。必須在投稿時於「Declaration of generative AI and AI-assisted technologies」聲明段落揭露使用情況（純文法/拼字檢查與身障輔助科技除外，免揭露）。編輯與審稿人則被禁止在同行評審與稿件評估過程中使用生成式AI（如ChatGPT），以保護作者研究內容機密性——此為 Elsevier 平台通用審稿政策，尚未見本刊專屬例外聲明。"
+   },
+   "peer_review": {
+    "type": "Single-blind (reviewer identities hidden from authors; authors' identities known to reviewers), minimum two independent reviewers after initial editorial scope/quality screen.",
+    "source_url": "https://grokipedia.com/page/physiology_behavior (Grokipedia 彙整條目，非一手證據來源，信心中等；建議交叉查證期刊官方 guide-for-authors，但該頁面因 403 無法直接讀取)"
+   },
+   "preprint": {
+    "allowed": "允許。Elsevier 通用分享政策允許作者於任何時間、任何平台張貼預印本，不視為重複發表；本刊另提供免費 SSRN 預印本張貼服務作為開放科學支持措施。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/sharing ; https://www.elsevier.support/elsevier/answer/how-can-i-share-my-elsevier-article"
+   },
+   "positioning": {
+    "accepts_now": "行為神經科學與生理機制交叉研究：行為神經內分泌學、精神神經免疫學、學習與記憶、攝食行為(ingestion)、味覺、社會行為、運動(與行為相關)、精神病理機制相關研究、以及以轉譯人類應用為目的的動物模式研究。明確排除：純藥理學研究（天然或合成化合物）、以提升人類表現為目的但非生理適應機制的研究、以及提升畜牧生產的研究。",
+    "framing_required": "投稿須明確呈現「生理變項 × 行為結果」的因果/機制連結；純行為描述或純生理機制而無交叉論證的稿件不符合範疇。",
+    "methods_welcome": [
+     "行為神經內分泌學 behavioral neuroendocrinology",
+     "精神神經免疫學 psychoneuroimmunology",
+     "學習與記憶",
+     "攝食/味覺行為",
+     "社會行為",
+     "運動生理與行為",
+     "精神病理機制動物模式",
+     "轉譯動物模式研究"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.sciencedirect.com/journal/physiology-and-behavior (經 WebSearch 摘要取得，直接 WebFetch 遭 403)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev 首輪平均 1.7 個月，總處理時間平均 2.2 個月，平均審查輪數 2.0 輪，平均每案審查報告 3.3 份（樣本僅 3 筆評論，統計力弱）。中文社群(zhihu/journalship)則提及官方數據投稿至接受平均 97 天(~3.2個月)，另一位審稿人分享案例為總計約4個月完成(含大修+二輪審查)。",
+    "desk_reject_pct": null,
+    "acceptance_note": "多個中文二手來源（journalship.xljsci.com、letpub 摘要、zhihu）引用「官方網站」數據稱接受率約15%，但未能直接存取一手官方頁面驗證（letpub 因IP限流403，journalship 域名解析失敗，Elsevier guide-for-authors 頁面403），此數字為多方轉引、非一手確認，可信度中等。SciRev 頁面本身將 acceptance rate 標示為 n/a。",
+    "reviewer_culture": "中文社群（journalship、zhihu、letpub 標題摘要）多次形容本刊「對國人友好」「審稿高效」「審稿人專業」，但這些屬於行銷性摘要用語而非具體審稿人逐字回饋，且未能直接讀取原始論壇貼文全文核實（letpub 429限流、journalship DNS 失敗）。SciRev 唯一的量化面向：審稿意見「困難度」評分 4.3/5.0（標示為 difficult），品質評分 3.3/5.0——但僅基於 3 筆歷史評論，統計力極弱。",
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/physiology-and-behavior/ (3 reviews only)",
+     "https://zhuanlan.zhihu.com/p/558629571 (WebSearch摘要, WebFetch 403無法核實全文)",
+     "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=6698 (429限流無法讀取全文)",
+     "https://journalship.xljsci.com/zixun/2468.html (DNS解析失敗)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "無法直接讀取 Elsevier guide-for-authors 或 ScienceDirect 頁面（皆回傳403），僅能以 Grokipedia 二手彙整條目佐證，非一手來源，建議標記為中等信心而非確證"
+    },
+    {
+     "field": "positioning (recent article titles / current CFP)",
+     "why": "ScienceDirect 期刊首頁與投稿指南頁面皆403拒絕存取，無法直接列出2024-2026近期文章標題或核實是否有進行中的special issue CFP；WebSearch未找到本刊當前徵稿啟事"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面明確標示 immediate rejection rate 為 n/a，且中英文論壇均未見具體退稿率一手陳述"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "僅有3筆SciRev評論與若干中文行銷性期刊介紹頁摘要語（'對國人友好'等常見套語），缺乏具體審稿人逐字引述或Reddit/AskAcademia一手討論串——WebSearch未找到任何Reddit r/AskAcademia討論此刊的串"
+    },
+    {
+     "field": "cross_language: Reddit r/AskAcademia",
+     "why": "WebSearch專門查詢未返回任何Reddit討論串，本刊在英語論壇上曝光度低"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/physiology-and-behavior/): 3則使用者評論，提供首輪審查時間、總處理時間、審查輪數、審稿意見難度評分等量化數字，但樣本量小",
+    "小木虫/muchong.com: WebSearch未直接命中muchong.com上關於本刊的討論串（僅命中同站其他期刊如Plant Physiology），本刊在小木虫上0直接可核實結果",
+    "知乎 zhihu.com: 命中2篇專欄文章(zhuanlan.zhihu.com/p/558629571, p/628348006)，摘要提及審稿時效與接受率等級，但WebFetch原文遭403無法逐字核實，僅能採信WebSearch生成的二手摘要",
+    "fabiaoji/journalship/letpub 等中文期刊資訊站: 命中多篇「投稿經驗分享」頁面，但letpub遭429限流、journalship域名DNS解析失敗，僅能採信WebSearch摘要層級信息，非原始頁面全文",
+    "Reddit r/AskAcademia: 0 results，WebSearch未找到任何相關討論串"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 4,
+    "signal_quality": 2,
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "summary": "未找到 Journal of Personality 專屬 AI 政策頁（作者指南頁 onlinelibrary.wiley.com/page/journal/14676494/homepage/forauthors.html 回傳 HTTP 402，無法直接讀取），故採用 Wiley 出版社通用 Generative AI Policy（2023-09）作為適用推定：允許使用生成式 AI 輔助文字潤飾、結構調整、構思與文獻檢索，但（1）AI/LLM 不得列為作者或共同作者，（2）實質性使用須在 Methods 或 Acknowledgements 中透明揭露工具名稱、版本/存取日期與用途，基礎文字校對可豁免揭露。因未能確認期刊是否有加嚴或加寬之特別條款，leniency 評分基於出版社層級政策，非期刊獨有證據。"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://onlinelibrary.wiley.com/journal/14676494"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": "SciRev 樣本極小（僅少數筆申報）：第一輪審稿平均 2.9 個月（同頁另處顯示最新一筆為 17.4 週≈4 個月），總處理時間 3.2 個月；平均審稿輪數 1.5 輪。務必視為低樣本數的粗略指標，非穩定統計。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/journal-of-personality/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "positioning.accepts_now / methods_welcome / framing_required",
+     "why": "無法讀取 Wiley 官方 Aims & Scope 頁（onlinelibrary.wiley.com/journal/14676494 回傳 HTTP 402 付費牆），也未找到 2024-2026 具體文章標題清單或可驗證的近期特刊 CFP（搜尋僅命中同名但不同刊物 Journal of Personality Assessment 的特刊，需排除避免混淆）。缺乏第一手選題證據，故留空。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面該欄位標示為 n/a，無其他公開數據來源。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "SciRev 僅顯示單筆最新結果為 Rejected，樣本過小不足以歸納 acceptance_note，且未找到小木虫/知乎/Reddit r/AskAcademia 上任何提及本刊的一手投稿經驗帖。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何論壇（中文或英文）針對本刊審稿人風格的具體一手討論，僅有 SciRev 的量化評分（審稿報告品質 4.0/5.0、整體處理 3.5/5.0、意見苛刻度 3.0/5.0）而無敘事內容可轉述，為避免生成一般化敘事故留空。"
+    },
+    {
+     "field": "ai_policy (journal-specific page)",
+     "why": "期刊自身 Author Guidelines 頁（含是否有比 Wiley 通用政策更嚴格的特別條款）因 402 付費牆無法讀取，僅能用出版社通用政策代補，已在 ai_policy.summary 中註明此為推定而非期刊自身頁面證據。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com：搜尋「Journal of Personality」「0022-3506」「审稿周期」等關鍵詞，0 筆該刊專屬討論結果（僅命中論壇分類頁與無關帖）",
+    "知乎 zhihu：與小木虫合併搜尋，0 筆該刊專屬結果",
+    "fabiaoji：未搜到任何專屬結果（搜尋引擎未返回該站命中）",
+    "Reddit r/AskAcademia：site:reddit.com 搜尋 \"Journal of Personality\" review desk reject 返回 0 筆結果"
+   ],
+   "issn": "0022-3506",
+   "name": "Journal of Personality",
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "source_url": "https://en.wikipedia.org/wiki/Journal_of_Personality",
+    "type": "single-blind（依 Wikipedia 條目與一般 Wiley 心理學期刊慣例描述；未能於期刊官方作者指南頁直接核實，因該頁 HTTP 402 無法讀取）"
+   },
+   "preprint": {
+    "allowed": "允許：依 Wiley 通用自我典藏政策（Self-Archiving Policy），作者可隨時將投稿版（preprint）上傳至預印本伺服器或機構典藏；接受版（accepted/peer-reviewed）需經一段禁運期後方可自我典藏。未能取得 Journal of Personality 專屬頁面以確認是否有期刊特有例外條款。",
+    "source_url": "https://openpolicyfinder.jisc.ac.uk/id/publication/15148"
+   },
+   "sensitive_topics_note": "null（未發現與敏感議題相關之一手證據，故不作政治傾向或立場推測）"
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 16,
+  "failed_count": 2,
+  "failed_issns": [
+   "0007-4403",
+   "0033-3204"
+  ],
+  "run_task_id": "wi6we4ybg"
+ }
+}

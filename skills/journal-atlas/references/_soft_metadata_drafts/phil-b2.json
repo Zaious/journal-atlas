@@ -1,0 +1,770 @@
+{
+ "batch": "phil-b2",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/information/author-instructions/preparing-your-materials",
+    "summary": "Journal follows Cambridge University Press's general AI ethics policy (publisher-level, not CJP-specific). AI/LLM tools may not be listed as authors. Mandatory disclosure required when AI is used to generate text/images (incl. translation) or to analyze/extract insights from data — declaration must include tool name, version, dates of use, and description of use, placed in acknowledgments/footnotes/methods/figure captions as appropriate. Basic spelling/grammar checking, single-word/brief-phrase suggestions, and minor formatting do NOT require declaration. No outright ban found; use is permitted with transparency obligations, so treated as conditional/moderate leniency rather than fully open."
+   },
+   "peer_review": {
+    "type": "Double-anonymous (double-blind): author identity hidden from Editorial Board Coordinator and Executive Editor at initial screening, and from referees during review; two independent expert referees used after passing initial screening.",
+    "source_url": "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/information/peer-review-process"
+   },
+   "preprint": {
+    "allowed": "Yes — journal-stated policy: 'This journal allows preprints to be posted anywhere at any time, including before submission to the journal.' Green OA also permits posting pre-published versions in repositories/personal sites under stated conditions.",
+    "source_url": "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/information/journal-policies/open-access-options"
+   },
+   "positioning": {
+    "accepts_now": "General analytic philosophy journal (any area of philosophy, published in French or English). Recent issue (Vol. 55, Issue 3, 2026) clustered around philosophy of mind/self-consciousness: an author-meets-critics symposium on Matthew Boyle's work on transparency and self-knowledge, plus a précis-and-commentary symposium on Anil Gomes's 'The Practical Self.' Format mix includes regular research articles, short discussion notes (max 3,000 words) responding to previously published articles, special issues, and author-meets-critics symposia.",
+    "framing_required": "Standard rigorous analytic-philosophy argumentative style; manuscripts normally under 10,000 words (3,000 for discussion notes); double-anonymized (no author-identifying info in text, footnotes, or PDF metadata); accepts French or English.",
+    "methods_welcome": [
+     "analytic philosophical argumentation / conceptual analysis",
+     "discussion notes replying to previously published CJP articles",
+     "author-meets-critics symposia (précis + multiple commentaries + reply)",
+     "special issues on topics of current philosophical interest"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy (aims & scope, publisher page, fetched 2026-07-13)",
+     "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/information/author-instructions/preparing-your-materials"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "Desk-rejections (fail initial 2-stage screening by Editorial Board Coordinator + Executive Editor, without seeing peer review): ~4 weeks. Full-cycle rejections after peer review: ~100 days average. Eventual acceptances (after revise-and-resubmit): ~400+ days average. (Basis: journal's own published cohort data for submissions 1 Sept–31 Dec 2019, n=139.)",
+    "desk_reject_pct": null,
+    "acceptance_note": "Journal-stated overall acceptance rate 'close to 8%' of ~400 annual submissions (publisher aims & scope page). Of the tracked 139-submission cohort, only 1 was accepted on initial submission with no revision; 10 were invited to revise-and-resubmit and 7 of those were ultimately accepted.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/information/peer-review-process (first-hand journal-published process stats, fetched 2026-07-13)",
+     "https://www.cambridge.org/core/journals/canadian-journal-of-philosophy (aims & scope acceptance-rate figure)",
+     "https://scirev.org/journal/canadian-journal-of-philosophy/ (checked — page exists but shows 'n/a' for all metrics, 0 user reviews submitted)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No exact percentage of submissions desk-rejected is published; journal only discloses raw counts for one 2019 cohort (139 submissions, outcomes given) without a stated desk-reject percentage, and SciRev has 0 reviews for this journal. Left as descriptive review_time_months note instead of a fabricated percentage."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand author/reviewer accounts found. SciRev page for this journal exists but shows 'n/a' / 0 reviews. Zhihu, 小木虫 (muchong.com), and Reddit r/AskAcademia searches returned no journal-specific discussion threads — only generic journal-listing pages. Left null rather than inventing a reviewer-culture narrative."
+    },
+    {
+     "field": "ai_policy leniency_1_5 (journal-specific)",
+     "why": "No CJP-specific AI policy page distinct from the general Cambridge University Press publisher-wide AI ethics policy was found; the leniency score reflects the publisher policy applied to this journal, not a CJP-specific customization."
+    }
+   ],
+   "cross_language_checked": [
+    "Zhihu (知乎): searched \"Canadian Journal of Philosophy 知乎 投稿\" — 0 journal-specific discussion results; only a general list of philosophy journals mentioning CJP by name with no submission/review commentary.",
+    "小木虫 muchong.com: searched \"Canadian Journal of Philosophy 小木虫 投稿 审稿\" — 0 results specific to this journal; muchong's philosophy-journal coverage appears sparse/absent for CJP.",
+    "Reddit r/AskAcademia (site:reddit.com search): 0 results found for this journal."
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null,
+   "issn": "0045-5091",
+   "name": "Canadian Journal of Philosophy"
+  },
+  {
+   "issn": "0031-8205",
+   "name": "Philosophy and Phenomenological Research (PPR)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.wiley.com/en-us/publish/article/ai-guidelines/",
+    "summary": "No PPR-specific AI policy page could be retrieved (Wiley's journal-specific guide.htm at onlinelibrary.wiley.com/page/journal/19331592/homepage/guide.htm returned HTTP 402 to automated fetch, and no PPR-specific AI clause surfaced in search). What is documented is Wiley's PUBLISHER-WIDE policy, which PPR is presumed to inherit absent evidence of an override: generative AI/LLMs cannot be listed as author; any AI use in preparing a manuscript must be disclosed (tool name, version, purpose/extent) in the cover letter and/or manuscript; authors must not upload unpublished manuscripts/figures/data to public AI tools; AI-generated content must be reviewed and verified by the human author who takes full responsibility. This is disclosure-gated, not a flat ban, but restricts unverified/undisclosed generative use - rated toward the restrictive end (2/5). Confidence is low because the fact is inferred from publisher-level policy, not a page confirmed to be PPR's own."
+   },
+   "peer_review": {
+    "type": "Blind peer review (multiple secondary sources describe it as triple-blind: author, reviewer, and handling editor identities concealed); could not verify against PPR's own guide.htm page (blocked, HTTP 402).",
+    "source_url": "https://www.pdcnet.org/ppr/Submission-Guidelines"
+   },
+   "preprint": {
+    "allowed": "Journal-specific PPR preprint clause not directly verified (Wiley guide.htm inaccessible, HTTP 402). Per Wiley's general publisher-wide preprint/self-archiving policy, which subscription humanities journals like PPR normally follow: authors may post/retain a preprint on a preprint server before and during submission, and may self-archive the accepted (peer-reviewed) manuscript after an embargo period - standard embargo for Social Sciences & Humanities (SSH) journals is 24 months (vs 12 months for STM).",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "PPR states in every issue that it publishes across the full breadth of philosophy - philosophy of mind, epistemology, ethics, metaphysics, and history of philosophy - with 'no specific methodology or philosophical orientation required.' Could not directly browse current (2024-2026) article titles/Early View TOC - Wiley TOC and issue pages returned HTTP 402 to automated fetch, so positioning here rests on the journal's standing self-description rather than a fresh scan of recent tables of contents. No active special-issue CFP was found in search.",
+    "framing_required": null,
+    "methods_welcome": [
+     "analytic",
+     "continental",
+     "pragmatic/pragmatist",
+     "experimental philosophy",
+     "history of philosophy"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Philosophy_and_Phenomenological_Research",
+     "https://www.pdcnet.org/ppr/Philosophy-and-Phenomenological-Research"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~3.0 months first-round average per SciRev, but based on only 1 reported review (n=1); the single most recent submission logged took 13.0 weeks (~3 months) to first decision and was accepted, rated 5/5 overall.",
+    "desk_reject_pct": null,
+    "acceptance_note": "A ~15% overall acceptance rate figure appeared in one AI-summarized search result but could not be traced to a primary/first-hand source (not SciRev, not a forum post) - treated as unverified and excluded from the confident record per the facts-only rule.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/philosophy-and-phenomenological-research/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (PPR-specific)",
+     "why": "PPR's own author-guidelines page (onlinelibrary.wiley.com/page/journal/19331592/homepage/guide.htm) returned HTTP 402 to automated fetch; no PPR-specific AI clause found via search. Recorded fact is Wiley's generic publisher-wide policy only, not confirmed journal-specific."
+    },
+    {
+     "field": "desk_reject_pct",
+     "why": "SciRev journal page lists desk-rejection decision time and rate as 'n/a' - no first-hand data available."
+    },
+    {
+     "field": "acceptance_note (numeric rate)",
+     "why": "The ~15% figure found in search has no traceable first-hand or aggregator-cited source; excluded rather than reported as fact."
+    },
+    {
+     "field": "reviewer_culture",
+     "why": "Zero relevant hits on 小木虫 (muchong.com), 知乎 (zhihu), fabiaoji, or Reddit r/AskAcademia specifically discussing PPR's review process or reviewer culture. No first-hand cross-language accounts exist to cite."
+    },
+    {
+     "field": "positioning: recent (2024-2026) article titles",
+     "why": "Wiley's TOC/Early View pages (onlinelibrary.wiley.com/toc/19331592 and /journal/19331592) returned HTTP 402 to automated fetch, so no direct scan of current article titles was possible; positioning relies on the journal's standing self-description instead."
+    },
+    {
+     "field": "framing_required",
+     "why": "No CFP, editorial statement, or forum discussion found indicating any required framing/angle for submissions beyond general philosophical rigor."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫): searched for PPR-specific submission/review discussion - 0 relevant results, only generic forum/platform pages surfaced",
+    "zhihu.com (知乎): searched for PPR-specific review/submission discussion - 0 relevant results; only a general 'list of famous philosophy journals' article surfaced with no PPR experiential detail",
+    "fabiaoji: not reachable via search - 0 results returned for PPR",
+    "reddit.com r/AskAcademia: searched directly and via site:reddit.com - 0 results found mentioning Philosophy and Phenomenological Research"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0191-4537",
+   "name": "Philosophy & Social Criticism",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+    "summary": "此為 SAGE 出版社通用 AI 政策，未見期刊專屬頁面另訂規則。輔助性 AI（文法/語言/結構潤飾）免揭露；生成式 AI 若影響研究方法、分析、結果或結論則須於投稿時揭露（適用範圍包含文獻回顧協助、翻譯、程式碼生成、資料視覺化、示意圖、參考文獻整理），且作者須自行查核所有輸出正確性。禁止：生成錯誤內容、捏造數據或引用文獻、以生成式AI取代真實受訪者、將AI生成圖像充作原始研究成果、抄襲/歸屬不當、以及用於編輯或同行評審工作。若編輯發現未揭露的生成式AI使用，可於出版流程任何階段拒稿，並依COPE指引聯合SAGE調查。未找到PSC期刊自訂之AI政策頁面，故信號品質偏低（僅出版社層級政策，非期刊專屬證據）。"
+   },
+   "peer_review": {
+    "type": "double-anonymized (double-blind)",
+    "source_url": "https://journals.sagepub.com/author-instructions/psc"
+   },
+   "preprint": {
+    "allowed": "SAGE 出版社層級的 green OA 政策原則上允許作者將已接受稿件（accepted manuscript）存放於個人網站、機構典藏庫或 preprint server；但官方明確提醒『部分期刊不接受曾以 preprint 形式張貼過的稿件』，須以個別期刊投稿指引為準。PSC 投稿指引僅提及『發表後應將引用之 preprint 更新為正式出版版本』，未見該刊明確禁止或允許投稿前 preprint 張貼的專屬聲明，故此為 SAGE 通用規則推論，非 PSC 專屬第一手證據。",
+    "source_url": "https://www.sagepub.com/journals/permissions/sages-author-archiving-and-re-use-guidelines"
+   },
+   "positioning": {
+    "accepts_now": "近期（2026年 Vol.52）文章顯示持續刊登歐陸哲學、政治哲學與社會理論的原創理論性論文，例如：韓非政治統治理論之研究、Claude Lefort 的『民粹主義』與反民粹取徑分析；2026年3月號並有紀念 Drucilla Cornell (1950–2022) 的特別專題（In Memoriam special section）。整體維持其一貫定位：歐陸哲學、政治與社會理論、倫理學、法哲學、詮釋學、後現代主義、文化批判、社會經濟思想的批判性理論投稿。",
+    "framing_required": "偏好理論性/批判性論述（continental scholarship 取向），而非實證/量化研究；投稿需以理論貢獻及對既有社會政治思潮的批判性介入為框架。",
+    "methods_welcome": [
+     "理論性論述 (theoretical/critical essay)",
+     "文本詮釋與比較哲學 (textual/comparative philosophical analysis)",
+     "政治哲學與社會理論批判",
+     "跨文化/跨思想傳統比較（如中西政治思想比較）"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://journals.sagepub.com/doi/pdf/10.1177/01914537241284718",
+     "https://journals.sagepub.com/toc/psc/current"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 無此期刊專頁（scirev.org/journal/philosophy-social-criticism/ 回傳404），Reddit r/AskAcademia、知乎、muchong.com 搜尋均無相關第一手討論串，僅有中國大陸論文中介網站(fabiao.com.cn)之罐頭式期刊介紹頁，內容為通用範本文字（『審稿流程反映編輯部嚴格品質控管』），非具體投稿人回報數字，故不採信。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上，無任何來源（SciRev/知乎/小木虫/muchong/Reddit）提供具體退稿率數字或首輪拒稿比例。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無第一手投稿人心得文可查（各平台搜尋僅回傳期刊指標網站與百科式介紹，無真實投稿經驗貼文）。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體可引用的評審風格/文化描述來源，僅能找到期刊官方『雙匿名審查』制度說明，不構成評審文化的主觀觀察證據，依規則不可捏造敘事。"
+    },
+    {
+     "field": "ai_policy.gate (journal-specific)",
+     "why": "僅找到SAGE出版社層級通用AI政策頁面，未能找到Philosophy & Social Criticism期刊自身另訂或補充之AI使用規範頁面（PSC投稿指引PDF未含AI政策段落）。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/philosophy-social-criticism/) — 404 Not Found，該期刊無SciRev評論頁面，0 reviews",
+    "小木虫 muchong.com — WebSearch site:muchong.com 未回傳任何muchong.com站內結果，0 results",
+    "知乎 zhihu.com — WebSearch site:zhihu.com 僅回傳SSCI期刊清單彙整文章，未提及此刊之審稿經驗，0 first-hand results",
+    "fabiao.com.cn（中文期刊資訊站，補充嘗試）— 僅有罐頭式期刊簡介模板，無具體審稿時長/退稿率數字，視為0可用信號",
+    "Reddit r/AskAcademia — WebSearch未找到任何提及此期刊的討論串，0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0022-362X",
+   "name": "The Journal of Philosophy",
+   "ai_policy": {
+    "gate": "no",
+    "leniency_1_5": 1,
+    "signal_quality": 2,
+    "source_url": "https://www.journalofphilosophy.org/memotoauthors.html",
+    "summary": "Journal-specific ban, not a generic publisher boilerplate. Memo to Authors states: \"We cannot consider papers that are composed by ChatGPT or other artificial intelligence systems.\" No graded disclosure regime (no \"assistive use OK if disclosed\" tier) — reads as a flat prohibition on AI-composed text, leniency=1 (ban). No permission/disclosure gate is offered as an alternative to the ban."
+   },
+   "peer_review": {
+    "type": "Triple-anonymous (author, reviewer, and editor identities all concealed per journal's own framing)",
+    "source_url": "https://www.journalofphilosophy.org/memotoauthors.html"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Journal is CLOSED to new submissions as of 2026-01-16, working through backlog; reopening announced for 2026-08-17.",
+    "framing_required": "Must be triple-anonymized (no author-identifying refs/acknowledgments in the manuscript itself); max 12,000 words incl. abstract/keywords/references.",
+    "methods_welcome": [
+     "Analytic philosophy making a \"sustained, original contribution\" to an active debate"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.journalofphilosophy.org/memotoauthors.html",
+     "https://www.journalofphilosophy.org/"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": "Extremely low-acceptance, high-desk-reject journal. 2024: 750 submissions, 398 desk rejections (53%) in avg 36 days, only 36 accepted (4.53% acceptance rate). H1 2025: 403 submissions, 192 desk rejections (48%) in avg 17 days; of papers sent to referees, rejection-with-comments avg 77 days, revise-and-resubmit avg 90 days; only 1 direct acceptance by 2025-07-01 (avg 61 days for that one case). By end of 2025 roughly ~25 papers accepted total across cohorts. Managing editor (Alyssa Timin) attributes faster desk-reject turnaround to more aggressive initial screening and pursuing multiple referees in parallel.",
+    "desk_reject_pct": "53% (2024, n=750) / 48% (H1 2025, n=403) — Daily Nous, sourced from journal's own posted stats",
+    "review_time_months": "Desk reject: ~0.5-1.2 months; full review to rejection-with-comments: ~2.5 months; R&R: ~3 months (these exclude the 7-month submission suspension starting 2026-01-16)",
+    "reviewer_culture": "One first-hand Daily Nous commenter (2024) reported unusually responsive/proactive editorial communication (an apology email when review exceeded 6 months) despite the journal's \"terrible reputation\" among philosophers generally — a single anecdote, not a pattern. No SciRev page exists for this specific journal (SciRev only has pages for other philosophy titles, e.g. Australasian Journal of Philosophy, Journal of Philosophy of Education — confirmed not the same journal). No results found on 小木虫/muchong, 知乎, or Reddit r/AskAcademia specifically discussing this journal — philosophy submission culture on those Chinese platforms is thin/absent for this niche analytic-philosophy title.",
+    "signal_quality": 3,
+    "sources": [
+     "https://dailynous.com/2025/09/08/philosophys-journal-problem-captured-in-one-number/ (journal's own posted stats, reported by Daily Nous)",
+     "https://www.journalofphilosophy.org/memotoauthors.html",
+     "https://dailynous.com/2024/01/29/notably-good-experiences-with-philosophy-journals/ (single first-hand commenter anecdote)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint/self-archiving policy found on journalofphilosophy.org (memo to authors or elsewhere); general philosophy-field commentary (Philosophers' Cocoon, PhilSci-Archive policy pages) does not name this specific journal. Left null rather than assuming standard practice."
+    },
+    {
+     "field": "ai_policy.leniency numeric confidence",
+     "why": "Policy text is unambiguous (flat ban) but very short/terse — no separate disclosure clause, no distinction between drafting assistance vs. full composition, so nuance beyond '1=ban' can't be extracted; signal_quality capped at 2 because it's a single sentence from one page, not corroborated elsewhere."
+    },
+    {
+     "field": "positioning.methods_welcome breadth",
+     "why": "Could not retrieve a live table of contents or recent (2024-2026) article title list for journalofphilosophy.org itself (search kept surfacing the unrelated Journal of the History of Philosophy at jhp.wisc.edu). Only the memo's self-description ('sustained original contributions,' explicit exclusion of primarily historical/expository work and experimental philosophy) is confirmed; no CFP for a special issue found beyond the recurring Isaac Levi Prize."
+    },
+    {
+     "field": "experiential.reviewer_culture cross-language",
+     "why": "Zero results on 小木虫/muchong and 知乎 specifically naming this journal — Chinese academic-forum coverage of a narrow, invitation-poor analytic philosophy journal appears to be essentially nil; recorded honestly as 0 results rather than omitted."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com (search: \"Journal of Philosophy 投稿 审稿\") — 0 results specific to this journal; forum has general submission-experience threads but none naming Journal of Philosophy (ISSN 0022-362X)",
+    "知乎 zhihu (same query) — 0 results specific to this journal",
+    "Reddit r/AskAcademia (search: \"Journal of Philosophy\" review time desk reject) — 0 direct Reddit threads found; search only resurfaced the Daily Nous article",
+    "SciRev.org — no journal page exists for this title (checked; SciRev has pages only for other philosophy journals such as Australasian Journal of Philosophy and Journal of Philosophy of Education, confirmed distinct from this journal)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0048-3931",
+   "name": "Philosophy of the Social Sciences",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+    "summary": "此為 Sage 出版社通用 AI 政策（非本刊專屬頁面，本刊官網 author-instructions/pos 頁未見另立 AI 規範；WebFetch 多次嘗試抓取該頁僅回傳站台導覽殼層，未取得逐刊文字）。政策區分「輔助性 AI」（潤飾語言/文法，不需揭露）與「生成式 AI」（產生方法論/分析/結論相關內容，投稿時須於方法或致謝段落揭露）。允許用途包含文獻回顧輔助、翻譯、資料視覺化、代碼優化、參考文獻整理。禁止：LLM 掛名作者、捏造數據、抄襲、以 AI 生成內容替代真實受訪者訪談、未揭露的不當使用（可能導致退稿）。無投稿前置審批關卡，屬作者自我揭露、編輯事後審核制。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "允許：本刊可接受已張貼於預印本伺服器（pre-print servers）的論文投稿，但要求作者告知編輯部並在投稿時附上預印本 DOI。",
+    "source_url": "https://journals.sagepub.com/author-instructions/pos"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": "本刊明確聲明「開放編輯政策」（open editorial policy）：對社會科學哲學基礎的研究、理論與辯論保持嚴謹學術，不偏袒任一學派、黨派或風格，並鼓勵學派間辯論。核心議題涵蓋一般方法論（解釋、理論化、檢驗）、個體論 vs 整體論之哲學應用、理性本質、以及理論與概念史。",
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://journals.sagepub.com/aims-scope/pos (經 WebSearch 摘要取得，WebFetch 直接抓取僅回傳站台導覽殼層，未取得完整頁面內容)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "2-4 個月（官方投稿須知自述數字，非第一手經驗回報）",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://journals.sagepub.com/author-instructions/pos — \"All submissions are refereed, which usually takes from 2 to 4 months.\"",
+     "https://scirev.org/journal/philosophy-of-the-social-sciences/ — 頁面存在但全部指標顯示 n/a：「No reviews have yet been submitted for this journal」"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "官方 author-instructions 頁面與 aims-scope 頁面經 WebFetch 反覆抓取僅回傳站台導覽列，未取得逐刊文字；WebSearch 摘要與 Wikipedia 亦僅稱其為「peer-reviewed academic journal」，未指明 single-blind/double-blind/open。未能確認，故留空。"
+    },
+    {
+     "field": "positioning.methods_welcome",
+     "why": "未能取得 2024-2026 年最近文章標題列表或當前 Call for Papers（WebFetch 對 sagepub.com 逐刊頁反覆失敗，僅取得導覽殼層），無法從實際發表內容歸納方法論清單，故留空避免臆測。"
+    },
+    {
+     "field": "positioning.accepts_now",
+     "why": "同上，缺乏近期文章樣本，僅有官方 aims & scope 的一般性表述（哲學基礎/方法論辯論），不足以推斷「現在實際接受什麼」，故留空。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面存在但 0 筆評論（n/a），無小木虫/知乎/Reddit r/AskAcademia 相關討論（已用中英文關鍵字搜尋，均無命中此冷門哲學期刊）。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "同上，無任何第一手投稿經驗來源。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源支持任何審稿人文化描述，依規則不可臆造，故留空。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/philosophy-of-the-social-sciences/) — 頁面存在，但全部指標為 n/a（0 reviews submitted）",
+    "小木虫 muchong.com — 以中文關鍵字搜尋「Philosophy of the Social Sciences 期刊 投稿」，僅回傳小木虫平台一般性介紹頁面，無本刊專屬討論串，判定 0 results",
+    "知乎 zhihu — 同一搜尋未回傳任何知乎專屬討論，0 results",
+    "fabiaoji — 未出現於綜合搜尋結果中（此冷門哲學期刊在中文投稿社群搜尋量極低），視為 0 results",
+    "Reddit r/AskAcademia — 以英文關鍵字搜尋「reddit AskAcademia Philosophy of the Social Sciences journal review」，未命中任何 Reddit 討論串，0 results"
+   ],
+   "overall_signal_quality": 1,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0163-4275",
+   "name": "Environmental Ethics",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 1,
+    "source_url": "https://www.pdcnet.org/enviroethics/Submission-Guidelines",
+    "summary": "No journal-specific or Philosophy Documentation Center (publisher)-wide generative-AI use policy was found on the journal's UNT (cep.unt.edu) submission-guidelines page or in web search of pdcnet.org. The UNT page covers format, word limits, anonymization, and citation style but is silent on AI. PDC publishes many small philosophy journals and does not appear to have a public umbrella AI policy (unlike large STEM publishers found in search, e.g. Elsevier/ACS titles). Treat as unstated/blank rather than inferring a stance."
+   },
+   "peer_review": {
+    "type": "Double-anonymous (author identity removed for review); journal self-describes as a \"peer-reviewed forum\"",
+    "source_url": "https://cep.unt.edu/environmental-ethics/environmental-ethics-journal.html"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Philosophy articles (any area of philosophy or environmental affairs) addressing questions of value or concept clarification in relation to environmental problems; explicitly bridges professional academic philosophy and non-professional/practitioner environmental-philosophy interest. No current (2024-2026) special-issue CFP was located.",
+    "framing_required": "Must be framed as philosophical/normative analysis (value theory, conceptual clarification), not empirical environmental science; because readership includes non-specialists, technical philosophical terminology must be explained more thoroughly than typical for a professional philosophy journal.",
+    "methods_welcome": [
+     "normative/ethical argumentation",
+     "conceptual analysis",
+     "critical/interpretive essays",
+     "short discussion notes/comments (up to 1000 words) responding to prior articles",
+     "book reviews"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://cep.unt.edu/environmental-ethics/environmental-ethics-journal.html (publisher aims & scope + submission guidelines)",
+     "https://www.pdcnet.org/enviroethics/onlinefirst (fetch blocked HTTP 403, could not verify individual recent article titles)"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/environmental-ethics/ — page exists but shows 'No reviews have yet been submitted for this journal'; all metrics (duration first round, % immediately rejected, overall rating) are n/a",
+     "Reddit r/AskAcademia — no threads found discussing this journal by name",
+     "小木虫 muchong.com — no discussion of this journal found (forum activity for 'Environmental Ethics' string only surfaces unrelated environmental-science journals, not this philosophy title)",
+     "知乎 zhihu.com — no discussion of this specific journal found; only tangential lists of 'environmental field' journals (environmental science, not environmental philosophy)"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com: 0 relevant results (journal not discussed; forum content indexes it only in the unrelated Wanfang/维普 database listing)",
+    "知乎 zhihu.com: 0 relevant results (searches surface only generic 'environmental science field journal ranking' threads that do not mention this journal)",
+    "Reddit r/AskAcademia: 0 relevant results found via web search",
+    "fabiaoji: not separately queried — no indexed results surfaced for this journal in any search attempt"
+   ],
+   "sensitive_topics_note": "None encountered — journal covers environmental philosophy/ethics broadly; no politically sensitive editorial-stance evidence was found (and none should be inferred without a concrete source per instructions).",
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 / ai_policy.gate",
+     "why": "No AI-use policy text found on cep.unt.edu submission guidelines or via search of pdcnet.org; this is a small humanities publisher (Philosophy Documentation Center) that does not appear to have published a public generative-AI policy, unlike the STEM environmental-science journals returned in searches (which are different journals, not this one)."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint/self-archiving policy stated on the official submission-guidelines page found (cep.unt.edu); the canonical PDC submission-guidelines page at pdcnet.org/enviroethics/Submission-Guidelines returned HTTP 403 and could not be fetched to check further."
+    },
+    {
+     "field": "experiential.review_time_months, desk_reject_pct, acceptance_note, reviewer_culture",
+     "why": "SciRev page for this journal exists but has zero submitted reviews (explicit 'n/a' on all metrics). No discussion found on Reddit r/AskAcademia, 小木虫, 知乎, or general web search. Journal is a niche philosophy-of-environment quarterly, evidently below the visibility threshold for these community-review platforms which skew toward STEM/social-science submitters."
+    },
+    {
+     "field": "positioning.accepts_now (recent article titles)",
+     "why": "Attempted to pull the Online First / recent TOC list from pdcnet.org/enviroethics/onlinefirst to ground 'accepts now' in actual 2024-2026 titles, but the page returned HTTP 403 (login-gated). Positioning is therefore based only on the publisher's stated aims-and-scope language, not verified against current article titles — signal_quality downgraded to 2 accordingly."
+    }
+   ],
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0047-2786",
+   "name": "Journal of Social Philosophy",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.wiley.com/en-nl/publish/article/ai-guidelines/",
+    "summary": "No Journal of Social Philosophy-specific AI policy page was found (author guidelines page at onlinelibrary.wiley.com/page/journal/14679833/homepage/forauthors.html returned HTTP 402/blocked on fetch, so could not confirm journal-level wording). Applying Wiley's publisher-wide policy as the presumed baseline: AI tools may assist manuscript drafting/editing but substantive AI use (drafting, editing, translation) must be disclosed (Methods/Acknowledgements); grammar/spelling tools are exempt from disclosure; AI must not be used to generate or manipulate research data/results; authors retain full accountability. This is a permission-with-disclosure gate, not journal-verified."
+   },
+   "positioning": {
+    "accepts_now": "Based on Wiley's aims-and-scope page (fetch of full page blocked by paywall gate; summary from search snippet only): the journal seeks creative approaches to practical/normative issues of contemporary social life (globalization, political conflict, cultural pluralism), with editorial priority on novel theoretical frameworks -- social ontology, care ethics, cosmopolitan democratic theory, human rights, global justice. It also runs special issues organized around practical concerns approached philosophically.",
+    "framing_required": "Work should be framed as normative/theoretical social philosophy contributing new theoretical frameworks, not purely empirical social science.",
+    "methods_welcome": [
+     "normative theory",
+     "social ontology",
+     "care ethics",
+     "cosmopolitan/democratic theory",
+     "human rights and global justice theory",
+     "special-issue thematic philosophical analysis"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://onlinelibrary.wiley.com/page/journal/14679833/homepage/productinformation.html (snippet only, full fetch blocked HTTP 402)",
+     "https://en.wikipedia.org/wiki/Journal_of_Social_Philosophy"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "6.4 months average total review time (SciRev, based on n=1 submitted review; latest review ~27.9 weeks)",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev's single reported case ended in rejection after first review round; reviewer rated review-report quality 5.0/5.0 but overall manuscript handling 4.0/5.0, commenting the process 'could be a little bit shorter.' This is one data point, not a stable base rate.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/journal-of-social-philosophy/ (n=1 review)"
+    ]
+   },
+   "peer_review": {
+    "type": "Triple-blind per one secondary source (author, referees, and editor all blinded); Wiley's own author-guidelines snippet says 'blind review of articles not only by referees but also by the editor' -- consistent with triple-blind but the primary author-guidelines page itself could not be fetched to confirm the exact wording (HTTP 402 blocked).",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/14679833/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific)",
+     "why": "onlinelibrary.wiley.com forauthors.html and productinformation.html both returned HTTP 402 Payment Required on WebFetch; no journal-specific AI clause found via search, only Wiley's generic publisher-wide policy could be sourced."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No Sherpa/RoMEO (Open Policy Finder) entry or Wiley preprint policy page for this specific journal was retrievable; general Wiley preprint policy exists but journal-level confirmation not obtained."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev has only 1 submitted review for this journal and it does not report a desk-reject rate; no forum discussion found."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero results on 小木虫 (muchong), 知乎, fabiao.com.cn author-experience pages, and Reddit r/AskAcademia specifically discussing reviewer culture/tone for this journal -- only generic journal-metrics/scope pages surfaced."
+    },
+    {
+     "field": "peer_review.type (confirmed wording)",
+     "why": "The claim of 'triple-blind' comes from a single secondary aggregator search snippet, not a direct read of Wiley's author-guidelines page (blocked by 402), so it is unverified first-hand."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫): 0 results for this journal in search",
+    "zhihu.com (知乎): only generic SSCI journal-list articles mentioning the journal name in a directory; no first-hand submission/review experience posts found",
+    "fabiao.com.cn: journal directory page exists but contains no review-time/acceptance-rate/desk-reject data, only generic boilerplate about the review process",
+    "reddit.com r/AskAcademia: 0 results for this journal specifically"
+   ],
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0040-6325",
+   "name": "The Thomist: A Speculative Quarterly Review",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": "No AI-use policy found on thomist.org/submissions or cuapress.org/journals/the-thomist/ (checked 2026-07-13). No Catholic University of America Press journal-wide AI-authorship policy was found either; only CUA's institution-wide (non-journal-specific) generative-AI transparency policy for university community members exists (policies.catholic.edu/ai), which does not address journal submissions or peer review."
+   },
+   "peer_review": {
+    "type": "Blind review (manuscripts must be formatted for blind review per author instructions); extent of external refereeing not documented on the current site.",
+    "source_url": "https://www.thomist.org/submissions"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": "https://www.thomist.org/submissions"
+   },
+   "positioning": {
+    "accepts_now": "Historically-grounded philosophical and systematic theology scholarship engaging Thomas Aquinas and the Thomistic tradition, plus dialogue between Thomism and modern philosophy/theology. Confirmed from actual 2025-2026 tables of contents: natural law theory and its historical sources (Aquinas and Maimonides), philosophy of God/first principles, analogy of being/scholastic metaphysics (John of St. Thomas), political theology (Church-state relations, Maritain), race/equity examined through a Thomistic-Augustinian lens, historical theology (Augustine on original sin), liturgical theology, prayer and spirituality in Aquinas. All confirmed articles are text-based scholarly/historical-philosophical argumentation; none are empirical, quantitative, or social-science methods.",
+    "framing_required": "Must substantively engage Thomas Aquinas and/or the Thomistic tradition (per stated aims: 'creative use of the thought of Aquinas and significant authors in the Thomistic tradition'); written for an audience spanning university, seminary, and Church.",
+    "methods_welcome": [
+     "historical-textual/exegetical analysis of Aquinas and Thomistic commentators",
+     "systematic theology",
+     "analytic and scholastic metaphysics",
+     "philosophy of religion / natural theology",
+     "history of philosophy (medieval, patristic, early modern reception of Aquinas)",
+     "political philosophy/theology in the Thomistic tradition",
+     "review essays and book reviews"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://muse.jhu.edu/issue/54480 (Vol. 89 No. 2, April 2025 table of contents)",
+     "https://www.thomist.org/current-issue (Vol. 90 No. 3, July 2026 table of contents)",
+     "https://www.cuapress.org/journals/the-thomist/ (aims and scope)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "No current (2024-2026) first-hand acceptance-rate or review-time data exists. The only figures found (processing time ~3 months, acceptance rate ~40%, average wait to publication ~1 year, only ~1% of submissions sent for external review with most decisions made internally by associate editors) come from a print-era philosophy-journals guidebook (Smith College, jmoulton 'Guidebook for Publishing Philosophy: Journals') whose internal context clues date the entry to the early-to-mid 1980s -- over 40 years stale and NOT usable as a current fact. Recorded here as historical background only; not reported in the numeric fields above.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://sophia.smith.edu/~jmoulton/guidebook/jend3.htm (dated ~1980s per internal context clues; explicitly flagged as outdated, not query-time)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate / ai_policy.leniency_1_5",
+     "why": "No journal- or publisher-specific AI policy page exists; only a non-journal-specific CUA institutional transparency policy was found, which does not govern this journal's submissions."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Submissions page states manuscripts must not be previously published or under review elsewhere, but says nothing about preprint servers (arXiv/PhilPapers/SSRN) specifically, so preprint policy cannot be inferred with confidence."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no entry for this journal (confirmed via direct site search and Google site: search -- 0 results); no Reddit r/AskAcademia threads found; no Chinese-language (小木虫/知乎/fabiaoji) discussion found. Only source is a ~1980s print guidebook, too stale to report as current."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above -- only a ~1980s figure (~1% of submissions sent to external review) exists; no current source."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand author accounts in English or Chinese-language forums describing reviewer tone/culture were found for this niche Catholic Thomistic philosophy/theology journal."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org): searched directly -- no entry/page exists for 'The Thomist' (0 results, confirmed via search page and Google site: search)",
+    "Reddit r/AskAcademia: WebSearch for journal name + reddit/AskAcademia -- 0 relevant discussion threads found",
+    "小木虫 muchong.com: no indexed muchong.com discussion of this journal found across multiple queries (0 results)",
+    "知乎 zhihu: Chinese-language WebSearch ('The Thomist 期刊 投稿 神學 哲學') returned 0 zhihu or muchong results -- only English-language institutional/publisher pages",
+    "fabiaoji: not found in any search result -- 0 results"
+   ],
+   "sensitive_topics_note": "One recent article cluster (Vol. 89 No. 2, April 2025) engages race, racism, and Black intellectual/spiritual traditions through a Thomistic-Augustinian lens (e.g. 'Thomistic Essentialism, Racism, and Secular Accounts of Human Equality'; 'The Racial Pride of Pagan Virtue...'; 'Interpreting Desire: Prayer in Thomas Aquinas and the Slave Spirituals'). This is a description of confirmed published content, not a subjective characterization of the journal's political leaning.",
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "signal_quality": 2,
+    "summary": "Springer Nature (publisher-wide policy, applies to Topoi as no journal-specific override found): generative AI/LLMs cannot be listed as author. Use of an LLM in manuscript preparation must be disclosed in the Methods section (or a suitable alternative section if no Methods section exists); AI-assisted copy-editing is exempt from disclosure. AI-generated images/videos are not permitted for publication. This is Springer's group-wide policy referenced generically from Topoi's submission-guidelines page (which points authors to Springer's generative-AI policy) — I could not fetch the Topoi-specific submission-guidelines page directly (paywall/login redirect on link.springer.com), so this is inferred from the general Springer policy plus search-engine-cached summaries of that guidelines page, not a first-hand read of Topoi's own page.",
+    "source_url": "https://www.springernature.com/gp/authors/generative-ai-policy"
+   },
+   "peer_review": {
+    "type": "double-blind (per Springer's standard review procedure referenced in multiple Topoi calls for papers, e.g. special issue on Linguistic Derogation and Prevention)",
+    "source_url": "https://4sonline.org/news_manager.php?page=33612"
+   },
+   "preprint": {
+    "allowed": "Not confirmed journal-specific; Springer Nature's group-wide self-archiving policy generally permits posting a preprint (pre-refereeing) at any time and the accepted manuscript to personal website/institutional repository after embargo. No Topoi-specific preprint statement was located (submission-guidelines page could not be fetched directly).",
+    "source_url": "https://www.springer.com/gp/open-access/publication-policies/self-archiving-policy"
+   },
+   "positioning": {
+    "signal_quality": 4,
+    "accepts_now": "Topoi publishes single-theme special issues, usually with a guest editor who is a domain expert; recent/current issues and CFPs (2025-2026) span core analytic-continental philosophy topics (implicit bias, moral exemplarism, the principle of charity in argumentation/interpretation, rule-following, slurring terms across languages, linguistic derogation) alongside an explicit, self-described 'experiment' issue on 'Technology, Nature, and Wellbeing in Contemporary Societies' that deliberately accepted papers authored mostly by non-philosophers (neuroscience, experimental psychology, neurology, informatics, biomedical engineering, social neuroscience) and guest-edited by non-philosophers. Editor Fabio Paglieri (Daily Nous, 2025-04-29) stated the journal has 'always been open to all philosophical schools and areas' and is 'quite liberal in integrating contributions from other disciplines if deemed philosophically relevant,' but characterized the fully-interdisciplinary special issue as 'an exception' rather than the new norm going forward.",
+    "framing_required": "Standard submissions should be framed as philosophically relevant contributions (philosophy of science/technology, epistemology, argumentation, linguistics per aims & scope); cross-disciplinary empirical work is only welcome under a matching guest-edited special issue/CFP, not as an unsolicited standing policy.",
+    "methods_welcome": [
+     "analytic philosophy argumentation/conceptual analysis",
+     "philosophy of science",
+     "philosophy of technology",
+     "epistemology",
+     "philosophy of language / linguistics-adjacent argument analysis",
+     "empirical/interdisciplinary papers (neuroscience, psychology, biomedical/informatics) — only within specific guest-edited special issues explicitly soliciting them, e.g. the Technology/Nature/Wellbeing collection"
+    ],
+    "sources": [
+     "https://dailynous.com/2025/04/29/a-journals-experiment-with-interdisciplinarity/",
+     "https://link.springer.com/journal/11245/collections",
+     "https://4sonline.org/news_manager.php?page=33612"
+    ]
+   },
+   "experiential": {
+    "signal_quality": 0,
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/topoi/ (fetched: all handling-time fields 'n/a', 0 reviews submitted)",
+     "https://letpub.com.cn (average review speed / acceptance rate fields blank, no crowd-sourced data)",
+     "https://www.ablesci.com/journal/detail?id=Db8Vzp (average review period / acceptance rate fields blank)"
+    ]
+   },
+   "cross_language_checked": [
+    "muchong.com (小木虫): site-restricted search returned no Topoi-specific threads — 0 results",
+    "zhihu.com (知乎): no first-hand submission-experience posts found specific to Topoi (only generic philosophy-journal listicles) — 0 first-hand results",
+    "fabiaoji/letpub/ablesci (中文投稿經驗聚合站): journal pages exist but review-speed and acceptance-rate fields are empty ('网友分享经验' placeholder, no data submitted) — 0 populated data points",
+    "reddit.com r/AskAcademia: site-restricted search returned no results — 0 results",
+    "SciRev.org: journal page exists but shows 0 submitted reviews, all metrics n/a"
+   ],
+   "issn": "0167-7411",
+   "name": "Topoi: An International Review of Philosophy",
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 submitted reviews for Topoi (all fields n/a); Chinese aggregator sites (letpub, ablesci, fabiaoji) have journal pages but zero crowd-submitted data points; no Reddit or muchong.com threads found. No first-hand public source exists."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above — SciRev '% immediately rejected last year' is n/a, and no forum/community source reports a figure."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author account found in English or Chinese sources describing an actual acceptance/rejection experience with Topoi specifically."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post, Reddit thread, SciRev comment) describing reviewer behavior/culture at Topoi; only generic aggregator placeholders were found, so no subjective claim is made per hard rules."
+    },
+    {
+     "field": "ai_policy source (journal-specific page)",
+     "why": "link.springer.com/journal/11245/submission-guidelines redirected to an IdP login wall (idp.springer.com) and could not be fetched directly; the AI-policy fact given is the Springer Nature group-wide generative-AI policy that Topoi's guidelines page is known (via search snippets) to reference, not a directly-read journal-specific page."
+    },
+    {
+     "field": "preprint.allowed (journal-specific confirmation)",
+     "why": "Same login-wall issue prevented direct confirmation on Topoi's own submission-guidelines page; only Springer's group-wide self-archiving policy could be sourced."
+    }
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 4,
+    "source_url": "https://www.cambridge.org/core/journals/religious-studies/information/author-instructions/preparing-your-materials",
+    "summary": "Cambridge-wide policy applied at journal level: AI tools cannot be listed as author (accountability requirement not met by AI). Declaration required if AI used to generate text/images/translations or to analyze/extract insights from data, with tool name/version, access info, and dates disclosed (acknowledgments/footnote for text, methods section for data analysis, figure captions for visuals). Minor uses (spelling/grammar check, single words/brief phrases, formatting) do not require declaration. This is the general CUP author-instructions page for this journal, not a Religious-Studies-specific policy statement -- CUP's central AI ethics policy (2023) applies across ~400 journals."
+   },
+   "positioning": {
+    "accepts_now": "Analytic philosophy of religion and philosophical theology: problem of evil/theodicy (existentialist and classical framings), divine attributes (omnipotence, omniscience), apophatic theology, epistemology of theistic belief, miracles, prayer and time, science-engaged theology, and philosophy of religion drawing on non-Western/non-Christian traditions (2025 special issues covered Afro-Brazilian religions and Latin American philosophy of religion; forthcoming Feb 2026 special issue on Theology Meets Philosophy of Science; a 2025 special issue on Experimental Philosophy of Religion signals openness to empirically-informed methods).",
+    "framing_required": "Contributions should be framed as philosophy of religion / philosophical theology (conceptual argumentation engaging classical and contemporary discussions), even when interdisciplinary (science, neuroscience, cross-cultural/comparative religion) -- not as purely empirical religious-studies, sociology-of-religion, or textual/historical religious studies pieces.",
+    "methods_welcome": [
+     "analytic/conceptual argumentation",
+     "phenomenological analysis",
+     "engagement with classical theological/philosophical traditions",
+     "science-engaged theology (dialogue with physics, biology, neuroscience)",
+     "experimental philosophy of religion (per Sept 2025 special issue)",
+     "comparative/non-Western philosophy of religion (e.g., Afro-Brazilian, Latin American traditions per 2025 special issues)"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://www.cambridge.org/core/journals/religious-studies/latest-issue (WebFetch, Vol 62 Issue 2, June 2026 table of contents)",
+     "https://www.cambridge.org/core/journals/religious-studies/information/about-this-journal (WebSearch/WebFetch, aims and scope)",
+     "WebSearch result listing 2025-2026 special issues (Experimental Philosophy of Religion Sept 2025; Afro-Brazilian Religions July 2025; Latin America God's existence June 2025; Theology Meets Philosophy of Science Feb 2026)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev aggregate (n unspecified, likely very small sample): first review round ~1.3 months; total handling time to decision ~2.4 months; immediate/desk rejection ~7 days when it occurs.",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev's most recent logged submission for this journal was withdrawn by the author (\"drawn back\") rather than accepted or rejected; that submitter rated the overall process 4.0/5 (\"very good process\") but rated manuscript feedback difficulty 5.0/5 (\"very difficult\"), with review-report quality rated 4.0/5, averaging ~2.0 reviewers and ~2.0 rounds. This is a single data point, not a stable acceptance-rate figure.",
+    "review_time_months_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/religious-studies/ (WebFetch, SciRev aggregate stats -- appears to reflect a very small number of logged reviews, likely 1-2)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "Cambridge Core 'about this journal' and author-instructions pages state the journal uses Manuscript Central / an Online Peer Review Service (OPRS) but do not disclose whether review is single-blind, double-blind, or open; the dedicated 'Peer review information' subpage returned HTTP 404 on fetch attempt, and no search result surfaced the specific model."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev page explicitly lists this as n/a for this journal (sample too small); no forum or cross-language source discussed desk-reject rates for this specific journal."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand discussion found on 小木虫 muchong.com, 知乎 zhihu, fabiaoji-family sites (letpub rate-limited on fetch, other fabiao sites returned only generic journal-directory listings), or Reddit r/AskAcademia describing reviewer tone/culture for this specific journal -- only generic journal-info aggregator pages surfaced, which do not count as experiential."
+    },
+    {
+     "field": "preprint.source_url",
+     "why": "The general 'preparing your materials' author-instructions page states preprints are allowed on personal sites/institutional repositories/preprint archives subject to Cambridge's general Preprint Policy, but no Religious-Studies-specific preprint policy page was found distinct from the boilerplate Cambridge Core policy language."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com -- WebSearch for \"muchong.com \\\"Religious Studies\\\" 期刊\" returned 0 relevant results (only unrelated Chinese journal-directory sites for other titles like Religions/MDPI, Journal for the Study of Religions and Ideologies)",
+    "知乎 zhihu -- WebSearch for \"zhihu \\\"Religious Studies\\\" 期刊 投稿\" returned only tangential zhuanlan articles listing SSCI journals in anthropology/sociology of religion and a haoqikan.com directory page; no first-hand submitter accounts",
+    "fabiaoji-family sites (letpub.com.cn, sfabiao/haofabiao/haoqikan/yunzazhi) -- letpub.com.cn page for this ISSN was found but WebFetch was rate-limited (Chinese error: IP requesting too frequently); other fabiao-family results were generic journal-metric directory pages with no submitter experience narrative",
+    "Reddit r/AskAcademia -- WebSearch \"site:reddit.com \\\"Religious Studies\\\" journal desk reject philosophy religion\" returned 0 results; broader WebSearch also surfaced no relevant Reddit threads"
+   ],
+   "issn": "0034-4125",
+   "name": "Religious Studies",
+   "overall_signal_quality": 3,
+   "peer_review": {
+    "source_url": "https://www.cambridge.org/core/journals/religious-studies/information/author-instructions",
+    "type": null
+   },
+   "preprint": {
+    "allowed": "yes (personal websites, institutional repositories, or preprint archives permitted; subject to Cambridge's general Preprint Policy for version handling)",
+    "source_url": "https://www.cambridge.org/core/journals/religious-studies/information/author-instructions/preparing-your-materials"
+   },
+   "sensitive_topics_note": "Journal covers philosophy of religion/theology broadly across traditions (Christianity-centric historically, with 2025 special issues explicitly expanding to Afro-Brazilian and Latin American traditions) -- no politically sensitive gatekeeping found in sources; not evaluated for any doctrinal/denominational bias due to lack of first-hand discussion."
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 10,
+  "failed_count": 8,
+  "failed_issns": [
+   "0029-4527",
+   "0031-8094",
+   "0012-2017",
+   "1052-150X",
+   "0165-9227",
+   "0309-8249",
+   "0960-8788",
+   "0264-3758"
+  ],
+  "run_task_id": "wlarwll0p"
+ }
+}

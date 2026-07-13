@@ -1,0 +1,1137 @@
+{
+ "batch": "retry-b7",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "1936-7228",
+   "name": "ACM Transactions on Accessible Computing (TACCESS)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 4,
+    "signal_quality": 3,
+    "source_url": "https://www.acm.org/publications/policies/frequently-asked-questions",
+    "summary": "此為 ACM 出版社統一政策(非 TACCESS 專屬頁面)。AI 生成工具不得列為作者;使用 AI 撰寫文稿現已「不再要求揭露」;但若 AI 被用於研究執行本身(方法設計、資料生成、程式碼、分析、模擬等),則必須在方法章節詳述用途。所有掛名作者對內容(含 AI 產出部分)負完全責任,發現誠信問題可導致拒稿或已發表文章撤稿。截至查證時(2026-07-13)未找到 TACCESS 期刊層級的獨立 AI 政策頁面,推定沿用 ACM 全站政策。"
+   },
+   "peer_review": {
+    "type": "single-blind (推定)",
+    "source_url": "https://dl.acm.org/journal/taccess/reviewer-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許。ACM 政策賦予所有作者無限制張貼 pre-print/submitted/accepted 版本至 arXiv 等非營利站台、個人網頁或機構典藏庫的權利;不會因作者已在 arXiv 貼文而拒絕投稿(此為 ACM 全站政策,非 TACCESS 專屬頁)。另外，ACM 自 2026-01-01 起全面轉為 Open Access 出版社。",
+    "source_url": "https://www.acm.org/publications/policies/roles-and-responsibilities"
+   },
+   "positioning": {
+    "accepts_now": "近期(2025)刊出文章涵蓋:自閉症成人壓力管理的 AR 自助介入需求蒐集、四邊形學習的實體使用者介面(Tangible UI)、HCI 研究中 VR 無障礙性的概念化批判回顧、視覺化描述(audio description)專業工作實務變遷之質性研究、智能障礙成人的數位獨立與功能獨立相關性研究、BLV(全盲/低視力)觸覺回饋系統性文獻回顧的勘誤。另有專屬 ASSETS 研討會擴充論文專區(TACCESS 與 ASSETS/W4A 有正式論文互通機制)。",
+    "framing_required": "擴充版會議論文(尤其來自 ASSETS)需在前言明確聲明為擴充版並列出至少 25% 新增內容;文獻回顧類論文須提出新視角或明確推進領域,不可僅是文獻整理。",
+    "methods_welcome": [
+     "使用者研究/質性訪談(如工作實務變遷研究)",
+     "系統與工具開發(含實體介面、AR/VR 系統)",
+     "系統性文獻回顧與批判性綜述(需有新視角)",
+     "問卷/相關性統計研究(如數位獨立與功能獨立)",
+     "需求蒐集與設計研究(participatory design 導向)",
+     "ASSETS/W4A 會議論文擴充版"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://dl.acm.org/toc/taccess/2025/18/4",
+     "https://dl.acm.org/journal/taccess/author-guidelines",
+     "https://dl.acm.org/journal/taccess/about"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "期刊自述審稿目標為投稿後三個月內回覆,採 3-4 位審稿人、最多兩輪大修;此為期刊官方聲明的政策目標,非投稿人第一手經驗數據,故不計入 review_time_months 欄位。",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://dl.acm.org/journal/taccess/reviewer-guidelines"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "TACCESS 官方頁面未明文標示 single-blind 或 double-blind;推定為 single-blind 是根據 author-guidelines 要求投稿時即需附上作者姓名與單位(無匿名化稿件格式要求),而非期刊明文聲明,信心中等。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該期刊頁面所有欄位(accept %, desk-reject %, review duration, impact factor)皆為 'n/a'(0 筆讀者提交評論);查無小木虫(muchong.com)、知乎、fabiaoji 相關討論串;Reddit r/AskAcademia 及一般 Reddit 搜尋亦無提及 TACCESS 的貼文。僅有期刊自述的政策目標(3 個月),非第一手經驗,不足以作為 experiential 欄位依據。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該欄位為 'n/a',無任何第一手來源。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "查無任何論壇(中文或英文)第一手審稿文化描述,無法在不捏造的前提下填寫。"
+    },
+    {
+     "field": "ai_policy (journal-specific page)",
+     "why": "未能找到 TACCESS 期刊層級專屬的 AI 使用政策頁面(dl.acm.org/journal/taccess 下無對應頁籤);本記錄採用 ACM 出版社全站政策作為代理,已於 ai_policy.summary 註明此限制。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/acm-transactions-on-accessible-computing) — 0 篇讀者評論,所有數據欄位皆為 n/a",
+    "小木虫 muchong.com — 搜尋無 TACCESS/Accessible Computing 相關討論串",
+    "知乎 zhihu.com — 搜尋無 TACCESS 投稿經驗文章,僅有無關的其他期刊投稿經驗分享",
+    "fabiaoji — 搜尋未見獨立結果(併入一般搜尋,未產生 fabiaoji 站內內容)",
+    "Reddit r/AskAcademia 及站內搜尋 — 0 筆與 TACCESS 相關貼文,僅有 arXiv 論文引用 TACCESS 作為文獻,非投稿經驗討論"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0018-7208",
+   "name": "Human Factors: The Journal of the Human Factors and Ergonomics Society",
+   "ai_policy": {
+    "signal_quality": 2,
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "summary": "SAGE(出版社統一政策,未見 Human Factors 期刊專屬加嚴版本): assistive AI(文法/語言潤飾)免揭露;generative AI(文獻整理、翻譯、程式碼生成、資料視覺化、圖表、程式除錯、參考文獻整理)須在 Methods 或 Acknowledgements 揭露;禁止用 AI 生成造假內容/整篇稿件/取代真實受試者訪談/生成主題分析/編輯決策或同行評審。已揭露且正當使用不會僅因此被拒稿;未揭露的不當使用可在流程任何階段導致拒稿。未找到 Human Factors 期刊自訂的加嚴版本,視為採用 SAGE 集團預設政策。",
+    "source_url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy"
+   },
+   "peer_review": {
+    "type": "single-anonymized (single-blind) as default; double-anonymized available on author request via cover letter + separate title page",
+    "source_url": "https://journals.sagepub.com/author-instructions/hfs"
+   },
+   "preprint": {
+    "allowed": "未找到 Human Factors 期刊專屬前印本頁,僅查得 SAGE 集團層級政策(以 SAGE Open 稿約頁面為例):允許前印本存放,投稿時填 preprint DOI 並知會編輯部,審稿期間不可更新前印本版本,接受後須在前印本加連結指向正式發表版。此為出版社通用慣例推論,非 Human Factors 期刊頁面直接確認。",
+    "source_url": "https://journals.sagepub.com/author-instructions/sgo"
+   },
+   "positioning": {
+    "signal_quality": 3,
+    "accepts_now": "2025年實際刊出主題(Vol 67 No 3, 2025-03)涵蓋:外骨骼於間歇彎腰任務的肌肉負荷與使用者觀感、diminished reality 認知輔助設計以降低分心、部分自動駕駛對心智負荷/視覺行為/次要任務投入的統合分析(meta-analysis)。另有進行中之特刊徵稿:'Investigating the Human Factors of AI Use'(截止2025-10-01,徵求理論/方法/實證三類投稿,聚焦AI對人類表現與行為之影響、職場效益與非預期後果、組織意涵、安全風險、倫理考量)及'Human Factors in Healthcare'特刊(聚焦生醫資料的人因議題)。",
+    "methods_welcome": [
+     "實證/實驗研究(如肌電/生理量測)",
+     "統合分析 meta-analysis",
+     "理論性貢獻",
+     "方法學貢獻",
+     "使用者觀感/質性成分(user perspectives)"
+    ],
+    "framing_required": "須落在人因工程/人機系統範疇內(people與technology/tools/environments/systems的關係),AI特刊要求明確扣連'human performance and behavior'而非純技術性AI論文",
+    "sources": [
+     "https://journals.sagepub.com/toc/hfs/current",
+     "https://www.hfes.org/About/Latest-News/call-for-papers-special-issue-in-human-factors-investigating-the-human-factors-of-ai-use"
+    ]
+   },
+   "experiential": {
+    "signal_quality": 0,
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/human-factors/ (0 reviews submitted, all fields 'n/a')"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com: 搜尋「Human Factors SAGE 期刊」僅命中期刊評分頁 (jid=3283) 但未取得可用審稿經驗文字內容,0條可引用一手經驗",
+    "知乎 zhihu: 搜尋「Human Factors 期刊 审稿 投稿经验」無針對本刊之直接討論,0結果",
+    "Reddit r/AskAcademia: 搜尋「Human Factors journal review time desk reject SAGE」無針對本刊之討論串,0結果",
+    "fabiaoji: 未執行到有效查詢(工具搜尋未返回該站台關於本刊的內容),視為0結果"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊頁面顯示 0 筆評論提交,所有時間欄位為 n/a;中文論壇(小木虫/知乎)與 Reddit r/AskAcademia 均未搜到針對本刊的一手討論"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上,SciRev 無數據,跨語言論壇亦無討論串可引用"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無任何公開一手投稿經驗來源(SciRev/小木虫/知乎/Reddit)提及本刊"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "規則要求主觀性論述須有具體來源佐證;未找到任何論壇貼文描述本刊審稿人風格,故留空避免捏造"
+    },
+    {
+     "field": "ai_policy(journal-specific override)",
+     "why": "只找到 SAGE 集團層級 AI 政策頁與集團層級前印本慣例(以 SAGE Open 頁面為例),未找到 Human Factors/HFES 專屬頁面明確覆寫或補充此政策,故標註為集團政策推論而非期刊自訂確認"
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "2169-3536",
+   "name": "IEEE Access",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 4,
+    "source_url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/",
+    "summary": "IEEE 全刊通用政策(IEEE Access 適用): AI 生成內容(文字/圖/圖像/程式碼)須在 acknowledgments 揭露,需標明使用的 AI 系統、涉及段落與使用程度說明;文法/編輯用途的 AI 一般不在此揭露要求範圍內(但建議揭露);AI/AI輔助工具不得列為作者或共同作者;審稿人不得將待審稿件內容輸入公開 AI 平台(視為機密外洩)。此為 IEEE 出版社層級政策,未見 IEEE Access 期刊專屬加嚴版本,故標記為公司層級政策外推。"
+   },
+   "peer_review": {
+    "type": "single-anonymized (single-blind), minimum 2 independent reviewers, binary accept/reject decision, editorial-board Associate Editor managed rapid review",
+    "source_url": "https://ieeeaccess.ieee.org/about/rapid-peer-review/"
+   },
+   "preprint": {
+    "allowed": "允許。arXiv 與 TechRxiv 為 IEEE 官方認可的第三方預印本庫;接受前作者可自由張貼預印本;簽署 IEEE 版權後需在預印本加註 IEEE 版權聲明;正式發表後需以含 DOI/IEEE Xplore 連結的引用資訊或含版權聲明之接受版取代預印本全文。此為 IEEE 出版社通用政策,適用於 IEEE Access。",
+    "source_url": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf"
+   },
+   "positioning": {
+    "accepts_now": "IEEE Access 為跨領域(multidisciplinary)、線上開放取用金色 OA 期刊,涵蓋所有 IEEE 技術領域,強調應用導向與跨領域研究;近年併入依 IEEE 技術社群劃分的 discipline-specific sections。截至查詢時(2026-07),官方 Special Sections 頁面顯示目前無開放中的專刊徵稿(no Special Sections open for submission at this time),故無法引用近期(2024-2026)具體專刊 CFP 作為佐證。",
+    "framing_required": "中國學術論壇(小木虫/知乎)反覆提及:編輯常以「與最新(18個月內)先進方法比較不足」「範疇不合(scope mismatch)」作為 desk reject 理由,顯示投稿需明確定位技術貢獻並引用近期 SOTA 對照,而非僅範疇符合即可。",
+    "methods_welcome": [
+     "應用導向(applications-oriented)研究",
+     "跨領域/交叉學科主題",
+     "各 IEEE 技術領域之原創研究或開發成果"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://ieeeaccess.ieee.org/about/",
+     "https://ieeeaccess.ieee.org/sections/special-sections/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev 資料:第一輪審查平均約 1.5 個月,已接受稿件總處理時間平均約 2.8 個月,平均審查報告數 2.8 份,平均審查輪數 1.7 輪。小木虫論壇個案:投稿到決定約 25 天。IEEE Access 官方自述:同行評審平均 4 週(submission→accept/reject),投稿到出版約 4-6 週。跨語言/跨來源數字大致一致(4-6週初審,總流程約2-3個月)。",
+    "desk_reject_pct": "無單一權威數字。第三方部落格(manusights,非一手來源)估計 30-40% 於編輯篩選階段被拒;小木虫/知乎討論提及近年整體錄取率由約 50% 降至約 30%,但這是錄取率非 desk-reject 率,兩者來源均非一手 SciRev/論壇原始統計,可信度中等,列為軟性參考。",
+    "acceptance_note": "SciRev 未揭露 %accepted last year(n/a)。中文論壇(小木虫、知乎)普遍反映 IEEE Access 錄取門檻近年提升,不再像早年「幾乎照單全收」;常見拒稿理由為範疇不合與比較基準過舊,而非方法學致命缺陷。",
+    "reviewer_culture": "小木虫討論串(muchong.com/t-13608696-1)一手發文者形容部分收到的審稿意見「潦草(sloppy)」,並質疑期刊對創新性/英文品質把關不夠嚴謹,但也有使用者指出審稿速度快、審稿人要求一週內完成審查。SciRev 量化評分:審查報告品質 3.4/5.0,整體稿件處理 3.4/5.0,審稿意見難度 3.0/5.0(中等)。未查到 Reddit r/AskAcademia 上的相關討論(搜尋 0 結果)。",
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/ieee-access/",
+     "http://muchong.com/t-13608696-1",
+     "https://ieeeaccess.ieee.org/about/rapid-peer-review/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate/leniency",
+     "why": "查無 IEEE Access 期刊專屬的 AI 政策頁面,僅有 IEEE 出版社(journals.ieeeauthorcenter.ieee.org)通用政策,已標記為公司層級外推,非期刊專屬一手來源。"
+    },
+    {
+     "field": "positioning.accepts_now (2024-2026 具體文章/CFP)",
+     "why": "官方 Special Sections 頁面顯示查詢當下(2026-07-13)無開放中專刊徵稿,且未取得可存取的近期期刊文章標題清單或已關閉專刊列表作為近期選題佐證,故 positioning 僅能依 aims & scope 泛層級描述,signal_quality 定為 2。"
+    },
+    {
+     "field": "experiential.desk_reject_pct (精確數字)",
+     "why": "唯一數字來源為非一手部落格(manusights)估計值與中文論壇二手轉述,並非 SciRev 原始統計或作者一手發文的具體百分比,故列為軟性參考而非確定數字。"
+    },
+    {
+     "field": "experiential Reddit r/AskAcademia",
+     "why": "WebSearch 對 'IEEE Access reddit AskAcademia review experience' 查詢回傳 0 結果,英文論壇端交叉驗證缺失。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 找到討論串 t-13608696-1,一手發文者分享投稿到決定約25天、審稿意見品質參差、對創新性把關寬鬆之評論",
+    "知乎 zhihu: 多篇文章討論 IEEE Access 審稿速度快、錄取率近年由約50%降至約30%、被稱為「水刊」「畢業神刊」",
+    "fabiaoji.com 發表記: 搜尋命中頁面存在但未逐條擷取一手評論(僅列為搜尋結果標題)",
+    "Reddit r/AskAcademia: 搜尋 0 結果,未找到相關討論"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0142-694X",
+   "name": "Design Studies",
+   "ai_policy": {
+    "leniency_1_5": 4,
+    "gate": "conditional",
+    "signal_quality": 2,
+    "summary": "No Design Studies-specific AI policy page could be retrieved (ScienceDirect guide-for-authors returned HTTP 403 to automated fetch on 2026-07-13, and no journal-specific override was found via search). Applying Elsevier's PUBLISHER-WIDE default (journals inherit this unless they post a stricter override, which none was found for Design Studies): authors may use generative AI/AI-assisted tools to prepare a manuscript with human oversight, must disclose use in a declaration statement at submission, AI/LLMs cannot be listed as author, and AI use in formal research design/methods must be described in the Methods section. This is a publisher policy, not confirmed journal-specific — treat leniency/gate as inherited, not verified for this title.",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "Yes, per Elsevier's general sharing policy (applies journal-wide, no Design Studies-specific override found): authors may post and share preprints on any preprint server (incl. Elsevier's own SSRN) at any time; preprint posting does not count as prior publication.",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/sharing/policy-faq"
+   },
+   "positioning": {
+    "signal_quality": 4,
+    "accepts_now": "Journal explicitly studies design activity/process across engineering & product design, architectural & urban design, and computer artefacts/systems design, from cognition to methodology to values/philosophy. Confirmed active 2024-2025 topic uptake: generative-AI-in-design-process papers, e.g. a 2025 systematic review 'Generative AI-enhanced human-AI collaborative conceptual design' (Design Studies 97, Art. 101300) and a 2024 review 'AI-against-design map: a systematic review of 20 years of AI-focused studies in design research' (Design Studies, doi via ScienceDirect S0142694X24000425). Journal launched a standing new article type, 'Research Notes', starting Vol. 78 (2022) and continuing — short papers on design-research quality/methods topics: sampling in design research, formulating research questions, design methods, literature review practice, theory development, design methodology, ethics, research scholarship generally.",
+    "framing_required": "For the Research Notes track specifically: must be framed as a short, quality/methods-reflective contribution (not a full empirical study) addressing one of the identified themes (e.g. knowledge construction, asking the right research questions, methodological rigor).",
+    "methods_welcome": [
+     "empirical studies of design cognition/process",
+     "systematic literature reviews (incl. AI-in-design reviews)",
+     "design methodology / research-methods papers",
+     "short 'Research Notes' on research quality, ethics, theory development",
+     "cross-domain design studies (engineering, product, architecture/urban, computer systems design)"
+    ],
+    "sources": [
+     "https://www.designresearchsociety.org/articles/introducing-research-notesa-new-submission-format-in-design-studies",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0142694X24000425"
+    ]
+   },
+   "experiential": {
+    "signal_quality": 2,
+    "review_time_months": "SciRev aggregate (n=3 reviews, small sample): first review round avg 4.6 months; total handling time avg 5.9 months; immediate-rejection decision avg 40 days; avg 2.0 review rounds. Separately, LetPub/Chinese aggregator (larger but methodology/sample size not disclosed) reports first review ~5.7 weeks and overall review speed ~7.3 weeks, online publication ~9.5 weeks — materially faster than SciRev's figure. The two sources disagree substantially; both are query-time small-sample aggregators, not verified large-N data.",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub.com.cn author-experience aggregator characterizes acceptance difficulty as \"较易\" (relatively easy), but gives no percentage and is a promotional/paid-editing-adjacent site (LetPub sells manuscript editing), so treat as low-confidence.",
+    "reviewer_culture": "One SciRev first-hand reviewer report (2026, single data point) described being rejected specifically because the manuscript did not cite prior Design Studies articles, and criticized this as a self-reinforcing citation-gatekeeping norm that could suppress new research themes. This is a single anecdote, not a pattern — do not generalize.",
+    "sources": [
+     "https://scirev.org/journal/design-studies/",
+     "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2252"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "No first-hand confirmation of single- vs double-blind found. ScienceDirect's own guide-for-authors and 'about/publishing-guidelines' pages both returned HTTP 403 to automated fetch (2026-07-13), and a WebSearch AI-summary claim of 'double-blind' was not traceable to any concrete cited passage — treated as unreliable and discarded rather than reported as fact."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Neither SciRev (n=3, no aggregate rejection-rate field populated, shows 'n/a') nor LetPub nor 小木虫/muchong (searched, only 2 old low-content comments from 2013-2014 found, no reject-rate figures) report a desk-reject percentage."
+    },
+    {
+     "field": "ai_policy (journal-specific page)",
+     "why": "Both sciencedirect.com/journal/design-studies/publish/guide-for-authors and sciencedirect.com/science/journal/0142694x/publish/guide-for-authors returned HTTP 403 Forbidden to automated fetch. Reported AI policy is Elsevier's publisher-wide default, not confirmed as this journal's verbatim page."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com (bbs/journal.php?view=detail&jid=2265): only 2 substantive comments found (2013, 2014), no review-time/desk-reject/reviewer-culture data; effectively 0 usable results",
+    "LetPub / letpub.com.cn (Chinese author-experience aggregator, journalid=2252): yielded review-cycle numbers (first review ~5.7 weeks, overall ~7.3 weeks, online pub ~9.5 weeks) and a qualitative 'relatively easy acceptance' note, but no desk-reject % or reviewer-culture detail",
+    "知乎 zhihu.com: search returned general 'what is Design Studies journal' overview articles (zhuanlan.zhihu.com/p/639227239, p/103687413) with journal-tier/ranking commentary, no first-hand review-experience posts found",
+    "Reddit r/AskAcademia: 0 results for Design Studies specifically in search"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "2474-9567",
+   "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.acm.org/publications/policies/frequently-asked-questions",
+    "summary": "IMWUT follows the general ACM (publisher-wide) generative-AI policy, not a journal-specific one: generative AI tools (e.g. ChatGPT) may be used to help create content but their use must be disclosed (e.g. in Acknowledgements, level of disclosure proportional to how much content was AI-generated); AI tools cannot be listed as authors; authors remain fully responsible for accuracy, plagiarism, and fabricated references. Separately, an arXiv survey on CS-venue Gen-AI policies documents IMWUT as one of a small number of ACM SIGCHI-family venues with an explicit Gen-AI policy for reviewers, prohibiting reviewers from uploading submissions to LLM tools. Because this is the ACM-wide policy applied to IMWUT rather than a bespoke IMWUT clause, a distinct IMWUT-only AI policy page could not be confirmed (dl.acm.org/journal/imwut/author-policies returned HTTP 403 to automated fetch)."
+   },
+   "peer_review": {
+    "type": "AE-triage model: submissions may receive Desk Rejection by Editors (no reviewers assigned; scope/formatting issues), Early Rejection by Associate Editors (after the AE's own initial read, without external reviewers), or proceed to full external review (SciRev data shows ~4 review reports per first round) with major/minor revision cycles.",
+    "source_url": "https://dl.acm.org/journal/imwut/reviewers"
+   },
+   "preprint": {
+    "allowed": "Yes. IMWUT explicitly excludes preprints posted to arXiv or similar non-refereed sites from counting as prior publication, so an existing arXiv preprint does not disqualify a submission. This aligns with ACM's blanket self-archiving policy allowing authors to post pre-submission, submitted, and accepted versions to arXiv/non-commercial repositories without an exception request.",
+    "source_url": "https://www.acm.org/publications/policies/publication-rights-and-licensing-policy"
+   },
+   "positioning": {
+    "accepts_now": "Not directly confirmed via 2024-2026 title sampling: dl.acm.org listing/TOC pages returned HTTP 403 to automated fetch, and dblp's IMWUT index page plus the UbiComp-ISWC 2025 papers page returned only metadata/navigation (no actual titles) when fetched. This field relies on the journal's stated charter/scope rather than an observed-title survey — lower confidence.",
+    "framing_required": null,
+    "methods_welcome": [
+     "mobile systems and infrastructure",
+     "wearable technologies and new sensing hardware",
+     "intelligent/smart environments and IoT",
+     "user experience studies and HCI evaluation",
+     "new methodologies, tools, theories and models for ubiquitous computing",
+     "societal impact studies of pervasive computing"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://dl.acm.org/journal/imwut (scope description via search snippet only; direct fetch blocked 403)",
+     "https://www.ubicomp.org/ubicomp-iswc-2025/imwut_papers/ (fetch returned no titles, only publication-model description)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~2.0 months (8.7 weeks) average first-review-round; ~3.9 months average total handling time to decision for accepted manuscripts",
+    "desk_reject_pct": null,
+    "acceptance_note": "Single SciRev reviewer report (as of 2026-07-13): overall process rated 5.0/5.0 ('Excellent'), review difficulty 5.0/5.0 ('very difficult'), quality of reports 5.0/5.0, ~4 review reports in first round, ~2 review rounds; the reporting author's paraphrased comment: reviews were very high-quality/professional and substantially improved the paper. This is a single self-reported data point (n=1 on SciRev), not a stable statistic.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/proceedings-of-the-acm-on-interactive-mobile-wearable-and-ubiquitous-technologies/ (1 review submitted, checked 2026-07-13)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "positioning.accepts_now (title-level detail)",
+     "why": "dl.acm.org article listing and TOC pages return HTTP 403 to automated fetch; dblp and UbiComp-ISWC 2025 pages returned only navigation/metadata, no actual 2024-2026 titles could be sampled. Only the journal's stated charter/scope description could be used, which is policy/scope-only, not an observed-title survey."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev shows only 1 total review submitted for this journal and does not report a desk-reject percentage; no forum discussion (小木虫/知乎/Reddit) surfaced a concrete desk-reject rate."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum post (小木虫 muchong.com, 知乎 zhihu, Reddit r/AskAcademia) specifically about IMWUT review culture was found in this search pass — searches returned only generic 大修/拒稿 advice threads not tied to IMWUT, or unrelated results. Fabiaoji could not be queried directly (no dedicated search access) and no results surfaced organically; treating as unchecked/0-result rather than inventing a culture narrative."
+    },
+    {
+     "field": "experiential.acceptance_note (statistical robustness)",
+     "why": "SciRev's numbers derive from a single self-reported review (n=1), so they are one anecdote rather than a stable average; flagged explicitly in the note rather than presented as a solid statistic."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No current special-issue CFP or explicit 'preferred framing' language was found in this search pass (dl.acm.org CFP/about pages blocked at 403); left null rather than inferring a framing requirement from generic scope text."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched '小木虫 IMWUT 投稿 审稿 UbiComp' and '小木虫 IMWUT 大修 拒稿 经验': 0 results specific to IMWUT; only generic unrelated journal revision/rejection threads surfaced.",
+    "知乎 zhihu.com — searched '知乎 IMWUT 投稿经验': found background/informational posts only (e.g. Tsinghua team's IMWUT Best Paper announcement, an explainer on IMWUT-vs-UbiComp equivalence); no first-hand review-experience or reviewer-culture threads.",
+    "fabiaoji — not independently queryable via general web search in this pass; no results surfaced organically alongside 小木虫/知乎 queries, treated as 0 results rather than skipped.",
+    "Reddit r/AskAcademia — searched 'reddit AskAcademia IMWUT review experience': 0 relevant results; search returned unrelated patent/document-review and open-science papers."
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0021-9762",
+   "name": "Journal of Clinical Psychology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://authors.wiley.com/ethics-guidelines/index.html",
+    "summary": "無 JCLP 專屬 AI 政策頁面(投稿指南頁全文檢索 'generative'/'artificial intelligence' 均未命中期刊專屬條款,僅頁尾版權聲明提及 TDM/AI 訓練保留權利)。適用的是 Wiley 集團通用政策(Best Practice Guidelines on Research Integrity and Publishing Ethics,AIGC 章節):允許作者使用生成式 AI 輔助寫作,但(1)不得列為作者,(2)投稿時必須揭露使用情形(用途、是否影響論點、如何人工核實),(3)作者對內容正確性全責。屬於「有條件允許」而非全開放或禁止,故 leniency 標 3。因非期刊專屬確認頁,signal_quality 僅 2。"
+   },
+   "peer_review": {
+    "type": "double-blind",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10974679/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "yes — journal will review manuscripts previously posted as preprints; authors may post submitted version to a preprint server at any time and are asked to link back to the final published version once available",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10974679/homepage/forauthors.html"
+   },
+   "positioning": {
+    "accepts_now": "Original empirical papers, conceptual analyses, comprehensive/systematic reviews & meta-analyses, training-and-professional-issues articles, and invitation-only 'In Session' case reports — scope centers on psychotherapy process/effectiveness, psychodiagnostics/assessment, treatment matching, clinical outcomes, clinical health psychology and behavioral medicine (per official Wiley aims-and-scope on the author guidelines page). No live 2025-2026 special-issue CFP was located in this search pass.",
+    "accepts_now_confidence": null,
+    "framing_required": "Editor-in-Chief screens for quality/relevance before review even begins ('papers will only be sent to review if the Editor-in-Chief determines the paper meets the appropriate quality and relevance requirements') — implies a threshold/framing gate at the desk stage, but no explicit topical framing requirement beyond stated scope was found.",
+    "methods_welcome": [
+     "empirical/quantitative clinical outcome studies",
+     "systematic reviews and meta-analyses",
+     "conceptual/theoretical analyses",
+     "training & professional-education research",
+     "invited clinical case reports (In Session)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://onlinelibrary.wiley.com/page/journal/10974679/homepage/forauthors.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev(僅 1 筆評論,2024稿件): 第一輪初審平均 2.9 個月(該筆最新一次約 12.7 週);全案到接受總處理時間 11.3 個月,平均歷經 3 輪審稿。LetPub/科研通(中文平台)頁面均未提供該刊具體審稿週期數據(僅為行銷性質頁面,無社群填報內容)。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 唯一一則評論描述稿件在第三輪從 minor revision 被翻案為 rejection,原因是中途加入一位新審稿人且其意見與另兩位審稿人不合卻被編輯採用,作者對此流程一致性表達不滿,整體出版延宕約一年半。樣本數僅 1,不可外推為普遍現象。",
+    "review_time_months_confidence": null,
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/journal-of-clinical-psychology/",
+     "https://www.letpub.com.cn/index.php?journalid=11414&page=journalapp&view=detail",
+     "https://www.ablesci.com/journal/detail?id=r82yX5"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency (journal-specific)",
+     "why": "JCLP 投稿指南頁全文未出現 'generative' 或期刊專屬 AI 政策段落;僅適用 Wiley 集團通用 AIGC 政策,非期刊獨有確認,故信心較低。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該刊頁面此欄位標示 n/a;LetPub、科研通(ablesci)頁面均為行銷/框架頁,無社群實際填報數據;未找到小木虫該刊專屬討論串;Reddit r/AskAcademia 對此刊搜尋 0 結果。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "唯一可用的第一手來源(SciRev 1 則評論)僅描述單一負面流程事件(審稿人中途更換、意見不一致),樣本過小且未涉及審稿人整體文化/風格,不足以支撐一般化描述,故留空避免以偏概全。"
+    },
+    {
+     "field": "positioning.accepts_now (current CFP)",
+     "why": "本次搜尋未能定位到 JCLP 現行(2025-2026)的 special issue call for papers 頁面,僅有常態 aims & scope 描述,故該子項留空。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 搜尋「Journal of Clinical Psychology 投稿」「审稿」未命中該刊專屬討論串,僅返回同名中文期刊《中国临床心理学杂志》(不同刊物,易混淆)及其他心理學刊物泛論帖 — 0 relevant results",
+    "fabiaoji/LetPub (www.letpub.com.cn): 該刊專屬頁面存在,但僅含影響因子/CiteScore 等靜態指標與 LetPub 行銷文案,無社群審稿週期/退稿率填報數據 — 0 substantive experiential results",
+    "知乎 zhihu.com: 多篇「臨床心理學 SSCI 期刊匯總」「审稿效率高的心理学期刊」文章提及同類期刊(如 IJCHP 初審7天、Clinical Psychological Science 4-5個月)但未見 JCLP 專文或具體數據 — 0 direct results",
+    "科研通 ablesci.com: 該刊頁面存在但標示「网友分享经验」欄位为空,無使用者實際填報 — 0 substantive results",
+    "Reddit r/AskAcademia: site:reddit.com 搜尋「Journal of Clinical Psychology review」無結果 — 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0009-3920",
+   "name": "Child Development",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 5,
+    "source_url": "https://www.srcd.org/publications/journals/srcd-generative-artificial-intelligence-ai-policy",
+    "summary": "SRCD 政策(適用於旗下所有期刊含 Child Development,非期刊專屬但為出版單位官方政策)。作者可用生成式 AI 起草文稿、生成圖像、協助非母語英語寫作,但須在 methods/materials 揭露使用方式,並將完整 AI 輸出作為補充材料提交;作者對 AI 產生的錯誤、偏見或不實負全責。AI 不得列為作者(依循 COPE)。審稿人被明文禁止在同行評審中使用 AI 工具(保密與著作權考量)。拼字/文法檢查、文獻管理、抄襲檢測工具豁免揭露。政策每年檢討。"
+   },
+   "peer_review": {
+    "type": "Double-anonymous (double-blind); handled by Editors-in-Chief with Consulting Editors/ad hoc reviewers; cover sheets removed, decision letters and reviews blinded by SRCD Editorial Office staff",
+    "source_url": "https://www.srcd.org/research/journals/child-development/reviewer-guidelines-child-development"
+   },
+   "preprint": {
+    "allowed": "Yes — preprints (e.g. on a lab/departmental website or PsyArXiv) do not count as prior publication, per SRCD submission guidelines. Additional constraints noted if the preprint carries a copyright license (e.g. CC) restricting further editing/publication.",
+    "source_url": "https://www.srcd.org/research/journals/child-development/child-development-submission-guidelines"
+   },
+   "positioning": {
+    "accepts_now": "旗艦期刊(SRCD),刊登 empirical articles, brief reports, registered reports, commentaries, reviews,涵蓋兒童發展全領域研究(認知、社會情緒、語言、神經發展等),強調全球化與方法多元。近期(2025-2026)徵稿方向包括:COVID-19 對兒童發展軌跡長期影響特刊(僅收 empirical 量化/質性/混合方法,不收文獻回顧或概念性論文,歡迎 brief reports 與 multi-data papers)、以及「From Lab to Life: 拓展早期兒童發展研究影響力」特刊(著重研究成果的實務落地與影響力擴散)。",
+    "framing_required": "投特刊需先送 Letter of Intent(信函意向書)獲邀請後才能投全文;COVID特刊明確排除純文獻回顧/概念性論文。",
+    "methods_welcome": [
+     "quantitative",
+     "qualitative",
+     "mixed methods",
+     "longitudinal",
+     "cross-sectional",
+     "registered reports",
+     "brief reports",
+     "multi-data papers"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://www.srcd.org/call-papers-special-section-announcement-child-development",
+     "https://www.srcd.org/call-papers-special-section-child-development-lab-life-broadening-impact-research-early-childhood",
+     "https://academic.oup.com/chidev/pages/about"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev(7 reviews, query-time 2026-07): 第一輪評審平均 3.2 個月;總處理時間(至接受)平均 6.4 個月。中文論壇(LetPub/知乎綜合說法)描述審稿週期約 3-9 個月不等,但未附具體個案投稿經歷(LetPub 該期刊經驗分享欄位為空,僅有「共1條」佔位但無實際內容)。SRCD 官方宣稱目標為 60 天內做出決定,與 SciRev 實測數據(3.2個月≈96天)有落差,故不採信官方宣稱數字作為經驗事實。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 顯示「% immediately rejected last year」欄位為 n/a(編輯未揭露)。SRCD 官方頁面文字提及桌拒(desk rejection)是常見結果之一,Associate Editors 有權對不具競爭力的稿件桌拒,但未提供比例數字。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/child-development/",
+     "https://www.letpub.com.cn/index.php?journalid=11314&page=journalapp&view=detail"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com: 搜尋到的期刊頁為誤植(該站 jid=2274 實際對應期刊為 Development ISSN 0950-1991,非 Child Development ISSN 0009-3920)——0 個有效結果",
+    "LetPub (中文投稿經驗分享平台): 找到期刊頁面,但「同領域作者分享投稿經驗」欄位僅顯示「共1條」佔位符,無實際文字內容——實質 0 條可用經驗",
+    "知乎 zhihu.com: 搜尋到相關文章(如 zhuanlan.zhihu.com/p/607735911 期刊介紹文),但該文章因 403 無法擷取內容;搜尋摘要僅提供期刊基本資訊(影響因子、投稿網址),無審稿經驗或評審文化描述——實質 0 條經驗性結果",
+    "Reddit r/AskAcademia: site:reddit.com 搜尋無任何相關討論串——0 results"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該欄位編輯未填(n/a);SRCD 官方頁僅文字說明桌拒是常見結果但未給比例;中文/英文論壇均無具體數字討論"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何一手來源(小木虫連結誤植到別的期刊、LetPub經驗分享欄為空殼、知乎文章403無法讀取、Reddit零結果)描述審稿人風格/文化,依規則不可用官方頁面泛泛之詞替代,故留白"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "僅有 SRCD 官方文字提及桌拒機制存在,無實際接受率或個案經驗數字,acceptance_note 因此僅能引用桌拒機制存在的事實,不能量化"
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1075-2730",
+   "name": "Psychiatric Services",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://psychiatryonline.org/ps/ps_ifora (page fetch blocked 403; facts triangulated via WebSearch snippets of this same page, plus general APA Publishing generative-AI policy referenced across APA journals)",
+    "summary": "APA Publishing (covers Psychiatric Services as an APA journal) requires full disclosure of any generative-AI use in the manuscript text/methods and in the cover letter. Generative-AI tools cannot be listed as authors; authors remain fully responsible for all AI-assisted content; AI-generated images are prohibited; AI output may not be cited as a primary source. This is a disclosure-and-restriction policy (not an outright ban, not fully open) — hence leniency 2 (permitted only under disclosure + real restrictions on images/citation). Could not directly load the live ps_ifora page (403 Forbidden to WebFetch) to confirm this exact page still states the same wording as of 2026-07-13, so treat leniency/gate as APA-Publishing-wide policy inferred to apply to this journal, not independently verified on the journal's own current page."
+   },
+   "peer_review": {
+    "type": "Double-blind (authors and reviewers anonymous); initial editor screening, then sent to at least 3 independent peer reviewers if passing screening",
+    "source_url": "https://psychiatryonline.org/ps/ps_ifora (content surfaced via WebSearch snippet; direct WebFetch to this URL returned 403)"
+   },
+   "preprint": {
+    "allowed": "No journal-specific preprint statement was retrievable for Psychiatric Services itself (ps_ifora page blocked). Sister APA journal American Journal of Psychiatry explicitly states posting preprints is not prior publication and asks authors to disclose differences from the preprint and link it. Given APA Publishing operates policy consistently across its journals, this is LIKELY analogous for Psychiatric Services but is not confirmed on the journal's own page.",
+    "source_url": "https://psychiatryonline.org/ajp/ajp_ifora"
+   },
+   "positioning": {
+    "accepts_now": "Mental health services delivery, community-based treatment for serious mental illness, mental health policy and financing, health services/systems research, program evaluation, implementation science, workforce and access issues, criminal-justice/welfare-system intersections with mental health care, and recent federal-policy-impact analyses (e.g. a 2026 editorial addressed SAMHSA grant cancellations under the Trump administration).",
+    "framing_required": "Work should be framed around service delivery, systems, or policy relevance rather than pure clinical/basic neuroscience findings; qualitative and policy studies that don't fit standard research-article format are steered to the 'Special Articles' category; opinion/analysis pieces go to 'Open Forum'.",
+    "methods_welcome": [
+     "quantitative health-services research (e.g., claims/administrative-data analyses, cohort studies)",
+     "qualitative research (via Special Articles category)",
+     "program/policy evaluation",
+     "brief reports",
+     "reviews and overviews",
+     "commentaries and columns (clinical, policy, legal, financial)",
+     "short 'Taking Issue' response pieces (750 words, invited)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://psychiatryonline.org/journal/ps",
+     "https://psychiatryonline.org/ps/ps_ifora (via search snippet)",
+     "https://www.psychiatry.org/getmedia/d606bc64-342a-49d7-b605-848f9d59effe/Psychiatric-Services.pdf (fetch blocked 403, scope info triangulated via search snippet only)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~3-8 weeks (approx. 0.7-2 months) per Chinese author self-reports aggregated on LetPub, rated 'fast' 9.7/10 by respondents",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub Chinese-author aggregate describes acceptance as '容易' (relatively easy/favorable), but this is a small, self-selected sample with no numeric acceptance rate given and no listed recent Chinese-author publications in the same database entry, so treat as low-confidence directional signal only.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://www.letpub.com.cn/index.php?journalid=6988&page=journalapp&view=detail (Chinese cross-language source, review-cycle and ease-of-acceptance self-reports)",
+     "https://scirev.org/journal/psychiatric-services/ (0 reviews submitted — no data)"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched '\"Psychiatric Services\" 小木虫 投稿 审稿'; no dedicated muchong thread surfaced in results, only a LetPub listing page and generic muchong forum index pages — effectively 0 usable results from muchong itself",
+    "LetPub (letpub.com.cn, Chinese SCI-submission aggregator) — YIELDED DATA: IF 3.09, 2区, review cycle '3-8 weeks' rated fast 9.7/10, acceptance described as '容易' (easy), ~147 articles/year, no OA",
+    "知乎 zhihu — not separately queried beyond general searches; no zhihu-specific result appeared in any search performed, 0 results",
+    "fabiaoji (ifabiao.com) — appeared only as an unrelated journal listing (Journal of Psychosocial Nursing) in search results, 0 results specific to Psychiatric Services",
+    "Reddit r/AskAcademia — searched directly; 'No links found' / no relevant Reddit thread surfaced, 0 results",
+    "SciRev — checked journal page directly via WebFetch: 0 reviews submitted, all metrics 'n/a'"
+   ],
+   "blanks": [
+    {
+     "field": "peer_review.type direct confirmation on current live page",
+     "why": "psychiatryonline.org/ps/ps_ifora returned HTTP 403 to WebFetch; double-blind claim is sourced only from a WebSearch snippet of that same page, not a directly verified fetch as of 2026-07-13"
+    },
+    {
+     "field": "preprint.allowed (journal-specific)",
+     "why": "No Psychiatric-Services-specific preprint statement was retrievable (ps_ifora blocked); only the sister AJP journal's preprint policy was found, and it was extrapolated rather than confirmed for this journal"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev has 0 submitted reviews for this journal; no forum (muchong/zhihu/fabiaoji/Reddit) discussion of desk-reject rate was found in any cross-language search"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum post (Chinese or English) describing reviewer tone/culture for this journal was found; muchong, zhihu, fabiaoji, and Reddit all returned zero usable journal-specific threads"
+    },
+    {
+     "field": "ai_policy exact current wording on journal's own live page",
+     "why": "Direct fetch of the journal's own Information for Contributors page was blocked (403); policy summary relies on WebSearch snippets rather than a verified live read"
+    }
+   ],
+   "sensitive_topics_note": "Journal covers serious mental illness, suicide, involuntary/coercive treatment, criminal-justice psychiatric populations, and substance use — inherently sensitive clinical/policy subject matter; no specific reviewer political-leaning claim was found or made.",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0191-8869",
+   "name": "Personality and Individual Differences",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "採用 Elsevier 集團通用政策（非期刊獨有客製條款）：作者可用生成式 AI／AI 輔助工具潤飾語言與可讀性，但不得用於產生科學洞見、分析資料或下結論，且須在正文 References 前加揭露聲明；AI 不得列為作者。審稿人／編輯端：WebSearch 摘要指稱本刊目前不允許審稿人／編輯在同行評審與稿件評估過程中使用生成式 AI（如 ChatGPT），並稱該期刊正評估合規 AI 工具、未來可能修訂——此為 WebSearch 對第三方彙整頁（Enago/Purdue guide 等）之摘要轉述，未能直接以 WebFetch 存取 ScienceDirect 的 Guide for Authors 原頁（回傳 403）逐字驗證期刊專屬條款，故列為中等信賴度。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "允許。作者可依 Elsevier 一般文章分享政策將預印本放上伺服器（如 SSRN），不視為重複發表；通訊作者應在公開張貼稿件前取得所有共同作者同意。未見期刊獨有加嚴條款。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards"
+   },
+   "positioning": {
+    "accepts_now": "期刊聚焦人格結構與個體差異的實證/相關/理論/文獻回顧型研究，近年擴大範圍納入教育、社會/組織心理學、臨床/健康心理學等應用情境下的人格與個體差異研究；歡迎具可及性的方法學貢獻。未能直接讀取2024-2026實際發表文章標題清單（ScienceDirect頁面回傳403阻擋），故此為Aims & Scope頁面的間接摘要，非近期文章實證統計。",
+    "framing_required": "編輯明確邀稿聚焦人格與個體差異的遺傳、生物與環境基礎及交互作用效果的論文；一般投稿建議篇幅精簡（中文論壇提及約5000字含摘要、不含圖表）。",
+    "methods_welcome": [
+     "實驗設計",
+     "相關研究",
+     "理論性論文",
+     "文獻回顧/expository",
+     "具可及性的方法學論文（methodological contributions）"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.journals.elsevier.com/personality-and-individual-differences/policies/new-aims-and-scope-and-editorial-guidelines-for-paid (WebSearch摘要；WebFetch該頁面302重定向至通用頁，無法直接驗證原文全文)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev（13筆評論）：平均總審稿時間約3.3個月（首輪約2.5個月/10.9週，平均1.8輪、每輪2.1份報告）；小木虫等中文論壇報告差異大——多篇提及約1週內初審決定、隨後約1個月拿到審稿意見，2-3位審稿人、1-2輪，整體約3個月左右；另有個案（投稿2022/2/23、拒絕2022/4/4，約6週）與（投稿2022/5/10、接受2022/7/18，約10週）。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev「outcome」欄位標為n/a（未提供接受/拒絕比例統計）；SciRev另給出「立即拒絕(desk reject)平均耗時17天」，但非比例數字，故拒稿率百分比留空。",
+    "reviewer_culture": null,
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/personality-and-individual-differences/",
+     "http://bbs.papertrans.cn/thread-17723-1-1.html (WebSearch摘要之小木虫/傳思論壇轉述)",
+     "https://www.fabiaoji.com/periodicalDetail?id=84cd5f963c3f45938d6a858a18218793"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "無法直接存取ScienceDirect Guide for Authors原頁（WebFetch回傳403 Forbidden），WebSearch摘要亦未明確指出single/double blind類型；Elsevier集團慣例多為single-blind但未見此刊逐字確認，故留空而非假設。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev只給出desk reject平均天數(17天)而非比例；未查得任何論壇提供具體拒稿百分比數字。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev與中文論壇均無關於審稿人風格/文化（如挑剔程度、特定立場偏好）之具體可引用敘述；僅有「審稿意見難度3.3/5.0(中等)」這類籠統評分,不足以構成具體reviewer culture敘事，故不編造。"
+    },
+    {
+     "field": "positioning.accepts_now_article_level_evidence",
+     "why": "未能取得2024-2026實際發表文章標題清單以逐一驗證主題（ScienceDirect文章列表頁被403阻擋），僅以Aims & Scope頁面摘要作為間接替代，非近期文章實證。"
+    },
+    {
+     "field": "ai_policy_journal_specific_verbatim_wording",
+     "why": "期刊專屬Guide for Authors原頁403無法直接讀取；審稿人AI限制之說法僅來自WebSearch對第三方彙整頁的摘要，未能以一手期刊頁面核實文字，故標記為中信度並在summary中註明侷限。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫/傳思論壇 (bbs.papertrans.cn)：查得投審稿案例與週期範圍（約1週初審決定、1個月審稿意見、整體約3個月），含具體投稿/決定日期個案",
+    "fabiaoji.com 發表記：查得該刊條目存在，但WebFetch未深入解析其審稿時間數據明細（僅作為連結來源列出）",
+    "知乎 zhihu：搜尋「Personality and Individual Differences 知乎 投稿」未直接命中知乎頁面本身，結果多為期刊資訊聚合站；0 first-hand 知乎討論擷取到",
+    "Reddit r/AskAcademia：搜尋「Personality and Individual Differences reddit AskAcademia review」0 results，無討論串可引用"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "找不到 JAACAP 期刊專屬 AI 政策頁；JAACAP 為 Elsevier 出版,適用 Elsevier 通用生成式 AI 政策(通稿層級,非期刊層級證據)。政策要點:AI 工具不得列為作者/共同作者;投稿時須在方法或聲明段落揭露生成式 AI 於寫作輔助的使用(文法/語言潤飾除外,不需聲明);圖像類生成式 AI 原則禁止使用,除非是研究方法本身的一部分且需在方法段落可重現地說明工具名稱/版本/廠商;審稿人使用 AI 需受 Elsevier 審稿流程政策規範(見 https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-the-review-process )。因為只查到 Elsevier 集團通稿,未見 JAACAP guide-for-authors 頁面本身列出 AI 專章(ScienceDirect guide-for-authors 頁面因 403 無法直接驗證是否有期刊特化條款),故 leniency 評分為集團政策的合理估計(3=有條件開放,需揭露,寫作輔助可,作者列名/圖像生成不可),signal_quality 偏低。"
+   },
+   "peer_review": {
+    "type": "Double-blind (依 JAACAP 官方 Guide for Reviewers PDF 明載,審稿全程作者與審稿人身分互相保密)",
+    "source_url": "https://jaacap.org/pb/assets/raw/Health%20Advance/journals/jaac/reviewers.pdf"
+   },
+   "preprint": {
+    "allowed": "允許。屬 Elsevier 標準政策:於 preprint server 公開不視為重複發表(prior publication),投稿時聲明即可;作者亦可依 Elsevier article-sharing 政策分享 preprint。",
+    "source_url": "https://www.sciencedirect.com/journal/journal-of-the-american-academy-of-child-and-adolescent-psychiatry/publish/guide-for-authors"
+   },
+   "positioning": {
+    "accepts_now": "近期(2024-2026)JAACAP 家族(含姊妹刊 JAACAP Connect/JAACAP Open)明顯納入 AI 與數位心理健康主題,例如 JAACAP Connect 2026 年文章「Navigating Adolescent Mental Health in the Age of Artificial Intelligence」討論生成式 AI 對青少年的機會與風險,以及「AI and psychiatric genomics」臨床觀點文章。JAACAP Open 明確接受 hypothesis-testing / hypothesis-generating / mixed-methods 研究、統合分析(meta-analyses)、回顧(reviews)、與 pre-registered reports,領域涵蓋基礎、轉譯、臨床、流行病學、健康政策、族群科學與全球健康研究。",
+    "framing_required": null,
+    "methods_welcome": [
+     "原創實證研究(hypothesis-testing/generating)",
+     "混合方法研究(mixed methods)",
+     "統合分析(meta-analyses)",
+     "系統性回顧(reviews)",
+     "預註冊報告(pre-registered reports)",
+     "觀察性研究",
+     "介入型研究(intervention studies)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://jaacapconnect.org/article/150329-navigating-adolescent-mental-health-in-the-age-of-artificial-intelligence",
+     "https://jaacapconnect.org/article/143206-ethics-and-innovation-artificial-intelligence-and-genomics-in-child-psychiatric-risk-and-intervention",
+     "https://www.sciencedirect.com/journal/jaacap-open/publish/guide-for-authors"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev 群組數據(僅 6 筆評論,樣本極小):投稿至第一次決定約 2.4 個月;投稿至接受約 2.4 個月;審稿階段本身約 10 天;平均審稿輪數 1.0 輪,平均 2.0 份審稿報告。",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/journal-of-the-american-academy-of-child-and-adolescent-psychiatry/",
+     "https://scirev.org/discipline/CA21/psychiatry/"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋「JAACAP 小木虫 投稿 儿童青少年精神病学」無相關討論串命中(0 results)",
+    "知乎 zhihu.com — 搜尋「JAACAP 知乎 投稿 审稿」無 JAACAP 專屬討論命中,僅泛用投稿/審稿文章(0 results)",
+    "Reddit r/AskAcademia — 搜尋「JAACAP reddit AskAcademia review time desk reject」無結果(0 results)"
+   ],
+   "blanks": [
+    {
+     "field": "ai_policy.leniency/gate",
+     "why": "未能存取 JAACAP 在 ScienceDirect 上的 guide-for-authors 頁面本身(回傳 403 Forbidden),無法確認是否有期刊層級(而非 Elsevier 集團通稿)的 AI 特別條款;目前結論僅基於 Elsevier 通用政策外推。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 僅 6 筆評論且未拆分 desk-reject 比例;無任何論壇(小木虫/知乎/Reddit)提供具體數字,故留白。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "查無任何第一手投稿者對接受理由/委婉拒絕/修改意見風格的具體敘述。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "查無任何具體、可歸因來源(論壇貼文、SciRev 質性評論)描述審稿人風格或文化;依規則不得無來源臆造敘事,故留空。"
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "查無明確「投稿須用特定框架/敘事角度」的官方或社群說法,僅有泛用 aims & scope,不構成具體 framing 要求。"
+    }
+   ],
+   "issn": "0890-8567",
+   "name": "Journal of the American Academy of Child & Adolescent Psychiatry (JAACAP)",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": "兒童/青少年精神醫學為高敏感度臨床領域(自殺、自傷、創傷、精神藥物治療等常見主題),投稿與審稿討論本身未見顯著爭議,但內容涉及未成年人心理健康,任何後續應用此資料的下游決策應避免對「審稿文化」等主觀面向做無來源推論。"
+  },
+  {
+   "issn": "0968-8005",
+   "name": "The Journal of Nietzsche Studies",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://www.psupress.org/journals/jnls_ethics_policies.html",
+    "summary": "This is a Penn State University Press (PSUP) publisher-wide policy, not JNS-specific (no separate JNS AI policy page found). PSUP requires full disclosure if AI was used in any way to complete a submitted article, distinguishing 'assistive AI' (editing/formatting/proofreading) from 'generative AI' (content creation/idea generation); editors and PSUP 'evaluate AI use to ensure it does not overstep ethical and professional publishing standards' — i.e. disclosure is mandatory and generative-AI use is subject to editorial discretion/approval rather than freely permitted. No mention of AI use in peer review specifically."
+   },
+   "peer_review": {
+    "type": "Anonymous/blind peer review (JNS submission guidance: 'manuscripts prepared for blind review with all identifying references and notes deleted'; typically 2, occasionally 3, referees after initial editorial screening). PSUP journals generally use 'double anonymized' review per publisher policy, though JNS's own page describes it only as 'anonymous review' without explicitly confirming double- vs single-anonymous on the reviewer side.",
+    "source_url": "https://philosophy.gsu.edu/jns/submissions/"
+   },
+   "preprint": {
+    "allowed": "Publisher-wide (PSUP) policy, not JNS-specific: accepted-article preprints/postprints may be deposited in institutional repositories or personal websites immediately upon publication with a link to the published version; commercial platforms (Academia.edu, ResearchGate) are explicitly excluded; separately, postprints become eligible for institutional-repository deposit after a one-year embargo. No explicit statement found on whether pre-submission preprinting (e.g. posting to a preprint server before/during review) is permitted — JNS does require exclusivity ('does not accept simultaneous submissions... must be the only journal or venue currently reviewing a submission'), which may bear on preprinting but is not stated as an explicit preprint rule.",
+    "source_url": "https://www.psupress.org/journals/jnls_ethics_policies.html"
+   },
+   "positioning": {
+    "accepts_now": "Traditional English-language philosophical scholarship on Friedrich Nietzsche's work and thought: close textual/philological readings, historical-contextual studies, systematic argumentative philosophy papers, and comparative studies relating Nietzsche to other philosophers. 2024-2025 published titles include 'The Demon and His Message' (Robin Small), a piece on Plato and Nietzsche's epistemology (Mattia Riccardi), 'Plato and Nietzsche on the Ideal Soul' (Caroline Wall), '\"The Realm of Our Invention\": On the Role of Parody in Nietzsche's Thought' (David Sherman), 'Umwerthung in Action', and 'Tyranny, Freedom, and Moral Creativity in Nietzsche's \"Middle Period\"' plus book reviews (e.g. 'Nietzsche's Ethics', 'Conflict and Contest in Nietzsche's Philosophy'). No digital-humanities, empirical, or AI-related methodology found in recent tables of contents.",
+    "framing_required": null,
+    "methods_welcome": [
+     "close textual/philological reading of Nietzsche's works",
+     "historical-contextual scholarship using primary/archival resources",
+     "systematic philosophical argumentation",
+     "comparative philosophy (Nietzsche in relation to other philosophers, e.g. Plato)",
+     "engagement with Nietzsche's contemporary philosophical relevance"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.psupress.org/journals/jnls_Nietzsche.html",
+     "https://muse.jhu.edu/issue/52547",
+     "https://muse.jhu.edu/issue/53969",
+     "https://muse.jhu.edu/issue/55251",
+     "https://scholarlypublishingcollective.org/psup/nietzsche-studies/article/55/1/1/386309/The-Demon-and-His-Message"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/journal-of-nietzsche-studies/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for this journal shows 0 submitted reviews ('No reviews have yet been submitted'; 'Duration first review round: n/a'). No discussion found on muchong.com, zhihu, or r/AskAcademia. The publisher's stated 8-week decision target (philosophy.gsu.edu/jns/submissions) is an institutional claim, not a first-hand experience report, so it was not used to fill this field."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev shows '% accepted last year: n/a' and 0 reviews; no cross-language forum data found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found on SciRev, muchong.com, zhihu, or Reddit r/AskAcademia despite targeted searches."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post, SciRev comment) describing reviewer tone/culture was found for this small niche philosophy journal; fabricating a narrative was avoided per hard rules."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No current CFP or special-issue call was found for JNS; aims & scope describe general openness to contemporary-relevance and historical/philological approaches without a mandated framing angle."
+    },
+    {
+     "field": "preprint.allowed (pre-submission preprinting)",
+     "why": "Only publisher policy on POST-acceptance preprint/postprint deposit was found; no explicit statement on whether authors may post to a preprint server (e.g. PhilPapers, SSRN) before or during peer review was located for PSUP or JNS specifically."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木蟲): searched '\"Journal of Nietzsche Studies\" 投稿 审稿 小木蟲' — 0 relevant results; forum has no thread discussing this journal",
+    "zhihu (知乎): searched 'Journal of Nietzsche Studies 知乎 投稿' — 0 relevant results",
+    "Reddit r/AskAcademia: searched '\"Journal of Nietzsche Studies\" reddit AskAcademia review' — 0 relevant results",
+    "SciRev: fetched journal profile directly — 0 submitted reviews, all metrics n/a"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1755-0203",
+   "name": "The Review of Symbolic Logic",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.cambridge.org/news-and-insights/cambridge-launches-ai-research-ethics-policy",
+    "summary": "此為 Cambridge University Press 出版社層級的通用 AI 倫理政策(非本刊專屬頁面):允許作者/審稿人/編輯在揭露前提下使用生成式 AI 工具,但 AI/LLM 不得列為作者,使用需符合原創性與抄襲規範,作者對內容準確性負全責。本刊(RSL)官網的 author-instructions / journal-policies 頁面經查未見期刊專屬 AI 條款,故適用出版社通則,允許度評為中等(3/5)且信心不高。"
+   },
+   "positioning": {
+    "accepts_now": "2025 年(Vol.18)刊出主題涵蓋:非古典邏輯與模態邏輯(RN-matrices for modal logics、Minimal/Constructive modal logics)、相干邏輯(relevant logics)一階可容許性證明、反事實條件句的代數化(Lewis's counterfactuals)、時間連續體的建構性處理、社會選擇理論與邏輯(Arrow's Theorem 的逆向數學處理)、蘊涵的模型論(entailment models)、「邏輯的邏輯」(logics of logics)等後設邏輯與跨學科論文持續刊出。",
+    "framing_required": null,
+    "methods_welcome": [
+     "formal/mathematical logic (proof theory, model theory, algebraic logic)",
+     "non-classical and modal logics",
+     "philosophical logic and formal epistemology",
+     "history and philosophy of logic and mathematics",
+     "applications of logic to computer science, cognitive science, linguistics",
+     "reverse mathematics / foundational results"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.cambridge.org/core/journals/review-of-symbolic-logic/information/about-this-journal",
+     "https://www.cambridge.org/core/journals/review-of-symbolic-logic/all-issues",
+     "https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/logics-of-logics/5D6DC67B076F1EFD5DF99D01348AA6DF"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "6.7",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 上僅有 1 筆自陳報告(樣本量極小,不足以代表常態):第一輪審查耗時 6.7 個月,1.0 輪、2 份審稿意見,最終該稿被拒(整體評分 2/5「Moderate process」);審稿人提到其中一位審稿者對該領域不熟悉、對稿件內容的參與度有限。",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/review-of-symbolic-logic/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "本刊 journal-policies 與 instructions-for-peer-reviewers 頁面(後者 404)均未載明是單盲/雙盲/公開審查;僅確認採用 OPRS(Online Peer Review Service)投稿平台，未說明匿名化程度。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面該欄位顯示 n/a,無跨語言論壇補充數據，故留空。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何小木虫/知乎/Reddit/SciRev 文字描述審稿人風格或審稿文化，僅有 1 篇 SciRev 報告提及「一位審稿人對領域不熟悉」，樣本過少不足以概括為文化描述，故不填入該欄位、改記錄於 acceptance_note 作為單一案例。"
+    },
+    {
+     "field": "ai_policy.gate/leniency",
+     "why": "查無本刊(RSL)專屬 AI 政策頁面，僅有 Cambridge University Press 出版社層級 2023 年通用 AI 倫理政策，非期刊專屬,故 signal_quality 僅 2。"
+    }
+   ],
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "type": null,
+    "source_url": "https://www.cambridge.org/core/journals/review-of-symbolic-logic/information/journal-policies"
+   },
+   "preprint": {
+    "allowed": "允許(Green OA):Cambridge 出版社通用政策明確指出,將 preprint 存放於作者個人網站、機構典藏庫或 preprint archive(如 arXiv)不視為重複發表,可在投稿前後任何時間張貼,建議連結至最終出版版本並可用 CC BY 等授權釋出。此為 Cambridge Core 平台通則頁面,非本刊專屬頁面,但本刊 Open Access 頁面亦導向此通則且未見任何期刊專屬例外。",
+    "source_url": "https://www.cambridge.org/core/services/open-research/preprint-policy"
+   },
+   "sensitive_topics_note": null,
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋「符號邏輯評論」相關投稿討論串,0 筆與本刊相關的實質結果,僅通用論壇入口頁",
+    "知乎 zhihu — 搜尋「Review of Symbolic Logic」投稿/審稿,0 筆相關討論串",
+    "Reddit r/AskAcademia — 搜尋本刊投稿經驗,0 筆相關貼文",
+    "SciRev — 有 1 筆自陳審稿經驗報告(已採用於 experiential 層,樣本量=1,信心低)"
+   ]
+  },
+  {
+   "issn": "0013-2004",
+   "name": "Educational Theory",
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "summary": "Wiley 通用政策(未見 Educational Theory 專屬頁面,因 402 付費牆無法直接讀取該刊 forauthors 頁):禁止將 AI 列為作者,作者對內容負全責;允許用生成式 AI 協助語言/文法潤飾、結構調整、構想發展、文獻分類搜尋等,但須在 Methods 或 Acknowledgements 中「透明詳細揭露」使用方式(基礎編輯工具如拼字檢查除外)。屬 Wiley 集團層級政策,未確認該期刊是否有加嚴或加寬的特別規定。",
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Double-anonymous (double-blind) peer review — confirmed via journal's own author-guidelines search snippet: 'To preserve the advantages of anonymous reviewing, authors should avoid self-identification in the text as well as in the references of the manuscript.'",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許(採用 Wiley 集團通用政策)。可於投稿前或投稿當下將手稿張貼為 preprint,不影響後續正式同行評審;建議使用 no re-use 授權,已用 CC 授權張貼者仍可投稿,接受後仍受標準著作權轉讓/專屬授權合約規範。未找到 Educational Theory 專屬 preprint 頁面(即為集團通用政策外推,非該刊獨立確認)。",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "以教育哲學/教育理論之基礎性、概念性議題為核心,同時歡迎教育哲學家與教育研究者之跨領域合作實證研究;近期(如75週年報導,2026-04)明確納入 AI 與科技在教育中的角色作為當代焦點主題之一。",
+    "methods_welcome": [
+     "概念分析/哲學論證 (conceptual/philosophical analysis)",
+     "實證教育研究 (empirical research)，尤其跨哲學與實務之交叉研究"
+    ],
+    "framing_required": "文章需批判性地扣連教育中的哲學與理論議題(philosophical and theoretical issues in education),而非單純實務報告；標準 Original Article 字數 7,000–9,000 字(含註釋與參考文獻)，過短或過長需有內容正當性。",
+    "signal_quality": 3,
+    "sources": [
+     "https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger",
+     "https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/educational-theory/"
+    ]
+   },
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/educational-theory/): 頁面明確顯示「No reviews have yet been submitted for this journal」，review time/desk-reject/accept 全部 n/a，0 筆審稿人回報",
+    "小木虫 muchong.com: WebSearch 未回傳任何相關討論串(0 results)",
+    "知乎 zhihu: WebSearch 未找到針對本刊投稿/審稿經驗的具體討論(0 results，僅有期刊介紹類頁面)",
+    "Reddit r/AskAcademia: WebSearch 未找到針對本刊的討論串(0 results)",
+    "fabiao.com / fabiaoji: WebSearch 未回傳任何相關內容(0 results)"
+   ],
+   "sensitive_topics_note": "期刊涉及教育中的公平正義、認識論不正義 (epistemic injustice)、民主與教育等具政治敏感性主題；未發現任何評審員政治傾向或立場相關的具體來源，故未在 experiential 中做任何主觀推斷。",
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊頁面零筆審稿人回報 (n/a)，且小木虫/知乎/Reddit/fabiaoji 跨語言搜尋均無討論串佐證，無第一手公開來源可查"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上，SciRev 無資料，且未找到編輯部或作者公開揭露的退稿率數字"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "未找到任何作者發表的接受經驗描述(論壇/SciRev/社群媒體皆無)"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何第一手審稿人或投稿人對審稿風格/文化的具體評論來源，依規則不得憑空推斷"
+    },
+    {
+     "field": "ai_policy.source_url (journal-specific)",
+     "why": "Educational Theory 於 Wiley Online Library 的 forauthors 頁面回傳 HTTP 402 付費牆，無法確認該刊是否有超出 Wiley 集團通用 AI 政策的特別規定；本欄位僅能以集團層級政策外推，故 leniency 打折為中等信度"
+    }
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1051-3558",
+   "name": "American Catholic Philosophical Quarterly",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": "查無 ACPQ 或其出版方 Philosophy Documentation Center (PDC)、主辦方 American Catholic Philosophical Association (ACPA) 公開發布的 AI/生成式 AI 使用政策。官方投稿指引 PDF（Rev. 04/2015，https://cas.stthomas.edu/_media-library/_documents/philosophy/acpq-article-submission-guidelines.pdf，已下載讀取全文確認）完全未提及 AI，且該文件早於 generative AI 議題興起（2015年版）。pdcnet.org 官網（www.pdcnet.org/acpq）對自動化工具回傳 403，人工搜尋亦未找到 PDC 通用 AI 政策頁。此為誠實空白，非任何寬鬆/嚴格立場的證據。"
+   },
+   "peer_review": {
+    "type": "Blind review（單盲，作者身份對審稿人匿名；文件明確要求稿件去識別化，未通過去識別化格式者「將直接被拒」）。編輯或副編輯先做初審，通過者送外部審稿人。未明確聲稱『double-blind』一詞，僅稱 blind review。",
+    "source_url": "https://cas.stthomas.edu/_media-library/_documents/philosophy/acpq-article-submission-guidelines.pdf"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "2025年實際刊出/徵稿主題：(1) Vol. 99 No. 2 (Spring 2025) 為 Distributism（分配主義經濟哲學）專刊，客座編輯 Patrick Toner；(2) Vol. 99 Issue 3 (Summer 2025) 刊登 Matthew Wennemann〈Indeterminate Dimensions and Aquinas's Change of Mind〉，屬多瑪斯哲學／形上學；(3) 現正徵稿中的專刊主題為 Wonder（驚奇），客座編輯 Kevin M. Kambo，滾動審稿自 2026-09-29 起，截稿 2027-04-01（來源：PhilEvents CFP 條目標題，WebFetch 該頁被 403 阻擋，僅取得搜尋摘要，未能讀取全文細節，故 framing_required 留白）；(4) 歷史上每四期會有一期聚焦單一西方哲學家專題，近年曾以 Max Scheler、Gabriel Marcel、Edith Stein 為主題（來源：Wikipedia 條目，二手整理，非一手查核）。",
+    "framing_required": "傾向與天主教思想傳統相關之選題／思想家；幾乎每期至少一篇論多瑪斯．阿奎那；中世紀哲學、宗教哲學、哲學神學代表性高，但期刊聲明不限定單一學派。",
+    "methods_welcome": [
+     "Thomistic / 多瑪斯學派",
+     "Analytical / 分析哲學",
+     "Phenomenological / 現象學",
+     "Historical（哲學史）",
+     "其他方法（期刊聲明不排他）"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://en.wikipedia.org/wiki/American_Catholic_Philosophical_Quarterly",
+     "https://philevents.org/event/show/145689 (WebSearch摘要, 原頁403無法直接讀取)",
+     "https://cas.stthomas.edu/_media-library/_documents/philosophy/acpq-article-submission-guidelines.pdf"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "官方文件僅稱『整個審查流程通常需要數個月（several months）』，未給出具體週數／月數（來源：ACPQ Article Submission Guidelines PDF，2015年版，一手公開文件）。搜尋引擎的 AI 摘要曾一度給出「8-9週審稿、10-15%接受率、12-15個月出版等候」等具體數字，但追查其源頭（APA Journal Survey Project @ apasurvey.philx.org、Editage、SciRev）均查無 ACPQ 的實際數據——apasurvey.philx.org 頁面明確不含此刊、Editage 頁面明確聲明無 acceptance rate/review time 資料、SciRev 該刊頁面顯示『尚無人提交評論（No reviews have yet been submitted）』。判定該組具體數字為搜尋引擎生成式摘要的臆造/混淆，予以捨棄，不採用。",
+    "reviewer_culture": null,
+    "sources": [
+     "https://cas.stthomas.edu/_media-library/_documents/philosophy/acpq-article-submission-guidelines.pdf",
+     "https://scirev.org/journal/american-catholic-philosophical-quarterly/",
+     "https://apasurvey.philx.org/?direction=asc&order=acceptance_rate",
+     "https://www.editage.com/research-solutions/journal/american-catholic-philosophical-quarterly/10879"
+    ],
+    "signal_quality": 1
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 / gate",
+     "why": "PDC/ACPA 未公開任何 AI 使用政策；官方投稿指引為 2015 年版，早於生成式 AI 議題，全文讀取確認無相關字句。"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "投稿指引僅要求稿件『非已發表且非同時投稿他刊』，未特別提及預印本(preprint)政策，一手文件與二手來源均未觸及此議題。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "唯一一手來源只說『數個月』，無具體週數；SciRev 該刊頁面 0 篇評論；APA Journal Survey Project 資料庫未收錄此刊；跨語言（小木虫/知乎/PTT/Reddit r/AskAcademia）搜尋均無實質討論串。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無任何一手或社群來源提供此刊的退稿率數字；SciRev 0 評論，PhilX survey 未收錄。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何個人投稿經驗分享（英文或中文論壇）可查證；哲學類小眾天主教取向期刊在 SciRev/PhilX/Reddit/小木虫 均無使用者留下經驗文字。"
+    },
+    {
+     "field": "positioning.framing_required (CFP細節)",
+     "why": "PhilEvents CFP 原始頁面 (philevents.org/event/show/145689) 對 WebFetch 回傳 403，僅能取得搜尋引擎摘要中的標題/客座編輯/期限資訊，CFP 全文措辭與投稿框架要求未能一手核實。"
+    }
+   ],
+   "cross_language_checked": [
+    "知乎 (zhihu) — WebSearch 查詢「American Catholic Philosophical Quarterly 知乎」：0 相關結果",
+    "小木虫 (muchong.com) — WebSearch 同上組合查詢：0 相關結果",
+    "Reddit r/AskAcademia — WebSearch 查詢「American Catholic Philosophical Quarterly reddit AskAcademia」：無討論串命中，僅出現期刊自身官方頁面",
+    "fabiaoji — 未見於任何搜尋結果中提及此刊，未執行進一步查詢因無跡象顯示該平台收錄此類小眾天主教哲學期刊"
+   ],
+   "sensitive_topics_note": "期刊定位明確傾向天主教思想傳統（Catholic intellectual tradition），選題偏好多瑪斯主義與宗教哲學/哲學神學；此為期刊官方自我定位（一手來源：投稿指引 PDF 與 Wikipedia 條目綜合），非本報告臆測之政治/宗教立場評價。",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0003-0481",
+   "name": "American Philosophical Quarterly",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 1,
+    "source_url": "https://www.press.uillinois.edu/journals/?id=apq&tab=Submissions",
+    "summary": "APQ 的公開投稿頁（University of Illinois Press / Scholastica 系統）未列出任何專屬的生成式 AI 使用政策（無論是撰稿用途或審稿用途）。搜尋 Illinois Press 各期刊、APA 通用指引均無法找到 APQ 專屬條文；唯一與 AI 相關的內容是 2023 年關於「AI 倫理」與「AI 能否為道德行為者」兩期特刊徵稿（研究主題徵稿，非投稿政策）。因此 leniency 與 permission gate 皆留空，不可用其他出版社（如 APA、UT Press）的通用政策替代。"
+   },
+   "positioning": {
+    "accepts_now": "APQ 是純哲學系統性論文期刊（不含歷史哲學、不含書評/討論筆記），2000–7000 字，需通過匿名（blind）審查。近期（2023）曾徵求兩期 AI 倫理相關特刊稿件，顯示期刊近年對 AI 倫理／能動性等應用倫理主題持開放態度，但常規欄目仍以傳統分析哲學論證文章為主。",
+    "framing_required": "特刊徵稿要求論文必須「specifically and deeply wrestle with」該期驅動問題（如：AI 是否可為真正的道德行為者），而非泛泛而談或純歷史性文章；徵稿頁明白說「purely speculative or historical articles are discouraged」。常規投稿則需移除作者身分資訊以維持匿名審查。",
+    "methods_welcome": [
+     "分析哲學式論證",
+     "應用倫理學（含 AI 倫理、能動性、公平性、隱私等特刊主題）",
+     "state-of-the-art 文獻回顧型長文（期刊自述會不定期刊登）"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.press.uillinois.edu/journals/?id=apq (aims & scope)",
+     "https://www.press.uillinois.edu/wordpress/call-for-papers-special-issues-of-american-philosophy-quarterly-on-ai/ (2023 CFP，截止日已過，僅作近年定位參考)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev：僅 1 筆評論，第一輪審查 6.7 週（約 1.5 個月），最終結果為拒絕；APA Journal Survey Project（155 筆投稿的較大樣本）：平均回覆時間 2.8 個月，平均到刊出時間 7.6 個月。兩來源量級不同（SciRev 樣本極小），APA Survey 數字較可信。",
+    "desk_reject_pct": null,
+    "acceptance_note": "APA Journal Survey Project 樣本（n=155）：初次裁決 接受 5.16%、拒絕 76.77%、修改再投 14.84%、有條件接受 3.23%；整體接受率 18.06%。修改再投／有條件接受後最終接受率達 83.33%（24 件中 20 件），顯示若能進入 R&R，通過機率大幅提升。平均審稿人數 1.2 人／篇，83.87% 投稿獲得審稿意見。SciRev 唯一一則評論描述：兩位審稿人給出意見，速度不慢，其中一位提出對論證的重要方法論質疑，最終仍被拒。",
+    "reviewer_culture": null,
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/american-philosophical-quarterly/ (n=1 review, SciRev 平台數據與匿名評論摘要)",
+     "https://apasurvey.philx.org/journals/46 (APA Journal Survey Project, n=155 較大樣本統計)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5",
+     "why": "找不到 APQ 或 Illinois Press 針對該刊的公開 AI 使用政策頁面；不可用其他出版社通用政策替代填寫。"
+    },
+    {
+     "field": "ai_policy.gate",
+     "why": "同上，無公開的允許/需揭露/禁止聲明可查證。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 僅 1 筆評論、APA Survey 未拆分「桌拒」與「送外審後拒絕」，兩來源皆未提供明確的 desk-reject 百分比。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "跨語言查核（小木虫 muchong.com、fabiaoji、知乎、Reddit r/AskAcademia）均未找到針對 APQ 本刊（非同名天主教哲學季刊 American Catholic Philosophical Quarterly）的第一手審稿文化討論，故不編造敘事。"
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com（小木虫）：站內搜尋 'American Philosophical Quarterly' 0 相關結果（搜尋引擎僅回傳無關頁面）",
+    "fabiaoji.com（發表記）：搜尋結果僅命中同名但不相關的《世界哲學》條目，無 APQ 專頁討論",
+    "zhihu.com（知乎）：僅找到一則 1970s 年代文獻引用（Van Fraassen 論文出處提及），另有一則命中對象實為《American Catholic Philosophical Quarterly》（不同刊物，ISSN 不同，未採用）",
+    "reddit.com r/AskAcademia：關鍵字搜尋 0 相關討論串"
+   ],
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "type": "Blind review（官方原文僅稱 blind review，未明確標示單盲或雙盲；要求作者移除檔案屬性中的身分資訊）",
+    "source_url": "https://www.press.uillinois.edu/journals/?id=apq&tab=Submissions"
+   },
+   "preprint": {
+    "allowed": "允許存放於大學機構典藏（university repositories），但需附出版聲明；官方頁面提醒作者應自行核實個別期刊政策細節",
+    "source_url": "https://www.press.uillinois.edu/journals/?id=apq&tab=Submissions"
+   },
+   "sensitive_topics_note": null
+  }
+ ]
+}

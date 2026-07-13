@@ -1,0 +1,54 @@
+0  philosophy            The New Scholasticism
+0  psychology            Journal of Consulting Psychology
+0  psychology            Journal of Experimental Psychology
+0  psychology            Psychonomic Science
+1  hci                   ACM SIGCHI Bulletin
+1  hci                   Electronic Workshops in Computing (eWiC)
+1  hci                   Information Technology and Disabilities
+1  hci                   Interaction Studies: Social Behaviour and Communication in Biological and Artificial Systems (John Benjamins)
+1  hci                   International Journal of Virtual Reality (IJVR)
+1  philosophy            Augustinian Studies
+1  philosophy            Augustinus (revista trimestral publicada por los Padres Agustinos Recoletos)
+1  philosophy            Continental Philosophy Review
+1  philosophy            Environmental Ethics
+1  philosophy            Erasmus Journal for Philosophy and Economics (EJPE)
+1  philosophy            European Journal for Philosophy of Science
+1  philosophy            Faith and Philosophy: Journal of the Society of Christian Philosophers
+1  philosophy            History of Philosophy Quarterly
+1  philosophy            International Philosophical Quarterly (IPQ)
+1  philosophy            International Studies in Philosophy
+1  philosophy            Journal of Social Philosophy
+1  philosophy            Logique et Analyse
+1  philosophy            Philosophical Papers
+1  philosophy            Philosophy Compass
+1  philosophy            Philosophy East and West
+1  philosophy            Philosophy and Rhetoric
+1  philosophy            Philosophy of the Social Sciences
+1  philosophy            Proceedings of the American Catholic Philosophical Association
+1  philosophy            Radical Philosophy
+1  philosophy            Revue Philosophique de Louvain
+1  philosophy            Social Theory and Practice
+1  philosophy            The Journal of Speculative Philosophy
+1  philosophy            The Journal of Value Inquiry
+1  philosophy            The Modern Schoolman
+1  psychology            Annual Review of Psychology
+1  psychology            Archives of Clinical Neuropsychology
+1  psychology            British Journal of Psychotherapy
+1  psychology            Clinical Psychology Forum
+1  psychology            Contemporary Psychology (APA Review of Books)
+1  psychology            International Journal of Indian Psychology (IJIP)
+1  psychology            Journal of Abnormal & Social Psychology
+1  psychology            Journal of Applied Behavior Analysis (JABA)
+1  psychology            Journal of Behavior Therapy and Experimental Psychiatry
+1  psychology            Journal of Learning Disabilities
+1  psychology            Journal of Mental Science
+1  psychology            Mental Health Weekly
+1  psychology            Primates
+1  psychology            PsycCRITIQUES
+1  psychology            Psychiatric Bulletin
+1  psychology            Psychosomatic Medicine (2025年更名為 Biopsychosocial Science and Medicine；出版社 Wolters Kluwer/Lippincott；美國心身醫學會 American Psychosomatic Society / Society for Biopsychosocial Science and Medicine 官方期刊)
+1  psychology            Psychotherapy Research
+1  psychology            Revue française de psychanalyse
+1  psychology            The American Journal of Psychology
+1  psychology            The Journal of General Psychology
+1  psychology            The Psychological Record

@@ -1,0 +1,499 @@
+{
+ "batch": "hci-b3",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "1081-1451",
+   "name": "International Journal of Virtual Reality (IJVR)",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": "https://ijvr.eu/ethics ; https://ijvr.eu/about/submissions ; https://ijvr.eu/faq",
+    "summary": "No AI/generative-AI use policy found anywhere on the journal's own site. Checked the Ethics and Malpractice Statement (https://ijvr.eu/ethics), Submissions guidelines (https://ijvr.eu/about/submissions), and FAQ (https://ijvr.eu/faq) — none mention AI, ChatGPT, generative AI, or LLM disclosure requirements for authors or reviewers. Publisher is Arts et Métiers Institute of Technology / hosted at Université de Bordeaux; no separate publisher-wide AI policy page was located for this specific journal (not on a major platform like Elsevier/Springer with a blanket policy)."
+   },
+   "peer_review": {
+    "type": "Double-blind (double-anonymous): reviewers, associate editor, and authors' identities anonymized from each other per the journal's own description; at least two referees per manuscript, three-stage process (editor-in-chief triage, peer review, final decision).",
+    "source_url": "https://ijvr.eu/peerReview"
+   },
+   "preprint": {
+    "allowed": "Yes, explicitly encouraged: authors are permitted and encouraged to post their work online (e.g., institutional repositories or personal website) prior to and during submission.",
+    "source_url": "https://ijvr.eu/about/submissions"
+   },
+   "positioning": {
+    "accepts_now": "Small, long-running (since 1995) open-access XR journal covering Virtual Reality, Augmented Reality, Mixed Reality and adjacent tech. Recent-issue evidence is thin: the only fetchable current-issue content found was a 2025 Laval Virtual Doctoral Consortium Proceedings entry (Vol.1 No.1, 2025), suggesting the journal runs conference-proceedings/special-issue content alongside regular research articles. Homepage teasers referenced educational VR training, VR in physical rehabilitation/mood enhancement, and game-based therapeutic interventions for hospitalized children as recent topics, but exact titles/dates could not be independently confirmed via DBLP (which lists volumes but not article-level titles in the fetch obtained).",
+    "framing_required": null,
+    "methods_welcome": [
+     "Experimental/empirical VR-AR-MR studies",
+     "Applied/industrial XR case studies",
+     "Theoretical/conceptual XR papers",
+     "Health & wellness applications (surgery, healthcare training, mental health, phobia treatment)",
+     "Human factors (presence, embodiment, cognition, ethics, social interaction, avatars, UX, 3D interaction)",
+     "Design & creativity (engineering design, co-creation, data visualization, immersive storytelling, CAD)",
+     "Industry 4.0 (manufacturing training, maintenance, design)",
+     "Emerging tech crossovers (AI integration, IoT, computer graphics, haptics, tracking, robotics, drones, 3D printing)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://ijvr.eu/aimScope",
+     "https://ijvr.eu/ (homepage recent-article teasers)",
+     "https://dblp.org/db/journals/ijvr/index.html (volume list only, no titles retrieved)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~2 months (8 weeks) per journal's own stated goal for first decision; LetPub aggregator shows a single crowd data point of \"8 weeks\" average (0 formal submitter reviews logged on LetPub's tracker — 0 people reported submitting/published through their system despite the 8-week figure appearing). Researcher.Life/Editage metrics page separately lists publication time as \"8\" with ambiguous units (possibly months), which conflicts with the journal's own 8-week claim — treat as unverified.",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://ijvr.eu/faq (self-reported 8-week goal)",
+     "https://letpub.com.cn/index.php?journalid=32314&page=journalapp&view=detail&xuanxiangk_id=2 (single '8 Weeks' data point, 0 logged submitter experiences)",
+     "https://www.editage.com/research-solutions/journal/international-journal-of-virtual-reality/40662 (ambiguous '8' publication-time figure, no acceptance rate)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate / leniency_1_5",
+     "why": "No AI-use policy text exists on ijvr.eu (checked ethics statement, submissions page, FAQ, about page); no publisher-wide fallback policy found either. Genuinely absent, not just unfound."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev search returned no dedicated IJVR review page; LetPub shows 0 logged submitter experiences; no forum discussion found on 小木虫/知乎/發表吧/Reddit r/AskAcademia."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand accept/reject narrative found in any cross-language source searched."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero forum or SciRev first-hand accounts located; nothing to characterize reviewer tone/culture without fabricating."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No CFP or editorial framing guidance found beyond generic aims & scope; journal did not surface a current special-issue CFP in search."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev — search returned no dedicated IJVR review page/data (0 results)",
+    "小木虫 muchong.com — general search returned no IJVR-specific submission threads (0 results)",
+    "知乎 zhihu.com — search returned no IJVR-specific discussion (0 results)",
+    "發表吧 fabiaoji — search returned no IJVR-specific page/discussion (0 results)",
+    "Reddit r/AskAcademia — search returned no IJVR-specific thread (0 results)",
+    "LetPub (letpub.com.cn) — returned one crowd data point ('8 Weeks' avg review speed) but 0 formal logged submitter reviews/experiences"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0925-9724",
+   "name": "Computer Supported Cooperative Work (CSCW) — The Journal of Collaborative Computing and Work Practices",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500",
+    "summary": "This is Springer Nature's PUBLISHER-WIDE policy (not a CSCW-journal-specific page — the journal's own submission-guidelines page redirected to a login wall and could not be directly verified). LLMs do not qualify for authorship (no accountability). Use of an LLM/AI tool in producing the manuscript must be disclosed in the Methods section (or equivalent). Exception: 'AI-assisted copy editing' (grammar/style/wording polish of human-written text, no autonomous content generation) does NOT need to be declared. AI-generated images are subject to a separate Springer image policy. No CSCW-journal-specific deviation from this default was found."
+   },
+   "peer_review": {
+    "type": "Single-blind. Search-engine synthesis of the journal's submission guidelines states manuscripts are reviewed by 3 referees plus 1 Associate Editor; no article accepted without 3 complete reviews. (Direct page fetch blocked by Springer login wall — medium confidence.)",
+    "source_url": "https://link.springer.com/journal/10606/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "Yes, generically under Springer Nature's publisher-wide preprint policy — authors may post preprints on any legal preprint server (arXiv, SSRN, etc.) at any time; this is not considered prior publication. No CSCW-journal-specific preprint page was reachable (login wall) so this is the general Springer Nature policy, not confirmed journal-specific.",
+    "source_url": "https://www.springernature.com/gp/researchers/the-researchers-source/open-science-blogpost/four-things-to-know-about-springer-natures-new-preprint-policy/16747974"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": "Aims & scope explicitly favors work grounded in real cooperative-work practice: ethnographic/in-depth fieldwork of work practices with technological implications; empirical evaluations of existing or novel technical solutions under real-world conditions; and/or technical or conceptual frameworks for practice-oriented computing research built on prior fieldwork/evaluations. Purely abstract/algorithmic CSCW-adjacent papers without a practice/fieldwork grounding appear to be a scope mismatch.",
+    "methods_welcome": [
+     "ethnographic or similar in-depth fieldwork of cooperative work practices",
+     "empirical evaluation of extant or novel technical/collaborative solutions under real-world conditions",
+     "technical or conceptual frameworks for practice-oriented computing research derived from prior fieldwork/evaluation"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://link.springer.com/journal/10606/aims-and-scope (content reached only via search-engine cache/snippet, not direct fetch — Springer login wall blocked direct verification)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "Conflicting/approximate: SciRev reports first review round averaging 30.7 weeks (~7.1 months) with 1.0 average review rounds and 2.0 reviewer reports per submission (small, undisclosed sample size). Separately, Chinese aggregator LetPub lists '平均审稿速度：>12周' (avg review speed >12 weeks / by invitation). A third Chinese aggregator summary cites a review-to-acceptance cycle of roughly 5 months. All three broadly agree on a 3-7 month range but none is a rich first-hand account.",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub rates '平均录用比例：容易' (average acceptance ratio: easy) and a separate Chinese ranking-guide aggregator describes the journal as low-IF and comparatively easy to get accepted ('录用比例很高，投稿比较容易，但影响因子不算高'). These are aggregator/ranking-guide characterizations, not individual first-hand submission narratives, so treat as directional only.",
+    "reviewer_culture": null,
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/computer-supported-cooperative-work-cscw/",
+     "https://scirev.org/reviews/computer-supported-cooperative-work-cscw/",
+     "https://www.letpub.com.cn/index.php?journalid=1996&page=journalapp&view=detail",
+     "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=1996&xuanxiangk_id=2"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "positioning.accepts_now",
+     "why": "Could not retrieve actual 2024-2026 article titles: link.springer.com/journal/10606/articles and /volumes-and-issues both redirect to a Springer IDP login wall, and the EUSSET JCSCW digital-library mirror only points back to Springer without listing titles. Web search surfaced only aggregate stats (e.g. '20 articles published in 2025') and no verifiable individual titles from THIS journal (search hits for 'generative AI + CSCW' were mostly the separate ACM CSCW conference or the sister journal ijCSCL, not this Springer journal)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum discussion found in any mandated cross-language source: 0 results on muchong.com (小木虫), no first-hand submission-experience threads on zhihu (only aggregator/ranking-guide pages surfaced), 0 results on Reddit r/AskAcademia for this specific journal."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev's journal page has no populated desk-reject or acceptance-rate field for this title ('n/a')."
+    },
+    {
+     "field": "peer_review.type / positioning confidence",
+     "why": "Springer's own CSCW-journal submission-guidelines and aims-and-scope pages are behind an IDP login redirect and could not be directly fetched; these facts rely on search-engine cached snippets rather than a directly verified live page, so confidence is lower than a normal source_url citation would imply."
+    }
+   ],
+   "overall_signal_quality": 2,
+   "cross_language_checked": [
+    "muchong.com (小木虫): searched for CSCW submission/review threads — 0 relevant results found",
+    "zhihu (知乎): searched for submission-experience posts — no first-hand accounts found, only aggregator/ranking-guide articles (e.g. IF-region listicles) referencing the journal in passing",
+    "Reddit r/AskAcademia: searched via site:reddit.com — 0 relevant results found",
+    "LetPub (Chinese SCI-journal aggregator, supplementary to the mandated list): yielded concrete review-speed (>12 weeks) and acceptance-ease ('容易') data points"
+   ],
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0747-5632",
+   "name": "Computers in Human Behavior",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.elsevier.com/en-gb/about/policies-and-standards/generative-ai-policies-for-journals",
+    "summary": "此為 Elsevier 出版社通用政策，非 CHB 期刊專屬頁面（guide-for-authors 頁被 403 擋下，無法確認是否有加碼條款）。核心事實：AI/AI輔助工具可用於文獻整理、內容組織、語言潤飾，但「實質性」使用須揭露（純文法/拼字檢查免揭露）；禁止將AI列為作者；AI不得用於生成或修改圖片（研究方法本身涉及AI者除外）；作者對內容正確性負全責。因為是允許＋揭露義務的中間態，非全禁也非完全開放，故 leniency 定為 3。"
+   },
+   "peer_review": {
+    "type": "Double-anonymized（雙盲）review — 編輯初審適合度，通過後送至少兩位獨立審稿人；編輯做最終決定。",
+    "source_url": "https://www.elsevier.com/journals/computers-in-human-behavior/0747-5632/guide-for-authors"
+   },
+   "preprint": {
+    "allowed": "允許。Elsevier 提供免費 SSRN 預印本寄存服務，投稿時可選擇公開於 SSRN（初審通過後即公開）；預印本張貼與否不影響編輯流程或錄用結果。未查到 CHB 頁面對 arXiv 等其他預印本伺服器的專屬聲明（一般 Elsevier 綠色 OA 政策通常也允許非商業預印本伺服器，但本次未逐一查證）。",
+    "source_url": "https://www.sciencedirect.com/journal/computers-in-human-behavior/publish/guide-for-authors"
+   },
+   "positioning": {
+    "accepts_now": "近年（2024-2026）大量收錄：生成式AI與社群媒體/內容創作者揭露效應、短影音中AI揭露對使用者互動的影響、AI驅動個人化與消費者社群媒體參與、線上心理健康社群（含Reddit）之參與者行為與社群回應等主題。期刊定位是「電腦使用之心理學視角」，涵蓋社群媒體、VR、線上學習平台、網路心理學（cyberpsychology）之心理效應研究。",
+    "framing_required": "須明確聚焦「人機互動的心理/行為效應」框架，而非純技術/工程貢獻；編輯初審會依 Aims & Scope 適配度做快速退稿（SciRev案例：19天內以「不符合期刊範疇」退稿）。",
+    "methods_welcome": [
+     "量化實證研究（問卷調查、實驗）",
+     "理論性論文",
+     "文獻回顧",
+     "特刊徵稿型主題論文（如近期 VR/沉浸式科技改善群際關係、學習分析之人本視角、生成式AI於社會互動與行為物聯網等特刊）"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.sciencedirect.com/journal/computers-in-human-behavior/about/call-for-papers",
+     "https://www.sciencedirect.com/journal/computers-in-human-behavior/special-issue/101H7ZGPJQL",
+     "https://dl.acm.org/doi/10.1016/j.chb.2024.108544",
+     "https://dl.acm.org/doi/10.1016/j.chb.2024.108549"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev（6筆評論樣本，樣本量小）：立即退稿（desk reject）平均 11 天；總審稿時間平均 3.7 個月；整體處理時間（含接受案）平均 7.3 個月；平均審稿輪數 1.7 輪、平均收到 1.7 份審稿報告。小木虫個案（2017年投稿貼文）：2月投稿，4月與6月才分別收到一次審稿意見，作者抱怨審稿週期長且不確定何時能錄用——與 SciRev 平均數落差大，顯示個案差異極大。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 未提供具體 acceptance rate（列為 n/a）。知乎文章（662819355，標題含「審稿認真速度快、溝通愉快、可試投」）給出正面定性評價，但該頁原文 WebFetch 遭 403 擋下，僅能引用 WebSearch 摘要，未逐字核實。",
+    "reviewer_culture": "SciRev量化評分（僅6筆樣本）：審稿報告品質 2.3/5.0，審稿意見理解難度 2.5/5.0（中等），整體稿件處理滿意度 1.7/5.0，平台標註製程品質為「Moderate process」。樣本數極小，不足以代表全貌，僅供參考；與知乎的正面評價存在落差，未能交叉驗證何者更具代表性。",
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/computers-in-human-behavior/",
+     "https://muchong.com/html/201710/9145702.html",
+     "https://zhuanlan.zhihu.com/p/662819355"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — 找到1篇2017年投稿心得帖（審稿週期4個月以上、與editor溝通有記錄），未找到2024-2026年新帖",
+    "知乎 zhihu.com — 找到2篇相關文章（662819355「審稿認真速度快、溝通愉快」定性評價；682913097 期刊排名/跨學科/低自引率介紹），惟662819355原頁WebFetch遭403擋下僅能引用WebSearch摘要",
+    "Reddit r/AskAcademia — 0 results，未找到針對本刊的具體討論串",
+    "PTT — 0 results，搜尋未命中相關看板文章"
+   ],
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "peer_review.type 及 ai_policy 是否有CHB專屬加碼條款",
+     "why": "sciencedirect.com guide-for-authors 原始頁面對WebFetch回傳403，僅能依賴WebSearch摘要間接查證，非直接讀取原文全文，信度打折"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev頁面該欄位本身列為 n/a；WebSearch摘要中出現的「desk-rejection 40-50%」數字在SciRev原頁面回填內容中查無對應出處，疑似AI摘要生成之非一手數字，予以捨棄不採用，留null"
+    },
+    {
+     "field": "positioning.accepts_now 的量化交叉驗證（如接受率、影響因子與收錄量統計）",
+     "why": "未進行系統性文獻計量學查證，僅以近期文章標題/特刊主題做定性歸納，非量化統計結果"
+    }
+   ],
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "0747-9360",
+   "name": "Design Issues",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 4,
+    "source_url": "https://direct.mit.edu/desi/pages/submission-guidelines",
+    "summary": "依 MIT Press 政策(非期刊自訂),作者若在稿件撰寫過程使用 AI 工具(如 ChatGPT)產生文字/圖像或蒐集資料,須於投稿信告知編輯,並於稿件內以透明方式揭露給讀者。AI 不得列為作者。同一 MIT Press 通用政策明文禁止在同行評審過程使用 LLM/AI 工具協助審稿(來源:MIT Press Publication Ethics 頁,https://direct.mit.edu/journals/pages/publication-ethics)。未見 Design Issues 專屬(不同於 MIT Press 通用政策)之加嚴或放寬條款,故此為出版社層級政策套用於本刊,非期刊獨有裁量。leniency 給 3(允許使用但需揭露,非全面禁止亦非放任),因未見對特定使用情境(如僅用於語言潤色 vs 內容生成)有差異化規則,可信度中高但非期刊獨家細則。"
+   },
+   "peer_review": {
+    "type": "Editor/Editorial-Board-mediated confidential peer review (reviewers matched from an international expert network; process has three stages — new submission, reviewer feedback, revised manuscript — with the Editorial Board meeting monthly to progress manuscripts). Public guidelines describe confidentiality among editors/authors/reviewers but do NOT explicitly state single-blind vs double-blind vs open identity disclosure — this detail is not confirmed by any public source found.",
+    "source_url": "https://direct.mit.edu/desi/pages/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "現行(2024-2026)徵稿與期刊定位顯示:本刊持續徵求關於設計歷史、理論與批評之原創、嚴謹且具重要性之稿件,主題不限特定設計次領域;2025年有明確徵稿的特刊主題 'Tangible Archives'(有形檔案/設計檔案研究),截稿 2025-06-30,要求全文 5,500 字(不含註腳與圖說)+摘要+關鍵字+圖片版權說明,經客座編輯初審後由編輯委員會做最終出版決定。",
+    "framing_required": "投稿須符合芝加哥格式手冊(Chicago Manual of Style)第17版;不使用 Reference/Bibliography 章節,改用連續編號註腳;需展現原創性、嚴謹性與重要性(originality, rigor, significance)。特刊稿件另需符合客座編輯訂定之字數與格式要求(如 Tangible Archives 特刊之 5,500 字上限)。",
+    "methods_welcome": [
+     "design history 研究",
+     "design theory/批評性論述",
+     "design criticism",
+     "跨領域主題特刊(如 2025 年 'Tangible Archives' 聚焦設計檔案/物質文化)",
+     "書評與展覽評論(book and exhibition reviews)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://direct.mit.edu/desi (aims & scope, WebSearch snippet)",
+     "https://direct.mit.edu/desi/pages/submission-guidelines (WebSearch snippet, direct fetch blocked 403)",
+     "https://direct.mit.edu/DocumentLibrary/CallForPapers/Design%20Issues%20CFP%20Special%20Issue_Tangible%20Archives_2025.pdf (title/deadline only, PDF fetch blocked 403)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/design-issues/ — 查詢時 0 筆使用者評論,所有量化欄位(平均審稿時長、稿件退回時間、審稿品質評分)皆顯示 'n/a'"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "未找到 Design Issues 或 MIT Press 對本刊 preprint/self-archiving 政策之公開頁面;SHERPA/RoMEO 頁面抓取被 403 阻擋,WebSearch 亦未返回本刊專屬條款,故留空。"
+    },
+    {
+     "field": "peer_review.type (blind status)",
+     "why": "公開投稿指南僅述及'confidential process'與編委每月會議三階段流程,未明確聲明 single-blind/double-blind/open review,無法確認,故僅記錄已知事實,盲審類型留白。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊頁面查詢時顯示 0 筆評論、'n/a'。WebSearch 查詢小木虫、知乎、Reddit r/AskAcademia 均未返回任何針對 Design Issues 投稿經驗的一手討論串。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上,無 SciRev 數據、無論壇討論可查。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無任何公開一手投稿者經驗分享(中英文皆未查獲)。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源可佐證審稿人文化/傾向之主觀描述,依規則不可捏造,故留空。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/design-issues/) — 查得頁面但 0 reviews,所有統計為 n/a",
+    "小木虫 muchong.com — WebSearch 查詢多組關鍵字(繁簡體、英文刊名),僅返回論壇首頁與無關期刊列表,0 筆針對 Design Issues 的討論",
+    "知乎 zhihu.com — 查得 1 篇文章談論該刊之內容定位/書籍推薦(zhuanlan.zhihu.com/p/538318730),但無審稿時效/退稿率等經驗性資訊",
+    "Reddit r/AskAcademia — WebSearch 未返回任何關於 Design Issues 投稿經驗的討論串,0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1875-9521",
+   "name": "Entertainment Computing",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+    "summary": "採 Elsevier 通用政策(非期刊專屬頁面,查無 Entertainment Computing 專屬 AI 政策頁):作者可用生成式 AI 輔助寫作(如語言潤飾、文獻綜述輔助),但須人類監督、對內容負全責、投稿時需揭露聲明;基本文法/拼字檢查免揭露;AI 不得列為作者。審稿人/編輯僅能用「不留存資料」的私有 AI 工具做語言潤飾或背景文獻搜尋,禁止將稿件內容上傳至公開 AI 工具(保密考量),且須揭露使用情形。WebSearch 摘要另指出 Entertainment Computing 目前不允許審稿人/編輯在同行評審過程使用生成式 AI,但該說法來自搜尋引擎聚合摘要,未能在期刊官方頁面(Guide for Authors 因 403 無法直接讀取)一次性核實,故信心中等。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "推定允許(採 Elsevier 通用預印本政策):可將預印本掛於 arXiv/RePEc,並在接受後更新為 accepted manuscript + CC BY-NC-ND 授權。惟 Elsevier 官方頁面特別註明「採雙匿名審稿之期刊/學會刊物政策可能不同,須查該刊 Guide for Authors」——Entertainment Computing 的審稿類型未能核實(見 peer_review.type=null),故此為通用政策推定,非期刊專屬確認。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/sharing"
+   },
+   "positioning": {
+    "accepts_now": "近期(2025-2026)徵稿與會議聯動顯示,該刊實際收稿方向聚焦:遊戲/互動敘事設計與分析、嚴肅遊戲(學習/健康福祉/社會影響/運動遊戲)、XR(VR/AR/MR、元宇宙娛樂)、AI/機器學習於娛樂應用(含生成式 AI 於遊戲開發/內容生成)、程序化內容生成、電腦圖學與視覺特效、數位藝術與互動裝置、無障礙與包容性設計、情感與社會文化影響、新型互動介面與安全性。2026 IFIP ICEC Journal Track(投稿截止 2026-01-24)與 IPSJ JIP 特刊(截止 2026-02-20)均以此刊為目標期刊,顯示這些主題是當前實際收稿重點。",
+    "framing_required": "會議衍生投稿(ICEC Journal Track)須框在 IFIP ICEC 大會主題脈絡下;未查到強制的通用寫作框架要求。",
+    "methods_welcome": [
+     "遊戲設計與分析 (Design and Analysis)",
+     "嚴肅遊戲 (Serious Games: learning/health/social impact)",
+     "XR/VR/AR/MR 與元宇宙娛樂",
+     "AI/ML 於娛樂應用,含生成式 AI 遊戲開發",
+     "程序化內容生成 (Procedural Content Generation)",
+     "電腦圖學與視覺特效",
+     "數位藝術與互動裝置/表演",
+     "無障礙與包容性設計",
+     "情感、社會與文化面向研究",
+     "大數據於娛樂領域"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://icec2025.entcomp.org/cfp/",
+     "https://ci2s-enterprise.com.ar/2025/12/17/ifip-icec-2026-journal-track-call-for-papers-elsevier-entertainment-computing-journal/",
+     "https://www.ipsj.or.jp/english/jip/cfp/26-T.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/entertainment-computing/ (0 reviews submitted)",
+     "https://letpub.com.cn/index.php?journalid=10775&page=journalapp&view=detail (審稿速度/錄用比例欄位均無用戶填寫數據,僅顯示 3 人標記「已投稿」,無具體心得)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "ScienceDirect 官方 Guide for Authors 與期刊主頁均回傳 403,無法直接核實審稿類型(single/double blind);搜尋引擎摘要亦未找到期刊專屬明確聲明,故留空而非臆測。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊頁面顯示 0 筆審稿人回報,LetPub 中文頁面「平均審稿速度」欄位無使用者填寫數據,無小木蟲/知乎/Reddit 一手討論串可查證,故留空。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 顯示 n/a(無資料),無其他一手來源。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "LetPub 僅顯示「3 人已投稿、0 人已錄用」的統計,無具體心得文字;無法構成有意義的錄用敘述。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "未找到任何小木蟲/fabiaoji/知乎/Reddit r/AskAcademia 討論串提及此刊審稿人風格或文化,零一手資料,依規則不得臆測。"
+    },
+    {
+     "field": "ai_policy.gate (reviewer-AI-ban claim)",
+     "why": "「審稿人/編輯禁用生成式 AI」一說僅見於 WebSearch 聚合摘要,未能在期刊官方頁面重複核實(guide-for-authors 403),故 ai_policy 部分僅標記信心 3/5 而非 5。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木蟲 muchong.com: WebSearch 站內查詢無相關結果(0 results)",
+    "知乎 zhihu.com: 查到通用「計算機水刊清單」提及該刊,但無具體投稿/審稿經驗貼(視為 0 個一手心得)",
+    "fabiaoji: 未查得該站對此刊的獨立頁面或討論(0 results)",
+    "Reddit r/AskAcademia: WebSearch 未返回任何該版對此刊的討論(0 results)",
+    "LetPub 中文版 (letpub.com.cn): 有期刊頁面,但「審稿週期」「錄用比例」欄位均無使用者填寫數據,僅有「3人已投稿」的匯總計數,無敘述性心得"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "yes",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/",
+    "summary": "IEEE 出版總則(非本刊專屬):AI 不得列為作者;論文中使用生成式 AI 產生的內容(文字、圖表、程式碼等)須在 acknowledgments 揭露 AI 系統名稱與使用範圍;純文法/編輯用途建議揭露但非強制;審稿人不得將機密稿件輸入公開 AI 平台。未找到 IEEE Pervasive Computing 期刊專屬的 AI 政策頁,適用的是 IEEE 出版部門通則。"
+   },
+   "peer_review": {
+    "type": "single-anonymous (default; double-anonymous available on author request) — IEEE Computer Society magazine general policy, not confirmed journal-specific",
+    "source_url": "https://magazines.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/about-the-peer-review-process/"
+   },
+   "preprint": {
+    "allowed": "Yes, before IEEE copyright transfer authors may post to preprint servers; only arXiv and TechRxiv are IEEE-approved third-party repositories; after acceptance an IEEE copyright notice must be added; after publication must link/cite the IEEE Xplore version. This is IEEE-wide policy, not journal-specific.",
+    "source_url": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf"
+   },
+   "positioning": {
+    "accepts_now": "雙月刊,五大主題支柱持續徵稿:硬體(嵌入式/節能架構/邊緣運算)、軟體(中介軟體/雲邊系統)、物理互動(感測/情境建模/空間運算)、人本體驗(HCI/行為建模/倫理隱私)、系統與智慧(行動系統/機器學習/即時決策)。跨領域主題(健康、智慧基礎設施、永續、輔助科技)特別受歡迎。近期特刊 CFP 顯示方向持續在擴張:'Embodied Pervasive Computing Systems and Agents'(摘要截止 2026-07-01,全文 2026-07-08,預計刊出 2027 Q2)、'Mobility and Pervasive Computing'(摘要截止 2026-10-01)。",
+    "framing_required": "投稿需扣合'普適運算/物理環境中的計算-通訊-感測融合'此一核心敘事,單純的機器學習方法論文若缺乏 IoT/嵌入式/情境感知部署場景不太合適；篇幅上限 6000 字(含摘要/參考文獻/圖表折算 250 字/個),接受 research article 與 survey 兩類。",
+    "methods_welcome": [
+     "嵌入式/邊緣運算系統設計",
+     "感測與情境感知/空間運算",
+     "中介軟體與分散式作業系統",
+     "HCI/使用者研究/行為建模",
+     "機器學習與即時決策(需綁定實體部署場景)",
+     "survey/系統性綜述"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.computer.org/digital-library/magazines/pvc/cfp-pervasive-computing",
+     "https://ieeexplore.ieee.org/document/10964479 (Call for Articles: Embodied Pervasive Computing Systems and Agents special issue)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~3 個月(12 週)——僅為中文期刊聚合站(LetPub/小木虫聚合頁/学术之家等)的統計摘要數字,並非可追溯的單筆使用者第一手貼文;muchong.com 該刊詳情頁本身僅有一則 2011 年舊留言,無具體審稿經歷描述",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://muchong.com/bbs/journal.php?view=detail&jid=3362 (無具體審稿經歷貼文,僅期刊基本資料)",
+     "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=3347 (聚合統計頁,未附可查證的單筆使用者評論)",
+     "https://scirev.org/journal/ieee-pervasive-computing/ (SciRev: 0 筆評論,所有欄位顯示 n/a)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "Only found IEEE Computer Society magazine general policy page (single-anonymous default, double-anonymous optional); no page confirms this is what IEEE Pervasive Computing specifically uses."
+    },
+    {
+     "field": "ai_policy source specificity",
+     "why": "No IEEE Pervasive Computing-specific AI policy page found; used IEEE journal-wide publishing ethics policy as proxy, flagged as non-journal-specific."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev shows 0 submitted reviews for this journal (n/a on all metrics); no forum post (小木虫/知乎/Reddit r/AskAcademia) with a first-hand desk-reject account was found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance/rejection narrative found on 小木虫, 知乎, fabiaoji, or Reddit r/AskAcademia for this specific journal."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post or SciRev review) describing reviewer tone/culture; only generic aggregator stats exist, which the work order explicitly forbids using as a substitute."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "The 12-week figure only exists as an aggregator summary statistic (LetPub/学术之家 style sites) with no visible underlying individual data points or dates; treated as low-confidence, not a first-hand SciRev/forum report."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: found journal detail page (jid=3362) but it contains only one 2011 stub comment, no real review-experience thread — 0 substantive first-hand results",
+    "知乎 zhihu (via web search, could not access zhihu directly): search returned only Chinese aggregator SEO pages (LetPub/X-MOL/好投稿/爱科学), no actual zhihu answer thread surfaced — effectively 0 results",
+    "fabiaoji: not found in search results — 0 results",
+    "Reddit r/AskAcademia: web search returned no Reddit threads mentioning IEEE Pervasive Computing — 0 results",
+    "SciRev.org: journal page exists but has 0 submitted reviews, all fields n/a"
+   ],
+   "issn": "1536-1268",
+   "name": "IEEE Pervasive Computing",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 6,
+  "failed_count": 12,
+  "failed_issns": [
+   "1558-3449",
+   "0951-5666",
+   "2624-9898",
+   "2813-2084",
+   "1687-5893",
+   "0144-929X",
+   "2573-9522",
+   "1936-7228",
+   "0018-7208",
+   "2169-3536",
+   "0142-694X",
+   "2474-9567"
+  ],
+  "run_task_id": "w6zsve72l"
+ }
+}

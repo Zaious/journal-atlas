@@ -1,0 +1,505 @@
+{
+ "batch": "phil-b4",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "1054-6863",
+   "name": "Kennedy Institute of Ethics Journal",
+   "ai_policy": {
+    "gate": "no permission gate — flat prohibition; authors must confirm NON-use of generative AI for content, style, or citations at submission; violation found post-publication can trigger public retraction",
+    "leniency_1_5": 1,
+    "signal_quality": 5,
+    "source_url": "https://kiej.georgetown.edu/announcements/ai-policy-added-to-kiej-submission-guidelines/",
+    "summary": "Journal-specific policy (added to submission guidelines, first-hand from journal's own announcement page): generative AI use is banned for manuscript content, style, and citations. Authors must affirmatively confirm non-use upon submission — there is no disclosure-and-permit path, only a ban with a retraction deterrent. No effective date given in the announcement text itself."
+   },
+   "peer_review": {
+    "type": "Anonymized peer review (submission guidelines instruct authors to strip all author-identifying information for \"anonymous/blind review\"). One WebSearch AI-summary snippet characterized it as \"double anonymized,\" but direct fetches of both kiej.georgetown.edu/about and kiej.scholasticahq.com/for-authors only confirm author-side anonymization is required — reviewer-side anonymity (i.e., true double-blind vs. single-blind) is not explicitly stated on the pages themselves, so treat \"double-blind\" as unconfirmed.",
+    "source_url": "https://kiej.scholasticahq.com/for-authors"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Conceptual/philosophical bioethics articles (8,000-12,000 words), NOT empirical research studies. Recent June 2025 issue (Vol 35 No 2) carried: public health ethics and nonmaleficence under uncertainty; relational autonomy in nonideal medical decision-making; the ethics of pandemic lockdowns (plus a reply/response exchange); history of bioethics training/institutions (KIE's role in establishing German medical ethics); book reviews (space bioethics, diagnosis/medicalization). A PhilPapers-indexed special issue, \"Situating Neurodiversity and Madness,\" edited by Quill R. Kukla & Rua Mae Williams, shows the journal has also run special issues on neurodiversity/mad studies in bioethics.",
+    "framing_required": "Must be conceptual/philosophical analysis with practical engagement, not empirical/quantitative research; author encouraged to pre-contact editorial team (kie@georgetown.edu) if unsure of fit; global/non-US context issues are specifically welcomed per scope statement.",
+    "methods_welcome": [
+     "conceptual/philosophical analysis",
+     "normative/ethical argumentation",
+     "policy analysis (health, environmental, science policy)",
+     "history of bioethics/institutional history",
+     "book review essays",
+     "reply/response pieces to previously published articles"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://muse.jhu.edu/issue/56673",
+     "https://kiej.georgetown.edu/submit-to-the-kiej/",
+     "https://philpapers.org/rec/KUKITT"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/kennedy-institute-of-ethics-journal/ — page explicitly states \"No reviews have yet been submitted for this journal\"; all duration/rejection-rate/acceptance-rate fields show n/a"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint policy stated anywhere on kiej.georgetown.edu, kiej.scholasticahq.com/for-authors, or press.jhu.edu journal page; only a simultaneous-submission clause (\"not under consideration at another journal\") was found, which does not address preprint servers."
+    },
+    {
+     "field": "peer_review.type (double- vs single-blind)",
+     "why": "Submission guidelines only require author-side anonymization; no statement confirms whether reviewers' identities are also hidden from authors (true double-blind) or just author-blind (single-blind from reviewer's view)."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for this journal has zero submitted reviews (n/a on all metrics); no discussion found on muchong.com, zhihu, fabiaoji, or Reddit r/AskAcademia via web search."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above — SciRev 0 reviews, no forum/cross-language discussion surfaced."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found in any queried source (SciRev, muchong, zhihu, fabiaoji, Reddit)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source describing reviewer tone/culture; fabricating a narrative would violate the no-subjective-claim-without-source rule."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫/知乎/fabiaoji (combined WebSearch query for \"Kennedy Institute of Ethics Journal\" 投稿) — 0 relevant results; only journal's own English pages returned",
+    "Reddit r/AskAcademia (WebSearch) — 0 results; search returned only journal/publisher pages, no Reddit threads",
+    "SciRev.org dedicated journal page — checked directly via WebFetch; confirmed 0 user-submitted reviews, all metrics n/a"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0556-8641",
+   "name": "Philosophical Papers",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.enago.com/responsible-ai-movement/publisher-ai-guidelines/tandf-ai-guidelines",
+    "summary": "此為 Taylor & Francis 出版社層級的通用 AI 政策（未見 Philosophical Papers 期刊專屬頁面；taylorandfrancis.com/our-policies/ai-policy/ 與 tandfonline.com 對本工具均回傳 403，故引用第三方摘要頁 Enago 作為替代來源）。事實：允許語言潤飾、翻譯、文獻搜尋輔助（LLM 加強搜尋引擎）、程式協助；禁止用生成式 AI 產生研究數據視覺化、原始研究數據、投稿中的 AI 生成程式碼，且不得將 AI 列為作者。允許使用時須在 Methods 或 Acknowledgments 揭露工具全名版本、用途、原因。未見要求投稿前需編輯部逐案事前核准，故 gate 標記 conditional（依用途分級允許/禁止，非逐案審批）。因無法直接讀取出版社原始政策頁且未找到期刊專屬 AI 政策，signal_quality 偏低。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "允許（出版社層級通用政策，非期刊專屬確認）。T&F 政策：作者可自由分享 Author's Original Manuscript（即 preprint），且即使文章已上傳至 repository 或非同行評審平台（如 figshare、academia.edu）仍可投稿。Accepted Manuscript 可在出版後隨時放上個人網站；Green OA 通常有 embargo 期。",
+    "source_url": "https://authorservices.taylorandfrancis.com/choose-open/publishing-open-access/oa-green-gold/"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://www.tandfonline.com/journals/rppa20 (僅 WebSearch 摘要可得，直接 WebFetch 回傳 403；顯示期刊涵蓋 general/analytic philosophy, epistemology, relativism, public reason, decolonization of knowledge, global democracy, world government)",
+     "https://www.tandfonline.com/toc/rppa20/current (僅 WebSearch 摘要可得，直接 WebFetch 回傳 403；顯示目前期為 Vol 53 No 1，2025年9月起有文章上線)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/philosophical-papers/ (0 則評論已提交；所有量化欄位皆為 'n/a'；編輯尚未在平台上填寫 aims/scope)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "WebSearch 摘要顯示投稿經『初步編輯篩選 + 通常兩位審稿人審稿』，但無法確認是 single-blind 或 double-anonymous；tandfonline.com/journals/rppa20/about-this-journal 與 action/journalInformation 頁面對 WebFetch 皆回傳 403 Forbidden，無法讀取原始頁面確認。"
+    },
+    {
+     "field": "ai_policy (期刊專屬版本)",
+     "why": "找不到 Philosophical Papers 專屬 AI 政策頁，僅有 Taylor & Francis 出版社層級通用政策（且經第三方 Enago 摘要轉述，因原始頁 403 無法直讀），不確定本期刊是否有額外/更嚴格規定。"
+    },
+    {
+     "field": "positioning.accepts_now / methods_welcome / framing_required",
+     "why": "無法直接讀取 tandfonline.com 的 aims-and-scope 頁或近期目錄的文章標題（所有 tandfonline.com URL 對 WebFetch 均回傳 403 Forbidden）；僅有間接 WebSearch 摘要確認期刊涵蓋 general/analytic philosophy、epistemology、relativism、public reason、decolonization of knowledge、global democracy、world government，證據太薄弱，不足以可靠列出 methods_welcome 或 framing 建議，避免捏造。"
+    },
+    {
+     "field": "positioning 近期 special-issue CFP",
+     "why": "未找到 Philosophical Papers 近期（2024-2026）的 special issue 徵稿啟事；搜尋結果只出現其他哲學期刊（Philosophy, Philosophical Quarterly, Philosophical Studies）的 CFP，與本刊無關。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 頁面存在但 0 則評論提交，所有指標顯示 'n/a'；Reddit r/AskAcademia 搜尋 0 筆相關結果；小木虫 muchong.com 搜尋無期刊專屬討論；知乎搜尋僅得中文核心期刊（《哲学研究》《哲学进展》）的通用投稿建議，與本刊無關；fabiaoji/fabiao.com.cn 找到一篇本 ISSN 專屬頁面，但內容評估為高度模板化 SEO 文章（選題、文獻回顧、寫作要求等通用建議），且不同片段對 impact factor 的數字互相矛盾（0.5 vs 3.6），無具體審稿時長數據，判定不可信。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上，SciRev 顯示 'n/a'，未找到任何跨語言論壇的具體討論。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "在所有查核來源（SciRev、Reddit、小木虫、知乎、fabiaoji）中均未找到第一手投稿者經驗分享。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "未找到具體、可歸因來源描述審稿人文化或傾向；依規則寧可留空，不得捏造敘事。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/philosophical-papers/) — 0 則評論提交；所有量化欄位（首輪審稿時長、總處理時間、立即拒絕決定時間、接受率、平均審稿報告數）皆為 'n/a'；平台註明編輯尚未填寫期刊 aims/scope 資訊",
+    "小木虫 muchong.com — WebSearch 查詢『\"Philosophical Papers\" 期刊 投稿 審稿 小木虫』回傳 0 筆與本刊相關結果（僅出現英文/中文其他哲學期刊投稿指南，未涉及 muchong.com 實際內容）",
+    "fabiaoji/fabiao.com.cn — 找到一篇專屬本 ISSN 的頁面 (fabiao.com.cn/sci/05568641/48.html)；評估為高度模板化 SEO 投稿建議文（選題、文獻回顧、寫作要求等），impact factor 數字自相矛盾（0.5 對 3.6），無具體審稿時長/接受率/退稿率數據，判定對 experiential 事實不可信",
+    "知乎 zhihu.com — WebSearch 查詢『期刊名 + 知乎 + 投稿』僅回傳中文核心期刊（《哲学研究》《哲学进展》）通用討論與期刊列表整理文，未見任何針對本刊（T&F Philosophical Papers）的第一手貼文",
+    "Reddit r/AskAcademia — WebSearch 查詢『期刊名 + reddit + AskAcademia + review time/acceptance』回傳 0 筆結果"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 2,
+    "gate": "conditional",
+    "summary": "De Gruyter Brill publisher-wide policy (no journal-specific AGPh page found): AI/ML tools cannot be listed as authors and papers 'generated by' AI are not accepted; authors declare no AI was used in drafting the manuscript text itself. However, if AI/ML tools were used as part of research design/methodology, use must be disclosed in Acknowledgments; disclosure required when AI output 'significantly contributed' to any manuscript part; simple proofreading/copy-editing with tools does not need declaration. Generative AI may not be used to create/manipulate images, figures, or research data. Authors are told not to paste manuscript text into AI systems (ChatGPT, Grammarly, etc.) over data-privacy concerns.",
+    "source_url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Peer reviewed (external refereeing); specific single- vs double-anonymized model not confirmed for this journal from public pages found",
+    "source_url": "https://www.degruyterbrill.com/journal/key/agph/html"
+   },
+   "preprint": {
+    "allowed": "Authors may archive the submitted preprint version at any time; the accepted version may be self-archived after an embargo period (De Gruyter Brill general green-OA policy, not confirmed as AGPh-specific)",
+    "source_url": "https://www.degruyterbrill.com/publishing/services/fuer-journal-autoren/sharing-your-work/repository-policy"
+   },
+   "positioning": {
+    "accepts_now": "History of philosophy across all periods from antiquity to the 20th century, published in English, German, French, and Italian; journal explicitly states it is expanding scope to include more research on non-Western histories of philosophy and non-canonical figures. Current volume is Subscribe-to-Open (S2O) open access, CC BY 4.0.",
+    "framing_required": "Historical/textual scholarship on a philosopher, period, or tradition (not systematic/contemporary philosophy); the journal states it does not prioritize particular methods, approaches, or traditions",
+    "methods_welcome": [
+     "textual/exegetical history of philosophy",
+     "ancient philosophy (e.g. Plato/Timaeus reception)",
+     "early modern philosophy (e.g. Thomasius, skepticism)",
+     "German idealism / Neo-Kantianism (e.g. Natorp)",
+     "history of ethics and rhetoric (e.g. Socratic studies)",
+     "non-Western and non-canonical figures (stated growth area, not yet heavily represented in sampled recent titles)"
+    ],
+    "sources": [
+     "https://www.degruyterbrill.com/journal/key/agph/html",
+     "https://www.degruyterbrill.com/journal/key/agph/0/0/html?lang=en"
+    ],
+    "signal_quality": 3
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "De Gruyter Brill's general (non-journal-specific) author information states aspiration to inform authors of peer-review decisions within 3 months of submission, and to publish accepted articles online within 6 weeks of acceptance; this is a publisher-wide aspirational target found via web search, not a confirmed AGPh-specific first-hand data point, so it is not entered as a hard number.",
+    "reviewer_culture": null,
+    "sources": [
+     "WebSearch query 'SciRev Archiv für Geschichte der Philosophie review' — no SciRev entry found for this journal",
+     "WebSearch query '小木虫 Archiv für Geschichte der Philosophie 审稿' — no forum thread found",
+     "WebSearch query '知乎 Archiv für Geschichte der Philosophie 投稿' — no discussion found",
+     "WebSearch query 'reddit AskAcademia Archiv für Geschichte der Philosophie' — no thread found"
+    ],
+    "signal_quality": 0
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "Could not access AGPh-specific Instructions for Authors PDF (degruyterbrill.com blocked WebFetch/browser navigation with 405/denied errors); could not confirm single- vs double-anonymized review specifically for this journal"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Only the De Gruyter Brill publisher-wide repository policy was accessible; no AGPh-specific preprint statement was found"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "No SciRev entry exists for this journal (checked via search); no first-hand author report found in any checked forum"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public first-hand source found (SciRev has 0 reviews/no listing; no forum discussion in any checked source)"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance-rate or editorial-note data found beyond publisher-wide generic aspirational timelines, which were excluded per the no-generic-numbers rule"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero results across 小木虫, 知乎, and r/AskAcademia searches for this niche, low-volume specialist philosophy journal; no subjective claim can be sourced"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 (muchong.com): WebSearch for '小木虫 Archiv für Geschichte der Philosophie 审稿' — 0 relevant results, only generic journal-metrics pages returned",
+    "知乎 (zhihu.com): WebSearch for '知乎 Archiv für Geschichte der Philosophie 投稿' — 0 relevant results",
+    "Reddit r/AskAcademia: WebSearch for 'reddit AskAcademia Archiv für Geschichte der Philosophie' — 0 relevant results",
+    "SciRev: attempted direct site query via browser (scirev.org) — site returned 'Bad request'; WebSearch found no indexed SciRev page for this journal, consistent with it not having any submitted reviews",
+    "fabiaoji: not separately queried — no distinct search performed given the pattern of zero coverage in the other three, and this is an obscure single-language humanities journal with essentially no online author-experience footprint"
+   ],
+   "issn": "0003-9101",
+   "name": "Archiv für Geschichte der Philosophie",
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence ; https://brill.com/page/509467",
+    "summary": "This is Brill/De Gruyter Brill's PUBLISHER-WIDE policy (not Phronesis-specific — no journal-level AI statement found on the PHRO Instructions-for-Authors page, last revised 2025-11-10). Brill bans papers 'generated by AI/Machine Learning tools' (AI cannot be an author) and bans using generative AI to create or manipulate images/figures/research data. Simple proofreading/copy-editing with AI does not require disclosure. Any other significant AI contribution to the manuscript (e.g. assisting research design/methodology) must be disclosed in an acknowledgements section, documenting which tool and how it was used. Manuscript text must not be input into third-party AI/Grammarly-type tools due to confidentiality risk during review. Peer review itself must be done by humans only, not AI. Authors remain fully accountable for AI-assisted output (must fact-check it)."
+   },
+   "peer_review": {
+    "type": "Double-anonymous (double-blind): author identity hidden from external referees via a separate title page in Editorial Manager; all submitted files must be anonymized. All papers first screened by the two Editors-in-Chief, who may additionally send them to external referees.",
+    "source_url": "https://brill.com/fileasset/downloads_products/Author_Instructions/PHRO.pdf (Instructions for Authors, last revised 2025-11-10)"
+   },
+   "preprint": {
+    "allowed": "Yes, with conditions (Brill is a RoMEO 'yellow' publisher for this journal). Author may self-archive the submitted (pre-peer-review) version at any time. Author may self-archive the accepted (post-peer-review, post-copyedit but not yet typeset) version with NO embargo period. Brill's own typeset/laid-out PDF must never be self-archived.",
+    "source_url": "https://brill.com/fileasset/downloads_products/Author_Instructions/PHRO.pdf (Instructions for Authors, last revised 2025-11-10, section 'Author Fulfilment')"
+   },
+   "positioning": {
+    "accepts_now": "Textual/interpretive scholarship on ancient Greek and Roman philosophy from its origins through the end of the 6th century AD, covering metaphysics, epistemology, logic, psychology, and philosophy of science/medicine. Confirmed live examples (2023-2025): 'Wisdom, Political Expertise and the Unity of Virtues in Aristotle' (2024), 'Platonic Dualism Reconsidered' (2024), 'Technical Knowledge as Scientific Knowledge in Aristotle' (2025), 'Quantities or Qualities? A Forgotten Debate about Sounds between Ptolemy and Porphyry' (2023), plus Vol. 70(1) 2025 articles by Krizan, Chong and Weiss (titles not confirmed from search snippet, pp. 1-117) and a book note by Shaul Tor. No special-issue CFP found; the journal runs standard rolling submissions, not themed calls.",
+    "framing_required": "Argument must engage primary ancient Greek/Latin sources directly (close textual/philological analysis expected per citation conventions for ancient authors in the Instructions for Authors). Submissions accepted in English, French, German, or Italian; non-English titles need an English translation. Abstract capped at 100 words.",
+    "methods_welcome": [
+     "Close textual/philological analysis of primary Greek and Latin sources",
+     "History-of-philosophy interpretive argument (conceptual reconstruction, doxography)",
+     "Philosophy of ancient science and medicine",
+     "Cross-school comparative work (e.g. Platonic vs. Aristotelian vs. Stoic doctrine)",
+     "Book Notes (short review-essays; the journal does not run standard book reviews)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://brill.com/fileasset/downloads_products/Author_Instructions/PHRO.pdf (journal scope, first-hand, 2025-11-10)",
+     "WebSearch snippets citing recent Phronesis article titles 2023-2025 (secondary aggregator, titles not independently verified against brill.com issue pages which returned HTTP 403)",
+     "https://brill.com/view/journals/phro/70/1/phro.70.issue-1.xml (Vol 70(1) 2025 TOC, author names only — page fetch blocked 403, titles unconfirmed)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~2.2 months average time-to-decision (Endoxa.blog survey, N=20 submissions, data collected 2011-2018 — dated, small sample, English-language only)",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": "No first-hand narrative source found. Only available data point: Endoxa.blog 2018 survey reported avg 0.95 reviewer comments per submission, comment quality rated 3.26/5, and overall editorial-experience rating 4.05/5 (journal named among the better performers in that survey alongside JHP, Classical Quarterly, BJHP). This is aggregate numeric data, not a described 'culture' — treat with caution given age (last collected 2018) and small N.",
+    "signal_quality": 2,
+    "sources": [
+     "https://endoxa.blog/2018/12/20/best-and-worst-ancient-philosophy-journal-experiences/ (first-hand survey aggregator, N=20, 2011-2018)",
+     "https://scirev.org/journal/phronesis/ (checked directly: 0 reviews submitted, all fields n/a)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "desk_reject_pct",
+     "why": "SciRev page for Phronesis exists but shows 0 submitted reviews and 'n/a' for acceptance rate; no forum or blog post found quoting a desk-reject percentage."
+    },
+    {
+     "field": "acceptance_note",
+     "why": "No source (SciRev, Endoxa, forums) reports an acceptance rate or first-hand narrative of what tips a paper toward acceptance beyond the general survey aggregate; declining to invent one."
+    },
+    {
+     "field": "reviewer_culture (as a narrative, not the numeric data point given)",
+     "why": "No forum thread, Reddit post, or Chinese-language discussion (小木虫/知乎/fabiaoji) describing reviewer tone/culture was found; the field is filled only with the Endoxa numeric aggregate to avoid fabricating a narrative."
+    },
+    {
+     "field": "positioning.accepts_now — exact titles for Vol 70(1) 2025",
+     "why": "brill.com issue page (https://brill.com/view/journals/phro/70/1/phro.70.issue-1.xml) returned HTTP 403 on direct fetch; only author surnames and page ranges were recoverable via search snippet, not the actual titles."
+    },
+    {
+     "field": "ai_policy — journal-specific override",
+     "why": "The Phronesis-specific Instructions for Authors PDF (rev. 2025-11-10) contains no AI-policy section at all; the answer given is Brill's publisher-wide policy, explicitly flagged as such rather than presented as journal-specific."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 0 results specific to Phronesis (only generic forum navigation/meta pages surfaced)",
+    "知乎 zhihu.com — 0 results found for Phronesis submission/review experience in combined and targeted searches",
+    "fabiaoji — 0 results, term did not surface any indexed page about this journal",
+    "Reddit r/AskAcademia (site:reddit.com) — 0 results; search returned only unrelated PMC/arXiv peer-review papers, no actual Reddit threads matched"
+   ],
+   "issn": "0031-8868",
+   "name": "Phronesis: A Journal for Ancient Philosophy",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": "None — journal covers ancient Greek/Roman philosophy, no politically or personally sensitive subject matter encountered in research."
+  },
+  {
+   "issn": "0004-802X",
+   "name": "Augustinus (revista trimestral publicada por los Padres Agustinos Recoletos)",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": "No publicly findable AI-use policy for this journal. It is a small (CIRC rank C), non-indexed-in-citation-databases Spanish theology journal published by the Padres Agustinos Recoletos via the Philosophy Documentation Center (pdcnet.org); its Submission Guidelines page (https://www.pdcnet.org/augustinus/Submission-Guidelines) returned HTTP 403 on fetch attempts and no cached/indexed text mentioning AI, ChatGPT, or generative-AI disclosure was found via search. No parent-publisher (PDC) blanket AI policy page was located either."
+   },
+   "peer_review": {
+    "type": "Described only generically as \"revisión por pares\" (peer review) in the Dialnet journal record; no detail on single/double-blind, editorial board composition of reviewers, or process length is publicly documented.",
+    "source_url": "https://dialnet.unirioja.es/servlet/revista?codigo=6281"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Continues its 1956-founding exclusive focus: articles, article-length reviews, and Spanish translations of significant foreign-language articles, all centered on Augustine of Hippo's life, works, thought, and influence (patristics/theology/philosophy of religion). Recent annual output per Dialnet-derived counts: ~11 items (2025), 22 (2024), 21 (2023), 23 (2022) - stable small quarterly volume.",
+    "framing_required": "Submissions must be framed within Augustinian studies specifically (not general patristics or general theology); journal is in Spanish and edited by Enrique A. Eguiarte Bendímez.",
+    "methods_welcome": [
+     "historical-theological analysis of Augustine's texts",
+     "philosophical/doctrinal commentary on Augustinian thought",
+     "translations into Spanish of previously published foreign-language Augustine scholarship",
+     "book reviews/review articles on Augustinian-studies publications"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://dialnet.unirioja.es/servlet/revista?codigo=6281",
+     "https://www.pdcnet.org/augustinus",
+     "https://miar.ub.edu/issn/0004-802X"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate/leniency/source_url",
+     "why": "No journal-specific or PDC-publisher AI-use/generative-AI policy page found; Submission Guidelines page (pdcnet.org/augustinus/Submission-Guidelines) blocked fetch (403) and no indexed text elsewhere mentions AI/ChatGPT disclosure rules."
+    },
+    {
+     "field": "peer_review.type (single/double-blind detail)",
+     "why": "Dialnet only states generic 'peer review'; no editorial policy page publicly accessible confirms blind type."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint/self-archiving policy found on Dialnet, MIAR, or PDC listing pages; journal predates open-access/preprint norms and appears to have no stated policy."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "Zero SciRev entries for this journal (searched scirev.org directly, no match); no forum posts found."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev data and no forum discussion of desk-reject rates for this journal."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found in any searched source."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum, SciRev, blog) discussing reviewer behavior for this specific journal; journal is too niche/low-volume for community discussion."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org) - searched site:scirev.org for the journal; 0 results, journal not present on platform",
+    "小木虫 muchong.com - not directly queryable via general search; targeted query for '奥古斯丁' + journal/review terms returned only unrelated Chinese academic articles about Augustine's translation thought, 0 relevant forum discussion",
+    "知乎 zhihu - no dedicated query returned zhihu results; general Chinese-language search surfaced no zhihu threads about this journal (0 results)",
+    "fabiaoji - not found in any search result; likely no coverage of this niche Spanish theology journal (0 results)",
+    "Reddit r/AskAcademia - searched 'reddit AskAcademia Augustinus journal review'; 0 relevant threads, only unrelated peer-review-process articles surfaced"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0190-0536",
+   "name": "Philosophical Investigations",
+   "ai_policy": {
+    "gate": "no prior-permission gate — AI use is permitted for support tasks (language/editing, literature search, coding) but must be disclosed after the fact; disclosure is a mandatory checklist item at submission and must appear in the Methods section. AI tools cannot be listed as authors.",
+    "leniency_1_5": 3,
+    "signal_quality": 5,
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/14679205/homepage/forauthors.html (journal-specific 'Disclosing the use of Artificial Intelligence' section + submission checklist row 'Disclosing artificial intelligence use'); general Wiley policy at https://www.wiley.com/en-us/publish/book/resources/ai-guidelines/",
+    "summary": "The journal's own Author Guidelines page has a dedicated section stating: if authors used AIGC tools (ChatGPT, other LLMs) for any portion of the manuscript, use 'must be described transparently and in detail in the Methods section.' This mirrors Wiley's publisher-wide policy: AI cannot be an author; permitted uses are language/grammar polish, structural clarity, idea development, literature-search assistance, and coding support; authors remain fully responsible for content. No pre-submission permission request is required — disclosure is the enforcement mechanism, not gatekeeping."
+   },
+   "peer_review": {
+    "type": "Double-anonymized (author and reviewer identities both hidden); at least two anonymous reviewers plus an Associate/Assistant Editor; papers by editors/board members are routed to unaffiliated editors. Journal also supports Transparent Peer Review (reviewer reports and decision letters published alongside accepted articles, reviewers may choose to reveal identity).",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/14679205/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "Yes. Accepts manuscripts previously posted to preprint servers, and authors may post the submitted version to a preprint server at any time (before or during review). Note: because the journal runs double-anonymized review, the guidelines explicitly warn that posting a preprint may compromise reviewer-side anonymity.",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/14679205/homepage/forauthors.html"
+   },
+   "positioning": {
+    "accepts_now": "Analytic philosophy spanning ethics, epistemology, philosophy of logic/language, and especially Wittgenstein scholarship — the journal is the official organ of the British Wittgenstein Society. July 2026 issue (Vol 49 No 3) contents confirm this: 'Wittgenstein On Moral Certainty' (Eriksen & Christensen); ''Mr. Preacherman, Should We Love Thy Neighbour?': On Moral Understanding and Moral Change in Deep Moral Disagreements' (Manhire & Salskov); 'Is Conventionalism About Logic Viciously Circular?' (Büttner); ''Logic Is Transcendental': Content, Isomorphism and Intentionality in Wittgenstein's Logic of Depiction' (Nota); plus book reviews of works by John Cottingham, Mark Hopwood (Iris Murdoch), Peter Winch (posthumous collection), and an Anscombe-on-Wittgenstein essay collection. Other recent (2025-2026) titles found: 'Moral certainty and the wrongness of killing: A non-propositional view'; 'The problem of free will is child's play'; 'Wittgenstein, normativity and the space of reasons'.",
+    "framing_required": "Purely argumentative/exegetical analytic philosophy — close textual engagement with Wittgenstein or with live debates in ethics/logic/epistemology, written to be rigorous yet accessible to 'the wider educated public' per aims and scope (not narrowly technical/formal-logic-only, not empirical/quantitative). No current special-issue CFP was found as of 2026-07-13 (searched; none located).",
+    "methods_welcome": [
+     "Analytic philosophical argumentation / conceptual analysis",
+     "Close textual and exegetical Wittgenstein scholarship",
+     "Moral philosophy / applied ethics essays",
+     "Philosophy of logic and language",
+     "Critical notices, discussion pieces, and book reviews"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://onlinelibrary.wiley.com/toc/14679205/2026/49/3 (July 2026 TOC, primary evidence)",
+     "https://onlinelibrary.wiley.com/page/journal/14679205/homepage/productinformation.html (aims and scope)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/philosophical-investigations/ — CHECKED BUT MISMATCHED: this SciRev page title reads 'Philosophical Investigations' but its 'About' text describes a different journal (Journal of Philosophical Investigations, University of Tabriz, Iran, est. 2007) — NOT the Wiley/British Wittgenstein Society journal (ISSN 0190-0536). Its numeric stats (88% accepted, 77% immediately rejected, IF 77.00) belong to that other journal and are discarded as not applicable. It also explicitly states 'No reviews have yet been submitted for this journal.'"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched (site-restricted and keyword queries); 0 results specific to this journal, consistent with it being a niche Western analytic-philosophy/Wittgenstein journal with little Chinese-author submission traffic on that forum",
+    "知乎 zhihu.com — searched; 0 relevant results found (general SSCI ethics-journal list posts surfaced but did not mention this journal specifically)",
+    "Reddit r/AskAcademia — searched; 0 results found",
+    "fabiaoji — not separately queryable via available search tools; no results surfaced in general web search for this journal + fabiaoji terms"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no submitted reviews for this journal (0 reviews); the page nominally titled 'Philosophical Investigations' on SciRev actually describes a different, same-named Iranian journal, so even that data is inapplicable. No discussion found on muchong, zhihu, or r/AskAcademia."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No first-hand author account found on SciRev (0 reviews) or any forum searched (muchong, zhihu, Reddit)."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand submission-experience posts found in any cross-language source searched."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete, attributable first-hand source describing reviewer culture was found; per hard rules this is left null rather than inventing a generic narrative."
+    },
+    {
+     "field": "positioning.framing_required (special-issue CFP)",
+     "why": "No current (2025-2026) special-issue call for papers was found for this journal at time of research (2026-07-13); journal history shows special issues occur 'occasionally' but none is currently open per available sources."
+    }
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": "None identified — standard academic analytic-philosophy journal; no evidence of political-leaning controversy or sensitive-topic gatekeeping in sources reviewed."
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 6,
+  "failed_count": 12,
+  "failed_issns": [
+   "0028-6621",
+   "0007-0904",
+   "0270-5664",
+   "0031-806X",
+   "0031-8256",
+   "1355-8250",
+   "0048-3915",
+   "0342-1422",
+   "0925-0166",
+   "0026-1068",
+   "0066-7374",
+   "0020-7047"
+  ],
+  "run_task_id": "w1n0w0q1b"
+ }
+}

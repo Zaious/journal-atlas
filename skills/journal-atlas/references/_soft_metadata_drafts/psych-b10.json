@@ -1,0 +1,560 @@
+{
+ "batch": "psych-b10",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0364-0213",
+   "name": "Cognitive Science",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "summary": "此為 Wiley 出版社通用政策(非本刊專屬頁面,本刊 forauthors.html 未見加碼條款)。AI 不得列為作者,不得被視為能獨立發起原創研究;人類作者需對內容正確性與誠信負全責。若使用生成式 AI 工具(如 ChatGPT)協助寫作,須在 Methods 或 Acknowledgements 段落「透明且詳細」揭露;基礎文字編輯工具(如文法檢查)豁免揭露。作者亦被要求檢查所用 AI 工具的條款是否與出版合約有智慧財產衝突。因為是政策允許使用但要求揭露(非全面禁止,也非完全開放),故評為 3/5(有條件許可)。未找到本刊(Cognitive Science Society/Wiley)針對此政策的期刊專屬加註頁面,故 signal_quality 僅 2。"
+   },
+   "peer_review": {
+    "type": "double-anonymized (雙盲) peer review — 作者需自行匿名化稿件並另附 title page 檔案",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/15516709/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許(鼓勵)投稿前於 preprint 伺服器發布,但作者需注意此舉可能影響雙盲審查的匿名性",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/15516709/homepage/forauthors.html"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [
+     "跨領域認知科學研究(心理學、AI、語言學、哲學、人類學、神經科學等)",
+     "計算建模 (computational modeling)"
+    ],
+    "signal_quality": 1,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Cognitive_Science_(journal)",
+     "https://cognitivesciencesociety.org/submissions/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "首輪審查約 3.0 個月(11.6 週);總處理時間(至有決議稿件)約 4.7 個月",
+    "desk_reject_pct": "30%(SciRev 樣本回報立即退稿未送審)",
+    "acceptance_note": "SciRev 樣本回報接受率約 25%;平均審查輪數 1.7 輪,平均每案 2.7 位審稿人;審稿意見「困難度」評 4.5/5.0(偏嚴格)",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/cognitive-science/ (SciRev, n=5 reviews on file — 樣本數極小,需謹慎解讀)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "positioning.accepts_now / framing_required",
+     "why": "無法在不觸發 Wiley 付費牆的情況下取得本刊近期(2024-2026)實際目錄或具體收錄文章標題清單;WebFetch 對 onlinelibrary.wiley.com 回傳 402 Payment Required,搜尋引擎摘要多混入姊妹刊(WIREs Cognitive Science、Topics in Cognitive Science)之文章,無法確認為本刊(ISSN 0364-0213)專屬,故留空避免誤植。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "跨語言查核(小木蟲 muchong.com、知乎、Reddit r/AskAcademia)均未找到針對本刊(區別於 Trends in Cognitive Sciences 等同名/近名刊物)的第一手審稿文化描述,故留空。"
+    },
+    {
+     "field": "ai_policy journal-specific page",
+     "why": "僅取得 Wiley 出版社通用生成式 AI 政策(2023-09),未能存取本刊 forauthors.html 全文(402 付費牆)確認是否有期刊層級加註,故標記為出版社層級政策,signal_quality 降為 2。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木蟲 muchong.com SCI期刊點評庫:站內搜尋與 site: 搜尋均未找到「COGNITIVE SCIENCE」(區別於 Trends in Cognitive Sciences、Cognitive Psychology 等近名刊)之獨立條目 — 0 results",
+    "知乎 zhihu.com:搜尋僅返回 Trends in Cognitive Sciences、Cognitive Systems Research 等近名期刊之投稿經驗文章,未見本刊(Cognitive Science, ISSN 0364-0213)第一手審稿週期或文化討論 — 0 first-hand results",
+    "Reddit r/AskAcademia:一般與 site:reddit.com 搜尋均未返回本刊相關討論串,結果多為 WIREs Cognitive Science 之百科/指標頁面 — 0 results",
+    "SciRev.org:找到本刊專屬條目,提取到量化數字(n=5 reviews,詳見 experiential),但樣本數極小,解讀需謹慎"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional (disclosure required, not a ban)",
+    "leniency_1_5": 4,
+    "signal_quality": 2,
+    "source_url": "https://www.aclweb.org/adminwiki/images/f/fe/ACL_Publication_Ethics_Policy.pdf",
+    "summary": "No AI/LLM-specific policy text found on the Computational Linguistics journal's own submissions pages (cljournal.org/submissions.html, submissions.cljournal.org) as of 2026-07-13 — confirmed by direct fetch, no mention of AI, ChatGPT, or generative AI. CL is published for the Association for Computational Linguistics (ACL), whose 2024 ACL Policy on Publication Ethics states authors must disclose use of AI writing assistants/LLMs; generative AI cannot be listed as an author. The ACL 2023 conference-specific policy (a precursor, for ACL conferences not necessarily CL journal) explicitly said the AI-use question 'is not meant for automatic desk-rejections' — case-by-case, not gated. Because none of this is confirmed as CL-journal-specific (it is org-level ACL policy of uncertain direct applicability to the journal), leniency/gate are inferred, not journal-confirmed."
+   },
+   "peer_review": {
+    "type": "Single-blind (NOT double-blind) — authors' names/affiliations are on the manuscript and known to editors and reviewers; reviewers' identities are not disclosed to authors.",
+    "source_url": "https://cljournal.org/submissions.html"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Strongly LLM/contemporary-NLP focused as of Vol.51 (Mar 2025) onward: journal statement says it 'strongly encourages research that engages with emerging paradigms, with particular emphasis on contemporary language model technologies (e.g., LLMs)' while still welcoming theoretical/foundational linguistics work. Actual 2025-2026 article titles confirm heavy LLM/interpretability/evaluation focus: e.g. 'Truth or Mirage? Towards End-to-End Factuality Evaluation with LLM-Oasis', 'Are Formal and Functional Linguistic Mechanisms Dissociated in Language Models?', 'Anthropocentric Bias in Language Model Evaluation', 'Rethinking Data Use in Large Language Models', 'Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models', 'Tokenization as Finite-State Transduction', alongside more classical CL topics like grammatical-diversity measurement, temporal-expression normalization, dictionary expansion, minimal-pair acceptability corpora (Dutch BLiMP-NL).",
+    "framing_required": "Two live special-issue CFPs as of 2026-07-13: (1) Ethics in NLP/CL special issue — submission deadline 2026-11-27, scope = 'algorithmically mediated harms' from language technology: bias/fairness, power/conflict-of-interest, multilingual/decolonial concerns, environmental impact, data labor, even 'Luddite/decomputing' perspectives (guest eds. Karën Fort, Margot Mieskes, Zeerak Talat). (2) 'Language Learning, Representation, and Processing in Humans and Machines' special issue (2nd CFP, ACL member portal) — interdisciplinary human+machine language learning framing. Regular submissions do not require special framing beyond standard long/short/survey/position/squib/last-words categories; journal is Diamond Open Access, no publication fees, CC licensing.",
+    "methods_welcome": [
+     "LLM/foundation-model evaluation and interpretability",
+     "computational psycholinguistics / cognitive modeling",
+     "corpus and typological/cross-lingual studies",
+     "formal and theoretical computational linguistics",
+     "surveys and position papers",
+     "ethics/bias/fairness in NLP (special issue)",
+     "human-AI interaction / cooperation studies"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://aclanthology.org/volumes/2026.cl-1/",
+     "https://aclanthology.org/volumes/2025.cl-4/",
+     "https://submissions.cljournal.org/index.php/cljournal/about/submissions",
+     "https://aiweekly.co/alerts/computational-linguistics-journal-opens-ethics-special-issue",
+     "https://www.aclweb.org/portal/content/2nd-call-papers-special-issue-computational-linguistics-language-learning-representation-and"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev (n=1 review only): first round ~6.5 weeks (1.5 months); average 2 review rounds; total handling ~3 months. Extremely low sample size — treat as anecdotal, not representative.",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/computational-linguistics/",
+     "https://muchong.com/bbs/journal.php?view=detail&jid=1981"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 and gate",
+     "why": "No AI/generative-AI/ChatGPT/LLM policy text exists on the journal's own submissions/author-guidelines pages (verified by direct fetch of cljournal.org/submissions.html and submissions.cljournal.org). The leniency/gate given are extrapolated from the org-level ACL Publication Ethics Policy (2024) and the ACL 2023 conference AI-writing policy, whose direct applicability to the CL journal specifically is unconfirmed."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No explicit preprint/arXiv statement found on cljournal.org or submissions.cljournal.org after direct fetch. Field norm in NLP/CL strongly permits arXiv preprinting (papers routinely posted, e.g. one CL-adjacent case study author uploaded their rejected manuscript to arXiv after review), but no first-hand CL-journal-specific policy statement was located, so left null rather than inferred."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev data field populated (rejection rate listed as 'n/a'), no forum thread (muchong, zhihu, Reddit r/AskAcademia) discussing desk-reject rate for this specific journal was found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance/rejection narrative found in any queried source with concrete detail beyond one vague muchong comment ('few publications but each is high quality', 2010) which is too old and non-specific to use as a fact."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev has only 1 review (no aggregate signal); muchong.com page has exactly 2 comments (2010, 2013), both generic praise with zero concrete process detail; zhihu search returned only unrelated ACL2026-conference discussion, no CL-journal-specific thread; Reddit r/AskAcademia search for this journal returned 0 results. No concrete source exists to support any reviewer-culture claim, so left null per hard rule against inventing generic narrative. One tangential arXiv case-study (2407.12026, 'The Pitfalls of Publishing in the Age of LLMs') describes a reviewer submitting an LLM-generated review at 'a prominent journal in natural language processing / computational linguistics' in 2023, but the paper never names the journal explicitly (redacted as '[your journal]'/'[this journal]') and 'computational linguistics' is used as the field name, not confirmed as this specific journal (ISSN 0891-2017) — too ambiguous to attribute as fact to this journal."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com (COMPUTATIONAL LINGUISTICS journal review page, jid=1981): 2 comments found (2010, 2013), both generic positive ratings with zero concrete review-time/desk-reject/reviewer-culture data.",
+    "知乎 zhihu.com: search returned only tangential ACL2026-conference submission-group posts, no thread specifically discussing the Computational Linguistics journal (ISSN 0891-2017) review/acceptance experience — 0 usable results.",
+    "Reddit r/AskAcademia: 0 results found for this specific journal's review time/desk-reject experience.",
+    "fabiaoji: not separately queried — no results surfaced via broader Chinese-language searches that referenced fabiaoji-specific content for this journal."
+   ],
+   "issn": "0891-2017",
+   "name": "Computational Linguistics",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "summary": "Elsevier-wide policy (applies to this journal; no journal-specific AI policy page found): generative AI may be used to help prepare a manuscript prior to submission, with human oversight, and must be disclosed; AI must not be listed as an author and authors remain fully accountable. Generative AI/AI-assisted tools may NOT be used to create or alter images/artwork (e.g., graphical abstracts) except where AI is itself part of the research design/methods. Separately, Elsevier states reviewers and editors are currently not permitted to upload manuscripts into generative AI tools (e.g. ChatGPT) during peer review/evaluation.",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Not confirmed as single- vs double-blind from a primary source in this pass (ScienceDirect Guide for Authors page returned HTTP 403 and could not be fetched directly). Elsevier journals in this field are typically single-anonymized by default unless the journal opts into double-anonymized; this was not verifiable first-hand for this specific journal in this session.",
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": "Yes — preprints (e.g. on a preprint server) do not count as prior publication under Elsevier's sharing policy; the journal also offers a free preprint-posting service via SSRN.",
+    "source_url": "https://www.journals.elsevier.com/consciousness-and-cognition"
+   },
+   "positioning": {
+    "accepts_now": "Empirical articles and theoretical reviews taking a natural-science approach to consciousness, voluntary control, and self (per journal aims/scope). Current (2025) special issue call focuses on veridical vs. non-veridical conscious perception and underlying neural mechanisms/markers, including predictive coding, cognitive penetrability, and phenomenal overflow, and welcomes novel experimental designs distinguishing veridical vs. non-veridical experience.",
+    "framing_required": "For the active special issue, framing around neural mechanisms/markers of conscious perception is required; general submissions should frame contributions within a natural-science (empirical/theoretical) approach to consciousness rather than purely philosophical treatment.",
+    "methods_welcome": [
+     "Empirical/experimental behavioral studies",
+     "Neuroscience/neural-marker studies (e.g., EEG/neuroimaging-adjacent, per special issue framing)",
+     "Theoretical review articles"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.journals.elsevier.com/consciousness-and-cognition/call-for-papers",
+     "https://www.sciencedirect.com/journal/consciousness-and-cognition"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev aggregate (based on only 3 submitted reviews total, small sample): average total handling time ~1.7-1.9 months; average review time (first round) ~1.7-1.9 months (the two SciRev-derived pulls in this session gave slightly inconsistent 1.7/1.9 labeling for handling vs review time, both from the same page — treat as approximate, not precise); average first review round ~10.9 weeks per one query; average 1.7 review rounds; average ~2.0 reports per round.",
+    "desk_reject_pct": null,
+    "acceptance_note": "No acceptance-rate or desk-reject figures found on SciRev, 科研通(ablesci), or ifabiao — those fields showed blank/\"--\" placeholders where user-submitted data would go. One Chinese aggregator note (via search snippet, unverified original source) mentioned the journal has slipped from JCR Tier 1 to Tier 2 in recent years and that editors reportedly give constructive feedback even on rejected manuscripts, but this could not be traced to a specific first-hand post to quote/verify.",
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/consciousness-and-cognition/",
+     "https://scirev.org/reviews/consciousness-and-cognition/",
+     "https://www.ablesci.com/journal/detail?id=Db2ZnD",
+     "https://www.ifabiao.com/sci/10538100/"
+    ],
+    "signal_quality": 2
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com: no dedicated thread located for this journal in this pass (search surfaced only the general submission subforum, not journal-specific posts) — 0 usable results",
+    "知乎 zhihu.com: found one relevant question thread (zhihu.com/question/50893581) asking about journal tier/quartile, but WebFetch returned HTTP 403 and content could not be retrieved directly; a search-snippet paraphrase suggested the journal moved from JCR Tier 1 to Tier 2 and that editors give feedback even on rejections, but this is unverified/second-hand and not quoted as fact",
+    "科研通 ablesci.com: journal page exists but the user-experience fields for review time and acceptance rate were explicitly blank (no submitted data) — 0 results",
+    "ifabiao.com (Chinese SCI aggregator, used in place of/alongside fabiaoji): journal page exists but '平均审稿速度' (avg review speed) field showed '--' i.e. no data — 0 results",
+    "Reddit r/AskAcademia: search did not surface any thread specifically discussing this journal — 0 results"
+   ],
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "ScienceDirect Guide for Authors page returned HTTP 403 Forbidden when fetched directly in this session; no other primary source located confirming single- vs double-anonymized review for this specific journal."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev, ablesci (科研通), and ifabiao all show this field as blank/unavailable — no first-hand submitter data exists for this journal on any checked platform."
+    },
+    {
+     "field": "experiential.acceptance_note (quantitative rate)",
+     "why": "No acceptance-rate figure found on SciRev or Chinese aggregators; only a secondhand, unverifiable search-snippet claim about JCR tier decline and editor feedback style, which was not traced to an original quotable post so it is reported only as a caveat, not as fact."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum post (小木虫, zhihu, ablesci, or Reddit) describing reviewer tone/culture could be retrieved/verified in this session; the SciRev sample is only 3 reviews and contains no reviewer-culture commentary beyond one comment about slow final editorial decisions."
+    },
+    {
+     "field": "ai_policy.gate exact wording / journal-specific page",
+     "why": "No Consciousness and Cognition-specific AI policy page was found; the policy cited is Elsevier's general/publisher-wide generative AI policy, which the journal is presumed to follow but this was not confirmed on a journal-specific page."
+    }
+   ],
+   "sensitive_topics_note": "None of the researched fields concern political leaning, health, or other sensitive personal-claim territory; no such claims were made about this journal.",
+   "issn": "1053-8100",
+   "name": "Consciousness and Cognition",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1380-3395",
+   "name": "Journal of Clinical and Experimental Neuropsychology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://newsroom.taylorandfrancisgroup.com/expanded-guidance-on-ai-application-for-authors-editors-and-reviewers/",
+    "summary": "This is the PUBLISHER-WIDE Taylor & Francis policy (dated 2024-06-12), not a journal-specific page for JCEN (JCEN has no separate AI policy page found; its own 'Instructions for Authors' page on tandfonline.com/journals/ncen20 returned HTTP 403 to automated fetch, so journal-level reproduction could not be independently confirmed). Per T&F: generative AI is permitted for idea generation, coding, language improvement, and research dissemination; AI cannot be credited as author; authors must disclose/acknowledge AI use; AI use that risks inaccuracy, bias, IP violation, or breaches of confidentiality is prohibited; editors/reviewers barred from using AI in ways that undermine peer-review confidentiality/quality. No explicit statement found on AI-generated images/figures. Scored 3/5: broadly permissive with mandatory disclosure gate, not a ban, not fully open."
+   },
+   "peer_review": {
+    "type": "Single anonymized (single-blind) peer review, editor-mediated initial appraisal before referee assignment",
+    "source_url": "https://www.tandfonline.com/journals/ncen20/about-this-journal"
+   },
+   "preprint": {
+    "allowed": "Yes (publisher-wide T&F policy, not journal-specific confirmation). Authors may post the Author's Original Manuscript to a non-commercial preprint server before/during submission without it counting as prior publication. Green OA: Accepted Manuscript may be deposited to an institutional/subject repository after a 12-month embargo (JCEN falls under T&F's 'behavioral science' journal category) unless zero-embargo green OA is separately purchased.",
+    "source_url": "https://authorservices.taylorandfrancis.com/research-impact/sharing-versions-of-journal-articles/"
+   },
+   "positioning": {
+    "accepts_now": "Empirical clinical/experimental neuropsychology research: brain-behavior relationships, cognitive aging, neurodegenerative disease (Alzheimer's, Parkinson's), performance/symptom validity testing, training/education in neuropsychology, biomarkers, and psychometrics. Recent 2025-2026 PubMed-listed articles include: cognitive outcomes in former college athletes, childhood disadvantage and late-life cognition (Swedish longitudinal cohort), facial emotion recognition in social anxiety disorder, longitudinal stability of specific learning disability diagnoses, performance validity test failure rates in long-COVID cognitive complaints, a systematic review of the gut-brain axis in Alzheimer's/Parkinson's, sex-specific reproductive history and cognitive aging, and an ethics discussion of blood-based Alzheimer's biomarkers. A 2025 special issue covered Society for Clinical Neuropsychology / APA 2024 convention programming, with several papers on neuropsychology training/education (doctoral coursework syllabi, digital-platform training equity, trainee survey).",
+    "framing_required": "Aims & scope statement (tandfonline about-this-journal page) explicitly frames the journal around brain-behavior relationships and neuropsychological manifestations of brain disease/dysfunction; theoretical/methodological papers, critical reviews, and theoretically-relevant case studies are welcomed but original empirical research is the stated primary emphasis.",
+    "methods_welcome": [
+     "original empirical brain-behavior studies",
+     "neuropsychological test validation/normative data",
+     "performance and symptom validity testing studies",
+     "systematic reviews",
+     "longitudinal cohort analyses",
+     "biomarker studies",
+     "theoretical/methodological papers",
+     "theoretically-relevant case studies",
+     "training/education research in neuropsychology"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.tandfonline.com/journals/ncen20/about-this-journal",
+     "https://pubmed.ncbi.nlm.nih.gov/?term=%22J+Clin+Exp+Neuropsychol%22&sort=date"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/journal-of-clinical-and-experimental-neuropsychology/ (0 reviews submitted, all fields n/a)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.gate / journal-specific confirmation",
+     "why": "Could not confirm on tandfonline.com/journals/ncen20 (author guidelines page returned HTTP 403 to automated fetch); recorded is the publisher-wide T&F policy only, not verified as reproduced verbatim on JCEN's own instructions-for-authors page."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for this journal shows 0 submitted reviews and 'n/a' for handling time / acceptance % / desk-reject %. A third-party aggregator claimed '43 days review speed, 36% acceptance rate' but this is a secondary metrics site of unclear methodology/provenance, not a first-hand author report or the publisher's own stat, so it was excluded per the facts-only/no-filler rule."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No first-hand source; SciRev shows 'n/a', no forum discussion found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found in any searched source."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero results on 小木虫 (muchong.com), zhihu, fabiaoji, and Reddit r/AskAcademia for this specific journal name in both English and Chinese searches; no subjective claim can be sourced."
+    },
+    {
+     "field": "positioning.accepts_now (active special issue CFP)",
+     "why": "No active 2025-2026 special-issue CFP with a public deadline was located; only a past special issue tied to the 2024 APA/SCN convention was found (already reflected above), and a Facebook mention of a 'mentoring in neuropsychology' special issue could not be verified with dates/details."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 (muchong.com) via site:muchong.com search — 0 relevant results (only unrelated NCBI/arXiv items returned)",
+    "知乎 (zhihu) — no zhihu hits surfaced in general web searches for this journal name",
+    "fabiaoji — no direct fabiaoji hits surfaced in general web searches",
+    "Reddit r/AskAcademia — site:reddit.com search for the journal's full name returned 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0894-4105",
+   "name": "Neuropsychology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai",
+    "summary": "APA-wide policy (applies to Neuropsychology, no journal-specific override found): generative AI may be used to help draft manuscript content (e.g., literature summaries, outlines) but its use must be disclosed (typically in Method/Introduction or an author note) including prompts/tools used; AI cannot be listed as an author; authors remain fully responsible for verifying AI-generated content/citations; peer reviewers are barred from feeding manuscripts into AI tools (confidentiality). No Neuropsychology-specific AI clause found separate from the APA-wide policy."
+   },
+   "peer_review": {
+    "type": "masked (single-anonymous) review",
+    "source_url": "https://www.apa.org/pubs/journals/neu/submit"
+   },
+   "preprint": {
+    "allowed": "Yes - prior posting of preprints online is permitted; concurrent submission to another venue is prohibited",
+    "source_url": "https://www.apa.org/pubs/journals/neu/submit"
+   },
+   "positioning": {
+    "accepts_now": "Journal scope (per official aims/scope and submission-guidelines pages, not corroborated against actual 2024-2026 published article titles): original empirical research on brain-cognition/emotion/behavior relations across the lifespan and in healthy and disordered populations; systematic reviews and meta-analyses; theoretical articles; direct replications; brief reports; case studies (only if they raise questions beyond the single case). Journal explicitly runs an ongoing 'Call for papers: Contemporary reviews' track.",
+    "framing_required": "Journal Article Reporting Standards for Race, Ethnicity, and Culture (JARS-REC) compliance required; submissions must include detailed participant demographic description (age, sex, gender, ethnicity, SES, clinical diagnoses), justification of demographic choices, discussion of generalizability, and reflexivity statements addressing potential harm to marginalized groups.",
+    "methods_welcome": [
+     "quantitative",
+     "qualitative",
+     "mixed-methods",
+     "community-based participatory research (CBPR)",
+     "cross-cultural/interdisciplinary neuropsychological research"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.apa.org/pubs/journals/neu/",
+     "https://www.apa.org/pubs/journals/neu/submit"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "First review round ~2.6 months (10.6 weeks); total handling time to accept ~5.6 months (n=1 submitted review on SciRev)",
+    "desk_reject_pct": null,
+    "acceptance_note": "Only one first-hand review record exists on SciRev: authors received 2 reviewer reports (one more favorable than the other, both recommending resubmission/revision), rated review-report quality 5/5 and comment difficulty 3/5, overall handling rated 3/5 ('excellent handling by the editor and reviewers'). Manuscript was ultimately accepted after 2 rounds.",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/neuropsychology/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev lists desk-rejection decision time as n/a for this journal; no forum discussion (Chinese or English) surfaced any desk-reject percentage."
+    },
+    {
+     "field": "positioning.accepts_now (article-level corroboration)",
+     "why": "Only official aims/scope and submission-guidelines pages were available; no 2024-2026 published article titles or table-of-contents were pulled to corroborate actual accepted topics, and no current non-'Contemporary reviews' special-issue CFP was found."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Only a single SciRev review report exists for this journal (n=1); one anecdote is insufficient to characterize a reviewer culture. No muchong.com, zhihu, fabiaoji, or r/AskAcademia threads specific to this journal were found (see cross_language_checked)."
+    },
+    {
+     "field": "experiential.acceptance rate (numeric)",
+     "why": "APA does not publish per-journal acceptance rates on its public pages; the 2019 APA Summary Report of Journal Operations PDF was fetched but its statistical tables are embedded in a non-extractable format, so no verified figure could be sourced."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫) — targeted site: search for 'Neuropsychology APA 审稿' returned 0 relevant results (only an unrelated Neurocomputing journal-review page)",
+    "zhihu.com (知乎) — general search for APA/Neuropsychology submission discussion returned only meta-pages about journal-review sites in general, 0 journal-specific results",
+    "fabiaoji.com (发表记) — journal-search page for 'Neuropsychology' returned HTTP 404 / journal not listed on the platform",
+    "reddit.com r/AskAcademia — search for Neuropsychology APA review time / desk reject returned 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://academic.oup.com/nc/pages/author-guidelines",
+    "summary": "期刊層級(非泛用OUP頁面,OUP通用AI政策頁面WebFetch兩次均無法取得實質內容,可能受JS渲染阻擋)。Author Guidelines明確要求:若使用AI輔助工具需在投稿信與正文Methods或Acknowledgements中揭露;AI工具不得列為作者,期刊會篩查作者列表中的AI具名情形;依循COPE「Authorship and AI」立場聲明處理AI相關作者資格爭議。未見「完全禁止」或「完全開放不需揭露」的字眼,屬於「允許但需揭露」的中等寬容度,故列3分。未找到journal-specific的獨立AI政策頁(即非套用OUP集團模板的證據),故信心非滿分。"
+   },
+   "peer_review": {
+    "type": "Reviewer-anonymized peer review (single-blind: reviewer身分對作者匿名,作者身分對審稿人公開)。初審editorial screening可能fast-reject,通過者通常送兩位獨立審稿人。",
+    "source_url": "https://academic.oup.com/nc/pages/journal_policies"
+   },
+   "preprint": {
+    "allowed": "允許。期刊政策明確: 作者保留將Author's Original Version(preprint)透過各管道公開的權利,且此舉不妨礙投稿本刊;若接受發表,作者須更新preprint狀態並加上正式發表DOI。細節見期刊Author self-archiving policy。",
+    "source_url": "https://academic.oup.com/nc/pages/author-guidelines"
+   },
+   "positioning": {
+    "accepts_now": "目前(2026)刊出文章涵蓋:催眠意識的神經與體驗證據、內隱/外顯序列學習的非語言歷程分離、VR誘發的自我超越自主神經指標、預測編碼vs表徵理論對視覺皮層階層的知覺組織解釋、人機'之間性'的現象學取徑(機器意識)。顯示該刊同時歡迎實證神經科學研究與理論/哲學取徑論文,並涵蓋機器/人工意識主題。",
+    "framing_required": "投稿不需直接處理'意識的生物學基礎'本身,但須清楚說明與此主題的相關性(依About頁面:'need not directly address the biological basis of consciousness so long as the relevance to this topic is clear')。理論性/哲學性投稿需與神經科學/認知科學的關聯有清楚論證。",
+    "methods_welcome": [
+     "實證研究(empirical studies)",
+     "方法學論文(methodological contributions)",
+     "理論性論文(theoretical work)",
+     "哲學分析(philosophical analyses)",
+     "Registered Reports(預註冊報告,期刊主動推廣)",
+     "Review Articles",
+     "Brief Perspectives/Communications",
+     "Spotlight commentaries"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://academic.oup.com/nc/pages/About",
+     "https://academic.oup.com/nc/pages/call-for-papers-neuroscience-of-consciousness",
+     "https://academic.oup.com/nc/article/2026/1/niag019/8684841",
+     "https://academic.oup.com/nc/article/2026/1/niag021/8703850",
+     "https://academic.oup.com/nc/article/2026/1/niag009/8660406",
+     "https://academic.oup.com/nc/article/2026/1/niag025/8707620"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "兩個互相衝突的數字並存,均予記錄而非取捨: (1) 期刊官方Journal Policies頁面自陳'average of 6 weeks to first decision'(≈1.4個月); (2) 多個中國二手學術資料聚合站(科研通ablesci、發表云fabiao、好投稿haotougao,可能同源於單一資料庫)一致給出'19週'(≈4.4個月)的平均審稿週期。SciRev(西方眾包平台)上該刊'目前尚無審稿人提交過評論'(0 reviews),故此數字無法交叉驗證,僅供參考,不採信任一方為定論。",
+    "desk_reject_pct": null,
+    "acceptance_note": "無公開可信的接受率數字。fabiao頁面有一句籠統敘述稱審稿週期長是為了讓作者'refine and optimize'研究,但屬於行銷語氣的平台文案,非一手作者證言,不採信為'審稿文化'描述。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://www.scirev.org/journal/neuroscience-of-consciousness/",
+     "https://www.ablesci.com/journal/detail?id=r8azqp",
+     "https://www.fabiao.com.cn/sci/20572107/42.html",
+     "https://academic.oup.com/nc/pages/journal_policies"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev該刊頁面0筆審稿人評論,無小木虫/知乎/Reddit(r/AskAcademia)第一手投稿經驗貼文可查,查無數字。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Reddit r/AskAcademia以'Neuroscience of Consciousness' site:reddit.com搜尋0結果;知乎搜尋僅命中意識神經科學的科普/理論翻譯文章,無投稿經驗或審稿人風格描述;小木虫未見專門討論串(僅被聚合站引用審稿週期數字,無質化評論)。無任何具體來源可支持審稿人文化/傾向的描述,故留空,不編造。"
+    },
+    {
+     "field": "experiential.acceptance_note (具體接受率數字)",
+     "why": "OUP期刊政策頁與SciRev均未提供接受率;無first-hand投稿人分享的接受率數據。"
+    },
+    {
+     "field": "ai_policy.gate 是否'journal-specific'而非沿用OUP集團模板",
+     "why": "無法確認author-guidelines頁面的AI揭露規則是NCON編輯部自訂,或是OUP旗下所有期刊共用的樣板文字;WebFetch兩次嘗試讀取OUP集團層級'Author use of Artificial Intelligence'政策頁均因頁面為JS渲染的導覽殼層而無法取得實質內容,故無法比對兩者是否相同,標記signal_quality降級。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 未直接命中小木虫站內討論串,搜尋結果多轉向維普/学术之家等資料庫聚合頁,顯示無明顯小木虫熱議串",
+    "科研通 ablesci.com: 命中該刊頁面,給出'19週'審稿週期使用者分享數據,無質化投稿人評論",
+    "好投稿 haotougao.com: 命中'拒稿後能否轉刊'類SEO頁面,無實質一手投稿經驗",
+    "發表云 fabiao.com.cn: 命中並確認19週審稿週期(與ablesci一致,疑似同源聚合資料庫)",
+    "知乎 zhihu.com: 0筆與本刊投稿/審稿相關的第一手經驗文章,僅命中意識理論科普翻譯文章(與投稿經驗無關)",
+    "Reddit r/AskAcademia: 站內搜尋(site:reddit.com)0結果,無討論串"
+   ],
+   "issn": "2057-2107",
+   "name": "Neuroscience of Consciousness",
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1364-6613",
+   "name": "Trends in Cognitive Sciences",
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "此為 Elsevier 出版社通用 AI 政策(適用於 Trends in Cognitive Sciences,未見期刊專屬版本)。允許作者用生成式 AI 輔助語言潤飾、文獻整理、可讀性改善,但不得直接產出正文而未經實質修改,不得用 AI 生成/修改圖像(研究方法論紀錄除外),AI 不得列名作者。投稿時須揭露使用的工具名稱與用途(聲明置於正文末、參考文獻前)。基礎文法/拼字檢查免揭露。TiCS 本身另有一篇 2024 年發表的評論文章'Towards an AI policy framework in scholarly publishing'(cell.com/trends/cognitive-sciences/abstract/S1364-6613(23)00288-7)討論 AI 政策框架,但那是內容文章而非期刊自身投稿規範,故不採用其文字作為政策依據。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": "https://www.cell.com/trends/cognitive-sciences/home"
+   },
+   "preprint": {
+    "allowed": "允許引用/存在 preprint(如 bioRxiv/PsyArXiv),期刊作者須知提及 posted preprint 可列入參考文獻(需附 DOI),但不得作為文章重大論點的唯一支持。未找到明確聲明『投稿前是否可先掛 preprint』的專屬條文(僅間接推論符合 Elsevier 一般綠色 OA 慣例)。",
+    "source_url": "https://www.cell.com/trends/cognitive-sciences/authors"
+   },
+   "positioning": {
+    "accepts_now": "TiCS 是月刊回顧型期刊(review journal),核心稿件『多為編輯邀稿』(约稿),涵蓋認知科學跨學科主題:心理學、神經科學、語言學、哲學、AI、電腦科學。",
+    "framing_required": "非邀稿的作者建議先送 presubmission inquiry / proposal 到 tics@cell.com,而非直接投全文;不接受包含全新、未發表原始數據(primary data)的提案 — 該類研究應投別的期刊,TiCS 只發表 Review/Opinion/Letters/Science & Society/Spotlights/Forum 等綜述型文章。",
+    "methods_welcome": [
+     "Review articles(邀稿為主)",
+     "Opinion articles",
+     "Letters(針對近期文章的回應)",
+     "Science & Society articles",
+     "Spotlights",
+     "Forum pieces"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.cell.com/trends/cognitive-sciences/authors",
+     "https://www.cell.com/trends/cognitive-sciences/presubmission",
+     "https://zhuanlan.zhihu.com/p/572652434"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "第一輪審稿約4.6週(SciRev,僅2筆評論,樣本極小);小木虫/LetPub/科研通(ablesci)使用者回報『較慢,6-12週』,多輪修訂常見。SciRev另列『投稿到接受』中位數6-10個月、每輪修訂再加6-10週,但此為SciRev網站摘要陳述,非逐筆可驗證數據,且僅2則評論,可信度低。",
+    "desk_reject_pct": null,
+    "acceptance_note": "多筆中文來源(科研通/LetPub/小木虫)一致指出『多是約稿』,即多數正式發表文章來自編輯主動邀稿而非公開自由投稿,故傳統『接受率』統計對此期刊意義有限;未找到量化的桌拒(desk-reject)百分比。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/trends-in-cognitive-sciences/",
+     "https://www.ablesci.com/journal/detail?id=p3GANp",
+     "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=7918",
+     "https://zhuanlan.zhihu.com/p/572652434"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "無法確認是單盲或雙盲;cell.com/trends/cognitive-sciences/authors 頁面WebFetch回傳403無法直接讀取原文審稿類型聲明,WebSearch摘要僅提及『stringent peer review』字樣,未指明盲審類型,不足以下定論"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "所有中文/英文來源(科研通、LetPub、知乎、Reddit)均未提供具體審稿人態度/文化的第一手敘述,僅有審稿週期數字,故不編造審稿文化描述"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev僅2筆評論且未列出桌拒率;中文論壇來源(科研通/LetPub/知乎)均未提及桌拒百分比"
+    },
+    {
+     "field": "preprint.allowed (投稿前掛preprint是否被接受)",
+     "why": "cell.com/trends/cognitive-sciences/authors 原頁403無法直接讀取完整preprint政策條文,僅WebSearch摘要取得『preprint可作參考文獻』片段,未取得『投稿前掛preprint是否影響審稿資格』的明確陳述"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 未直接搜到小木虫論壇原生討論串(搜尋結果導向科研通/LetPub/知乎等其他中文平台,視為同層級中文社群來源替代)",
+    "科研通 ablesci.com — 有結果:審稿速度『較慢,6-12週』、『多是約稿』",
+    "LetPub — 有結果:速度評分7.0/10,綜合評分9.3/10,審稿週期6-12週,聲譽10.0",
+    "知乎 zhihu — 有結果(zhuanlan.zhihu.com/p/572652434):期刊介紹+審稿速度6-12週+多為邀稿,無具體審稿人風格描述",
+    "Reddit r/AskAcademia — 0 results,未找到任何相關討論串"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 7,
+  "failed_count": 11,
+  "failed_issns": [
+   "1615-5289",
+   "0959-3543",
+   "0010-0285",
+   "1385-4046",
+   "1047-3211",
+   "1749-5016",
+   "0887-6177",
+   "0096-3445",
+   "0898-929X",
+   "2307-387X",
+   "0190-2725"
+  ],
+  "run_task_id": "w2043p2da"
+ }
+}

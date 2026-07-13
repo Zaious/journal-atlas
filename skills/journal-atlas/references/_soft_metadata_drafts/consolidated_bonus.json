@@ -1,0 +1,86 @@
+{
+ "domain": "bonus",
+ "count": 1,
+ "entries": [
+  {
+   "issn": "1389-4978",
+   "name": "Journal of Happiness Studies",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 4,
+    "signal_quality": 4,
+    "source_url": "https://www.springernature.com/gp/editorial-policies/ai",
+    "summary": "適用 Springer Nature 全社標準 AI 政策(非本刊專屬條文):LLM 不得列為作者;若在研究中使用 LLM 需於 Methods(或適當替代段落)載明;純屬『AI 輔助文字潤稿』(改善可讀性/文法/拼字)免申報;AI 生成圖像不得刊用;審稿人不得將稿件上傳至生成式 AI 工具;對蓄意且不透明濫用採零容忍。使用被允許但以『揭露/文件化』為條件,故 gate=conditional、leniency=4。"
+   },
+   "peer_review": {
+    "type": "作者對審稿人匿名(至少雙審稿人);投稿指南載明『作者於同儕評閱全程對審稿人維持匿名』且作者須自行去識別化稿件,屬 author-anonymized(雙盲/單盲偏雙盲)。每篇原始研究至少 2 位審稿人。",
+    "source_url": "https://link.springer.com/journal/10902/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許(寬鬆)。Springer Nature 政策:預印本可於同儕評閱過程任何時點張貼,不視為先前發表、不影響送審;投稿時須揭露 DOI 與授權條款。可存放於 arXiv、bioRxiv、RePEc 等公認伺服器。",
+    "source_url": "https://www.springernature.com/gp/open-science/policies/journal-policies"
+   },
+   "positioning": {
+    "accepts_now": "福祉(well-being)全領域理論與應用研究,涵蓋 hedonic(享樂)與 eudaimonic(實現)雙觀點;幸福/福祉各面向之概念化、操作化與測量;以及與之交互的個人、社經、文化因素(作為決定因素或結果)。跨學科:心理學、經濟學(幸福經濟學/勞動經濟學)、社會學、跨文化研究。近期文章主題含:抗議性投票與主觀幸福感、單親與幸福、世代間社會連結差異、亞洲福祉、全球南方福祉。",
+    "framing_required": "英文寫作要求嚴格;偏好清楚的測量/操作化與概念嚴謹度;原始研究或對原始研究之二次分析皆收。",
+    "methods_welcome": [
+     "量化實證(含對既有資料之二次分析)",
+     "心理計量/測量與量表研究",
+     "跨文化與跨國比較",
+     "計量經濟/幸福經濟學取向",
+     "理論與概念性論文"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "aims&scope: https://link.springer.com/journal/10902/aims-and-scope",
+     "special issue CFP『Well-Being and Happiness in the Global South』: https://link.springer.com/collections/cdgecddghj",
+     "Editorial『Well-being in Asia』: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12365984/",
+     "volumes/issues 近期文章: https://link.springer.com/journal/10902/volumes-and-issues"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "6.8(第一輪審稿平均);至接受總處理時間 11.6 個月",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 頁面接受率/拒稿率標示為 n/a(編輯未提供);LetPub 有 5 條投稿經驗但內文未能擷取,僅得期刊指標。無第一手接受率數字。",
+    "reviewer_culture": "審稿難度評分 3.8/5.0(偏難)、審稿報告品質 3.1/5.0、整體處理評分 3.4/5.0(SciRev,9 則評論)。中文論壇一致反映:送審前等待期偏長、進入審查後反而快;對英文寫作/文法/技術細節要求嚴格。小木虫實例:2/24 投稿→4/22 分派審稿人→6/26 開審→6/28 審畢→7/3 編輯→7/6 拒(作者評:『審稿前面周期太長了,給了審稿人之後反而很快』)。另一經濟學稿件:約 15 個月內 4 輪修改(2020/02–2021/05),對寫作與文法把關嚴。",
+    "signal_quality": 4,
+    "sources": [
+     "SciRev(9 則評論,數值:6.8 月首輪/11.6 月接受/31 天即拒/1.9 輪/2.4 份報告/難度3.8/品質3.1/整體3.4): https://scirev.org/journal/journal-of-happiness-studies/",
+     "小木虫 muchong(單筆完整時間軸+『送審前周期太長』評語): https://muchong.com/f-125-1",
+     "LetPub(5 條投稿經驗存在但內文未擷取,指標數據): http://letpub.com.cn/index.php?journalid=11504&page=journalapp&view=detail",
+     "中文彙整(經濟學稿 4 輪/15 月、寫作嚴): https://sci.justscience.cn/details.html?sci=1&id=2654"
+    ]
+   },
+   "peer_review_note": "double-blind-leaning",
+   "blanks": [
+    {
+     "field": "ai_policy.journal_specific",
+     "why": "未見本刊專屬 AI 條文;採 Springer Nature 全社標準政策,故標註為 publisher-wide 而非 journal-specific"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 接受率/拒稿率欄位標示 n/a;無論壇提供百分比,僅有個別即拒案例"
+    },
+    {
+     "field": "experiential.acceptance_note(第一手接受率)",
+     "why": "SciRev n/a;LetPub 5 條經驗內文無法擷取;無公開第一手接受率數字"
+    },
+    {
+     "field": "experiential.reddit",
+     "why": "r/AskAcademia 針對本刊 0 則相關討論"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com:命中 1 筆完整審稿時間軸(2/24投稿→7/6拒)+評語『送審前周期太長,進審後很快』",
+    "fabiaoji/LetPub:存在 5 條投稿經驗但內文未能擷取,僅取得 IF 3.68 / CiteScore 7.10 / 心理學2區 Q1 等指標",
+    "知乎 zhihu:無直接主題串;經由中文彙整站得經濟學稿件 4 輪/15 月與『寫作把關嚴』之敘述",
+    "Reddit r/AskAcademia:針對本刊 0 則相關討論(0 results)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 4,
+   "domains": [
+    "bonus"
+   ]
+  }
+ ]
+}

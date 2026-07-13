@@ -1,0 +1,1153 @@
+{
+ "batch": "retry-b2",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0144-6665",
+   "name": "British Journal of Social Psychology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "summary": "找不到 BJSP 專屬 AI 政策頁（Wiley journal author-guidelines 頁面回傳 402 付費牆，WebFetch 無法讀取），故以 Wiley 出版社層級的通用 Generative AI Policy 代替，並標註為 publisher-level 而非期刊專屬。Wiley 政策：AI/LLM 不得列為作者或共同作者；若使用生成式 AI 協助撰寫手稿內容，須在 Methods 或 Acknowledgements 揭露使用的工具與方式；純文法/拼字校對工具不在揭露範圍內；審稿人與編輯被禁止將手稿全文或部分上傳至 ChatGPT 等生成式 AI 工具（保密政策）。因為允許有條件使用但要求揭露，且不完全禁止，評為 leniency 3（中間值）；gate=conditional（需揭露，非需事先徵求授權）。"
+   },
+   "peer_review": {
+    "type": "double-anonymous (double-blind)",
+    "source_url": "https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448309/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許（Wiley 出版社層級通用政策）：可將手稿事先發布於非營利 preprint 伺服器如 PsyArXiv、SocArXiv、arXiv、bioRxiv 等，投稿前無需撤除；建議之後補上正式發表連結。未能取得 BJSP 期刊專屬頁面（同樣被 402 付費牆擋下）以確認是否覆寫或限縮此通用政策，故視為適用出版社通用規則。",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "近期(2025) call for papers 顯示編輯部目前積極徵稿主題包括：(1) 特刊「Contact seeking, contact avoidance and the enduring challenge of segregation」(接觸尋求/迴避與族群隔離)，摘要截止2025-03-31、全文截止2025-09-30；(2) BPS 跨刊特輯「Psychological Perspectives on Climate Adaptation and Resilience」(氣候調適與韌性的心理學視角)，摘要截止2025-12-15、全文截止2026-04-30；(3) 長期性的 Open Science / Registered Reports 徵稿（含質性研究之預註冊）。期刊定位為國際性社會心理學基礎與應用研究，涵蓋 social cognition, attitudes, group processes, social influence, intergroup relations, self and identity, nonverbal communication, affect/emotion, language and discourse 等主題，同時接受量化與質性方法。",
+    "framing_required": "須明確定位於「社會心理學」理論或方法創新，且對政策/社會脈絡議題有貢獻（scope 聲明強調 informing psychological perspectives of social-contextual challenges）；投稿採雙盲審查，正文不得含可識別作者身份之資訊；若投 Registered Reports 賽道需依該賽道之特定準則(Stage 1/2)。",
+    "methods_welcome": [
+     "quantitative",
+     "qualitative",
+     "in-depth qualitative single-study designs（期刊明確聲明可接受）",
+     "Registered Reports（含 Stage 1/2 預註冊格式）"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448309/call-for-papers/si-2025-000044",
+     "https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448309/homepage/callforpapersopenscience",
+     "https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448309/homepage/registeredreportsguidelines.htm",
+     "https://bpspsychub.onlinelibrary.wiley.com/journal/20448309"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "資料互相矛盾，需並陳：(a) SciRev（僅3則評論，樣本極小）：第一輪審稿平均2.8個月，總審稿至決定平均4.6個月，最近一筆個案為11週(約2.5個月)並獲接受；桌拒(desk reject)平均2天。(b) 中國學術資訊聚合站(letpub/wdcsci等二手轉述，非一手評論)聲稱：初審約6天、審稿約44天、投稿到接受約54天(約1.8個月)——此數字與SciRev差距極大，疑似統計口徑不同或非真人一手經驗，可信度存疑，僅供參考不採信為主要數字。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev樣本中唯一有結果紀錄的個案為「11週後獲接受」，整體手稿處理滿意度評分4.0/5.0(很好)，但樣本數僅3則，不足以推論母體接受率；letpub頁面「同領域作者分享投稿經驗」欄位實際顯示0筆，該站對BJSP並無真人第一手經驗分享。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/british-journal-of-social-psychology/",
+     "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11592&xuanxiangk_id=2"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific)",
+     "why": "BJSP專屬Author Guidelines頁面(bpspsychub.onlinelibrary.wiley.com與onlinelibrary.wiley.com兩個網址)皆回傳HTTP 402付費牆，WebFetch無法讀取內文，僅能靠WebSearch摘要片段推測期刊採用Wiley出版社通用政策，未能確認是否有期刊層級的額外限制或放寬，故ai_policy.source_url標記為publisher-level而非期刊專屬頁。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "小木虫muchong.com未搜尋到針對BJSP的具體討論串；知乎搜尋僅回傳期刊基本資訊網站，無真人審稿文化描述；Reddit r/AskAcademia搜尋無相關結果；SciRev僅3筆評論且未含審稿人態度的具體敘述文字（僅有評分數字），故留白，不編造審稿人文化敘事。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev頁面未提供百分比形式的桌拒率統計（僅提供「平均桌拒時間2天」，非「桌拒比例」）；letpub的「平均录用比例」欄位標示為無數據，故留白。"
+    },
+    {
+     "field": "experiential.acceptance_note (quantitative rate)",
+     "why": "無公開一手來源提供接受率百分比；僅有質化滿意度評分與單一個案結果，不足以推論具體接受率數字，故不填入具體百分比。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org) — 找到3則評論：first round 2.8個月、total 4.6個月、桌拒2天、最新個案11週獲接受",
+    "小木虫 muchong.com — 搜尋「British Journal of Social Psychology 小木虫 投稿 审稿」未命中該論壇任何具體討論串，僅命中其他中文期刊資訊聚合站(xueshu.com, tougaozixun.com, sfabiao.com等)，muchong.com本身僅出現其論壇分區首頁連結，實質0相關結果",
+    "知乎 zhihu — 搜尋未命中任何知乎頁面/回答，0 results",
+    "letpub.com.cn — 命中期刊資訊頁，但「同領域作者分享投稿經驗」欄位明確顯示0條，即該站雖收錄此期刊但無真人分享",
+    "fabiaoji/wdcsci/fabiao.com.cn等中國投稿諮詢站 — 命中，但內容多為期刊基本資料(影響因子、分區)轉述，非一手審稿經驗，且部分審稿週期數字(6天初審/44天審稿/54天到接受)與SciRev一手數據矛盾，未採信為可靠一手經驗",
+    "Reddit r/AskAcademia — 搜尋「British Journal of Social Psychology reddit AskAcademia review」0直接命中，僅回傳期刊資訊站"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 2,
+    "gate": "conditional",
+    "summary": "Annual Reviews (publisher-wide, applies to all journals incl. Annual Review of Psychology): generative AI 'should not replace expert authors in initial generation of the article outline/précis and first draft (including text and figures) but can be used to query completeness of content and to improve the readability of text.' Invited authors are told to check with their Annual Reviews Production Editor on AI use in manuscript creation. This is a publisher-level policy, not confirmed as journal-specific to Annual Review of Psychology.",
+    "source_url": "https://www.annualreviews.org/page/authors/editorial-policies",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Editorial-committee solicited review (not open submission/external double-blind). Manuscripts are invited by the journal's Editorial Committee; the committee itself, sometimes with associate editors, reviews the solicited draft rather than running a traditional external peer-review pool.",
+    "source_url": "https://www.annualreviews.org/content/journals/psych"
+   },
+   "preprint": {
+    "allowed": "Allowed with conditions: authors may post a preprint (e.g., to an institutional repository), but after signing the Annual Reviews Copyright Transfer/License Agreement the preprint must state which Annual Reviews journal accepted the work, and once the final version is published the preprint must carry an acknowledgment/link ('Posted with permission from the Annual Review of ___, Volume ___, copyright ___ Annual Reviews, http://www.annualreviews.org').",
+    "source_url": "https://www.annualreviews.org/pb-assets/authors%20assets/authorhandbook-harvard.pdf"
+   },
+   "positioning": {
+    "accepts_now": "Annual Review of Psychology does NOT accept unsolicited manuscripts of any kind. All articles are invited synthesis/review essays commissioned by the Editorial Committee (chaired by Susan Fiske as of the most recent confirmed data), covering the discipline broadly: biological bases of behavior, sensation/perception, cognition, learning, human development, psychopathology, clinical/counseling psychology, social psychology, personality, environmental and community psychology.",
+    "methods_welcome": [
+     "Broad narrative/synthesis reviews of a subfield's recent empirical and theoretical progress (not primary data reports)",
+     "Autobiographical/retrospective scientific narrative (e.g., 'Scenes from a Marriage: How We Found Our Way from Experimental Psychology to Social Neuroscience', Frith & Frith, Vol 77 2026)",
+     "Cognitive/social neuroscience synthesis (e.g., 'The Temporal Scaffolding of Sensory Organization', Poh & Adcock, Vol 77)",
+     "Cognitive/philosophical synthesis on reasoning (e.g., 'Human Rationality', Vol 77)",
+     "Social robotics / human-technology interaction synthesis (Cross & Kappas, Vol 77)",
+     "Spatial cognition and embodied cognition synthesis (Tversky, 'Space to Act, Think, and Create', Vol 77)",
+     "Methodological/quantitative synthesis (e.g., 'Unifying Principles of Generalization: Past, Present, and Future', Vol 76 2025)",
+     "Health/behavioral synthesis (e.g., 'The Self-Control of Eating', 'The Circadian Brain and Cognition', Vol 76)"
+    ],
+    "framing_required": "Manuscript must be framed as a field-wide critical synthesis/review written by an established, invited expert — not as a primary empirical study. No unsolicited submission path exists; authorship requires a direct invitation from the Editorial Committee (per third-party submission guides, typically following ~10 years of sustained visible authority in a subfield and a topic proposal 2-3 years ahead of the target volume).",
+    "sources": [
+     "https://www.annualreviews.org/content/journals/psych/77/1",
+     "https://www.annualreviews.org/content/journals/psych/76/1",
+     "https://en.wikipedia.org/wiki/Annual_Review_of_Psychology",
+     "https://manusights.com/blog/annual-review-of-psychology-submission-guide"
+    ],
+    "signal_quality": 2
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "sources": [],
+    "signal_quality": 0
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no dedicated page/review-count for Annual Review of Psychology (searched directly; only other psych journals like British Journal of Psychology, Frontiers in Psychology returned). No forum thread reports a first-hand review timeline. Because the journal is invitation-only (no open submission queue), the concept of a standard external 'review time' largely does not apply the way it does for open-submission journals."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public source reports a desk-reject rate. Desk rejection is not a meaningful concept here since manuscripts are commissioned by invitation rather than submitted for screening."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author account found describing the acceptance experience (checked zhihu article on the journal — journal-intro content only, no submission narrative; muchong.com journal page — impact-factor history only, explicitly no review-timeline/acceptance data; Reddit r/AskAcademia search returned no on-topic threads)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post, review, or interview) describing reviewer/editorial-committee culture for this journal was found in English or Chinese sources searched."
+    },
+    {
+     "field": "peer_review.type validation",
+     "why": "Description of editorial-committee-led review is inferred from publisher-level submission-guide summaries (manusights.com, Wikipedia) rather than a directly fetched Annual Reviews policy page — the annualreviews.org editorial-policies and general-information pages returned HTTP 403 to automated fetch, so the exact policy wording could not be independently verified beyond search-engine snippets."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫) journal detail page (jid=692): found — but contains only impact-factor history (2007-2009) and indexing info, explicitly 0 results for review time/desk-reject/acceptance/reviewer-culture",
+    "zhihu.com (知乎) article 心理学综述期刊介绍《Annual Review Of Psychology》 (zhuanlan.zhihu.com/p/578971253): found via search snippet (direct fetch blocked, HTTP 403) — content is a generic journal introduction (scope, IF, indexing), 0 first-hand submission/review experience reported",
+    "reddit.com r/AskAcademia: 0 results — search returned no on-topic Reddit threads about this journal's invited-review process",
+    "scirev.org: 0 results — no dedicated SciRev journal page/review-count exists for Annual Review of Psychology"
+   ],
+   "issn": "0066-4308",
+   "name": "Annual Review of Psychology",
+   "overall_signal_quality": 1,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "summary": "無期刊專屬 AI 政策頁；沿用 Wiley 出版社通用政策：允許生成式 AI 協助語言潤飾、結構調整、構思發想、文獻檢索,但禁止列為作者、禁止用於生成/變造圖像與原始數據、禁止生成未經查證的內容(如摘要/結果/結論);要求投稿時揭露 AI 工具使用情形(cover letter + 揭露附錄)。",
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "double-blind (雙盲審)",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10990720/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許;投稿版本(preprint)可隨時自我典藏/公開,已接受版本(accepted version)需 12 個月禁運期後才能自我典藏;正式出版 PDF 僅限 Gold OA 文章可公開分享。",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "以真實情境(real-world/authentic contexts)中的記憶、學習、思考、問題解決、語言、意識之心理學實證研究為主軸;強調將實驗室理論與日常應用結合並附實務意涵。近期(2025)刊出主題包含記憶從眾效應(memory conformity)、以 AI 聊天機器人訓練醫療/牙科人員的資訊蒐集技巧(pilot study)等。目前(截至查詢時)有開放中的特刊徵稿「Cognitive Processes and Educational Outcomes: Bridging Theory and Practice」,聚焦注意力、記憶、語言、知覺如何影響學習,以及後設認知與自我調節學習。",
+    "framing_required": "須將認知歷程與真實世界情境/實務應用明確連結,單純實驗室基礎研究若缺乏應用意涵框架可能不符合期刊定位。",
+    "methods_welcome": [
+     "實證研究論文(empirical research,主要類型)",
+     "理論性文章(theoretical articles)",
+     "文獻回顧(reviews)",
+     "短篇報告(short articles)",
+     "註冊報告(Registered Reports)",
+     "自傳式記憶/生命全期記憶發展研究",
+     "測謊與欺騙偵測研究",
+     "目擊者記憶與記憶可靠性研究",
+     "消費者行為、健康、教育的認知取向研究"
+    ],
+    "sources": [
+     "https://onlinelibrary.wiley.com/page/journal/10990720/call-for-papers/si-2025-000225",
+     "https://onlinelibrary.wiley.com/page/journal/10990720/homepage/guide.htm"
+    ],
+    "signal_quality": 3
+   },
+   "experiential": {
+    "review_time_months": "SciRev 單筆有效樣本(n=1 review):第一輪審查約 2.7 個月(~11.7 週);總處理時間(投稿到決定)約 7.6 個月,含 2 輪審查。樣本數極小,不宜視為期刊常態。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 該筆評論將流程評為「very good process」,審查報告品質 4.0/5.0,整體處理評分 4.0/5.0,最終結果為接受(accepted)。因僅 1 筆評論,無法代表期刊整體接受率或退稿率。",
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/applied-cognitive-psychology/"
+    ],
+    "signal_quality": 1
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — 站內搜尋與 site: 搜尋均未找到針對本刊的具體審稿討論串(0 results)",
+    "知乎 zhihu — 未找到針對本刊投稿經驗的專門文章或討論,僅有間接提及本刊刊登過眼動相關研究的綜述文章(0 直接經驗分享)",
+    "LetPub letpub.com.cn — 期刊資訊頁存在「平均審稿速度」「平均錄用比例」欄位但均為空,顯示「網友分享經驗：」後無使用者填寫內容(0 results,誠實留空)",
+    "fabiao.com.cn — 僅提供期刊基本指標(分區、影響因子等),無審稿經驗性內容",
+    "Reddit r/AskAcademia — site:reddit.com 與一般搜尋均未找到針對本刊的討論串(0 results)"
+   ],
+   "issn": "0888-4080",
+   "name": "Applied Cognitive Psychology",
+   "blanks": [
+    {
+     "field": "peer_review.source_url (journal-specific full text)",
+     "why": "Wiley forauthors 頁面回傳 HTTP 402(需認證),僅能透過 WebSearch 摘要片段確認為雙盲審,未能直接讀取原始頁面全文核對細節。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該筆審查資料未提供立即退稿(immediate rejection)時間或比例欄位,且僅 1 筆樣本,無其他公開論壇提及具體數字。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev 僅 1 筆評論且未描述審稿人風格/文化;小木虫、知乎、Reddit、fabiao、LetPub 均查無使用者對本刊審稿人風格的具體描述,故留空避免捏造通用敘事。"
+    },
+    {
+     "field": "ai_policy (journal-specific policy page)",
+     "why": "Applied Cognitive Psychology 未見獨立於 Wiley 集團通用政策之外的期刊專屬 AI 使用規範頁面;此處記錄的是 Wiley 出版社層級政策,已於 summary 中註明。"
+    },
+    {
+     "field": "positioning special-issue submission deadline",
+     "why": "Wiley 特刊 CFP 頁面(si-2025-000225)回傳 HTTP 402,僅能依 WebSearch 摘要取得主題與範疇,無法核對確切截稿日期等頁面細節。"
+    }
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1873-2011",
+   "name": "Computers and Composition (Computers & Composition: An International Journal)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "此為 Elsevier 出版社通用政策，非期刊獨立撰寫的政策頁（期刊 Guide for Authors 頁面引用同一套出版社規範，故標記為 publisher-level, journal-referenced）。作者投稿前可用生成式AI/AI輔助工具潤飾語言與可讀性，但須揭露使用情形；圖片/圖表禁止用生成式AI產生或修改（研究方法本身涉及AI者除外）。審稿人與編輯目前『不允許』在同行評審與稿件評估過程中使用生成式AI工具（如ChatGPT），Elsevier表示正評估合規工具、未來可能調整此限制。leniency=2：作者端為條件式允許(僅潤飾+揭露)，圖像生成與審稿端皆封閉，屬中低度寬容。"
+   },
+   "peer_review": {
+    "type": "Double-blind（投稿須為盲審，作者須自行移除稿件正文中所有可識別身分的資訊）",
+    "source_url": "https://www.elsevier.com/journals/computers-and-composition/8755-4615/guide-for-authors"
+   },
+   "preprint": {
+    "allowed": "Yes — 於預印本伺服器發表不算重複發表(prior publication)，依循 Elsevier 一般文章分享政策(article sharing policy)",
+    "source_url": "https://www.elsevier.com/journals/computers-and-composition/8755-4615/guide-for-authors"
+   },
+   "positioning": {
+    "accepts_now": "近期(2024-2026)收稿明顯轉向生成式AI與寫作教學/專業寫作交會的實證與批判研究（例：2026年6月文章討論多語寫作者使用生成式AI協助專業寫作的'article laundry'現象）；多模態/UX與新興技術（GenAI、AR、VR、混合實境、語音使用者介面）於寫作/作文脈絡中的應用（2024年9月特刊CFP：Multimodal User Experience Composition）；數位素養、線上/遠距寫作教學、寫作科技的倫理與可及性議題。2025年全年約發表37篇文章。一篇以結構化主題模型分析該刊1983-2025共1607篇文章的計量研究顯示反覆出現的主題：自動化焦慮、數位落差與近用、作者身分與原創性問題，顯示AI/GenAI相關投稿目前是期刊高度歡迎、甚至優先徵稿的方向。",
+    "framing_required": "投稿須明確定位在修辭與寫作教學(composition/rhetoric)傳統脈絡下討論科技，而非單純電腦科學或UX研究本身；2024年特刊徵稿要求提案清楚說明與既有UX研究的對話關係、文章範圍及對本學門(composition/technical communication)的貢獻(500字以內提案)。",
+    "methods_welcome": [
+     "質性教學法研究 (pedagogical/classroom studies)",
+     "使用者經驗(UX)研究與設計研究方法",
+     "生成式AI輔助寫作的實證研究（含跨語言/多語寫作者研究）",
+     "文本探勘/計算方法（如結構化主題模型）用於分析寫作與科技論述",
+     "批判/倫理取向的科技與寫作近用研究"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://wpa-announcements.tracigardner.com/2024/09/06/cfp-computers-and-composition-special-issue-multimodal-user-experience-composition/",
+     "https://www.sciencedirect.com/science/article/abs/pii/S8755461526000204",
+     "https://www.sciencedirect.com/journal/computers-and-composition/publish/guide-for-authors"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/computers-and-composition/ （查詢時：'No reviews have yet been submitted for this journal' — SciRev上零筆評論）"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "review_time_months",
+     "why": "SciRev該期刊頁面查詢時顯示零筆評論(no reviews submitted)，無首輪審稿時間或總處理時間數據；小木虫、fabiaoji、知乎搜尋均未找到針對此期刊的具體投稿討論串（該等平台社群以理工科為主，人文/修辭寫作類期刊討論極少）；Reddit r/AskAcademia搜尋亦無結果。"
+    },
+    {
+     "field": "desk_reject_pct",
+     "why": "SciRev無數據；未見任何論壇或部落格公開討論此期刊的桌拒率。"
+    },
+    {
+     "field": "acceptance_note",
+     "why": "無公開發表的投稿者經驗貼文（英文或中文皆未搜得），僅有期刊官方年發表篇數(2025年約37篇)，不足以推論接受率或編輯偏好敘事。"
+    },
+    {
+     "field": "reviewer_culture",
+     "why": "無任何具體、可引用來源描述審稿人風格/文化；為避免虛構敘事，此欄位留空。"
+    }
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null,
+   "cross_language_checked": [
+    "小木虫 muchong.com — 站內搜尋與site:搜尋均查無'Computers and Composition'相關投稿討論串（僅命中同名含'Computers'的其他工程類期刊）",
+    "fabiaoji.com 發表記 — 搜尋查無此期刊之投稿經驗頁面（收錄多為工程/計算機類'Computers & X'期刊，未見此人文修辭類期刊）",
+    "知乎 zhihu — 搜尋未命中任何針對此期刊的專門討論",
+    "Reddit r/AskAcademia — 搜尋0結果，無相關討論串"
+   ]
+  },
+  {
+   "issn": "1040-726X",
+   "name": "Educational Psychology Review",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://link.springer.com/journal/10648/submission-guidelines",
+    "summary": "沿用 Springer Nature 通用政策(期刊層未見客製化額外限制):LLM 不得列為作者;若對成果有實質性使用(如生成內容/協助分析),須在 Methods 段落揭露;僅做文法/拼字/標點的「AI輔助潤稿」不需申報;AI生成圖像須另查 Springer 的生成式AI圖像政策並符合其原則。無需事前申請許可,屬事後揭露制,故 gate 標記 conditional(有條件揭露,非全面禁止也非完全放任)。"
+   },
+   "peer_review": {
+    "type": "雙盲(double-blind)——作者對審稿人匿名,需移除稿件識別資訊、另附獨立標題頁;原創研究稿件至少送 2 位審稿人(小木虫/发表记等使用者經驗稱常見為 3 位審稿人)",
+    "source_url": "https://link.springer.com/journal/10648/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "期刊頁面本身未明列preprint政策,但依 Springer Nature 通用政策:允許將稿件放上 arXiv 或其他 preprint 伺服器;禁止上傳最終出版版PDF;可在正式出版後至少6個月上傳作者接受版(accepted version)。此為出版社通用政策外推,非該刊逐字聲明,故信心中等。",
+    "source_url": "https://communities.springernature.com/posts/citing-a-preprint-a-guide-researchers"
+   },
+   "positioning": {
+    "accepts_now": "以整合性回顧文獻(integrative reviews)、後設分析(meta-analysis)、主題專刊(thematic issues)、實務指引(research-based practitioner advice)為主軸,亦刊登實徵研究(empirical studies)。2026年7月近期文章涵蓋:國小學生抑制控制、智慧型教學系統與自我調節學習(SRL)、具身詞彙學習後設分析、教師對SRL的知識、沉浸式VR中的眼動追蹤效度。",
+    "framing_required": "回顧與後設分析類稿件在方法論嚴謹度與理論貢獻要求較高(小木虫/发表记使用者反映:reviews與meta-analyses的規範性與理論要求「較嚴格」)。",
+    "methods_welcome": [
+     "integrative literature review",
+     "meta-analysis",
+     "thematic special issue papers",
+     "empirical/experimental studies",
+     "practitioner-oriented research advice",
+     "eye-tracking/VR methodology",
+     "AI-in-education / intelligent tutoring systems studies"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/10648",
+     "https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "desk-reject/送審決定約2天(~0.07個月);首次決定中位數官方統計為3天(Springer自報metrics,非使用者論壇數據,信心層級較低)。缺乏完整投審至定案總時長的使用者論壇數據。",
+    "desk_reject_pct": null,
+    "acceptance_note": "投稿經驗分享(发表记, 2024/01/07單一使用者):處理速度快,常見送3位審稿人;審稿人對回顧/後設分析類稿件的規範性與理論要求偏嚴格。樣本數僅1筆,不可外推。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/educational-psychology-review/ (0 reviews submitted)",
+     "https://www.ablesci.com/journal/detail?id=5QaBR5 (無使用者填寫資料)",
+     "https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4 (1筆使用者投稿經驗)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該刊 0 筆評論;ablesci 科研通該刊審稿週期/錄用比例欄位均為空白(僅有欄位框架、無使用者填寫);未查得具體拒稿率數字,故留空避免捏造。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "未找到任何具體、可歸因來源(論壇貼文/評論)描述該刊審稿人風格或文化;僅有單一則2天內桌拒/送審速度描述及對回顧類稿件要求偏嚴格的間接推論,不足以支撐『reviewer culture』這一主觀敘事欄位,故留空而非編造通用敘述。"
+    },
+    {
+     "field": "cross_language_checked: muchong.com",
+     "why": "站內/Google站內搜尋 site:muchong.com 'Educational Psychology Review' 查無相關討論串,誠實記為0結果。"
+    },
+    {
+     "field": "cross_language_checked: zhihu.com",
+     "why": "知乎搜尋僅找到同名但不同刊物(Journal of Educational Psychology、Educational Research Review)的討論,未find到本刊(Educational Psychology Review, ISSN 1040-726X)專屬討論串,故本刊在知乎上視為0直接命中。"
+    },
+    {
+     "field": "cross_language_checked: reddit r/AskAcademia",
+     "why": "WebSearch 對 'Educational Psychology Review reddit AskAcademia' 查無任何連結命中,誠實記為0結果。"
+    },
+    {
+     "field": "experiential.review_time_months (完整週期)",
+     "why": "僅有『送審決定約2天』與 Springer 官方『中位數3天到首次決定』兩個數字,均非完整的『投稿到最終決定』週期,且官方統計非本工單要求的第一手論壇數據,故該欄位標註為近似值並降低 signal_quality,不視為完整可信數字。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: site:搜尋查無 Educational Psychology Review (ISSN 1040-726X) 專屬討論串,0結果",
+    "发表记 fabiaoji.com: 找到1筆使用者投稿經驗(2024/01/07),含審稿速度與方法論要求描述",
+    "科研通 ablesci.com: 該刊頁面存在審稿週期/錄用比例欄位,但均為使用者未填寫的空白狀態,0筆數據",
+    "知乎 zhihu.com: 搜尋結果多指向同名但不同刊(Journal of Educational Psychology、Educational Research Review),本刊無直接命中",
+    "Reddit r/AskAcademia: 搜尋無任何結果,0結果",
+    "SciRev.org: 該刊頁面顯示'No reviews have yet been submitted for this journal',0筆"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://karger.com/pages/karger-ai-principles",
+    "summary": "Karger（本刊出版社）政策為出版社統一政策，非本刊獨有：允許作者使用生成式AI/LLM協助寫作（含語言潤飾），但強制要求在Methods或Acknowledgements揭露所用工具、說明如何驗證輸出正確性、並比照軟體引用規範列入參考文獻；AI不得列為作者；審稿人被明文禁止將待審稿件內容輸入LLM（違反保密義務）；出版社內部篩選流程可用AI但一律人工做最終決定。未見本刊（Dementia and Geriatric Cognitive Disorders）獨有的AI政策頁面，僅有出版社層級政策適用。"
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type journal-specific confirmation page",
+     "why": "本刊審稿類型（single-anonymous）僅見於 karger.com/dem/pages/guidelines 之通用敘述，未見期刊獨立聲明頁單獨強調；已採信該頁文字。"
+    },
+    {
+     "field": "preprint.allowed — journal-specific version",
+     "why": "找到的是 Karger 出版社層級的預印本政策（非商業性預印本平台可、AAM 需12個月禁運期後才能上傳公開OA典藏庫），未找到本刊（dem）頁面對預印本政策的獨立聲明，故此欄位標記為出版社政策推定適用於本刊，非本刊獨有一手來源。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 上本刊 0 筆評論（無資料）；sci.justscience.cn 官方頁面審稿天數欄位均顯示 0.0（無效佔位資料，非真實數字）；僅有 iikx.com / klxksci.com 等鏡像網站標註「網友分享經驗：平均2個月」，明確標示為非官方、群眾估計數據，未見具體審稿人/作者一手貼文佐證，可信度低但保留作為弱信號。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無法取得具體桌拒率數字；SciRev 無資料；medsci.cn 論壇僅有單一2020年案例描述「約5天內找審稿人未果，2/24前後被拒」，屬個案不足以推估比例，未強行換算成統計數字。"
+    },
+    {
+     "field": "experiential.acceptance_note (quantitative)",
+     "why": "「約50%」錄取率同樣僅為 iikx.com/klxksci.com 標註之網友群眾估計（非本刊官方公佈），未找到PubMed/期刊官方或多篇一手投稿貼文交叉驗證此數字，故不作為可信量化事實填入，改以定性描述呈現。"
+    },
+    {
+     "field": "reviewer_culture",
+     "why": "查無足夠具體、可歸因來源的評語描述特定政治立場或審稿人風格模式；僅 medsci.cn 論壇一則留言稱「意見很專業，寫了滿滿1篇半」及另一則稱「不會拖稿，蠻負責的」，屬零星個案評論，非可概括為「文化」的多來源交叉驗證，故僅在 acceptance_note 引用原文而不寫入 reviewer_culture 欄位的一般化敘述。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/dementia-and-geriatric-cognitive-disorders) — 0 reviews submitted, no data (n/a on all fields)",
+    "小木虫/中文SCI論壇聚合站 sci.justscience.cn — 官方審稿天數欄位全部顯示 0.0（無效資料），僅有影響因子等文獻計量數據",
+    "MedSci.cn 中文投稿論壇 (medsci.cn/sci/submit.do?id=11521755) — 14則留言；找到具體案例：2020/1/17投稿、約5天內尋找審稿人未果、2/24前後被拒，另有留言稱「不會拖稿，蠻負責的」及「意見也很專業，寫了滿滿1篇半」；亦有多則反映編輯部會建議轉投旗下姊妹期刊",
+    "iikx.com / klxksci.com 中文SCI資訊站 — 標註為「網友分享經驗」（非官方）：平均審稿速度約2個月、平均錄取率約50%",
+    "知乎 zhihu.com — 搜尋未見本刊專門投稿經驗文章，僅有老年醫學SCI期刊總覽文章順帶列出本刊，0筆針對本刊的一手投稿心得",
+    "Reddit r/AskAcademia — 搜尋未見任何討論本刊審稿流程或投稿經驗的貼文，0 results"
+   ],
+   "experiential": {
+    "acceptance_note": "無官方公佈之量化接受率。中文投稿社群（medsci.cn 論壇）有零星一手案例：2020年一投稿者稱「5天左右就開始找reviewer，到2.24還是沒找到reviewer，就拒了。不會拖稿，蠻負責的」；另一留言稱審稿意見「很專業，寫了滿滿1篇半」。多筆留言另提及編輯部有時會建議作者改投其旗下姊妹刊（如 Dementia and Geriatric Cognitive Disorders Extra）。iikx.com/klxksci.com 等鏡像站標註「網友分享經驗：約50%」錄取率，但明確非官方數據，未與其他一手來源交叉驗證，可信度有限。",
+    "desk_reject_pct": null,
+    "review_time_months": "無官方數字。中文論壇網友估計「平均約2個月」（iikx.com/klxksci.com，明確標示為非官方群眾經驗），SciRev與期刊官方追蹤頁均無有效數據可佐證。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/dementia-and-geriatric-cognitive-disorders/",
+     "https://www.medsci.cn/sci/submit.do?id=11521755",
+     "https://www.iikx.com/sci/medcine/11878.html",
+     "https://sci.justscience.cn/details.html?sci=1&id=2071"
+    ]
+   },
+   "issn": "1420-8008",
+   "name": "Dementia and Geriatric Cognitive Disorders",
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "source_url": "https://karger.com/dem/pages/guidelines",
+    "type": "single-anonymous（單盲）：審稿人知道作者姓名，作者不知道審稿人身份。除社論(Editorials)及部分通訊(Correspondence)外，所有文章皆送外部審查，通常至少2位該領域專家審查。本刊為 Neuroscience Peer Review Consortium (NPRC) 會員，可依作者要求快速轉送審稿意見至其他NPRC會員期刊。"
+   },
+   "positioning": {
+    "accepts_now": "近期（2024-2025）實際刊出內容以：認知篩檢工具心理計量驗證（如ACE-III/CBI-R/EMQ）、衰弱(frailty)與輕度認知障礙轉銜失智症之關聯、失智/認知障礙長者及照顧者之孤獨感等心理社會議題、壓力與motoric cognitive risk syndrome之關聯、特定族裔（如越裔美人）高齡研究參與觀感、以及失智可改變風險因子之傘型review/統合分析(umbrella review & meta-analysis)為主，橫跨臨床、流行病學與心理社會研究。",
+    "framing_required": "投稿需明確扣連認知功能障礙(cognitive dysfunction)/失智症/神經退化性疾病(阿茲海默、帕金森、亨丁頓氏症等)之核心臨床或轉譯意義；期刊自我定位強調跨領域整合基礎科學/臨床前研究與臨床治療經驗(multi-disciplinary studies incorporating basic science and pre-clinical aspects with clinical and therapeutic experience)。",
+    "methods_welcome": [
+     "認知篩檢/評估工具信效度研究",
+     "世代研究/縱貫性臨床研究",
+     "系統性回顧與統合分析(umbrella review, meta-analysis)",
+     "觀察性流行病學研究(需附STROBE checklist)",
+     "隨機對照臨床試驗(需附CONSORT checklist)",
+     "心理社會/照顧者經驗質性或量性研究",
+     "特定族裔/文化族群之高齡研究參與研究",
+     "基礎科學/臨床前(pre-clinical)研究搭配臨床轉譯"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://karger.com/dem/pages/details",
+     "https://karger.com/dem/issue/53/2",
+     "https://karger.com/dem/pages/guidelines"
+    ]
+   },
+   "preprint": {
+    "allowed": "允許（依Karger出版社通用政策推定適用本刊，非本刊獨立聲明）：作者可將未經同儕審查/未排版/未校對之手稿(preprint)張貼於非商業性預印本伺服器或學術網路，須註明出版社版權與文章原始出處；已接受手稿(Accepted Author Manuscript, AAM/postprint)須待正式線上發表後12個月禁運期(embargo)始得存放於公開OA典藏庫；個人或機構網站則可直接存放AAM。",
+    "source_url": "https://karger.com/pages/rights-and-permissions"
+   },
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "signal_quality": 2,
+    "summary": "Publisher(Wiley)層級政策適用於此期刊(未見期刊自訂 AI 頁面)。允許用生成式AI輔助語言潤飾、結構調整、構想發展、文獻檢索,但禁止列AI為作者/共同作者、禁止用AI生成或竄改圖像/圖表/原始數據、禁止產出未經查核的內容;要求在Materials/Methods或同等章節揭露AI工具使用。leniency=3(允許輔助但門檻明確、需揭露,非全面禁止亦非完全開放)。gate=conditional(需揭露,非需要編輯部逐案批准)。",
+    "source_url": "https://www.wiley.com/en-ae/publish/ai-insights/author-usage-generative-ai/"
+   },
+   "peer_review": {
+    "type": "double-blind (manuscript anonymized; separate title page with author details)",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/10990992/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "Yes — authors may post the submitted (preprint) version to a preprint server at any time; accepted (peer-reviewed) version may be self-archived after a 24-month embargo (standard Wiley SSH embargo).",
+    "source_url": "https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/self-archiving.html"
+   },
+   "positioning": {
+    "accepts_now": "近期(2025)刊出文章涵蓋:跨群體接觸與社會凝聚力之縱貫研究(青少年,分裂社會脈絡,Belfast/Bradford)、社會認知、態度、群體歷程等傳統社會心理學主題。期刊明確歡迎「empirical, meta-analytical or theoretical research」以及「methodological contributions」,涵蓋跨群體關係、群體歷程、社會認知、態度、社會影響與說服、自我與認同、語言與思考、情感、具身認知、跨文化現象等。",
+    "framing_required": "無特定強制框架,但強調需對社會心理現象理解有「significant contribution」;2026特刊徵稿(投稿截止2026-03-31)特別鼓勵聚焦當前學界辯論、結合多元視角、原創實證文章、方法多樣化,以及跨地理區域的研究者與參與者合作。",
+    "methods_welcome": [
+     "empirical",
+     "meta-analytical",
+     "theoretical",
+     "methodological contributions"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://onlinelibrary.wiley.com/page/journal/10990992/homepage/forauthors.html",
+     "https://onlinelibrary.wiley.com/doi/10.1002/ejsp.3121",
+     "https://onlinelibrary.wiley.com/page/journal/10990992/homepage/call-for-papers/special-issue-proposals"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "3.7 個月(SciRev「Duration first review round」與「Tot. handling time acc. manuscripts」均為3.7個月;立即拒稿之決定時間為23天)",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 樣本量極小(僅5筆評論,1區間即2.3份審查報告、1.0輪審查),最近一筆記錄結果為「immediately rejected」;無足夠樣本推論整體拒稿率或接受率",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/european-journal-of-social-psychology/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type verification specific to EJSP (vs generic Wiley Social/Personality Psychology Network boilerplate)",
+     "why": "Author guidelines page confirms double-blind requirement but WebFetch returned HTTP 402 on direct journal homepage; info sourced via WebSearch snippet only, not primary-page fetch"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev page marks % immediately rejected as 'n/a' with only n=5 total reviews — insufficient sample, no percentage published"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand discussion found on SciRev comments, 小木虫 muchong.com (zero results), 知乎 zhihu (only journal-ranking-list mentions, no review-experience threads), fabiaoji (not found), or Reddit r/AskAcademia (zero threads found) — cannot support any reviewer-culture claim with a concrete source"
+    },
+    {
+     "field": "ai_policy journal-specific page",
+     "why": "No EJSP-specific AI policy page found; relying on Wiley publisher-wide generative AI policy, noted as such rather than journal-specific"
+    },
+    {
+     "field": "experiential 'acceptance rate 16%, review speed 6 days' claim seen on aggregator site Researcher.Life",
+     "why": "Deliberately excluded — aggregator sites (Researcher.Life/Resurchify-style) publish templated/unverifiable numbers with no cited methodology; not first-hand, so treated as non-fact per hard rules rather than reported as fact"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 0 results for this journal (site-restricted search returned no muchong.com hits)",
+    "知乎 zhihu.com — hits only in generic SSCI/CSSCI journal-ranking list articles (e.g. 心理學類SSCI期刊匯總); no first-hand submission/review-experience posts found",
+    "fabiaoji — no results found (not indexed / not searched successfully)",
+    "Reddit r/AskAcademia — 0 threads found discussing this journal specifically"
+   ],
+   "sensitive_topics_note": null,
+   "issn": "0046-2772",
+   "name": "European Journal of Social Psychology",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0890-2070",
+   "name": "European Journal of Personality",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://journals.sagepub.com/author-instructions/erp",
+    "summary": "發表方為 SAGE(EJP 現由 SAGE 出版,原 Wiley)。依 SAGE 通用 AI 政策(EJP 未見期刊專屬 AI 政策頁,套用 SAGE 通則):AI 聊天機器人(如 ChatGPT)不得列為作者;若使用生成式 AI 產出文字/圖表/資料摘要等內容,須揭露所用模型與用途(建議寫在 Methods 或 Acknowledgements);作者對 AI 產出內容之正確性、原創性負全責;僅用於語言潤飾/文法/結構改善者可不揭露;僅因使用 AI 不會被直接拒稿。因此判定為「有條件許可」(conditional gate=需揭露,非全面禁止亦非完全自由)。leniency 給 3(可用但要揭露,非全開放)。未能直接抓到 EJP 專屬 AI 政策子頁(嘗試 journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404),故 signal_quality 偏低,屬 publisher-level 政策推論,非期刊逐字頁面。"
+   },
+   "peer_review": {
+    "type": "single/double-anonymized peer review(具體匿名方式未逐字確認);另設有 Registered Reports 軌道(自 2018 年起,審查通過的研究計畫無論結果皆承諾發表)及 streamlined review(可攜帶前一期刊的審查意見重新投稿)",
+    "source_url": "https://journals.sagepub.com/author-instructions/erp"
+   },
+   "preprint": {
+    "allowed": "允許:可將已上傳 PsyArXiv 等 preprint server 的論文投稿;但在同行審查期間不得於 preprint server 更新版本;正式發表後應更新引用改指向正式版",
+    "source_url": "https://journals.sagepub.com/author-instructions/erp"
+   },
+   "positioning": {
+    "accepts_now": "以實證研究為主,涵蓋人格結構、評估工具、人格差異之成因與後果、個體內變異與發展變化、及其與經驗的交互作用;近年(2023-2025)刊出主題包括:超越自陳式 Big Five 的人格評量(Rauthmann 2024)、IPIP-NEO 人格階層之 Taxonomic Graph Analysis 重新檢視、跨 16 個縱貫樣本的 Big Five 特質軌跡協調分析(Graham et al.)、孤獨感與 Big Five 之統合分析。方法學上明顯歡迎:網絡心理計量(network psychometrics)、Taxonomic Graph Analysis 等新興計算心理學方法、統合分析(meta-analysis)、縱貫研究協調分析(coordinated/integrative data analysis)。",
+    "framing_required": "投稿頁明確要求：實證文章、理論文章、方法學文章、系統性回顧與統合分析皆歡迎,但都須符合期刊的 Evaluation Criteria(即編輯部設定的品質標準,細節未在本次檢索中取得逐字內容,列為 blank)。",
+    "methods_welcome": [
+     "empirical studies",
+     "meta-analyses",
+     "theoretical/conceptual papers",
+     "methodological papers",
+     "systematic reviews",
+     "registered reports",
+     "network psychometrics / taxonomic graph analysis 等新計算方法"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://journals.sagepub.com/author-instructions/erp",
+     "https://journals.sagepub.com/doi/full/10.1177/08902070231221853",
+     "https://journals.sagepub.com/doi/10.1002/per.2259"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "官方自報:首次決定平均約 20 天;送外審者平均約 40 天內完成首次決定(來源:期刊 Wiley/SAGE For Authors 頁,經 WebSearch 摘要取得,原頁 402 付費牆無法逐字核對)。第三方交叉核對:SciRev 僅 1 筆評論——'Duration first review round: 1.4 個月(約6週)'、'Tot. handling time acc. manuscripts: 1.5 個月';中國投稿平台 fabiao.com/haozazhi 等綜合資料顯示 '審稿時間 44-64 天,投稿到接受 54-82 天'。三個來源量級大致吻合(4-9週區間),但樣本數都很小(SciRev僅1筆),故標為中等信心。",
+    "desk_reject_pct": "期刊官方自報整體拒絕率約 88%,其中桌拒(desk-reject)率約 55%(來源:期刊 For Authors 頁,經 WebSearch 摘要取得;未能以 WebFetch 逐字核對原頁,因 Wiley 頁面回傳 402 付費牆)",
+    "acceptance_note": "期刊自我定位為高選擇性(highly selective),強調審稿快且具建設性回饋('committed to constructive and fast in-depth feedback')。此為期刊自述,非投稿者第一手經驗。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/european-journal-of-personality/",
+     "https://www.fabiao.com/sci/08902070.html",
+     "https://journals.sagepub.com/author-instructions/erp (via search snippet, original page paywalled/blocked for direct fetch)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (期刊專屬頁面)",
+     "why": "journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404,無法確認 EJP 是否有專屬於 SAGE 通則之外的加註;僅能以 SAGE 出版社通用 AI 政策 + 二手摘要(WebSearch 生成摘要,非逐字頁面)推論,故只給 leniency 中等偏低信心"
+    },
+    {
+     "field": "peer_review.type 是否為 single- or double-anonymized",
+     "why": "多個 WebSearch 摘要用詞不一(有稱 anonymized peer review、有稱 traditional peer review),未能用 WebFetch 逐字核對原始頁面(頁面多次回傳僅 nav/footer 或 402),故匿名方式的具體層級未能百分之百確認"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev 僅 1 筆評論,無質性描述可引;PTT/小木虫/知乎/muchong.com 搜尋均未找到具體投稿者的審稿文化敘述(僅找到期刊自我行銷用語與二手期刊資料庫頁面);Reddit r/AskAcademia 站內搜尋 'European Journal of Personality' 完全 0 結果。故此欄位誠實留空,不編造"
+    },
+    {
+     "field": "positioning.framing_required 細節",
+     "why": "期刊提及投稿須符合其 'Evaluation Criteria',但該準則具體內容未在本次檢索中取得逐字文本,僅知其存在"
+    },
+    {
+     "field": "experiential.acceptance_note 的第一手來源",
+     "why": "目前僅有期刊官方自述的統計數字(88%拒絕/55%桌拒/20天首次決定),缺乏獨立投稿者經驗貼文佐證這些數字是否為近期(2024-2026)實況,故列為期刊自報而非第一手交叉驗證"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/european-journal-of-personality/): 1 筆使用者評論,首輪審查約1.4個月,總處理時間約1.5個月,審稿品質評分5.0/5.0,審稿難度3.0/5.0(中等),結果為Accepted",
+    "小木虫 muchong.com: 站內搜尋未找到 EJP 專屬投稿討論串(僅找到其他期刊如 European Journal of Operational Research 的投稿帖),0 個直接相關結果",
+    "知乎 zhihu.com: WebSearch 未回傳知乎上關於此期刊的具體討論串,0 個直接相關結果",
+    "fabiao.com / sfabiao.com / haozazhi.com / fabiao.com.cn (中文期刊資料庫聚合站): 提供審稿週期粗略區間(首次決定6-9天、審稿44-64天、投稿到接受54-82天)及基本期刊資訊(創刊1987、SAGE出版、SCIE/SSCI收錄、IF 3.6),但無質性審稿文化描述,且未逐字核對原始頁面",
+    "Reddit r/AskAcademia: site:reddit.com 搜尋 'European Journal of Personality' 回傳 0 個結果"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 4,
+    "signal_quality": 3,
+    "source_url": "https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai",
+    "summary": "This is an APA-wide policy applied across all APA journals (not Health Psychology-specific). Authors MAY use generative AI (e.g., for editing, idea generation, coding/analysis support) but MUST disclose the specific tool and how it was used (typically in the Methods or an equivalent section), and must verify all AI-generated content/citations against original sources. AI cannot be listed as an author. No prior editorial permission is required before use, but editors may request additional documentation during review (hence 'conditional' gate rather than a flat yes). Separately, reviewers/editors are explicitly barred from entering submitted manuscript text into AI tools, citing confidentiality."
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "No public submission-to-first-decision figure exists for this journal. SciRev (scirev.org/journal/health-psychology) shows 0 full reviews and only one data point ('immediate rejection: 6 days'); the APA official 2023 Journal Operations report gives only acceptance-to-publication lag (2.3 mo online-first / 4.6 mo print), not submission-to-decision time. No muchong/zhihu/fabiaoji/Reddit thread with a first-hand timeline was found."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No numeric desk-rejection rate is published anywhere found. The journal's own submission guidelines confirm desk rejection occurs (e.g., automatically for unregistered or retrospectively registered RCT reports, and for out-of-scope/masking violations) but give no percentage, and no forum post quantified it."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero first-hand accounts surfaced on muchong.com (journal page found, but only bibliographic metadata, no reviewer/author testimony), zhihu (search returned only results about the unrelated Taylor & Francis journal 'Health Psychology Review'), fabiaoji (same conflation issue, no APA-journal-specific hits), or Reddit r/AskAcademia (no thread found). Fabricating a reviewer-culture narrative was avoided per instructions."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫) — found a dedicated SCI-journal metadata page for 'HEALTH PSYCHOLOGY' (muchong.com/bbs/journal.php?view=detail&jid=3182) listing publisher/indexing/frequency, but zero first-hand review-experience posts or comments.",
+    "zhihu.com (知乎) — search returned only tangential/unrelated hits, mainly discussing the different journal 'Health Psychology Review' (Taylor & Francis) and unrelated psychology journals; 0 relevant results for APA's Health Psychology (ISSN 0278-6133).",
+    "fabiao.com.cn (fabiaoji) — same conflation; only found a page for 'Health Psychology Review', not this journal; 0 results for this specific journal.",
+    "Reddit r/AskAcademia — 0 results; no thread discussing this journal's review process was found via web search."
+   ],
+   "experiential": {
+    "acceptance_note": "APA official 'Summary Report of Division Journal Operations, 2023' (published in American Psychologist, 2024, Vol. 79, No. 5, pp. 777-778): Health Psychology (Division 38) received 697 manuscripts, accepted 77, had 179 pending, rejection rate 74% (i.e., acceptance ≈26%); 90 items published; average lag from acceptance to publication was 2.3 months (Online First) / 4.6 months (print). This is a first-hand publisher-issued statistic, not a submission-to-decision timeline.",
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://www.apa.org/pubs/journals/features/2023-statistics.pdf (APA Summary Report of Division Journal Operations, 2023 — official acceptance/rejection/lag numbers)",
+     "https://scirev.org/journal/health-psychology/ (SciRev — 0 full reviews; only 'immediate rejection: 6 days' data point, all other fields n/a)",
+     "https://muchong.com/bbs/journal.php?view=detail&jid=3182 (小木虫 journal metadata page, no first-hand experience posts)"
+    ]
+   },
+   "issn": "0278-6133",
+   "name": "Health Psychology",
+   "overall_signal_quality": 3,
+   "peer_review": {
+    "type": "Single-masked (reviewers are anonymous to authors; author identity is known to reviewers — authors must NOT mask their own identifying information).",
+    "source_url": "https://www.apa.org/pubs/journals/hea/submit"
+   },
+   "positioning": {
+    "accepts_now": "Biobehavioral/psychosocial mechanisms linking psychology and physical health, social determinants of health, health-behavior intervention development, dissemination/implementation science, and population-level health disparities/equity research. Registered RCTs are explicitly welcome; unregistered or retrospectively registered RCT reports are subject to rejection without external review per the journal's own submission guidelines.",
+    "framing_required": "RCT reports must be prospectively registered (or explain retrospective registration) or risk desk rejection without peer review, per the journal's official submission guidelines (apa.org/pubs/journals/hea/submit). Preregistered studies must also provide a masked version of the preregistration accessible at submission.",
+    "methods_welcome": [
+     "Randomized controlled trials (prospectively registered)",
+     "Biobehavioral/psychophysiological mechanism studies",
+     "Longitudinal and population health / epidemiological designs",
+     "Intervention development and implementation/dissemination science",
+     "Health disparities and social-determinants-of-health research (recent special issues: 'Social Influences on Physical Health' [~May 2025], 'Sexual and Gender Minority Health Inequities' [~March 2025], 'Equity and Inclusion in Pain Care and Research' [~Jan 2026])"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.apa.org/pubs/journals/hea (aims & scope)",
+     "https://www.apa.org/pubs/journals/hea/submit (RCT registration / desk-reject rule, masked review, preprint policy)",
+     "https://www.apa.org/pubs/journals/resources/calls-for-papers (checked directly: no currently-open call for papers listed for this journal as of July 2026 — special issue topics above are from recently published/announced issues, not an active open CFP)"
+    ]
+   },
+   "preprint": {
+    "allowed": "Yes. Journal-specific submission guidelines state 'Preprints are allowed' (APA's general concurrent-submission prohibition applies to duplicate active submissions, not preprints). Authors who previously posted a preprint should disclose it via a link in the author note. Separately, APA's general publishing policy allows posting the accepted (post-review) manuscript to preprint servers, institutional repositories, PsyArXiv, etc. after acceptance.",
+    "source_url": "https://www.apa.org/pubs/journals/hea/submit"
+   },
+   "sensitive_topics_note": "None of the layers involved politically sensitive claims requiring special caution; no subjective/political characterization was made without a concrete source (reviewer_culture was left null rather than inferred)."
+  },
+  {
+   "issn": "1354-067X",
+   "name": "Culture & Psychology",
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "signal_quality": 3,
+    "source_url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+    "summary": "此為 SAGE 出版社層級的通用 AI 政策(未查到 Culture & Psychology 期刊專屬版本，本刊網頁亦未見額外聲明)。輔助性 AI(文法/語言潤飾)免揭露；生成式 AI 產出主要內容(文字、參考文獻、圖像、方法段落)須於投稿時揭露使用之模型；禁止用生成式 AI 捏造資料、頂替研究參與者、產生虛假引用；編輯與審稿人禁止用 GenAI 撰寫決議信或審稿意見。政策未明確說明 AI 是否可列為作者。"
+   },
+   "peer_review": {
+    "type": "公開審查(open review)——編輯部尋求至少兩位審稿人評估科學內容與呈現方式；作者與審稿人皆可要求維持匿名(非強制單盲或雙盲)",
+    "source_url": "https://journals.sagepub.com/author-instructions/cap"
+   },
+   "preprint": {
+    "allowed": "允許——SAGE 通用政策未禁止投稿前張貼預印本，且允許接受後於任何時間分享原始投稿版本或接受版本；未查到本刊有額外限制預印本的專屬聲明(但 SAGE 政策提醒各刊政策可能不同，建議查投稿須知確認)",
+    "source_url": "https://www.sagepub.com/en-us/nam/journal-author-archiving-policies-and-re-use"
+   },
+   "positioning": {
+    "accepts_now": "本刊定位為文化心理學旗艦期刊，以理論性論文為主軸，強調文化、認同、社會行為、主體/互為主體經驗、情緒與符號創造力等主題的跨學科(心理學、哲學、人類學、社會學、教育、民族誌、文化史、語言學、女性主義研究、批判研究、傳播研究)探討。",
+    "framing_required": "官方 Aims & Scope 明文要求：文中若納入實證證據，須對理論推進具相關性；且由於心理現象本質為質性，實證證據被期待採用質性方法(qualitative methods)——換言之，純量化實證研究若缺乏理論建構貢獻，不符合本刊定位。",
+    "methods_welcome": [
+     "理論/概念性論文(theoretical papers)",
+     "質性實證研究(qualitative empirical evidence，服務於理論推進)",
+     "對已刊文章之評論(commentaries)",
+     "書評論文(book review essays)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://journals.sagepub.com/author-instructions/cap",
+     "https://journals.sagepub.com/home/cap"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://letpub.com.cn/index.php?journalid=13113&page=journalapp&view=detail (框架存在但「網友分享經驗」欄位無實際數據)",
+     "https://www.fabiao.com.cn/sci/1354067X/ (審稿週期等欄位未填)",
+     "https://www.haoqikan.com/sci/1354067X/ (審稿時間顯示「—」，無數據)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "review_time_months",
+     "why": "SciRev 資料庫未收錄此刊(多種 URL/搜尋嘗試皆無結果)；LetPub、fabiao.com.cn、haoqikan.com 等中文彙整站雖有本刊頁面框架，但審稿週期欄位均為空或顯示「—」；muchong 論壇、知乎、Reddit r/AskAcademia 搜尋均未找到針對本刊的第一手投稿經驗討論串"
+    },
+    {
+     "field": "desk_reject_pct",
+     "why": "同上，所有查證來源(SciRev/LetPub/fabiao/haoqikan/muchong/知乎/Reddit)均無此刊的退稿率第一手數據"
+    },
+    {
+     "field": "acceptance_note",
+     "why": "未找到任何作者第一手投稿/接受經驗分享(中英文皆無)，故不編造通用敘述"
+    },
+    {
+     "field": "reviewer_culture",
+     "why": "無任何論壇或社群討論可佐證審稿人風格或文化，依規則不可在無具體來源下做主觀論斷"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org): 查無此刊頁面，多次搜尋與直接 URL 嘗試皆 404/無結果 — 0 筆",
+    "小木虫 muchong.com: 一般搜尋僅返回論壇版面首頁連結，未找到針對 Culture & Psychology 的具體討論串 — 0 筆有效結果",
+    "fabiaoji/fabiao.com.cn: 找到期刊介紹頁，但審稿週期/接受率/退稿率欄位皆為空白或「—」",
+    "知乎 zhihu.com: 僅找到 SSCI 心理學期刊彙總文章列出本刊基本資料(ISSN、季刊)，無投稿經驗貼文 — 0 筆經驗分享",
+    "Reddit r/AskAcademia (site:reddit.com): 搜尋無任何相關討論串 — 0 筆結果",
+    "LetPub: 期刊頁面框架存在(平均審稿速度/平均錄用比例等統計位)，但「網友分享經驗」尚未被填入任何實際數據"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1077-2626",
+   "name": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/",
+    "summary": "此為 IEEE 出版社層級（非 TVCG 期刊專屬頁面）政策，適用於所有 IEEE 出版品，未見 TVCG/IEEE Computer Society 有更嚴格的獨立版本。FACT：AI 產生內容（文字/圖/圖像/程式碼）須於 Acknowledgments 揭露使用的 AI 系統名稱及使用範圍說明；AI 不得列為共同作者，人類作者對全文負完全責任；純文法/編輯用途的 AI 使用建議揭露但非強制。另有審稿保密規定：審稿中的稿件內容不得輸入公開 AI 平台（避免資料外洩），此規則對作者與審稿人皆有拘束力。未找到 TVCG 或 IEEE Computer Society 專屬頁面覆寫此政策，故信心中等（來源為 IEEE Open/IEEE Author Center 通則頁，非 TVCG 官網逐字確認）。"
+   },
+   "peer_review": {
+    "type": "single-blind 為預設，作者可選擇 double-blind（author-optional anonymization）；每篇至少 3 位審稿人（IEEE VIS/TVCG 共用審稿流程，至少 2 位 PC 成員 + 1 位外部審稿人）",
+    "source_url": "https://ieeevis.org/year/2026/info/call-participation/paper-submission-guidelines/"
+   },
+   "preprint": {
+    "allowed": "允許。IEEE 政策明確排除 arXiv 預印本視為「已發表」；作者可在投稿前後於 arXiv.org 或 TechRxiv.org 保留預印本，正式接受後須加註 IEEE 版權聲明。此為 IEEE 通則，未見 TVCG 專屬額外限制。",
+    "source_url": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf"
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": []
+   },
+   "experiential": {
+    "review_time_months": "SciRev：首輪審查約 3.9 個月，總審查時間（含修改）約 6.9 個月，平均 2 輪審查，每輪約 3 份審稿報告（樣本量小，SciRev 僅少量回報）。LetPub 另列「平均 3 個月」審稿週期，與小木虫論壇搜尋摘要提到的「初審約 8-12 週」量級大致吻合，三個獨立來源方向一致但非同一次調查，故取範圍陳述而非單一精確值。",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub 頁面標示「約 25%」錄取率量級（competitiveness 指標，非官方發布之正式 acceptance rate，需謹慎視為粗略參考）。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/ieee-transactions-on-visualization-and-computer-graphics/",
+     "https://www.letpub.com/index.php?page=journalapp&view=detail&journalid=3427",
+     "https://muchong.com/html/201907/13552520.html"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "positioning.accepts_now / methods_welcome / framing_required",
+     "why": "本次查詢時間內未能檢索到 2024-2026 具體文章標題清單或當前 special-issue CFP 逐條核對；僅知 TVCG 涵蓋 computer graphics/visualization/visual analytics/VR，未做逐篇標題抽樣，故不填入以避免臆測，signal_quality=1（僅有 scope 層級資訊，非近期選題實證）。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該欄位顯示 n/a，LetPub 與小木虫皆未提供明確桌拒比例數字，Zhihu/Reddit 搜尋亦未命中具體數字，誠實留空。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "SciRev 有審稿難度/品質評分（難度4.0/5、品質3.5/5）及一則「reviewer misunderstood the model」的個案評論，但樣本數極少（僅少數回報），不足以構成可信的審稿文化敘事；小木虫討論串因編碼亂碼無法擷取具體內容，Reddit r/AskAcademia 搜尋無命中結果，故此欄位留空而非用單一匿名評論外推。"
+    },
+    {
+     "field": "ai_policy.source_url specificity",
+     "why": "未找到 TVCG 或 IEEE Computer Society 專屬 AI 政策頁面（僅有 IEEE 出版社通則頁 open.ieee.org 及 IEEE Author Center 通則），故此政策為推定適用於 TVCG，非期刊逐字確認。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org) - 英文期刊評論平台：取得首輪/總審查時間數字與少量審稿難度評分，樣本量小",
+    "小木虫 muchong.com - 搜尋到相關討論串（如 https://muchong.com/html/201907/13552520.html），但頁面編碼亂碼導致內容無法可靠擷取，僅能確認討論串存在且主題相關；另一筆搜尋摘要提到『初審約8-12周，單盲評審，至少三位審稿人』但未能逐字核實原文",
+    "知乎 zhihu.com - 搜尋到多篇介紹 TVCG 期刊地位/投稿經驗的文章（如 zhuanlan.zhihu.com/p/675240803, zhihu.com/question/331830587），但未逐篇 WebFetch 核實具體審稿週期/文化描述數字，故未採用其量化聲稱",
+    "Reddit r/AskAcademia - 0 results，搜尋未命中任何 TVCG 相關討論串",
+    "LetPub (中文期刊選擇平台) - 取得審稿週期(3個月)、約25%量級的競爭度指標、CiteScore、Gold OA比例等，未含具體審稿文化評論"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://link.springer.com/journal/10514/submission-guidelines",
+    "summary": "採用 Springer Nature 集團通用 AI 政策(非期刊專屬頁面,但適用):LLM 不符合作者資格,禁止列為作者;若使用 LLM 產生內容須於 Methods 章節(或適當位置)揭露;純粹用 LLM 做文字潤色/文法校對(AI-assisted copy editing)不需揭露;作者對聲明內容負全責。屬 Springer Nature 集團標準政策套用到本刊,非本刊獨有客製條款,故信心中等。"
+   },
+   "blanks": [
+    {
+     "field": "peer_review.source_url",
+     "why": "single-blind 的說法來自 WebSearch AI 摘要整合多個來源，未能直接開啟 Springer submission-guidelines 頁面(被重導向至登入頁 idp.springer.com)驗證原文，故 source_url 從缺，僅列為推斷。"
+    },
+    {
+     "field": "preprint.allowed / source_url",
+     "why": "未能取得本刊或 Springer 官方針對本刊的 preprint 專屬頁面(Springer 一般政策頁面重導向至品牌頁而非內容頁)；Springer Nature 集團慣例通常允許非商業性 preprint server(如 arXiv)先行張貼，但本次未能抓到針對 Autonomous Robots 或 Springer 集團的明確原始政策文字，故留空並標記低信心。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 頁面明確標示 desk reject 比例為 n/a（資料不足），沒有其他一手來源補充，故留空。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "SciRev acceptance rate 顯示為 n/a；LetPub 使用者評語「較易」(relatively easy) 為單一整合式標籤而非個別可查證的第一手投稿故事，中國論壇(小木虫)僅一則 2015 年案例含 major revision 後 accepted，缺乏近期(2024-2026)多筆一致性佐證，故未寫入具體百分比，僅作質化描述並標低信心。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 找到 1 則使用者投稿經驗（2015年案例：投稿→大修→接受約4個月，含具體時間軸與審稿風格描述，見 https://muchong.com/bbs/journal.php?view=detail&jid=1026）",
+    "知乎 zhihu — 找到條目提及 ISSN、中科院三區、JCR Q2、影響因子約3、審稿週期約3個月 (https://zhuanlan.zhihu.com/p/506100760，內容摘要透過 WebSearch AI 取得，WebFetch 直接抓取被403拒絕，故僅間接引用)",
+    "LetPub letpub.com.cn — 找到使用者標籤化統計：審稿週期「較慢，6-12週」，接受難度「較易」(https://www.letpub.com.cn/index.php?journalid=1015&page=journalapp&view=detail)",
+    "fabiaoji — 搜尋主要命中的是 Robotics and Autonomous Systems（Elsevier姊妹刊，非本刊），未找到 Autonomous Robots 本刊的 fabiaoji 專頁內容，0 直接結果",
+    "Reddit r/AskAcademia — site:reddit.com 搜尋 0 相關結果，未發現任何討論串"
+   ],
+   "experiential": {
+    "review_time_months": "SciRev(近期匯總,樣本極小,約2則評論): 第一輪審稿平均 19.3 週(約4.4個月)，平均需2輪審稿方有最終決定。小木虫單一案例(2015):投稿到接受約4個月(含一次大修)。LetPub使用者標籤:「較慢，6-12週」（此為集體印象標籤，與 SciRev 的4個月數字不完全一致，可能反映不同年代或不同子領域樣本，兩者並陳)。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev acceptance rate 欄位缺資料(n/a)。LetPub 使用者集體印象標記為「較易」，但此為聚合標籤非可逐一查證的具體數字，僅供參考不宜視為精確接受率。",
+    "reviewer_culture": "SciRev 評分:審稿報告品質 4.0/5.0(較高)，整體處理評分 3.0/5.0，意見難度評為 4.0/5.0(偏嚴格/具挑戰性)；唯一近期評論原話大意為「審稿過程嚴謹但耗時很長」。小木虫案例作者形容審稿人給出「比較性回饋」且要求作者準備詳細的回覆信逐條回應實質批評，過程偏重方法嚴謹度與實證驗證完整度。",
+    "sources": [
+     "https://scirev.org/journal/autonomous-robots/",
+     "https://muchong.com/bbs/journal.php?view=detail&jid=1026",
+     "https://www.letpub.com.cn/index.php?journalid=1015&page=journalapp&view=detail"
+    ],
+    "signal_quality": 3
+   },
+   "issn": "0929-5593",
+   "name": "Autonomous Robots",
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "type": "single-blind（推斷；審稿人匿名，作者身分審稿人可見）",
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "2025年出刊(如 Volume 49, Issue 2, 2025年6月)持續刊登：機器人操作(manipulation)、導航與路徑規劃、多機器人系統(multi-robot systems)協同規劃、人機互動(HRI)、機器人學習與適應(learning and adaptation)、自我校準與自我修復(self-calibration/self-repair)等主題，強調「非結構化世界中的自主性(autonomy)、適應(adaptation)、互動(interaction)、智能(intelligence)、操作(manipulation)、移動(mobility)」六大能力面向。期刊創刊於1994年，雙月刊。",
+    "framing_required": "官方 Aims & Scope 強調論文須聚焦「具一定自主能力之機器人系統的計算面向理論與應用」，並要求含實體機器人的效能數據(real-world robot performance data)，純模擬或純理論(無實機驗證)論文通常較不受歡迎(此為 aims&scope 慣例性推斷，未見近2年明確CFP逐字佐證，信心中等)。",
+    "methods_welcome": [
+     "機器人操作(manipulation)",
+     "自主導航與路徑規劃(navigation/planning)",
+     "多機器人系統與協同(multi-robot systems)",
+     "人機互動(human-robot interaction)",
+     "機器人學習與適應(learning/adaptation, 含機器學習/強化學習應用於機器人)",
+     "自我校準與自我修復(self-calibration/self-repair)",
+     "移動性/移動機器人(mobility, locomotion)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://link.springer.com/journal/10514/aims-and-scope",
+     "https://link.springer.com/journal/10514/volumes-and-issues/49-2",
+     "https://link.springer.com/journal/10514"
+    ]
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1552-3098",
+   "name": "IEEE Transactions on Robotics",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 4,
+    "summary": "IEEE/IEEE-RAS 政策(全體 IEEE 期刊通用,T-RO 官方 Information for Authors 頁面確認適用):允許使用生成式 AI 協助寫作/圖表/程式碼,但須在 Acknowledgment 揭露所用 AI 系統名稱與使用範圍;單純文法潤飾/編輯可免揭露(仍建議揭露)。禁止:AI 列名為作者、用 AI 捏造/竄改數據或圖表、審稿人用公開 AI 平台處理在審稿件內容(嚴重違反保密,IEEE RAS 出版倫理委員會會查處)。作者對 AI 產出內容仍負全責(比照 COPE 立場)。",
+    "source_url": "https://www.ieee-ras.org/publications/guidelines-for-generative-ai-usage/"
+   },
+   "peer_review": {
+    "type": "Double-anonymous (雙盲) — IEEE RAS 於 2025-02-01 起對所有 fully-sponsored 期刊(含 T-RO)實施;投稿 PDF 須移除作者資訊,審稿人與作者互不知悉身分。",
+    "source_url": "https://www.ieee-ras.org/publications/t-ro/t-ro-information-for-authors/"
+   },
+   "preprint": {
+    "allowed": "允許。作者可將 preprint 放在個人網站、任職機構伺服器,或 arXiv/TechRxiv 等 IEEE 認可之非營利 preprint server。一旦論文被接受,須以接受版本(含版權聲明)取代原 preprint。",
+    "source_url": "https://www.ieee-ras.org/publications/t-ro/t-ro-information-for-authors/"
+   },
+   "positioning": {
+    "accepts_now": "2025-2026 年實際刊出的主題涵蓋:連續體機器人(continuum robots)狀態估計、纜索驅動並聯機器人(cable-driven parallel robots)線上重構、機器人學習/多模態示範的生成式模型綜述(deep generative models for robot learning)、輪椅使用者意圖之擴散模型估計、雷射-視覺輻射場重建(LiDAR-visual radiance field / NeRF-類)、仿生緩衝關節設計、拋擲動力學建模、可微分物理挖掘機器人、下肢義肢雙層優化控制、仿生視覺伺服框架、可微分軌跡優化策略、模組化多旋翼系統。整體呈現「理論+演算法+實驗驗證」並重,深度學習/可微分方法與傳統機構/控制理論並存。",
+    "framing_required": "官方 Scope 明確要求:須為 robotics 領域之 major advance(重大進展),接受 theory、design、實驗研究、分析、演算法、整合與應用案例之任意組合;純軟體/演算法論文若無機器人硬體或具體機器人應用情境,較不符合此刊定位。",
+    "methods_welcome": [
+     "learning-based control / imitation learning",
+     "diffusion / generative models for robot learning",
+     "SLAM 與視覺-光達融合建圖 (radiance field reconstruction)",
+     "cable-driven / continuum / soft robotics 機構設計與建模",
+     "legged & wheeled mobility, human-robot interaction",
+     "義肢與穿戴式機器人控制 (wearable robotics, prosthesis control)",
+     "visual servoing",
+     "多機器人/模組化系統設計"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://dblp.org/db/journals/trob/trob42.html",
+     "https://research.com/journal/ieee-transactions-on-robotics-1"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "官方資料分歧:SciRev(4 筆評論)顯示第一輪平均 2.7 個月、總處理時間(至接受)平均 5.3 個月、平均 1.8 輪審查;最近一筆個案為第一輪 9.8 週(結果 accepted, 評為 excellent)。LetPub 中國作者統計顯示平均審稿週期 6.0 個月。小木虫論壇使用者(cuiminyue, 2000+ 篇經驗發文)稱『審稿速度比同類期刊快,但錄取難度高』,未給出具體數字。兩來源量級相近(約 3-6 個月),但樣本數極小(SciRev 僅 4 筆),應視為粗略區間而非精確值。",
+    "desk_reject_pct": null,
+    "acceptance_note": "SciRev 未提供接受率數字(n/a)。LetPub 中文頁面以質性描述『較易』形容錄取,但未附數據來源方法論,可信度低,與小木虫『錄取難度高』的說法互相矛盾,故不採信任一方為定論,僅並陳。",
+    "reviewer_culture": "SciRev 顯示審稿報告品質評分 4.5/5.0、審稿意見難度評分 4.0/5.0(偏難)、整體稿件處理評分 4.0/5.0,平均每篇收到 2.8 份審稿報告。小木虫使用者評論指出該刊要求嚴謹、審稿人常要求大量補充實驗與理論證明(未附原文引用,屬使用者摘述)。",
+    "signal_quality": 3,
+    "sources": [
+     "https://scirev.org/journal/ieee-transactions-on-robotics/",
+     "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=3417",
+     "https://muchong.com/t-13431889-1"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 未提供此欄位數字(標記 n/a),小木虫/LetPub 討論中亦未見具體桌拒比例;未查得任何一手數字,故留空而非套用通用值。"
+    },
+    {
+     "field": "positioning.accepts_now (量化接受率/退稿率)",
+     "why": "僅有質性描述(『較易』vs『難』互相矛盾),無可信的一手量化資料源,故未在 accepts_now 中給出百分比。"
+    },
+    {
+     "field": "cross_language_checked r/AskAcademia",
+     "why": "WebSearch 未找到任何 Reddit r/AskAcademia 討論串專門提及 IEEE Transactions on Robotics 的審稿經驗,搜尋結果僅回傳 SciRev/Peeref 聚合頁,視為 0 results 誠實記錄。"
+    },
+    {
+     "field": "experiential.reviewer_culture 政治/立場面向",
+     "why": "任務要求不得無來源臆測審稿人文化的政治傾向,查無此類具體來源,故未涉及,僅呈現審稿嚴謹度與意見難度之量化評分。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 找到討論串 https://muchong.com/t-13431889-1:使用者稱審稿速度較同類期刊快但錄取難度高(質性描述,無具體週數);另有一篇 2012 年舊帖抱怨『自引嚴重』(年代久遠,未採用於本次結論)",
+    "LetPub (letpub.com.cn) — 中國作者統計頁面:平均審稿週期 6.0 個月,錄取描述為『較易』(質性、方法論不明)",
+    "知乎 zhihu.com — 搜尋結果出現一篇《IEEE Transactions on Robotics,投稿過程交流》專欄文章連結(zhuanlan.zhihu.com/p/614196902),因非工具直接可讀取全文之管道限制,僅記錄連結存在,內容未逐字擷取核實,故未採用其具體宣稱",
+    "Reddit r/AskAcademia — 0 results,WebSearch 未回傳任何相關討論串"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.acm.org/publications/policies/frequently-asked-questions (policy text located via WebSearch; direct fetch returned 403) and https://interactions.acm.org/submissions",
+    "summary": "找不到 interactions 期刊自訂的 AI 政策頁面；適用的是 ACM 出版社統一政策(非期刊專屬)。ACM 政策：生成式 AI 工具不得列為作者；使用生成式 AI 產生內容(文字/表格/圖/程式碼/引用等)須在 Acknowledgements 揭露；純文書處理工具(如拼字檢查)除外；若不確定是否需揭露，須從寬揭露。2026年6月 ACM 更新作者政策，要求所有作者須為人類並於 PCS 系統列名，AI 不可列名但可在致謝中提及。此為 permission gate=conditional（允許使用但條件是揭露），leniency 給 3(中等寬鬆：允許使用但要揭露，非全面禁止也非完全不限制)。注意：這是 ACM 出版社層級政策，未找到 interactions 雜誌本身額外聲明是否採用相同標準或有更嚴/更寬版本，故 signal_quality 標低。"
+   },
+   "peer_review": {
+    "type": "非傳統同儕審查(non-peer-reviewed magazine)：由編輯部內部審查委員會(internal review board)審核，經 Editors-in-Chief 與 forum editors 就相關性/清晰度/紮實度審閱，再由 ACM managing editor 與 copy editor 校對文法標點與長度；EiC 與 ACM 編輯團隊保留對違反 ACM 出版政策之投稿逕行 desk-reject 之權利。",
+    "source_url": "https://interactions.acm.org/submissions"
+   },
+   "preprint": {
+    "allowed": "適用 ACM 出版社統一政策：作者擁有無限制權利，可將投稿前(pre-submission)、投稿中、接受版及同儕審查版本張貼於 arXiv 等非商業性典藏庫；張貼 preprint 不視為既有發表，無需申請例外。另外，自 2026-01-01 起 ACM 全面轉為 Open Access，所有已發表文章(含雜誌文章)在 ACM Digital Library Basic 版免費開放。未找到 interactions 雜誌針對 preprint 的專屬額外規定，適用 ACM 通用規則。",
+    "source_url": "https://www.acm.org/publications/policies/publication-rights-and-licensing-policy"
+   },
+   "positioning": {
+    "accepts_now": "interactions 是 ACM SIGCHI 旗艦雙月刊，非研究論文期刊而是 trade/practitioner magazine，涵蓋 HCI、互動設計(IxD)、使用者經驗(UX)、服務設計、推測設計(speculative design)等。近期(2025-2026)公開可見的相關 arXiv 衍生/引用文章主題顯示雜誌社群關注 LLM 整合系統的 HCI 報告與評論方式、人機符號與意義的互動、AI agent 協作設計案例(如 Botender)、以及批判性/人文取向的 HCI(criticism、humanistic HCI)論述傳統長期存在。徵稿類別包含 features、forums(如批判觀點)、how-to 類文章。",
+    "framing_required": "官方投稿頁明確要求：作者一年至多投稿兩篇(為維持聲音多樣性)；使用 Word 文件、精簡格式；標題需簡潔具描述性(避免使用冒號的長標題)；引用文獻不超過六篇，避免自我引用(除非必要背景文獻)；文章需強調『設計理論與實務』或『運算/軟體工程』或『基礎設施、硬體、介面與互動設計開發』其中之一的取向並具備清晰度與紮實度(groundedness)，而非純學術論文格式。",
+    "methods_welcome": [
+     "design practice accounts / 設計實務紀錄",
+     "field research / 田野調查",
+     "design theory discussion / 設計理論探討",
+     "critical perspectives & debate / 批判觀點與建設性辯論",
+     "how-to / 實務教學文章",
+     "opinion/forum commentary / 專欄評論"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://interactions.acm.org/submissions",
+     "https://interactions.acm.org/blog/view/criticism-and-hci",
+     "https://interactions.acm.org/blog/view/critical-waves"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 查無 interactions (ISSN 1072-5520) 條目；WebFetch 對 scirev.org 查詢頁回傳 400。由於 interactions 是非同儕審查的 trade magazine，投稿者社群(通常追蹤 SCI/EI 期刊審稿週期)極少討論此刊，小木虫/知乎/PTT/Reddit AskAcademia 搜尋均未命中任何 interactions 專屬審稿週期討論。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無公開一手資料。ACM 官方投稿頁僅說明編輯部保留逕行 desk-reject 權利，未提供具體比例；未查到任何論壇貼文提及。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "未找到任何投稿者第一手經驗分享(中文或英文論壇)描述接受/退稿過程的具體細節。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源可佐證審稿文化(態度友善/嚴苛/意識形態傾向等)之主觀論述；依規則不得無來源臆測，故留空。"
+    },
+    {
+     "field": "ai_policy.source_url (journal-specific)",
+     "why": "未找到 interactions 雜誌自身獨立於 ACM 通用出版政策之外、額外的 AI 使用規範頁面；interactions.acm.org/about 與 /submissions 之 WebFetch 直接存取均遭 403，僅能透過搜尋引擎摘要間接取得片段，故該層信度標低。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋『ACM interactions 投稿 SIGCHI』0 個相關結果，僅命中 SIGCHI 組織一般介紹頁",
+    "知乎 zhihu.com — 搜尋『ACM interactions 杂志 发表 审稿』0 個 interactions 雜誌專屬結果，僅命中 ACM Transactions/Computing Surveys 等其他期刊審稿週期文章(如 CSUR 約8個月、ACM Trans 約2-6個月，但均非 interactions 本刊)",
+    "Reddit r/AskAcademia — 搜尋未命中任何 interactions 投稿經驗討論串，僅命中官方投稿頁與 Facebook HCI 社群徵稿轉貼",
+    "SciRev scirev.org — 查詢介面回傳 400 錯誤，且一般搜尋未發現 interactions 在 SciRev 上有評論筆數"
+   ],
+   "sensitive_topics_note": null,
+   "issn": "1072-5520",
+   "name": "interactions (ACM)",
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1435-5558",
+   "name": "Cognition, Technology & Work",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://link.springer.com/journal/10111/submission-guidelines",
+    "summary": "期刊專屬 submission guidelines 頁面複述 Springer Nature 集團通用政策(非期刊獨有訂製):LLM/生成式AI 不得列為作者;若使用須在 Methods 章節(或替代章節)揭露;純粹的「AI輔助文字潤色」(文法/拼字/語氣修飾,不含生成式編輯或自主內容創作)不需揭露;生成式AI圖像不得用於出版。同一政策文字亦見於 Springer Nature 集團政策頁與其他多個 Springer 期刊(如 AI and Ethics、AI & SOCIETY)的 submission-guidelines 頁,顯示屬集團標準模板而非期刊客製條款。集團政策另要求審稿人不得將稿件上傳至生成式AI工具。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "signal_quality": 2,
+    "accepts_now": "期刊定位聚焦人類與科技在工作情境中互動的認知系統工程(Cognitive Systems Engineering)與社會技術系統(socio-technical systems)取向研究:人們如何使用資訊科技、經驗與專業如何在工作中發展、事故如何源自個人-技術-組織因素的交互作用。涵蓋領域包括工業組織心理學、人機互動、知識管理、電腦安全。近期曾有專刊 Call for Papers「Home Office: Working from a Private Place」(遠距工作,2023)。未能取得 2024-2026 具體文章標題清單,因 link.springer.com 文章列表頁被重導向至需登入的 idp.springer.com 認證頁,WebFetch 無法繞過。",
+    "framing_required": null,
+    "methods_welcome": [],
+    "sources": [
+     "https://scispace.com/journals/cognition-technology-work-1zj30bqn",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8185493/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "3個月以上(多個中文投稿經驗彙整站一致回報 '>12周,或約稿' / 平均審稿時間 >12 周);惟 letpub、gwyoo、ablesci/科研通 三個來源數字高度一致，很可能同源於同一批使用者自填問卷資料庫，非三個獨立樣本，可信度打折。",
+    "desk_reject_pct": null,
+    "acceptance_note": "科研通(ablesci)使用者經驗標記接受難度為「容易」，但樣本量與時間範圍不明，未見具體百分比或案例細節。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://www.ablesci.com/journal/detail?id=5Nbz95",
+     "https://www.gwyoo.com/sci/773470.html",
+     "https://letpub.com.cn/index.php?journalid=8780&page=journalapp&view=detail&xuanxiangk_id=2"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "無法確認是 single-blind 或 double-blind；Springer 官方 submission-guidelines 頁被登入牆擋下，第三方資料庫搜尋摘要片段中也未見明確陳述"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "未查得本刊具體適用的預印本政策頁面內容，不應套用其他期刊的通用 Springer 規則以免張冠李戴"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 查無本刊獨立頁面，中文彙整站僅給出審稿週期與模糊'容易'標籤，無具體退稿率數字"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何一手論壇/社群貼文描述審稿人風格、國籍傾向或審稿文化，僅有審稿週期數字，不足以支撐主觀敘述"
+    },
+    {
+     "field": "positioning.methods_welcome",
+     "why": "無法在未登入情況下取得 2024-2026 文章標題列表，僅能依賴期刊 aims&scope 摘要與單一 2023 專刊 CFP 推斷大方向，不足以列出具體方法清單"
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "同上，缺乏近期文章標題/摘要作為推斷依據"
+    }
+   ],
+   "overall_signal_quality": 2,
+   "cross_language_checked": [
+    "小木虫 muchong.com — site-restricted search 無命中此期刊專屬討論串 (0 results)",
+    "知乎 zhihu — 搜尋'審稿周期'僅命中同名但不同刊物的《Cognition》期刊問答，非本刊 (0 results for this journal)",
+    "科研通/ablesci、letpub、gwyoo(中文投稿經驗彙整站，含使用者自填數據)— 一致回報 >12週審稿、接受難度「容易」，但疑似同源數據",
+    "SciRev scirev.org — 無此期刊獨立頁面(僅有其他同名系列期刊如 Cognition、Journal of Cognition、Brain and Cognition 等，均非本刊)，0 results",
+    "Reddit r/AskAcademia — WebSearch 無命中任何討論此期刊的貼文 (0 results)"
+   ],
+   "sensitive_topics_note": null
+  }
+ ]
+}

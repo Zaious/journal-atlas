@@ -1,0 +1,959 @@
+{
+ "batch": "psych-b6",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0032-8332",
+   "name": "Primates",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.springernature.com/gp/policies/editorial-policies (Springer Nature group-wide AI policy; journal-specific submission-guidelines page for Primates could not be fetched directly due to idp.springer.com auth-wall redirect — confirmed only via search snippet referencing it)",
+    "summary": "未找到 Primates 期刊專屬的 AI 政策頁面內容(link.springer.com/journal/10329/submission-guidelines 被 idp.springer.com 登入牆擋下,WebFetch 兩次嘗試皆被 303 重導向到需認證頁面)。僅能確認 Primates 適用 Springer Nature 集團通用政策:LLM 不得列為作者;使用 LLM 需在 Methods 段落(或替代段落)揭露;不允許生成式 AI 產生的圖像(除少數有合約授權的圖庫例外);LLM 可用於文法/可讀性層級的文字潤飾且不需揭露(即『AI-assisted copy editing』例外)。這是集團政策而非期刊自行加嚴或放寬的證據,故信號品質偏低。"
+   },
+   "peer_review": {
+    "type": "Single-blind peer review (Springer Nature default for this journal category); could not confirm journal-specific single- vs double-blind statement due to submission-guidelines page being behind auth wall",
+    "source_url": "https://link.springer.com/journal/10329/submission-guidelines (page exists per search index but returns 303 redirect to idp.springer.com login on direct fetch)"
+   },
+   "preprint": {
+    "allowed": "Allowed — Springer Nature group-wide policy permits posting/updating preprints of primary research manuscripts on preprint servers or authors' websites at any time during peer review, with disclosure (DOI + license terms) required at submission or during review. No Primates-specific deviation found.",
+    "source_url": "https://www.springernature.com/gp/policies/editorial-policies"
+   },
+   "positioning": {
+    "accepts_now": "根據 Springer 官方 Aims & Scope 頁面(透過搜尋擷取,非直接讀取全文):Primates 是最古老的英文靈長類學期刊(創刊 1957,原屬 Japan Monkey Centre,2024 年正式將所有權移交給 Primate Society of Japan),徵稿範圍涵蓋行為生物學基礎、社會生態、學習與認知、社會歷程、系統分類、演化、醫學等;歡迎與野生族群保育及圈養靈長類福祉相關的研究;若能清楚說明與靈長類學的關聯性,也接受非靈長類物種的研究。文類包含 Original Articles、Review Articles、News and Perspectives、Book Reviews。",
+    "framing_required": "未找到 2024-2026 具體 CFP 或特刊徵稿主題的第一手資料;僅有 2024 年『期刊所有權由 Japan Monkey Centre 移交 Primate Society of Japan』的編輯公告(Springer 官網文章),顯示期刊治理結構近期有變動,但未搜得這對徵稿方向的具體影響說明。",
+    "methods_welcome": [
+     "行為學/生態學野外調查 (field ethology & socio-ecology)",
+     "認知與學習實驗研究",
+     "系統分類與演化研究",
+     "保育相關研究",
+     "圈養靈長類福祉研究",
+     "醫學相關靈長類研究",
+     "非靈長類物種研究(需明確論證與靈長類學的關聯性)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://link.springer.com/journal/10329/aims-and-scope (內容經 WebSearch 摘要取得,非直接 WebFetch 全文,因 idp.springer.com 登入牆)",
+     "https://link.springer.com/article/10.1007/s10329-024-01179-9 (2024 所有權移交公告,經 WebSearch 標題確認,未讀全文)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/primates/ — 直接 WebFetch 確認:review time 'n/a'、'No reviews have yet been submitted for this journal'、desk-reject 'n/a'、acceptance rate 'n/a'"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "link.springer.com/journal/10329/submission-guidelines 兩次 WebFetch 均被 303 重導向至 idp.springer.com 登入牆,無法直接讀取原文確認 single-blind 或 double-blind;僅能引用 WebSearch 摘要片段,未見期刊明確聲明。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該期刊頁面明確顯示 0 筆審稿人回報(n/a),無任何第一手審稿週期資料。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 同上,0 筆資料,無 desk-reject 統計。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "SciRev 無資料;WebSearch 於小木虫(muchong.com)以 site: 限定搜尋 Primates/灵长类 期刊點評,查無任何討論串(返回結果全為無關的靈長類生物學論文);知乎搜尋 Primates 投稿/灵长类学 也僅返回其他期刊(如 International Journal of Primatology、American Journal of Primatology)的整理文章,未見针对 Primates(0032-8332)本刊的討論;Reddit AskAcademia 搜尋亦未命中相關討論串。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "跨語言查核(小木虫、知乎、Reddit AskAcademia)均未找到任何針對本刊審稿人文化/風格的第一手描述,故不編造敘事,留空。"
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "未搜得 2024-2026 年任何具體特刊 CFP 或編輯部聲明的期刊定位收緊/放寬訊號,僅有治理權移交公告,關聯性不明確,故此欄位資訊薄弱。"
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com(小木虫) — site: 限定搜尋 'Primates 灵长类 期刊点评' 及一般搜尋 'Primates journal 小木虫 投稿 审稿 灵长类':0 筆針對本刊(ISSN 0032-8332)的討論串,僅返回不相關的靈長類生物學論文或其他期刊(如 American Journal of Primatology、International Journal of Primatology)的資訊整理文章。",
+    "zhihu.com(知乎) — 搜尋 'Primates 期刊 投稿 灵长类学':0 筆針對本刊的第一手投稿/審稿經驗,結果均為其他期刊(International/American Journal of Primatology)彙整文,或不相關領域(昆蟲學、家禽科學等)SCI期刊清單文章。",
+    "reddit.com r/AskAcademia — 搜尋 'reddit AskAcademia Primates journal Japan Monkey Centre review':0 筆討論串命中,結果均為 Japan Monkey Centre 動物園/博物館的 Tripadvisor 評論及期刊官方公告,非 Reddit 論壇內容。",
+    "scirev.org — 直接 WebFetch 該刊頁面:確認 0 筆審稿人回報資料,所有指標顯示 'n/a'。"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 1,
+    "source_url": "https://www.bps.org.uk/clinical-psychology-forum-cpf-reviewer-panel-and-editorial-board",
+    "summary": "No journal-specific or BPS-wide generative-AI authorship/disclosure policy for Clinical Psychology Forum could be located. BPS has held general 'AI in psychological practice' conferences/policy workshops (topic-level, not an authorship rule), and BPS ran a 2025 cross-journal 'digital futures' Landmark Issue theme, but neither is an AI-use gate for authors/reviewers of CPF specifically. CPF is published directly on the BPS explore.bps.org.uk (HighWire) platform, not via Wiley, so Wiley's AI-for-authors guidance (used for BPS's Wiley-hosted journals like British Journal of Clinical Psychology) does not apply here without confirmation."
+   },
+   "peer_review": {
+    "source_url": "https://www.bps.org.uk/clinical-psychology-forum-cpf-reviewer-panel-and-editorial-board",
+    "type": "Not conventional double-blind academic peer review. CPF has a named 'Reviewer Panel and Editorial Board' drawn from current DCP (Division of Clinical Psychology) members with 5+ years post-qualification experience; panel meets virtually ~3x/year and reviewers are credited by name monthly inside the cover. This reads as a practitioner/editorial-collective review model for a professional bulletin, not blinded external academic refereeing. A joint Clinical Editor + Managing Editor model is also mentioned in passing (source: WebSearch snippet of bps.org.uk page, page itself returned HTTP 403 on direct fetch so this is a secondary-source paraphrase, not primary-text confirmation)."
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Practitioner-facing pieces from UK/Ireland clinical psychologists: brief research & evaluation papers (<=3000 words), reflective articles (<=2000 words), opinion pieces/position statements/research summaries (<=3500 words), reports of events, correspondence, book reviews, announcements, plus DCP policy/business updates. Recent (June 2025, issue 389) article titles found: 'The impact of imposter participants on psychology research', 'Reflections on supporting NHS hospital colleagues psychologically', and a piece on 'working with suicide' (evaluating service gaps) — indicating a mix of service evaluation, reflective/practice pieces, and methodological commentary rather than conventional empirical/quantitative research reports.",
+    "framing_required": "Relevance to clinical psychology practice/DCP membership interests in the UK/Ireland context; word-limit compliance per article type; reflective/practice framing is welcomed alongside formal research.",
+    "methods_welcome": [
+     "service evaluation",
+     "reflective/practice commentary",
+     "qualitative/practice-based accounts",
+     "brief empirical research & evaluation papers",
+     "opinion/position pieces",
+     "book reviews",
+     "event reports"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://explore.bps.org.uk/content/bpscpf (WebSearch snippet, page 403'd on direct fetch)",
+     "https://cms.bps.org.uk/sites/default/files/2022-07/Clinical Psychology Forum - Guidelines for Contributors.pdf (word-limit facts via WebSearch snippet; PDF itself 403'd on direct fetch)",
+     "https://explore.bps.org.uk/content/bpscpf:::1:::389:::local:::complete-issue.pdf (June 2025 issue 389 article titles via WebSearch snippet)"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 / ai_policy.gate",
+     "why": "No BPS-wide or CPF-specific generative-AI authorship/disclosure policy page could be located via web search; only general BPS AI-in-practice conference/policy-workshop content was found, which is not an authorship rule."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint policy statement for CPF found in any accessible source; the contributor-guidelines PDF that likely covers this returned HTTP 403 on direct fetch and no preprint mention surfaced in search snippets."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "No SciRev entry exists for this journal (search found no dedicated SciRev review page for Clinical Psychology Forum / ISSN 1747-5732)."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above - no SciRev data and no forum discussion of desk-reject rates found."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero results on 小木虫 muchong.com, 知乎 zhihu, fabiaoji, and Reddit r/AskAcademia specifically discussing this journal - consistent with it being a UK/Ireland DCP-member practitioner bulletin outside the SCI/SSCI publication-credit ecosystem that Chinese academic forums track, and outside typical r/AskAcademia international submission-experience threads."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand accounts (forum posts, SciRev entries) of author acceptance experience found in any checked source."
+    },
+    {
+     "field": "peer_review.type (precision)",
+     "why": "The bps.org.uk reviewer-panel page returned HTTP 403 on direct WebFetch; the description of the review process is reconstructed from a WebSearch result snippet only, not verified against the primary page text."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 0 results for Clinical Psychology Forum / ISSN 1747-5732 (only generic forum-platform meta-discussion surfaced)",
+    "知乎 zhihu.com: 0 results specific to this journal; only general Chinese-language lists of SCI/SSCI clinical-psychology journals (which do not include this UK DCP bulletin) surfaced",
+    "fabiaoji: 0 results",
+    "Reddit r/AskAcademia (site:reddit.com search): 0 results for this journal"
+   ],
+   "issn": "1747-5732",
+   "name": "Clinical Psychology Forum",
+   "overall_signal_quality": 1,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional (disclosure required, not banned, not open)",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://thejap.org/resources/submit-an-article",
+    "summary": "Journal-hosted submission page (thejap.org) confirms authors must disclose AI use \"when technologies have made a substantive contribution to the development, organization, or writing of the work\" — this mirrors Wiley's generic publisher-wide Generative AI Guidelines for Authors (permitted for language/grammar/idea development/lit search/coding assistance with mandatory disclosure; prohibited for authorship credit, image/data fabrication, or unverified drafting of results/conclusions/abstracts). No JAP-specific AI policy page distinct from the Wiley boilerplate was found — the thejap.org text appears to restate Wiley's standard policy rather than add journal-specific restrictions."
+   },
+   "peer_review": {
+    "type": "Double-blind (anonymized manuscript sent to two senior reviewers)",
+    "source_url": "https://thejap.org/resources/submit-an-article"
+   },
+   "preprint": {
+    "allowed": "Yes, under Wiley's publisher-wide policy (no JAP-specific preprint page found): authors may self-archive/post the submitted preprint version at any time on non-commercial preprint servers, no need to remove before or during submission; accepted (peer-reviewed) version can be self-archived after embargo (Wiley standard: 24 months for SSH-classified journals, which JAP likely falls under as a psychoanalysis/humanities-adjacent journal, though this classification was not directly confirmed for JAP itself).",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "Clinical/case-based Jungian analytic papers, theoretical papers on analytical psychology, and papers engaging archetypal/cultural themes. Example 2025 items: \"Emotional Intelligence and Transformation in Analytical Psychology: A Case Study\" (Pellitteri, Vol 70 Issue 2, Feb 2025); a September 2025 special issue titled \"War: Archetypal Energies, Cultural Discontent, Internal Discord\" indicates current editorial appetite for archetypal analysis of contemporary geopolitical/cultural trauma. Journal published 5x/year (Feb, Apr, Jun, Sep, Nov).",
+    "framing_required": "Clinical material must be anonymized via the journal's own patient-anonymization form; papers should engage explicitly with Jungian/analytical-psychology theoretical frameworks (not generic psychology) per aims and scope (\"foremost international Jungian publication\", commissioned by the Society of Analytical Psychology, London).",
+    "methods_welcome": [
+     "single/multiple clinical case studies",
+     "theoretical/conceptual papers on Jungian analytic theory",
+     "archetypal-cultural analysis (e.g., war, collective trauma)",
+     "book and journal reviews"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.researchgate.net/publication/389087824_Emotional_Intelligence_and_Transformation_in_Analytical_Psychology_A_Case_Study",
+     "https://onlinelibrary.wiley.com/doi/10.1111/1468-5922.13087",
+     "https://thejap.org/about-us",
+     "https://thejap.org/resources/submit-an-article"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "\"Several months in all\" per journal's own submission page (vague, non-numeric, first-hand but not a specific figure)",
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://thejap.org/resources/submit-an-article (SciRev: https://scirev.org/journal/journal-of-analytical-psychology/ — 0 reviews submitted, all fields n/a)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev page for this journal has zero submitted reviews (all fields n/a); no forum or social discussion found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found on SciRev, Reddit r/AskAcademia, 小木虫/muchong, 知乎/zhihu, or fabiaoji. This is a niche Jungian psychoanalysis journal with essentially no visible SCI-forum footprint (muchong/zhihu searches for the journal returned zero relevant hits — it is not commonly targeted by the Chinese SCI-submission community since it is not a mainstream indexed science journal)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source (forum post, SciRev comment, or social thread) describing reviewer tone/culture was found anywhere cross-language."
+    },
+    {
+     "field": "preprint.allowed (journal-specific)",
+     "why": "No JAP-specific preprint policy page exists; answer relies on Wiley's generic publisher-wide preprint policy, and JAP's own SSH-vs-STM embargo classification (12 vs 24 months) was not explicitly confirmed on a JAP page."
+    },
+    {
+     "field": "ai_policy (journal-specific delta from Wiley boilerplate)",
+     "why": "thejap.org's AI disclosure text appears to just restate Wiley's generic Generative AI Guidelines; no JAP-specific addendum (e.g., stricter ban for clinical-case narrative writing) was found despite the journal's heavy reliance on clinical case material where fabrication risk is high."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫/muchong.com: searched \"Journal of Analytical Psychology 投稿\" — 0 relevant results (forum has general submission sections but no threads on this journal)",
+    "知乎/zhihu: same query — 0 relevant results",
+    "Reddit (site:reddit.com, r/AskAcademia implied): \"Journal of Analytical Psychology review/submission/reject\" — 0 results found",
+    "fabiaoji: not separately queryable via available search tools; no results surfaced in general searches — treated as 0 results"
+   ],
+   "issn": "0021-8774",
+   "name": "Journal of Analytical Psychology",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": "null — no political-leaning or other sensitive subjective claims were made; reviewer culture and acceptance-note fields were left null per the honest-blank rule rather than inferring from indirect signals."
+  },
+  {
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": "https://portal.issn.org/resource/ISSN/0033-3131",
+    "summary": "無法適用:Psychonomic Science(ISSN 0033-3131 印刷版)是已停刊期刊,1964-1972 年間由 Psychonomic Society, Inc. 出版,共 26 卷、200 期、5155 篇文章,現僅存於 Internet Archive 作歷史典藏。該刊不再接受投稿,故無現行 AI 使用政策可查。"
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5, ai_policy.gate, ai_policy.type",
+     "why": "期刊已於 1972 年停刊(ISSN Portal 確認:1964-1972,26 卷 200 期 5155 篇文章),現由 Psychonomic Society 列為歷史/非現行出版品(other_publications 頁面),不接受新投稿,無現行 AI 政策可查。"
+    },
+    {
+     "field": "positioning.accepts_now, positioning.methods_welcome, positioning.framing_required",
+     "why": "無 2024-2026 近期文章可供分析,期刊已停止出版超過 50 年,不存在'現在接受什麼'的問題。"
+    },
+    {
+     "field": "experiential.review_time_months, experiential.desk_reject_pct, experiential.acceptance_note, experiential.reviewer_culture",
+     "why": "SciRev 無此刊條目(期刊停刊於現代線上審稿追蹤工具出現前);中文論壇(小木虫/fabiaoji/知乎)與 Reddit r/AskAcademia 搜尋均無關於此刊的一手投稿經驗討論,因為沒有人會投稿一份 1972 年停刊的期刊。"
+    },
+    {
+     "field": "peer_review.type, preprint.allowed",
+     "why": "找不到公開來源說明此已停刊期刊當年的同行評審類型或預印本政策;Psychonomic Society 現行出版政策頁面(psychonomic.org/page/publications)僅涵蓋其現行七本期刊,不含 Psychonomic Science。"
+    }
+   ],
+   "cross_language_checked": [
+    "WebSearch (English): \"Psychonomic Science ISSN 0033-3131 journal\" — confirmed via ISSN Portal that journal is inactive, published 1964-1972 only",
+    "WebSearch (English): \"Psychonomic Science journal AI policy peer review\" — 0 journal-specific results; only general cross-disciplinary AI-policy survey papers returned, none mention this defunct journal",
+    "小木虫 muchong.com — not queried separately; given confirmed 1972 cessation, cross-language forum search for a non-submittable dead journal was judged non-actionable and skipped to avoid fabricating a search result",
+    "知乎 zhihu — not queried separately, same reasoning as above",
+    "fabiaoji — not queried separately, same reasoning as above",
+    "Reddit r/AskAcademia — not queried separately, same reasoning as above"
+   ],
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "issn": "0033-3131",
+   "name": "Psychonomic Science",
+   "overall_signal_quality": 0,
+   "peer_review": {
+    "source_url": "https://portal.issn.org/resource/ISSN/0033-3131",
+    "type": null
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 0,
+    "sources": [
+     "https://portal.issn.org/resource/ISSN/0033-3131"
+    ]
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "sensitive_topics_note": "此條目為 WO2 流程中的例外案例,需向下游標記:Psychonomic Science(ISSN 0033-3131)並非現行可投稿期刊,而是 1964-1972 年間出版、現已停刊超過 50 年的歷史期刊(由 Psychonomic Society, Inc. 出版,26 卷 200 期共 5155 篇文章,現典藏於 Internet Archive)。建議 Journal Atlas 資料庫將此條目標記為 inactive/historical,不應出現在「可投稿期刊」的推薦或比對結果中,除非產品目的明確包含歷史期刊查詢。ISSN Portal 顯示另有一個現行的線上版本 ISSN 2197-9952 (Online) 'Psychonomic science' 條目,但其性質與現況也需人工核實是否為同一刊物的復刊或僅為 ISSN 登記異動,本次未展開查證,超出 WO2 範圍。"
+  },
+  {
+   "issn": "0095-8891",
+   "name": "Journal of Consulting Psychology",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": "https://en.wikipedia.org/wiki/Journal_of_Consulting_and_Clinical_Psychology",
+    "summary": "此刊已於1968年停刊/更名為 Journal of Consulting and Clinical Psychology（ISSN不同），非現行可投稿期刊，故無任何現行AI使用政策可查。"
+   },
+   "peer_review": {
+    "type": null,
+    "source_url": null
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "此刊不存在現行投稿管道——1937年由 Association of Consulting Psychologists 創刊，1946-67由APA發行，1968年與 Journal of Abnormal Psychology 合併/更名為 Journal of Consulting and Clinical Psychology（現行刊,不同ISSN）。無2024-2026文章可查。",
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Journal_of_Consulting_and_Clinical_Psychology",
+     "https://www.apa.org/pubs/databases/psycarticles/title-history.pdf",
+     "https://portal.issn.org/resource/ISSN/0095-8891"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (all subfields)",
+     "why": "期刊已停刊(1968年更名為Journal of Consulting and Clinical Psychology)，無現行出版商政策頁存在於此ISSN下"
+    },
+    {
+     "field": "peer_review.type",
+     "why": "無現行編輯部/投稿系統，無法查證同行評審類型"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "無現行出版商頁面涵蓋此已停刊刊名/ISSN"
+    },
+    {
+     "field": "positioning.methods_welcome / framing_required / accepts_now",
+     "why": "無2024-2026文章存在——此刊自1968年起未再以此名稱/ISSN出版任何文章"
+    },
+    {
+     "field": "experiential.review_time_months / desk_reject_pct / acceptance_note / reviewer_culture",
+     "why": "SciRev、小木虫、fabiaoji、知乎、Reddit r/AskAcademia均無理由查得任何討論——期刊已停刊58年，不存在現行投稿者經驗"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev: 未查詢——期刊已停刊，SciRev不收錄非現行投稿目標",
+    "小木虫 muchong.com: 未查詢——同理由，無現行投稿需求",
+    "fabiaoji: 未查詢——同理由",
+    "知乎 zhihu: 未查詢——同理由",
+    "Reddit r/AskAcademia: 未查詢——同理由，期刊自1968年不存在"
+   ],
+   "sensitive_topics_note": "此ISSN(0095-8891)對應的期刊已於1968年停刊並更名為Journal of Consulting and Clinical Psychology（現行期刊，使用不同ISSN）。本WO2任務要求之「現行(2024-2026)軟資料」不適用於此entry——建議上游校正：此work order可能誤將歷史刊名/ISSN當作現行期刊處理，應改查Journal of Consulting and Clinical Psychology的現行ISSN，或將此entry標記為「已停刊/歷史刊名，不予收錄」。",
+   "overall_signal_quality": 0
+  },
+  {
+   "issn": "0956-7976",
+   "name": "Psychological Science",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 4,
+    "source_url": "https://www.psychologicalscience.org/publications/psychological_science/ps-submissions",
+    "summary": "Journal-specific: authors must declare in the Research Transparency Statement whether they used any AI technologies (e.g. LLMs like ChatGPT) during research or manuscript production; editors/reviewers then judge whether the use was appropriate (no blanket pre-approval, but disclosure triggers editorial gatekeeping = conditional gate). This sits on top of publisher-wide SAGE/APS policy: assistive AI (grammar/language polishing) needs no disclosure; generative AI (content, references, images) needs disclosure; AI cannot be listed as author; editors/reviewers may not upload manuscripts to AI tools or use AI to write reviews. Journal also explicitly welcomes a 'Research about LLMs' special section, treating LLMs as legitimate 'model organisms' only when the research illuminates human psychological mechanisms - this is a positioning note, not a use-of-AI-in-writing policy."
+   },
+   "peer_review": {
+    "type": "Multi-stage: (1) initial editorial screening by at least 2 anonymized readers (author/institution identity stripped) to check suitability; (2) if it passes, standard external peer review with 2+ outside reviewers; (3) STAR (Statistics, Transparency, and Rigor) editors additionally check reproducibility/statistical rigor before acceptance. High desk-reject rate implied by explicit editorial-screening stage.",
+    "source_url": "https://www.psychologicalscience.org/publications/psychological_science/ps-submissions"
+   },
+   "preprint": {
+    "allowed": "Allowed under APS's general editorial policy (applies across APS journals incl. Psychological Science): authors may post the abstract, the submitted pre-peer-review version, or the accepted pre-copyedited version to any repository/preprint server at any time. The final published/copyedited PDF may not be posted without permission. Note: this preprint clause was not repeated on the Psychological Science-specific submission guidelines page itself, only on the APS-wide editorial policy page, so treat as publisher-level default rather than confirmed journal-specific text.",
+    "source_url": "https://www.psychologicalscience.org/publications/aps-editorial-policies"
+   },
+   "positioning": {
+    "accepts_now": "Empirical psychology research across subdisciplines (cognitive, social, developmental, perception, etc.) with 'general theoretical and empirical significance' AND 'methodological/statistical rigor' - both required, not either/or. Journal explicitly frames itself around short-format empirical reports (~2,000-word main text model) rather than long-form papers.",
+    "framing_required": "Must be framed as a broad/general contribution to psychological science, not a narrow finding; must show methodological/statistical rigor and transparency (STAR review checks this). Editors explicitly desk-reject for: narrow scope, poor writing, insufficient methodological rigor, insufficient transparency, overclaiming/exaggeration, mismatch between aims and design, mismatch between results and conclusions, signs of flexibility in data collection/analysis, high risk of statistical inference error.",
+    "methods_welcome": [
+     "Novel empirical research articles",
+     "Replication and extension studies (journal has an explicit pro-replication stance, notably a minority position among psych journals)",
+     "Registered Reports (with or without pre-existing data)",
+     "Commentaries and replies to commentaries on previously published Psychological Science articles",
+     "Observational, longitudinal, descriptive, qualitative, and mixed-methods designs (explicitly listed alongside traditional experimental work)",
+     "Research using LLMs as 'model organisms', but only in service of understanding human psychological mechanisms - not AI-capability research for its own sake",
+     "International and diverse-population samples (explicitly encouraged)"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://www.psychologicalscience.org/publications/psychological_science/ps-submissions",
+     "https://journals.sagepub.com/doi/full/10.1177/09567976251336246"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev (12 reviews, small sample): first review round ~2.2 months; total handling time to decision for accepted manuscripts ~6.4 months; immediate/desk rejection turnaround ~11 days; average ~2.0 review rounds, ~2.2 reviewer reports per submission. A secondary, non-first-hand web source cites 8-10 weeks / 2-3 month median for first decision on this journal's short-report format - directionally consistent with SciRev but not independently confirmed, so SciRev is treated as primary.",
+    "desk_reject_pct": null,
+    "acceptance_note": "No numeric acceptance rate available on SciRev (listed 'n/a', only 12 reviews total - small/unreliable sample). Journal's own guidelines confirm a formal editorial pre-screening stage explicitly designed to desk-reject a large share of submissions before external review, consistent with reputation as a highly selective flagship journal, but no % figure was found from any first-hand source.",
+    "reviewer_culture": "SciRev users (n=12) rated review-report quality 4.0/5 and reviewer-comment difficulty 3.3/5 ('moderate'), overall manuscript-handling rating 3.4/5, most recent logged case described as 'good process' ending in immediate rejection. Sample is too small (12 reviews) to generalize; no corroborating first-hand narrative found on Chinese forums (muchong, fabiaoji, zhihu) or Reddit r/AskAcademia.",
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/psychological-science/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No numeric desk-reject percentage found on SciRev (n/a, only 12 total reviews) or any forum. APS/journal guidelines confirm a dedicated desk-reject screening stage exists but give no rate."
+    },
+    {
+     "field": "experiential.acceptance_note numeric rate",
+     "why": "SciRev lists acceptance rate as 'n/a' for this journal; no other first-hand source with a concrete number was found."
+    },
+    {
+     "field": "experiential cross-language: muchong.com",
+     "why": "Search of muchong.com/forum turned up 0 journal-specific threads for 'Psychological Science' (APS/SAGE); only unrelated submission-experience threads for other journals surfaced."
+    },
+    {
+     "field": "experiential cross-language: fabiaoji.com",
+     "why": "No dedicated fabiaoji.com journal page found for 'Psychological Science' (ISSN 0956-7976) in search results - the platform has entries for Psych Journal, Psychological Reports, Frontiers in Psychology etc. but not this title, so 0 results."
+    },
+    {
+     "field": "experiential cross-language: zhihu.com",
+     "why": "One relevant zhihu thread exists (question 15343090758, 'psychological science投稿指南求助') but WebFetch returned HTTP 403 (Zhihu blocks scraping); search-snippet preview only shows a user complaining the SAGE site was inaccessible, no substantive review-time/desk-reject/culture data recoverable."
+    },
+    {
+     "field": "experiential cross-language: reddit r/AskAcademia",
+     "why": "Targeted searches (site:reddit.com + review time / desk reject / reviewer experience) returned 0 relevant threads specific to this journal."
+    },
+    {
+     "field": "peer_review.type blind model precision",
+     "why": "Journal explicitly anonymizes the INITIAL editorial screening stage (author/institution hidden), but guidelines do not state whether the subsequent external peer-review stage is single- or double-anonymized; left as described rather than labeled 'double-blind'."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫): 0 journal-specific results for 'Psychological Science' (APS/SAGE)",
+    "fabiaoji.com (发表记): 0 dedicated page/results found for this journal title",
+    "zhihu.com (知乎): 1 relevant thread found (question 15343090758) but content inaccessible via WebFetch (403 Forbidden); search snippet yielded no usable review-time/culture data",
+    "reddit.com r/AskAcademia: 0 relevant threads found via targeted search queries",
+    "SciRev (scirev.org): 12 reviews found and used as primary experiential source"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.wiley.com/en-us/publish/book/resources/ai-guidelines/",
+    "summary": "No Family Process-specific AI policy page found; journal follows Wiley's publisher-wide generative AI author policy (generic, not journal-tailored). Policy: AI tools may assist manuscript drafting but must be transparently disclosed (Methods/Acknowledgements); grammar/spell-check tools excluded from disclosure; AI cannot be an author; AI must not be used to generate/alter research data/results; author retains full responsibility for accuracy. This is Wiley-wide policy language, not confirmed as reproduced verbatim on Family Process's own author-guidelines page (that page returned HTTP 402 on fetch, so journal-specific wording could not be directly verified)."
+   },
+   "blanks": [
+    {
+     "field": "ai_policy.leniency_1_5 (journal-specific confirmation)",
+     "why": "Family Process's own Wiley author-guidelines page (onlinelibrary.wiley.com/page/journal/15455300/homepage/forauthors.html) returned HTTP 402 Payment Required on direct fetch; leniency inferred from Wiley's general publisher-wide AI policy via secondary search summaries, not confirmed verbatim on the journal's own page."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for Family Process (scirev.org/journal/family-process/) shows all fields as n/a: 'The editor has not yet provided this information', 'No reviews have yet been submitted for this journal.' A third-party aggregator (letpub.com.cn) cites review-cycle info elsewhere for other journals but the fetched Family Process letpub page did not surface quantitative review-time or desk-reject figures despite having 50 general ratings (7.1/10)."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public first-hand source (SciRev, letpub, muchong, zhihu, reddit) reported a concrete desk-reject percentage for Family Process."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete forum thread (muchong, zhihu, reddit r/AskAcademia) with first-hand reviewer-culture commentary about Family Process was found via search; only generic journal-overview/impact-factor listings surfaced, not experiential threads."
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "No current (2024-2026) special-issue CFP specific to Family Process was found; only a Journal of Family Theory & Review (a different, related NCFR journal) CFP surfaced in search, which was excluded as it is not Family Process itself."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫) journal.php?jid=284 — page fetched but contained only generic portal/navigation elements, no Family Process-specific review-experience thread found",
+    "zhihu.com (知乎) — search surfaced only a general SSCI family-journals list article (zhuanlan.zhihu.com/p/565849033), no dedicated discussion thread on Family Process submission experience found",
+    "letpub.com.cn (Chinese author submission-experience aggregator) — page fetched: shows Impact Factor 2.16 (2025-2026), CiteScore 4.90, LetPub rating 7.1/10 from 50 evaluations, and lists recent Chinese-author publications (e.g. diabetes distress/parent-child dyads study); no quantitative review-time or desk-reject figures were rendered in the fetched content",
+    "reddit.com r/AskAcademia — targeted search for \"Family Process journal reddit AskAcademia review experience\" returned 0 results"
+   ],
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/family-process/ (all fields n/a, 0 reviews submitted)",
+     "https://letpub.com.cn/index.php?journalid=11850&page=journalapp&view=detail&xuanxiangk_id=2 (only aggregate rating 7.1/10 from 50 evaluations + IF/CiteScore; no timing/desk-reject numbers surfaced)"
+    ]
+   },
+   "issn": "0014-7370",
+   "name": "Family Process",
+   "overall_signal_quality": 2,
+   "peer_review": {
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/15455300/homepage/forauthors.html (indexed via search cache; direct fetch returned HTTP 402)",
+    "type": "double-anonymized (authors must anonymize manuscript + submit separate title page)"
+   },
+   "positioning": {
+    "accepts_now": "Based on 2024-2026 indexed article titles (via search/letpub listings): couple/family therapy clinical research, parent-child relationship and filial-piety studies, parental emotional expressiveness and child mental health, and cross-cultural family studies (e.g., diabetes distress in parent-child dyads in Chinese family context) — both qualitative and quantitative clinical research are represented in recent issues.",
+    "framing_required": null,
+    "methods_welcome": [
+     "qualitative clinical research",
+     "quantitative clinical research",
+     "theory and practice / philosophical papers on family systems",
+     "training-focused articles in couple and family therapy"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.familyprocess.org/family-process-journal/ (aims & scope, via search summary)",
+     "letpub.com.cn journal page — recent Chinese-author article titles (via WebFetch summary)",
+     "no 2024-2026 Family-Process-specific special-issue CFP was located"
+    ]
+   },
+   "preprint": {
+    "allowed": "Yes — authors may post the submitted (pre-peer-review) version to a preprint server at any time; requested to add a link to the final published version afterward. Journal notes this may compromise the double-anonymized review process.",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/15455300/homepage/forauthors.html (indexed via search cache; direct fetch returned HTTP 402)"
+   },
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0164-0291",
+   "name": "International Journal of Primatology",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.springernature.com/gp/policies/editorial-policies",
+    "summary": "此為 Springer Nature 集團通用政策(未查到 IJP 期刊專屬頁面,判定為套用集團政策)。核心規則:LLM/生成式AI 不得列為作者(無法承擔究責);允許用 AI 輔助文字潤飾/文法/語氣(此類「AI輔助校對」不需揭露);若AI用於內容生成或方法輔助,須在 Methods/致謝揭露;禁止生成式AI圖像用於出版;審稿人被要求不得將稿件上傳至生成式AI工具。未查到「完全禁止」或「完全開放」的明確表態,故列為 conditional/2(允許輔助校對,但內容生成需揭露且受限,圖像生成禁止)。"
+   },
+   "peer_review": {
+    "type": "double-blind",
+    "source_url": "https://link.springer.com/article/10.1007/s10764-015-9860-2"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "近期(2024-2026)特刊/特輯主題顯示期刊目前積極徵稿方向包括:靈長類溝通與語言演化比較研究(2024特刊「Combinatoriality and Compositionality in Apes, Hominins, Humans, and Birds」)、非洲夜行性叢猴(bushbaby)生態與分類新視角(2024特刊)、狐尾猴(titi monkey)生態與保育現況及未來方向(2024特刊)。2026-09-01 截止的公開徵稿(guest-edited Special Issue/Section)機制持續開放,主題由客座編輯提案決定,故不代表固定接受方向。",
+    "framing_required": "投稿需符合『fundamental primatology』(基礎靈長類學)定位——實驗室與野外研究並重,跨人類學、解剖學、生態學、動物行為學、古生物學、心理學、社會學、動物學等學科皆可,但須以靈長類本身之演化/行為/生態/保育為核心,而非泛用AI/計算方法論文。",
+    "methods_welcome": [
+     "野外行為生態學觀察研究",
+     "保育生物學與族群現況調查",
+     "比較認知與溝通/語言演化研究",
+     "解剖學與型態學研究",
+     "資料描述型論文(data descriptors)",
+     "文獻回顧與評論(review articles, commentaries)",
+     "簡短通訊(brief communications)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/10764/aims-and-scope",
+     "https://link.springer.com/journal/10764"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "審稿週期落於 1.5-3 個月區間(6-12週),來源為中國期刊資訊聚合站「刊鹿論文編譯」彙整之網友分享數據,非官方統計;SciRev 上該刊審稿時長數據為 0(無人提交)。",
+    "desk_reject_pct": null,
+    "acceptance_note": "刊鹿論文編譯頁面標示接受難度為「較易」(relatively easy),但該站明確聲明數據「非官方,來自網友分享經驗」,可信度中等偏低。",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/international-journal-of-primatology/ (0 reviews submitted, 全部指標顯示 n/a)",
+     "https://www.deeredit.com/scitougao/3494-107814.html (較慢6-12週/較易, 標註非官方)",
+     "https://www.deeredit.com/scitougao/3494-107800.html (同上,附加 IF/CAS分區資訊)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "未找到 IJP 或 Springer 官方針對此刊之明確 preprint 政策頁面;僅知 Springer Nature 集團 2019 年起統一鼓勵 preprint 分享(PubMed 31092948),但未能取得該政策是否適用/期刊專屬條款的一手來源,故留白避免臆測。"
+    },
+    {
+     "field": "ai_policy.gate/source_url",
+     "why": "未找到 International Journal of Primatology 或 link.springer.com/journal/10764 專屬的AI政策頁面(該刊 aims-and-scope/how-to-publish-with-us 頁面因需登入被重導向,無法直接讀取),故僅能以 Springer Nature 集團通用編輯政策代表,可能與期刊實際執行有落差。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該刊 0 篇評論提交,無桌拒率數據;中英文論壇(小木虫/知乎/fabiaoji/Reddit AskAcademia)搜尋均未找到針對此刊桌拒率的具體討論或數字,故留白。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "小木虫、知乎、fabiaoji、Reddit r/AskAcademia 搜尋皆未找到針對本刊審稿人風格/文化的具體一手討論串,僅有期刊官方『雙盲審』制度說明,無法支撐主觀敘事,故留白而非套用泛用模板。"
+    },
+    {
+     "field": "experiential.review_time_months (信心)",
+     "why": "唯一數字來源為中國期刊資訊聚合站(刊鹿論文編譯)且明確自稱非官方網友分享,未見於 SciRev(0筆)、小木虫討論串、Reddit 等一手管道佐證,故雖填入但 signal_quality 已相應調低,不應視為可靠承諾值。"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋『International Journal of Primatology 投稿 审稿』未找到該刊專屬討論串,僅出現論壇分區首頁及第三方聚合站連結",
+    "知乎 zhihu — 搜尋『International Journal of Primatology 投稿经验』0 筆針對本刊之一手經驗分享",
+    "fabiaoji.com — 搜尋『International Journal of Primatology fabiaoji』未在 fabiaoji 網站上找到本刊詞條頁面",
+    "Reddit r/AskAcademia — 搜尋審稿時間/接受率相關討論,0 筆結果",
+    "刊鹿論文編譯 deeredit.com(中文期刊聚合站,非題目原列來源但屬同類中文管道)— 提供審稿週期6-12週、接受難度『較易』等網友彙整數據(明確標註非官方)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0033-2933",
+   "name": "The Psychological Record",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500 (publisher-level Springer Nature policy; no Psychological-Record-specific AI policy page was independently accessible)",
+    "summary": "This is the general Springer Nature publisher policy (link.springer.com pages for this specific journal returned login-walled redirects, so a journal-specific AI policy page could not be directly confirmed — treat as publisher default applied to this journal). Facts per Springer's public AI policy: (1) LLMs/generative AI tools cannot be listed as authors — authorship requires accountability an AI cannot bear. (2) Any use of an LLM in preparing the manuscript must be disclosed (documented in the Methods section, or a suitable alternative section if no Methods section exists, per general Springer text; a related Springer Nature journal update page phrases it as 'declared in the Introduction or Acknowledgements'). (3) AI-assisted copyediting for grammar/style/readability does NOT need to be declared. (4) AI-generated images cannot be included in publications. (5) Peer reviewers must transparently declare in their review report if they used an AI tool to help evaluate the manuscript. (6) Springer states a 'zero tolerance' stance on deliberate, non-transparent misuse of generative AI. Leniency scored 3 (moderate/conditional) because AI assistance is permitted with mandatory disclosure, not banned outright, but authorship and undisclosed use are hard-blocked -- hence gate = conditional (disclosure required, not a blanket ban or blanket allowance)."
+   },
+   "peer_review": {
+    "type": "Likely single-blind (Springer's stated journal-wide default per general Springer editorial-policy pages), not independently confirmed on a Psychological-Record-specific page — treat as inferred, not verified.",
+    "source_url": "https://www.springer.com/gp/editorial-policies/peer-review-policy-process"
+   },
+   "preprint": {
+    "allowed": "Not independently confirmed for this specific journal; Springer's publisher-wide stance is generally preprint-permissive (self-archiving of preprints on non-commercial servers before submission is typically allowed under Springer policy), but no Psychological-Record-specific preprint policy page was accessible to confirm.",
+    "source_url": "https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500 and general Springer preprint guidance (journal-specific submission-guidelines page was login-walled and could not be fetched)"
+   },
+   "positioning": {
+    "accepts_now": "The journal (published by Springer in partnership with the Association for Behavior Analysis International, ABAI) is explicitly scoped to behavior analysis, behavior science, and behavior theory: basic behavioral-process research, translational studies bridging experimental and applied behavior analysis, and conceptual/philosophy-of-behaviorism pieces. A January 2025 editorial by the new editorial leadership, 'A Global Vision for The Psychological Record: Innovation, Inclusivity, and Impact,' signals an explicit push toward international/inclusive submissions and continued coverage across basic, applied, translational, and conceptual behavior-analytic research (full text of this editorial could not be fetched directly — link.springer.com article pages redirected to a login wall — so this is based on the article title plus search-engine summary snippets, not a direct read).",
+    "framing_required": "Submissions should be framed within behavior-analytic theory/methodology (operant/behavioral framework) rather than general cognitive or clinical psychology; conceptual submissions should engage the philosophy/theory of behaviorism specifically.",
+    "methods_welcome": [
+     "single-case/within-subject experimental designs (behavior-analytic tradition)",
+     "basic behavioral-process (laboratory) studies",
+     "translational research bridging basic and applied behavior analysis",
+     "applied behavior analysis studies",
+     "conceptual/theoretical and philosophy-of-behaviorism papers"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://link.springer.com/journal/40732/aims-and-scope (redirected to login wall; scope text obtained via WebSearch snippet aggregation, not direct fetch)",
+     "https://www.abainternational.org/journals/tpr.aspx",
+     "https://link.springer.com/article/10.1007/s40732-025-00630-7 (2025 editorial, title/existence confirmed via search; full text not directly fetchable due to login wall)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/psychological-record/ — page explicitly states 'No reviews have yet been submitted for this journal,' all metrics n/a",
+     "https://www.iikx.com/sci/medcine/41718.html — Chinese SCI-database page has a '投稿经验分享' (submission-experience) section that exists but is empty (no user-submitted content)",
+     "muchong.com (小木虫) — targeted search returned no threads specifically discussing The Psychological Record's review process",
+     "zhihu.com (知乎) — targeted search returned no articles/discussions specifically about The Psychological Record's review process (only about unrelated journals like Psychological Review, Psychological Bulletin)",
+     "fabiaoji.com (发表记) — targeted search returned no journal-detail page for The Psychological Record",
+     "reddit.com r/AskAcademia — site-restricted search returned zero relevant results"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "Springer's link.springer.com pages for this specific journal (submission-guidelines, aims-and-scope) all redirected to an idp.springer.com login wall and could not be fetched directly; only the publisher-wide default (single-blind) could be inferred, not confirmed as journal-specific."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Journal-specific submission-guidelines page was login-walled; only Springer's general publisher-wide preprint stance could be cited, not a confirmed journal-specific rule."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows zero submitted reviews for this journal; no discussion found on muchong, zhihu, fabiaoji, or Reddit r/AskAcademia after targeted cross-language searches — genuinely no first-hand public data exists as of 2026-07-13."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above — no source (SciRev, Chinese forums, Reddit) reports any figure; Editage/iikx metrics pages only carry citation metrics (CiteScore, IF, SJR), not editorial/turnaround statistics."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author accounts found in any of the mandated cross-language sources."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source describing reviewer culture was found; per hard rules, this must stay null rather than be filled with a generic narrative."
+    },
+    {
+     "field": "positioning (full text of 2025 editorial and aims-and-scope page)",
+     "why": "link.springer.com article and aims-and-scope pages redirected to an authentication wall during this session; positioning facts above are reconstructed from WebSearch result snippets/summaries rather than a direct primary-source read, which caps positioning signal_quality at 2."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched \"Psychological Record 投稿 审稿 小木虫\"; 0 relevant results (only unrelated journals like Physical Review Letters, Psychological Reports surfaced)",
+    "fabiaoji.com 发表记 — searched \"fabiaoji Psychological Record 审稿周期\"; 0 results, no journal-detail page exists for this title on the platform",
+    "知乎 zhihu.com — searched \"知乎 Psychological Record 期刊 审稿 行为分析\"; 0 relevant results (only articles about Psychological Review, Psychological Bulletin, Annual Review of Psychology, etc. surfaced)",
+    "Reddit r/AskAcademia — site:reddit.com search for \"Psychological Record\" journal; 0 results",
+    "SciRev (English, query-time review-experience aggregator) — direct page fetch confirms 'No reviews have yet been submitted for this journal', 0 data points",
+    "iikx.com 爱科学 (Chinese SCI-journal database) — page has a submission-experience-sharing section but it is empty; only citation metrics (IF 1.1/Q3, 分区 心理学4区) were present, no review-time/acceptance data"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0091-0627",
+   "name": "Journal of Abnormal Child Psychology (now: Research on Child and Adolescent Psychopathology, Springer journal 10802, current ISSN 2730-7166; ISSN 0091-0627 is the pre-2021-rename legacy identifier for the same continuous journal)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://link.springer.com/journal/10802/submission-guidelines",
+    "summary": "This is Springer Nature's standard publisher-wide AI policy applied to journal 10802 (no journal-specific AI clause found). LLMs do not qualify as authors. Substantive LLM use (e.g. drafting content) must be disclosed in the Methods section (or a suitable alternative section). 'AI-assisted copy editing' (grammar/style/readability polishing of human-written text) is explicitly EXEMPT from disclosure. AI-generated images are barred from publication, and AI-hallucinated/non-existent references are treated as an ethics violation. Journal-specific confirmation could not be independently verified because the journal's own ethics-and-disclosures page 303-redirected to a Springer login wall and could not be fetched directly; this is the generic Springer Nature policy that the journal's submission-guidelines page points to."
+   },
+   "peer_review": {
+    "type": "Double-blind peer review (author and reviewer identities concealed from each other)",
+    "source_url": "https://link.springer.com/journal/10802/ethics-and-disclosures (indexed via web search snippet; direct fetch blocked by Springer login redirect)"
+   },
+   "preprint": {
+    "allowed": "No journal-specific preprint clause located. Springer Nature's publisher-wide policy generally permits authors to post preprints (e.g. PsyArXiv) prior to submission and does not treat prior preprint posting as prior publication; no evidence of a journal-specific deviation from this default was found.",
+    "source_url": "https://www.springernature.com/gp/policies (general Springer Nature preprint stance; no journal-10802-specific preprint page could be fetched due to login-wall redirects)"
+   },
+   "positioning": {
+    "accepts_now": "Empirical studies with strong theoretical framing on child/adolescent psychopathology: disruptive behavior disorders, depression, anxiety disorders, ASD, ADHD, covering epidemiology, etiology, assessment, treatment, prognosis, developmental course, risk/protective factors, and prevention/treatment advances. Active 2026 special issue theme: representation/diversity in the field.",
+    "framing_required": "For the open 2026 special issue ('A Call for Intentionality: Enhancing Representation in Child and Adolescent Psychopathology Research', submission deadline 2026-10-01): papers must center underrepresented populations (minoritized groups, LMIC samples) and/or cross-cultural or within-cultural comparative framing to fit that CFP specifically; this is a special-issue-only framing requirement, not a standing journal-wide one.",
+    "methods_welcome": [
+     "original empirical research",
+     "systematic reviews",
+     "meta-analyses",
+     "conceptual papers",
+     "methodological papers",
+     "cross-cultural / within-cultural comparative studies"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/10802/updates/26047364 (special issue CFP, deadline 2026-10-01)",
+     "https://link.springer.com/journal/10802/updates/26200074 (additional RCAP special issue CFP found in search, not individually verified)",
+     "https://link.springer.com/collections/cieabigbdf (representation/diversity collection)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~3.2-3.5 months (14.3 weeks) for first review round, per SciRev; note SciRev sample is thin (only 2 submitted reviews total, one detailed)",
+    "desk_reject_pct": null,
+    "acceptance_note": "Not available; SciRev lists acceptance rate, rejection rate, articles-published, and manuscripts-received fields all as 'n/a' for this journal due to tiny sample size (2 reviews).",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/journal-of-abnormal-child-psychology/ (2 reviews only; 1 detailed: first round 14.3 weeks, overall rating 3/5 'good', outcome rejected, 1.0 review rounds, 3.0 avg reviewer reports, review-quality rated 2.5/5, handling rated 2.0/5)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific confirmation)",
+     "why": "Could not fetch link.springer.com/journal/10802/ethics-and-disclosures directly (303-redirects to an authenticated Springer login page); relying on the generic Springer Nature AI policy that the journal's own submission-guidelines page references, plus a WebSearch snippet of that generic text. No journal-specific deviation or leniency note found."
+    },
+    {
+     "field": "preprint.allowed (journal-specific text)",
+     "why": "No journal-10802-specific preprint policy page could be fetched (login-wall redirect); only the generic Springer Nature publisher stance is documented here."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev shows 'n/a' for this metric; sample size is only 2 submitted reviews, too thin to extract a percentage."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand discussion found on SciRev, 小木虫 (muchong.com; searches returned no journal-specific threads), 科研通/ablesci.com (checked directly; page has an empty 'network experience' field for this journal), 知乎, or Reddit r/AskAcademia. Leaving null rather than inventing a narrative."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance-difficulty commentary found in any cross-language source checked; SciRev's acceptance-rate field itself is 'n/a'."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — WebSearch query returned no journal-specific discussion threads (0 usable results)",
+    "科研通 ablesci.com — journal page fetched directly; '网友分享经验' (user-shared experience) fields for review time and acceptance rate are both empty/blank (0 results)",
+    "知乎 zhihu — no dedicated zhihu hits surfaced in the WebSearch queries attempted (0 results)",
+    "Reddit r/AskAcademia — site:reddit.com search for the journal (old or new name) returned 0 links",
+    "SciRev (English, query-time crowd-sourced facts layer) — 2 reviews on file, 1 detailed with concrete numbers (used above)"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": "Journal covers child/adolescent psychopathology including trauma and abuse-adjacent topics (per the 2026 special-issue CFP on representation and search hits referencing a sister APA CFP on child psychotraumatology); no reviewer-culture or political-leaning claims are made anywhere in this record, consistent with the hard rule against unsourced subjective claims."
+  },
+  {
+   "issn": "0194-472X",
+   "name": "Journal of Marital and Family Therapy",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://authors.wiley.com/ethics-guidelines/index.html",
+    "summary": "此為 Wiley 出版社層級（非 JMFT 期刊專屬）政策：允許使用生成式 AI 輔助寫作，但要求在 Methods 或 Acknowledgements 段落中「透明且詳細」揭露所用工具、用途及人工核實過程；AI 不得列為作者；作者需確保 AI 工具供應商不取得對投稿內容的權利（含不得用於訓練該 AI）。未在投稿時揭露者，審稿或出版後可能被要求補充說明。未查得 JMFT 編輯部自訂的期刊專屬 AI 政策頁面（Wiley 論文作者頁多次回傳 402 無法直接存取確認）。"
+   },
+   "peer_review": {
+    "type": "double-blind",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/17520606/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許（Wiley 出版社通用政策）：作者可在非商業性 preprint 伺服器（如 PsyArXiv、SocArXiv、arXiv 等）張貼手稿並仍可投稿，投稿前不需撤下 preprint；但 Wiley 註明個別期刊/學會可能有不同規定，未查得 JMFT（或其主管學會 AAMFT）是否有例外規定的第一手來源。",
+    "source_url": "https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html"
+   },
+   "positioning": {
+    "accepts_now": "JMFT（AAMFT 旗艦期刊，季刊）近期（2025-2026）刊出文章涵蓋：質性研究（如社會正義實踐之質性探索，doi 10.1111/jmft.70006）、量表驗證研究（Couple Relationship Scale 驗證，doi jmft.70100）、伴侶介入成效之量化研究（relationship confidence 中介角色，doi jmft.70104）、跨文化/跨語言伴侶治療研究（華人伴侶之情緒取向治療調適，doi jmft.70093），以及 AI 與伴侶家族治療交會的概念性文章（AI Competencies 介紹，doi jmft.70121）。2025-2026 有正在徵稿之特刊「Systemic Family Therapy with People of Color」（客座編輯 DeAnna Harris-McKoy、Michael Curtis），另有 2025 特輯探討高衝突監護權家庭之治療能力。新主編 Lenore M. McWey（Florida State University）上任並更新顧問委員會。",
+    "framing_required": "須明確扣連臨床實務／系統性家族治療理論的應用意涵（非純基礎心理學或神經科學取向），量化研究常見以伴侶/家庭為分析單位（dyadic/systemic framing）而非個體層次。",
+    "methods_welcome": [
+     "qualitative",
+     "scale validation / psychometric",
+     "quantitative intervention outcome studies",
+     "dyadic/systemic analysis",
+     "cross-cultural/cross-language studies",
+     "conceptual/theoretical papers (incl. AI-in-practice)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://onlinelibrary.wiley.com/doi/10.1111/jmft.70006",
+     "https://onlinelibrary.wiley.com/doi/10.1111/jmft.70100",
+     "https://onlinelibrary.wiley.com/doi/10.1111/jmft.70104",
+     "https://onlinelibrary.wiley.com/doi/10.1111/jmft.70093",
+     "https://onlinelibrary.wiley.com/doi/10.1111/jmft.70121",
+     "https://ftm.aamft.org/updates-from-journal-of-marital-and-family-therapy/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/journal-of-marital-and-family-therapy/ (0 reviews submitted)",
+     "https://www.xueshu.com/sci/54897/06.html (未查询到审稿周期相关数据，可能是数据未更新)"
+    ]
+   },
+   "sensitive_topics_note": null,
+   "blanks": [
+    {
+     "field": "ai_policy (journal-specific)",
+     "why": "僅查得 Wiley 出版社通用生成式 AI 政策；JMFT 期刊官網作者須知頁面 (onlinelibrary.wiley.com/page/journal/17520606/homepage/forauthors.html) 因工具端 402 錯誤無法直接存取以確認是否有期刊專屬加嚴/放寬條款，故未能標記期刊專屬來源。"
+    },
+    {
+     "field": "preprint (journal-specific exception)",
+     "why": "Wiley 通用政策允許 preprint，但未查得 JMFT 或 AAMFT 是否對此有例外聲明的第一手來源。"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊條目 0 筆評論（'No reviews have yet been submitted'）；中文審稿週期彙整站 xueshu.com 明確標示「未查询到审稿周期相关数据」；小木虫/知乎/fabiaoji/Reddit AskAcademia 搜尋均無此刊具體討論串命中。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上，SciRev 與各中英論壇均無第一手數據。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無第一手作者經驗分享可查證，僅有期刊官方投稿格式規定（非接受率/經驗描述）。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源支持任何審稿人風格/文化描述，依規則不可臆造，故留空。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org): 該刊 0 筆評論，n/a",
+    "小木虫 muchong.com: 搜尋無該刊具體投稿/審稿討論串命中",
+    "知乎 zhihu: 搜尋無該刊審稿經驗討論命中，僅期刊基本資料頁",
+    "fabiaoji: 搜尋無結果",
+    "Reddit r/AskAcademia: 搜尋無結果",
+    "xueshu.com (中文 SCI 期刊資料站): 明確標示「未查询到审稿周期相关数据，可能是数据未更新」"
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1058-1103",
+   "name": "Mental Health Weekly",
+   "peer_review": {
+    "type": "None — not applicable. Mental Health Weekly is a staff/journalist-written trade newsletter (news, policy, funding, trends coverage), not a research journal that accepts author manuscript submissions or runs peer review.",
+    "source_url": "https://onlinelibrary.wiley.com/journal/15567583"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 1,
+    "source_url": "https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf",
+    "summary": "No journal-specific AI-use policy found for Mental Health Weekly, because it has no author-submission/manuscript workflow. Only Wiley's corporate-wide Generative AI Guidelines for Authors exist (applies to research-manuscript journals generally: no AI listed as author; AI-assisted content use must be disclosed; AI barred from generating/altering original research data or figures). Applicability to this title is uncertain since it does not publish externally authored research manuscripts — flagging as publisher-level, not journal-verified."
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "https://onlinelibrary.wiley.com/page/journal/15567583/homepage/productinformation.html (fetch blocked, HTTP 402 paywall)",
+     "https://esi.in/publications/mental-health-weekly"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "sensitive_topics_note": "Mental Health Weekly is an independent weekly trade newsletter (est. 1989, published by Wiley Periodicals; editor Valerie A. Canady) covering mental/behavioral health policy, funding, litigation, and industry news via staff/freelance journalists — publisher material describes it as containing \"100% original, objective articles by journalists,\" not peer-reviewed scholarship. It has no manuscript submission portal, no research author guidelines, and no peer-review process, so \"positioning\" (what research it accepts) and \"experiential\" (review time, desk-reject %, reviewer culture) as defined by this work order do not meaningfully apply. Recommend flagging ISSN 1058-1103 for exclusion or re-classification (trade newsletter, not a peer-reviewed research journal) rather than continuing to source WO2-style academic metadata for it.",
+   "cross_language_checked": [
+    "SciRev (scirev.org) — searched by name; no listing found for Mental Health Weekly (0 results)",
+    "小木虫 muchong.com — no targeted discussion found; general search returned only generic academic-platform overview pages (0 results specific to this title)",
+    "知乎 zhihu.com — no discussion found specific to this title (0 results)",
+    "fabiaoji 發表記 — no discussion found specific to this title (0 results)",
+    "Reddit r/AskAcademia — no discussion found specific to this title (0 results); searches surfaced only an unrelated open-access journal (Academia Mental Health and Well-Being)"
+   ],
+   "blanks": [
+    {
+     "field": "peer_review.type detail",
+     "why": "Confirmed via multiple sources this is a journalist-written newsletter with no peer review, but the authoritative Wiley product-information page could not be fetched (HTTP 402) to quote a formal statement verbatim — inference drawn from consistent third-party descriptions (Wiley marketing copy, ESI listing) rather than one canonical policy doc."
+    },
+    {
+     "field": "ai_policy.leniency_1_5 / gate",
+     "why": "No journal-specific AI policy exists because there is no author manuscript submission process; only generic publisher-wide Wiley AI guidance was found, which cannot be confidently mapped onto a title that doesn't take external research submissions."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint policy found or applicable — newsletter content is not preprinted research."
+    },
+    {
+     "field": "positioning.accepts_now / methods_welcome / framing_required",
+     "why": "No recent (2024-2026) 'accepted article' listing of author-submitted research was found because the outlet publishes staff-written news items, not submitted research papers; the Wiley product-information page (most likely to describe scope precisely) returned HTTP 402 Payment Required and could not be fetched."
+    },
+    {
+     "field": "experiential.review_time_months / desk_reject_pct / acceptance_note / reviewer_culture",
+     "why": "SciRev has no listing for this title, and no first-hand accounts appear on 小木虫, 知乎, fabiaoji, or r/AskAcademia — consistent with it not being a title researchers submit manuscripts to for peer review."
+    }
+   ],
+   "overall_signal_quality": 1
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 12,
+  "failed_count": 6,
+  "failed_issns": [
+   "0011-0035",
+   "1053-8119",
+   "0265-4075",
+   "2348-5396",
+   "1662-5161",
+   "0096-1523"
+  ],
+  "run_task_id": "whv0mpk68"
+ }
+}

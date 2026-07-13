@@ -1,0 +1,1187 @@
+{
+ "batch": "retry-b8",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0065-7638",
+   "name": "Proceedings of the American Catholic Philosophical Association",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": null
+   },
+   "peer_review": {
+    "type": "Double-blind peer review of conference papers: each submission is reviewed by 2 of the 6-8 members of the annual conference's program committee, who rank papers; the ACPA President and Secretary then select the highest-ranked papers for both conference presentation and publication in the Proceedings.",
+    "source_url": "https://acpaweb.org/wp-content/uploads/2025/11/ACPA-2026-CFP.pdf"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "This is not a standing journal with rolling submissions -- it is an annual conference-proceedings volume. Authors must be ACPA members at time of submission, submit a full paper (max 15 double-spaced pages) plus 150-word abstract by the yearly deadline (30 April for the 2026 cycle), and, if accepted, must deliver the paper in person at the November conference and sign over copyright to ACPA. The 2026 volume (published from the Nov 2026 conference) is themed \"The ACPA at 100: Living Tradition\" -- historical, analytical, and phenomenological approaches to tradition, mentorship, death/life, and the intellectual life in relation to Catholic belief, with named touchstones Newman, Arendt, and MacIntyre.",
+    "framing_required": "Papers must engage philosophy from/relevant to the Catholic intellectual tradition; the journal explicitly foregrounds Scholastic/Thomistic and classical sources alongside contemporary issues. The 2026 theme specifically invites engagement with tradition, mentorship, and Catholic belief/practice.",
+    "methods_welcome": [
+     "metaphysics",
+     "epistemology",
+     "moral theory / applied ethics",
+     "philosophy of religion",
+     "history of philosophy",
+     "political philosophy",
+     "philosophy of science",
+     "historical/analytical/phenomenological approaches (per 2026 CFP)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://acpaweb.org/wp-content/uploads/2025/11/ACPA-2026-CFP.pdf",
+     "https://en.wikipedia.org/wiki/Proceedings_of_the_American_Catholic_Philosophical_Association",
+     "https://www.pdcnet.org/acpaproc/Proceedings-of-the-American-Catholic-Philosophical-Association"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "No first-hand acceptance-rate data found; Wikipedia states only that 'the acceptance rate varies depending on the number of papers submitted.' Structurally, the review pipeline is fast for an academic venue: submission deadline 30 April, decision communicated by 31 July of the same year (~3 months) -- but this is the conference-acceptance timeline, not a standalone journal manuscript review-to-publication timeline, since the paper is only published in the Proceedings after being delivered at the Nov conference.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://acpaweb.org/wp-content/uploads/2025/11/ACPA-2026-CFP.pdf",
+     "https://en.wikipedia.org/wiki/Proceedings_of_the_American_Catholic_Philosophical_Association"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy",
+     "why": "No AI/generative-AI use policy found on ACPA's website, the CFP PDF, or the publisher (Philosophy Documentation Center) site; PDC's general site pages were not reachable (403) and no journal-specific or publisher-wide AI policy text was located via search."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint/self-archiving policy stated anywhere found (ACPA CFP, PDC listing, Wikipedia); note item 5 of the CFP says authors 'agree to allow the ACPA to hold the copyright' upon acceptance, which bears on but does not directly state a preprint policy."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no entry for this journal (page returned 404 / no listing found); only the structural CFP-to-decision window (~3 months) is documented, which is not a first-hand reviewer report."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev, forum, or first-hand source reports a desk-reject rate; only a vague Wikipedia note that acceptance rate 'varies depending on the number of papers submitted.'"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero results across muchong.com, zhihu, fabiaoji-style Chinese academic forums, and Reddit r/AskAcademia for this journal -- it is too niche/small-circulation (small annual Catholic philosophy association conference proceedings) to have generated first-hand reviewer-experience discussion in any searched forum."
+    }
+   ],
+   "cross_language_checked": [
+    "Reddit (site:reddit.com \"American Catholic Philosophical Association\" Proceedings): 0 results",
+    "Chinese query (知乎 OR 小木虫 OR muchong + journal name): 0 relevant results -- only ACPA's own English pages surfaced",
+    "SciRev (scirev.org journal page for this title): 404 / no listing found",
+    "General web search for PDC/journal AI policy: 0 journal-specific or publisher-specific results; only generic third-party AI-policy articles returned"
+   ],
+   "sensitive_topics_note": "Journal is explicitly confessional (Catholic intellectual tradition, Scholastic/Thomistic focus); this is a framing constraint disclosed by the publication itself (ACPA CFP), not a subjective assessment.",
+   "overall_signal_quality": 1
+  },
+  {
+   "issn": "0966-8373",
+   "name": "European Journal of Philosophy",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.wiley.com/en-us/publish/article/ai-guidelines/",
+    "summary": "找不到 European Journal of Philosophy 專屬的 AI 使用政策頁面（該刊 Author Guidelines 頁 onlinelibrary.wiley.com/page/journal/14680378/homepage/forauthors.html 因付費牆無法直接讀取內文確認）。此為 Wiley 出版社 2025 年 10 月發布的通用 AI 指引外推：AI 不可列為作者、作者需對內容完全負責；允許 AI 協助語言潤飾、結構調整、構思探索、文獻分類搜尋、程式撰寫等，但要求揭露（在方法或致謝欄位），且明文禁止用 AI 生成/竄改研究資料與圖表；審稿人被禁止把未發表稿件上傳到 AI 工具。因為是出版社層級政策外推到本刊、非本刊獨有頁面確認，signal_quality 定為 2。"
+   },
+   "peer_review": {
+    "type": "Triple-blind（作者、審稿人、編輯團隊三方對彼此身份互相不知情；作者需自行移除稿件、標題、摘要、running head、回覆信中的識別資訊）",
+    "source_url": "https://onlinelibrary.wiley.com/page/journal/14680378/homepage/forauthors.html"
+   },
+   "preprint": {
+    "allowed": "允許。屬 Wiley 人文社科標準 Green OA 政策：作者可隨時張貼投稿版（submitted version，需完整引註期刊文章）；已接受版（accepted version）可在正式上線後 24 個月禁運期滿後自存；出版社版型 PDF（Version of Record）僅限私人研究群組分享，除非文章為 Open Access。另提供 Gold OA 選項，APC 約 3,400 美元。",
+    "source_url": "https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/self-archiving.html"
+   },
+   "positioning": {
+    "accepts_now": "持續發表橫跨分析與歐陸哲學傳統的原創論文與書評，2024-2026 近期主題實例包含：Kant/Heidegger 詮釋與現象學（如 2025 年 Neumann 對 Lambeth《Heidegger's Interpretation of Kant》之書評, ejop.13044）、道德責任與能動性議題（如 Anneli Jefferson〈Blaming the Dead〉, ejop.12947）。設有 Kant 主題 Virtual Issue，顯示對康德研究的持續編輯興趣。未查得 2024-2026 現行特刊 CFP（搜尋 Wiley 刊物頁與一般搜尋皆無命中）。",
+    "framing_required": "未查得本刊獨有的強制框架要求（如「須明示橋接分析/歐陸傳統」的正式規定），僅能從其創刊宗旨（由 Mark Sacks 於 1993 年創立，宗旨為溝通分析與歐陸哲學）與近期文章推論編輯偏好接受能與兩傳統對話的稿件；此為推論而非明文規定，故未列為確定 framing_required。",
+    "methods_welcome": [
+     "分析哲學論證式論文",
+     "歐陸哲學／現象學詮釋文本（Kant、Heidegger 等）",
+     "跨傳統（分析-歐陸）比較與橋接研究",
+     "書評（book reviews）"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://onlinelibrary.wiley.com/doi/10.1111/ejop.13044",
+     "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ejop.12947",
+     "https://en.wikipedia.org/wiki/European_Journal_of_Philosophy"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "APA Journal Survey Project（第一手投稿人問卷聚合，230 筆樣本）：平均首次回覆 3.3 個月，平均自投稿到正式出版 6 個月，平均審稿人數 1.5 人。另有期刊自述（Author Guidelines 頁，經中文學術資料庫 xueshu.com 等轉載確認）：因大量案件在初審階段即被 desk reject（無審稿意見），平均整體週轉時間約 12 週。兩來源時間尺度不完全一致（3.3 個月首次回覆 vs 12 週整體週轉），並陳供參考。",
+    "desk_reject_pct": null,
+    "acceptance_note": "APA Journal Survey Project 統計整體接受率 17.83%（230 筆樣本）。期刊官方規定：任何作者 12 個月內僅能投稿一次；且該刊是少數已知『即使 desk reject 也不會將任何審稿意見回饋給作者』的期刊之一（引發部分投稿人不滿，見 Daily Nous 讀者投書）。",
+    "reviewer_culture": "唯一具體、可歸因的第一手描述來自 Daily Nous（2024）讀者投書：一名投稿人稱曾連續三次收到『內容完全相同』的 desk reject 信件，因而懷疑編輯未實際閱讀稿件；同一篇文中該投稿人將此與另一期刊（European Journal of Political Theory）的正面經驗對比，後者『編輯認真看待稿件』。此僅為單一投書意見，非大量樣本，不宜推廣為期刊整體審稿人文化的定論。",
+    "signal_quality": 3,
+    "sources": [
+     "https://apasurvey.philx.org/?direction=asc&order=acceptance_rate",
+     "https://dailynous.com/2024/01/29/notably-good-experiences-with-philosophy-journals/",
+     "https://scirev.org/journal/european-journal-of-philosophy/",
+     "https://www.ablesci.com/journal/detail?id=DGboA5"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (期刊專屬頁面)",
+     "why": "onlinelibrary.wiley.com 該刊 Author Guidelines 頁面回傳 402 Payment Required，無法直接確認期刊層級是否有超出 Wiley 集團通用 AI 政策的加註；改以 Wiley 2025 AI Guidelines 通用政策外推，故 ai_policy.signal_quality 僅 2。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev 該刊頁面顯示『No reviews have yet been submitted』（0 筆問卷），ablesci.com 中文學術資料庫頁面『網友分享經驗』欄位亦為空白；僅有期刊官方文字敘述『部分可行稿件會在無審稿意見下被 desk reject』，但未給出具體百分比數字，故此欄位留白，不可捏造數字。"
+    },
+    {
+     "field": "cross_language: 小木虫/知乎/fabiao 具體投稿經驗",
+     "why": "多次以中文關鍵字（審稿速度、投稿經驗、muchong.com）搜尋，僅命中期刊指標型網站（xueshu.com、ablesci.com、fabiao.com 等）之期刊基本資料頁，這些頁面的『網友分享經驗』欄位均為空白，未見任何具體第一手中文投稿經驗貼文或討論串。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/european-journal-of-philosophy) — 0 筆使用者問卷，所有指標顯示 n/a",
+    "ablesci.com 科研通（中文學術社群）— 期刊基本資料存在，但『平均審稿週期』與『平均錄取率』欄位皆為『網友分享經驗：』空白佔位，無實際內容",
+    "muchong.com 小木虫 — 站內與一般 Google 搜尋皆未命中任何本刊相關討論串，0 results",
+    "zhihu.com 知乎 — 搜尋『European Journal of Philosophy 投稿 審稿』未命中知乎具體討論，僅回傳其他中文期刊指標網站，0 results",
+    "fabiao.com — 搜尋結果中出現的是同名近似刊物（European Journal For Philosophy Of Science）資料頁，非本刊；本刊本身無 fabiao.com 專頁命中",
+    "Reddit r/AskAcademia — 搜尋未命中任何 Reddit 討論串，0 results",
+    "Daily Nous（英文哲學學界部落格，非中文但屬論壇型第一手經驗來源）— 命中 2024/01/29 讀者投書一則，具體描述本刊 desk reject 經驗"
+   ],
+   "overall_signal_quality": 3,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0167-9848",
+   "name": "Husserl Studies",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://link.springer.com/journal/10743/submission-guidelines",
+    "summary": "未見期刊自訂 AI 政策頁面；適用 Springer Nature 集團通用規範（經 fetch 該刊 submission-guidelines 頁面確認套用同一套文字）：LLM 不得列為作者（無法承擔問責）；若使用 LLM 協助寫作內容需在 Methods 或適當章節揭露；純粹的 AI 輔助文字潤飾（文法/拼字/風格）不需申報；生成式 AI 圖像需另遵守 Springer 圖像政策。屬集團層級政策，非該刊特有客製條款，故信號強度中等偏低。"
+   },
+   "peer_review": {
+    "type": "double-blind",
+    "source_url": "https://link.springer.com/journal/10743/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許（Springer Nature 集團統一政策：投稿前後皆可將手稿以 preprint 形式張貼於任何 preprint server 或機構網站，不視為重複發表，審稿中可引用）",
+    "source_url": "https://www.springer.com/us/editorial-policies/preprint-sharing"
+   },
+   "positioning": {
+    "accepts_now": "純粹現象學文本詮釋與系統性哲學論證為主：胡塞爾已刊/未刊文本的細讀與詮釋、意向性理論、意義理論、倫理與行動理論、現象學與詮釋學/批判理論/分析哲學的對話。近期(2025)實例：'Husserl's Theory of Experience in Genetic Phenomenology: Passivity, Rationality, and Normativity' (Vol.41, 2025)，聚焦被動性/理性/規範性的發生現象學分析——顯示期刊持續接受嚴格文本-概念分析型論文，而非實證研究。",
+    "framing_required": "論證需明確錨定於胡塞爾文本或胡塞爾式現象學方法論，並展現'透過具體問題的處理證明現象學是一種反思的、方法論上有紀律的哲學探究'（期刊自述宗旨）；歷史文獻學/系統性哲學論證皆可，但需與胡塞爾直接相關或構成批判性延伸。",
+    "methods_welcome": [
+     "胡塞爾文本細讀與詮釋(含未刊手稿)",
+     "系統性現象學概念分析(意向性、意義、被動綜合等)",
+     "現象學與其他哲學傳統的比較/對話(詮釋學、批判理論、分析哲學)",
+     "書評/文獻評論",
+     "偶爾刊登胡塞爾本人或現象學運動人物的原始材料"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://link.springer.com/journal/10743/aims-and-scope",
+     "https://link.springer.com/article/10.1007/s10743-025-09362-6"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://scirev.org/journal/husserl-studies/"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋'Husserl Studies 期刊 投稿'僅回傳論壇首頁與無關中文核心期刊審稿討論，0 條與本刊直接相關結果",
+    "知乎 zhihu.com — 搜尋'Husserl Studies 期刊 投稿/审稿'與'fabiaoji Husserl Studies'均無命中該刊的具體討論串，0 results",
+    "Reddit r/AskAcademia — 搜尋'Husserl Studies journal submission review'僅回傳 Springer 官方頁面，無 Reddit 討論串，0 results",
+    "SciRev scirev.org — 該刊頁面存在但'No reviews have yet been submitted for this journal'，0 reviews，所有量化欄位(審稿時間/退稿率/接受率)均為 n/a"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊條目 0 筆評論；小木虫/知乎/Reddit 交叉語言搜尋均無命中，無任何一手時間數據可用"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "同上，SciRev 無數據，中英文論壇均無討論"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "無任何論壇/SciRev 一手經驗分享可考證"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "規則要求主觀敘述須有具體來源佐證；未找到任何審稿文化相關的一手討論，故留白而非杜撰"
+    },
+    {
+     "field": "ai_policy.leniency_1_5 (期刊專屬性)",
+     "why": "未找到 Husserl Studies 自訂的 AI 政策頁面，僅能確認其沿用 Springer Nature 集團通用政策；已在 summary 中註明"
+    },
+    {
+     "field": "positioning.accepts_now (CFP)",
+     "why": "未找到 Husserl Studies 本刊(非同名他刊 Geltung)近期(2025-2026)的正式徵稿特刊 CFP，故未列出任何特刊資訊"
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "1571-0882",
+   "name": "CoDesign (International Journal of CoCreation in Design and the Arts)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://taylorandfrancis.com/our-policies/ai-policy/",
+    "summary": "This is Taylor & Francis's GROUP-WIDE policy, not a CoDesign-specific one (no journal-level AI policy page found). Fact: Generative AI tools cannot be listed as an author (cannot take accountability/hold copyright). Authors must disclose any GenAI use in the article via a statement naming the tool, version, and how/why it was used. Publisher frames permitted uses as copyediting/language refinement and non-native-English support, i.e. disclosure-gated use is allowed, not an outright ban. Primary policy page returned HTTP 403 on direct fetch; fact is corroborated across secondary summaries (Enago TANDF AI Guidelines page, university LibGuides) that quote the same requirement, so treated as reliable despite indirect access."
+   },
+   "peer_review": {
+    "type": "double-anonymized (double-blind), independent expert referees after initial editorial appraisal; submission via ScholarOne Manuscripts",
+    "source_url": "https://www.tandfonline.com/journals/ncdn20/about-this-journal"
+   },
+   "preprint": {
+    "allowed": "Allowed under Taylor & Francis's standard Green Open Access policy: Accepted Manuscript (post-peer-review, pre-typeset) may be self-archived, typically after an embargo period (embargo length is set per-journal/subject area and was not found specifically for CoDesign — some T&F subject collections have zero-embargo Green OA, but no confirmation this applies to CoDesign specifically).",
+    "source_url": "https://authorservices.taylorandfrancis.com/choose-open/publishing-open-access/zero-embargo-green-open-access/"
+   },
+   "positioning": {
+    "accepts_now": "Journal remains centered on its core identity: research where collaboration/co-design is the specific analytic focus, across any design domain (not just industrial/product design). Current volumes (21-22, 2025-2026) show heavy uptake of reflective/narrative and qualitative methodologies alongside applied co-design tool studies.",
+    "framing_required": "Aims & scope explicitly requires the 'collaboration' element to be foregrounded — general design-practice papers without a specific co-design/participatory/collaborative framing are out of scope per the journal's stated aims.",
+    "methods_welcome": [
+     "Autoethnography and reflexive/narrative inquiry in codesign practice (active special issue: 'Autoethnographies of social design practices', Vol 22 Issue 1, 2026, guest eds. Bofylatos & Perez)",
+     "Qualitative interview studies of design practitioners",
+     "Development/evaluation of co-design tools and methods",
+     "Participatory design in cultural heritage / digital experience contexts",
+     "Healthcare co-design case studies",
+     "Co-design in industry/technology contexts (e.g. published 2025 piece on co-design for intelligent cockpit scenario planning)",
+     "Democratic innovation / participation-in-governance co-design"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.tandfonline.com/journals/ncdn20/special-issues",
+     "https://desisnetwork.org/call-for-papers-codesign-journal-special-issue/",
+     "https://www.tandfonline.com/doi/abs/10.1080/15710882.2025.2455612",
+     "https://www.tandfonline.com/doi/full/10.1080/15710882.2024.2440405",
+     "https://www.tandfonline.com/doi/abs/10.1080/15710882.2025.2490899",
+     "https://www.tandfonline.com/doi/abs/10.1080/15710882.2025.2498575",
+     "https://www.tandfonline.com/doi/abs/10.1080/15710882.2025.2511791"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/codesign/",
+     "https://www.fabiao.com.cn/sci/15710882/114.html"
+    ]
+   },
+   "cross_language_checked": [
+    "SciRev (scirev.org/journal/codesign/): page shows 'No reviews yet' / n/a for review time, quality-of-review score and rejection rate; one anomalous 'decision time immediate rejection: 65 days' data point with no corroborating review count — treated as unreliable, not used as a fact.",
+    "小木虫 muchong.com: site search for CoDesign / ISSN 1571-0882 returned no forum threads discussing submission/review experience at this journal — 0 results relevant to experiential layer.",
+    "知乎 zhihu.com: search returned only unrelated hits for Tencent's 'CoDesign' design-collaboration software product (name collision) plus a one-line description of the academic journal as a 'double-blind peer-reviewed' journal; no first-hand submission/review account found — 0 relevant results.",
+    "Reddit r/AskAcademia (site:reddit.com): zero results for CoDesign + Taylor & Francis — no discussion found.",
+    "發表雲/優發表/愛科學 (Chinese SCI-journal aggregator sites, fabiao.com.cn family): report aggregate stats 'time to first decision ~9 days; review time ~64 days; submission to acceptance ~82 days (~2.7 months)' — these are third-party aggregator-compiled statistics of unclear/unverifiable methodology (not first-hand author forum testimony), so NOT promoted into the experiential.review_time_months field; flagged only as a low-confidence secondary data point."
+   ],
+   "blanks": [
+    {
+     "field": "preprint.embargo_length",
+     "why": "T&F's Green OA embargo period is set per journal/subject collection; no CoDesign-specific embargo length was located (only the general policy that AM self-archiving is permitted)."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 reviews for CoDesign (no first-hand author-reported data). The only numeric review-time figures found (~64-82 days) come from Chinese aggregator sites (fabiao.com.cn family) with no disclosed methodology/source, not from SciRev or a forum first-hand account, so per the hard rule this was left null rather than promoted as fact."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev entries, no forum thread (muchong/zhihu/reddit all returned 0 relevant results) reporting a desk-reject rate for this journal."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand public account (forum, SciRev comment, or otherwise) describing reviewer tone/culture for this journal was found in any of the checked cross-language sources."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand post-acceptance account found in any checked source."
+    },
+    {
+     "field": "ai_policy.journal_specific_note",
+     "why": "Could not find an AI-policy page scoped to CoDesign itself (only the Taylor & Francis group-wide policy applies); the group page itself returned HTTP 403 on direct fetch and had to be corroborated via secondary summaries."
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "2689-0208",
+   "name": "Technology, Mind, and Behavior",
+   "ai_policy": {
+    "leniency_1_5": 4,
+    "gate": "conditional",
+    "summary": "屬 APA 全社統一政策(非期刊自訂):允許使用生成式 AI 於文獻搜尋、翻譯/潤稿、程式碼與數據分析、內容草擬,但強制要求在 Methods/Author Note 揭露工具名稱、使用方式與程度,並需附軟體引用;作者需自行驗證 AI 產出之正確性;審稿人禁止將投稿內容輸入 AI 工具(保密考量);AI 不得列為作者。無正式「審批」關卡,採「揭露即可用」模式,故評為中高寬容度(4/5,非全開放因強制揭露與若干限制)。",
+    "source_url": "https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai",
+    "signal_quality": 3
+   },
+   "peer_review": {
+    "type": "同儕評審(peer-reviewed);官方頁面與期刊自身頁面均未明確標示為 double-blind 或 open review 制度,無法確認具體匿名層級",
+    "source_url": "https://www.apa.org/pubs/journals/tmb"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "跨領域「心理學 x 科技」實證研究(基礎與應用),涵蓋高齡、教育、身心健康、休閒、職場等應用領域,以及科技人際互動的倫理/法律/社會/政策議題;同時接受統合分析(meta-analyses)與文獻回顧。",
+    "methods_welcome": [
+     "quantitative",
+     "qualitative",
+     "mixed methods",
+     "meta-analysis",
+     "literature review"
+    ],
+    "framing_required": "投稿須遵循 APA Journal Article Reporting Standards (JARS) 以符合科學嚴謹度要求",
+    "sources": [
+     "https://www.apa.org/pubs/journals/tmb",
+     "https://www.apa.org/pubs/journals/tmb/special-collections"
+    ],
+    "signal_quality": 3
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "Retraction Watch (2026-06-16) 報導一篇探討生成式 AI 認知影響的論文於送審後爭議事件:該文 2025-12-07 投稿、2026-02-04 修訂、2026-02-10 接受(約2個月完成同儕審查),但事後被發現統計數字有數學上不可能之處、圖表標示與長條圖長度不符、且引用一篇不存在的文獻均未在審查中被抓出;該文亦缺少人體受試研究應有的 IRB 核准聲明,主編承認此為「疏漏」並表示已修改編輯流程以防再犯。此事件顯示至少在該案例中審查速度快但把關深度不足,惟這是單一被曝光的爭議案例,不能代表期刊常態品質。SciRev 上未查得該期刊之獨立審稿人評論資料(查無此期刊頁面)。",
+    "reviewer_culture": "創刊編輯 Danielle McNamara 於卸任社論(2026年冬季號,psycnet.apa.org/fulltext/2026-82028-001.pdf)中描述期刊自創立以來採「審查即指導(reviewing as mentorship)」文化,提供作者多輪修訂機會,審稿人多被形容為「極具思考、具建設性」——但此為期刊官方社論之自我敘述,非獨立第三方查證,應視為期刊立場宣傳而非客觀陳述。",
+    "sources": [
+     "https://retractionwatch.com/2026/06/16/technology-mind-behavior-apa-journal-investigation-cognitive-impact-generative-ai/",
+     "https://psycnet.apa.org/fulltext/2026-82028-001.pdf?sr=1 (via search snippet, editorial self-description)"
+    ],
+    "signal_quality": 2
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type",
+     "why": "官方期刊頁面與 apaopen.org 投稿指南頁面因 403 無法直接存取,搜尋結果未提供明確 double-blind/open 標示,僅知有「action editor 主導、審稿人評論、作者往返修訂」流程"
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "查無期刊或 APA 針對此刊之明確 preprint 政策頁面(apaopen.org 提交頁 403 無法讀取),搜尋結果未提及"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "第三方彙整站(journalseeker/askbisht)給出「平均30週」投稿到刊出時間,但此為聚合站數據非期刊/SciRev/論壇之第一手來源,且與 Retraction Watch 案例中約2個月審查週期不一致,故不採信、留白;SciRev 查無該刊獨立頁面"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無任何第一手或論壇來源提及退稿率或直接拒稿比例"
+    },
+    {
+     "field": "cross_language",
+     "why": "小木虫、知乎、Reddit r/AskAcademia 均查無關於此期刊的具體投稿/審稿經驗討論(見 cross_language_checked)"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 0 results — 站內搜尋未見任何針對 Technology, Mind, and Behavior 之投稿/審稿討論串",
+    "知乎 zhihu.com: 0 results — 搜尋僅返回不相關的其他期刊介紹文章",
+    "Reddit r/AskAcademia: 0 results — 未查得任何討論此期刊的貼文",
+    "fabiaoji: 未查得任何結果(搜尋引擎未返回該站點對應資料)"
+   ],
+   "sensitive_topics_note": "此期刊近期(2026-06)因一篇探討「生成式 AI 對認知影響」的論文遭 Retraction Watch 調查報導審查疏漏(統計錯誤、不存在的引用、缺 IRB 聲明未被抓出),屬於一次性揭露事件而非期刊常態評價,列入 experiential 供決策參考但已標註其為單一案例限制。",
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1995-8692",
+   "name": "Journal of Eye Movement Research (JEMR)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.mdpi.com/journal/jemr/instructions",
+    "summary": "JEMR follows MDPI's standard publisher-wide GenAI policy since moving from Bern Open Publishing to MDPI (Vol. 18, Jan 2025). GenAI/LLM tools cannot be listed as authors (do not meet authorship criteria). Where GenAI was used for text/data/graphics generation, study design, or data analysis/interpretation, authors must add a disclosure statement naming the tool, version, and purpose in the Acknowledgments section, and take full responsibility for the content. No outright ban and no journal-specific customization found beyond MDPI's boilerplate policy replicated verbatim on the JEMR instructions page."
+   },
+   "peer_review": {
+    "type": "Single-anonymized (single-blind): reviewers know author identity, authors do not know reviewer identity. Minimum two review reports per manuscript that proceeds to review; reviewers given 7-10 days (extensions common). Preceded by a two-stage pre-check (Editorial Office technical/ethics pre-check + Academic Editor editorial pre-check).",
+    "source_url": "https://www.mdpi.com/journal/jemr/instructions"
+   },
+   "preprint": {
+    "allowed": "Yes. JEMR accepts submissions previously posted as preprints, provided they have not undergone peer review elsewhere. MDPI operates its own Preprints.org server; posting there does not affect peer review.",
+    "source_url": "https://www.mdpi.com/journal/jemr/instructions"
+   },
+   "positioning": {
+    "accepts_now": "Original research articles, reviews (incl. systematic reviews per PRISMA), short communications, and case reports on all aspects of oculomotor functioning: eye-recording methodology, neurophysiological/cognitive models, attention, reading, and applications in neurology, ergonomics, media research, HCI, education, driving, consumer/neuromarketing research. Active 2026 special issue signals strong current interest in AI-enhanced eye-tracking (machine learning, computer vision, multimodal modeling incl. EEG fusion, predictive gaze modeling) - deadline 20 Nov 2026, guest-edited by Hedda Martina Sola (neuromarketing) and Jasenka Gajdos Kljusuric (applied modeling/AI tools).",
+    "framing_required": "For the open 'Eye Tracking in the Age of AI' special issue, submissions should explicitly engage AI/ML as an analytical or predictive framework for eye-tracking data (not just as a peripheral tool), and are encouraged to address validity, interpretability, reproducibility, and responsible-use questions alongside the technical contribution.",
+    "methods_welcome": [
+     "eye-tracking methodology / recording techniques",
+     "machine learning & computer vision applied to gaze data",
+     "multimodal integration (eye-tracking + EEG or other neurophysiological measures)",
+     "predictive/generative gaze modeling",
+     "attention and reading research",
+     "systematic reviews and meta-analyses (PRISMA)",
+     "applied/consumer neuroscience and neuromarketing studies",
+     "case reports on oculomotor conditions"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://www.mdpi.com/journal/jemr/about (aims & scope)",
+     "https://www.mdpi.com/journal/jemr/special_issues/7NX3D3I604 (active AI special issue CFP, deadline 2026-11-20)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/journal-of-eye-movement-research/ (only n=1 review, editor-provided stats fields all 'n/a'; that single review reports a 2.4-week first round and 'managed via email instead of a publication system' - this describes the pre-2025 Bern Open Publishing workflow, NOT the current MDPI/SuSy system, so it is stale and not reported as a current fact)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has only a single review (n=1) and that review predates the Jan-2025 MDPI takeover (describes an email-based workflow inconsistent with MDPI's SuSy platform), so it cannot be treated as representative of the current journal. No other first-hand timing report found."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev aggregate stats (editor did not supply percent-accepted/percent-rejected), no forum-reported figure found in English or Chinese sources."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No multi-report pattern; the sole SciRev entry is a single anecdote, not a pattern, and is likely pre-MDPI."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero hits on muchong.com, zhihu, fabiaoji, and Reddit r/AskAcademia specifically discussing JEMR review experience or reviewer behavior - searches returned unrelated ophthalmology-journal content or no results at all."
+    },
+    {
+     "field": "ai_policy.gate (journal-specific customization)",
+     "why": "No JEMR-specific AI policy page exists distinct from MDPI's publisher-wide boilerplate; cannot confirm whether editors apply any stricter/looser practice in reality (e.g., via desk-reject patterns) due to lack of experiential data."
+    }
+   ],
+   "overall_signal_quality": 2,
+   "cross_language_checked": [
+    "小木虫 muchong.com - 0 results (site-restricted WebSearch returned unrelated USPTO/NCBI content, no forum threads found)",
+    "知乎 zhihu.com - 0 relevant results (returned general ophthalmology-SCI-journal listicles that do not mention JEMR by name)",
+    "fabiaoji - 0 results (no JEMR-specific content found)",
+    "Reddit r/AskAcademia - 0 results (no Reddit threads mentioning Journal of Eye Movement Research found)",
+    "SciRev - 1 review found (low-confidence/possibly-stale, see experiential notes)"
+   ],
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "0737-0024",
+   "name": "Human-Computer Interaction",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://taylorandfrancis.com/our-policies/ai-policy/ ; https://authorservices.taylorandfrancis.com/editorial-policies/defining-authorship-research-paper/",
+    "summary": "No journal-specific AI policy page found for HHCI (hhci20) itself; this is the publisher-wide Taylor & Francis policy that applies by default. T&F allows generative AI for idea generation, language/grammar polishing, literature search/classification and coding support, but prohibits generating or manipulating research data/images/figures, prohibits listing AI as an author, and requires a mandatory disclosure statement (tool name, version, purpose) in the methods/acknowledgments section. Direct fetch of the T&F AI-policy page returned HTTP 403; content reconstructed from WebSearch result snippets, not read verbatim on-page."
+   },
+   "peer_review": {
+    "type": "External peer review by editor-selected referees (ScholarOne submission portal mc.manuscriptcentral.com/hci); exact blind protocol (single- vs double-anonymous) not confirmed for this specific journal — only generic T&F/sister-journal (IJHCI, Behaviour & Information Technology) language was found describing 'independent, anonymous expert referees.'",
+    "source_url": "https://www.tandfonline.com/journals/hhci20/about-this-journal (fetch blocked, HTTP 403; only search-snippet content available)"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "signal_quality": 3,
+    "accepts_now": "Confirmed recent (2025-2026) content in HHCI itself: (1) an empirical AI-trust/algorithmic-bias study — 'Communicating and combating algorithmic bias: effects of data diversity, labeler diversity, performance bias, and user feedback on AI trust' (Cheng Chen et al., 2025); (2) a methodological/critical debate thread — Crabtree (2025) 'H is for human and how (not) to evaluate qualitative research in HCI' followed by a January 2026 commentary 'Qualitative research as science.' This indicates the journal actively runs both empirical human-AI-interaction studies and theoretical/methodological critique pieces, consistent with its stated aims.",
+    "framing_required": "Aims & scope self-describe as 'A Journal of Theoretical, Empirical, and Methodological Issues of Interaction Science and System Design' — submissions should frame contributions as advancing interaction science/system-design theory or method, not just applied usability findings.",
+    "methods_welcome": [
+     "theoretical/conceptual HCI scholarship",
+     "empirical human-AI interaction studies (e.g., AI trust, algorithmic bias)",
+     "methodological critique / commentary pieces (journal runs open debate exchanges between authors)",
+     "qualitative research methods discourse"
+    ],
+    "sources": [
+     "https://scispace.com/journals/human-computer-interaction-jhbvw2st",
+     "https://research.com/journal/human-computer-interaction-1",
+     "https://www.tandfonline.com/toc/hhci20/current (title-level via search snippet only, direct fetch 403)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://www.scirev.org/journal/human-computer-interaction/ (0 reviews submitted — confirmed absence of first-hand data)",
+     "http://muchong.com/bbs/journal.php?view=detail&jid=3297 (stale directory page, only 2007-2009 impact-factor data, no review-experience posts)",
+     "https://www.fabiao.com/sci/07370024.html (Chinese SCI-directory aggregator, not a forum thread: states '>12週' review time and 'very high quality bar / difficult to get accepted' — attributed only to unspecified crowdsourced experience reports with no visible individual posts, so treated as low-confidence secondary aggregation, not genuine first-hand testimony)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type (blind protocol)",
+     "why": "Journal's own about-page and instructions-for-authors PDF both returned HTTP 403 on fetch; only generic T&F/sister-journal boilerplate language surfaced via search, not a hhci20-specific statement of single- vs double-anonymous review."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "Sherpa/Romeo lookup (v2.sherpa.ac.uk) returned HTTP 403; no alternate first-hand source for hhci20's preprint/self-archiving policy was found in the time available."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 submitted reviews for this journal (confirmed absence, not a search failure). The only numeric figure found ('>12 weeks') comes from a Chinese SCI-directory aggregator site (fabiao.com) that does not show individual first-hand submitter posts, so it does not meet the bar for a genuine experiential data point and was left out of the numeric field."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No source (SciRev, muchong, zhihu, Reddit) had any figure; SciRev page explicitly shows 'n/a' for this metric with zero submitted reviews."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand forum thread (小木蟲/知乎/Reddit r/AskAcademia) discussing actual reviewer behavior for this journal was found — searches for 小木蟲, 知乎, and Reddit all returned only SCI-directory listing pages or unrelated results, not discussion threads."
+    },
+    {
+     "field": "ai_policy (journal-specific override)",
+     "why": "Could not confirm whether HHCI has published its own AI-use statement distinct from the T&F group-wide policy; the journal's about-page/author-instructions could not be fetched (403), so the group-wide policy is reported as the best available proxy, with signal_quality downgraded to 2 to reflect this gap."
+    }
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null,
+   "cross_language_checked": [
+    "小木蟲 muchong.com — found only a stale journal-directory page (2007-2009 IF data), no first-hand review-experience posts for this ISSN",
+    "知乎 zhihu — search returned zero genuine zhihu discussion threads; only SCI-directory aggregator sites (fabiao.com, haofabiao.com, haotougao.com, iikx.com, peipusci.com) surfaced",
+    "fabiaoji/SCI-directory aggregators (fabiao.com, letpub.com.cn) — yielded a crowdsourced '>12 weeks' review-time figure and a 'high quality bar / hard to get accepted' characterization, but with no visible individual first-hand posts, so treated as low-confidence secondary data",
+    "Reddit r/AskAcademia — 0 results; no thread specifically discussing this journal found"
+   ]
+  },
+  {
+   "issn": "2673-4192",
+   "name": "Frontiers in Virtual Reality",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+    "summary": "此為 Frontiers 出版社統一政策，非期刊專屬頁面。政策允許使用生成式 AI 協助撰寫正文，但要求在 Acknowledgments 中揭露；AI 不得列為作者/共同作者；作者須自行查核 AI 產出內容（含引用、圖表）之事實正確性與抄襲疑慮。屬「有條件允許」（disclosure gate），非全面禁止也非完全開放。"
+   },
+   "peer_review": {
+    "type": "single-anonymized（審稿人身分對作者保密，作者身分對審稿人/編輯公開），屬 Frontiers 標準 collaborative interactive review，接受後公開 reviewer 與 handling editor 姓名",
+    "source_url": "https://www.frontiersin.org/journals/virtual-reality/about"
+   },
+   "preprint": {
+    "allowed": "允許（出版社統一政策）。可於投稿前後張貼於 preprint 伺服器，但該伺服器不得限制作者完整著作權與再利用權；建議在 Acknowledgments 註明並於參考文獻列出完整引用。與 ChemRxiv/bioRxiv/medRxiv 有正式整合，未特別提及與 VR 領域相關 preprint 平台（如 arXiv）的專屬條款。",
+    "source_url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics"
+   },
+   "positioning": {
+    "accepts_now": "以 2024-2026 期刊實際刊出文章觀察，主力領域為：VR/AR 醫療與復健應用（含 AI 輔助復健、癌症疼痛與心理照護、手術模擬）、人類行為與心理（存在感/presence、化身 avatar 保真度與共現、凝視與生理訊號、焦慮數位表型）、無障礙與包容設計（視障觸覺 VR、自閉症使用者互動）、技術創新（AR 維修指引、觸覺回饋、視聽回饋機制、導航中的視野最佳化）、教育與社會應用（虛擬校園導覽、生成式 AI 面試訓練、跨文化學習）。",
+    "framing_required": null,
+    "methods_welcome": [
+     "Original Research",
+     "Review / Systematic Review",
+     "Brief Research Report",
+     "Case Report",
+     "Technology and Code",
+     "人因/使用者研究（含生理訊號、問卷、質性訪談）",
+     "系統/技術開發論文（觸覺裝置、AR 導引系統等）"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.frontiersin.org/journals/virtual-reality/about (aims & scope, 六個 specialty section)",
+     "https://www.frontiersin.org/journals/virtual-reality/volumes (近期刊出文章標題掃描)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://www.frontiersin.org/journals/virtual-reality/about — 出版社聲稱平均13週（約3個月）投稿到刊出，但這是官方宣傳數字非第一手審稿人經驗，未採用填入 review_time_months"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 查無此期刊條目（scirev.org 對 frontiers-in-virtual-reality 回傳404，站內搜尋亦無結果，等同0 reviews）；小木虫/知乎/Reddit AskAcademia 搜尋皆未找到針對本刊（而非 Frontiers 集團泛稱）的第一手審稿週期討論。僅有出版社自稱『平均13週』的宣傳數字，不採用為第一手事實。"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "無任何公開來源（SciRev/小木虫/知乎/Reddit）提供此刊退稿率的第一手數據。"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "未查得作者對本刊接受流程的第一手評論；小木虫討論多為 Frontiers 集團泛稱（如 Frontiers in Energy Research 等其他刊）而非本刊專屬。"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無具體來源支持審稿人文化/傾向的主觀描述，依規則不可捏造，故留空。知乎有一篇泛論 Frontiers 集團『水刊』疑慮的文章，但未針對本刊具體審稿人行為給出可驗證事實，且屬對整個出版社品牌的評價而非本刊獨有經驗，未採用。"
+    },
+    {
+     "field": "positioning.framing_required",
+     "why": "未找到期刊或編輯明確要求特定投稿框架（如必須連結 SDG9）的強制規定；aims & scope 提及『particular emphasis on SDG 9』但未見明文規定為強制框架要求，故留空避免過度推論。"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org): 查無 Frontiers in Virtual Reality 條目（404／站內搜尋無結果）— 0 reviews",
+    "小木虫 muchong.com: 搜尋『Frontiers in Virtual Reality 審稿/投稿』僅返回 Frontiers 集團其他期刊（Energy Research, Earth Science）的討論串，未見本刊專屬討論串 — 視為0 results for this journal specifically",
+    "知乎 zhihu.com: 找到一篇泛論 Frontiers 集團投稿『避坑指南』(zhuanlan.zhihu.com/p/415115348)，內容針對整個 Frontiers 品牌而非本刊，且為主觀評論非可驗證事實，未採用為本刊專屬 fact",
+    "Reddit r/AskAcademia: 搜尋『Frontiers in Virtual Reality reddit AskAcademia review time desk reject』無結果 — 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0953-5438",
+   "name": "Interacting with Computers",
+   "ai_policy": {
+    "gate": "conditional (disclosure required; AI cannot be listed as author)",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://academic.oup.com/iwc/pages/General_Instructions",
+    "summary": "官方政策(General Instructions頁)明載:AI/NLP工具不得列為作者,期刊會篩查作者名單;若使用AI(產生內容/圖像/寫程式/處理資料/翻譯)須在投稿信與Methods或Acknowledgements段落揭露,並引用COPE 'Authorship and AI' 立場聲明。屬「揭露即可用、非禁用、非完全開放」的中間檔——leniency判3。此為出版社(OUP/COPE標準模板)層級政策頁,非該刊獨有實測案例,故信心中等。"
+   },
+   "peer_review": {
+    "type": "Double-anonymized peer review, typically sent to 3 independent reviewers; editorial desk-screening can reject within ~3 weeks",
+    "source_url": "https://academic.oup.com/iwc/pages/General_Instructions"
+   },
+   "preprint": {
+    "allowed": "Yes — authors may post/share preprints prior to and during review without prejudicing consideration; upon acceptance authors must update the preprint's status/DOI to point to the published version",
+    "source_url": "https://academic.oup.com/iwc/pages/General_Instructions"
+   },
+   "positioning": {
+    "accepts_now": "近期(2024-2026)實際刊出主題涵蓋:人本AI/AI可解釋性與職場協作中的責任歸屬、AI同理心與語音助理/虛擬代理信任(ChatGPT相關)、圖形式vs.文數字密碼的認知負荷、多裝置系統間的共同基礎(common ground)、身心障礙與難民/移民女性的makerspace可及性、高齡化與HCI多維取向、GitHub上弱勢開發者的協作實踐、生命轉換期的隱私需求、觸覺互動(冰壺運動遊戲案例)、數位市集的persona建構方法論、UX設計典範反思(relation artefact design)。目前活躍徵稿(Call for Papers)主題為「為神經多樣性者的自我決定設計科技」(Designing Technology for Neurodivergent Self-Determination),徵求長/短研究論文、系統性文獻回顧、案例研究、provocation與pictorial。",
+    "framing_required": "投稿須以HCI理論/方法/實務貢獻為框架,強調創新性與實務影響(practical impact),而非純技術/工程論文;純AI/ML演算法論文若缺乏人機互動角度的貢獻定位,不符合該刊定位。",
+    "methods_welcome": [
+     "實證研究(empirical studies)",
+     "案例研究(case studies)",
+     "系統性文獻回顧(systematic literature reviews)",
+     "理論性論文",
+     "provocations(挑戰性短論)",
+     "pictorials(圖像式論文)"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://academic.oup.com/iwc/issue",
+     "https://academic.oup.com/iwc/pages/call-for-papers",
+     "https://academic.oup.com/iwc"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "約3-3.5個月(SciRev單筆樣本:整體處理3.5個月,第一輪3.2個月,平均2輪;LetPub使用者回報「審稿周期 >12週」,方向一致但皆為極小樣本)",
+    "desk_reject_pct": null,
+    "acceptance_note": "LetPub群眾標籤將本刊接受難度標記為「容易」(容易/easy),但僅基於少量(約2筆)使用者提交,樣本過小,僅供參考。",
+    "reviewer_culture": "唯一一筆SciRev評論(2020年代某匿名作者)稱:三位審稿人與編輯的意見「品質高、詳盡且有幫助」(quality of review reports評分5.0/5.0,整體處理評分4.0/5.0,審稿意見難度3.0/5.0中等)。小木虫(muchong)上僅有一則2012年舊留言提及「待刊隊列常超過50篇論文,積壓明顯」,因年代久遠(距今14年,期刊主編/流程可能已變動),不可視為當前審稿文化的可靠依據,僅列為歷史脈絡參考。",
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/interacting-with-computers/",
+     "https://letpub.com.cn/index.php?journalid=3615&page=journalapp&view=detail",
+     "http://muchong.com/bbs/journal.php?view=detail&jid=3630"
+    ]
+   },
+   "cross_language_checked": [
+    "muchong.com 小木虫 — 找到:僅1則2012年舊留言提及投稿隊列積壓(>50篇待刊),無審稿時長/退稿率/AI政策相關第一手討論",
+    "zhihu.com 知乎 — 0筆第一手投稿經驗討論結果;搜尋僅返回期刊列表/影響因子彙整頁(如職稱驿站、X-MOL),非作者親身經驗貼文",
+    "letpub.com.cn — 找到:審稿周期使用者回報 >12週,接受難度群眾標籤為「容易」,樣本極小(約2筆使用者提交)",
+    "reddit.com r/AskAcademia — 0筆結果,搜尋未找到針對本刊的討論串"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev該刊頁面僅1筆評論且未填寫桌拒率欄位;LetPub、小木虫、知乎、Reddit均未找到任何討論桌拒比例的第一手貼文,故留白而非套用通用數字。"
+    },
+    {
+     "field": "experiential.reviewer_culture (現行可信度)",
+     "why": "唯一具體引述來自SciRev單一匿名評論(小樣本n=1);小木虫上僅有的相關留言已是2012年(距今14年),期刊主編與流程可能已變更,不足以代表當前審稿文化,故已在欄位內註明此侷限而非直接採信為現況定論。"
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 3
+  },
+  {
+   "issn": "1073-0516",
+   "name": "ACM Transactions on Computer-Human Interaction (TOCHI)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 4,
+    "summary": "This is an ACM publisher-wide policy (ACM Policy on Authorship), not TOCHI-specific. Use of generative AI tools to create content (text, tables, graphs, code, data, citations) is PERMITTED but must be fully disclosed (e.g., an Acknowledgements statement such as \"ChatGPT was utilized to generate sections of this Work...\"). Generative AI tools cannot be listed as authors; all co-authors must meet ACM's authorship criteria. Separately, ACM prohibits reviewers from submitting papers to LLMs/plagiarism detectors/summarizers or using generative AI to write reviews. Basic word-processing/grammar tools are exempt from disclosure. No TOCHI-specific supplementary AI policy was found beyond this ACM-wide policy referenced on the journal's pages.",
+    "source_url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+    "signal_quality": 2
+   },
+   "peer_review": {
+    "type": "Double-blind (author identities hidden from reviewers; contact author is told the Associate Editor's identity but not reviewers'). Associate Editor assigns 3-4 reviewers; recommends to Editor-in-Chief.",
+    "source_url": "https://dl.acm.org/journal/tochi/author-guidelines"
+   },
+   "preprint": {
+    "allowed": "Yes. Per ACM Policy on Authorship (applies to TOCHI), authors may deposit manuscripts on arXiv, other non-commercial/legally-mandated repositories, personal homepages, or institutional repositories, both before and after submission. Authors are 'encouraged' (not required) to refrain from uploading during the TOCHI review period itself, but do not need to remove an existing arXiv version before submitting, and no preferential treatment is given either way.",
+    "source_url": "https://dl.acm.org/journal/tochi/author-guidelines"
+   },
+   "positioning": {
+    "accepts_now": "Flagship general HCI journal; recent scope/CFP signals show breadth across: interaction techniques and interactive systems, accessibility, human-AI/generative-AI interaction (esp. in healthcare and design contexts), VR/AR and embodied interaction, computational/quantitative HCI methods, qualitative and Research-through-Design work, critical/theoretical HCI (e.g. 'unmaking' HCI), and HCI history/theory. Also runs themed special issues (e.g., 'HCI and the Body - Reimagining Women's Health', 'Human-centred AI in healthcare', 'Digital Touch and HCI').",
+    "methods_welcome": [
+     "quantitative/computational HCI (stats, modeling, systems evaluation)",
+     "qualitative research and Research-through-Design",
+     "mixed methods",
+     "critical/theoretical and historical HCI scholarship",
+     "human-AI interaction studies (incl. generative AI in specific application domains)"
+    ],
+    "framing_required": "For special-issue submissions, framing must explicitly address the issue's stated theme (e.g., prototyping under uncertainty, unmaking/deconstruction, women's health, healthcare AI); general-track submissions require positioning within HCI theory/practice contribution per journal's stated 'strong TOCHI contribution' criteria (integrative analyses connecting theory and practice).",
+    "sources": [
+     "https://dl.acm.org/journal/tochi/calls-for-papers",
+     "https://dl.acm.org/journal/tochi/special-issues",
+     "https://dl.acm.org/journal/tochi/hci-and-the-body",
+     "https://dl.acm.org/journal/tochi/digitaltouchhci"
+    ],
+    "signal_quality": 2
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/acm-transactions-on-computer-human-interaction/ (0 reviews submitted, all metrics 'n/a')",
+     "https://muchong.com/bbs/journal.php?view=detail&jid=28 (journal listing page exists with only ISSN/frequency metadata, no reviewer-experience posts)"
+    ],
+    "signal_quality": 0
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com — found journal listing page (jid=28) but it contains only bibliographic metadata, no submission/review experience posts; targeted search for TOCHI-specific threads returned 0 relevant results",
+    "知乎 zhihu.com — multiple general HCI-journal-recommendation threads mention TOCHI as a top-tier venue, but 0 threads found describing first-hand submission/review/desk-reject experience",
+    "fabiaoji (发表记) — no TOCHI-specific pages or discussion found in search",
+    "Reddit r/AskAcademia — 0 TOCHI-specific threads found; one loosely related Facebook HCI-META group post title surfaced ('Any insights on ACM Tochi review process and timeline?') but Facebook content is inaccessible/unverifiable and was not used as a source",
+    "SciRev — journal page exists but shows 0 submitted reviews, all quantitative fields 'n/a'"
+   ],
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 reviews for this journal (all fields n/a); no first-hand forum posts found on muchong, zhihu, fabiaoji, or Reddit r/AskAcademia. The only number available (~60 days to first decision) comes from TOCHI's own official author guidelines, not from author/reviewer experiential reports, so per the hard rule it is excluded from this experiential-only field rather than reported as if it were experiential data."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev data (0 reviews) and no forum/community discussion (Chinese or English) mentioning a desk-reject rate for TOCHI was found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance/rejection narratives found in any of the checked cross-language sources."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand accounts of reviewer tone/culture were found in muchong, zhihu, fabiaoji, or Reddit; fabricating a generic narrative is disallowed by the work order's hard rules."
+    },
+    {
+     "field": "positioning.accepts_now",
+     "why": "Could not directly fetch dl.acm.org/journal/tochi (403 Forbidden on WebFetch) to review an actual recent table-of-contents/article-title list; positioning is inferred from CFP/special-issue titles and aims-and-scope snippets surfaced via search only, hence signal_quality capped at 2."
+    }
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://direct.mit.edu/journals/pages/publication-ethics",
+    "summary": "No PRESENCE-specific AI/LLM clause found on its own Submission Guidelines page (https://direct.mit.edu/pvar/pages/submission-guidelines, checked live). Falls back to MIT Press press-wide policy: AI tools (ChatGPT/LLMs) cannot be listed as authors; authors who use AI to produce text/images/graphics or to collect data MUST inform editors and disclose the use transparently in the manuscript; authors remain fully responsible/liable for AI-assisted content. Policy explicitly notes individual MIT Press journals MAY have stricter/more specific rules — none found for PRESENCE at query time (2026-07-13), so this is a publisher-wide default, not a journal-verified rule."
+   },
+   "peer_review": {
+    "type": "Single anonymized (single-blind); reviewer interacts with editor only; review information not published (per journal's published Peer Review Taxonomy box)",
+    "source_url": "https://direct.mit.edu/pvar/pages/submission-guidelines"
+   },
+   "preprint": {
+    "allowed": "No PRESENCE-specific pre-submission preprint statement found. General MIT Press author self-archiving policy (publisher-wide, not journal-specific) permits posting to institutional repositories, personal/institutional websites, and nonprofit subject repositories such as arXiv; explicitly excludes Academia.edu and ResearchGate. This describes posting rights around publication, not confirmation that submitting a manuscript already circulating as an arXiv preprint is accepted — that specific point is unconfirmed for PRESENCE.",
+    "source_url": "https://direct.mit.edu/journals/pages/authors"
+   },
+   "positioning": {
+    "accepts_now": "Empirical quantitative VR/AR studies dominate 2026 issues: presence measurement, cybersickness, embodiment/avatars, social VR, AR/VR in education and training, virtual heritage and digital museums, health/behavior-change communication in VR. Journal also runs an active qualitative turn: current Call for Papers is a special issue \"Immersed into the Metaverse: Ethnographies of Presence and Embodiment in Virtual Reality\" (eds. David Berliner & Maria Erofeeva, ULB), and recent free articles include ethnographic/relational-methods pieces (\"Capturing Presence as a Method? A Relational Toolkit for Immersive Ethnography in Social Virtual Reality\", \"Towards an Anti-ableist Ethnography of Virtual Reality\").",
+    "framing_required": "Extended-paper submissions based on prior conference publications must contain a minimum of 30% new material vs. the original, documented in a cover letter, or are auto-rejected. Manuscripts reporting user experiments must follow APA-style Method/Results/Discussion structure with a Participants/Materials/Procedure breakdown.",
+    "methods_welcome": [
+     "Quantitative controlled experiments (presence, cybersickness, embodiment, engagement)",
+     "Systematic literature reviews / survey articles",
+     "Reports on implemented systems or applications",
+     "Tutorial articles",
+     "Qualitative / ethnographic methods (actively solicited via current special-issue CFP)",
+     "Forum contributions: short papers, technical notes, opinion pieces, lab reports, correspondence (looser review bar than Articles)"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://direct.mit.edu/pvar (current issue, latest/most-read/most-cited lists, live CFP banner, checked 2026-07-13)",
+     "https://direct.mit.edu/pvar/pages/submission-guidelines (submission categories, extended-paper rule)"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "Journal's own stated commitment (not third-party-verified): reviewers return comments within four months of submission; intends print appearance within one year of acceptance (no guarantee). Source: https://direct.mit.edu/pvar/pages/submission-guidelines. This is the publisher's stated target, not an experiential/first-hand data point, so left out of review_time_months per the honest-blank rule.",
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "https://direct.mit.edu/pvar/pages/submission-guidelines (publisher's stated 4-month target, not first-hand)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev has no entry/page for PRESENCE (scirev.org/journal/presence-virtual-and-augmented-reality/ returns 404; scirev.org/j/2966/... also not found). No first-hand review-time reports found on muchong.com, zhihu.com, or Reddit r/AskAcademia. Only the publisher's own stated 4-month target exists, which is not an experiential data point."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev entry and no forum discussion (Chinese or English) mentioning desk-reject rate for this journal was found."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author account of acceptance experience found in any queried source (SciRev, muchong, zhihu, Reddit)."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete first-hand source describing reviewer tone/culture for PRESENCE was found in any cross-language search; per hard rule, no subjective claim without a concrete source, so left null rather than inferring from adjacent HCI/VR journal norms."
+    },
+    {
+     "field": "ai_policy.gate/leniency",
+     "why": "No PRESENCE-specific AI policy page exists (its Submission Guidelines page, fetched live, contains no AI/LLM clause); leniency and gate are inferred from the publisher-wide MIT Press ethics policy only, not a journal-verified source, hence low signal_quality (2) despite a concrete source URL."
+    },
+    {
+     "field": "preprint.allowed (pre-submission)",
+     "why": "Only a general green-OA self-archiving policy was found (what authors may post AFTER/around publication); no explicit statement on whether PRESENCE accepts submissions that are already posted as preprints (e.g., on arXiv) before peer review."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched \"PRESENCE 期刊 虚拟现实 投稿/审稿\" and \"拒稿/审稿周期\": 0 journal-specific results (forum has general submission-experience sections but no thread found naming PRESENCE/MIT Press VR journal specifically)",
+    "知乎 zhihu.com — searched combined with MIT Press/VR/AR journal terms: 0 PRESENCE-specific results returned (only tangential CS-journal review-speed discussions unrelated to this title)",
+    "Reddit r/AskAcademia (site:reddit.com query) — 0 results; search returned only arXiv preprints citing the journal's name, no Reddit discussion threads",
+    "SciRev.org — no journal entry found; both the slugged URL and an ID-based URL (/j/2966/...) returned 404/Page not found, indicating zero submitted reviews for this journal on SciRev"
+   ],
+   "issn": "1054-7460",
+   "name": "PRESENCE: Virtual and Augmented Reality",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+    "summary": "適用 ACM 全站《Policy on Authorship》(TSC 投稿指南頁面明確指向此政策,未見 TSC 專屬加嚴版本)。生成式 AI 工具不得列為作者;允許用其產生內容(文字/表格/圖/程式碼/資料/引文等),但須在 Acknowledgements 揭露,揭露程度須與 AI 產生內容比例相稱;不確定是否需揭露時,ACM 建議從寬揭露。ACM 保留因誠信問題退稿或事後撤稿之權利。此外 ACM 另有獨立的 Peer Review Policy,明訂審稿人不得將投稿內容上傳至 ChatGPT/Gemini 等第三方 LLM 工具,以避免違反保密與作者匿名。"
+   },
+   "peer_review": {
+    "type": "Single/double-anonymous per ACM Peer Review Policy (TSC-specific anonymity mode not separately confirmed)",
+    "source_url": "https://www.acm.org/publications/policies/peer-review"
+   },
+   "preprint": {
+    "allowed": "Follows general ACM policy (ACM permits arXiv/preprint posting under its standard copyright/author-rights terms); no TSC-specific preprint restriction found in this search pass",
+    "source_url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship"
+   },
+   "positioning": {
+    "accepts_now": "期刊定位為「運算系統與社會科學交會」的跨學科刊物,涵蓋系統開發與評估、實證研究、系統性文獻回顧、理論建構、案例研究、研究轉譯實踐等多種文類。目前有進行中的徵稿專題 'Bridging AI and Social Science: Human–Algorithm Interaction at Scale'(2026年1月見於 INFORMS Open Forum 轉發),顯示近期選題偏向 AI 與社會科學交界的人機互動研究。因 dl.acm.org 期刊首頁被擋(403),未能直接核對 2024-2026 實際刊出文章標題清單,positioning 屬 scope+CFP 層級證據,非逐篇文章驗證。",
+    "framing_required": "投稿須明確扣連「computational systems ×social science」的交會點,單純技術貢獻或單純社會科學質性研究若無運算/社會計算連結,可能被視為不符範疇。",
+    "methods_welcome": [
+     "theoretical",
+     "algorithmic",
+     "empirical/quantitative",
+     "experimental",
+     "qualitative",
+     "ethnographic",
+     "design research",
+     "engineering/systems development & evaluation",
+     "case study",
+     "systematic literature review"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://dl.acm.org/journal/tsc (search-snippet only, direct fetch 403)",
+     "https://connect.informs.org/discussion/call-for-papers-special-issue-in-acm-tsc-bridging-ai-and-social-science-humanalgorithm-interaction-at-scale"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": [
+     "SciRev journal page: 404 not found for this journal — no first-hand review-time data on file",
+     "myhuiban.com/journal/1188: page loads but shows '0則留言/No comments yet' — no user-submitted experience",
+     "muchong.com (小木虫): targeted search returned no forum threads specific to this journal",
+     "zhihu.com (知乎): search returned only generic ACM Transactions投稿經驗 discussion (mentions ACM Computing Surveys ~12週, not TSC-specific), nothing naming this journal",
+     "reddit.com r/AskAcademia: search returned no threads mentioning this journal by name",
+     "dl.acm.org/journal/tsc/review-guidelines: only found the boilerplate reviewer-invitation instruction of a 6-week review-return window (a target given to reviewers, not an observed/actual outcome), not treated as experiential fact"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "No SciRev entries exist for this journal (page 404s / zero submissions logged); no forum thread on muchong, zhihu, or Reddit reports an actual observed turnaround. The only number found — a 6-week reviewer-return deadline in ACM's invitation template — is an instruction to reviewers, not a first-hand outcome, so it was excluded per HARD RULES."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public source (SciRev, forums, editor statements) reports a desk-reject rate for this specific journal."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand author account found describing what got accepted vs rejected."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete forum post or first-hand account describing reviewer behavior/culture for this journal specifically was found in this search pass."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No TSC-specific preprint clause was located; only ACM's general author-rights policy is inferred, so this is a low-confidence placeholder rather than a verified journal-level fact."
+    },
+    {
+     "field": "peer_review.type",
+     "why": "ACM's general Peer Review Policy page was found, but a TSC-specific statement of single- vs double-anonymous review was not directly confirmed (dl.acm.org/journal/tsc/review-guidelines returned only boilerplate reviewer timing, and the main journal page 403'd)."
+    },
+    {
+     "field": "positioning.accepts_now (article-level verification)",
+     "why": "dl.acm.org/journal/tsc returned HTTP 403 on direct fetch, so no individual 2024-2026 article titles could be pulled and checked one by one; positioning is based on aims/scope text and one special-issue CFP found via search snippets only."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (query-time): journal page 404 — zero logged reviews, no numeric data available",
+    "小木虫 muchong.com: targeted search query returned no matching forum threads about this journal",
+    "知乎 zhihu.com: search surfaced only generic ACM Transactions投稿經驗文章 (not TSC-specific); no thread names this journal",
+    "Reddit r/AskAcademia: search returned no thread mentioning this journal",
+    "myhuiban.com (中文期刊社群): journal page exists (ISSN listed as 2469-7826, likely the online ISSN) but comment section is empty — '尚無留言'"
+   ],
+   "overall_signal_quality": 2,
+   "issn": "2469-7818",
+   "name": "ACM Transactions on Social Computing",
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 5,
+    "summary": "Dedicated 'Policy on the use of GenAI' (journal-specific, publisher-hosted). AI use permitted under human oversight for language improvement, content organization, literature synthesis, and figure generation; must not obscure/misrepresent information; authors responsible for verifying accuracy/originality; AI cannot be listed as author/co-author. Mandatory disclosure: authors must submit a 'Use of Generative AI statement' naming tool, version, purpose, and affected sections (minor language/grammar fixes exempt from disclosure). Reviewers barred from uploading confidential submissions to GenAI tools without data-privacy guarantees; human evaluation still required. Guest-editors barred from using GenAI for manuscript evaluation/communications; journal itself may use in-house/licensed AI for plagiarism/formatting checks. Non-disclosure or misuse = breach of publication ethics, risking rejection/retraction.",
+    "source_url": "https://ixdea.org/ixda-policy-on-genai/"
+   },
+   "peer_review": {
+    "type": "Double-blind, two independent reviewers per paper (third reviewer if split decision); target 4 months from submission to decision, though special-issue guest editors can extend this; accepted papers typically appear within two issues (~6 months) of acceptance.",
+    "source_url": "https://ixdea.org/reviewing-process/"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": "https://ixdea.org/copyright-policy/"
+   },
+   "positioning": {
+    "accepts_now": "Gold/Diamond OA, no APC. Regular submissions always open alongside rotating special issues. Recent/upcoming special issues (2026-2027) center AI: N.68 'Participatory Design meets Artificial Intelligence' (current), N.69 'Sustainability and Innovation in Creative Industries and Design' (Summer 2026), N.70 'Democratic Technology Design' (Autumn 2026), N.71 'AI enhanced learning ecosystems' (Winter 2026), N.72 'From education to societal wellbeing for all' (Spring 2027). Recent article examples found: AI applied to social mapping of rural music festivals (issue 65), 'AIs @ School' perception study (issue 62), smart learning ecosystems research orientation study (issue 64), AI-and-education grand-challenges preface (issue 59).",
+    "framing_required": "Papers benefit from framing around interaction design/HCI, technology-enhanced learning, participatory/co-design methods, or societal/ethical dimensions of AI and smart-learning ecosystems -- pure technical AI papers without a design/education/social angle appear off-scope based on the recent article and CFP pattern.",
+    "methods_welcome": [
+     "participatory/co-design studies",
+     "qualitative and mixed-methods HCI research",
+     "educational technology / technology-enhanced learning studies",
+     "social mapping / computational social science applied to design contexts (e.g., ML on cultural/social data)",
+     "policy and ethics analysis of AI in education/design (e.g., EU AI Act discussions)",
+     "case studies and perception/survey studies on AI-in-education actors"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://ixdea.org/",
+     "https://ixdea.org/65_3/",
+     "https://ixdea.org/62_8/",
+     "https://ixdea.org/64_1sc/",
+     "https://ixdea.org/preface-n-59-special-issue/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": "Starting with issue No. 68 (2026), authors of accepted papers are asked to (a) make a mandatory donation with NO LOWER LIMIT, and (b) be available to review at least one paper in the following year -- a new post-acceptance obligation, not an acceptance-rate figure.",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://www.scirev.org/journal/interaction-design-and-architectures/",
+     "https://mab20.mediaarchitecture.org/mab-community/call-for-papers-interaction-design-and-architecture-s-journal-ixda/"
+    ]
+   },
+   "cross_language_checked": [
+    "小木虫 muchong.com -- 0 results (no threads found for this journal, checked via web search)",
+    "fabiaoji -- 0 results (no dedicated listing/discussion found)",
+    "知乎 zhihu -- 0 results specific to this journal (only generic 'which journal-review sites are reliable' threads surfaced)",
+    "Reddit r/AskAcademia -- 0 results (no threads found for this journal)",
+    "SciRev -- page exists but explicitly states 'No reviews have yet been submitted for this journal'; all metrics n/a"
+   ],
+   "blanks": [
+    {
+     "field": "preprint.allowed",
+     "why": "Copyright policy page states IxD&A 'owns the rights to distribute the content' under CC BY-NC-ND 3.0 but does not explicitly address whether authors may post preprints/self-archive; no other public statement found."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 submitted reviews for this journal (all n/a). Third-party aggregator sites (journalsearches.com, resurchify) claim an automated 'average 20 weeks submission to publication' figure, but this is not a first-hand reviewer account and its methodology/source is unverified, so it was excluded per the facts-only/no-filler rule."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No SciRev data (0 reviews) and no forum discussion (muchong/zhihu/fabiaoji/Reddit) found mentioning this journal at all."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "Zero cross-language forum hits across all four mandated sources (muchong, fabiaoji, zhihu, r/AskAcademia); no first-hand author accounts located anywhere online as of 2026-07-13."
+    }
+   ],
+   "issn": "1826-9745",
+   "name": "Interaction design & architecture(s) (IxD&A)",
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": null
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (all subfields)",
+     "why": "No publisher AI-use policy page found. Journal's own site (itd.athenpro.org) returns DNS failure (getaddrinfo ENOTFOUND) on direct fetch as of 2026-07-13, and no cached/archived guidelines page content could be retrieved via search snippets covering AI/generative-AI language."
+    },
+    {
+     "field": "positioning.accepts_now",
+     "why": "No article published or indexed for 2023-2026 found anywhere (WebSearch, DOAJ, Scimago, direct site). Most recent confirmable content is the 20th Anniversary special issue, Volume 14 Number 1, dated March 2014 (http://itd.athenpro.org/volume14/number1/index.html). Cannot confirm the journal is currently accepting submissions or what it accepts 'now' since no live CFP or recent TOC is accessible."
+    },
+    {
+     "field": "peer_review.type",
+     "why": "WebSearch snippet from EASI/ATHEN self-description calls it a 'peer-reviewed journal' but does not specify single-blind/double-blind/open review, and the guidelines page (http://itd.athenpro.org/guidelines.html) that would state this could not be fetched (site unreachable)."
+    },
+    {
+     "field": "preprint.allowed",
+     "why": "No preprint policy located; guidelines page unreachable and no third-party source (Sherpa Romeo, publisher page) found for this specific journal."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "Zero SciRev entries found for this journal (search for 'SciRev \"Information Technology and Disabilities\"' returned no matching SciRev page). No first-hand reviewer/author account found in any forum."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "Same as above -- no SciRev data, no forum discussion."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand accounts in muchong.com, fabiaoji, zhihu, or Reddit r/AskAcademia -- all cross-language searches returned zero relevant hits for this specific journal (confirmed: journal is niche, English-language, US-based accessibility/assistive-tech venue with essentially no discussion footprint in Chinese academic-journal forums)."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "No first-hand acceptance/rejection account found anywhere."
+    }
+   ],
+   "cross_language_checked": [
+    "muchong.com (小木虫): not queried directly via site search (WebSearch tool has no site-specific results for this journal; general query returned 0 relevant hits)",
+    "zhihu.com (知乎): query \"Information Technology and Disabilities 期刊 投稿\" returned 0 relevant zhihu results -- only itd.athenpro.org, Sage TAD, and T&F pages",
+    "fabiaoji.com: not surfaced in any query; 0 results",
+    "Reddit r/AskAcademia: query \"Information Technology and Disabilities reddit AskAcademia\" returned 0 links / no matching post"
+   ],
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 0,
+    "sources": []
+   },
+   "issn": "1073-5127",
+   "name": "Information Technology and Disabilities",
+   "overall_signal_quality": 1,
+   "peer_review": {
+    "source_url": "http://itd.athenpro.org/ (WebSearch cached snippet only, page itself unreachable 2026-07-13)",
+    "type": "Described only as \"peer-reviewed journal\" per EASI/ATHEN self-description; specific review model (single/double-blind) not documented in any retrievable source."
+   },
+   "positioning": {
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [],
+    "signal_quality": 1,
+    "sources": [
+     "http://itd.athenpro.org/ (WebSearch snippet, publisher/site self-description; site itself unreachable)",
+     "http://itd.athenpro.org/guidelines.html (URL surfaced in search results but page unreachable -- DNS failure on direct fetch)",
+     "http://itd.athenpro.org/volume14/number1/index.html (20th Anniversary special issue, dated March 2014 -- most recent volume/issue found in any search)"
+    ]
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "sensitive_topics_note": "None of the disability-related content encountered required special handling beyond standard sourcing; no politically sensitive claims were made or needed."
+  },
+  {
+   "issn": "0007-4403",
+   "name": "Bulletin de psychologie",
+   "ai_policy": {
+    "gate": null,
+    "leniency_1_5": null,
+    "signal_quality": 0,
+    "source_url": null,
+    "summary": null
+   },
+   "peer_review": {
+    "type": "Double-blind external review: editorial committee first screens submissions for scope fit (rejects ~20%), then eligible papers go to at least two external specialist reviewers unaffiliated with the authors.",
+    "source_url": "https://site.bulletindepsychologie.net/index.php/presentation/"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "accepts_now": "Generalist French-language psychology journal (not tied to one theoretical school); publishes empirical studies, clinical case studies, theoretical/historical reviews, and doctoral thesis long-summaries (2000-2600 words, submitted within 2 years of defense). Recent 2025 issues (n°589, n°590) show a mix of thematic special issues (e.g. a Joseph Gabel retrospective issue mixing social psychology/critical theory/history of ideas) and 'Varia' issues covering clinical psychoanalysis, forensic/prison psychology, digital mental health (Lacanian reading), and psychometric method pieces (word-association test).",
+    "framing_required": "Work in French; must be intelligible to psychologists from other theoretical orientations even if anchored in a specific school (journal explicitly welcomes non-mainstream/heterodox approaches alongside mainstream trends).",
+    "methods_welcome": [
+     "empirical/quantitative studies",
+     "clinical case studies",
+     "theoretical and historical essays",
+     "psychoanalytic/clinical readings",
+     "doctoral thesis summaries",
+     "book reviews"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://site.bulletindepsychologie.net/index.php/presentation/",
+     "https://site.bulletindepsychologie.net/index.php/consignes/",
+     "https://shs.cairn.info/revue-bulletin-de-psychologie-2025-3?lang=fr",
+     "https://shs.cairn.info/revue-bulletin-de-psychologie-2025-4?lang=fr"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "~10-12 months from final acceptance to publication (publisher-stated production lag, not reviewer-reported turnaround time for the review process itself)",
+    "desk_reject_pct": "~20% (publisher-stated: editorial committee rejects roughly 1 in 5 submissions at initial scope screening, before external review)",
+    "acceptance_note": "Overall acceptance rate ~44% since 2015 (publisher-stated figure on the journal's own 'Presentation' page)",
+    "reviewer_culture": null,
+    "signal_quality": 2,
+    "sources": [
+     "https://site.bulletindepsychologie.net/index.php/presentation/",
+     "https://site.bulletindepsychologie.net/index.php/consignes/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy",
+     "why": "No AI/ChatGPT/generative-AI use policy found on the journal's own site (presentation or consignes/submission-guidelines pages), and no publisher-level policy exists because the journal is self-published/independent (not affiliated with Elsevier, Springer, etc.) rather than distributed under a large publisher's platform-wide AI policy. No forum or third-party discussion found either."
+    },
+    {
+     "field": "preprint",
+     "why": "Submission guidelines require the work be original and submitted exclusively to this journal, but do not explicitly state a preprint-server policy (e.g. HAL, arXiv) one way or the other; no third-party confirmation found."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand reviewer/author accounts found on SciRev, 小木虫, 知乎, or Reddit -- journal is too small/niche and French-only to appear in any of the checked cross-language forums."
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev: no listing found for this journal (searched 'Bulletin de psychologie SciRev' -- 0 relevant results)",
+    "小木虫 muchong.com: 0 results specific to this journal (search returned only unrelated generic 投稿 forum pages)",
+    "知乎 zhihu: 0 results specific to this journal (search returned only English-language 'Psychological Bulletin'/SSCI journal roundups, a different journal)",
+    "Reddit r/AskAcademia: 0 results (no threads found mentioning this journal)"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  }
+ ]
+}

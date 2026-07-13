@@ -1,0 +1,436 @@
+{
+ "batch": "hci-b1",
+ "built_on": "2026-07-13",
+ "entries": [
+  {
+   "issn": "0003-6870",
+   "name": "Applied Ergonomics",
+   "ai_policy": {
+    "leniency_1_5": 3,
+    "gate": "conditional",
+    "signal_quality": 3,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "Publisher-wide Elsevier policy (no Applied-Ergonomics-specific override found). Authors MAY use generative AI/AI-assisted tools only to improve language/readability, with human review of all output; AI tools must not be listed as author/co-author; use must be disclosed in a 'Declaration of Generative AI and AI-assisted technologies in the writing process' section. Reviewers/editors are NOT permitted to upload manuscripts into generative AI tools during peer review (confidentiality). Rated leniency 3 (permitted for language-polish only, not content generation) with a disclosure gate."
+   },
+   "peer_review": {
+    "type": "single-anonymized (single-blind)",
+    "source_url": "https://www.editage.com/insights/applied-ergonomics-quick-facts-and-submission-tips"
+   },
+   "preprint": {
+    "allowed": null,
+    "source_url": null
+   },
+   "positioning": {
+    "signal_quality": 2,
+    "accepts_now": null,
+    "framing_required": null,
+    "methods_welcome": [
+     "physical ergonomics/workplace design",
+     "cognitive ergonomics",
+     "human-machine interaction",
+     "usability evaluation",
+     "occupational health and safety",
+     "biomechanical analysis"
+    ],
+    "sources": [
+     "https://www.sciencedirect.com/journal/applied-ergonomics"
+    ]
+   },
+   "experiential": {
+    "signal_quality": 2,
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "sources": [
+     "https://scirev.org/journal/applied-ergonomics/",
+     "https://muchong.com/html/202005/14229390.html",
+     "https://muchong.com/html/201601/9920839.html",
+     "https://muchong.com/html/201708/5459540.html"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review type verification",
+     "why": "Elsevier/journal guide-for-authors page returned HTTP 403 on direct fetch; single-blind claim comes only from a third-party summary site (Editage), not the primary Elsevier guide-for-authors page, so confidence is moderate not high."
+    },
+    {
+     "field": "preprint.allowed (journal-specific)",
+     "why": "No Applied-Ergonomics-specific preprint clause was found; only Elsevier's generic cross-journal sharing policy exists, and the guide-for-authors page (where it would be confirmed) was blocked with 403, so left null rather than assumed identical to Elsevier's generic default."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev page for Applied Ergonomics explicitly states zero reviews submitted ('No reviews have yet been submitted for this journal') -- no first-hand quantitative data exists there. A third-party aggregator (academic-accelerator.com) claims 360 days but this is a scraped/derivative number with unclear methodology, not a first-hand author report, so excluded as filler rather than reported as fact."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No source (SciRev, muchong, reddit) reported a desk-reject percentage for this journal."
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "muchong threads show inconsistent anecdotal timelines (one case 7+ months still 'under review'; one thread simply announces acceptance with no extractable detail; one is an unresolved question thread) -- no consistent acceptance pattern could be extracted as verified fact."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No concrete, attributable first-hand description of reviewer culture was found on muchong, zhihu, fabiaoji, or Reddit r/AskAcademia for this specific journal; only a vague third-party paraphrase ('high acceptance difficulty') without a directly quotable source thread."
+    },
+    {
+     "field": "positioning.accepts_now / framing_required",
+     "why": "No 2024-2026 recent-article-title sample or active CFP/special-issue was retrieved in this session; searches returned only generic scope/metrics pages, not a dated title list -- would require a further ScienceDirect recent-articles crawl not completed here."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com: 3 threads found (202005/14229390 - complaint about 7-month stuck review; 201708/5459540 - question thread, no resolution content retrievable; 201601/9920839 - acceptance announcement thread, but fetch did not yield extractable timeline/round details) -- partial signal only, no clean quantitative facts",
+    "fabiaoji: 0 results found in searches performed",
+    "知乎 zhihu: 0 results found in searches performed",
+    "Reddit r/AskAcademia: 0 results found -- search returned only generic journal-metrics pages, no Reddit threads",
+    "SciRev: page exists but explicitly states 0 reviews submitted for this journal -- honest null result"
+   ],
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "0169-8141",
+   "name": "International Journal of Industrial Ergonomics",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 2,
+    "signal_quality": 2,
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+    "summary": "此為 Elsevier 出版社通用政策（非本刊獨有頁面）：文字寫作階段可用生成式 AI／AI輔助工具，但僅限於改善語言與可讀性，投稿時須在單獨聲明中揭露使用情況，AI不可取代作者的批判性思考與最終責任。圖片/圖表/圖形摘要一律禁止使用生成式AI（ScienceDirect 該刊 Guide for Authors 頁面提及此點，但 WebFetch 因403無法直接讀取原頁，此點轉引自 WebSearch 摘要）。審稿人不得使用生成式AI協助審稿（Elsevier審稿政策頁）。未找到本刊特有的、比出版社通則更嚴或更寬的加註政策。"
+   },
+   "peer_review": {
+    "type": "single-anonymized (reviewers know author identity; authors anonymized to reviewers), minimum 2 independent reviewers",
+    "source_url": "https://www.sciencedirect.com/journal/international-journal-of-industrial-ergonomics/publish/guide-for-authors"
+   },
+   "preprint": {
+    "allowed": "允許（Elsevier通用政策）：作者可隨時將手稿放上 preprint server（如 SSRN — Elsevier自家平台、或 arXiv/RePEc），不算重複發表；Accepted Manuscript 可立即存入機構典藏庫供內部使用。未查到本刊為 double-anonymized 審稿或有特殊例外政策的證據，故推定適用通則，但未見本刊頁面逐字確認。",
+    "source_url": "https://www.elsevier.com/about/policies-and-standards/sharing"
+   },
+   "positioning": {
+    "accepts_now": "近期(2024-2026)可見一個進行中的 Special Issue：「Enhancing Human-Computer Collaboration through Artificial Intelligence: Addressing Frontier Challenges with Interdisciplinary Solutions」，顯示編輯部目前積極徵求 AI×人因工程交叉主題稿件。另有 IEA Gender and Work TC 計畫在 IEA Congress 後於本刊出版「ergonomics, gender and social sustainability」主題特刊（來源為 IEA 官網,非本刊官方公告，需視為間接信號）。",
+    "framing_required": "AI/機器學習相關投稿宜明確扣連人因工程(human factors)脈絡與人本評估，而非純演算法/工程論文；符合期刊long-standing scope：human performance measurement, system/tool/equipment design, human productivity, human-technology interaction, safety.",
+    "methods_welcome": [
+     "實證研究(empirical studies)",
+     "案例研究(case studies)",
+     "新方法論/程序(new methodologies and procedures)",
+     "理論進展(basic theoretical advances)",
+     "應用型研究(applications)",
+     "系統性文獻回顧(部分特刊/近期主題如AI×人因傾向歡迎)"
+    ],
+    "signal_quality": 2,
+    "sources": [
+     "https://www.sciencedirect.com/journal/international-journal-of-industrial-ergonomics/special-issue/10SFT35HPX9",
+     "https://iea.cc/journals/"
+    ]
+   },
+   "experiential": {
+    "review_time_months": "SciRev(n=2, 一手作者回報): 首輪決定平均5.1個月，總處理時間平均6.1個月，平均審稿輪次1.5輪。中文彙整站 LetPub/學術之家(非一手論壇貼文，為站方彙整 Elsevier 官方統計): 平均約3.0個月(≈26.5週)；另一彙整數字為投稿至初審決定約4.5週、至第一次決定約8週。兩組數字（SciRev一手 vs 中文彙整站二手）落差大，均予保留並列出來源類型。",
+    "desk_reject_pct": null,
+    "acceptance_note": "中文彙整站(學術之家/佩普學術等,非一手貼文)提及接受率約14%，但無法追溯至一手可查證來源，可信度低，僅供參考不採為定論。",
+    "reviewer_culture": "SciRev一手評論(僅1則具體文字回饋，n=2偏低)：作者抱怨審稿耗時過久，且認為審稿意見「narrow-minded」，對以pilot study/發展性研究為主、統計上未臻完美的稿件不夠寬容。此為單一負評，不足以推論整體審稿人文化，僅列為一手信號存證。",
+    "signal_quality": 2,
+    "sources": [
+     "https://scirev.org/journal/international-journal-of-industrial-ergonomics/",
+     "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=3780&xuanxiangk_id=2"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type (雙盲確認)",
+     "why": "僅WebSearch摘要推論為single-anonymized，未能直接WebFetch ScienceDirect Guide for Authors原頁（403 Forbidden）逐字確認，未做二次交叉驗證"
+    },
+    {
+     "field": "ai_policy image/figure ban 原文",
+     "why": "ScienceDirect Guide for Authors頁403 Forbidden無法直接讀取，圖片AI禁令僅來自WebSearch二手摘要，未見原文逐字"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "SciRev(n=2)未提供桌拒率欄位數字；中文論壇(小木虫/知乎/發表吧)搜尋僅得聚合站(LetPub/學術之家)頁面，未找到桌拒率相關一手貼文"
+    },
+    {
+     "field": "cross_language: 小木虫muchong.com 直接貼文",
+     "why": "多次搜尋僅回傳LetPub、學術之家、爱科学等聚合站頁面，未能定位到muchong.com論壇原生討論串，可能該刊在小木虫討論量極低或未被索引到"
+    },
+    {
+     "field": "cross_language: 知乎 直接回答",
+     "why": "搜尋僅回傳同一批聚合站連結，未見zhihu.com上的具體回答或討論串"
+    },
+    {
+     "field": "cross_language: reddit r/AskAcademia",
+     "why": "WebSearch 0 results，未見任何reddit討論串提及本刊"
+    },
+    {
+     "field": "positioning.accepts_now 更完整近期文章標題樣本",
+     "why": "受限於搜尋工具，僅取得1篇疑似非本刊(IAEME山寨同名刊)之AI文章與1個官方特刊頁面，未能系統性抽樣2024-2026年目錄核實真正接受的方法組合"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org) - 一手作者評論: n=2 reviews, 有具體數字與1則質性抱怨，已採用",
+    "LetPub / 學術之家 / 爱科学 (中文聚合站，非muchong/zhihu原生貼文) - 提供審稿週期與接受率彙整數字，來源為站方統計非一手論壇發言，已採用但降低權重",
+    "小木虫 muchong.com - 0 直接命中，未找到原生討論串",
+    "知乎 zhihu.com - 0 直接命中，僅聚合站連結",
+    "發表吧 fabiaoji - 未見於搜尋結果",
+    "Reddit r/AskAcademia - 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "2573-0142",
+   "name": "Proceedings of the ACM on Human-Computer Interaction (PACM HCI)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 3,
+    "source_url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+    "summary": "PACM HCI 遵循 ACM 全站的《Policy on Authorship》(2026-06 更新版),非期刊專屬政策。核心規則:生成式 AI 工具不得列名為作者;用生成式 AI 產出研究內容(非純文書處理)須揭露,作者對 AI 產出內容(含抄襲/捏造)負全責。WebSearch 摘要指出 2026-06 更新後,對『純輔助寫作』(如文法潤飾)的 AI 使用不再要求揭露,僅『用於研究本身』的 AI 使用仍須揭露——但因 ACM 官方頁面回傳 403,此更新細節僅來自 WebSearch 摘要轉述,未能直接讀取原文逐字核實,信心中等。CSCW track 額外要求投稿完全匿名化(雙盲審)。"
+   },
+   "peer_review": {
+    "type": "Double-blind, journal-style multi-round review (revise-and-resubmit),依 track 而異 (CSCW/EICS/MobileHCI/ISS/CHI PLAY 各自軌道與週期)",
+    "source_url": "https://cscw.acm.org/2026/blog/reviewprocess.html"
+   },
+   "preprint": {
+    "allowed": "允許——WebSearch 摘要稱 PACM HCI 對投稿前已上傳 SSRN/arXiv 的預印本無禁止政策,屬寬鬆立場;但未能直接讀取 ACM 官方預印本政策頁逐字確認(該頁 403),僅為搜尋摘要轉述,建議之後核實。",
+    "source_url": "https://www.acm.org/publications/policies/roles-and-responsibilities"
+   },
+   "positioning": {
+    "accepts_now": "PACM HCI 為傘型期刊,實際上是多個 HCI 子社群會議的期刊化出版管道,分軌道各自審稿發表:CSCW(協作科技、社會運算)、EICS(互動系統工程)、MobileHCI(行動人機互動)、ISS(互動介面/桌面)、CHI PLAY/GAMES(玩家經驗、遊戲設計)等。各軌道各自有徵稿週期與範疇聲明,論文最終同時掛在該子社群會議與 PACM HCI 期刊卷期下。",
+    "framing_required": "須符合投稿軌道的子社群範疇與匿名化格式規範(如 CSCW 要求完全匿名投稿,否則直接 desk reject);跨軌道混投或不符範疇會被 desk reject。",
+    "methods_welcome": [
+     "CSCW:實證與批判性研究,聚焦群體/組織/社群/網絡協作科技的設計與使用",
+     "EICS:互動系統工程方法,涵蓋傳統工作站到新型互動模態",
+     "MobileHCI:行動人機互動實證與系統研究",
+     "CHI PLAY/GAMES:玩家經驗研究、遊戲/玩樂互動的新設計與實作、遊戲理論貢獻",
+     "ISS:互動介面與空間相關研究"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://dl.acm.org/journal/pacmhci/about",
+     "https://dl.acm.org/journal/pacmhci/tracks/cscw",
+     "https://dl.acm.org/journal/pacmhci/tracks/eics",
+     "https://dl.acm.org/journal/pacmhci/tracks/games",
+     "https://cscw.acm.org/2026/papers.html"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": "CSCW track(單一軌道,非全期刊):2026 週期投影約 15-20% 一階 desk reject,另約 30% 於 assisted desk reject 階段被拒,約 50% 進入外部審查——此為官方公開流程頁面數字,非論壇/SciRev 第一手經驗",
+    "acceptance_note": "各軌道各自計算,非統一期刊層級數字。範例(公開會議/期刊發布數字,非論壇來源):CSCW 主軌歷年約 25-36%(2013-2019,openaccept.org 統計,未涵蓋近年 rolling 制改版後數據);MobileHCI 2025 軌道 27.2%(147 投稿、40 接受);ISS/ETRA 等特刊約 30% 上下。這些是公開統計數字,不是使用者第一手評審經驗分享。",
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/proceedings-of-the-acm-on-human-computer-interaction/ (0 reviews)",
+     "https://cscw.acm.org/2026/blog/reviewprocess.html",
+     "https://openaccept.org/c/chi/cscw/"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該期刊頁面顯示 0 筆審稿人評價,所有處理時間欄位皆為 n/a;Reddit r/AskAcademia、知乎、小木虫、fabiaoji 搜尋均未找到針對 PACM HCI/CSCW 審稿時長的第一手討論串"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "無任何論壇(中文或英文)第一手審稿人文化描述可查;僅有官方流程頁描述制度設計(如雙輪審、資深 AC 制),非參與者主觀評價,故不予填入避免臆測"
+    },
+    {
+     "field": "ai_policy.summary (2026-06 更新逐字條款)",
+     "why": "ACM 官方政策頁 acm.org/publications/policies/new-acm-policy-on-authorship 對 WebFetch 回傳 403,無法直接讀取原文核實 WebSearch 摘要轉述的『寫作輔助免揭露』細節是否準確,僅能標註為間接來源"
+    },
+    {
+     "field": "preprint.allowed (逐字條款)",
+     "why": "同上,ACM 官方 preprint 政策頁 403,僅有 WebSearch 摘要轉述,未直接核實原文"
+    }
+   ],
+   "cross_language_checked": [
+    "SciRev (scirev.org): 該期刊頁面查得,但顯示 0 reviews,所有量化欄位 n/a",
+    "小木虫 muchong.com: site 搜尋僅命中一篇 2017 年會議排名列表提及 CSCW 為 ACM 會議名稱,無投稿/審稿經驗討論串",
+    "fabiaoji: 搜尋未返回任何 fabiaoji 站內結果",
+    "知乎 zhihu.com: 搜尋『PACM HCI CSCW 投稿 审稿 知乎』未返回任何知乎站內結果",
+    "Reddit r/AskAcademia: 搜尋『CSCW paper review desk reject』與『reddit AskAcademia review experience』均未返回 reddit.com 站內相關討論串,僅有 arXiv 論文與官方頁面"
+   ],
+   "overall_signal_quality": 2,
+   "sensitive_topics_note": null
+  },
+  {
+   "issn": "1946-6226",
+   "name": "ACM Transactions on Computing Education (TOCE)",
+   "ai_policy": {
+    "gate": "conditional",
+    "leniency_1_5": 3,
+    "signal_quality": 2,
+    "source_url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+    "summary": "無法直接讀取 TOCE 專屬作者指引頁（dl.acm.org/journal/toce/author-guidelines 回傳 HTTP 403）。適用政策為 ACM 出版商層級《Policy on Authorship》：允許使用生成式 AI 工具產生內容（文字、表格、圖、程式碼、引用等），但須在 Acknowledgements 揭露；生成式 AI 不得列為作者；基本文書處理/拼字檢查工具免揭露。另有 WebSearch 摘要（無法回溯獨立可驗證原文連結，信度中等偏低）指出 TOCE 近期因 LLM 生成投稿出現大量虛構引用文獻問題，因而要求作者對照 ACM Digital Library 逐條核實引用真實性。判定 leniency=3（允許但需揭露＋人類擔責），gate=conditional（揭露義務為條件）。"
+   },
+   "peer_review": {
+    "type": "double-anonymous (double-blind)",
+    "source_url": "https://dl.acm.org/journal/toce/author-guidelines"
+   },
+   "preprint": {
+    "allowed": "允許且不受限——ACM 出版商層級政策明確賦予作者無限制張貼 preprint 至 arXiv 或類似非商業平台的權利，張貼 preprint 不視為「已發表」或衝突，無需申請例外。此為 ACM 全社出版政策，非可直接驗證的 TOCE 專屬頁面（該頁 403 無法讀取）。",
+    "source_url": "https://www.acm.org/publications/policies/roles-and-responsibilities"
+   },
+   "positioning": {
+    "accepts_now": "TOCE 收錄計算教育（computing education）各層面之高品質同行評審研究：CS/CE/軟體工程/資訊系統/IT/informatics 之學與教、正式（pre-K-12、大學、研究所）／非正式／專業學習情境、創新教學科技、理論進展、形成性與總結性評量工具、師資培育與專業發展、擴大計算領域參與之教育介入。近期（2024-2026）相關文獻與 CFP 顯示大量聚焦生成式 AI 對計算教育之衝擊（CS1 程式教學中的 GenAI 因應、學生使用生成式 AI 之實證研究、生成式 AI 之倫理與社會影響），另有 special issue 徵稿涉及「embodiment in computing education」（含生成式 AI／認知科學框架）。",
+    "framing_required": "須為計算教育研究脈絡下的實證或理論探討，非純技術性 CS 論文；生成式 AI 相關投稿需扣連教學/學習/評量/倫理面向，且引用文獻須可在 ACM DL 核實存在（因近期虛構引用問題被期刊特別強調）。",
+    "methods_welcome": [
+     "實證教育研究（quantitative/qualitative/mixed methods）",
+     "系統性文獻回顧 (systematic literature review)",
+     "教學介入與課程設計研究",
+     "評量工具開發與驗證",
+     "生成式 AI 在計算教育中的應用與倫理研究",
+     "縱向質性個案研究"
+    ],
+    "signal_quality": 3,
+    "sources": [
+     "https://arxiv.org/pdf/2511.15768",
+     "https://arxiv.org/pdf/2510.04443",
+     "https://arxiv.org/pdf/2604.03256",
+     "https://dl.acm.org/journal/toce/calls-for-papers"
+    ]
+   },
+   "experiential": {
+    "review_time_months": null,
+    "desk_reject_pct": null,
+    "acceptance_note": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/acm-transactions-on-computing-education/ (0 reviews submitted, all metrics n/a)",
+     "http://www.letpub.com.cn/index.php?journalid=9929&page=journalapp&view=detail (0 網友分享經驗，審稿速度/錄用比例欄位皆空)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "ai_policy (TOCE-specific policy text)",
+     "why": "dl.acm.org/journal/toce/author-guidelines 回傳 HTTP 403，無法直接讀取期刊專屬 AI 政策文字；改用 ACM 出版商層級 Policy on Authorship 作為適用政策，並以無法獨立驗證原文連結的 WebSearch 摘要補充 TOCE 對虛構引用問題的提醒"
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev 該刊 0 筆審稿紀錄；letpub.com.cn 該刊頁面亦為 0 條網友分享；WebSearch 曾出現兩組互相矛盾的審稿天數（9天/64天/82天 vs 6天/44天/54天），且都無法回溯到可獨立驗證的原始頁面或具名作者，判定不可信，故留空"
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "所有查詢管道（SciRev、letpub、小木虫、知乎、Reddit AskAcademia）均無任何一手退稿率數據"
+    },
+    {
+     "field": "experiential.acceptance_note",
+     "why": "letpub.com.cn 該刊「網友投稿經驗」區塊確認為 0 條；曾有 WebSearch 摘要聲稱『過審相對不難』但無法回溯至可查證原文或具名作者，可信度過低不採用"
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "小木虫、知乎、Reddit r/AskAcademia 搜尋均未命中針對本刊審稿人風格/文化的具體一手討論串"
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — 搜尋未命中 TOCE 專屬討論頁（唯一命中的期刊點評頁是同名前綴的 ACM Trans. on Multimedia Computing），對 TOCE 本身為 0 條可用一手討論",
+    "中國 SCI 期刊資訊聚合站（fabiaoji/youfabiao/xueshu/haoqikan/sfabiao/gwyoo 等）— 僅提供公開影響因子/分區等元資料，審稿速度欄位多為空白或矛盾，無可信一手投稿經驗文字",
+    "letpub.com.cn — 期刊頁面存在但「審稿速度」「錄用比例」「網友投稿經驗」欄位均為 0/空，誠實確認無數據",
+    "知乎 zhihu.com — 搜尋命中文章（如 zhuanlan.zhihu.com/p/1549857261）經查為其他 ACM Trans. 期刊或泛用投稿建議文，非 TOCE 專屬一手經驗；直接 WebFetch 該文遭 403 無法核實內容",
+    "Reddit r/AskAcademia — WebSearch 未返回任何 Reddit 討論串結果，僅返回期刊介紹性頁面，判定 0 results"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  },
+  {
+   "issn": "2160-6455",
+   "name": "ACM Transactions on Interactive Intelligent Systems (TiiS)",
+   "ai_policy": {
+    "gate": "conditional (disclosure required for AI-generated content beyond copy-editing; AI cannot be listed as author)",
+    "leniency_1_5": 4,
+    "signal_quality": 2,
+    "source_url": "https://www.acm.org/publications/policies/frequently-asked-questions",
+    "summary": "This is ACM's publisher-wide policy (from ACM's FAQ on authorship), not a TiiS-specific page — dl.acm.org/journal/tiis returned HTTP 403 on direct fetch so journal-level confirmation was not possible. Per ACM: generative AI tools cannot be listed as authors; substantive AI-generated text/tables/code/citations must be disclosed (footnote for small amounts, Acknowledgements statement for larger use); using AI purely as a grammar/copy-editing aid (like Grammarly) does not require disclosure. No TiiS-specific deviation was found."
+   },
+   "peer_review": {
+    "type": "Traditional peer review by subject-matter experts (standard ACM journal process); single-blind vs double-blind not confirmed from a public journal-specific source",
+    "source_url": "https://dl.acm.org/journal/tiis"
+   },
+   "preprint": {
+    "allowed": "Yes — ACM's publisher-wide policy grants authors unrestricted right to post pre-submission, submitted, accepted, and peer-reviewed versions to arXiv and similar non-commercial repositories; not a TiiS-specific policy page.",
+    "source_url": "https://www.acm.org/publications/policies/publication-rights-and-licensing-policy"
+   },
+   "positioning": {
+    "accepts_now": "Yes — as of March 2025 issue (TiiS 15(1)) the journal is actively publishing LLM/GenAI-adjacent human-interaction work, e.g. 'AI-Augmented Predictions: LLM Assistants Improve Human Forecasting Accuracy' and 'Towards Understanding AI Delegation: The Role of Self-Efficacy and Visual Processing Ability'.",
+    "framing_required": "Paper must address BOTH defining characteristics per official scope: 'Intelligence' (AI/ML/inference/language-vision/recommendation/decision-support) AND 'Interaction' (human users can influence, interpret, or act on the system's behavior) — pure algorithms papers without a human-interaction angle are out of scope.",
+    "methods_welcome": [
+     "LLM-based conversational/negotiation agents (human-agent negotiation)",
+     "Explainable AI / model-performance visualization interfaces",
+     "Human-AI decision-making and forecasting studies",
+     "Multimodal scene/behavior analysis tools",
+     "Wearable/sensemaking systems",
+     "Recommendation and intelligent-UI systems",
+     "Mixed-methods HCI evaluation (user studies + system building)"
+    ],
+    "signal_quality": 4,
+    "sources": [
+     "https://dl.acm.org/journal/tiis (aims & scope, via search snippet — direct fetch 403)",
+     "https://researchr.org/journal/tiis/home (TiiS 15(1) March 2025 article list)",
+     "https://dl.acm.org/journal/tiis/calls-for-papers ('Highlights of IUI 2025' special issue, appearing 2026)"
+    ]
+   },
+   "experiential": {
+    "acceptance_note": null,
+    "desk_reject_pct": null,
+    "review_time_months": null,
+    "reviewer_culture": null,
+    "signal_quality": 1,
+    "sources": [
+     "https://scirev.org/journal/acm-transactions-on-interactive-intelligent-systems/ (0 reviews submitted; all fields n/a)",
+     "https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11069&xuanxiangk_id=2 (0 Chinese-author submission-experience entries shared)"
+    ]
+   },
+   "blanks": [
+    {
+     "field": "peer_review.type (blind type)",
+     "why": "dl.acm.org/journal/tiis and its author-guidelines page returned HTTP 403 on WebFetch; no third-party source confirmed single- vs double-blind specifically for TiiS."
+    },
+    {
+     "field": "experiential.review_time_months",
+     "why": "SciRev shows 0 reviews for this journal (all metrics n/a); LetPub shows 0 shared submission experiences; no discussion found on 小木虫 muchong, fabiaoji, 知乎 zhihu, or Reddit r/AskAcademia specifically naming TiiS (searches on those sites returned unrelated ACM journals, e.g. confused with ACM TIST, or 0 hits)."
+    },
+    {
+     "field": "experiential.desk_reject_pct",
+     "why": "No public source (SciRev n/a, no forum posts found) reports a desk-reject rate for TiiS specifically."
+    },
+    {
+     "field": "experiential.reviewer_culture",
+     "why": "No first-hand author accounts (Chinese or English forums) discussing TiiS reviewer behavior were found; fabricating a narrative was avoided per hard rule."
+    },
+    {
+     "field": "ai_policy.gate / summary journal-specificity",
+     "why": "Only ACM's publisher-wide authorship/AI policy page was accessible; the TiiS journal page itself (dl.acm.org/journal/tiis) returned HTTP 403 to WebFetch, so it is unconfirmed whether TiiS layers any journal-specific AI-use restriction on top of the ACM-wide policy."
+    }
+   ],
+   "cross_language_checked": [
+    "小木虫 muchong.com — searched 'TIIS ACM 期刊 中稿 审稿周期'; 0 results specific to this journal (results were for unrelated ACM titles like ACM Transactions on Algorithms, ACM Computing Surveys)",
+    "fabiaoji — searched 'TIIS 期刊 fabiaoji'; 0 relevant results (search engine returned unrelated patent/clinical-trial documents)",
+    "知乎 zhihu — searched 'ACM TIIS 期刊 投稿 审稿'; 0 results for TiiS specifically — top hits were for the differently-named ACM Transactions on Intelligent Systems and Technology (TIST), a distinct journal, so not counted",
+    "Reddit r/AskAcademia — searched 'ACM Transactions on Interactive Intelligent Systems reddit AskAcademia review'; 0 results found",
+    "LetPub (supplementary Chinese source) — journal page exists (影响因子4.8) but '同领域作者分享投稿经验：共0条' (0 shared submission experiences)"
+   ],
+   "sensitive_topics_note": null,
+   "overall_signal_quality": 2
+  }
+ ],
+ "_wo3_meta": {
+  "entries_count": 5,
+  "failed_count": 13,
+  "failed_issns": [
+   "1077-2626",
+   "0929-5593",
+   "1552-3098",
+   "1072-5520",
+   "1435-5558",
+   "0272-1716",
+   "1380-7501",
+   "2296-9144",
+   "1477-9358",
+   "1071-5819",
+   "1359-4338",
+   "1783-7677",
+   "0924-1868"
+  ],
+  "run_task_id": "whtuq8orm"
+ }
+}
