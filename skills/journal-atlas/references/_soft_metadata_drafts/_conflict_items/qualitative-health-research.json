@@ -1,0 +1,18 @@
+{
+ "name": "Qualitative Health Research",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-health-research.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "existing_value": "No (follows SAGE publisher default)",
+   "wo2_value": "QHR 投稿須知(author-instructions/qhr)在 SAGE 集團政策之外,具體要求:凡使用生成式AI協助構思、研究設計、資料生成、分析協助或呈現研究發現等『構成質性研究要素』的活動,須在正文標示並在 Acknowledgements 揭露技術名稱、存取時間與用途。",
+   "why_flagged": "現有欄位斷言『無期刊專屬 AI 政策、僅循 SAGE 預設』,但 WO2 從 QHR 官方投稿須知中找到期刊層級具體化的揭露規則(範圍涵蓋研究設計/分析協助等),這是『無 vs 有』的實質分歧而非僅補充細節,依規則不逕行覆蓋既有欄位,留待人工核實後決定是否升級此欄位陳述。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "兩份資料對寬容度評分不同(現有 4 分 vs WO2 3 分),屬於數值上的實質分歧;且 WO2 此欄位 signal_quality 僅 3/5,證據強度有限,故不逕行覆蓋,列為衝突供人工裁決。"
+  }
+ ]
+}

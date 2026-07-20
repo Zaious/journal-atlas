@@ -43,7 +43,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | ~15 days (OUP official publisher metric) | Publisher-stated figure; may be optimistic vs. community-reported review times below. Source: WO2 research pass, https://academic.oup.com/cercor/pages/About |
+| **Time to first decision** | ~15 days (OUP official publisher metric) | Publisher-stated figure; may be optimistic vs. community-reported review times below. Source: AI-research research pass, https://academic.oup.com/cercor/pages/About |
 | **Time to first review** | ~1.8 months avg (SciRev, n=3; one recent report: 6.3 weeks) | Chinese forums (letpub.com.cn, muchong.com) independently cite ~3-6 weeks for first-round review. Sources: https://scirev.org/journal/cerebral-cortex/, http://letpub.com.cn/index.php?journalid=1616&page=journalapp&view=detail |
 | **Time to acceptance (total)** | ~3.5 months avg (SciRev, n=3; avg 2.3 review rounds) | One dated (2015) muchong.com first-hand case: submission-to-acceptance ~6.5 months, incl. slow author-side revision. Small-sample, self-reported data — treat as indicative, not definitive. Source: https://scirev.org/journal/cerebral-cortex/ |
 | **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
@@ -206,15 +206,15 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Disclosure-based, not pre-approval-based. Publisher (OUP) policy on the journal's own author-guidelines page states AI tools (e.g., to help generate content/images, write code, process data, or translate) do NOT need advance permission but MUST be disclosed in the cover letter and in the Methods/Acknowledgements section. AI tools cannot be listed as authors and the journal screens author lists for this. No separate AI policy statement for reviewers was found on this page.
+**AI-research finding (policy):** Disclosure-based, not pre-approval-based. Publisher (OUP) policy on the journal's own author-guidelines page states AI tools (e.g., to help generate content/images, write code, process data, or translate) do NOT need advance permission but MUST be disclosed in the cover letter and in the Methods/Acknowledgements section. AI tools cannot be listed as authors and the journal screens author lists for this. No separate AI policy statement for reviewers was found on this page.
 
-**WO2 positioning finding (what the journal accepts now):** Multidisciplinary neuroscience of the cerebral cortex (incl. hippocampus) and related structures (thalamocortical, cortico-subcortical). Journal explicitly states it spans classical neurobiology through computational/AI modeling and behavioral/neuropsychological work.
+**AI-research finding (positioning — what the journal accepts now):** Multidisciplinary neuroscience of the cerebral cortex (incl. hippocampus) and related structures (thalamocortical, cortico-subcortical). Journal explicitly states it spans classical neurobiology through computational/AI modeling and behavioral/neuropsychological work.
 
-**WO2 experiential finding:** letpub.com.cn community rating (n=2 self-reported submitters) labels acceptance difficulty '较難' (rather difficult). No verifiable first-hand percentage-based acceptance/rejection rate was found on SciRev (marked n/a) or any forum; a numeric 'publication rate' figure surfaced in one WebSearch AI-generated summary but could not be traced to a checkable primary source, so it is excluded here rather than reported as fact. 
+**AI-research finding (experiential):** letpub.com.cn community rating (n=2 self-reported submitters) labels acceptance difficulty '较難' (rather difficult). No verifiable first-hand percentage-based acceptance/rejection rate was found on SciRev (marked n/a) or any forum; a numeric 'publication rate' figure surfaced in one WebSearch AI-generated summary but could not be traced to a checkable primary source, so it is excluded here rather than reported as fact. 
 
 **Sources cited in this pass:**
 - http://letpub.com.cn/index.php?journalid=1616&page=journalapp&view=detail
@@ -223,7 +223,7 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 - https://muchong.com/bbs/journal.php?view=detail&jid=1628
 - https://scirev.org/journal/cerebral-cortex/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev shows rejection-rate field as 'n/a' for this journal; no forum (muchong/letpub/zhihu) or Reddit thread stated a concrete desk-reject percentage.
 - **experiential.reviewer_culture**: Only one first-hand account exists (muchong.com, dated 2015, single author) mentioning reviewers declining and 'review mechanism problematic' — too old (11 years) and too thin (n=1) to generalize into a reviewer-culture claim per the no-fabrication rule; left null rather than extrapolated.
 - **positioning.framing_required**: No current (2024-2026) special-issue CFP or editorial framing statement was found for Cerebral Cortex in this research pass.
@@ -274,5 +274,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

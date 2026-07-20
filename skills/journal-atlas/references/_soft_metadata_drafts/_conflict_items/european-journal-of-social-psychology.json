@@ -1,0 +1,18 @@
+{
+ "name": "European Journal of Social Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-social-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Preprint Policy > Post-acceptance (AAM) embargo length",
+   "existing_value": "Yes | Embargo: 12 months",
+   "wo2_value": "accepted (peer-reviewed) version 可於 24 個月禁運期後自我典藏(standard Wiley SSH — Social Sciences & Humanities — embargo)",
+   "why_flagged": "既有條目寫 12 個月禁運期,但 WO2 引用 Wiley self-archiving 官方頁面指出社會/人文科學(SSH)類期刊標準禁運期為 24 個月,與現有值實質矛盾(可能既有值誤用了 STM 領域的通用預設,而非 SSH 領域專屬規則),需人工覆核 Wiley 官方頁面確認 EJSP 實際適用哪一個禁運期"
+  },
+  {
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "existing_value": "*(fill manually)*",
+   "wo2_value": "SciRev 顯示「立即拒稿」(immediately rejected)決定時間為 23 天,但此數字僅適用於桌拒(desk-reject)子集,並非涵蓋所有決定結果的一般性「首次決定時間」",
+   "why_flagged": "WO2 找到的唯一時間數字只針對桌拒個案(且僅 n=5 極小樣本中的最近一筆),不能代表期刊整體的首次決定時間,若直接填入該格恐誤導使用者,故不予直接套用,留待人工判斷是否有更完整數據"
+  }
+ ]
+}

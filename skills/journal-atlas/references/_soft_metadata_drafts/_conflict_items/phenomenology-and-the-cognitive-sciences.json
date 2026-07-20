@@ -1,0 +1,18 @@
+{
+ "name": "Phenomenology and the Cognitive Sciences",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\phenomenology-and-the-cognitive-sciences.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "*(per Springer default — pending verification; commonly double-anonymized for humanities/philosophy)*",
+   "wo2_value": "double-blind (single-anonymous is not used; author identity hidden from reviewers)",
+   "why_flagged": "現有內容含具體猜測文字(非裸占位符),依規則不可直接覆蓋;WO2 給出較確定的說法,建議人工核對 Springer 頁面原文。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate",
+   "existing_value": "Explicit permission gate? No — disclosure-based; Leniency (1-5): 4",
+   "wo2_value": "gate: conditional; leniency_1_5: 3",
+   "why_flagged": "表格已有完整填答內容,非占位符;WO2 量化評分與既有評分不完全一致,分歧可能只是主觀評分認定差異,建議人工複核。"
+  }
+ ]
+}

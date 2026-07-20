@@ -1,0 +1,24 @@
+{
+ "name": "Cognitive Therapy and Research",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\cognitive-therapy-and-research.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "既有內容並非佔位符（已有具體評分與完整 Summary），依規則不可覆蓋；但 WO2 獨立研究給出不同的寬容度評分（3 分而非 4 分），數值有實質差異，留待人工複核判斷哪個評分較準確。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "existing_value": "No — disclosure-based",
+   "wo2_value": "conditional",
+   "why_flagged": "既有內容描述為「無需許可,僅揭露」(No)，WO2 則歸類為「conditional（視情況而定）」——兩者可能只是同一政策的不同分類框架（文字潤色免揭露、其餘須揭露，可解讀為條件式），但分類標籤不同，既有欄位非佔位符，故不逕行覆蓋，建議人工確認何者較貼切。"
+  },
+  {
+   "field": "Soft Metadata > Methodological Preferences / Framing Requirements (out of scope)",
+   "existing_value": "現有 Methodological Preferences 表未提及機器學習、複雜網路分析、迷幻藥治療機轉等新興方法；Framing Requirements 僅描述傳統 CBT 貢獻框架。",
+   "wo2_value": "positioning.accepts_now 提到近期編輯方向鼓勵複雜網路分析、機器學習、轉譯研究、迷幻藥治療機轉研究，並重視 dissemination 與跨文化面向。",
+   "why_flagged": "此為 WO2 定位性發現，觸及 Soft Metadata 主觀子章節（超出本次授權範圍），且該內容已以原文形式收錄於檔案既有的「AI-Research Notes (WO2 supplement)」區塊中，僅在此重申供人工評估是否要據此更新 Methodological Preferences / Framing Requirements 等主觀章節。"
+  }
+ ]
+}

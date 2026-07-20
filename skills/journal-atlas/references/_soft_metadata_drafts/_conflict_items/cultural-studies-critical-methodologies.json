@@ -1,0 +1,24 @@
+{
+ "name": "Cultural Studies Critical Methodologies",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\cultural-studies-critical-methodologies.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Sage default)",
+   "wo2_value": "Open peer review(依多方搜尋結果一致指出為 open-peer reviewed research articles,但未直接抓取官方頁面逐字確認,信度中等)",
+   "why_flagged": "既有欄位已有具體內容(雙盲匿名),非空白/佔位符,不應覆蓋;但 WO2 的獨立研究結論(開放式同行評審)與現有記載直接矛盾(雙盲 vs 開放),屬於實質分歧而非僅補充細節,需人工查證 Sage/CSC 官方頁面以確認何者正確,不可自動擇一採用。"
+  },
+  {
+   "field": "Subject Density / Soft Metadata(近期收稿主題傾向)",
+   "existing_value": "現有 Subject Density > Top Topics 與 Soft Metadata > Epistemological & Political Leanings、Methodological Preferences 已描述後人類倫理、批判種族理論、去殖民/原住民知識論、自我民族誌等傾向(2022-2025 OpenAlex 主題分析)",
+   "wo2_value": "WO2 positioning.accepts_now 指出 2023-2025 實際刊出主題進一步集中於:黑人研究方法論與民族誌、黑人女性主義與嘻哈方法論、黑人男性氣質與運動員心理健康、去殖民化知識分享與正義路徑、兒童期批判質性探究、非人類感官/氛圍研究;並具體指出 2025 年兩期為 Special Issue(Vol 25 Iss 1『Childhoods, Cultures, and Critical Qualitative Inquiry』、Vol 25 Iss 3『Paths to Justice』)",
+   "why_flagged": "此為 Soft Metadata / Subject Density 範疇的定位性發現,依規則屬 out-of-scope 主觀子節,不應直接編輯;但內容具體且來源明確(signal_quality 4/5),值得人工評估是否納入 Top Topics 或 Epistemological Leanings 更新,故列為補充發現供複核而非直接改稿。"
+  },
+  {
+   "field": "Soft Metadata > Reviewer Pool / Strategic Notes(投稿者第一手經驗)",
+   "existing_value": "現有 Reviewer Pool Characteristics 描述審稿人偏好與知識傳統(未含具體案例軼事);Metrics 的審稿週期/桌拒率欄位仍為 (pending)",
+   "wo2_value": "WO2 experiential 僅查得萬維學術(wanweixueshu.com)2-3 則零星留言:一則『一天內桌拒』案例、一則提及該刊使用腳注引註格式(非常見期刊格式)、一則回報獲得接受;signal_quality 僅 1/5,WO2 本身明確表示樣本數過少無法換算平均審稿時間或桌拒率,review_time_months 與 desk_reject_pct 均為 null",
+   "why_flagged": "此為 Practical Concerns / Strategic Notes 範疇的軼事型補充發現,樣本數極低(僅 2-3 則留言)且 WO2 已自陳不足以支撐任何量化欄位填補,不建議直接引用為結論;僅供人工參考,是否值得在 Practical Concerns 加註一句「已知有投稿者回報極快桌拒案例」由人工決定。"
+  }
+ ]
+}

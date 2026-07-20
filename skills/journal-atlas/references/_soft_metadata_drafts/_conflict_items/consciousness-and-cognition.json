@@ -1,0 +1,12 @@
+{
+ "name": "Consciousness and Cognition",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\consciousness-and-cognition.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Review Cycle Time (四列：Time to first decision / Time to first review / Time to acceptance total / Time to publication)",
+   "existing_value": "全數為 *(fill manually)* 佔位符",
+   "wo2_value": "experiential.review_time_months: \"SciRev aggregate (based on only 3 submitted reviews total, small sample): average total handling time ~1.7-1.9 months; average review time (first round) ~1.7-1.9 months (the two SciRev-derived pulls in this session gave slightly inconsistent 1.7/1.9 labeling for handling vs review time, both from the same page — treat as approximate, not precise); average first review round ~10.9 weeks per one query; average 1.7 review rounds; average ~2.0 reports per round.\" Sources: https://scirev.org/journal/consciousness-and-cognition/ , https://scirev.org/reviews/consciousness-and-cognition/",
+   "why_flagged": "雖然四列目前確實是空白佔位符（技術上符合可填補標準），但 WO2 自己承認這組數據存在內部矛盾：「首輪審稿時間」在同一頁面上出現兩個不同數字（1.7-1.9 個月 vs 10.9 週 ≈ 2.5 個月，落差約 30-45%），且樣本數僅 n=3（SciRev 極小樣本），WO2 亦自陳「treat as approximate, not precise」。若逕行選定其中一個數字填入特定列（例如武斷地把 1.7-1.9 個月填進「Time to acceptance total」、或把兩個互相矛盾的數字挑一個填進「Time to first review」），將構成對不確定/矛盾原始數據的粗暴精確化，與「不粗填」原則牴觸。故不提出直接編輯，改列為衝突，留待人工判斷是否要以極低信心度標註方式收錄、或等待更可靠來源。"
+  }
+ ]
+}

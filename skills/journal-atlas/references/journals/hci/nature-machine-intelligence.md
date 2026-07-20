@@ -222,15 +222,15 @@ Reviewers from international AI/ML research community — professional Nature Po
 | **Data transparency requirement** | Very High — code + data + benchmarks expected |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Nature Portfolio 通用 AI 政策(非 NMI 專屬頁,NMI 專屬 editorial-policies 頁因 cookie/SSO 重導向迴圈無法直接讀取):LLM/生成式 AI 不得列為作者(無法承擔問責);若用於論文寫作內容生成須在 Methods 或適當章節揭露;僅用於「AI 輔助文字潤飾/copy editing」(改善可讀性與風格,非生成新內容)則不需揭露。編輯部本身偶爾用 AI 輔助摘要/檢索,但決策仍由人類編輯做出。屬於『可用但需揭露』模式而非強制事前許可,故列為 conditional gate、寬鬆度中等(3/5)。
+**AI-research finding (policy):** 此為 Nature Portfolio 通用 AI 政策(非 NMI 專屬頁,NMI 專屬 editorial-policies 頁因 cookie/SSO 重導向迴圈無法直接讀取):LLM/生成式 AI 不得列為作者(無法承擔問責);若用於論文寫作內容生成須在 Methods 或適當章節揭露;僅用於「AI 輔助文字潤飾/copy editing」(改善可讀性與風格,非生成新內容)則不需揭露。編輯部本身偶爾用 AI 輔助摘要/檢索,但決策仍由人類編輯做出。屬於『可用但需揭露』模式而非強制事前許可,故列為 conditional gate、寬鬆度中等(3/5)。
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://muchong.com/t-15456313-1 (小木虫論壇,單一投稿者時間軸,無具體審稿意見內容)
@@ -238,7 +238,7 @@ Reviewers from international AI/ML research community — professional Nature Po
 - https://www.nature.com/natmachintell/aims (aims & scope, via WebSearch summary — 原頁面因 cookie 牆無法直接讀取)
 - https://www.nature.com/nature-portfolio/editorial-policies/ai
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now**: 無法直接讀取 nature.com 該刊首頁近期文章列表(cookie 牆重導向失敗多次),僅有 aims&scope 摘要,不足以推斷『現在實際在收什麼』的具體題材/方法趨勢,故留空避免臆測
 - **positioning.framing_required**: 未查得任何近期 CFP 或 special issue 徵稿要求特定 framing 的證據
 - **experiential.desk_reject_pct**: SciRev 僅提供桌拒平均決定天數(11天),未提供桌拒比例;LetPub 頁面該欄位使用者未填寫;muchong/zhihu 討論串均未給出具體百分比
@@ -296,7 +296,7 @@ High. Nature-family broad-significance framing demands substantial rewriting fro
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Nature Portfolio publisher + AI/ML high-impact editorial culture domain knowledge | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |

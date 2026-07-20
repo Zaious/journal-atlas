@@ -206,15 +206,15 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 期刊層級(非泛用OUP頁面,OUP通用AI政策頁面WebFetch兩次均無法取得實質內容,可能受JS渲染阻擋)。Author Guidelines明確要求:若使用AI輔助工具需在投稿信與正文Methods或Acknowledgements中揭露;AI工具不得列為作者,期刊會篩查作者列表中的AI具名情形;依循COPE「Authorship and AI」立場聲明處理AI相關作者資格爭議。未見「完全禁止」或「完全開放不需揭露」的字眼,屬於「允許但需揭露」的中等寬容度,故列3分。未找到journal-specific的獨立AI政策頁(即非套用OUP集團模板的證據),故信心非滿分。
+**AI-research finding (policy):** 期刊層級(非泛用OUP頁面,OUP通用AI政策頁面WebFetch兩次均無法取得實質內容,可能受JS渲染阻擋)。Author Guidelines明確要求:若使用AI輔助工具需在投稿信與正文Methods或Acknowledgements中揭露;AI工具不得列為作者,期刊會篩查作者列表中的AI具名情形;依循COPE「Authorship and AI」立場聲明處理AI相關作者資格爭議。未見「完全禁止」或「完全開放不需揭露」的字眼,屬於「允許但需揭露」的中等寬容度,故列3分。未找到journal-specific的獨立AI政策頁(即非套用OUP集團模板的證據),故信心非滿分。
 
-**WO2 positioning finding (what the journal accepts now):** 目前(2026)刊出文章涵蓋:催眠意識的神經與體驗證據、內隱/外顯序列學習的非語言歷程分離、VR誘發的自我超越自主神經指標、預測編碼vs表徵理論對視覺皮層階層的知覺組織解釋、人機'之間性'的現象學取徑(機器意識)。顯示該刊同時歡迎實證神經科學研究與理論/哲學取徑論文,並涵蓋機器/人工意識主題。
+**AI-research finding (positioning — what the journal accepts now):** 目前(2026)刊出文章涵蓋:催眠意識的神經與體驗證據、內隱/外顯序列學習的非語言歷程分離、VR誘發的自我超越自主神經指標、預測編碼vs表徵理論對視覺皮層階層的知覺組織解釋、人機'之間性'的現象學取徑(機器意識)。顯示該刊同時歡迎實證神經科學研究與理論/哲學取徑論文,並涵蓋機器/人工意識主題。
 
-**WO2 experiential finding:** 無公開可信的接受率數字。fabiao頁面有一句籠統敘述稱審稿週期長是為了讓作者'refine and optimize'研究,但屬於行銷語氣的平台文案,非一手作者證言,不採信為'審稿文化'描述。 
+**AI-research finding (experiential):** 無公開可信的接受率數字。fabiao頁面有一句籠統敘述稱審稿週期長是為了讓作者'refine and optimize'研究,但屬於行銷語氣的平台文案,非一手作者證言,不採信為'審稿文化'描述。 
 
 **Sources cited in this pass:**
 - https://academic.oup.com/nc/article/2026/1/niag009/8660406
@@ -229,7 +229,7 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 - https://www.fabiao.com.cn/sci/20572107/42.html
 - https://www.scirev.org/journal/neuroscience-of-consciousness/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev該刊頁面0筆審稿人評論,無小木虫/知乎/Reddit(r/AskAcademia)第一手投稿經驗貼文可查,查無數字。
 - **experiential.reviewer_culture**: Reddit r/AskAcademia以'Neuroscience of Consciousness' site:reddit.com搜尋0結果;知乎搜尋僅命中意識神經科學的科普/理論翻譯文章,無投稿經驗或審稿人風格描述;小木虫未見專門討論串(僅被聚合站引用審稿週期數字,無質化評論)。無任何具體來源可支持審稿人文化/傾向的描述,故留空,不編造。
 - **experiential.acceptance_note (具體接受率數字)**: OUP期刊政策頁與SciRev均未提供接受率;無first-hand投稿人分享的接受率數據。
@@ -282,5 +282,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

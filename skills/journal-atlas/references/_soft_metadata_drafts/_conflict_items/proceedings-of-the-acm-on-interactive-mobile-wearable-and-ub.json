@@ -1,0 +1,18 @@
+{
+ "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-imwut.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher policy)",
+   "wo2_value": "AE-triage model: submissions may receive Desk Rejection by Editors (no reviewers assigned; scope/formatting issues), Early Rejection by Associate Editors (after AE's own initial read, no external reviewers), or proceed to full external review (SciRev data shows ~4 review reports per first round) with major/minor revision cycles. Source: https://dl.acm.org/journal/imwut/reviewers",
+   "why_flagged": "既有欄位斷言的是『盲審制度類型』（single-blind，且僅為家族慣例推測、未附來源），WO2 找到的則是有來源、具體描述『審稿流程/分級機制』（桌拒／AE 初審拒稿／外審），兩者談的是不同面向、無法直接判定孰是孰非，也不構成單純的『補充細節』可安全覆蓋既有內容——需人工判斷是否要重寫此欄或另闢一列收錄 AE 分級流程，故列為衝突待決，不逕行編輯。"
+  },
+  {
+   "field": "Subject Density / Soft Metadata > Methodological Preferences（現況接受主題與方法）",
+   "existing_value": "Soft Metadata 目前為 Tier 2 家族推測值（如 Quantitative/Qualitative/Mixed methods 各給 3-5 分），Subject Density 的 Top Topics 亦為 community estimate。",
+   "wo2_value": "positioning.methods_welcome 列出：mobile systems and infrastructure; wearable technologies and new sensing hardware; intelligent/smart environments and IoT; user experience studies and HCI evaluation; new methodologies/tools/theories/models for ubiquitous computing; societal impact studies of pervasive computing。（signal_quality 2/5，accepts_now 因 403 無法用實際近年篇名驗證，僅基於期刊自述 scope）",
+   "why_flagged": "此為 positioning／方法偏好類補充發現，觸及本次任務明列為 out-of-scope 的 Soft Metadata 主觀子章節（Methodological Preferences）與 Subject Density，依規則僅供人工參考，不逕行編輯既有主觀評分或主題密度表。"
+  }
+ ]
+}

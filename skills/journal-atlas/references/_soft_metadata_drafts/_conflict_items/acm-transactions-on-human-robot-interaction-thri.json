@@ -1,0 +1,30 @@
+{
+ "name": "ACM Transactions on Human-Robot Interaction (THRI)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-human-robot-interaction.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher policy)",
+   "wo2_value": "Double-anonymous (double-blind) peer review, standard 3 reviewers spanning disciplines; exception is conference-extension papers which are not double-anonymous (sourced from THRI's own author-guidelines page: https://dl.acm.org/journal/thri/author-guidelines)",
+   "why_flagged": "既有值是家族通則式推測(single-blind、且自行加註『check publisher policy』表示未經期刊本身驗證);WO2 則引用 THRI 自己的 author-guidelines 頁面,得出恰恰相反的結論(double-anonymous/雙盲,且有審稿人數與例外規則的具體細節)。這是實質矛盾而非單純補充細節,且該欄位已有具體內容,不符合 placeholder 條件,故不逕行覆蓋,留待人工以 THRI 官方 author-guidelines 頁面覆核。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Post-acceptance (AAM) row (\"Embargo varies by publisher (0-12 months)\")",
+   "existing_value": "Post-acceptance (AAM) | Yes | Embargo varies by publisher (0-12 months)",
+   "wo2_value": "Allowed under ACM's general Publication Rights & Licensing Policy: authors retain unrestricted right to post pre-submission, submitted, and accepted versions to arXiv or other non-commercial repositories at any stage; no embargo; ACM asks authors to also post the DOI of the Version of Record alongside the preprint (source: https://www.acm.org/publications/policies/publication-rights-and-licensing-policy)",
+   "why_flagged": "既有表格已有具體內容(embargo 0-12 個月的範圍描述),非 placeholder。WO2 引用 ACM 官方 Publication Rights & Licensing Policy,明確指出『no embargo』,與既有『embargo 依出版商而異、最長 12 個月』的描述存在實質差異,可能是既有條目過時或引用了錯誤的通用政策版本,建議人工核對 ACM 現行政策文字後再決定是否修正。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time (all four rows, currently community-estimate placeholders)",
+   "existing_value": "*(community estimate)* across all four Review Cycle Time rows",
+   "wo2_value": "experiential.review_time_months 為 null(WO2 明確找不到任何 SciRev/Reddit/中文論壇的第一手審稿週期數據);但 WO2 acceptance_note 提到 THRI author guidelines 載明:minor revision 須於 2 個月內回覆、major revision 須於 3 個月內回覆,且有 EIC 初審退件(desk-reject)機制存在(但無量化比例)。",
+   "why_flagged": "雖然 Review Cycle Time 四列目前確實是空白 placeholder,理論上可填,但 WO2 本身對這四個確切欄位(time to first decision / first review / acceptance total / publication)並無實質數據(review_time_months 為 null,desk_reject_pct 為 null),僅有『修訂稿回覆期限』這類流程政策敘述,語意上不等同於『首次決定時間』等既定欄位定義,若直接套入恐產生誤導。故不提出逕行填寫,僅作為補充線索留供人工判斷是否要在 Notes 中補一句流程說明。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements / Methodological Preferences (WO2 positioning finding)",
+   "existing_value": "既有內容為 Tier 2 家族通則推測(ACM HCI Transactions family conventions),尚未有 THRI 專屬的 accepts_now / methods_welcome 實證資料",
+   "wo2_value": "WO2 positioning.accepts_now 與 methods_welcome 皆未能完成系統性掃描(僅零星搜尋片段提及 trust assessment 系統性回顧、social norms、human-robot teaming survey、robotic vision for HRI collaboration 等主題,但 WO2 自陳信心不足,不足以做為 accepts_now 推論依據),methods_welcome 為空陣列。",
+   "why_flagged": "此為 Soft Metadata 主觀子章節範疇(超出本次可編輯欄位),且 WO2 自身信心與完整度都低(signal_quality 2/5,且明確聲明未完成系統性文獻掃描),不構成可直接採用的定位發現,僅供人工日後若要做 Tier 1 升級驗證時參考的線索,不建議自動套用。"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "name": "Developmental Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\developmental-psychology.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "*(fill manually if known)*（空白佔位）",
+   "wo2_value": "WO2 acceptance_note：三個互相矛盾的歷史數字（2013年拒絕率~80%／2019年APA官方年度統計拒絕率~72%〔711投稿195接受〕／網路來源聲稱32%接受率但無官方出處），且WO2自身明言「不採信單一數字」，未找到2024-2026年官方營運報告可核實",
+   "why_flagged": "雖然此欄位目前是空白佔位符，理論上符合可填條件，但WO2提供的三筆數字互相矛盾且WO2本身已聲明不採信任一數字，若強行選一個填入會構成武斷覆蓋且可能誤導使用者；建議留給人工查證APA最新年度Summary Report of Journal Operations後再填，暫不提出變更"
+  },
+  {
+   "field": "Review Cycle Time > Time to first review",
+   "existing_value": "*(fill manually)*（空白佔位）",
+   "wo2_value": "WO2 experiential.review_time_months：SciRev僅1筆使用者回報首輪審稿21.7週（約5.0個月），WO2自身將此欄位列在\"blanks\"（無法找到可信證據）清單中，明言樣本量過小不足以代表期刊平均",
+   "why_flagged": "此欄位為空白佔位符，但WO2的唯一數據來源是n=1的單一審稿人回報，且WO2自己的signal_quality評為2/5並主動將此列為未解決的空白項；填入單一觀察值會呈現過度確定的假象，不符合保守合併原則，建議暫不填入，留待更多一手資料"
+  }
+ ]
+}

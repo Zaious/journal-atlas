@@ -1,0 +1,492 @@
+[
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-interactions.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\acm-interactions.json",
+  "name": "ACM Interactions"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-computer-human-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\acm-transactions-on-computer-human-interaction-tochi.json",
+  "name": "ACM Transactions on Computer-Human Interaction (TOCHI)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\acm-transactions-on-interactive-intelligent-systems.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\acm-transactions-on-interactive-intelligent-systems-tiis.json",
+  "name": "ACM Transactions on Interactive Intelligent Systems (TiiS)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\archives-of-clinical-neuropsychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\archives-of-clinical-neuropsychology.json",
+  "name": "Archives of Clinical Neuropsychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ai-and-society.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\ai-society.json",
+  "name": "AI & Society"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-accessible-computing.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\acm-transactions-on-accessible-computing-taccess.json",
+  "name": "ACM Transactions on Accessible Computing (TACCESS)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\annual-review-of-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\annual-review-of-psychology.json",
+  "name": "Annual Review of Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-human-robot-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\acm-transactions-on-human-robot-interaction-thri.json",
+  "name": "ACM Transactions on Human-Robot Interaction (THRI)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\alzheimer-s-dementia-the-journal-of-the-alzheimer-s-associat.json",
+  "name": "Alzheimer's & Dementia: The Journal of the Alzheimer's Association"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\cognitive-psychology.json",
+  "name": "Cognitive Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\assessment.json",
+  "name": "Assessment"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognition.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\cognition.json",
+  "name": "Cognition"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\clinical-psychology-review.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\clinical-psychology-review.json",
+  "name": "Clinical Psychology Review"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\behaviour-and-information-technology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\behaviour-information-technology.json",
+  "name": "Behaviour & Information Technology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\computers-and-compositioncomputers-and-composition.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\computers-and-composition.json",
+  "name": "Computers and Composition"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\computational-linguistics.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\computational-linguistics.json",
+  "name": "Computational Linguistics"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-science.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\cognitive-science.json",
+  "name": "Cognitive Science"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\cognitive-therapy-and-research.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\cognitive-therapy-and-research.json",
+  "name": "Cognitive Therapy and Research"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\college-composition-and-communication.json",
+  "name": "College Composition and Communication"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\counselling-psychology-quarterly.json",
+  "name": "Counselling Psychology Quarterly"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\cultural-studies-critical-methodologies.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\cultural-studies-critical-methodologies.json",
+  "name": "Cultural Studies Critical Methodologies"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\contemporary-educational-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\contemporary-educational-psychology.json",
+  "name": "Contemporary Educational Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\consciousness-and-cognition.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\consciousness-and-cognition.json",
+  "name": "Consciousness and Cognition"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computers-in-human-behavior.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\computers-in-human-behavior.json",
+  "name": "Computers in Human Behavior"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\collabra-psychology.json",
+  "name": "Collabra: Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\culture-and-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\culture-psychology.json",
+  "name": "Culture & Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\design-issues.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\design-issues.json",
+  "name": "Design Issues"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\developmental-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\developmental-psychology.json",
+  "name": "Developmental Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\design-studies.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\design-studies.json",
+  "name": "Design Studies"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computer-supported-cooperative-work-cscw.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\computer-supported-cooperative-work-cscw.json",
+  "name": "Computer Supported Cooperative Work (CSCW)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\dementia-and-geriatric-cognitive-disorders.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\dementia-and-geriatric-cognitive-disorders.json",
+  "name": "Dementia and Geriatric Cognitive Disorders"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\environment-and-behavior.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\environment-and-behavior.json",
+  "name": "Environment and Behavior"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\educational-psychology-review.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\educational-psychology-review.json",
+  "name": "Educational Psychology Review"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\human-computer-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\human-computer-interaction.json",
+  "name": "Human-Computer Interaction"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\human-factors.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\human-factors.json",
+  "name": "Human Factors"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\european-journal-of-personality.json",
+  "name": "European Journal of Personality"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\frontiers-in-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\frontiers-in-psychology.json",
+  "name": "Frontiers in Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\health-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\health-psychology.json",
+  "name": "Health Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-social-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\european-journal-of-social-psychology.json",
+  "name": "European Journal of Social Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-pervasive-computing.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\ieee-pervasive-computing.json",
+  "name": "IEEE Pervasive Computing"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\frontiers-in-computer-science.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\frontiers-in-computer-science.json",
+  "name": "Frontiers in Computer Science"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-child-computer-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\international-journal-of-child-computer-interaction.json",
+  "name": "International Journal of Child-Computer Interaction"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-transactions-on-affective-computing.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\ieee-transactions-on-affective-computing.json",
+  "name": "IEEE Transactions on Affective Computing"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\ieee-access.json",
+  "name": "IEEE Access"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-human-computer-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\international-journal-of-human-computer-interaction.json",
+  "name": "International Journal of Human-Computer Interaction"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-social-robotics.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\international-journal-of-social-robotics.json",
+  "name": "International Journal of Social Robotics"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-human-computer-studies.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\international-journal-of-human-computer-studies.json",
+  "name": "International Journal of Human-Computer Studies"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-design.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\international-journal-of-design.json",
+  "name": "International Journal of Design"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-abnormal-child-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-abnormal-child-psychology.json",
+  "name": "Journal of Abnormal Child Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-applied-psychology.json",
+  "name": "Journal of Applied Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-psychopathology-and-clinical-science.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-psychopathology-and-clinical-science-formerly-jou.json",
+  "name": "Journal of Psychopathology and Clinical Science (formerly Journal of Abnormal Psychology)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-social-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-applied-social-psychology.json",
+  "name": "Journal of Applied Social Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-clinical-and-experimental-neuropsychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-clinical-and-experimental-neuropsychology.json",
+  "name": "Journal of Clinical and Experimental Neuropsychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-counseling-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-counseling-psychology.json",
+  "name": "Journal of Counseling Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-consulting-and-clinical-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-consulting-and-clinical-psychology.json",
+  "name": "Journal of Consulting and Clinical Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\journal-of-design-history.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-design-history.json",
+  "name": "Journal of Design History"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-cognitive-neuroscience.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-cognitive-neuroscience.json",
+  "name": "Journal of Cognitive Neuroscience"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-child-psychology-and-psychiatry.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-child-psychology-and-psychiatry.json",
+  "name": "Journal of Child Psychology and Psychiatry"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-learning-memory-and-cognition.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-experimental-psychology-learning-memory-and-cogni.json",
+  "name": "Journal of Experimental Psychology: Learning, Memory, and Cognition"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-environmental-psychology.json",
+  "name": "Journal of Environmental Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-educational-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-educational-psychology.json",
+  "name": "Journal of Educational Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality-assessment.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-personality-assessment.json",
+  "name": "Journal of Personality Assessment"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-general.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-experimental-psychology-general.json",
+  "name": "Journal of Experimental Psychology: General"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-occupational-health-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-occupational-health-psychology.json",
+  "name": "Journal of Occupational Health Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-personality.json",
+  "name": "Journal of Personality"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-psychology-human-perception-and-performance.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-experimental-psychology-human-perception-and-perf.json",
+  "name": "Journal of Experimental Psychology: Human Perception and Performance"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-social-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-experimental-social-psychology.json",
+  "name": "Journal of Experimental Social Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-social-and-clinical-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-social-and-clinical-psychology.json",
+  "name": "Journal of Social and Clinical Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-research-in-personality.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-research-in-personality.json",
+  "name": "Journal of Research in Personality"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality-and-social-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\journal-of-personality-and-social-psychology.json",
+  "name": "Journal of Personality and Social Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\memory-and-cognition.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\memory-cognition.json",
+  "name": "Memory & Cognition"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\multimodal-technologies-and-interaction.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\multimodal-technologies-and-interaction.json",
+  "name": "Multimodal Technologies and Interaction"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuropsychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\neuropsychology.json",
+  "name": "Neuropsychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\new-ideas-in-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\new-ideas-in-psychology.json",
+  "name": "New Ideas in Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\neuroimage.json",
+  "name": "NeuroImage"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-social-psychology-review.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\personality-and-social-psychology-review.json",
+  "name": "Personality and Social Psychology Review"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-individual-differences.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\personality-and-individual-differences.json",
+  "name": "Personality and Individual Differences"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-social-psychology-bulletin.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\personality-and-social-psychology-bulletin.json",
+  "name": "Personality and Social Psychology Bulletin"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\nature-machine-intelligence.json",
+  "name": "Nature Machine Intelligence"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\personal-and-ubiquitous-computing.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\personal-and-ubiquitous-computing.json",
+  "name": "Personal and Ubiquitous Computing"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-inquiry.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\qualitative-inquiry.json",
+  "name": "Qualitative Inquiry"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-imwut.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\proceedings-of-the-acm-on-interactive-mobile-wearable-and-ub.json",
+  "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\self-and-identity.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\self-and-identity.json",
+  "name": "Self and Identity"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\psychology-and-aging.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\psychology-and-aging.json",
+  "name": "Psychology and Aging"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-research-in-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\qualitative-research-in-psychology.json",
+  "name": "Qualitative Research in Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-cscw.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\proceedings-of-the-acm-on-human-computer-interaction-cscw-pa.json",
+  "name": "Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-cognitive-and-affective-neuroscience.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\social-cognitive-and-affective-neuroscience.json",
+  "name": "Social Cognitive and Affective Neuroscience"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-health-research.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\qualitative-health-research.json",
+  "name": "Qualitative Health Research"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-and-personality-psychology-compass.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\social-and-personality-psychology-compass.json",
+  "name": "Social and Personality Psychology Compass"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\american-journal-of-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\the-american-journal-of-psychology.json",
+  "name": "The American Journal of Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-psychology-quarterly.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\social-psychology-quarterly.json",
+  "name": "Social Psychology Quarterly"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\the-clinical-neuropsychologist.json",
+  "name": "The Clinical Neuropsychologist"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journals-of-gerontology-b-psychological-sciences.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\the-journals-of-gerontology-series-b.json",
+  "name": "The Journals of Gerontology: Series B"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\transactions-of-the-association-for-computational-linguistic.json",
+  "name": "Transactions of the Association for Computational Linguistics"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\universal-access-in-the-information-society.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\universal-access-in-the-information-society.json",
+  "name": "Universal Access in the Information Society"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\theory-and-psychology.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\theory-psychology.json",
+  "name": "Theory & Psychology"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\trends-in-cognitive-sciences.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\trends-in-cognitive-sciences.json",
+  "name": "Trends in Cognitive Sciences"
+ },
+ {
+  "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\phenomenology-and-the-cognitive-sciences.md",
+  "conflict_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\_soft_metadata_drafts\\_conflict_items\\phenomenology-and-the-cognitive-sciences.json",
+  "name": "Phenomenology and the Cognitive Sciences"
+ }
+]

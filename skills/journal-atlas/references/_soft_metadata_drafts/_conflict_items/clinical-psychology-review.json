@@ -1,0 +1,12 @@
+{
+ "name": "Clinical Psychology Review",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\clinical-psychology-review.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "existing_value": "No — disclosure-based for text; image generation prohibited",
+   "wo2_value": "gate: \"conditional\" (WO2 structured field, same underlying source: Elsevier generative-AI writing policy page)",
+   "why_flagged": "既有欄位已有實質內容（非佔位符），依規則不可覆蓋；但 WO2 將 gate 分類標記為「conditional」而非「No」，與既有的「No」分類存在字面上的不一致（雖然兩者描述的底層政策內容——需揭露、圖像生成禁止——本身並不矛盾）。是否要統一分類用語，建議人工複核後再決定是否調整措辭。"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "name": "Self and Identity",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\self-and-identity.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "*(per T&F default — pending verification; commonly double-anonymized)*",
+   "wo2_value": "Single-anonymized (single-blind) peer review; initial Editor screening then refereeing by at least two independent expert referees; ScholarOne Manuscripts submission system. (source: https://www.tandfonline.com/journals/psai20/about-this-journal)",
+   "why_flagged": "此欄位雖以括號＋斜體呈現，但內含具體猜測「commonly double-anonymized」，並非精確比對表中允許的空白樣板字串，因此依規則不算 placeholder、不可逕行覆蓋。然而 WO2 提供的是相反且更具體、有來源佐證的結論（single-anonymized，附審稿流程與系統細節），與既有猜測直接矛盾，需人工查證後才能決定採用哪一版本，故列為衝突而非直接填入。"
+  },
+  {
+   "field": "Policies > AI Policy (Leniency 1-5 與 Summary)",
+   "existing_value": "Leniency 4 (disclosure-based; AI cannot be listed as author); Summary: 泛用 T&F 政策、揭露即可、建議聯繫編輯部確認最新版本",
+   "wo2_value": "Leniency 3 (gate: conditional); Summary 更詳細：允許構想發想/語言潤飾/文獻檢索分類/程式協助，但明確禁止用 AI 生成或操作研究資料、圖像或圖表，且需在方法或致謝中揭露工具名稱、版本、用途與使用方式",
+   "why_flagged": "既有 AI Policy 各列已有實質內容（非空白樣板），依規則不可逕改；但 WO2 的寬容度評分（3）與既有評分（4）不同，且 WO2 補充了既有摘要未明確提及的『禁止用於資料/圖像操作』限制，屬實質分歧而非單純補充細節，故列為衝突供人工複核。附註：檔案中『AI-Research Notes (WO2 supplement)』小節已將此 WO2 全文原樣附上作為補充研究紀錄，此衝突僅提醒不要據此逕自覆蓋主表格中的 Leniency/Summary 儲存格。"
+  }
+ ]
+}

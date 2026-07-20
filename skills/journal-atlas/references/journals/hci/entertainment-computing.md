@@ -220,15 +220,15 @@ Reviewers from IFIP TC14 Entertainment Computing community + ACM CHI Play overla
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 採 Elsevier 通用政策(非期刊專屬頁面,查無 Entertainment Computing 專屬 AI 政策頁):作者可用生成式 AI 輔助寫作(如語言潤飾、文獻綜述輔助),但須人類監督、對內容負全責、投稿時需揭露聲明;基本文法/拼字檢查免揭露;AI 不得列為作者。審稿人/編輯僅能用「不留存資料」的私有 AI 工具做語言潤飾或背景文獻搜尋,禁止將稿件內容上傳至公開 AI 工具(保密考量),且須揭露使用情形。WebSearch 摘要另指出 Entertainment Computing 目前不允許審稿人/編輯在同行評審過程使用生成式 AI,但該說法來自搜尋引擎聚合摘要,未能在期刊官方頁面(Guide for Authors 因 403 無法直接讀取)一次性核實,故信心中等。
+**AI-research finding (policy):** 採 Elsevier 通用政策(非期刊專屬頁面,查無 Entertainment Computing 專屬 AI 政策頁):作者可用生成式 AI 輔助寫作(如語言潤飾、文獻綜述輔助),但須人類監督、對內容負全責、投稿時需揭露聲明;基本文法/拼字檢查免揭露;AI 不得列為作者。審稿人/編輯僅能用「不留存資料」的私有 AI 工具做語言潤飾或背景文獻搜尋,禁止將稿件內容上傳至公開 AI 工具(保密考量),且須揭露使用情形。WebSearch 摘要另指出 Entertainment Computing 目前不允許審稿人/編輯在同行評審過程使用生成式 AI,但該說法來自搜尋引擎聚合摘要,未能在期刊官方頁面(Guide for Authors 因 403 無法直接讀取)一次性核實,故信心中等。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025-2026)徵稿與會議聯動顯示,該刊實際收稿方向聚焦:遊戲/互動敘事設計與分析、嚴肅遊戲(學習/健康福祉/社會影響/運動遊戲)、XR(VR/AR/MR、元宇宙娛樂)、AI/機器學習於娛樂應用(含生成式 AI 於遊戲開發/內容生成)、程序化內容生成、電腦圖學與視覺特效、數位藝術與互動裝置、無障礙與包容性設計、情感與社會文化影響、新型互動介面與安全性。2026 IFIP ICEC Journal Track(投稿截止 2026-01-24)與 IPSJ JIP 特刊(截止 2026-02-20)均以此刊為目標期刊,顯示這些主題是當前實際收稿重點。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025-2026)徵稿與會議聯動顯示,該刊實際收稿方向聚焦:遊戲/互動敘事設計與分析、嚴肅遊戲(學習/健康福祉/社會影響/運動遊戲)、XR(VR/AR/MR、元宇宙娛樂)、AI/機器學習於娛樂應用(含生成式 AI 於遊戲開發/內容生成)、程序化內容生成、電腦圖學與視覺特效、數位藝術與互動裝置、無障礙與包容性設計、情感與社會文化影響、新型互動介面與安全性。2026 IFIP ICEC Journal Track(投稿截止 2026-01-24)與 IPSJ JIP 特刊(截止 2026-02-20)均以此刊為目標期刊,顯示這些主題是當前實際收稿重點。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://ci2s-enterprise.com.ar/2025/12/17/ifip-icec-2026-journal-track-call-for-papers-elsevier-entertainment-computing-journal/
@@ -238,7 +238,7 @@ Reviewers from IFIP TC14 Entertainment Computing community + ACM CHI Play overla
 - https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
 - https://www.ipsj.or.jp/english/jip/cfp/26-T.html
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: ScienceDirect 官方 Guide for Authors 與期刊主頁均回傳 403,無法直接核實審稿類型(single/double blind);搜尋引擎摘要亦未找到期刊專屬明確聲明,故留空而非臆測。
 - **experiential.review_time_months**: SciRev 該刊頁面顯示 0 筆審稿人回報,LetPub 中文頁面「平均審稿速度」欄位無使用者填寫數據,無小木蟲/知乎/Reddit 一手討論串可查證,故留空。
 - **experiential.desk_reject_pct**: SciRev 顯示 n/a(無資料),無其他一手來源。
@@ -297,6 +297,6 @@ Low for entertainment computing tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + IFIP TC14 Entertainment Computing editorial culture domain knowledge | @Zaious |

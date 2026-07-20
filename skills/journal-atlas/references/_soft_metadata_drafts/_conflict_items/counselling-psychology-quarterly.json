@@ -1,0 +1,24 @@
+{
+ "name": "Counselling Psychology Quarterly",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "Double-anonymized (double-blind) peer review; initial editor appraisal, then review by independent anonymous expert referees, via ScholarOne Manuscripts. Source: https://www.tandfonline.com/journals/ccpq20/about-this-journal",
+   "why_flagged": "既有值為 family-norm 推測(single-blind),WO2 從期刊官方 about-this-journal 頁面查得的是 double-anonymized(double-blind)。兩者直接矛盾,需人工核實後決定是否更新,不應由本次 patch 直接覆蓋。"
+  },
+  {
+   "field": "Review Cycle Time > Time to publication (after acceptance)",
+   "existing_value": "*(typical: 2-6 weeks)*",
+   "wo2_value": "~8 days (T&F official: avg. acceptance-to-online-publication, per https://www.tandfonline.com/journals/ccpq20/about-this-journal)",
+   "why_flagged": "既有欄位已有具體內容(非空白/佔位符),而 WO2 提供的官方數字(8天)與既有的『2-6週』估計有實質落差,屬矛盾而非單純補充細節,依規則應留待人工判斷,不逕行覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements / Epistemological & Political Leanings (超出範圍,僅供人工參考)",
+   "existing_value": "既有 Tier 2 內容偏向泛用 family-norm 描述(如 cross-cultural friendliness: Medium,無特別提及去殖民化/批判取向)",
+   "wo2_value": "WO2 positioning finding(signal_quality 4/5)指出近期(2025下半-2026)CPQ 明顯歡迎去殖民化(decolonizing)、文化回應督導、社會正義/多元文化批判框架之投稿,Vol 39 Issue 1(2026)甚至為『Decolonizing Counselling Psychology』專題特輯",
+   "why_flagged": "此為 Soft Metadata 主觀分節(Epistemological & Political Leanings / Framing Requirements),依規則屬 out-of-scope,不可直接編輯,僅記錄供人工日後評估是否應調整 Tier 2 假設或升級為 Tier 1。"
+  }
+ ]
+}

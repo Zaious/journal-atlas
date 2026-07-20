@@ -1,0 +1,18 @@
+{
+ "name": "Qualitative Inquiry",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-inquiry.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Sage default)",
+   "wo2_value": "open peer review（非雙盲/雙匿名）— sourced to https://journals.sagepub.com/home/QIX",
+   "why_flagged": "既有內容與 WO2 發現直接矛盾（雙盲 vs. 非雙盲的開放式同儕審查），非單純細節補充，屬實質分歧，不應由自動化流程逕自覆蓋，需人工查證該刊實際審稿制度（Sage 集團預設 vs. 該刊可能的例外）。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5)",
+   "existing_value": "Explicit permission gate?: No — disclosure-based; Leniency: 4",
+   "wo2_value": "gate: \"conditional\"; leniency_1_5: 3",
+   "why_flagged": "兩者對政策本質的描述有出入：既有版本主張『無事前許可門檻，僅需揭露』，WO2 標記為『conditional（有條件式門檻）』，寬容度評分也不同（4 vs 3）。雖然底層 summary 文字幾乎相同（Sage 集團通用政策），但 gate 有無的判斷與寬容度分數不一致，屬於評分/判斷層級的分歧而非事實補充，故列為衝突交人工判斷，不逕自修改既有表格。"
+  }
+ ]
+}

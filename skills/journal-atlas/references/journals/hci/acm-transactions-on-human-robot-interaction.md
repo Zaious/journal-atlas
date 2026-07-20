@@ -43,9 +43,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(community estimate)* | |
+| **Time to first decision** | *(community estimate)* | THRI author guidelines confirm an EIC triage stage (return-without-review for out-of-scope submissions) exists prior to full peer review; no quantitative desk-reject rate or first-decision timeframe is published (AI-research pass 2026-07-13; source: dl.acm.org/journal/thri/author-guidelines). |
 | **Time to first review** | *(community estimate)* | |
-| **Time to acceptance (total)** | *(community estimate)* | |
+| **Time to acceptance (total)** | *(community estimate)* | Not a direct total-time measure, but author guidelines set revision turnaround windows: minor revisions expected back within 2 months, major revisions within 3 months of decision. Corroborated via independent search 2026-07-20 (source: dl.acm.org/journal/thri/author-guidelines). |
 | **Time to publication (after acceptance)** | *(typical for OA journals: 2-6 weeks after acceptance)* | |
 
 ### Publication Frequency
@@ -64,7 +64,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (typical journal default; check publisher policy) |
+| **Type** | Double-anonymous (double-blind); standard ~3 reviewers spanning disciplines; conference-extension papers are an exception and are not double-anonymous. Verified 2026-07-20 against THRI's own author-guidelines page (dl.acm.org/journal/thri/author-guidelines). |
 | **Transferable / Cascade?** | *(varies by publisher)* |
 | **Reviewer reports published?** | *(varies; some journals offer transparent review)* |
 | **Typical R+R rounds** | 1-2 |
@@ -86,7 +86,7 @@
 |-------|----------|-------|
 | Pre-submission | Yes | arXiv / bioRxiv / similar preprint servers permitted by most publishers |
 | Under review | Yes | Most journals permit preprint update; verify journal-specific policy |
-| Post-acceptance (AAM) | Yes | Embargo varies by publisher (0-12 months) |
+| Post-acceptance (AAM) | Yes | No embargo — per ACM's Publication Rights & Licensing Policy, authors retain unrestricted right to post pre-submission, submitted, and accepted-manuscript versions to arXiv/other non-commercial repositories at any stage; ACM asks authors to also post the DOI of the Version of Record. Verified 2026-07-20 (acm.org/publications/policies/publication-rights-and-licensing-policy). |
 | Version of Record | OA model determines | |
 
 ### Open Access
@@ -205,15 +205,15 @@ ACM journal review (independent of conference cycle). 2-3 external reviewers + A
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** This is ACM's org-wide Policy on Authorship (not THRI-specific — THRI's author guidelines page links out to it). Fact: use of generative AI tools to create content (text, tables, graphs, code, data, citations) is permitted but must be fully disclosed, typically in the Acknowledgements section; generative AI tools cannot be listed as authors; basic word-processing/grammar tools are exempt from disclosure. No THRI-specific stricter or looser variant found in this search pass, so confidence is publisher-policy-level, not journal-verified.
+**AI-research finding (policy):** This is ACM's org-wide Policy on Authorship (not THRI-specific — THRI's author guidelines page links out to it). Fact: use of generative AI tools to create content (text, tables, graphs, code, data, citations) is permitted but must be fully disclosed, typically in the Acknowledgements section; generative AI tools cannot be listed as authors; basic word-processing/grammar tools are exempt from disclosure. No THRI-specific stricter or looser variant found in this search pass, so confidence is publisher-policy-level, not journal-verified.
 
-**WO2 positioning finding (what the journal accepts now):** Could not complete a systematic scan of 2024-2026 THRI article titles/ToCs or an active special-issue CFP within this pass beyond secondary search snippets (systematic reviews on trust assessments, social norms, human-robot teaming surveys, robotic vision for HRI collaboration surfaced incidentally). A dedicated pass through dl.acm.org/journal/thri recent issues and dl.acm.org/journal/thri/CFP-AI-HRI (existing AI-HRI special issue track) was not completed with full-text confirmation, so this is not a reliable accepts_now inference.
+**AI-research finding (positioning — what the journal accepts now):** Could not complete a systematic scan of 2024-2026 THRI article titles/ToCs or an active special-issue CFP within this pass beyond secondary search snippets (systematic reviews on trust assessments, social norms, human-robot teaming surveys, robotic vision for HRI collaboration surfaced incidentally). A dedicated pass through dl.acm.org/journal/thri recent issues and dl.acm.org/journal/thri/CFP-AI-HRI (existing AI-HRI special issue track) was not completed with full-text confirmation, so this is not a reliable accepts_now inference.
 
-**WO2 experiential finding:** THRI author guidelines state editors-in-chief first triage submissions and return-without-review anything deemed out of scope before full review begins (a desk-reject stage exists), and that minor revisions are expected back within 2 months, major revisions within 3 months — these are process/policy statements, not first-hand experiential data points. 
+**AI-research finding (experiential):** THRI author guidelines state editors-in-chief first triage submissions and return-without-review anything deemed out of scope before full review begins (a desk-reject stage exists), and that minor revisions are expected back within 2 months, major revisions within 3 months — these are process/policy statements, not first-hand experiential data points. 
 
 **Sources cited in this pass:**
 - https://dl.acm.org/doi/10.1145/3706123
@@ -224,7 +224,7 @@ ACM journal review (independent of conference cycle). 2-3 external reviewers + A
 - https://dl.acm.org/journal/thri/author-guidelines
 - https://www.acm.org/publications/policies/new-acm-policy-on-authorship
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: No SciRev page found for THRI (search for scirev.org + journal name returned no matching SciRev entry); no Reddit r/AskAcademia thread found; no 小木虫/知乎 first-hand post found discussing actual submission-to-decision timing for this journal
 - **experiential.desk_reject_pct**: No quantitative desk-reject rate published or discussed anywhere found; only the qualitative process description that an EIC triage/return-without-review stage exists
 - **experiential.reviewer_culture**: No forum thread (Chinese or English) describing reviewer tone/culture at THRI was found in this search pass; fabricating a generic HCI/robotics reviewer-culture narrative was avoided per hard rules
@@ -276,5 +276,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy > Post-acceptance (AAM) row; Metrics > Review Cycle Time (all four rows). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

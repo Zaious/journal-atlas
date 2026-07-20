@@ -1,0 +1,24 @@
+{
+ "name": "International Journal of Human-Computer Interaction",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-human-computer-interaction.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "*(not disclosed by publisher)*",
+   "wo2_value": "LetPub 聚合評價（97 筆，總分 6.7/10）將接受難度標為「容易」，但 WO2 自身註明這是群眾聚合的單一詞標籤而非第一手百分比；另一則小木虫論壇貼文提到一次因「非新穎數據/非高科學重要性」而遭拒的理由，但 WO2 亦坦承無法確認該討論串主題是否真的對應本刊（signal_quality: 2/5）",
+   "why_flagged": "雖然現有儲存格文字符合 placeholder 判定條件，但 WO2 提供的並非可直接套入表格的接受率數字，而是低信度、群眾聚合且主題比對不確定的質性標籤，貿然填入恐造成誤導性精確度，建議留給人工判斷是否採用或改寫為質性附註"
+  },
+  {
+   "field": "Review Cycle Time > Time to first decision / Time to first review",
+   "existing_value": "*(pending)*",
+   "wo2_value": "experiential.review_time_months: 「1.5-3 months (6-12 weeks) per LetPub aggregate...一則小木虫貼文描述約 3 個月做出初步編輯決定，但該討論串內容偏生醫資訊學調性，可能與本 HCI 期刊主題不符（低信度標記）；SciRev 顯示零筆送審評論」（signal_quality: 2/5）",
+   "why_flagged": "WO2 提供的是一個籠統且彼此略有出入的區間（LetPub 六到十二週 vs 小木虫約三個月），且未能對應到表格四個具體階段（首次決定/首次審稿/總接受時間/出版）中的哪一項，也對主題相關性存疑，強行拆分填入特定欄位風險過高，建議人工核實後再決定要填入哪一列、以及是否加註信度說明"
+  },
+  {
+   "field": "Strategic Notes / Framing Requirements（主觀章節，範圍外，僅供補充參考）",
+   "existing_value": "現有 Framing Requirements 已描述『需展現應用型 HCI 貢獻』等既有框架要求，未提及特定徵稿主題",
+   "wo2_value": "positioning.framing_required：目前開放中的特刊《The Age of AI Agents》（截稿 2026-03-15）明確歡迎批判/社會技術框架（偏見、歧視、監控、隱私、透明度、公平性、平台資本主義、AI 治理、東西方比較），但 WO2 也發現另一則搜尋結果顯示該刊『目前並未接受新特刊提案』，兩者矛盾且 WO2 未能以單一權威來源調解",
+   "why_flagged": "此為觸及 Strategic Notes/Framing Requirements 等主觀章節的定位性發現，依規則不可直接編輯該區塊，且 WO2 內部兩則來源本身互相矛盾（特刊開放中 vs 期刊不接受新特刊提案），需要人工查證特刊現況後再決定是否採用"
+  }
+ ]
+}

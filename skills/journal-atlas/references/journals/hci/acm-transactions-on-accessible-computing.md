@@ -75,10 +75,10 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | Yes (follows publisher default + may have journal-specific overlay) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No — disclosure-based (routine grammar/spell-check tools exempt) |
 | **Leniency (1-5)** | 3-4 |
-| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at the journal's author guidelines. |
-| **Source URL** | https://www.acm.org/publications/policies/new-acm-policy-on-authorship |
+| **Summary** | ACM 全站政策(TACCESS 未見期刊層級獨立頁面):生成式 AI 不得列為作者;實質使用生成式 AI 產生文字、表格、圖表、程式碼或資料,須於 Acknowledgements 章節完整揭露工具名稱與用途;僅基礎文書處理系統之拼字/文法檢查工具豁免揭露義務。(2026-07-20 查核排除先前AI研究補充中「AI 撰寫文稿現已免揭露」之說法,未獲官方原文佐證。) |
+| **Source URL** | https://www.acm.org/publications/policies/new-acm-policy-on-authorship ; https://www.acm.org/publications/policies/frequently-asked-questions |
 
 ### Preprint Policy
 
@@ -205,15 +205,15 @@ ACM journal review (independent of conference cycle). 2-3 external reviewers + A
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 ACM 出版社統一政策(非 TACCESS 專屬頁面)。AI 生成工具不得列為作者;使用 AI 撰寫文稿現已「不再要求揭露」;但若 AI 被用於研究執行本身(方法設計、資料生成、程式碼、分析、模擬等),則必須在方法章節詳述用途。所有掛名作者對內容(含 AI 產出部分)負完全責任,發現誠信問題可導致拒稿或已發表文章撤稿。截至查證時(2026-07-13)未找到 TACCESS 期刊層級的獨立 AI 政策頁面,推定沿用 ACM 全站政策。
+**AI-research finding (policy):** 此為 ACM 出版社統一政策(非 TACCESS 專屬頁面)。AI 生成工具不得列為作者;使用 AI 撰寫文稿現已「不再要求揭露」;但若 AI 被用於研究執行本身(方法設計、資料生成、程式碼、分析、模擬等),則必須在方法章節詳述用途。所有掛名作者對內容(含 AI 產出部分)負完全責任,發現誠信問題可導致拒稿或已發表文章撤稿。截至查證時(2026-07-13)未找到 TACCESS 期刊層級的獨立 AI 政策頁面,推定沿用 ACM 全站政策。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025)刊出文章涵蓋:自閉症成人壓力管理的 AR 自助介入需求蒐集、四邊形學習的實體使用者介面(Tangible UI)、HCI 研究中 VR 無障礙性的概念化批判回顧、視覺化描述(audio description)專業工作實務變遷之質性研究、智能障礙成人的數位獨立與功能獨立相關性研究、BLV(全盲/低視力)觸覺回饋系統性文獻回顧的勘誤。另有專屬 ASSETS 研討會擴充論文專區(TACCESS 與 ASSETS/W4A 有正式論文互通機制)。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025)刊出文章涵蓋:自閉症成人壓力管理的 AR 自助介入需求蒐集、四邊形學習的實體使用者介面(Tangible UI)、HCI 研究中 VR 無障礙性的概念化批判回顧、視覺化描述(audio description)專業工作實務變遷之質性研究、智能障礙成人的數位獨立與功能獨立相關性研究、BLV(全盲/低視力)觸覺回饋系統性文獻回顧的勘誤。另有專屬 ASSETS 研討會擴充論文專區(TACCESS 與 ASSETS/W4A 有正式論文互通機制)。
 
-**WO2 experiential finding:** 期刊自述審稿目標為投稿後三個月內回覆,採 3-4 位審稿人、最多兩輪大修;此為期刊官方聲明的政策目標,非投稿人第一手經驗數據,故不計入 review_time_months 欄位。 
+**AI-research finding (experiential):** 期刊自述審稿目標為投稿後三個月內回覆,採 3-4 位審稿人、最多兩輪大修;此為期刊官方聲明的政策目標,非投稿人第一手經驗數據,故不計入 review_time_months 欄位。 
 
 **Sources cited in this pass:**
 - https://dl.acm.org/journal/taccess/about
@@ -222,7 +222,7 @@ ACM journal review (independent of conference cycle). 2-3 external reviewers + A
 - https://dl.acm.org/toc/taccess/2025/18/4
 - https://www.acm.org/publications/policies/frequently-asked-questions
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: TACCESS 官方頁面未明文標示 single-blind 或 double-blind;推定為 single-blind 是根據 author-guidelines 要求投稿時即需附上作者姓名與單位(無匿名化稿件格式要求),而非期刊明文聲明,信心中等。
 - **experiential.review_time_months**: SciRev 該期刊頁面所有欄位(accept %, desk-reject %, review duration, impact factor)皆為 'n/a'(0 筆讀者提交評論);查無小木虫(muchong.com)、知乎、fabiaoji 相關討論串;Reddit r/AskAcademia 及一般 Reddit 搜尋亦無提及 TACCESS 的貼文。僅有期刊自述的政策目標(3 個月),非第一手經驗,不足以作為 experiential 欄位依據。
 - **experiential.desk_reject_pct**: SciRev 該欄位為 'n/a',無任何第一手來源。
@@ -275,5 +275,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Summary / Source URL). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

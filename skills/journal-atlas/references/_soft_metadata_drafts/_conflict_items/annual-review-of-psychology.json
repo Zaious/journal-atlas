@@ -1,0 +1,12 @@
+{
+ "name": "Annual Review of Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\annual-review-of-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Leniency / Explicit permission gate)",
+   "existing_value": "Leniency (1-5): 3; Explicit permission gate?: No — disclosure-based; Has journal-specific AI policy?: No (follows Annual Reviews publisher default)",
+   "wo2_value": "leniency_1_5: 2; gate: \"conditional\"; summary describes the same Annual Reviews publisher-wide policy (AI should not replace authors in first-draft generation but can be used to check completeness/readability; authors must check with their Production Editor) — WO2 itself notes this is publisher-level, not confirmed journal-specific",
+   "why_flagged": "既有表格已有具體內容（非佔位符），不可覆蓋；但 WO2 給出的 leniency 分數（2 vs 既有 3）與 gate 描述（'conditional' vs 'disclosure-based'）與既有評分不完全一致，屬於數值/描述上的實質分歧，需人工覆核何者更準確。註：此差異的敘事版本已於既有檔案 Soft Metadata > AI-Research Notes（WO2 supplement, 2026-07-13）段落中以補充說明方式呈現，但表格本身的 Leniency/Gate 數值尚未對齊，故仍列為衝突供覆核。"
+  }
+ ]
+}

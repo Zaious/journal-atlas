@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Double-anonymized — JCCP's own submission guidelines confirm a mandatory "masked reviewing system for all submissions" (verified live 2026-07-20 at apa.org/pubs/journals/ccp/submit; "masked" is APA/psychology's field-specific term for double-anonymized review, not a distinct lighter policy) |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -80,8 +80,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows APA publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
+| **Explicit permission gate?** | Conditional / disclosure-based — no editorial pre-approval needed, but disclosure + AI-tool attribution is mandatory in Methods/Acknowledgments (confirmed live 2026-07-20 via APA's publisher-wide generative-AI policy page, apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai) |
+| **Leniency (1-5)** | 4 — APA's policy permits AI use for idea generation, drafting, analysis, and code as long as disclosed/cited; the only hard limits are no AI authorship and no entry of confidential submitted content into AI tools |
 | **Summary** | Follows APA publisher AI policy: authors must disclose use of generative AI tools (ChatGPT, etc.) in manuscript preparation. AI cannot satisfy authorship criteria. APA requires explicit disclosure in the Methods/Acknowledgments section. |
 | **Source URL** | https://www.apa.org/pubs/journals/policies/ |
 ### Preprint Policy
@@ -221,22 +221,22 @@ Reviewers drawn primarily from clinical psychology and clinical-health psycholog
 | **Data transparency requirement** | High — clinical-trial registration; data-sharing increasingly expected |
 | **OPSEC compatibility** | Medium — clinical data requires careful pseudonymization; mandatory reporting may apply for certain disclosures |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Publisher-wide APA generative-AI policy, confirmed present verbatim on JCCP's own submission-guidelines page: generative AI/LLM use in drafting a manuscript is permitted but must be disclosed in the Methods section and cited; AI cannot be listed as an author. This is a permission-with-disclosure gate, not a ban and not fully open. No journal-specific deviation from the standard APA policy was found.
+**AI-research finding (policy):** Publisher-wide APA generative-AI policy, confirmed present verbatim on JCCP's own submission-guidelines page: generative AI/LLM use in drafting a manuscript is permitted but must be disclosed in the Methods section and cited; AI cannot be listed as an author. This is a permission-with-disclosure gate, not a ban and not fully open. No journal-specific deviation from the standard APA policy was found.
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - SciRev journal page https://scirev.org/journal/journal-of-consulting-and-clinical-psychology/ — page loads but all metrics show 'n/a'; explicit note 'No reviews have yet been submitted for this journal'
 - https://www.apa.org/pubs/journals/ccp/index (aims & scope page)
 - https://www.apa.org/pubs/journals/ccp/submit
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev has zero submitted reviews for this exact journal (checked directly, all fields n/a). No English-language Reddit r/AskAcademia thread found discussing JCCP specifically. No Chinese-language forum discussion found on 小木虫/muchong, 知乎/zhihu, or fabiaoji naming this journal's review timeline.
 - **experiential.desk_reject_pct**: Same as above — SciRev n/a, no first-hand forum data located for this specific journal (distinct from the similarly named but different journal 'Journal of Clinical Psychology', which does have SciRev data and was not conflated here).
 - **experiential.acceptance_note**: No first-hand submitter account found in the sources checked.
@@ -299,6 +299,7 @@ Low for RCT-tradition clinical authors. Moderate for non-RCT empirical authors �
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved 2 conflict-flagged items: Peer Review Type harmonized with live-verified JCCP wording ("masked review" confirmed = double-anonymized); AI Policy gate/leniency wording harmonized with live-verified APA generative-AI policy page. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

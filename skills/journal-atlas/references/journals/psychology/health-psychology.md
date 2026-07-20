@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Single-masked — reviewers are anonymous to authors, but author identity is visible to reviewers (authors should not attempt to mask their own identifying information). Verified directly on APA's official submission page. Source: https://www.apa.org/pubs/journals/hea/submit (fetched 2026-07-20). |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -218,15 +218,15 @@ Reviewers from APA Division 38 (Health Psychology) and broader behavioral-medici
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — health data anonymization strict |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** This is an APA-wide policy applied across all APA journals (not Health Psychology-specific). Authors MAY use generative AI (e.g., for editing, idea generation, coding/analysis support) but MUST disclose the specific tool and how it was used (typically in the Methods or an equivalent section), and must verify all AI-generated content/citations against original sources. AI cannot be listed as an author. No prior editorial permission is required before use, but editors may request additional documentation during review (hence 'conditional' gate rather than a flat yes). Separately, reviewers/editors are explicitly barred from entering submitted manuscript text into AI tools, citing confidentiality.
+**AI-research finding (policy):** This is an APA-wide policy applied across all APA journals (not Health Psychology-specific). Authors MAY use generative AI (e.g., for editing, idea generation, coding/analysis support) but MUST disclose the specific tool and how it was used (typically in the Methods or an equivalent section), and must verify all AI-generated content/citations against original sources. AI cannot be listed as an author. No prior editorial permission is required before use, but editors may request additional documentation during review (hence 'conditional' gate rather than a flat yes). Separately, reviewers/editors are explicitly barred from entering submitted manuscript text into AI tools, citing confidentiality.
 
-**WO2 positioning finding (what the journal accepts now):** Biobehavioral/psychosocial mechanisms linking psychology and physical health, social determinants of health, health-behavior intervention development, dissemination/implementation science, and population-level health disparities/equity research. Registered RCTs are explicitly welcome; unregistered or retrospectively registered RCT reports are subject to rejection without external review per the journal's own submission guidelines.
+**AI-research finding (positioning — what the journal accepts now):** Biobehavioral/psychosocial mechanisms linking psychology and physical health, social determinants of health, health-behavior intervention development, dissemination/implementation science, and population-level health disparities/equity research. Registered RCTs are explicitly welcome; unregistered or retrospectively registered RCT reports are subject to rejection without external review per the journal's own submission guidelines.
 
-**WO2 experiential finding:** APA official 'Summary Report of Division Journal Operations, 2023' (published in American Psychologist, 2024, Vol. 79, No. 5, pp. 777-778): Health Psychology (Division 38) received 697 manuscripts, accepted 77, had 179 pending, rejection rate 74% (i.e., acceptance ≈26%); 90 items published; average lag from acceptance to publication was 2.3 months (Online First) / 4.6 months (print). This is a first-hand publisher-issued statistic, not a submission-to-decision timeline. 
+**AI-research finding (experiential):** APA official 'Summary Report of Division Journal Operations, 2023' (published in American Psychologist, 2024, Vol. 79, No. 5, pp. 777-778): Health Psychology (Division 38) received 697 manuscripts, accepted 77, had 179 pending, rejection rate 74% (i.e., acceptance ≈26%); 90 items published; average lag from acceptance to publication was 2.3 months (Online First) / 4.6 months (print). This is a first-hand publisher-issued statistic, not a submission-to-decision timeline. 
 
 **Sources cited in this pass:**
 - https://muchong.com/bbs/journal.php?view=detail&jid=3182 (小木虫 journal metadata page, no first-hand experience posts)
@@ -237,7 +237,7 @@ Reviewers from APA Division 38 (Health Psychology) and broader behavioral-medici
 - https://www.apa.org/pubs/journals/resources/calls-for-papers (checked directly: no currently-open call for papers listed for this journal as of July 2026 — special issue topics above are from recently published/announced issues, not an active open CFP)
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: No public submission-to-first-decision figure exists for this journal. SciRev (scirev.org/journal/health-psychology) shows 0 full reviews and only one data point ('immediate rejection: 6 days'); the APA official 2023 Journal Operations report gives only acceptance-to-publication lag (2.3 mo online-first / 4.6 mo print), not submission-to-decision time. No muchong/zhihu/fabiaoji/Reddit thread with a first-hand timeline was found.
 - **experiential.desk_reject_pct**: No numeric desk-rejection rate is published anywhere found. The journal's own submission guidelines confirm desk rejection occurs (e.g., automatically for unregistered or retrospectively registered RCT reports, and for out-of-scope/masking violations) but give no percentage, and no forum post quantified it.
 - **experiential.reviewer_culture**: Zero first-hand accounts surfaced on muchong.com (journal page found, but only bibliographic metadata, no reviewer/author testimony), zhihu (search returned only results about the unrelated Taylor & Francis journal 'Health Psychology Review'), fabiaoji (same conflation issue, no APA-journal-specific hits), or Reddit r/AskAcademia (no thread found). Fabricating a reviewer-culture narrative was avoided per instructions.
@@ -293,6 +293,7 @@ Low for health-psychology empirical authors. Moderate for adjacent psychology �
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (apa.org/pubs/journals/hea) + APA Division 38 domain knowledge (web search 2026-05) | @Zaious |

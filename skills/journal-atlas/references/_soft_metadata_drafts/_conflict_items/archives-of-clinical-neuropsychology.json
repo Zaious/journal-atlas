@@ -1,0 +1,18 @@
+{
+ "name": "Archives of Clinical Neuropsychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\archives-of-clinical-neuropsychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5)",
+   "existing_value": "Explicit permission gate?: No — disclosure-based; Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\"（近乎事前許可門檻）; leniency_1_5: 2",
+   "why_flagged": "此欄位並非空白待填（已有完整、具體的政策描述），依規則不可覆蓋。但WO2對同一份OUP出版社層級AI政策的解讀與既有條目有實質分歧：既有版本判定為『僅揭露即可、無需事前許可、寬容度4』，WO2則判定為『近乎需要事前許可的條件式門檻、寬容度僅2』。兩者引用的來源網址相同（academic.oup.com AI政策頁），差異在於解讀角度，需人工覆核决定何者更準確，不應自動二選一覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements（範圍外之主觀章節）",
+   "existing_value": "Mandatory framing? Yes (strong) — Manuscripts must demonstrate clinical neuropsychology practice contribution（NAN-affiliated clinical, forensic, assessment-practice focus）",
+   "wo2_value": "positioning.framing_required: 近期一篇文章（ACN 38(7):1352, AI-Driven Diagnostics for Child Neuropsychology）顯示期刊願意刊登評估生成式AI於神經心理診斷角色之研究，但基調為『promising but insufficient』——歡迎AI輔助診斷/評估類投稿，但需採審慎、驗證式框架，而非鼓吹AI取代臨床判斷",
+   "why_flagged": "Framing Requirements屬於本次任務明確排除、不可直接編輯的主觀章節。此為WO2針對『AI輔助診斷類投稿框架要求』的補充性定位發現，與既有『臨床實務貢獻框架』並不矛盾但屬不同細節層次，建議留給人工判斷是否要在Framing Requirements中補充『AI輔助診斷需審慎驗證框架』的細節。註：此發現內容已於檔案內 Soft Metadata > AI-Research Notes（WO2 supplement, 2026-07-13）區塊完整記錄，此處僅重複標記以提醒審閱者，不建議另行編輯正文章節。"
+  }
+ ]
+}

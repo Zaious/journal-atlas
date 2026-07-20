@@ -80,10 +80,10 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Oxford UP publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No — disclosure-based (verified 2026-07-20 via academic.oup.com/acn/pages/General_Instructions: AI use "should be disclosed both in cover letters to editors and in the Methods or Acknowledgements section of manuscripts" — no pre-submission approval required for journal articles) |
 | **Leniency (1-5)** | 4 |
-| **Summary** | Follows Oxford UP AI policy: generative AI use must be disclosed in manuscript. AI cannot be author. Authors retain responsibility for accuracy. |
-| **Source URL** | https://academic.oup.com/journals/pages/authors |
+| **Summary** | Journal's own General Instructions require AI use to be disclosed in the cover letter and in Methods/Acknowledgements; AI cannot be listed as author (COPE position referenced). No pre-submission permission gate applies to journal articles — OUP's stricter "written permission" requirement (mistakenly cited by the prior AI-research pass) belongs to OUP's *Books* AI policy (academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence) and does not govern journal submissions. Authors retain full responsibility for accuracy. |
+| **Source URL** | https://academic.oup.com/acn/pages/General_Instructions (verified 2026-07-20) |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -220,15 +220,15 @@ Reviewers from NAN (National Academy of Neuropsychology) and broader clinical ne
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — clinical data anonymization rigorous |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **1/5**.
 
-**WO2 AI policy finding:** 查到的是 Oxford University Press 出版社層級的通用 Gen AI 政策，非本刊獨立頁面（本刊 General Instructions 頁未列出 AI 專屬條款）。OUP 通用政策：Gen AI 不得列為作者、不得用於產生論點/科學洞見/分析結論等『主要著作責任』；若使用須在投稿時揭露使用地點、工具、版本、使用方式與驗證步驟；若要提交 Gen AI 生成內容（含圖像）需另取得 OUP 書面許可；作者對內容之準確性與原創性負全責。因是出版社層級而非本刊訂製條款，寬容度評為 2（近乎需事前許可 gate，但非全面禁止），信心不高。
+**AI-research finding (policy):** 查到的是 Oxford University Press 出版社層級的通用 Gen AI 政策，非本刊獨立頁面（本刊 General Instructions 頁未列出 AI 專屬條款）。OUP 通用政策：Gen AI 不得列為作者、不得用於產生論點/科學洞見/分析結論等『主要著作責任』；若使用須在投稿時揭露使用地點、工具、版本、使用方式與驗證步驟；若要提交 Gen AI 生成內容（含圖像）需另取得 OUP 書面許可；作者對內容之準確性與原創性負全責。因是出版社層級而非本刊訂製條款，寬容度評為 2（近乎需事前許可 gate，但非全面禁止），信心不高。
 
-**WO2 positioning finding (what the journal accepts now):** 以實證研究報告 (empirical reports) 與重要文獻回顧 (key reviews) 為優先；亦接受簡短研究報告 (brief research reports)、對已刊文章的評論 (commentaries)、以及能對腦-行為關係提供新見解的個案研究 (case studies)；偶爾接受理論性論文。核心範疇為中樞神經系統功能障礙所致病症之心理層面（病因、診斷、治療），亦涵蓋神經心理學服務的提供與評估、倫理與法律議題、教育訓練取向。
+**AI-research finding (positioning — what the journal accepts now):** 以實證研究報告 (empirical reports) 與重要文獻回顧 (key reviews) 為優先；亦接受簡短研究報告 (brief research reports)、對已刊文章的評論 (commentaries)、以及能對腦-行為關係提供新見解的個案研究 (case studies)；偶爾接受理論性論文。核心範疇為中樞神經系統功能障礙所致病症之心理層面（病因、診斷、治療），亦涵蓋神經心理學服務的提供與評估、倫理與法律議題、教育訓練取向。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://academic.oup.com/acn/article-abstract/38/7/1352/7299732
@@ -237,7 +237,7 @@ Reviewers from NAN (National Academy of Neuropsychology) and broader clinical ne
 - https://academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence
 - https://scirev.org/journal/archives-of-clinical-neuropsychology/ (0 reviews submitted / n/a on all metrics)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **preprint.allowed**: 查無本刊獨立的 preprint 政策頁面；General Instructions 頁面未包含此條款，未找到本刊專屬 preprint 頁面內容。
 - **experiential.review_time_months**: SciRev 該刊條目顯示 0 筆評論，所有欄位為 n/a；小木虫/知乎/Reddit AskAcademia 均查無本刊專門討論串。
 - **experiential.desk_reject_pct**: 同上，SciRev 無資料，中英文論壇皆查無具體數字。
@@ -298,6 +298,7 @@ Low for NAN clinical practice tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from OUP publisher + NAN clinical neuropsychology practice editorial culture domain knowledge | @Zaious |

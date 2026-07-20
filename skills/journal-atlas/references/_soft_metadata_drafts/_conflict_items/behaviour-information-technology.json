@@ -1,0 +1,24 @@
+{
+ "name": "Behaviour & Information Technology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\behaviour-and-information-technology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "existing_value": "No — disclosure-based",
+   "wo2_value": "conditional (gate: \"conditional\")",
+   "why_flagged": "既有欄位已有具體內容（非佔位符），依規則不可覆蓋；但 WO2 將 gate 標記為 conditional，與既有的「No — disclosure-based」用詞不同分類方式，可能只是同一政策的不同標籤法，也可能反映不同判讀，建議人工確認是否需調整措辭。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4 (disclosure-based; AI cannot be listed as author)",
+   "wo2_value": "3",
+   "why_flagged": "兩者皆基於同一份 Taylor & Francis 集團 AI 政策（來源相同 URL），但既有評分為 4、WO2 評分為 3，屬於對同一政策寬嚴程度的不同主觀判斷，非單純補充細節，故列為衝突交人工複核，不逕行覆蓋。"
+  },
+  {
+   "field": "Review Cycle Time > Time to first review / Time to acceptance (total)",
+   "existing_value": "*(pending)* / *(pending)*",
+   "wo2_value": "muchong.com(小木虫) 單一投稿案例：初審約2個月，經reject & resubmit後總計約11個月獲接受(n=1)；fabiaoji.com 另兩則個案顯示拒稿約1-2個月",
+   "why_flagged": "資料僅來自單一或極少數匿名論壇個案(n=1~2)，WO2 自身亦註記「不足以代表整體」，未達到可直接視為『typical time』填入表格的可信度門檻，故不逕行填入，僅供人工參考是否要以個案/範圍形式謹慎補充。"
+  }
+ ]
+}

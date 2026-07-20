@@ -80,7 +80,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows IEEE publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No pre-approval required — conditional disclosure (mandatory for AI-generated technical content; recommended-only for editing/grammar-only use) |
 | **Leniency (1-5)** | 4 |
 | **Summary** | Follows IEEE generative AI policy: disclosure required when AI used to generate technical content. AI cannot be listed as author. Authors retain full responsibility. |
 | **Source URL** | https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/ |
@@ -220,15 +220,15 @@ Reviewers from ACII and IEEE affective computing community. Common demands: "Alg
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 查無 T-AFFC 期刊專屬 AI 政策頁；適用 IEEE 全社通用規則（2023 年生效，涵蓋所有 IEEE 期刊含本刊）：AI 不得列名作者；使用 AI 生成內容（文字/圖/程式碼）須於 acknowledgments 揭露並註明使用的 AI 系統與程度；僅供文法潤飾/編輯用途則不強制揭露（建議揭露）；審稿中的稿件內容不得上傳至公開 AI 平台（視為違反保密義務）。因是 publisher-wide 而非 journal-specific 頁面，signal_quality 定為 2。
+**AI-research finding (policy):** 查無 T-AFFC 期刊專屬 AI 政策頁；適用 IEEE 全社通用規則（2023 年生效，涵蓋所有 IEEE 期刊含本刊）：AI 不得列名作者；使用 AI 生成內容（文字/圖/程式碼）須於 acknowledgments 揭露並註明使用的 AI 系統與程度；僅供文法潤飾/編輯用途則不強制揭露（建議揭露）；審稿中的稿件內容不得上傳至公開 AI 平台（視為違反保密義務）。因是 publisher-wide 而非 journal-specific 頁面，signal_quality 定為 2。
 
-**WO2 positioning finding (what the journal accepts now):** 情感運算跨領域研究：多模態情緒辨識（臉部/語音/生理訊號如EEG）、情感LLM與心理健康應用、社交媒體情感/情緒推理分析。近期(2025) special issue 主題可作為目前徵稿重點的直接證據。
+**AI-research finding (positioning — what the journal accepts now):** 情感運算跨領域研究：多模態情緒辨識（臉部/語音/生理訊號如EEG）、情感LLM與心理健康應用、社交媒體情感/情緒推理分析。近期(2025) special issue 主題可作為目前徵稿重點的直接證據。
 
-**WO2 experiential finding:** 一則經WebSearch聚合之知乎/CSDN文章聲稱拒稿率約70%，但直接抓取該知乎原文(zhuanlan.zhihu.com/p/674046111)遭403拒絕，僅能以搜尋引擎摘要間接佐證，可信度中等，未列為高信度數字。 SciRev唯一一則評論(2.5/5.0整體評分)指出審查過程「不必要地冗長」，且審稿意見疑似對錯稿件（引用非投稿內容的陳述），顯示可能存在審稿混亂個案（樣本數=1，不可泛化）。CSDN/知乎文章形容審稿「較為嚴格」「國人評價高」，中國大陸作者占該刊發文23.3%，中國科學院為主要投稿機構之一，但這些屬於行銷性部落格文字，非嚴謹統計。
+**AI-research finding (experiential):** 一則經WebSearch聚合之知乎/CSDN文章聲稱拒稿率約70%，但直接抓取該知乎原文(zhuanlan.zhihu.com/p/674046111)遭403拒絕，僅能以搜尋引擎摘要間接佐證，可信度中等，未列為高信度數字。 SciRev唯一一則評論(2.5/5.0整體評分)指出審查過程「不必要地冗長」，且審稿意見疑似對錯稿件（引用非投稿內容的陳述），顯示可能存在審稿混亂個案（樣本數=1，不可泛化）。CSDN/知乎文章形容審稿「較為嚴格」「國人評價高」，中國大陸作者占該刊發文23.3%，中國科學院為主要投稿機構之一，但這些屬於行銷性部落格文字，非嚴謹統計。
 
 **Sources cited in this pass:**
 - http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=186558&copyownerid=71031 (TAC_SI 2025: Affective Impact of Next-Generation Intelligent Health Systems)
@@ -241,7 +241,7 @@ Reviewers from ACII and IEEE affective computing community. Common demands: "Alg
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=9466
 - https://zhuanlan.zhihu.com/p/674046111 (indirect, fetch blocked 403, via search snippet only)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: 查無 T-AFFC 或 IEEE Computer Society 官方頁面明確聲明 single-blind 或 double-blind／double-anonymous；WebSearch摘要出現「double-blind」字樣但無法追溯到具體官方來源頁面，判定為AI幻覺風險過高，故留白。
 - **experiential.desk_reject_pct**: SciRev 僅2筆評論未提供 desk-reject 數據；LetPub/知乎/小木虫/CSDN 來源均未提供明確的初篩拒稿百分比，未見任何具體數字，故留白而非套用通用值。
 - **positioning.framing_required**: 未找到期刊要求特定投稿包裝/框架(如必須強調臨床應用或必須含資料集釋出)的具體聲明，故留白。
@@ -298,6 +298,6 @@ Low for affective computing tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from IEEE publisher + ACII affective computing editorial culture domain knowledge | @Zaious |

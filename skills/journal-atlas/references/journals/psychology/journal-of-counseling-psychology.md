@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Double-anonymized (masked review) — confirmed directly on JCP's own Reviewer Guidelines page ("Although *JCP* uses a masked review process..."), not merely inferred from the APA-wide default as previously written. Source: https://www.apa.org/pubs/journals/cou/reviewer-guidelines |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -80,8 +80,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows APA publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
+| **Explicit permission gate?** | Conditional — no prior-approval/opt-in gate required, but disclosure is mandatory (must disclose AI use in Methods/Acknowledgments; AI cannot be listed as author; reviewers/editors barred from inputting manuscripts into AI tools per APA policy) |
+| **Leniency (1-5)** | 4 — permissive on use itself (no pre-approval needed), disclosure-gated. An independent AI-research pass scored this 3/5, weighting the mandatory-disclosure + no-AI-authorship + reviewer-input-ban terms more heavily as constraints. Both scores describe the same APA-wide policy (https://www.apa.org/pubs/journals/policies/) — divergence is scoring-weight, not fact. |
 | **Summary** | Follows APA publisher AI policy: authors must disclose use of generative AI tools (ChatGPT, etc.) in manuscript preparation. AI cannot satisfy authorship criteria. APA requires explicit disclosure in the Methods/Acknowledgments section. |
 | **Source URL** | https://www.apa.org/pubs/journals/policies/ |
 ### Preprint Policy
@@ -218,21 +218,21 @@ Reviewers from APA Division 17 (Society of Counseling Psychology) and broader co
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** APA公司統一政策適用於旗下所有期刊(含本刊，未見期刊層級加嚴版本)。允許作者使用生成式AI輔助草擬、編輯、翻譯、程式碼、文獻回顧、圖表製作，但強制要求在方法/作者註或相關位置揭露並引用所用AI工具；AI不得列為作者；作者須自行驗證AI產生內容的正確性並負全責。審稿人與編輯被明文禁止將投稿內容輸入生成式AI工具(視為違反同行評審保密性)。故評為「有條件開放」：允許使用+強制揭露，屬中等寬容度(3/5)，非全面禁止亦非完全不設限。
+**AI-research finding (policy):** APA公司統一政策適用於旗下所有期刊(含本刊，未見期刊層級加嚴版本)。允許作者使用生成式AI輔助草擬、編輯、翻譯、程式碼、文獻回顧、圖表製作，但強制要求在方法/作者註或相關位置揭露並引用所用AI工具；AI不得列為作者；作者須自行驗證AI產生內容的正確性並負全責。審稿人與編輯被明文禁止將投稿內容輸入生成式AI工具(視為違反同行評審保密性)。故評為「有條件開放」：允許使用+強制揭露，屬中等寬容度(3/5)，非全面禁止亦非完全不設限。
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://www.apa.org/pubs/journals/cou/
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now / methods_welcome / framing_required**: APA journal page only gave general aims-and-scope text (counseling activities, career/vocational development, diversity, measure development, theoretical reviews); no 2024-2026 recent article titles, no current special-issue CFP were retrieved via WebFetch/WebSearch in this session. Would need PsycNet table-of-contents scraping (not accessible/rate-limited here) to populate accepts_now and methods_welcome with real evidence.
 - **experiential.review_time_months**: No dedicated SciRev page exists for this journal (confirmed via direct search — only related journals like Journal of Counseling and Development have SciRev entries). LetPub's Chinese-author-experience page for this journal explicitly states '同领域作者分享投稿经验：共0条' (0 shared submission experiences) — zero first-hand entries. A third-party aggregator (tougaozixun.com) surfaced numbers via search snippet (~6 days first decision, ~44 days review, ~54 days to acceptance) but the source page returned HTTP 403 on fetch, so provenance/methodology could not be verified as first-hand rather than auto-scraped/estimated; excluded per facts-only rule rather than risk citing unverified/possibly-fabricated aggregator math.
 - **experiential.desk_reject_pct**: No source (SciRev, zhihu, muchong, Reddit, letpub) returned any concrete desk-reject percentage for this journal.
@@ -293,6 +293,7 @@ Low for counseling-tradition authors. Multicultural / positionality framing expe
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5) / Explicit permission gate?; Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from APA publisher + APA Division 17 / SCP counseling-psychology editorial culture domain knowledge | @Zaious |

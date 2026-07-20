@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Springer default — varies by journal) |
+| **Type** | Single-blind (confirmed via journal's own Submission Guidelines page, which states "This journal follows a single-blind reviewing procedure" — reviewers see author identity, authors do not see reviewer identity) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Springer default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -80,8 +80,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Springer Nature publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
+| **Explicit permission gate?** | Conditional — disclosure required if AI/LLM used to generate manuscript content (in Methods or an appropriate section); AI/LLM cannot be listed as author; disclosure NOT required for AI-assisted copyediting/polishing only; AI-generated images are generally not permitted in the published work. Not a strict pre-approval gate. |
+| **Leniency (1-5)** | 3 |
 | **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria. AI use must be disclosed in Materials/Methods or Acknowledgments. |
 | **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
 ### Preprint Policy
@@ -219,15 +219,15 @@ Reviewers from HRI conference community + IEEE robotics overlap. Common demands:
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 跟隨 Springer Nature 標準政策(非期刊特有客製條款)。LLM(如 ChatGPT)不符合作者資格認定標準(因無法承擔當責),但可用於寫作輔助,須在 Methods 章節(或適當替代處)揭露使用情形。「AI 輔助文字潤色」(改善可讀性、文法、拼寫,不涉及內容生成)則免揭露。生成式 AI 圖像:依 Springer Nature 通用政策,原則上不允許出版品中含 AI 生成圖像。此為 permission gate=conditional(可用但需揭露,非全開放亦非全面禁止)。
+**AI-research finding (policy):** 跟隨 Springer Nature 標準政策(非期刊特有客製條款)。LLM(如 ChatGPT)不符合作者資格認定標準(因無法承擔當責),但可用於寫作輔助,須在 Methods 章節(或適當替代處)揭露使用情形。「AI 輔助文字潤色」(改善可讀性、文法、拼寫,不涉及內容生成)則免揭露。生成式 AI 圖像:依 Springer Nature 通用政策,原則上不允許出版品中含 AI 生成圖像。此為 permission gate=conditional(可用但需揭露,非全開放亦非全面禁止)。
 
-**WO2 positioning finding (what the journal accepts now):** 2024-2026近期發表主題明顯轉向LLM與生成式AI在社交機器人上的應用與倫理審視: 'LLM-Driven Robots Risk Enacting Discrimination, Violence, and Unlawful Actions'、'Focus Group-Led Refinement of an LLM-Enabled Companion Robot for Older People'、'Socially Assistive Robots in Mental Healthcare: Principles and Conceptual Framework for User-Centered Design'、'Concerns and Values in Human-Robot Interactions: A Focus on Social Robotics'。傳統範疇涵蓋核心賦能技術、系統整合、美學設計、應用與社會意涵,橫跨工程、計算、藝術與社會科學。
+**AI-research finding (positioning — what the journal accepts now):** 2024-2026近期發表主題明顯轉向LLM與生成式AI在社交機器人上的應用與倫理審視: 'LLM-Driven Robots Risk Enacting Discrimination, Violence, and Unlawful Actions'、'Focus Group-Led Refinement of an LLM-Enabled Companion Robot for Older People'、'Socially Assistive Robots in Mental Healthcare: Principles and Conceptual Framework for User-Centered Design'、'Concerns and Values in Human-Robot Interactions: A Focus on Social Robotics'。傳統範疇涵蓋核心賦能技術、系統整合、美學設計、應用與社會意涵,橫跨工程、計算、藝術與社會科學。
 
-**WO2 experiential finding:** 第三方(非首手)聚合站LetPub估算2024年投稿483篇、接受110篇,約25%接受率;此為聚合估算而非期刊官方或首手投稿人數據,可信度中等。 
+**AI-research finding (experiential):** 第三方(非首手)聚合站LetPub估算2024年投稿483篇、接受110篇,約25%接受率;此為聚合估算而非期刊官方或首手投稿人數據,可信度中等。 
 
 **Sources cited in this pass:**
 - https://link.springer.com/article/10.1007/s12369-025-01301-x
@@ -241,7 +241,7 @@ Reviewers from HRI conference community + IEEE robotics overlap. Common demands:
 - https://www.scirev.org/journal/international-journal-of-social-robotics/
 - https://www.youfabiao.com/sci/18754791/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **review_time_months**: SciRev頁面明確顯示0篇評論,所有數據為'n/a'。中文聚合站(gwyoo、youfabiao)僅泛稱審稿時間較長、請預留充裕時間,無具體月數且非首手投稿人陳述,不採信為具體數字。
 - **desk_reject_pct**: 所有查詢來源(SciRev、LetPub、gwyoo、youfabiao)皆未提供具體退稿率數據,LetPub頁面顯示7則評論但內容需登入才能檢視,未能取得。
 - **reviewer_culture**: 未在小木蟲(muchong.com)、知乎、Reddit r/AskAcademia找到任何針對此期刊的具體投稿人討論串或評論;僅有期刊本身及聚合站的制式介紹文字,無首手審稿文化描述可徵引。
@@ -297,6 +297,7 @@ Low for HRI tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing Tier-2 entry and AI-research supplement: (1) Peer Review Type corrected "Double-anonymized (Springer default guess)" → "Single-blind", verified live against the journal's own Submission Guidelines page text ("This journal follows a single-blind reviewing procedure"); (2) AI Policy gate reworded "No — disclosure-based" → "Conditional" and Leniency 4 → 3, harmonizing wording/scoring with the same Springer Nature AI policy as applied to other journals in this KB (e.g. Nature Machine Intelligence). See conflict-resolution pass. | @Zaious (via conflict-resolution agent) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + HRI conference community editorial culture domain knowledge | @Zaious |

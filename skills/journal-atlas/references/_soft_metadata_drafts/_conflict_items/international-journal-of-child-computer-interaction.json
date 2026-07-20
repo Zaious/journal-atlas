@@ -1,0 +1,12 @@
+{
+ "name": "International Journal of Child-Computer Interaction",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-child-computer-interaction.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "Double-blind, minimum 2 referees (來源: https://www.editage.com/research-solutions/journal/international-journal-of-child-computer-interaction/28946)",
+   "why_flagged": "既有條目標注為single-blind，但僅是基於Elsevier集團預設值的推測（並已自行註明『varies by journal』）；WO2從Editage的該刊專屬頁面找到具體資訊，明確指出此刊為double-blind且至少2位審稿人。兩者為single-blind vs double-blind的實質矛盾，且WO2來源看似指向該刊專屬條目而非集團泛用預設，建議人工核對官方Guide for Authors頁面（sciencedirect頁面曾回傳403無法直接驗證）以確認何者正確，故不代為覆蓋。"
+  }
+ ]
+}

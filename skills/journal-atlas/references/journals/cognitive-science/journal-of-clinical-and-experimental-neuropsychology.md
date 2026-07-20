@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per T&F default) |
+| **Type** | Single-anonymized (single-blind); editor-mediated initial appraisal before referee assignment (journal's own "About this journal" page states "All peer review is single anonymized" — confirmed 2026-07-20, supersedes earlier T&F-default double-anonymized assumption) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per T&F default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -220,15 +220,15 @@ Reviewers from INS (International Neuropsychological Society) and broader clinic
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** This is the PUBLISHER-WIDE Taylor & Francis policy (dated 2024-06-12), not a journal-specific page for JCEN (JCEN has no separate AI policy page found; its own 'Instructions for Authors' page on tandfonline.com/journals/ncen20 returned HTTP 403 to automated fetch, so journal-level reproduction could not be independently confirmed). Per T&F: generative AI is permitted for idea generation, coding, language improvement, and research dissemination; AI cannot be credited as author; authors must disclose/acknowledge AI use; AI use that risks inaccuracy, bias, IP violation, or breaches of confidentiality is prohibited; editors/reviewers barred from using AI in ways that undermine peer-review confidentiality/quality. No explicit statement found on AI-generated images/figures. Scored 3/5: broadly permissive with mandatory disclosure gate, not a ban, not fully open.
+**AI-research finding (policy):** This is the PUBLISHER-WIDE Taylor & Francis policy (dated 2024-06-12), not a journal-specific page for JCEN (JCEN has no separate AI policy page found; its own 'Instructions for Authors' page on tandfonline.com/journals/ncen20 returned HTTP 403 to automated fetch, so journal-level reproduction could not be independently confirmed). Per T&F: generative AI is permitted for idea generation, coding, language improvement, and research dissemination; AI cannot be credited as author; authors must disclose/acknowledge AI use; AI use that risks inaccuracy, bias, IP violation, or breaches of confidentiality is prohibited; editors/reviewers barred from using AI in ways that undermine peer-review confidentiality/quality. No explicit statement found on AI-generated images/figures. Scored 3/5: broadly permissive with mandatory disclosure gate, not a ban, not fully open.
 
-**WO2 positioning finding (what the journal accepts now):** Empirical clinical/experimental neuropsychology research: brain-behavior relationships, cognitive aging, neurodegenerative disease (Alzheimer's, Parkinson's), performance/symptom validity testing, training/education in neuropsychology, biomarkers, and psychometrics. Recent 2025-2026 PubMed-listed articles include: cognitive outcomes in former college athletes, childhood disadvantage and late-life cognition (Swedish longitudinal cohort), facial emotion recognition in social anxiety disorder, longitudinal stability of specific learning disability diagnoses, performance validity test failure rates in long-COVID cognitive complaints, a systematic review of the gut-brain axis in Alzheimer's/Parkinson's, sex-specific reproductive history and cognitive aging, and an ethics discussion of blood-based Alzheimer's biomarkers. A 2025 special issue covered Society for Clinical Neuropsychology / APA 2024 convention programming, with several papers on neuropsychology training/education (doctoral coursework syllabi, digital-platform training equity, trainee survey).
+**AI-research finding (positioning — what the journal accepts now):** Empirical clinical/experimental neuropsychology research: brain-behavior relationships, cognitive aging, neurodegenerative disease (Alzheimer's, Parkinson's), performance/symptom validity testing, training/education in neuropsychology, biomarkers, and psychometrics. Recent 2025-2026 PubMed-listed articles include: cognitive outcomes in former college athletes, childhood disadvantage and late-life cognition (Swedish longitudinal cohort), facial emotion recognition in social anxiety disorder, longitudinal stability of specific learning disability diagnoses, performance validity test failure rates in long-COVID cognitive complaints, a systematic review of the gut-brain axis in Alzheimer's/Parkinson's, sex-specific reproductive history and cognitive aging, and an ethics discussion of blood-based Alzheimer's biomarkers. A 2025 special issue covered Society for Clinical Neuropsychology / APA 2024 convention programming, with several papers on neuropsychology training/education (doctoral coursework syllabi, digital-platform training equity, trainee survey).
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://newsroom.taylorandfrancisgroup.com/expanded-guidance-on-ai-application-for-authors-editors-and-reviewers/
@@ -236,7 +236,7 @@ Reviewers from INS (International Neuropsychological Society) and broader clinic
 - https://scirev.org/journal/journal-of-clinical-and-experimental-neuropsychology/ (0 reviews submitted, all fields n/a)
 - https://www.tandfonline.com/journals/ncen20/about-this-journal
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.gate / journal-specific confirmation**: Could not confirm on tandfonline.com/journals/ncen20 (author guidelines page returned HTTP 403 to automated fetch); recorded is the publisher-wide T&F policy only, not verified as reproduced verbatim on JCEN's own instructions-for-authors page.
 - **experiential.review_time_months**: SciRev page for this journal shows 0 submitted reviews and 'n/a' for handling time / acceptance % / desk-reject %. A third-party aggregator claimed '43 days review speed, 36% acceptance rate' but this is a secondary metrics site of unclear methodology/provenance, not a first-hand author report or the publisher's own stat, so it was excluded per the facts-only/no-filler rule.
 - **experiential.desk_reject_pct**: No first-hand source; SciRev shows 'n/a', no forum discussion found.
@@ -295,6 +295,7 @@ Low for INS clinical-experimental tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflict: Peer Review Type corrected from assumed "Double-anonymized (per T&F default)" to verified "Single-anonymized" per journal's own About-this-journal page. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from T&F publisher + INS clinical neuropsychology editorial culture domain knowledge | @Zaious |

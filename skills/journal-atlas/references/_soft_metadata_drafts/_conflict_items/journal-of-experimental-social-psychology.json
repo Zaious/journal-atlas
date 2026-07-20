@@ -1,0 +1,24 @@
+{
+ "name": "Journal of Experimental Social Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-social-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "Double-anonymized (double-blind) peer review; minimum 2 independent reviewers after editor suitability screen; one formal appeal allowed per submission (source: ScienceDirect guide-for-authors, 'Peer review' / 'Double anonymized peer review' section, browser-rendered 2026-07-13)",
+   "why_flagged": "現有欄位是套用 Elsevier 集團「預設值」的猜測性描述(註明「varies by journal」),而 WO2 直接引用該刊自己的 Guide for Authors,明確指出 JESP 採雙盲審稿並附帶審稿人數與申訴機制細節。這是實質矛盾(single-blind default vs. 確認為 double-blind),非單純補充細節,依規則應留待人工核實後決定是否覆蓋,不可逕行覆寫既有欄位。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time (Time to first decision / Time to acceptance total)",
+   "existing_value": "*(fill manually)*",
+   "wo2_value": "experiential.review_time_months: SciRev 顯示首輪審稿(至第一次決定)約 2.1 個月,接受稿件總處理時間約 2.1 個月(僅單筆近期樣本);另有知乎文章聲稱平均 5-7 個月,兩來源差異大且知乎非一手審稿人證言,signal_quality 僅 2/5",
+   "why_flagged": "此欄位雖為空白(placeholder),但 WO2 自身在 blanks 與內文中明確表示『兩來源數字差異大,未能交叉驗證,故僅並陳不取單一數字』,訊號品質僅 2/5 且樣本數為 1。這不構成『有把握的、有來源根據的答案』,若逕行填入會把一組自承不可靠、互相矛盾的數字寫進期刊的正式指標表,有誤導風險,故不予直接編輯,建議人工進一步查證(如 Editorial Manager 公開統計或作者投稿經驗)後再決定是否填入。"
+  },
+  {
+   "field": "Policies > AI Policy > Summary (reviewer/editor AI use scope)",
+   "existing_value": "Reviewers/editors not permitted to use AI during peer review.",
+   "wo2_value": "審稿人/編輯明確被禁止把未發表稿件上傳到生成式 AI 工具,僅能用 AI 輔助潤飾審稿意見文字或做背景文獻搜尋。(source: ScienceDirect guide-for-authors, 'Declaration of generative AI use' 與 elsevier.com generative-ai-policies-for-journals)",
+   "why_flagged": "現有摘要是「審稿全程禁用 AI」的一刀切描述,WO2 找到的是更細緻的規則:禁止上傳未發表稿件,但允許用 AI 潤飾審稿意見文字/做背景搜尋。這屬於範圍上的實質差異(禁止 vs. 有限度允許),不是單純補充細節,依規則此欄位本已有實質內容(非佔位符)不可逕行編輯,故列為衝突交由人工核實後決定是否修訂措辭。"
+  }
+ ]
+}

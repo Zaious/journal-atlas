@@ -1,0 +1,18 @@
+{
+ "name": "Cognition",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognition.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "Double-anonymized (double-blind) peer review; editors screen for suitability first, then typically send to a minimum of two independent expert reviewers (source: https://www.sciencedirect.com/journal/cognition/publish/guide-for-authors)",
+   "why_flagged": "既有值是根據 Elsevier 通用預設推測的（single-blind），WO2 則引用該刊自己的 guide-for-authors 頁面明確指出是 double-anonymized/double-blind——兩者是實質矛盾而非只是細節補充，需要人工查證 guide-for-authors 原文後才能定案，不應自動覆蓋。"
+  },
+  {
+   "field": "Policies > Preprint Policy (supplementary detail, not contradictory)",
+   "existing_value": "Pre-submission | Yes (Elsevier article sharing policy permits preprints)",
+   "wo2_value": "Cognition additionally offers a free preprint-posting service via SSRN: during submission authors can opt to have their manuscript posted publicly on SSRN as soon as it passes initial editorial screening (source: https://www.elsevier.com/about/policies-and-standards/sharing).",
+   "why_flagged": "此為補充性質的具體服務細節（SSRN 自動預印本張貼服務），與既有值不衝突，但既有儲存格已有實質內容（非 placeholder），依規則不應直接覆蓋填入；留給人工評估是否值得補述在 Notes 欄。"
+  }
+ ]
+}

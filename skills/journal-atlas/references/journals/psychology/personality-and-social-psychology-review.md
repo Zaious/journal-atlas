@@ -218,15 +218,15 @@ Reviewers from SPSP-affiliated personality / social psychology research communit
 | **Data transparency requirement** | N/A |
 | **OPSEC compatibility** | High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** PSPR follows SAGE's group-wide generative AI policy (no journal-specific variant found): AI chatbots (e.g. ChatGPT) may not be listed as authors; use in the writing process must be disclosed via a declaration, per SAGE's ICMJE-aligned guidance requiring a 'Declaration of Generative AI and AI-assisted technologies in the writing process' section before references. No blanket ban on AI-assisted writing was found, but no explicit allowance for AI use in data/analysis was found either — treated as conditional (disclosure-gated) rather than fully open.
+**AI-research finding (policy):** PSPR follows SAGE's group-wide generative AI policy (no journal-specific variant found): AI chatbots (e.g. ChatGPT) may not be listed as authors; use in the writing process must be disclosed via a declaration, per SAGE's ICMJE-aligned guidance requiring a 'Declaration of Generative AI and AI-assisted technologies in the writing process' section before references. No blanket ban on AI-assisted writing was found, but no explicit allowance for AI use in data/analysis was found either — treated as conditional (disclosure-gated) rather than fully open.
 
-**WO2 positioning finding (what the journal accepts now):** PSPR explicitly does NOT publish primary empirical studies. It bills itself as 'the premiere outlet for original theoretical papers and conceptual review articles in all areas of personality and social psychology' and states it prioritizes manuscripts presenting 'novel theoretical insights that emerge from a deep integration of previously-published empirical research.' Confirmed recent (2025-2026) accepted content: a theoretical-framework paper on gaslighting (Klein, Wood & Bartz, June 2025), a theoretical framework on AI-enabled radicalization to violence (March 2026), and a Chinese-scholar-authored theory paper on cross-cultural causal attribution (Ge, 2025).
+**AI-research finding (positioning — what the journal accepts now):** PSPR explicitly does NOT publish primary empirical studies. It bills itself as 'the premiere outlet for original theoretical papers and conceptual review articles in all areas of personality and social psychology' and states it prioritizes manuscripts presenting 'novel theoretical insights that emerge from a deep integration of previously-published empirical research.' Confirmed recent (2025-2026) accepted content: a theoretical-framework paper on gaslighting (Klein, Wood & Bartz, June 2025), a theoretical framework on AI-enabled radicalization to violence (March 2026), and a Chinese-scholar-authored theory paper on cross-cultural causal attribution (Ge, 2025).
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - http://letpub.com.cn/index.php?journalid=11462&page=journalapp&view=detail (Chinese-author example article title, 2025)
@@ -236,7 +236,7 @@ Reviewers from SPSP-affiliated personality / social psychology research communit
 - https://scirev.org/journal/personality-and-social-psychology-review/ — only 1 data point on record: an immediate-rejection decision reported at 6 days, with one free-text comment 'Very courteous and helpful editor. 10/10 would submit again to this journal.' No data for full review-round duration, desk-reject %, or acceptance rate.
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11250585/ (Editorial: Reviews in personality and social psychology)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev has only one logged review (an immediate rejection at 6 days) — not representative of a full review-round timeline; LetPub's Chinese-author review-cycle field is unpopulated; no muchong/zhihu/Reddit threads specific to PSPR were found.
 - **experiential.desk_reject_pct**: No source publishes or reports a desk-reject rate for PSPR; SciRev has n=1 entry, insufficient to estimate a percentage.
 - **experiential.reviewer_culture**: No concrete first-hand narrative beyond a single generic SciRev comment ('courteous and helpful editor'), too thin to characterize a reviewer culture. No PTT/muchong/zhihu/Reddit threads found.
@@ -294,6 +294,6 @@ Moderate. Integrative-review writing demands extensive engagement with subfield 
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from SAGE publisher + SPSP review-journal editorial culture domain knowledge | @Zaious |

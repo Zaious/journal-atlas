@@ -1,0 +1,12 @@
+{
+ "name": "Computational Linguistics",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\computational-linguistics.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per ACL default)",
+   "wo2_value": "Single-blind (NOT double-blind) — authors' names/affiliations are on the manuscript and known to editors and reviewers; reviewers' identities are not disclosed to authors. (source: https://cljournal.org/submissions.html)",
+   "why_flagged": "現有條目與 WO2 對審稿匿名制度的描述直接矛盾（雙盲 vs 單盲），且 WO2 引用的是期刊自己的投稿頁面，證據強度不低，需要人工查證 cljournal.org/submissions.html 後再決定是否修正，不宜自動覆蓋既有內容。"
+  }
+ ]
+}

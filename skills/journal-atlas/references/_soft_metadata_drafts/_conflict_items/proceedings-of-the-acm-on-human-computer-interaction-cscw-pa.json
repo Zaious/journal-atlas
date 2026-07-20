@@ -1,0 +1,18 @@
+{
+ "name": "Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-cscw.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher policy)",
+   "wo2_value": "Double-blind, journal-style multi-round review (revise-and-resubmit); varies by track (CSCW/EICS/MobileHCI/ISS/CHI PLAY each have their own track and cycle). Source: https://cscw.acm.org/2026/blog/reviewprocess.html",
+   "why_flagged": "現有值為家族通則推測(single-blind),WO2 從 CSCW 官方審稿流程頁直接查得為 double-blind(且明確要求投稿完全匿名化,這點在現有檔案 AI Policy 摘要裡其實也提到『CSCW track 額外要求投稿完全匿名化(雙盲審)』,與此處 Type 欄位的 single-blind 描述互相矛盾)。這是實質性衝突而非單純補細節,需人工核實後再決定是否覆蓋。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "*(community estimate; varies by year)*",
+   "wo2_value": "CSCW 主軌歷年約 25-36%(2013-2019,openaccept.org 統計);MobileHCI 2025 軌道 27.2%;ISS/ETRA 等特刊約 30% 上下 —— WO2 自行註明『未涵蓋近年 rolling 制改版後數據』",
+   "why_flagged": "此欄位現有文字雖為模糊估計但已有『varies by year』的實質性措辭,不完全符合空白格判定;且 WO2 提供的具體數字本身明確標註是 2013-2019 的舊制數據、未涵蓋 CSCW 近年改為 rolling review 制後的現況,若直接填入恐誤導讀者以為是當前接受率。建議人工評估是否要以『歷史區間僅供參考』的方式呈現,而非由此次比對逕自覆蓋。"
+  }
+ ]
+}

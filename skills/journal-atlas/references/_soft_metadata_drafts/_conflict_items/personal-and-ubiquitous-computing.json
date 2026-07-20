@@ -1,0 +1,24 @@
+{
+ "name": "Personal and Ubiquitous Computing",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\personal-and-ubiquitous-computing.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "2 (WO2 ai_policy.leniency_1_5, signal_quality 2/5)",
+   "why_flagged": "同一個「寬鬆度」量表在既有條目與 WO2 給出明顯不同的數值(4 對 2),兩者描述的政策內容本身(揭露即可、非全面許可也非全面禁止)其實一致,只是主觀寬鬆度評分不同,屬於需要人工重新校準的實質分歧,不應由此次自動合併逕自二選一覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements (out of scope,僅供人工參考)",
+   "existing_value": "Mandatory framing? Yes (soft) — 需展現 personal/ubiquitous computing 貢獻(mobile、wearable、IoT、smart environments),純 HCI 或純 IoT 工程會被redirect。",
+   "wo2_value": "positioning.framing_required: 期刊官方 aims & scope 明文要求所有文章須具備強烈 human-centred、使用者或設計觀點,須透過設計研究/參與式設計/民族誌方法/負責任研究方法/田野使用者研究呈現;純技術/演算法論文若無使用者研究成分可能不符範疇。",
+   "why_flagged": "WO2 的措辭把強制框架的重點放在「必須有使用者研究方法論」而非既有條目強調的「必須是行動/穿戴/IoT主題」,兩者角度不同、可能互補也可能需要調整既有描述,但屬於 Soft Metadata 主觀子區塊(範圍外),依規則僅記錄供人工判斷,不逕自編輯。"
+  },
+  {
+   "field": "Soft Metadata > Methodological Preferences (out of scope,僅供人工參考)",
+   "existing_value": "現有方法接受度表未列出 LLM/生成式 AI 分析穿戴式或行動感測資料 這類方法。",
+   "wo2_value": "positioning.methods_welcome 列出 \"LLM/生成式 AI 應用於穿戴式與行動感測資料分析\" 為期刊近期(2024-2026)明顯接受的新興方法之一,並在 accepts_now 中舉了具體例子(LLM 驅動活動辨識、IoT 任務推理等)。",
+   "why_flagged": "屬於期刊近期投稿趨勢的補充觀察,可能值得未來人工把「LLM 輔助感測資料分析」新增進方法偏好表或 Best Suited For,但這屬於範圍外的主觀評估子區塊,故僅記錄不逕自編輯。"
+  }
+ ]
+}

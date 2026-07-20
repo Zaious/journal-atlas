@@ -1,0 +1,24 @@
+{
+ "name": "Journal of Psychopathology and Clinical Science (formerly Journal of Abnormal Psychology)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-psychopathology-and-clinical-science.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Single-anonymous by default; masked (double-anonymous) review is optional and must be explicitly requested by the author in the cover letter — this is APA's standard practice referenced for this journal.",
+   "why_flagged": "現有欄位已有具體內容（非佔位符），但 WO2 的結論與現有內容直接矛盾：現有寫「預設雙盲」，WO2 寫「預設單盲，雙盲需作者主動於 cover letter 要求」。這是實質分歧而非細節補充，且 WO2 自己在 blanks 中承認未找到 JPCS 專屬（相對於 APA 通用慣例）的確認聲明，故不予覆蓋，交由人工核實。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Under review 列",
+   "existing_value": "No updates",
+   "wo2_value": "Yes, permitted. APA (publisher-wide policy covering this journal) explicitly supports posting preprints before and during submission; no restriction found specific to JPCS.",
+   "why_flagged": "現有表格已有具體內容，WO2 的說法（『投稿前及投稿期間皆可張貼/更新』）與現有『審查中不可更新』存在潛在牴觸。且 WO2 引用來源是一篇 SAGE 期刊的 DOI（非 APA 官方頁面），來源與該期刊出版社不符，可信度存疑，故不採用，僅供人工複核。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements（範疇外，僅供參考）",
+   "existing_value": "Mandatory framing: mechanism-focused clinical-science contribution; anti-stigma framing expected",
+   "wo2_value": "positioning.framing_required: 'Work should be framed as basic/etiological science relevant to psychopathology mechanisms rather than purely applied/clinical-intervention-outcome studies... Currently soliciting a special issue specifically on medical assistance in dying.'",
+   "why_flagged": "此為主觀/定位類欄位，依規則不可直接編輯，僅作為人工複核用的補充發現：WO2 進一步指出目前有一個關於『醫助死亡（medical assistance in dying）』的徵稿專刊，且強調『基礎/病因學研究』相對於『應用/臨床介入結果研究』的定位區分，可作為現有 Framing Requirements 段落未來人工更新時的參考素材。"
+  }
+ ]
+}

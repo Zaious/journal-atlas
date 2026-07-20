@@ -220,15 +220,15 @@ Reviewers drawn primarily from the educational psychology and learning sciences 
 | **Data transparency requirement** | High — open data and preregistration encouraged (APA badges) |
 | **OPSEC compatibility** | Medium — educational data anonymizable but transparency norms apply |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** APA 出版政策(適用全部 APA 期刊,含 JEP,無 JEP 專屬頁面):允許作者使用生成式 AI 協助撰稿/文獻檢索/程式/資料視覺化等,但 AI 不得列名作者,且須在對應章節(Intro/Methods/Author note 依用途而定)揭露使用之工具與方式,作者對 AI 產出內容(含引用文獻)之正確性負完全責任。無需事前向編輯部申請許可(non-gate),但揭露為強制要求,故標記為 conditional(有條件放行,非全開放亦非全面禁止)。未查到 JEP 特定於此政策外之額外規定。
+**AI-research finding (policy):** APA 出版政策(適用全部 APA 期刊,含 JEP,無 JEP 專屬頁面):允許作者使用生成式 AI 協助撰稿/文獻檢索/程式/資料視覺化等,但 AI 不得列名作者,且須在對應章節(Intro/Methods/Author note 依用途而定)揭露使用之工具與方式,作者對 AI 產出內容(含引用文獻)之正確性負完全責任。無需事前向編輯部申請許可(non-gate),但揭露為強制要求,故標記為 conditional(有條件放行,非全開放亦非全面禁止)。未查到 JEP 特定於此政策外之額外規定。
 
-**WO2 positioning finding (what the journal accepts now):** 以量化實證研究為主的教育心理學原創研究，涵蓋各年齡層與教育階段；偶爾刊登具重大意義的統合分析(meta-analysis)與理論性回顧文章。不收特定測驗工具的信效度研究。近期(2024-2026)主題示例：沉浸式虛擬實境與生成式學習策略對學習之影響、同儕社會接納與學業成就、一年級學童基模導向文字應用題介入。
+**AI-research finding (positioning — what the journal accepts now):** 以量化實證研究為主的教育心理學原創研究，涵蓋各年齡層與教育階段；偶爾刊登具重大意義的統合分析(meta-analysis)與理論性回顧文章。不收特定測驗工具的信效度研究。近期(2024-2026)主題示例：沉浸式虛擬實境與生成式學習策略對學習之影響、同儕社會接納與學業成就、一年級學童基模導向文字應用題介入。
 
-**WO2 experiential finding:** SciRev 樣本極小(僅 3 筆評論)：首輪審查平均 2.0 個月，總處理時間 2.0 個月，快速拒稿(desk reject)平均約 5 天。最新一筆評論為拒稿案例，評論者表示「編輯很快就拒絕了，其實還蠻感謝的」。品質評分與整體處理評分均為 4.0/5.0。另一獨立管道(第三方學術服務網站彙整之非第一手數據)提及首輪審稿約 60 天、3 位審稿人、1-3 輪審查，但無法追溯至具名一手投稿者評論，故僅作為輔助參考不單獨採信。 
+**AI-research finding (experiential):** SciRev 樣本極小(僅 3 筆評論)：首輪審查平均 2.0 個月，總處理時間 2.0 個月，快速拒稿(desk reject)平均約 5 天。最新一筆評論為拒稿案例，評論者表示「編輯很快就拒絕了，其實還蠻感謝的」。品質評分與整體處理評分均為 4.0/5.0。另一獨立管道(第三方學術服務網站彙整之非第一手數據)提及首輪審稿約 60 天、3 位審稿人、1-3 輪審查，但無法追溯至具名一手投稿者評論，故僅作為輔助參考不單獨採信。 
 
 **Sources cited in this pass:**
 - https://research.com/journal/journal-of-educational-psychology
@@ -236,7 +236,7 @@ Reviewers drawn primarily from the educational psychology and learning sciences 
 - https://www.apa.org/pubs/journals/edu
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.acceptance_desk_reject_pct**: SciRev 該期刊僅 3 筆評論且未提供整體 acceptance rate 數字(顯示為 n/a)，樣本太小不足以量化 desk-reject 百分比，故留空。
 - **experiential.reviewer_culture**: 小木虫(muchong.com)、知乎、Reddit r/AskAcademia 均未搜得針對 Journal of Educational Psychology 的第一手審稿文化討論；知乎唯一相關文章(zhuanlan.zhihu.com/p/611591759)因該站反爬蟲機制回傳 403，無法擷取內文查證，不可採信為來源，故此欄位留空。
 - **positioning.framing_required (special issue CFP)**: APA 官方 Calls for papers 頁面確認 JEP 目前僅有 general call for submissions，無主題式特刊或 CFP 可供列出。
@@ -297,6 +297,6 @@ Low for educational-psychology empirical authors. Moderate for cross-disciplinar
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

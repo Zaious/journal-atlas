@@ -1,0 +1,18 @@
+{
+ "name": "Contemporary Educational Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\contemporary-educational-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "double-anonymized (double-blind), per third-party aggregator (LetPub/scispace-derived search summary); journal's own guide-for-authors page returned HTTP 403, not independently confirmed",
+   "why_flagged": "現有值與 WO2 對本期刊實際審稿型態的判斷方向相反（單盲 vs 雙盲），且雙方都非一手來源確認（現有為 Elsevier 預設推論、WO2 為第三方聚合網頁摘要且原始頁面 403），屬於實質分歧而非單純補充細節，需人工查證後再定奪，不應直接覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements（超出本次授權範圍的主觀子章節）",
+   "existing_value": "Mandatory framing? Yes (soft) — Manuscripts must demonstrate contemporary educational psychology contribution",
+   "wo2_value": "positioning.framing_required: 期刊明確偏好嚴謹的質性/量化/混合方法實證研究，樣本需具代表性、置於真實教學情境中；純理論或非實證投稿不受鼓勵",
+   "why_flagged": "WO2 提供了更具體的『偏好實證研究、不鼓勵純理論投稿』定位資訊，可能對 Framing Requirements 或 Methodological Preferences 這類主觀章節有參考價值，但這些章節在本次任務範圍之外，故僅列為衝突／補充發現供人工評估是否納入，不做直接編輯。"
+  }
+ ]
+}

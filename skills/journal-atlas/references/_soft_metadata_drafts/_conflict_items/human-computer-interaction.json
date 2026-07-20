@@ -1,0 +1,12 @@
+{
+ "name": "Human-Computer Interaction",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\human-computer-interaction.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate?",
+   "existing_value": "Leniency 4（disclosure-based; AI cannot be listed as author）；Explicit permission gate = No — disclosure-based",
+   "wo2_value": "leniency_1_5: 3；gate: \"conditional\"（WO2 signal_quality 僅 2/5，且承認未能直接讀到 hhci20 專屬頁面，403 fetch 失敗，是用 T&F 集團通用政策反推）",
+   "why_flagged": "既有欄位已有具體內容（非佔位符），WO2 給出的寬容度評分與 gate 類型與既有評分不同、屬於實質分歧而非單純補充細節，故不逕自覆蓋，留待人工判斷孰優（尤其 WO2 自身信心不高，403 多次未能讀到期刊專屬頁）。"
+  }
+ ]
+}

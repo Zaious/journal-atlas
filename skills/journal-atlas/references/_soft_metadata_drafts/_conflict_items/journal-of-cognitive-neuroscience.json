@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Cognitive Neuroscience",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-cognitive-neuroscience.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Has journal-specific AI policy? / Leniency)",
+   "existing_value": "Has journal-specific AI policy? = \"No (follows MIT Press publisher default)\"；Leniency (1-5) = 4",
+   "wo2_value": "gate = \"conditional\"（JoCN 有專屬 AI 政策，補充 MIT Press 出版倫理，屬 conditional gate）；leniency_1_5 = 3",
+   "why_flagged": "屬直接矛盾而非單純補充細節：現有條目認定「無專屬政策、僅遵循 MIT Press 預設」，WO2 調查則認定「JoCN 確有專屬 AI 政策」，且寬嚴度評分（4 vs 3）也不同。此矛盾此前已被同一 WO2 研究批次以獨立補充意見形式記錄在 Soft Metadata > AI-Research Notes 區塊（2026-07-13），但尚未反映到 Policies > AI Policy 表格本身，故仍需人工比對 direct.mit.edu 稿約頁面後裁決是否要覆蓋表格內容，不宜由本次流程自動代為判斷。"
+  },
+  {
+   "field": "Review Cycle Time（全部四列）",
+   "existing_value": "四列皆為 *(fill manually)* 佔位符，尚無實質內容",
+   "wo2_value": "SciRev（僅2筆評論）顯示首輪審查約3.8個月、總處理時間約7.1個月（最新一筆23.4週）；LetPub 網友經驗匯總則稱『一般3-8週』",
+   "why_flagged": "雖然這些欄位目前是真正的佔位符（符合可填空條件），但 WO2 自身已在 experiential.review_time_months 中明確聲明『兩者差距大且樣本量都極小，故不宜取單一數字』——也就是說 WO2 並未提供一個『真實且有信心的單一答案』可直接套入表格，而是兩個互相矛盾、樣本量各僅個位數的來源。強行選一個數字填入會違反『不粗填』原則，故留待人工判斷是否要以區間/附注形式呈現，而非由本次流程直接寫入。"
+  }
+ ]
+}

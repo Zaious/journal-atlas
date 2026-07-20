@@ -1,0 +1,24 @@
+{
+ "name": "European Journal of Personality",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\european-journal-of-personality.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per SAGE default)",
+   "wo2_value": "single/double-anonymized peer review(具體匿名方式未逐字確認,不同 WebSearch 摘要用詞不一,有稱 anonymized 有稱 traditional);另設有 Registered Reports 軌道(自2018年起)及 streamlined review(可攜帶前一期刊審查意見重新投稿)",
+   "why_flagged": "既有檔案斷定為 double-anonymized,但 WO2 無法用逐字頁面確認匿名層級,信心不足;此外 WO2 發現期刊另設 Registered Reports 及 streamlined review 兩種審查通道,屬既有檔案未記載的新資訊,建議人工以期刊原始 Author Guidelines 頁面逐字核對後再決定是否更新 Type 欄位或於 Notes 補充審查通道類型。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency / Gate",
+   "existing_value": "Leniency 4;Explicit permission gate? No — disclosure-based",
+   "wo2_value": "Leniency 3;gate=conditional(需揭露,非全開放,亦非全禁)",
+   "why_flagged": "兩者對同一份 SAGE 通用 AI 政策的嚴格度評分不同(4 vs 3),且 gate 描述用詞不同(既有檔案稱『No — disclosure-based』,WO2 稱『conditional』,語意接近但嚴格度判讀有落差)。WO2 signal_quality 僅 2/5(期刊專屬 AI 政策子頁 404,屬 publisher-level 推論),既有檔案內容為既有維護者判斷,兩者孰優需人工複核,不逕自覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Methodological Preferences (out of scope, supplementary only)",
+   "existing_value": "現有方法學偏好表未列出 Registered Reports、network psychometrics/Taxonomic Graph Analysis、streamlined review 等項目",
+   "wo2_value": "positioning.methods_welcome 列出 empirical/meta-analyses/theoretical/methodological/systematic reviews/registered reports/network psychometrics 等,並指出近年(2023-2025)刊出網絡心理計量、Taxonomic Graph Analysis 等新興計算方法論文",
+   "why_flagged": "此為主觀分類章節(Methodological Preferences),依規則不可直接編輯,但 WO2 提供了具體、可能有價值的補充發現(Registered Reports 軌道、network psychometrics 方法學歡迎度),建議維護者評估是否手動納入該章節,而非由此次自動比對逕行修改。"
+  }
+ ]
+}

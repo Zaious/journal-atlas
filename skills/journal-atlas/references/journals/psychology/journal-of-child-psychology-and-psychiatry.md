@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | ~2.1 months average for manuscripts reaching first review-round decision (SciRev self-reported aggregate, n=5 — small sample, directional only); immediate/desk rejections decided much faster, ~13 days (SciRev) | Sample is tiny (n=5); this figure runs higher than the ~5-week figure quoted in this file's Soft Metadata > Reviewer Pool Characteristics narrative (Tier 2, community estimate) — the two have not been reconciled and are flagged here for maintainer review |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | ~3.6 months, submission to publication decision (SciRev aggregate, n=5 reviews; small sample) | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Wiley default — varies by journal) |
+| **Type** | Single-blind (reviewer identity anonymous to authors; author identity known to reviewers) — confirmed via search-indexed JCPP author-guidelines text ('single blind peer review by multiple referees'), corroborated by sister ACAMH/Wiley journals (JCPP Advances, Child and Adolescent Mental Health) which are also single-blind. Direct fetch of the JCPP author-guidelines page returned HTTP 402 (paywall/bot-block) on repeated attempts, so this is not a first-hand primary-text read; supersedes the prior unverified 'Wiley default = double-anonymized' assumption. |
 | **Transferable / Cascade?** | *(Wiley operates cross-journal transfer for some manuscripts)* |
 | **Reviewer reports published?** | No (per Wiley default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -221,15 +221,15 @@ Reviewers drawn primarily from the child and adolescent psychiatry community —
 | **Data transparency requirement** | High — data must be available on request; failure → rejection or retraction (community evidence: ACAMH author guide 2026-05) |
 | **OPSEC compatibility** | Medium — child-clinical data anonymization rigorous; mandatory reporting may apply |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 未找到 JCPP 期刊專屬 AI 政策頁面(作者指南頁 onlinelibrary.wiley.com/page/journal/14697610/homepage/forauthors.html 兩次抓取皆回 HTTP 402,無法直接驗證期刊層級文字)。查到的是 Wiley 出版社通用政策:生成式 AI/LLM 不得列為作者或共同作者,作者須對內容負全責、揭露 AI 工具使用於方法/致謝欄,並自行檢視智財風險。leniency=2 為推斷值(僅到出版社通用規範,未見期刊特化文字或明確「禁止 AI 生成內文/僅允許潤色」的分級聲明),故 signal_quality 僅 2。
+**AI-research finding (policy):** 未找到 JCPP 期刊專屬 AI 政策頁面(作者指南頁 onlinelibrary.wiley.com/page/journal/14697610/homepage/forauthors.html 兩次抓取皆回 HTTP 402,無法直接驗證期刊層級文字)。查到的是 Wiley 出版社通用政策:生成式 AI/LLM 不得列為作者或共同作者,作者須對內容負全責、揭露 AI 工具使用於方法/致謝欄,並自行檢視智財風險。leniency=2 為推斷值(僅到出版社通用規範,未見期刊特化文字或明確「禁止 AI 生成內文/僅允許潤色」的分級聲明),故 signal_quality 僅 2。
 
-**WO2 positioning finding (what the journal accepts now):** Clinically-relevant empirical research on child/adolescent psychopathology and mental health across the developmental-psychopathology spectrum: RCTs/intervention trials, prospective longitudinal cohort studies, epidemiology, neuroscience/neurobiology/genetics of childhood disorders, and psychometric/measure-development papers. Recent 2025-2026 exemplars: co-produced self-report measure validation for ADHD/autism emotional burden (Lukito 2025, doi:10.1111/jcpp.70003); prospective longitudinal infant-sibling study of autism/ADHD family-history outcomes at mid-childhood (Charman 2026, doi:10.1111/jcpp.70048); methodology editorial on longitudinal data analysis in child/adolescent mental health.
+**AI-research finding (positioning — what the journal accepts now):** Clinically-relevant empirical research on child/adolescent psychopathology and mental health across the developmental-psychopathology spectrum: RCTs/intervention trials, prospective longitudinal cohort studies, epidemiology, neuroscience/neurobiology/genetics of childhood disorders, and psychometric/measure-development papers. Recent 2025-2026 exemplars: co-produced self-report measure validation for ADHD/autism emotional burden (Lukito 2025, doi:10.1111/jcpp.70003); prospective longitudinal infant-sibling study of autism/ADHD family-history outcomes at mid-childhood (Charman 2026, doi:10.1111/jcpp.70048); methodology editorial on longitudinal data analysis in child/adolescent mental health.
 
-**WO2 experiential finding:** No first-hand/verifiable overall acceptance-rate figure found; a ~15% figure surfaced in aggregated search-engine synthesis but could not be traced to a primary citable page after two follow-up searches, so it is NOT reported as fact (see blanks). 
+**AI-research finding (experiential):** No first-hand/verifiable overall acceptance-rate figure found; a ~15% figure surfaced in aggregated search-engine synthesis but could not be traced to a primary citable page after two follow-up searches, so it is NOT reported as fact (see blanks). 
 
 **Sources cited in this pass:**
 - https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70003
@@ -240,7 +240,7 @@ Reviewers drawn primarily from the child and adolescent psychiatry community —
 - https://scirev.org/journal/journal-of-child-psychology-and-psychiatry/
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9574384/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific text)**: JCPP-specific author-guidelines page (onlinelibrary.wiley.com/page/journal/14697610/homepage/forauthors.html and the ACAMH hub mirror) returned HTTP 402 Payment Required on both direct WebFetch attempts; only the Wiley-wide generic AI/authorship policy could be confirmed via search snippets, not a JCPP-specific clause or leniency gradient.
 - **peer_review.type (single- vs double-blind confirmation)**: Could not directly load the author guidelines page (402 error) to confirm blinding type in the journal's own words; inferred 'single-blind' from a search-engine-synthesized snippet referencing 'single blind peer review by multiple referees' but this is one step removed from primary text.
 - **experiential.acceptance_note (numeric acceptance rate)**: A ~15%/18% acceptance-rate figure appeared repeatedly in WebSearch AI-synthesized answers but never resolved to one identifiable primary source URL after being searched for directly; per the honest-blank rule this unverified figure is excluded rather than reported as fact.
@@ -303,6 +303,7 @@ Low for child-psychiatry research authors with strong methodology and data-shari
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Review Cycle Time > Time to first decision. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

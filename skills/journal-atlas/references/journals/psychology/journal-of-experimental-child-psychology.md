@@ -219,15 +219,15 @@ Reviewers from cognitive-developmental psychology community — Cognitive Develo
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — child data anonymization rigorous |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策(非本刊專屬頁面,查無 JECP 專屬 AI 政策頁)。允許 GenAI 輔助潤飾語言/可讀性,禁止用於產生科學洞見、分析資料、下結論;文末須加揭露聲明。圖像/artwork 禁止使用生成式 AI(除非 AI 本身是研究方法的一部分且需在方法段落揭露模型名稱、版本、廠商)。未見 JECP 期刊層級的加嚴或放寬條款,故判定為 gate=conditional(需揭露)、leniency=2(允許潤飾但嚴格限制核心研究工作使用)。
+**AI-research finding (policy):** 此為 Elsevier 出版社通用政策(非本刊專屬頁面,查無 JECP 專屬 AI 政策頁)。允許 GenAI 輔助潤飾語言/可讀性,禁止用於產生科學洞見、分析資料、下結論;文末須加揭露聲明。圖像/artwork 禁止使用生成式 AI(除非 AI 本身是研究方法的一部分且需在方法段落揭露模型名稱、版本、廠商)。未見 JECP 期刊層級的加嚴或放寬條款,故判定為 gate=conditional(需揭露)、leniency=2(允許潤飾但嚴格限制核心研究工作使用)。
 
-**WO2 positioning finding (what the journal accepts now):** 以嬰幼兒、兒童、青少年之認知/社會情緒/生理發展實證研究為主軸,近期(2025-2026)已發表主題包含:價值導向記憶的發展差異(青少年 vs 成人、測試與回饋效果)、同儕受害與攻擊行為的認知因子(青少年橫斷網絡分析)、影片式第二語言學習中家長介入對兒童英語表達的影響、家長數學焦慮對兒童早期數感發展的負向影響。目前有一個進行中的 Special Issue: 'Children's Cognitive Offloading'(客座編輯 Kristy Louise Armitage、Jonathan J. Redshaw),徵求探討兒童認知外包(cognitive offloading)發展、機制與意涵之研究,方法不限但需嚴謹實證取向。
+**AI-research finding (positioning — what the journal accepts now):** 以嬰幼兒、兒童、青少年之認知/社會情緒/生理發展實證研究為主軸,近期(2025-2026)已發表主題包含:價值導向記憶的發展差異(青少年 vs 成人、測試與回饋效果)、同儕受害與攻擊行為的認知因子(青少年橫斷網絡分析)、影片式第二語言學習中家長介入對兒童英語表達的影響、家長數學焦慮對兒童早期數感發展的負向影響。目前有一個進行中的 Special Issue: 'Children's Cognitive Offloading'(客座編輯 Kristy Louise Armitage、Jonathan J. Redshaw),徵求探討兒童認知外包(cognitive offloading)發展、機制與意涵之研究,方法不限但需嚴謹實證取向。
 
-**WO2 experiential finding:** SciRev 稿件品質評分 4.0/5.0,整體投稿處理評分 4.0/5.0;唯一一筆最新個別經驗結果為 rejection(拒稿)。接受率/立即拒稿率欄位 SciRev 標示為 'n/a'(無資料)。LetPub(中國學者經驗分享平台)頁面存在但『平均審稿速度』與『平均錄用比例』欄位下的『網友分享經驗』區塊目前為空,無使用者留言資料。 
+**AI-research finding (experiential):** SciRev 稿件品質評分 4.0/5.0,整體投稿處理評分 4.0/5.0;唯一一筆最新個別經驗結果為 rejection(拒稿)。接受率/立即拒稿率欄位 SciRev 標示為 'n/a'(無資料)。LetPub(中國學者經驗分享平台)頁面存在但『平均審稿速度』與『平均錄用比例』欄位下的『網友分享經驗』區塊目前為空,無使用者留言資料。 
 
 **Sources cited in this pass:**
 - https://research.com/journal/journal-of-experimental-child-psychology
@@ -237,7 +237,7 @@ Reviewers from cognitive-developmental psychology community — Cognitive Develo
 - https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology (WebSearch snippets, recent article titles Nov 2026)
 - https://www.sciencedirect.com/journal/journal-of-experimental-child-psychology/about/call-for-papers (fetch blocked 403; special issue topic confirmed via WebSearch snippet only)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific)**: 查無 JECP 期刊獨立的 AI 政策頁,只找到 Elsevier 出版社通用政策;無法確認本刊是否有加嚴/放寬的期刊層級規定
 - **experiential.desk_reject_pct**: SciRev 該欄位顯示 'n/a';LetPub 對應區塊無使用者留言;WebSearch 找到的『29% acceptance rate, 2-day review speed』數字來自非一手、可信度存疑的 SCI 中介網站(scizj/iikx 類站台),語意矛盾(2 天審稿週期不合理),予以捨棄不採用,故留空
 - **experiential.reviewer_culture**: 未找到小木虫、知乎、Reddit r/AskAcademia 上任何針對本刊的第一手審稿文化討論串;WebSearch 對 '小木虫 期刊' 查詢僅回傳期刊介紹類網站,無實際論壇貼文內容
@@ -298,6 +298,6 @@ Low for experimental child psychology tradition authors. 24-month AAM embargo on
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + Cognitive Development Society editorial culture domain knowledge | @Zaious |

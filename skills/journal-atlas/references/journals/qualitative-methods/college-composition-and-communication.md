@@ -46,7 +46,7 @@
 | **Time to first decision** | ~75-90 days (~2.5-3 months), per publisher submission guidance | 2026-07-13 |
 | **Time to first review** | *(community estimate)* | |
 | **Time to acceptance (total)** | *(community estimate)* | |
-| **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
+| **Time to publication (after acceptance)** | ~3-6 months (up to 2 quarterly issues) | Journal is quarterly (~4 issues/yr); publisher states no current backlog — "accepted submissions typically published within the next two issues" (verified 2026-07-20, https://cccc.ncte.org/cccc/ccc/write) |
 
 ### Publication Frequency
 
@@ -74,11 +74,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes (publisher default + may have journal overlay) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Has journal-specific AI policy?** | Yes — CCC Generative AI Policy (effective 2025-10) |
+| **Explicit permission gate?** | No — disclosure-based (mandatory ≤200-word disclosure statement listing tools used, tasks supported, and % human authorship; disclosure itself does not affect the publication decision) |
 | **Leniency (1-5)** | 3-4 |
-| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at journal author guidelines. |
-| **Source URL** | https://cccc.ncte.org/cccc/resources/positions/postpandemicwriting |
+| **Summary** | Authors may use GenAI tools to "support, but not act as a substitute for, scholarly labor"; a ≤200-word disclosure statement is required (tools, supported tasks, % human authorship), and authors remain fully accountable for originality/ethics. Reviewers are barred from inputting any manuscript content into GenAI platforms (may use GenAI only to help draft their own review comments) and may decline a review on GenAI-use grounds. |
+| **Source URL** | https://cccc.ncte.org/cccc/ccc-generative-ai-policy/ |
 
 ### Preprint Policy
 
@@ -205,15 +205,15 @@ NCTE / 4Cs writing-studies community. Reviewer expectations: field-specific theo
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium-High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 期刊專屬政策(CCC Generative AI Policy,2025年10月採行)。作者可使用GenAI工具「支援」而非「取代」學術勞動,須附不超過200字的揭露聲明,列出使用的工具、支援的任務、人類作者比例,並確認對原創性與倫理負全責。揭露本身不構成拒稿理由。審稿人則被明確禁止將手稿任何部分輸入GenAI平台做摘要或評估;僅能在不外洩手稿內容的前提下用AI輔助撰寫自己的審稿意見。整體屬「有條件開放、需揭露」的中度寬容政策,非全面禁止但管制嚴格,故評3/5。
+**AI-research finding (policy):** 期刊專屬政策(CCC Generative AI Policy,2025年10月採行)。作者可使用GenAI工具「支援」而非「取代」學術勞動,須附不超過200字的揭露聲明,列出使用的工具、支援的任務、人類作者比例,並確認對原創性與倫理負全責。揭露本身不構成拒稿理由。審稿人則被明確禁止將手稿任何部分輸入GenAI平台做摘要或評估;僅能在不外洩手稿內容的前提下用AI輔助撰寫自己的審稿意見。整體屬「有條件開放、需揭露」的中度寬容政策,非全面禁止但管制嚴格,故評3/5。
 
-**WO2 positioning finding (what the journal accepts now):** CCC為修辭與寫作研究(composition/rhetoric studies)旗艦期刊,聚焦高等教育中寫作的教學與實務。近期(2025)刊出多篇GenAI相關研究專題(Symposium: On Generative AI),包含AI生成文本的句法複雜度分析、AI寫作中隱形人力勞動批判、AI修辭氣候(rhetorical climates of AI)等議題,顯示期刊目前積極歡迎AI/寫作交叉主題的投稿。
+**AI-research finding (positioning — what the journal accepts now):** CCC為修辭與寫作研究(composition/rhetoric studies)旗艦期刊,聚焦高等教育中寫作的教學與實務。近期(2025)刊出多篇GenAI相關研究專題(Symposium: On Generative AI),包含AI生成文本的句法複雜度分析、AI寫作中隱形人力勞動批判、AI修辭氣候(rhetorical climates of AI)等議題,顯示期刊目前積極歡迎AI/寫作交叉主題的投稿。
 
-**WO2 experiential finding:** 目前無稿件積壓(no backlog),獲接受的稿件通常在接下來兩期內刊出。 
+**AI-research finding (experiential):** 目前無稿件積壓(no backlog),獲接受的稿件通常在接下來兩期內刊出。 
 
 **Sources cited in this pass:**
 - https://cccc.ncte.org/cccc/ccc-generative-ai-policy/
@@ -222,7 +222,7 @@ NCTE / 4Cs writing-studies community. Reviewer expectations: field-specific theo
 - https://publicationsncte.org/content/journals/10.58680/ccc2025771170
 - https://publicationsncte.org/content/journals/10.58680/ccc202577139
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **preprint.allowed**: NCTE/CCCC官網及Write for CCC投稿頁均未提及preprint/SSRN政策,查無公開文件
 - **experiential.reviewer_culture**: SciRev無此期刊條目(0 reviews/無頁面);Reddit r/AskAcademia、知乎、小木虫、fabiaoji搜尋均無討論結果,查無可歸因來源的評審文化描述
 
@@ -272,5 +272,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Has journal-specific policy? / Explicit permission gate? / Leniency / Summary / Source URL); Review Cycle Time > Time to publication (after acceptance). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from rhetoric and composition / writing-studies family conventions (NCTE / 4Cs / CCCC norms). | @Zaious |

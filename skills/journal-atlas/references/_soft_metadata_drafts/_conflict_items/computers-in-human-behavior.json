@@ -1,0 +1,18 @@
+{
+ "name": "Computers in Human Behavior",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computers-in-human-behavior.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — verify)",
+   "wo2_value": "Double-anonymized（雙盲）review — 編輯初審適合度，通過後送至少兩位獨立審稿人；編輯做最終決定。(source: elsevier.com/journals/computers-in-human-behavior guide-for-authors)",
+   "why_flagged": "既有值本身標註「per Elsevier default — verify」，即未經查證的預設猜測；WO2 引用該刊 guide-for-authors 頁面得出雙盲結論，兩者審稿類型直接矛盾（單盲 vs 雙盲），屬實質衝突而非細節補充，需人工查證何者正確，不逕行覆蓋。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "existing_value": "*(pending — Elsevier typical 4-6 months)*",
+   "wo2_value": "SciRev（n=6，極小樣本）：整體處理時間（含接受案）平均 7.3 個月",
+   "why_flagged": "既有欄位雖標 pending 但已附帶具體猜測值（4-6個月），依規則不算裸 placeholder，故不可逕行填補；WO2 另有該刊專屬但樣本極小（n=6）的實測值 7.3 個月，與既有猜測範圍有實質落差，列為衝突待人工判斷。"
+  }
+ ]
+}

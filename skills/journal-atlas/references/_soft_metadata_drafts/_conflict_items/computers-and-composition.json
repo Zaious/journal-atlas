@@ -1,0 +1,18 @@
+{
+ "name": "Computers and Composition",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\computers-and-compositioncomputers-and-composition.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "Double-blind（投稿須為盲審，作者須自行移除稿件正文中所有可識別身分的資訊）— 來源：https://www.elsevier.com/journals/computers-and-composition/8755-4615/guide-for-authors",
+   "why_flagged": "現有欄位已有具體內容（非佔位符），但WO2從該刊自己的Guide for Authors頁面找到的資訊與現有內容直接矛盾——現有寫『單盲（Elsevier預設，因刊而異）』，WO2寫『雙盲，且明確要求作者自行移除稿件正文中可識別身分資訊』。這不是補充細節而是實質衝突，且WO2來源是期刊專屬頁面（比泛用的Elsevier預設更具體），故不逕行覆蓋，留待人工核實。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate?",
+   "existing_value": "Leniency: 3；Explicit permission gate?: No — disclosure-based for text; image generation prohibited",
+   "wo2_value": "Leniency: 2；gate: conditional（作者端條件式允許僅潤飾+需揭露，圖像生成與審稿端AI使用皆封閉）",
+   "why_flagged": "AI Policy欄位已有完整、非佔位符的具體政策描述，依規則不得逕行編輯覆蓋。但WO2對同一份Elsevier政策給出不同的寬容度評分（2 vs 現有3）與略有差異的gate措辭（conditional vs No—disclosure-based），屬於對同一政策的不同評估角度，留供人工比對後決定是否調整評分。"
+  }
+ ]
+}

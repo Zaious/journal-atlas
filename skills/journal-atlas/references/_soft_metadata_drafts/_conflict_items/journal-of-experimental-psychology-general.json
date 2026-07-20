@@ -1,0 +1,30 @@
+{
+ "name": "Journal of Experimental Psychology: General",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-general.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Masked (double-masked/blind) review is OPTIONAL — 作者可於投稿時選擇匿名審查文章類型；預設非強制雙盲。",
+   "why_flagged": "兩者對「雙盲審查是否為強制預設」的陳述直接矛盾（既有：APA 預設即為雙盲；WO2：作者可自選、非強制預設），需人工查證 APA/XGE 官方投稿頁以確認何者正確，故不逕行覆蓋，留待人工複核。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3 (gate: conditional)",
+   "why_flagged": "既有條目已有具體政策描述（非佔位符），依規則不應直接覆蓋；但兩份研究對寬容度評分不一致（4 vs 3），且 WO2 將 gate 定性為 conditional 而既有條目定性為「No — disclosure-based」，語意相近但量化評分有落差，列為衝突供人工複核，不逕行修改。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements (out-of-scope subjective section)",
+   "existing_value": "Mandatory framing? Yes (strong) — 需展現 general experimental psychology contribution with broad interest；83% raw rejection rate 等既有描述",
+   "wo2_value": "官方 Aims & Scope 明確要求投稿須論證『跨越至少兩個心理學次領域傳統的廣泛興趣』；Brief Reports（≤3000字）未經審查即拒稿比例較高，需展現高度結果穩健性。",
+   "why_flagged": "WO2 對 positioning/framing 的官方 Aims & Scope 引述提供了比既有條目更明確的『跨≥2次領域』具體門檻描述，屬主觀章節（Framing Requirements）範圍，依規則不逕行編輯，僅供人工複核是否納入補充。"
+  },
+  {
+   "field": "Soft Metadata > Reviewer Pool Characteristics (out-of-scope subjective section)",
+   "existing_value": "Reviewers drawn primarily from the general experimental psychology community... Reviewer competence variance: Medium",
+   "wo2_value": "SciRev 量化評分：審稿報告品質 3.8/5.0；整體流程評價 3.6/5.0；其中一筆評論審稿難度評為 4.7/5.0（非常困難）；審稿人『非常專業並提供大量有用建議』（樣本僅 6 筆，需謹慎採信）。",
+   "why_flagged": "WO2 提供了具體量化的 SciRev 評分數據，可作為既有質性描述的補充佐證，但樣本量極小（n=6）且屬主觀章節範圍，依規則不逕行編輯，列為供人工複核的補充發現。"
+  }
+ ]
+}

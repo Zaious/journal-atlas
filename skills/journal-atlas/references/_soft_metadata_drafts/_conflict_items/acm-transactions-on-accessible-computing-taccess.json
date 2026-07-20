@@ -1,0 +1,18 @@
+{
+ "name": "ACM Transactions on Accessible Computing (TACCESS)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-accessible-computing.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Explicit permission gate? / Summary)",
+   "existing_value": "Explicit permission gate?: No — disclosure-based / Summary: \"AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at the journal's author guidelines.\"",
+   "wo2_value": "gate: conditional / summary: 使用 AI 撰寫文稿現已「不再要求揭露」;但若 AI 被用於研究執行本身(方法設計、資料生成、程式碼、分析、模擬等),則必須在方法章節詳述用途。AI 不得列為作者。source: https://www.acm.org/publications/policies/frequently-asked-questions",
+   "why_flagged": "此欄位已有具體內容(非佔位符),不可粗暴覆蓋,但兩者對「AI 撰寫文稿是否需揭露」方向相反:既有條目稱『通常需要揭露』,WO2 稱『現已不再要求揭露』(僅方法論使用需揭露)。可能既有條目referencing 較舊版政策(new-acm-policy-on-authorship 頁面)而 WO2 引用較新的 FAQ 頁面,需人工比對兩份 ACM 官方頁面何者為現行版本後決定是否更新。"
+  },
+  {
+   "field": "Open Access > Model / APC (out of scope, flagged for awareness only)",
+   "existing_value": "Model: Hybrid OA / APC (if OA chosen): ~$700-2,500 (ACM Open)",
+   "wo2_value": "WO2 preprint 欄位附帶提及:「ACM 自 2026-01-01 起全面轉為 Open Access 出版社」(source: https://www.acm.org/publications/policies/roles-and-responsibilities)",
+   "why_flagged": "Open Access 屬本次任務明確排除的欄位,不提議直接編輯,但此為與既有 Hybrid OA 描述可能牴觸的重大新事實(若屬實,ACM 已全面轉全 OA,Hybrid OA 描述可能已過時),留供人工判斷是否需要另行更新 Open Access 區塊。"
+  }
+ ]
+}

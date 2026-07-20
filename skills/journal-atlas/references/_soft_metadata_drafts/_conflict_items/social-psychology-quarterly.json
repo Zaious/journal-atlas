@@ -1,0 +1,12 @@
+{
+ "name": "Social Psychology Quarterly",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-psychology-quarterly.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Explicit permission gate? / Leniency)",
+   "existing_value": "Explicit permission gate?: \"No — disclosure-based\"; Leniency (1-5): 4",
+   "wo2_value": "WO2 raw JSON 結構化欄位: gate=\"conditional\", leniency_1_5=3 —— 但 WO2 自己的敘述摘要文字寫的是「未強制事前許可審批 (no pre-approval gate)」,與其自身 gate=conditional 標記自相矛盾",
+   "why_flagged": "既有欄位已有具體真實內容(非 placeholder),依規則不應覆蓋;但 WO2 原始 JSON 的結構化分類(gate/leniency)與既有檔案內容不一致,且與 WO2 自己的敘述摘要內部矛盾,可能是 WO2 draft 資料品質問題(該 pass 標示 signal_quality=2/5),建議人工複核 AI Policy 的 gate/leniency 分類是否需要調整,不宜自動修改。"
+  }
+ ]
+}

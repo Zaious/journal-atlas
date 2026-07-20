@@ -1,0 +1,12 @@
+{
+ "name": "Personality and Social Psychology Bulletin",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-social-psychology-bulletin.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3(signal_quality 2/5,基於 Sage 集團通用政策文字判讀，非期刊專屬頁面)",
+   "why_flagged": "兩者對同一 1-5 寬鬆度評分給出不同數字(既有 4 分 vs WO2 3 分),屬於實質分歧而非單純補充細節,且雙方都是基於同一份 Sage 集團 AI 政策文字做出的主觀評分差異，需要人工判斷該用哪個分數或如何調和;WO2 的 gate 描述為「conditional」，與既有「No — disclosure-based」措辭雖大致同義但角度不同，一併附上供覆核。"
+  }
+ ]
+}

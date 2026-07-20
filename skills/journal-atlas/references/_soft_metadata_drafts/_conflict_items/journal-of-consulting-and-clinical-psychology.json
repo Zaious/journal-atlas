@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Consulting and Clinical Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-consulting-and-clinical-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Masked (anonymized) peer review, mandatory for all submissions (sourced directly from JCCP's own submission-guidelines page: https://www.apa.org/pubs/journals/ccp/submit)",
+   "why_flagged": "現有值是「假設 APA 預設為 double-anonymized」，屬推定；WO2 是直接引用期刊自己投稿頁的用詞「masked (anonymized)」，用語不同（masked 未必等同 double-anonymized，可能僅指單向匿名）。因現有欄位已有實質內容（非佔位符），依規則不可逕行覆蓋，僅供人工核實是否為同一制度的不同措辭或實質差異。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate?",
+   "existing_value": "Leniency: 4；Explicit permission gate?: No — disclosure-based",
+   "wo2_value": "leniency_1_5: 3；gate: \"conditional\"",
+   "why_flagged": "現有欄位已有具體內容（非佔位符），依規則不得直接覆蓋分數判斷。WO2 給出的寬容度評分（3）與現有評分（4）不同，且 gate 標籤用詞不同（conditional vs. disclosure-based），雖然兩者敘述的政策實質內容（APA 揭露即可、AI 不可掛名作者）看似一致，但量化評分有落差，留供人工複核。附註：本檔案 Soft Metadata 已有一份 2026-07-13 新增的「AI-Research Notes (WO2 supplement)」段落收錄了此 WO2 摘要作為補充研究筆記，此處僅是在資料表格層級再次標記此量化落差。"
+  }
+ ]
+}

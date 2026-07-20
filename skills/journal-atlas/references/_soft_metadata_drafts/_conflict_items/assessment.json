@@ -1,0 +1,18 @@
+{
+ "name": "Assessment",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "double-anonymized (double-blind) — source: https://journals.sagepub.com/author-instructions/asm",
+   "why_flagged": "現有欄位已有具體內容(非佔位符,是家族通用推測值),但與 WO2 找到的審稿型態直接矛盾(單盲 vs 雙盲匿名),屬於實質分歧而非單純補充細節,需人工查證官方 author-instructions 頁面後再決定是否更正,不宜逕行覆蓋或自動判定何者為真。"
+  },
+  {
+   "field": "Policies > Preprint Policy (Under review / Post-acceptance (AAM) 兩列)",
+   "existing_value": "Under review: Yes - Most journals permit; Post-acceptance (AAM): Yes - Embargo varies by publisher (0-12 months)",
+   "wo2_value": "Allowed with conditions — 稿件可先掛在預印本伺服器,但一旦正式接受,作者需在該預印本頁面附上最終出版版本連結;投稿正文中應避免引用預印本(若引用之後有正式出版版本,需更新引用為正式版)。source: https://journals.sagepub.com/author-instructions/asm",
+   "why_flagged": "現有欄位內容為家族通用推測值,非嚴格定義的佔位符,故未逕行覆蓋;但 WO2 提供了直接來自期刊自身 author-instructions 頁面的具體條件(需回連正式出版版本、投稿正文應避免引用預印本),明顯比現有籠統敘述更精確且來源更直接,建議人工比對後決定是否據此升級為 Tier 1 並改寫此欄位。"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Social and Clinical Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-social-and-clinical-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Explicit permission gate? / Leniency / Summary)",
+   "existing_value": "Explicit permission gate? No — disclosure-based; Leniency (1-5): 4; Summary: Follows Guilford Press publisher AI policy: disclosure required; AI cannot be listed as author.",
+   "wo2_value": "gate: \"yes - discourages/restricts use to create article content\"; leniency_1_5: 2; summary: Guilford journals currently do not allow AI to be used to create article content, including figures, tables, images, and other materials. (source: guilfordjournals.com/about)",
+   "why_flagged": "現有欄位已有具體、完整的內容（非佔位符），依規則不可覆蓋；但WO2對同一Guilford發行政策給出實質相反的結論——現有稱『無需明確許可、僅需揭露』且寬容度4，WO2稱『限制/不允許AI產出文章內容（含圖表）』且寬容度僅2。兩者對Guilford AI政策的解讀方向不同，需人工重新核實guilfordjournals.com/about原文以確認何者準確，不宜逕行編輯。"
+  },
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-blind (per Guilford default)",
+   "wo2_value": "Single-blind by default (author identity visible to reviewers); double-blind available on author request, in which case identifying info is confined to a separate cover page. [WO2自陳：僅透過搜尋引擎快取摘要取得guilfordjournals.com/journal/jscp/authors內容，直接抓取回傳403，未能對照原頁面文字獨立驗證]",
+   "why_flagged": "現有欄位已有具體內容，非空白/佔位符，依規則不可覆蓋。但WO2發現的審稿類型（預設單盲、雙盲需申請）與現有值（預設雙盲）方向相反，屬實質衝突而非僅補充細節。且WO2自身資料來源可信度存疑（僅快取摘要、非直接驗證），建議人工至期刊官網或作者須知頁面核實實際審稿制度後再決定是否更新，不應由AI逕行覆蓋。"
+  }
+ ]
+}

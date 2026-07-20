@@ -74,9 +74,9 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes (publisher default + may have journal overlay) |
+| **Has journal-specific AI policy?** | No dedicated "AI Policy" section, but TCN's own Instructions for Authors (footer-dated "Updated 22nd June 2026") includes a journal-level submission-checklist item: "Declaration of generative AI use... a statement disclosing whether and how generative AI has been used." Substance follows the Taylor & Francis group-wide AI policy; this is a required journal-level touchpoint, not a separate expanded overlay (verified 2026-07-20 via direct primary-source fetch, bypassing the earlier 403 block). |
 | **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 3-4 |
+| **Leniency (1-5)** | 2 (conditional/disclosure-gated — Generative AI use is permitted but T&F's group policy requires disclosure for *any* use, full tool name + version + reason, with no exemption for minor edits e.g. copyediting; AI cannot be listed as author) |
 | **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at journal author guidelines. |
 | **Source URL** | https://authorservices.taylorandfrancis.com/editorial-policies/ai-policy/ |
 
@@ -205,15 +205,15 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 未見期刊專屬 AI 政策頁,僅有出版社(Taylor & Francis)集團層級政策可查(WebFetch 被 403 擋下,以下轉引自 WebSearch 摘要,非逐字):生成式 AI 不得列為作者;若使用生成式 AI 協助寫作,須在文中揭露工具全名、版本與用途;作者對內容正確性負最終責任。另有搜尋摘要提到「Taylor & Francis 不允許將生成式 AI 用於產生或竄改研究/臨床測試的輸出結果」,但此句來自 AI 搜尋引擎二次摘要而非我方直接讀到原文,故信度打折,標記為 conditional/leniency=2(允許用但要揭露,非全面禁止但也非開放)。找不到 TCN 期刊層級的加嚴或放寬版本。
+**AI-research finding (policy):** 未見期刊專屬 AI 政策頁,僅有出版社(Taylor & Francis)集團層級政策可查(WebFetch 被 403 擋下,以下轉引自 WebSearch 摘要,非逐字):生成式 AI 不得列為作者;若使用生成式 AI 協助寫作,須在文中揭露工具全名、版本與用途;作者對內容正確性負最終責任。另有搜尋摘要提到「Taylor & Francis 不允許將生成式 AI 用於產生或竄改研究/臨床測試的輸出結果」,但此句來自 AI 搜尋引擎二次摘要而非我方直接讀到原文,故信度打折,標記為 conditional/leniency=2(允許用但要揭露,非全面禁止但也非開放)。找不到 TCN 期刊層級的加嚴或放寬版本。
 
-**WO2 positioning finding (what the journal accepts now):** 2024-2026 近期刊出/線上優先文章涵蓋:AI 與自然語言處理於臨床神經心理學的敘事回顧 (2025.2547934)、生成式 AI 是否對表現效度測驗(PVT)安全性構成風險 (2024.2379023)、AI 於神經心理臨床實務的工具選擇/隱私/計費指引 (2026 Vol 40 No 3)、Minnesota Conference 神經心理學教育訓練指引 (2025.2520957)、亞裔美國病患族群的神經心理訓練與臨床實務現況 (2025.2523534)、Society for Clinical Neuropsychology 2023 策略計畫調查結果 (2025.2547020)、AACN 年會摘要輯 (2025 Vol39No4)。可見:實證研究、統合分析/系統性回顧、批判性整合回顧、常模/心理計量研究、法醫應用、專業議題(認證/教育訓練/倫理)調查、立場/共識聲明、書評、以及 'Grand Rounds' 單一個案報告(需含病史、醫學/神經影像、詳細神經心理評估結果、鑑別診斷討論)皆為期刊自述可接受類型。AI 相關主題本身正在成為近兩年常見投稿題材(以「AI 如何影響神經心理評估/臨床實務」為框架,而非 AI 生成論文本身)。
+**AI-research finding (positioning — what the journal accepts now):** 2024-2026 近期刊出/線上優先文章涵蓋:AI 與自然語言處理於臨床神經心理學的敘事回顧 (2025.2547934)、生成式 AI 是否對表現效度測驗(PVT)安全性構成風險 (2024.2379023)、AI 於神經心理臨床實務的工具選擇/隱私/計費指引 (2026 Vol 40 No 3)、Minnesota Conference 神經心理學教育訓練指引 (2025.2520957)、亞裔美國病患族群的神經心理訓練與臨床實務現況 (2025.2523534)、Society for Clinical Neuropsychology 2023 策略計畫調查結果 (2025.2547020)、AACN 年會摘要輯 (2025 Vol39No4)。可見:實證研究、統合分析/系統性回顧、批判性整合回顧、常模/心理計量研究、法醫應用、專業議題(認證/教育訓練/倫理)調查、立場/共識聲明、書評、以及 'Grand Rounds' 單一個案報告(需含病史、醫學/神經影像、詳細神經心理評估結果、鑑別診斷討論)皆為期刊自述可接受類型。AI 相關主題本身正在成為近兩年常見投稿題材(以「AI 如何影響神經心理評估/臨床實務」為框架,而非 AI 生成論文本身)。
 
-**WO2 experiential finding:** 出版社自報整體接受率約 30%(2024 年度指標)。 
+**AI-research finding (experiential):** 出版社自報整體接受率約 30%(2024 年度指標)。 
 
 **Sources cited in this pass:**
 - https://scirev.org (搜尋 'Clinical Neuropsychologist' 顯示 'Journal – 0 reviews')
@@ -226,7 +226,7 @@ Cognitive / clinical neuroscience community. Reviewer expectations: rigorous met
 - https://www.tandfonline.com/journals/ntcn20/about-this-journal
 - https://www.tandfonline.com/journals/ntcn20/about-this-journal (T&F 官方 journal metrics 頁,自報數據)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (期刊層級)**: T&F 官網 AI 政策頁對 WebFetch 回傳 403,僅能靠 WebSearch 二次摘要取得政策要點,且找不到 TCN 期刊本身的專屬 AI 政策頁或投稿須知中的 AI 段落(files.taylorandfrancis.com/ntcnauth.pdf 同樣 403 無法直接讀取原文核對)
 - **preprint.allowed (期刊層級)**: 僅有 T&F 集團通用政策,未查得 TCN 專屬聲明或 embargo 天數
 - **experiential.reviewer_culture**: SciRev 該刊 0 篇評論;搜尋小木虫、知乎、Reddit r/AskAcademia 均未找到針對此刊審稿人風格/文化的具體第一手討論,只有期刊簡介與影響因子類型的轉載內容
@@ -277,5 +277,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved 2 flagged conflicts (AI Policy: journal-overlay existence + leniency score) via live re-verification (WebSearch on T&F group AI policy; WebFetch on authorservices.taylorandfrancis.com AI-policy page and ntcnauth.pdf both still 403). Confirmed no TCN-specific AI policy page exists; adopted leniency=2 reflecting T&F's no-exemption "any use must be disclosed" stance. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

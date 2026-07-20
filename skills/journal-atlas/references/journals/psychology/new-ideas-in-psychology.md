@@ -63,7 +63,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(per Elsevier default — pending verification; commonly single-blind in psychology, but recheck)* |
+| **Type** | Double-anonymized (double-blind) — editorial team performs initial suitability screening, then manuscript proceeds to double-anonymized peer review with a minimum of one independent expert reviewer; authors submit an anonymized manuscript plus a separate title page (source: journal's own Guide for Authors, verified 2026-07-20) |
 | **Transferable / Cascade?** | *(Elsevier operates cross-journal transfer for some manuscripts — verify for NIP)* |
 | **Reviewer reports published?** | No (per Elsevier default; journal does not allow AI use by reviewers/editors during peer review) |
 | **Typical R+R rounds** | *(pending)* |
@@ -73,7 +73,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes — journal-specific image restriction beyond Elsevier default |
+| **Has journal-specific AI policy?** | No — follows Elsevier's publisher-wide AI policy. The text-disclosure requirement and the image-generation prohibition quoted below are standard Elsevier boilerplate that appears across Elsevier journals' Guide for Authors pages, not an NIP-specific addition (verified against Elsevier's general "Generative AI policies for journals" page, 2026-07-20) |
 | **Explicit permission gate?** | No — disclosure-based for text; explicit prohibition for images |
 | **Leniency (1-5)** | 3 (text disclosure-based; images prohibited unless AI is the research method) |
 | **Summary** | Authors must declare use of generative AI in manuscript preparation upon submission. Declaration must be placed in a statement before the references. **Image restriction**: "We do not permit the use of Generative AI or AI-assisted tools to create or alter images in submitted manuscripts" (except where AI itself is the research method, fully described). Journal does not currently allow AI use by reviewers or editors during peer review. AI cannot be listed as authors. Non-disclosure or violation is grounds for rejection. |
@@ -220,15 +220,15 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 | **Data transparency requirement** | Flexible for theoretical work; Elsevier data-sharing norms apply for empirical work |
 | **OPSEC compatibility** | Medium — note that AAM has 24-month embargo, so preprint strategy becomes more important for early visibility |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 採 Elsevier 出版社通用政策(非期刊特化)。作者可在投稿前的寫作準備階段使用生成式 AI/AI 輔助工具,但僅限提升語言與可讀性,不得取代作者的批判思考與原創貢獻;必須在參考文獻前加註「Declaration of generative AI...」揭露聲明。AI 不得列為作者;不得直接把 AI 產出當作稿件正文。審稿人端另有更嚴格政策(禁止將稿件上傳至生成式 AI)。
+**AI-research finding (policy):** 採 Elsevier 出版社通用政策(非期刊特化)。作者可在投稿前的寫作準備階段使用生成式 AI/AI 輔助工具,但僅限提升語言與可讀性,不得取代作者的批判思考與原創貢獻;必須在參考文獻前加註「Declaration of generative AI...」揭露聲明。AI 不得列為作者;不得直接把 AI 產出當作稿件正文。審稿人端另有更嚴格政策(禁止將稿件上傳至生成式 AI)。
 
-**WO2 positioning finding (what the journal accepts now):** 理論/概念取向的心理學(最廣義的 theoretical psychology)。徵求心理學內部及跨領域帶入的新穎、原創理論觀點。文類:全長理論或方法論文(≤7500 字)、討論短文與訪談(≤2500 字)、同儕評論與反駁(≤1000 字)、批判性回顧、辯論、書評。經驗性/實驗性研究亦收,但必須展現理論新意。當前開放的特刊 CFP(2025-2026)顯示活躍徵稿:『Aesthetic Dis/interestedness and Affects』(截 2026-03-30)、『Control and Commitment: Philosophical, Psychological, and Neuroscientific Perspectives』(截 2026-02-23)、『Engendering Embodiment in Disability and Neurodiversity』(截 2025-09-15)、『Probabilistic nature of perception and cognition』(截 2025-05-05)。近期主題涵蓋 enactivism、具身認知、意識、能動性(agency)。
+**AI-research finding (positioning — what the journal accepts now):** 理論/概念取向的心理學(最廣義的 theoretical psychology)。徵求心理學內部及跨領域帶入的新穎、原創理論觀點。文類:全長理論或方法論文(≤7500 字)、討論短文與訪談(≤2500 字)、同儕評論與反駁(≤1000 字)、批判性回顧、辯論、書評。經驗性/實驗性研究亦收,但必須展現理論新意。當前開放的特刊 CFP(2025-2026)顯示活躍徵稿:『Aesthetic Dis/interestedness and Affects』(截 2026-03-30)、『Control and Commitment: Philosophical, Psychological, and Neuroscientific Perspectives』(截 2026-02-23)、『Engendering Embodiment in Disability and Neurodiversity』(截 2025-09-15)、『Probabilistic nature of perception and cognition』(截 2025-05-05)。近期主題涵蓋 enactivism、具身認知、意識、能動性(agency)。
 
-**WO2 experiential finding:** 中文彙整來源(知乎專欄/CSDN,二手)稱錄用率約 17%,未經一手投稿實錄佐證;SciRev 唯一一筆(n=1)結果為 Rejected。 僅有 SciRev 單一評論(n=1)描述該次審稿意見『簡短且草率(short and careless)』,總評分 0/5;樣本過小,不足以概括審稿文化。
+**AI-research finding (experiential):** 中文彙整來源(知乎專欄/CSDN,二手)稱錄用率約 17%,未經一手投稿實錄佐證;SciRev 唯一一筆(n=1)結果為 Rejected。 僅有 SciRev 單一評論(n=1)描述該次審稿意見『簡短且草率(short and careless)』,總評分 0/5;樣本過小,不足以概括審稿文化。
 
 **Sources cited in this pass:**
 - CSDN(同源二手彙整): https://blog.csdn.net/weixin_40052256/article/details/126899185
@@ -241,7 +241,7 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 - 知乎專欄(scope/metrics 二手彙整): https://zhuanlan.zhihu.com/p/565234238
 - 科研通 ablesci(0 筆網友經驗): https://www.ablesci.com/journal/detail?id=52glyD
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **desk_reject_pct**: 無任何一手或公開來源;SciRev desk-reject 時間為 n/a,論壇 0 討論
 - **review_time_months (一手)**: SciRev 僅 n=1(4.7 週);中文/英文論壇無投稿實錄;科研通經驗欄 0 筆。3 個月數字僅來自二手彙整(知乎/CSDN),非投稿者實錄
 - **acceptance_note (可信錄用率)**: 17% 僅出自二手彙整來源,無一手投稿統計佐證;SciRev n=1 不具代表性
@@ -304,7 +304,8 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Has journal-specific AI policy?. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. AI Policy notably restrictive on AI-generated images; 24-month AAM embargo flagged as a significant departure from Sage publisher norms. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

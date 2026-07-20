@@ -1,0 +1,12 @@
+{
+ "name": "ACM Interactions",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-interactions.md",
+ "conflicts": [
+  {
+   "field": "Preprint Policy > Version of Record / Open Access > Model",
+   "existing_value": "Version of Record: \"Restricted unless ACM Open paid\"; Open Access Model: \"Hybrid (Subscription + ACM Open OA option)\"",
+   "wo2_value": "WO2 positioning/preprint finding states: 'as of January 1, 2026 ACM converted its magazines (including Interactions) to open access, reducing the practical relevance of preprinting for this title.'",
+   "why_flagged": "這是與現有『VoR 需付費 ACM Open 才開放』及『Hybrid』模式直接矛盾的重大時效性發現（若屬實，2026年起 Interactions 已全面轉為 OA 雜誌）。Open Access 與 Metrics 之外的欄位屬 out-of-scope（Open Access 明列不可動），且此為過帳資訊而非嚴格 in-scope 的 Preprint 列本身內容矛盾，故不逕自覆寫，留待人工查證 ACM 官方公告後再決定是否更新 Preprint > Version of Record 與 Open Access 區塊。"
+  }
+ ]
+}

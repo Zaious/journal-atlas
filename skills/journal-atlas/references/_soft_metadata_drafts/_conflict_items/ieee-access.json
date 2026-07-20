@@ -1,0 +1,12 @@
+{
+ "name": "IEEE Access",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-access.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Acceptance Rate (not filled) vs. Soft Metadata > Reviewer Pool Characteristics existing acceptance-rate claim",
+   "existing_value": "現有 Soft Metadata > Reviewer Pool Characteristics 段落已寫:「~27% average acceptance rate (community evidence: manusights 2026-05)」;Metrics 表格的 Acceptance Rate / Desk Rejection Rate 儲存格本身仍是 *(fill manually if known)* 空白。",
+   "wo2_value": "WO2 experiential 發現:SciRev 未揭露確切錄取率(n/a);中文論壇(小木虫、知乎)提及近年錄取率由約 50% 降至約 30%,但此為二手轉述、非一手統計,WO2 自身也將其列入 blanks(desk_reject_pct 精確數字缺乏權威來源)。",
+   "why_flagged": "WO2 沒有足夠一手/權威數字可直接填入 Metrics 表格的 Acceptance Rate / Desk Rejection Rate(故本次未提出變更),但其約 30%(近年下降趨勢)的方向性資訊與既有 Soft Metadata 中 ~27% 的社群估計大致吻合、可互相佐證,建議人工複核後決定是否要把「近年由 ~50% 降至 ~30%」的趨勢描述補充進 Metrics 表格備註或既有 Reviewer Pool Characteristics 段落(屬於主觀子區塊,依規則不由本次 patch 直接編輯)。"
+  }
+ ]
+}

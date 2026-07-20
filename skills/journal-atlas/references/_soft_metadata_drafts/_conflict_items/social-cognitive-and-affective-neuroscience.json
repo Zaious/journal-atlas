@@ -1,0 +1,18 @@
+{
+ "name": "Social Cognitive and Affective Neuroscience",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-cognitive-and-affective-neuroscience.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Oxford UP default — varies by journal)",
+   "wo2_value": "single-anonymized (single-blind): 作者身分對編輯與審稿人公開,審稿人身分僅編輯知悉,對作者匿名。通常送2位審稿人。(source: https://academic.oup.com/scan/pages/author-guidelines)",
+   "why_flagged": "現存值是套用 Oxford UP 集團預設值的推測(且自註「varies by journal」),WO2 則引用該刊自己的 author-guidelines 頁面得出相反結論(single-anonymized)。兩者實質矛盾,且 WO2 來源較具期刊專屬性,但既有欄位已有具體內容,不應直接覆蓋,需人工核實。"
+  },
+  {
+   "field": "Policies > AI Policy (整組:Has journal-specific AI policy? / Explicit permission gate? / Leniency / Summary / Source URL)",
+   "existing_value": "Has journal-specific AI policy?: No (follows Oxford UP publisher default); gate: No — disclosure-based; leniency: 4; source: https://academic.oup.com/journals/pages/authors (集團泛用頁)",
+   "wo2_value": "gate: conditional; leniency: 3; summary 指出此為 SCAN 期刊專屬 author-guidelines 頁面上的具體落地政策(非泛用集團頁),要求於 cover letter 及 Methods/Acknowledgements 揭露生成式AI使用,AI 不得列為作者,期刊會篩查作者名單;source: https://academic.oup.com/scan/pages/author-guidelines",
+   "why_flagged": "現存條目主張『沒有期刊專屬 AI 政策,僅套用集團預設』,WO2 卻指出有一個 SCAN 專屬的 author-guidelines 頁面具體規範此政策,且來源 URL、leniency 分數(3 vs 4)、gate 描述(conditional vs disclosure-based/No)皆有出入。屬於既有欄位已有實質內容下的資訊衝突,非佔位符,故不直接覆蓋,留供人工比對兩份來源頁面後裁決。"
+  }
+ ]
+}

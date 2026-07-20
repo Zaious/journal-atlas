@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 381 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~24.6%（即拒稿率 75.4%，換算而得） | 2026-07-20 擷取自 APA 官方期刊頁面 apa.org/pubs/journals/dev/about（頁面本身未標示統計年份，建議日後覆核是否更新） |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.46 | 2026-05-16 |
@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
+| **Time to first decision** | 44 天（平均） | 2026-07-20 擷取自 APA 官方期刊頁面 apa.org/pubs/journals/dev/about（頁面本身未標示統計年份） |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
@@ -221,15 +221,15 @@ Reviewers drawn primarily from the developmental psychology and lifespan psychol
 | **Data transparency requirement** | High — open data encouraged (APA badges) |
 | **OPSEC compatibility** | Medium — child-data anonymization rigorous; mandatory reporting protocols apply |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為APA全社通用政策，非期刊專屬頁面明文重述，但Developmental Psychology投稿頁引用適用APA全部政策。事實：AI不得列為作者；若AI用於草擬手稿內容，須在methods章節揭露並引註；審稿人/編輯禁止將待審手稿輸入AI工具（保密考量）；未見「事前需編輯許可」的關卡，屬揭露制而非許可制。因政策為出版社統一政策、非期刊獨有現場證據，信心中等。
+**AI-research finding (policy):** 此為APA全社通用政策，非期刊專屬頁面明文重述，但Developmental Psychology投稿頁引用適用APA全部政策。事實：AI不得列為作者；若AI用於草擬手稿內容，須在methods章節揭露並引註；審稿人/編輯禁止將待審手稿輸入AI工具（保密考量）；未見「事前需編輯許可」的關卡，屬揭露制而非許可制。因政策為出版社統一政策、非期刊獨有現場證據，信心中等。
 
-**WO2 positioning finding (what the journal accepts now):** 以「顯著推進終身發展知識與理論」之實證研究為主軸，接受多元方法（實驗室實驗、民族誌、田野研究、次級資料分析），也接受對人類發展有意涵的非人類物種研究；偏好開拓新研究領域、解決文獻矛盾、或檢驗現有發現在新母體中的可推廣性之稿件。
+**AI-research finding (positioning — what the journal accepts now):** 以「顯著推進終身發展知識與理論」之實證研究為主軸，接受多元方法（實驗室實驗、民族誌、田野研究、次級資料分析），也接受對人類發展有意涵的非人類物種研究；偏好開拓新研究領域、解決文獻矛盾、或檢驗現有發現在新母體中的可推廣性之稿件。
 
-**WO2 experiential finding:** 第三方彙整之歷史數據雜訊大、口徑不一：2013年拒絕率約80%（收錄率20%），2019年APA年度統計711篇投稿、195篇接受（拒絕率約72%），另有網路來源聲稱「32%接受率」但未附官方出處，三者互相矛盾，未找到2024-2026年APA官方年度營運報告（Summary Report of Journal Operations）數字可核實，故不採信單一數字。 
+**AI-research finding (experiential):** 第三方彙整之歷史數據雜訊大、口徑不一：2013年拒絕率約80%（收錄率20%），2019年APA年度統計711篇投稿、195篇接受（拒絕率約72%），另有網路來源聲稱「32%接受率」但未附官方出處，三者互相矛盾，未找到2024-2026年APA官方年度營運報告（Summary Report of Journal Operations）數字可核實，故不採信單一數字。 
 
 **Sources cited in this pass:**
 - https://scirev.org/journal/developmental-psychology/ (SciRev, n=1 review, quality rating 4.0/5, overall handling 3.0/5, outcome=rejection)
@@ -239,7 +239,7 @@ Reviewers drawn primarily from the developmental psychology and lifespan psychol
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11326 (LetPub 中國作者投稿經驗區僅列1筆但未展開詳細內容；頁面另附之ISSN 0273-2297/EISSN 1090-2406與本期刊實際ISSN 0012-1649/EISSN 1939-0599不符，疑為頁面資料混雜，不可靠，未採用其審稿時間數字)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev該期刊頁面「immediate rejection decision time」欄位顯示n/a；未找到小木虫/知乎/Reddit r/AskAcademia針對本期刊的具體退稿率一手討論
 - **experiential.review_time_months**: SciRev僅有1筆使用者回報（21.7週），樣本量過小不足以作為期刊平均值，僅列為單一觀察值
 - **experiential.reviewer_culture**: 小木虫搜尋未返回本刊專屬討論串；知乎搜尋僅返回其他發展心理學期刊(如JCPP、JEP)介紹文，無Developmental Psychology一手審稿人風格討論；Reddit r/AskAcademia搜尋未返回本刊具體討論，故保持空白而非套用發展心理學領域通用敘事
@@ -302,6 +302,7 @@ Low for developmental-tradition empirical authors. Moderate for adjacent-discipl
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Metrics > Acceptance Rate; Metrics > Review Cycle Time > Time to first decision. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

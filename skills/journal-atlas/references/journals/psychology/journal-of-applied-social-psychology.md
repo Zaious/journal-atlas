@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | ~4.6 months (avg, first review round) | *(WO2/SciRev community survey, n=5 user-reported reviews — small sample, low confidence)* |
-| **Time to acceptance (total)** | ~5.3 months (avg, accepted manuscripts) | *(WO2/SciRev community survey, n=5 user-reported reviews — small sample, low confidence)* |
+| **Time to first review** | ~4.6 months (avg, first review round) | *(AI-research/SciRev community survey, n=5 user-reported reviews — small sample, low confidence)* |
+| **Time to acceptance (total)** | ~5.3 months (avg, accepted manuscripts) | *(AI-research/SciRev community survey, n=5 user-reported reviews — small sample, low confidence)* |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -219,15 +219,15 @@ Reviewers from applied social-psychology research community — SPSSI (Society f
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Wiley 出版社通用政策(未能直接驗證 JASP 期刊專屬頁面,因 onlinelibrary.wiley.com 對本工具回傳 402/403)。政策要點:AI 不得列為作者;投稿時須揭露 AI Technology 之使用,包括用途、是否影響關鍵論點或結論、以及作者如何審核驗證 AI 產出內容;僅用於拼字/文法/一般編輯的 AI 工具豁免揭露;作者對全文內容(含引用、分析)負完全責任。未找到 JASP 期刊層級的加嚴或放寬版本,故列為 leniency=2(保守估計,屬揭露強制型而非開放型),並標記本層 signal_quality 低,因為無法直接抓取期刊官方頁面確認是否有期刊特化條款。
+**AI-research finding (policy):** 此為 Wiley 出版社通用政策(未能直接驗證 JASP 期刊專屬頁面,因 onlinelibrary.wiley.com 對本工具回傳 402/403)。政策要點:AI 不得列為作者;投稿時須揭露 AI Technology 之使用,包括用途、是否影響關鍵論點或結論、以及作者如何審核驗證 AI 產出內容;僅用於拼字/文法/一般編輯的 AI 工具豁免揭露;作者對全文內容(含引用、分析)負完全責任。未找到 JASP 期刊層級的加嚴或放寬版本,故列為 leniency=2(保守估計,屬揭露強制型而非開放型),並標記本層 signal_quality 低,因為無法直接抓取期刊官方頁面確認是否有期刊特化條款。
 
-**WO2 positioning finding (what the journal accepts now):** 應用社會心理學實證研究,聚焦組織與領導心理、健康/安全/性別議題、戰爭與天災感知、陪審團審議、運動與表現、疾病(愛滋、癌症、心臟病)等社會問題之行為科學應用研究。近期(2026)刊出例:Hardacre 等人研究大學生食物不安全與社會階層、學生認同/歸屬感之中介效果。
+**AI-research finding (positioning — what the journal accepts now):** 應用社會心理學實證研究,聚焦組織與領導心理、健康/安全/性別議題、戰爭與天災感知、陪審團審議、運動與表現、疾病(愛滋、癌症、心臟病)等社會問題之行為科學應用研究。近期(2026)刊出例:Hardacre 等人研究大學生食物不安全與社會階層、學生認同/歸屬感之中介效果。
 
-**WO2 experiential finding:** SciRev 樣本僅5則評論,不具統計代表性。最近一則評論提及:『編輯在作者做了大幅修改後直接拒稿,未再送審』,顯示編輯決策可能不完全遵循標準送審流程。審稿報告品質評分2.8/5(中下);整體投稿處理體驗評分2.2/5(中等偏下);審稿意見難度評分3.7/5(偏難);平均審稿輪數1.8輪;平均審稿人數1.8人。 
+**AI-research finding (experiential):** SciRev 樣本僅5則評論,不具統計代表性。最近一則評論提及:『編輯在作者做了大幅修改後直接拒稿,未再送審』,顯示編輯決策可能不完全遵循標準送審流程。審稿報告品質評分2.8/5(中下);整體投稿處理體驗評分2.2/5(中等偏下);審稿意見難度評分3.7/5(偏難);平均審稿輪數1.8輪;平均審稿人數1.8人。 
 
 **Sources cited in this pass:**
 - https://en.wikipedia.org/wiki/Journal_of_Applied_Social_Psychology
@@ -237,7 +237,7 @@ Reviewers from applied social-psychology research community — SPSSI (Society f
 - https://www.wiley.com/en-us/publish/article/ai-guidelines/ (Wiley general policy; journal-specific AI page not independently verified — WebFetch returned 403/402 on the Wiley domain)
 - search snippet citing a 2026 article by Hardacre et al. on food insecurity (exact URL not retrieved)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.gate / leniency journal-specific detail**: onlinelibrary.wiley.com 對本工具的直接抓取回傳 HTTP 402 Payment Required,無法驗證 JASP 是否有超越 Wiley 通用政策的期刊專屬 AI 條款。僅能引用 Wiley 集團層級政策作為代理(proxy),已標註於 summary。
 - **peer_review.type / preprint.allowed 的第一手驗證**: 同上,forauthors.html 頁面本身無法直接 WebFetch(402),事實來自 WebSearch 引擎對該頁的摘要描述,非本工具直接讀取原文,可信度打折。
 - **experiential.desk_reject_pct**: SciRev 該欄位顯示 n/a,無任何論壇(小木虫/fabiaoji/知乎/Reddit r/AskAcademia)提供具體拒稿率數字,故留空。
@@ -297,6 +297,6 @@ Low for applied social-psychology tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher + SPSSI-affiliated applied social-psychology editorial culture domain knowledge | @Zaious |

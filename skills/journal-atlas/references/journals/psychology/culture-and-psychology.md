@@ -65,7 +65,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Sage default) |
+| **Type** | Open review — editors seek ≥2 reviewers to assess scientific content & presentation; authors and reviewers may each request anonymity be respected, but single/double-anonymization is not mandatory (per journal-specific Submission Guidelines, overriding Sage's generic double-anonymized default) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Sage default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -76,8 +76,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No journal-specific addendum identified (follows Sage publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 (disclosure-based, no editor pre-approval gate) |
+| **Explicit permission gate?** | No pre-approval gate — disclosure at submission is mandatory (conditional on disclosure, not on prior editorial clearance); undisclosed GenAI use, not disclosed use itself, is the actual rejection trigger |
+| **Leniency (1-5)** | 4 (disclosure-based; per Sage's own policy text, submissions "will not be rejected solely because of the disclosed use of GenAI tools") |
 | **Summary** | Follows Sage publisher AI policy: disclosure required if AI use affects research content; AI cannot be listed as authors. |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 | **Note** | Recommend contacting editorial office to confirm latest version. |
@@ -205,15 +205,15 @@ Reviewers are drawn primarily from the dialogical self and cultural-psychology c
 | **Data transparency requirement** | Flexible for qualitative work; pseudonymization is standard |
 | **OPSEC compatibility** | High — interpretive cultural-psychology work does not require raw-data exposure |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 SAGE 出版社層級的通用 AI 政策(未查到 Culture & Psychology 期刊專屬版本，本刊網頁亦未見額外聲明)。輔助性 AI(文法/語言潤飾)免揭露；生成式 AI 產出主要內容(文字、參考文獻、圖像、方法段落)須於投稿時揭露使用之模型；禁止用生成式 AI 捏造資料、頂替研究參與者、產生虛假引用；編輯與審稿人禁止用 GenAI 撰寫決議信或審稿意見。政策未明確說明 AI 是否可列為作者。
+**AI-research finding (policy):** 此為 SAGE 出版社層級的通用 AI 政策(未查到 Culture & Psychology 期刊專屬版本，本刊網頁亦未見額外聲明)。輔助性 AI(文法/語言潤飾)免揭露；生成式 AI 產出主要內容(文字、參考文獻、圖像、方法段落)須於投稿時揭露使用之模型；禁止用生成式 AI 捏造資料、頂替研究參與者、產生虛假引用；編輯與審稿人禁止用 GenAI 撰寫決議信或審稿意見。政策未明確說明 AI 是否可列為作者。
 
-**WO2 positioning finding (what the journal accepts now):** 本刊定位為文化心理學旗艦期刊，以理論性論文為主軸，強調文化、認同、社會行為、主體/互為主體經驗、情緒與符號創造力等主題的跨學科(心理學、哲學、人類學、社會學、教育、民族誌、文化史、語言學、女性主義研究、批判研究、傳播研究)探討。
+**AI-research finding (positioning — what the journal accepts now):** 本刊定位為文化心理學旗艦期刊，以理論性論文為主軸，強調文化、認同、社會行為、主體/互為主體經驗、情緒與符號創造力等主題的跨學科(心理學、哲學、人類學、社會學、教育、民族誌、文化史、語言學、女性主義研究、批判研究、傳播研究)探討。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/author-instructions/cap
@@ -223,7 +223,7 @@ Reviewers are drawn primarily from the dialogical self and cultural-psychology c
 - https://www.haoqikan.com/sci/1354067X/ (審稿時間顯示「—」，無數據)
 - https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **review_time_months**: SciRev 資料庫未收錄此刊(多種 URL/搜尋嘗試皆無結果)；LetPub、fabiao.com.cn、haoqikan.com 等中文彙整站雖有本刊頁面框架，但審稿週期欄位均為空或顯示「—」；muchong 論壇、知乎、Reddit r/AskAcademia 搜尋均未找到針對本刊的第一手投稿經驗討論串
 - **desk_reject_pct**: 同上，所有查證來源(SciRev/LetPub/fabiao/haoqikan/muchong/知乎/Reddit)均無此刊的退稿率第一手數據
 - **acceptance_note**: 未找到任何作者第一手投稿/接受經驗分享(中英文皆無)，故不編造通用敘述
@@ -284,7 +284,8 @@ Moderate when manuscripts originate outside cultural-psychology paradigm. Author
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts: Peer Review Type corrected to open review (journal-specific override of Sage default, verified via search-indexed Submission Guidelines text); AI Policy gate/leniency wording harmonized (clarified "no pre-approval, disclosure-conditional" per verified Sage AI-policy source text). Soft Metadata framing conflict left unedited (out of scope). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

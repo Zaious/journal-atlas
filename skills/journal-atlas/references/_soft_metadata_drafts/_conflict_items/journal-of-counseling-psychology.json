@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Counseling Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-counseling-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate?",
+   "existing_value": "Leniency: 4；Explicit permission gate?: No — disclosure-based",
+   "wo2_value": "leniency_1_5: 3；gate: \"conditional\"（同一段政策描述文字，但WO2將寬容度評為3/5、閘門定性為「有條件」，既有檔案評為4/5、閘門定性為「No」）",
+   "why_flagged": "兩邊引用的政策原文幾乎相同（APA統一政策：允許使用但強制揭露、AI不得列作者），但對同一政策的量化評分（4 vs 3）與閘門定性描述（No vs conditional）不一致，屬於評分口徑差異而非新事實，需要人工判斷該用哪個評分口徵，不宜自動覆蓋既有非空白欄位。"
+  },
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Masked (blind) review — APA整體約半數的47本期刊強制匿名審查、其餘多數可依要求採用，但WO2明確指出「JCP自己的頁面並未明文重申此點，故本刊層級的確切匿名審查狀態未經確認」",
+   "why_flagged": "既有欄位以肯定語氣寫「per APA default」，WO2研究則明確表示此刊層級的匿名審查狀態『未經確認』，屬於確定性程度上的分歧（既有較肯定、WO2較保留），建議人工核實JCP的Instructions for Authors是否明文規定，而非直接修改已有內容的欄位。"
+  }
+ ]
+}

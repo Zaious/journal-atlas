@@ -1,0 +1,24 @@
+{
+ "name": "IEEE Pervasive Computing",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-pervasive-computing.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate",
+   "existing_value": "No — disclosure-based",
+   "wo2_value": "JSON 結構化欄位 gate=\"yes\",但其 summary 敘述內容其實描述的是「acknowledgments 揭露 AI 使用範圍」的揭露制,並非要求作者事先取得允許的「permission gate」;且此 WO2 來源(IEEE 出版倫理總則頁)非 IEEE Pervasive Computing 期刊專屬頁面。",
+   "why_flagged": "既有欄位已有具體內容(非 placeholder),依規則不得覆蓋;但 WO2 的結構化 gate 值與其自身文字描述、以及與既有檔案內容三者之間有實質不一致,需要人工複核到底 gate 該標 Yes 或 No,不宜由此次 patch 自動判定。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Pre-submission row",
+   "existing_value": "Yes | arXiv / bioRxiv / similar permitted by most publishers",
+   "wo2_value": "Yes, but IEEE 政策明確僅認可 arXiv 與 TechRxiv 為第三方預印本儲存庫(未將 bioRxiv 列入認可名單);屬 IEEE 全出版線通則,非期刊專屬。",
+   "why_flagged": "既有欄位已有具體內容(非 placeholder),依規則不覆蓋;但 WO2 指出 IEEE 官方認可名單不含 bioRxiv,與既有欄位把 bioRxiv 一併列為「多數出版社允許」的寫法存在實質出入,可能誤導作者,建議人工核實後決定是否修正措辭。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time (Time to first decision / Time to first review / Time to acceptance total 三列)",
+   "existing_value": "*(community estimate)* (三列皆為空白 placeholder)",
+   "wo2_value": "~3 個月(12 週)——但此數字僅來自 LetPub/小木虫聚合頁/学术之家等中文期刊聚合站的統計摘要,WO2 自身將其 signal_quality 標為 1/5,並在「Fields WO2 could not find evidence for」清單中明列此欄位為缺乏可追溯第一手證據、未達到工作單要求的查證門檻。",
+   "why_flagged": "雖然這三列在既有檔案中確實是空白可填格,但 WO2 對應數據本身被其自身研究流程判定為證據不足、不可追溯到具體個案,不符合「有真實、可查證答案」的填入門檻,故未直接套用,留供人工判斷是否仍要以低信度社群估計形式收錄。"
+  }
+ ]
+}

@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Double-anonymized — APA's official term is "masked review"; author name/affiliation appear only on a separate title page, not in the manuscript body (verified via apa.org/pubs/journals/ocp/submit, 2026-07-20). |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -82,8 +82,8 @@
 | **Has journal-specific AI policy?** | No (follows APA publisher default) |
 | **Explicit permission gate?** | No — disclosure-based |
 | **Leniency (1-5)** | 4 |
-| **Summary** | Follows APA publisher AI policy: authors must disclose use of generative AI tools (ChatGPT, etc.) in manuscript preparation. AI cannot satisfy authorship criteria. APA requires explicit disclosure in the Methods/Acknowledgments section. |
-| **Source URL** | https://www.apa.org/pubs/journals/policies/ |
+| **Summary** | Follows APA publisher AI policy (generic across APA journals, not JOHP-specific): authors must disclose use of generative AI tools (e.g., ChatGPT) in the Methods section and cite the tool/prompt used. AI cannot satisfy authorship criteria; authors remain fully responsible for the accuracy of any AI-assisted content. Authors must NOT enter confidential material (e.g., research data or participant/client notes that could identify a participant) into open generative AI tools. No pre-approval required — disclosure-based only. Leniency score (4) is the original maintainer judgment call; an independent AI research pass scored the same facts as 3/5 — flagged here as a scale-calibration disagreement, not a factual one, pending a defined scoring rubric. |
+| **Source URL** | https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai (verified 2026-07-20; generic policy also linked from https://www.apa.org/pubs/journals/policies/) |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -219,15 +219,15 @@ Reviewers from SOHP and broader work-stress / burnout research community. Common
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 APA 全出版社通用政策(非期刊專屬頁面另訂),要求:AI 不得列為作者;若用於草擬手稿需在 Methods 揭露並引用工具/提示;作者對 AI 產出內容之正確性負全責;不得將機密受試者資料輸入公開 AI 工具。屬「揭露制」而非「禁止制」或「事前核准制」,故評 3/5(中度寬容:允許但要揭露)。JOHP 期刊頁(apa.org/pubs/journals/ocp)僅連結到此通用政策頁,未見期刊專屬加嚴或放寬條款。
+**AI-research finding (policy):** 此為 APA 全出版社通用政策(非期刊專屬頁面另訂),要求:AI 不得列為作者;若用於草擬手稿需在 Methods 揭露並引用工具/提示;作者對 AI 產出內容之正確性負全責;不得將機密受試者資料輸入公開 AI 工具。屬「揭露制」而非「禁止制」或「事前核准制」,故評 3/5(中度寬容:允許但要揭露)。JOHP 期刊頁(apa.org/pubs/journals/ocp)僅連結到此通用政策頁,未見期刊專屬加嚴或放寬條款。
 
-**WO2 positioning finding (what the journal accepts now):** 無法從公開頁面直接取得 2024-2026 具體文章標題清單(APA PsycNet 目錄頁為 JS 動態載入,WebFetch 抓不到內容;多次搜尋僅取得期刊總覽介紹,未取得逐篇標題)。Aims & Scope 頁明確列出三大範疇:工作組織(organization of work)、個人心理特質(individual psychological attributes)、工作與非工作介面(work-nonwork interface),皆連結至員工健康/安全/福祉。徵稿類型分兩種:標準手稿(上限40頁雙倍行距)與 Research Notes 短文(上限20頁,暱稱'Kevin's Corner')。未查到現行 Special Issue CFP。
+**AI-research finding (positioning — what the journal accepts now):** 無法從公開頁面直接取得 2024-2026 具體文章標題清單(APA PsycNet 目錄頁為 JS 動態載入,WebFetch 抓不到內容;多次搜尋僅取得期刊總覽介紹,未取得逐篇標題)。Aims & Scope 頁明確列出三大範疇:工作組織(organization of work)、個人心理特質(individual psychological attributes)、工作與非工作介面(work-nonwork interface),皆連結至員工健康/安全/福祉。徵稿類型分兩種:標準手稿(上限40頁雙倍行距)與 Research Notes 短文(上限20頁,暱稱'Kevin's Corner')。未查到現行 Special Issue CFP。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://www.apa.org/pubs/journals/ocp
@@ -235,7 +235,7 @@ Reviewers from SOHP and broader work-stress / burnout research community. Common
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 - https://www.scirev.org/journal/journal-of-occupational-health-psychology/ (n=2 reviews)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now (逐篇文章標題)**: APA PsycNet 目次頁為動態載入頁面,WebFetch/WebSearch 均無法取得 2024-2026 實際發表文章標題清單,僅能取得期刊層級的 aims & scope 敘述,故 positioning.signal_quality 評為 1(僅有 scope 層級資訊,無實際近期文章佐證)。
 - **positioning.methods_welcome**: 因未能取得逐篇文章標題/摘要,無法歸納出期刊實際偏好的研究方法(量化/質化/縱貫/介入研究等),故留空避免臆測。
 - **experiential.desk_reject_pct**: SciRev 樣本僅2筆評論,未提供整體 desk-reject 比例統計;LetPub 頁面顯示「同領域作者分享投稿經驗:共0條」,即中文審稿經驗資料庫為零筆,查無可用數據。
@@ -297,6 +297,7 @@ Low for OHP tradition authors. Diary / ESM designs are distinctive editorial str
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from APA publisher + SOHP-affiliated occupational health psychology editorial culture domain knowledge | @Zaious |

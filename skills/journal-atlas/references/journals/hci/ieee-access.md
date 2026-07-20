@@ -37,7 +37,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 362 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | ~20% (IEEE Access 官方「At a Glance」統計:"Average Acceptance Rate: 20%"; 注意:社群/二手來源估計偏高,manusights ~27%、AI研究補充引述中文論壇 ~30%〔近年由~50%降至~30%〕,可能反映歷史或非官方推估,以官方數字為準). Source: https://ieeeaccess.ieee.org/about/, https://ieeeaccess.ieee.org/about/rapid-peer-review/ | 2026-07-20 |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 5.09 | 2026-05-16 |
@@ -48,9 +48,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | ~4-6 weeks (initial review to first decision) | IEEE Access self-reported average ~4 weeks submission→accept/reject; SciRev community data ~1.5 months for first review round (cross-source synthesis by WO2). Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/, https://scirev.org/journal/ieee-access/ (WO2 research pass 2026-07-13) |
+| **Time to first decision** | ~4-6 weeks (initial review to first decision) | IEEE Access self-reported average ~4 weeks submission→accept/reject; SciRev community data ~1.5 months for first review round (cross-source synthesis by AI-research). Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/, https://scirev.org/journal/ieee-access/ (AI-research research pass 2026-07-13) |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | ~2-3 months (average) | SciRev community data: avg ~2.8 months for accepted manuscripts (avg 2.8 review reports, 1.7 review rounds). Source: https://scirev.org/journal/ieee-access/ (WO2 research pass 2026-07-13) |
+| **Time to acceptance (total)** | ~2-3 months (average) | SciRev community data: avg ~2.8 months for accepted manuscripts (avg 2.8 review reports, 1.7 review rounds). Source: https://scirev.org/journal/ieee-access/ (AI-research research pass 2026-07-13) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -69,7 +69,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-anonymized (single-blind); minimum 2 independent reviewers; binary accept/reject decision; editorial-board Associate Editor managed rapid review. Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/ (WO2 research pass 2026-07-13) |
+| **Type** | Single-anonymized (single-blind); minimum 2 independent reviewers; binary accept/reject decision; editorial-board Associate Editor managed rapid review. Source: https://ieeeaccess.ieee.org/about/rapid-peer-review/ (AI-research research pass 2026-07-13) |
 | **Transferable / Cascade?** | *(fill manually)* |
 | **Reviewer reports published?** | *(fill manually)* |
 | **Typical R+R rounds** | *(fill manually)* |
@@ -89,10 +89,10 @@
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Allowed | arXiv and TechRxiv are IEEE-recognized third-party preprint repositories; authors may freely post preprints before acceptance. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
-| Under review | Allowed | Same policy as pre-submission — preprint may remain posted while the manuscript is under review, until acceptance. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
-| Post-acceptance (AAM) | Allowed, with condition | After signing the IEEE copyright transfer, the posted preprint must be updated to include the IEEE copyright notice. No specific embargo period disclosed in sources. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
-| Version of Record | Not permitted as full text | After formal publication, the preprint must be replaced with citation info (DOI/IEEE Xplore link) or with the copyright-noticed accepted version — the full Version-of-Record text may not be reposted. Source: WO2 research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Pre-submission | Allowed | arXiv and TechRxiv are IEEE-recognized third-party preprint repositories; authors may freely post preprints before acceptance. Source: AI-research research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Under review | Allowed | Same policy as pre-submission — preprint may remain posted while the manuscript is under review, until acceptance. Source: AI-research research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Post-acceptance (AAM) | Allowed, with condition | After signing the IEEE copyright transfer, the posted preprint must be updated to include the IEEE copyright notice. No specific embargo period disclosed in sources. Source: AI-research research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
+| Version of Record | Not permitted as full text | After formal publication, the preprint must be replaced with citation info (DOI/IEEE Xplore link) or with the copyright-noticed accepted version — the full Version-of-Record text may not be reposted. Source: AI-research research pass 2026-07-13, https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/author_version_faq.pdf |
 
 ### Open Access
 
@@ -222,15 +222,15 @@ Associate Editors (AE) provide initial vetting + invite reviewers. Final decisio
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium — engineering data typically aggregable |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** IEEE 全刊通用政策(IEEE Access 適用): AI 生成內容(文字/圖/圖像/程式碼)須在 acknowledgments 揭露,需標明使用的 AI 系統、涉及段落與使用程度說明;文法/編輯用途的 AI 一般不在此揭露要求範圍內(但建議揭露);AI/AI輔助工具不得列為作者或共同作者;審稿人不得將待審稿件內容輸入公開 AI 平台(視為機密外洩)。此為 IEEE 出版社層級政策,未見 IEEE Access 期刊專屬加嚴版本,故標記為公司層級政策外推。
+**AI-research finding (policy):** IEEE 全刊通用政策(IEEE Access 適用): AI 生成內容(文字/圖/圖像/程式碼)須在 acknowledgments 揭露,需標明使用的 AI 系統、涉及段落與使用程度說明;文法/編輯用途的 AI 一般不在此揭露要求範圍內(但建議揭露);AI/AI輔助工具不得列為作者或共同作者;審稿人不得將待審稿件內容輸入公開 AI 平台(視為機密外洩)。此為 IEEE 出版社層級政策,未見 IEEE Access 期刊專屬加嚴版本,故標記為公司層級政策外推。
 
-**WO2 positioning finding (what the journal accepts now):** IEEE Access 為跨領域(multidisciplinary)、線上開放取用金色 OA 期刊,涵蓋所有 IEEE 技術領域,強調應用導向與跨領域研究;近年併入依 IEEE 技術社群劃分的 discipline-specific sections。截至查詢時(2026-07),官方 Special Sections 頁面顯示目前無開放中的專刊徵稿(no Special Sections open for submission at this time),故無法引用近期(2024-2026)具體專刊 CFP 作為佐證。
+**AI-research finding (positioning — what the journal accepts now):** IEEE Access 為跨領域(multidisciplinary)、線上開放取用金色 OA 期刊,涵蓋所有 IEEE 技術領域,強調應用導向與跨領域研究;近年併入依 IEEE 技術社群劃分的 discipline-specific sections。截至查詢時(2026-07),官方 Special Sections 頁面顯示目前無開放中的專刊徵稿(no Special Sections open for submission at this time),故無法引用近期(2024-2026)具體專刊 CFP 作為佐證。
 
-**WO2 experiential finding:** SciRev 未揭露 %accepted last year(n/a)。中文論壇(小木虫、知乎)普遍反映 IEEE Access 錄取門檻近年提升,不再像早年「幾乎照單全收」;常見拒稿理由為範疇不合與比較基準過舊,而非方法學致命缺陷。 小木虫討論串(muchong.com/t-13608696-1)一手發文者形容部分收到的審稿意見「潦草(sloppy)」,並質疑期刊對創新性/英文品質把關不夠嚴謹,但也有使用者指出審稿速度快、審稿人要求一週內完成審查。SciRev 量化評分:審查報告品質 3.4/5.0,整體稿件處理 3.4/5.0,審稿意見難度 3.0/5.0(中等)。未查到 Reddit r/AskAcademia 上的相關討論(搜尋 0 結果)。
+**AI-research finding (experiential):** SciRev 未揭露 %accepted last year(n/a)。中文論壇(小木虫、知乎)普遍反映 IEEE Access 錄取門檻近年提升,不再像早年「幾乎照單全收」;常見拒稿理由為範疇不合與比較基準過舊,而非方法學致命缺陷。 小木虫討論串(muchong.com/t-13608696-1)一手發文者形容部分收到的審稿意見「潦草(sloppy)」,並質疑期刊對創新性/英文品質把關不夠嚴謹,但也有使用者指出審稿速度快、審稿人要求一週內完成審查。SciRev 量化評分:審查報告品質 3.4/5.0,整體稿件處理 3.4/5.0,審稿意見難度 3.0/5.0(中等)。未查到 Reddit r/AskAcademia 上的相關討論(搜尋 0 結果)。
 
 **Sources cited in this pass:**
 - http://muchong.com/t-13608696-1
@@ -240,7 +240,7 @@ Associate Editors (AE) provide initial vetting + invite reviewers. Final decisio
 - https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/
 - https://scirev.org/journal/ieee-access/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.gate/leniency**: 查無 IEEE Access 期刊專屬的 AI 政策頁面,僅有 IEEE 出版社(journals.ieeeauthorcenter.ieee.org)通用政策,已標記為公司層級外推,非期刊專屬一手來源。
 - **positioning.accepts_now (2024-2026 具體文章/CFP)**: 官方 Special Sections 頁面顯示查詢當下(2026-07-13)無開放中專刊徵稿,且未取得可存取的近期期刊文章標題清單或已關閉專刊列表作為近期選題佐證,故 positioning 僅能依 aims & scope 泛層級描述,signal_quality 定為 2。
 - **experiential.desk_reject_pct (精確數字)**: 唯一數字來源為非一手部落格(manusights)估計值與中文論壇二手轉述,並非 SciRev 原始統計或作者一手發文的具體百分比,故列為軟性參考而非確定數字。
@@ -301,7 +301,8 @@ Low for engineering-tradition authors. APC ($1,950+ range) is a barrier for low-
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Metrics > Acceptance Rate (not filled) vs. Soft Metadata > Reviewer Pool Characteristics existing acceptance-rate claim. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (ieeeaccess.ieee.org) + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > IEEE Access (MIT) | @cardinal |

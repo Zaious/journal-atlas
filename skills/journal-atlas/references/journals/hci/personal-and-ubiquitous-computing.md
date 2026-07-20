@@ -219,15 +219,15 @@ Reviewers from UbiComp / ISWC / MobileHCI communities. Common demands: "System c
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 標準 Springer Nature AI 政策(非期刊特有頁面,經 WebSearch 摘要 Springer 條款):LLM 不可列為作者(無法承擔責任);LLM 使用須在 Methods 章節(或替代段落)揭露;僅供潤飾文字/文法/風格的 AI 輔助編輯('AI assisted copy editing')不需揭露;生成式 AI 圖片需另遵 Springer 圖片政策。未見期刊特有加嚴或放寬版本,判定為 Springer 集團標準政策,gate=conditional(揭露即可,非全面允許也非全面禁止)。
+**AI-research finding (policy):** 標準 Springer Nature AI 政策(非期刊特有頁面,經 WebSearch 摘要 Springer 條款):LLM 不可列為作者(無法承擔責任);LLM 使用須在 Methods 章節(或替代段落)揭露;僅供潤飾文字/文法/風格的 AI 輔助編輯('AI assisted copy editing')不需揭露;生成式 AI 圖片需另遵 Springer 圖片政策。未見期刊特有加嚴或放寬版本,判定為 Springer 集團標準政策,gate=conditional(揭露即可,非全面允許也非全面禁止)。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)UbiComp/PUC 生態圈內容明顯轉向 LLM/生成式 AI 與穿戴式感測結合的研究(如 LLM 驅動之活動辨識、IoT 任務推理、被動感測資料的 LLM 意義建構、AI 生成 persona 之效度研究),同時保留傳統穿戴式運算、行動運算、社會運算、擴增實境等主題。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2024-2026)UbiComp/PUC 生態圈內容明顯轉向 LLM/生成式 AI 與穿戴式感測結合的研究(如 LLM 驅動之活動辨識、IoT 任務推理、被動感測資料的 LLM 意義建構、AI 生成 persona 之效度研究),同時保留傳統穿戴式運算、行動運算、社會運算、擴增實境等主題。
 
-**WO2 experiential finding:** LetPub 頁面上使用者標註接受難度為「容易」,但未附具體百分比或樣本數,可信度低 
+**AI-research finding (experiential):** LetPub 頁面上使用者標註接受難度為「容易」,但未附具體百分比或樣本數,可信度低 
 
 **Sources cited in this pass:**
 - https://link.springer.com/journal/779/aims-and-scope (WebSearch 摘要版)
@@ -236,7 +236,7 @@ Reviewers from UbiComp / ISWC / MobileHCI communities. Common demands: "System c
 - https://slogix.in/research/journals/personal-and-ubiquitous-computing/
 - https://www.letpub.com.cn/index.php?journalid=6564&page=journalapp&view=detail (LetPub 中文投稿經驗彙整,無署名個案,無樣本數)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: link.springer.com 對此工具的請求一律被導向登入頁(303 redirect to idp.springer.com),投稿指南頁面內容無法直接讀取;WebSearch 未能單獨定位 single-blind/double-blind 的明確聲明,故留空。
 - **experiential.desk_reject_pct**: SciRev 該期刊頁面顯示 0 reviews submitted,所有欄位為 n/a;未在小木虫、知乎、Reddit r/AskAcademia 找到任何附數字的桌拒討論。
 - **experiential.reviewer_culture**: 跨語言檢索(小木虫、知乎、Reddit)均未找到針對此期刊審稿人風格/文化的具體第一手描述,只有通用期刊資訊頁與無署名投稿經驗彙整,不足以支撐主觀判斷。
@@ -294,6 +294,6 @@ Low for ubicomp tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + UbiComp / ISWC ubiquitous computing editorial culture domain knowledge | @Zaious |

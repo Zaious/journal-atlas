@@ -66,7 +66,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Sage default) |
+| **Type** | Double-anonymized — SAGE's official Submission Guidelines (journals.sagepub.com/author-instructions/qix) state: "Identity transparency: Double-anonymized; Reviewer interacts with: Editor; Review information published: None." Manuscripts must be anonymized before review (title page withheld from reviewers); the journal separately encourages an "open, transparent" culture where both parties *may* choose to reveal identity, but anonymity is upheld by default if requested. (Corrected 2026-07-20 — a prior finding conflated marketing-page language about the journal's editorially experimental *content* with its actual peer-review *process*; independently re-verified against the journal's own peer-review-policy page, not just search snippets.) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Sage default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -77,8 +77,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No journal-specific addendum identified (follows Sage publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 (disclosure-based, no editor pre-approval gate) |
+| **Explicit permission gate?** | No formal pre-submission approval gate — but conditionally gated on disclosure: undisclosed generative-AI use is prohibited (COPE-investigation risk) while disclosed use is editor-evaluated case-by-case. ("No gate" in the existing entry and "conditional" in the AI-research pass describe the same disclosure-gated policy from different angles, not a substantive disagreement.) |
+| **Leniency (1-5)** | 4 — retained from the existing assessment, since the operative constraint is post-hoc disclosure rather than prior gatekeeping (the more lenient reading). The AI-research pass scored this 3 under a stricter reading of "conditional," but did not surface a different underlying policy, so the score gap reflects rating judgment, not a factual conflict |
 | **Summary** | Follows Sage publisher AI policy. Layer 1 (no disclosure needed): grammar checking, language polishing. Layer 2 (disclosure required): literature search aids, translation, code generation, data visualization, citation compilation. Layer 3 (prohibited): AI-generated "research result" figures, AI-fabricated data, AI replacing interviewees, AI-driven qualitative thematic analysis, undisclosed generative AI use. AI cannot be listed as authors. |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 | **Note** | Recommend contacting editorial office directly to confirm latest version before submission. |
@@ -214,22 +214,22 @@ Reviewers are drawn primarily from the autoethnography, qualitative-methodology,
 | **Data transparency requirement** | Flexible — qualitative work does not require open data; pseudonymization standard |
 | **OPSEC compatibility** | High — interpretive autoethnographic work can pseudonymize subjects, including the author |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Sage 出版社通用 AI 政策（非 Qualitative Inquiry 專屬頁面，未找到該刊獨立 AI 政策頁）。不需事前許可；區分 assistive AI（潤飾語言/文法，免揭露）與 generative AI（產生內容影響方法論、分析、結果或結論，須在投稿時揭露供編輯評估，並在正文引用+列入參考文獻）。允許的 generative 用途包括文獻回顧輔助、材料翻譯、程式碼生成、資料視覺化、示意圖、程式除錯、參考文獻整理，但作者須核實準確性、以原始來源為主要引用對象、AI 不得列名作者。未揭露的不當使用可能依 COPE 指引觸發調查甚至撤稿。
+**AI-research finding (policy):** 此為 Sage 出版社通用 AI 政策（非 Qualitative Inquiry 專屬頁面，未找到該刊獨立 AI 政策頁）。不需事前許可；區分 assistive AI（潤飾語言/文法，免揭露）與 generative AI（產生內容影響方法論、分析、結果或結論，須在投稿時揭露供編輯評估，並在正文引用+列入參考文獻）。允許的 generative 用途包括文獻回顧輔助、材料翻譯、程式碼生成、資料視覺化、示意圖、程式除錯、參考文獻整理，但作者須核實準確性、以原始來源為主要引用對象、AI 不得列名作者。未揭露的不當使用可能依 COPE 指引觸發調查甚至撤稿。
 
-**WO2 positioning finding (what the journal accepts now):** 跨學科質性方法論論壇，聚焦方法論本身而非僅使用質性方法的研究內容/結果。近年主題涵蓋 ethnography、autoethnography、Indigenous methodologies、arts as research、reflexive thematic analysis、participatory action research，以及 postmodern、poststructural、new materialist、post-qualitative 相關的跨學科辯論。強調方法論發展本身，而非「僅是用了某個質性技巧來做研究」的論文。
+**AI-research finding (positioning — what the journal accepts now):** 跨學科質性方法論論壇，聚焦方法論本身而非僅使用質性方法的研究內容/結果。近年主題涵蓋 ethnography、autoethnography、Indigenous methodologies、arts as research、reflexive thematic analysis、participatory action research，以及 postmodern、poststructural、new materialist、post-qualitative 相關的跨學科辯論。強調方法論發展本身，而非「僅是用了某個質性技巧來做研究」的論文。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/home/QIX
 - https://us.sagepub.com/en-us/nam/qualitative-inquiry/journal200797
 - https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **review_time_months**: SciRev 該刊頁面顯示「No reviews have yet been submitted」；小木虫/xueshu.com/wdcsci 中文投稿經驗頁面明確寫出「未查询到审稿周期相关数据」；未搜尋到 Reddit r/AskAcademia 或知乎上的具體討論串。
 - **desk_reject_pct**: 同上，SciRev 無數據，中英文論壇皆無具體數字。
 - **acceptance_note**: 未找到任何一手投稿者對接受/拒絕流程的具體敘述（僅有二手期刊資訊聚合站的制式排版介紹）。
@@ -290,7 +290,9 @@ Low for autoethnographic / reflexive manuscripts originating in the qualitative-
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-20 | Peer Review > Type: adopted-then-reverted. A conflict-resolution pass first replaced "Double-anonymized" with "Open peer review" based on a marketing-page phrase; an adversarial re-verification pass (3 independent checks) found the journal's actual peer-review-policy page classifies it as Double-anonymized, and that the "open peer review" phrase describes the journal's editorially experimental content, not its review process. Corrected back to Double-anonymized with the properly verified source. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

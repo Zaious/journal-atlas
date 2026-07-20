@@ -80,9 +80,9 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Annual Reviews publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 3 |
-| **Summary** | Follows Annual Reviews editorial standards: AI use must be disclosed. AI cannot be author. Note: Annual Reviews is primarily an invited-author review journal; AI policies particularly stringent given commissioned-review nature. |
+| **Explicit permission gate?** | Conditional — publisher-wide policy restricts AI to checking completeness/readability, not first-draft generation; authors must confirm AI use with their Production Editor |
+| **Leniency (1-5)** | 2 |
+| **Summary** | Follows Annual Reviews publisher-wide editorial standard (applies to all AR journals; not confirmed as journal-specific to Annual Review of Psychology): generative AI should not replace authors in generating the initial outline/précis or first draft (text and figures), but may be used to query completeness of content and improve readability. Authors must check with their Production Editor on AI use. AI cannot be listed as author. This purpose-restricted, editor-confirmed arrangement functions as a conditional-use gate rather than pure disclosure. Annual Reviews is primarily an invited-author review journal; the policy is applied within the commissioned-review workflow. (Harmonized 2026-07-20 from existing Tier-2 entry + AI-research supplement, 2026-07-13 — same underlying publisher policy, previously mismatched in leniency score/gate label.) |
 | **Source URL** | https://www.annualreviews.org/page/authors/general-information |
 ### Preprint Policy
 
@@ -220,15 +220,15 @@ Reviewers and authors are selected through the Editorial Committee structure: Ed
 | **Data transparency requirement** | N/A for synthesis articles |
 | **OPSEC compatibility** | High — synthesis work does not expose primary data |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **1/5**.
 
-**WO2 AI policy finding:** Annual Reviews (publisher-wide, applies to all journals incl. Annual Review of Psychology): generative AI 'should not replace expert authors in initial generation of the article outline/précis and first draft (including text and figures) but can be used to query completeness of content and to improve the readability of text.' Invited authors are told to check with their Annual Reviews Production Editor on AI use in manuscript creation. This is a publisher-level policy, not confirmed as journal-specific to Annual Review of Psychology.
+**AI-research finding (policy):** Annual Reviews (publisher-wide, applies to all journals incl. Annual Review of Psychology): generative AI 'should not replace expert authors in initial generation of the article outline/précis and first draft (including text and figures) but can be used to query completeness of content and to improve the readability of text.' Invited authors are told to check with their Annual Reviews Production Editor on AI use in manuscript creation. This is a publisher-level policy, not confirmed as journal-specific to Annual Review of Psychology.
 
-**WO2 positioning finding (what the journal accepts now):** Annual Review of Psychology does NOT accept unsolicited manuscripts of any kind. All articles are invited synthesis/review essays commissioned by the Editorial Committee (chaired by Susan Fiske as of the most recent confirmed data), covering the discipline broadly: biological bases of behavior, sensation/perception, cognition, learning, human development, psychopathology, clinical/counseling psychology, social psychology, personality, environmental and community psychology.
+**AI-research finding (positioning — what the journal accepts now):** Annual Review of Psychology does NOT accept unsolicited manuscripts of any kind. All articles are invited synthesis/review essays commissioned by the Editorial Committee (chaired by Susan Fiske as of the most recent confirmed data), covering the discipline broadly: biological bases of behavior, sensation/perception, cognition, learning, human development, psychopathology, clinical/counseling psychology, social psychology, personality, environmental and community psychology.
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://en.wikipedia.org/wiki/Annual_Review_of_Psychology
@@ -237,7 +237,7 @@ Reviewers and authors are selected through the Editorial Committee structure: Ed
 - https://www.annualreviews.org/content/journals/psych/77/1
 - https://www.annualreviews.org/page/authors/editorial-policies
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev has no dedicated page/review-count for Annual Review of Psychology (searched directly; only other psych journals like British Journal of Psychology, Frontiers in Psychology returned). No forum thread reports a first-hand review timeline. Because the journal is invitation-only (no open submission queue), the concept of a standard external 'review time' largely does not apply the way it does for open-submission journals.
 - **experiential.desk_reject_pct**: No public source reports a desk-reject rate. Desk rejection is not a meaningful concept here since manuscripts are commissioned by invitation rather than submitted for screening.
 - **experiential.acceptance_note**: No first-hand author account found describing the acceptance experience (checked zhihu article on the journal — journal-intro content only, no submission narrative; muchong.com journal page — impact-factor history only, explicitly no review-timeline/acceptance data; Reddit r/AskAcademia search returned no on-topic threads).
@@ -295,6 +295,7 @@ For invited authors: low — committee selection has already validated the autho
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Harmonized AI Policy table (Explicit permission gate / Leniency / Summary) — resolved conflict between existing Tier-2 entry and AI-research supplement; both described the same Annual Reviews publisher-wide policy, just at different precision. Gate reworded "No — disclosure-based" → "Conditional"; Leniency 3 → 2. See conflict-resolution pass. | @Zaious (via conflict-resolution agent) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

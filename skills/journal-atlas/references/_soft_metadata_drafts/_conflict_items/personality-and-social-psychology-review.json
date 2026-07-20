@@ -1,0 +1,12 @@
+{
+ "name": "Personality and Social Psychology Review",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-social-psychology-review.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate",
+   "existing_value": "Explicit permission gate: 'No — disclosure-based'; Leniency: 4",
+   "wo2_value": "gate: 'conditional'; leniency_1_5: 3",
+   "why_flagged": "既有欄位已有具體內容（非佔位符），依規則不可直接覆蓋。但WO2對同一政策給出不同的寬嚴度評分（3 vs 現有的4）與稍不同的gate描述（conditional vs disclosure-based/No），屬於程度上的分歧，留供人工複核判斷是否需調整既有評分，而非逕自覆蓋。"
+  }
+ ]
+}

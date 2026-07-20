@@ -1,0 +1,30 @@
+{
+ "name": "IEEE Transactions on Affective Computing",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-transactions-on-affective-computing.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Explicit permission gate? / Leniency)",
+   "existing_value": "Explicit permission gate? No — disclosure-based；Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\"；leniency_1_5: 3",
+   "why_flagged": "既有內容並非佔位符（已具體描述 IEEE 通用 AI 政策），依規則不可直接覆蓋。但 WO2 對同一份 IEEE 通用政策的定性不同：既有檔案判定「無明確許可關卡、僅需揭露」且寬容度4；WO2 判定為「conditional gate」且寬容度僅3。兩者對同一政策的嚴格程度評分不一致，建議人工重新核對 IEEE Author Center 原文後決定是否調整寬容度分數或 gate 分類。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate / Desk Rejection Rate",
+   "existing_value": "*(fill manually if known)* （兩者皆為佔位符）",
+   "wo2_value": "acceptance_note: 一則經WebSearch聚合之知乎/CSDN文章聲稱拒稿率約70%，但原文(zhuanlan.zhihu.com/p/674046111)遭403拒絕僅能以搜尋引擎摘要間接佐證；desk_reject_pct 明確留白(null)",
+   "why_flagged": "WO2 自身已將此70%拒稿率數字標註為「可信度中等，未列為高信度數字」，且來源網頁無法直接存取（僅搜尋摘要）。依規則只在 WO2「有真實、有來源根據的答案」時才可填入，此數字不符合門檻，故不逕行套用，留待人工判斷是否值得以高度但書方式記錄或直接捨棄。"
+  },
+  {
+   "field": "Review Cycle Time (全部四列)",
+   "existing_value": "*(fill manually)* （四列皆為佔位符：first decision / first review / acceptance total / publication）",
+   "wo2_value": "review_time_months: 「分歧極大，區間約2–12個月」，綜合 SciRev(n=2,一審17週/總3.5月平均)、小木虫(n=1,三輪審查約8個月)、LetPub網友彙整(初審約45天但大修後總週期7–9個月，亦有案例一審等11個月)、CSDN(宣傳性文章聲稱2個月但自承2–12個月區間)",
+   "why_flagged": "WO2 資料雖有引用來源，但樣本數極小(n=1-2)、彼此矛盾、且未清楚區分「首次決定/首次審稿意見/總計錄用時間/接受後出版時間」四個不同階段，若強行拆分填入四個欄位將等同虛構精確度。建議留給人工判斷是否要以區間+但書方式填入其中一列（例如 acceptance total 大致 2-12 個月，樣本極小），而非由本次自動比對逕行分配。"
+  },
+  {
+   "field": "Soft Metadata（範圍外：Framing Requirements / Best Suited For / Reviewer Pool Characteristics）",
+   "existing_value": "Framing Requirements 已描述必須具情感運算貢獻；Best Suited For 列出臉部/語音/生理情緒辨識等；Reviewer Pool Characteristics 描述 ACII/IEEE 情感運算社群審稿人",
+   "wo2_value": "positioning.accepts_now: 近期(2025)徵稿聚焦「情感LLM與心理健康應用」「社交媒體情感/情緒推理分析」等新方向；reviewer_culture: SciRev唯一評論(2.5/5)指出審查「不必要地冗長」且疑似對錯稿件，另中國大陸作者占發文23.3%、中國科學院為主要投稿機構之一（惟均屬行銷性部落格文字，非嚴謹統計）",
+   "why_flagged": "此為 WO2 針對範圍外主觀章節（定位/審稿文化）的補充發現，依規則不可直接編輯這些章節，僅供人工後續參考是否要更新 Best Suited For（納入情感LLM/心理健康/社群媒體情感分析新方向）或 Reviewer Pool Characteristics（審稿冗長個案、中國大陸投稿比例高）等描述。"
+  }
+ ]
+}

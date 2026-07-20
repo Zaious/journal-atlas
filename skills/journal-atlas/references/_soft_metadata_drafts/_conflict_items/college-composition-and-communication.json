@@ -1,0 +1,18 @@
+{
+ "name": "College Composition and Communication",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Has journal-specific policy? / Summary / Source URL)",
+   "existing_value": "Yes (publisher default + may have journal overlay); disclosure-based, no explicit permission gate; leniency 3-4; summary is generic family-norm language (\"AI-assisted writing typically requires acknowledgment...verify current policy\"); source URL points to a general CCCC position statement (postpandemicwriting).",
+   "wo2_value": "WO2 found a specific, named, dated policy: \"CCC Generative AI Policy\"(2025年10月採行),明訂作者可用GenAI「支援」而非「取代」學術勞動,須附不超過200字揭露聲明(工具、任務、人類作者比例),審稿人被明確禁止將手稿內容輸入GenAI平台。Source: https://cccc.ncte.org/cccc/ccc-generative-ai-policy/",
+   "why_flagged": "既有欄位已有實質內容(非裸佔位符),依規則不得直接覆蓋改寫,但WO2找到的是具體、有日期、有正式名稱的期刊專屬政策,遠比現有的通用/含糊措辭(\"may have journal overlay\"、\"verify current policy\")精確,且來源網址也不同(現有連到postpandemicwriting立場聲明,WO2連到專屬AI政策頁)。非直接矛盾(結論方向一致:揭露制、非全面禁止),但建議人工核實後手動升級至Tier 1,並更新Source URL。"
+  },
+  {
+   "field": "Review Cycle Time > Time to publication (after acceptance)",
+   "existing_value": "*(typical: 2-6 weeks)*",
+   "wo2_value": "目前無稿件積壓(no backlog),獲接受的稿件通常在接下來兩期內刊出。 (acceptance_note, signal_quality 3/5, source: https://cccc.ncte.org/cccc/ccc/write)",
+   "why_flagged": "既有值為家族通用估計(2-6週),WO2的說法是「接下來兩期內刊出」——若CCC為季刊或更低頻率,兩期的實際時間跨度可能遠超過2-6週,兩者在量級上可能實質矛盾,需人工查證期刊實際出刊頻率後再判斷是否更新。"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "name": "Social and Personality Psychology Compass",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\social-and-personality-psychology-compass.md",
+ "conflicts": [
+  {
+   "field": "Strategic Notes > Hard Blockers / Framing Requirements（範疇外，僅供人工參考）",
+   "existing_value": "Hard Blockers 列「Original empirical work」為阻擋項；Framing Requirements 說明「Empirical work redirected to JPSP / PSPB / J Personality」",
+   "wo2_value": "positioning.accepts_now：依 2025-2026 搜尋結果，期刊近期已開放『簡潔實徵報告』(concise empirical reports ≤5000字)、資料驅動理論發展、重複驗證研究、期中發現等，並非純綜述期刊",
+   "why_flagged": "此為觸及 Strategic Notes/Framing Requirements（範疇外的主觀章節）的定位性發現，依規則不可直接編輯，僅供人工複核；註：此發現已由先前的自動化流程記錄於本檔案 Soft Metadata > 'AI-Research Notes (WO2 supplement)' 區塊作為補充說明，但尚未反映於 Hard Blockers / Framing Requirements 正文，建議維護者評估是否需要更新既有措辭以符合期刊近期實際收稿範圍。"
+  }
+ ]
+}

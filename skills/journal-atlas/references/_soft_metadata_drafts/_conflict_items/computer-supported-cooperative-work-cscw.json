@@ -1,0 +1,24 @@
+{
+ "name": "Computer Supported Cooperative Work (CSCW)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\computer-supported-cooperative-work-cscw.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Springer default — varies by journal)",
+   "wo2_value": "Single-blind. Search-engine synthesis of the journal's submission guidelines states manuscripts are reviewed by 3 referees plus 1 Associate Editor; no article accepted without 3 complete reviews. (Direct page fetch blocked by Springer login wall — medium confidence.)",
+   "why_flagged": "既有內容基於「Springer 預設、依期刊而異」的假設性推測；WO2 則找到具體的單盲＋3位審稿人＋1位副編輯的審稿結構描述，兩者對「雙盲 vs 單盲」的定性直接矛盾。但 WO2 自身也承認此資訊僅來自搜尋引擎快取／摘要，未能直接讀取 Springer 官方頁面（登入牆阻擋），信心中等，需人工查證期刊官方 submission guidelines 頁面後才能定案，不宜逕行覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy (Explicit permission gate? / Leniency)",
+   "existing_value": "Explicit permission gate? No — disclosure-based; Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\"; leniency_1_5: 3",
+   "why_flagged": "既有 AI Policy 區塊已有實質內容（非佔位符），依規則不可直接編輯；但 WO2 對同一份 Springer Nature 政策給出略為不同的分類（「條件式」 vs 「無明確許可關卡、僅需揭露」）與較低的寬容度評分（3 vs 4），屬於同一來源資訊的詮釋落差，非新事實，僅供人工校準參考，不建議自動覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements (out of scope, supplementary)",
+   "existing_value": "Manuscripts must demonstrate CSCW contribution — cooperative / collaborative work / technology mediating group interaction. CSCW tradition very accommodating of ethnographic / qualitative methods.",
+   "wo2_value": "Aims & scope explicitly favors work grounded in real cooperative-work practice: (1) ethnographic/in-depth fieldwork of work practices with technological implications; (2) empirical evaluations of existing or novel technical solutions under real-world conditions; (3) technical or conceptual frameworks for practice-oriented computing research built on prior fieldwork/evaluations. Purely abstract/algorithmic CSCW-adjacent papers without practice/fieldwork grounding appear to be a scope mismatch. (signal quality 2/5, source reached only via search-engine cache, login wall blocked direct verification)",
+   "why_flagged": "此為 Soft Metadata 主觀章節（Framing Requirements），依規則超出本次可編輯範圍；WO2 的發現提供了更具體的「田野調查／實務落地」框架要求細節，可作為未來人工升級 Tier 2→Tier 1 時的補充參考，故僅記錄於此供人工複核，不提出直接編輯。"
+  }
+ ]
+}

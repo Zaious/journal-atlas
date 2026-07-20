@@ -66,7 +66,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Sage default) |
+| **Type** | Single-anonymized (single-blind) by default; double-anonymized available on request — author notes the preference in the cover letter and uploads a separate title page with author names/affiliations/biographies (omitted from the main manuscript to preserve anonymization). Verified 2026-07-20 directly against the journal's own Submission Guidelines (https://journals.sagepub.com/author-instructions/hfs — PDF: "NOTE: HF has a single-anonymized review process, but in case you prefer a double anonymized review, please make a note of it in your cover letter..."), which supersedes the generic Sage-group default previously assumed. |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Sage default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -78,7 +78,7 @@
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Sage publisher AI policy |
 | **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
+| **Leniency (1-5)** | 4 — disclosure-gated rather than a blanket permission gate: assistive/language-editing AI needs no disclosure; generative AI use (literature synthesis, translation, code generation, data visualization, figures, debugging, reference organizing) must be disclosed in Methods/Acknowledgements; fabrication, full-manuscript generation, substituting AI for real human-subject interviews/thematic analysis/editorial decisions/peer review are hard-prohibited. Disclosed, legitimate use is not penalized; undisclosed misuse can trigger rejection at any stage. |
 | **Summary** | Follows Sage publisher AI policy: disclosure required if AI use affects research content; AI cannot be listed as author. |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 
@@ -225,15 +225,15 @@ Reviewers from HFES (Human Factors and Ergonomics Society) network and adjacent 
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** SAGE(出版社統一政策,未見 Human Factors 期刊專屬加嚴版本): assistive AI(文法/語言潤飾)免揭露;generative AI(文獻整理、翻譯、程式碼生成、資料視覺化、圖表、程式除錯、參考文獻整理)須在 Methods 或 Acknowledgements 揭露;禁止用 AI 生成造假內容/整篇稿件/取代真實受試者訪談/生成主題分析/編輯決策或同行評審。已揭露且正當使用不會僅因此被拒稿;未揭露的不當使用可在流程任何階段導致拒稿。未找到 Human Factors 期刊自訂的加嚴版本,視為採用 SAGE 集團預設政策。
+**AI-research finding (policy):** SAGE(出版社統一政策,未見 Human Factors 期刊專屬加嚴版本): assistive AI(文法/語言潤飾)免揭露;generative AI(文獻整理、翻譯、程式碼生成、資料視覺化、圖表、程式除錯、參考文獻整理)須在 Methods 或 Acknowledgements 揭露;禁止用 AI 生成造假內容/整篇稿件/取代真實受試者訪談/生成主題分析/編輯決策或同行評審。已揭露且正當使用不會僅因此被拒稿;未揭露的不當使用可在流程任何階段導致拒稿。未找到 Human Factors 期刊自訂的加嚴版本,視為採用 SAGE 集團預設政策。
 
-**WO2 positioning finding (what the journal accepts now):** 2025年實際刊出主題(Vol 67 No 3, 2025-03)涵蓋:外骨骼於間歇彎腰任務的肌肉負荷與使用者觀感、diminished reality 認知輔助設計以降低分心、部分自動駕駛對心智負荷/視覺行為/次要任務投入的統合分析(meta-analysis)。另有進行中之特刊徵稿:'Investigating the Human Factors of AI Use'(截止2025-10-01,徵求理論/方法/實證三類投稿,聚焦AI對人類表現與行為之影響、職場效益與非預期後果、組織意涵、安全風險、倫理考量)及'Human Factors in Healthcare'特刊(聚焦生醫資料的人因議題)。
+**AI-research finding (positioning — what the journal accepts now):** 2025年實際刊出主題(Vol 67 No 3, 2025-03)涵蓋:外骨骼於間歇彎腰任務的肌肉負荷與使用者觀感、diminished reality 認知輔助設計以降低分心、部分自動駕駛對心智負荷/視覺行為/次要任務投入的統合分析(meta-analysis)。另有進行中之特刊徵稿:'Investigating the Human Factors of AI Use'(截止2025-10-01,徵求理論/方法/實證三類投稿,聚焦AI對人類表現與行為之影響、職場效益與非預期後果、組織意涵、安全風險、倫理考量)及'Human Factors in Healthcare'特刊(聚焦生醫資料的人因議題)。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/toc/hfs/current
@@ -241,7 +241,7 @@ Reviewers from HFES (Human Factors and Ergonomics Society) network and adjacent 
 - https://www.hfes.org/About/Latest-News/call-for-papers-special-issue-in-human-factors-investigating-the-human-factors-of-ai-use
 - https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev 該刊頁面顯示 0 筆評論提交,所有時間欄位為 n/a;中文論壇(小木虫/知乎)與 Reddit r/AskAcademia 均未搜到針對本刊的一手討論
 - **experiential.desk_reject_pct**: 同上,SciRev 無數據,跨語言論壇亦無討論串可引用
 - **experiential.acceptance_note**: 無任何公開一手投稿經驗來源(SciRev/小木虫/知乎/Reddit)提及本刊
@@ -302,6 +302,6 @@ Low for HFES-tradition authors. Very high for HCI design or critical work — ty
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. HFES-affiliated ergonomics/human factors anchor noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

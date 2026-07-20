@@ -219,15 +219,15 @@ Reviewers from BPS Social Psychology Section + EASP / European social-psychology
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 找不到 BJSP 專屬 AI 政策頁（Wiley journal author-guidelines 頁面回傳 402 付費牆，WebFetch 無法讀取），故以 Wiley 出版社層級的通用 Generative AI Policy 代替，並標註為 publisher-level 而非期刊專屬。Wiley 政策：AI/LLM 不得列為作者或共同作者；若使用生成式 AI 協助撰寫手稿內容，須在 Methods 或 Acknowledgements 揭露使用的工具與方式；純文法/拼字校對工具不在揭露範圍內；審稿人與編輯被禁止將手稿全文或部分上傳至 ChatGPT 等生成式 AI 工具（保密政策）。因為允許有條件使用但要求揭露，且不完全禁止，評為 leniency 3（中間值）；gate=conditional（需揭露，非需事先徵求授權）。
+**AI-research finding (policy):** 找不到 BJSP 專屬 AI 政策頁（Wiley journal author-guidelines 頁面回傳 402 付費牆，WebFetch 無法讀取），故以 Wiley 出版社層級的通用 Generative AI Policy 代替，並標註為 publisher-level 而非期刊專屬。Wiley 政策：AI/LLM 不得列為作者或共同作者；若使用生成式 AI 協助撰寫手稿內容，須在 Methods 或 Acknowledgements 揭露使用的工具與方式；純文法/拼字校對工具不在揭露範圍內；審稿人與編輯被禁止將手稿全文或部分上傳至 ChatGPT 等生成式 AI 工具（保密政策）。因為允許有條件使用但要求揭露，且不完全禁止，評為 leniency 3（中間值）；gate=conditional（需揭露，非需事先徵求授權）。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025) call for papers 顯示編輯部目前積極徵稿主題包括：(1) 特刊「Contact seeking, contact avoidance and the enduring challenge of segregation」(接觸尋求/迴避與族群隔離)，摘要截止2025-03-31、全文截止2025-09-30；(2) BPS 跨刊特輯「Psychological Perspectives on Climate Adaptation and Resilience」(氣候調適與韌性的心理學視角)，摘要截止2025-12-15、全文截止2026-04-30；(3) 長期性的 Open Science / Registered Reports 徵稿（含質性研究之預註冊）。期刊定位為國際性社會心理學基礎與應用研究，涵蓋 social cognition, attitudes, group processes, social influence, intergroup relations, self and identity, nonverbal communication, affect/emotion, language and discourse 等主題，同時接受量化與質性方法。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025) call for papers 顯示編輯部目前積極徵稿主題包括：(1) 特刊「Contact seeking, contact avoidance and the enduring challenge of segregation」(接觸尋求/迴避與族群隔離)，摘要截止2025-03-31、全文截止2025-09-30；(2) BPS 跨刊特輯「Psychological Perspectives on Climate Adaptation and Resilience」(氣候調適與韌性的心理學視角)，摘要截止2025-12-15、全文截止2026-04-30；(3) 長期性的 Open Science / Registered Reports 徵稿（含質性研究之預註冊）。期刊定位為國際性社會心理學基礎與應用研究，涵蓋 social cognition, attitudes, group processes, social influence, intergroup relations, self and identity, nonverbal communication, affect/emotion, language and discourse 等主題，同時接受量化與質性方法。
 
-**WO2 experiential finding:** SciRev樣本中唯一有結果紀錄的個案為「11週後獲接受」，整體手稿處理滿意度評分4.0/5.0(很好)，但樣本數僅3則，不足以推論母體接受率；letpub頁面「同領域作者分享投稿經驗」欄位實際顯示0筆，該站對BJSP並無真人第一手經驗分享。 
+**AI-research finding (experiential):** SciRev樣本中唯一有結果紀錄的個案為「11週後獲接受」，整體手稿處理滿意度評分4.0/5.0(很好)，但樣本數僅3則，不足以推論母體接受率；letpub頁面「同領域作者分享投稿經驗」欄位實際顯示0筆，該站對BJSP並無真人第一手經驗分享。 
 
 **Sources cited in this pass:**
 - https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448309/call-for-papers/si-2025-000044
@@ -238,7 +238,7 @@ Reviewers from BPS Social Psychology Section + EASP / European social-psychology
 - https://scirev.org/journal/british-journal-of-social-psychology/
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11592&xuanxiangk_id=2
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific)**: BJSP專屬Author Guidelines頁面(bpspsychub.onlinelibrary.wiley.com與onlinelibrary.wiley.com兩個網址)皆回傳HTTP 402付費牆，WebFetch無法讀取內文，僅能靠WebSearch摘要片段推測期刊採用Wiley出版社通用政策，未能確認是否有期刊層級的額外限制或放寬，故ai_policy.source_url標記為publisher-level而非期刊專屬頁。
 - **experiential.reviewer_culture**: 小木虫muchong.com未搜尋到針對BJSP的具體討論串；知乎搜尋僅回傳期刊基本資訊網站，無真人審稿文化描述；Reddit r/AskAcademia搜尋無相關結果；SciRev僅3筆評論且未含審稿人態度的具體敘述文字（僅有評分數字），故留白，不編造審稿人文化敘事。
 - **experiential.desk_reject_pct**: SciRev頁面未提供百分比形式的桌拒率統計（僅提供「平均桌拒時間2天」，非「桌拒比例」）；letpub的「平均录用比例」欄位標示為無數據，故留白。
@@ -296,6 +296,6 @@ Low for UK / European social-psychology tradition. US authors may need broader t
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley/BPS publisher + BPS Social Psychology Section UK / European editorial culture domain knowledge | @Zaious |

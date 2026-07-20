@@ -1,0 +1,24 @@
+{
+ "name": "International Journal of Design",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-design.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "Double-blind (雙盲審) — 來源 http://www.ijdesign.org/index.php/IJDesign/about/submissions",
+   "why_flagged": "現有值是套用「期刊家族常規假設」且明白寫著「check publisher」尚未查證；WO2 實地查閱該刊官方投稿頁後得出具體結論「雙盲審」，兩者直接矛盾（單盲 vs 雙盲），非單純補充細節，故列為衝突待人工核實，不逕行覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy（Has journal-specific AI policy? / Leniency / Summary 等列）",
+   "existing_value": "Has journal-specific AI policy? Yes (publisher default + may have journal overlay); Explicit permission gate? No — disclosure-based; Leniency 3-4; Summary 描述一般揭露式政策",
+   "wo2_value": "WO2 逐字查閱投稿頁與作者須知全文，未見任何 AI/生成式AI 使用揭露或許可條款，亦查無期刊或出版單位（Chaoyang University of Technology / Taiwan Design Center）獨立發布的 AI 政策頁；gate 與 leniency 皆刻意留空(null)，該子項 signal_quality=0。",
+   "why_flagged": "現有表格假設此刊「有」AI政策並給出具體寬鬆度(3-4)，但 WO2 的實地查證結論是「查無此刊或其出版單位發布的任何AI政策證據」，屬實質矛盾而非僅是細節不足；此發現雖已於下方 Soft Metadata > AI-Research Notes 供人工複核，但上方 Policies > AI Policy 表格本身尚未依此調整，故仍列為衝突，不逕行覆蓋既有內容。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time（Time to first decision 列，階段對應含糊）",
+   "existing_value": "Time to first decision | *(community estimate)* | （佔位符，符合可填條件）",
+   "wo2_value": "experiential.review_time_months = \">3個月 (>12週) 或屬邀稿(by invitation)\"，來源為 LetPub 期刊頁彙總統計（非單一投稿人經驗分享），但未指明此數字對應「首次決定」「首次審稿」或「總計錄取時間」四列中的哪一項",
+   "why_flagged": "WO2 提供的是複合且含糊的審稿週期敘述（\">12週\" 或 \"屬邀稿\" 二選一），未明確對應表格四個階段中的哪一列；且 WO2 對此段落整體 signal_quality 僅 2/5，原始資料中亦多次自陳「可信度中等偏低，僅供參考」「原頁403無法核實，僅搜尋引擎二手摘要」。為避免不精確地指派到某個特定 pending 欄位造成誤導性精確感，保守起見不逕行填入，留待人工判斷應歸類於哪一列或是否僅適合放在敘述性 Notes 中。"
+  }
+ ]
+}

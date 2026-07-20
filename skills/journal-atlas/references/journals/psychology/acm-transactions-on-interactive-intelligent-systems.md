@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per ACM default — varies by journal) |
+| **Type** | Double-anonymous, effective 2025-07-01 (journal-specific policy change — TiiS moved from single- to double-anonymous review starting this date; author identity hidden from reviewers, though the handling associate editor knows it) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per ACM default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -89,7 +89,7 @@
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
 | Pre-submission | Yes (ACM permits arXiv / institutional repositories) | |
-| Under review | No updates (per ACM default) | |
+| Under review | Not prohibited, but discouraged | Since the 2025-07-01 double-anonymous review policy took effect, authors are 'encouraged to refrain from' posting submitted-version preprints to arXiv or other public forums during the active review period, to preserve reviewer anonymity/blinding. |
 | Post-acceptance (AAM) | Yes | Embargo: 0 (no embargo — ACM permits AAM) months |
 | Version of Record | Restricted unless ACM Open paid | |
 ### Open Access
@@ -219,15 +219,15 @@ Reviewers from ACM IUI + RecSys community. Common demands: "AI + interaction con
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** ACM (publisher level, applies to TiiS): generative AI use to create content is allowed with mandatory disclosure; word-processing/grammar tools exempted from disclosure; AI cannot be an author; reviewers are separately barred from uploading confidential submissions to LLMs. No TiiS-journal-specific AI clause was found beyond this ACM-wide policy.
+**AI-research finding (policy):** ACM (publisher level, applies to TiiS): generative AI use to create content is allowed with mandatory disclosure; word-processing/grammar tools exempted from disclosure; AI cannot be an author; reviewers are separately barred from uploading confidential submissions to LLMs. No TiiS-journal-specific AI clause was found beyond this ACM-wide policy.
 
-**WO2 positioning finding (what the journal accepts now):** Human-AI interaction / interactive intelligent systems work that satisfies BOTH of TiiS's two defining criteria: 'Intelligence' (the system incorporates AI/ML/inference/language-vision understanding/recommendation/decision support) AND 'Interaction' (a human user can influence, interpret, or act on the system's behavior) — papers must clearly connect both sides, not just one.
+**AI-research finding (positioning — what the journal accepts now):** Human-AI interaction / interactive intelligent systems work that satisfies BOTH of TiiS's two defining criteria: 'Intelligence' (the system incorporates AI/ML/inference/language-vision understanding/recommendation/decision support) AND 'Interaction' (a human user can influence, interpret, or act on the system's behavior) — papers must clearly connect both sides, not just one.
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - Design Research Society CFP listing: 'ACM TIIS Special Issue on Conversational Agents for Healthcare and Well-being'
@@ -237,7 +237,7 @@ Reviewers from ACM IUI + RecSys community. Common demands: "AI + interaction con
 - dl.acm.org/journal/tiis (About/CFP pages, via search-engine snippet — direct fetch blocked 403)
 - https://www.acm.org/publications/policies/new-acm-policy-on-authorship (publisher-wide; corroborated via search snippets, direct fetch blocked 403)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.leniency exact wording from TiiS-specific page**: dl.acm.org/journal/tiis/author-guidelines returned HTTP 403 to WebFetch and a bot-check wall to the browser tool; relied on ACM publisher-wide policy page and search-engine snippets quoting it instead of a TiiS-specific AI clause
 - **experiential.review_time_months**: SciRev page for this journal shows all timing fields as 'n/a' and 0 submitted reviews; LetPub author-experience page shows the '平均审稿速度' (avg review speed) field present but empty (no user-submitted data); no Reddit r/AskAcademia thread found
 - **experiential.desk_reject_pct**: SciRev shows '% immediately rejected last year: n/a'; no other first-hand source found
@@ -297,6 +297,7 @@ Low for IUI tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy > Under review. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from ACM publisher + ACM IUI / RecSys editorial culture domain knowledge | @Zaious |

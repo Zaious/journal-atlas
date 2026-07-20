@@ -1,0 +1,30 @@
+{
+ "name": "Journal of Occupational Health Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-occupational-health-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "masked review (author identity concealed from reviewers; standard APA masked review) — source: apa.org/pubs/journals/ocp/submit",
+   "why_flagged": "現有內容已明確填寫「雙向匿名(double-anonymized)」,屬有實質內容的欄位,依規則不可逕自覆蓋。但 WO2 的措辭「author identity concealed from reviewers」聽起來偏向單盲(僅隱匿作者身分,未提及審稿人身分是否對作者匿名),與現有「double-anonymized」的雙盲描述可能矛盾,建議人工查核 APA/JOHP 官方投稿頁面確認實際審稿類型是單盲或雙盲。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "AI Policy 整欄(含 Summary 文字)已是具體內容而非佔位符,依規則不可覆蓋。兩份資料對政策內容的描述(揭露制、非作者列名、非事前核准)幾乎一致,但寬容度評分不同(現有評4分、WO2評3分),屬評分主觀判斷差異而非事實矛盾,建議人工複核何者評分較合理再決定是否調整。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time (四列)",
+   "existing_value": "全部為 *(fill manually)* 佔位符",
+   "wo2_value": "WO2 experiential.review_time_months: SciRev僅2筆評論 — 第一輪約1.5個月、總處理時間約3.1個月、最新一筆6.6週、另一筆立即拒稿(desk reject)決策31天;WO2 signal_quality=1 且自行註明「因樣本數僅2,不可視為穩定估計」",
+   "why_flagged": "雖然四列都是可填的佔位符,但 WO2 資料樣本數僅2筆、訊號品質自評1/5,且四個數字（第一輪/總處理/最新一筆/desk reject）無法明確、無爭議地對應到現有表格的四個欄位(first decision / first review / acceptance total / publication),強行拆分填入需要額外詮釋與臆測,不符「不粗填」原則。故不逕自套入表格,改列為衝突項供人工判斷是否採用及如何分類對應。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements（補充參考,非直接編輯）",
+   "existing_value": "Manuscripts must demonstrate workplace + health/wellbeing intersection. SOHP affiliated.",
+   "wo2_value": "WO2 positioning finding: Aims & Scope 頁列出三大範疇 — 工作組織(organization of work)、個人心理特質(individual psychological attributes)、工作與非工作介面(work-nonwork interface),皆連結至員工健康/安全/福祉；投稿類型分標準手稿(上限40頁)與 Research Notes 短文(上限20頁,暱稱'Kevin's Corner')。positioning.signal_quality 僅1(未取得逐篇文章佐證,僅期刊層級 scope 敘述)。",
+   "why_flagged": "Soft Metadata 之 Framing Requirements 屬主觀分析區塊,依規則不得直接編輯,僅能作為補充參考列入衝突項供人工評估是否要用此更細緻的三分類 Aims & Scope 描述、或新增 Research Notes/'Kevin's Corner' 短文類型的字數上限資訊(此點亦可能與 Format > Word limit 佔位符相關,但因未達 fillable 標準之直接證據，未列入 changes)。"
+  }
+ ]
+}

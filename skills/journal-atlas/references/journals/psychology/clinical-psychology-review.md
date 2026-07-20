@@ -80,7 +80,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Elsevier publisher default) |
-| **Explicit permission gate?** | No — disclosure-based for text; image generation prohibited |
+| **Explicit permission gate?** | No outright pre-approval gate — conditional/disclosure-based: text-generation AI use is permitted subject to mandatory author disclosure; AI-generated/altered images are prohibited outright |
 | **Leniency (1-5)** | 3 |
 | **Summary** | Follows Elsevier generative AI policies: authors must declare AI use in manuscript preparation (statement before references). AI-generated/altered images prohibited unless AI is research method itself. AI cannot be authors. Reviewers/editors not permitted to use AI during peer review. |
 | **Source URL** | https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals |
@@ -220,15 +220,15 @@ Reviewers drawn primarily from the clinical psychology meta-analysis / systemati
 | **Data transparency requirement** | High — PRISMA search strategy and inclusion/exclusion documentation expected |
 | **OPSEC compatibility** | High — review work does not expose primary data |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Elsevier 出版社統一政策（非期刊專屬頁）：作者可用生成式 AI 輔助改善語言/可讀性，須有人類監督並審閱結果，AI 不得列為作者/共同作者。審稿人與編輯目前禁止在同行評審與稿件評估過程使用生成式 AI 工具（如 ChatGPT），以保護作者權利與研究機密性；Elsevier 表示正評估合規工具，未來可能修訂。未找到 Clinical Psychology Review 期刊專屬（與出版社政策不同的）AI 政策頁面，判斷為沿用 Elsevier 通用政策。
+**AI-research finding (policy):** 此為 Elsevier 出版社統一政策（非期刊專屬頁）：作者可用生成式 AI 輔助改善語言/可讀性，須有人類監督並審閱結果，AI 不得列為作者/共同作者。審稿人與編輯目前禁止在同行評審與稿件評估過程使用生成式 AI 工具（如 ChatGPT），以保護作者權利與研究機密性；Elsevier 表示正評估合規工具，未來可能修訂。未找到 Clinical Psychology Review 期刊專屬（與出版社政策不同的）AI 政策頁面，判斷為沿用 Elsevier 通用政策。
 
-**WO2 positioning finding (what the journal accepts now):** 期刊僅接受「回顧型」稿件（review-format only），聚焦臨床心理疾患、介入、評估或治療結果；不接受原創實證研究、個案報告、評論文章，或無臨床應用的健康心理學/正向心理學/基礎研究稿件。要求在文章開頭即明確列出回顧問題、臨床意義與系統化方法。
+**AI-research finding (positioning — what the journal accepts now):** 期刊僅接受「回顧型」稿件（review-format only），聚焦臨床心理疾患、介入、評估或治療結果；不接受原創實證研究、個案報告、評論文章，或無臨床應用的健康心理學/正向心理學/基礎研究稿件。要求在文章開頭即明確列出回顧問題、臨床意義與系統化方法。
 
-**WO2 experiential finding:** LetPub 顯示 50 位使用者評分 8.8/10，但『網友分享經驗』的審稿速度與接受率欄位為空白，無具體文字內容可摘錄。 
+**AI-research finding (experiential):** LetPub 顯示 50 位使用者評分 8.8/10，但『網友分享經驗』的審稿速度與接受率欄位為空白，無具體文字內容可摘錄。 
 
 **Sources cited in this pass:**
 - http://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11340 (LetPub, score 8.8/10 from 50 raters, no free-text experience)
@@ -237,7 +237,7 @@ Reviewers drawn primarily from the clinical psychology meta-analysis / systemati
 - https://www.elsevier.com/about/policies-and-standards/the-use-of-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 - https://zhuanlan.zhihu.com/p/2045498522552856909 (知乎 general listicle mentioning ~4-5 month cycle, not a first-hand submission account)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev 僅 3 筆評論、無明確拒稿率數字；LetPub 該欄位使用者留空；未找到小木虫/fabiaoji/Reddit r/AskAcademia 上任何具體投稿人分享的即拒比例
 - **experiential.reviewer_culture**: 跨語言檢索（小木虫、知乎、Reddit r/AskAcademia）均未找到針對本刊審稿人風格/文化的具體第一手描述，僅有籠統的期刊等級/影響因子討論，不構成可摘錄事實
 - **positioning framing_required/methods_welcome/accepts_now**: 官方 ScienceDirect Guide for Authors 與 Aims & Scope 頁面回傳 HTTP 403 無法直接存取，僅能以第三方部落格(manusights.com)佐證，非期刊一手資料，故 signal_quality 僅 2
@@ -299,6 +299,6 @@ Low for systematic-review tradition authors comfortable with PRISMA. Moderate fo
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

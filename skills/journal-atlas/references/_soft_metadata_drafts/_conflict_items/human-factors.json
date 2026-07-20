@@ -1,0 +1,18 @@
+{
+ "name": "Human Factors",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\human-factors.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Sage default)",
+   "wo2_value": "single-anonymized (single-blind) as default; double-anonymized available on author request via cover letter + separate title page — sourced directly from journal's own author-instructions page (https://journals.sagepub.com/author-instructions/hfs)",
+   "why_flagged": "既有欄位已有具體內容(非佔位符),但 WO2 的發現與其實質矛盾(預設審稿制度不同:雙盲 vs 單盲預設+可申請雙盲),且 WO2 來源是該刊自己的 Author Guidelines 頁面而非泛用 Sage 政策頁,證據力可能更高,需人工核實既有條目是否已過時或有誤,不由本次流程逕自覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3 (gate: \"conditional\")",
+   "why_flagged": "既有 AI Policy 整段(含 Summary/Source URL)已是實質內容而非佔位符,依規則不應覆蓋;但 WO2 對同一份 Sage 政策給出的寬容度評分(3)與既有評分(4)不同、且 gate 描述用詞也有差異(\"disclosure-based\" vs \"conditional\"),屬於對同一政策的量化評估分歧,列為衝突供人工複核,而非自動改寫既有數值。"
+  }
+ ]
+}

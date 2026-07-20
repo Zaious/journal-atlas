@@ -219,15 +219,15 @@ Reviewers from BPS Division of Educational and Child Psychology + broader UK / E
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Journal follows Wiley's publisher-wide generative AI policy (no journal-specific BJEP AI policy page found). Full disclosure of any generative AI/LLM tool use in the submission is required; AI/LLMs cannot be listed as author or co-author and authors remain fully accountable for all content. Permitted uses per Wiley's general policy: language/grammar refinement, structural clarity, idea development/conceptual exploration, and literature search assistance — framed as supplement not substitute for scholarly expertise. This is Wiley's general policy (source: https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf), not confirmed as a BJEP-specific page.
+**AI-research finding (policy):** Journal follows Wiley's publisher-wide generative AI policy (no journal-specific BJEP AI policy page found). Full disclosure of any generative AI/LLM tool use in the submission is required; AI/LLMs cannot be listed as author or co-author and authors remain fully accountable for all content. Permitted uses per Wiley's general policy: language/grammar refinement, structural clarity, idea development/conceptual exploration, and literature search assistance — framed as supplement not substitute for scholarly expertise. This is Wiley's general policy (source: https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf), not confirmed as a BJEP-specific page.
 
-**WO2 positioning finding (what the journal accepts now):** Cognitive/developmental/educational-psychology empirical research on learning, motivation, literacy/numeracy, language, self-regulation, error learning, social-emotional development, teacher-student interaction, and special educational needs. Confirmed 2025 published topics: error learning and emotion regulation in programming education; reciprocal longitudinal relations between motivation types and mathematics achievement (RI-CLPM); use of LLMs to classify pre-service teachers' motivational speech (methodological/methods paper, not just topic). Journal also runs BJEP Registered Reports as an open-science article type.
+**AI-research finding (positioning — what the journal accepts now):** Cognitive/developmental/educational-psychology empirical research on learning, motivation, literacy/numeracy, language, self-regulation, error learning, social-emotional development, teacher-student interaction, and special educational needs. Confirmed 2025 published topics: error learning and emotion regulation in programming education; reciprocal longitudinal relations between motivation types and mathematics achievement (RI-CLPM); use of LLMs to classify pre-service teachers' motivational speech (methodological/methods paper, not just topic). Journal also runs BJEP Registered Reports as an open-science article type.
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjep.12779
@@ -238,7 +238,7 @@ Reviewers from BPS Division of Educational and Child Psychology + broader UK / E
 - https://www.deeredit.com/scitougao/37815-33573.html (中文期刊經驗聚合站，審稿週期/錄取率欄位皆標注「數據非官方」且留白)
 - https://www.deeredit.com/scitougao/37815-33578.html (同上站點，接受難度欄位同樣空白)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev page for this journal shows 0 submitted reviews and all duration fields as 'n/a'; no forum (小木虫/知乎/Reddit/刊鹿) thread with a first-hand concrete timeline was found in this search pass.
 - **experiential.desk_reject_pct**: No publisher-disclosed rate found; SciRev has no data; 刊鹿/deeredit.com explicitly leaves the acceptance-rate/desk-reject field blank, labeling it 'unofficial, no data'.
 - **experiential.acceptance_note**: No first-hand author account (forum post, Reddit thread, blog) describing an actual acceptance experience was located.
@@ -295,6 +295,6 @@ Low for UK/European educational psychology tradition authors. US authors may nee
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley/BPS publisher + BPS DECP UK educational psychology editorial culture domain knowledge | @Zaious |

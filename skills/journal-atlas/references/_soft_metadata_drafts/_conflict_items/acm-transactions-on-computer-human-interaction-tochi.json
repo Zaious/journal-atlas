@@ -1,0 +1,12 @@
+{
+ "name": "ACM Transactions on Computer-Human Interaction (TOCHI)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-computer-human-interaction.md",
+ "conflicts": [
+  {
+   "field": "Policies > Preprint Policy > Under review",
+   "existing_value": "No updates (per ACM default)",
+   "wo2_value": "Authors are 'encouraged' (not required) to refrain from uploading during the TOCHI review period itself, but do not need to remove an existing arXiv version before submitting, and no preferential treatment is given either way (per ACM Policy on Authorship).",
+   "why_flagged": "既有表述聽起來像是審稿期間「不得更新」的硬性規定,但WO2引用的ACM政策原文顯示這只是「鼓勵」而非強制要求,對作者的實際指引有實質差異(硬性禁止 vs. 軟性建議),不是單純補充細節,故列為衝突交由人工判斷,不逕行覆蓋。"
+  }
+ ]
+}

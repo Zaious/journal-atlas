@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Double-anonymized / "masked review" (APA's standard terminology — mutual anonymity: neither author nor reviewer identities are revealed to each other; author-side masking requirements are stated at https://www.apa.org/pubs/journals/apl/submit, reviewer-side default confirmed at https://www.apa.org/pubs/journals/resources/preparing-peer-review) |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -220,15 +220,15 @@ Reviewers drawn primarily from the I/O psychology and organizational behavior co
 | **Data transparency requirement** | High — open data and preregistration encouraged (APA badges) |
 | **OPSEC compatibility** | Medium — workplace data anonymizable but transparency norms apply |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** APA (publisher-wide, applies to JAP as no journal-specific override found) permits authors to use generative AI for drafting/editing/analysis but requires disclosure of tool, prompts, and iterations (typically in Intro/Methods), and authors must preserve AI output records for possible peer-review/post-publication inquiry. AI cannot be listed as an author; authors bear full responsibility for verifying AI-provided content. Separately, editors/reviewers are barred from entering manuscript material into generative AI tools during peer review (confidentiality rule). No advance-permission gate — disclosure-based, not pre-approval-based, hence gate coded 'conditional' rather than strict yes/no. Policy last updated per page content (page states an August 2025 update); this is the general APA journals policy, not one located specifically on the JAP submission-guidelines page.
+**AI-research finding (policy):** APA (publisher-wide, applies to JAP as no journal-specific override found) permits authors to use generative AI for drafting/editing/analysis but requires disclosure of tool, prompts, and iterations (typically in Intro/Methods), and authors must preserve AI output records for possible peer-review/post-publication inquiry. AI cannot be listed as an author; authors bear full responsibility for verifying AI-provided content. Separately, editors/reviewers are barred from entering manuscript material into generative AI tools during peer review (confidentiality rule). No advance-permission gate — disclosure-based, not pre-approval-based, hence gate coded 'conditional' rather than strict yes/no. Policy last updated per page content (page states an August 2025 update); this is the general APA journals policy, not one located specifically on the JAP submission-guidelines page.
 
-**WO2 positioning finding (what the journal accepts now):** Core scope unchanged: original empirical/theoretical work on cognitive, motivational, affective, and behavioral phenomena in work and organizational settings (I-O psychology, personnel selection, leadership, motivation, job attitudes, teams, occupational health). One confirmed 2024-2026 special-issue push: 'Social Impact' special issue (full-paper deadline 2024-11-01, decisions ~2025-11-01, targeted publication March 2026) requiring papers to show societal relevance / practical implications for organizational policy or public policy, with an explicit preference for field data with ecological validity over lab-only designs.
+**AI-research finding (positioning — what the journal accepts now):** Core scope unchanged: original empirical/theoretical work on cognitive, motivational, affective, and behavioral phenomena in work and organizational settings (I-O psychology, personnel selection, leadership, motivation, job attitudes, teams, occupational health). One confirmed 2024-2026 special-issue push: 'Social Impact' special issue (full-paper deadline 2024-11-01, decisions ~2025-11-01, targeted publication March 2026) requiring papers to show societal relevance / practical implications for organizational policy or public policy, with an explicit preference for field data with ecological validity over lab-only designs.
 
-**WO2 experiential finding:** No first-hand acceptance-rate or desk-reject percentage found anywhere. SciRev explicitly lists 'acceptance rate' and 'desk rejection %' as fields the editor did not supply. LetPub's Chinese aggregator page also has these fields empty (only generic ad copy for LetPub's own editing service, not journal data). Only one concrete first-hand data point (fabiaoji.com, single Chinese author, 2021 submission): reviewers described as knowledgeable and substantive ('reviewer也非常懂研究，基本上提出的意见都很有用'), rejection attributed to a fundamental design flaw ('文章的硬伤'), overall process described as professional/pleasant despite rejection. This is one anecdote and should not be generalized.
+**AI-research finding (experiential):** No first-hand acceptance-rate or desk-reject percentage found anywhere. SciRev explicitly lists 'acceptance rate' and 'desk rejection %' as fields the editor did not supply. LetPub's Chinese aggregator page also has these fields empty (only generic ad copy for LetPub's own editing service, not journal data). Only one concrete first-hand data point (fabiaoji.com, single Chinese author, 2021 submission): reviewers described as knowledgeable and substantive ('reviewer也非常懂研究，基本上提出的意见都很有用'), rejection attributed to a fundamental design flaw ('文章的硬伤'), overall process described as professional/pleasant despite rejection. This is one anecdote and should not be generalized.
 
 **Sources cited in this pass:**
 - https://scirev.org/journal/journal-of-applied-psychology/
@@ -239,7 +239,7 @@ Reviewers drawn primarily from the I/O psychology and organizational behavior co
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=11305
 - https://www.thejournaleditorscorner.com/social-impact-special-issue.html
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now (broad topic trend beyond one special issue)**: Could not fetch a live 2024-2026 table of contents or full list of recent article titles; only the one confirmed special-issue CFP was located via search. General aims/scope text is stable/unchanged and not itself evidence of a topical shift.
 - **experiential.desk_reject_pct**: SciRev page explicitly shows this field as not supplied by any reviewer for this journal; no Chinese or Reddit source supplied a number either.
 - **experiential.acceptance_note (quantitative rate)**: No first-hand source (SciRev, LetPub, fabiaoji, zhihu, reddit) gave a numeric acceptance rate; only qualitative single-anecdote color exists.
@@ -301,6 +301,7 @@ High for qualitative or single-study authors — typically requires complete res
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

@@ -80,7 +80,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Elsevier publisher default) |
-| **Explicit permission gate?** | No — disclosure-based for text; image generation prohibited |
+| **Explicit permission gate?** | Conditional — no prior permission needed for text (disclosure-based: declaration required at submission); image generation/alteration prohibited except where AI is the research method itself |
 | **Leniency (1-5)** | 3 |
 | **Summary** | Follows Elsevier generative AI policies: authors must declare AI use in manuscript preparation (statement before references). AI-generated/altered images prohibited unless AI is research method itself. AI cannot be authors. Reviewers/editors not permitted to use AI during peer review. |
 | **Source URL** | https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals |
@@ -221,15 +221,15 @@ Reviewers from DRS (Design Research Society) and broader design research communi
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** No Design Studies-specific AI policy page could be retrieved (ScienceDirect guide-for-authors returned HTTP 403 to automated fetch on 2026-07-13, and no journal-specific override was found via search). Applying Elsevier's PUBLISHER-WIDE default (journals inherit this unless they post a stricter override, which none was found for Design Studies): authors may use generative AI/AI-assisted tools to prepare a manuscript with human oversight, must disclose use in a declaration statement at submission, AI/LLMs cannot be listed as author, and AI use in formal research design/methods must be described in the Methods section. This is a publisher policy, not confirmed journal-specific — treat leniency/gate as inherited, not verified for this title.
+**AI-research finding (policy):** No Design Studies-specific AI policy page could be retrieved (ScienceDirect guide-for-authors returned HTTP 403 to automated fetch on 2026-07-13, and no journal-specific override was found via search). Applying Elsevier's PUBLISHER-WIDE default (journals inherit this unless they post a stricter override, which none was found for Design Studies): authors may use generative AI/AI-assisted tools to prepare a manuscript with human oversight, must disclose use in a declaration statement at submission, AI/LLMs cannot be listed as author, and AI use in formal research design/methods must be described in the Methods section. This is a publisher policy, not confirmed journal-specific — treat leniency/gate as inherited, not verified for this title.
 
-**WO2 positioning finding (what the journal accepts now):** Journal explicitly studies design activity/process across engineering & product design, architectural & urban design, and computer artefacts/systems design, from cognition to methodology to values/philosophy. Confirmed active 2024-2025 topic uptake: generative-AI-in-design-process papers, e.g. a 2025 systematic review 'Generative AI-enhanced human-AI collaborative conceptual design' (Design Studies 97, Art. 101300) and a 2024 review 'AI-against-design map: a systematic review of 20 years of AI-focused studies in design research' (Design Studies, doi via ScienceDirect S0142694X24000425). Journal launched a standing new article type, 'Research Notes', starting Vol. 78 (2022) and continuing — short papers on design-research quality/methods topics: sampling in design research, formulating research questions, design methods, literature review practice, theory development, design methodology, ethics, research scholarship generally.
+**AI-research finding (positioning — what the journal accepts now):** Journal explicitly studies design activity/process across engineering & product design, architectural & urban design, and computer artefacts/systems design, from cognition to methodology to values/philosophy. Confirmed active 2024-2025 topic uptake: generative-AI-in-design-process papers, e.g. a 2025 systematic review 'Generative AI-enhanced human-AI collaborative conceptual design' (Design Studies 97, Art. 101300) and a 2024 review 'AI-against-design map: a systematic review of 20 years of AI-focused studies in design research' (Design Studies, doi via ScienceDirect S0142694X24000425). Journal launched a standing new article type, 'Research Notes', starting Vol. 78 (2022) and continuing — short papers on design-research quality/methods topics: sampling in design research, formulating research questions, design methods, literature review practice, theory development, design methodology, ethics, research scholarship generally.
 
-**WO2 experiential finding:** LetPub.com.cn author-experience aggregator characterizes acceptance difficulty as "较易" (relatively easy), but gives no percentage and is a promotional/paid-editing-adjacent site (LetPub sells manuscript editing), so treat as low-confidence. One SciRev first-hand reviewer report (2026, single data point) described being rejected specifically because the manuscript did not cite prior Design Studies articles, and criticized this as a self-reinforcing citation-gatekeeping norm that could suppress new research themes. This is a single anecdote, not a pattern — do not generalize.
+**AI-research finding (experiential):** LetPub.com.cn author-experience aggregator characterizes acceptance difficulty as "较易" (relatively easy), but gives no percentage and is a promotional/paid-editing-adjacent site (LetPub sells manuscript editing), so treat as low-confidence. One SciRev first-hand reviewer report (2026, single data point) described being rejected specifically because the manuscript did not cite prior Design Studies articles, and criticized this as a self-reinforcing citation-gatekeeping norm that could suppress new research themes. This is a single anecdote, not a pattern — do not generalize.
 
 **Sources cited in this pass:**
 - https://scirev.org/journal/design-studies/
@@ -238,7 +238,7 @@ Reviewers from DRS (Design Research Society) and broader design research communi
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2252
 - https://www.sciencedirect.com/science/article/abs/pii/S0142694X24000425
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: No first-hand confirmation of single- vs double-blind found. ScienceDirect's own guide-for-authors and 'about/publishing-guidelines' pages both returned HTTP 403 to automated fetch (2026-07-13), and a WebSearch AI-summary claim of 'double-blind' was not traceable to any concrete cited passage — treated as unreliable and discarded rather than reported as fact.
 - **experiential.desk_reject_pct**: Neither SciRev (n=3, no aggregate rejection-rate field populated, shows 'n/a') nor LetPub nor 小木虫/muchong (searched, only 2 old low-content comments from 2013-2014 found, no reject-rate figures) report a desk-reject percentage.
 - **ai_policy (journal-specific page)**: Both sciencedirect.com/journal/design-studies/publish/guide-for-authors and sciencedirect.com/science/journal/0142694x/publish/guide-for-authors returned HTTP 403 Forbidden to automated fetch. Reported AI policy is Elsevier's publisher-wide default, not confirmed as this journal's verbatim page.
@@ -295,6 +295,6 @@ Low for design research tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + DRS design research editorial culture domain knowledge | @Zaious |

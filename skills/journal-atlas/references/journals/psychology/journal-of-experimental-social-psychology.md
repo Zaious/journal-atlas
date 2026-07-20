@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (per Elsevier default — varies by journal; some are double-blind) |
+| **Type** | Double-anonymized (double-blind); editor suitability screen, then minimum 2 independent reviewers; one formal appeal permitted per submission, appeal decision final (source: ScienceDirect JESP Guide for Authors, 'Peer review' / appeal-policy sections; live-verified 2026-07-20) |
 | **Transferable / Cascade?** | Elsevier operates cross-journal transfer for some manuscripts |
 | **Reviewer reports published?** | No (per Elsevier default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -220,15 +220,15 @@ Reviewers from international experimental social-psychology community. Post-2022
 | **Data transparency requirement** | High — open-materials encouraged post-2022 |
 | **OPSEC compatibility** | Medium — survey data typically aggregable |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 遵循 Elsevier 集團通用生成式 AI 政策(非期刊獨有加嚴版)。作者「可」用 AI 工具輔助寫作,但不得取代人類批判性思考,須在投稿時於文末新增「Declaration of generative AI use」章節揭露工具名稱與用途(基本文法/拼字檢查、輔助身障閱讀的工具則免揭露)。AI 不得列為作者。圖像政策:AI 可用於流程圖/概念圖等說明性圖像,以及由真實數據直接產生、可重現的視覺化(圖表/熱圖等);但不得用於生成或修改「原始觀測/實驗數據」影像(如西方點墨跡、顯微影像、病人影像),包括調整亮度對比等。審稿人/編輯明確被禁止把未發表稿件上傳到生成式 AI 工具,僅能用 AI 輔助潤飾審稿意見文字或做背景文獻搜尋。
+**AI-research finding (policy):** 遵循 Elsevier 集團通用生成式 AI 政策(非期刊獨有加嚴版)。作者「可」用 AI 工具輔助寫作,但不得取代人類批判性思考,須在投稿時於文末新增「Declaration of generative AI use」章節揭露工具名稱與用途(基本文法/拼字檢查、輔助身障閱讀的工具則免揭露)。AI 不得列為作者。圖像政策:AI 可用於流程圖/概念圖等說明性圖像,以及由真實數據直接產生、可重現的視覺化(圖表/熱圖等);但不得用於生成或修改「原始觀測/實驗數據」影像(如西方點墨跡、顯微影像、病人影像),包括調整亮度對比等。審稿人/編輯明確被禁止把未發表稿件上傳到生成式 AI 工具,僅能用 AI 輔助潤飾審稿意見文字或做背景文獻搜尋。
 
-**WO2 positioning finding (what the journal accepts now):** JESP 明確定位為刊登「以實驗或準實驗方法」為主的社會心理學原創實徵研究,重視理論貢獻、預註冊/複現力、統計嚴謹度(要求敏感度檢定力分析、完整統計量報告)。單一研究稿件僅例外接受(需極強理論基礎+高檢定力/預註冊/特殊樣本)。編輯明白列出「10 項送審前檢核清單」(揭露聲明、樣本來源說明、雙盲、檢定力分析、完整統計量、相關設計需附相關矩陣、中介分析須說明模型替代方案等),未達標會被退回而非直接送審——顯示期刊對方法嚴謹度要求高、對複現研究友善。
+**AI-research finding (positioning — what the journal accepts now):** JESP 明確定位為刊登「以實驗或準實驗方法」為主的社會心理學原創實徵研究,重視理論貢獻、預註冊/複現力、統計嚴謹度(要求敏感度檢定力分析、完整統計量報告)。單一研究稿件僅例外接受(需極強理論基礎+高檢定力/預註冊/特殊樣本)。編輯明白列出「10 項送審前檢核清單」(揭露聲明、樣本來源說明、雙盲、檢定力分析、完整統計量、相關設計需附相關矩陣、中介分析須說明模型替代方案等),未達標會被退回而非直接送審——顯示期刊對方法嚴謹度要求高、對複現研究友善。
 
-**WO2 experiential finding:** SciRev 上唯一近期評論(2 位審稿人、'Good process'、結果為接受、總體滿意度評為 5/5 優)顯示流程正向,但樣本數過少(SciRev 頁面本身多數欄位顯示 n/a),不足以代表整體期刊常態。 
+**AI-research finding (experiential):** SciRev 上唯一近期評論(2 位審稿人、'Good process'、結果為接受、總體滿意度評為 5/5 優)顯示流程正向,但樣本數過少(SciRev 頁面本身多數欄位顯示 n/a),不足以代表整體期刊常態。 
 
 **Sources cited in this pass:**
 - WebSearch: JESP 現有 Call for Papers — 'Entertainment Narratives and Social Psychological Processes'(截稿 2026-06-15)與 'Current Directions in Social Dilemmas Research'(截稿 2025-11-30,含 AI/VR 新技術應用主題),來源 sciencedirect.com/journal/journal-of-experimental-social-psychology/about/call-for-papers 及 easp.eu 轉載
@@ -237,7 +237,7 @@ Reviewers from international experimental social-psychology community. Post-2022
 - https://www.sciencedirect.com/journal/journal-of-experimental-social-psychology/publish/guide-for-authors (fetched via browser render, section 'Declaration of generative AI use' and 'Generative AI and Figures, images and other artwork'); cross-referenced https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
 - https://zhuanlan.zhihu.com/p/594573633 (知乎:期刊介紹類文章提及約5-7個月決定,無法確認是否為一手審稿經驗還是轉述資料)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev 頁面該欄位顯示 n/a,未搜尋到 muchong/zhihu/reddit 上任何具體百分比說法,亦無 manusights.com 等 desk-reject 匯總網站收錄此刊
 - **experiential.reviewer_culture**: 小木虫(muchong.com)站內搜尋未找到 JESP 專門討論串;zhihu 搜尋僅得期刊清單/介紹類文章,無一手審稿人風格/態度描述;Reddit r/AskAcademia 搜尋亦無相關討論串命中,故此欄位留空而非杜撰
 - **experiential.review_time_months**: SciRev 僅 1 筆近期樣本、其餘統計 n/a,與知乎轉述的 5-7 個月存在落差且知乎來源非一手審稿人證言,已在欄位內以文字方式並陳兩者並註明不可靠,未強行合併成單一數字
@@ -295,6 +295,7 @@ Moderate. 10-Item Checklist compliance demands careful preregistration / power p
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (ScienceDirect JESP) + replicationindex.com 2024 RR + editage (web search 2026-05) | @Zaious |

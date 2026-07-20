@@ -10,23 +10,23 @@ We believe a community-maintained knowledge base only earns trust if it is hones
 
 To avoid confusion, we track entry quality across **two independent axes**:
 
-1. **Evidence Quality** (`Tier 1` vs `Tier 2` vs `AI-Researched (WO2)`) — how trustworthy are the Soft Metadata claims that have been written?
+1. **Evidence Quality** (`Tier 1` vs `Tier 2` vs `AI-Researched`) — how trustworthy are the Soft Metadata claims that have been written?
 2. **Completeness** (`Skeleton` vs filled) — has Soft Metadata been written at all, or is the entry still a structural scaffold?
 
 A Skeleton entry has **no Tier assignment yet** because there's nothing to evaluate. Tier 1 / Tier 2 / AI-Researched only apply once Soft Metadata has been authored.
 
-### A third evidence basis: AI-Researched (WO2 pipeline, 2026-07)
+### A third evidence basis: AI-Researched (2026-07)
 
 Starting with the v2 "coverage-first" pivot (see [docs/ATLAS_V2_DESIGN.md](docs/ATLAS_V2_DESIGN.md)), a new batch of entries was added via a different process than either Tier 1 or Tier 2: **per-journal AI research** against live public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎), with a per-field `signal_quality` (0–5) score and honest blanks where no public evidence existed — never generic family-level filler.
 
 This is neither Tier 1 (deep manual evidence-harvesting by the maintainer) nor Tier 2 (family-level community estimate adapted across many journals at once): it sits in between, with real per-journal citations but often thinner coverage than Tier 1, especially on the long tail where no public discussion exists. Rather than force these into the existing two-tier vocabulary, they carry their own banner:
 
 > [!NOTE]
-> **AI-Researched (WO2 pipeline, YYYY-MM-DD)** — per-journal sourced facts with an explicit `signal_quality` score; see the entry's "AI-Research Notes" subsection for exactly what was checked and why any field is blank.
+> **AI-Researched (YYYY-MM-DD)** — per-journal sourced facts with an explicit `signal_quality` score; see the entry's "AI-Research Notes" subsection for exactly what was checked and why any field is blank.
 
 **What AI-Researched entries have**: Identity/Metrics/Subject Density from the spine (OpenAlex + JUFO + CAS 中科院分区 + Norwegian Register + DOAJ — all deterministic, sourced facts, no LLM involved); Policies (AI policy, peer review type, preprint) and Positioning (current acceptance focus) from cited per-journal research; Experiential facts (review time, desk-reject notes, reviewer culture) where a public source existed.
 
-**What they intentionally leave `(pending)`**: the deeply subjective Tier 1/Tier 2 subsections — Epistemological & Political Leanings, scored (0–5) Methodological Preferences, Voice & Style, the Sensitive Topics table, and all of Strategic Notes (Hard Blockers / Soft Tax / Best-vs-Not-Recommended-For / Rejection Fallback Chain). These require either lived submission/review experience or a maintainer's deliberate judgment call — WO2's pipeline was designed to never estimate them without a source, so they're honest gaps, not oversights. Community contributions via `/ja-validate` are exactly how these get filled.
+**What they intentionally leave `(pending)`**: the deeply subjective Tier 1/Tier 2 subsections — Epistemological & Political Leanings, scored (0–5) Methodological Preferences, Voice & Style, the Sensitive Topics table, and all of Strategic Notes (Hard Blockers / Soft Tax / Best-vs-Not-Recommended-For / Rejection Fallback Chain). These require either lived submission/review experience or a maintainer's deliberate judgment call — AI-research's pipeline was designed to never estimate them without a source, so they're honest gaps, not oversights. Community contributions via `/ja-validate` are exactly how these get filled.
 
 ## Lifecycle
 
@@ -62,7 +62,7 @@ This is neither Tier 1 (deep manual evidence-harvesting by the maintainer) nor T
 | **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Tier 2 in Phase 4. |
 | **Tier 2** | 152 | `> [!WARNING]` | 132 journals + 20 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
 | **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **AI-Researched (WO2)** | 236 | `> [!NOTE]` | 100 psychology + 106 philosophy (new field) + 30 hci. Per-journal AI research with cited `signal_quality` (0–5); see below. |
+| **AI-Researched** | 236 | `> [!NOTE]` | 100 psychology + 106 philosophy (new field) + 30 hci. Per-journal AI research with cited `signal_quality` (0–5); see below. |
 | **Total** | **399** | | |
 
 The 236 AI-Researched entries came from the v2 coverage-first pivot (2026-07-13): three demand-ranked target lists (psychology 185, philosophy 107, hci 64 — 100% covered, zero gaps) minus 114 journals that already had an existing entry (those are candidates for a future patch pass, not yet merged in). `overall_signal_quality` distribution across all 350 researched journals: 0 (4), 1 (50), 2 (219), 3 (71), 4 (6) — the bulk sitting at 2/5 (policy + positioning facts, thin-to-no experiential signal) is the expected shape of the long-tail cliff documented in `docs/ATLAS_V2_DESIGN.md` §2. See `references/_soft_metadata_drafts/GAPS_AND_NOTES.md` for the full merge/dedup log, including 4 defunct-ISSN entries flagged for cleanup.
@@ -71,9 +71,9 @@ The 236 AI-Researched entries came from the v2 coverage-first pivot (2026-07-13)
 
 | Field | Count | Notes |
 |-------|-------|-------|
-| `psychology/` | 160 | 60 original (cross-disciplinary phenomenology venues + P3-4) + 100 AI-Researched (WO2, 2026-07) |
-| `hci/` | 60 | 30 original (ScienceClaw + P3-2/P3-4 additions) + 30 AI-Researched (WO2, 2026-07) |
-| `philosophy/` | 106 | **New field directory (2026-07)** — 100% AI-Researched (WO2); no Tier 1/Tier 2 entries yet |
+| `psychology/` | 160 | 60 original (cross-disciplinary phenomenology venues + P3-4) + 100 AI-Researched (2026-07) |
+| `hci/` | 60 | 30 original (ScienceClaw + P3-2/P3-4 additions) + 30 AI-Researched (2026-07) |
+| `philosophy/` | 106 | **New field directory (2026-07)** — 100% AI-Researched; no Tier 1/Tier 2 entries yet |
 | `qualitative-methods/` | 5 | Includes P3-4 College Composition and Communication |
 | `cognitive-science/` | 17 | Includes P3-2 TACL + P3-4 (Cerebral Cortex / NeuroImage / Neurosci of Consciousness / Clinical Neuropsych) |
 | `multidisciplinary/` | 8 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE + P3-4 Scientific Reports |

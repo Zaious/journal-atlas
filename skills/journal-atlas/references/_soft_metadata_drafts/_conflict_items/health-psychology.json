@@ -1,0 +1,12 @@
+{
+ "name": "Health Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\health-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Single-masked (reviewers are anonymous to authors; author identity is known to reviewers — authors must NOT mask their own identifying information).",
+   "why_flagged": "現有內容是套用「APA 一般預設」的假設值，並非針對本期刊查證；WO2 則是直接引用本刊官方投稿頁面（apa.org/pubs/journals/hea/submit）得出「單盲」而非「雙盲」的結論，兩者屬於實質矛盾（盲審方向完全相反），且現有欄位並非佔位符，故不逕自覆蓋，需人工對照期刊官方 Submission Guidelines 後裁定。"
+  }
+ ]
+}

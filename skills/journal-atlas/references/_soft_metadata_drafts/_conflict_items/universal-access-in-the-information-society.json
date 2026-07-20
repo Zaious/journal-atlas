@@ -1,0 +1,18 @@
+{
+ "name": "Universal Access in the Information Society",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\universal-access-in-the-information-society.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Springer default — varies by journal)",
+   "wo2_value": "single-blind, two-referee (no article accepted without two complete reviews) — source: https://link.springer.com/journal/10209/submission-guidelines",
+   "why_flagged": "現有條目記載為雙盲(double-anonymized)審稿，WO2 從該刊投稿指南頁面找到的卻是單盲、雙審稿人制度（無兩份完整審稿意見不予接受），兩者對審稿類型的敘述直接矛盾而非僅細節差異，需人工核對投稿指南原文以確認何者為準（可能其中一份資料已過時）。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5)",
+   "existing_value": "Explicit permission gate? No — disclosure-based | Leniency (1-5): 4",
+   "wo2_value": "gate: conditional | leniency_1_5: 3 — 依據 https://www.springernature.com/gp/researchers/ai-policy（出版社通用政策，非本刊專屬頁）",
+   "why_flagged": "兩者引用同一份 Springer Nature 出版社通用 AI 政策，具體規則描述大致相符（生成內容須揭露、AI生成圖像禁止），但對「是否設有明確許可關卡」的分類結論不同（現有答「No，僅需揭露」；WO2 答「conditional 條件式允許」），寬容度評分也有一分落差(4 vs 3)，屬於對同一政策的不同歸類角度，建議人工比對政策原文統一用語與評分，故不逕自覆寫。"
+  }
+ ]
+}

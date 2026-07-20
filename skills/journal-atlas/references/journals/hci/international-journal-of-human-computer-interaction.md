@@ -224,15 +224,15 @@ Reviewers are drawn primarily from applied-HCI and Information Systems communiti
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** Publisher-level (Taylor & Francis) policy, not confirmed journal-specific (hihc20 author-instructions page returned 403 and could not be verified directly). Generative AI may not be listed as author (no accountability/copyright capacity). Permitted uses: idea generation/exploration, language/grammar improvement, LLM-enhanced literature search, literature classification, coding/script-writing support. Prohibited: generating or manipulating research data, images, figures, visuals. Mandatory disclosure of tool name/version, purpose and method, placed in Methods or Acknowledgments. T&F explicitly notes individual journals may be stricter (language-improvement-only) so this is a publisher default, not a verified hihc20-specific rule.
+**AI-research finding (policy):** Publisher-level (Taylor & Francis) policy, not confirmed journal-specific (hihc20 author-instructions page returned 403 and could not be verified directly). Generative AI may not be listed as author (no accountability/copyright capacity). Permitted uses: idea generation/exploration, language/grammar improvement, LLM-enhanced literature search, literature classification, coding/script-writing support. Prohibited: generating or manipulating research data, images, figures, visuals. Mandatory disclosure of tool name/version, purpose and method, placed in Methods or Acknowledgments. T&F explicitly notes individual journals may be stricter (language-improvement-only) so this is a publisher default, not a verified hihc20-specific rule.
 
-**WO2 positioning finding (what the journal accepts now):** Journal is actively and heavily publishing AI/LLM-related HCI work as of 2025-2026: e.g. 'Human-Generative AI Interaction: Assessing Futureproofing Attributes from Time Perspectives and Temporal Distances' (Vol 42 No 10, 2025); studies on chatbot response latency and customer evaluation; LLM-driven conversational agents for depression/mental-health support; user trust in LLM-based conversational agents. Core scope remains interactive computing (cognitive/ergonomic), digital accessibility, UX design, haptics, and sociology of the internet/technology.
+**AI-research finding (positioning — what the journal accepts now):** Journal is actively and heavily publishing AI/LLM-related HCI work as of 2025-2026: e.g. 'Human-Generative AI Interaction: Assessing Futureproofing Attributes from Time Perspectives and Temporal Distances' (Vol 42 No 10, 2025); studies on chatbot response latency and customer evaluation; LLM-driven conversational agents for depression/mental-health support; user trust in LLM-based conversational agents. Core scope remains interactive computing (cognitive/ergonomic), digital accessibility, UX design, haptics, and sociology of the internet/technology.
 
-**WO2 experiential finding:** LetPub aggregate rating (97 evaluations, overall 6.7/10; reputation 7.2, influence 5.9, speed 7.3) tags acceptance difficulty as '容易' (easy), but this is a crowd-aggregated single-word label, not a first-hand percentage. A 小木虫 forum post (uncertain topical match) described a rejection citing the journal prioritizing 'novel data and outcomes of high scientific importance' over confirmatory/incremental findings, suggesting rising selectivity amid submission growth — could not confirm this thread is specifically about IJHCI given topic mismatch. 
+**AI-research finding (experiential):** LetPub aggregate rating (97 evaluations, overall 6.7/10; reputation 7.2, influence 5.9, speed 7.3) tags acceptance difficulty as '容易' (easy), but this is a crowd-aggregated single-word label, not a first-hand percentage. A 小木虫 forum post (uncertain topical match) described a rejection citing the journal prioritizing 'novel data and outcomes of high scientific importance' over confirmatory/incremental findings, suggesting rising selectivity amid submission growth — could not confirm this thread is specifically about IJHCI given topic mismatch. 
 
 **Sources cited in this pass:**
 - https://ispr.info/2025/08/15/call-the-age-of-ai-agents-issue-of-international-journal-of-human-computer-interaction/
@@ -243,7 +243,7 @@ Reviewers are drawn primarily from applied-HCI and Information Systems communiti
 - https://taylorandfrancis.com/our-policies/ai-policy/
 - https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2556233
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: tandfonline.com/journals/hihc20/about-this-journal returned HTTP 403 (blocked); no independent first-hand or forum source confirmed single- vs double-anonymous specifically for this journal, so left null rather than assuming a T&F default.
 - **experiential.desk_reject_pct**: SciRev shows 0 submitted reviews (all metrics n/a); no Chinese or English forum post gave a concrete desk-reject percentage.
 - **experiential.reviewer_culture**: No concrete first-hand account of reviewer tone/culture found on 小木虫, 知乎, fabiaoji, or Reddit r/AskAcademia; only a generic aggregated LetPub numeric rating exists, which is not a narrative source and was excluded per the no-generic-narrative rule.
@@ -306,6 +306,6 @@ Low for technology-adoption empirical authors. Moderate for HCI-canonical empiri
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Disambiguation note added to distinguish IJHCI from IJHCS. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

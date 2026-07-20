@@ -1,0 +1,12 @@
+{
+ "name": "The Journals of Gerontology: Series B",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journals-of-gerontology-b-psychological-sciences.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Review Cycle Time (Time to first decision / Time to first review / Time to acceptance (total))",
+   "existing_value": "三列皆為 *(community estimate)* 佔位符，尚未填入任何實質數字",
+   "wo2_value": "experiential.review_time_months: 「說法不一：SciRev(n=10 筆回報)第一輪平均 1.7 個月、整體處理至決定平均 3.7 個月；中文期刊聚合站(好期刊/學術之家/letpub)另稱『審稿較慢，約 6-12 週』。兩者量級相近但非同一批樣本，故取範圍呈現而非單一數字。」",
+   "why_flagged": "此為有來源(SciRev n=10)的實質數字，理論上可用來填補三個空白列，但 WO2 只給出「第一輪」與「整體處理至決定」兩個聚合數字，並未明確對應到本表定義的『first decision』『first review』『acceptance total』三個具體階段——若由我自行猜測對應關係並填入特定列，屬於過度詮釋原始資料（WO2 本身也註明『說法不一…故取範圍呈現而非單一數字』，顯示其對精確歸類沒有把握）。建議交由人工判斷這兩個數字應對應哪一列（或以範圍/附註形式呈現），而非由此次 patch 逕行分列填入。"
+  }
+ ]
+}

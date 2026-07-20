@@ -219,15 +219,15 @@ Reviewers from SPA (Society for Personality Assessment) network and broader asse
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 無 JPA 專屬 AI 政策頁面(About-this-journal AI/editorial-policy 分頁多次回傳 403,無法直接取得期刊層級文字),故此為 Taylor & Francis 出版社通用政策外推(publisher-wide, not journal-specific,已標註)。T&F 規則:作者可用 Generative AI 協助語言潤飾、資料視覺化、流程圖/教學插圖,但禁止用於生成研究內容本身(如摘要、研究結果、臨床樣本、診斷影像等核心學術判斷)。使用須於文中揭露(工具全名、版本、用途、原因)。審稿人被明確禁止將未發表稿件上傳至生成式 AI 工具,也不得用 LLM 產生審稿報告。無需編輯事前逐案批准,但揭露義務具強制性,故列為 conditional gate,寬容度中等(3/5):允許但有明確邊界與強制揭露。
+**AI-research finding (policy):** 無 JPA 專屬 AI 政策頁面(About-this-journal AI/editorial-policy 分頁多次回傳 403,無法直接取得期刊層級文字),故此為 Taylor & Francis 出版社通用政策外推(publisher-wide, not journal-specific,已標註)。T&F 規則:作者可用 Generative AI 協助語言潤飾、資料視覺化、流程圖/教學插圖,但禁止用於生成研究內容本身(如摘要、研究結果、臨床樣本、診斷影像等核心學術判斷)。使用須於文中揭露(工具全名、版本、用途、原因)。審稿人被明確禁止將未發表稿件上傳至生成式 AI 工具,也不得用 LLM 產生審稿報告。無需編輯事前逐案批准,但揭露義務具強制性,故列為 conditional gate,寬容度中等(3/5):允許但有明確邊界與強制揭露。
 
-**WO2 positioning finding (what the journal accepts now):** 現任主編 Martin Sellbom (Otago/Monash, 任期 2018-2028) 領軍,9 位副編輯分管統計方法、臨床應用/個案研究、書籍與量表評論等專門版塊。期刊為 Society for Personality Assessment 官方刊物,聚焦人格與精神病理測量方法學,涵蓋臨床/諮商、神經心理、司法鑑定、健康、社區、多元文化、發展/教育、工商組織、公共安全篩選等應用場域。近期(2025-2026)有兩個公開徵稿專刊在途:(1) DEISJ in Personality Assessment(多元、平等、共融、社會正義主題,摘要截止 2025-12-01,稿件截止 2026-03-31);(2) Utility of Clinical Personality Assessment(摘要截止 2025-12-15,邀稿全文截止 2026-07-15)。
+**AI-research finding (positioning — what the journal accepts now):** 現任主編 Martin Sellbom (Otago/Monash, 任期 2018-2028) 領軍,9 位副編輯分管統計方法、臨床應用/個案研究、書籍與量表評論等專門版塊。期刊為 Society for Personality Assessment 官方刊物,聚焦人格與精神病理測量方法學,涵蓋臨床/諮商、神經心理、司法鑑定、健康、社區、多元文化、發展/教育、工商組織、公共安全篩選等應用場域。近期(2025-2026)有兩個公開徵稿專刊在途:(1) DEISJ in Personality Assessment(多元、平等、共融、社會正義主題,摘要截止 2025-12-01,稿件截止 2026-03-31);(2) Utility of Clinical Personality Assessment(摘要截止 2025-12-15,邀稿全文截止 2026-07-15)。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://en.wikipedia.org/wiki/Journal_of_Personality_Assessment
@@ -240,7 +240,7 @@ Reviewers from SPA (Society for Personality Assessment) network and broader asse
 - https://www.personality.org/events/jpa-special-issue-on-deisj
 - https://www.personality.org/jpa
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **preprint.allowed**: 無法取得 tandfonline.com/journals/hjpa20/about-this-journal 頁面內容(多次 WebFetch 回傳 403 Forbidden),搜尋亦未找到 JPA 專屬 preprint 政策文字,故留白而非套用 T&F 集團通用預印本政策外推。
 - **experiential.review_time_months**: SciRev 該刊頁面顯示 0 筆完整評論(僅 1 筆立即拒絕案例的 5 天決定時間,非典型審稿週期);letpub.com.cn 因 IP 速率限制無法取得資料;ifabiao.com 與 haoqikan.com 之「平均審稿速度/審稿時間」欄位均為空白(顯示「-」或無數值)。四個查詢時點來源均無實質數字,誠實留白。
 - **experiential.desk_reject_pct**: SciRev、letpub、ifabiao、haoqikan 四來源均無此刊的退稿率資料;無首發經驗貼文可交叉驗證。
@@ -303,6 +303,6 @@ Low for psychometric / assessment tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from T&F publisher + SPA personality assessment editorial culture domain knowledge | @Zaious |

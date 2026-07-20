@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Experimental Psychology: Human Perception and Performance",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-experimental-psychology-human-perception-and-performance.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Review Cycle Time(四列:first decision / first review / acceptance total / publication)",
+   "existing_value": "四列皆為 *(fill manually)* 佔位符",
+   "wo2_value": "experiential.review_time_months: \"1.8 個月(首輪審查/總處理時間中位數估計);立即拒稿(desk reject)平均決定時間約 1 天;平均審查輪數 1.0 輪\"(來源 SciRev,樣本僅 3 筆評價)",
+   "why_flagged": "WO2 自身用語已表明 1.8 個月這個數字究竟對應「首輪審查」還是「總處理時間」並不確定,無法可靠對應到表格四列中的哪一列;desk reject 的 1 天則是表格中沒有對應列的桌拒決定時間,不宜硬塞進任何一列。且來源樣本量僅 3 筆評價,信心度低。基於『不確定就不動』原則,不逕自填入,留待人工判斷是否採用及填入哪一列並加註樣本量警語。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3(WO2 ai_policy.leniency_1_5)",
+   "why_flagged": "現有條目與 WO2 對政策文字描述(事後揭露制、無需事前申請許可、AI 不得列為作者)高度一致,但寬容度評分不同(現有 4 分 vs WO2 3 分)。此為主觀評分差異而非單純遺漏或明顯錯誤,依規則不應逕自覆蓋既有評分,故列為衝突留待人工複核是否調整。"
+  }
+ ]
+}

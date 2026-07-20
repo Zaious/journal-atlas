@@ -83,7 +83,7 @@
 | **Explicit permission gate?** | No — disclosure-based |
 | **Leniency (1-5)** | 4 |
 | **Summary** | Follows University of Illinois Press publisher AI policy: disclosure required; AI cannot be listed as author. |
-| **Source URL** | https://www.press.uillinois.edu/ |
+| **Source URL** | https://www.press.uillinois.edu/about/ai_policy.html |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -217,15 +217,15 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 | **Data transparency requirement** | Medium *(community estimate)* |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **1/5**.
 
-**WO2 AI policy finding:** 查無此刊或其出版社(University of Illinois Press／Scholarly Publishing Collective／Scholastica投稿系統)公開發布的AI/生成式AI使用政策頁面。UI Press官方投稿頁與Scholastica「For Authors」頁均只列出APA第7版格式、雙盲審稿、題頁匿名化等要求,未提及AI/ChatGPT使用規範。
+**AI-research finding (policy):** 查無此刊或其出版社(University of Illinois Press／Scholarly Publishing Collective／Scholastica投稿系統)公開發布的AI/生成式AI使用政策頁面。UI Press官方投稿頁與Scholastica「For Authors」頁均只列出APA第7版格式、雙盲審稿、題頁匿名化等要求,未提及AI/ChatGPT使用規範。
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://scholarlypublishingcollective.org/uip/ajp
@@ -234,7 +234,7 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 - https://www.hfabiao.com/sci/47833.html
 - https://www.press.uillinois.edu/journals/ajp/ajpsubmissions.html
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy**: 出版社(University of Illinois Press)與投稿系統(Scholastica)之官方投稿頁均未提及AI/生成式AI使用政策；未找到期刊層級的專屬AI政策頁，故不虛構寬容度分數或許可門檻
 - **positioning.methods_welcome / accepts_now / framing_required**: scholarlypublishingcollective.org/uip/ajp（近期期次/文章清單頁）回傳HTTP 403 Forbidden，無法抓取2024-2026近期文章標題與CFP，僅有『aims & scope』的制式描述(experimental psychology原創研究、理論分析、歷史評論、書評)，不足以推斷『現在實際接受什麼』或方法學/框架要求
 - **experiential.review_time_months**: SciRev該刊頁面明確顯示『尚無人提交評論』，所有時間指標為n/a
@@ -295,6 +295,7 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Has journal-specific AI policy? / Explicit permission gate? / Leniency / Summary). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — limited evidence per community-source review (deep-search not done for this venue); community contribution especially welcome | @Zaious |

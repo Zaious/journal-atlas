@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | ~1.7 months (avg, low confidence) | WO2 finding: SciRev self-reported data, n=2 reviews only (most recent case ~4.4 weeks). Source: https://scirev.org/journal/social-psychology-quarterly/ |
+| **Time to first decision** | ~1.7 months (avg, low confidence) | AI-research finding: SciRev self-reported data, n=2 reviews only (most recent case ~4.4 weeks). Source: https://scirev.org/journal/social-psychology-quarterly/ |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | ~3.6 months (avg, low confidence) | WO2 finding: SciRev self-reported data, n=2 reviews only. Source: https://scirev.org/journal/social-psychology-quarterly/ |
+| **Time to acceptance (total)** | ~3.6 months (avg, low confidence) | AI-research finding: SciRev self-reported data, n=2 reviews only. Source: https://scirev.org/journal/social-psychology-quarterly/ |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -82,7 +82,7 @@
 | **Has journal-specific AI policy?** | No (follows SAGE publisher default) |
 | **Explicit permission gate?** | No — disclosure-based |
 | **Leniency (1-5)** | 4 |
-| **Summary** | Follows SAGE publisher AI policy: disclosure required if AI use affects research content. AI cannot be listed as author. Language polishing typically need not be disclosed. |
+| **Summary** | Follows SAGE publisher AI policy (three-tier framework, per SAGE group policy — no SPQ-specific page found): assistive use (language polishing, grammar, structural edits) needs no disclosure; generative use (content generation affecting methodology, analysis, or conclusions) requires disclosure, typically in Methods or Acknowledgements; prohibited uses (fabricated content/citations, AI-generated data, AI substituting for human subjects, AI-generated images presented as findings, AI-drafted peer reviews or editorial decisions) are banned outright. No formal pre-approval gate, but undisclosed misuse can lead to rejection/retraction, and reviewers who misuse AI may be removed from the reviewer pool. AI cannot be listed as author. |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 ### Preprint Policy
 
@@ -220,15 +220,15 @@ Reviewers from ASA Social Psychology Section + broader sociological social-psych
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 SAGE 出版社統一政策(非 SPQ 期刊專屬頁面明載)。政策區分三類 AI 使用:輔助型(語言潤飾/文法/結構調整)免揭露;生成型(內容生成、影響方法論/分析/結論)須揭露(通常於 Methods 或 Acknowledgements);禁止型(生成造假內容/文獻、以 AI 產生數據、以 AI 取代人類受試者、將 AI 圖像當研究成果、以 AI 撰寫同儕評論或編輯決策)。未強制事前許可審批(no pre-approval gate),但未揭露的不當使用可能導致拒稿或撤稿,審稿人若違規使用 AI 會被除名。SPQ 投稿指南頁(journals.sagepub.com/author-instructions/spq)本身在可抓取內容中未見獨立 AI 條款,推定沿用 SAGE 集團政策。
+**AI-research finding (policy):** 此為 SAGE 出版社統一政策(非 SPQ 期刊專屬頁面明載)。政策區分三類 AI 使用:輔助型(語言潤飾/文法/結構調整)免揭露;生成型(內容生成、影響方法論/分析/結論)須揭露(通常於 Methods 或 Acknowledgements);禁止型(生成造假內容/文獻、以 AI 產生數據、以 AI 取代人類受試者、將 AI 圖像當研究成果、以 AI 撰寫同儕評論或編輯決策)。未強制事前許可審批(no pre-approval gate),但未揭露的不當使用可能導致拒稿或撤稿,審稿人若違規使用 AI 會被除名。SPQ 投稿指南頁(journals.sagepub.com/author-instructions/spq)本身在可抓取內容中未見獨立 AI 條款,推定沿用 SAGE 集團政策。
 
-**WO2 positioning finding (what the journal accepts now):** SPQ 是社會學與心理學交叉的期刊(ASA 官方期刊),聚焦個人與社會的連結——包含個人與他人、群體、集體、制度之關係,以及受社會結構/歷程影響的個體內在歷程。近期(2024-2025)已發表/確認題目涵蓋:跨文化性別刻板印象與社會規範違反後的八卦/排斥/對峙反應(2025-06, Simpson/Hazin/Eriksson)、2024 Cooley-Mead 獎得主 Brian Powell 的獲獎演說反思(2025-09)、資訊頻率/價值/難度作為社會不平等來源之 Jeopardy! 益智節目分析(2025-12, Kyle Siler)。2021-2023 曾有「種族、種族主義與歧視」20週年紀念特刊(已出版於 2023-09,非現行 CFP)。目前(查詢當下)未找到 2025-2026 尚在徵稿中的新特刊。
+**AI-research finding (positioning — what the journal accepts now):** SPQ 是社會學與心理學交叉的期刊(ASA 官方期刊),聚焦個人與社會的連結——包含個人與他人、群體、集體、制度之關係,以及受社會結構/歷程影響的個體內在歷程。近期(2024-2025)已發表/確認題目涵蓋:跨文化性別刻板印象與社會規範違反後的八卦/排斥/對峙反應(2025-06, Simpson/Hazin/Eriksson)、2024 Cooley-Mead 獎得主 Brian Powell 的獲獎演說反思(2025-09)、資訊頻率/價值/難度作為社會不平等來源之 Jeopardy! 益智節目分析(2025-12, Kyle Siler)。2021-2023 曾有「種族、種族主義與歧視」20週年紀念特刊(已出版於 2023-09,非現行 CFP)。目前(查詢當下)未找到 2025-2026 尚在徵稿中的新特刊。
 
-**WO2 experiential finding:** SciRev 最新一筆評論(單一案例)描述為「流程非常快、編輯投入高、審查意見品質良好」,整體滿意度評分 5.0/5.0,結果為接受;另有一筆評論提及雖遭拒稿,但編輯的決定信整理審查意見清楚並提供明確修改方向——樣本數不足以量化。 
+**AI-research finding (experiential):** SciRev 最新一筆評論(單一案例)描述為「流程非常快、編輯投入高、審查意見品質良好」,整體滿意度評分 5.0/5.0,結果為接受;另有一筆評論提及雖遭拒稿,但編輯的決定信整理審查意見清楚並提供明確修改方向——樣本數不足以量化。 
 
 **Sources cited in this pass:**
 - WebSearch aggregation of ASA-listed 2025 SPQ article titles
@@ -237,7 +237,7 @@ Reviewers from ASA Social Psychology Section + broader sociological social-psych
 - https://www.asanet.org/publications/journals/social-psychology-quarterly/
 - https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.desk_reject_pct**: SciRev 樣本僅 2 筆評論且未提供拒稿率數據;editage.cn 概覽文章(約2015年資料)未提供量化退稿率;查無小木虫/知乎/PTT/fabiaoji/Reddit AskAcademia 上針對 SPQ 的具體退稿率討論
 - **experiential.reviewer_culture**: 跨語言檢索(小木虫 muchong.com、知乎、fabiaoji、Reddit r/AskAcademia)均未找到針對 SPQ 審稿人文化/風格的具體第一手討論串,僅有期刊官方雙盲審查制度說明,不足以支撐主觀敘述,故留白
 - **ai_policy (journal-specific page)**: 未找到 SPQ 期刊自身獨立公布的 AI 政策頁面,僅能引用 SAGE 出版社集團層級政策,已於 summary 註明
@@ -296,6 +296,7 @@ Low for sociological social-psychology tradition. Psychological authors may need
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Leniency). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE/ASA publisher + ASA Social Psychology Section sociological social-psychology editorial culture domain knowledge | @Zaious |

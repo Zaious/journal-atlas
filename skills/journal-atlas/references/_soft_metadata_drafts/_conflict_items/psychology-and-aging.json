@@ -1,0 +1,12 @@
+{
+ "name": "Psychology and Aging",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\psychology-and-aging.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "既有值與 WO2 值為同一量表下的不同具體數字(4 vs 3),屬於實質分歧而非單純補充細節,依規則不可逕行覆蓋,交由人工判斷採信哪個評分較準確(兩者引用的都是同一份 APA publisher-wide AI 政策,只是評分者主觀寬鬆度判斷不同)。"
+  }
+ ]
+}

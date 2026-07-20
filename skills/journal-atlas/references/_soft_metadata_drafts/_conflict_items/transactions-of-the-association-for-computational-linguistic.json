@@ -1,0 +1,30 @@
+{
+ "name": "Transactions of the Association for Computational Linguistics",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher policy)",
+   "wo2_value": "Double-anonymized (double-blind) journal-style review with Action Editor system; reviewers submit reviews to an Action Editor who makes 1 of 4 decisions (accept / conditional accept within 2 months / reject-with-R&R in 3-6 months / reject with 1-year moratorium). Source: https://direct.mit.edu/tacl/pages/submission-guidelines",
+   "why_flagged": "既有內容是 Tier 2 的家族類推猜測（標明「check publisher policy」代表未經查證），而 WO2 直接引用 TACL 官方投稿須知，得出完全相反的結論（single-blind vs double-blind）。屬於實質矛盾而非單純補充細節，需要人工查證官方頁面後再決定是否覆蓋，不可逕行覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy (整節：Has journal-specific policy? / Explicit permission gate? / Source URL)",
+   "existing_value": "Has journal-specific AI policy?: Yes (follows publisher default + may have journal-specific overlay); Explicit permission gate?: No — disclosure-based; Source URL: https://2025.aclweb.org/calls/main_conference_papers/",
+   "wo2_value": "WO2 查證 transacl.org 的 Submission Guidelines / Editorial Policies 全文後，未找到任何 TACL 期刊專屬的 AI 政策條文；目前適用的是 MIT Press 出版社層級通用政策（direct.mit.edu/journals/pages/publication-ethics）：AI 不得列為作者、使用 AI 產生內容須揭露並由作者負全責。另外，既有欄位的 Source URL 指向的是 2025.aclweb.org 的 ACL『會議』徵稿頁面，並非 TACL『期刊』的政策頁面，兩者範疇不同。",
+   "why_flagged": "既有 AI Policy 整節已有具體內容（非空白佔位符），依規則不可直接編輯；但 WO2 的查證結果與既有內容存在實質分歧（有無期刊專屬政策）且既有 Source URL 疑似指錯範疇（會議 CFP 頁而非期刊政策頁），建議人工核實並視情況修正 Source URL 與 Summary 措辞。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Pre-submission / Under review rows",
+   "existing_value": "Pre-submission: Yes — arXiv / bioRxiv / similar preprint servers permitted by most publishers; Under review: Yes — Most journals permit preprint update; verify journal-specific policy",
+   "wo2_value": "WO2（引用 https://direct.mit.edu/tacl/pages/submission-guidelines）：preprint 有條件允許，但有嚴格的『匿名窗口』限制——投稿前一個月起到審稿結束為止，不得有非匿名的 preprint／workshop 版本存在；若 preprint 於投稿一個月前即已存在，作者須在 Comments to the Editor 欄位揭露該 preprint 的場地、標題、URL 與日期，且 TACL 投稿本身仍須維持匿名（不可自我引用該 preprint）。",
+   "why_flagged": "既有兩列都有具體內容（非空白佔位符），依規則不可直接編輯；但 WO2 找到的匿名窗口限制比既有『Yes，多數期刊允許』的簡化敘述嚴格許多，若作者依既有簡化敘述行事可能違反 TACL 實際規定，建議人工核實後決定是否改寫成更精確版本。"
+  },
+  {
+   "field": "Soft Metadata > Reviewer Pool Characteristics / Practical Concerns（主觀性補充發現，不可直接編輯）",
+   "existing_value": "Reviewer Pool Characteristics: 'ACL community reviewers... Reviewer competence variance: Medium'; Practical Concerns > Independent scholar friendliness: Medium-High",
+   "wo2_value": "Ehud Reiter(2023) 第一手經驗：TACL 審稿人皆由 Action Editor 從 Standing Reviewer Team 中手動指派、多為資深研究者（相當 Area Chair 等級），非會議式演算法配對，審稿更嚴謹但也更花時間；知乎社群多數正面評價審稿品質『靠谱/精确/建设性』（僅一則低可信度匿名酸評，未採用）；另有知乎社群指出 TACL 未被中國 CCF 推薦目錄收錄，對部分中國大陸學者的職涯採認度/吸引力較低。",
+   "why_flagged": "這些是 WO2 針對主觀性欄位（審稿人特質、獨立學者友善度等）的補充實證發現，依規則屬於 Out-of-scope 的 Soft Metadata 主觀性子項，不可直接編輯，僅供人工評估是否納入既有描述（尤其 CCF 未收錄一點對特定讀者群體的職涯考量可能有實質參考價值）。"
+  }
+ ]
+}

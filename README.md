@@ -421,7 +421,7 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
                                                               (no banner)
 ```
 
-Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched (WO2) · 0 Skeleton = 399 total** (379 journals + 20 conferences). AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-wo2-pipeline-2026-07) for what it means.
+Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 399 total** (379 journals + 20 conferences). AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07) for what it means.
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 

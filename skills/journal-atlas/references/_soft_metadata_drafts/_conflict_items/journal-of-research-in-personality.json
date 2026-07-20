@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Research in Personality",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-research-in-personality.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "3 — 現有詞條敘述:「Has journal-specific AI policy? No (follows Elsevier publisher default)」,並將寬容度評為 3。",
+   "wo2_value": "2 — WO2 對同一份 Elsevier 通用生成式 AI 政策(作者需揭露 AI 使用、圖像生成禁止、AI 不得列為作者)評為「有條件許可 + 強制揭露」閘門,寬容度給 2。",
+   "why_flagged": "雙方描述的是同一份 Elsevier 出版社通用政策(非本刊特定),事實描述高度一致,但對同一事實給出的寬容度分數不同(3 vs 2),屬於主觀評分層級的實質分歧而非單純補充細節,故不逕自覆蓋,留待人工比較兩者評分依據後定奪。"
+  }
+ ]
+}

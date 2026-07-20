@@ -1,0 +1,12 @@
+{
+ "name": "Alzheimer's & Dementia: The Journal of the Alzheimer's Association",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+ "conflicts": [
+  {
+   "field": "Soft Metadata > Framing Requirements / Best Suited For (positioning, out-of-scope subjective sections)",
+   "existing_value": "Best Suited For 僅列出 AD/dementia 臨床研究、生物標記驗證、臨床試驗報告(CONSORT)、多學科AD研究(臨床+神經影像+生物標記);Framing Requirements 僅泛稱需符合該學會專科領域",
+   "wo2_value": "WO2 研究發現本刊為阿茲海默症協會官方旗艦刊,涵蓋 bench-to-bedside 全光譜:基礎科學/分子機轉、遺傳體學、影像/生物標記、臨床試驗、AI/數位健康應用於失智症研究(2023年起有一系列 AI in dementia 專題文章)、流行病學/預防、社會行為照護面向、系統性綜述;並強制要求每篇文章附150字以內'Research in Context'摘要段落作為框架要求",
+   "why_flagged": "此為 WO2 針對期刊定位/接受範圍的補充研究發現,觸及 Soft Metadata 之 Best Suited For 與 Framing Requirements 等主觀章節,依規則不得直接編輯,列為補充發現供人工複核是否需擴充『AI/數位健康應用』為新的 Best Suited For 條目,以及是否需在 Framing Requirements 加入'Research in Context'摘要格式要求。"
+  }
+ ]
+}

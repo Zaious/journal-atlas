@@ -1,0 +1,18 @@
+{
+ "name": "The Clinical Neuropsychologist",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "existing_value": "Yes (publisher default + may have journal overlay)",
+   "wo2_value": "未見期刊專屬 AI 政策頁,僅查得出版社(Taylor & Francis)集團層級政策;找不到 TCN 期刊本身的專屬 AI 政策頁或投稿須知中的 AI 段落(且原始政策頁 WebFetch 被 403 擋下,轉引自 WebSearch 摘要,非逐字核對)",
+   "why_flagged": "現有條目暗示可能有期刊層級加疊政策('may have journal overlay'),但 WO2 實際查證後明確表示找不到期刊專屬頁面,僅有集團通用政策 —— 屬於實質分歧而非單純補充細節,且 WO2 本身信度已打折(signal_quality 2/5,無法直接讀取原文),需人工判斷是否降級現有描述。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "3-4",
+   "wo2_value": "2 (conditional gate — 允許使用但須揭露,非全面禁止但也非開放)",
+   "why_flagged": "數值有明顯落差(3-4 vs 2),屬於實質分歧而非精細化描述;但 WO2 此分數是根據二手 WebSearch 摘要(非直接讀取 T&F 政策原文,404/403 擋下)推估,信度較低(signal_quality 2/5),故不逕行覆蓋現有數值,留待人工比對原始政策文字後裁定。"
+  }
+ ]
+}

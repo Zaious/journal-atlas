@@ -1,0 +1,18 @@
+{
+ "name": "Dementia and Geriatric Cognitive Disorders",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\dementia-and-geriatric-cognitive-disorders.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind or double-blind (per Karger default — varies)",
+   "wo2_value": "single-anonymous（單盲）：審稿人知道作者姓名，作者不知道審稿人身份。除社論及部分通訊外，所有文章皆送外部審查，通常至少2位該領域專家審查。本刊為 Neuroscience Peer Review Consortium (NPRC) 會員，可依作者要求快速轉送審稿意見至其他NPRC會員期刊。(source: https://karger.com/dem/pages/guidelines)",
+   "why_flagged": "既有欄位已有具體內容（非空白佔位符），依規則不可直接覆寫；但WO2提供了更明確且有來源頁面佐證的說法（明確為single-anonymous單盲，而非「varies」的模糊表述），並補充NPRC會員快速轉審機制這項既有內容完全沒有的細節。是否要用更具體的說法取代目前的「varies」措辭，建議留給人工判斷，而非自動覆蓋。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate / Desk Rejection Rate; Review Cycle Time（四列）",
+   "existing_value": "*(fill manually if known)* / *(fill manually)*（皆為空白佔位符）",
+   "wo2_value": "無官方量化數據。僅有中文鏡像站（iikx.com/klxksci.com）標註的「網友分享經驗」：錄取率約50%、平均審稿時間約2個月；medsci.cn論壇有單一2020年個案（5天內未覓得審稿人、2/24遭拒）。WO2 signal_quality僅2/5，且WO2自身研究筆記已明確聲明「不作為可信量化事實填入」「未強行換算成統計數字」。",
+   "why_flagged": "這些欄位目前確實是空白佔位符（技術上可填），但WO2找到的唯一數據是未經官方或多方交叉驗證的網友估計值，WO2自己的分析也主動排除將其當作可信量化事實。基於「不粗填」原則，選擇不將此類低信度、單一來源的網友傳言直接填入正式Metrics/Review Cycle Time表格，僅在此標記供人工評估是否有價值以其他方式（如加註來源與信度警語）呈現。"
+  }
+ ]
+}

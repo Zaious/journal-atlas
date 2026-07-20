@@ -38,8 +38,8 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 311 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | *(fill manually if known)* | |
+| **Acceptance Rate** | *(no official published figure — SciRev and Editage both list as n/a; checked 2026-07)* | |
+| **Desk Rejection Rate** | *(no official figure; only a tiny self-reported sample exists — fabiaoji n=11, ≈36% desk-reject — too small to generalize; checked 2026-07)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.93 | 2026-05-16 |
 | **i10-index** | 10886 | 2026-05-16 |
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (per Elsevier default — varies by journal; some are double-blind) |
+| **Type** | Double anonymized（雙盲：作者與審稿人身分皆匿名）— per official Guide for Authors: "This journal follows a double anonymized review process." 該頁亦說明因雙盲審查故稿件送審期間不應公開為 preprint（見 Preprint Policy 一節現有內容仍待與此對齊）。Source: https://www.sciencedirect.com/journal/personality-and-individual-differences/publish/guide-for-authors (verified 2026-07-20) |
 | **Transferable / Cascade?** | Elsevier operates cross-journal transfer for some manuscripts |
 | **Reviewer reports published?** | No (per Elsevier default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -220,15 +220,15 @@ Reviewers drawn primarily from the ISSID (International Society for the Study of
 | **Data transparency requirement** | High — Elsevier data-sharing norms |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 遵循 Elsevier 出版社通用 AI 政策(非期刊專屬):作者可在寫作前使用生成式 AI/AI 輔助工具,但僅限改善語言與可讀性,必須在稿件單獨章節揭露使用情形;AI 不得列為作者,不得用於生成科學內容或取代研究判斷。屬「有條件允許+強制揭露」,故 leniency=3、gate=conditional。
+**AI-research finding (policy):** 遵循 Elsevier 出版社通用 AI 政策(非期刊專屬):作者可在寫作前使用生成式 AI/AI 輔助工具,但僅限改善語言與可讀性,必須在稿件單獨章節揭露使用情形;AI 不得列為作者,不得用於生成科學內容或取代研究判斷。屬「有條件允許+強制揭露」,故 leniency=3、gate=conditional。
 
-**WO2 positioning finding (what the journal accepts now):** 個性(personality)與各類個體差異(individual differences)之結構、成因歷程與實務應用研究。接受 experimental、correlational、theoretical、expository/review 四類文章。特別歡迎探討個體差異之遺傳、生物與環境基礎及其交互作用的稿件;並持續擴展至教育、社會/組織心理、臨床/健康心理等應用場域。2024-2026 近期實證主題集中於 Dark Triad(黑暗三合)與情緒智力(emotional intelligence)之關聯。
+**AI-research finding (positioning — what the journal accepts now):** 個性(personality)與各類個體差異(individual differences)之結構、成因歷程與實務應用研究。接受 experimental、correlational、theoretical、expository/review 四類文章。特別歡迎探討個體差異之遺傳、生物與環境基礎及其交互作用的稿件;並持續擴展至教育、社會/組織心理、臨床/健康心理等應用場域。2024-2026 近期實證主題集中於 Dark Triad(黑暗三合)與情緒智力(emotional intelligence)之關聯。
 
-**WO2 experiential finding:** 無版面費(不收 APC);年投稿量逾 2500 篇(中文論壇轉述);即使拒稿亦常給建設性意見與轉投建議。fabiaoji 11 筆中 3 接受/4 退稿/2 審查中。 審稿速度快、意見公允且具建設性(SciRev 報告品質 3.4/5、意見難度 3.3/5、整體處理 3.4/5;中文論壇多評『審稿速度快、意見中肯』)。通常 2-3 位審稿人、1-2 輪修改。無政治傾向相關具體來源,不作評述。
+**AI-research finding (experiential):** 無版面費(不收 APC);年投稿量逾 2500 篇(中文論壇轉述);即使拒稿亦常給建設性意見與轉投建議。fabiaoji 11 筆中 3 接受/4 退稿/2 審查中。 審稿速度快、意見公允且具建設性(SciRev 報告品質 3.4/5、意見難度 3.3/5、整體處理 3.4/5;中文論壇多評『審稿速度快、意見中肯』)。通常 2-3 位審稿人、1-2 輪修改。無政治傾向相關具體來源,不作評述。
 
 **Sources cited in this pass:**
 - 2025 special issue CFP(South American research on individual differences; Assessing Emotional Intelligence; Differences in Wellbeing): https://www.sciencedirect.com/journal/personality-and-individual-differences/about/call-for-papers
@@ -239,7 +239,7 @@ Reviewers drawn primarily from the ISSID (International Society for the Study of
 - 傳思論壇 papertrans(審稿週期分布): http://bbs.papertrans.cn/thread-17723-1-1.html
 - 近期文章(2025 Dark Triad×EI): https://www.sciencedirect.com/science/article/abs/pii/S0191886925000911
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.journal_specific**: 本刊未見專屬 AI 政策頁,僅沿用 Elsevier 出版社通用政策;故 ai_policy signal_quality 設為 2
 - **experiential.desk_reject_pct**: 無官方公開 desk-reject 百分比;僅有 fabiaoji 11 筆小樣本自述(4/11 退稿),不足以推得整體比率,故留質性說明不作為代表性數字
 - **experiential.acceptance_rate**: SciRev 與 Editage 均標示 acceptance rate 為 n/a,無第一手公開接受率數據
@@ -301,6 +301,7 @@ Low for psychometric / personality-tradition authors. High publication frequency
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Metrics > Acceptance Rate / Desk Rejection Rate. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

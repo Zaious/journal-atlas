@@ -206,15 +206,15 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策，未見 JVB 期刊專屬頁面內容（Guide for Authors 頁面 403 無法讀取）。政策要點：作者可用生成式 AI 輔助撰寫（如整理文獻、產生想法、潤飾語言），但投稿時須揭露使用情形；AI 工具不得列為作者或共同作者；生成式 AI 不得用於製作或修改圖像（研究方法本身涉及 AI 者除外）。屬「有條件允許」（conditional gate = 需揭露），寬容度中等（3/5：允許輔助寫作但明確禁止圖像生成與掛名）。因是出版社層級政策而非期刊專屬頁，signal_quality 訂為 2。
+**AI-research finding (policy):** 此為 Elsevier 出版社通用政策，未見 JVB 期刊專屬頁面內容（Guide for Authors 頁面 403 無法讀取）。政策要點：作者可用生成式 AI 輔助撰寫（如整理文獻、產生想法、潤飾語言），但投稿時須揭露使用情形；AI 工具不得列為作者或共同作者；生成式 AI 不得用於製作或修改圖像（研究方法本身涉及 AI 者除外）。屬「有條件允許」（conditional gate = 需揭露），寬容度中等（3/5：允許輔助寫作但明確禁止圖像生成與掛名）。因是出版社層級政策而非期刊專屬頁，signal_quality 訂為 2。
 
-**WO2 positioning finding (what the journal accepts now):** 聚焦於個人層次（非組織層次）之職涯選擇、職涯發展與工作適應研究，涵蓋生涯選擇（如主修選擇、初次求職、組織吸引力）、生涯發展、工作轉換、工作—家庭管理、工作適應與態度（工作承諾、多重角色管理、離職）等主題，涵蓋實證與理論性文章，強調對諮商與生涯發展實務的應用價值。
+**AI-research finding (positioning — what the journal accepts now):** 聚焦於個人層次（非組織層次）之職涯選擇、職涯發展與工作適應研究，涵蓋生涯選擇（如主修選擇、初次求職、組織吸引力）、生涯發展、工作轉換、工作—家庭管理、工作適應與態度（工作承諾、多重角色管理、離職）等主題，涵蓋實證與理論性文章，強調對諮商與生涯發展實務的應用價值。
 
-**WO2 experiential finding:** *(not researched)* SciRev評分：審查意見難度4.0/5.0（偏嚴格）、審查報告品質4.0/5.0、整體投稿處理體驗4.3/5.0（'Very good process'）。樣本僅6筆評論，代表性有限。
+**AI-research finding (experiential):** *(not researched)* SciRev評分：審查意見難度4.0/5.0（偏嚴格）、審查報告品質4.0/5.0、整體投稿處理體驗4.3/5.0（'Very good process'）。樣本僅6筆評論，代表性有限。
 
 **Sources cited in this pass:**
 - https://research.com/journal/journal-of-vocational-behavior
@@ -223,7 +223,7 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 - https://www.sciencedirect.com/journal/journal-of-vocational-behavior
 - https://www.youfabiao.com/sci/00018791/119.html
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: 官方 Guide for Authors 頁面回傳 403 無法讀取；WebSearch 未找到明確標示 JVB 採單盲或雙盲審查的一手來源，故留空避免臆測。
 - **experiential.desk_reject_pct**: SciRev 頁面該欄位標示為 n/a（編輯部尚未提交數據）；小木虫、知乎、Reddit r/AskAcademia 搜尋均未找到針對本刊的具體桌拒比例討論。
 - **experiential.acceptance_note**: 未找到任何一手投稿者分享的接受信/接受經驗描述（中英文論壇搜尋均無結果）。
@@ -275,5 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

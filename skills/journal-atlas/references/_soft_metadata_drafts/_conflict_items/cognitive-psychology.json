@@ -1,0 +1,12 @@
+{
+ "name": "Cognitive Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency",
+   "existing_value": "Explicit permission gate: \"No — disclosure-based for text; image generation prohibited\"; Leniency (1-5): 3",
+   "wo2_value": "gate: \"conditional\"; leniency_1_5: 4",
+   "why_flagged": "既有內容已描述真實政策(揭露制、非強制許可關卡),非留白格,依規則不可覆蓋;但 WO2 判定為 gate=\"conditional\"、寬鬆度 4,與既有的「No / 寬鬆度 3」在程度描述上有出入,屬於同一 in-scope 欄位的不同判讀,留供人工複核是否要調整寬鬆度評分或 gate 描述用語。"
+  }
+ ]
+}

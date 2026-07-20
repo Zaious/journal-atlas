@@ -1,0 +1,18 @@
+{
+ "name": "NeuroImage",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "Double-anonymized (double-blind) peer review, minimum two independent reviewers (source: sciencedirect.com guide-for-authors search-cache extract; direct fetch 403, corroborated via sibling journal NeuroImage: Stroke guide-for-authors snippet)",
+   "why_flagged": "現有值為家族通則猜測(single-blind, 註明「check publisher」),WO2 則引用(間接、快取版)guide-for-authors 具體指出 double-anonymized。兩者屬實質矛盾（單盲 vs 雙盲），且 WO2 來源本身為快取/間接推論非直接 fetch 成功，可信度中等，故不逕行覆蓋，留供人工查證 sciencedirect.com/journal/neuroimage/publish/guide-for-authors 現行版本以確認。"
+  },
+  {
+   "field": "Soft Metadata > Reviewer Pool Characteristics / Sensitive Topics (subjective, out of scope for direct edit)",
+   "existing_value": "Reviewer competence variance: Low-Medium; 未載明國際/在地作者接受度差異之經驗性描述",
+   "wo2_value": "experiential.reviewer_culture: SciRev 一則回報稱其中一位審稿人「態度不佳、不熟悉技術細節」；另一則稱期刊維持「極高拒絕率」；小木虫使用者反映對非中國大陸機構之國際作者接受度較高、母語作者被拒率提及較少（單一站台個人化陳述，未交叉驗證）",
+   "why_flagged": "此為觸及主觀評估區塊(Reviewer Pool Characteristics/Sensitive Topics)的補充性經驗發現，非本輪可直接編輯範圍；且此內容已於 2026-07-13 由前一輪 WO2 patch 完整收錄於 Soft Metadata > AI-Research Notes（experiential finding 段落），故僅供人工複核是否需要進一步upgrade 至 Tier 1 主體評估區塊，不建議在本輪重複處理。"
+  }
+ ]
+}

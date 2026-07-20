@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (per Elsevier default — varies by journal; some are double-blind) |
+| **Type** | Double-blind, minimum 2 referees (journal-specific — confirmed via Elsevier's own journal shop page, not generic Elsevier default; source: https://shop.elsevier.com/journals/international-journal-of-child-computer-interaction/2212-8689) |
 | **Transferable / Cascade?** | Elsevier operates cross-journal transfer for some manuscripts |
 | **Reviewer reports published?** | No (per Elsevier default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -218,15 +218,15 @@ Reviewers from ACM IDC community + child development HCI overlap. Common demands
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Elsevier 出版社通用政策，非該刊獨立頁面(guide-for-authors 頁面回傳 403 無法直接驗證期刊專屬版本)。文字生成類 AI 工具用於文獻整理、內容組織、語言潤飾等須揭露(投稿須附「Declaration of Generative AI and AI-assisted technologies」聲明,註明工具名稱與用途)；基礎文法/拼字檢查與傳統(非生成式)文獻管理工具免揭露。AI 不得列為作者。禁止使用生成式 AI 製作或修改圖片/圖像摘要(除非 AI 本身是研究方法的一部分,須在方法章節詳述模型名稱、版本、廠商)。門檻判定為「conditional」：允許使用但強制揭露＋人類監督責任聲明，非全面禁止亦非完全開放。
+**AI-research finding (policy):** 此為 Elsevier 出版社通用政策，非該刊獨立頁面(guide-for-authors 頁面回傳 403 無法直接驗證期刊專屬版本)。文字生成類 AI 工具用於文獻整理、內容組織、語言潤飾等須揭露(投稿須附「Declaration of Generative AI and AI-assisted technologies」聲明,註明工具名稱與用途)；基礎文法/拼字檢查與傳統(非生成式)文獻管理工具免揭露。AI 不得列為作者。禁止使用生成式 AI 製作或修改圖片/圖像摘要(除非 AI 本身是研究方法的一部分,須在方法章節詳述模型名稱、版本、廠商)。門檻判定為「conditional」：允許使用但強制揭露＋人類監督責任聲明，非全面禁止亦非完全開放。
 
-**WO2 positioning finding (what the journal accepts now):** 2025-2026 刊出主題涵蓋：兒童數位安全(社交VR中的騷擾防護設計)、K-12運算思維與網路安全教育、學步兒/幼兒臉部情緒辨識(app互動情境)、青少年參與式設計(社區能源永續)、makerspace中兒童電路與身分認同的民族誌研究、CCI領域研究方法論反思(關係轉向scoping review)、CCI研究影響力框架(TREF)、數位應用中對幼兒的操縱性/欺騙性設計模式(dark patterns)揭露。另有進行中的特刊徵稿：兒童使用擴增實境/虛擬實境(XR)技術的風險、機會與倫理。
+**AI-research finding (positioning — what the journal accepts now):** 2025-2026 刊出主題涵蓋：兒童數位安全(社交VR中的騷擾防護設計)、K-12運算思維與網路安全教育、學步兒/幼兒臉部情緒辨識(app互動情境)、青少年參與式設計(社區能源永續)、makerspace中兒童電路與身分認同的民族誌研究、CCI領域研究方法論反思(關係轉向scoping review)、CCI研究影響力框架(TREF)、數位應用中對幼兒的操縱性/欺騙性設計模式(dark patterns)揭露。另有進行中的特刊徵稿：兒童使用擴增實境/虛擬實境(XR)技術的風險、機會與倫理。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://dblp.org/db/journals/ijcci/ijcci47.html
@@ -235,7 +235,7 @@ Reviewers from ACM IDC community + child development HCI overlap. Common demands
 - https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 - https://www.sciencedirect.com/journal/international-journal-of-child-computer-interaction/about/call-for-papers
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev該刊條目顯示 n/a（0篇審稿人回報），中英文論壇(小木虫/知乎/發表機/Reddit)搜尋均無相關第一手討論，無可靠來源可引用
 - **experiential.desk_reject_pct**: 同上，SciRev『% immediately rejected last year』為 n/a，無其他第一手來源
 - **experiential.acceptance_note**: SciRev『% accepted last year』為 n/a；跨語言論壇搜尋(小木虫/知乎/發表機/Reddit)均無命中此刊的作者經驗分享
@@ -293,6 +293,7 @@ Low for IDC tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + ACM IDC child-computer interaction editorial culture domain knowledge | @Zaious |

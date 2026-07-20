@@ -64,7 +64,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (typical journal default; check publisher) |
+| **Type** | Double-anonymized (double-blind) peer review; at least two independent referees per manuscript (verified via journal's own General Instructions page, https://academic.oup.com/jdh/pages/general_instructions, checked 2026-07-20) |
 | **Transferable / Cascade?** | *(varies by publisher)* |
 | **Reviewer reports published?** | *(varies; some journals offer transparent review)* |
 | **Typical R+R rounds** | 1-2 |
@@ -74,11 +74,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes (publisher default + may have journal overlay) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Has journal-specific AI policy?** | No dedicated JDH AI-policy page found (https://academic.oup.com/jdh/pages/ai-policy returns 404; JDH General Instructions page, checked 2026-07-20, contains no AI-related section) — follows OUP's standard journal-level AI policy template |
+| **Explicit permission gate?** | No — disclosure-based (no prior written-permission requirement for journal articles; OUP's stricter "written permission" rule at academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence is explicitly scoped to books/reference works and directs journal authors to their journal's own Instructions for Authors instead) |
 | **Leniency (1-5)** | 3-4 |
-| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at journal author guidelines. |
-| **Source URL** | https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/ai-policy |
+| **Summary** | AI/LLM tools may not be listed as authors; use must be disclosed both in the cover letter to editors and in the Methods/Acknowledgements section. JDH has no dedicated AI-policy page; policy inferred from OUP's standard journal-level AI-policy template, confirmed live via a comparable OUP journal's own AI-policy page (Journal of Pediatric Psychology, checked 2026-07-20). |
+| **Source URL** | https://academic.oup.com/jpepsy/pages/ai-policy (representative live example of OUP's standard journal-level AI policy template; JDH itself has no dedicated page — see General Instructions: https://academic.oup.com/jdh/pages/general_instructions) |
 
 ### Preprint Policy
 
@@ -205,15 +205,15 @@ Design research + HCI practitioner-bridge community. Reviewer expectations: cros
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium-High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此頁面為 Oxford University Press 出版社層級的通用 AI 政策(非 JDH 期刊專屬頁面;嘗試存取 https://academic.oup.com/jdh/pages/ai-policy 得到 404,故 JDH 本身未見獨立 AI 政策頁)。OUP 政策要點(轉述,非逐字):生成式 AI 不得列為作者;不得用於執行「主要著者責任」(如產生論點、科學洞見、撰寫分析或下結論);若在投稿中使用生成式 AI,須在 cover letter 及正文 Methods/Acknowledgements 註明使用地點、工具、版本、使用方式與驗證步驟;AI 生成內容需經 OUP 書面許可,必要時須以人工內容替換;作者對內容準確性與原創性負全責。因為找不到 JDH 專屬版本,評級保守(2/5=偏嚴,需揭露且需許可),signal_quality 偏低因為是出版社通用政策而非期刊專屬確認。
+**AI-research finding (policy):** 此頁面為 Oxford University Press 出版社層級的通用 AI 政策(非 JDH 期刊專屬頁面;嘗試存取 https://academic.oup.com/jdh/pages/ai-policy 得到 404,故 JDH 本身未見獨立 AI 政策頁)。OUP 政策要點(轉述,非逐字):生成式 AI 不得列為作者;不得用於執行「主要著者責任」(如產生論點、科學洞見、撰寫分析或下結論);若在投稿中使用生成式 AI,須在 cover letter 及正文 Methods/Acknowledgements 註明使用地點、工具、版本、使用方式與驗證步驟;AI 生成內容需經 OUP 書面許可,必要時須以人工內容替換;作者對內容準確性與原創性負全責。因為找不到 JDH 專屬版本,評級保守(2/5=偏嚴,需揭露且需許可),signal_quality 偏低因為是出版社通用政策而非期刊專屬確認。
 
-**WO2 positioning finding (what the journal accepts now):** 2026年6月出刊(Vol.39 Issue 2)含「Design History and Digital Material Culture」專題,以及跨地域研究(中國平面設計史、阿根廷設計檔案實踐)。近期 CFP 主題包括 2024年10月發布的「Designing for Disability Futures」特刊徵稿(SAH 轉載,原始頁面 403 無法直接讀取全文)。2026年3月25日起徵求 Virtual Special Issue(VSI)提案。期刊另設 Explorations 欄目,鼓勵實驗性、反思性、詩意或跨學科的另類學術書寫形式。
+**AI-research finding (positioning — what the journal accepts now):** 2026年6月出刊(Vol.39 Issue 2)含「Design History and Digital Material Culture」專題,以及跨地域研究(中國平面設計史、阿根廷設計檔案實踐)。近期 CFP 主題包括 2024年10月發布的「Designing for Disability Futures」特刊徵稿(SAH 轉載,原始頁面 403 無法直接讀取全文)。2026年3月25日起徵求 Virtual Special Issue(VSI)提案。期刊另設 Explorations 欄目,鼓勵實驗性、反思性、詩意或跨學科的另類學術書寫形式。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://academic.oup.com/jdh/issue
@@ -223,7 +223,7 @@ Design research + HCI practitioner-bridge community. Reviewer expectations: cros
 - https://www.designhistorysociety.org/news/view/journal-of-design-history-special-issue-call-for-papers
 - https://www.sah.org/jobs-opportunities/opportunities/recent-opportunities/2024/10/04/default-calendar/call-for-papers-journal-of-design-history-designing-for-disability-futures
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev 該期刊頁面顯示 'Duration first review round'、'Tot. handling time acc. manuscripts'、'Average number of review rounds' 全為 n/a;查無其他第一手投稿者資料。
 - **experiential.desk_reject_pct**: SciRev 該期刊 '% immediately rejected last year' 顯示 n/a,無公開數據。
 - **experiential.acceptance_note**: SciRev 頁面明確標示 'No reviews have yet been submitted for this journal',無任何投稿者評論可引用。
@@ -276,5 +276,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Explicit permission gate? / Leniency (1-5) / Source URL. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

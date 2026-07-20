@@ -64,7 +64,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (typical journal default; check publisher) |
+| **Type** | Unconfirmed — leans double-blind per secondary sources (journal-comparison sites; Springer's own search-indexed submission-guidelines snippet references blinding data-authorship "when submitting to Memory & Cognition"), but the primary page (springer.com/journal/13421/submission-guidelines) redirects to a Springer IdP institutional-login gate and could not be fetched directly — The prior AI-research pass and an independent re-check (2026-07-20) both hit this same blocker. Do not treat as confirmed; verify with institutional access before submission. |
 | **Transferable / Cascade?** | *(varies by publisher)* |
 | **Reviewer reports published?** | *(varies; some journals offer transparent review)* |
 | **Typical R+R rounds** | 1-2 |
@@ -206,15 +206,15 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** publisher-wide (Springer Nature) policy applies to Memory & Cognition; no journal-specific AI clause found. LLMs/generative AI cannot be listed as author; use must be disclosed in the Methods section (or equivalent); AI-generated images/video not permitted; AI-assisted copyediting is exempt from disclosure. This is Springer Nature's group-wide policy, not a Memory & Cognition-specific page — none was found separately.
+**AI-research finding (policy):** publisher-wide (Springer Nature) policy applies to Memory & Cognition; no journal-specific AI clause found. LLMs/generative AI cannot be listed as author; use must be disclosed in the Methods section (or equivalent); AI-generated images/video not permitted; AI-assisted copyediting is exempt from disclosure. This is Springer Nature's group-wide policy, not a Memory & Cognition-specific page — none was found separately.
 
-**WO2 positioning finding (what the journal accepts now):** Journal (published by Springer on behalf of the Psychonomic Society) continues to publish empirical/theoretical cognitive-psychology work on memory, learning, perception, working memory, metacognition, episodic/semantic memory. Notably it is currently publishing papers that apply human cognitive-psychology paradigms TO large language models, e.g. 'Quantifying uncert-AI-nty: Testing the accuracy of LLMs' confidence judgments' (Mem Cogn, 2025, comparing LLM vs human confidence judgments) — indicating LLM-as-object-of-study papers are welcome, not just human-subjects work.
+**AI-research finding (positioning — what the journal accepts now):** Journal (published by Springer on behalf of the Psychonomic Society) continues to publish empirical/theoretical cognitive-psychology work on memory, learning, perception, working memory, metacognition, episodic/semantic memory. Notably it is currently publishing papers that apply human cognitive-psychology paradigms TO large language models, e.g. 'Quantifying uncert-AI-nty: Testing the accuracy of LLMs' confidence judgments' (Mem Cogn, 2025, comparing LLM vs human confidence judgments) — indicating LLM-as-object-of-study papers are welcome, not just human-subjects work.
 
-**WO2 experiential finding:** SciRev rates the journal 5.0/5.0 'very difficult' on a reviewer-comment/acceptance-difficulty dimension, but overall manuscript-handling quality rated 3.0/5.0 — based on a very small sample (only 3 submitted reviews total), so low statistical confidence. 
+**AI-research finding (experiential):** SciRev rates the journal 5.0/5.0 'very difficult' on a reviewer-comment/acceptance-difficulty dimension, but overall manuscript-handling quality rated 3.0/5.0 — based on a very small sample (only 3 submitted reviews total), so low statistical confidence. 
 
 **Sources cited in this pass:**
 - WebSearch aggregation of research.com/journal listing and Springer article search
@@ -222,7 +222,7 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 - https://scirev.org/journal/memory-and-cognition/
 - https://www.springernature.com/gp/authors/campaigns/generative-ai-policy-for-authors
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.journal_specific_page**: Could not locate a Memory & Cognition or Psychonomic Society-specific generative-AI policy page distinct from the generic Springer Nature group policy; psychonomic.org/page/MC returned 403 Forbidden so could not verify whether Psychonomic Society layers additional rules.
 - **peer_review.type_confirmed_first_hand**: WebSearch AI-summary states 'double-blind' but this could not be independently verified against the actual Springer submission-guidelines page, which redirected to an IdP login (403/303) and was not fetchable without authentication. Treat as low-confidence, not first-hand.
 - **experiential.desk_reject_pct**: SciRev page for Memory and Cognition (https://scirev.org/journal/memory-and-cognition/) shows only 3 submitted reviews total and reports no desk-rejection percentage field populated.
@@ -275,5 +275,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

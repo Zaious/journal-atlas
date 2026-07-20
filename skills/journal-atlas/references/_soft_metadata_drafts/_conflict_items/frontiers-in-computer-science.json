@@ -1,0 +1,18 @@
+{
+ "name": "Frontiers in Computer Science",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\frontiers-in-computer-science.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Frontiers collaborative peer review model (reviewer-author interactive)",
+   "wo2_value": "Single anonymized peer review（審稿人身份對作者匿名，作者身份對審稿人公開；文章發表時公開編輯與審稿人姓名及單位）",
+   "why_flagged": "此欄位已有具體內容，非空白佔位符，故不直接覆蓋。但兩者描述角度明顯不同：現有內容強調 Frontiers 標榜的「協作式、互動式」審稿流程風格，WO2 則給出正式的盲審分類（單向匿名），且明確指出審稿人姓名僅於文章接受後才公開。兩者未必互斥（可能是同一機制的不同敘述層次），但用詞差異足以造成讀者認知落差，建議人工核實後決定是否合併或並列兩種描述。"
+  },
+  {
+   "field": "Review Cycle Time > Time to first decision / Time to first review",
+   "existing_value": "*(pending)* / *(pending)*（兩列皆為空白佔位符）",
+   "wo2_value": "約 13 週（約 3 個月）—— 來源為 Frontiers 官方頁面自陳數值，並經 LetPub（52 位評分者的中國作者投稿資料彙整站）交叉印證同為「13 Weeks」；SciRev 上本刊 0 筆評論，無法做獨立第一手驗證。",
+   "why_flagged": "WO2 的 experiential.review_time_months 是一個有來源、有交叉驗證的具體數字，理論上可用來填補「Time to first decision」或「Time to first review」其中一列的空白，但來源描述僅稱其為籠統的『審稿週期』，未明確指出究竟對應四列中的哪一列（首次決定？首次收到審稿意見？還是與現有已填的「Time to acceptance (total): 3–4 months」重疊、只是同一統計的不同引用來源？）。基於逐一比對、不粗填的原則，這裡選擇不強行指定欄位，留給人工判斷此數字最適合放入哪一列，或是否僅作為對現有『3–4 個月』總接受時程的交叉佐證附註。"
+  }
+ ]
+}

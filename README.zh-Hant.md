@@ -417,7 +417,7 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
                                         （無 banner）
 ```
 
-當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched (WO2) · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-wo2-pipeline-2026-07)。
+當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07)。
 
 完整方法論與升級路徑見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 

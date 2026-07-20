@@ -220,15 +220,15 @@ Reviewers from EASP and broader European social-psychology community. Common dem
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Publisher(Wiley)層級政策適用於此期刊(未見期刊自訂 AI 頁面)。允許用生成式AI輔助語言潤飾、結構調整、構想發展、文獻檢索,但禁止列AI為作者/共同作者、禁止用AI生成或竄改圖像/圖表/原始數據、禁止產出未經查核的內容;要求在Materials/Methods或同等章節揭露AI工具使用。leniency=3(允許輔助但門檻明確、需揭露,非全面禁止亦非完全開放)。gate=conditional(需揭露,非需要編輯部逐案批准)。
+**AI-research finding (policy):** Publisher(Wiley)層級政策適用於此期刊(未見期刊自訂 AI 頁面)。允許用生成式AI輔助語言潤飾、結構調整、構想發展、文獻檢索,但禁止列AI為作者/共同作者、禁止用AI生成或竄改圖像/圖表/原始數據、禁止產出未經查核的內容;要求在Materials/Methods或同等章節揭露AI工具使用。leniency=3(允許輔助但門檻明確、需揭露,非全面禁止亦非完全開放)。gate=conditional(需揭露,非需要編輯部逐案批准)。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025)刊出文章涵蓋:跨群體接觸與社會凝聚力之縱貫研究(青少年,分裂社會脈絡,Belfast/Bradford)、社會認知、態度、群體歷程等傳統社會心理學主題。期刊明確歡迎「empirical, meta-analytical or theoretical research」以及「methodological contributions」,涵蓋跨群體關係、群體歷程、社會認知、態度、社會影響與說服、自我與認同、語言與思考、情感、具身認知、跨文化現象等。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025)刊出文章涵蓋:跨群體接觸與社會凝聚力之縱貫研究(青少年,分裂社會脈絡,Belfast/Bradford)、社會認知、態度、群體歷程等傳統社會心理學主題。期刊明確歡迎「empirical, meta-analytical or theoretical research」以及「methodological contributions」,涵蓋跨群體關係、群體歷程、社會認知、態度、社會影響與說服、自我與認同、語言與思考、情感、具身認知、跨文化現象等。
 
-**WO2 experiential finding:** SciRev 樣本量極小(僅5筆評論,1區間即2.3份審查報告、1.0輪審查),最近一筆記錄結果為「immediately rejected」;無足夠樣本推論整體拒稿率或接受率 
+**AI-research finding (experiential):** SciRev 樣本量極小(僅5筆評論,1區間即2.3份審查報告、1.0輪審查),最近一筆記錄結果為「immediately rejected」;無足夠樣本推論整體拒稿率或接受率 
 
 **Sources cited in this pass:**
 - https://onlinelibrary.wiley.com/doi/10.1002/ejsp.3121
@@ -237,7 +237,7 @@ Reviewers from EASP and broader European social-psychology community. Common dem
 - https://scirev.org/journal/european-journal-of-social-psychology/
 - https://www.wiley.com/en-ae/publish/ai-insights/author-usage-generative-ai/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type verification specific to EJSP (vs generic Wiley Social/Personality Psychology Network boilerplate)**: Author guidelines page confirms double-blind requirement but WebFetch returned HTTP 402 on direct journal homepage; info sourced via WebSearch snippet only, not primary-page fetch
 - **experiential.desk_reject_pct**: SciRev page marks % immediately rejected as 'n/a' with only n=5 total reviews — insufficient sample, no percentage published
 - **experiential.reviewer_culture**: No first-hand discussion found on SciRev comments, 小木虫 muchong.com (zero results), 知乎 zhihu (only journal-ranking-list mentions, no review-experience threads), fabiaoji (not found), or Reddit r/AskAcademia (zero threads found) — cannot support any reviewer-culture claim with a concrete source
@@ -296,6 +296,6 @@ Low for European tradition. US authors may need to broaden theoretical engagemen
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher + EASP European social-psychology editorial culture domain knowledge | @Zaious |

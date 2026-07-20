@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Masked review (APA's official term; substantively equivalent to double-anonymized) — manuscript body is anonymized so reviewers do not see author identity; a separate cover letter with author names/affiliations is shown to the editor only, not to reviewers. Rejection by one section editor counts as rejection by all three JPSP sections — a rejected manuscript should not be resubmitted to another section. (Verified: apa.org/pubs/journals/psp/submit) |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -219,15 +219,15 @@ Reviewers drawn primarily from the international personality and social-psycholo
 | **Data transparency requirement** | High — open data and open materials increasingly expected (APA badges, preregistration encouraged) |
 | **OPSEC compatibility** | Medium — survey/experimental data typically aggregable; transparency norms apply but pseudonymization standard |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** APA-wide policy applies to JPSP: generative AI may be used to draft/edit but its use MUST be disclosed and cited in the Method section; AI cannot be named as an author; authors remain responsible for accuracy of AI-provided content and citations; entering submitted/manuscript content into generative-AI tools is prohibited (breaks confidentiality). Allowed-with-mandatory-disclosure, not a ban and not fully open.
+**AI-research finding (policy):** APA-wide policy applies to JPSP: generative AI may be used to draft/edit but its use MUST be disclosed and cited in the Method section; AI cannot be named as an author; authors remain responsible for accuracy of AI-provided content and citations; entering submitted/manuscript content into generative-AI tools is prohibited (breaks confidentiality). Allowed-with-mandatory-disclosure, not a ban and not fully open.
 
-**WO2 positioning finding (what the journal accepts now):** Original empirical research and meta-analyses in personality and social psychology across three independently edited sections: (1) Attitudes and Social Cognition; (2) Interpersonal Relations and Group Processes; (3) Personality Processes and Individual Differences. Registered Reports are accepted (a 2025 RR on appraisal-tendency/risk judgments was published). IRGP section caps at 5 studies per manuscript.
+**AI-research finding (positioning — what the journal accepts now):** Original empirical research and meta-analyses in personality and social psychology across three independently edited sections: (1) Attitudes and Social Cognition; (2) Interpersonal Relations and Group Processes; (3) Personality Processes and Individual Differences. Registered Reports are accepted (a 2025 RR on appraisal-tendency/risk judgments was published). IRGP section caps at 5 studies per manuscript.
 
-**WO2 experiential finding:** Top-tier, highly selective APA flagship; all 4 SciRev reviews ended in rejection and first decisions are typically major-revision-or-reject rather than acceptance. No official acceptance rate is published by the journal. SciRev (n=4) is mixed: editors were praised for constructively summarizing feedback, but one entry flagged an 'outright offensive' reviewer comment; report-quality ratings spanned low (1) to high (4). Sample too small to generalize.
+**AI-research finding (experiential):** Top-tier, highly selective APA flagship; all 4 SciRev reviews ended in rejection and first decisions are typically major-revision-or-reject rather than acceptance. No official acceptance rate is published by the journal. SciRev (n=4) is mixed: editors were praised for constructively summarizing feedback, but one entry flagged an 'outright offensive' reviewer comment; report-quality ratings spanned low (1) to high (4). Sample too small to generalize.
 
 **Sources cited in this pass:**
 - 2025 Registered Report example (WebSearch, apa.org/pubs/journals/psp content)
@@ -237,7 +237,7 @@ Reviewers drawn primarily from the international personality and social-psycholo
 - publisher-scope: https://www.apa.org/pubs/journals/psp
 - submit-guidelines/sections: https://www.apa.org/pubs/journals/psp/submit
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.acceptance_rate (numeric)**: JPSP does not publish an official acceptance rate; SciRev sample (4/4 rejections) is too small to compute a rate — no reliable public first-hand number.
 - **experiential.desk_reject_pct (reliable)**: Only 1 of 4 SciRev entries was a desk reject; sample far too small and dated (2014–2017) to state a real percentage.
 - **experiential Chinese first-hand data**: LetPub shows 0 shared entries; 知乎 only a general intro article; 小木虫 no first-hand thread found — no cross-language experiential facts available.
@@ -301,6 +301,7 @@ High for qualitative or single-study authors — typically requires complete res
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

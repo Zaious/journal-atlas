@@ -1,0 +1,12 @@
+{
+ "name": "The American Journal of Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\american-journal-of-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy (Has journal-specific AI policy? / Explicit permission gate? / Leniency / Summary)",
+   "existing_value": "Has journal-specific AI policy?: No (follows UIP publisher default); Explicit permission gate?: No — disclosure-based; Leniency (1-5): 4; Summary: \"Follows University of Illinois Press publisher AI policy: disclosure required; AI cannot be listed as author.\"",
+   "wo2_value": "gate: null, leniency_1_5: null, signal_quality: 0. Summary: \"查無此刊或其出版社(University of Illinois Press／Scholarly Publishing Collective／Scholastica投稿系統)公開發布的AI/生成式AI使用政策頁面。UI Press官方投稿頁與Scholastica「For Authors」頁均只列出APA第7版格式、雙盲審稿、題頁匿名化等要求,未提及AI/ChatGPT使用規範。\"",
+   "why_flagged": "現有條目斷言存在一個具體的「UIP 出版社預設 AI 政策」(揭露即可、AI 不得列為作者)並給出寬容度 4 分；但 WO2 的獨立研究通盤查閱 UIP 官方投稿頁與 Scholastica 投稿系統「For Authors」頁後，明確表示查無任何期刊層級或出版社層級公開發布的 AI/生成式 AI 政策頁面，因此 WO2 將 gate 與 leniency 都留白(null)、signal_quality 標為 0。這不只是「更多細節」，而是對「該政策是否確實存在且可被驗證」的實質分歧，需要人工重新查證現有條目中「UIP 預設政策」說法的原始來源，而非由本次比對自動判定取捨。"
+  }
+ ]
+}

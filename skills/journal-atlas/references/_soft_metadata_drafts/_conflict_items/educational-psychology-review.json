@@ -1,0 +1,18 @@
+{
+ "name": "Educational Psychology Review",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\educational-psychology-review.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5)",
+   "existing_value": "Explicit permission gate? No — disclosure-based ; Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\"（有條件揭露）; leniency_1_5: 3",
+   "why_flagged": "WO2 將此政策標記為 conditional,而現有檔案標記為「No — disclosure-based」;雖然 WO2 自身文字說明其底層機制與現有描述相同(無需事前許可、屬事後揭露制),但標籤詞彙(conditional vs No)與寬容度評分(3 vs 4)不一致,屬於同一維度的具體數值/標籤分歧,建議人工核實後統一,而非自動判定何者正確。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Post-acceptance (AAM) embargo",
+   "existing_value": "Yes | Embargo: 12 months",
+   "wo2_value": "可在正式出版後至少 6 個月上傳作者接受版(accepted version)——依 Springer Nature 通用政策外推,非該刊逐字聲明,信心中等 (source: https://communities.springernature.com/posts/citing-a-preprint-a-guide-researchers)",
+   "why_flagged": "AAM 禁運期月數具體衝突(現有 12 個月 vs WO2 至少 6 個月),且 WO2 來源為出版社通用政策頁面的外推,並非該刊逐字聲明,兩者信心層級與數字皆不同,建議人工核實該刊實際 embargo 規定,不宜自動覆蓋既有較具體的數字。"
+  }
+ ]
+}

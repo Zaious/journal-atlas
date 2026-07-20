@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Personality",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Wiley default — varies by journal)",
+   "wo2_value": "single-blind（依 Wikipedia 條目與一般 Wiley 心理學期刊慣例描述；未能於期刊官方作者指南頁直接核實，因該頁 HTTP 402 無法讀取）",
+   "why_flagged": "現有條目與 WO2 對審稿類型給出直接矛盾的結論（雙盲匿名 vs. 單盲），且雙方都承認證據不夠扎實（現有為 Wiley 預設推定「varies by journal」；WO2 為 Wikipedia 條目推定、官方頁面因付費牆無法核實）。屬實質分歧而非細節補充，需人工查核期刊官方 Author Guidelines 頁以定案，不應由本次比對自動擇一覆蓋。"
+  }
+ ]
+}

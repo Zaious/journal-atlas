@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Personality and Social Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality-and-social-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Masked (blind) review — manuscript is anonymized so reviewers do not see author identity; cover letter carries author names. Rejection by one section editor counts as rejection by all three sections.",
+   "why_flagged": "現有內容主張雙向匿名(double-anonymized),但 WO2 描述的是「稿件對審稿人匿名、但 cover letter 附作者姓名」的做法,較接近單向匿名(reviewer-blind,編輯知道作者身分),兩者對審查匿名程度的描述實質不同,需人工對照 APA/JPSP 投稿指南核實,不宜逕行覆蓋既有具體內容。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate",
+   "existing_value": "Leniency (1-5): 4; Explicit permission gate: No — disclosure-based",
+   "wo2_value": "Leniency (1-5): 3; gate: conditional",
+   "why_flagged": "雙方對同一份 APA 揭露式 AI 政策的寬鬆程度評分不同(4 vs 3),且對「是否有守門機制」的定性也不同(現有稱「無守門、僅需揭露」,WO2 稱「有條件式守門」)。底層事實(需揭露、AI 不得列為作者)一致,但評分與定性有實質分歧,屬人工判斷範疇,不逕行覆蓋既有已填寫內容。"
+  }
+ ]
+}

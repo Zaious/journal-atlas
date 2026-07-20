@@ -75,10 +75,10 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No — publisher-level policy (John Benjamins Author Ethics / Statement on AI), not a journal-specific page (per WO2 research pass, 2026-07-13; signal quality 2/5) |
-| **Explicit permission gate?** | Conditional — AI may not be listed as an author; no explicit author-disclosure clause found for AI-assisted writing (per WO2 research pass, 2026-07-13) |
-| **Leniency (1-5)** | 2 (per WO2 research pass, 2026-07-13) |
-| **Summary** | Publisher-level (John Benjamins) policy, not journal-specific: no AI may be listed as an author ("no Artificial Intelligence qualifies as author", per Author's Responsibilities). Reviewers explicitly barred from using generative AI (e.g. ChatGPT) to produce review reports, citing confidentiality risk. No clear clause found on whether authors must disclose AI-assisted writing. See Soft Metadata > AI-Research Notes below for full WO2 finding (signal quality: 2/5). |
+| **Has journal-specific AI policy?** | No — publisher-level policy (John Benjamins Author Ethics / Statement on AI), not a journal-specific page (per AI-research research pass, 2026-07-13; signal quality 2/5) |
+| **Explicit permission gate?** | Conditional — AI may not be listed as an author; no explicit author-disclosure clause found for AI-assisted writing (per AI-research research pass, 2026-07-13) |
+| **Leniency (1-5)** | 2 (per AI-research research pass, 2026-07-13) |
+| **Summary** | Publisher-level (John Benjamins) policy, not journal-specific: no AI may be listed as an author ("no Artificial Intelligence qualifies as author", per Author's Responsibilities). Reviewers explicitly barred from using generative AI (e.g. ChatGPT) to produce review reports, citing confidentiality risk. No clear clause found on whether authors must disclose AI-assisted writing. See Soft Metadata > AI-Research Notes below for full AI-research finding (signal quality: 2/5). |
 | **Source URL** | https://benjamins.com/content/authors/ethics |
 
 ### Preprint Policy
@@ -224,15 +224,15 @@ Reviewers from social-robotics (HRI), interactional-linguistics, comparative-cog
 | **Data transparency requirement** | Medium — transcript / corpus sharing increasingly expected |
 | **OPSEC compatibility** | Medium — interactional data pseudonymization standard |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **1/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **1/5**.
 
-**WO2 AI policy finding:** 發布者(John Benjamins)層級政策,非期刊專屬頁面。明文:任何 AI 不得列為作者("no Artificial Intelligence qualifies as author"),此為 Author's Responsibilities 段落明載。審稿人明文禁止使用生成式 AI(如 ChatGPT)產生審稿意見,理由是上傳稿件內容到 AI 訓練/知識庫會破壞保密義務(此句取自搜尋引擎擷取之政策摘要,非逐字引用原文,原始頁面 'Statement on Artificial Intelligence' 完整章節內容因頁面渲染/交互限制未能直接讀取全文,僅讀到導覽錨點與旁註 '► See our statement on AI use')。未查到作者撰寫論文時使用生成式 AI 輔助寫作是否需要揭露的明確條款,故 permission_gate 標記為 conditional 且信心不高。
+**AI-research finding (policy):** 發布者(John Benjamins)層級政策,非期刊專屬頁面。明文:任何 AI 不得列為作者("no Artificial Intelligence qualifies as author"),此為 Author's Responsibilities 段落明載。審稿人明文禁止使用生成式 AI(如 ChatGPT)產生審稿意見,理由是上傳稿件內容到 AI 訓練/知識庫會破壞保密義務(此句取自搜尋引擎擷取之政策摘要,非逐字引用原文,原始頁面 'Statement on Artificial Intelligence' 完整章節內容因頁面渲染/交互限制未能直接讀取全文,僅讀到導覽錨點與旁註 '► See our statement on AI use')。未查到作者撰寫論文時使用生成式 AI 輔助寫作是否需要揭露的明確條款,故 permission_gate 標記為 conditional 且信心不高。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025)刊出主題聚焦人機互動中的信任議題,如 human-AI team trust、生成式AI增能的倫理機器人顧問之可信度與道德能力(GenAI-enabled ethical robot advisor)。整體期刊定位涵蓋生物與人工系統中互動研究的跨學科主題:演化/發展/神經生物學面向的社會行為與溝通、互動的具身性、社會與敘事智能的起源、動態環境中的知覺與行動、社會學習與適應、人機互動中的社會行為、同理理解與行為、文化因素在社會行為與溝通中的角色。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025)刊出主題聚焦人機互動中的信任議題,如 human-AI team trust、生成式AI增能的倫理機器人顧問之可信度與道德能力(GenAI-enabled ethical robot advisor)。整體期刊定位涵蓋生物與人工系統中互動研究的跨學科主題:演化/發展/神經生物學面向的社會行為與溝通、互動的具身性、社會與敘事智能的起源、動態環境中的知覺與行動、社會學習與適應、人機互動中的社會行為、同理理解與行為、文化因素在社會行為與溝通中的角色。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://benjamins.com/catalog/is/guidelines
@@ -241,7 +241,7 @@ Reviewers from social-robotics (HRI), interactional-linguistics, comparative-cog
 - https://www.jbe-platform.com/content/journals/10.1075/is.00025.edi
 - https://www.jbe-platform.com/content/journals/10.1075/is.25072.mom
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: 未能在 benjamins.com/catalog/is/guidelines 或 jbe-platform 頁面取得明確標示(如 double-blind/single-blind);WebFetch 對 benjamins.com 回傳 403,瀏覽器工具讀取該頁時內容未完整渲染出審稿類型說明,故留空。
 - **preprint.allowed**: John Benjamins 有「Author Rights Policy」提及預印本相關權利，但未能成功讀取該頁具體條款(WebFetch 403,瀏覽器渲染未完整),故留空避免臆測。
 - **experiential.review_time_months**: SciRev 期刊頁面顯示 0 筆使用者評論，所有時效與比例欄位皆為 n/a；跨語言論壇(小木虫/知乎/fabiaoji/Reddit)搜尋亦無任何一手經驗分享。
@@ -305,6 +305,6 @@ Low for niche-specialty researchers. Moderate for mainstream HCI authors — req
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Specialty journal at HRI/linguistics/cognitive science crossover. Multiple fields flagged pending due to less-documented publisher (Benjamins). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -1,0 +1,24 @@
+{
+ "name": "ACM Transactions on Interactive Intelligent Systems (TiiS)",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\acm-transactions-on-interactive-intelligent-systems.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per ACM default — varies by journal)",
+   "wo2_value": "Double-anonymous peer review, effective starting July 1, 2025 (journal-specific policy change — TiiS moved from single- to double-anonymous review; author identity hidden from reviewers, though the handling associate editor knows it). Submissions must comply with anonymity requirements and authors are 'encouraged to refrain from' posting to arXiv/preprint servers during review.",
+   "why_flagged": "既有欄位已有具體內容（非空白佔位），且將雙盲審查定性為「ACM 預設值、因刊物而異」；WO2 則找到一則更具體、帶日期的期刊專屬變更（2025-07-01 起由單盲改為雙盲），性質上是矛盾/不同描述而非單純補充細節，且 WO2 來源本身標註為搜尋引擎快取片段（dl.acm.org 直接抓取被 403 擋下），可信度有限，故不直接覆蓋，留待人工核實。"
+  },
+  {
+   "field": "Policies > Preprint Policy > Under review",
+   "existing_value": "No updates (per ACM default)",
+   "wo2_value": "TiiS-specific guidance (tied to its double-anonymous review policy effective 2025-07-01) 'encourages authors to refrain from' posting submitted-version preprints to arXiv or other public forums during the active review period, to preserve reviewer anonymity/blinding.",
+   "why_flagged": "既有欄位已有內容，屬「ACM 預設」的概括描述；WO2 找到一則具體、有理由（維持雙盲）的期刊專屬指引，內容實質不同於既有的泛用描述，屬矛盾而非細節補充，且來源同樣依賴搜尋引擎快取（tiis.acm.org 直接抓取 403），建議人工核實後再決定是否更新。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements / Methodological Preferences (positioning finding)",
+   "existing_value": "既有 Framing Requirements 與 Methodological Preferences 章節內容（Tier 2 社群估計）",
+   "wo2_value": "WO2 positioning.accepts_now / framing_required / methods_welcome：強調論文須同時滿足 TiiS 官方定義的『Intelligence』與『Interaction』兩要件，並列出目前活躍的徵稿主題（如 healthcare conversational agents 特刊、knowledge-systematizing 特刊等）。",
+   "why_flagged": "此為主觀/定位類發現，依規則不得直接編輯 Soft Metadata 的主觀子章節；註記此為補充性研究發現供人工參考。附註：此份 WO2 內容其實已於 2026-07-13 由另一支自動化流程（scripts/spine/patch_existing_entries.py）以『AI-Research Notes (WO2 supplement)』區塊完整附加於檔案中，此處僅重申其存在，不代表需要對 Framing Requirements 本身做編輯。"
+  }
+ ]
+}

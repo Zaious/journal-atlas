@@ -1,0 +1,12 @@
+{
+ "name": "Frontiers in Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\frontiers-in-psychology.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "High (~50%+) — reflects Frontiers editorial model",
+   "wo2_value": "知乎資料：2024 年接受率約 37%，近年拒稿率上升、審查趨嚴，非「易發」期刊",
+   "why_flagged": "現有數字（~50%+，泛指 Frontiers 編審模式）與 WO2 引用的知乎社群估計（2024 年約 37%，且指出近年趨嚴）存在實質矛盾而非僅是精細化，且 WO2 來源為單一中文社群估計、信度中等，需要人工核實後才能決定是否更新，故不逕行覆蓋。"
+  }
+ ]
+}

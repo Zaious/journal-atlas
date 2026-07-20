@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | ~3.0 months average for first-round decision; immediate/desk rejections ~17 days average | SciRev self-selected sample, n=19 reviews (WO2 signal quality 3/5) — https://scirev.org/journal/cognition/ |
+| **Time to first decision** | ~3.0 months average for first-round decision; immediate/desk rejections ~17 days average | SciRev self-selected sample, n=19 reviews (AI-research signal quality 3/5) — https://scirev.org/journal/cognition/ |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | ~5.5 months average total handling time for accepted manuscripts | SciRev self-selected sample, n=19 reviews (WO2 signal quality 3/5) — https://scirev.org/journal/cognition/ |
+| **Time to acceptance (total)** | ~5.5 months average total handling time for accepted manuscripts | SciRev self-selected sample, n=19 reviews (AI-research signal quality 3/5) — https://scirev.org/journal/cognition/ |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (per Elsevier default — varies by journal; some are double-blind) |
+| **Type** | Double-anonymized (double-blind) — editors first screen submissions for suitability, then typically send to a minimum of two independent expert reviewers; authors must remove identifying information (names, affiliations) from the manuscript (source: Cognition Guide for Authors, https://www.sciencedirect.com/journal/cognition/publish/guide-for-authors, verified via search-snippet corroboration 2026-07-20 since direct fetch is blocked 403) |
 | **Transferable / Cascade?** | Elsevier operates cross-journal transfer for some manuscripts |
 | **Reviewer reports published?** | No (per Elsevier default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -88,7 +88,7 @@
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Yes (Elsevier article sharing policy permits preprints) | |
+| Pre-submission | Yes (Elsevier article sharing policy permits preprints) | Optional free preprint-posting via SSRN First Look: authors may opt in during submission; manuscript is posted publicly on SSRN once it clears initial editorial/desk screening and enters peer review (source: https://www.elsevier.com/products/ssrn-preprint-services/first-look, verified 2026-07-20; originally cited URL elsevier.com/about/policies-and-standards/sharing does not actually mention SSRN) |
 | Under review | Recommended no updates | |
 | Post-acceptance (AAM) | Yes | Embargo: 24 months |
 | Version of Record | Restricted unless OA APC paid | |
@@ -219,15 +219,15 @@ Reviewers drawn primarily from the experimental cognitive psychology community �
 | **Data transparency requirement** | Medium-High — open data and code increasingly expected (Elsevier data-sharing norms) |
 | **OPSEC compatibility** | Medium — typical experimental data aggregable; 24-month AAM embargo applies on subscription path |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Cognition follows Elsevier's publisher-wide (not journal-specific) generative AI policy: authors may use generative AI/AI-assisted tools to help prepare a manuscript with human oversight (e.g. language editing, literature organization with verification), but must disclose use in a separate 'Declaration of Generative AI and AI-assisted technologies' statement placed before the references in the published work. AI cannot be listed as author/co-author, cannot generate images/artwork (except where AI is the research method itself, which must be described in Methods), and AI output cannot be used as manuscript text without substantial human revision/verification. No Cognition-specific AI policy page was found distinct from the general Elsevier policy.
+**AI-research finding (policy):** Cognition follows Elsevier's publisher-wide (not journal-specific) generative AI policy: authors may use generative AI/AI-assisted tools to help prepare a manuscript with human oversight (e.g. language editing, literature organization with verification), but must disclose use in a separate 'Declaration of Generative AI and AI-assisted technologies' statement placed before the references in the published work. AI cannot be listed as author/co-author, cannot generate images/artwork (except where AI is the research method itself, which must be described in Methods), and AI output cannot be used as manuscript text without substantial human revision/verification. No Cognition-specific AI policy page was found distinct from the general Elsevier policy.
 
-**WO2 positioning finding (what the journal accepts now):** Cognition publishes theoretical and experimental papers on the study of the mind, spanning psychology, linguistics, neuroscience, and computational/AI-adjacent approaches to cognition. Recent (2025-2026) article topics found via search include: L2/L3 prosody and language acquisition, cross-linguistic cognitive change (frames of reference in Hai||om), and evaluation of pre-trained language models as cognitive-science theories. A recent special issue theme identified: 'Twenty Years of Experimental Pragmatics' (scalar implicature, metaphor processing), plus special-issue activity edited by Jean-François Bonnefon. No comprehensive 2024-2026 article-title list could be pulled directly (ScienceDirect blocked automated fetch with 403), so this is based on search-snippet sampling only, not a full scan.
+**AI-research finding (positioning — what the journal accepts now):** Cognition publishes theoretical and experimental papers on the study of the mind, spanning psychology, linguistics, neuroscience, and computational/AI-adjacent approaches to cognition. Recent (2025-2026) article topics found via search include: L2/L3 prosody and language acquisition, cross-linguistic cognitive change (frames of reference in Hai||om), and evaluation of pre-trained language models as cognitive-science theories. A recent special issue theme identified: 'Twenty Years of Experimental Pragmatics' (scalar implicature, metaphor processing), plus special-issue activity edited by Jean-François Bonnefon. No comprehensive 2024-2026 article-title list could be pulled directly (ScienceDirect blocked automated fetch with 403), so this is based on search-snippet sampling only, not a full scan.
 
-**WO2 experiential finding:** SciRev shows acceptance rate as 'n/a' (not provided by editor/insufficient data). Qualitative reports: multiple reviewers described desk rejections with little or no explanatory feedback; one editor reportedly rejected 'based on a subjective opinion' without reviewer input. Positive reports also exist: constructive reviewer feedback and editors who engaged seriously with reviews. Mixed/inconsistent per SciRev free-text reviews (n=19, self-selected sample): quality of review reports rated 3.6/5.0, overall handling 3.5/5.0, difficulty of reviewer comments 3.8/5.0. Specific complaints: reviewers criticizing methodology without constructive suggestions, reviewer disagreement/misunderstanding of study, and quality variance between reviewers on the same paper ('two excellent, one very cursory/generic'). No Chinese-language (小木虫/知乎) first-hand review reports were found specifically about Cognition despite targeted searches — hits returned were about differently-named journals (e.g. Cognition and Instruction, Cognitive Computation, Cognition Technology & Work) or general cognitive-science-journal overview articles, not first-hand Cognition submission accounts. No Reddit r/AskAcademia thread specifically about Cognition was found.
+**AI-research finding (experiential):** SciRev shows acceptance rate as 'n/a' (not provided by editor/insufficient data). Qualitative reports: multiple reviewers described desk rejections with little or no explanatory feedback; one editor reportedly rejected 'based on a subjective opinion' without reviewer input. Positive reports also exist: constructive reviewer feedback and editors who engaged seriously with reviews. Mixed/inconsistent per SciRev free-text reviews (n=19, self-selected sample): quality of review reports rated 3.6/5.0, overall handling 3.5/5.0, difficulty of reviewer comments 3.8/5.0. Specific complaints: reviewers criticizing methodology without constructive suggestions, reviewer disagreement/misunderstanding of study, and quality variance between reviewers on the same paper ('two excellent, one very cursory/generic'). No Chinese-language (小木虫/知乎) first-hand review reports were found specifically about Cognition despite targeted searches — hits returned were about differently-named journals (e.g. Cognition and Instruction, Cognitive Computation, Cognition Technology & Work) or general cognitive-science-journal overview articles, not first-hand Cognition submission accounts. No Reddit r/AskAcademia thread specifically about Cognition was found.
 
 **Sources cited in this pass:**
 - WebSearch snippets of ScienceDirect recent-articles listing (direct fetch blocked, 403)
@@ -237,7 +237,7 @@ Reviewers drawn primarily from the experimental cognitive psychology community �
 - https://www.cell.com/trends/cognitive-sciences (search snippet only)
 - https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev lists acceptance/desk-reject rate as 'n/a' (editor has not provided it); no forum post gave a numeric percentage, only qualitative anecdotes of desk rejections occurring.
 - **experiential Chinese-language sources (小木虫/知乎)**: Targeted searches on 小木虫 and 知乎 for 'Cognition' journal returned only results about similarly-named but distinct journals (Cognition and Instruction, Cognitive Computation, Cognition Technology & Work, Cognitive Science) or generic cognitive-science-journal round-up articles — no first-hand submission/review account specific to Cognition (ISSN 0010-0277) was located. One promising zhihu article (p/412167228) could not be verified as being about this specific journal because WebFetch returned 403 Forbidden on zhihu.com.
 - **experiential Reddit r/AskAcademia**: WebSearch for 'Cognition journal reddit AskAcademia review experience desk reject' returned zero results; no first-hand Reddit account found.
@@ -300,6 +300,7 @@ Low for cognitive-experimental tradition authors. Moderate for theoretical-only 
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy (Pre-submission row, Notes column). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05). Note: community-source review attributes this entry to psychology/ but actual location is cognitive-science/. | @Zaious |

@@ -1,0 +1,30 @@
+{
+ "name": "Design Studies",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\design-studies.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "3",
+   "wo2_value": "4 (signal_quality 2/5, explicitly noted as inherited publisher-default, not journal-verified)",
+   "why_flagged": "既有 AI Policy 欄位已有具體實質內容（非佔位符），非可直接覆蓋對象；但寬容度數值本身與 WO2 不同（3 vs 4），屬於實質分歧而非單純補充細節，需人工比對 Elsevier 政策原文後判斷是否調整。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "existing_value": "No — disclosure-based for text; image generation prohibited",
+   "wo2_value": "conditional",
+   "why_flagged": "對 gate 類型的定性描述不同（既有版本明確區分文字揭露制 vs 圖像禁止；WO2 僅籠統標為 conditional），且既有欄位已有實質內容，依規則不可覆寫，僅記錄供人工核對。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time（全部四列，目前均為 *(fill manually)* 佔位符）",
+   "existing_value": "*(fill manually)* (all four rows)",
+   "wo2_value": "SciRev(n=3): first review ~4.6 months, total handling ~5.9 months, immediate-rejection ~40 days, ~2.0 rounds；LetPub: first review ~5.7 weeks, overall ~7.3 weeks, online pub ~9.5 weeks",
+   "why_flagged": "雖然這些列目前是空白/佔位符（技術上符合可填條件），但 WO2 自身兩個來源數字互相矛盾且差距近 4 倍（月 vs 週），WO2 標註 signal_quality 僅 2/5、樣本量小（SciRev n=3）、方法論不明，且 WO2 報告文字本身承認『materially disagree』。強行選一個數字填入會構成粗暴填入而非可信資料，故不填，留待人工查證後決定採用何值或是否標註為多來源分歧估計。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "*(fill manually if known)*",
+   "wo2_value": "LetPub 定性描述『较易』(relatively easy)，無具體百分比，且 LetPub 為代寫/編輯服務商業網站，WO2 自評為低可信度",
+   "why_flagged": "WO2 對此欄位並未提供實際比率數字，只有一句未量化、來源可信度存疑的定性描述，不構成『real, sourced answer』門檻，且此發現已完整呈現於既有檔案的 AI-Research Notes 補充區塊中，故不重複填入 Metrics 表格，留待人工判斷是否有更可靠來源。"
+  }
+ ]
+}

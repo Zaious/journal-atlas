@@ -1,0 +1,12 @@
+{
+ "name": "Multimodal Technologies and Interaction",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\multimodal-technologies-and-interaction.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "兩者皆同意此為MDPI出版社統一的揭露式(disclosure-based)政策而非期刊專屬條款，但對寬鬆度評分不同（現有4分 vs WO2 3分），屬同一政策的不同主觀評級，非單純補充細節，建議人工複核後擇一或調和。"
+  }
+ ]
+}

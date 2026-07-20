@@ -49,7 +49,7 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | ~2.7 months average (SciRev, n=5) | Community-reported via SciRev; very small sample (5 reviews) including one extreme outlier of 17.3 weeks. Chinese journal-aggregator sites claim 5–13 months but lack traceable first-hand submitter accounts (lower reliability than SciRev). WO2 signal quality: 2/5. |
+| **Time to first decision** | ~2.7 months average (SciRev, n=5) | Community-reported via SciRev; very small sample (5 reviews) including one extreme outlier of 17.3 weeks. Chinese journal-aggregator sites claim 5–13 months but lack traceable first-hand submitter accounts (lower reliability than SciRev). AI-research signal quality: 2/5. |
 | **Time to first review** | *(fill manually)* | |
 | **Time to acceptance (total)** | *(fill manually)* | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
@@ -80,9 +80,9 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows SAGE publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No — conditional/disclosure-based (assistive use, e.g. language/grammar polishing, is exempt; generative use — content generation, literature review, code, data visualization — must be disclosed at submission) |
 | **Leniency (1-5)** | 4 |
-| **Summary** | Follows SAGE publisher AI policy: disclosure required if AI use affects research content. AI cannot be listed as author. Language polishing typically need not be disclosed. |
+| **Summary** | Follows SAGE Group-wide AI policy (no PSPB-specific supplementary page found): AI use is split into "assistive" (grammar/language polishing — no disclosure required) and "generative" (content generation, literature review, code, data visualization — disclosure required at submission). AI cannot be listed as author. Explicitly prohibited: fabricating content/data/citations via AI, substituting AI for real interviews, presenting AI-generated images as genuine research data, undisclosed AI use, and reviewers/editors using AI to draft review reports or decision letters. |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 ### Preprint Policy
 
@@ -219,15 +219,15 @@ Reviewers drawn primarily from the personality and social psychology research co
 | **Data transparency requirement** | High — open data encouraged (SAGE open-science badges) |
 | **OPSEC compatibility** | Medium — confidentiality norm: authors discouraged from public discussion of reviews |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 遵循 Sage 集團通用 AI 政策(非期刊專屬頁面):AI 分「assistive」(潤稿/文法,不需揭露)與「generative」(生成內容/文獻回顧/程式碼/資料視覺化等,投稿時必須揭露)。禁止:AI 生成不實內容、捏造數據或引用、以 AI 取代真實訪談、將 AI 圖像充作原始研究、未揭露使用、審稿人/編輯以 AI 撰寫決議信或審稿意見。AI 聊天工具不得列為作者。屬 Sage 全站政策,PSPB 投稿頁未見期刊專屬加嚴或放寬條款。
+**AI-research finding (policy):** 遵循 Sage 集團通用 AI 政策(非期刊專屬頁面):AI 分「assistive」(潤稿/文法,不需揭露)與「generative」(生成內容/文獻回顧/程式碼/資料視覺化等,投稿時必須揭露)。禁止:AI 生成不實內容、捏造數據或引用、以 AI 取代真實訪談、將 AI 圖像充作原始研究、未揭露使用、審稿人/編輯以 AI 撰寫決議信或審稿意見。AI 聊天工具不得列為作者。屬 Sage 全站政策,PSPB 投稿頁未見期刊專屬加嚴或放寬條款。
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* SciRev(僅 5 筆評論)：審稿意見難度評分 5.0/5.0(極困難)，審稿報告品質 3.3/5.0，整體投稿流程評分 3.0/5.0；最新一筆評論摘要為「流程尚可(3分/good process)但結果為拒稿」。樣本量過小，不足以形成可靠的審稿人文化描述。
+**AI-research finding (experiential):** *(not researched)* SciRev(僅 5 筆評論)：審稿意見難度評分 5.0/5.0(極困難)，審稿報告品質 3.3/5.0，整體投稿流程評分 3.0/5.0；最新一筆評論摘要為「流程尚可(3分/good process)但結果為拒稿」。樣本量過小，不足以形成可靠的審稿人文化描述。
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/home/PSP
@@ -235,7 +235,7 @@ Reviewers drawn primarily from the personality and social psychology research co
 - https://scirev.org/reviews/personality-and-social-psychology-bulletin/
 - https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now**: 未找到 2024-2026 具體近期文章標題清單或當前 special issue CFP 專屬於 PSPB(僅找到姊妹刊 Personality and Social Psychology Review 及其他期刊的 CFP)，故不推斷「現在實際接受什麼」，留白避免捏造。
 - **positioning.framing_required**: 沒有找到 PSPB 專屬的投稿框架/敘事要求說明，僅有通用 aims & scope，不足以推斷具體 framing 要求。
 - **experiential.acceptance_note**: SciRev 僅 5 筆評論且多為拒稿結果，未見任何『接受』個案的具體敘述可供摘要，無法給出誠實的 acceptance_note。
@@ -299,6 +299,7 @@ Low for SPSP-aligned multi-study quantitative authors. Free OA option likely via
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

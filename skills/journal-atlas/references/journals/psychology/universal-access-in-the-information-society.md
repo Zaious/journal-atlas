@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Springer default — varies by journal) |
+| **Type** | Single-anonymized (single-blind), two-referee minimum — no article accepted without two complete reviews (journal-specific; per Springer submission guidelines page: https://link.springer.com/journal/10209/submission-guidelines) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Springer default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -80,8 +80,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Springer Nature publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
+| **Explicit permission gate?** | Conditional — no gate for AI-assisted text (disclosure required in Methods/Acknowledgments or equivalent, no prior permission needed); hard prohibition (gate) on AI-generated images/figures except narrow exceptions (licensed stock imagery, AI-as-research-subject imagery, attributable/verifiable scientific-data-generated figures) |
+| **Leniency (1-5)** | 3 |
 | **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria. AI use must be disclosed in Materials/Methods or Acknowledgments. |
 | **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
 ### Preprint Policy
@@ -218,15 +218,15 @@ Reviewers from accessibility / inclusive design community. Common demands: "Disa
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 此為 Springer Nature 出版社通用政策（未找到本刊專屬 AI 政策頁）。LLM 不可列為作者（無法承擔究責）。若使用 LLM/生成式 AI 協助撰寫內容，須在 Methods 章節（或適當替代處）揭露；純粹的「AI 輔助文字潤色」（文法/拼字/語氣校對，非生成新內容）則免揭露。AI 生成圖像/圖表一律不接受發表，僅有限例外（如有合約授權的圖庫、以 AI 為研究主題本身的圖片、可歸因驗證之科學數據生成圖）。故評為條件式允許（3/5）：非全面禁止，但生成內容需揭露、生成圖像被禁。
+**AI-research finding (policy):** 此為 Springer Nature 出版社通用政策（未找到本刊專屬 AI 政策頁）。LLM 不可列為作者（無法承擔究責）。若使用 LLM/生成式 AI 協助撰寫內容，須在 Methods 章節（或適當替代處）揭露；純粹的「AI 輔助文字潤色」（文法/拼字/語氣校對，非生成新內容）則免揭露。AI 生成圖像/圖表一律不接受發表，僅有限例外（如有合約授權的圖庫、以 AI 為研究主題本身的圖片、可歸因驗證之科學數據生成圖）。故評為條件式允許（3/5）：非全面禁止，但生成內容需揭露、生成圖像被禁。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)主題聚焦身心障礙者/高齡者之資訊科技可及性(accessibility)、可用性(usability)研究，近年明顯納入 AI/生成式AI 於無障礙情境的應用與倫理議題（如AI輔助輔具、演算法偏誤、AI於身心障礙者生活品質影響之敘事性回顧）。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2024-2026)主題聚焦身心障礙者/高齡者之資訊科技可及性(accessibility)、可用性(usability)研究，近年明顯納入 AI/生成式AI 於無障礙情境的應用與倫理議題（如AI輔助輔具、演算法偏誤、AI於身心障礙者生活品質影響之敘事性回顧）。
 
-**WO2 experiential finding:** 中文投稿經驗聚合站(letpub/ablesci，僅2筆網友分享)標註接受難度為「容易」，但樣本量極小(2筆)，不足以視為可靠統計 
+**AI-research finding (experiential):** 中文投稿經驗聚合站(letpub/ablesci，僅2筆網友分享)標註接受難度為「容易」，但樣本量極小(2筆)，不足以視為可靠統計 
 
 **Sources cited in this pass:**
 - WebSearch: 2025 narrative review on AI revolutionizing accessibility (title/topic level, not full-text verified)
@@ -237,7 +237,7 @@ Reviewers from accessibility / inclusive design community. Common demands: "Disa
 - https://www.scirev.org/journal/universal-access-in-the-information-society/ (0篇網友評論，全部n/a)
 - https://www.springernature.com/gp/researchers/ai-policy (publisher-wide policy; not journal-specific page found)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific)**: 找不到本刊(UAIS)自訂的AI政策頁，僅能引用Springer Nature出版社層級通用政策做外推，非本刊逐字確認
 - **experiential.desk_reject_pct**: SciRev本刊頁面0篇評論、全部欄位顯示n/a；中文聚合站(小木虫/letpub/ablesci)均未提供具體退稿率數字
 - **experiential.reviewer_culture**: 查無小木虫、知乎、Reddit r/AskAcademia針對本刊審稿人風格/文化的具體第一手討論串；搜尋均未命中相關實質內容
@@ -295,6 +295,7 @@ Low for accessibility tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + accessibility research / ACM SIGACCESS community editorial culture domain knowledge | @Zaious |

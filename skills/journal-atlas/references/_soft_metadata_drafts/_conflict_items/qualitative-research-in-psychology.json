@@ -1,0 +1,18 @@
+{
+ "name": "Qualitative Research in Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-research-in-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "*(per T&F default — pending verification; commonly double-anonymized)*",
+   "wo2_value": "Double-anonymized (double-blind) with initial editor screening — source: https://www.tandfonline.com/journals/uqrp20/about-this-journal",
+   "why_flagged": "現有欄位已有具體內容(non-placeholder,含 pending verification 註記),依規則不可自動覆蓋;但 WO2 提供期刊專屬頁面來源,確認 double-anonymized 並補充 initial editor screening 細節,可解除現有的『pending verification』懸念,建議人工核實後再決定是否更新措辭。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4 (disclosure-based; AI cannot be listed as author)",
+   "wo2_value": "3 (conditional/disclosure-based; 另指出同儕審查者不得用生成式 AI 分析/摘要投稿稿件,亦不得將未發表稿件上傳至 AI 工具)",
+   "why_flagged": "AI Policy 整節已有實質內容,非裸佔位符,依規則不列入可編輯範圍;但 WO2 給出的 leniency 數值(3)與現有(4)不同,且補充了現有 Summary 未提及的『審查者禁用 AI』限制,建議人工複核是否需調整評分或補述。"
+  }
+ ]
+}

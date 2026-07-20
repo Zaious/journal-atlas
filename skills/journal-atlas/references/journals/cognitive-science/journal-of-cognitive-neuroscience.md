@@ -79,11 +79,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No (follows MIT Press publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
-| **Summary** | Follows MIT Press publisher AI policy: disclosure required; AI cannot be listed as author. |
-| **Source URL** | https://direct.mit.edu/pages/authorinformation |
+| **Has journal-specific AI policy?** | Yes — JoCN-specific policy supplementing MIT Press Journal Publication Ethics |
+| **Explicit permission gate?** | Conditional — permitted for language/clarity editing (author-verified) and synthetic/simulated data for methodological development (e.g. algorithm testing); prohibited for generating primary research data (incl. synthetic neuroimaging fMRI/EEG/MEG/fNIRS or fabricated statistical output) or unsupervised generation of substantive research content; agentic AI used for research tasks (e.g. code, data pipelines) must be disclosed in Methods with tool/model name |
+| **Leniency (1-5)** | 3 |
+| **Summary** | JoCN-specific AI policy (supplements MIT Press default): AI cannot be listed as author; author fully responsible for AI-assisted content; permitted uses limited to text polishing and synthetic data for method development; hard prohibition on AI-generated primary data/images and unsupervised substantive content generation; reviewers discouraged from using AI to evaluate manuscript science but may use it to polish review text, with mandatory disclosure visible only to the handling editor. |
+| **Source URL** | https://direct.mit.edu/jocn/pages/submission-guidelines |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -222,22 +222,22 @@ Reviewers drawn primarily from the cognitive neuroscience community — Cognitiv
 | **Data transparency requirement** | High — neuroimaging data sharing increasingly expected |
 | **OPSEC compatibility** | Medium — neuroimaging data anonymization rigorous |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **4/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **4/5**.
 
-**WO2 AI policy finding:** JoCN 有專屬 AI 政策(補充 MIT Press 出版倫理)。禁止 AI 掛名作者。允許用途:潤飾文字語言(需作者驗證)、生成模擬/合成資料做方法學開發(如測試演算法)、產生「卡通式」示意圖。禁止用途:產生主要研究資料(含合成神經影像 fMRI/EEG/MEG/fNIRS 或捏造統計輸出)、在無人類監督下生成實質研究內容/假設/詮釋、產生不直接代表研究資料的圖像。若 agentic AI 自主/半自主執行研究任務(如寫程式碼、管理資料流程),須在 Methods 章節以與其他方法同等細節揭露所用工具與模型名稱(如 GPT-4o、Claude 3.5 Sonnet)及其邏輯目的,並鼓勵公開 prompt 與 AI 生成的程式碼。作者對全文(含 AI 輔助部分)之準確性、完整性、原創性負完全責任。審稿人被強烈勸阻使用 AI 分析/評估稿件科學內容(擔心機密外洩與偏見放大),但可用 AI 潤飾審稿意見文字;送出審稿意見時系統會詢問是否使用 AI,若答「是」則後續問題答案僅編輯可見、作者不可見。定性為 conditional gate(允許但有明確邊界與揭露義務),寬鬆度中等偏嚴(3/5:非全面禁止,但對「實質內容生成」與「主要資料生成」設有硬性紅線)。
+**AI-research finding (policy):** JoCN 有專屬 AI 政策(補充 MIT Press 出版倫理)。禁止 AI 掛名作者。允許用途:潤飾文字語言(需作者驗證)、生成模擬/合成資料做方法學開發(如測試演算法)、產生「卡通式」示意圖。禁止用途:產生主要研究資料(含合成神經影像 fMRI/EEG/MEG/fNIRS 或捏造統計輸出)、在無人類監督下生成實質研究內容/假設/詮釋、產生不直接代表研究資料的圖像。若 agentic AI 自主/半自主執行研究任務(如寫程式碼、管理資料流程),須在 Methods 章節以與其他方法同等細節揭露所用工具與模型名稱(如 GPT-4o、Claude 3.5 Sonnet)及其邏輯目的,並鼓勵公開 prompt 與 AI 生成的程式碼。作者對全文(含 AI 輔助部分)之準確性、完整性、原創性負完全責任。審稿人被強烈勸阻使用 AI 分析/評估稿件科學內容(擔心機密外洩與偏見放大),但可用 AI 潤飾審稿意見文字;送出審稿意見時系統會詢問是否使用 AI,若答「是」則後續問題答案僅編輯可見、作者不可見。定性為 conditional gate(允許但有明確邊界與揭露義務),寬鬆度中等偏嚴(3/5:非全面禁止,但對「實質內容生成」與「主要資料生成」設有硬性紅線)。
 
-**WO2 positioning finding (what the journal accepts now):** 2026 年出刊(Vol.38)近期文章涵蓋:睡眠與認知(phase dynamics/thought-behavior bridge)、創造力任務的功能腦網絡連結(fMRI)、詞形/正字法/語意促發之 ERP 比較研究、視覺工作記憶在眼動後的皮質表徵(fMRI)。整體仍以嚴謹實證腦-行為研究(fMRI/EEG/MEG/ERP/NHP 電生理等)為主軸,強調方法學透明度(樣本量、效應量、貝氏統計)。未查到 2026 年度特刊/CFP。
+**AI-research finding (positioning — what the journal accepts now):** 2026 年出刊(Vol.38)近期文章涵蓋:睡眠與認知(phase dynamics/thought-behavior bridge)、創造力任務的功能腦網絡連結(fMRI)、詞形/正字法/語意促發之 ERP 比較研究、視覺工作記憶在眼動後的皮質表徵(fMRI)。整體仍以嚴謹實證腦-行為研究(fMRI/EEG/MEG/ERP/NHP 電生理等)為主軸,強調方法學透明度(樣本量、效應量、貝氏統計)。未查到 2026 年度特刊/CFP。
 
-**WO2 experiential finding:** LetPub 網友評分(50人):聲譽 7.6、影響力 5.3、速度 9.4(滿分10,速度偏快)。網友分享『平均錄取比例』標示為『較難』;唯一可見具體留言(2016年,近期更新於2024)稱『比較容易，審稿也挺快的，不錯！』。SciRev 僅2筆評論,其一為『編輯與3位審稿人中2位表現優異』但1位審稿人拖延且審查草率後退出,最終『Accepted』,整體流程評4/5→3/5(good process)。 
+**AI-research finding (experiential):** LetPub 網友評分(50人):聲譽 7.6、影響力 5.3、速度 9.4(滿分10,速度偏快)。網友分享『平均錄取比例』標示為『較難』;唯一可見具體留言(2016年,近期更新於2024)稱『比較容易，審稿也挺快的，不錯！』。SciRev 僅2筆評論,其一為『編輯與3位審稿人中2位表現優異』但1位審稿人拖延且審查草率後退出,最終『Accepted』,整體流程評4/5→3/5(good process)。 
 
 **Sources cited in this pass:**
 - http://www.letpub.com.cn/index.php?journalid=4337&page=journalapp&view=detail
 - https://direct.mit.edu/jocn/pages/submission-guidelines
 - https://scirev.org/journal/journal-of-cognitive-neuroscience/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.reviewer_culture**: 無 SciRev/小木虫/知乎/Reddit 上針對本刊(ISSN 0898-929X)審稿人風格、政治傾向或審稿文化的具體第一手敘述;muchong.com 搜到的同名條目實為另一本英國期刊 Cognitive Neuroscience (ISSN 1758-8928),非本刊,故不採用。
 - **experiential.desk_reject_pct**: 未查到任何來源(SciRev、LetPub、小木虫、知乎、Reddit)提供具體桌拒比例數字;官方頁面僅描述桌拒的兩種分類邏輯,無比例統計。
 - **positioning.framing_required 之外的CFP資訊**: 未查到 JoCN 近期(2024-2026)任何特刊 Call for Papers,搜尋僅返回其他期刊的CFP。
@@ -297,6 +297,7 @@ Low for cognitive-neuroscience tradition authors. Preregistered Research Reports
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Has journal-specific AI policy? / Leniency). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |

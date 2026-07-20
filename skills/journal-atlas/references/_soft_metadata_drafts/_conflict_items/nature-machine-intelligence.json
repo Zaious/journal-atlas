@@ -1,0 +1,12 @@
+{
+ "name": "Nature Machine Intelligence",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\nature-machine-intelligence.md",
+ "conflicts": [
+  {
+   "field": "positioning.methods_welcome (touches Methodological Preferences / Best Suited For — out of scope subjective sections)",
+   "existing_value": "Soft Metadata > Methodological Preferences table and Strategic Notes > Best Suited For list already describe ML/algorithm development, AI-in-science, foundation models, AI ethics/safety, RL as core strengths",
+   "wo2_value": "[\"machine learning\", \"robotics\", \"AI 對其他科學領域/社會產業的影響(如科學發現、醫療診斷、永續城市與交通、農業)\"]",
+   "why_flagged": "WO2 對「目前實際接受什麼題材」的補充發現(來自 aims & scope 摘要),涉及範圍外的主觀章節(Methodological Preferences / Best Suited For),依規則不可直接編輯。內容大致與現有 Tier 2 敘述一致(尤其『AI in science』『跨領域應用』),但新增了『robotics』與較具體的產業別(醫療診斷、永續城市與交通、農業)未見於現有條目,建議人工核實後決定是否補充至 Best Suited For。"
+  }
+ ]
+}

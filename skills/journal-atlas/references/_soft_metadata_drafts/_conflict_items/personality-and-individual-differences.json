@@ -1,0 +1,18 @@
+{
+ "name": "Personality and Individual Differences",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\personality-and-individual-differences.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "double anonymized(雙盲),依據該刊官方 Guide for Authors: https://www.sciencedirect.com/journal/personality-and-individual-differences/publish/guide-for-authors",
+   "why_flagged": "現有值是 Elsevier 通用預設的模糊猜測(單盲,且註明因刊而異、也可能雙盲),WO2 則引用本刊官方 Guide for Authors 明確指出採雙盲審查制度,兩者實質矛盾。WO2 的 preprint 欄位論述(『採雙盲審查,最終決定前不應公開為 preprint』)也是建立在雙盲的前提上,與現有 Peer Review Type 欄位不一致,建議人工核對官方 Guide for Authors 頁面以確認正確審查類型,而非直接覆蓋。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate / Desk Rejection Rate",
+   "existing_value": "*(fill manually if known)* (both rows)",
+   "wo2_value": "WO2 本身亦未取得官方公開數字:acceptance rate 於 SciRev/Editage 皆標示 n/a;desk-reject 僅有 fabiaoji 11 筆自述小樣本(4/11≈36%),WO2 report 明確將此列為 blanks、註明樣本過小不具代表性。",
+   "why_flagged": "雖然欄位目前是 placeholder,但 WO2 本身也承認沒有可靠的第一手公開數字,只有極小樣本的社群自述,故不建議直接填入具體百分比,列為 conflict 供人工判斷是否要以『小樣本估計,僅供參考』的方式加註,而非當作確定數字填入。"
+  }
+ ]
+}

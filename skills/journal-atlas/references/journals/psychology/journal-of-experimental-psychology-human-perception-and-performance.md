@@ -220,15 +220,15 @@ Reviewers drawn primarily from APA Division 3 (Experimental Psychology) and broa
 | **Data transparency requirement** | High — APA open-science badges encouraged |
 | **OPSEC compatibility** | Medium — perceptual-task data typically aggregable |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 此為 APA 出版社統一政策(非本刊獨有頁面)。允許在撰稿/編修中使用生成式 AI,但須在方法或引言段落揭露並引用;AI 不得列為作者;作者需自行查核 AI 產出內容之正確性。無須事前向編輯申請許可,屬事後揭露制(gate=no)。另規定編輯與審稿人不得將投稿內容輸入生成式 AI 工具(保密考量)。政策最後更新 2025-08,原始發布 2023-11。此頁為 APA 全出版社通用政策,未見 XHP 期刊專頁另立特別條款。
+**AI-research finding (policy):** 此為 APA 出版社統一政策(非本刊獨有頁面)。允許在撰稿/編修中使用生成式 AI,但須在方法或引言段落揭露並引用;AI 不得列為作者;作者需自行查核 AI 產出內容之正確性。無須事前向編輯申請許可,屬事後揭露制(gate=no)。另規定編輯與審稿人不得將投稿內容輸入生成式 AI 工具(保密考量)。政策最後更新 2025-08,原始發布 2023-11。此頁為 APA 全出版社通用政策,未見 XHP 期刊專頁另立特別條款。
 
-**WO2 positioning finding (what the journal accepts now):** 以知覺(所有感官模態)、動作控制、語言處理的知覺面向及相關認知歷程為核心,近期(2025)刊出主題涵蓋:機器人/擬人化行為之知覺(vicarious agency)、物體所有權感與自我能動感(sense of agency/ownership)、視覺搜尋與注意力模板(attentional template)、個體與刺激特異性知覺差異等,顯示持續歡迎行為實驗典範(反應時、眼動、動作追蹤)結合認知神經科學觀點的研究。
+**AI-research finding (positioning — what the journal accepts now):** 以知覺(所有感官模態)、動作控制、語言處理的知覺面向及相關認知歷程為核心,近期(2025)刊出主題涵蓋:機器人/擬人化行為之知覺(vicarious agency)、物體所有權感與自我能動感(sense of agency/ownership)、視覺搜尋與注意力模板(attentional template)、個體與刺激特異性知覺差異等,顯示持續歡迎行為實驗典範(反應時、眼動、動作追蹤)結合認知神經科學觀點的研究。
 
-**WO2 experiential finding:** SciRev 樣本量極小(僅 3 筆評價),審查品質評分 4.0/5.0,整體處理評分 4.0/5.0,最新一筆評價結果為 immediate rejection、評語 'Very good process'。另有一篇 eScience Editing 期刊上,兩位曾任 JEP:HPP 初級編輯(junior editor)的第一手文章指出:期刊每月約收到 30 篇投稿,設有『外部審查前(pre-external review)』機制,初級編輯在 3 個工作天內給出稿件適配性初步意見,若判定不適合外審,會再經主編複核以確保公平;初級編輯每月最多處理 4 篇初審,每篇約花 1 小時。 
+**AI-research finding (experiential):** SciRev 樣本量極小(僅 3 筆評價),審查品質評分 4.0/5.0,整體處理評分 4.0/5.0,最新一筆評價結果為 immediate rejection、評語 'Very good process'。另有一篇 eScience Editing 期刊上,兩位曾任 JEP:HPP 初級編輯(junior editor)的第一手文章指出:期刊每月約收到 30 篇投稿,設有『外部審查前(pre-external review)』機制,初級編輯在 3 個工作天內給出稿件適配性初步意見,若判定不適合外審,會再經主編複核以確保公平;初級編輯每月最多處理 4 篇初審,每篇約花 1 小時。 
 
 **Sources cited in this pass:**
 - https://ooir.org/j.php?issn=0096-1523
@@ -238,7 +238,7 @@ Reviewers drawn primarily from APA Division 3 (Experimental Psychology) and broa
 - https://www.escienceediting.org/journal/view.php?doi=10.6087%2Fkcse.345
 - https://www.ovid.com/journals/jephp/fulltext/10.1037/xhp0001335~beyond-uniform-perception-individual-and-stimulus-specific
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: APA 期刊頁面僅泛稱同儕審查,未明確標示是否為 masked/double-blind review;XHP 專屬提交頁未能取得詳細審查模式段落
 - **preprint.allowed**: 未在 APA/XHP 公開頁面找到明確 preprint 政策陳述,僅通用 APA 出版政策連結未實際核對到具體條文
 - **experiential.desk_reject_pct**: SciRev 僅 3 筆評價且未給出具體桌拒比例數字;無其他一手來源提供百分比
@@ -299,6 +299,6 @@ Low for perceptual-experimental tradition authors. APA-style formatting standard
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from publisher (apa.org/pubs/journals/xhp) + APA Division 3 editorial culture domain knowledge | @Zaious |

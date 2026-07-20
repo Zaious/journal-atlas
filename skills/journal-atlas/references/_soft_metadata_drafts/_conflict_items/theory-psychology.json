@@ -1,0 +1,36 @@
+{
+ "name": "Theory & Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\theory-and-psychology.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Review Cycle Time > Time to first decision",
+   "existing_value": "~2-3 months — Per Sage average for the journal",
+   "wo2_value": "首輪約 3.1 個月(SciRev,n=2 篇評論)",
+   "why_flagged": "此欄位已有具體數值(來自 Sage 官方平均),非空白佔位,不應覆蓋。WO2 為獨立來源(SciRev 極小樣本 n=2),數字略高於既有區間上限,屬於不同來源的實質差異,建議人工判斷是否需並列或註記,而非逕行取代。"
+  },
+  {
+   "field": "Metrics > Review Cycle Time > Time to acceptance (total)",
+   "existing_value": "*(pending)*",
+   "wo2_value": "稿件在審/在編輯處總計約 3.4 個月;平均 2.0 輪審查後定案(SciRev n=2 篇評論)",
+   "why_flagged": "此欄位確為空白佔位,但 SciRev 的「總審查時間」指標定義是否精確對應本表「Time to acceptance (total)」(而非泛指所有稿件含拒絕之決定時間)並不明確,且樣本僅 n=2、WO2 自評 signal_quality 僅 2/5,信心不足以逕行歸入此特定列,故列為衝突供人工判斷是否採用及如何標注,而非直接填入。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "2 (default ban; case-by-case exception)",
+   "wo2_value": "3",
+   "why_flagged": "既有 AI 政策欄位（含 Summary）已有實質內容,並非空白佔位,依規則不可覆蓋。WO2 給出不同的寬容度評分(3 vs 既有 2),且政策描述框架略有出入:WO2 強調 SAGE 三層制(輔助型 AI 免揭露、生成型 AI 需揭露),既有描述側重「預設禁止、個案例外」,兩者並非單純補充細節而是評分/框架上的實質分歧,建議人工複核後決定是否調整評分或補充措辭。"
+  },
+  {
+   "field": "Soft Metadata > Methodological Preferences / Framing Requirements（主觀定位類欄位）",
+   "existing_value": "既有欄位已有具體評分與描述(如 Theoretical/Conceptual 5、Framing Requirements 要求理論貢獻前景化)",
+   "wo2_value": "WO2 positioning 發現近期(2025-2026, Vol.36)實際刊登主題包含馬克思女性主義對生殖勞動/墮胎禁令之批判、延伸 Ian Hacking「looping effects」概念、Q 方法論哲學再探與評論、女性主義理論;方法偏好列表另含歷史/系譜學分析、批判理論(含女性主義/馬克思主義)等具體範例",
+   "why_flagged": "依規則,Soft Metadata 的主觀子區塊（含 Methodological Preferences、Framing Requirements）不在可編輯範圍內,即使 WO2 有相關定位發現也只能列為補充參考,交由人工決定是否用具體案例更新既有評分或描述,不宜由本次審閱直接編輯。"
+  },
+  {
+   "field": "Policies > Peer Review > Typical R+R rounds（範圍外,但 WO2 恰有相關數據）",
+   "existing_value": "*(pending)*",
+   "wo2_value": "平均 2.0 輪審查後定案(SciRev n=2 篇評論)",
+   "why_flagged": "本次審閱範圍僅限 Peer Review 表格中的 Type 列,Typical R+R rounds 不在授權可編輯範圍內,即便仍為空白且 WO2 恰有對應資料,也不應在本次直接填入,故列為衝突供未來人工決定是否納入(樣本極小 n=2,信心有限)。"
+  }
+ ]
+}

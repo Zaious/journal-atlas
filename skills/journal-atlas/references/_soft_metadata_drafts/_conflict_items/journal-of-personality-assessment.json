@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Personality Assessment",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-personality-assessment.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "兩者對同一份 T&F 集團通用 AI 政策(揭露義務強制、無需編輯逐案事前核准)描述內容一致,但對「寬容度」的主觀評分不同(現存 4 分 vs WO2 3 分)。這是判斷分數落差而非事實矛盾,留給人工覆核決定採用哪一個評分,不逕行覆蓋。"
+  }
+ ]
+}

@@ -219,22 +219,22 @@ Reviewers from personality-psychology research community — strong representati
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 未找到 Journal of Personality 專屬 AI 政策頁（作者指南頁 onlinelibrary.wiley.com/page/journal/14676494/homepage/forauthors.html 回傳 HTTP 402，無法直接讀取），故採用 Wiley 出版社通用 Generative AI Policy（2023-09）作為適用推定：允許使用生成式 AI 輔助文字潤飾、結構調整、構思與文獻檢索，但（1）AI/LLM 不得列為作者或共同作者，（2）實質性使用須在 Methods 或 Acknowledgements 中透明揭露工具名稱、版本/存取日期與用途，基礎文字校對可豁免揭露。因未能確認期刊是否有加嚴或加寬之特別條款，leniency 評分基於出版社層級政策，非期刊獨有證據。
+**AI-research finding (policy):** 未找到 Journal of Personality 專屬 AI 政策頁（作者指南頁 onlinelibrary.wiley.com/page/journal/14676494/homepage/forauthors.html 回傳 HTTP 402，無法直接讀取），故採用 Wiley 出版社通用 Generative AI Policy（2023-09）作為適用推定：允許使用生成式 AI 輔助文字潤飾、結構調整、構思與文獻檢索，但（1）AI/LLM 不得列為作者或共同作者，（2）實質性使用須在 Methods 或 Acknowledgements 中透明揭露工具名稱、版本/存取日期與用途，基礎文字校對可豁免揭露。因未能確認期刊是否有加嚴或加寬之特別條款，leniency 評分基於出版社層級政策，非期刊獨有證據。
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://onlinelibrary.wiley.com/journal/14676494
 - https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf
 - https://scirev.org/journal/journal-of-personality/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now / methods_welcome / framing_required**: 無法讀取 Wiley 官方 Aims & Scope 頁（onlinelibrary.wiley.com/journal/14676494 回傳 HTTP 402 付費牆），也未找到 2024-2026 具體文章標題清單或可驗證的近期特刊 CFP（搜尋僅命中同名但不同刊物 Journal of Personality Assessment 的特刊，需排除避免混淆）。缺乏第一手選題證據，故留空。
 - **experiential.desk_reject_pct**: SciRev 頁面該欄位標示為 n/a，無其他公開數據來源。
 - **experiential.acceptance_note**: SciRev 僅顯示單筆最新結果為 Rejected，樣本過小不足以歸納 acceptance_note，且未找到小木虫/知乎/Reddit r/AskAcademia 上任何提及本刊的一手投稿經驗帖。
@@ -292,6 +292,6 @@ Low for personality-tradition empirical authors. Narrative-identity tradition op
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher pages + personality-psychology editorial culture domain knowledge | @Zaious |

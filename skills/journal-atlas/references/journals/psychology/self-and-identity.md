@@ -65,7 +65,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(per T&F default — pending verification; commonly double-anonymized)* |
+| **Type** | Single-anonymized (single-blind) — reviewers know author identity, authors do not know reviewer identity; initial Editor screening followed by refereeing by at least two independent expert referees; submissions via ScholarOne Manuscripts. (Source: https://www.tandfonline.com/journals/psai20/about-this-journal) |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | *(per T&F default — typically not published)* |
 | **Typical R+R rounds** | *(pending)* |
@@ -77,8 +77,8 @@
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Taylor & Francis publisher default (no journal-specific addendum identified) |
 | **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 (disclosure-based; AI cannot be listed as author) |
-| **Summary** | Follows T&F publisher AI policy: disclosure required for AI use that influences research content. AI cannot be listed as author. Recommend contacting editorial office to confirm latest version. |
+| **Leniency (1-5)** | 3 (conditional — permitted for ideation/language editing/literature search/coding assistance; explicitly prohibited for generating or manipulating research data, images, or figures; AI cannot be listed as author) |
+| **Summary** | Follows T&F publisher-wide AI policy (no journal-specific addendum found). Permitted: idea generation, language/grammar polishing, AI-assisted literature search/classification, coding/script assistance, and AI-assisted data visualizations or conceptual illustrations. Prohibited: generating or manipulating research data, images, or figures (incl. in vitro/in vivo/clinical images). Mandatory disclosure of AI tool name, version, purpose, and method of use in Methods or Acknowledgments. AI cannot be listed as author. (Source: https://taylorandfrancis.com/our-policies/ai-policy/) |
 | **Source URL** | https://taylorandfrancis.com/our-policies/ai-policy/ |
 
 ### Preprint Policy
@@ -212,15 +212,15 @@ Reviewers are drawn primarily from the International Society for Self and Identi
 | **Data transparency requirement** | Open data / open materials increasingly expected (T&F open science badges) |
 | **OPSEC compatibility** | Medium — survey data typically aggregable and anonymizable, but transparency norms apply |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** This is publisher-wide (Taylor & Francis) policy, not journal-specific — no separate AI clause found on the Self and Identity journal page itself. Generative AI tools cannot be listed as author/co-author (no accountability/copyright capacity). Permitted uses: idea generation/exploration, language/grammar improvement, LLM-enhanced literature search, literature classification, coding/script assistance. Prohibited: generating or manipulating research data, images, or figures. Mandatory disclosure of tool name, version, purpose and how it was used, placed in Methods or Acknowledgments. Author remains fully accountable for accuracy/originality of AI-assisted content. Leniency scored 3 (moderate/conditional) rather than full ban or fully open — allowed for defined support tasks with disclosure, banned for data/figures and for authorship credit.
+**AI-research finding (policy):** This is publisher-wide (Taylor & Francis) policy, not journal-specific — no separate AI clause found on the Self and Identity journal page itself. Generative AI tools cannot be listed as author/co-author (no accountability/copyright capacity). Permitted uses: idea generation/exploration, language/grammar improvement, LLM-enhanced literature search, literature classification, coding/script assistance. Prohibited: generating or manipulating research data, images, or figures. Mandatory disclosure of tool name, version, purpose and how it was used, placed in Methods or Acknowledgments. Author remains fully accountable for accuracy/originality of AI-assisted content. Leniency scored 3 (moderate/conditional) rather than full ban or fully open — allowed for defined support tasks with disclosure, banned for data/figures and for authorship credit.
 
-**WO2 positioning finding (what the journal accepts now):** Self and Identity (official journal of the International Society for Self and Identity, ed.-in-chief Shira Gabriel, U Buffalo) publishes empirical articles of all lengths plus occasional theoretical pieces on social/psychological processes of self and identity — spanning social, personality, clinical, developmental and cognitive psychology as well as sociology, family studies, anthropology and neuroscience. Aggregated 2025 output (~52 articles/year, 6 issues) skews toward social psychology, developmental psychology, self-esteem, and self-compassion topics per a third-party bibliometric aggregator (not a first-hand scan of full-text methods, since tandfonline TOC/article pages returned HTTP 403 to automated fetch and could not be directly verified article-by-article).
+**AI-research finding (positioning — what the journal accepts now):** Self and Identity (official journal of the International Society for Self and Identity, ed.-in-chief Shira Gabriel, U Buffalo) publishes empirical articles of all lengths plus occasional theoretical pieces on social/psychological processes of self and identity — spanning social, personality, clinical, developmental and cognitive psychology as well as sociology, family studies, anthropology and neuroscience. Aggregated 2025 output (~52 articles/year, 6 issues) skews toward social psychology, developmental psychology, self-esteem, and self-compassion topics per a third-party bibliometric aggregator (not a first-hand scan of full-text methods, since tandfonline TOC/article pages returned HTTP 403 to automated fetch and could not be directly verified article-by-article).
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://files.taylorandfrancis.com/psaiauth.pdf
@@ -228,7 +228,7 @@ Reviewers are drawn primarily from the International Society for Self and Identi
 - https://taylorandfrancis.com/our-policies/ai-policy/
 - https://www.tandfonline.com/journals/psai20/about-this-journal
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: No first-hand SciRev entry located, no muchong/zhihu/Reddit threads found, and the T&F 'Time to first decision' journal metrics page (tandfonline.com/journals/psai20/about-this-journal, speed section) returned HTTP 403 to automated fetch so the actual current figure could not be verified — a search-engine-summarized number (9 days first decision / 64 days review / 82 days to acceptance, attributed to ablesci.com) was found but could NOT be corroborated on direct fetch of that same ablesci page (which showed zero populated values), so it is treated as unreliable and excluded rather than reported.
 - **experiential.desk_reject_pct**: No source (SciRev, forums, publisher stats) with a concrete desk-reject percentage was found.
 - **experiential.acceptance_note**: No first-hand acceptance/rejection narrative found in any checked source; only generic 'rigorous peer review' boilerplate from the journal's own about-page, which is not experiential evidence.
@@ -290,7 +290,8 @@ High for qualitative / first-person authors. Adapting a primarily qualitative ma
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Conflict resolution: Peer Review Type updated to Single-anonymized (verified live via WebSearch against tandfonline.com/journals/psai20/about-this-journal, matching the AI-research pass's finding). AI Policy Leniency changed 4→3 and Summary expanded with prohibited-use detail (verified live via WebSearch against taylorandfrancis.com/our-policies/ai-policy/, matching the AI-research pass's finding). | @Zaious (AI conflict-resolution pass) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Several metrics flagged as pending due to limited initial reconnaissance depth; recommend OpenAlex API fetch for h-index, citedness, and full topic ranking. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 99, i10 595, 2yr_citedness 1.53, works_count 953; Top 5 topics filled. | @Zaious |

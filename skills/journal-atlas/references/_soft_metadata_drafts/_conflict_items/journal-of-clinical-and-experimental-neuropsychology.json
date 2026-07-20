@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Clinical and Experimental Neuropsychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-clinical-and-experimental-neuropsychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per T&F default)",
+   "wo2_value": "Single anonymized (single-blind) peer review, editor-mediated initial appraisal before referee assignment (source: https://www.tandfonline.com/journals/ncen20/about-this-journal)",
+   "why_flagged": "既有值是根據「T&F 預設值」的推測性假設,並非期刊專屬確認;WO2 則引用了期刊自己的 'about this journal' 頁面,明確指出是單盲(single-anonymized)而非雙盲。這是審稿類型上的實質矛盾(雙盲 vs 單盲),會直接影響投稿人對評審流程的預期,建議人工查核 tandfonline.com/journals/ncen20/about-this-journal 原始頁面後再決定是否修正,不應由此次比對逕自覆蓋。"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Environmental Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (per Elsevier default — varies by journal; some are double-blind)",
+   "wo2_value": "Double anonymized (double-blind); empirical manuscripts typically sent to 3 independent expert reviewers, other submission types to at least 2 (sourced directly from this journal's own Guide for Authors page: https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors)",
+   "why_flagged": "既有內容是套用 Elsevier 集團預設值的推測性描述（帶「varies by journal」的保留語），而 WO2 引用的是本刊自己的 Guide for Authors 頁面，明確指出是 double-blind 而非 single-blind。兩者在審稿盲審類型上直接矛盾，且 WO2 來源看似更具期刊專屬性，但因原始 Guide for Authors 頁面對 WebFetch 回傳 403（WO2 自陳未能逐字核對原文，只能靠 WebSearch 聚合摘要），建議人工直接開啟該頁面核實後再決定是否覆寫既有欄位。"
+  }
+ ]
+}

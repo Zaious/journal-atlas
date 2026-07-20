@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Applied Social Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-social-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) / Explicit permission gate?",
+   "existing_value": "Leniency = 3; Gate = \"No — disclosure-based; image generation prohibited\"",
+   "wo2_value": "Leniency = 2; Gate = \"conditional\"",
+   "why_flagged": "兩者描述的底層政策(Wiley 揭露制 AI 政策)實質相同,但既有條目已有具體內容(非佔位符),不可逕行覆蓋。WO2 給出的 leniency 分數(2)比既有條目(3)更保守,且 gate 標籤用詞不同(\"No\" vs \"conditional\")——是否要因此下修既有評分,需人工判斷,不宜由此次 surgical patch 自動覆蓋。"
+  },
+  {
+   "field": "Soft Metadata > Reviewer Pool Characteristics / Practical Concerns(補充性發現,非直接編輯)",
+   "existing_value": "既有 Tier 2 敘述:審稿人來自應用社會心理學/SPSSI 社群,審稿人常見要求聚焦『實務意涵』『生態效度』",
+   "wo2_value": "WO2 experiential finding(SciRev n=5,低代表性):審稿報告品質評分2.8/5(中下)、整體投稿體驗2.2/5(中等偏下)、審稿難度3.7/5(偏難);其中一則評論提及『編輯在作者大幅修改後直接拒稿、未再送審』,顯示編輯決策可能不完全遵循標準流程",
+   "why_flagged": "此為 Soft Metadata 主觀子章節範疇(Reviewer Pool Characteristics / Practical Concerns),依規則不可直接編輯,僅供人工日後評估是否要在 Tier 2 描述中補充『編輯可能繞過標準送審流程直接拒稿』此一經驗性觀察。樣本量極小(n=5),使用時應標註低可信度。"
+  }
+ ]
+}

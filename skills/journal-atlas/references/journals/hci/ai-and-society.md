@@ -76,9 +76,9 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Springer Nature publisher AI policy |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
-| **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria; AI use must be disclosed in Materials/Methods or Acknowledgments. |
+| **Explicit permission gate?** | Conditional — no prior permission needed for basic language/formatting AI use (no disclosure required); AI may not be used to generate or substantively contribute content; any AI use beyond basic polishing must be disclosed |
+| **Leniency (1-5)** | 3 |
+| **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria; AI may be used for language polishing/formatting without disclosure, but may not generate or substantively contribute content; any AI use beyond basic polishing must be disclosed in Materials/Methods or Acknowledgments; reviewers may not upload manuscripts to generative AI tools. |
 | **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
 
 ### Preprint Policy
@@ -224,15 +224,15 @@ Reviewers from STS, philosophy of technology, AI ethics, and critical-HCI commun
 | **Data transparency requirement** | Flexible for theoretical work |
 | **OPSEC compatibility** | High — interpretive STS and philosophical work does not require data exposure |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Springer Nature 全出版社通用政策，非 AI & Society 期刊專屬頁面（該刊 Submission guidelines 頁需登入，未能一手核實期刊層級文字）。要點：AI/LLM 不得列為作者（"SN does not attribute authorship to AI"，因無法承擔究責）；作者可用 AI 做語言潤飾/格式調整，但不得用於生成或實質貢獻內容；超出基本潤飾的 AI 使用須在 Methods（或適當替代段落）揭露；審稿人不得將稿件上傳至生成式 AI 工具；出版品不得用生成式 AI 圖像。leniency=3：允許潤飾類使用但禁止內容生成、且要求揭露，屬中等寬鬆。
+**AI-research finding (policy):** 此為 Springer Nature 全出版社通用政策，非 AI & Society 期刊專屬頁面（該刊 Submission guidelines 頁需登入，未能一手核實期刊層級文字）。要點：AI/LLM 不得列為作者（"SN does not attribute authorship to AI"，因無法承擔究責）；作者可用 AI 做語言潤飾/格式調整，但不得用於生成或實質貢獻內容；超出基本潤飾的 AI 使用須在 Methods（或適當替代段落）揭露；審稿人不得將稿件上傳至生成式 AI 工具；出版品不得用生成式 AI 圖像。leniency=3：允許潤飾類使用但禁止內容生成、且要求揭露，屬中等寬鬆。
 
-**WO2 positioning finding (what the journal accepts now):** 廣泛跨領域：AI 對社會/文化/倫理/認知/經濟的影響、生成式 AI 與著作權/作者身分議題（如 2024 年刊出之 "Can ChatGPT be an author?" 與 "The role of generative AI in academic and scientific authorship: an autopoietic perspective" 兩篇）、AI 治理與政策、AI 與工作/勞動、文化工作者與生成式 AI 關係
+**AI-research finding (positioning — what the journal accepts now):** 廣泛跨領域：AI 對社會/文化/倫理/認知/經濟的影響、生成式 AI 與著作權/作者身分議題（如 2024 年刊出之 "Can ChatGPT be an author?" 與 "The role of generative AI in academic and scientific authorship: an autopoietic perspective" 兩篇）、AI 治理與政策、AI 與工作/勞動、文化工作者與生成式 AI 關係
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://en.wikipedia.org/wiki/AI_%26_Society
@@ -243,7 +243,7 @@ Reviewers from STS, philosophy of technology, AI ethics, and critical-HCI commun
 - https://scirev.org/journal/ai-and-society (頁面存在但 WebFetch 無法讀取內容，未能確認評論數，須人工複查)
 - https://www.springernature.com/gp/policies/editorial-policies
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: 僅來自 Wikipedia 詞條描述，官方 Springer Submission guidelines 頁面因登入牆無法一手核實
 - **preprint.allowed**: 未找到期刊或 Springer Nature 對此刊的明確 preprint 政策公開頁面（登入牆阻擋），無公開一手來源
 - **experiential.review_time_months**: SciRev 頁面抓取失敗；LetPub 審稿速度/錄用比例欄位為空模板；未搜到知乎/小木虫/PTT/Reddit r/AskAcademia 針對此刊的具體討論串
@@ -306,6 +306,7 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

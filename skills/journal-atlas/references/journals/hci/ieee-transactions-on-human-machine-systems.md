@@ -39,7 +39,7 @@
 | **h-index** | 88 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
-| **Desk Rejection Rate** | ~0% (low-confidence, single unverified data point) | WO2 finding: cited as 0% per one muchong.com forum post (no sample size disclosed); SciRev lists rejection rate as "n/a" (0 usable reviews, n=1 journal-wide). Signal quality 2/5 — not a settled figure, treat with caution. |
+| **Desk Rejection Rate** | ~0% (low-confidence, single unverified data point) | AI-research finding: cited as 0% per one muchong.com forum post (no sample size disclosed); SciRev lists rejection rate as "n/a" (0 usable reviews, n=1 journal-wide). Signal quality 2/5 — not a settled figure, treat with caution. |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.44 | 2026-05-16 |
 | **i10-index** | 710 | 2026-05-16 |
@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Contested: publisher target ~2.5–3 months vs. observed ~5–8.9 months (low-n) | Publisher-stated goal ~10 weeks (ieeesmc.org policy target, not an observed outcome); SciRev (n=1) reports 8.9 months for round 1; one unverified secondhand Chinese-language source (Zhihu, WebFetch blocked 403, only WebSearch snippet available) cites ~5 months for first round. WO2 signal_quality 2/5 — no reliable consensus, treat with caution. |
+| **Time to first decision** | Contested: publisher target ~2.5–3 months vs. observed ~5–8.9 months (low-n) | Publisher-stated goal ~10 weeks (ieeesmc.org policy target, not an observed outcome); SciRev (n=1) reports 8.9 months for round 1; one unverified secondhand Chinese-language source (Zhihu, WebFetch blocked 403, only WebSearch snippet available) cites ~5 months for first round. AI-research signal_quality 2/5 — no reliable consensus, treat with caution. |
 | **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | Contested: ~10–12.4 months per limited/unverified sources (publisher target elsewhere cited as ~3 months) | SciRev (n=1) reports 12.4 months total handling; one unverified secondhand Chinese-language source (Zhihu, 403 on fetch) cites a 10-12 month total cycle. LetPub states a publisher target of ~3 months but no user-submitted numeric data surfaced on this fetch. WO2 signal_quality 2/5 — treat with caution. |
+| **Time to acceptance (total)** | Contested: ~10–12.4 months per limited/unverified sources (publisher target elsewhere cited as ~3 months) | SciRev (n=1) reports 12.4 months total handling; one unverified secondhand Chinese-language source (Zhihu, 403 on fetch) cites a 10-12 month total cycle. LetPub states a publisher target of ~3 months but no user-submitted numeric data surfaced on this fetch. AI-research signal_quality 2/5 — treat with caution. |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -217,15 +217,15 @@ Reviewers from IEEE SMC Society. Common demands: "Engineering contribution?", "S
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** IEEE publisher-wide policy (applies to this journal; no THMS-specific AI policy page found). AI-generated content (text/figures/images/code) is permitted for use in manuscript preparation but must be disclosed in the Acknowledgments section: the AI system must be named, the specific sections using AI output identified, and the level of AI involvement explained. Grammar/editing-only AI use is explicitly exempted from mandatory disclosure (recommended but not required). No outright ban; disclosure is the governing mechanism, so this is not a hard permission gate but a mandatory-disclosure condition. Separately, IEEE prohibits crediting AI as an author/co-author, and prohibits reviewers from entering under-review manuscript content into public AI tools (confidentiality).
+**AI-research finding (policy):** IEEE publisher-wide policy (applies to this journal; no THMS-specific AI policy page found). AI-generated content (text/figures/images/code) is permitted for use in manuscript preparation but must be disclosed in the Acknowledgments section: the AI system must be named, the specific sections using AI output identified, and the level of AI involvement explained. Grammar/editing-only AI use is explicitly exempted from mandatory disclosure (recommended but not required). No outright ban; disclosure is the governing mechanism, so this is not a hard permission gate but a mandatory-disclosure condition. Separately, IEEE prohibits crediting AI as an author/co-author, and prohibits reviewers from entering under-review manuscript content into public AI tools (confidentiality).
 
-**WO2 positioning finding (what the journal accepts now):** Recent Chinese-author publication topics (per LetPub listing of recent papers) cluster on: fatigue/text-mining detection, pilot cognitive-state inference, human-machine shared steering/control systems, human activity recognition, plus ongoing special-issue themes on cognitive/brain-machine enhancement (EEG/ergonomics) and trustworthy human-autonomy teaming.
+**AI-research finding (positioning — what the journal accepts now):** Recent Chinese-author publication topics (per LetPub listing of recent papers) cluster on: fatigue/text-mining detection, pilot cognitive-state inference, human-machine shared steering/control systems, human activity recognition, plus ongoing special-issue themes on cognitive/brain-machine enhancement (EEG/ergonomics) and trustworthy human-autonomy teaming.
 
-**WO2 experiential finding:** No first-hand acceptance/decision-letter accounts were retrieved (e.g. no verbatim revision-decision post found). Zhihu summary (search-snippet only, article itself 403-blocked) states reviewers are 'relatively critical/demanding' and rejected manuscripts often get 'resubmit' suggestions but with long cycles; self-citation rate cited as 2.3% (declining) and Chinese-author share of publications cited as 34%, framed in that piece as evidence of friendliness toward Chinese scholars — but this could not be verified against the primary article since WebFetch on zhuanlan.zhihu.com returned 403. 
+**AI-research finding (experiential):** No first-hand acceptance/decision-letter accounts were retrieved (e.g. no verbatim revision-decision post found). Zhihu summary (search-snippet only, article itself 403-blocked) states reviewers are 'relatively critical/demanding' and rejected manuscripts often get 'resubmit' suggestions but with long cycles; self-citation rate cited as 2.3% (declining) and Chinese-author share of publications cited as 34%, framed in that piece as evidence of friendliness toward Chinese scholars — but this could not be verified against the primary article since WebFetch on zhuanlan.zhihu.com returned 403. 
 
 **Sources cited in this pass:**
 - https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/
@@ -237,7 +237,7 @@ Reviewers from IEEE SMC Society. Common demands: "Engineering contribution?", "S
 - https://www.letpub.com.cn/index.php?journalid=9468&page=journalapp&view=detail (LetPub, no crowd-sourced numeric data surfaced on this fetch)
 - https://zhuanlan.zhihu.com/p/1939292452537237938 (Zhihu article — content only available via WebSearch snippet, direct WebFetch returned HTTP 403, treat as lower-confidence secondhand)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.reviewer_culture**: No first-hand forum post or SciRev free-text comment describing reviewer tone/attitude with enough specificity or corroboration was found; the only characterization ('relatively critical/demanding') comes from a WebSearch snippet of a Zhihu article that could not be directly verified (403 on fetch), so it is reported only inside acceptance_note as low-confidence, not asserted as a standalone fact.
 - **experiential.desk_reject_pct (confidence)**: Only one unverified muchong.com data point (0%) and SciRev shows 'n/a' with n=1 review total — sample size far too small to treat as a settled fact; reported but flagged low-confidence.
 - **positioning.accepts_now (reddit r/AskAcademia)**: WebSearch for THMS-specific Reddit r/AskAcademia discussion returned 0 relevant results; no English-language forum corroboration found for this journal specifically.
@@ -292,6 +292,6 @@ Low for IEEE SMC tradition.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from IEEE publisher + IEEE SMC Society editorial culture domain knowledge | @Zaious |

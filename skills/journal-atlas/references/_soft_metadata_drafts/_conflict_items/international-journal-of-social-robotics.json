@@ -1,0 +1,18 @@
+{
+ "name": "International Journal of Social Robotics",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-social-robotics.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Springer default — varies by journal)",
+   "wo2_value": "single-blind (sourced from https://link.springer.com/journal/12369/submission-guidelines)",
+   "why_flagged": "這是實質衝突而非補充細節——現有值是套用 Springer 通用預設的推測(檔案本身也註記「varies by journal」),WO2 則引用該刊官方投稿指引頁得出「single-blind」。兩者矛盾,需人工查證該刊官方頁面實際審稿制度後再決定採用哪一個值,不逕自覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "現有內容已是完整實質政策描述(非佔位符),故不比對填補;但 WO2 對同一 Springer Nature 標準政策給出不同寬容度評分(4 vs 3),且 permission gate 描述用語也有差異(現有:「No — disclosure-based」;WO2:「conditional」),語意相近但評分不同,建議人工核實後決定是否調整既有評分。"
+  }
+ ]
+}

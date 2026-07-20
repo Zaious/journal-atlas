@@ -49,9 +49,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | *(fill manually)* | |
-| **Time to acceptance (total)** | *(fill manually)* | |
+| **Time to first decision** | ~1.7 months (~7.4 weeks) | SciRev aggregate figure, n=3 submitted reviews (very small sample — treat as indicative only). Individual first-round durations: 10.9, 7.5, 4.3 weeks (avg ≈ 7.57 weeks, consistent with aggregate). Source: https://scirev.org/journal/consciousness-and-cognition/ |
+| **Time to first review** | *(fill manually — SciRev does not separately distinguish reviewer-completion time from first-decision time)* | |
+| **Time to acceptance (total)** | ~1.9 months | SciRev aggregate total handling time for accepted manuscripts, n=3 (very small sample). Individual totals: 10.9, 8.5, 5.1 weeks (avg ≈ 8.17 weeks, consistent with aggregate). Avg ~1.7 review rounds, ~2.0 reports/round. Source: https://scirev.org/reviews/consciousness-and-cognition/ | |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -222,15 +222,15 @@ Reviewers from ASSC and broader consciousness-research community. Common demands
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Elsevier-wide policy (applies to this journal; no journal-specific AI policy page found): generative AI may be used to help prepare a manuscript prior to submission, with human oversight, and must be disclosed; AI must not be listed as an author and authors remain fully accountable. Generative AI/AI-assisted tools may NOT be used to create or alter images/artwork (e.g., graphical abstracts) except where AI is itself part of the research design/methods. Separately, Elsevier states reviewers and editors are currently not permitted to upload manuscripts into generative AI tools (e.g. ChatGPT) during peer review/evaluation.
+**AI-research finding (policy):** Elsevier-wide policy (applies to this journal; no journal-specific AI policy page found): generative AI may be used to help prepare a manuscript prior to submission, with human oversight, and must be disclosed; AI must not be listed as an author and authors remain fully accountable. Generative AI/AI-assisted tools may NOT be used to create or alter images/artwork (e.g., graphical abstracts) except where AI is itself part of the research design/methods. Separately, Elsevier states reviewers and editors are currently not permitted to upload manuscripts into generative AI tools (e.g. ChatGPT) during peer review/evaluation.
 
-**WO2 positioning finding (what the journal accepts now):** Empirical articles and theoretical reviews taking a natural-science approach to consciousness, voluntary control, and self (per journal aims/scope). Current (2025) special issue call focuses on veridical vs. non-veridical conscious perception and underlying neural mechanisms/markers, including predictive coding, cognitive penetrability, and phenomenal overflow, and welcomes novel experimental designs distinguishing veridical vs. non-veridical experience.
+**AI-research finding (positioning — what the journal accepts now):** Empirical articles and theoretical reviews taking a natural-science approach to consciousness, voluntary control, and self (per journal aims/scope). Current (2025) special issue call focuses on veridical vs. non-veridical conscious perception and underlying neural mechanisms/markers, including predictive coding, cognitive penetrability, and phenomenal overflow, and welcomes novel experimental designs distinguishing veridical vs. non-veridical experience.
 
-**WO2 experiential finding:** No acceptance-rate or desk-reject figures found on SciRev, 科研通(ablesci), or ifabiao — those fields showed blank/"--" placeholders where user-submitted data would go. One Chinese aggregator note (via search snippet, unverified original source) mentioned the journal has slipped from JCR Tier 1 to Tier 2 in recent years and that editors reportedly give constructive feedback even on rejected manuscripts, but this could not be traced to a specific first-hand post to quote/verify. 
+**AI-research finding (experiential):** No acceptance-rate or desk-reject figures found on SciRev, 科研通(ablesci), or ifabiao — those fields showed blank/"--" placeholders where user-submitted data would go. One Chinese aggregator note (via search snippet, unverified original source) mentioned the journal has slipped from JCR Tier 1 to Tier 2 in recent years and that editors reportedly give constructive feedback even on rejected manuscripts, but this could not be traced to a specific first-hand post to quote/verify. 
 
 **Sources cited in this pass:**
 - https://scirev.org/journal/consciousness-and-cognition/
@@ -241,7 +241,7 @@ Reviewers from ASSC and broader consciousness-research community. Common demands
 - https://www.journals.elsevier.com/consciousness-and-cognition/call-for-papers
 - https://www.sciencedirect.com/journal/consciousness-and-cognition
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type**: ScienceDirect Guide for Authors page returned HTTP 403 Forbidden when fetched directly in this session; no other primary source located confirming single- vs double-anonymized review for this specific journal.
 - **experiential.desk_reject_pct**: SciRev, ablesci (科研通), and ifabiao all show this field as blank/unavailable — no first-hand submitter data exists for this journal on any checked platform.
 - **experiential.acceptance_note (quantitative rate)**: No acceptance-rate figure found on SciRev or Chinese aggregators; only a secondhand, unverifiable search-snippet claim about JCR tier decline and editor feedback style, which was not traced to an original quotable post so it is reported only as a caveat, not as fact.
@@ -301,6 +301,7 @@ Low for consciousness-research tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Metrics > Review Cycle Time (四列：Time to first decision / Time to first review / Time to acceptance total / Time to publication). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + ASSC consciousness research editorial culture domain knowledge | @Zaious |

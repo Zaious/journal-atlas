@@ -1,0 +1,12 @@
+{
+ "name": "International Journal of Human-Computer Studies",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-human-computer-studies.md",
+ "conflicts": [
+  {
+   "field": "Review Cycle Time > Time to first decision / Time to first review（目前皆為 *(pending)*）",
+   "existing_value": "*(pending)*",
+   "wo2_value": "WO2 experiential.review_time_months 內部即有兩組互相矛盾的數字:SciRev(僅 3 筆評論)顯示總處理時間約 3.0 個月、決定時間約 73 天;LetPub 則引用「Elsevier 官方統計」平均 20.8 週(約 4.8 個月)投稿至首次決定。兩者差距近一倍。",
+   "why_flagged": "WO2 自身已標註 overall signal_quality 僅 2/5,且 SciRev 樣本量極小(n=3)不足以代表整體,兩來源數字又互相矛盾,沒有單一「real, sourced answer」可直接採用,若挑一個填入即是變相的粗填/覆蓋風險,故不填表格,留給人工判斷要採用哪個數字、或以區間/雙來源並陳方式呈現。"
+  }
+ ]
+}

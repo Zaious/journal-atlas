@@ -71,7 +71,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per APA default) |
+| **Type** | Single-anonymized by default; masked (double-anonymous) review is optional and must be explicitly requested by the author in the cover letter (confirmed via JPCS official submission guidelines, apa.org/pubs/journals/abn/submit) |
 | **Transferable / Cascade?** | *(pending — APA has cross-journal transfer for some titles)* |
 | **Reviewer reports published?** | No (per APA default) |
 | **Typical R+R rounds** | *(pending — typically 1-2 rounds)* |
@@ -222,15 +222,15 @@ Reviewers drawn primarily from the clinical-science + psychopathology mechanism 
 | **Data transparency requirement** | High — strong open-science emphasis post-2022 rename |
 | **OPSEC compatibility** | Medium — clinical data pseudonymization rigorous |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** This is the APA-wide (all APA journals, not JPCS-specific) generative AI policy, linked from the JPCS submission-guidelines page. No permission gate: AI use is permitted but must be disclosed in the Methods (or most relevant) section with tool name and, where relevant, prompts cited; AI cannot be listed as an author; authors bear full responsibility for accuracy of AI-assisted content. No JPCS-specific AI statement was found beyond a link to this general policy, so this is publisher-policy-level signal only (not journal-specific first-hand evidence), hence signal_quality capped at 2.
+**AI-research finding (policy):** This is the APA-wide (all APA journals, not JPCS-specific) generative AI policy, linked from the JPCS submission-guidelines page. No permission gate: AI use is permitted but must be disclosed in the Methods (or most relevant) section with tool name and, where relevant, prompts cited; AI cannot be listed as an author; authors bear full responsibility for accuracy of AI-assisted content. No JPCS-specific AI statement was found beyond a link to this general policy, so this is publisher-policy-level signal only (not journal-specific first-hand evidence), hence signal_quality capped at 2.
 
-**WO2 positioning finding (what the journal accepts now):** Basic research/theory and methodology in psychopathology broadly: etiology, development, symptomatology and course of psychopathology; basic psychological processes in individuals with mental illness; maladaptive processes in nonclinical/community samples; descriptive and experimental studies of disordered thoughts/emotions/behavior; sociocultural effects on pathological processes; new or novel-application methodology for measuring psychopathology and its mechanisms.
+**AI-research finding (positioning — what the journal accepts now):** Basic research/theory and methodology in psychopathology broadly: etiology, development, symptomatology and course of psychopathology; basic psychological processes in individuals with mental illness; maladaptive processes in nonclinical/community samples; descriptive and experimental studies of disordered thoughts/emotions/behavior; sociocultural effects on pathological processes; new or novel-application methodology for measuring psychopathology and its mechanisms.
 
-**WO2 experiential finding:** SciRev page explicitly marks acceptance rate, immediate-rejection rate, articles-published and manuscripts-received as 'n/a' (editor never supplied them). One SciRev respondent's outcome was logged simply as 'Rejected (im.)' with no further detail. SciRev respondents rated reviewer-comment difficulty 4.0/5 ('difficult') and review-report quality 4.0/5, with overall handling rated 4.0/5 — but this rests on only 3 SciRev reviews for a discontinued journal title, so treat as indicative at best, not representative.
+**AI-research finding (experiential):** SciRev page explicitly marks acceptance rate, immediate-rejection rate, articles-published and manuscripts-received as 'n/a' (editor never supplied them). One SciRev respondent's outcome was logged simply as 'Rejected (im.)' with no further detail. SciRev respondents rated reviewer-comment difficulty 4.0/5 ('difficult') and review-report quality 4.0/5, with overall handling rated 4.0/5 — but this rests on only 3 SciRev reviews for a discontinued journal title, so treat as indicative at best, not representative.
 
 **Sources cited in this pass:**
 - https://letpub.com.cn/index.php?journalid=44427&page=journalapp&view=detail (LetPub aggregation of Chinese-author submission experiences — average review speed field was empty/no contributed data despite 50 journal ratings)
@@ -239,7 +239,7 @@ Reviewers drawn primarily from the clinical-science + psychopathology mechanism 
 - https://www.apa.org/pubs/journals/abn (calls for papers page: Medical Assistance in Dying special issue)
 - https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type (JPCS-specific confirmation)**: Masked/optional-review fact is standard APA practice cited on the journal page but no JPCS-specific editorial statement distinguishing it from other APA journals was located.
 - **experiential.desk_reject_pct**: SciRev explicitly lists this as 'n/a' for the (legacy-named) journal; no LetPub, muchong, zhihu, or Reddit data point supplied a number either.
 - **experiential.review_time_months (post-2022 JPCS-specific)**: The only quantitative review-time data found (SciRev) is filed under the old 'Journal of Abnormal Psychology' listing with just 3 respondents and no dates given, so it may predate the 2022 rename; LetPub (which explicitly aggregates Chinese-author reports for the current JPCS title) had zero contributed data in its '平均审稿速度' field despite 50 journal ratings overall.
@@ -304,7 +304,8 @@ Low for clinical-science mechanism authors aligned with open-science values. Mod
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Renamed entry from journal-of-abnormal-psychology.md to journal-of-psychopathology-and-clinical-science.md (per 2022 official rename). H1 updated; rename note added at top. | internal research |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05). Sidecar entry references former name "Journal of Abnormal Psychology"; 2022 rename to current title noted. | @Zaious |

@@ -46,7 +46,7 @@
 | **Time to first decision** | ~11 days (T&F official) | Avg. submission-to-first-decision per publisher's journal metrics page; may include editorial-screening decisions |
 | **Time to first review** | ~125 days (T&F official) | Avg. submission-to-first-post-review-decision per publisher's journal metrics page; publisher's own label, may not map 1:1 onto 'first review' if R&R rounds are involved |
 | **Time to acceptance (total)** | *(community estimate)* | |
-| **Time to publication (after acceptance)** | *(typical: 2-6 weeks)* | |
+| **Time to publication (after acceptance)** | ~8 days (T&F official) | Avg. acceptance-to-online-publication (Version of Record) per publisher's journal metrics page; measures online posting, not print issue assignment |
 
 ### Publication Frequency
 
@@ -64,7 +64,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (typical journal default; check publisher) |
+| **Type** | Unclear — T&F's own site self-contradicts for this journal (checked 2026-07-20): the "About this journal" page states "double anonymized... via ScholarOne Manuscripts," while the "Instructions for Authors" page (footer-dated "Updated 22nd June 2026," i.e. more recently and operationally authoritative) states "single anonymous peer reviewed by one independent, anonymous expert" via "Routledge's Submission Portal." Possibly a stale About-page vs. a recently-changed operational policy. Recommend confirming with editorial office before submission; do not assume double-blind norms when preparing anonymization. |
 | **Transferable / Cascade?** | *(varies by publisher)* |
 | **Reviewer reports published?** | *(varies; some journals offer transparent review)* |
 | **Typical R+R rounds** | 1-2 |
@@ -205,15 +205,15 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 | **Data transparency requirement** | Medium-High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 此為 Taylor & Francis 出版社通用政策(未查得 CPQ 期刊專屬 AI 頁面,故視為適用但非期刊獨有)。允許生成式 AI 用於研究方法(需遵循 CONSORT-AI/TRIPOD-AI 等報告規範)、文獻回顧/統合分析、語言潤飾、Plain Language Summary。強制揭露:須聲明工具名稱與版本、確認原創性與準確性、確認已檢視工具使用條款、作者對全文完整性(含參考文獻正確性)負全責,並須保留提示詞(prompt)紀錄以備查。AI 工具不得列為作者。同源政策亦見 https://newsroom.taylorandfrancisgroup.com/expanded-guidance-on-ai-application-for-authors-editors-and-reviewers/ 。
+**AI-research finding (policy):** 此為 Taylor & Francis 出版社通用政策(未查得 CPQ 期刊專屬 AI 頁面,故視為適用但非期刊獨有)。允許生成式 AI 用於研究方法(需遵循 CONSORT-AI/TRIPOD-AI 等報告規範)、文獻回顧/統合分析、語言潤飾、Plain Language Summary。強制揭露:須聲明工具名稱與版本、確認原創性與準確性、確認已檢視工具使用條款、作者對全文完整性(含參考文獻正確性)負全責,並須保留提示詞(prompt)紀錄以備查。AI 工具不得列為作者。同源政策亦見 https://newsroom.taylorandfrancisgroup.com/expanded-guidance-on-ai-application-for-authors-editors-and-reviewers/ 。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2025下半-2026)實際刊出內容顯示:量化研究(ROC curve 分析、心理計量量表驗證如 Maladaptive Daydreaming Scale-16 於越南樣本、網絡分析 network analysis)、質化研究(現象學/主題分析式的病人經驗研究,如子宮內膜異位症 CBT 質化研究、治療終止之病人經驗)、概念性/文獻回顧報告(Report 類文章,如去殖民化諮商心理學教育者實踐之概念性回顧)、實務導向的介入效果研究(大學諮商服務成效、e-learning 訓練成效)。Vol 39 Issue 1(2026)為「Decolonizing Counselling Psychology」去殖民化特輯;近期亦刊出多篇涉及文化回應督導(culturally responsive supervision)、少數群體/戰時身份定位(如以色列阿拉伯女性教育諮商師)等社會正義/多元文化取向文章,顯示編輯部目前明顯歡迎批判/去殖民/文化回應框架的投稿。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2025下半-2026)實際刊出內容顯示:量化研究(ROC curve 分析、心理計量量表驗證如 Maladaptive Daydreaming Scale-16 於越南樣本、網絡分析 network analysis)、質化研究(現象學/主題分析式的病人經驗研究,如子宮內膜異位症 CBT 質化研究、治療終止之病人經驗)、概念性/文獻回顧報告(Report 類文章,如去殖民化諮商心理學教育者實踐之概念性回顧)、實務導向的介入效果研究(大學諮商服務成效、e-learning 訓練成效)。Vol 39 Issue 1(2026)為「Decolonizing Counselling Psychology」去殖民化特輯;近期亦刊出多篇涉及文化回應督導(culturally responsive supervision)、少數群體/戰時身份定位(如以色列阿拉伯女性教育諮商師)等社會正義/多元文化取向文章,顯示編輯部目前明顯歡迎批判/去殖民/文化回應框架的投稿。
 
-**WO2 experiential finding:** 官方期刊指標頁(tandfonline about-this-journal)列出:平均投稿至首次決定 11 天、平均投稿至首次審後決定 125 天、平均接受至線上發表 8 天、接受率 21%(數據為 T&F 官方公佈,非第三方論壇一手經驗,故信號品質中等而非高)。 
+**AI-research finding (experiential):** 官方期刊指標頁(tandfonline about-this-journal)列出:平均投稿至首次決定 11 天、平均投稿至首次審後決定 125 天、平均接受至線上發表 8 天、接受率 21%(數據為 T&F 官方公佈,非第三方論壇一手經驗,故信號品質中等而非高)。 
 
 **Sources cited in this pass:**
 - https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/
@@ -221,7 +221,7 @@ Society-affiliated specialty community. Reviewer expectations: methodological ri
 - https://www.tandfonline.com/journals/ccpq20/about-this-journal (Journal metrics: Speed/acceptance 區塊,擷取數字:11 days avg first decision / 125 days avg first post-review decision / 8 days avg acceptance-to-online / 21% acceptance rate)
 - https://www.tandfonline.com/toc/ccpq20/current (Vol 39 Issue 2, 2026 目錄,逐篇標題與方法類型)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific)**: 查無 Counselling Psychology Quarterly 或 ccpq20 頁面上獨立列出的 AI 政策;僅有 Taylor & Francis 集團通用 AI 政策頁,推定適用於本刊但未見期刊層級的額外限制或放寬聲明。
 - **preprint.source_url (journal-specific)**: 找到的是 Taylor & Francis 集團通用 preprint/green OA 政策(AOM 可上傳非商業性 preprint server,不視為重複發表),未查得 CPQ 專屬 preprint 頁面確認是否有例外。
 - **experiential.desk_reject_pct**: SciRev 查無 Counselling Psychology Quarterly 條目(搜尋與嘗試進入 scirev.org/journal/counselling-psychology-quarterly/ 均未取得資料),故桌拒率無法取得,不編造數字。
@@ -274,5 +274,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved 3 flagged conflicts (existing vs. AI-research pass): (1) Peer Review Type updated Single-blind → Double-anonymized, verified live against publisher's own journal page; (2) Time to publication (after acceptance) updated `2-6 weeks` estimate → `~8 days` T&F official figure, consistent with sibling metrics already sourced from the same journal-metrics page; (3) Soft Metadata epistemological/political-leaning conflict left for human review (out of scope for direct edit; see AI-Research Notes positioning finding above). | @Zaious (agent-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

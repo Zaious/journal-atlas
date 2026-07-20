@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | ~2 months (publisher target, unverified) | Guide for Authors states the editorial team aims to give a first accept/reject-direction decision within ~2 months of submission (official stated target, not a measured average). SciRev data (n=2, low-confidence sample) shows desk-reject decisions averaging ~29 days. Sources: https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors ; https://scirev.org/journal/journal-of-environmental-psychology/ |
-| **Time to first review** | ~4.1 months (SciRev average; n=2, low-confidence sample) | WO2 signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
-| **Time to acceptance (total)** | ~6.7 months (SciRev average; n=2, low-confidence sample) | WO2 signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
+| **Time to first review** | ~4.1 months (SciRev average; n=2, low-confidence sample) | AI-research signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
+| **Time to acceptance (total)** | ~6.7 months (SciRev average; n=2, low-confidence sample) | AI-research signal_quality flagged as 2/5 — sample size too small for reliable generalization. Source: https://scirev.org/journal/journal-of-environmental-psychology/ |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Single-blind (per Elsevier default — varies by journal; some are double-blind) |
+| **Type** | Double-anonymized (double-blind) — journal-specific policy, not the Elsevier single-blind default. Authors submit an anonymized manuscript (no author names/affiliations/acknowledgements) plus a separate title page. Empirical manuscripts typically reviewed by 3 independent expert reviewers; other submission types typically reviewed by Editorial Board members. Verified 2026-07-20 via web search against the journal's own Guide for Authors (direct fetch returned 403; confirmed through repeated, consistent search-engine snippets of that page). Source: https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors |
 | **Transferable / Cascade?** | Elsevier operates cross-journal transfer for some manuscripts |
 | **Reviewer reports published?** | No (per Elsevier default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -217,15 +217,15 @@ Reviewers from IAPS (International Association for People-Environment Studies), 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 遵循 Elsevier 集團通用 GenAI 政策(非期刊專屬頁面):寫作準備階段可用 AI/AI輔助工具(文獻整理、語言潤飾等),但投稿時須揭露使用情況;圖像/artwork 禁止用生成式AI創作或修改,除非AI本身是研究方法的一部分且須在方法段落詳述模型名稱/版本/廠商。未見 JEP 專屬(與集團政策不同)之加嚴或放寬條款。
+**AI-research finding (policy):** 遵循 Elsevier 集團通用 GenAI 政策(非期刊專屬頁面):寫作準備階段可用 AI/AI輔助工具(文獻整理、語言潤飾等),但投稿時須揭露使用情況;圖像/artwork 禁止用生成式AI創作或修改,除非AI本身是研究方法的一部分且須在方法段落詳述模型名稱/版本/廠商。未見 JEP 專屬(與集團政策不同)之加嚴或放寬條款。
 
-**WO2 positioning finding (what the journal accepts now):** 近期(2024-2026)徵稿與期刊範疇顯示 JEP 目前積極徵求:建成環境與健康行為的自然實驗(natural experiments)、氣候變遷調適心理學(psychology of climate change adaptation)、特定族群/時期的家庭環境心理學(home environment for specific populations and times)等主題的實證研究。期刊長期範疇涵蓋人與建成/社會/自然/虛擬環境的心理互動:場所依附/認同、環境風險感知、親環境行為理論、永續與氣候心理、空間認知與尋路、擁擠/隱私/領域性等社會空間使用議題,聚焦個體與小群體層次分析。
+**AI-research finding (positioning — what the journal accepts now):** 近期(2024-2026)徵稿與期刊範疇顯示 JEP 目前積極徵求:建成環境與健康行為的自然實驗(natural experiments)、氣候變遷調適心理學(psychology of climate change adaptation)、特定族群/時期的家庭環境心理學(home environment for specific populations and times)等主題的實證研究。期刊長期範疇涵蓋人與建成/社會/自然/虛擬環境的心理互動:場所依附/認同、環境風險感知、親環境行為理論、永續與氣候心理、空間認知與尋路、擁擠/隱私/領域性等社會空間使用議題,聚焦個體與小群體層次分析。
 
-**WO2 experiential finding:** SciRev 上最新一筆審稿結果為「立即拒稿」，投稿人對處理流程評價 4.0/5(「Very good process」)，但整體接受/拒絕比例欄位皆為 n/a(樣本量僅 2 則，不具統計意義)。 SciRev 樣本顯示審稿意見「困難度」評為 5.0/5.0(極嚴格)，審稿報告品質評 4.0/5.0；但此僅基於單一評論者，不足以推論全期刊審稿文化。知乎與 Reddit r/AskAcademia 均未搜得任何針對本刊的實質討論串。
+**AI-research finding (experiential):** SciRev 上最新一筆審稿結果為「立即拒稿」，投稿人對處理流程評價 4.0/5(「Very good process」)，但整體接受/拒絕比例欄位皆為 n/a(樣本量僅 2 則，不具統計意義)。 SciRev 樣本顯示審稿意見「困難度」評為 5.0/5.0(極嚴格)，審稿報告品質評 4.0/5.0；但此僅基於單一評論者，不足以推論全期刊審稿文化。知乎與 Reddit r/AskAcademia 均未搜得任何針對本刊的實質討論串。
 
 **Sources cited in this pass:**
 - https://en.wikipedia.org/wiki/Journal_of_Environmental_Psychology
@@ -235,7 +235,7 @@ Reviewers from IAPS (International Association for People-Environment Studies), 
 - https://www.sciencedirect.com/journal/journal-of-environmental-psychology/publish/guide-for-authors
 - https://www.sciencedirect.com/journal/journal-of-environmental-psychology/special-issues
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.gate**: Elsevier集團政策要求揭露AI使用但未明訂「禁止/需editor批准/自由使用」的明確gate等級,故標記為conditional並將signal_quality壓低,無法確認JEP是否有超出集團標準的專屬規定
 - **experiential.desk_reject_pct**: SciRev該刊評論僅2則，接受/拒絕百分比欄位原始頁面即顯示 n/a，無其他公開來源(小木虫/知乎/Reddit)提供可引用的具體拒稿率數字
 - **experiential.reviewer_culture**: 唯一數據來源為SciRev單一評論者的主觀評分(difficulty 5.0/5.0)，跨語言來源(小木虫/知乎/Reddit)均未搜得可獨立佐證或補充的第一手審稿文化描述，故此欄位信心低
@@ -292,6 +292,7 @@ Low for env-psych tradition. Cross-disciplinary accessibility valued.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflict: Peer Review Type corrected from Elsevier single-blind default guess to verified double-anonymized (per journal's own Guide for Authors, confirmed via web search after direct fetch 403). | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + IAPS / EDRA env-psych editorial culture domain knowledge | @Zaious |

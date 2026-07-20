@@ -80,7 +80,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Springer Nature publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No advance permission required — post-hoc disclosure only, required for substantive AI use (content generation/analysis assistance); pure grammar/spelling AI-assisted copyediting is exempt from disclosure |
 | **Leniency (1-5)** | 4 |
 | **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria. AI use must be disclosed in Materials/Methods or Acknowledgments. |
 | **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
@@ -219,15 +219,15 @@ Reviewers from educational psychology and learning sciences communities — APA 
 | **Data transparency requirement** | N/A — synthesis venue |
 | **OPSEC compatibility** | High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **3/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **3/5**.
 
-**WO2 AI policy finding:** 沿用 Springer Nature 通用政策(期刊層未見客製化額外限制):LLM 不得列為作者;若對成果有實質性使用(如生成內容/協助分析),須在 Methods 段落揭露;僅做文法/拼字/標點的「AI輔助潤稿」不需申報;AI生成圖像須另查 Springer 的生成式AI圖像政策並符合其原則。無需事前申請許可,屬事後揭露制,故 gate 標記 conditional(有條件揭露,非全面禁止也非完全放任)。
+**AI-research finding (policy):** 沿用 Springer Nature 通用政策(期刊層未見客製化額外限制):LLM 不得列為作者;若對成果有實質性使用(如生成內容/協助分析),須在 Methods 段落揭露;僅做文法/拼字/標點的「AI輔助潤稿」不需申報;AI生成圖像須另查 Springer 的生成式AI圖像政策並符合其原則。無需事前申請許可,屬事後揭露制,故 gate 標記 conditional(有條件揭露,非全面禁止也非完全放任)。
 
-**WO2 positioning finding (what the journal accepts now):** 以整合性回顧文獻(integrative reviews)、後設分析(meta-analysis)、主題專刊(thematic issues)、實務指引(research-based practitioner advice)為主軸,亦刊登實徵研究(empirical studies)。2026年7月近期文章涵蓋:國小學生抑制控制、智慧型教學系統與自我調節學習(SRL)、具身詞彙學習後設分析、教師對SRL的知識、沉浸式VR中的眼動追蹤效度。
+**AI-research finding (positioning — what the journal accepts now):** 以整合性回顧文獻(integrative reviews)、後設分析(meta-analysis)、主題專刊(thematic issues)、實務指引(research-based practitioner advice)為主軸,亦刊登實徵研究(empirical studies)。2026年7月近期文章涵蓋:國小學生抑制控制、智慧型教學系統與自我調節學習(SRL)、具身詞彙學習後設分析、教師對SRL的知識、沉浸式VR中的眼動追蹤效度。
 
-**WO2 experiential finding:** 投稿經驗分享(发表记, 2024/01/07單一使用者):處理速度快,常見送3位審稿人;審稿人對回顧/後設分析類稿件的規範性與理論要求偏嚴格。樣本數僅1筆,不可外推。 
+**AI-research finding (experiential):** 投稿經驗分享(发表记, 2024/01/07單一使用者):處理速度快,常見送3位審稿人;審稿人對回顧/後設分析類稿件的規範性與理論要求偏嚴格。樣本數僅1筆,不可外推。 
 
 **Sources cited in this pass:**
 - https://link.springer.com/journal/10648
@@ -237,7 +237,7 @@ Reviewers from educational psychology and learning sciences communities — APA 
 - https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4
 - https://www.fabiaoji.com/periodicalDetail?id=7baef7afb6b5447db1344123e5be12b4 (1筆使用者投稿經驗)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev 該刊 0 筆評論;ablesci 科研通該刊審稿週期/錄用比例欄位均為空白(僅有欄位框架、無使用者填寫);未查得具體拒稿率數字,故留空避免捏造。
 - **experiential.reviewer_culture**: 未找到任何具體、可歸因來源(論壇貼文/評論)描述該刊審稿人風格或文化;僅有單一則2天內桌拒/送審速度描述及對回顧類稿件要求偏嚴格的間接推論,不足以支撐『reviewer culture』這一主觀敘事欄位,故留空而非編造通用敘述。
 - **cross_language_checked: muchong.com**: 站內/Google站內搜尋 site:muchong.com 'Educational Psychology Review' 查無相關討論串,誠實記為0結果。
@@ -297,6 +297,7 @@ Moderate. Integrative-review writing demands extensive engagement with multiple 
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + educational-psychology review editorial culture domain knowledge | @Zaious |

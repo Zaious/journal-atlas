@@ -1,0 +1,18 @@
+{
+ "name": "Memory & Cognition",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\memory-and-cognition.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "Peer-reviewed; commonly described as double-blind in secondary sources (journal-comparison sites), but WO2 explicitly flags this as NOT confirmed against the journal's own submission-guidelines page (which was inaccessible behind an IdP login redirect).",
+   "why_flagged": "既有條目與 WO2 對「單盲 vs 雙盲」的說法直接矛盾，且 WO2 自身也承認未能對照官方投稿頁面驗證，屬低信度二手來源，需要人工查證後才能決定是否更正，不宜自動覆蓋。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate",
+   "existing_value": "*(community estimate)*",
+   "wo2_value": "SciRev 將本刊評為審稿意見/接受難度 5.0/5.0「非常困難」，但整體稿件處理品質評為 3.0/5.0；樣本僅 3 筆送審紀錄，統計信心極低（未提供實際接受率百分比）。",
+   "why_flagged": "此為主觀難度評分而非具體接受率數字，不足以直接填入 Acceptance Rate 儲存格（樣本量過小、非百分比），但作為人工複核時的參考訊號值得記錄。"
+  }
+ ]
+}

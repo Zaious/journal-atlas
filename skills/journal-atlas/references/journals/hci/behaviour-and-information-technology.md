@@ -76,7 +76,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Taylor & Francis publisher AI policy |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No — not a pre-approval gate; conditional on mandatory disclosure (tool name, purpose, rationale in Methods/Acknowledgments) |
 | **Leniency (1-5)** | 4 (disclosure-based; AI cannot be listed as author) |
 | **Summary** | Follows T&F AI policy: disclosure required; AI cannot be listed as author. |
 | **Source URL** | https://taylorandfrancis.com/our-policies/ai-policy/ |
@@ -223,15 +223,15 @@ Reviewers from technology-adoption, social-media, and applied-HCI communities. M
 | **Data transparency requirement** | Medium |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 無法直接抓取該期刊專屬的 Instructions for Authors 頁面（tandfonline 回傳 403），故僅能確認 Taylor & Francis 集團通用 AI 政策，未找到 Behaviour & Information Technology 期刊層級的加嚴或放寬版本。集團政策：允許 GenAI 用於語言潤飾、文獻檢索/分類、輔助程式撰寫；禁止列為作者；要求在 Methods 或 Acknowledgments 揭露工具全名、用途與理由；作者仍需對內容原創性與正確性負全責。部分期刊可能有更嚴格規定，需查該刊 Instructions for Authors（此次因 403 未能查證）。
+**AI-research finding (policy):** 無法直接抓取該期刊專屬的 Instructions for Authors 頁面（tandfonline 回傳 403），故僅能確認 Taylor & Francis 集團通用 AI 政策，未找到 Behaviour & Information Technology 期刊層級的加嚴或放寬版本。集團政策：允許 GenAI 用於語言潤飾、文獻檢索/分類、輔助程式撰寫；禁止列為作者；要求在 Methods 或 Acknowledgments 揭露工具全名、用途與理由；作者仍需對內容原創性與正確性負全責。部分期刊可能有更嚴格規定，需查該刊 Instructions for Authors（此次因 403 未能查證）。
 
-**WO2 positioning finding (what the journal accepts now):** 以人為本的 IT 研究：可用性(usability)、使用者經驗(UX)、人機互動(HCI)、以人/使用者為中心的設計，以及數位世界的社會、商業與人文面向；接受原創實證研究、實務案例研究、以及論述性文章(thoughtful articles)。
+**AI-research finding (positioning — what the journal accepts now):** 以人為本的 IT 研究：可用性(usability)、使用者經驗(UX)、人機互動(HCI)、以人/使用者為中心的設計，以及數位世界的社會、商業與人文面向；接受原創實證研究、實務案例研究、以及論述性文章(thoughtful articles)。
 
-**WO2 experiential finding:** LetPub 聚合評分將接受難度標示為「容易」(5.1/10分)，但無具體百分比數據；fabiaoji.com 使用者評語稱其「是個好期刊」但因方向不符仍遭拒。 小木虫(muchong.com)單一投稿者描述編輯在reject & resubmit後提供具體回饋與個人化指導（"Maybe I can help"），並在多輪修改中密切配合直到接受——屬單一個案(n=1)，不足以代表整體審稿文化。
+**AI-research finding (experiential):** LetPub 聚合評分將接受難度標示為「容易」(5.1/10分)，但無具體百分比數據；fabiaoji.com 使用者評語稱其「是個好期刊」但因方向不符仍遭拒。 小木虫(muchong.com)單一投稿者描述編輯在reject & resubmit後提供具體回饋與個人化指導（"Maybe I can help"），並在多輪修改中密切配合直到接受——屬單一個案(n=1)，不足以代表整體審稿文化。
 
 **Sources cited in this pass:**
 - https://letpub.com.cn/index.php?journalid=1051&page=journalapp&view=detail
@@ -240,7 +240,7 @@ Reviewers from technology-adoption, social-media, and applied-HCI communities. M
 - https://www.fabiaoji.com/periodicalDetail?id=0b10b2b8e824456b8aec2e6fc8856fe0
 - https://www.tandfonline.com/journals/tbit20/about-this-journal (aims & scope，經 WebSearch 快取取得，直接 WebFetch 回傳403)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (journal-specific override)**: tandfonline.com 的 Instructions for Authors 頁面回傳 HTTP 403，無法確認該刊是否比 T&F 集團通用政策更嚴格；僅能引用集團層級政策
 - **preprint.allowed**: 未找到該刊專屬 preprint/預印本政策頁面（SHERPA/RoMEO 與 tandfonline 皆未成功取得），僅有 T&F 通用綠色開放取用政策（12個月後可自存檔postprint），不等同於preprint政策，故留白
 - **positioning.framing_required**: 未找到近期(2024-2026) CFP 或特刊徵稿要求特定敘事框架的公開資訊
@@ -301,6 +301,7 @@ Low for technology-adoption / social-media empirical authors. Moderate for HCI-c
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate?. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

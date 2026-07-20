@@ -1,0 +1,18 @@
+{
+ "name": "Collabra: Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\collabra-psychology.md",
+ "conflicts": [
+  {
+   "field": "Metrics > Review Cycle Time (全四列:first decision / first review / acceptance total / publication)",
+   "existing_value": "四列皆為 *(pending)*(publication 列的 Notes 已有 'OA — typically rapid post-acceptance')",
+   "wo2_value": "SciRev 自報(n=1,2016):首輪審查 ~2.3 週、總處理 ~4.3 週。中文期刊聚合站(非第一手)轉述期刊自報『平均約 16 週(約4個月)出版』。",
+   "why_flagged": "WO2 自己在 blanks 欄位中已將 'experiential.review_time_months(第一手)' 列為未能可靠回答的項目(樣本僅 1 筆且非第一手),不宜逕行當作正式數值填入 Review Cycle Time 表格;是否要以高度加註警語的方式納入,建議由人工判斷。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements(對照 WO2 positioning.framing_required)",
+   "existing_value": "Manuscripts must align with open-science values — preregistration, data/code sharing, replicability claims, or methodological transparency. The \"Methodology and Research Practice\" section is the entry point for non-traditional methods.",
+   "wo2_value": "以「方法嚴謹性(soundness/rigor)」而非新穎性或影響力為評審核心;強調透明、開放資料與程式碼(期望分享 data 與 code)。稿件宜凸顯方法透明度與可重現性,不需主張突破性創新即可送審。",
+   "why_flagged": "WO2 補充了『審稿核心是方法嚴謹性而非新穎性/影響力,不需主張突破性創新』這個可操作的定位細節,與現有描述不衝突但更具體;此欄屬 Soft Metadata 主觀性子區塊,依規則僅記錄供人工參考,不逕行編輯正文。"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "name": "Journal of Child Psychology and Psychiatry",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-child-psychology-and-psychiatry.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Wiley default — varies by journal)",
+   "wo2_value": "single-blind (editor triage + external referees); double-blind not confirmed — inferred from a search-engine-synthesized snippet, not primary text (author guidelines page returned HTTP 402 on WO2's fetch attempts)",
+   "why_flagged": "既有內容為「雙盲」與 WO2 查到的「單盲」直接矛盾,且雙方證據都不算特別扎實(既有為 Wiley 預設推論,WO2 為二手搜尋摘要),需人工查證期刊自己的作者指南頁面以確認實際盲審類型,不應由 AI 逕自擇一覆蓋。"
+  },
+  {
+   "field": "Review Cycle Time > Time to first decision",
+   "existing_value": "*(fill manually)* — 空白,但檔案內 Soft Metadata > Reviewer Pool Characteristics 段落已寫「Decision in ~5 weeks (excluding desk rejects)」",
+   "wo2_value": "publisher 目標 60 天(~2 個月,送外審案件);SciRev 彙總(n=5)平均 2.1 個月投稿到首次決定;另外桌拒/triage 平均約 18 天",
+   "why_flagged": "雖然此表格欄位本身是空白,但檔案另一段落已寫明「~5 週」的具體數字,與 WO2 的「~2 個月 / 2.1 個月」量級不完全一致(5 週≈1.15 個月 vs 2~2.1 個月)。若直接依 WO2 填入本表,會與檔案內既有敘述產生內部不一致,建議人工核對後統一,而非逕自填入。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "3",
+   "wo2_value": "2(WO2 標記為推斷值,signal_quality 僅 2/5)",
+   "why_flagged": "兩者都是基於同一份 Wiley 出版社通用 AI 政策(均未找到 JCPP 期刊專屬頁面)做出的主觀寬鬆度評分,但數字不同。因 AI Policy 欄位已有實質內容(非空白佔位),依規則不應直接編輯,僅記錄此數值分歧供人工複核是否要調整既有評分。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements / Epistemological & Political Leanings (out of scope,僅供參考)",
+   "existing_value": "既有段落基於 2026-05 的 ACAMH 作者指南與 editage.com 聚合證據,強調「clinical/mechanism contribution」框架要求與 ~50% 首週桌拒",
+   "wo2_value": "WO2 提供更新的 2025-2026 具體範例(Lukito 2025 doi:10.1111/jcpp.70003 之 ADHD/autism 共創測量驗證論文;Charman 2026 doi:10.1111/jcpp.70048 之前瞻縱貫嬰兒手足研究),並將定位精煉為『clinically relevant / translational value to developmental psychopathology』,純基礎科學或非臨床族群研究為較弱的 fit",
+   "why_flagged": "此為 WO2 對『目前期刊實際接受什麼』的補充性定位發現,涉及 Soft Metadata 的主觀章節(Framing Requirements/Epistemological & Political Leanings),依規則屬 out of scope 不應直接編輯,僅供人工評估是否納入既有敘述作補充更新。"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "name": "Trends in Cognitive Sciences",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\trends-in-cognitive-sciences.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate?",
+   "existing_value": "No — disclosure-based for text; image generation prohibited",
+   "wo2_value": "WO2 結構化欄位標記 gate = \"conditional\"(signal_quality 3/5),但其自然語言 summary 實質描述與既有內容一致(揭露制,非硬性許可關卡)",
+   "why_flagged": "這是分類欄位的語意粒度落差,不是實質政策內容矛盾——WO2 的敘述文字本身與既有『No』的說明相符,只是其結構化 schema 把『需揭露但不需事先批准』標成 conditional 而非 no。是否要把既有用語從『No』微調為『No / Conditional (disclosure-based, no prior approval required)』以更精確對齊分類語彙,留給人工判斷,不逕行覆蓋。"
+  }
+ ]
+}

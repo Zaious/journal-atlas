@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-blind (per Guilford default) |
+| **Type** | Single-blind by default — author identity appears on the title page and is visible to reviewers unless the author requests anonymous review; double-blind available on request, with identifying information confined to a separate cover page |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No |
 | **Typical R+R rounds** | *(pending)* |
@@ -80,10 +80,10 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Guilford Press publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
-| **Summary** | Follows Guilford Press publisher AI policy: disclosure required; AI cannot be listed as author. |
-| **Source URL** | https://www.guilfordjournals.com/page/authors |
+| **Explicit permission gate?** | Yes — Guilford Press publisher policy prohibits using AI to create article content (text, figures, tables, images); AI cannot be listed as author. Narrow exception: AI-assisted grammar checking is permitted (be aware some tools may use submitted text for model training). |
+| **Leniency (1-5)** | 2 |
+| **Summary** | Publisher-wide (Guilford Press) policy — no JSCP-specific AI policy found: AI may not be used to create article content, including figures, tables, images, and text; AI cannot be listed as author. Grammar-checking AI use is the one permitted exception. |
+| **Source URL** | https://www.guilfordjournals.com/page/authors ; corroborated at https://guilfordjournals.com/about (direct fetch 403-blocked; confirmed via identical boilerplate text repeated verbatim on sister-journal author pages, e.g. guilfordjournals.com/journal/pedi/authors, guilfordjournals.com/journal/soco/authors) |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -219,15 +219,15 @@ Reviewers from social-clinical psychology interface — APA Division 8 (SPSP) + 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** Publisher-wide (Guilford Press) policy, not JSCP-specific: Guilford journals currently do not allow AI to be used to create article content, including figures, tables, images, and other materials. No JSCP-specific AI policy page was found separately from this Guilford-wide 'Information for Authors' statement; treat as inherited from publisher level.
+**AI-research finding (policy):** Publisher-wide (Guilford Press) policy, not JSCP-specific: Guilford journals currently do not allow AI to be used to create article content, including figures, tables, images, and other materials. No JSCP-specific AI policy page was found separately from this Guilford-wide 'Information for Authors' statement; treat as inherited from publisher level.
 
-**WO2 positioning finding (what the journal accepts now):** Quarterly (bimonthly per one Chinese-language source) journal applying social-psychology theory/methods to human adjustment and adaptation, with emphasis on psychopathology-related phenomena; prioritizes theory-driven empirical research, also accepts theoretical/review articles. Explicitly does NOT want new-scale-development or scale-revision papers (stated in author guidelines).
+**AI-research finding (positioning — what the journal accepts now):** Quarterly (bimonthly per one Chinese-language source) journal applying social-psychology theory/methods to human adjustment and adaptation, with emphasis on psychopathology-related phenomena; prioritizes theory-driven empirical research, also accepts theoretical/review articles. Explicitly does NOT want new-scale-development or scale-revision papers (stated in author guidelines).
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://guilfordjournals.com/about
@@ -238,7 +238,7 @@ Reviewers from social-clinical psychology interface — APA Division 8 (SPSP) + 
 - https://guilfordjournals.com/journal/jscp/authors (aims/scope + excluded topic, via cached search snippet)
 - https://scirev.org/journal/journal-of-social-and-clinical-psychology/ (page exists but all metrics 'n/a', 'No reviews have yet been submitted for this journal')
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev page for this journal exists (scirev.org/journal/journal-of-social-and-clinical-psychology) but every metric field reads 'n/a' and states 'No reviews have yet been submitted for this journal' - zero first-hand data points.
 - **experiential.desk_reject_pct**: No publisher-disclosed rate; SciRev shows 'n/a'; no forum/Reddit/muchong/zhihu thread discussing this specific journal's desk-reject behavior was found.
 - **experiential.reviewer_culture**: No first-hand accounts found on Reddit r/AskAcademia (site-restricted search returned zero results), 小木虫 muchong.com (no thread matching this journal name), or 知乎 (searches surfaced only the Chinese-language Wikipedia-style journal description, no submitter reviews).
@@ -297,6 +297,7 @@ Low for social-clinical tradition authors. Guilford venue tends to value theoret
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Leniency / Summary / Source URL); Policies > Peer Review > Type. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Guilford publisher + social-clinical psychology interface editorial culture domain knowledge | @Zaious |

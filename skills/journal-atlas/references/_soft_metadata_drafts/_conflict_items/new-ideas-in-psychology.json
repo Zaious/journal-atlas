@@ -1,0 +1,18 @@
+{
+ "name": "New Ideas in Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\new-ideas-in-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "*(per Elsevier default — pending verification; commonly single-blind in psychology, but recheck)*",
+   "wo2_value": "Double anonymized (double-blind); editor screens first, then min. one independent expert reviewer (source: https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors)",
+   "why_flagged": "既有欄位雖標注 pending verification,但已附帶具體傾向性陳述(『commonly single-blind』),不符合逐字比對的『純占位符』定義,故不直接覆蓋。WO2 從同一份 Guide for Authors 獨立研究得出明確相反結論(double-blind),兩者直接矛盾,需人工回查原始 Guide for Authors 頁面以確認何者正確,再手動更新。"
+  },
+  {
+   "field": "Policies > AI Policy > Has journal-specific AI policy?",
+   "existing_value": "Yes — journal-specific image restriction beyond Elsevier default(完整 Summary 描述 AI 生成/輔助影像除非 AI 本身即研究方法,否則禁止使用)",
+   "wo2_value": "採 Elsevier 出版社通用政策(非期刊特化)。WO2 blanks 備註:『查無期刊層級 AI 政策;僅能引用 Elsevier 出版社通用政策,故 policy 層 signal_quality 偏低』,signal_quality=2",
+   "why_flagged": "既有條目已有具體內容(非占位符),依規不直接覆蓋。但 WO2 本次獨立研究明確表示『查無期刊層級 AI 政策』,與既有條目主張『NIP 有超出 Elsevier 預設的期刊特化影像限制政策』直接矛盾。雖然 WO2 自評此欄 signal_quality 偏低(2/5),但屬直接對立主張,建議人工重新核對 Guide for Authors 頁面上是否確實存在該影像限制條款,而非以本次較低信度的 WO2 結果取代既有內容。"
+  }
+ ]
+}

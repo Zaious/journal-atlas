@@ -38,8 +38,8 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 152 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | ~12% (implied by journal's self-reported ~88% overall rejection rate — low confidence, publisher self-report obtained via WebSearch summary, original page 402-blocked, not independently verified; see Soft Metadata > AI-Research Notes) | 2026-07-13 (WO2 pass) |
-| **Desk Rejection Rate** | ~55% (journal self-report via WebSearch summary of publisher "For Authors" page; original page blocked by 402 paywall, not independently verified — see Soft Metadata > AI-Research Notes) | 2026-07-13 (WO2 pass) |
+| **Acceptance Rate** | ~12% (implied by journal's self-reported ~88% overall rejection rate — low confidence, publisher self-report obtained via WebSearch summary, original page 402-blocked, not independently verified; see Soft Metadata > AI-Research Notes) | 2026-07-13 (AI-research pass) |
+| **Desk Rejection Rate** | ~55% (journal self-report via WebSearch summary of publisher "For Authors" page; original page blocked by 402 paywall, not independently verified — see Soft Metadata > AI-Research Notes) | 2026-07-13 (AI-research pass) |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.83 | 2026-05-16 |
 | **i10-index** | 1180 | 2026-05-16 |
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per SAGE default) |
+| **Type** | Double-anonymized (per SAGE default; 經 SAGE 官方投稿頁逐字確認「reviewers' and authors' names are withheld from each other」，即雙向互相匿名) — 另設 **Registered Reports** 軌道(自2018年正式上線：研究提案含理論/實證背景、假設與前導資料，於資料蒐集前送審，接受後不論結果保證刊登)及 **streamlined review** 選項(可檢附前一投稿期刊之決定信與審查意見作為補充材料，供編輯評估是否減少或免除新一輪外審) |
 | **Transferable / Cascade?** | *(pending — SAGE has cascade for some title families)* |
 | **Reviewer reports published?** | No (per SAGE default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -80,9 +80,9 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows SAGE publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No — disclosure-based (conditional：揭露為強制義務，但非「需先取得許可」的許可制；SAGE 明文表示僅因已揭露之 AI 使用不會導致拒稿) |
 | **Leniency (1-5)** | 4 |
-| **Summary** | Follows SAGE publisher AI policy: disclosure required if AI use affects research content. AI cannot be listed as author. Language polishing typically need not be disclosed. |
+| **Summary** | Follows SAGE publisher AI policy (2026-07-20 逐字核對 sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy 原始頁面確認)：投稿時須揭露會產出內容之 GenAI 工具使用；僅用於語言/文法/結構潤飾之輔助型 AI 工具不需揭露；AI 不得列為作者；作者對所有 AI 產出內容(含引用)之正確性負完全責任；僅因已揭露的 AI 使用本身不構成拒稿理由。 |
 | **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
 ### Preprint Policy
 
@@ -219,15 +219,15 @@ Reviewers from EAPP and broader European personality research community. Common 
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 發表方為 SAGE(EJP 現由 SAGE 出版,原 Wiley)。依 SAGE 通用 AI 政策(EJP 未見期刊專屬 AI 政策頁,套用 SAGE 通則):AI 聊天機器人(如 ChatGPT)不得列為作者;若使用生成式 AI 產出文字/圖表/資料摘要等內容,須揭露所用模型與用途(建議寫在 Methods 或 Acknowledgements);作者對 AI 產出內容之正確性、原創性負全責;僅用於語言潤飾/文法/結構改善者可不揭露;僅因使用 AI 不會被直接拒稿。因此判定為「有條件許可」(conditional gate=需揭露,非全面禁止亦非完全自由)。leniency 給 3(可用但要揭露,非全開放)。未能直接抓到 EJP 專屬 AI 政策子頁(嘗試 journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404),故 signal_quality 偏低,屬 publisher-level 政策推論,非期刊逐字頁面。
+**AI-research finding (policy):** 發表方為 SAGE(EJP 現由 SAGE 出版,原 Wiley)。依 SAGE 通用 AI 政策(EJP 未見期刊專屬 AI 政策頁,套用 SAGE 通則):AI 聊天機器人(如 ChatGPT)不得列為作者;若使用生成式 AI 產出文字/圖表/資料摘要等內容,須揭露所用模型與用途(建議寫在 Methods 或 Acknowledgements);作者對 AI 產出內容之正確性、原創性負全責;僅用於語言潤飾/文法/結構改善者可不揭露;僅因使用 AI 不會被直接拒稿。因此判定為「有條件許可」(conditional gate=需揭露,非全面禁止亦非完全自由)。leniency 給 3(可用但要揭露,非全開放)。未能直接抓到 EJP 專屬 AI 政策子頁(嘗試 journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404),故 signal_quality 偏低,屬 publisher-level 政策推論,非期刊逐字頁面。
 
-**WO2 positioning finding (what the journal accepts now):** 以實證研究為主,涵蓋人格結構、評估工具、人格差異之成因與後果、個體內變異與發展變化、及其與經驗的交互作用;近年(2023-2025)刊出主題包括:超越自陳式 Big Five 的人格評量(Rauthmann 2024)、IPIP-NEO 人格階層之 Taxonomic Graph Analysis 重新檢視、跨 16 個縱貫樣本的 Big Five 特質軌跡協調分析(Graham et al.)、孤獨感與 Big Five 之統合分析。方法學上明顯歡迎:網絡心理計量(network psychometrics)、Taxonomic Graph Analysis 等新興計算心理學方法、統合分析(meta-analysis)、縱貫研究協調分析(coordinated/integrative data analysis)。
+**AI-research finding (positioning — what the journal accepts now):** 以實證研究為主,涵蓋人格結構、評估工具、人格差異之成因與後果、個體內變異與發展變化、及其與經驗的交互作用;近年(2023-2025)刊出主題包括:超越自陳式 Big Five 的人格評量(Rauthmann 2024)、IPIP-NEO 人格階層之 Taxonomic Graph Analysis 重新檢視、跨 16 個縱貫樣本的 Big Five 特質軌跡協調分析(Graham et al.)、孤獨感與 Big Five 之統合分析。方法學上明顯歡迎:網絡心理計量(network psychometrics)、Taxonomic Graph Analysis 等新興計算心理學方法、統合分析(meta-analysis)、縱貫研究協調分析(coordinated/integrative data analysis)。
 
-**WO2 experiential finding:** 期刊自我定位為高選擇性(highly selective),強調審稿快且具建設性回饋('committed to constructive and fast in-depth feedback')。此為期刊自述,非投稿者第一手經驗。 
+**AI-research finding (experiential):** 期刊自我定位為高選擇性(highly selective),強調審稿快且具建設性回饋('committed to constructive and fast in-depth feedback')。此為期刊自述,非投稿者第一手經驗。 
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/author-instructions/erp
@@ -237,7 +237,7 @@ Reviewers from EAPP and broader European personality research community. Common 
 - https://scirev.org/journal/european-journal-of-personality/
 - https://www.fabiao.com/sci/08902070.html
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy (期刊專屬頁面)**: journals.sagepub.com/page/erp/chatgpt_and_generativeaipolicy 回傳 404,無法確認 EJP 是否有專屬於 SAGE 通則之外的加註;僅能以 SAGE 出版社通用 AI 政策 + 二手摘要(WebSearch 生成摘要,非逐字頁面)推論,故只給 leniency 中等偏低信心
 - **peer_review.type 是否為 single- or double-anonymized**: 多個 WebSearch 摘要用詞不一(有稱 anonymized peer review、有稱 traditional peer review),未能用 WebFetch 逐字核對原始頁面(頁面多次回傳僅 nav/footer 或 402),故匿名方式的具體層級未能百分之百確認
 - **experiential.reviewer_culture**: SciRev 僅 1 筆評論,無質性描述可引;PTT/小木虫/知乎/muchong.com 搜尋均未找到具體投稿者的審稿文化敘述(僅找到期刊自我行銷用語與二手期刊資料庫頁面);Reddit r/AskAcademia 站內搜尋 'European Journal of Personality' 完全 0 結果。故此欄位誠實留空,不編造
@@ -296,6 +296,7 @@ Low for EAPP-tradition / within-person designs.
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency / Gate. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE/EAPP publisher + European personality psychology editorial culture domain knowledge | @Zaious |

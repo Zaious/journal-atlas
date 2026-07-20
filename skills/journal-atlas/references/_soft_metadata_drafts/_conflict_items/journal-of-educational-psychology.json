@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Educational Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-educational-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5)",
+   "existing_value": "4",
+   "wo2_value": "3",
+   "why_flagged": "兩者對政策性質的判斷方向一致（皆為揭露式/conditional，非事前許可制），但寬容度評分本身不同（現有 4 分 vs WO2 判定 3 分），屬量化評分的實質分歧而非單純補充細節，依規則不可逕行覆蓋，留待人工覆核決定是否調整。"
+  }
+ ]
+}

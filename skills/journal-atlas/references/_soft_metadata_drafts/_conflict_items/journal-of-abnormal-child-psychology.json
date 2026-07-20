@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Abnormal Child Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-abnormal-child-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy — Explicit permission gate? / Leniency",
+   "existing_value": "Explicit permission gate? No — disclosure-based | Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\" | leniency_1_5: 3",
+   "why_flagged": "現存欄位已有實質內容（非佔位符），依規則不可直接覆寫；但 WO2 對『gate』的分類（conditional）與寬容度評分（3）跟現存資料（No/disclosure-based, 4）略有出入，且 WO2 signal_quality 僅 2/5、其判斷是根據 Springer Nature 通用政策文字外推，並非該期刊獨有頁面（原頁面被 Springer 登入牆擋下），故列為衝突留待人工複核，不逕行覆蓋。"
+  }
+ ]
+}

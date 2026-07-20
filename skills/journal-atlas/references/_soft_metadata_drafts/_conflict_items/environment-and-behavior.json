@@ -1,0 +1,12 @@
+{
+ "name": "Environment and Behavior",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\environment-and-behavior.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "double-anonymized (雙向匿名審查)，來源：https://journals.sagepub.com/author-instructions/eab",
+   "why_flagged": "現有值為心理學家族範本套用的通用猜測（非該刊專屬確認），WO2 則引用該刊官方 author-instructions 頁面得出具體且相反的結論（雙向匿名 vs. 現有猜測的單盲）。因現有欄位並非嚴格定義下的《空白/佔位符》（有實質內容，即使是猜測性質），且兩者為實質矛盾而非單純補充細節，故不直接覆蓋，列為衝突交由人工核實 EAB 官方投稿頁面後裁定。"
+  }
+ ]
+}

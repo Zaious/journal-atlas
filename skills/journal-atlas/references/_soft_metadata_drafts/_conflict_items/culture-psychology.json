@@ -1,0 +1,24 @@
+{
+ "name": "Culture & Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\culture-and-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Sage default)",
+   "wo2_value": "公開審查(open review)——編輯部尋求至少兩位審稿人評估科學內容與呈現方式；作者與審稿人皆可要求維持匿名(非強制單盲或雙盲)",
+   "why_flagged": "現有條目寫「雙盲(default)」，WO2 查到的來源(author-instructions/cap)卻描述為「開放式審查、非強制單盲/雙盲」，屬實質矛盾而非補充細節，需人工回查 SAGE 該刊投稿須知頁面確認何者為準確版本，不應由本次比對逕自覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy > Leniency / Explicit permission gate",
+   "existing_value": "Leniency 4 (disclosure-based, no editor pre-approval gate); Explicit permission gate: No — disclosure-based",
+   "wo2_value": "leniency_1_5: 3; gate: conditional",
+   "why_flagged": "兩者皆引用同一 SAGE 平台層級 AI 政策來源，但對「寬容度評分」與「是否為條件式閘門」的判讀不同(4 分/無閘門 vs 3 分/conditional)，屬評分判斷差異而非新事實，且既有內容已非空白佔位，故不逕自修改，留供人工複核何者評分較貼近原始政策文字。"
+  },
+  {
+   "field": "Soft Metadata > Framing Requirements / Methodological Preferences (超出範圍，僅供參考)",
+   "existing_value": "Mandatory framing? Yes — cultural framing mandatory; Methodological Preferences 表列量化實驗接受度 2/5",
+   "wo2_value": "positioning.framing_required: 官方 Aims & Scope 明文要求，若納入實證證據須服務理論推進，且因心理現象本質為質性，實證證據被期待採用質性方法——純量化實證研究若缺乏理論建構貢獻則不符定位",
+   "why_flagged": "此為 WO2 針對主觀/定位類欄位(Framing Requirements、Methodological Preferences)的補充發現，依規則此類欄位不在本次可編輯範圍內，僅作為人工複核的補充參考，不建議直接編輯既有文字。"
+  }
+ ]
+}

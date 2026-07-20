@@ -38,7 +38,7 @@
 | **5-Year IF** | *(JCR — fill manually if available)* | |
 | **h-index** | 98 | 2026-05-16 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
-| **Acceptance Rate** | *(no numeric rate found)* — aggregators describe it as high/easy: LetPub rates "平均录用比例：容易" (average acceptance ratio: easy); a separate Chinese ranking-guide aggregator states "录用比例很高，投稿比较容易，但影响因子不算高" (very high acceptance ratio, comparatively easy to get accepted, though IF is not high). Directional aggregator characterization only, not a publisher-disclosed or first-hand figure. | WO2 draft, signal quality 3/5, 2026-07-13 |
+| **Acceptance Rate** | *(no numeric rate found)* — aggregators describe it as high/easy: LetPub rates "平均录用比例：容易" (average acceptance ratio: easy); a separate Chinese ranking-guide aggregator states "录用比例很高，投稿比较容易，但影响因子不算高" (very high acceptance ratio, comparatively easy to get accepted, though IF is not high). Directional aggregator characterization only, not a publisher-disclosed or first-hand figure. | AI-research draft, signal quality 3/5, 2026-07-13 |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.02 | 2026-05-16 |
@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | ~30.7 weeks (~7.1 months) per SciRev (small/undisclosed sample size; 1.0 avg review rounds, 2.0 reviewer reports per submission); LetPub separately reports avg review speed ">12周" (>12 weeks) | WO2 draft, signal quality 3/5 — approximate, figures from different aggregators broadly agree but are not first-hand accounts (2026-07-13) |
-| **Time to acceptance (total)** | ~5 months (review-to-acceptance cycle), per one Chinese ranking-guide aggregator summary | WO2 draft, signal quality 3/5 — single aggregator source, low confidence (2026-07-13) |
+| **Time to first review** | ~30.7 weeks (~7.1 months) per SciRev (small/undisclosed sample size; 1.0 avg review rounds, 2.0 reviewer reports per submission); LetPub separately reports avg review speed ">12周" (>12 weeks) | AI-research draft, signal quality 3/5 — approximate, figures from different aggregators broadly agree but are not first-hand accounts (2026-07-13) |
+| **Time to acceptance (total)** | ~5 months (review-to-acceptance cycle), per one Chinese ranking-guide aggregator summary | AI-research draft, signal quality 3/5 — single aggregator source, low confidence (2026-07-13) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -70,7 +70,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Springer default — varies by journal) |
+| **Type** | Single-blind — reviewers anonymous to authors, author identities known to reviewers. Manuscripts reviewed by 3 referees plus 1 Associate Editor; no article accepted without 3 complete and final reviews (per Springer JCSCW submission guidelines, reached via search-engine cache — direct fetch blocked by Springer IDP login wall). Independently corroborated by EUSSET's ECSCW journal-track pages (which feed papers into this same journal), which state explicitly: "The review process is single-blind." Verified live 2026-07-20: https://ecscw.eusset.eu/2025/index.php/journal-papers/ , https://ecscw.eusset.eu/2022/papers/ |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | No (per Springer default) |
 | **Typical R+R rounds** | *(pending)* |
@@ -80,7 +80,7 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | No (follows Springer Nature publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
+| **Explicit permission gate?** | No formal pre-approval gate — functionally a conditional-use policy: AI/LLM tools may be used without prior permission, but use must be disclosed in Methods/Acknowledgments; undisclosed use violates the policy |
 | **Leniency (1-5)** | 4 |
 | **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria. AI use must be disclosed in Materials/Methods or Acknowledgments. |
 | **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
@@ -220,15 +220,15 @@ Reviewers from CSCW / ECSCW community. Common demands: "Cooperative phenomena sp
 | **Data transparency requirement** | Flexible — qualitative pseudonymization |
 | **OPSEC compatibility** | High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** This is Springer Nature's PUBLISHER-WIDE policy (not a CSCW-journal-specific page — the journal's own submission-guidelines page redirected to a login wall and could not be directly verified). LLMs do not qualify for authorship (no accountability). Use of an LLM/AI tool in producing the manuscript must be disclosed in the Methods section (or equivalent). Exception: 'AI-assisted copy editing' (grammar/style/wording polish of human-written text, no autonomous content generation) does NOT need to be declared. AI-generated images are subject to a separate Springer image policy. No CSCW-journal-specific deviation from this default was found.
+**AI-research finding (policy):** This is Springer Nature's PUBLISHER-WIDE policy (not a CSCW-journal-specific page — the journal's own submission-guidelines page redirected to a login wall and could not be directly verified). LLMs do not qualify for authorship (no accountability). Use of an LLM/AI tool in producing the manuscript must be disclosed in the Methods section (or equivalent). Exception: 'AI-assisted copy editing' (grammar/style/wording polish of human-written text, no autonomous content generation) does NOT need to be declared. AI-generated images are subject to a separate Springer image policy. No CSCW-journal-specific deviation from this default was found.
 
-**WO2 positioning finding (what the journal accepts now):** *(not researched)*
+**AI-research finding (positioning — what the journal accepts now):** *(not researched)*
 
-**WO2 experiential finding:** LetPub rates '平均录用比例：容易' (average acceptance ratio: easy) and a separate Chinese ranking-guide aggregator describes the journal as low-IF and comparatively easy to get accepted ('录用比例很高，投稿比较容易，但影响因子不算高'). These are aggregator/ranking-guide characterizations, not individual first-hand submission narratives, so treat as directional only. 
+**AI-research finding (experiential):** LetPub rates '平均录用比例：容易' (average acceptance ratio: easy) and a separate Chinese ranking-guide aggregator describes the journal as low-IF and comparatively easy to get accepted ('录用比例很高，投稿比较容易，但影响因子不算高'). These are aggregator/ranking-guide characterizations, not individual first-hand submission narratives, so treat as directional only. 
 
 **Sources cited in this pass:**
 - https://link.springer.com/journal/10606/aims-and-scope (content reached only via search-engine cache/snippet, not direct fetch — Springer login wall blocked direct verification)
@@ -238,7 +238,7 @@ Reviewers from CSCW / ECSCW community. Common demands: "Cooperative phenomena sp
 - https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=1996&xuanxiangk_id=2
 - https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **positioning.accepts_now**: Could not retrieve actual 2024-2026 article titles: link.springer.com/journal/10606/articles and /volumes-and-issues both redirect to a Springer IDP login wall, and the EUSSET JCSCW digital-library mirror only points back to Springer without listing titles. Web search surfaced only aggregate stats (e.g. '20 articles published in 2025') and no verifiable individual titles from THIS journal (search hits for 'generative AI + CSCW' were mostly the separate ACM CSCW conference or the sister journal ijCSCL, not this Springer journal).
 - **experiential.reviewer_culture**: No first-hand forum discussion found in any mandated cross-language source: 0 results on muchong.com (小木虫), no first-hand submission-experience threads on zhihu (only aggregator/ranking-guide pages surfaced), 0 results on Reddit r/AskAcademia for this specific journal.
 - **experiential.desk_reject_pct**: SciRev's journal page has no populated desk-reject or acceptance-rate field for this title ('n/a').
@@ -295,6 +295,7 @@ Low for CSCW tradition authors. CSCW journal (Springer JCSCW) distinct from PACM
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy (Explicit permission gate? / Leniency). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + CSCW / ECSCW community editorial culture domain knowledge | @Zaious |

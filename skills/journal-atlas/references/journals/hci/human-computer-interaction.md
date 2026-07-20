@@ -77,8 +77,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Taylor & Francis publisher AI policy |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 (disclosure-based; AI cannot be listed as author) |
+| **Explicit permission gate?** | No pre-use approval required — conditional/disclosure-based: AI permitted for idea generation, language polishing, literature search/coding support if disclosed (tool name, version, purpose); prohibited for generating/manipulating research data, images, or figures; AI cannot be listed as author |
+| **Leniency (1-5)** | 4 (broad disclosure-based allowance for non-data/non-authorship uses, offset by firm categorical prohibitions — not a strict case-by-case permission gate, but not unconditional either) |
 | **Summary** | Follows T&F AI policy: disclosure required for AI use influencing research content; AI cannot be listed as author. |
 | **Source URL** | https://taylorandfrancis.com/our-policies/ai-policy/ |
 
@@ -225,15 +225,15 @@ Reviewers are drawn primarily from the international HCI research community — 
 | **Data transparency requirement** | Medium — encouraged, not mandatory |
 | **OPSEC compatibility** | Medium |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** No journal-specific AI policy page found for HHCI (hhci20) itself; this is the publisher-wide Taylor & Francis policy that applies by default. T&F allows generative AI for idea generation, language/grammar polishing, literature search/classification and coding support, but prohibits generating or manipulating research data/images/figures, prohibits listing AI as an author, and requires a mandatory disclosure statement (tool name, version, purpose) in the methods/acknowledgments section. Direct fetch of the T&F AI-policy page returned HTTP 403; content reconstructed from WebSearch result snippets, not read verbatim on-page.
+**AI-research finding (policy):** No journal-specific AI policy page found for HHCI (hhci20) itself; this is the publisher-wide Taylor & Francis policy that applies by default. T&F allows generative AI for idea generation, language/grammar polishing, literature search/classification and coding support, but prohibits generating or manipulating research data/images/figures, prohibits listing AI as an author, and requires a mandatory disclosure statement (tool name, version, purpose) in the methods/acknowledgments section. Direct fetch of the T&F AI-policy page returned HTTP 403; content reconstructed from WebSearch result snippets, not read verbatim on-page.
 
-**WO2 positioning finding (what the journal accepts now):** Confirmed recent (2025-2026) content in HHCI itself: (1) an empirical AI-trust/algorithmic-bias study — 'Communicating and combating algorithmic bias: effects of data diversity, labeler diversity, performance bias, and user feedback on AI trust' (Cheng Chen et al., 2025); (2) a methodological/critical debate thread — Crabtree (2025) 'H is for human and how (not) to evaluate qualitative research in HCI' followed by a January 2026 commentary 'Qualitative research as science.' This indicates the journal actively runs both empirical human-AI-interaction studies and theoretical/methodological critique pieces, consistent with its stated aims.
+**AI-research finding (positioning — what the journal accepts now):** Confirmed recent (2025-2026) content in HHCI itself: (1) an empirical AI-trust/algorithmic-bias study — 'Communicating and combating algorithmic bias: effects of data diversity, labeler diversity, performance bias, and user feedback on AI trust' (Cheng Chen et al., 2025); (2) a methodological/critical debate thread — Crabtree (2025) 'H is for human and how (not) to evaluate qualitative research in HCI' followed by a January 2026 commentary 'Qualitative research as science.' This indicates the journal actively runs both empirical human-AI-interaction studies and theoretical/methodological critique pieces, consistent with its stated aims.
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - http://muchong.com/bbs/journal.php?view=detail&jid=3297 (stale directory page, only 2007-2009 impact-factor data, no review-experience posts)
@@ -244,7 +244,7 @@ Reviewers are drawn primarily from the international HCI research community — 
 - https://www.scirev.org/journal/human-computer-interaction/ (0 reviews submitted — confirmed absence of first-hand data)
 - https://www.tandfonline.com/toc/hhci20/current (title-level via search snippet only, direct fetch 403)
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **peer_review.type (blind protocol)**: Journal's own about-page and instructions-for-authors PDF both returned HTTP 403 on fetch; only generic T&F/sister-journal boilerplate language surfaced via search, not a hhci20-specific statement of single- vs double-anonymous review.
 - **preprint.allowed**: Sherpa/Romeo lookup (v2.sherpa.ac.uk) returned HTTP 403; no alternate first-hand source for hhci20's preprint/self-archiving policy was found in the time available.
 - **experiential.review_time_months**: SciRev shows 0 submitted reviews for this journal (confirmed absence, not a search failure). The only numeric figure found ('>12 weeks') comes from a Chinese SCI-directory aggregator site (fabiao.com) that does not show individual first-hand submitter posts, so it does not meet the bar for a genuine experiential data point and was left out of the numeric field.
@@ -304,6 +304,7 @@ Low for classical-HCI empirical papers. Moderate for design-research or critical
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5) / Explicit permission gate?. | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + T&F default policies. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

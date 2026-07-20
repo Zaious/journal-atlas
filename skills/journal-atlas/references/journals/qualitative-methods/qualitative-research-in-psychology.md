@@ -65,7 +65,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | *(per T&F default — pending verification; commonly double-anonymized)* |
+| **Type** | Double-anonymized (double-blind) with initial editor screening — source: https://www.tandfonline.com/journals/uqrp20/about-this-journal |
 | **Transferable / Cascade?** | *(pending)* |
 | **Reviewer reports published?** | *(per T&F default — typically not published)* |
 | **Typical R+R rounds** | *(pending)* |
@@ -77,8 +77,8 @@
 |--------|--------|
 | **Has journal-specific AI policy?** | Follows Taylor & Francis publisher default (no journal-specific addendum identified in current Author Instructions) |
 | **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 (disclosure-based; AI cannot be listed as author) |
-| **Summary** | Follows T&F publisher AI policy: disclosure required for AI use; AI cannot be listed as author. The author instructions PDF currently indexed appears to be an older version (still uses email submission, no AI policy section). Recommend contacting editorial office to confirm latest version. |
+| **Leniency (1-5)** | 4 (disclosure-based for authors; AI cannot be listed as author; reviewers are separately barred from using generative AI to analyze/summarize submitted manuscripts or uploading unpublished manuscripts to AI tools) |
+| **Summary** | Follows T&F publisher AI policy: disclosure required for author AI use; AI cannot be listed as author; reviewers are prohibited from using generative AI tools to analyze or summarize submitted manuscripts, or from uploading unpublished manuscripts to AI tools. The author instructions PDF currently indexed appears to be an older version (still uses email submission, no AI policy section). Recommend contacting editorial office to confirm latest version. |
 | **Source URL** | https://taylorandfrancis.com/our-policies/ai-policy/ |
 
 ### Preprint Policy
@@ -212,15 +212,15 @@ Reviewers are drawn primarily from the qualitative-psychology community — stro
 | **Data transparency requirement** | Flexible — qualitative pseudonymization standard; no mandatory open data |
 | **OPSEC compatibility** | High — interpretive qualitative work does not require raw transcript exposure |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 適用出版社 Taylor & Francis 全社 AI 政策(非期刊專屬)。作者可於研究流程中使用生成式 AI/AI 輔助工具,但須有人為監督(human oversight)並透明揭露/聲明使用情形;AI 不得列為作者;同儕審查者不得用生成式 AI 分析或摘要投稿稿件,亦不得將未發表稿件上傳至 AI 工具。因此屬「有條件開放、需揭露」而非全禁或全開。
+**AI-research finding (policy):** 適用出版社 Taylor & Francis 全社 AI 政策(非期刊專屬)。作者可於研究流程中使用生成式 AI/AI 輔助工具,但須有人為監督(human oversight)並透明揭露/聲明使用情形;AI 不得列為作者;同儕審查者不得用生成式 AI 分析或摘要投稿稿件,亦不得將未發表稿件上傳至 AI 工具。因此屬「有條件開放、需揭露」而非全禁或全開。
 
-**WO2 positioning finding (what the journal accepts now):** 各心理學領域的質性研究,偏好推進方法論的創新與開創性工作;接受方法/分析技術本身的論文(方法論、教學與訓練)。小樣本可被接受,前提是資料充分、發現豐富且有正當理由。目前設有特刊「Interrogating Artificial Intelligence in Qualitative Research」,徵求關於 AI 對質性研究之本體論、認識論與方法論衝擊的稿件。
+**AI-research finding (positioning — what the journal accepts now):** 各心理學領域的質性研究,偏好推進方法論的創新與開創性工作;接受方法/分析技術本身的論文(方法論、教學與訓練)。小樣本可被接受,前提是資料充分、發現豐富且有正當理由。目前設有特刊「Interrogating Artificial Intelligence in Qualitative Research」,徵求關於 AI 對質性研究之本體論、認識論與方法論衝擊的稿件。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - SciRev (English): https://scirev.org/journal/qualitative-research-in-psychology/ — 頁面存在但 0 篇評論,無審稿時間/拒稿率/文化資料
@@ -229,7 +229,7 @@ Reviewers are drawn primarily from the qualitative-psychology community — stro
 - recent-topics-search: IPA theme-naming / thematic-analysis vs IPA methodological debates (2025)
 - special-issue-CFP: https://think.taylorandfrancis.com/special_issues/interrogating-artificial-intelligence-in-qualitative-research-2/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.review_time_months**: SciRev 0 reviews;小木虫/知乎/fabiaoji/Reddit 皆 0 討論串;無 first-hand 公開來源
 - **experiential.desk_reject_pct**: 無任何 first-hand 或官方拒稿率來源;第三方聚合站未列 acceptance rate
 - **experiential.acceptance_note**: 無投稿者經驗貼文可佐證
@@ -292,7 +292,8 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5). | @Zaious (AI-assisted) |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Format details derived from empirical sampling of recent publications (official PDF appears outdated). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

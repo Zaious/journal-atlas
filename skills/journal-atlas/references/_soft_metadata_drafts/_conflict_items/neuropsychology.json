@@ -1,0 +1,18 @@
+{
+ "name": "Neuropsychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuropsychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "masked (single-anonymous) review",
+   "why_flagged": "既有內容是依「APA 預設慣例」推論而來的假設值,並非針對本刊逐條查證;WO2 則引用本刊官方投稿頁(apa.org/pubs/journals/neu/submit)得出「單盲(masked)」的結論,兩者直接矛盾(雙盲 vs 單盲),需要人工去官方投稿頁核實,不宜自動覆蓋既有值。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency",
+   "existing_value": "Explicit permission gate?: No — disclosure-based; Leniency (1-5): 4",
+   "wo2_value": "gate: conditional; leniency_1_5: 3",
+   "why_flagged": "兩者依據同一份 APA generative-AI 政策頁面,但對「是否為許可關卡」與寬鬆程度的判讀不同(既有版本判定為純揭露制、寬鬆度4;WO2 判定為有條件關卡、寬鬆度3),屬於實質評分分歧,而非單純補充細節,建議人工複核後決定是否調整既有評分。WO2 的完整政策摘要文字已於本檔案 Soft Metadata > AI-Research Notes 段落收錄可供對照。"
+  }
+ ]
+}

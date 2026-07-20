@@ -50,8 +50,8 @@
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
 | **Time to first decision** | *(fill manually)* | |
-| **Time to first review** | ~1.8 months | WO2 finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
-| **Time to acceptance (total)** | ~3.5 months | WO2 finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
+| **Time to first review** | ~1.8 months | AI-research finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
+| **Time to acceptance (total)** | ~3.5 months | AI-research finding via SciRev self-reported submissions (n=5, very small sample — treat as indicative only) |
 | **Time to publication (after acceptance)** | *(fill manually)* | |
 
 ### Publication Frequency
@@ -79,11 +79,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No (follows SAGE publisher default) |
-| **Explicit permission gate?** | No — disclosure-based |
-| **Leniency (1-5)** | 4 |
-| **Summary** | Follows SAGE publisher AI policy: disclosure required if AI use affects research content. AI cannot be listed as author. Language polishing typically need not be disclosed. |
-| **Source URL** | https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy |
+| **Has journal-specific AI policy?** | Yes — QHR author instructions specify a disclosure requirement beyond the generic SAGE default (verified via SAGE QHR submission guidelines, 2026-07-20) |
+| **Explicit permission gate?** | No — disclosure-based, but scope is broad: covers any generative-AI use "formative of qualitative research" (idea conception, study design, data generation, analysis assistance, presenting findings), not just content-generation |
+| **Leniency (1-5)** | 3 |
+| **Summary** | SAGE baseline (disclosure if AI affects research content; AI cannot be author; language polishing need not be disclosed) plus a QHR-specific requirement: any generative-AI use in idea conception, study design, data generation, analysis, or presenting findings must be flagged in-text AND disclosed in Acknowledgements (technology name, access date, purpose). |
+| **Source URL** | https://journals.sagepub.com/author-instructions/qhr |
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
@@ -220,15 +220,15 @@ Reviewers from qualitative health research community — SAGE qualitative family
 | **Data transparency requirement** | Flexible — qualitative pseudonymization standard |
 | **OPSEC compatibility** | High |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** SAGE 出版社整體政策:LLM/生成式AI(如ChatGPT)可作為寫作生產力工具(構思結構、摘要、改寫、潤色),不得列為作者。QHR 期刊投稿須知進一步要求:凡使用生成式AI協助構思、研究設計、資料生成、分析協助或呈現研究發現等『構成質性研究要素』的活動,須在正文中明確標示,並在 Acknowledgements 中揭露所用技術名稱、存取時間與用途。允許使用範圍相對寬(涵蓋研究設計/分析輔助),但強制揭露,屬有條件開放而非全面禁止或無限制開放。
+**AI-research finding (policy):** SAGE 出版社整體政策:LLM/生成式AI(如ChatGPT)可作為寫作生產力工具(構思結構、摘要、改寫、潤色),不得列為作者。QHR 期刊投稿須知進一步要求:凡使用生成式AI協助構思、研究設計、資料生成、分析協助或呈現研究發現等『構成質性研究要素』的活動,須在正文中明確標示,並在 Acknowledgements 中揭露所用技術名稱、存取時間與用途。允許使用範圍相對寬(涵蓋研究設計/分析輔助),但強制揭露,屬有條件開放而非全面禁止或無限制開放。
 
-**WO2 positioning finding (what the journal accepts now):** 疾病/患病經驗(illness experience)、健康與就醫行為(health and health-seeking behaviors)、照顧者經驗、健康照護之社會文化組織、健康照護政策等議題的質性研究,強調 novelty、方法論嚴謹度與分析深度。
+**AI-research finding (positioning — what the journal accepts now):** 疾病/患病經驗(illness experience)、健康與就醫行為(health and health-seeking behaviors)、照顧者經驗、健康照護之社會文化組織、健康照護政策等議題的質性研究,強調 novelty、方法論嚴謹度與分析深度。
 
-**WO2 experiential finding:** *(not researched)* 
+**AI-research finding (experiential):** *(not researched)* 
 
 **Sources cited in this pass:**
 - https://journals.sagepub.com/author-instructions/qhr
@@ -237,7 +237,7 @@ Reviewers from qualitative health research community — SAGE qualitative family
 - https://scirev.org/journal/qualitative-health-research/
 - https://www.ifabiao.com/sci/10497323/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: SciRev 該期刊頁面 acceptance rate 欄位標示為 n/a,且未找到任何論壇/社群提供具體退稿率數字,故留空。
 - **experiential.acceptance_note**: WebSearch 摘要曾聲稱 SAGE 官方頁面列出常見退稿原因(scope不符、novelty不足、缺乏詮釋深度、倫理問題),但直接 WebFetch 該 uk.sagepub.com 期刊頁面時未能在頁面內容中復現此段文字,來源無法一次性驗證,故不採信、留空,避免誤植未經核實內容為事實。
 - **experiential.reviewer_culture**: 跨語言查核(小木虫 muchong.com、知乎 zhihu、發表記/ifabiao 等中文學術論壇、Reddit r/AskAcademia)均未找到針對本刊審稿人風格/文化的第一手心得貼文,僅有期刊代辦/資訊聚合站的制式介紹(影響因子、分區等),不構成審稿文化的具體證據,依規則留空。
@@ -294,6 +294,6 @@ Low for qualitative health tradition authors. Sustained reflexive engagement exp
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE publisher + Morse / Charmaz / IIQM qualitative health research editorial culture domain knowledge | @Zaious |

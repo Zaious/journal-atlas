@@ -1,0 +1,12 @@
+{
+ "name": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-learning-memory-and-cognition.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5)",
+   "existing_value": "Explicit permission gate?: No — disclosure-based ; Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\" ; leniency_1_5: 3",
+   "why_flagged": "兩邊都是根據同一份APA出版社通用生成式AI政策頁面得出結論，但既有條目判定為「否，僅屬揭露制」且寬容度給4分，WO2結構化欄位卻判定為「conditional（條件式）」且寬容度給3分——這是對同一份原始政策的不同解讀（是否等同於「需要許可」），非單純細節補充，建議人工複核以決定哪個描述更準確，故未逕行覆蓋既有內容。"
+  }
+ ]
+}

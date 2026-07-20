@@ -220,15 +220,15 @@ Reviewers from I/O psychology research community — SIOP-affiliated faculty and
 | **Data transparency requirement** | High |
 | **OPSEC compatibility** | Medium — organizational data anonymization required |
 
-### AI-Research Notes (WO2 supplement, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13)
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
 
-**WO2 AI policy finding:** 找不到 Personnel Psychology 期刊專屬的 AI 政策頁（forauthors.html 回傳 402 無法直接抓取）。適用的是 Wiley 出版社通用政策：AI 不得列為作者/共同作者，僅能用於語言潤飾、結構調整、文獻分類等輔助工作，且須在 Methods 或 Acknowledgements 中「透明揭露」使用細節；基礎編輯工具豁免揭露。未見到針對本刊的加嚴或放寬條款，故標記為「僅出版社層級政策，非刊物專屬證實」。
+**AI-research finding (policy):** 找不到 Personnel Psychology 期刊專屬的 AI 政策頁（forauthors.html 回傳 402 無法直接抓取）。適用的是 Wiley 出版社通用政策：AI 不得列為作者/共同作者，僅能用於語言潤飾、結構調整、文獻分類等輔助工作，且須在 Methods 或 Acknowledgements 中「透明揭露」使用細節；基礎編輯工具豁免揭露。未見到針對本刊的加嚴或放寬條款，故標記為「僅出版社層級政策，非刊物專屬證實」。
 
-**WO2 positioning finding (what the journal accepts now):** 涵蓋工業組織心理學(I-O)、人力資源管理、組織行為全領域：職務與工作設計、選才與評估、訓練發展、績效管理、薪酬、職涯、工作家庭議題、領導、團隊、員工健康福祉、DEI、科技與工作、跨文化、策略性人資系統。接受實證研究、理論建構、後設分析(meta-analysis)、文獻回顧，強調「meaningfully inform real-world working lives」（需真實世界實務意涵）。近期(2025-2026)中國學者發表主題含：職場八卦(work gossip)、團隊策略、領導、人資管理系統(見 LetPub 列表)。
+**AI-research finding (positioning — what the journal accepts now):** 涵蓋工業組織心理學(I-O)、人力資源管理、組織行為全領域：職務與工作設計、選才與評估、訓練發展、績效管理、薪酬、職涯、工作家庭議題、領導、團隊、員工健康福祉、DEI、科技與工作、跨文化、策略性人資系統。接受實證研究、理論建構、後設分析(meta-analysis)、文獻回顧，強調「meaningfully inform real-world working lives」（需真實世界實務意涵）。近期(2025-2026)中國學者發表主題含：職場八卦(work gossip)、團隊策略、領導、人資管理系統(見 LetPub 列表)。
 
-**WO2 experiential finding:** SciRev 樣本(3筆)中至少1筆最終被拒（「審稿意見具攻擊性但編輯優秀」的評論）；未找到可靠的整體接受率或退稿率數字。曾見網路二手來源聲稱「4%接受率」，但無法在原始頁面(Editage/manusights)驗證出處，故不採用、視為不可信。 SciRev 單一評論提及：Associate Editor 表現優異，但審稿人意見「aggressive without constructive suggestions」（積極/嚴厲但缺乏建設性）——樣本僅1筆，不足以代表整體文化。小木虫、知乎、Reddit r/AskAcademia 均未搜到針對本刊的專門討論串。
+**AI-research finding (experiential):** SciRev 樣本(3筆)中至少1筆最終被拒（「審稿意見具攻擊性但編輯優秀」的評論）；未找到可靠的整體接受率或退稿率數字。曾見網路二手來源聲稱「4%接受率」，但無法在原始頁面(Editage/manusights)驗證出處，故不採用、視為不可信。 SciRev 單一評論提及：Associate Editor 表現優異，但審稿人意見「aggressive without constructive suggestions」（積極/嚴厲但缺乏建設性）——樣本僅1筆，不足以代表整體文化。小木虫、知乎、Reddit r/AskAcademia 均未搜到針對本刊的專門討論串。
 
 **Sources cited in this pass:**
 - https://letpub.com.cn/index.php?journalid=11422&page=journalapp&view=detail
@@ -237,7 +237,7 @@ Reviewers from I/O psychology research community — SIOP-affiliated faculty and
 - https://onlinelibrary.wiley.com/pb-assets/assets/15405885/Generative%20AI%20Policy_September%202023-1695231878293.pdf
 - https://scirev.org/journal/personnel-psychology/
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 - **ai_policy.summary/gate**: Wiley 期刊專屬頁 (onlinelibrary.wiley.com/page/journal/17446570/homepage/forauthors.html) 回傳 HTTP 402，無法直接驗證是否有本刊特殊AI條款，僅能引用 Wiley 出版社通用政策 PDF，故 signal_quality 降為 2。
 - **preprint.allowed**: 同上，forauthors.html 402 無法抓取，找不到本刊專屬 preprint 頁面原文，只有二手網站間接推論，未直接引用官方原文，故留為不確定描述而非明確 yes/no。
 - **experiential.desk_reject_pct**: SciRev 該欄位標示 n/a（編輯未填），LetPub 未提供具體退稿率數字，小木虫/知乎/Reddit 均無討論串命中，因此留空。
@@ -299,6 +299,6 @@ Low for I/O empirical tradition authors. Wiley editorial cycle moderate; meta-an
 
 | Date | Change | By |
 |------|--------|----|
-| 2026-07-13 | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
+| 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher pages + SIOP-affiliated I/O editorial culture domain knowledge | @Zaious |

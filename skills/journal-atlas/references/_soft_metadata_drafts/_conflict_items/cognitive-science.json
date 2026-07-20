@@ -1,0 +1,18 @@
+{
+ "name": "Cognitive Science",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cognitive-science.md",
+ "conflicts": [
+  {
+   "field": "Review Cycle Time > Time to first decision",
+   "existing_value": "*(fill manually)*",
+   "wo2_value": "「總處理時間(至有決議稿件)約 4.7 個月」(SciRev 樣本, n=5)",
+   "why_flagged": "WO2 只給了兩個時間點:「首輪審查約3.0個月」(已對應填入 Time to first review)與「總處理時間(至有決議稿件)約4.7個月」。後者的語意可能指「Time to first decision」(拿到任何決議的時間,含修訂輪次前的第一次決議)或「Time to acceptance (total)」(直到最終被接受為止的總時間,平均審查輪數1.7輪意味著可能歷經修訂),兩者定義不同且無法從原文明確判斷究竟對應哪一列,為避免誤植到錯誤欄位,留給人工判斷後再決定填入哪一列(或兩列都不填)。"
+  },
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per Wiley default — varies by journal)",
+   "wo2_value": "double-anonymized (雙盲) peer review — 作者需自行匿名化稿件並另附 title page 檔案(來源:期刊本身 forauthors.html,非僅 Wiley 通用預設頁)",
+   "why_flagged": "此欄位並非佔位符(已有具體內容「Double-anonymized」),依規則不可覆蓋。但WO2找到的來源是本刊自己的 forauthors.html 頁面(而非泛用 Wiley 預設頁),等於把既有推測「per Wiley default — varies by journal」升級為期刊專屬確認證據,且補充了「作者需自行匿名化並另附 title page」這個實務細節。建議人工評估是否要把來源等級從 Tier 2 估計升級為 Tier 1(已驗證),但本次不直接編輯此欄位。"
+  }
+ ]
+}

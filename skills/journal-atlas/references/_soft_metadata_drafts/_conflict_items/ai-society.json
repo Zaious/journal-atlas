@@ -1,0 +1,12 @@
+{
+ "name": "AI & Society",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ai-and-society.md",
+ "conflicts": [
+  {
+   "field": "Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate",
+   "existing_value": "Leniency: 4；Explicit permission gate?: No — disclosure-based",
+   "wo2_value": "leniency_1_5: 3；gate: \"conditional\"",
+   "why_flagged": "現有 AI Policy 欄位已有具體實質內容（非佔位符），故依規則不可直接覆蓋編輯；但 WO2 對同一政策給出的寬容度數值（3）與 gate 描述（conditional）與現有值（4／disclosure-based=No）存在實質落差，非僅補充細節，建議人工複核何者較準確。註：此 WO2 原始文字其實已於檔案內 Soft Metadata > AI-Research Notes（WO2 supplement, 2026-07-13）區塊逐字引用為補充註記，此處僅是把該數值落差明確標記出來供覆核，而非新增內容。"
+  }
+ ]
+}

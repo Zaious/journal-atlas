@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Applied Psychology",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-applied-psychology.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per APA default)",
+   "wo2_value": "Masked (single-anonymized) peer review — author identity concealed from reviewers only (not mutual anonymity); manuscripts that pass desk screen go to 2-3 reviewers. Source: https://www.apa.org/pubs/journals/apl/submit",
+   "why_flagged": "現有欄位已有具體內容（雙盲），非佔位符，故不可直接覆蓋；但 WO2 直接引用 JAP 投稿頁面得出「單盲（作者對審稿人匿名，但審稿人身分不隱藏）」，與現有的「雙盲」屬實質矛盾而非僅補充細節，需要人工核對 JAP 官方投稿頁面以確認實際審稿制度類型。"
+  },
+  {
+   "field": "Metrics > Acceptance Rate / Desk Rejection Rate",
+   "existing_value": "*(fill manually if known)*",
+   "wo2_value": "null / 無法找到任何來源（SciRev 與 LetPub 頁面此欄位皆為空，僅一則質化軼事：fabiaoji.com 單一中國作者 2021 投稿被拒，原因為研究設計缺陷）",
+   "why_flagged": "雖然是可填空的佔位符，但 WO2 本身也明確表示查無具體數字，因此沒有可用於填入表格的實質數值，僅有質化印象（審稿人專業、被拒因研究設計硬傷），列為 conflicts 供人工留意而非直接編輯 Metrics 表格。"
+  }
+ ]
+}

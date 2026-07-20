@@ -1,0 +1,18 @@
+{
+ "name": "Design Issues",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\design-issues.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Double-anonymized (per MIT Press default — varies by journal)",
+   "wo2_value": "Public submission guidelines only describe an editor/board-mediated confidential three-stage process (new submission → reviewer feedback → revised manuscript, monthly Editorial Board meetings); do NOT explicitly state single-blind vs double-blind vs open identity disclosure. WO2 explicitly lists 'peer_review.type (blind status)' as unconfirmed.",
+   "why_flagged": "現有欄位已有具體內容(非佔位符),按規則不可覆蓋,但 WO2 獨立研究找不到任何公開來源證實「雙盲」這個具體說法,建議人工重新查證 Design Issues 是否真的採雙盲審稿,或現有斷言的來源為何。"
+  },
+  {
+   "field": "Policies > AI Policy (Explicit permission gate / Leniency)",
+   "existing_value": "Explicit permission gate? No — disclosure-based; Leniency (1-5): 4",
+   "wo2_value": "gate: \"conditional\"; leniency_1_5: 3 — 依 MIT Press 出版社層級通用政策(揭露即可,非全面禁止),同一來源 direct.mit.edu/desi/pages/submission-guidelines 與 direct.mit.edu/journals/pages/publication-ethics",
+   "why_flagged": "既有欄位已有具體內容,定性描述(disclosure-based ≈ conditional)大致一致,但寬鬆度評分不同(4 vs 3),屬於同一政策的細微評分差異而非硬性矛盾,留給人工判斷是否需微調;另注意此 WO2 內容已於 2026-07-13 以「AI-Research Notes (WO2 supplement)」補充說明的形式併入本檔案 Soft Metadata 區塊(未覆蓋既有 Tier 評估),故本次審閱視為既有補充的重複確認,非新發現。"
+  }
+ ]
+}

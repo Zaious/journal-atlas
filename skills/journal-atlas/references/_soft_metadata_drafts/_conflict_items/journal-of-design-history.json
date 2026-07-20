@@ -1,0 +1,18 @@
+{
+ "name": "Journal of Design History",
+ "md_path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\journal-of-design-history.md",
+ "conflicts": [
+  {
+   "field": "Policies > Peer Review > Type",
+   "existing_value": "Single-blind (typical journal default; check publisher)",
+   "wo2_value": "double-anonymized (double-blind) peer review; at least two independent referees per manuscript (source: https://academic.oup.com/jdh/pages/general_instructions)",
+   "why_flagged": "現有欄位並非空白佔位符,已有具體內容(Single-blind),但屬於通用家族預設猜測而非期刊實查;WO2 直接引用該刊 General Instructions 頁面查得為 double-anonymized(double-blind)審查,兩者在審查類型這個核心事實上直接矛盾,非僅細節補充,需人工核實官方頁面後再決定是否更正,不宜自動覆蓋。"
+  },
+  {
+   "field": "Policies > AI Policy > Explicit permission gate? / Leniency (1-5) / Source URL",
+   "existing_value": "Explicit permission gate? No — disclosure-based | Leniency (1-5): 3-4 | Source URL: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/ai-policy",
+   "wo2_value": "gate: conditional (WO2 摘要指出 AI 生成內容需經 OUP 書面許可,必要時須以人工內容替換) | leniency_1_5: 2 | source_url: https://academic.oup.com/pages/for-authors/books/author-use-of-artificial-intelligence",
+   "why_flagged": "現有欄位已有具體內容而非佔位符,但 WO2 查證發現 JDH 專屬 AI 政策頁(academic.oup.com/jdh/pages/ai-policy)回傳 404,期刊本身並無獨立頁面,現有 Source URL 可能已失效或本來就非期刊專屬;且 WO2 引用的 OUP 出版社通用政策文字顯示對 AI 生成內容有『需書面許可』的門檻(偏向 conditional/permission-gated),與現有『No — disclosure-based』的定性存在實質分歧,寬容度評分也不同(2 vs 3-4)。這屬於對同一欄位的不同結論,而非單純補充細節,故列為衝突交由人工核實,不做覆蓋。"
+  }
+ ]
+}
