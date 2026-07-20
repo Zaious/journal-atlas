@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
 Additive-only patch: for the 114 journals that already have a curated .md entry
-AND also got a WO2 soft-metadata research draft, insert a new "AI-Research Notes
-(WO2 supplement)" subsection under the existing "## Soft Metadata" section, and
+AND also got a AI-research soft-metadata research draft, insert a new "AI-Research Notes
+(AI-research supplement)" subsection under the existing "## Soft Metadata" section, and
 append one Changelog row. Never touches existing Tier 1 / Tier 2 content — this
 is deliberately conservative (see GAPS_AND_NOTES.md "Not yet done").
 
-Idempotent: skips files that already have the WO2-supplement marker.
+Idempotent: skips files that already have the AI-research-supplement marker.
 
 Usage:
     python patch_existing_entries.py --dry-run [--sample 3]
@@ -24,8 +24,8 @@ SKILL_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".."
 JOURNALS_DIR = os.path.join(SKILL_ROOT, "references", "journals")
 CONSOLIDATED = os.path.join(SKILL_ROOT, "references", "_soft_metadata_drafts", "consolidated_all.json")
 
-MARKER = "AI-Research Notes (WO2 supplement"
-PIPELINE_GENERATED_MARKER = "AI-researched entry (WO2 pipeline)"  # written by merge_soft_metadata.py — skip, not a hand-curated entry to supplement
+MARKER = "AI-Research Notes (supplementary AI research"
+PIPELINE_GENERATED_MARKER = "AI-researched entry (AI-research pipeline)"  # written by merge_soft_metadata.py — skip, not a hand-curated entry to supplement
 
 
 def normissn(s):
@@ -72,18 +72,18 @@ def build_supplement_block(e: dict, today: str) -> str:
     return f"""
 ### {MARKER}, {today})
 
-> Added by `scripts/spine/patch_existing_entries.py` as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall WO2 `signal_quality` for this pass: **{fmt(sq, "0")}/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **{fmt(sq, "0")}/5**.
 
-**WO2 AI policy finding:** {fmt(ai.get("summary"))}
+**AI-research finding (policy):** {fmt(ai.get("summary"))}
 
-**WO2 positioning finding (what the journal accepts now):** {fmt(pos.get("accepts_now"))}
+**AI-research finding (positioning — what the journal accepts now):** {fmt(pos.get("accepts_now"))}
 
-**WO2 experiential finding:** {fmt(exp.get("acceptance_note"))} {fmt(exp.get("reviewer_culture"), "")}
+**AI-research finding (experiential):** {fmt(exp.get("acceptance_note"))} {fmt(exp.get("reviewer_culture"), "")}
 
 **Sources cited in this pass:**
 {sources_md}
 
-**Fields WO2 could not find evidence for:**
+**Fields no evidence was found for:**
 {blanks_md}
 
 **Cross-language checks performed:**
@@ -114,7 +114,7 @@ def patch_file(path: str, e: dict, today: str) -> str | None:
         m = re.search(r"\|[-\s|]+\|\n", after)
         if m:
             insert_at = idx + m.end()
-            new_row = f"| {today} | Added WO2 AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |\n"
+            new_row = f"| {today} | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |\n"
             patched = patched[:insert_at] + new_row + patched[insert_at:]
     return patched
 
@@ -138,7 +138,7 @@ def main():
         if issn and issn in existing:
             matches.append((existing[issn], e))
 
-    print(f"{len(matches)} existing files matched to a WO2 draft", file=sys.stderr)
+    print(f"{len(matches)} existing files matched to a AI-research draft", file=sys.stderr)
 
     patched_count, skipped_already, skipped_pipeline, skipped_no_anchor = 0, 0, 0, 0
     previews = []

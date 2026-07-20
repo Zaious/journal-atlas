@@ -138,7 +138,7 @@ Before producing the final recommendation in Step 5, verify ALL of the following
 - [ ] **Read the actual journal file** for every journal you plan to recommend (not just metadata you remember)
 - [ ] **Every evidence citation** has a specific source in the journal file (e.g. "48 articles 2020-2025" from Subject Density, not vague claims)
 - [ ] **Hard constraints applied correctly** — especially the 4-case APC logic for hybrid OA (subscription vs OA path)
-- [ ] **Tier status checked** — for Skeleton or Tier 2 (community-estimate) entries, you flagged the uncertainty to the user
+- [ ] **Tier status checked** — for Skeleton, Tier 2 (community-estimate), or AI-Researched entries, you flagged the uncertainty to the user (for AI-Researched, note the per-field `signal_quality` and any honest blanks)
 - [ ] **Fallback chain considered** — at least the top recommendation's Rejection Fallback Chain section was read
 - [ ] **At least one eliminated journal listed** with reason (transparency over what was considered)
 - [ ] **No fabrication** — if Soft Metadata is `*(pending)*` or `*(fill manually)*`, you did NOT fill in a guess from training data
@@ -196,6 +196,27 @@ When the user asks a **structured deterministic question** (not a "fit my paper 
 4. Add a one-line summary above the table:
    *"Found N journals matching: [filter description]"*
 5. If the user follows up with "now recommend the best one for my paper" — switch to the full 6-step workflow with those journals as the candidate set
+
+### Breadth queries — beyond the 399 curated entries
+
+`query_journals.py` only sees the 399 curated `references/journals/**/*.md` files
+(soft-metadata depth). For questions that need to reach the full ~167k-journal
+spine (structural facts only — no soft metadata), use `scripts/query_spine.py`
+instead:
+
+| Query phrasing | Use `query_spine.py` flags |
+|----------------|------------------------------|
+| "Is journal X even in our data?" | `--issn <issn>` |
+| "CAS Zone 1/2 journals near this topic we haven't curated yet" | `--topic-contains "<keyword>" --cas-zone 1,2 --uncurated-only` |
+| "JUFO level 2-3 journals from this publisher" | `--jufo-level 2,3 --publisher <name>` |
+| "Any journal with a retraction history" | `--max-retractions 0` (invert manually, or eyeball `retraction_count` in output) |
+
+Each row is flagged `in_curated_kb` (and `curated_path` in JSON) — when true,
+follow up by reading that file for the soft-metadata depth this script does
+not have. `journal_spine.db` is git-ignored and must be built locally
+(`scripts/spine/README.md`); the script fails with a clear message, not a
+crash, if it's missing — tell the user to build it rather than guessing at
+spine data from training knowledge.
 
 ### Why this matters
 

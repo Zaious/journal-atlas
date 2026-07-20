@@ -412,9 +412,14 @@ def _extract_review_time(content: str) -> Optional[float]:
 
 
 def _extract_subsection(content: str, name: str) -> Optional[str]:
-    """Extract content under an H2 or H3 section by name."""
+    """Extract content under an H2 or H3 section by name.
+
+    Matches headings with a trailing suffix too, e.g. "### Top Topics
+    (last 5 years)" for a lookup of "Top Topics" — TEMPLATE.md's actual
+    convention includes such suffixes on several headings.
+    """
     pattern = re.compile(
-        rf"^#{{2,3}} +{re.escape(name)}\s*$(.*?)(?=^#{{2,3}} +|\Z)",
+        rf"^#{{2,3}} +{re.escape(name)}\b[^\n]*\n(.*?)(?=^#{{2,3}} +|\Z)",
         re.MULTILINE | re.DOTALL,
     )
     match = pattern.search(content)

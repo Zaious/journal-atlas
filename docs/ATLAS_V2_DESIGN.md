@@ -231,8 +231,10 @@ Verdicts from 2026-07-13 verification workflows. 🟢 bake-in + license-compatib
 - **Phase 3 — Experiential (demand-tiered).** Facts-only pipeline: SciRev +
   Chinese forums fact extraction at query-time; `signal_quality` scoring;
   honest-blank enforcement.
-- **Phase 4 — Query surface.** Point the skill at the spine for breadth
-  (filter/rank across all journals) and curated markdown for depth.
+- **Phase 4 — Query surface (done, 2026-07-20).** Point the skill at the spine
+  for breadth (filter/rank across all journals) and curated markdown for
+  depth. → `scripts/query_spine.py`, cross-referenced against the curated set
+  via `in_curated_kb`; SKILL.md's Query Mode routes breadth questions there.
 - **Phase 5 — Governance & release.** Soft-metadata dispute/rebuttal mechanism;
   OPSEC de-fingerprinting of examples; push the pending license commit; make the
   GitHub repo public.
