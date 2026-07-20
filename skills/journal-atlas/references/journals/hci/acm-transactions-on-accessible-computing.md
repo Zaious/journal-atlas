@@ -93,9 +93,11 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid OA |
-| **APC (if OA chosen)** | ~$700-2,500 (ACM Open) |
-| **Read & Publish agreements** | *(publisher-level; check institutional library)* |
+| **Model** | Full OA (as of 2026-01-01) — ACM converted all publications (journals, magazines, conference proceedings, books) to 100% Open Access, replacing the prior Hybrid/ACM Open model; a "Pay-to-Read" to "Pay-to-Publish" shift |
+| **APC (if OA chosen)** | Standard 2026 journal APC ~$1,450; ACM is subsidizing a discounted transitional rate of $250 (ACM member) / $350 (non-member) for 2026, or $0 if the author's institution has a Read & Publish agreement |
+| **Read & Publish agreements** | *(publisher-level; check institutional library — waives the APC where in place)* |
+
+(Updated 2026-07-20 — corrected during the conflict-resolution pass; independently confirmed via ACM's own SIG bulletins (SIGGRAPH, SIGCHI/DIS, HRI) and independent tech-press coverage, not just a single source. This was originally flagged out of scope for that pass since Open Access wasn't in its editing remit — added as a direct follow-up.)
 
 ---
 
@@ -275,6 +277,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-20 | Open Access table updated: Model Hybrid OA → Full OA, APC ~$700-2,500 → ~$1,450 standard / $250-$350 transitional 2026 rate. Reflects ACM's 2026-01-01 full-OA conversion of all publications; independently confirmed via multiple ACM SIG sources, not just one. Follow-up to the conflict-resolution pass below, which had flagged this as confirmed but out of scope. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Summary / Source URL). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

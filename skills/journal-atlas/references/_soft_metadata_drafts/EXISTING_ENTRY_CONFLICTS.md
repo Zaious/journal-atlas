@@ -50,10 +50,10 @@ disagreement is a rating-scale calibration judgment call with no fact to
 verify. Each entry's own file retains the original finding in its
 "AI-Research Notes" supplement for reference.
 
-1. **ACM Transactions on Accessible Computing (TACCESS)** — Open Access
-   Model/APC: independently confirmed ACM's 2026-01-01 full-OA transition
-   applies here too, but Open Access is out of scope for this pass; needs a
-   follow-up edit to the Open Access table.
+1. ~~**ACM Transactions on Accessible Computing (TACCESS)** — Open Access
+   Model/APC~~ — **done 2026-07-20**: Open Access table updated to Full OA
+   / ~$1,450 standard APC (2026 transitional rate $250-$350), per ACM's
+   2026-01-01 full-OA conversion.
 2. **Alzheimer's & Dementia** — Soft Metadata > Framing Requirements / Best
    Suited For: positioning judgment (bench-to-bedside framing, AI/digital
    health scope), out of scope.
