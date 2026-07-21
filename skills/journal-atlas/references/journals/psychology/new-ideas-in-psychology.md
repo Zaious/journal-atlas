@@ -205,7 +205,7 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 |----------------|---------------|----------|
 | BDSM / Kink | Untested-Low | 0 articles 2015–2025 (per OpenAlex BDSM keyword search, ISSN 0732-118X) |
 | Drug use | Low-Medium | Rare; published only when framed as cognitive / process research |
-| Sex work | Untested | No articles in past decade (per OpenAlex topic filter) |
+| Sex work | Low | 1 article(s) found (OpenAlex keyword search, 2021-2026, 240 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Suicide / Self-harm | Medium | Published with cognitive-theoretical framing; standard reporting guidelines expected |
 | Political extremism | Low | Rare; framed as theoretical-cognitive analysis if published |
 | Neurodiversity / Autism | High | Recent high-citation articles (e.g., autistic camouflaging 2022); welcomed as new theoretical territory |
@@ -304,6 +304,7 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Has journal-specific AI policy?. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. AI Policy notably restrictive on AI-generated images; 24-month AAM embargo flagged as a significant departure from Sage publisher norms. | @Zaious |

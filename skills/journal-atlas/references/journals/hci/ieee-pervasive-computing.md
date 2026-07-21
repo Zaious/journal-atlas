@@ -163,10 +163,10 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 3 | Family norm |
 | Qualitative interviews | 5 | Family norm |
-| Autoethnography | 4 | Family norm |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 383 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 4 | Family norm |
 | Mixed methods | 5 | Family norm |
-| Meta-analysis | 3 | Family norm |
+| Meta-analysis | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 383 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 
 ### Voice & Style
 
@@ -277,5 +277,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

@@ -194,7 +194,7 @@ Reviewers are drawn primarily from the phenomenology and 4E-cognition communitie
 |----------------|---------------|----------|
 | BDSM / Kink | Medium | 3 articles 2015–2025 (per OpenAlex BDSM keyword search, ISSN 1568-7759); precedent for phenomenology-of-body-practice papers |
 | Drug use | Medium-High | Phenomenology of altered states (psychedelics, addiction) is a published topic |
-| Sex work | Untested | Adjacent to sexuality-phenomenology scope but not directly published |
+| Sex work | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 422 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Suicide / Self-harm | Medium | Published with phenomenological-clinical framing |
 | Political extremism | Low | Rare; phenomenology of radicalization occasionally appears |
 | Disability / Neurodiversity | High | Strong precedent (autism phenomenology, BPD inner-speech papers, etc.) |
@@ -288,6 +288,7 @@ Low for well-framed phenomenology-cognitive-science manuscripts. Authors typical
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5) / Explicit permission gate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |

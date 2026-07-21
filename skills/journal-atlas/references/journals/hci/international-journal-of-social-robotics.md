@@ -176,7 +176,7 @@
 | Autoethnography | 2 | Occasional |
 | Theoretical / Conceptual | 4 | Robot ethics + design theory welcomed |
 | Mixed methods | 5 | Distinctive strength |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 610 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Robot deployment / Field studies | 5 | Distinctive strength |
 
 ### Voice & Style
@@ -297,6 +297,7 @@ Low for HRI tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Meta-analysis 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing Tier-2 entry and AI-research supplement: (1) Peer Review Type corrected "Double-anonymized (Springer default guess)" → "Single-blind", verified live against the journal's own Submission Guidelines page text ("This journal follows a single-blind reviewing procedure"); (2) AI Policy gate reworded "No — disclosure-based" → "Conditional" and Leniency 4 → 3, harmonizing wording/scoring with the same Springer Nature AI policy as applied to other journals in this KB (e.g. Nature Machine Intelligence). See conflict-resolution pass. | @Zaious (via conflict-resolution agent) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

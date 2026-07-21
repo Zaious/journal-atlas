@@ -203,8 +203,8 @@ Reviewers are drawn primarily from the International Society for Theoretical Psy
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
 | BDSM / Kink | Medium | Adjacent topic clusters (sexuality, power, Foucauldian ethics) are well-represented; direct BDSM-keyword articles rare in past 10 years (per OpenAlex keyword search, ISSN 0959-3543) |
-| Drug use | Untested | No prominent articles in past 10 years (per OpenAlex topic filter) |
-| Sex work | Untested | Adjacent to journal's critical-theory scope but not directly published |
+| Drug use | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 253 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Sex work | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 253 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Suicide / Self-harm | Medium | Published with clinical-critical framing; reporting-guideline compliance expected (community estimate) |
 | Political extremism | Medium | Published when framed as discourse analysis or political-psychology critique; ~10 articles 2015–2025 (per OpenAlex political-discourse topic) |
 | Decolonial / posthumanist | High | Frequent special-issue topic; explicit editorial welcome for post-Western frameworks |
@@ -294,6 +294,7 @@ Minimal for theoretically-oriented manuscripts. Empirical authors typically inve
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 2 field(s) with OpenAlex keyword-count evidence (Drug use, Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Metrics > Review Cycle Time > Time to first decision; Metrics > Review Cycle Time > Time to acceptance (total). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Sage Author Instructions. Soft Metadata and Strategic Notes reserved for community contributions. | @Zaious |

@@ -173,10 +173,10 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 4 | Common — protocol analysis, experimental design studies |
 | Qualitative interviews | 4 | Welcomed in design research |
-| Autoethnography | 3 | Design-research-through-practice tradition accepted |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 189 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 4 | Design theory welcomed |
 | Mixed methods | 5 | Common pattern |
-| Meta-analysis | 3 | Welcomed |
+| Meta-analysis | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 189 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Protocol analysis | 5 | Distinctive Design Studies strength |
 | Research-through-design | 4 | Welcomed |
 
@@ -295,6 +295,7 @@ Low for design research tradition authors.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Elsevier publisher + DRS design research editorial culture domain knowledge | @Zaious |

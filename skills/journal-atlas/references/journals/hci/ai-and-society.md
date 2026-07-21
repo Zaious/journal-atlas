@@ -176,7 +176,7 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 2 | Accepted when central to AI ethics empirical work |
 | Qualitative interviews | 4 | STS-style empirical work welcomed |
-| Autoethnography | 4 | Reflective and positionality-rich work welcomed |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 1908 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 5 | Core article type — philosophy of AI, ethics, STS theory |
 | Mixed methods | 4 | Common |
 | Meta-analysis | 2 | Uncommon |
@@ -306,6 +306,7 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |

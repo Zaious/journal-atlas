@@ -165,10 +165,10 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 4 | Family norm |
 | Qualitative interviews | 4 | Family norm |
-| Autoethnography | 3 | Family norm |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 129 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 3 | Family norm |
 | Mixed methods | 5 | Family norm |
-| Meta-analysis | 4 | Family norm |
+| Meta-analysis | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 129 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 
 ### Voice & Style
 
@@ -277,6 +277,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited); Meta-analysis 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Open Access table updated: Model Hybrid OA → Full OA, APC ~$700-2,500 → ~$1,450 standard / $250-$350 transitional 2026 rate. Reflects ACM's 2026-01-01 full-OA conversion of all publications; independently confirmed via multiple ACM SIG sources, not just one. Follow-up to the conflict-resolution pass below, which had flagged this as confirmed but out of scope. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Summary / Source URL). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

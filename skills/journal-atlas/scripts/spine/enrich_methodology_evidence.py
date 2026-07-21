@@ -236,6 +236,14 @@ def is_uncited(evidence_cell: str) -> bool:
     return not re.search(r"\d", evidence_cell) and "http" not in evidence_cell.lower()
 
 
+def has_real_table(section_body: str) -> bool:
+    """True if the section already has a markdown table (not a collapsed
+    "*(pending — ...)*" placeholder paragraph). Checked directly rather than via
+    the AI-Researched banner, so an already-enriched entry (banner still present,
+    but a real table now exists) isn't mistaken for still-blank on a re-run."""
+    return bool(re.search(r"^\|[-\s|]+\|\s*$", section_body, re.MULTILINE))
+
+
 # ---------- Main pass ----------
 
 
@@ -256,7 +264,6 @@ def process_file(path: str) -> dict:
     total_works = scan["total_works"]
     actions = []
 
-    is_ai_researched = "AI-researched entry" in content
     is_tier2 = "[!WARNING]" in content
     # CORRECT actions only ever apply to Tier 2 (community-estimate, uncited-by-design)
     # entries — never Tier 1. A Tier 1 entry's prose evidence (e.g. "framed as historical/
@@ -276,7 +283,7 @@ def process_file(path: str) -> dict:
         new_score = score_methodology(hits, total_works)
         new_evidence = citation_text(hits, total_works, scan["window_start"], scan["window_end"])
 
-        if is_ai_researched or methodology_section is None:
+        if methodology_section is None or not has_real_table(methodology_section[2]):
             if total_works < MIN_SAMPLE_FOR_FILL:
                 continue
             actions.append({"section": "Methodological Preferences", "row": row_label,
@@ -311,7 +318,7 @@ def process_file(path: str) -> dict:
         new_label = score_sensitive(hits, total_works)
         new_evidence = citation_text(hits, total_works, scan["window_start"], scan["window_end"])
 
-        if is_ai_researched or sensitive_section is None:
+        if sensitive_section is None or not has_real_table(sensitive_section[2]):
             if total_works < MIN_SAMPLE_FOR_FILL:
                 continue
             actions.append({"section": "Sensitive Topics", "row": row_label,
@@ -388,20 +395,26 @@ def main():
 
 def apply_results(results: list[dict]):
     today = date.today().isoformat()
-    applied_files = 0
+    applied_files, noop_files = 0, 0
     for r in results:
         actions = r.get("actions", [])
         if not actions:
             continue
         path = r["path"]
-        content = open(path, encoding="utf-8").read()
-        content = apply_to_content(content, actions)
+        original = open(path, encoding="utf-8").read()
+        content = apply_to_content(original, actions)
+        if content == original:
+            # Every action was a safety-check no-op (e.g. a stale FILL_NEW_TABLE
+            # proposal against a file a prior run already fixed) — don't write a
+            # false changelog row claiming work that didn't happen.
+            noop_files += 1
+            continue
         changelog_row = build_changelog_row(actions, today)
         content = insert_changelog_row(content, changelog_row)
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
         applied_files += 1
-    print(f"Applied to {applied_files} files", file=sys.stderr)
+    print(f"Applied to {applied_files} files ({noop_files} no-op — already up to date)", file=sys.stderr)
 
 
 def apply_to_content(content: str, actions: list[dict]) -> str:

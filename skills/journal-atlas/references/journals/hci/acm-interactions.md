@@ -178,7 +178,7 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 1 | Not the magazine's format; empirical data can be cited but not the article's center |
 | Qualitative interviews | 2 | Quotes and vignettes from qualitative work appear, not full methods |
-| Autoethnography | 4 | Reflective practitioner accounts welcomed |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 576 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 5 | Provocations, manifestos, conceptual essays are core |
 | Design / Artifact | 4 | "Day in the Lab" and design-focused columns showcase artifacts |
 | Methodology critique | 5 | Welcomed as accessible thought pieces |
@@ -302,6 +302,7 @@ Low for thought pieces and reflective essays. Moderate for academic researchers 
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Preprint Policy > Version of Record / Open Access > Model. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — practitioner magazine format flagged distinctly from research journal pattern. Schema v1.2 from inception. | @Zaious |
