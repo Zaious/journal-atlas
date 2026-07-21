@@ -366,7 +366,7 @@ def _extract_sensitive_topics(content: str) -> dict[str, str]:
         if match:
             topic = match.group(1).strip().lower()
             receptiveness = match.group(2).strip().lower()
-            if topic and receptiveness and topic not in {"topic category", "----"}:
+            if topic and receptiveness and topic != "topic category" and not re.fullmatch(r"-+", topic):
                 topics[topic] = receptiveness
     return topics
 

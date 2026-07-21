@@ -172,7 +172,14 @@
 
 ### Methodological Preferences
 
-*(pending — This pipeline intentionally does not assign 0-5 receptiveness scores without per-method evidence; see "Methods noted as welcome" above for the qualitative, unscored finding.)*
+| Method | Receptiveness (0-5) | Evidence |
+|--------|---------------------|----------|
+| Quantitative experimental | *(pending)* | |
+| Qualitative interviews | 3 | 280 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Theoretical / Conceptual | *(pending)* | |
+| Mixed methods | *(pending)* | |
+| Meta-analysis | 3 | 107 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 
 ### Voice & Style
 
@@ -184,7 +191,14 @@ SciRev(n=7)評分:審稿報告品質4.5/5,整體編輯處理滿意度僅2.7/5,�
 
 ### Sensitive Topics
 
-*(pending — no evidentiary basis collected)*
+| Topic Category | Receptiveness | Evidence |
+|----------------|---------------|----------|
+| BDSM / Kink | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Drug use | Low | 52 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Sex work | Low | 4 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Suicide / Self-harm | Medium | 312 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Political extremism | Low | 1 article(s) found (OpenAlex keyword search, 2021-2026, 4490 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
+| Other: _______ | | |
 
 ### Practical Concerns
 
@@ -247,4 +261,5 @@ SciRev(n=7)評分:審稿報告品質4.5/5,整體編輯處理滿意度僅2.7/5,�
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 8 field(s) with OpenAlex keyword-count evidence (Autoethnography, Qualitative interviews, Meta-analysis, BDSM / Kink, Drug use, Sex work, Suicide / Self-harm, Political extremism). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |

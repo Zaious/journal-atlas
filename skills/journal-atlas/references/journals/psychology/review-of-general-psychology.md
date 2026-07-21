@@ -188,7 +188,7 @@ Reviewers are drawn primarily from the APA Division 1 (Society for General Psych
 |----------------|---------------|----------|
 | BDSM / Kink | Medium-Low | 2 articles 2015–2025 (per OpenAlex BDSM keyword search, ISSN 1089-2680); rare but precedent exists |
 | Drug use | Medium | Published when framed as historical / theoretical review of psychology of addiction |
-| Sex work | Untested | No prominent articles in past decade (per OpenAlex topic filter) |
+| Sex work | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 144 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Suicide / Self-harm | Medium | Published with clinical-historical framing; standard reporting guidelines expected |
 | Political extremism | Medium | Published as integrative review (e.g., psychology of radicalization) |
 | Disclosure / Identity | Medium-High | Multiple integrative reviews 2020–2025 (per OpenAlex disclosure topic, ~3 articles) |
@@ -282,6 +282,7 @@ Low for well-framed integrative work. Authors typically invest ~1 revision sessi
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |

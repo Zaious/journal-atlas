@@ -187,9 +187,9 @@ Reviewers are drawn primarily from the dialogical self and cultural-psychology c
 
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| BDSM / Kink | Untested | 0 articles 2015–2025 (per OpenAlex BDSM keyword search, ISSN 1354-067X) |
+| BDSM / Kink | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 262 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Drug use | Medium | Published when framed as cultural practice or ritual use |
-| Sex work | Untested | Adjacent to cultural-practice scope but not directly published |
+| Sex work | Low | 2 article(s) found (OpenAlex keyword search, 2021-2026, 262 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Suicide / Self-harm | Medium | Published with cultural-narrative framing |
 | Political extremism | Medium | Published as cultural-discursive analysis |
 | Migration / Diaspora | High | Strong precedent; core journal topic |
@@ -284,6 +284,7 @@ Moderate when manuscripts originate outside cultural-psychology paradigm. Author
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 2 field(s) with OpenAlex keyword-count evidence (BDSM / Kink, Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts: Peer Review Type corrected to open review (journal-specific override of Sage default, verified via search-indexed Submission Guidelines text); AI Policy gate/leniency wording harmonized (clarified "no pre-approval, disclosure-conditional" per verified Sage AI-policy source text). Soft Metadata framing conflict left unedited (out of scope). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |

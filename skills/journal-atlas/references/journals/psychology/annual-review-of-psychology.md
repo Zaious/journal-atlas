@@ -208,7 +208,7 @@ Reviewers and authors are selected through the Editorial Committee structure: Ed
 | Diversity / Race synthesis | Medium-High |
 | LGBTQ psychology synthesis | Medium | Adjacent precedent |
 | Trauma / PTSD synthesis | High |
-| BDSM / Kink | Untested | Outside typical scope |
+| BDSM / Kink | Low | 0 article(s) found (OpenAlex keyword search, 2021-2026, 140 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 
 ### Practical Concerns
 
@@ -295,6 +295,7 @@ For invited authors: low — committee selection has already validated the autho
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (BDSM / Kink). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Harmonized AI Policy table (Explicit permission gate / Leniency / Summary) — resolved conflict between existing Tier-2 entry and AI-research supplement; both described the same Annual Reviews publisher-wide policy, just at different precision. Gate reworded "No — disclosure-based" → "Conditional"; Leniency 3 → 2. See conflict-resolution pass. | @Zaious (via conflict-resolution agent) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

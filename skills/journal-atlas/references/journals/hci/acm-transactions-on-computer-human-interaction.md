@@ -179,7 +179,7 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 5 | Core method — controlled user studies, lab experiments, large-scale field studies all welcomed |
 | Qualitative interviews | 4 | Well-supported, especially in design-research and CSCW traditions |
-| Autoethnography | 3 | Accepted in third-wave HCI tradition; less common than CHI proceedings; should engage HCI canon |
+| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 381 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 4 | Welcomed when bridging to design or empirical implications |
 | Mixed methods | 5 | Common pattern in TOCHI — quantitative + qualitative combinations |
 | Meta-analysis | 4 | Comprehensive reviews are an article type; HCI systematic reviews welcomed |
@@ -307,6 +307,7 @@ Variable. For HCI-canonical empirical papers: low. For third-wave / critical / a
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Preprint Policy > Under review. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + ACM Author Guidelines. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
