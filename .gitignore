@@ -3,6 +3,10 @@
 __pycache__/
 *.pyc
 
+# Dependencies (demo/backend + demo/frontend)
+.venv/
+node_modules/
+
 # OS
 .DS_Store
 Thumbs.db

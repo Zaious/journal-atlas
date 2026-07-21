@@ -293,15 +293,30 @@ def effective_apc(journal: dict, oa_required: bool) -> Optional[int]:
     return listed
 
 
-def _detect_ai_permission_gate(content: str) -> bool:
-    """Heuristic: does the AI Policy require explicit permission?"""
+def _detect_ai_permission_gate(content: str) -> Optional[bool]:
+    """Does the AI Policy require explicit permission? None = couldn't determine.
+
+    Must read the "Explicit permission gate?" answer cell specifically, not
+    search the whole section for that phrase — the TEMPLATE's own row label is
+    "**Explicit permission gate?**", so a whole-section search matches on every
+    journal's label text regardless of its actual Yes/No answer (verified:
+    399/399 curated files tripped the old heuristic to True; only 2 actually
+    answer Yes). Mirrors query_journals.py's/similar_journals.py's parsing.
+    """
     ai_section = _extract_subsection(content, "AI Policy")
     if not ai_section:
-        return False
-    return bool(
-        re.search(r"explicit permission|permission gate|prior approval",
-                  ai_section, re.IGNORECASE)
+        return None
+    match = re.search(
+        r"\|\s*\*\*Explicit permission gate\??\*\*\s*\|\s*([^|]+)",
+        ai_section, re.IGNORECASE,
     )
+    if match:
+        value = match.group(1).strip().lower()
+        if value.startswith("yes"):
+            return True
+        if value.startswith("no"):
+            return False
+    return None
 
 
 def _extract_irb_strictness(content: str) -> Optional[str]:
