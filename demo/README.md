@@ -15,9 +15,16 @@ Three stages per request, streamed to the browser over SSE (see
    `build_topic_vocabulary.py`) so it aligns with the real OpenAlex topic
    names `fit_score.py`'s topic-density scoring matches against.
 2. **Screen** (`fit_score.py`, no LLM) — deterministic pre-ranking across the
-   curated 399 entries, reused unmodified from the skill itself.
-3. **Synthesize** (Sonnet, streamed) — reads a trimmed excerpt (policy digest
-   + Subject Density + Soft Metadata + Strategic Notes, not the full file) of
+   curated 399 entries, reused unmodified from the skill itself. Each
+   candidate's tier (Tier 1 / Tier 2 / AI-Researched / Skeleton) and top
+   cited topic counts ride along in this stage's SSE event, so the frontend
+   can render an expandable evidence card per candidate instead of a bare
+   score — real, checkable receipts, not just a number.
+3. **Synthesize** (Sonnet, streamed) — inlines
+   [`CONSUMPTION_CONTRACT.md`](../skills/journal-atlas/CONSUMPTION_CONTRACT.md)
+   (the same tier/evidence rules `SKILL.md` points real skill sessions to)
+   plus a trimmed excerpt (policy digest + Subject Density + Soft Metadata +
+   Strategic Notes, not the full file) of
    the top 10 candidates and writes a reasoned recommendation.
 
 ## Prerequisites

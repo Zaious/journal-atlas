@@ -14,9 +14,23 @@ interface ParsedPaper {
   fields: string[];
 }
 
+interface TopicEvidence {
+  name: string;
+  count: number;
+}
+
 interface Candidate {
   name: string;
   score: number;
+  tier: string;
+  top_topics: TopicEvidence[];
+}
+
+function tierClass(tier: string): string {
+  if (tier.startsWith("Tier 1")) return "tier-1";
+  if (tier.startsWith("Tier 2")) return "tier-2";
+  if (tier.startsWith("AI-Researched")) return "tier-ai";
+  return "tier-skeleton";
 }
 
 const STAGE_LABELS: Record<StageName, string> = {
@@ -35,9 +49,19 @@ function App() {
   });
   const [parsedPaper, setParsedPaper] = useState<ParsedPaper | null>(null);
   const [candidates, setCandidates] = useState<Candidate[] | null>(null);
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [synthesisText, setSynthesisText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  function toggleExpanded(name: string) {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  }
 
   function handleEvent(name: string, data: any) {
     if (name === "stage") {
@@ -62,6 +86,7 @@ function App() {
     setError(null);
     setParsedPaper(null);
     setCandidates(null);
+    setExpanded(new Set());
     setSynthesisText("");
     setStages({ parsing: "active", screening: "pending", synthesis: "pending" });
 
@@ -163,12 +188,43 @@ function App() {
         <div className="panel">
           <h3>Top {candidates.length} candidates after screening</h3>
           <ul className="candidate-list">
-            {candidates.map((c) => (
-              <li key={c.name}>
-                <span>{c.name}</span>
-                <span className="score">{c.score.toFixed(1)}/100</span>
-              </li>
-            ))}
+            {candidates.map((c) => {
+              const isOpen = expanded.has(c.name);
+              return (
+                <li key={c.name} className="candidate-card">
+                  <button
+                    type="button"
+                    className="candidate-header"
+                    onClick={() => toggleExpanded(c.name)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className="candidate-name">
+                      <span className={`tier-badge ${tierClass(c.tier)}`}>{c.tier}</span>
+                      {c.name}
+                    </span>
+                    <span className="score">{c.score.toFixed(1)}/100</span>
+                  </button>
+                  {isOpen && (
+                    <div className="candidate-evidence">
+                      {c.top_topics.length > 0 ? (
+                        <ul className="topic-evidence-list">
+                          {c.top_topics.map((t) => (
+                            <li key={t.name}>
+                              {t.name}
+                              <span className="topic-count">{t.count} articles</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="no-evidence">
+                          No topic-count data on file for this entry yet.
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}

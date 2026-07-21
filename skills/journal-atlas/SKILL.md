@@ -136,12 +136,10 @@ This is the same anti-conflation discipline as Rule #2, scaled up: a 3-dimension
 Before producing the final recommendation in Step 5, verify ALL of the following. If any item is unchecked, **go back to the relevant step** rather than presenting a half-baked recommendation.
 
 - [ ] **Read the actual journal file** for every journal you plan to recommend (not just metadata you remember)
-- [ ] **Every evidence citation** has a specific source in the journal file (e.g. "48 articles 2020-2025" from Subject Density, not vague claims)
+- [ ] **[CONSUMPTION_CONTRACT.md](CONSUMPTION_CONTRACT.md) followed** — evidence cited per-row, tier/`signal_quality` flagged, no `*(pending)*` fabrication
 - [ ] **Hard constraints applied correctly** — especially the 4-case APC logic for hybrid OA (subscription vs OA path)
-- [ ] **Tier status checked** — for Skeleton, Tier 2 (community-estimate), or AI-Researched entries, you flagged the uncertainty to the user (for AI-Researched, note the per-field `signal_quality` and any honest blanks)
 - [ ] **Fallback chain considered** — at least the top recommendation's Rejection Fallback Chain section was read
 - [ ] **At least one eliminated journal listed** with reason (transparency over what was considered)
-- [ ] **No fabrication** — if Soft Metadata is `*(pending)*` or `*(fill manually)*`, you did NOT fill in a guess from training data
 
 This checklist prevents the most common failure modes: surface-level matching, fabricated evidence, ignored fallback chains, and missing tier-status warnings.
 
@@ -319,32 +317,15 @@ When asked to compare two specific journals, produce a head-to-head table:
 
 ## Rules
 
-1. **Never recommend a journal you haven't read the file for.** If a journal
-   isn't in the knowledge base, say so. **Zero-hallucination self-check**
-   before every response containing journal claims:
-   - Does every journal name come from a file I actually read this session?
-     If no, remove it.
-   - Does every evidence claim (article counts, h-index, embargo months,
-     APC amounts) come from a specific row of a journal file? If no,
-     remove it or mark explicitly "not verified".
-   - Does every "Reviewer Pool / Framing Requirement / Sensitive Topic
-     Receptiveness" claim cite the journal file, not training-data memory?
-     If no, replace with "the entry doesn't specify" rather than guessing.
-   - Did I treat `*(pending)*` and `*(fill manually)*` placeholders as
-     genuinely unknown (not opportunities to fill in plausible values)?
-2. **Cite specific evidence** from the journal file
-   (e.g. "12 embodied cognition articles published 2020-2025"). Never use
-   round numbers or vague descriptors as substitutes for specific
-   citations.
-3. **Flag uncertainty.** If a field says "community estimate" or data is older
-   than 12 months, warn the user. For Skeleton entries (Soft Metadata not
-   yet filled), explicitly say so rather than recommending based on
-   structural metadata alone.
-4. **Don't rank by Impact Factor alone.** Soft metadata (reviewer culture,
-   framing requirements, sensitive topic tolerance) often matters more than IF
-   for non-mainstream research.
-5. **Respect the Changelog.** If a journal entry's `Last verified` date is
-   18+ months old, warn the user that policies may have changed.
+**Never recommend a journal you haven't read the file for this session.** If
+a journal isn't in the knowledge base, say so.
+
+Every response containing journal claims must follow
+[CONSUMPTION_CONTRACT.md](CONSUMPTION_CONTRACT.md) — citing evidence from a
+specific row (never a round number or vague descriptor in its place),
+naming the tier and any `signal_quality`/uncertainty when it isn't Tier 1,
+never fabricating a value for a `*(pending)*` field, not ranking by Impact
+Factor alone, and checking `Last verified` staleness.
 
 ## Worked Example
 

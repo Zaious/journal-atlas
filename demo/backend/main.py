@@ -4,14 +4,17 @@ Journal Atlas web demo backend — FastAPI, SSE streaming, no database.
 
 Three-stage pipeline per request, all stateless (nothing persisted between
 requests):
-  1. EXTRACT (Haiku, structured output) — freeform paper description -> the
+  1. EXTRACT (Haiku, forced tool-use) — freeform paper description -> the
      same `Paper` dataclass fit_score.py already scores against.
   2. SCREEN (fit_score.py, no LLM) — deterministic pre-ranking across the
-     curated 399 entries, reused as-is, not reimplemented.
-  3. SYNTHESIZE (Sonnet, streamed) — reads the actual Soft Metadata /
-     Strategic Notes content of the top candidates and writes the kind of
-     reasoned recommendation SKILL.md's own workflow produces (not just a
-     score table): a pick with reasoning, runners-up, eliminations, honest
+     curated 399 entries, reused as-is, not reimplemented. Each candidate's
+     tier and top cited topic counts ride along in this stage's SSE event
+     for the frontend's evidence cards.
+  3. SYNTHESIZE (Sonnet, streamed) — inlines CONSUMPTION_CONTRACT.md's
+     tier/evidence rules, then reads a trimmed Soft Metadata / Strategic
+     Notes excerpt of the top candidates and writes the kind of reasoned
+     recommendation SKILL.md's own workflow produces (not just a score
+     table): a pick with reasoning, runners-up, eliminations, honest
      tier/uncertainty flags, a rejection fallback suggestion.
 
 Every stage emits an SSE event so the frontend can show real progress
@@ -58,6 +61,17 @@ except FileNotFoundError:
     TOPIC_VOCABULARY = []
     print(f"warning: {TOPIC_VOCABULARY_PATH} missing — run build_topic_vocabulary.py; "
           "topic extraction will fall back to unconstrained free text", file=sys.stderr)
+
+# The canonical tier/evidence rules SKILL.md's checklist points to. A real skill
+# session can just read that file; this synthesis call has no file-read tool, so
+# the rules have to be inlined into its prompt directly rather than referenced.
+CONSUMPTION_CONTRACT_PATH = SKILL_SCRIPTS.parent / "CONSUMPTION_CONTRACT.md"
+try:
+    CONSUMPTION_CONTRACT = CONSUMPTION_CONTRACT_PATH.read_text(encoding="utf-8")
+except FileNotFoundError:
+    CONSUMPTION_CONTRACT = ""
+    print(f"warning: {CONSUMPTION_CONTRACT_PATH} missing — synthesis will run "
+          "without the tier/evidence consumption rules", file=sys.stderr)
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 EXTRACTION_MODEL = "claude-haiku-4-5"
@@ -189,6 +203,36 @@ def _extract_h2_section(content: str, name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
+def detect_tier(content: str) -> str:
+    """Tier label from Soft Metadata's banner, per CONSUMPTION_CONTRACT.md's
+    table: Tier 2 -> [!WARNING], AI-Researched -> [!NOTE] + "AI-Researched",
+    Skeleton -> [!NOTE] alone (0 entries in the corpus today, kept for
+    completeness), no banner -> Tier 1."""
+    banner = _extract_h2_section(content, "Soft Metadata")[:400]
+    if "[!WARNING]" in banner:
+        return "Tier 2 (community estimate)"
+    if "AI-Researched" in banner:
+        return "AI-Researched"
+    if "[!NOTE]" in banner:
+        return "Skeleton"
+    return "Tier 1 (evidence-backed)"
+
+
+def build_evidence_card(path: Path) -> dict:
+    """Tier + top-cited topic rows for the screening SSE event — real,
+    checkable evidence behind a fit_score number, not just the number."""
+    content = path.read_text(encoding="utf-8")
+    try:
+        journal_data = fit_score.parse_journal_file(path)
+    except Exception:
+        journal_data = {}
+    top_topics = sorted(journal_data.get("topics") or [], key=lambda t: -t[1])[:3]
+    return {
+        "tier": detect_tier(content),
+        "top_topics": [{"name": name, "count": count} for name, count in top_topics],
+    }
+
+
 def _format_policy_digest(journal_data: dict) -> str:
     """Condensed structured facts, in place of Identity/Metrics/Policies/Format's
     full raw tables (mostly *(community estimate)* / *(see JCR)* placeholder
@@ -243,10 +287,13 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         except OSError:
             continue
         sections.append(f"=== {c.name} (fit_score {c.score:.1f}/100) ===\n{excerpt}")
+    contract_block = f"{CONSUMPTION_CONTRACT}\n\n---\n\n" if CONSUMPTION_CONTRACT else ""
     return (
-        "You are the Journal Atlas skill. A researcher described their paper; it has "
-        "already been parsed and pre-ranked by a deterministic scorer against a "
-        f"curated knowledge base. Here is their original description:\n\n{freeform_text}\n\n"
+        "You are the Journal Atlas skill. Follow the rules below when citing "
+        f"anything from the candidate excerpts.\n\n{contract_block}"
+        "A researcher described their paper; it has already been parsed and "
+        "pre-ranked by a deterministic scorer against a curated knowledge base. "
+        f"Here is their original description:\n\n{freeform_text}\n\n"
         f"Parsed attributes: {json.dumps(asdict(paper))}\n\n"
         "Below are excerpts from the top pre-ranked candidates' curated entries "
         "(policy digest + Subject Density + Soft Metadata + Strategic Notes), in "
@@ -255,12 +302,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         + "\n\n".join(sections) + "\n\n---\n\n"
         "Write: (1) your top pick with specific reasoning drawn from that journal's "
         "actual reviewer-culture/framing/sensitive-topics content, (2) 1-2 runners-up "
-        "and why they rank below the top pick, (3) if any candidate's Tier is "
-        "community-estimate or AI-Researched rather than evidence-backed, say so "
-        "honestly and note what's unverified, (4) one rejection-fallback suggestion "
-        "if the top pick doesn't work out. Cite specifics (article counts, named "
-        "sections) — never state a claim from a file that says *(pending)*. Keep it "
-        "under 400 words."
+        "and why they rank below the top pick, (3) tier/uncertainty flags per the "
+        "rules above for any candidate that isn't Tier 1, (4) one rejection-fallback "
+        "suggestion if the top pick doesn't work out. Keep it under 400 words."
     )
 
 
@@ -297,7 +341,8 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
         yield event("error", {"message": f"screening failed: {exc}"})
         return
     yield event("stage", {"stage": "screening", "status": "done", "candidates": [
-        {"name": c.name, "score": round(c.score, 1)} for c in candidates
+        {"name": c.name, "score": round(c.score, 1), **build_evidence_card(c.path)}
+        for c in candidates
     ]})
 
     if not candidates:

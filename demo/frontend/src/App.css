@@ -150,21 +150,109 @@ button:disabled {
   gap: 0.35rem;
 }
 
-.candidate-list li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  padding: 0.3rem 0;
+.candidate-card {
   border-bottom: 1px solid #ebe9f7;
 }
 
-.candidate-list li:last-child {
+.candidate-card:last-child {
   border-bottom: none;
 }
 
+.candidate-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.candidate-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.tier-badge {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+}
+
+.tier-badge.tier-1 {
+  background: #e3f5ea;
+  color: #1f7a4d;
+}
+
+.tier-badge.tier-2,
+.tier-badge.tier-skeleton {
+  background: #fdf1d9;
+  color: #92650f;
+}
+
+.tier-badge.tier-ai {
+  background: #e9e6fb;
+  color: #5647b8;
+}
+
 .score {
+  flex-shrink: 0;
   color: #6a5fc7;
   font-variant-numeric: tabular-nums;
+}
+
+.candidate-evidence {
+  padding: 0 0 0.8rem;
+  animation: fadeIn 0.25s ease;
+}
+
+.topic-evidence-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.topic-evidence-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #555);
+}
+
+.topic-count {
+  color: #6a5fc7;
+  font-variant-numeric: tabular-nums;
+}
+
+.no-evidence {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #888);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tier-badge.tier-1 { background: #163b28; color: #6fd39a; }
+  .tier-badge.tier-2,
+  .tier-badge.tier-skeleton { background: #3a2f10; color: #e0b155; }
+  .tier-badge.tier-ai { background: #2a2547; color: #b3a7f0; }
+  .topic-evidence-list li { color: #bbb; }
 }
 
 .synthesis {
