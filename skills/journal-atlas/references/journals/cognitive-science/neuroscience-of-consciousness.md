@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Consciousness studies | *(community estimate)* |
-| Neural correlates of consciousness | *(community estimate)* |
-| Anesthesia and consciousness | *(community estimate)* |
-| Disorders of consciousness | *(community estimate)* |
-| Theoretical consciousness models | *(community estimate)* |
-| Self-awareness research | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Neural dynamics and brain function | 128 |
+| Neural and Behavioral Psychology Studies | 100 |
+| Visual perception and processing mechanisms | 69 |
+| EEG and Brain-Computer Interfaces | 54 |
+| Functional Brain Connectivity Studies | 46 |
+| Embodied and Extended Cognition | 44 |
+| Face Recognition and Perception | 35 |
+| Action Observation and Synchronization | 33 |
+| Psychosomatic Disorders and Their Treatments | 28 |
+| Psychedelics and Drug Studies | 28 |
 
 ### Orientation
 
@@ -282,5 +286,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

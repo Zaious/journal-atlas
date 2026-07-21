@@ -119,13 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Bioinformatics method reviews | *(community estimate)* |
-| Computational biology surveys | *(community estimate)* |
-| Software tool reviews | *(community estimate)* |
-| Genomics / Transcriptomics reviews | *(community estimate)* |
-| Database surveys | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Bioinformatics and Genomic Networks | 1273 |
+| Gene expression and cancer classification | 929 |
+| Genomics and Phylogenetic Studies | 867 |
+| Machine Learning in Bioinformatics | 810 |
+| Computational Drug Discovery Methods | 805 |
+| Single-cell and spatial transcriptomics | 763 |
+| RNA and protein synthesis mechanisms | 621 |
+| Protein Structure and Dynamics | 428 |
+| RNA modifications and cancer | 406 |
+| Cancer-related molecular mechanisms research | 404 |
 
 ### Orientation
 
@@ -243,4 +248,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from biology / OA molecular-biology family conventions (PLOS / Cell Press OA / OUP Bioinformatics norms). | @Zaious |

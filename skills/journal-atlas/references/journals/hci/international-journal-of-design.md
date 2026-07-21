@@ -119,13 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Design research (interaction, product, service) | *(community estimate)* |
-| User experience design | *(community estimate)* |
-| Design methodology | *(community estimate)* |
-| Design education | *(community estimate)* |
-| Cross-cultural design | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Innovative Human-Technology Interaction | 16 |
+| Design Education and Practice | 14 |
+| Color perception and design | 14 |
+| Multisensory perception and integration | 6 |
+| Usability and User Interface Design | 5 |
+| Crafts, Textile, and Design | 5 |
+| Digital Marketing and Social Media | 4 |
+| Persona Design and Applications | 4 |
+| Technology Adoption and User Behaviour | 3 |
+| Consumer Behavior in Brand Consumption and Identification | 3 |
 
 ### Orientation
 
@@ -273,6 +278,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved 3 flagged conflicts vs AI-research pass: (1) Peer Review Type corrected to Double-blind, verified live against official Submission Guidelines; (2) AI Policy table corrected to "no evidence found" after live verification of Submission Guidelines + Editorial Policies pages (previous "Yes, leniency 3-4" was an unverified publisher-default assumption); (3) Review Cycle Time left as placeholder — the AI-research pass's finding was too ambiguous/low-confidence to map to a specific stage. | Conflict-resolution pass |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

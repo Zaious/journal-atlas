@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Ubiquitous / Pervasive computing | *(community estimate)* |
-| Wearable computing | *(community estimate)* |
-| Mobile sensing | *(community estimate)* |
-| IoT / Smart environments | *(community estimate)* |
-| Health sensing | *(community estimate)* |
-| Activity recognition | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Indoor and Outdoor Localization Technologies | 312 |
+| Context-Aware Activity Recognition Systems | 254 |
+| Tactile and Sensory Interactions | 230 |
+| Interactive and Immersive Displays | 197 |
+| Innovative Human-Technology Interaction | 161 |
+| Speech and Audio Processing | 156 |
+| Human Mobility and Location-Based Analysis | 135 |
+| Non-Invasive Vital Sign Monitoring | 118 |
+| Gaze Tracking and Assistive Technology | 117 |
+| Hand Gesture Recognition Systems | 114 |
 
 ### Orientation
 
@@ -275,6 +279,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

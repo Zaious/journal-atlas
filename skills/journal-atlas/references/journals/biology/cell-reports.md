@@ -119,15 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Cell biology | *(community estimate)* |
-| Molecular biology | *(community estimate)* |
-| Neuroscience | *(community estimate)* |
-| Cancer biology | *(community estimate)* |
-| Immunology | *(community estimate)* |
-| Stem cells / Development | *(community estimate)* |
-| Computational biology | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| RNA Research and Splicing | 1262 |
+| Neuroscience and Neuropharmacology Research | 1137 |
+| RNA modifications and cancer | 1100 |
+| Immune Cell Function and Interaction | 1087 |
+| Epigenetics and DNA Methylation | 972 |
+| Genomics and Chromatin Dynamics | 870 |
+| CRISPR and Genetic Engineering | 743 |
+| T-cell and B-cell Immunology | 740 |
+| Neural dynamics and brain function | 702 |
+| RNA and protein synthesis mechanisms | 648 |
 
 ### Orientation
 
@@ -247,4 +250,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from biology / OA molecular-biology family conventions (PLOS / Cell Press OA / OUP Bioinformatics norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

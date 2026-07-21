@@ -125,12 +125,18 @@
 
 ### Top Topics
 
-| Topic | Notes |
-|-------|-------|
-| Qualitative Research Methods and Ethics | |
-| Participatory Visual Research Methods | |
-| Posthumanist Ethics and Activism | |
-| Critical Race Theory in Education | |
+| Topic | Article Count |
+|-------|--------------|
+| Qualitative Research Methods and Ethics | 680 |
+| Participatory Visual Research Methods | 479 |
+| Posthumanist Ethics and Activism | 366 |
+| Critical Race Theory in Education | 190 |
+| Educator Training and Historical Pedagogy | 147 |
+| Theatre and Performance Studies | 128 |
+| Qualitative Research Methods and Applications | 108 |
+| Art Education and Development | 100 |
+| Counseling, Therapy, and Family Dynamics | 94 |
+| Rhetoric and Communication Studies | 87 |
 
 *(Top 4 of OpenAlex topic ranking shown. Past 3 years (2023-2025) the journal published 37+ autoethnography-themed articles.)*
 
@@ -290,6 +296,7 @@ Low for autoethnographic / reflexive manuscripts originating in the qualitative-
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
 | 2026-07-20 | Peer Review > Type: adopted-then-reverted. A conflict-resolution pass first replaced "Double-anonymized" with "Open peer review" based on a marketing-page phrase; an adversarial re-verification pass (3 independent checks) found the journal's actual peer-review-policy page classifies it as Double-anonymized, and that the "open peer review" phrase describes the journal's editorially experimental content, not its review process. Corrected back to Double-anonymized with the properly verified source. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

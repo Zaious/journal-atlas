@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Design history (broad) | *(community estimate)* |
-| Industrial design history | *(community estimate)* |
-| Graphic design history | *(community estimate)* |
-| Textile and fashion design history | *(community estimate)* |
-| Cross-cultural design history | *(community estimate)* |
-| Design education history | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Fashion and Cultural Textiles | 585 |
+| Crafts, Textile, and Design | 389 |
+| Art, Politics, and Modernism | 338 |
+| Architecture, Design, and Social History | 284 |
+| Cultural Industries and Urban Development | 279 |
+| Historical Art and Culture Studies | 149 |
+| Architecture, Modernity, and Design | 142 |
+| Visual Culture and Art Theory | 122 |
+| Art History and Market Analysis | 91 |
+| Human auditory perception and evaluation | 79 |
 
 ### Orientation
 
@@ -276,6 +280,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 3 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited); Qualitative interviews 5->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Explicit permission gate? / Leniency (1-5) / Source URL. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

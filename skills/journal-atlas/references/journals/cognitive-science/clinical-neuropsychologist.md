@@ -119,13 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Clinical neuropsychology assessment | *(community estimate)* |
-| Test development and validation | *(community estimate)* |
-| Neuropsychological rehabilitation | *(community estimate)* |
-| Forensic neuropsychology | *(community estimate)* |
-| Cross-cultural neuropsychology | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Traumatic Brain Injury Research | 895 |
+| Dementia and Cognitive Impairment Research | 605 |
+| Cognitive Functions and Memory | 206 |
+| Traumatic Brain Injury and Neurovascular Disturbances | 201 |
+| Cardiac Arrest and Resuscitation | 170 |
+| Neurobiology of Language and Bilingualism | 156 |
+| Counseling Practices and Supervision | 155 |
+| Psychological Testing and Assessment | 153 |
+| Spatial Neglect and Hemispheric Dysfunction | 140 |
+| Cognitive Abilities and Testing | 120 |
 
 ### Orientation
 
@@ -277,6 +282,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved 2 flagged conflicts (AI Policy: journal-overlay existence + leniency score) via live re-verification (WebSearch on T&F group AI policy; WebFetch on authorservices.taylorandfrancis.com AI-policy page and ntcnauth.pdf both still 403). Confirmed no TCN-specific AI policy page exists; adopted leniency=2 reflecting T&F's no-exemption "any use must be disclosed" stance. | @Zaious |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

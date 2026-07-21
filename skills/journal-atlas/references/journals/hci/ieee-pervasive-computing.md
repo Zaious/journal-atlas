@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Pervasive / ubiquitous computing | *(community estimate)* |
-| Mobile sensing | *(community estimate)* |
-| Wearable computing | *(community estimate)* |
-| IoT and smart environments | *(community estimate)* |
-| Context-aware systems | *(community estimate)* |
-| Activity recognition | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Context-Aware Activity Recognition Systems | 339 |
+| Diverse Scientific and Economic Studies | 195 |
+| Interactive and Immersive Displays | 170 |
+| Innovative Human-Technology Interaction | 137 |
+| IoT and Edge/Fog Computing | 133 |
+| Human auditory perception and evaluation | 129 |
+| Educational Robotics and Engineering | 91 |
+| Big Data and Digital Economy | 91 |
+| Ferroelectric and Negative Capacitance Devices | 86 |
+| Personal Information Management and User Behavior | 83 |
 
 ### Orientation
 
@@ -277,6 +281,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |

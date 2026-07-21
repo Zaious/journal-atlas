@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Personality assessment | *(community estimate)* |
-| Clinical assessment | *(community estimate)* |
-| Psychometric methods | *(community estimate)* |
-| Test validation and development | *(community estimate)* |
-| Diagnostic assessment | *(community estimate)* |
-| Cross-cultural assessment | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Child and Adolescent Psychosocial and Emotional Development | 476 |
+| Personality Disorders and Psychopathology | 425 |
+| Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes | 279 |
+| Mental Health Research Topics | 265 |
+| Personality Traits and Psychology | 245 |
+| Psychopathy, Forensic Psychiatry, Sexual Offending | 223 |
+| Psychological Testing and Assessment | 173 |
+| Traumatic Brain Injury Research | 161 |
+| Cognitive Abilities and Testing | 156 |
+| Behavioral Health and Interventions | 122 |
 
 ### Orientation
 
@@ -277,6 +281,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy (Under review / Post-acceptance (AAM) 兩列). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

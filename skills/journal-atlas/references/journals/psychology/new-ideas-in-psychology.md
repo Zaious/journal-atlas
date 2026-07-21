@@ -130,11 +130,18 @@
 
 ### Top Topics
 
-| Topic | Notes |
-|-------|-------|
-| Academic and Historical Perspectives in Psychology | |
-| Social Representations and Identity | |
-| Embodied and Extended Cognition | |
+| Topic | Article Count |
+|-------|--------------|
+| Academic and Historical Perspectives in Psychology | 161 |
+| Social Representations and Identity | 151 |
+| Child and Animal Learning Development | 146 |
+| Human auditory perception and evaluation | 122 |
+| Diverse Scientific and Economic Studies | 118 |
+| Educational Robotics and Engineering | 109 |
+| Action Observation and Synchronization | 96 |
+| Embodied and Extended Cognition | 90 |
+| Philosophy and History of Science | 76 |
+| Cultural Differences and Values | 76 |
 
 *(Top 3 of OpenAlex topic ranking shown. Past 6 years (2020–2025) the journal published 33+ articles on self-state / dialogical self / process research themes.)*
 
@@ -304,6 +311,7 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Has journal-specific AI policy?. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

@@ -119,15 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Cell biology | *(community estimate)* |
-| Neuroscience | *(community estimate)* |
-| Evolutionary biology | *(community estimate)* |
-| Genetics and genomics | *(community estimate)* |
-| Computational biology | *(community estimate)* |
-| Immunology | *(community estimate)* |
-| Plant biology | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Neural dynamics and brain function | 2768 |
+| Neuroscience and Neuropharmacology Research | 2085 |
+| Neurobiology and Insect Physiology Research | 1611 |
+| RNA Research and Splicing | 1490 |
+| RNA and protein synthesis mechanisms | 1279 |
+| Memory and Neural Mechanisms | 1173 |
+| RNA modifications and cancer | 1131 |
+| Genomics and Chromatin Dynamics | 1108 |
+| Cellular transport and secretion | 985 |
+| Genetics, Aging, and Longevity in Model Organisms | 947 |
 
 ### Orientation
 
@@ -245,4 +248,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from biology OA family conventions adapted for eLife's Reviewed Preprints model (2023+ public-review framing). | @Zaious |

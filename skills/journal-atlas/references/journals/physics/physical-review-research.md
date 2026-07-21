@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| All physics subfields | *(community estimate)* |
-| Interdisciplinary physics | *(community estimate)* |
-| Quantum physics | *(community estimate)* |
-| Soft matter | *(community estimate)* |
-| Statistical physics | *(community estimate)* |
-| Plasma / Nuclear physics | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Quantum Information and Cryptography | 1941 |
+| Topological Materials and Phenomena | 1366 |
+| Quantum many-body systems | 1315 |
+| Quantum Computing Algorithms and Architecture | 1215 |
+| Quantum and electron transport phenomena | 1205 |
+| Cold Atom Physics and Bose-Einstein Condensates | 1191 |
+| Physics of Superconductivity and Magnetism | 989 |
+| Quantum Mechanics and Applications | 718 |
+| Advanced Condensed Matter Physics | 649 |
+| Advanced Thermodynamics and Statistical Mechanics | 635 |
 
 ### Orientation
 
@@ -243,4 +247,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from American Physical Society OA generalist conventions (PRR editorial culture + APS-family norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

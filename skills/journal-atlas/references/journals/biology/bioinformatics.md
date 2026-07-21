@@ -119,15 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Computational biology methods | *(community estimate)* |
-| Bioinformatics algorithms | *(community estimate)* |
-| Sequence analysis | *(community estimate)* |
-| Genomics / Transcriptomics | *(community estimate)* |
-| Structural bioinformatics | *(community estimate)* |
-| Systems biology | *(community estimate)* |
-| Machine learning for biology | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Bioinformatics and Genomic Networks | 4763 |
+| Genomics and Phylogenetic Studies | 4345 |
+| Gene expression and cancer classification | 3335 |
+| Machine Learning in Bioinformatics | 2750 |
+| Protein Structure and Dynamics | 2233 |
+| Genetic Associations and Epidemiology | 1707 |
+| Single-cell and spatial transcriptomics | 1676 |
+| RNA and protein synthesis mechanisms | 1568 |
+| Genomics and Chromatin Dynamics | 1527 |
+| Biomedical Text Mining and Ontologies | 1383 |
 
 ### Orientation
 
@@ -247,4 +250,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from biology / OA molecular-biology family conventions (PLOS / Cell Press OA / OUP Bioinformatics norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

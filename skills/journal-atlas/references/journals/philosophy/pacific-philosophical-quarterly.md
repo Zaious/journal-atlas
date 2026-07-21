@@ -130,7 +130,16 @@
 
 | Topic | Article Count |
 |-------|--------------|
-| *(pending)* | |
+| Epistemology, Ethics, and Metaphysics | 573 |
+| Philosophy and Theoretical Science | 481 |
+| Philosophical Ethics and Theory | 292 |
+| Free Will and Agency | 212 |
+| Political Philosophy and Ethics | 178 |
+| Philosophy and History of Science | 157 |
+| Psychology of Moral and Emotional Judgment | 132 |
+| Classical Philosophy and Thought | 87 |
+| Theology and Philosophy of Evil | 87 |
+| War, Ethics, and Justification | 73 |
 
 ### Orientation
 
@@ -236,4 +245,5 @@
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |

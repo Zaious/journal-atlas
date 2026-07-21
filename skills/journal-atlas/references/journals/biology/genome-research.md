@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Comparative genomics | *(community estimate)* |
-| Functional genomics | *(community estimate)* |
-| Epigenomics | *(community estimate)* |
-| Population genetics | *(community estimate)* |
-| Computational genomics | *(community estimate)* |
-| Single-cell genomics | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Genomics and Phylogenetic Studies | 1424 |
+| RNA and protein synthesis mechanisms | 1225 |
+| Genomics and Chromatin Dynamics | 1223 |
+| Chromosomal and Genetic Variations | 1125 |
+| RNA Research and Splicing | 831 |
+| RNA modifications and cancer | 623 |
+| CRISPR and Genetic Engineering | 546 |
+| Epigenetics and DNA Methylation | 488 |
+| Genomic variations and chromosomal abnormalities | 414 |
+| Molecular Biology Techniques and Applications | 389 |
 
 ### Orientation
 
@@ -244,4 +248,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from biology / OA molecular-biology family conventions (PLOS / Cell Press OA / OUP Bioinformatics norms). | @Zaious |

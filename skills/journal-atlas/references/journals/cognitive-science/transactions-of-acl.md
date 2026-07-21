@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Computational linguistics | *(community estimate)* |
-| NLP theory and methods | *(community estimate)* |
-| LLM evaluation / analysis | *(community estimate)* |
-| Multilingual / Cross-lingual NLP | *(community estimate)* |
-| Discourse and semantics | *(community estimate)* |
-| Reproducibility / Benchmarks | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Topic Modeling | 705 |
+| Natural Language Processing Techniques | 609 |
+| Multimodal Machine Learning Applications | 177 |
+| Text Readability and Simplification | 107 |
+| Speech and dialogue systems | 89 |
+| Advanced Text Analysis Techniques | 63 |
+| Speech Recognition and Synthesis | 55 |
+| Sentiment Analysis and Opinion Mining | 38 |
+| Text and Document Classification Technologies | 35 |
+| Explainable Artificial Intelligence (XAI) | 34 |
 
 ### Orientation
 
@@ -276,6 +280,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy (整節：Has journal-specific policy? / Explicit permission gate? / Source URL); Policies > Preprint Policy > Pre-submission / Under review rows. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACL community conventions (TACL editorial norms + ACL/EMNLP/NAACL review culture in journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

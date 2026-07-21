@@ -130,6 +130,19 @@
 
 ### Top Topics
 
+| Topic | Article Count |
+|-------|--------------|
+| Participatory Visual Research Methods | 148 |
+| Qualitative Research Methods and Ethics | 143 |
+| Language, Discourse, Communication Strategies | 83 |
+| Social Representations and Identity | 66 |
+| Community Health and Development | 52 |
+| Qualitative Research Methods and Applications | 51 |
+| Discourse Analysis in Language Studies | 41 |
+| Language, Metaphor, and Cognition | 41 |
+| Counseling, Therapy, and Family Dynamics | 40 |
+| Children's Rights and Participation | 37 |
+
 *(Top topics ranking — see OpenAlex API for ISSN 1478-0887 for full distribution. Journal is primary forum for qualitative researchers across cognitive, social, developmental, educational, clinical, health, and forensic psychology.)*
 
 ### Orientation
@@ -292,6 +305,7 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Format details derived from empirical sampling of recent publications (official PDF appears outdated). | @Zaious |

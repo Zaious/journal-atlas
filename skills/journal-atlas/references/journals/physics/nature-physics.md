@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Condensed matter physics | *(community estimate)* |
-| Quantum information / Quantum computing | *(community estimate)* |
-| Particle physics | *(community estimate)* |
-| Soft matter / Biophysics | *(community estimate)* |
-| Astrophysics / Cosmology | *(community estimate)* |
-| Statistical / Nonlinear physics | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Quantum and electron transport phenomena | 821 |
+| Physics of Superconductivity and Magnetism | 694 |
+| Topological Materials and Phenomena | 676 |
+| Quantum Information and Cryptography | 653 |
+| Cold Atom Physics and Bose-Einstein Condensates | 651 |
+| Advanced Condensed Matter Physics | 505 |
+| Graphene research and applications | 409 |
+| Quantum many-body systems | 374 |
+| Mechanical and Optical Resonators | 356 |
+| Quantum Mechanics and Applications | 352 |
 
 ### Orientation
 
@@ -244,4 +248,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from Nature Portfolio physics conventions (Nature Physics editorial culture + Nature-family broad-significance norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

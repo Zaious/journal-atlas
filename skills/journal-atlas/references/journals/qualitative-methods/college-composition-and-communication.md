@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Rhetoric and composition | *(community estimate)* |
-| Writing studies | *(community estimate)* |
-| Composition pedagogy | *(community estimate)* |
-| Disciplinary writing | *(community estimate)* |
-| Translingualism and writing | *(community estimate)* |
-| Multimodal composition | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Discourse Analysis in Language Studies | 1155 |
+| EFL/ESL Teaching and Learning | 872 |
+| Literacy, Media, and Education | 453 |
+| Education and Critical Thinking Development | 414 |
+| Reflective Practices in Education | 402 |
+| Writing and Handwriting Education | 376 |
+| Rhetoric and Communication Studies | 369 |
+| Second Language Learning and Teaching | 330 |
+| Innovative Teaching Methodologies in Social Sciences | 321 |
+| Diverse Scientific and Economic Studies | 317 |
 
 ### Orientation
 
@@ -272,6 +276,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Has journal-specific policy? / Explicit permission gate? / Leniency / Summary / Source URL); Review Cycle Time > Time to publication (after acceptance). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from rhetoric and composition / writing-studies family conventions (NCTE / 4Cs / CCCC norms). | @Zaious |

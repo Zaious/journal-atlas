@@ -1,0 +1,1734 @@
+[
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\biology\\elife.md",
+    "name": "eLife",
+    "issn": "2050-084X",
+    "topics": [
+      {
+        "name": "Neural dynamics and brain function",
+        "count": 2768
+      },
+      {
+        "name": "Neuroscience and Neuropharmacology Research",
+        "count": 2085
+      },
+      {
+        "name": "Neurobiology and Insect Physiology Research",
+        "count": 1611
+      },
+      {
+        "name": "RNA Research and Splicing",
+        "count": 1490
+      },
+      {
+        "name": "RNA and protein synthesis mechanisms",
+        "count": 1279
+      },
+      {
+        "name": "Memory and Neural Mechanisms",
+        "count": 1173
+      },
+      {
+        "name": "RNA modifications and cancer",
+        "count": 1131
+      },
+      {
+        "name": "Genomics and Chromatin Dynamics",
+        "count": 1108
+      },
+      {
+        "name": "Cellular transport and secretion",
+        "count": 985
+      },
+      {
+        "name": "Genetics, Aging, and Longevity in Model Organisms",
+        "count": 947
+      }
+    ],
+    "works_count": 30914
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\biology\\genome-research.md",
+    "name": "Genome Research",
+    "issn": "1088-9051",
+    "topics": [
+      {
+        "name": "Genomics and Phylogenetic Studies",
+        "count": 1424
+      },
+      {
+        "name": "RNA and protein synthesis mechanisms",
+        "count": 1225
+      },
+      {
+        "name": "Genomics and Chromatin Dynamics",
+        "count": 1223
+      },
+      {
+        "name": "Chromosomal and Genetic Variations",
+        "count": 1125
+      },
+      {
+        "name": "RNA Research and Splicing",
+        "count": 831
+      },
+      {
+        "name": "RNA modifications and cancer",
+        "count": 623
+      },
+      {
+        "name": "CRISPR and Genetic Engineering",
+        "count": 546
+      },
+      {
+        "name": "Epigenetics and DNA Methylation",
+        "count": 488
+      },
+      {
+        "name": "Genomic variations and chromosomal abnormalities",
+        "count": 414
+      },
+      {
+        "name": "Molecular Biology Techniques and Applications",
+        "count": 389
+      }
+    ],
+    "works_count": 6422
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\biology\\nucleic-acids-research.md",
+    "name": "Nucleic Acids Research",
+    "issn": "0305-1048",
+    "topics": [
+      {
+        "name": "RNA and protein synthesis mechanisms",
+        "count": 16872
+      },
+      {
+        "name": "RNA modifications and cancer",
+        "count": 8712
+      },
+      {
+        "name": "DNA and Nucleic Acid Chemistry",
+        "count": 8205
+      },
+      {
+        "name": "RNA Research and Splicing",
+        "count": 8172
+      },
+      {
+        "name": "DNA Repair Mechanisms",
+        "count": 5991
+      },
+      {
+        "name": "Genomics and Phylogenetic Studies",
+        "count": 5779
+      },
+      {
+        "name": "Genomics and Chromatin Dynamics",
+        "count": 5708
+      },
+      {
+        "name": "Advanced biosensing and bioanalysis techniques",
+        "count": 5476
+      },
+      {
+        "name": "Bacterial Genetics and Biotechnology",
+        "count": 4921
+      },
+      {
+        "name": "CRISPR and Genetic Engineering",
+        "count": 4582
+      }
+    ],
+    "works_count": 56230
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\cerebral-cortex.md",
+    "name": "Cerebral Cortex",
+    "issn": "1047-3211",
+    "topics": [
+      {
+        "name": "Neural dynamics and brain function",
+        "count": 2962
+      },
+      {
+        "name": "Functional Brain Connectivity Studies",
+        "count": 2105
+      },
+      {
+        "name": "Neuroscience and Neuropharmacology Research",
+        "count": 1642
+      },
+      {
+        "name": "Neural and Behavioral Psychology Studies",
+        "count": 1582
+      },
+      {
+        "name": "Memory and Neural Mechanisms",
+        "count": 1119
+      },
+      {
+        "name": "Visual perception and processing mechanisms",
+        "count": 1117
+      },
+      {
+        "name": "Advanced Neuroimaging Techniques and Applications",
+        "count": 780
+      },
+      {
+        "name": "EEG and Brain-Computer Interfaces",
+        "count": 754
+      },
+      {
+        "name": "Neurogenesis and neuroplasticity mechanisms",
+        "count": 569
+      },
+      {
+        "name": "Neuroscience and Music Perception",
+        "count": 493
+      }
+    ],
+    "works_count": 9417
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+    "name": "The Clinical Neuropsychologist",
+    "issn": "1385-4046",
+    "topics": [
+      {
+        "name": "Traumatic Brain Injury Research",
+        "count": 895
+      },
+      {
+        "name": "Dementia and Cognitive Impairment Research",
+        "count": 605
+      },
+      {
+        "name": "Cognitive Functions and Memory",
+        "count": 206
+      },
+      {
+        "name": "Traumatic Brain Injury and Neurovascular Disturbances",
+        "count": 201
+      },
+      {
+        "name": "Cardiac Arrest and Resuscitation",
+        "count": 170
+      },
+      {
+        "name": "Neurobiology of Language and Bilingualism",
+        "count": 156
+      },
+      {
+        "name": "Counseling Practices and Supervision",
+        "count": 155
+      },
+      {
+        "name": "Psychological Testing and Assessment",
+        "count": 153
+      },
+      {
+        "name": "Spatial Neglect and Hemispheric Dysfunction",
+        "count": 140
+      },
+      {
+        "name": "Cognitive Abilities and Testing",
+        "count": 120
+      }
+    ],
+    "works_count": 2619
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroimage.md",
+    "name": "NeuroImage",
+    "issn": "1053-8119",
+    "topics": [
+      {
+        "name": "Functional Brain Connectivity Studies",
+        "count": 9255
+      },
+      {
+        "name": "Neural dynamics and brain function",
+        "count": 5815
+      },
+      {
+        "name": "Advanced MRI Techniques and Applications",
+        "count": 5201
+      },
+      {
+        "name": "Advanced Neuroimaging Techniques and Applications",
+        "count": 4961
+      },
+      {
+        "name": "Neural and Behavioral Psychology Studies",
+        "count": 3661
+      },
+      {
+        "name": "EEG and Brain-Computer Interfaces",
+        "count": 3444
+      },
+      {
+        "name": "Visual perception and processing mechanisms",
+        "count": 1772
+      },
+      {
+        "name": "Memory and Neural Mechanisms",
+        "count": 1283
+      },
+      {
+        "name": "Neurobiology of Language and Bilingualism",
+        "count": 1266
+      },
+      {
+        "name": "Face Recognition and Perception",
+        "count": 1249
+      }
+    ],
+    "works_count": 28575
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\neuroscience-of-consciousness.md",
+    "name": "Neuroscience of Consciousness",
+    "issn": "2057-2107",
+    "topics": [
+      {
+        "name": "Neural dynamics and brain function",
+        "count": 128
+      },
+      {
+        "name": "Neural and Behavioral Psychology Studies",
+        "count": 100
+      },
+      {
+        "name": "Visual perception and processing mechanisms",
+        "count": 69
+      },
+      {
+        "name": "EEG and Brain-Computer Interfaces",
+        "count": 54
+      },
+      {
+        "name": "Functional Brain Connectivity Studies",
+        "count": 46
+      },
+      {
+        "name": "Embodied and Extended Cognition",
+        "count": 44
+      },
+      {
+        "name": "Face Recognition and Perception",
+        "count": 35
+      },
+      {
+        "name": "Action Observation and Synchronization",
+        "count": 33
+      },
+      {
+        "name": "Psychosomatic Disorders and Their Treatments",
+        "count": 28
+      },
+      {
+        "name": "Psychedelics and Drug Studies",
+        "count": 28
+      }
+    ],
+    "works_count": 358
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\cognitive-science\\transactions-of-acl.md",
+    "name": "Transactions of the Association for Computational Linguistics",
+    "issn": "2307-387X",
+    "topics": [
+      {
+        "name": "Topic Modeling",
+        "count": 705
+      },
+      {
+        "name": "Natural Language Processing Techniques",
+        "count": 609
+      },
+      {
+        "name": "Multimodal Machine Learning Applications",
+        "count": 177
+      },
+      {
+        "name": "Text Readability and Simplification",
+        "count": 107
+      },
+      {
+        "name": "Speech and dialogue systems",
+        "count": 89
+      },
+      {
+        "name": "Advanced Text Analysis Techniques",
+        "count": 63
+      },
+      {
+        "name": "Speech Recognition and Synthesis",
+        "count": 55
+      },
+      {
+        "name": "Sentiment Analysis and Opinion Mining",
+        "count": 38
+      },
+      {
+        "name": "Text and Document Classification Technologies",
+        "count": 35
+      },
+      {
+        "name": "Explainable Artificial Intelligence (XAI)",
+        "count": 34
+      }
+    ],
+    "works_count": 895
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\data-mining\\kdd.md",
+    "name": "ACM KDD (Knowledge Discovery and Data Mining)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\data-mining\\www.md",
+    "name": "ACM TheWebConf / WWW (International World Wide Web Conference)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acii.md",
+    "name": "ACII (International Conference on Affective Computing and Intelligent Interaction)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-assets.md",
+    "name": "ACM ASSETS (Conference on Computers and Accessibility)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-chi-play.md",
+    "name": "ACM CHI Play (Computer-Human Interaction in Play)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-chi.md",
+    "name": "ACM CHI (Conference on Human Factors in Computing Systems)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-cscw.md",
+    "name": "ACM CSCW (Computer-Supported Cooperative Work and Social Computing)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-dis.md",
+    "name": "ACM DIS (Designing Interactive Systems)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-idc.md",
+    "name": "ACM IDC (Interaction Design and Children)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-iui.md",
+    "name": "ACM IUI (Intelligent User Interfaces)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\acm-uist.md",
+    "name": "ACM UIST (User Interface Software and Technology Symposium)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\hci\\ieee-hri.md",
+    "name": "IEEE/ACM HRI (Human-Robot Interaction)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\ml\\aaai.md",
+    "name": "AAAI Conference on Artificial Intelligence",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\ml\\cvpr.md",
+    "name": "CVPR (Conference on Computer Vision and Pattern Recognition)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\ml\\iclr.md",
+    "name": "ICLR (International Conference on Learning Representations)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\ml\\icml.md",
+    "name": "ICML (International Conference on Machine Learning)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\ml\\neurips.md",
+    "name": "NeurIPS (Neural Information Processing Systems)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\nlp\\acl.md",
+    "name": "ACL (Annual Meeting of the Association for Computational Linguistics)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\nlp\\emnlp.md",
+    "name": "EMNLP (Empirical Methods in Natural Language Processing)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\conferences\\nlp\\naacl.md",
+    "name": "NAACL (North American Chapter of the ACL)",
+    "skip_reason": "no ISSN (likely a conference — needs a different fix, not OpenAlex-per-ISSN)"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-cscw.md",
+    "name": "Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)",
+    "issn": "2573-0142",
+    "topics": [
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 661
+      },
+      {
+        "name": "Social Media and Politics",
+        "count": 400
+      },
+      {
+        "name": "Impact of Technology on Adolescents",
+        "count": 304
+      },
+      {
+        "name": "Virtual Reality Applications and Impacts",
+        "count": 282
+      },
+      {
+        "name": "Mobile Crowdsensing and Crowdsourcing",
+        "count": 257
+      },
+      {
+        "name": "Interactive and Immersive Displays",
+        "count": 256
+      },
+      {
+        "name": "Hate Speech and Cyberbullying Detection",
+        "count": 242
+      },
+      {
+        "name": "Ethics and Social Impacts of AI",
+        "count": 233
+      },
+      {
+        "name": "Privacy, Security, and Data Protection",
+        "count": 229
+      },
+      {
+        "name": "Digital Games and Media",
+        "count": 222
+      }
+    ],
+    "works_count": 3793
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-pacm-imwut.md",
+    "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+    "issn": "2474-9567",
+    "topics": [
+      {
+        "name": "Indoor and Outdoor Localization Technologies",
+        "count": 312
+      },
+      {
+        "name": "Context-Aware Activity Recognition Systems",
+        "count": 254
+      },
+      {
+        "name": "Tactile and Sensory Interactions",
+        "count": 230
+      },
+      {
+        "name": "Interactive and Immersive Displays",
+        "count": 197
+      },
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 161
+      },
+      {
+        "name": "Speech and Audio Processing",
+        "count": 156
+      },
+      {
+        "name": "Human Mobility and Location-Based Analysis",
+        "count": 135
+      },
+      {
+        "name": "Non-Invasive Vital Sign Monitoring",
+        "count": 118
+      },
+      {
+        "name": "Gaze Tracking and Assistive Technology",
+        "count": 117
+      },
+      {
+        "name": "Hand Gesture Recognition Systems",
+        "count": 114
+      }
+    ],
+    "works_count": 1872
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-accessible-computing.md",
+    "name": "ACM Transactions on Accessible Computing",
+    "issn": "1936-7228",
+    "topics": [
+      {
+        "name": "Tactile and Sensory Interactions",
+        "count": 141
+      },
+      {
+        "name": "Digital Accessibility for Disabilities",
+        "count": 87
+      },
+      {
+        "name": "Assistive Technology in Communication and Mobility",
+        "count": 84
+      },
+      {
+        "name": "Technology Use by Older Adults",
+        "count": 45
+      },
+      {
+        "name": "Interactive and Immersive Displays",
+        "count": 42
+      },
+      {
+        "name": "Gaze Tracking and Assistive Technology",
+        "count": 42
+      },
+      {
+        "name": "Autism Spectrum Disorder Research",
+        "count": 37
+      },
+      {
+        "name": "Hearing Impairment and Communication",
+        "count": 34
+      },
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 30
+      },
+      {
+        "name": "Hand Gesture Recognition Systems",
+        "count": 28
+      }
+    ],
+    "works_count": 400
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\acm-transactions-on-human-robot-interaction.md",
+    "name": "ACM Transactions on Human-Robot Interaction",
+    "issn": "2573-9522",
+    "topics": [
+      {
+        "name": "Social Robot Interaction and HRI",
+        "count": 248
+      },
+      {
+        "name": "Human-Automation Interaction and Safety",
+        "count": 112
+      },
+      {
+        "name": "AI in Service Interactions",
+        "count": 95
+      },
+      {
+        "name": "Robot Manipulation and Learning",
+        "count": 63
+      },
+      {
+        "name": "Ethics and Social Impacts of AI",
+        "count": 50
+      },
+      {
+        "name": "Reinforcement Learning in Robotics",
+        "count": 44
+      },
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 30
+      },
+      {
+        "name": "Action Observation and Synchronization",
+        "count": 28
+      },
+      {
+        "name": "Robotics and Automated Systems",
+        "count": 28
+      },
+      {
+        "name": "Gaze Tracking and Assistive Technology",
+        "count": 27
+      }
+    ],
+    "works_count": 465
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\ieee-pervasive-computing.md",
+    "name": "IEEE Pervasive Computing",
+    "issn": "1536-1268",
+    "topics": [
+      {
+        "name": "Context-Aware Activity Recognition Systems",
+        "count": 339
+      },
+      {
+        "name": "Diverse Scientific and Economic Studies",
+        "count": 195
+      },
+      {
+        "name": "Interactive and Immersive Displays",
+        "count": 170
+      },
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 137
+      },
+      {
+        "name": "IoT and Edge/Fog Computing",
+        "count": 133
+      },
+      {
+        "name": "Human auditory perception and evaluation",
+        "count": 129
+      },
+      {
+        "name": "Educational Robotics and Engineering",
+        "count": 91
+      },
+      {
+        "name": "Big Data and Digital Economy",
+        "count": 91
+      },
+      {
+        "name": "Ferroelectric and Negative Capacitance Devices",
+        "count": 86
+      },
+      {
+        "name": "Personal Information Management and User Behavior",
+        "count": 83
+      }
+    ],
+    "works_count": 1994
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\international-journal-of-design.md",
+    "name": "International Journal of Design",
+    "issn": "1991-3761",
+    "topics": [
+      {
+        "name": "Innovative Human-Technology Interaction",
+        "count": 16
+      },
+      {
+        "name": "Design Education and Practice",
+        "count": 14
+      },
+      {
+        "name": "Color perception and design",
+        "count": 14
+      },
+      {
+        "name": "Multisensory perception and integration",
+        "count": 6
+      },
+      {
+        "name": "Usability and User Interface Design",
+        "count": 5
+      },
+      {
+        "name": "Crafts, Textile, and Design",
+        "count": 5
+      },
+      {
+        "name": "Digital Marketing and Social Media",
+        "count": 4
+      },
+      {
+        "name": "Persona Design and Applications",
+        "count": 4
+      },
+      {
+        "name": "Technology Adoption and User Behaviour",
+        "count": 3
+      },
+      {
+        "name": "Consumer Behavior in Brand Consumption and Identification",
+        "count": 3
+      }
+    ],
+    "works_count": 50
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\hci\\journal-of-design-history.md",
+    "name": "Journal of Design History",
+    "issn": "0952-4649",
+    "topics": [
+      {
+        "name": "Fashion and Cultural Textiles",
+        "count": 585
+      },
+      {
+        "name": "Crafts, Textile, and Design",
+        "count": 389
+      },
+      {
+        "name": "Art, Politics, and Modernism",
+        "count": 338
+      },
+      {
+        "name": "Architecture, Design, and Social History",
+        "count": 284
+      },
+      {
+        "name": "Cultural Industries and Urban Development",
+        "count": 279
+      },
+      {
+        "name": "Historical Art and Culture Studies",
+        "count": 149
+      },
+      {
+        "name": "Architecture, Modernity, and Design",
+        "count": 142
+      },
+      {
+        "name": "Visual Culture and Art Theory",
+        "count": 122
+      },
+      {
+        "name": "Art History and Market Analysis",
+        "count": 91
+      },
+      {
+        "name": "Human auditory perception and evaluation",
+        "count": 79
+      }
+    ],
+    "works_count": 2008
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\multidisciplinary\\scientific-reports.md",
+    "name": "Scientific Reports",
+    "issn": "2045-2322",
+    "topics": [
+      {
+        "name": "Cancer-related molecular mechanisms research",
+        "count": 3478
+      },
+      {
+        "name": "MicroRNA in disease regulation",
+        "count": 3218
+      },
+      {
+        "name": "RNA modifications and cancer",
+        "count": 3147
+      },
+      {
+        "name": "Gut microbiota and health",
+        "count": 3123
+      },
+      {
+        "name": "Neural dynamics and brain function",
+        "count": 3001
+      },
+      {
+        "name": "Liver Disease Diagnosis and Treatment",
+        "count": 2882
+      },
+      {
+        "name": "Plant and animal studies",
+        "count": 2629
+      },
+      {
+        "name": "Epigenetics and DNA Methylation",
+        "count": 2596
+      },
+      {
+        "name": "Genomics and Phylogenetic Studies",
+        "count": 2578
+      },
+      {
+        "name": "Functional Brain Connectivity Studies",
+        "count": 2413
+      }
+    ],
+    "works_count": 304905
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\philosophy\\pacific-philosophical-quarterly.md",
+    "name": "Pacific Philosophical Quarterly",
+    "issn": "0031-5621",
+    "topics": [
+      {
+        "name": "Epistemology, Ethics, and Metaphysics",
+        "count": 573
+      },
+      {
+        "name": "Philosophy and Theoretical Science",
+        "count": 481
+      },
+      {
+        "name": "Philosophical Ethics and Theory",
+        "count": 292
+      },
+      {
+        "name": "Free Will and Agency",
+        "count": 212
+      },
+      {
+        "name": "Political Philosophy and Ethics",
+        "count": 178
+      },
+      {
+        "name": "Philosophy and History of Science",
+        "count": 157
+      },
+      {
+        "name": "Psychology of Moral and Emotional Judgment",
+        "count": 132
+      },
+      {
+        "name": "Classical Philosophy and Thought",
+        "count": 87
+      },
+      {
+        "name": "Theology and Philosophy of Evil",
+        "count": 87
+      },
+      {
+        "name": "War, Ethics, and Justification",
+        "count": 73
+      }
+    ],
+    "works_count": 1624
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\physics\\nature-physics.md",
+    "name": "Nature Physics",
+    "issn": "1745-2473",
+    "topics": [
+      {
+        "name": "Quantum and electron transport phenomena",
+        "count": 821
+      },
+      {
+        "name": "Physics of Superconductivity and Magnetism",
+        "count": 694
+      },
+      {
+        "name": "Topological Materials and Phenomena",
+        "count": 676
+      },
+      {
+        "name": "Quantum Information and Cryptography",
+        "count": 653
+      },
+      {
+        "name": "Cold Atom Physics and Bose-Einstein Condensates",
+        "count": 651
+      },
+      {
+        "name": "Advanced Condensed Matter Physics",
+        "count": 505
+      },
+      {
+        "name": "Graphene research and applications",
+        "count": 409
+      },
+      {
+        "name": "Quantum many-body systems",
+        "count": 374
+      },
+      {
+        "name": "Mechanical and Optical Resonators",
+        "count": 356
+      },
+      {
+        "name": "Quantum Mechanics and Applications",
+        "count": 352
+      }
+    ],
+    "works_count": 7477
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\physics\\physical-review-research.md",
+    "name": "Physical Review Research",
+    "issn": "2643-1564",
+    "topics": [
+      {
+        "name": "Quantum Information and Cryptography",
+        "count": 1941
+      },
+      {
+        "name": "Topological Materials and Phenomena",
+        "count": 1366
+      },
+      {
+        "name": "Quantum many-body systems",
+        "count": 1315
+      },
+      {
+        "name": "Quantum Computing Algorithms and Architecture",
+        "count": 1215
+      },
+      {
+        "name": "Quantum and electron transport phenomena",
+        "count": 1205
+      },
+      {
+        "name": "Cold Atom Physics and Bose-Einstein Condensates",
+        "count": 1191
+      },
+      {
+        "name": "Physics of Superconductivity and Magnetism",
+        "count": 989
+      },
+      {
+        "name": "Quantum Mechanics and Applications",
+        "count": 718
+      },
+      {
+        "name": "Advanced Condensed Matter Physics",
+        "count": 649
+      },
+      {
+        "name": "Advanced Thermodynamics and Statistical Mechanics",
+        "count": 635
+      }
+    ],
+    "works_count": 10308
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+    "name": "Alzheimer's & Dementia",
+    "issn": "1552-5260",
+    "topics": [
+      {
+        "name": "Dementia and Cognitive Impairment Research",
+        "count": 24256
+      },
+      {
+        "name": "Alzheimer's disease research and treatments",
+        "count": 17081
+      },
+      {
+        "name": "Functional Brain Connectivity Studies",
+        "count": 4052
+      },
+      {
+        "name": "Neurological Disease Mechanisms and Treatments",
+        "count": 3625
+      },
+      {
+        "name": "Cholinesterase and Neurodegenerative Diseases",
+        "count": 3349
+      },
+      {
+        "name": "Advanced Neuroimaging Techniques and Applications",
+        "count": 2981
+      },
+      {
+        "name": "Neuroinflammation and Neurodegeneration Mechanisms",
+        "count": 2632
+      },
+      {
+        "name": "Health, Environment, Cognitive Aging",
+        "count": 2387
+      },
+      {
+        "name": "Neurological Disorders and Treatments",
+        "count": 1493
+      },
+      {
+        "name": "Advanced MRI Techniques and Applications",
+        "count": 1457
+      }
+    ],
+    "works_count": 66066
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\assessment.md",
+    "name": "Assessment",
+    "issn": "1073-1911",
+    "topics": [
+      {
+        "name": "Child and Adolescent Psychosocial and Emotional Development",
+        "count": 476
+      },
+      {
+        "name": "Personality Disorders and Psychopathology",
+        "count": 425
+      },
+      {
+        "name": "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes",
+        "count": 279
+      },
+      {
+        "name": "Mental Health Research Topics",
+        "count": 265
+      },
+      {
+        "name": "Personality Traits and Psychology",
+        "count": 245
+      },
+      {
+        "name": "Psychopathy, Forensic Psychiatry, Sexual Offending",
+        "count": 223
+      },
+      {
+        "name": "Psychological Testing and Assessment",
+        "count": 173
+      },
+      {
+        "name": "Traumatic Brain Injury Research",
+        "count": 161
+      },
+      {
+        "name": "Cognitive Abilities and Testing",
+        "count": 156
+      },
+      {
+        "name": "Behavioral Health and Interventions",
+        "count": 122
+      }
+    ],
+    "works_count": 2571
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+    "name": "Counselling Psychology Quarterly",
+    "issn": "0951-5070",
+    "topics": [
+      {
+        "name": "Psychotherapy Techniques and Applications",
+        "count": 418
+      },
+      {
+        "name": "Counseling Practices and Supervision",
+        "count": 360
+      },
+      {
+        "name": "Counseling, Therapy, and Family Dynamics",
+        "count": 247
+      },
+      {
+        "name": "Child and Adolescent Psychosocial and Emotional Development",
+        "count": 147
+      },
+      {
+        "name": "Attachment and Relationship Dynamics",
+        "count": 108
+      },
+      {
+        "name": "Educational and Psychological Assessments",
+        "count": 98
+      },
+      {
+        "name": "Academic and Historical Perspectives in Psychology",
+        "count": 91
+      },
+      {
+        "name": "Child Therapy and Development",
+        "count": 70
+      },
+      {
+        "name": "Mental Health Treatment and Access",
+        "count": 58
+      },
+      {
+        "name": "Resilience and Mental Health",
+        "count": 52
+      }
+    ],
+    "works_count": 1454
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\culture-and-psychology.md",
+    "name": "Culture & Psychology",
+    "issn": "1354-067X",
+    "topics": [
+      {
+        "name": "Social Representations and Identity",
+        "count": 501
+      },
+      {
+        "name": "Cultural Differences and Values",
+        "count": 301
+      },
+      {
+        "name": "Community Health and Development",
+        "count": 197
+      },
+      {
+        "name": "Language, Discourse, Communication Strategies",
+        "count": 149
+      },
+      {
+        "name": "Language, Metaphor, and Cognition",
+        "count": 113
+      },
+      {
+        "name": "Counseling, Therapy, and Family Dynamics",
+        "count": 67
+      },
+      {
+        "name": "Academic and Historical Perspectives in Psychology",
+        "count": 55
+      },
+      {
+        "name": "Social and Intergroup Psychology",
+        "count": 52
+      },
+      {
+        "name": "Social and Cultural Dynamics",
+        "count": 49
+      },
+      {
+        "name": "Innovative Education and Learning Practices",
+        "count": 43
+      }
+    ],
+    "works_count": 1202
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\environment-and-behavior.md",
+    "name": "Environment and Behavior",
+    "issn": "0013-9165",
+    "topics": [
+      {
+        "name": "Urban Green Space and Health",
+        "count": 506
+      },
+      {
+        "name": "Environmental Education and Sustainability",
+        "count": 501
+      },
+      {
+        "name": "Place Attachment and Urban Studies",
+        "count": 271
+      },
+      {
+        "name": "Urban Transport and Accessibility",
+        "count": 181
+      },
+      {
+        "name": "Climate Change Communication and Perception",
+        "count": 172
+      },
+      {
+        "name": "Environmental Sustainability in Business",
+        "count": 154
+      },
+      {
+        "name": "Behavioral Health and Interventions",
+        "count": 150
+      },
+      {
+        "name": "Spatial Cognition and Navigation",
+        "count": 141
+      },
+      {
+        "name": "Noise Effects and Management",
+        "count": 131
+      },
+      {
+        "name": "Educational Environments and Student Outcomes",
+        "count": 114
+      }
+    ],
+    "works_count": 2344
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journal-of-vocational-behavior.md",
+    "name": "Journal of Vocational Behavior",
+    "issn": "0001-8791",
+    "topics": [
+      {
+        "name": "Job Satisfaction and Organizational Behavior",
+        "count": 1160
+      },
+      {
+        "name": "Career Development and Diversity",
+        "count": 1158
+      },
+      {
+        "name": "Gender Diversity and Inequality",
+        "count": 519
+      },
+      {
+        "name": "Higher Education and Employability",
+        "count": 504
+      },
+      {
+        "name": "Work-Family Balance Challenges",
+        "count": 473
+      },
+      {
+        "name": "Employment and Welfare Studies",
+        "count": 317
+      },
+      {
+        "name": "Education, Achievement, and Giftedness",
+        "count": 300
+      },
+      {
+        "name": "Diverse Scientific and Economic Studies",
+        "count": 293
+      },
+      {
+        "name": "Human auditory perception and evaluation",
+        "count": 257
+      },
+      {
+        "name": "Higher Education Research Studies",
+        "count": 255
+      }
+    ],
+    "works_count": 4045
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\journals-of-gerontology-b-psychological-sciences.md",
+    "name": "The Journals of Gerontology: Series B (Psychological Sciences)",
+    "issn": "1079-5014",
+    "topics": [
+      {
+        "name": "Health disparities and outcomes",
+        "count": 1351
+      },
+      {
+        "name": "Aging and Gerontology Research",
+        "count": 1223
+      },
+      {
+        "name": "Intergenerational Family Dynamics and Caregiving",
+        "count": 868
+      },
+      {
+        "name": "Dementia and Cognitive Impairment Research",
+        "count": 736
+      },
+      {
+        "name": "Geriatric Care and Nursing Homes",
+        "count": 336
+      },
+      {
+        "name": "Retirement, Disability, and Employment",
+        "count": 265
+      },
+      {
+        "name": "Identity, Memory, and Therapy",
+        "count": 260
+      },
+      {
+        "name": "Psychological Well-being and Life Satisfaction",
+        "count": 221
+      },
+      {
+        "name": "Technology Use by Older Adults",
+        "count": 195
+      },
+      {
+        "name": "Family Dynamics and Relationships",
+        "count": 188
+      }
+    ],
+    "works_count": 4662
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\memory-and-cognition.md",
+    "name": "Memory & Cognition",
+    "issn": "0090-502X",
+    "topics": [
+      {
+        "name": "Memory Processes and Influences",
+        "count": 1946
+      },
+      {
+        "name": "Neural and Behavioral Psychology Studies",
+        "count": 1176
+      },
+      {
+        "name": "Child and Animal Learning Development",
+        "count": 1072
+      },
+      {
+        "name": "Reading and Literacy Development",
+        "count": 992
+      },
+      {
+        "name": "Neurobiology of Language and Bilingualism",
+        "count": 770
+      },
+      {
+        "name": "Visual and Cognitive Learning Processes",
+        "count": 758
+      },
+      {
+        "name": "Memory and Neural Mechanisms",
+        "count": 481
+      },
+      {
+        "name": "Deception detection and forensic psychology",
+        "count": 420
+      },
+      {
+        "name": "Decision-Making and Behavioral Economics",
+        "count": 338
+      },
+      {
+        "name": "Visual perception and processing mechanisms",
+        "count": 298
+      }
+    ],
+    "works_count": 5642
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\new-ideas-in-psychology.md",
+    "name": "New Ideas in Psychology",
+    "issn": "0732-118X",
+    "topics": [
+      {
+        "name": "Academic and Historical Perspectives in Psychology",
+        "count": 161
+      },
+      {
+        "name": "Social Representations and Identity",
+        "count": 151
+      },
+      {
+        "name": "Child and Animal Learning Development",
+        "count": 146
+      },
+      {
+        "name": "Human auditory perception and evaluation",
+        "count": 122
+      },
+      {
+        "name": "Diverse Scientific and Economic Studies",
+        "count": 118
+      },
+      {
+        "name": "Educational Robotics and Engineering",
+        "count": 109
+      },
+      {
+        "name": "Action Observation and Synchronization",
+        "count": 96
+      },
+      {
+        "name": "Embodied and Extended Cognition",
+        "count": 90
+      },
+      {
+        "name": "Philosophy and History of Science",
+        "count": 76
+      },
+      {
+        "name": "Cultural Differences and Values",
+        "count": 76
+      }
+    ],
+    "works_count": 1752
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\phenomenology-and-the-cognitive-sciences.md",
+    "name": "Phenomenology and the Cognitive Sciences",
+    "issn": "1568-7759",
+    "topics": [
+      {
+        "name": "Embodied and Extended Cognition",
+        "count": 491
+      },
+      {
+        "name": "Action Observation and Synchronization",
+        "count": 281
+      },
+      {
+        "name": "Mental Health and Psychiatry",
+        "count": 223
+      },
+      {
+        "name": "Phenomenology and Existential Philosophy",
+        "count": 160
+      },
+      {
+        "name": "Philosophy and Theoretical Science",
+        "count": 155
+      },
+      {
+        "name": "Social Representations and Identity",
+        "count": 108
+      },
+      {
+        "name": "Psychology of Moral and Emotional Judgment",
+        "count": 92
+      },
+      {
+        "name": "Child and Animal Learning Development",
+        "count": 90
+      },
+      {
+        "name": "Philosophy and History of Science",
+        "count": 87
+      },
+      {
+        "name": "Emotions and Moral Behavior",
+        "count": 67
+      }
+    ],
+    "works_count": 1286
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\psychology\\review-of-general-psychology.md",
+    "name": "Review of General Psychology",
+    "issn": "1089-2680",
+    "topics": [
+      {
+        "name": "Cultural Differences and Values",
+        "count": 120
+      },
+      {
+        "name": "Academic and Historical Perspectives in Psychology",
+        "count": 111
+      },
+      {
+        "name": "Social and Intergroup Psychology",
+        "count": 101
+      },
+      {
+        "name": "Social Representations and Identity",
+        "count": 79
+      },
+      {
+        "name": "Behavioral Health and Interventions",
+        "count": 67
+      },
+      {
+        "name": "Mental Health Research Topics",
+        "count": 66
+      },
+      {
+        "name": "Evolutionary Psychology and Human Behavior",
+        "count": 65
+      },
+      {
+        "name": "Psychology of Moral and Emotional Judgment",
+        "count": 60
+      },
+      {
+        "name": "Psychotherapy Techniques and Applications",
+        "count": 57
+      },
+      {
+        "name": "Psychological Well-being and Life Satisfaction",
+        "count": 57
+      }
+    ],
+    "works_count": 967
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+    "name": "College Composition and Communication",
+    "issn": "0010-096X",
+    "topics": [
+      {
+        "name": "Discourse Analysis in Language Studies",
+        "count": 1155
+      },
+      {
+        "name": "EFL/ESL Teaching and Learning",
+        "count": 872
+      },
+      {
+        "name": "Literacy, Media, and Education",
+        "count": 453
+      },
+      {
+        "name": "Education and Critical Thinking Development",
+        "count": 414
+      },
+      {
+        "name": "Reflective Practices in Education",
+        "count": 402
+      },
+      {
+        "name": "Writing and Handwriting Education",
+        "count": 376
+      },
+      {
+        "name": "Rhetoric and Communication Studies",
+        "count": 369
+      },
+      {
+        "name": "Second Language Learning and Teaching",
+        "count": 330
+      },
+      {
+        "name": "Innovative Teaching Methodologies in Social Sciences",
+        "count": 321
+      },
+      {
+        "name": "Diverse Scientific and Economic Studies",
+        "count": 317
+      }
+    ],
+    "works_count": 8414
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\cultural-studies-critical-methodologies.md",
+    "name": "Cultural Studies ↔ Critical Methodologies",
+    "issn": "1532-7086",
+    "topics": [
+      {
+        "name": "Posthumanist Ethics and Activism",
+        "count": 167
+      },
+      {
+        "name": "Critical Race Theory in Education",
+        "count": 108
+      },
+      {
+        "name": "Qualitative Research Methods and Ethics",
+        "count": 106
+      },
+      {
+        "name": "Participatory Visual Research Methods",
+        "count": 91
+      },
+      {
+        "name": "Rhetoric and Communication Studies",
+        "count": 89
+      },
+      {
+        "name": "Gender, Feminism, and Media",
+        "count": 69
+      },
+      {
+        "name": "Race, History, and American Society",
+        "count": 67
+      },
+      {
+        "name": "Theatre and Performance Studies",
+        "count": 64
+      },
+      {
+        "name": "Geographies of human-animal interactions",
+        "count": 64
+      },
+      {
+        "name": "Educator Training and Historical Pedagogy",
+        "count": 50
+      }
+    ],
+    "works_count": 1440
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-inquiry.md",
+    "name": "Qualitative Inquiry",
+    "issn": "1077-8004",
+    "topics": [
+      {
+        "name": "Qualitative Research Methods and Ethics",
+        "count": 680
+      },
+      {
+        "name": "Participatory Visual Research Methods",
+        "count": 479
+      },
+      {
+        "name": "Posthumanist Ethics and Activism",
+        "count": 366
+      },
+      {
+        "name": "Critical Race Theory in Education",
+        "count": 190
+      },
+      {
+        "name": "Educator Training and Historical Pedagogy",
+        "count": 147
+      },
+      {
+        "name": "Theatre and Performance Studies",
+        "count": 128
+      },
+      {
+        "name": "Qualitative Research Methods and Applications",
+        "count": 108
+      },
+      {
+        "name": "Art Education and Development",
+        "count": 100
+      },
+      {
+        "name": "Counseling, Therapy, and Family Dynamics",
+        "count": 94
+      },
+      {
+        "name": "Rhetoric and Communication Studies",
+        "count": 87
+      }
+    ],
+    "works_count": 2844
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\references\\journals\\qualitative-methods\\qualitative-research-in-psychology.md",
+    "name": "Qualitative Research in Psychology",
+    "issn": "1478-0887",
+    "topics": [
+      {
+        "name": "Participatory Visual Research Methods",
+        "count": 148
+      },
+      {
+        "name": "Qualitative Research Methods and Ethics",
+        "count": 143
+      },
+      {
+        "name": "Language, Discourse, Communication Strategies",
+        "count": 83
+      },
+      {
+        "name": "Social Representations and Identity",
+        "count": 66
+      },
+      {
+        "name": "Community Health and Development",
+        "count": 52
+      },
+      {
+        "name": "Qualitative Research Methods and Applications",
+        "count": 51
+      },
+      {
+        "name": "Discourse Analysis in Language Studies",
+        "count": 41
+      },
+      {
+        "name": "Language, Metaphor, and Cognition",
+        "count": 41
+      },
+      {
+        "name": "Counseling, Therapy, and Family Dynamics",
+        "count": 40
+      },
+      {
+        "name": "Children's Rights and Participation",
+        "count": 37
+      }
+    ],
+    "works_count": 720
+  }
+]

@@ -129,6 +129,19 @@
 
 ### Top Topics
 
+| Topic | Article Count |
+|-------|--------------|
+| Embodied and Extended Cognition | 491 |
+| Action Observation and Synchronization | 281 |
+| Mental Health and Psychiatry | 223 |
+| Phenomenology and Existential Philosophy | 160 |
+| Philosophy and Theoretical Science | 155 |
+| Social Representations and Identity | 108 |
+| Psychology of Moral and Emotional Judgment | 92 |
+| Child and Animal Learning Development | 90 |
+| Philosophy and History of Science | 87 |
+| Emotions and Moral Behavior | 67 |
+
 *(Top topics — see OpenAlex API for ISSN 1568-7759 for full distribution. Journal welcomes phenomenology, cognitive science, 4E cognition, embodied cognition, predictive cognition intersections.)*
 
 ### Orientation
@@ -288,6 +301,7 @@ Low for well-framed phenomenology-cognitive-science manuscripts. Authors typical
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5) / Explicit permission gate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Memory research | *(community estimate)* |
-| Attention | *(community estimate)* |
-| Learning and learning processes | *(community estimate)* |
-| Language and reading | *(community estimate)* |
-| Decision making | *(community estimate)* |
-| Metacognition | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Memory Processes and Influences | 1946 |
+| Neural and Behavioral Psychology Studies | 1176 |
+| Child and Animal Learning Development | 1072 |
+| Reading and Literacy Development | 992 |
+| Neurobiology of Language and Bilingualism | 770 |
+| Visual and Cognitive Learning Processes | 758 |
+| Memory and Neural Mechanisms | 481 |
+| Deception detection and forensic psychology | 420 |
+| Decision-Making and Behavioral Economics | 338 |
+| Visual perception and processing mechanisms | 298 |
 
 ### Orientation
 
@@ -275,5 +279,6 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

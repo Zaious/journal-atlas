@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Cognitive aging | *(community estimate)* |
-| Social and emotional aging | *(community estimate)* |
-| Personality and aging | *(community estimate)* |
-| Mental health and aging | *(community estimate)* |
-| Caregiving research | *(community estimate)* |
-| Cross-cultural aging studies | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Health disparities and outcomes | 1351 |
+| Aging and Gerontology Research | 1223 |
+| Intergenerational Family Dynamics and Caregiving | 868 |
+| Dementia and Cognitive Impairment Research | 736 |
+| Geriatric Care and Nursing Homes | 336 |
+| Retirement, Disability, and Employment | 265 |
+| Identity, Memory, and Therapy | 260 |
+| Psychological Well-being and Life Satisfaction | 221 |
+| Technology Use by Older Adults | 195 |
+| Family Dynamics and Relationships | 188 |
 
 ### Orientation
 
@@ -276,6 +280,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Metrics > Review Cycle Time (Time to first decision / Time to first review / Time to acceptance (total)). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Molecular biology | *(community estimate)* |
-| Nucleic acid chemistry | *(community estimate)* |
-| Gene expression / regulation | *(community estimate)* |
-| Structural biology of nucleic acids | *(community estimate)* |
-| Databases for biology | *(community estimate)* |
-| Web tools / Web servers | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| RNA and protein synthesis mechanisms | 16872 |
+| RNA modifications and cancer | 8712 |
+| DNA and Nucleic Acid Chemistry | 8205 |
+| RNA Research and Splicing | 8172 |
+| DNA Repair Mechanisms | 5991 |
+| Genomics and Phylogenetic Studies | 5779 |
+| Genomics and Chromatin Dynamics | 5708 |
+| Advanced biosensing and bioanalysis techniques | 5476 |
+| Bacterial Genetics and Biotechnology | 4921 |
+| CRISPR and Genetic Engineering | 4582 |
 
 ### Orientation
 
@@ -246,4 +250,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from biology / OA molecular-biology family conventions (PLOS / Cell Press OA / OUP Bioinformatics norms). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |

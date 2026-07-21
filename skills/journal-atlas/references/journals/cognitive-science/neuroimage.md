@@ -119,13 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Neuroimaging (fMRI / DTI / EEG / MEG / PET) | *(community estimate)* |
-| Computational neuroimaging methods | *(community estimate)* |
-| Image processing for neuroscience | *(community estimate)* |
-| Connectomics | *(community estimate)* |
-| Multimodal imaging | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Functional Brain Connectivity Studies | 9255 |
+| Neural dynamics and brain function | 5815 |
+| Advanced MRI Techniques and Applications | 5201 |
+| Advanced Neuroimaging Techniques and Applications | 4961 |
+| Neural and Behavioral Psychology Studies | 3661 |
+| EEG and Brain-Computer Interfaces | 3444 |
+| Visual perception and processing mechanisms | 1772 |
+| Memory and Neural Mechanisms | 1283 |
+| Neurobiology of Language and Bilingualism | 1266 |
+| Face Recognition and Perception | 1249 |
 
 ### Orientation
 
@@ -272,6 +277,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |

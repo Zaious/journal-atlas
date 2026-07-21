@@ -123,6 +123,19 @@
 
 ### Top Topics
 
+| Topic | Article Count |
+|-------|--------------|
+| Cultural Differences and Values | 120 |
+| Academic and Historical Perspectives in Psychology | 111 |
+| Social and Intergroup Psychology | 101 |
+| Social Representations and Identity | 79 |
+| Behavioral Health and Interventions | 67 |
+| Mental Health Research Topics | 66 |
+| Evolutionary Psychology and Human Behavior | 65 |
+| Psychology of Moral and Emotional Judgment | 60 |
+| Psychotherapy Techniques and Applications | 57 |
+| Psychological Well-being and Life Satisfaction | 57 |
+
 *(Top topics ranking — see OpenAlex API for ISSN 1089-2680 for full distribution. Top areas include human subjectivity, historical/theoretical psychology, indigenous and global perspectives on general psychology.)*
 
 ### Orientation
@@ -282,6 +295,7 @@ Low for well-framed integrative work. Authors typically invest ~1 revision sessi
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated. Soft Metadata reserved for community. | @Zaious |

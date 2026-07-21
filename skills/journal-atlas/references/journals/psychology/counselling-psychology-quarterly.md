@@ -119,13 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Counseling psychology theory and practice | *(community estimate)* |
-| Therapeutic relationship research | *(community estimate)* |
-| Cross-cultural counseling | *(community estimate)* |
-| Counselor training | *(community estimate)* |
-| Mental health interventions | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Psychotherapy Techniques and Applications | 418 |
+| Counseling Practices and Supervision | 360 |
+| Counseling, Therapy, and Family Dynamics | 247 |
+| Child and Adolescent Psychosocial and Emotional Development | 147 |
+| Attachment and Relationship Dynamics | 108 |
+| Educational and Psychological Assessments | 98 |
+| Academic and Historical Perspectives in Psychology | 91 |
+| Child Therapy and Development | 70 |
+| Mental Health Treatment and Access | 58 |
+| Resilience and Mental Health | 52 |
 
 ### Orientation
 
@@ -274,6 +279,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved 3 flagged conflicts (existing vs. AI-research pass): (1) Peer Review Type updated Single-blind → Double-anonymized, verified live against publisher's own journal page; (2) Time to publication (after acceptance) updated `2-6 weeks` estimate → `~8 days` T&F official figure, consistent with sibling metrics already sourced from the same journal-metrics page; (3) Soft Metadata epistemological/political-leaning conflict left for human review (out of scope for direct edit; see AI-Research Notes positioning finding above). | @Zaious (agent-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |

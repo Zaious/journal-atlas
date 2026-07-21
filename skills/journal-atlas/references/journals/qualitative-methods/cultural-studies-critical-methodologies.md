@@ -123,13 +123,18 @@
 
 ### Top Topics
 
-| Topic | Notes |
-|-------|-------|
-| Posthumanist Ethics and Activism | |
-| Critical Race Theory in Education | |
-| Qualitative Research Methods and Ethics | |
-| Participatory Visual Research Methods | |
-| Rhetoric and Communication Studies | |
+| Topic | Article Count |
+|-------|--------------|
+| Posthumanist Ethics and Activism | 167 |
+| Critical Race Theory in Education | 108 |
+| Qualitative Research Methods and Ethics | 106 |
+| Participatory Visual Research Methods | 91 |
+| Rhetoric and Communication Studies | 89 |
+| Gender, Feminism, and Media | 69 |
+| Race, History, and American Society | 67 |
+| Theatre and Performance Studies | 64 |
+| Geographies of human-animal interactions | 64 |
+| Educator Training and Historical Pedagogy | 50 |
 
 *(Past 4 years (2022-2025) the journal published 41+ autoethnography-themed articles, including decolonial, performative, collaborative, and ritualistic variants.)*
 
@@ -298,6 +303,7 @@ Moderate-to-high. The 8,000-word hard limit **including notes and references** i
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |

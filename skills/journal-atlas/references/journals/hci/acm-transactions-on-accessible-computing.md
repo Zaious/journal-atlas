@@ -121,14 +121,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Accessibility / Disability | *(community estimate)* |
-| Assistive technology | *(community estimate)* |
-| Universal design | *(community estimate)* |
-| Inclusive design | *(community estimate)* |
-| Web accessibility | *(community estimate)* |
-| Cognitive / motor / sensory accessibility | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Tactile and Sensory Interactions | 141 |
+| Digital Accessibility for Disabilities | 87 |
+| Assistive Technology in Communication and Mobility | 84 |
+| Technology Use by Older Adults | 45 |
+| Interactive and Immersive Displays | 42 |
+| Gaze Tracking and Assistive Technology | 42 |
+| Autism Spectrum Disorder Research | 37 |
+| Hearing Impairment and Communication | 34 |
+| Innovative Human-Technology Interaction | 30 |
+| Hand Gesture Recognition Systems | 28 |
 
 ### Orientation
 
@@ -277,6 +281,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited); Meta-analysis 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Open Access table updated: Model Hybrid OA → Full OA, APC ~$700-2,500 → ~$1,450 standard / $250-$350 transitional 2026 rate. Reflects ACM's 2026-01-01 full-OA conversion of all publications; independently confirmed via multiple ACM SIG sources, not just one. Follow-up to the conflict-resolution pass below, which had flagged this as confirmed but out of scope. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Summary / Source URL). | @Zaious (AI-assisted) |

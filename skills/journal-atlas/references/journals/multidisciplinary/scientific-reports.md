@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| All natural sciences | *(community estimate)* |
-| Biology / Medicine | *(community estimate)* |
-| Physics / Chemistry | *(community estimate)* |
-| Earth sciences | *(community estimate)* |
-| Engineering | *(community estimate)* |
-| Computer science | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Cancer-related molecular mechanisms research | 3478 |
+| MicroRNA in disease regulation | 3218 |
+| RNA modifications and cancer | 3147 |
+| Gut microbiota and health | 3123 |
+| Neural dynamics and brain function | 3001 |
+| Liver Disease Diagnosis and Treatment | 2882 |
+| Plant and animal studies | 2629 |
+| Epigenetics and DNA Methylation | 2596 |
+| Genomics and Phylogenetic Studies | 2578 |
+| Functional Brain Connectivity Studies | 2413 |
 
 ### Orientation
 
@@ -243,4 +247,5 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from OA generalist family conventions (Scientific Reports / PLOS ONE / Heliyon norms). | @Zaious |

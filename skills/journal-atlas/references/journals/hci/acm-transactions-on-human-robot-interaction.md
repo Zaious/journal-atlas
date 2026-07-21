@@ -119,14 +119,18 @@
 
 ### Top Topics (last 5 years)
 
-| Topic | Article Count (2020-2025) |
-|-------|--------------------------|
-| Human-Robot Interaction | *(community estimate)* |
-| Social robotics | *(community estimate)* |
-| Robot ethics | *(community estimate)* |
-| Robot perception of humans | *(community estimate)* |
-| Assistive / healthcare robotics | *(community estimate)* |
-| Human-robot teamwork | *(community estimate)* |
+| Topic | Article Count |
+|-------|--------------|
+| Social Robot Interaction and HRI | 248 |
+| Human-Automation Interaction and Safety | 112 |
+| AI in Service Interactions | 95 |
+| Robot Manipulation and Learning | 63 |
+| Ethics and Social Impacts of AI | 50 |
+| Reinforcement Learning in Robotics | 44 |
+| Innovative Human-Technology Interaction | 30 |
+| Action Observation and Synchronization | 28 |
+| Robotics and Automated Systems | 28 |
+| Gaze Tracking and Assistive Technology | 27 |
 
 ### Orientation
 
@@ -276,6 +280,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Autoethnography 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy > Post-acceptance (AAM) row; Metrics > Review Cycle Time (all four rows). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

@@ -124,6 +124,19 @@
 
 ### Top Topics
 
+| Topic | Article Count |
+|-------|--------------|
+| Social Representations and Identity | 501 |
+| Cultural Differences and Values | 301 |
+| Community Health and Development | 197 |
+| Language, Discourse, Communication Strategies | 149 |
+| Language, Metaphor, and Cognition | 113 |
+| Counseling, Therapy, and Family Dynamics | 67 |
+| Academic and Historical Perspectives in Psychology | 55 |
+| Social and Intergroup Psychology | 52 |
+| Social and Cultural Dynamics | 49 |
+| Innovative Education and Learning Practices | 43 |
+
 *(Top topics ranking — see OpenAlex API for ISSN 1354-067X for full distribution. Cultural psychology focus; theoretical home of dialogical self theory (Hermans tradition); intersection of culture, self, and identity.)*
 
 ### Orientation
@@ -284,6 +297,7 @@ Moderate when manuscripts originate outside cultural-psychology paradigm. Author
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 2 field(s) with OpenAlex keyword-count evidence (BDSM / Kink, Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts: Peer Review Type corrected to open review (journal-specific override of Sage default, verified via search-indexed Submission Guidelines text); AI Policy gate/leniency wording harmonized (clarified "no pre-approval, disclosure-conditional" per verified Sage AI-policy source text). Soft Metadata framing conflict left unedited (out of scope). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
