@@ -176,7 +176,7 @@
 | Autoethnography | 0 | Outside scope |
 | Theoretical / Conceptual | 3 | With empirical implications |
 | Mixed methods | 4 | Common in health psychology |
-| Meta-analysis | 5 | Welcomed |
+| Meta-analysis | 5 | 67 article(s) found (OpenAlex keyword search, 2021-2026, 966 total in window; 6.9%) — confirms the journal publishes this at a meaningful rate |
 
 ### Voice & Style
 
@@ -293,6 +293,7 @@ Low for health-psychology empirical authors. Moderate for adjacent psychology �
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

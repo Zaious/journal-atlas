@@ -1,0 +1,1088 @@
+[
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\archives-of-clinical-neuropsychology.md",
+    "rel": "cognitive-science/archives-of-clinical-neuropsychology.md",
+    "name": "Archives of Clinical Neuropsychology",
+    "issn": "0887-6177",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "36 article(s) found (OpenAlex keyword search, 2021-2026, 2208 total in window; 1.6%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 36,
+        "total": 2208
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\cerebral-cortex.md",
+    "rel": "cognitive-science/cerebral-cortex.md",
+    "name": "Cerebral Cortex",
+    "issn": "1047-3211",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "20 article(s) found (OpenAlex keyword search, 2021-2026, 2308 total in window; 0.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 20,
+        "total": 2308
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\clinical-neuropsychologist.md",
+    "rel": "cognitive-science/clinical-neuropsychologist.md",
+    "name": "The Clinical Neuropsychologist",
+    "issn": "1385-4046",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "17 article(s) found (OpenAlex keyword search, 2021-2026, 529 total in window; 3.2%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 17,
+        "total": 529
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\cognition.md",
+    "rel": "cognitive-science/cognition.md",
+    "name": "Cognition",
+    "issn": "0010-0277",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "7 article(s) found (OpenAlex keyword search, 2021-2026, 1390 total in window; 0.5%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 7,
+        "total": 1390
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\consciousness-and-cognition.md",
+    "rel": "cognitive-science/consciousness-and-cognition.md",
+    "name": "Consciousness and Cognition",
+    "issn": "1053-8100",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 598 total in window; 0.5%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 3,
+        "total": 598
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\journal-of-clinical-and-experimental-neuropsychology.md",
+    "rel": "cognitive-science/journal-of-clinical-and-experimental-neuropsychology.md",
+    "name": "Journal of Clinical and Experimental Neuropsychology",
+    "issn": "1380-3395",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "10 article(s) found (OpenAlex keyword search, 2021-2026, 388 total in window; 2.6%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 10,
+        "total": 388
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\journal-of-cognitive-neuroscience.md",
+    "rel": "cognitive-science/journal-of-cognitive-neuroscience.md",
+    "name": "Journal of Cognitive Neuroscience",
+    "issn": "0898-929X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 743 total in window; 0.4%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 3,
+        "total": 743
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\journal-of-experimental-psychology-general.md",
+    "rel": "cognitive-science/journal-of-experimental-psychology-general.md",
+    "name": "Journal of Experimental Psychology General",
+    "issn": "0096-3445",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "18 article(s) found (OpenAlex keyword search, 2021-2026, 1510 total in window; 1.2%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 18,
+        "total": 1510
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\neuroimage.md",
+    "rel": "cognitive-science/neuroimage.md",
+    "name": "NeuroImage",
+    "issn": "1053-8119",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "46 article(s) found (OpenAlex keyword search, 2021-2026, 3375 total in window; 1.4%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 46,
+        "total": 3375
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\neuropsychology.md",
+    "rel": "cognitive-science/neuropsychology.md",
+    "name": "Neuropsychology",
+    "issn": "0894-4105",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "22 article(s) found (OpenAlex keyword search, 2021-2026, 543 total in window; 4.1%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 22,
+        "total": 543
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\cognitive-science\\neuroscience-of-consciousness.md",
+    "rel": "cognitive-science/neuroscience-of-consciousness.md",
+    "name": "Neuroscience of Consciousness",
+    "issn": "2057-2107",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "1 article(s) found (OpenAlex keyword search, 2021-2026, 205 total in window; 0.5%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 1,
+        "total": 205
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\acm-pacm-cscw.md",
+    "rel": "hci/acm-pacm-cscw.md",
+    "name": "Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)",
+    "issn": "2573-0142",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "148 article(s) found (OpenAlex keyword search, 2021-2026, 2700 total in window; 5.5%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 148,
+        "total": 2700
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\acm-pacm-imwut.md",
+    "rel": "hci/acm-pacm-imwut.md",
+    "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+    "issn": "2474-9567",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "5 article(s) found (OpenAlex keyword search, 2021-2026, 1048 total in window; 0.5%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 5,
+        "total": 1048
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\acm-transactions-on-accessible-computing.md",
+    "rel": "hci/acm-transactions-on-accessible-computing.md",
+    "name": "ACM Transactions on Accessible Computing",
+    "issn": "1936-7228",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "6 article(s) found (OpenAlex keyword search, 2021-2026, 129 total in window; 4.7%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 6,
+        "total": 129
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\acm-transactions-on-human-robot-interaction.md",
+    "rel": "hci/acm-transactions-on-human-robot-interaction.md",
+    "name": "ACM Transactions on Human-Robot Interaction",
+    "issn": "2573-9522",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "7 article(s) found (OpenAlex keyword search, 2021-2026, 346 total in window; 2.0%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 7,
+        "total": 346
+      },
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 346 total in window; 0.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 3,
+        "total": 346
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\behaviour-and-information-technology.md",
+    "rel": "hci/behaviour-and-information-technology.md",
+    "name": "Behaviour & Information Technology",
+    "issn": "0144-929X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "8 article(s) found (OpenAlex keyword search, 2021-2026, 1153 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 8,
+        "total": 1153
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\computers-in-human-behavior.md",
+    "rel": "hci/computers-in-human-behavior.md",
+    "name": "Computers in Human Behavior",
+    "issn": "0747-5632",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "35 article(s) found (OpenAlex keyword search, 2021-2026, 1744 total in window; 2.0%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 35,
+        "total": 1744
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\frontiers-in-computer-science.md",
+    "rel": "hci/frontiers-in-computer-science.md",
+    "name": "Frontiers in Computer Science — Human-Media Interaction",
+    "issn": "2624-9898",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "2 article(s) found (OpenAlex keyword search, 2021-2026, 972 total in window; 0.2%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 2,
+        "total": 972
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\human-computer-interaction.md",
+    "rel": "hci/human-computer-interaction.md",
+    "name": "Human-Computer Interaction (Journal)",
+    "issn": "0737-0024",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 204 total in window; 1.5%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 3,
+        "total": 204
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\human-factors.md",
+    "rel": "hci/human-factors.md",
+    "name": "Human Factors",
+    "issn": "0018-7208",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 411 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 3,
+        "total": 411
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\ieee-pervasive-computing.md",
+    "rel": "hci/ieee-pervasive-computing.md",
+    "name": "IEEE Pervasive Computing",
+    "issn": "1536-1268",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "1 article(s) found (OpenAlex keyword search, 2021-2026, 383 total in window; 0.3%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 1,
+        "total": 383
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\international-journal-of-design.md",
+    "rel": "hci/international-journal-of-design.md",
+    "name": "International Journal of Design",
+    "skip": "only 0 works in window — too thin to judge"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\international-journal-of-human-computer-interaction.md",
+    "rel": "hci/international-journal-of-human-computer-interaction.md",
+    "name": "International Journal of Human-Computer Interaction",
+    "issn": "1044-7318",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "24 article(s) found (OpenAlex keyword search, 2021-2026, 3333 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 24,
+        "total": 3333
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\hci\\international-journal-of-human-computer-studies.md",
+    "rel": "hci/international-journal-of-human-computer-studies.md",
+    "name": "International Journal of Human-Computer Studies",
+    "issn": "1071-5819",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "4 article(s) found (OpenAlex keyword search, 2021-2026, 752 total in window; 0.5%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 4,
+        "total": 752
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\alzheimers-and-dementia.md",
+    "rel": "psychology/alzheimers-and-dementia.md",
+    "name": "Alzheimer's & Dementia",
+    "issn": "1552-5260",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "129 article(s) found (OpenAlex keyword search, 2021-2026, 10000 total in window; 1.3%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 129,
+        "total": 10000
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\applied-cognitive-psychology.md",
+    "rel": "psychology/applied-cognitive-psychology.md",
+    "name": "Applied Cognitive Psychology",
+    "issn": "0888-4080",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "5 article(s) found (OpenAlex keyword search, 2021-2026, 689 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 5,
+        "total": 689
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\assessment.md",
+    "rel": "psychology/assessment.md",
+    "name": "Assessment",
+    "issn": "1073-1911",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "14 article(s) found (OpenAlex keyword search, 2021-2026, 542 total in window; 2.6%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 14,
+        "total": 542
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\british-journal-of-educational-psychology.md",
+    "rel": "psychology/british-journal-of-educational-psychology.md",
+    "name": "British Journal of Educational Psychology",
+    "issn": "0007-0998",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "4 article(s) found (OpenAlex keyword search, 2021-2026, 476 total in window; 0.8%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 4,
+        "total": 476
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\british-journal-of-social-psychology.md",
+    "rel": "psychology/british-journal-of-social-psychology.md",
+    "name": "British Journal of Social Psychology",
+    "issn": "0144-6665",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "27 article(s) found (OpenAlex keyword search, 2021-2026, 562 total in window; 4.8%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 27,
+        "total": 562
+      },
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "5 article(s) found (OpenAlex keyword search, 2021-2026, 562 total in window; 0.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 5,
+        "total": 562
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\cognitive-therapy-and-research.md",
+    "rel": "psychology/cognitive-therapy-and-research.md",
+    "name": "Cognitive Therapy and Research",
+    "issn": "0147-5916",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "24 article(s) found (OpenAlex keyword search, 2021-2026, 511 total in window; 4.7%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 24,
+        "total": 511
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\computers-and-compositioncomputers-and-composition.md",
+    "rel": "psychology/computers-and-compositioncomputers-and-composition.md",
+    "name": "Computers & composition/Computers and composition",
+    "issn": "1873-2011",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "7 article(s) found (OpenAlex keyword search, 2021-2026, 228 total in window; 3.1%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 7,
+        "total": 228
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\contemporary-educational-psychology.md",
+    "rel": "psychology/contemporary-educational-psychology.md",
+    "name": "Contemporary Educational Psychology",
+    "issn": "0361-476X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "6 article(s) found (OpenAlex keyword search, 2021-2026, 358 total in window; 1.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 6,
+        "total": 358
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\counselling-psychology-quarterly.md",
+    "rel": "psychology/counselling-psychology-quarterly.md",
+    "name": "Counselling Psychology Quarterly",
+    "issn": "0951-5070",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "4 article(s) found (OpenAlex keyword search, 2021-2026, 207 total in window; 1.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 4,
+        "total": 207
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\dementia-and-geriatric-cognitive-disorders.md",
+    "rel": "psychology/dementia-and-geriatric-cognitive-disorders.md",
+    "name": "Dementia and Geriatric Cognitive Disorders",
+    "issn": "1420-8008",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "18 article(s) found (OpenAlex keyword search, 2021-2026, 249 total in window; 7.2%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 18,
+        "total": 249
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\developmental-psychology.md",
+    "rel": "psychology/developmental-psychology.md",
+    "name": "Developmental Psychology",
+    "issn": "0012-1649",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "23 article(s) found (OpenAlex keyword search, 2021-2026, 1693 total in window; 1.4%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 23,
+        "total": 1693
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\educational-psychology-review.md",
+    "rel": "psychology/educational-psychology-review.md",
+    "name": "Educational Psychology Review",
+    "issn": "1040-726X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "133 article(s) found (OpenAlex keyword search, 2021-2026, 567 total in window; 23.5%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 133,
+        "total": 567
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\environment-and-behavior.md",
+    "rel": "psychology/environment-and-behavior.md",
+    "name": "Environment and Behavior",
+    "issn": "0013-9165",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "1 article(s) found (OpenAlex keyword search, 2021-2026, 135 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 1,
+        "total": 135
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\european-journal-of-personality.md",
+    "rel": "psychology/european-journal-of-personality.md",
+    "name": "European Journal of Personality",
+    "issn": "0890-2070",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "12 article(s) found (OpenAlex keyword search, 2021-2026, 256 total in window; 4.7%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 12,
+        "total": 256
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\european-journal-of-social-psychology.md",
+    "rel": "psychology/european-journal-of-social-psychology.md",
+    "name": "European Journal of Social Psychology",
+    "issn": "0046-2772",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "9 article(s) found (OpenAlex keyword search, 2021-2026, 508 total in window; 1.8%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 9,
+        "total": 508
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\health-psychology.md",
+    "rel": "psychology/health-psychology.md",
+    "name": "Health Psychology",
+    "issn": "0278-6133",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "67 article(s) found (OpenAlex keyword search, 2021-2026, 966 total in window; 6.9%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 67,
+        "total": 966
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-abnormal-child-psychology.md",
+    "rel": "psychology/journal-of-abnormal-child-psychology.md",
+    "name": "Journal of Abnormal Child Psychology",
+    "skip": "only 0 works in window — too thin to judge"
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-applied-social-psychology.md",
+    "rel": "psychology/journal-of-applied-social-psychology.md",
+    "name": "Journal of Applied Social Psychology",
+    "issn": "0021-9029",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "2 article(s) found (OpenAlex keyword search, 2021-2026, 457 total in window; 0.4%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 2,
+        "total": 457
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-counseling-psychology.md",
+    "rel": "psychology/journal-of-counseling-psychology.md",
+    "name": "Journal of Counseling Psychology",
+    "issn": "0022-0167",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "11 article(s) found (OpenAlex keyword search, 2021-2026, 471 total in window; 2.3%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 11,
+        "total": 471
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-environmental-psychology.md",
+    "rel": "psychology/journal-of-environmental-psychology.md",
+    "name": "Journal of Environmental Psychology",
+    "issn": "0272-4944",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "37 article(s) found (OpenAlex keyword search, 2021-2026, 1200 total in window; 3.1%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 37,
+        "total": 1200
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-experimental-child-psychology.md",
+    "rel": "psychology/journal-of-experimental-child-psychology.md",
+    "name": "Journal of Experimental Child Psychology",
+    "issn": "0022-0965",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "2 article(s) found (OpenAlex keyword search, 2021-2026, 938 total in window; 0.2%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 2,
+        "total": 938
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-experimental-social-psychology.md",
+    "rel": "psychology/journal-of-experimental-social-psychology.md",
+    "name": "Journal of Experimental Social Psychology",
+    "issn": "0022-1031",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "5 article(s) found (OpenAlex keyword search, 2021-2026, 573 total in window; 0.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 5,
+        "total": 573
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-occupational-health-psychology.md",
+    "rel": "psychology/journal-of-occupational-health-psychology.md",
+    "name": "Journal of Occupational Health Psychology",
+    "issn": "1076-8998",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "11 article(s) found (OpenAlex keyword search, 2021-2026, 215 total in window; 5.1%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 11,
+        "total": 215
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-personality.md",
+    "rel": "psychology/journal-of-personality.md",
+    "name": "Journal of Personality",
+    "issn": "0022-3506",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "9 article(s) found (OpenAlex keyword search, 2021-2026, 494 total in window; 1.8%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 9,
+        "total": 494
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-research-in-personality.md",
+    "rel": "psychology/journal-of-research-in-personality.md",
+    "name": "Journal of Research in Personality",
+    "issn": "0092-6566",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "14 article(s) found (OpenAlex keyword search, 2021-2026, 409 total in window; 3.4%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 14,
+        "total": 409
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-social-and-clinical-psychology.md",
+    "rel": "psychology/journal-of-social-and-clinical-psychology.md",
+    "name": "Journal of Social and Clinical Psychology",
+    "issn": "0736-7236",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 123 total in window; 2.4%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 3,
+        "total": 123
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journal-of-vocational-behavior.md",
+    "rel": "psychology/journal-of-vocational-behavior.md",
+    "name": "Journal of Vocational Behavior",
+    "issn": "0001-8791",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "17 article(s) found (OpenAlex keyword search, 2021-2026, 362 total in window; 4.7%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 17,
+        "total": 362
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\journals-of-gerontology-b-psychological-sciences.md",
+    "rel": "psychology/journals-of-gerontology-b-psychological-sciences.md",
+    "name": "The Journals of Gerontology: Series B (Psychological Sciences)",
+    "issn": "1079-5014",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "12 article(s) found (OpenAlex keyword search, 2021-2026, 1124 total in window; 1.1%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 12,
+        "total": 1124
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\memory-and-cognition.md",
+    "rel": "psychology/memory-and-cognition.md",
+    "name": "Memory & Cognition",
+    "issn": "0090-502X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "1 article(s) found (OpenAlex keyword search, 2021-2026, 699 total in window; 0.1%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept",
+        "hits": 1,
+        "total": 699
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\personality-and-individual-differences.md",
+    "rel": "psychology/personality-and-individual-differences.md",
+    "name": "Personality and Individual Differences",
+    "issn": "0191-8869",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "80 article(s) found (OpenAlex keyword search, 2021-2026, 2376 total in window; 3.4%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 80,
+        "total": 2376
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\personality-and-social-psychology-bulletin.md",
+    "rel": "psychology/personality-and-social-psychology-bulletin.md",
+    "name": "Personality and Social Psychology Bulletin",
+    "issn": "0146-1672",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "30 article(s) found (OpenAlex keyword search, 2021-2026, 752 total in window; 4.0%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 30,
+        "total": 752
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\psychology-and-aging.md",
+    "rel": "psychology/psychology-and-aging.md",
+    "name": "Psychology and Aging",
+    "issn": "0882-7974",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "24 article(s) found (OpenAlex keyword search, 2021-2026, 634 total in window; 3.8%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 24,
+        "total": 634
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\social-cognitive-and-affective-neuroscience.md",
+    "rel": "psychology/social-cognitive-and-affective-neuroscience.md",
+    "name": "Social Cognitive and Affective Neuroscience",
+    "issn": "1749-5016",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Meta-analysis",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "4 article(s) found (OpenAlex keyword search, 2021-2026, 471 total in window; 0.8%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 4,
+        "total": 471
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\psychology\\social-psychology-quarterly.md",
+    "rel": "psychology/social-psychology-quarterly.md",
+    "name": "Social Psychology Quarterly",
+    "issn": "0190-2725",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "3 article(s) found (OpenAlex keyword search, 2021-2026, 143 total in window; 2.1%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 3,
+        "total": 143
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\qualitative-methods\\college-composition-and-communication.md",
+    "rel": "qualitative-methods/college-composition-and-communication.md",
+    "name": "College Composition and Communication",
+    "issn": "0010-096X",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Autoethnography",
+        "action": "DOWNGRADE",
+        "old_score": "4",
+        "new_score": "0",
+        "new_evidence": "0 article(s) found (OpenAlex keyword search, 2021-2026, 175 total in window) — an actual zero count contradicts the previous high rating, which carried no evidence",
+        "hits": 0,
+        "total": 175
+      },
+      {
+        "section": "Methodological Preferences",
+        "row": "Qualitative interviews",
+        "action": "CITE",
+        "old_score": "5",
+        "new_score": "5",
+        "new_evidence": "5 article(s) found (OpenAlex keyword search, 2021-2026, 175 total in window; 2.9%) — confirms the journal publishes this at a meaningful rate",
+        "hits": 5,
+        "total": 175
+      }
+    ]
+  },
+  {
+    "path": "P:\\MyOpenSource\\JournalMatchEvaluator\\journal-atlas\\skills\\journal-atlas\\scripts\\spine\\..\\..\\references\\journals\\qualitative-methods\\qualitative-health-research.md",
+    "rel": "qualitative-methods/qualitative-health-research.md",
+    "name": "Qualitative Health Research",
+    "issn": "1049-7323",
+    "actions": [
+      {
+        "section": "Methodological Preferences",
+        "row": "Autoethnography",
+        "action": "CITE",
+        "old_score": "4",
+        "new_score": "4",
+        "new_evidence": "10 article(s) found (OpenAlex keyword search, 2021-2026, 780 total in window; 1.3%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support",
+        "hits": 10,
+        "total": 780
+      }
+    ]
+  }
+]

@@ -166,7 +166,7 @@
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
 | Quantitative experimental | 3 | Family norm |
-| Qualitative interviews | 5 | Family norm |
+| Qualitative interviews | 5 | 1 article(s) found (OpenAlex keyword search, 2021-2026, 383 total in window; 0.3%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept |
 | Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 383 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
 | Theoretical / Conceptual | 4 | Family norm |
 | Mixed methods | 5 | Family norm |
@@ -281,6 +281,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Qualitative interviews). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

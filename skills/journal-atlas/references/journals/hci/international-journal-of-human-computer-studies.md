@@ -184,7 +184,7 @@
 | Autoethnography | 1 | Rare; cognitive-engineering tradition not autoethnographic |
 | Theoretical / Conceptual | 4 | Welcomed when bridging to empirical implications |
 | Mixed methods | 4 | Accepted with quantitative dominance |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 4 | 4 article(s) found (OpenAlex keyword search, 2021-2026, 752 total in window; 0.5%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support |
 | Formal / Computational models | 5 | Distinctive IJHCS strength |
 
 ### Voice & Style
@@ -306,6 +306,7 @@ Low for cognitive-engineering empirical authors. Moderate for design-research or
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Elsevier defaults. APC and 24-month AAM embargo confirmed. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -176,7 +176,7 @@
 | Autoethnography | 1 | Rare |
 | Theoretical / Conceptual | 4 | Theoretical personality work welcomed |
 | Mixed methods | 4 | Narrative + quantitative common pattern |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 4 | 9 article(s) found (OpenAlex keyword search, 2021-2026, 494 total in window; 1.8%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support |
 | Psychometric / Factor analytic | 5 | Distinctive strength |
 
 ### Voice & Style
@@ -292,6 +292,7 @@ Low for personality-tradition empirical authors. Narrative-identity tradition op
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Wiley publisher pages + personality-psychology editorial culture domain knowledge | @Zaious |

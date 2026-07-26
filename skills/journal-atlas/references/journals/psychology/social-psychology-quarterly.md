@@ -172,7 +172,7 @@
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
 | Quantitative experimental | 4 | Common — laboratory experiments + surveys |
-| Qualitative interviews | 4 | Symbolic-interactionist qualitative welcomed |
+| Qualitative interviews | 4 | 3 article(s) found (OpenAlex keyword search, 2021-2026, 143 total in window; 2.1%) — confirms the journal publishes this at a meaningful rate |
 | Autoethnography | 2 | Occasional sociological autoethnographic |
 | Theoretical / Conceptual | 4 | Sociological-theoretical welcomed |
 | Mixed methods | 4 | Common |
@@ -296,6 +296,7 @@ Low for sociological social-psychology tradition. Psychological authors may need
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Qualitative interviews). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Explicit permission gate? / Leniency). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |

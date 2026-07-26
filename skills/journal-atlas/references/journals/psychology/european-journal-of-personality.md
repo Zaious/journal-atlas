@@ -176,7 +176,7 @@
 | Autoethnography | 1 | Rare |
 | Theoretical / Conceptual | 4 | EAPP welcomes theoretical |
 | Mixed methods | 3 | Accepted |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 4 | 12 article(s) found (OpenAlex keyword search, 2021-2026, 256 total in window; 4.7%) — confirms the journal publishes this at a meaningful rate |
 | ESM / Diary / Within-person | 5 | Distinctive European strength |
 
 ### Voice & Style
@@ -296,6 +296,7 @@ Low for EAPP-tradition / within-person designs.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency / Gate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

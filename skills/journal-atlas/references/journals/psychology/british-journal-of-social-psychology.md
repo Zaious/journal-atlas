@@ -172,11 +172,11 @@
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
 | Quantitative experimental | 5 | Core |
-| Qualitative interviews | 4 | UK discursive tradition |
+| Qualitative interviews | 4 | 27 article(s) found (OpenAlex keyword search, 2021-2026, 562 total in window; 4.8%) — confirms the journal publishes this at a meaningful rate |
 | Autoethnography | 2 | Occasional in critical-discursive |
 | Theoretical / Conceptual | 4 | SIT / discursive welcomed |
 | Mixed methods | 4 | Common |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 4 | 5 article(s) found (OpenAlex keyword search, 2021-2026, 562 total in window; 0.9%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support |
 | Discourse analysis | 5 | Distinctive UK strength |
 
 ### Voice & Style
@@ -296,6 +296,7 @@ Low for UK / European social-psychology tradition. US authors may need broader t
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 2 previously uncited high score(s) (Qualitative interviews, Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Wiley/BPS publisher + BPS Social Psychology Section UK / European editorial culture domain knowledge | @Zaious |

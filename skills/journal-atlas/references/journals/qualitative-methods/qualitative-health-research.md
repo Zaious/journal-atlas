@@ -173,7 +173,7 @@
 |--------|---------------------|----------|
 | Quantitative experimental | 0 | Outside scope |
 | Qualitative interviews | 5 | Core — IPA, narrative, phenomenological |
-| Autoethnography | 4 | Health-autoethnographic welcomed |
+| Autoethnography | 4 | 10 article(s) found (OpenAlex keyword search, 2021-2026, 780 total in window; 1.3%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support |
 | Theoretical / Conceptual | 4 | Welcomed |
 | Mixed methods | 3 | With qualitative dominance |
 | Meta-analysis | 1 | Qualitative meta-synthesis welcomed |
@@ -294,6 +294,7 @@ Low for qualitative health tradition authors. Sustained reflexive engagement exp
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Autoethnography). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from SAGE publisher + Morse / Charmaz / IIQM qualitative health research editorial culture domain knowledge | @Zaious |

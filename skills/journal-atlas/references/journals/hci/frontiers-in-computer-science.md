@@ -193,7 +193,7 @@
 | Autoethnography | 2 | Possible in HMI section as Perspective / Opinion (B-Type) |
 | Theoretical / Conceptual | 4 | Hypothesis & Theory A-Type welcomes |
 | Mixed methods | 4 | Common |
-| Meta-analysis | 4 | Systematic Review A-Type |
+| Meta-analysis | 4 | 2 article(s) found (OpenAlex keyword search, 2021-2026, 972 total in window; 0.2%) — a very low rate — this count does NOT support the high rating, which remains an uncorroborated family-level estimate; note that counts measure published output, not what an editor would accept |
 | Design / Prototype | 4 | HMI section accepts |
 
 ### Voice & Style
@@ -316,6 +316,7 @@ Variable. For HCI-conceptual papers fitting Hypothesis & Theory: low-moderate. F
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Review Cycle Time > Time to first decision / Time to first review. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Frontiers in CS is a younger journal with lower APC than Frontiers in Psychology PSP. | @Zaious |

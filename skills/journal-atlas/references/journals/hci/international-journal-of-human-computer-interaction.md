@@ -181,7 +181,7 @@
 | Autoethnography | 1 | Rare; applied tradition not autoethnographic |
 | Theoretical / Conceptual | 3 | Accepted when bridging to empirical applications |
 | Mixed methods | 4 | Common |
-| Meta-analysis | 4 | Welcomed |
+| Meta-analysis | 4 | 24 article(s) found (OpenAlex keyword search, 2021-2026, 3333 total in window; 0.7%) — shows the journal does publish this, but uncommonly — the high rating is a family-level estimate that this output rate does not by itself support |
 | Survey / Adoption studies | 5 | Core IJHCI strength |
 
 ### Voice & Style
@@ -306,6 +306,7 @@ Low for technology-adoption empirical authors. Moderate for HCI-canonical empiri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Disambiguation note added to distinguish IJHCI from IJHCS. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |

@@ -176,7 +176,7 @@
 | Autoethnography | 0 | Outside scope |
 | Theoretical / Conceptual | 2 | With clinical implications |
 | Mixed methods | 2 | Quant-dominant |
-| Meta-analysis | 5 | Welcomed |
+| Meta-analysis | 5 | 10 article(s) found (OpenAlex keyword search, 2021-2026, 388 total in window; 2.6%) — confirms the journal publishes this at a meaningful rate |
 | Neuropsychological assessment | 5 | Core method |
 | Lesion-behavior studies | 5 | Distinctive strength |
 
@@ -295,6 +295,7 @@ Low for INS clinical-experimental tradition.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflict: Peer Review Type corrected from assumed "Double-anonymized (per T&F default)" to verified "Single-anonymized" per journal's own About-this-journal page. | @Zaious |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

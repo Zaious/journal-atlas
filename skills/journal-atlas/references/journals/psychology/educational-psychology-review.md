@@ -176,7 +176,7 @@
 | Autoethnography | 0 | Outside scope |
 | Theoretical / Conceptual | 5 | Core — integrative theoretical reviews |
 | Mixed methods | 0 | Outside scope |
-| Meta-analysis | 5 | Welcomed; PRISMA expected |
+| Meta-analysis | 5 | 133 article(s) found (OpenAlex keyword search, 2021-2026, 567 total in window; 23.5%) — confirms the journal publishes this at a meaningful rate |
 | Integrative review | 5 | Flagship format |
 
 ### Voice & Style
@@ -297,6 +297,7 @@ Moderate. Integrative-review writing demands extensive engagement with multiple 
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Evidence-citation pass: attached OpenAlex counts to 1 previously uncited high score(s) (Meta-analysis). Counts corroborate presence only — the 0-5 level remains a family-level estimate. Restricted to categories verified as reliably keyword-countable; see scripts/spine/cite_uncited_high_scores.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Explicit permission gate? / Leniency (1-5). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
