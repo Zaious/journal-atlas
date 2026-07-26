@@ -441,6 +441,42 @@ def _extract_subsection(content: str, name: str) -> Optional[str]:
     return match.group(1) if match else None
 
 
+def extract_h2_block(content: str, name: str) -> str:
+    """Whole ## section incl. its ### children, stopping only at the next ##
+    heading — unlike _extract_subsection() (which stops at the next ## OR
+    ### and is meant for pulling one named subsection), this is for pulling
+    an entire top-level block intact, e.g. all of Soft Metadata's children.
+
+    Single canonical implementation — previously duplicated ad hoc in
+    demo/backend/main.py as `_extract_h2_section`.
+    """
+    match = re.search(
+        rf"^## +{re.escape(name)}\b[^\n]*\n(.*?)(?=^## +|\Z)",
+        content, re.MULTILINE | re.DOTALL,
+    )
+    return match.group(1).strip() if match else ""
+
+
+def detect_tier(content: str) -> str:
+    """Tier label from Soft Metadata's banner — see CONSUMPTION_CONTRACT.md's
+    table for the full rationale. Tier 2 -> [!WARNING], AI-Researched ->
+    [!NOTE] + "AI-Researched" text, Skeleton -> [!NOTE] alone (0 entries in
+    the corpus today, kept for completeness), no banner -> Tier 1.
+
+    Single canonical implementation — previously duplicated ad hoc in
+    demo/backend/main.py; import it from here instead of redefining it, so a
+    future fix doesn't have to land in two places to actually take effect.
+    """
+    banner = (_extract_subsection(content, "Soft Metadata") or "")[:400]
+    if "[!WARNING]" in banner:
+        return "Tier 2 (community estimate)"
+    if "AI-Researched" in banner:
+        return "AI-Researched"
+    if "[!NOTE]" in banner:
+        return "Skeleton"
+    return "Tier 1 (evidence-backed)"
+
+
 # ---------- Hard constraint checks ----------
 
 

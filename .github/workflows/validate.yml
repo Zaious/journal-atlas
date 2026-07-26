@@ -1,22 +1,20 @@
-name: Validate Journal Entries
+name: CI
 
 on:
   pull_request:
     paths:
-      - 'skills/journal-atlas/references/journals/**/*.md'
-      - 'skills/journal-atlas/TEMPLATE.md'
-      - 'skills/journal-atlas/scripts/validate_structure.py'
+      - 'skills/journal-atlas/**'
+      - 'demo/**'
       - '.github/workflows/validate.yml'
   push:
-    branches: [main]
+    branches: [main, v2-coverage-first]
     paths:
-      - 'skills/journal-atlas/references/journals/**/*.md'
-      - 'skills/journal-atlas/TEMPLATE.md'
-      - 'skills/journal-atlas/scripts/validate_structure.py'
+      - 'skills/journal-atlas/**'
+      - 'demo/**'
 
 jobs:
-  validate:
-    name: Schema validation
+  validate-and-lint:
+    name: Schema validation + content lint + unit tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,7 +25,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate all journal entries
+      - name: Install test dependencies
+        run: pip install -r skills/journal-atlas/scripts/requirements-dev.txt
+
+      - name: Validate all journal entries (schema)
         run: |
           cd skills/journal-atlas
           python scripts/validate_structure.py
@@ -45,3 +46,49 @@ jobs:
           name: validation-results
           path: validate-results.json
           retention-days: 14
+
+      - name: fit_score.py / lint_content.py unit tests
+        run: python -m pytest skills/journal-atlas/scripts/tests/ -v
+
+      - name: Content-semantics lint (fails only on violations beyond the known baseline)
+        run: python skills/journal-atlas/scripts/lint_content.py
+
+  demo-backend-smoke-test:
+    name: Demo backend API call-shape smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install demo backend dependencies
+        run: |
+          pip install -r demo/backend/requirements.txt
+          pip install -r demo/backend/requirements-dev.txt
+
+      - name: API call-shape smoke test
+        run: python -m pytest demo/backend/tests/ -v
+
+  demo-frontend-typecheck:
+    name: Demo frontend type-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: demo/frontend
+        run: npm ci
+
+      - name: Type-check
+        working-directory: demo/frontend
+        run: npx tsc -b

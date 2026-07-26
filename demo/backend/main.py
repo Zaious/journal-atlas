@@ -26,7 +26,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sys
 from dataclasses import asdict
 from pathlib import Path
@@ -188,36 +187,6 @@ def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
 
 # ---------- Stage 3: synthesis (Sonnet, streamed) ----------
 
-def _extract_h2_section(content: str, name: str) -> str:
-    """Whole ## section incl. its ### children, stopping at the next ## heading.
-
-    Unlike fit_score._extract_subsection() (which stops at the next ## OR ###
-    and is meant for pulling one named subsection for scoring), this is for
-    pulling an entire top-level block — e.g. all of Soft Metadata's children
-    — intact for the synthesis prompt.
-    """
-    match = re.search(
-        rf"^## +{re.escape(name)}\b[^\n]*\n(.*?)(?=^## +|\Z)",
-        content, re.MULTILINE | re.DOTALL,
-    )
-    return match.group(1).strip() if match else ""
-
-
-def detect_tier(content: str) -> str:
-    """Tier label from Soft Metadata's banner, per CONSUMPTION_CONTRACT.md's
-    table: Tier 2 -> [!WARNING], AI-Researched -> [!NOTE] + "AI-Researched",
-    Skeleton -> [!NOTE] alone (0 entries in the corpus today, kept for
-    completeness), no banner -> Tier 1."""
-    banner = _extract_h2_section(content, "Soft Metadata")[:400]
-    if "[!WARNING]" in banner:
-        return "Tier 2 (community estimate)"
-    if "AI-Researched" in banner:
-        return "AI-Researched"
-    if "[!NOTE]" in banner:
-        return "Skeleton"
-    return "Tier 1 (evidence-backed)"
-
-
 def build_evidence_card(path: Path) -> dict:
     """Tier + top-cited topic rows for the screening SSE event — real,
     checkable evidence behind a fit_score number, not just the number."""
@@ -228,7 +197,7 @@ def build_evidence_card(path: Path) -> dict:
         journal_data = {}
     top_topics = sorted(journal_data.get("topics") or [], key=lambda t: -t[1])[:3]
     return {
-        "tier": detect_tier(content),
+        "tier": fit_score.detect_tier(content),
         "top_topics": [{"name": name, "count": count} for name, count in top_topics],
     }
 
@@ -273,7 +242,7 @@ def build_candidate_excerpt(path: Path) -> str:
         journal_data = {}
     parts = [_format_policy_digest(journal_data)]
     for section_name in ("Subject Density", "Soft Metadata", "Strategic Notes"):
-        text = _extract_h2_section(content, section_name)
+        text = fit_score.extract_h2_block(content, section_name)
         if text:
             parts.append(f"#### {section_name}\n{text}")
     return "\n\n".join(parts)
