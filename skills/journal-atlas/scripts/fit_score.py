@@ -9,7 +9,7 @@ soft-fit score.
 Status: v0.1 — functional skeleton. The scoring weights and hard-constraint
 detection rules are reasonable defaults, but they have NOT been validated
 against ground-truth submission outcomes. Once we have seed data and real
-backtest cases (e.g. SSS/ASAF reconstruction by 賢者), tune the weights and
+backtest cases (real submissions with known outcomes), tune the weights and
 extraction rules accordingly. See TODO markers below.
 
 Usage:
@@ -59,8 +59,9 @@ from typing import Any, Optional
 
 
 # ---------- Default scoring weights ----------
-# TODO: Validate these against backtest cases (賢者 Task C). Current values are
-# educated guesses informed by the SSS/ASAF submission experience.
+# TODO: Validate these against backtest cases with known submission outcomes.
+# Current values are educated guesses informed by submission experience, not
+# fitted to data.
 
 DEFAULT_WEIGHTS: dict[str, float] = {
     "topic_density": 0.25,
