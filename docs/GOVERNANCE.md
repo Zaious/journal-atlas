@@ -1,13 +1,13 @@
 # Governance: Disputing a Subjective Claim
 
-**Status: DRAFT — proposed policy, not yet in effect.** This document is
-written for review, not as a finished, binding process. It exists to close
-the gap `ATLAS_V2_DESIGN.md` §9 flags as blocking for public release:
-Journal Atlas's Soft Metadata sections make subjective claims (political
-leanings, reviewer culture, framing expectations) about real, named
-journals and publishers, and until this document is adopted there is no
-formal path for someone who believes a claim about their journal is wrong
-to get it corrected.
+**Status: Adopted (2026-07-27) — policy decided.** The `Disputed`-banner
+code mechanism (§4) is a pending follow-up implementation, not yet built.
+This closes the gap `ATLAS_V2_DESIGN.md` §9 flags as blocking for public
+release: Journal Atlas's Soft Metadata sections make subjective claims
+(political leanings, reviewer culture, framing expectations) about real,
+named journals and publishers; this document is the formal path for
+someone who believes a claim about their journal is wrong to get it
+corrected.
 
 ## 1. What this covers
 
@@ -89,19 +89,16 @@ consensus process. Three outcomes:
    claim is softened to say so explicitly rather than asserting either
    side.
 
-**Response-time commitment**: *(placeholder — needs the maintainer's actual
-answer, not mine to set)*. Suggest something realistic and stated publicly
-beats an unstated implicit promise — e.g. "acknowledged within 2 weeks,
-resolved on a best-effort basis" if this is solo-maintained.
+**Response-time commitment**: acknowledged within 2 weeks, resolved on a
+best-effort basis (solo-maintained — this is a deliberately modest,
+sustainable promise, not an SLA).
 
-## 6. Open questions for the maintainer
+**Affiliation weight**: judged purely on the evidence offered, regardless
+of who files it. A verified editor and an anonymous reader get the same
+consideration — the point of a citation-based system is that the citation
+carries the weight, not the citer.
 
-- Does the response-time commitment above match what's actually
-  sustainable long-term?
-- Should a disputant's professional affiliation (e.g. verified as the
-  journal's editor) carry more weight than an anonymous one, or should
-  disputes be judged purely on the evidence offered regardless of who
-  files them?
-- Should there be any limit on repeat disputes of the same claim absent
-  new evidence (to prevent the mechanism being used to simply wear down
-  an unwelcome but accurate claim)?
+**Repeat disputes**: a claim already resolved (confirmed or marked
+uncertain) is not reopened absent genuinely new evidence — prevents the
+mechanism being used to simply wear down an unwelcome but accurate claim
+through repetition.

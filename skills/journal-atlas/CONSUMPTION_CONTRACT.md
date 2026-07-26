@@ -44,3 +44,7 @@ This document only covers what to do with what you read, not how it was made.
    have changed since.
 6. **Only name journals whose file you actually read this session** — not
    from memory of the journal's general reputation.
+7. **If a user disputes a claim, don't argue it yourself.** Point them to
+   [docs/GOVERNANCE.md](../../docs/GOVERNANCE.md)'s dispute process — that's
+   how a subjective claim actually gets corrected, not a conversational
+   back-and-forth.
