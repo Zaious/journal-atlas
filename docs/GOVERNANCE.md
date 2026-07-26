@@ -1,8 +1,7 @@
 # Governance: Disputing a Subjective Claim
 
-**Status: Adopted (2026-07-27) — policy decided.** The `Disputed`-banner
-code mechanism (§4) is a pending follow-up implementation, not yet built.
-This closes the gap `ATLAS_V2_DESIGN.md` §9 flags as blocking for public
+**Status: Adopted (2026-07-27).** Policy decided and the `Disputed` marker
+mechanism (§4) implemented. This closes the gap `ATLAS_V2_DESIGN.md` §9 flags as blocking for public
 release: Journal Atlas's Soft Metadata sections make subjective claims
 (political leanings, reviewer culture, framing expectations) about real,
 named journals and publishers; this document is the formal path for
@@ -67,10 +66,18 @@ produced it, so it can sit on top of any tier). The marker:
   evidence cards) — a disputed claim should never look more confident than
   an undisputed one.
 
-*(This section describes the intended behavior; the actual banner-parsing
-code change — extending `fit_score.detect_tier()` and the demo's evidence
-card — is a follow-up implementation step once this policy's shape is
-confirmed, not bundled into this draft.)*
+**The marker's literal form**, placed inside the entry's `## Soft Metadata`
+section, above the tier banner:
+
+```markdown
+> [!CAUTION]
+> **Disputed** — Reviewer Pool Characteristics. See #42.
+```
+
+`[!CAUTION]` is deliberately a different admonition type from the tier
+banners (`[!WARNING]` for Tier 2, `[!NOTE]` for AI-Researched/Skeleton), so
+the two can never be confused for one another. Implemented in
+`fit_score.detect_disputes()` and surfaced in the demo's evidence cards.
 
 ## 5. Resolution
 

@@ -198,6 +198,7 @@ def build_evidence_card(path: Path) -> dict:
     top_topics = sorted(journal_data.get("topics") or [], key=lambda t: -t[1])[:3]
     return {
         "tier": fit_score.detect_tier(content),
+        "disputes": fit_score.detect_disputes(content),
         "top_topics": [{"name": name, "count": count} for name, count in top_topics],
     }
 

@@ -21,6 +21,13 @@ This document only covers what to do with what you read, not how it was made.
 | `> [!NOTE]` + a `signal_quality` score | **AI-Researched** | Per-journal AI research pass, cited sources, honest blanks where none existed |
 | `> [!NOTE]`, Soft Metadata fields are placeholders | **Skeleton** | Structural data only (Identity / Metrics / Subject Density) — no Soft Metadata exists yet |
 
+Separately, `> [!CAUTION]` + **Disputed** marks a claim someone has formally
+contested (see [docs/GOVERNANCE.md](../../docs/GOVERNANCE.md)). It is
+**orthogonal to tier** — it can sit on any tier, and it names the specific
+disputed field(s), so the rest of the entry still stands. Never present a
+disputed claim as confidently as an undisputed one; say it's under dispute
+and cite the linked issue.
+
 ## Rules
 
 1. **Never state a placeholder as a fact.** `*(pending)*` and

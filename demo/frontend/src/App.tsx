@@ -23,6 +23,7 @@ interface Candidate {
   name: string;
   score: number;
   tier: string;
+  disputes: string[];
   top_topics: TopicEvidence[];
 }
 
@@ -200,12 +201,22 @@ function App() {
                   >
                     <span className="candidate-name">
                       <span className={`tier-badge ${tierClass(c.tier)}`}>{c.tier}</span>
+                      {c.disputes?.length > 0 && (
+                        <span className="tier-badge tier-disputed">Disputed</span>
+                      )}
                       {c.name}
                     </span>
                     <span className="score">{c.score.toFixed(1)}/100</span>
                   </button>
                   {isOpen && (
                     <div className="candidate-evidence">
+                      {c.disputes?.length > 0 && (
+                        <ul className="dispute-list">
+                          {c.disputes.map((d) => (
+                            <li key={d}>Disputed claim: {d}</li>
+                          ))}
+                        </ul>
+                      )}
                       {c.top_topics.length > 0 ? (
                         <ul className="topic-evidence-list">
                           {c.top_topics.map((t) => (

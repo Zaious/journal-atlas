@@ -155,6 +155,68 @@ def test_detect_tier_note_without_ai_researched_text_is_skeleton():
     assert fit_score.detect_tier(content) == "Skeleton"
 
 
+# ---------- detect_disputes (docs/GOVERNANCE.md §4) ----------
+
+
+def test_no_dispute_marker_returns_empty():
+    content = "## Soft Metadata\n\n> [!WARNING]\n> **Tier 2 (community estimate)**\n"
+    assert fit_score.detect_disputes(content) == []
+
+
+def test_dispute_marker_detected_with_field_names():
+    content = """
+## Soft Metadata
+
+> [!CAUTION]
+> **Disputed** — Reviewer Pool Characteristics. See #42.
+
+> [!WARNING]
+> **Tier 2 (community estimate)**
+"""
+    disputes = fit_score.detect_disputes(content)
+    assert len(disputes) == 1
+    assert "Reviewer Pool Characteristics" in disputes[0]
+
+
+def test_dispute_is_orthogonal_to_tier():
+    """A dispute must not change or mask the tier — they answer different
+    questions (is this claim accurate vs. how was the evidence gathered)."""
+    content = """
+## Soft Metadata
+
+> [!CAUTION]
+> **Disputed** — Epistemological & Political Leanings. See #7.
+
+> [!WARNING]
+> **Tier 2 (community estimate)** — family-level adaptation.
+"""
+    assert fit_score.detect_tier(content) == "Tier 2 (community estimate)"
+    assert len(fit_score.detect_disputes(content)) == 1
+
+
+def test_multiple_disputes_all_detected():
+    content = """
+> [!CAUTION]
+> **Disputed** — Framing Requirements. See #10.
+
+> [!CAUTION]
+> **Disputed**: Voice & Style. See #11.
+"""
+    assert len(fit_score.detect_disputes(content)) == 2
+
+
+def test_no_entry_in_corpus_is_currently_disputed():
+    """Sanity check on the real corpus: the mechanism exists but nothing is
+    disputed yet, so a stray marker (or a false-positive pattern) shows up
+    here rather than silently mislabeling a live entry."""
+    root = Path(__file__).resolve().parents[2] / "references" / "journals"
+    disputed = [
+        p.name for p in root.rglob("*.md")
+        if p.name != "TEMPLATE.md" and fit_score.detect_disputes(p.read_text(encoding="utf-8"))
+    ]
+    assert disputed == []
+
+
 # ---------- _extract_sensitive_topics ----------
 
 

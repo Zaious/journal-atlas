@@ -477,6 +477,31 @@ def detect_tier(content: str) -> str:
     return "Tier 1 (evidence-backed)"
 
 
+# Disputed-claim marker, per docs/GOVERNANCE.md §4. Deliberately a distinct
+# admonition type from the tier banners ([!WARNING] / [!NOTE]) so a dispute
+# can sit on top of ANY tier without the two being confusable: a dispute is
+# about one claim's accuracy, not about which method gathered the evidence.
+#
+#   > [!CAUTION]
+#   > **Disputed** — Soft Metadata > Reviewer Pool Characteristics. See #42.
+#
+DISPUTED_PATTERN = re.compile(
+    r">\s*\[!CAUTION\]\s*\n>\s*\*\*Disputed\*\*\s*(?:—|-|:)?\s*([^\n]*)",
+    re.MULTILINE,
+)
+
+
+def detect_disputes(content: str) -> list[str]:
+    """Open disputes on this entry — one string per marker, describing which
+    field(s) are contested. Empty list = nothing disputed.
+
+    A disputed claim must never be presented as confidently as an
+    undisputed one; callers surfacing tier information are expected to
+    surface this alongside it.
+    """
+    return [m.group(1).strip() for m in DISPUTED_PATTERN.finditer(content)]
+
+
 # ---------- Hard constraint checks ----------
 
 
