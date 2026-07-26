@@ -172,10 +172,10 @@
 | Quantitative experimental | 0 | Outside scope |
 | Qualitative interviews | 4 | Welcomed with critical / reflexive framing |
 | Autoethnography | 5 | Flagship method — 41+ articles 2022–2025 (per OpenAlex autoethnography filter, ISSN 1532-7086); decolonial, performative, collaborative, and ritualistic variants |
-| Theoretical / Conceptual | 4 | Critical-theoretical work welcomed |
+| Theoretical / Conceptual | 4 | Aims & scope states the journal's mandate is to "move methods talk in cultural studies to the forefront, into the regions of moral, ethical and political discourse" — i.e. philosophy-of-inquiry work is the remit, not a tolerated extra. https://us.sagepub.com/en-us/nam/cultural-studies-%E2%86%94-critical-methodologies/journal201379 (verified 2026-07-27) |
 | Mixed methods | 2 | Less common; critical-qualitative dominance preferred |
 | Meta-analysis | 0 | Outside scope |
-| Performative writing | 5 | Signature article type |
+| Performative writing | 5 | Aims & scope names the forms explicitly — "articles that experiment with new writing forms, including autoethnography, ethnodrama, ethnographic poetry, performance texts, creative nonfiction" — and states preference for "texts which combine ethnographic, performative, and textual approach". https://us.sagepub.com/en-us/nam/cultural-studies-%E2%86%94-critical-methodologies/journal201379 (verified 2026-07-27) |
 | Arts-based / Poetic | 5 | Strong precedent (e.g., poetic autoethnography) |
 
 ### Voice & Style
@@ -303,6 +303,7 @@ Moderate-to-high. The 8,000-word hard limit **including notes and references** i
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Replaced placeholder justifications for Theoretical/Conceptual 4/5 and Performative writing 5/5 with quoted aims & scope text + source URL. Tier 1 entries must carry checkable evidence, not template defaults. | @Zaious (AI-assisted) |
 | 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |

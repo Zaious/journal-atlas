@@ -39,6 +39,32 @@ def test_cited_high_methodology_score_not_flagged():
     assert lint_content.check_uncited_high_scores(content) == []
 
 
+def test_substantive_prose_justification_not_flagged():
+    """The false-positive class that made the first version of this check
+    unusable: a hand-authored justification naming a specific, checkable
+    thing about the journal has no digit and no URL, but is nothing like a
+    "Family norm" template default. Flagging it trains people to ignore
+    the linter."""
+    content = """
+## Soft Metadata
+
+### Sensitive Topics
+
+| Topic Category | Receptiveness | Evidence |
+|----------------|---------------|----------|
+| Methodology critique | High | Methodology and Research Practice section explicitly welcomes critical work |
+"""
+    assert lint_content.check_uncited_high_scores(content) == []
+
+
+def test_is_contentless_boundary():
+    assert lint_content.is_contentless("Family norm")
+    assert lint_content.is_contentless("Welcomed")
+    assert lint_content.is_contentless("Core method")
+    assert not lint_content.is_contentless("Core method — controlled cognitive experiments on memory")
+    assert not lint_content.is_contentless("5 articles 2020-2025")  # has a digit -> cited
+
+
 def test_low_score_never_flagged_even_if_uncited():
     """The whole point is asymmetric: only HIGH uncited claims are a problem."""
     content = """

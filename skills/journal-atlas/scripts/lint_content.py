@@ -50,6 +50,9 @@ import fit_score  # noqa: E402 - reuse its section/tier parsing, don't reimpleme
 JOURNALS_ROOT = os.path.join(os.path.dirname(__file__), "..", "references", "journals")
 
 
+CONTENTLESS_WORD_LIMIT = 3
+
+
 def is_uncited(evidence_cell: str) -> bool:
     """True if the evidence cell has no checkable citation (no digit, no
     URL). Mirrors enrich_methodology_evidence.py's helper of the same name —
@@ -60,14 +63,38 @@ def is_uncited(evidence_cell: str) -> bool:
     return not re.search(r"\d", evidence_cell) and "http" not in evidence_cell.lower()
 
 
+def is_contentless(evidence_cell: str) -> bool:
+    """True if the justification is a template default rather than a reason.
+
+    Stricter than is_uncited() on purpose. enrich_methodology_evidence.py
+    already learned (and documented) that a bare no-digit/no-URL test can't
+    tell a hand-authored, checkable prose claim — "Methodology and Research
+    Practice section explicitly welcomes critical work", which names a
+    specific journal section anyone can go read — from a contentless
+    template default like "Family norm". Flagging the former produces noise
+    that trains people to ignore the linter.
+
+    So: uncited AND under a handful of content words. Measured against this
+    corpus (2026-07-27), that splits 536 raw uncited-high-score hits into
+    377 genuinely contentless ("Family norm", "Welcomed", "Core") and 159
+    that say something specific enough to check or argue with.
+    """
+    if not is_uncited(evidence_cell):
+        return False
+    return len(re.findall(r"[A-Za-z0-9'-]+", evidence_cell)) <= CONTENTLESS_WORD_LIMIT
+
+
 def check_uncited_high_scores(content: str) -> list[str]:
+    """High-confidence scores (4-5 / "High") justified by a template default
+    rather than a reason. See is_contentless() for why the bar is
+    "contentless", not merely "no digit"."""
     violations = []
     methodology = fit_score._extract_subsection(content, "Methodological Preferences") or ""
     for line in methodology.splitlines():
         m = re.match(r"\|\s*([^|]+?)\s*\|\s*([0-5])\s*\|([^|]*)\|", line)
-        if m and int(m.group(2)) >= 4 and is_uncited(m.group(3).strip()):
+        if m and int(m.group(2)) >= 4 and is_contentless(m.group(3).strip()):
             violations.append(f"Methodological Preferences > {m.group(1).strip()}: "
-                               f"scored {m.group(2)} with no cited evidence")
+                               f"scored {m.group(2)}, justified only by {m.group(3).strip()!r}")
 
     sensitive = fit_score._extract_subsection(content, "Sensitive Topics") or ""
     for line in sensitive.splitlines():
@@ -77,8 +104,9 @@ def check_uncited_high_scores(content: str) -> list[str]:
         topic, receptiveness = m.group(1).strip(), m.group(2).strip()
         if topic.lower() in ("topic category",) or re.fullmatch(r"-+", topic):
             continue
-        if receptiveness.lower() == "high" and is_uncited(m.group(3).strip()):
-            violations.append(f"Sensitive Topics > {topic}: rated High with no cited evidence")
+        if receptiveness.lower() == "high" and is_contentless(m.group(3).strip()):
+            violations.append(f"Sensitive Topics > {topic}: rated High, "
+                               f"justified only by {m.group(3).strip()!r}")
     return violations
 
 

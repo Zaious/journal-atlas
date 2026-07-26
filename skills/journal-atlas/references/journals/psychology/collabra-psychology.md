@@ -191,7 +191,7 @@
 | Theoretical / Conceptual | 3 | Theory papers accepted; pure theory less common than empirical work |
 | Mixed methods | 3 | Accepted with transparent methodology |
 | Meta-analysis | 5 | Welcomed; PRISMA reporting expected |
-| Registered Reports | 5 | Flagship format |
+| Registered Reports | 5 | Dedicated RR track with a specialist editor (Chris Chambers, who pioneered the format at Cortex and Royal Society Open Science); two-stage process with Stage-1 in-principle acceptance before data collection; requires open data, open materials/code, and lab logs. Quantitative, qualitative, confirmatory, exploratory, and computational-modeling approaches all accepted. https://online.ucpress.edu/collabra/pages/About (verified 2026-07-27) |
 
 ### Voice & Style
 
@@ -311,6 +311,7 @@ Variable. For mainstream empirical authors aligned with SIPS values: minimal. Fo
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Replaced the placeholder justification for Registered Reports 5/5 with the journal's own documented RR track (specialist editor, two-stage process, transparency requirements) + source URL. Tier 1 entries must carry checkable evidence, not template defaults. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. SIPS membership discount window flagged (expires 2026-07-01). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |

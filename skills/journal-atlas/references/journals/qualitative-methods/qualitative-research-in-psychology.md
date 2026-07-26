@@ -182,7 +182,7 @@
 | Theoretical / Conceptual | 5 | Theoretical paper type explicitly defined |
 | Mixed methods | 3 | Accepted when qualitative dominates |
 | Meta-analysis | 2 | Qualitative meta-synthesis acceptable; quantitative meta-analysis outside scope |
-| Discourse analysis | 5 | Core qualitative-psychology method |
+| Discourse analysis | 5 | Journal's own about-page cites discourse analysis first among the "state-of-the-art debates on specific research approaches, methods and analytic techniques" it publishes, and names discursive psychology among its epistemological remit. https://www.tandfonline.com/journals/uqrp20/about-this-journal (verified 2026-07-27) |
 
 ### Voice & Style
 
@@ -305,6 +305,7 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Replaced the placeholder justification for Discourse analysis 5/5 with the journal's own about-page text + source URL. Tier 1 entries must carry checkable evidence, not template defaults. | @Zaious (AI-assisted) |
 | 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Leniency (1-5). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
