@@ -13,15 +13,30 @@ Signal: OpenAlex `counts_by_year` on the Source — one request per journal,
 no works pagination (the sibling scripts' works-window fetch costs hundreds
 of requests for a large journal; this needs one).
 
-Deliberately reports rather than deletes. Zero recent output is a strong
-signal but not proof: OpenAlex indexing can lag for very small or
-non-English venues, and a renamed journal's successor may be the thing the
-entry should point to rather than something to remove. Every hit gets
-classified by how confident the signal is, and the write step adds a banner
-naming the evidence — it never silently drops an entry.
+**This is a screening aid, not an oracle. Do not apply its output blind.**
+Measured precision on the 2026-07-27 full run: of 20 entries it initially
+called ceased, at least 6 were verified still publishing — a false-positive
+rate above 30%. Three were caught automatically by the live-sibling check
+(BMJ, Philosophical Studies, International Journal of Design, all keyed to a
+stale ISSN whose OpenAlex source stops decades ago). Three more survived that
+check and were only caught by reading the publishers' own sites:
 
-    python detect_defunct.py --dry-run
-    python detect_defunct.py --write
+  * Theoretical Medicine and Bioethics — Springer, bimonthly, current as of 2026
+  * Radical Philosophy — issue 220, Winter 2026
+  * Logique et Analyse — volume 265, 2025, quarterly via Peeters
+
+The pattern: OpenAlex indexes small, humanities, and non-English venues
+poorly, so "no recent works" often means "not indexed" rather than "not
+published". That failure mode lands exactly on the kind of journal this
+knowledge base is most useful for.
+
+So `--write` requires `--confirmed`, a file listing the entries a human has
+actually verified as ceased. Marking a live journal "ceased publication"
+would be a false claim about a real organization — the precise harm
+docs/GOVERNANCE.md exists to handle, and gratuitous to self-inflict.
+
+    python detect_defunct.py --dry-run                      # produce the worklist
+    python detect_defunct.py --write --confirmed <file>     # banner only verified entries
 """
 from __future__ import annotations
 import argparse, json, os, re, sys
@@ -191,11 +206,24 @@ def build_banner(r: dict) -> str:
     )
 
 
-def apply_results(results: list[dict]) -> None:
+VERIFIED_STILL_PUBLISHING = {
+    # Confirmed by reading the publisher's own site, 2026-07-27. Kept here so a
+    # re-run doesn't re-flag them and quietly re-tempt someone into bannering
+    # a live journal.
+    "Theoretical Medicine and Bioethics": "Springer, bimonthly, current issue 2026-08",
+    "Radical Philosophy": "issue 220, Winter 2026",
+    "Logique et Analyse": "volume 265 (2025), quarterly via Peeters",
+}
+
+
+def apply_results(results: list[dict], confirmed: set[str]) -> None:
     today = date.today().isoformat()
     applied = skipped = 0
     for r in results:
         if r.get("verdict") not in ("DEAD", "NEARLY_DEAD") or r.get("already_banner"):
+            continue
+        if r["rel"] not in confirmed:
+            skipped += 1
             continue
         content = open(r["path"], encoding="utf-8").read()
         m = re.search(r"^# +.+?\n", content, re.MULTILINE)
@@ -216,13 +244,17 @@ def apply_results(results: list[dict]) -> None:
             content = content[:insert] + row + content[insert:]
         open(r["path"], "w", encoding="utf-8").write(content)
         applied += 1
-    print(f"Banner added to {applied} entries ({skipped} skipped — no H1 found)", file=sys.stderr)
+    print(f"Banner added to {applied} entries ({skipped} skipped — not in the confirmed list)",
+          file=sys.stderr)
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--confirmed", help="File of entry paths (one per line, as shown in the "
+                                        "report's 'rel' field) a human has verified as ceased. "
+                                        "Required for --write; see this module's docstring.")
     args = ap.parse_args()
     if not args.dry_run and not args.write:
         ap.error("specify --dry-run or --write")
@@ -230,7 +262,12 @@ def main() -> None:
     if args.write:
         if not os.path.exists(REPORT_PATH):
             ap.error(f"no report at {REPORT_PATH} — run --dry-run first")
-        apply_results(json.load(open(REPORT_PATH, encoding="utf-8")))
+        if not args.confirmed:
+            ap.error("--write requires --confirmed: this scan had a >30% false-positive rate on its "
+                     "first full run, so entries must be human-verified before being marked ceased")
+        confirmed = {ln.strip() for ln in open(args.confirmed, encoding="utf-8") if ln.strip()
+                     and not ln.startswith("#")}
+        apply_results(json.load(open(REPORT_PATH, encoding="utf-8")), confirmed)
         return
 
     files = lint_content.collect_files([])
