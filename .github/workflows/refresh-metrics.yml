@@ -1,0 +1,65 @@
+name: Monthly metrics refresh
+
+# SEED_DATA_QUALITY.md promises update_metrics.py is "re-run monthly"; without
+# this it was never scheduled and the OpenAlex-derived numbers drifted (last
+# captured 2026-05). Opens a PR rather than pushing: update_metrics.py's own
+# docstring is explicit that it "proposes changes for human review", and a
+# metric moving unexpectedly is a signal worth a human glance, not something
+# to auto-merge.
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'   # 03:00 UTC on the 1st of each month
+  workflow_dispatch:       # and on demand
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r skills/journal-atlas/scripts/requirements.txt
+
+      - name: Refresh metrics from OpenAlex
+        working-directory: skills/journal-atlas
+        env:
+          # Polite-pool access: higher rate limit, and OpenAlex asks for a
+          # contact address. Set this as a repo secret; the run still works
+          # without it, just slower and more rate-limit prone.
+          OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
+        run: python scripts/update_metrics.py --apply
+
+      - name: Validate nothing broke
+        working-directory: skills/journal-atlas
+        run: |
+          python scripts/validate_structure.py
+          python scripts/lint_content.py
+
+      - name: Open a PR if anything changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/monthly-metrics-refresh
+          delete-branch: true
+          title: 'chore: monthly OpenAlex metrics refresh'
+          commit-message: 'chore: refresh OpenAlex-derived metrics'
+          body: |
+            Automated monthly run of `scripts/update_metrics.py --apply`.
+
+            Refreshes h-index, 2-year mean citedness, i10-index and works
+            count from OpenAlex. Schema validation and the content linter
+            both passed on the result.
+
+            Worth a skim rather than a blind merge: a metric that moved a
+            lot usually means either a genuine shift or an OpenAlex source
+            re-match, and the second kind is worth catching.

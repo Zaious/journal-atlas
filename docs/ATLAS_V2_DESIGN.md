@@ -235,25 +235,40 @@ Verdicts from 2026-07-13 verification workflows. 🟢 bake-in + license-compatib
   for breadth (filter/rank across all journals) and curated markdown for
   depth. → `scripts/query_spine.py`, cross-referenced against the curated set
   via `in_curated_kb`; SKILL.md's Query Mode routes breadth questions there.
-- **Phase 5 — Governance & release.** Soft-metadata dispute/rebuttal mechanism;
-  OPSEC de-fingerprinting of examples; push the pending license commit; make the
-  GitHub repo public.
+- **Phase 5 — Governance & release** (partly done, 2026-07-27). Dispute/rebuttal
+  mechanism adopted and implemented → [GOVERNANCE.md](GOVERNANCE.md) +
+  `fit_score.detect_disputes()` + the demo's Disputed badge. Internal codenames
+  removed from published source. License commit pushed. **Still open**: making
+  the GitHub repo public, and merging `v2-coverage-first` into `main` (which is
+  still 14+ commits behind at the pre-v2 166-entry state, so publishing without
+  merging would show the wrong version).
 
 ---
 
 ## 9. Open decisions & risks
 
-1. **Reputational / defamation governance** for subjective Layer-E fields
-   (political leanings, reviewer culture). Needs: mandatory source citation, a
-   rebuttal/dispute issue path, and a "no unsourced subjective claim" rule.
-   *Blocking for public release, not for the spine.*
-2. **OPSEC.** v1 examples embed the founder's paper fingerprint (§10.6 of the
-   original work order). De-fingerprint before public release.
-3. **License consistency.** A local commit upgraded content to CC BY-SA 4.0 but
-   was never pushed; GitHub still shows CC BY-NC-SA. Push it before release.
-4. **OpenAlex credit budget.** Full spine via S3 snapshot (no key); reserve the
+1. ~~**Reputational / defamation governance**~~ — **resolved 2026-07-27.**
+   [GOVERNANCE.md](GOVERNANCE.md) defines scope, the no-unsourced-subjective-claim
+   writing rule, a dispute issue template, a `Disputed` marker orthogonal to tier,
+   and resolution outcomes. Maintainer set the three open policy questions:
+   2-week acknowledgment (best-effort resolution), evidence judged regardless of
+   who files, no reopening a resolved claim absent new evidence.
+2. **OPSEC** — *partly resolved 2026-07-27.* Internal codenames removed from
+   published source. The recurring worked example (12,000-word theoretical
+   embodied-cognition paper, $0 APC, targeting PCS) still identifies the founder's
+   own in-progress submission across README and SKILL.md; maintainer reviewed and
+   accepted this, as the exposure is theirs alone.
+3. ~~**License consistency.**~~ — **resolved 2026-07-27**, the CC BY-SA 4.0 commit
+   is pushed.
+4. **Evidence thinness on Tier 2 high scores** — 312 rows score 4-5/"High" on a
+   contentless justification. Verifiable subsets have been cited with real
+   OpenAlex counts (see `scripts/spine/cite_uncited_high_scores.py`); the
+   remainder sit in categories keyword counting provably undercounts, conference
+   entries with no ISSN, or bespoke rows. Frozen in `scripts/lint_baseline.json`
+   so CI blocks new ones without demanding the backlog be cleared first.
+5. **OpenAlex credit budget.** Full spine via S3 snapshot (no key); reserve the
    keyed API for incremental single-ISSN refresh.
-5. **Retraction Watch join is name-based** (no ISSN column) — accept fuzzy
+6. **Retraction Watch join is name-based** (no ISSN column) — accept fuzzy
    matching and flag low-confidence matches rather than asserting.
-6. **Spine ≠ recommendation engine.** The spine holds facts; ranking weights
+7. **Spine ≠ recommendation engine.** The spine holds facts; ranking weights
    stay user-controlled per the original scope boundary.

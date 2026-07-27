@@ -425,6 +425,20 @@ Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skelet
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 
+### Think a claim about your journal is wrong?
+
+Soft Metadata makes subjective claims — reviewer culture, framing
+expectations, political leanings — about real, named journals. If one is
+inaccurate, there is a formal way to get it corrected: open a
+[Dispute a Claim](.github/ISSUE_TEMPLATE/dispute-claim.md) issue. Anyone can
+file one, editors and readers alike, and disputes are judged on the evidence
+offered rather than on who files them. While a dispute is open the entry
+carries a `Disputed` marker naming the contested field, so the claim is never
+presented as confidently as an undisputed one.
+
+Full policy — scope, resolution outcomes, response-time commitment — in
+[docs/GOVERNANCE.md](docs/GOVERNANCE.md).
+
 ---
 
 ## Automation Scripts

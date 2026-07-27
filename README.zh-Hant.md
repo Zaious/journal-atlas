@@ -421,6 +421,18 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
 
 完整方法論與升級路徑見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 
+### 覺得關於某期刊的描述有誤？
+
+Soft Metadata 會對真實、具名的期刊做主觀描述——審稿文化、框架期待、政治
+傾向等。如果某項描述不準確，有正式的更正管道：開一則
+[Dispute a Claim](.github/ISSUE_TEMPLATE/dispute-claim.md) issue。任何人都可以
+提出，編輯或讀者一視同仁，判斷依據是提出的證據而非提出者的身分。爭議處理
+期間，該條目會掛上 `Disputed` 標記並指明爭議欄位，確保該項聲稱不會被呈現得
+跟無爭議的一樣有把握。
+
+完整政策（適用範圍、處理結果、回應時效承諾）見
+[docs/GOVERNANCE.md](docs/GOVERNANCE.md)。
+
 ---
 
 ## 自動化 Scripts

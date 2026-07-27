@@ -226,7 +226,7 @@ A Tier 2 entry transitions to Tier 1 when:
 
 ## Metrics freshness
 
-All quantitative metrics in the original 22 seed entries were sourced from OpenAlex on 2026-05-13 / 2026-05-14. Subsequent batches (Q1 expansion, ScienceClaw absorption, Phase 4 family-promotion, P3-1 conferences) were captured 2026-05-15 through 2026-05-17. Conference acceptance rates / submission cycle details for the 18 P3-1 entries are drawn from public CFP / conference websites (last verified 2026-05-17), not OpenAlex. `scripts/update_metrics.py` should be re-run monthly; we will schedule a GitHub Action after launch.
+All quantitative metrics in the original 22 seed entries were sourced from OpenAlex on 2026-05-13 / 2026-05-14. Subsequent batches (Q1 expansion, ScienceClaw absorption, Phase 4 family-promotion, P3-1 conferences) were captured 2026-05-15 through 2026-05-17. Conference acceptance rates / submission cycle details for the 18 P3-1 entries are drawn from public CFP / conference websites (last verified 2026-05-17), not OpenAlex. `scripts/update_metrics.py` runs monthly via [.github/workflows/refresh-metrics.yml](.github/workflows/refresh-metrics.yml), which opens a PR with the proposed metric changes rather than committing them directly.
 
 ## Acknowledgments
 

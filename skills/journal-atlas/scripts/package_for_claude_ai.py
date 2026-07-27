@@ -109,10 +109,19 @@ def main() -> int:
         f.write(build_chat_skill_md(os.path.join(SOURCE_SKILL_DIR, "SKILL.md")))
     print(f"SKILL.md: name/description within claude.ai limits", file=sys.stderr)
 
-    # TEMPLATE.md + CONSUMPTION_CONTRACT.md — SKILL.md's checklist links to the
-    # latter, so it must ship alongside it or that link is dead in this package.
+    # TEMPLATE.md + CONSUMPTION_CONTRACT.md + GOVERNANCE.md — SKILL.md's
+    # checklist links to the contract, and the contract links on to the
+    # governance policy, so all three must ship or those links dead-end in
+    # this package. GOVERNANCE.md lives in docs/ upstream; it is flattened to
+    # the skill root here and the contract's links are rewritten to match.
     shutil.copy2(os.path.join(SOURCE_SKILL_DIR, "TEMPLATE.md"), os.path.join(staging, "TEMPLATE.md"))
-    shutil.copy2(os.path.join(SOURCE_SKILL_DIR, "CONSUMPTION_CONTRACT.md"), os.path.join(staging, "CONSUMPTION_CONTRACT.md"))
+    shutil.copy2(os.path.join(SKILL_ROOT, "..", "docs", "GOVERNANCE.md"),
+                 os.path.join(staging, "GOVERNANCE.md"))
+    contract = open(os.path.join(SOURCE_SKILL_DIR, "CONSUMPTION_CONTRACT.md"), encoding="utf-8").read()
+    contract = contract.replace("../../docs/GOVERNANCE.md", "GOVERNANCE.md")
+    contract = contract.replace("../../SEED_DATA_QUALITY.md", "https://github.com/Zaious/journal-atlas/blob/main/SEED_DATA_QUALITY.md")
+    with open(os.path.join(staging, "CONSUMPTION_CONTRACT.md"), "w", encoding="utf-8") as f:
+        f.write(contract)
 
     # scripts/ — only the stdlib-only query tools
     scripts_out = os.path.join(staging, "scripts")
