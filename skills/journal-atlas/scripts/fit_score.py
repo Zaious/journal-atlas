@@ -204,7 +204,68 @@ def parse_journal_file(path: Path) -> dict[str, Any]:
         "sensitive_topics": _extract_sensitive_topics(content),
         "first_person_acceptance": _extract_first_person_score(content),
         "review_time_months": _extract_review_time(content),
+        "quant_bias": _extract_quant_bias(content),
+        "hard_blockers": _extract_strategic_text(content, "Hard Blockers"),
+        "not_recommended_for": _extract_strategic_text(content, "Not Recommended For"),
+        "best_suited_for": _extract_strategic_text(content, "Best Suited For"),
     }
+
+
+# Ordered most-severe first so the first match wins: "Very High" must be
+# tested before "High", and "Low-Medium" before "Low".
+_QUANT_BIAS_LEVELS = [
+    (r"very\s+high", 1.0),
+    (r"yes\s*\(\s*strong", 1.0),
+    (r"\bstrong\b", 0.85),
+    (r"\bhigh\b", 0.85),
+    (r"medium[-\s]*high", 0.7),
+    (r"\byes\b", 0.7),
+    (r"\bmixed\b", 0.5),
+    (r"\bmoderate\b", 0.5),
+    (r"low[-\s]*medium", 0.3),
+    (r"\bmedium\b", 0.5),
+    (r"\blow\b", 0.15),
+    (r"\bno\b", 0.0),
+    (r"\bnone\b", 0.0),
+]
+
+
+def _extract_quant_bias(content: str) -> Optional[float]:
+    """How strongly the reviewer pool judges qualitative work by quantitative
+    standards, 0.0 (not at all) to 1.0 (very strongly), or None if unstated.
+
+    The entries record this as free text with a severity word in front —
+    "Very High", "Yes (strong)", "Mixed", "Low-Medium — qualitative methods
+    are routine" — so the severity is read from the leading term and the
+    prose after it is left to the human reader. 163 of 399 entries state it
+    (2026-07-30); the rest return None rather than a guessed midpoint.
+    """
+    section = _extract_subsection(content, "Reviewer Pool Characteristics")
+    if not section:
+        return None
+    row = re.search(r"\|\s*\*\*Quantitative mindset bias[^*]*\*\*\s*\|([^|]*)\|", section)
+    if not row:
+        return None
+    cell = row.group(1).strip()
+    if not cell or re.match(r"\*?\(?(pending|fill manually|n/?a)", cell, re.IGNORECASE):
+        return None
+    for pattern, level in _QUANT_BIAS_LEVELS:
+        if re.search(pattern, cell, re.IGNORECASE):
+            return level
+    return None
+
+
+def _extract_strategic_text(content: str, heading: str) -> Optional[str]:
+    """Body text of a Strategic Notes subsection, or None when it is only a
+    placeholder. These are hand-written and are the least reproducible part
+    of an entry, so an empty one should read as absent, not as 'no blockers'."""
+    section = _extract_subsection(content, heading)
+    if not section:
+        return None
+    stripped = re.sub(r"\*\(pending\)\*|\*\(fill manually\)\*|community contribution welcome",
+                      "", section, flags=re.IGNORECASE)
+    stripped = re.sub(r"[\s|*\-]", "", stripped)
+    return section.strip() if len(stripped) > 40 else None
 
 
 def _extract_h1(content: str) -> Optional[str]:
@@ -701,32 +762,117 @@ def score_voice(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
     return None if fp_score is None else (fp_score / 5.0) * 100
 
 
-def score_strategic(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
-    """0-100 on review speed when the author is in a hurry, else None.
+def _mentions_any(text: Optional[str], needles: list[str]) -> bool:
+    if not text or not needles:
+        return False
+    lowered = text.lower()
+    return any(n.lower() in lowered for n in needles if len(n) > 3)
 
-    When timeline is not a priority this dimension has nothing to say about
-    the journal, so it drops out rather than adding the same constant to
-    every candidate.
+
+def score_strategic(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 combining review speed with the hand-written Strategic Notes.
+
+    Previously this read only review time, and only when the author was in a
+    hurry, so it contributed nothing to most queries. Meanwhile the entries'
+    Hard Blockers and Not Recommended For sections — the most human, least
+    reproducible content in the knowledge base — went unused by every
+    dimension.
+
+    Each component contributes only when it has something to say, and the
+    result is the mean of whatever spoke. None when nothing did.
     """
-    if paper.timeline_priority != "fast":
+    parts: list[float] = []
+
+    if paper.timeline_priority == "fast":
+        review_time = journal.get("review_time_months")
+        if review_time is not None:
+            # 3 months or less → 100; 12 months → 0
+            parts.append(max(0.0, min(100.0, 100 - (review_time - 3) * (100.0 / 9.0))))
+
+    # A stated blocker or exclusion naming this paper's methodology or topic
+    # is a strong negative — these are the entry author saying, in their own
+    # words, who should not submit.
+    signals = ([paper.methodology] if paper.methodology else []) + list(paper.topics)
+    signals = [s for s in signals if s]
+    if signals:
+        for key, hit_score, miss_score in (
+            ("hard_blockers", 0.0, 85.0),
+            ("not_recommended_for", 15.0, 80.0),
+            ("best_suited_for", 100.0, 55.0),
+        ):
+            text = journal.get(key)
+            if text is None:
+                continue
+            parts.append(hit_score if _mentions_any(text, signals) else miss_score)
+
+    if not parts:
         return None
-    review_time = journal.get("review_time_months")
-    if review_time is None:
-        return None  # Unrecorded for 56.6% of the corpus.
-    # 3 months or less → 100; 12 months → 0
-    return max(0.0, min(100.0, 100 - (review_time - 3) * (100.0 / 9.0)))
+    return sum(parts) / len(parts)
+
+
+QUALITATIVE_METHODS = (
+    "autoethnograph", "qualitative", "ethnograph", "narrative", "phenomenolog",
+    "grounded theory", "discourse", "interview", "case study", "arts-based",
+    "performative", "participatory", "interpretive", "hermeneutic",
+)
+QUANTITATIVE_METHODS = (
+    "quantitative", "experimental", "meta-analysis", "statistical", "survey",
+    "psychometric", "computational", "modeling", "modelling", "rct",
+)
+
+
+NON_EMPIRICAL_METHODS = ("theoretical", "conceptual", "philosophical", "critical")
+
+
+def _methodology_leaning(methodology: Optional[str]) -> Optional[str]:
+    """'non-quantitative', 'quantitative', or None when unstated or unclear.
+
+    Theoretical and conceptual work is grouped with qualitative rather than
+    excluded. The recorded field names qualitative work specifically, but the
+    friction it describes — reviewers reaching for quantitative standards —
+    lands on a theory paper as the same "where is your data?" objection.
+    Excluding theory papers also cost them this dimension entirely, and
+    theoretical submissions are a substantial share of what this knowledge
+    base is consulted about.
+    """
+    if not methodology:
+        return None
+    m = methodology.lower()
+    # Quantitative first: "mixed methods" and similar hybrids read as
+    # quantitative-compatible, and the qualitative list would otherwise claim
+    # anything containing "qualitative".
+    if any(k in m for k in QUANTITATIVE_METHODS):
+        return "quantitative"
+    if any(k in m for k in QUALITATIVE_METHODS + NON_EMPIRICAL_METHODS):
+        return "non-quantitative"
+    return None
 
 
 def score_reviewer_pool(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
-    """Not implemented — matching a paper's theoretical framework against the
-    Reviewer Pool Characteristics narrative needs more than string overlap.
+    """0-100 on how much friction this reviewer pool is likely to create for
+    this paper's methodology, or None when that cannot be judged.
 
-    Returns None so it contributes nothing. It previously returned 50.0 for
-    every journal in the corpus while carrying 0.15 of the weight, which put
-    an identical 7.5 points on every candidate and flattened the spread it
-    was supposed to help create.
+    Scored from the entry's "Quantitative mindset bias on qualitative work?"
+    row, which is the one part of Reviewer Pool Characteristics that carries
+    a comparable signal rather than prose. The reading is symmetric: a pool
+    that judges by quantitative standards is friction for a qualitative
+    manuscript and alignment for a quantitative one.
+
+    Returns None in the cases where the field genuinely says nothing about
+    this paper — no bias recorded, or a methodology the field does not speak
+    to (theoretical work, or none given). The rest of the section stays prose
+    for the human to read; compressing "dominant tradition" or "discourse
+    community signals" into a number would be inventing precision.
     """
-    return None
+    bias = journal.get("quant_bias")
+    if bias is None:
+        return None
+    leaning = _methodology_leaning(paper.methodology)
+    if leaning is None:
+        return None
+    if leaning == "non-quantitative":
+        return round((1.0 - bias) * 100, 1)
+    return round(bias * 100, 1)
 
 
 def compute_score(

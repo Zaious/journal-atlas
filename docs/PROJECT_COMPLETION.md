@@ -92,9 +92,22 @@ contribution has to fill.
 - Hard-constraint elimination verified as precision-oriented: wrongly
   eliminating a viable venue is a worse failure than ranking it too low,
   because the user never sees it to overrule.
-- `reviewer_pool` is implemented rather than returning None. It is one of six
-  scoring dimensions and currently contributes nothing, so no candidate is
-  ever scored on reviewer fit — the dimension this project exists to model.
+
+**Measured evidence coverage (2026-07-30)**, after implementing the two
+dimensions that previously returned nothing: the corpus splits cleanly along
+the tier boundary rather than degrading evenly.
+
+| Group | n | Coverage |
+|---|---|---|
+| Tier 1 + Tier 2 | 163 | 85-100% — scored on all or nearly all dimensions |
+| AI-Researched | 236 | ~40% — topic density and sensitive topics only |
+
+The 236 are missing exactly the four dimensions the v2 coverage-first pass
+deliberately left as honest blanks: methodology receptiveness, reviewer pool,
+voice, and strategic notes. So the ranking is fully evidenced for 41% of the
+corpus and topic-only for the rest, which is the coverage-versus-depth
+trade-off made visible in the scoring rather than hidden by it. Closing it is
+§2's work, not a scoring change.
 
 Until this exists, every recommendation is a plausible guess with good
 provenance, which is better than most tools but is not the same as a

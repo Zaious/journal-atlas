@@ -566,3 +566,74 @@ def test_score_coverage_reports_the_evidenced_fraction():
                                       fit_score.DEFAULT_WEIGHTS)
     coverage = fit_score.score_coverage(dims, fit_score.DEFAULT_WEIGHTS)
     assert 0.0 < coverage < 1.0
+
+
+# ---------- reviewer_pool and strategic_factors (implemented 2026-07-30) ----------
+#
+# Both previously contributed nothing while carrying 0.30 of the weight
+# between them, which capped every entry in the corpus at 70% coverage no
+# matter how complete it was.
+
+
+def _bias_cell(value: str) -> str:
+    return ("### Reviewer Pool Characteristics@@"
+            "| **Quantitative mindset bias on qualitative work?** | " + value + " | |@@"
+            ).replace("@@", "\n")
+
+
+def test_quant_bias_severity_is_read_from_the_leading_term():
+    assert fit_score._extract_quant_bias(_bias_cell("Very High")) == 1.0
+    assert fit_score._extract_quant_bias(_bias_cell("Yes (strong)")) == 1.0
+    assert fit_score._extract_quant_bias(_bias_cell("Mixed")) == 0.5
+    assert fit_score._extract_quant_bias(_bias_cell("No")) == 0.0
+    # "Very High" must beat "High", and "Low-Medium" must beat "Low".
+    assert fit_score._extract_quant_bias(_bias_cell("Very high - RCTs expected")) == 1.0
+    assert fit_score._extract_quant_bias(_bias_cell("Low-Medium - qualitative routine")) == 0.3
+
+
+def test_quant_bias_placeholder_is_unknown():
+    for value in ("*(pending)*", "*(fill manually)*", "N/A", ""):
+        assert fit_score._extract_quant_bias(_bias_cell(value)) is None, value
+
+
+def test_reviewer_pool_friction_is_symmetric():
+    """A quantitatively-minded pool is friction for qualitative work and
+    alignment for quantitative work - the same field read from both sides."""
+    journal = {"quant_bias": 1.0}
+    assert fit_score.score_reviewer_pool(
+        fit_score.Paper(methodology="autoethnography"), journal) == 0.0
+    assert fit_score.score_reviewer_pool(
+        fit_score.Paper(methodology="quantitative experimental"), journal) == 100.0
+
+
+def test_theoretical_papers_get_a_reviewer_pool_score():
+    """Theory work meets the same "where is your data?" objection, and
+    excluding it cost every theoretical submission this dimension."""
+    assert fit_score.score_reviewer_pool(
+        fit_score.Paper(methodology="theoretical"), {"quant_bias": 0.0}) == 100.0
+
+
+def test_reviewer_pool_unknown_without_bias_or_methodology():
+    assert fit_score.score_reviewer_pool(
+        fit_score.Paper(methodology="autoethnography"), {}) is None
+    assert fit_score.score_reviewer_pool(fit_score.Paper(), {"quant_bias": 1.0}) is None
+
+
+def test_strategic_uses_hard_blockers_not_just_review_speed():
+    """Previously this read only review time, and only when the author was in
+    a hurry, so it said nothing on most queries while the hand-written
+    Strategic Notes went unused by every dimension."""
+    paper = fit_score.Paper(methodology="autoethnography", timeline_priority="normal")
+    blocked = {"hard_blockers": "Autoethnography is not accepted under any framing."}
+    clear = {"hard_blockers": "Requires pre-registration for confirmatory work."}
+    assert fit_score.score_strategic(paper, blocked) < fit_score.score_strategic(paper, clear)
+
+
+def test_strategic_is_unknown_when_nothing_speaks():
+    paper = fit_score.Paper(methodology="autoethnography", timeline_priority="normal")
+    assert fit_score.score_strategic(paper, {}) is None
+
+
+def test_strategic_placeholder_sections_are_not_treated_as_content():
+    content = "### Hard Blockers\n\n*(pending)*\n"
+    assert fit_score._extract_strategic_text(content, "Hard Blockers") is None
