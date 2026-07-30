@@ -462,6 +462,115 @@ button.secondary:hover:not(:disabled) {
   .synthesis-text strong { color: #a79bf0; }
 }
 
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e4e1f0;
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: #55506b;
+}
+
+.site-footer section + section {
+  margin-top: 1.9rem;
+}
+
+.site-footer h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2f2a45;
+  margin: 0 0 0.5rem;
+}
+
+.site-footer p {
+  margin: 0 0 0.7rem;
+}
+
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.site-footer li + li {
+  margin-top: 0.6rem;
+}
+
+.site-footer a {
+  color: #4d3fc7;
+}
+
+.site-footer strong {
+  color: #2f2a45;
+}
+
+.footnote {
+  font-size: 0.82rem;
+  color: #7b7595;
+}
+
+.code-block {
+  position: relative;
+  margin: 0.7rem 0;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 0.7rem 4.2rem 0.7rem 0.85rem;
+  border-radius: 8px;
+  background: #f4f2fb;
+  border: 1px solid #e4e1f0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  margin: 0;
+  /* Fixed width so the button does not resize as the label changes between
+     Copy / Copied / Ctrl+C, and stays inside the pre's reserved padding. */
+  min-width: 3.6rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #4d3fc7;
+  border: 1px solid #d4cff0;
+}
+
+.copy-button:hover:not(:disabled) {
+  background: #efedfb;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e4e1f0;
+  font-size: 0.84rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-footer { border-color: #322d47; color: #a9a3c4; }
+  .site-footer h2,
+  .site-footer strong { color: #e6e2f5; }
+  .site-footer a { color: #a79bf0; }
+  .footnote { color: #8b85a8; }
+  .code-block pre { background: #201d31; border-color: #322d47; color: #ddd8f0; }
+  .copy-button { background: #262040; color: #a79bf0; border-color: #3f3a63; }
+  .copy-button:hover:not(:disabled) { background: #302a4d; }
+  .footer-links { border-color: #322d47; }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }

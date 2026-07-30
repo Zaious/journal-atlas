@@ -158,6 +158,199 @@ async function describeFailure(res: Response): Promise<string> {
 
 const MAX_DESCRIPTION_CHARS = 12000;
 
+const REPO_URL = "https://github.com/Zaious/journal-atlas";
+
+// Left unset, the support line does not render at all. A donation link is the
+// one thing on this page that must never be a plausible-looking guess.
+const SUPPORT_URL: string = import.meta.env.VITE_SUPPORT_URL ?? "";
+const SUPPORT_LABEL: string =
+  import.meta.env.VITE_SUPPORT_LABEL ?? "Buy me a coffee";
+
+const INSTALL_COMMANDS = `/plugin marketplace add Zaious/journal-atlas
+/plugin install journal-atlas@journal-atlas`;
+
+interface Limits {
+  global_daily_limit: number;
+  per_client_hourly_limit: number;
+  per_client_daily_limit: number;
+}
+
+/**
+ * A copyable command block.
+ *
+ * `navigator.clipboard.writeText` rejects more often than it looks: denied
+ * permission, a non-secure context, an embedded browser, or merely an unfocused
+ * document. Swallowing that rejection leaves a button that appears to do
+ * nothing, so failure falls back to selecting the text — the user still gets
+ * one keystroke away from copying, and the label says which state they are in.
+ */
+function CodeBlock({ text }: { text: string }) {
+  const [state, setState] = useState<"idle" | "copied" | "select">("idle");
+  const preRef = useRef<HTMLPreElement>(null);
+
+  function selectText() {
+    const node = preRef.current;
+    if (!node) return;
+    const range = document.createRange();
+    range.selectNodeContents(node);
+    const selection = window.getSelection();
+    selection?.removeAllRanges();
+    selection?.addRange(range);
+  }
+
+  function handleCopy() {
+    const done = (next: "copied" | "select") => {
+      setState(next);
+      setTimeout(() => setState("idle"), 2400);
+    };
+    if (!navigator.clipboard?.writeText) {
+      selectText();
+      done("select");
+      return;
+    }
+    navigator.clipboard.writeText(text).then(
+      () => done("copied"),
+      () => {
+        selectText();
+        done("select");
+      }
+    );
+  }
+
+  return (
+    <div className="code-block">
+      <pre ref={preRef}>{text}</pre>
+      <button type="button" className="copy-button" onClick={handleCopy}>
+        {/* Labels stay short: the button is absolutely positioned over the
+            command block, and a wider one would sit on top of the text the
+            reserved padding is there to keep clear. */}
+        {state === "copied" ? "Copied" : state === "select" ? "Ctrl+C" : "Copy"}
+      </button>
+    </div>
+  );
+}
+
+/**
+ * What this demo is, why it is capped, and what to do instead.
+ *
+ * Every part of this is a consequence of one fact — the demo runs on one
+ * person's API key — so it is stated first and the rest follows from it rather
+ * than reading as a series of asks.
+ */
+function SiteFooter() {
+  const [limits, setLimits] = useState<Limits | null>(null);
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/health`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => setLimits(d?.limits ?? null))
+      .catch(() => setLimits(null));
+  }, []);
+
+  return (
+    <footer className="site-footer">
+      <section>
+        <h2>This is an experiment, running on one person's API key</h2>
+        <p>
+          Journal Atlas is a research project, not a service. There is no company
+          behind it and no uptime promise — the model calls this page makes are
+          billed to the maintainer personally, which is the only reason it is
+          capped
+          {limits
+            ? ` at ${limits.per_client_hourly_limit} searches an hour per person and ${limits.global_daily_limit} a day across everyone`
+            : ""}
+          . The cap is a budget, not a paywall: there is no tier that removes it,
+          because there is nothing to sell.
+        </p>
+      </section>
+
+      <section>
+        <h2>Run it yourself, with no cap at all</h2>
+        <p>
+          The demo is a shop window. The real thing is a skill that runs inside
+          your own Claude session, against your own key, over the same knowledge
+          base — no limits, no queue, and it can read your actual manuscript
+          instead of a pasted summary. In a Claude Code <strong>main session</strong>:
+        </p>
+        <CodeBlock text={INSTALL_COMMANDS} />
+        <p className="footnote">
+          Then restart Claude Code. Claude Desktop, ChatGPT and plain-git setups
+          are covered in the{" "}
+          <a href={`${REPO_URL}#installation`} target="_blank" rel="noreferrer">
+            installation guide
+          </a>
+          . The knowledge base is CC BY-SA — you can also just read it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your field is probably not in here</h2>
+        <p>
+          88% of the corpus is psychology, philosophy, HCI and cognitive science.
+          Library science, sociology, anthropology and the physical sciences are
+          at zero. Two things fix that, and neither requires touching code:
+        </p>
+        <ul>
+          <li>
+            <strong>Bring a whole field in.</strong> The 236-entry expansion that
+            built most of this corpus was one AI research run over a target list,
+            and{" "}
+            <a
+              href={`${REPO_URL}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              the procedure is published
+            </a>{" "}
+            so you can point it at yours. Twenty journals is a real contribution.
+          </li>
+          <li>
+            <strong>Tell us how it actually went.</strong> If you have submitted
+            to or reviewed for a journal, you hold the part no amount of research
+            reaches — whether the word limit is real, how the reviewer pool treats
+            qualitative work, what a desk rejection there means. That is exactly
+            what 236 of our 399 entries are missing. Ten minutes on one journal
+            you know well beats a hundred scraped ones.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>And it needs more than one maintainer</h2>
+        <p>
+          Scholarly tools die a specific death: one person builds something
+          genuinely useful, maintains it alone, and then their circumstances
+          change — and the whole thing goes read-only, then stale, then wrong.
+          Anyone who has watched a library or digital-humanities project go dark
+          knows the pattern.
+        </p>
+        <p>
+          The licence is a partial answer — CC BY-SA content and MIT code mean
+          nobody can be locked out of a fork. But a fork nobody maintains is
+          still dead. So if this turns out to be worth keeping,{" "}
+          <strong>the thing it most needs is co-maintainers</strong>: people who
+          will review contributions in their own field and correct entries about
+          journals they know. Say so in an issue and you will be taken up on it.
+        </p>
+      </section>
+
+      <section className="footer-links">
+        <a href={REPO_URL} target="_blank" rel="noreferrer">
+          Source and knowledge base
+        </a>
+        <a href={`${REPO_URL}/issues`} target="_blank" rel="noreferrer">
+          Report something wrong
+        </a>
+        {SUPPORT_URL && (
+          <a href={SUPPORT_URL} target="_blank" rel="noreferrer">
+            {SUPPORT_LABEL}
+          </a>
+        )}
+      </section>
+    </footer>
+  );
+}
+
 const STAGE_LABELS: Record<StageName, string> = {
   parsing: "Reading your paper",
   screening: "Screening 399 journals",
@@ -530,6 +723,8 @@ function App() {
           )}
         </div>
       )}
+
+      <SiteFooter />
     </div>
   );
 }
