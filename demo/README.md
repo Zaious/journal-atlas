@@ -9,7 +9,7 @@ no database — every request is stateless.
 Three stages per request, streamed to the browser over SSE (see
 [`backend/main.py`](backend/main.py) for the full pipeline docstring):
 
-1. **Extract** (Haiku, forced tool-use) — freeform text → the same `Paper`
+1. **Extract** (cheap model, schema-constrained) — freeform text → the same `Paper`
    dataclass `fit_score.py` scores against. Topic phrasing is guided by
    [`topic_vocabulary.json`](backend/topic_vocabulary.json) (built by
    `build_topic_vocabulary.py`) so it aligns with the real OpenAlex topic
@@ -20,7 +20,7 @@ Three stages per request, streamed to the browser over SSE (see
    cited topic counts ride along in this stage's SSE event, so the frontend
    can render an expandable evidence card per candidate instead of a bare
    score — real, checkable receipts, not just a number.
-3. **Synthesize** (Sonnet, streamed) — inlines
+3. **Synthesize** (streamed) — inlines
    [`CONSUMPTION_CONTRACT.md`](../skills/journal-atlas/CONSUMPTION_CONTRACT.md)
    (the same tier/evidence rules `SKILL.md` points real skill sessions to)
    plus a trimmed excerpt (policy digest + Subject Density + Soft Metadata +
@@ -31,12 +31,19 @@ Three stages per request, streamed to the browser over SSE (see
 
 - Python 3.11+
 - Node 18+
-- An Anthropic **Console** API key (`platform.claude.com`) — **not** a
-  personal Claude.ai Pro/Max login. See
-  [`backend/.env.example`](backend/.env.example) for why: Anthropic's terms
-  prohibit routing other users' requests through a personal subscription;
-  a Console key billed under Commercial Terms is the supported way to serve
-  multiple end users from one backend.
+- An API key for one LLM provider. The backend runs on either, selected by
+  `LLM_PROVIDER` in `.env`:
+  - **Gemini** (default) — [Google AI Studio](https://aistudio.google.com/apikey)
+  - **Anthropic** — a **Console** key (`platform.claude.com`), **not** a
+    personal Claude.ai Pro/Max login. Anthropic's terms prohibit routing
+    other users' requests through a personal subscription; a Console key
+    billed under Commercial Terms is the supported way to serve multiple end
+    users from one backend.
+
+  Adding a provider means implementing two methods in
+  [`backend/providers.py`](backend/providers.py) — `extract()` and
+  `stream()` — plus a smoke test asserting its calls reach the API rather
+  than failing locally on a bad argument.
 
 ## Setup
 
@@ -47,7 +54,7 @@ cd demo/backend
 python -m venv .venv
 .venv/Scripts/activate      # Windows; use `source .venv/bin/activate` on macOS/Linux
 pip install -r requirements.txt
-cp .env.example .env        # then fill in ANTHROPIC_API_KEY
+cp .env.example .env        # then fill in the key for your chosen provider
 python build_topic_vocabulary.py   # generates topic_vocabulary.json — re-run whenever
                                      # references/journals/**/*.md changes
 ```
@@ -100,12 +107,14 @@ symptom.
 
 ```sh
 curl http://localhost:8000/api/health
-# {"status":"ok","journals_root_exists":true,"api_key_configured":true}
+# {"status":"ok","journals_root_exists":true,"provider":"gemini",...,"provider_ready":true}
 ```
 
-If `api_key_configured` is `false`, `.env` isn't being picked up — confirm
-it's at `demo/backend/.env` (not `.env.example`) and uvicorn was started
-from `demo/backend` (or with `--app-dir` pointing there).
+If `provider_ready` is `false`, `provider_error` says exactly why — usually
+the key isn't set, or `.env` isn't being picked up. Confirm the file is at
+`demo/backend/.env` (**not** `.env.local`, which is the Vite convention and
+applies to the frontend only; `load_dotenv()` reads `.env`) and that uvicorn
+was started from `demo/backend` or with `--app-dir` pointing there.
 
 Then open the frontend URL and submit a paper description. The three stage
 dots should light up in sequence (parsing → screening → synthesis) and the

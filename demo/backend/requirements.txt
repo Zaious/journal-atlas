@@ -1,4 +1,9 @@
 fastapi==0.115.0
 uvicorn[standard]==0.32.0
-anthropic==0.69.0
 python-dotenv==1.0.1
+
+# LLM providers — see providers.py. Only the one named by LLM_PROVIDER is
+# used at runtime, but both are installed so the API-shape smoke tests can
+# cover each of them.
+google-genai==2.15.0
+anthropic==0.69.0

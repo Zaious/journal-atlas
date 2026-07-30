@@ -31,7 +31,6 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import AsyncIterator
 
-import anthropic
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -44,6 +43,8 @@ load_dotenv()
 SKILL_SCRIPTS = Path(__file__).resolve().parents[2] / "skills" / "journal-atlas" / "scripts"
 sys.path.insert(0, str(SKILL_SCRIPTS))
 import fit_score  # noqa: E402
+
+import providers  # noqa: E402 - local module, imported after sys.path is set
 
 JOURNALS_ROOT = SKILL_SCRIPTS.parent / "references" / "journals"
 TOP_N_SCREEN = 10  # matches SKILL.md's own ">50 entries: read only top 10-15"
@@ -72,11 +73,13 @@ except FileNotFoundError:
     print(f"warning: {CONSUMPTION_CONTRACT_PATH} missing — synthesis will run "
           "without the tier/evidence consumption rules", file=sys.stderr)
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-EXTRACTION_MODEL = "claude-haiku-4-5"
-SYNTHESIS_MODEL = "claude-sonnet-5"
 REQUEST_TIMEOUT_SECONDS = 60.0
 MAX_RETRIES = 2
+
+# Which LLM backend runs the extract and synthesize stages. See providers.py;
+# selected by LLM_PROVIDER, defaults to gemini. Built once at import so a
+# missing key or SDK surfaces in /api/health rather than on first request.
+PROVIDER, PROVIDER_ERROR = providers.build_provider(REQUEST_TIMEOUT_SECONDS, MAX_RETRIES)
 
 app = FastAPI(title="Journal Atlas demo backend")
 app.add_middleware(
@@ -112,16 +115,9 @@ PAPER_SCHEMA = {
     "additionalProperties": False,
 }
 
-# Forced single-tool call, not an `output_config`/json_schema response format —
-# anthropic==0.69.0's Messages API has no such top-level parameter (verified
-# against the installed SDK's actual signature; passing it raises TypeError on
-# every request). Tool-forcing is the long-supported, SDK-verified way to get
-# schema-conforming JSON out of Messages.create().
-EXTRACT_TOOL = {
-    "name": "extract_paper_attributes",
-    "description": "Extract structured attributes from a paper description for academic-journal matching.",
-    "input_schema": PAPER_SCHEMA,
-}
+# How each provider is coaxed into schema-conforming JSON differs (forced
+# tool-use vs a response schema) and lives in providers.py; this module only
+# supplies the schema.
 
 
 def _build_extraction_prompt(freeform_text: str) -> str:
@@ -144,19 +140,9 @@ def _build_extraction_prompt(freeform_text: str) -> str:
     )
 
 
-async def extract_paper(client: "anthropic.AsyncAnthropic", freeform_text: str) -> fit_score.Paper:
-    response = await client.messages.create(
-        model=EXTRACTION_MODEL,
-        max_tokens=1024,
-        tools=[EXTRACT_TOOL],
-        tool_choice={"type": "tool", "name": "extract_paper_attributes"},
-        messages=[{
-            "role": "user",
-            "content": _build_extraction_prompt(freeform_text),
-        }],
-    )
-    tool_use = next(b for b in response.content if b.type == "tool_use")
-    return fit_score.Paper.from_dict(tool_use.input)
+async def extract_paper(provider, freeform_text: str) -> fit_score.Paper:
+    data = await provider.extract(_build_extraction_prompt(freeform_text), PAPER_SCHEMA)
+    return fit_score.Paper.from_dict(data)
 
 
 # ---------- Stage 2: screening (fit_score.py, unmodified) ----------
@@ -282,23 +268,16 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
     def event(name: str, data: dict) -> str:
         return f"event: {name}\ndata: {json.dumps(data)}\n\n"
 
-    if not ANTHROPIC_API_KEY:
-        yield event("error", {"message": "ANTHROPIC_API_KEY not set on the server — see demo/backend/.env.example"})
+    if PROVIDER is None:
+        yield event("error", {"message": PROVIDER_ERROR})
         return
 
-    # Async client — both calls below are awaited/streamed natively rather than
-    # blocking the event loop for their full duration (the sync client's
-    # `.stream()` would otherwise stall every other concurrent request for as
-    # long as Sonnet takes to finish generating).
-    client = anthropic.AsyncAnthropic(
-        api_key=ANTHROPIC_API_KEY,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-        max_retries=MAX_RETRIES,
-    )
+    # Both stages are awaited/streamed natively rather than blocking the event
+    # loop for their full duration.
 
     yield event("stage", {"stage": "parsing", "status": "start"})
     try:
-        paper = await extract_paper(client, freeform_text)
+        paper = await extract_paper(PROVIDER, freeform_text)
     except Exception as exc:
         yield event("error", {"message": f"extraction failed: {exc}"})
         return
@@ -322,13 +301,8 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
     yield event("stage", {"stage": "synthesis", "status": "start"})
     prompt = build_synthesis_prompt(freeform_text, paper, candidates)
     try:
-        async with client.messages.stream(
-            model=SYNTHESIS_MODEL,
-            max_tokens=2048,
-            messages=[{"role": "user", "content": prompt}],
-        ) as stream:
-            async for text in stream.text_stream:
-                yield event("text", {"delta": text})
+        async for text in PROVIDER.stream(prompt):
+            yield event("text", {"delta": text})
     except Exception as exc:
         yield event("error", {"message": f"synthesis failed: {exc}"})
         return
@@ -342,4 +316,12 @@ async def recommend(req: RecommendRequest):
 
 @app.get("/api/health")
 async def health():
-    return {"status": "ok", "journals_root_exists": JOURNALS_ROOT.exists(), "api_key_configured": bool(ANTHROPIC_API_KEY)}
+    return {
+        "status": "ok",
+        "journals_root_exists": JOURNALS_ROOT.exists(),
+        "provider": PROVIDER.name if PROVIDER else None,
+        "extraction_model": PROVIDER.extraction_model if PROVIDER else None,
+        "synthesis_model": PROVIDER.synthesis_model if PROVIDER else None,
+        "provider_ready": PROVIDER is not None,
+        "provider_error": PROVIDER_ERROR,
+    }
