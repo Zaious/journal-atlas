@@ -18,9 +18,12 @@ requests):
      tier/uncertainty flags, a rejection fallback suggestion.
 
 Every stage emits an SSE event so the frontend can show real progress
-instead of a blank spinner. Rate-limit / abuse protection is deliberately
-NOT implemented here (this is the local-dev / architecture scaffold) — see
-demo/README.md for what a deployed version still needs.
+instead of a blank spinner.
+
+Abuse and cost controls live in ratelimit.py and are wired into both
+LLM-calling endpoints: input size caps bound a single request, per-client
+rate limits are friction, and a global daily cap is what actually bounds the
+bill. See demo/README.md for what each one does and does not protect against.
 """
 from __future__ import annotations
 
@@ -500,6 +503,29 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     yield event("stage", {"stage": "synthesis", "status": "done"})
 
 
+# Sent on every SSE response. Without these the demo streams correctly on
+# localhost and appears to hang behind a CDN, which is the worst possible place
+# to find out.
+#
+#   X-Accel-Buffering  nginx and Cloudflare both buffer text/event-stream by
+#                      default — Cloudflare has been observed holding output
+#                      until roughly 100 KB accumulates, which for this payload
+#                      means the entire recommendation lands at once, or never.
+#                      This is the header both honour to turn that off.
+#   no-transform       stops a proxy applying compression or minification,
+#                      which reintroduces buffering by another route.
+#   keep-alive         the connection must survive the whole generation.
+#
+# The 100-second origin timeout (Cloudflare 524) is not a risk here for a
+# different reason: it measures silence, and the first `stage` event is emitted
+# before any model call, so bytes are always flowing within milliseconds.
+SSE_HEADERS = {
+    "Cache-Control": "no-cache, no-transform",
+    "X-Accel-Buffering": "no",
+    "Connection": "keep-alive",
+}
+
+
 def _rate_limited(request: Request) -> JSONResponse | None:
     """429 with a plain explanation, or None to proceed.
 
@@ -518,7 +544,8 @@ async def recommend(req: RecommendRequest, request: Request):
     limited = _rate_limited(request)
     if limited is not None:
         return limited
-    return StreamingResponse(sse_recommend(req), media_type="text/event-stream")
+    return StreamingResponse(sse_recommend(req), media_type="text/event-stream",
+                             headers=SSE_HEADERS)
 
 
 async def sse_followup(req: FollowupRequest) -> AsyncIterator[str]:
@@ -570,7 +597,8 @@ async def followup(req: FollowupRequest, request: Request):
     limited = _rate_limited(request)
     if limited is not None:
         return limited
-    return StreamingResponse(sse_followup(req), media_type="text/event-stream")
+    return StreamingResponse(sse_followup(req), media_type="text/event-stream",
+                             headers=SSE_HEADERS)
 
 
 # ---------- Coverage disclosure ----------

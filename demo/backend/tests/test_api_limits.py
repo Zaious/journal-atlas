@@ -123,3 +123,31 @@ def test_health_reports_limits_without_leaking_client_addresses(client):
     assert limits["global_used_today"] >= 1
     assert limits["per_client_hourly_limit"] == 3
     assert "testclient" not in str(limits).lower()
+
+
+# ---------- streaming headers ----------
+
+
+@pytest.mark.parametrize("path,body", [
+    ("/api/recommend", VALID),
+    ("/api/followup", {"paper_description": "x", "recommendation": "y", "question": "z"}),
+])
+def test_sse_responses_tell_proxies_not_to_buffer(client, path, body):
+    """Cloudflare and nginx buffer text/event-stream by default, which makes a
+    correctly-streaming backend appear to hang once it is behind a CDN — the
+    worst place to discover it. Pinned here because nothing in local
+    development can catch its absence."""
+    res = client.post(path, json=body)
+    assert res.headers["x-accel-buffering"] == "no"
+    assert "no-transform" in res.headers["cache-control"]
+    assert res.headers["content-type"].startswith("text/event-stream")
+
+
+def test_rate_limit_refusal_is_json_not_a_stream(client):
+    """The refusal happens before the stream opens, so it must arrive as a 429
+    the browser can act on rather than a 200 carrying bad news."""
+    for _ in range(3):
+        client.post("/api/recommend", json=VALID)
+    res = client.post("/api/recommend", json=VALID)
+    assert res.status_code == 429
+    assert res.headers["content-type"].startswith("application/json")

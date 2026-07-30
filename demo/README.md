@@ -134,6 +134,13 @@ Then open the frontend URL and submit a paper description. The three stage
 dots should light up in sequence (parsing → screening → synthesis) and the
 recommendation should stream in as markdown.
 
+## Deploying it
+
+Local setup is above. Putting it on a public hostname behind Cloudflare has its
+own set of traps — chiefly that Cloudflare buffers `text/event-stream`, which
+makes a correctly-streaming backend look like it hangs. See
+[DEPLOY.md](DEPLOY.md).
+
 ## Abuse and cost controls
 
 Every `/api/recommend` is two LLM calls carrying text the caller chose, paid

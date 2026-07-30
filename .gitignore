@@ -34,3 +34,4 @@ dist/
 # Eval run artifacts (regenerable; the eval definitions in
 # skills/journal-atlas/evals/ ARE tracked)
 skills/journal-atlas-workspace/
+.claude/
