@@ -4,6 +4,10 @@
 
 # Information Technology and Disabilities
 
+> [!CAUTION]
+> **Publication status:** Dormant or uncertain — OpenAlex records no publications since 2014, and a direct check could not confirm the venue is currently accepting submissions. The journal's own site states submissions are accepted "on a periodic basis" with a notice posted whenever a Call for Proposals is open, and no such call was visible when checked. The last issue found was Volume XIV (March 2014). This is deliberately **not** a claim that the journal has ceased: no closure notice was found either, and absence of evidence is not evidence of closure. Treat it as a venue to verify directly before investing effort, not as a live submission target. Checked 2026-07-27. If you know its current status, please open an issue (see [docs/GOVERNANCE.md](../../../../../docs/GOVERNANCE.md)).
+
+
 > **Last verified**: 2026-07-13
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
@@ -245,4 +249,5 @@
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Flagged dormant/uncertain: no publications recorded since 2014 and the venue's current submission status could not be confirmed. Not marked ceased — no closure notice was found. Surfaced after it ranked first for a live query despite 12 years of silence. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 1/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |

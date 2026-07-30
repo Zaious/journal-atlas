@@ -200,17 +200,74 @@ def _extract_h1(content: str) -> Optional[str]:
 
 
 def _extract_word_limit(content: str) -> Optional[int]:
-    """Find a word limit number near 'Word limit' label."""
-    # Look for patterns like "Word limit | 12,000" or "Word limit | 8000"
-    pattern = re.search(
-        r"Word limit.*?\|\s*[^0-9|]*([\d,]+)", content, re.IGNORECASE
+    """Word limit in words, or None when the entry doesn't state one.
+
+    Returning None matters more than returning a number. A word limit is a
+    HARD constraint — check_hard_constraints() eliminates the journal outright
+    — and an elimination is invisible to the user, who never sees the venue in
+    order to overrule it. So a wrong number is far worse than no number, and
+    anything ambiguous resolves to None.
+
+    Three ways the naive "first number after the label" reading goes wrong,
+    all measured in this corpus (2026-07-27, 13 of 399 entries):
+
+      "8 pages (full paper) + 2 pages references"   -> 8
+      "No strict limit; recommended <=30 pages"     -> 30
+      "...sampling of 2023-2025 publications..."    -> 2023
+
+    Eleven entries carried page limits read as word limits, which eliminated
+    every realistic manuscript from those venues (ACM TACCESS rejected
+    anything over "30 words"). Pages are not converted to words: the ratio
+    depends on format and template, so any conversion factor would be
+    invented, and this project does not invent numbers.
+    """
+    # Anchor on the bolded label at the start of a table row, which is
+    # TEMPLATE's convention (397/399 entries use "**Word limit**"; a few use
+    # "**Word limit (Standard papers)**"). A loose search for the phrase
+    # anywhere matches prose in other rows — one entry's Desk Rejection Rate
+    # cell mentions "exceeding ~8,000-word limit", and the loose form picked
+    # up that row's date column instead. Explicitly not "negotiability",
+    # which is a separate row whose value is words like "Soft".
+    row = re.search(
+        r"^\|\s*\*\*Word limit(?! negotiability)[^*]*\*\*\s*\|([^|]*)\|",
+        content, re.IGNORECASE | re.MULTILINE,
     )
-    if not pattern:
+    if not row:
         return None
+    cell = row.group(1).strip()
+
+    # An explicit "there is no limit" beats any number that follows it.
+    if re.search(r"no (?:strict|explicit|formal|hard)\b|not specified|unlimited",
+                 cell, re.IGNORECASE):
+        return None
+
+    # Prefer a number that actually says "words".
+    worded = re.search(r"([\d,]+)\s*(?:\+|-|–|\s|)?\s*words?\b", cell, re.IGNORECASE)
+    if worded:
+        candidate = worded.group(1)
+    else:
+        match = re.search(r"([\d,]+)", cell)
+        if not match:
+            return None
+        candidate = match.group(1)
+        # A bare number followed by a page/figure unit is not a word count.
+        after = cell[match.end():]
+        if re.match(r"\s*(?:pages?|pp\.?|figures?|tables?)\b", after, re.IGNORECASE):
+            return None
+
     try:
-        return int(pattern.group(1).replace(",", ""))
+        value = int(candidate.replace(",", ""))
     except ValueError:
         return None
+
+    # A four-digit year in a date range ("2023-2025") is not a word limit.
+    # Real limits in this range exist (2,000 words), so only reject when the
+    # number reads as a year in context.
+    if 1900 <= value <= 2100 and re.search(
+        rf"{re.escape(candidate)}\s*[-–—]\s*(?:19|20)\d{{2}}", cell
+    ):
+        return None
+    return value
 
 
 def _extract_listed_apc(content: str) -> Optional[int]:

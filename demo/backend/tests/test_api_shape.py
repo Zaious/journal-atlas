@@ -166,6 +166,21 @@ def test_missing_key_names_the_right_env_var(monkeypatch):
     assert provider is None and "GEMINI_API_KEY" in error
 
 
+def test_blank_model_id_falls_back_to_default(monkeypatch):
+    """.env.example ships `EXTRACTION_MODEL=` for the user to leave alone,
+    which sets the variable to "". That must mean "use the default", not
+    "send an empty model name" — which surfaces as a confusing
+    "model is required" error from deep inside the SDK."""
+    monkeypatch.setenv("LLM_PROVIDER", "gemini")
+    monkeypatch.setenv("GEMINI_API_KEY", INVALID_KEY)
+    monkeypatch.setenv("EXTRACTION_MODEL", "")
+    monkeypatch.setenv("SYNTHESIS_MODEL", "")
+    provider, error = providers.build_provider(15.0, 0)
+    assert error is None
+    assert provider.extraction_model == providers.DEFAULTS["gemini"][0]
+    assert provider.synthesis_model == providers.DEFAULTS["gemini"][1]
+
+
 def test_model_ids_are_env_overridable(monkeypatch):
     monkeypatch.setenv("LLM_PROVIDER", "gemini")
     monkeypatch.setenv("GEMINI_API_KEY", INVALID_KEY)

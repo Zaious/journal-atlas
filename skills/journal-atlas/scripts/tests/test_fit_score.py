@@ -132,6 +132,68 @@ def test_extract_top_topics_heading_suffix_still_parses():
     assert topics == [("Neuroscience and Neuropharmacology Research", 1137)]
 
 
+# ---------- _extract_word_limit ----------
+#
+# A word limit is a HARD constraint: a wrong number eliminates the journal
+# outright, and the user never sees it in order to overrule. So every case
+# below that can't be read confidently must come back None, not a guess.
+
+
+def test_word_limit_plain_number():
+    assert fit_score._extract_word_limit("| **Word limit** | 8,000 |") == 8000
+
+
+def test_word_limit_takes_lower_bound_of_a_range():
+    assert fit_score._extract_word_limit("| **Word limit** | ~8,500-10,000 |") == 8500
+
+
+def test_page_limit_is_not_a_word_limit():
+    """Regression: 11 entries stated page limits, which were read as word
+    counts — ACM TACCESS eliminated anything over "30 words"."""
+    for cell in ("4 pages (including figures and references)",
+                 "8 pages (full paper) + 2 pages references",
+                 "6 pages (text, figures, tables combined)"):
+        assert fit_score._extract_word_limit(f"| **Word limit** | {cell} |") is None, cell
+
+
+def test_no_strict_limit_beats_a_trailing_number():
+    for cell in ("No strict limit; recommended ≤30 pages",
+                 "No strict word count; typically 8-15 pages in IEEE 2-column format",
+                 "Submission: no formal page limit; recommended ≤25 pages excluding references"):
+        assert fit_score._extract_word_limit(f"| **Word limit** | {cell} |") is None, cell
+
+
+def test_year_range_is_not_a_word_limit():
+    cell = ("No explicit hard limit in current official PDF; empirical sampling of "
+            "2023–2025 publications shows median ~22 pages")
+    assert fit_score._extract_word_limit(f"| **Word limit** | {cell} |") is None
+
+
+def test_two_thousand_words_is_still_a_valid_limit():
+    """Guard the year check from over-firing: 2,000 words is a real limit."""
+    assert fit_score._extract_word_limit("| **Word limit** | 2,000 words |") == 2000
+
+
+def test_word_limit_ignores_the_phrase_elsewhere_in_the_file():
+    """Regression: one entry's Desk Rejection Rate cell mentions 'exceeding
+    ~8,000-word limit', and a loose search matched that row, returning the
+    date from its next column."""
+    content = (
+        "| **Desk Rejection Rate** | triggers include exceeding ~8,000-word limit | 2026-07-13 |\n"
+        "| **Word limit** | 9,500 |\n"
+    )
+    assert fit_score._extract_word_limit(content) == 9500
+
+
+def test_word_limit_negotiability_row_is_not_the_limit():
+    content = "| **Word limit negotiability** | Soft (extensions possible) |\n"
+    assert fit_score._extract_word_limit(content) is None
+
+
+def test_no_word_limit_row_at_all():
+    assert fit_score._extract_word_limit("| **Abstract limit** | 150 words |") is None
+
+
 # ---------- detect_tier ----------
 
 

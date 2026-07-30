@@ -37,7 +37,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-load_dotenv()
+# Point at the .env beside this file rather than letting load_dotenv() search
+# upward from the working directory. uvicorn is often started from the repo
+# root with --app-dir, and the bare call then silently finds nothing: the
+# server comes up reporting "API key not set" while the same code works when
+# run from this directory.
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 # Reuse fit_score.py directly — no reimplementation of the scoring logic.
 SKILL_SCRIPTS = Path(__file__).resolve().parents[2] / "skills" / "journal-atlas" / "scripts"
@@ -147,10 +152,12 @@ async def extract_paper(provider, freeform_text: str) -> fit_score.Paper:
 
 # ---------- Stage 2: screening (fit_score.py, unmodified) ----------
 
-def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
-    candidate_paths = fit_score.collect_journals(paper, JOURNALS_ROOT)
+MIN_CANDIDATES_BEFORE_WIDENING = 3
+
+
+def _score_against(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
     results = []
-    for path in candidate_paths:
+    for path in fit_score.collect_journals(paper, JOURNALS_ROOT):
         try:
             journal_data = fit_score.parse_journal_file(path)
         except Exception:
@@ -165,9 +172,34 @@ def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
         if elim:
             js.eliminated, js.elimination_reason = True, elim
         else:
-            js.score, js.dimension_scores = fit_score.compute_score(paper, journal_data, fit_score.DEFAULT_WEIGHTS)
+            js.score, js.dimension_scores = fit_score.compute_score(
+                paper, journal_data, fit_score.DEFAULT_WEIGHTS)
         results.append(js)
-    passing = sorted((r for r in results if not r.eliminated), key=lambda r: -r.score)
+    return sorted((r for r in results if not r.eliminated), key=lambda r: -r.score)
+
+
+def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
+    """Rank the corpus, widening past the extracted field guess if that guess
+    starved the result set.
+
+    The extraction stage picks which field directories to search, and it
+    picks too narrowly on interdisciplinary papers. Measured on an
+    autoethnographic paper about conference accessibility: the guess
+    ("qualitative-methods") yielded 1 candidate, while searching everything
+    yielded 10 — and the top all-fields result outranked the narrowed
+    winner. The good matches lived in hci and design, which the guess never
+    looked at.
+
+    A field the extractor omits is invisible: the user never sees the venue
+    and so cannot overrule the omission, which is the same reason
+    _extract_word_limit() refuses to guess. Full-corpus screening is local
+    file parsing that measures at well under a second for all 399 entries,
+    so widening costs nothing worth protecting.
+    """
+    passing = _score_against(paper)
+    if paper.fields and len(passing) < MIN_CANDIDATES_BEFORE_WIDENING:
+        from dataclasses import replace
+        passing = _score_against(replace(paper, fields=[]))
     return passing[:TOP_N_SCREEN]
 
 
@@ -239,10 +271,23 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
     sections = []
     for c in candidates:
         try:
+            content = c.path.read_text(encoding="utf-8")
             excerpt = build_candidate_excerpt(c.path)
         except OSError:
             continue
-        sections.append(f"=== {c.name} (fit_score {c.score:.1f}/100) ===\n{excerpt}")
+        # State the tier outright instead of leaving it to be inferred from
+        # the banner inside the excerpt. Observed with gemini-3.5-flash-lite:
+        # asked to infer, it cited "Tier 1 evidence" for a journal in one
+        # paragraph and then summarised all candidates as "AI-Researched or
+        # Tier 2" in the next — self-contradicting on the single field the
+        # tier system exists to communicate. Removing the inference step
+        # removes that failure.
+        tier = fit_score.detect_tier(content)
+        disputes = fit_score.detect_disputes(content)
+        header = f"=== {c.name} (fit_score {c.score:.1f}/100 | evidence tier: {tier}"
+        if disputes:
+            header += f" | DISPUTED: {'; '.join(disputes)}"
+        sections.append(header + f") ===\n{excerpt}")
     contract_block = f"{CONSUMPTION_CONTRACT}\n\n---\n\n" if CONSUMPTION_CONTRACT else ""
     return (
         "You are the Journal Atlas skill. Follow the rules below when citing "

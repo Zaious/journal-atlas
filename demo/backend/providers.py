@@ -175,8 +175,13 @@ def build_provider(timeout: float, max_retries: int) -> tuple[Provider | None, s
                       "— see demo/backend/.env.example")
 
     default_extract, default_synth = DEFAULTS[name]
-    extraction_model = os.environ.get("EXTRACTION_MODEL", default_extract)
-    synthesis_model = os.environ.get("SYNTHESIS_MODEL", default_synth)
+    # `or`, not os.environ.get's default: .env.example ships these as bare
+    # `EXTRACTION_MODEL=` for the user to fill in or leave alone, which sets
+    # the variable to an empty string. A two-arg .get() treats that as "set"
+    # and hands back "", producing a "model is required" error far from its
+    # cause. Empty means unset here.
+    extraction_model = os.environ.get("EXTRACTION_MODEL") or default_extract
+    synthesis_model = os.environ.get("SYNTHESIS_MODEL") or default_synth
 
     cls = {"anthropic": AnthropicProvider, "gemini": GeminiProvider}[name]
     try:
