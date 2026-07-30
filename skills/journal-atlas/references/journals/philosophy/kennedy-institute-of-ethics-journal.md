@@ -167,7 +167,7 @@
 ### Framing Requirements
 
 - **Mandatory framing?** *(pending — see "Current positioning" and "Framing requirement" note below)*
-- **Framing requirement noted by AI research:** Must be conceptual/philosophical analysis with practical engagement, not empirical/quantitative research; author encouraged to pre-contact editorial team (kie@georgetown.edu) if unsure of fit; global/non-US context issues are specifically welcomed per scope statement.
+- **Framing requirement noted by AI research:** Must be conceptual/philosophical analysis with practical engagement, not empirical/quantitative research; author encouraged to pre-contact editorial team if unsure of fit; global/non-US context issues are specifically welcomed per scope statement.
 - **Consequences of ignoring it**: *(pending)*
 
 ### Methodological Preferences

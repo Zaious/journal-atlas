@@ -151,3 +151,15 @@ def test_rate_limit_refusal_is_json_not_a_stream(client):
     res = client.post("/api/recommend", json=VALID)
     assert res.status_code == 429
     assert res.headers["content-type"].startswith("application/json")
+
+
+def test_healthz_is_a_cheap_unauthenticated_liveness_probe(client):
+    """Deployment tooling probes /healthz by convention. It must not be rate
+    limited and must not depend on the provider being configured, or a missing
+    key would read as a dead process and trigger a restart loop."""
+    monkeypatched_away = main.PROVIDER is None
+    assert monkeypatched_away, "fixture should have unplugged the provider"
+    for _ in range(30):
+        res = client.get("/healthz")
+        assert res.status_code == 200
+        assert res.json()["status"] == "ok"

@@ -128,7 +128,36 @@ def check_ai_researched_has_signal_quality(content: str) -> list[str]:
     return []
 
 
-CHECKS = [check_uncited_high_scores, check_tier1_placeholders, check_ai_researched_has_signal_quality]
+_EMAIL = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}")
+
+
+def check_no_bare_contact_addresses(content: str) -> list[str]:
+    """No third-party email addresses in prose.
+
+    A journal publishing its editorial address on its own site is not the same
+    act as this repo shipping that address inside a bulk data file, where it is
+    harvestable at scale and goes stale with no one to notice. The requirement
+    is the fact worth recording — "send a presubmission inquiry rather than a
+    full manuscript" — and the address behind it is a lookup.
+
+    Addresses that are structurally part of a cited source URL are exempt: a
+    mailing-list archive path like `.../list/hcitaly@isti.cnr.it/thread/...` is
+    provenance, not a contact detail, and stripping it would break the citation
+    it belongs to.
+    """
+    problems = []
+    for match in _EMAIL.finditer(content):
+        preceding = content[:match.start()]
+        if re.search(r"https?://\S*$", preceding):
+            continue
+        problems.append(
+            f"bare contact address '{match.group(0)}' in prose — record the "
+            f"requirement, not the address (source URLs are exempt)")
+    return problems
+
+
+CHECKS = [check_uncited_high_scores, check_tier1_placeholders,
+          check_ai_researched_has_signal_quality, check_no_bare_contact_addresses]
 
 
 def lint_file(path: str) -> list[str]:

@@ -683,6 +683,17 @@ async def coverage():
     return compute_coverage()
 
 
+@app.get("/healthz")
+async def healthz():
+    """Liveness probe.
+
+    Separate from /api/health because deployment tooling probes this path by
+    convention and wants a cheap, stable 200 — not the provider configuration
+    and usage counters /api/health reports for a human debugging a deploy.
+    """
+    return {"status": "ok"}
+
+
 @app.get("/api/health")
 async def health():
     return {
