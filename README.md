@@ -32,9 +32,10 @@ Journal Atlas captures what bibliometric tools like Impact Factor and Scimago do
 - [Workflows (with examples)](#workflows)
 - [Coverage and Inclusion Status](#coverage-and-inclusion-status)
 - [Tier System](#tier-system)
+- [How This Got Here](#how-this-got-here)
 - [Automation Scripts](#automation-scripts)
 - [Try It Without Installing](#try-it-without-installing)
-- [Contributing](#contributing)
+- [**Contributing — the two things that actually move this**](#contributing--the-two-things-that-actually-move-this)
 - [Use Cases](#use-cases)
 - [What This Is NOT](#what-this-is-not)
 - [Adjacent Tools](#adjacent-tools)
@@ -454,17 +455,18 @@ nursing science, no engineering outside three robotics venues.
 **If your field is on that list, this tool has nothing to offer you yet, and it
 will say so.** It is built to answer "I don't have data on this" rather than to
 produce a plausible-looking ranking of the nearest journals it happens to hold —
-a wrong recommendation costs an author months. Point `/ja-add` at a journal you
-know and it becomes the first entry in a new field.
+a wrong recommendation costs an author months. Point `/ja-contribute` at a
+journal you know and it becomes the first entry in a new field.
 
 ### Why the distribution looks like this
 
 It is not a principled sampling frame. It reflects where the project started —
 one researcher's own submission problem in qualitative psychology and philosophy
 of mind — and then grew outward along the paths that mattered to its
-contributors. The corpus is honest about being a convenience sample. Growth in
-any direction is one `/ja-add` away, and the fields above are the highest-value
-places to point it.
+contributors. The corpus is honest about being a convenience sample. The fields
+above are the highest-value places to grow it — see
+[Contributing](#contributing--the-two-things-that-actually-move-this) for the
+two paths that do that.
 
 ### How complete is an individual entry
 
@@ -518,6 +520,126 @@ Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skelet
 Separately from tier, 14 entries carry a **publication-status banner**: 12 verified as ceased or renamed (each naming its successor, so a rejected manuscript has somewhere to go) and 2 flagged dormant where no issue could be confirmed for over a decade but no closure notice exists either. Recommending a venue that cannot accept submissions wastes the one thing an author cannot get back, so these are marked rather than silently ranked. AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07) for what it means.
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
+
+---
+
+## How This Got Here
+
+Every date below is a commit date, recoverable with `git log --reverse`. The
+shape of the history is the argument, so it is given rather than summarized.
+
+### The problem nobody was solving
+
+Ask any capable model where to send your paper and you get a list of the most
+prestigious venues in the general area. That answer is not wrong so much as
+useless: it is the answer you would have guessed yourself, it ignores every
+constraint that actually decides the outcome — fee budget, word ceiling, ethics
+approval, whether your method will survive the reviewer pool — and it is
+delivered with the same confidence whether the model knows the journal or is
+reconstructing it from the shape of its name.
+
+Plenty of tools answer neighbouring questions well: B!SON matches abstracts to
+OA journals, Cabells flags predatory venues, Scimago ranks. What none of them
+hold is the part authors actually ask each other about in private — how a
+reviewer pool treats qualitative work, whether a "no strict word limit" is real,
+what a desk rejection there means. That knowledge exists, distributed across
+people who have submitted and reviewed, and nowhere machine-readable.
+
+So the question this project started from was narrow: **can that soft knowledge
+be written down in a form an AI agent can read, without inventing the parts
+nobody knows?**
+
+### 2026-05-12 → 05-18: dogfooding, 22 → 163 entries
+
+Built to solve one researcher's own submission problem, in their own fields.
+The first day's second commit already widened the scope from those fields to all
+disciplines — the narrowness was visible immediately.
+
+The decision that shaped everything came on **05-14, at 22 entries**: Tier 2
+warning banners and [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md), written
+before there was any corpus worth defending. Marking your own data as
+low-confidence while you have almost none of it is cheap; it is expensive later,
+once the number is something you would rather quote. Doing it at 22 entries is
+why the tier system is load-bearing rather than decorative.
+
+By **05-17** the corpus reached 163 through absorbing an adjacent venue-template
+project and writing conference entries. On **05-18** the content licence moved
+from CC BY-NC-SA to **CC BY-SA** — dropping NonCommercial, because a knowledge
+base that a commercial tool may not read is a knowledge base arguing with its
+own purpose.
+
+Then **eight weeks of nothing.** 05-18 to 07-13, no commits.
+
+### 2026-07-13: the pivot — breadth, because depth alone cannot be evaluated
+
+163 hand-written entries is a demo. The problem is that nobody can tell whether
+a demo is right. Ask it about a journal it holds and it looks impressive; ask it
+about the journal you actually care about and it has nothing, and you cannot
+distinguish "this project is a careful instrument with a narrow corpus" from
+"this project is thin."
+
+So v2 went coverage-first, in one day:
+
+- A **166,821-row ISSN spine** joining OpenAlex, DOAJ, JUFO, CAS, the Norwegian
+  Register and Retraction Watch — enough to answer *does this journal exist,
+  is it indexed, is it alive* for essentially any ISSN, without pretending to
+  soft metadata.
+- An **AI research pipeline** ([WO2](docs/workorders/WO2_SOFT_METADATA_BATCH.md))
+  that took the corpus from 163 to **399** the same day.
+
+The pipeline's rule is the whole point, and it is why the coverage table above
+reads the way it does: **facts with a source URL, or a blank with a recorded
+reason.** Not a plausible sentence. `review_time: SciRev returned 0 reviews` is
+a correct output. Chinese-language sources (小木虫, 知乎) were mandatory rather
+than optional, because for many journals they carry the only first-hand signal
+that exists.
+
+That rule is exactly why 236 AI-researched entries sit at ~40% evidence
+coverage instead of 100%. The four dimensions they are missing — methodology
+fit, reviewer pool, voice, strategic notes — are the ones that need someone who
+has actually submitted. A pipeline that filled them would have produced a
+better-looking corpus and a worse one.
+
+### 2026-07-20 → 07-30: finding out what was wrong with it
+
+**Ten days of commits. Zero entries added.** The last third of the project was
+spent breaking its own work:
+
+| What was found | Why it mattered |
+|---|---|
+| AI-permission-gate matched the template's own row label | **399 of 399** journals falsely gated — any paper disclosing AI use was eliminated corpus-wide, silently |
+| Page counts and years parsed as word limits | One venue rejected anything over "30 words" |
+| Unstated IRB and fee budget read as *no* IRB and *zero* budget | 33 journals eliminated for a theoretical paper, invisibly |
+| Word-limit ranges read as the floor | "Up to 10,000 permitted" scored as 5,000 — caught by evals, after a test had asserted the wrong behaviour |
+| Two of six scoring dimensions were never implemented | Capped every entry in the corpus at 70% evidence coverage |
+| 61 high scores with no citation behind them | Given real OpenAlex counts; one was contradicted and downgraded |
+| Defunct-journal screening | ~30% false-positive rate measured, so `--write` was gated behind human verification rather than shipped |
+
+The pattern in every one of those: a hard constraint that eliminates a candidate
+is **invisible to the user**. A wrong recommendation can be argued with. A
+journal that silently never appears cannot. So ambiguity now resolves
+permissively, and unknown propagates as unknown rather than as a midpoint.
+
+Also in this window: a [dispute mechanism](docs/GOVERNANCE.md) with a stated
+response time, a `Disputed` marker, a content linter, CI, 12 verified-ceased
+journals flagged with their successors named, and the first real end-to-end run
+on a live model — which immediately exposed four more defects.
+
+### 2026-07-31: public
+
+Not because it is finished. Because the honest statement of what it holds, what
+it does not, and how wrong it has been is now written down and checkable — and
+that statement is more useful to a stranger than another two hundred entries
+would be.
+
+What it can do: rank real venues against real constraints, cite article counts
+per topic, tell you the evidence behind each score, and say "I don't have data
+on this." What it cannot do: cover most of the academy, tell you anything
+trustworthy about reviewer culture at 236 of its 399 entries, or replace one
+colleague who has published there. See
+[Coverage and Inclusion Status](#coverage-and-inclusion-status) for the numbers,
+and [PROJECT_COMPLETION.md](docs/PROJECT_COMPLETION.md) for what finished would
+look like.
 
 ### Think a claim about your journal is wrong?
 
@@ -579,19 +701,86 @@ Setup and launch instructions in [demo/README.md](demo/README.md).
 
 ---
 
-## Contributing
+## Contributing — the two things that actually move this
 
-The lowest-friction contribution path is **`/ja-validate <journal>`** — share your submission experience conversationally, the skill generates a PR-ready Markdown patch in `dist/`.
+The coverage table above states the two holes precisely, and they need two
+different kinds of help. Everything else is secondary.
 
-Other paths:
+> **Hole 1 — most of the academy is missing.** Nine field directories, 88% of
+> them four adjacent fields. Zero entries in library science, sociology,
+> anthropology, the physical sciences.
+>
+> **Hole 2 — 236 of 399 entries have no human behind them.** They carry policy
+> and topic facts with sources, and nothing about how it actually goes.
 
-- **`/ja-contribute`** — Cold-contribute a new journal entry from scratch
-- **[Submission Experience report](.github/ISSUE_TEMPLATE/submission-experience.md)** — Structured GitHub Issue for post-submission retrospectives (acts as a community pattern library)
-- **Traditional PR** — Copy [`skills/journal-atlas/TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md), fill what you know, open a PR
+### Path 1 — Bring your whole field in, the way we did
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for quality standards, naming conventions, and reviewer guidelines.
+**This is the highest-leverage contribution and it is not a per-journal chore.**
+The 236-entry expansion on 2026-07-13 was one AI research run over a target
+list, and the procedure is published so you can point it at your own field:
+[**WO2_SOFT_METADATA_BATCH.md**](docs/workorders/WO2_SOFT_METADATA_BATCH.md).
 
-**What we need most**: Soft Metadata. The unwritten rules — reviewer culture, framing requirements, sensitive-topic tolerance. If you've published in or reviewed for a journal, that knowledge is evidence no algorithm can extract.
+Roughly:
+
+1. **Build a target list.** Pick your field, rank by OpenAlex citation count or
+   by what people in your field actually submit to. 20 journals is a real
+   contribution; 100 makes your field first-class.
+2. **Run the three-layer pass per journal** — policy (AI use, peer review,
+   preprint, OA/APC) from publisher pages; positioning from OpenAlex topics;
+   experiential (review time, desk-reject rate, reviewer culture) from SciRev,
+   Reddit, and **the Chinese-language forums 小木虫 / 知乎, which are mandatory,
+   not optional** — for a great many journals they carry the only first-hand
+   account that exists anywhere.
+3. **Open a PR with the drafts.** They land as AI-Researched tier, banner and
+   all, and become the scaffolding your field's practitioners fill in.
+
+Two rules make the difference between help and damage:
+
+- **Facts with a source URL, or a blank with a recorded reason.** `review_time:
+  SciRev returned 0 reviews` is a correct, valuable output. A plausible sentence
+  with no source is worse than an empty field, because the empty field is
+  honest and someone will fill it.
+- **Never store verbatim text** from forums, policy pages, or abstracts —
+  normalize to a fact plus a link. It keeps the corpus CC BY-SA-compatible.
+
+If your field has zero entries today, the first PR is the one that matters most.
+Say so in the issue and the target list can be built with you.
+
+### Path 2 — Backfill what only you know
+
+**If you have submitted to or reviewed for a journal, you hold data this project
+cannot obtain any other way.** No amount of AI research reaches it. It is
+precisely the four dimensions the 236 AI-researched entries are missing:
+
+- Does the reviewer pool judge qualitative work by quantitative standards?
+- Is the stated word limit real, or is it negotiable in practice?
+- What framing does a paper need to survive there?
+- Which topics get a rougher ride than the scope statement admits?
+- What does a desk rejection there actually mean, and where should it go next?
+
+```bash
+/ja-validate <journal name>
+```
+
+It interviews you conversationally and writes a PR-ready patch into `dist/`.
+Ten minutes about one journal you know well is worth more than a hundred entries
+of policy scraping — and if it contradicts what an entry currently claims, say
+so: contradictions are handled by the [dispute
+mechanism](docs/GOVERNANCE.md), not quietly dropped.
+
+**One journal is a real contribution.** Most of Path 2's value arrives one entry
+at a time.
+
+### Everything else
+
+- **`/ja-contribute`** — cold-write a new entry from scratch
+- **[Submission Experience report](.github/ISSUE_TEMPLATE/submission-experience.md)** — structured issue for a post-submission retrospective
+- **Traditional PR** — copy [`TEMPLATE.md`](skills/journal-atlas/TEMPLATE.md), fill what you know, leave the rest blank
+- **Tell us an entry is wrong** — see [Think a claim about your journal is wrong?](#think-a-claim-about-your-journal-is-wrong)
+
+Quality standards, naming conventions and reviewer guidelines are in
+[CONTRIBUTING.md](CONTRIBUTING.md). The one standard that is not negotiable:
+**a blank field beats a guess.**
 
 ---
 
