@@ -4,6 +4,9 @@
 
 # Journal of Abnormal Child Psychology
 
+> [!CAUTION]
+> **Publication status:** Appears to have ceased publication — OpenAlex records **no publications since 2020** (checked 2026-07-30, ISSN 0091-0627). This entry is retained for historical reference and for rejection-fallback context, but **should not be recommended as a live submission target**. Renamed **Research on Child and Adolescent Psychopathology** from volume 49(1), January 2021 (Springer). If this is an OpenAlex indexing gap rather than a real closure, please open an issue (see [docs/GOVERNANCE.md](../../../../../docs/GOVERNANCE.md)).
+
 > **Last verified**: 2026-05-16
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
@@ -297,6 +300,7 @@ Low for child clinical-psychology empirical authors. Springer Nature Choice OA a
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-30 | Flagged as ceased: OpenAlex shows 0 publication(s) in the last 5 years (last active 2020). Entry retained for historical/fallback context but marked not-a-live-target; see scripts/spine/detect_defunct.py. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy — Explicit permission gate? / Leniency. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |

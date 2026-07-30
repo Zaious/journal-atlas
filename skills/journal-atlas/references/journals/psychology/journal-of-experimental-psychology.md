@@ -4,6 +4,9 @@
 
 # Journal of Experimental Psychology
 
+> [!CAUTION]
+> **Publication status:** Appears to have ceased publication — OpenAlex records **no publications since 2014** (checked 2026-07-30, ISSN 0022-1015). This entry is retained for historical reference and for rejection-fallback context, but **should not be recommended as a live submission target**. Published 1916-1975, then split into the four independently edited successors: **JEP: General**, **JEP: Human Perception and Performance**, **JEP: Learning, Memory, and Cognition**, and **JEP: Animal Learning and Cognition** (plus **JEP: Applied**). Submit to the relevant successor. If this is an OpenAlex indexing gap rather than a real closure, please open an issue (see [docs/GOVERNANCE.md](../../../../../docs/GOVERNANCE.md)).
+
 > [!IMPORTANT]
 > **HISTORICAL — DO NOT SUBMIT TO THIS NAME.**
 > The Journal of Experimental Psychology (founded 1916) was split by APA in **1975** into specialized successor journals. Submit to the appropriate successor based on your paper's topic:
@@ -292,6 +295,7 @@ N/A — historical reference only.
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-30 | Flagged as ceased: OpenAlex shows 0 publication(s) in the last 5 years (last active 2014). Entry retained for historical/fallback context but marked not-a-live-target; see scripts/spine/detect_defunct.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata upgraded to Tier 2 as HISTORICAL CROSS-REFERENCE INDEX — preserved IMPORTANT banner; clarified that this is the pre-1975 historical journal and routed users to successor JEP titles. | @Zaious |

@@ -1,0 +1,28 @@
+# Entries verified as ceased/renamed by reading authoritative sources, 2026-07-27.
+# Consumed by scripts/spine/detect_defunct.py --write --confirmed <this file>.
+#
+# Verification was per-entry and deliberate: the automated scan had a >30%
+# false-positive rate, so nothing here rests on the scan alone. Each line's
+# evidence is recorded beside it.
+#
+# NOT listed (scan flagged them, verification found them alive or inconclusive):
+#   Theoretical Medicine and Bioethics  - Springer, bimonthly, current issue 2026-08
+#   Radical Philosophy                  - issue 220, Winter 2026
+#   Logique et Analyse                  - volume 265 (2025), quarterly via Peeters
+#   Notre Dame Philosophical Reviews    - actively publishing reviews, July 2026
+#   ACM SIGCHI Bulletin                 - became an interactions supplement; no
+#                                         cease date found, so not asserted
+#   Information Technology and Disabilities - site live, no cease date found
+
+psychology/journal-of-mental-science.md                    # -> British Journal of Psychiatry, 1963
+psychology/journal-of-abnormal-and-social-psychology.md    # renamed to J. Abnormal Psychology, 1965; JPSP split off same year
+psychology/journal-of-consulting-psychology.md             # ceased 1968 (vol 32 continues as J. Counseling Psychology)
+psychology/psychonomic-science.md                          # published 1964-1972 only; Bulletin of the Psychonomic Society succeeded it
+psychology/journal-of-experimental-psychology.md           # published 1916-1975; split into the four JEP successor titles
+philosophy/the-new-scholasticism.md                        # -> American Catholic Philosophical Quarterly, 1990
+psychology/contemporary-psychology-apa-review-of-books.md  # ran 1956-2004; superseded by PsycCRITIQUES
+philosophy/international-studies-in-philosophy.md           # suspended 2008 at vol 40(2); no issues since
+philosophy/the-modern-schoolman.md                         # relaunched as Res Philosophica, 2013 (vol 90)
+psychology/psychiatric-bulletin.md                         # -> BJPsych Bulletin, 2015
+psychology/psyccritiques.md                                # APA discontinued it 2017-12-31
+psychology/journal-of-abnormal-child-psychology.md         # -> Research on Child and Adolescent Psychopathology, 2021-01

@@ -17,7 +17,7 @@
 | **Venue type** | Journal |
 | **Publisher** | BMJ |
 | **ISSN (Print)** | 0959-8138 |
-| **ISSN (Online)** |  |
+| **ISSN (Online)** | 1756-1833 |
 | **Founded** | *(fill manually — not in OpenAlex)* |
 | **URL** | http://www.bmj.com/thebmj |
 | **Author Guidelines** | *(fill manually)* |
@@ -35,14 +35,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 605 | 2026-05-16 |
+| **h-index** | 413 | 2026-07-27 (OpenAlex, ISSN 1756-1833) |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.00 | 2026-05-16 |
-| **i10-index** | 34066 | 2026-05-16 |
-| **Total Works** | 308640 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 4.19 | 2026-07-27 (OpenAlex, ISSN 1756-1833) |
+| **i10-index** | 8946 | 2026-07-27 (OpenAlex, ISSN 1756-1833) |
+| **Total Works** | 63896 | 2026-07-27 (OpenAlex, ISSN 1756-1833) |
 
 ### Review Cycle Time
 
@@ -254,6 +254,7 @@ Mechanism-only basic research; small case series without broader implications; q
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Corrected Metrics source: the online ISSN was blank and all OpenAlex figures came from the print-only source record (0959-8138), whose data stops in 2001 — the 2-year mean citedness read 0.00. Added ISSN (Online) 1756-1833 and refreshed from that source: h-index 605->413, citedness 0.00->4.19, i10 34066->8946, works 308640->63896. The earlier figures were a historical aggregate, not current. Found by scripts/spine/detect_defunct.py. | @Zaious (AI-assisted) |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw medical_journal_styles.md > BMJ (MIT) | @cardinal |
 | 2026-05-16 | Soft Metadata adapted at family level (Reviewer Pool / Framing / Voice / Hard Blockers / Best & Not Recommended For) — data adapted from ScienceClaw venue-templates reviewer_expectations.md + medical_journal_styles.md + venue_writing_styles.md (MIT) | @cardinal |

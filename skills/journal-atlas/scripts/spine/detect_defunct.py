@@ -213,6 +213,13 @@ VERIFIED_STILL_PUBLISHING = {
     "Theoretical Medicine and Bioethics": "Springer, bimonthly, current issue 2026-08",
     "Radical Philosophy": "issue 220, Winter 2026",
     "Logique et Analyse": "volume 265 (2025), quarterly via Peeters",
+    "Notre Dame Philosophical Reviews": "actively publishing reviews as of July 2026",
+    # A third failure mode, distinct from the two above: the live-sibling lookup
+    # matched a DIFFERENT journal that merely shares the display name (17 works,
+    # h=7) and reported this one as stale-ISSN. The real IJD is at volume 20(1),
+    # April 2026 — it is simply indexed poorly by OpenAlex under its own ISSN.
+    # Name equality is not journal identity.
+    "International Journal of Design": "volume 20(1), April 2026, ijdesign.org",
 }
 
 
@@ -265,8 +272,11 @@ def main() -> None:
         if not args.confirmed:
             ap.error("--write requires --confirmed: this scan had a >30% false-positive rate on its "
                      "first full run, so entries must be human-verified before being marked ceased")
-        confirmed = {ln.strip() for ln in open(args.confirmed, encoding="utf-8") if ln.strip()
-                     and not ln.startswith("#")}
+        confirmed = set()
+        for ln in open(args.confirmed, encoding="utf-8"):
+            ln = ln.split("#", 1)[0].strip()
+            if ln:
+                confirmed.add(ln)
         apply_results(json.load(open(REPORT_PATH, encoding="utf-8")), confirmed)
         return
 

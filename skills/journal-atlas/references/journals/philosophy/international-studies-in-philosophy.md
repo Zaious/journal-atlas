@@ -4,6 +4,9 @@
 
 # International Studies in Philosophy
 
+> [!CAUTION]
+> **Publication status:** Appears to have ceased publication — OpenAlex records **no publications since 2008** (checked 2026-07-30, ISSN 0270-5664). This entry is retained for historical reference and for rejection-fallback context, but **should not be recommended as a live submission target**. Suspended by its editor in 2008 at volume 40(2). Acquired by the Philosophy Documentation Center in 2011 for reorganization; no issues have appeared since. If this is an OpenAlex indexing gap rather than a real closure, please open an issue (see [docs/GOVERNANCE.md](../../../../../docs/GOVERNANCE.md)).
+
 > **Last verified**: 2026-07-13
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
@@ -242,4 +245,5 @@
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-30 | Flagged as ceased: OpenAlex shows 0 publication(s) in the last 5 years (last active 2008). Entry retained for historical/fallback context but marked not-a-live-target; see scripts/spine/detect_defunct.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 1/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |

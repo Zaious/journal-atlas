@@ -17,9 +17,9 @@
 |-------|-------|
 | **Abbreviation** | *(pending)* |
 | **Venue type** | Journal |
-| **Publisher** | Philosophy Documentation Center |
-| **ISSN (Print)** | 0554-0739 |
-| **ISSN (Online)** | 2153-8379 |
+| **Publisher** | Springer |
+| **ISSN (Print)** | 0031-8116 |
+| **ISSN (Online)** | 1573-0883 |
 | **Founded** | *(pending)* |
 | **URL** | *(pending)* |
 | **Author / Submission Guidelines** | https://link.springer.com/journal/11098/submission-guidelines |
@@ -36,8 +36,8 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 84 | 2026-07-13 (OpenAlex, via spine) |
-| **2-Year Mean Citedness** | 0.00 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 156 | 2026-07-27 (OpenAlex, ISSN 0031-8116) |
+| **2-Year Mean Citedness** | 1.76 | 2026-07-27 (OpenAlex, ISSN 0031-8116) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | APA Journal Survey Project 回報整體接受率 20.32%(n=748,含各階段結果,非純初審通過率)。 | AI research (see Reviewer Pool Characteristics sources) |
 | **Desk Rejection Rate** | *(pending)* | AI research |
@@ -245,4 +245,5 @@ Philosophers' Cocoon 部落格(2025-05)有兩則匿名留言:一位稱「過去�
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-07-27 | Corrected Identity + Metrics: the entry was keyed to ISSN 0554-0739 (Philosophy Documentation Center), a different record from the Springer journal its own submission-guidelines URL points at. All OpenAlex-derived metrics were therefore drawn from the wrong source — the 2-year mean citedness read 0.00, which is impossible for this journal. Now keyed to 0031-8116 / 1573-0883 with h-index 84->156 and citedness 0.00->1.76. Found by scripts/spine/detect_defunct.py. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
