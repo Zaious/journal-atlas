@@ -49,6 +49,7 @@ function App() {
     synthesis: "pending",
   });
   const [parsedPaper, setParsedPaper] = useState<ParsedPaper | null>(null);
+  const [unstated, setUnstated] = useState<string[]>([]);
   const [candidates, setCandidates] = useState<Candidate[] | null>(null);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [synthesisText, setSynthesisText] = useState("");
@@ -71,7 +72,10 @@ function App() {
         setStages((s) => ({ ...s, [stage]: "active" }));
       } else if (data.status === "done") {
         setStages((s) => ({ ...s, [stage]: "done" }));
-        if (stage === "parsing") setParsedPaper(data.paper);
+        if (stage === "parsing") {
+          setParsedPaper(data.paper);
+          setUnstated(data.unstated ?? []);
+        }
         if (stage === "screening") setCandidates(data.candidates);
       }
     } else if (name === "text") {
@@ -86,6 +90,7 @@ function App() {
     setRunning(true);
     setError(null);
     setParsedPaper(null);
+    setUnstated([]);
     setCandidates(null);
     setExpanded(new Set());
     setSynthesisText("");
@@ -182,6 +187,13 @@ function App() {
               </>
             )}
           </p>
+          {unstated.length > 0 && (
+            <ul className="unstated-list">
+              {unstated.map((u) => (
+                <li key={u}>{u}</li>
+              ))}
+            </ul>
+          )}
         </div>
       )}
 

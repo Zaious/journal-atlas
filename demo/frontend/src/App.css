@@ -150,6 +150,22 @@ button:disabled {
   gap: 0.35rem;
 }
 
+.unstated-list {
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background: #fdf8ec;
+  border: 1px solid #f0e3c8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #7a5a1a;
+}
+
+.unstated-list li + li {
+  margin-top: 0.4rem;
+}
+
 .candidate-card {
   border-bottom: 1px solid #ebe9f7;
 }
@@ -269,6 +285,7 @@ button:disabled {
   .tier-badge.tier-skeleton { background: #3a2f10; color: #e0b155; }
   .tier-badge.tier-ai { background: #2a2547; color: #b3a7f0; }
   .tier-badge.tier-disputed { background: #3d1c1c; color: #f0a0a0; }
+  .unstated-list { background: #2b2416; border-color: #4a3d1f; color: #e0c07a; }
   .dispute-list { background: #2a1818; border-color: #4a2828; color: #f0a0a0; }
   .topic-evidence-list li { color: #bbb; }
 }

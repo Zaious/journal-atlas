@@ -89,7 +89,10 @@ class Paper:
     ai_usage: bool = False
     ai_disclosed: bool = True
     sensitive_content: list[str] = field(default_factory=list)
-    irb: bool = True  # Default True = paper has IRB if applicable
+    # True = has approval, False = explicitly none, None = not stated.
+    # Only an explicit False may eliminate: an unstated IRB status is a
+    # question to ask, not grounds to remove a venue the user never sees.
+    irb: Optional[bool] = None
     opsec_concerns: bool = False
     preprint_intent: bool = False
     timeline_priority: str = "normal"  # fast / normal / flexible
@@ -106,7 +109,7 @@ class Paper:
             ai_usage=data.get("ai_usage", False),
             ai_disclosed=data.get("ai_disclosed", True),
             sensitive_content=data.get("sensitive_content", []),
-            irb=data.get("irb", True),
+            irb=data.get("irb"),
             opsec_concerns=data.get("opsec_concerns", False),
             preprint_intent=data.get("preprint_intent", False),
             timeline_priority=data.get("timeline_priority", "normal"),
@@ -607,7 +610,12 @@ def check_hard_constraints(paper: Paper, journal: dict[str, Any]) -> Optional[st
     if paper.ai_usage and journal.get("has_ai_permission_gate"):
         return "AI policy requires explicit permission (user did not indicate willingness to email ahead)"
 
-    if not paper.irb and journal.get("irb_strictness") == "hard":
+    # `is False`, not falsiness: None means "not stated", and treating that as
+    # "no IRB" eliminated 33 journals — including TOCHI, IJHCS and Human-
+    # Computer Interaction — for a purely theoretical paper that never raised
+    # the question. The user never sees an eliminated venue, so it cannot be
+    # overruled. Unknown must not eliminate.
+    if paper.irb is False and journal.get("irb_strictness") == "hard":
         return "IRB hard requirement; paper has no IRB"
 
     return None

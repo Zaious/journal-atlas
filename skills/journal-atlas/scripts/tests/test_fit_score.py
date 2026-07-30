@@ -407,6 +407,26 @@ def test_irb_hard_requirement_eliminates_paper_without_irb():
     assert "IRB" in reason
 
 
+def test_unstated_irb_does_not_eliminate():
+    """Regression: running a purely theoretical paper through the pipeline
+    eliminated 33 journals — TOCHI, IJHCS and Human-Computer Interaction
+    among them — because extraction defaulted an unmentioned IRB to False
+    and the check tested falsiness. The paper never raised the question.
+    None means unknown, and unknown must not eliminate a venue the user
+    will never see."""
+    assert fit_score.check_hard_constraints(
+        fit_score.Paper(irb=None), {"irb_strictness": "hard"}) is None
+    assert fit_score.Paper().irb is None
+    assert fit_score.Paper.from_dict({}).irb is None
+
+
+def test_unstated_apc_budget_does_not_eliminate():
+    """Same shape for cost: an unmentioned budget is not a $0 budget."""
+    journal = {"oa_model": "full_oa", "apc_usd_oa": 3000}
+    assert fit_score.check_hard_constraints(fit_score.Paper(apc_budget=None), journal) is None
+    assert fit_score.check_hard_constraints(fit_score.Paper(apc_budget=0), journal) is not None
+
+
 # ---------- effective_apc (the 4-case OA logic) ----------
 
 

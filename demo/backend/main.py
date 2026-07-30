@@ -107,16 +107,16 @@ PAPER_SCHEMA = {
         "topics": {"type": "array", "items": {"type": "string"}, "description": "3-6 topic strings; prefer exact matches from the provided vocabulary, verbatim"},
         "methodology": {"type": ["string", "null"], "description": "e.g. quantitative experimental, autoethnography, theoretical"},
         "word_count": {"type": ["integer", "null"]},
-        "apc_budget": {"type": ["integer", "null"], "description": "USD the author can pay in publication fees; 0 if none mentioned or implied"},
+        "apc_budget": {"type": ["integer", "null"], "description": "USD the author can pay in publication fees. Use null when the text does not say — null means 'not stated' and leaves the constraint unapplied, whereas 0 means 'explicitly cannot pay anything' and eliminates every journal with a fee."},
         "oa_required": {"type": "boolean", "description": "true only if the author explicitly needs immediate open access"},
         "ai_usage": {"type": "boolean", "description": "true if the text mentions AI-assisted writing"},
         "sensitive_content": {"type": "array", "items": {"type": "string"}, "description": "any sensitive topics the paper covers, empty if none"},
-        "irb": {"type": "boolean", "description": "true unless the text says there is no IRB/ethics approval"},
+        "irb": {"type": ["boolean", "null"], "description": "true if ethics approval was obtained, false ONLY if the text explicitly says there is none, null when the text is silent or the question does not arise (e.g. a purely theoretical paper). false eliminates every journal with a hard IRB requirement, so do not infer it from silence."},
         "preprint_intent": {"type": "boolean"},
         "timeline_priority": {"type": "string", "enum": ["fast", "normal", "flexible"]},
-        "fields": {"type": "array", "items": {"type": "string"}, "description": "which curated field directories to search: psychology, hci, philosophy, cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods (empty = search all)"},
+        "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
     },
-    "required": ["topics", "methodology", "sensitive_content", "fields", "timeline_priority", "oa_required", "ai_usage", "irb", "preprint_intent"],
+    "required": ["topics", "methodology", "sensitive_content", "fields", "timeline_priority", "oa_required", "ai_usage", "preprint_intent"],
     "additionalProperties": False,
 }
 
@@ -148,6 +148,27 @@ def _build_extraction_prompt(freeform_text: str) -> str:
 async def extract_paper(provider, freeform_text: str) -> fit_score.Paper:
     data = await provider.extract(_build_extraction_prompt(freeform_text), PAPER_SCHEMA)
     return fit_score.Paper.from_dict(data)
+
+
+def unstated_constraints(paper: fit_score.Paper) -> list[str]:
+    """Hard constraints the description never mentioned, so none was applied.
+
+    A single-shot request cannot stop and ask, but it can say what it assumed.
+    These are the constraints that ELIMINATE, and an eliminated venue never
+    reaches the user to be overruled — so when one is unknown the honest move
+    is to leave it unapplied and name it, rather than pick a default and
+    silently narrow the field.
+    """
+    unstated = []
+    if paper.apc_budget is None:
+        unstated.append("No publication-fee budget given, so no journal was ruled out on cost. "
+                        "If you cannot pay an APC, say so — it changes the list substantially.")
+    if paper.irb is None:
+        unstated.append("No ethics/IRB status given, so no journal was ruled out on it. "
+                        "Say if your study involves human participants without approval.")
+    if paper.word_count is None:
+        unstated.append("No word count given, so no journal was ruled out on length.")
+    return unstated
 
 
 # ---------- Stage 2: screening (fit_score.py, unmodified) ----------
@@ -326,7 +347,8 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
     except Exception as exc:
         yield event("error", {"message": f"extraction failed: {exc}"})
         return
-    yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper)})
+    yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper),
+                          "unstated": unstated_constraints(paper)})
 
     yield event("stage", {"stage": "screening", "status": "start"})
     try:
