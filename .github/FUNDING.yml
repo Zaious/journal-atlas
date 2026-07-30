@@ -1,0 +1,22 @@
+# Renders the "Sponsor" button on the repository page.
+#
+# Everything is commented out on purpose: an uncommented line with a handle
+# that does not exist renders a live, broken button on a public repo. Uncomment
+# the ones that are real and delete the rest.
+#
+# Two audiences, two platforms:
+#
+#   github      — the repo's audience holds GitHub accounts by definition, so
+#                 Sponsors works here. It does NOT work on the demo page:
+#                 sponsoring requires the *sponsor* to have a GitHub account,
+#                 and the demo's audience is researchers in psychology and
+#                 philosophy, most of whom do not.
+#   custom      — Buy Me a Coffee takes card payments with no registration,
+#                 which is why it is what the demo footer links to
+#                 (VITE_SUPPORT_URL in demo/frontend/.env).
+#
+# Keep this in sync with demo/frontend/.env so the two do not point different
+# places.
+
+# github: Zaious
+# custom: ["https://buymeacoffee.com/YOUR-HANDLE"]
