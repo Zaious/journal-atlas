@@ -97,6 +97,28 @@ app.add_middleware(
 
 class RecommendRequest(BaseModel):
     paper_description: str
+    # The user's reply to the one clarifying question, appended to the
+    # description before re-extraction. None on the first pass.
+    clarifications: str | None = None
+    # Set when the user chose to proceed without answering.
+    skip_clarify: bool = False
+
+
+MAX_FOLLOWUPS = 2
+
+
+class FollowupRequest(BaseModel):
+    """A follow-up question about a recommendation already given.
+
+    The prior turn's context comes back from the browser rather than from
+    server-side session state, so the demo keeps its no-database property and
+    the conversation lives where the user can see and discard it.
+    """
+    paper_description: str
+    recommendation: str
+    question: str
+    candidate_names: list[str] = []
+    asked_so_far: int = 0
 
 
 # ---------- Stage 1: extraction ----------
@@ -171,6 +193,53 @@ def unstated_constraints(paper: fit_score.Paper) -> list[str]:
     return unstated
 
 
+def clarifying_question(paper: fit_score.Paper) -> str | None:
+    """One question, asked once, covering whatever would actually change the
+    answer. None when nothing material is missing.
+
+    Deliberately deterministic rather than model-generated: it costs nothing,
+    it is testable, and it can only ask about gaps the scorer genuinely acts
+    on. Everything is bundled into a single turn because a demo that
+    interrogates the user three times before showing anything is worse than
+    one that guesses.
+    """
+    asks = []
+    if paper.apc_budget is None:
+        asks.append("**Publication fees** \u2014 can you pay an APC, and roughly up to how much? "
+                    "(Many journals have a free subscription route, so \u201cno budget\u201d "
+                    "rarely means no options.)")
+    if paper.word_count is None:
+        asks.append("**Length** \u2014 roughly how many words?")
+    # Only worth asking when the work could plausibly involve human subjects.
+    # A theoretical paper has no IRB question, and asking anyway makes the
+    # tool look like it did not read the description.
+    theoretical = (paper.methodology or "").lower() in {
+        "theoretical", "conceptual", "theoretical / conceptual", "philosophical"}
+    if paper.irb is None and not theoretical:
+        asks.append("**Ethics approval** \u2014 does the work involve human participants, and if "
+                    "so do you have IRB/ethics approval?")
+    # Venue type is not a scorer field, but it decides whether the conference
+    # directories are searched at all, and extraction reliably omits them.
+    asks.append("**Venue type** \u2014 journals only, or should conference proceedings "
+                "(CHI, CSCW, NeurIPS, ACL and similar) be considered too?")
+
+    if len(asks) == 1:
+        # Only the always-on venue question remains; not worth a round trip.
+        return None
+    return ("Before I search, a few things that would change the answer:\n\n"
+            + "\n".join("- " + a for a in asks)
+            + "\n\nAnswer what you can \u2014 anything you skip stays unconstrained, "
+              "and I will say so.")
+
+
+def merge_clarifications(description: str, clarifications: str | None) -> str:
+    if not clarifications or not clarifications.strip():
+        return description
+    return (description
+            + "\n\n--- The author was asked for missing details and replied ---\n"
+            + clarifications.strip())
+
+
 # ---------- Stage 2: screening (fit_score.py, unmodified) ----------
 
 MIN_CANDIDATES_BEFORE_WIDENING = 3
@@ -217,14 +286,34 @@ def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
     file parsing that measures at well under a second for all 399 entries,
     so widening costs nothing worth protecting.
     """
-    passing = _score_against(paper)
-    if paper.fields and len(passing) < MIN_CANDIDATES_BEFORE_WIDENING:
-        from dataclasses import replace
-        passing = _score_against(replace(paper, fields=[]))
-    return passing[:TOP_N_SCREEN]
+    # Always score the whole corpus. `fields` is kept as extracted metadata
+    # and shown to the user, but it no longer filters.
+    #
+    # It was a cost optimisation that measured as negative: full-corpus
+    # screening is local file parsing at 0.41s for all 399 entries, while the
+    # narrowing repeatedly cost real candidates. It gave 1 result where the
+    # full corpus gave 10 with a better top pick, and it kept the conference
+    # directories out of an HCI theory paper's search even after the author
+    # explicitly asked for conferences — extraction simply never listed them.
+    # The scorer already ranks irrelevant fields down; an omitted directory is
+    # invisible and cannot be ranked at all.
+    from dataclasses import replace
+    return _score_against(replace(paper, fields=[]))[:TOP_N_SCREEN]
 
 
 # ---------- Stage 3: synthesis (Sonnet, streamed) ----------
+
+def _find_entry(name: str) -> Path | None:
+    """Locate a curated entry by its H1 title. Follow-ups arrive carrying
+    names rather than paths, because the browser holds the state and a name is
+    the only part of it a user could sensibly inspect."""
+    for path in JOURNALS_ROOT.rglob("*.md"):
+        if path.name == "TEMPLATE.md":
+            continue
+        if fit_score._extract_h1(path.read_text(encoding="utf-8")) == name:
+            return path
+    return None
+
 
 def build_evidence_card(path: Path) -> dict:
     """Tier + top-cited topic rows for the screening SSE event — real,
@@ -330,13 +419,15 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
     )
 
 
-async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
+async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     def event(name: str, data: dict) -> str:
         return f"event: {name}\ndata: {json.dumps(data)}\n\n"
 
     if PROVIDER is None:
         yield event("error", {"message": PROVIDER_ERROR})
         return
+
+    freeform_text = merge_clarifications(req.paper_description, req.clarifications)
 
     # Both stages are awaited/streamed natively rather than blocking the event
     # loop for their full duration.
@@ -349,6 +440,15 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
         return
     yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper),
                           "unstated": unstated_constraints(paper)})
+
+    # Ask once, before spending screening and synthesis on assumptions the
+    # user could have corrected in one sentence. Skipped when they already
+    # answered or explicitly chose to proceed.
+    if req.clarifications is None and not req.skip_clarify:
+        question = clarifying_question(paper)
+        if question:
+            yield event("clarify", {"question": question})
+            return
 
     yield event("stage", {"stage": "screening", "status": "start"})
     try:
@@ -378,7 +478,56 @@ async def sse_recommend(freeform_text: str) -> AsyncIterator[str]:
 
 @app.post("/api/recommend")
 async def recommend(req: RecommendRequest):
-    return StreamingResponse(sse_recommend(req.paper_description), media_type="text/event-stream")
+    return StreamingResponse(sse_recommend(req), media_type="text/event-stream")
+
+
+async def sse_followup(req: FollowupRequest) -> AsyncIterator[str]:
+    def event(name: str, data: dict) -> str:
+        return "event: " + name + "\ndata: " + json.dumps(data) + "\n\n"
+
+    if PROVIDER is None:
+        yield event("error", {"message": PROVIDER_ERROR})
+        return
+    # Enforced here as well as in the UI: the client is not trusted to cap its
+    # own use of a key the server pays for.
+    if req.asked_so_far >= MAX_FOLLOWUPS:
+        yield event("error", {"message": "Follow-up limit reached (" + str(MAX_FOLLOWUPS)
+                                         + "). Start a new search to explore further."})
+        return
+
+    contract = CONSUMPTION_CONTRACT + "\n\n---\n\n" if CONSUMPTION_CONTRACT else ""
+    entries = []
+    for name in req.candidate_names[:TOP_N_SCREEN]:
+        path = _find_entry(name)
+        if path:
+            tier = fit_score.detect_tier(path.read_text(encoding="utf-8"))
+            entries.append("=== " + name + " (evidence tier: " + tier + ") ===\n"
+                           + build_candidate_excerpt(path))
+
+    prompt = (
+        "You are the Journal Atlas skill, answering a follow-up about a recommendation "
+        "you already gave. Follow these rules when citing anything.\n\n" + contract
+        + "The author's paper:\n\n" + req.paper_description + "\n\n"
+        + "The recommendation you gave:\n\n" + req.recommendation + "\n\n"
+        + (("Curated entries for the candidates, to answer from:\n\n"
+            + "\n\n".join(entries) + "\n\n") if entries else "")
+        + "---\n\nTheir follow-up question:\n\n" + req.question + "\n\n"
+        + "Answer it directly and briefly. Stay inside what the entries actually say \u2014 if "
+          "the answer is not in them, say so rather than filling the gap from general "
+          "knowledge, and name what would be needed to answer it properly."
+    )
+    try:
+        async for text in PROVIDER.stream(prompt):
+            yield event("text", {"delta": text})
+    except Exception as exc:
+        yield event("error", {"message": "follow-up failed: " + str(exc)})
+        return
+    yield event("done", {"remaining": MAX_FOLLOWUPS - req.asked_so_far - 1})
+
+
+@app.post("/api/followup")
+async def followup(req: FollowupRequest):
+    return StreamingResponse(sse_followup(req), media_type="text/event-stream")
 
 
 @app.get("/api/health")

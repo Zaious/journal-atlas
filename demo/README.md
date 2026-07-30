@@ -7,7 +7,15 @@ no database — every request is stateless.
 ## Architecture
 
 Three stages per request, streamed to the browser over SSE (see
-[`backend/main.py`](backend/main.py) for the full pipeline docstring):
+[`backend/main.py`](backend/main.py) for the full pipeline docstring), with a
+clarification round before them and up to two follow-ups after:
+
+**0. Clarify (once, deterministic, no LLM call).** If the description leaves a
+constraint unstated that would actually change the answer — publication-fee
+budget, length, ethics approval, whether conferences count — the demo asks
+once rather than guessing, and the user can answer or skip. Guessing is what
+produced the worst bug this pipeline has had: an unstated IRB read as "no
+IRB" eliminated 33 journals for a theoretical paper, invisibly.
 
 1. **Extract** (cheap model, schema-constrained) — freeform text → the same `Paper`
    dataclass `fit_score.py` scores against. Topic phrasing is guided by
@@ -26,6 +34,12 @@ Three stages per request, streamed to the browser over SSE (see
    plus a trimmed excerpt (policy digest + Subject Density + Soft Metadata +
    Strategic Notes, not the full file) of
    the top 10 candidates and writes a reasoned recommendation.
+4. **Follow up** (up to two questions) — answered against the same curated
+   entries, under the same consumption contract. The prior turn's context is
+   sent back by the browser rather than held server-side, so the no-database
+   property survives and the conversation stays somewhere the user can see and
+   discard. The cap is enforced server-side too: the client is not trusted to
+   limit its own use of a key the server pays for.
 
 ## Prerequisites
 

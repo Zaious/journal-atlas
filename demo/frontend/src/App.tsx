@@ -54,7 +54,13 @@ function App() {
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [synthesisText, setSynthesisText] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [clarifyQuestion, setClarifyQuestion] = useState<string | null>(null);
+  const [clarifyAnswer, setClarifyAnswer] = useState("");
+  const [followupQ, setFollowupQ] = useState("");
+  const [followups, setFollowups] = useState<{ q: string; a: string }[]>([]);
+  const [followupBusy, setFollowupBusy] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
+  const MAX_FOLLOWUPS = 2;
 
   function toggleExpanded(name: string) {
     setExpanded((prev) => {
@@ -78,6 +84,8 @@ function App() {
         }
         if (stage === "screening") setCandidates(data.candidates);
       }
+    } else if (name === "clarify") {
+      setClarifyQuestion(data.question);
     } else if (name === "text") {
       setSynthesisText((t) => t + data.delta);
     } else if (name === "error") {
@@ -85,7 +93,7 @@ function App() {
     }
   }
 
-  async function runRecommendation() {
+  async function runRecommendation(opts?: { clarifications?: string; skipClarify?: boolean }) {
     if (!paperText.trim() || running) return;
     setRunning(true);
     setError(null);
@@ -94,6 +102,9 @@ function App() {
     setCandidates(null);
     setExpanded(new Set());
     setSynthesisText("");
+    setClarifyQuestion(null);
+    setFollowups([]);
+    setFollowupQ("");
     setStages({ parsing: "active", screening: "pending", synthesis: "pending" });
 
     const controller = new AbortController();
@@ -103,7 +114,11 @@ function App() {
       const res = await fetch(`${API_BASE}/api/recommend`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ paper_description: paperText }),
+        body: JSON.stringify({
+          paper_description: paperText,
+          clarifications: opts?.clarifications ?? null,
+          skip_clarify: opts?.skipClarify ?? false,
+        }),
         signal: controller.signal,
       });
       if (!res.ok || !res.body) throw new Error(`Server error (${res.status})`);
@@ -136,6 +151,58 @@ function App() {
     }
   }
 
+  async function askFollowup() {
+    if (!followupQ.trim() || followupBusy || followups.length >= MAX_FOLLOWUPS) return;
+    const question = followupQ.trim();
+    setFollowupBusy(true);
+    setFollowupQ("");
+    setFollowups((f) => [...f, { q: question, a: "" }]);
+    try {
+      const res = await fetch(`${API_BASE}/api/followup`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paper_description: paperText,
+          recommendation: synthesisText,
+          question,
+          candidate_names: (candidates ?? []).map((c) => c.name),
+          asked_so_far: followups.length,
+        }),
+      });
+      if (!res.ok || !res.body) throw new Error(`Server error (${res.status})`);
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const events = buffer.split("\n\n");
+        buffer = events.pop() ?? "";
+        for (const raw of events) {
+          if (!raw.trim()) continue;
+          const em = raw.match(/^event: (.+)$/m);
+          const dm = raw.match(/^data: (.+)$/m);
+          if (!em || !dm) continue;
+          const payload = JSON.parse(dm[1]);
+          if (em[1] === "text") {
+            setFollowups((f) =>
+              f.map((x, i) => (i === f.length - 1 ? { ...x, a: x.a + payload.delta } : x))
+            );
+          } else if (em[1] === "error") {
+            setError(payload.message);
+          }
+        }
+      }
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setFollowupBusy(false);
+    }
+  }
+
+  const followupsLeft = MAX_FOLLOWUPS - followups.length;
+
   return (
     <div className="page">
       <header>
@@ -155,7 +222,7 @@ function App() {
         disabled={running}
       />
 
-      <button onClick={runRecommendation} disabled={running || !paperText.trim()}>
+      <button onClick={() => runRecommendation()} disabled={running || !paperText.trim()}>
         {running ? "Working…" : "Find my journal"}
       </button>
 
@@ -194,6 +261,37 @@ function App() {
               ))}
             </ul>
           )}
+        </div>
+      )}
+
+      {clarifyQuestion && (
+        <div className="panel clarify">
+          <h3>A couple of questions first</h3>
+          <div className="synthesis-text">
+            <ReactMarkdown>{clarifyQuestion}</ReactMarkdown>
+          </div>
+          <textarea
+            value={clarifyAnswer}
+            onChange={(e) => setClarifyAnswer(e.target.value)}
+            placeholder="e.g. no budget at all; about 8,000 words; conferences are fine too"
+            rows={3}
+            disabled={running}
+          />
+          <div className="clarify-actions">
+            <button
+              onClick={() => runRecommendation({ clarifications: clarifyAnswer })}
+              disabled={running || !clarifyAnswer.trim()}
+            >
+              Answer and search
+            </button>
+            <button
+              className="secondary"
+              onClick={() => runRecommendation({ skipClarify: true })}
+              disabled={running}
+            >
+              Skip — search anyway
+            </button>
+          </div>
         </div>
       )}
 
@@ -258,6 +356,41 @@ function App() {
           <div className="synthesis-text">
             <ReactMarkdown>{synthesisText}</ReactMarkdown>
           </div>
+        </div>
+      )}
+
+      {synthesisText && !running && (
+        <div className="panel">
+          <h3>
+            Follow-up {followupsLeft > 0 ? `(${followupsLeft} left)` : "(none left)"}
+          </h3>
+          {followups.map((f, i) => (
+            <div key={i} className="followup">
+              <p className="followup-q">{f.q}</p>
+              <div className="synthesis-text">
+                <ReactMarkdown>{f.a}</ReactMarkdown>
+              </div>
+            </div>
+          ))}
+          {followupsLeft > 0 ? (
+            <>
+              <textarea
+                value={followupQ}
+                onChange={(e) => setFollowupQ(e.target.value)}
+                placeholder="e.g. why not CHI? / what would I need to change for the second choice?"
+                rows={2}
+                disabled={followupBusy}
+              />
+              <button onClick={askFollowup} disabled={followupBusy || !followupQ.trim()}>
+                {followupBusy ? "Thinking…" : "Ask"}
+              </button>
+            </>
+          ) : (
+            <p className="no-evidence">
+              Two follow-ups is the limit for this demo. Edit your description above and search
+              again to explore a different angle.
+            </p>
+          )}
         </div>
       )}
     </div>

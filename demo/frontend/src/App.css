@@ -166,6 +166,42 @@ button:disabled {
   margin-top: 0.4rem;
 }
 
+.clarify {
+  background: #f2f7fd;
+  border-color: #d8e6f5;
+}
+
+.clarify textarea {
+  margin-top: 0.6rem;
+}
+
+.clarify-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button.secondary {
+  background: transparent;
+  color: #4d3fc7;
+  border: 1px solid #c8c2ea;
+}
+
+button.secondary:hover:not(:disabled) {
+  background: #efedfb;
+}
+
+.followup {
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #ebe9f7;
+}
+
+.followup-q {
+  font-weight: 600;
+  margin: 0 0 0.4rem !important;
+}
+
 .candidate-card {
   border-bottom: 1px solid #ebe9f7;
 }
@@ -286,6 +322,10 @@ button:disabled {
   .tier-badge.tier-ai { background: #2a2547; color: #b3a7f0; }
   .tier-badge.tier-disputed { background: #3d1c1c; color: #f0a0a0; }
   .unstated-list { background: #2b2416; border-color: #4a3d1f; color: #e0c07a; }
+  .clarify { background: #1a2230; border-color: #2d3d52; }
+  button.secondary { color: #a79bf0; border-color: #3f3a63; }
+  button.secondary:hover:not(:disabled) { background: #262040; }
+  .followup { border-color: #322d47; }
   .dispute-list { background: #2a1818; border-color: #4a2828; color: #f0a0a0; }
   .topic-evidence-list li { color: #bbb; }
 }
