@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-backend",
+      "runtimeExecutable": "demo/backend/.venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "uvicorn", "main:app", "--port", "8000", "--app-dir", "demo/backend"],
+      "port": 8000
+    },
+    {
+      "name": "demo-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "demo/frontend", "run", "dev"],
+      "port": 5173
+    }
+  ]
+}

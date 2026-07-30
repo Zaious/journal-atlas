@@ -134,14 +134,57 @@ Then open the frontend URL and submit a paper description. The three stage
 dots should light up in sequence (parsing → screening → synthesis) and the
 recommendation should stream in as markdown.
 
+## Abuse and cost controls
+
+Every `/api/recommend` is two LLM calls carrying text the caller chose, paid
+for by whoever's key is in `.env`. Unprotected, that is a free LLM proxy with
+an unbounded bill. Three layers, in
+[`backend/ratelimit.py`](backend/ratelimit.py), each failing differently:
+
+| Control | What it bounds | Default | Env var |
+|---|---|---|---|
+| Input size caps | The cost of **one** request | 12,000 chars description / 2,000 answer / 20,000 follow-up context | — (constants in `main.py`) |
+| Per-client rate limit | Casual repeated use | 10/hour, 30/day | `RATE_LIMIT_PER_HOUR`, `RATE_LIMIT_PER_DAY` |
+| Global daily cap | **The bill** | 250 requests/day | `GLOBAL_DAILY_LIMIT` |
+
+The size caps come first deliberately: rate limits are useless if a single
+request can carry 500 KB into a prompt. The global cap comes last and matters
+most — it is the only one that holds regardless of how requests are spread
+across clients, so it is what actually turns an unbounded bill into a bounded
+one. When it trips the demo stops calling the provider and says so, pointing
+at the skill, which runs locally with no such limit.
+
+`/api/coverage` and `/api/health` are not counted: they cost nothing, and
+blocking them would hide the message explaining the block.
+
+**What these do not do**, stated plainly:
+
+- **Per-IP limiting is friction, not a wall.** IPs are shared behind NAT and
+  cheap behind a VPN. It stops casual abuse and nothing more; the global cap
+  is what stops the rest.
+- **Counters are in-memory and per-process.** They reset on restart, and each
+  worker holds its own — so the true ceiling is `GLOBAL_DAILY_LIMIT × workers`.
+  Run one worker, or move the counter to Redis. This is the price of the
+  demo's no-database property, taken deliberately.
+- **`X-Forwarded-For` is trusted only when `TRUST_PROXY=1`**, because any
+  client can send that header. Behind a proxy you must set it, or every caller
+  shares the proxy's IP and therefore one bucket. That failure is in the safe
+  direction — stricter than intended, not looser.
+
+**No login, deliberately.** Requiring Google sign-in would cost the demo its
+one distinguishing property — no account, no install, paste and go — and buy
+little: a determined abuser makes accounts. It would also mean handling PII, a
+privacy policy, and OAuth infrastructure for a stateless demo that stores
+nothing. If the demo is ever hammered past what the caps absorb, the escalation
+path is to set `GLOBAL_DAILY_LIMIT=1` and let the refusal message point people
+at the skill — not to build an auth system.
+
+**Set a spending cap on the API key regardless.** These controls are
+defence in depth, not a substitute for the provider's own limit.
+
 ## What this isn't
 
-This is a local-dev architecture scaffold, not a deployable service:
-
-- No rate-limiting or abuse prevention — anyone who can reach `/api/recommend`
-  can spend your API key's budget.
-- No persistent storage of any kind — nothing survives past a single request.
+- No persistent storage of any kind — nothing survives past a single request,
+  including the rate-limit counters.
 - No auth — the API key lives only in the backend's process env, never sent
   to the browser.
-
-Set a spending cap on the API key regardless of how this is deployed.

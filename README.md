@@ -30,6 +30,7 @@ Journal Atlas captures what bibliometric tools like Impact Factor and Scimago do
 - [Skills Overview](#skills-overview)
 - [Slash Commands](#slash-commands)
 - [Workflows (with examples)](#workflows)
+- [Coverage and Inclusion Status](#coverage-and-inclusion-status)
 - [Tier System](#tier-system)
 - [Automation Scripts](#automation-scripts)
 - [Try It Without Installing](#try-it-without-installing)
@@ -398,6 +399,96 @@ End-to-end examples. Each shows the conversation, what the skill does internally
 < Open this file, copy the content, and paste into a new PR at
 < https://github.com/Zaious/journal-atlas. Need help with the PR mechanics?
 ```
+
+---
+
+## Coverage and Inclusion Status
+
+**Journal Atlas is not a general journal database.** It is a deep, uneven atlas of
+one region of the literature: the qualitative and interpretive human sciences,
+plus the parts of computing that publish about people. Read the table before you
+read a recommendation.
+
+### What is actually in the corpus
+
+399 curated entries, as of 2026-07-30:
+
+| Field | Entries | Tier 1 | Tier 2 | AI-Researched |
+|---|---:|---:|---:|---:|
+| Psychology | 160 | 8 | 52 | 100 |
+| Philosophy | 106 | 0 | 0 | **106** |
+| HCI (journals) | 60 | 0 | 30 | 30 |
+| Cognitive science | 17 | 0 | 17 | 0 |
+| Biology | 15 | 0 | 15 | 0 |
+| HCI (conferences) | 10 | 0 | 10 | 0 |
+| Multidisciplinary (*Nature*, *Science*, PNAS, PLOS ONE…) | 8 | 0 | 8 | 0 |
+| ML conferences (NeurIPS, ICML, ICLR, AAAI, CVPR) | 5 | 0 | 5 | 0 |
+| Medical (*NEJM*, *Lancet*, *JAMA*, *BMJ*, *Annals*) | 5 | 0 | 5 | 0 |
+| Qualitative methods | 5 | 3 | 2 | 0 |
+| NLP conferences (ACL, EMNLP, NAACL) | 3 | 0 | 3 | 0 |
+| Physics | 3 | 0 | 3 | 0 |
+| Data-mining conferences (KDD, WWW) | 2 | 0 | 2 | 0 |
+
+Four adjacent fields — psychology, philosophy, HCI, cognitive science — are
+**88% of the corpus (353 of 399)**. Everything else is a thin, deliberately
+chosen sample of the venues an author in those fields might reach toward: the
+five general-science megajournals, the five general-medicine journals, the major
+ML/NLP conferences. They are landmarks, not coverage.
+
+### What is verifiably absent
+
+These returned **zero** entries when the corpus was probed on 2026-07-30:
+
+- **Library and information science** — including digital libraries. (Yes: this
+  tool cannot evaluate a paper submitted to the venue this project itself
+  targets. Stated here rather than discovered by a user.)
+- **Sociology** · **Anthropology** · **Chemistry, mathematics, and the earth sciences**
+
+Near-zero, and misleadingly so: economics/business (2), law (1), political
+science (1) — every one of those is a *philosophy* journal about the subject
+(*Business Ethics Quarterly*, *Erasmus Journal for Philosophy and Economics*),
+not a journal of the discipline. Education (9) and linguistics (3) exist only as
+their psychology-facing edges. There is no marketing, no consumer research, no
+nursing science, no engineering outside three robotics venues.
+
+**If your field is on that list, this tool has nothing to offer you yet, and it
+will say so.** It is built to answer "I don't have data on this" rather than to
+produce a plausible-looking ranking of the nearest journals it happens to hold —
+a wrong recommendation costs an author months. Point `/ja-add` at a journal you
+know and it becomes the first entry in a new field.
+
+### Why the distribution looks like this
+
+It is not a principled sampling frame. It reflects where the project started —
+one researcher's own submission problem in qualitative psychology and philosophy
+of mind — and then grew outward along the paths that mattered to its
+contributors. The corpus is honest about being a convenience sample. Growth in
+any direction is one `/ja-add` away, and the fields above are the highest-value
+places to point it.
+
+### How complete is an individual entry
+
+Separately from *which* journals exist, entries differ in how much of each one
+is filled in. Every scoring dimension returns "unknown" rather than a midpoint
+when the evidence is missing, so a recommendation carries an **evidence
+coverage** percentage alongside its score:
+
+- **163 entries (Tier 1 + Tier 2): 85–100% coverage.** Scored on nearly every dimension.
+- **236 entries (AI-Researched): ~40% coverage.** These are missing the same four
+  things — methodology fit, reviewer-pool character, voice compatibility, and
+  strategic notes — because the AI-research pipeline was built never to estimate
+  them without a source. They need lived submission or review experience. See
+  [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
+
+So `62.5/100 · 45% evidence` and `73.0/100 · 75% evidence` are different claims,
+and the interface shows you which one you got. A high score on thin evidence is
+a shrunken score by construction — scores are pulled toward the neutral 50 in
+proportion to how little is known — but it is still worth less than the same
+number backed by more.
+
+**Philosophy is the sharpest case: 106 entries, none human-verified.** It is the
+second-largest field in the corpus and the least substantiated. Treat those
+recommendations as leads to check, not as findings.
 
 ---
 

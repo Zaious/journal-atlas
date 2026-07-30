@@ -15,6 +15,81 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+.coverage-notice {
+  margin: -1rem 0 1.4rem;
+  padding: 0.75rem 0.95rem;
+  border-radius: 10px;
+  background: #fdf8ec;
+  border: 1px solid #f0e3c8;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #6d5220;
+}
+
+.coverage-notice > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.coverage-notice > summary::-webkit-details-marker {
+  display: none;
+}
+
+.coverage-more {
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.coverage-notice[open] > summary .coverage-more::after {
+  content: " ▴";
+  text-decoration: none;
+}
+
+.coverage-notice:not([open]) > summary .coverage-more::after {
+  content: " ▾";
+  text-decoration: none;
+}
+
+.coverage-body {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #f0e3c8;
+}
+
+.coverage-body p {
+  margin: 0 0 0.7rem;
+}
+
+.coverage-body p:last-child {
+  margin-bottom: 0;
+}
+
+.coverage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.9rem;
+  font-size: 0.82rem;
+}
+
+.coverage-table th,
+.coverage-table td {
+  padding: 0.22rem 0.4rem;
+  text-align: left;
+  border-bottom: 1px solid #f0e3c8;
+}
+
+.coverage-table th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.coverage-table th:not(:first-child),
+.coverage-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
 textarea {
   width: 100%;
   font-family: inherit;
@@ -328,6 +403,10 @@ button.secondary:hover:not(:disabled) {
   .tier-badge.tier-ai { background: #2a2547; color: #b3a7f0; }
   .tier-badge.tier-disputed { background: #3d1c1c; color: #f0a0a0; }
   .unstated-list { background: #2b2416; border-color: #4a3d1f; color: #e0c07a; }
+  .coverage-notice { background: #2b2416; border-color: #4a3d1f; color: #ddbe7e; }
+  .coverage-body,
+  .coverage-table th,
+  .coverage-table td { border-color: #4a3d1f; }
   .clarify { background: #1a2230; border-color: #2d3d52; }
   button.secondary { color: #a79bf0; border-color: #3f3a63; }
   button.secondary:hover:not(:disabled) { background: #262040; }

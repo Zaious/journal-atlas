@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./App.css";
 
@@ -34,6 +34,129 @@ function tierClass(tier: string): string {
   if (tier.startsWith("AI-Researched")) return "tier-ai";
   return "tier-skeleton";
 }
+
+interface CoverageField {
+  field: string;
+  label: string;
+  tier1: number;
+  tier2: number;
+  ai: number;
+  total: number;
+}
+
+interface Coverage {
+  total: number;
+  fields: CoverageField[];
+  core_fields: string[];
+  core_label: string;
+  absent: string[];
+  absent_checked: string;
+}
+
+/**
+ * What the corpus covers, stated before the user spends effort on a paste.
+ *
+ * Someone working in sociology or library science should learn that this tool
+ * holds nothing for them from the page, not from a recommendation that quietly
+ * reaches for the nearest psychology journal instead. The counts come from
+ * /api/coverage so they are read off the corpus rather than written down here
+ * and left to rot.
+ */
+function CoverageNotice() {
+  const [data, setData] = useState<Coverage | null>(null);
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/coverage`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then(setData)
+      .catch(() => setData(null));
+  }, []);
+
+  if (!data) return null;
+
+  const coreTotal = data.fields
+    .filter((f) => data.core_fields.includes(f.field))
+    .reduce((n, f) => n + f.total, 0);
+  const corePct = Math.round((coreTotal / data.total) * 100);
+
+  return (
+    <details className="coverage-notice">
+      <summary>
+        Covers <strong>{data.core_label}</strong> in depth — {corePct}% of{" "}
+        {data.total} entries. Many fields are not covered at all.{" "}
+        <span className="coverage-more">What's in here?</span>
+      </summary>
+      <div className="coverage-body">
+        <table className="coverage-table">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Entries</th>
+              <th title="Evidence-backed">T1</th>
+              <th title="Community estimate">T2</th>
+              <th title="AI-researched, awaiting human verification">AI</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.fields.map((f) => (
+              <tr key={f.field}>
+                <td>{f.label}</td>
+                <td className="num">{f.total}</td>
+                <td className="num">{f.tier1 || "—"}</td>
+                <td className="num">{f.tier2 || "—"}</td>
+                <td className="num">{f.ai || "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          <strong>Verifiably absent</strong> (probed {data.absent_checked}):{" "}
+          {data.absent.join(" · ")}. Economics, law and political science exist only
+          as philosophy journals <em>about</em> those subjects. There is no
+          marketing, no nursing science, and no engineering beyond three robotics
+          venues.
+        </p>
+        <p>
+          If your field is on that list, this tool has nothing for you yet — and it
+          will tell you that rather than ranking the nearest journals it happens to
+          hold.
+        </p>
+        <p>
+          Entries also differ in <strong>how much of each one is filled in</strong>.
+          Unscorable dimensions return "unknown" instead of a midpoint, so every
+          candidate carries an evidence-coverage figure: 163 entries sit at 85–100%,
+          while 236 AI-researched ones sit near 40% and are missing the parts that
+          need lived submission experience. <strong>Philosophy is the sharpest case —
+          106 entries, none human-verified.</strong> Scores on thin evidence are
+          already pulled toward a neutral 50, but treat them as leads to check.
+        </p>
+      </div>
+    </details>
+  );
+}
+
+/**
+ * Turn a non-OK response into a message worth reading.
+ *
+ * Rate-limit refusals (429) and oversized inputs (422) are the two errors a
+ * real user is most likely to hit, and both have something actionable to say.
+ * "Server error (429)" says none of it.
+ */
+async function describeFailure(res: Response): Promise<string> {
+  try {
+    const body = await res.json();
+    if (typeof body?.message === "string") return body.message;
+    if (res.status === 422) {
+      return `That description is too long for the demo — paste an abstract or a summary rather than the full manuscript. (Limit: ${MAX_DESCRIPTION_CHARS.toLocaleString()} characters.)`;
+    }
+  } catch {
+    /* Body was not JSON; fall through to the status line. */
+  }
+  return `Server error (${res.status})`;
+}
+
+const MAX_DESCRIPTION_CHARS = 12000;
 
 const STAGE_LABELS: Record<StageName, string> = {
   parsing: "Reading your paper",
@@ -122,7 +245,7 @@ function App() {
         }),
         signal: controller.signal,
       });
-      if (!res.ok || !res.body) throw new Error(`Server error (${res.status})`);
+      if (!res.ok || !res.body) throw new Error(await describeFailure(res));
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -170,7 +293,7 @@ function App() {
           asked_so_far: followups.length,
         }),
       });
-      if (!res.ok || !res.body) throw new Error(`Server error (${res.status})`);
+      if (!res.ok || !res.body) throw new Error(await describeFailure(res));
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
@@ -197,6 +320,10 @@ function App() {
       }
     } catch (e) {
       setError((e as Error).message);
+      // A refused request should not cost the user one of their two
+      // follow-ups, so drop the placeholder and give the question back.
+      setFollowups((f) => f.slice(0, -1));
+      setFollowupQ(question);
     } finally {
       setFollowupBusy(false);
     }
@@ -214,6 +341,8 @@ function App() {
           skill uses.
         </p>
       </header>
+
+      <CoverageNotice />
 
       <textarea
         value={paperText}

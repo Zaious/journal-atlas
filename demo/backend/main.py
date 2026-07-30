@@ -32,10 +32,10 @@ from pathlib import Path
 from typing import AsyncIterator
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
-from pydantic import BaseModel
+from fastapi.responses import JSONResponse, StreamingResponse
+from pydantic import BaseModel, Field
 
 # Point at the .env beside this file rather than letting load_dotenv() search
 # upward from the working directory. uvicorn is often started from the repo
@@ -50,6 +50,7 @@ sys.path.insert(0, str(SKILL_SCRIPTS))
 import fit_score  # noqa: E402
 
 import providers  # noqa: E402 - local module, imported after sys.path is set
+import ratelimit  # noqa: E402 - local module, imported after sys.path is set
 
 JOURNALS_ROOT = SKILL_SCRIPTS.parent / "references" / "journals"
 TOP_N_SCREEN = 10  # matches SKILL.md's own ">50 entries: read only top 10-15"
@@ -90,16 +91,31 @@ app = FastAPI(title="Journal Atlas demo backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.environ.get("CORS_ORIGINS", "http://localhost:5173,http://localhost:5174,http://localhost:5175").split(","),
-    allow_methods=["POST"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
+# One limiter for the whole process, shared by both LLM-calling endpoints so a
+# client cannot spend its recommendation budget and then keep going on
+# follow-ups. /api/coverage and /api/health are not counted: they cost nothing
+# and blocking them would hide the very message explaining the block.
+LIMITER = ratelimit.RateLimiter()
+
+
+# Input size caps. These bound the cost of a *single* request, which rate
+# limiting cannot: without them one call can carry an arbitrary payload into a
+# prompt the demo pays for. They also keep the demo honest about what it is for
+# — an abstract or a description, not a whole manuscript.
+MAX_DESCRIPTION_CHARS = 12_000
+MAX_ANSWER_CHARS = 2_000
+MAX_RECOMMENDATION_CHARS = 20_000
+
 
 class RecommendRequest(BaseModel):
-    paper_description: str
+    paper_description: str = Field(max_length=MAX_DESCRIPTION_CHARS)
     # The user's reply to the one clarifying question, appended to the
     # description before re-extraction. None on the first pass.
-    clarifications: str | None = None
+    clarifications: str | None = Field(default=None, max_length=MAX_ANSWER_CHARS)
     # Set when the user chose to proceed without answering.
     skip_clarify: bool = False
 
@@ -114,10 +130,13 @@ class FollowupRequest(BaseModel):
     server-side session state, so the demo keeps its no-database property and
     the conversation lives where the user can see and discard it.
     """
-    paper_description: str
-    recommendation: str
-    question: str
-    candidate_names: list[str] = []
+    paper_description: str = Field(max_length=MAX_DESCRIPTION_CHARS)
+    recommendation: str = Field(max_length=MAX_RECOMMENDATION_CHARS)
+    question: str = Field(max_length=MAX_ANSWER_CHARS)
+    candidate_names: list[str] = Field(default=[], max_length=TOP_N_SCREEN)
+    # Client-supplied, so it caps an honest client and nothing else. A client
+    # that always sends 0 gets unlimited follow-ups from this check alone —
+    # what actually bounds that case is the rate limiter in ratelimit.py.
     asked_so_far: int = 0
 
 
@@ -481,8 +500,24 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     yield event("stage", {"stage": "synthesis", "status": "done"})
 
 
+def _rate_limited(request: Request) -> JSONResponse | None:
+    """429 with a plain explanation, or None to proceed.
+
+    Returned as JSON rather than as an SSE `error` event because the refusal
+    happens before the stream starts, and a 429 the browser can see is more
+    useful to anyone deploying this than a 200 carrying bad news.
+    """
+    refusal = LIMITER.check(ratelimit.client_key(request))
+    if refusal is None:
+        return None
+    return JSONResponse(status_code=429, content={"message": refusal})
+
+
 @app.post("/api/recommend")
-async def recommend(req: RecommendRequest):
+async def recommend(req: RecommendRequest, request: Request):
+    limited = _rate_limited(request)
+    if limited is not None:
+        return limited
     return StreamingResponse(sse_recommend(req), media_type="text/event-stream")
 
 
@@ -531,8 +566,93 @@ async def sse_followup(req: FollowupRequest) -> AsyncIterator[str]:
 
 
 @app.post("/api/followup")
-async def followup(req: FollowupRequest):
+async def followup(req: FollowupRequest, request: Request):
+    limited = _rate_limited(request)
+    if limited is not None:
+        return limited
     return StreamingResponse(sse_followup(req), media_type="text/event-stream")
+
+
+# ---------- Coverage disclosure ----------
+#
+# Computed from the corpus rather than written down, so the "what do you
+# actually cover" panel cannot drift away from what is on disk. The prose
+# framing lives in the frontend; the counts have to come from here.
+
+FIELD_LABELS = {
+    "psychology": "Psychology",
+    "philosophy": "Philosophy",
+    "hci": "HCI (journals)",
+    "cognitive-science": "Cognitive science",
+    "biology": "Biology",
+    "conferences/hci": "HCI conferences",
+    "multidisciplinary": "Multidisciplinary",
+    "conferences/ml": "ML conferences",
+    "medical": "Medical",
+    "qualitative-methods": "Qualitative methods",
+    "conferences/nlp": "NLP conferences",
+    "physics": "Physics",
+    "conferences/data-mining": "Data-mining conferences",
+}
+
+_COVERAGE_CACHE: dict | None = None
+
+
+def compute_coverage() -> dict:
+    """Per-field entry counts split by evidence tier, plus totals."""
+    global _COVERAGE_CACHE
+    if _COVERAGE_CACHE is not None:
+        return _COVERAGE_CACHE
+
+    fields: dict[str, dict[str, int]] = {}
+    for path in sorted(JOURNALS_ROOT.rglob("*.md")):
+        if "TEMPLATE" in path.name:
+            continue
+        key = "/".join(path.relative_to(JOURNALS_ROOT).parts[:-1])
+        tier = fit_score.detect_tier(path.read_text(encoding="utf-8"))
+        bucket = fields.setdefault(key, {"tier1": 0, "tier2": 0, "ai": 0, "total": 0})
+        if tier.startswith("Tier 1"):
+            bucket["tier1"] += 1
+        elif tier.startswith("Tier 2"):
+            bucket["tier2"] += 1
+        else:
+            bucket["ai"] += 1
+        bucket["total"] += 1
+
+    rows = [
+        {"field": key, "label": FIELD_LABELS.get(key, key), **counts}
+        for key, counts in sorted(fields.items(), key=lambda kv: -kv[1]["total"])
+    ]
+    _COVERAGE_CACHE = {
+        "total": sum(r["total"] for r in rows),
+        "fields": rows,
+        # The four adjacent fields the corpus actually grew out of. Reported as
+        # a share so the concentration is visible without the reader adding up
+        # the table themselves. HCI's conference directory counts toward HCI —
+        # splitting a field by venue type here would understate the
+        # concentration, which is the one thing this disclosure must not do.
+        "core_fields": ["psychology", "philosophy", "hci", "conferences/hci",
+                        "cognitive-science"],
+        # Written out rather than joined from the labels above, which would
+        # read "HCI (journals), HCI conferences" and count HCI twice.
+        "core_label": "psychology, philosophy, HCI and cognitive science",
+        # Probed 2026-07-30. Not derivable from the corpus — absence of a
+        # directory is not proof nobody looked — so it is recorded by hand and
+        # dated.
+        "absent": [
+            "Library and information science (including digital libraries)",
+            "Sociology",
+            "Anthropology",
+            "Chemistry, mathematics, and the earth sciences",
+        ],
+        "absent_checked": "2026-07-30",
+    }
+    return _COVERAGE_CACHE
+
+
+@app.get("/api/coverage")
+async def coverage():
+    return compute_coverage()
 
 
 @app.get("/api/health")
@@ -545,4 +665,5 @@ async def health():
         "synthesis_model": PROVIDER.synthesis_model if PROVIDER else None,
         "provider_ready": PROVIDER is not None,
         "provider_error": PROVIDER_ERROR,
+        "limits": LIMITER.snapshot(),
     }
