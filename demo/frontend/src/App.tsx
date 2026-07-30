@@ -160,9 +160,16 @@ const MAX_DESCRIPTION_CHARS = 12000;
 
 const REPO_URL = "https://github.com/Zaious/journal-atlas";
 
-// Left unset, the support line does not render at all. A donation link is the
-// one thing on this page that must never be a plausible-looking guess.
-const SUPPORT_URL: string = import.meta.env.VITE_SUPPORT_URL ?? "";
+// Buy Me a Coffee rather than GitHub Sponsors: sponsoring on GitHub requires
+// the *sponsor* to hold a GitHub account, and this page's audience is
+// researchers in psychology and philosophy, most of whom do not. BMC takes card
+// payments with no registration.
+//
+// Defaulted rather than required, so a deployment that forgets the env var
+// still shows the link. Setting the variable to an empty string turns it off —
+// `??` only falls back when it is genuinely unset.
+const SUPPORT_URL: string =
+  import.meta.env.VITE_SUPPORT_URL ?? "https://buymeacoffee.com/zaious";
 const SUPPORT_LABEL: string =
   import.meta.env.VITE_SUPPORT_LABEL ?? "Buy me a coffee";
 

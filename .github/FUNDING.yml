@@ -1,22 +1,15 @@
 # Renders the "Sponsor" button on the repository page.
 #
-# Everything is commented out on purpose: an uncommented line with a handle
-# that does not exist renders a live, broken button on a public repo. Uncomment
-# the ones that are real and delete the rest.
+# `custom` points the button at any URL, which is why GitHub Sponsors is not set
+# up here at all — Buy Me a Coffee serves both audiences from one account, with
+# none of the Stripe Connect / identity / tax-form onboarding Sponsors requires.
 #
-# Two audiences, two platforms:
+# It is also the only option that works for the demo page's audience: sponsoring
+# through GitHub requires the *sponsor* to hold a GitHub account, and the corpus
+# is 88% psychology, philosophy, HCI and cognitive science. BMC takes card
+# payments with no registration.
 #
-#   github      — the repo's audience holds GitHub accounts by definition, so
-#                 Sponsors works here. It does NOT work on the demo page:
-#                 sponsoring requires the *sponsor* to have a GitHub account,
-#                 and the demo's audience is researchers in psychology and
-#                 philosophy, most of whom do not.
-#   custom      — Buy Me a Coffee takes card payments with no registration,
-#                 which is why it is what the demo footer links to
-#                 (VITE_SUPPORT_URL in demo/frontend/.env).
-#
-# Keep this in sync with demo/frontend/.env so the two do not point different
-# places.
+# Kept in sync with SUPPORT_URL in demo/frontend/src/App.tsx so the repo button
+# and the demo footer never point different places.
 
-# github: Zaious
-# custom: ["https://buymeacoffee.com/YOUR-HANDLE"]
+custom: ["https://buymeacoffee.com/zaious"]
