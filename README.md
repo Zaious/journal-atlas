@@ -32,6 +32,7 @@ Journal Atlas captures what bibliometric tools like Impact Factor and Scimago do
 - [Workflows (with examples)](#workflows)
 - [Tier System](#tier-system)
 - [Automation Scripts](#automation-scripts)
+- [Try It Without Installing](#try-it-without-installing)
 - [Contributing](#contributing)
 - [Use Cases](#use-cases)
 - [What This Is NOT](#what-this-is-not)
@@ -421,7 +422,9 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
                                                               (no banner)
 ```
 
-Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 399 total** (379 journals + 20 conferences). AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07) for what it means.
+Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 399 total** (379 journals + 20 conferences).
+
+Separately from tier, 14 entries carry a **publication-status banner**: 12 verified as ceased or renamed (each naming its successor, so a rejected manuscript has somewhere to go) and 2 flagged dormant where no issue could be confirmed for over a decade but no closure notice exists either. Recommending a venue that cannot accept submissions wastes the one thing an author cannot get back, so these are marked rather than silently ranked. AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07) for what it means.
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
 
@@ -443,7 +446,9 @@ Full policy — scope, resolution outcomes, response-time commitment — in
 
 ## Automation Scripts
 
-9 scripts in `skills/journal-atlas/scripts/` — all Python 3.10+, MIT-licensed. Run from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
+13 scripts in `skills/journal-atlas/scripts/` plus 10 pipeline scripts in `scripts/spine/` — all Python 3.10+, MIT-licensed. Run from the skill root: `cd skills/journal-atlas && python scripts/<name>.py`.
+
+Everything in the main table is standard-library only. The `spine/` pipeline scripts need `pyalex` and network access, and are for corpus maintenance rather than day-to-day use.
 
 | Script | Purpose | Typical use |
 |--------|---------|-------------|
@@ -456,8 +461,30 @@ Full policy — scope, resolution outcomes, response-time commitment — in
 | `bundle_for_upload.py` | Merge journal files for ChatGPT GPT (20-file limit) | `--out-dir dist/` |
 | `update_metrics.py` | Refresh OpenAlex metrics in existing entries; propose diffs | `--field psychology --apply` |
 | `topic_trend_scan.py` | Scan a journal's recent publication topics; keyword presence check | `--issn 0959-3543 --keywords "BDSM,autoethnography"` |
+| `query_spine.py` | Breadth query across all 166,821 spine journals, cross-referenced against the curated set | `--issn 0959-3543` / `--cas-zone 1,2 --uncurated-only` |
+| `lint_content.py` | Content-semantics checks beyond schema: uncited high scores, Tier 1 placeholders, missing `signal_quality`. Runs in CI against a frozen baseline | (run without arguments) |
+| `package_for_claude_ai.py` | Build the claude.ai chat-mode upload zip | `--out-dir dist/` |
+
+Corpus-maintenance pipelines under `scripts/spine/` (require `pyalex`): building the ISSN spine, enriching methodology evidence from OpenAlex counts, and `detect_defunct.py`, which screens for journals that have stopped publishing. That last one **reports rather than applies** — its first full run called 20 entries ceased and at least 6 turned out to be actively publishing, because OpenAlex indexes small, humanities and non-English venues poorly. Marking a live journal "ceased" is a false claim about a real organisation, so writing a banner requires a human-verified list.
 
 Full setup and example workflows in [scripts/README.md](skills/journal-atlas/scripts/README.md).
+
+---
+
+## Try It Without Installing
+
+[`demo/`](demo/) is a small web app that runs the same pipeline the skill uses:
+freeform description → `fit_score.py` screening across all 399 entries → a
+streamed recommendation. Three stages, no database, nothing persisted between
+requests.
+
+It reuses `fit_score.py` unmodified rather than reimplementing the scoring, and
+runs on either Gemini or Claude (`LLM_PROVIDER` in `.env`). Each candidate is
+shown as an expandable card carrying its evidence tier and real cited article
+counts — the visible proof that a recommendation is assembled from checkable
+records rather than model recall.
+
+Setup and launch instructions in [demo/README.md](demo/README.md).
 
 ---
 

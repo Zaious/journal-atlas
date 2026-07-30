@@ -31,6 +31,7 @@ Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法
 - [工作流範例](#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%AF%84%E4%BE%8B)
 - [版本與品質分層 Tier System](#%E7%89%88%E6%9C%AC%E8%88%87%E5%93%81%E8%B3%AA%E5%88%86%E5%B1%A4-tier-system)
 - [自動化 Scripts](#%E8%87%AA%E5%8B%95%E5%8C%96-scripts)
+- [不用安裝就能試](#%E4%B8%8D%E7%94%A8%E5%AE%89%E8%A3%9D%E5%B0%B1%E8%83%BD%E8%A9%A6)
 - [貢獻](#%E8%B2%A2%E7%8D%BB)
 - [使用案例](#%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B)
 - [這個 repo 不做的事](#%E9%80%99%E5%80%8B-repo-%E4%B8%8D%E5%81%9A%E7%9A%84%E4%BA%8B)
@@ -417,7 +418,9 @@ Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
                                         （無 banner）
 ```
 
-當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07)。
+當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。
+
+與 tier 無關的另一層標記：14 篇帶有**出版狀態橫幅**——12 篇經查證已停刊或更名（每篇都寫明後繼刊，讓被拒的稿子有地方去），2 篇標為休眠（十餘年查無出刊，但也查不到停刊公告）。推薦一個根本無法收稿的刊物，浪費的是作者要不回來的時間，所以這些寧可標記也不默默排進名次。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07)。
 
 完整方法論與升級路徑見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 
@@ -452,6 +455,19 @@ Soft Metadata 會對真實、具名的期刊做主觀描述——審稿文化、
 | `topic_trend_scan.py` | 掃描期刊近期 topic 分佈；keyword 存在檢查 | `--issn 0959-3543 --keywords "BDSM,autoethnography"` |
 
 完整設定與範例見 [scripts/README.md](skills/journal-atlas/scripts/README.md)。
+
+---
+
+## 不用安裝就能試
+
+[`demo/`](demo/) 是一個小型網頁 app，跑的是 skill 使用的同一條管線：自由描述 →
+`fit_score.py` 掃過全部 399 篇 → 串流輸出推薦。三個階段、無資料庫、請求之間不留存任何東西。
+
+它直接重用未經修改的 `fit_score.py`，而不是把評分邏輯重寫一遍；後端可跑 Gemini 或
+Claude（`.env` 裡的 `LLM_PROVIDER` 決定）。每個候選以可展開的卡片呈現，帶著它的證據
+tier 與真實的引註文章數——這是「推薦來自可查核的紀錄、而非模型記憶」的可見證明。
+
+安裝與啟動說明見 [demo/README.md](demo/README.md)。
 
 ---
 
