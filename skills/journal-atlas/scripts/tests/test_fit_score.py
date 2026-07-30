@@ -335,15 +335,17 @@ def test_sensitive_topics_pipe_style_separator_also_excluded():
 # ---------- score_topic_density ----------
 
 
-def test_topic_density_no_paper_topics_is_neutral():
+def test_topic_density_no_paper_topics_is_unknown():
+    """Previously asserted a neutral 50. That was the bug: it made an entry
+    with no topic data outscore one whose real counts were a weak match."""
     paper = fit_score.Paper(topics=[])
     journal = {"topics": [("Embodied Cognition", 50)]}
-    assert fit_score.score_topic_density(paper, journal) == 50.0
+    assert fit_score.score_topic_density(paper, journal) is None
 
 
-def test_topic_density_no_journal_topics_is_neutral():
+def test_topic_density_no_journal_topics_is_unknown():
     paper = fit_score.Paper(topics=["embodied cognition"])
-    assert fit_score.score_topic_density(paper, {}) == 50.0
+    assert fit_score.score_topic_density(paper, {}) is None
 
 
 def test_topic_density_substring_match_scores_above_neutral():
@@ -486,3 +488,81 @@ def test_parse_journal_file_wires_extractors_together(tmp_path):
     assert data["word_limit"] == 8000
     assert data["has_ai_permission_gate"] is False
     assert data["topics"] == [("Embodied Cognition", 40)]
+
+
+# ---------- unknown dimensions must not be invented ----------
+#
+# Measured on this corpus (2026-07-30): reviewer_pool returned a constant 50
+# for all 399 entries while carrying 0.15 of the weight; first-person
+# acceptance is unrecorded for 59.6%, review time for 56.6%, methodology
+# scores for 33.6%. Most of a typical score was therefore the same fabricated
+# numbers, and candidates clustered within a point or two of each other.
+
+
+def test_missing_topic_table_returns_none_not_neutral():
+    """A neutral 50 made an entry with no topic table beat one whose real
+    counts were a weak match (33.3) — rewarding absent data."""
+    paper = fit_score.Paper(topics=["Embodied Cognition"])
+    assert fit_score.score_topic_density(paper, {"topics": []}) is None
+    assert fit_score.score_topic_density(fit_score.Paper(topics=[]), {"topics": [("x", 5)]}) is None
+
+
+def test_unimplemented_reviewer_pool_contributes_nothing():
+    assert fit_score.score_reviewer_pool(fit_score.Paper(), {}) is None
+
+
+def test_unknown_dimensions_are_dropped_not_averaged_in():
+    """Two entries alike on the one known dimension should score alike,
+    whatever else is missing — the missing parts must not silently pull them
+    apart."""
+    paper = fit_score.Paper(topics=["Embodied Cognition"], methodology=None)
+    journal = {"topics": [("Embodied Cognition", 50)]}
+    total, dims = fit_score.compute_score(paper, journal, fit_score.DEFAULT_WEIGHTS)
+    assert dims["topic_density"] == 100.0
+    assert dims["methodology_fit"] is None
+    assert dims["reviewer_pool"] is None
+    # Shrunk toward the prior because coverage is partial, but still above it.
+    assert fit_score.SHRINKAGE_PRIOR < total < 100.0
+
+
+def test_full_coverage_is_not_shrunk():
+    """Shrinkage must leave a fully-evidenced score exactly as computed,
+    otherwise it is just the old fudge in a new place."""
+    paper = fit_score.Paper(topics=["X"], methodology="autoethnography",
+                            sensitive_content=[], timeline_priority="fast")
+    journal = {
+        "topics": [("X", 50)],
+        "methodology_scores": {"autoethnography": 5},
+        "first_person_acceptance": 5,
+        "review_time_months": 3,
+    }
+    total, dims = fit_score.compute_score(paper, journal, fit_score.DEFAULT_WEIGHTS)
+    coverage = fit_score.score_coverage(dims, fit_score.DEFAULT_WEIGHTS)
+    # reviewer_pool is unimplemented, so full coverage is unreachable today;
+    # what matters is that the shrinkage is exactly proportional to coverage.
+    known = {k: v for k, v in dims.items() if v is not None}
+    w = fit_score.DEFAULT_WEIGHTS
+    observed = sum(known[k] * w[k] for k in known) / sum(w[k] for k in known)
+    expected = coverage * observed + (1 - coverage) * fit_score.SHRINKAGE_PRIOR
+    assert abs(total - expected) < 1e-9
+
+
+def test_thin_evidence_cannot_outrank_solid_evidence_on_equal_merit():
+    """The failure introduced by renormalisation alone: an entry known only
+    on one strong dimension outscored one that is strong across five."""
+    paper = fit_score.Paper(topics=["X"], methodology="autoethnography",
+                            timeline_priority="fast")
+    thin = {"topics": [("X", 50)]}
+    solid = {"topics": [("X", 50)], "methodology_scores": {"autoethnography": 5},
+             "first_person_acceptance": 5, "review_time_months": 3}
+    thin_total, _ = fit_score.compute_score(paper, thin, fit_score.DEFAULT_WEIGHTS)
+    solid_total, _ = fit_score.compute_score(paper, solid, fit_score.DEFAULT_WEIGHTS)
+    assert solid_total > thin_total
+
+
+def test_score_coverage_reports_the_evidenced_fraction():
+    paper = fit_score.Paper(topics=["X"])
+    _, dims = fit_score.compute_score(paper, {"topics": [("X", 50)]},
+                                      fit_score.DEFAULT_WEIGHTS)
+    coverage = fit_score.score_coverage(dims, fit_score.DEFAULT_WEIGHTS)
+    assert 0.0 < coverage < 1.0

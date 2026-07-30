@@ -264,6 +264,7 @@ def _score_against(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
         else:
             js.score, js.dimension_scores = fit_score.compute_score(
                 paper, journal_data, fit_score.DEFAULT_WEIGHTS)
+            js.warnings = [f"evidence_coverage={fit_score.score_coverage(js.dimension_scores, fit_score.DEFAULT_WEIGHTS):.2f}"]
         results.append(js)
     return sorted((r for r in results if not r.eliminated), key=lambda r: -r.score)
 
@@ -394,7 +395,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         # removes that failure.
         tier = fit_score.detect_tier(content)
         disputes = fit_score.detect_disputes(content)
-        header = f"=== {c.name} (fit_score {c.score:.1f}/100 | evidence tier: {tier}"
+        cov = fit_score.score_coverage(c.dimension_scores, fit_score.DEFAULT_WEIGHTS)
+        header = (f"=== {c.name} (fit_score {c.score:.1f}/100 from {cov:.0%} of the scoring "
+                  f"dimensions — the rest had no data | evidence tier: {tier}")
         if disputes:
             header += f" | DISPUTED: {'; '.join(disputes)}"
         sections.append(header + f") ===\n{excerpt}")
@@ -457,7 +460,9 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
         yield event("error", {"message": f"screening failed: {exc}"})
         return
     yield event("stage", {"stage": "screening", "status": "done", "candidates": [
-        {"name": c.name, "score": round(c.score, 1), **build_evidence_card(c.path)}
+        {"name": c.name, "score": round(c.score, 1),
+         "coverage": fit_score.score_coverage(c.dimension_scores, fit_score.DEFAULT_WEIGHTS),
+         **build_evidence_card(c.path)}
         for c in candidates
     ]})
 

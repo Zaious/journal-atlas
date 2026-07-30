@@ -92,6 +92,9 @@ contribution has to fill.
 - Hard-constraint elimination verified as precision-oriented: wrongly
   eliminating a viable venue is a worse failure than ranking it too low,
   because the user never sees it to overrule.
+- `reviewer_pool` is implemented rather than returning None. It is one of six
+  scoring dimensions and currently contributes nothing, so no candidate is
+  ever scored on reviewer fit — the dimension this project exists to model.
 
 Until this exists, every recommendation is a plausible guess with good
 provenance, which is better than most tools but is not the same as a
@@ -162,7 +165,7 @@ contributor immediate feedback.
 
 ## 7. Technical
 
-**Now**: 46 tests, CI on every push, content linter with a frozen baseline,
+**Now**: 64 tests, CI on every push, content linter with a frozen baseline,
 regex-based markdown parsing.
 
 **Finished**:

@@ -282,6 +282,12 @@ button.secondary:hover:not(:disabled) {
   font-variant-numeric: tabular-nums;
 }
 
+.coverage {
+  font-size: 0.72rem;
+  color: var(--text-secondary, #8a84a8);
+  font-weight: 400;
+}
+
 .candidate-evidence {
   padding: 0 0 0.8rem;
   animation: fadeIn 0.25s ease;

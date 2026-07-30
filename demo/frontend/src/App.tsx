@@ -22,6 +22,7 @@ interface TopicEvidence {
 interface Candidate {
   name: string;
   score: number;
+  coverage?: number;
   tier: string;
   disputes: string[];
   top_topics: TopicEvidence[];
@@ -316,7 +317,14 @@ function App() {
                       )}
                       {c.name}
                     </span>
-                    <span className="score">{c.score.toFixed(1)}/100</span>
+                    <span className="score">
+                      {c.score.toFixed(1)}/100
+                      {c.coverage !== undefined && (
+                        <span className="coverage" title="Share of the scoring dimensions that had actual data behind them">
+                          {" "}· {Math.round(c.coverage * 100)}% evidence
+                        </span>
+                      )}
+                    </span>
                   </button>
                   {isOpen && (
                     <div className="candidate-evidence">

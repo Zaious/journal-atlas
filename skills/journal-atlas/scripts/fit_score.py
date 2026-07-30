@@ -74,6 +74,11 @@ DEFAULT_WEIGHTS: dict[str, float] = {
 
 # Score range per dimension: 0-100. Total weighted score also 0-100.
 
+# Where a score is pulled when evidence is missing — see compute_score().
+# Deliberately mid-scale: with no evidence a candidate should land in the
+# middle of the pack, neither promoted nor buried.
+SHRINKAGE_PRIOR = 50.0
+
 
 # ---------- Data structures ----------
 
@@ -122,7 +127,8 @@ class JournalScore:
     path: Path
     name: str
     score: float = 0.0
-    dimension_scores: dict[str, float] = field(default_factory=dict)
+    # None for a dimension the entry has no evidence for — see compute_score().
+    dimension_scores: dict[str, Optional[float]] = field(default_factory=dict)
     eliminated: bool = False
     elimination_reason: Optional[str] = None
     warnings: list[str] = field(default_factory=list)
@@ -148,7 +154,11 @@ class JournalScore:
             "path": str(self.path),
             "name": self.name,
             "score": round(self.score, 2),
-            "dimensions": {k: round(v, 2) for k, v in self.dimension_scores.items()},
+            # null, not a number, where there was no evidence — a consumer
+            # must be able to tell "we don't know" from "we scored it low".
+            "dimensions": {k: (None if v is None else round(v, 2))
+                           for k, v in self.dimension_scores.items()},
+            "evidence_coverage": round(score_coverage(self.dimension_scores, DEFAULT_WEIGHTS), 2),
             "eliminated": self.eliminated,
             "elimination_reason": self.elimination_reason,
             "warnings": self.warnings,
@@ -624,10 +634,17 @@ def check_hard_constraints(paper: Paper, journal: dict[str, Any]) -> Optional[st
 # ---------- Scoring ----------
 
 
-def score_topic_density(paper: Paper, journal: dict[str, Any]) -> float:
-    """0-100 score based on topic keyword overlap."""
+def score_topic_density(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 topic overlap, or None when there is nothing to compare.
+
+    None rather than a neutral 50: an entry with no topic table would
+    otherwise score higher on this dimension (50) than an entry whose real
+    counts happen to be a weak match (33.3), which rewards missing data.
+    compute_score() redistributes the weight of a None dimension over the
+    ones that do have evidence, so absence neither helps nor hurts.
+    """
     if not paper.topics or not journal.get("topics"):
-        return 50.0  # No data → neutral
+        return None
     total = 0.0
     for paper_topic in paper.topics:
         best_match = 0
@@ -639,23 +656,27 @@ def score_topic_density(paper: Paper, journal: dict[str, Any]) -> float:
     return total / len(paper.topics) if paper.topics else 50.0
 
 
-def score_methodology(paper: Paper, journal: dict[str, Any]) -> float:
-    """0-100 based on methodology receptiveness score (0-5 in TEMPLATE)."""
+def score_methodology(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 methodology receptiveness (0-5 in TEMPLATE), or None if unknown."""
     if not paper.methodology or not journal.get("methodology_scores"):
-        return 50.0
-    methodology_scores = journal["methodology_scores"]
-    for method_key, score in methodology_scores.items():
+        return None
+    for method_key, score in journal["methodology_scores"].items():
         if paper.methodology.lower() in method_key:
             return (score / 5.0) * 100
-    return 50.0
+    # The entry has a methodology table but no row for this method: that is a
+    # genuine absence of evidence about this method, not a middling rating.
+    return None
 
 
-def score_sensitive_topics(paper: Paper, journal: dict[str, Any]) -> float:
-    """0-100 based on whether journal accepts the sensitive topics in paper."""
+def score_sensitive_topics(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 sensitive-topic tolerance, or None when it cannot be judged."""
     if not paper.sensitive_content:
-        return 100.0  # No sensitive content → no constraint
+        return 100.0  # Nothing sensitive to accommodate: a real full pass.
     if not journal.get("sensitive_topics"):
-        return 30.0  # Has sensitive content but no journal data → penalize
+        # Previously 30.0, which punished entries for having an unfilled
+        # table. Not knowing whether a journal tolerates a topic is not the
+        # same as knowing it does not.
+        return None
     total = 0.0
     for topic in paper.sensitive_content:
         receptiveness = "untested"
@@ -670,39 +691,63 @@ def score_sensitive_topics(paper: Paper, journal: dict[str, Any]) -> float:
     return total / len(paper.sensitive_content)
 
 
-def score_voice(paper: Paper, journal: dict[str, Any]) -> float:
-    """0-100 based on first-person acceptance (TODO: refine when paper voice is known)."""
+def score_voice(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 first-person acceptance, or None if the entry does not say.
+
+    Unfilled for 59.6% of the corpus (2026-07-30), so a fabricated neutral
+    here was one of the largest sources of invented score.
+    """
     fp_score = journal.get("first_person_acceptance")
-    if fp_score is None:
-        return 50.0
-    return (fp_score / 5.0) * 100
+    return None if fp_score is None else (fp_score / 5.0) * 100
 
 
-def score_strategic(paper: Paper, journal: dict[str, Any]) -> float:
-    """0-100 based on review speed if user prioritizes fast turnaround."""
+def score_strategic(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """0-100 on review speed when the author is in a hurry, else None.
+
+    When timeline is not a priority this dimension has nothing to say about
+    the journal, so it drops out rather than adding the same constant to
+    every candidate.
+    """
     if paper.timeline_priority != "fast":
-        return 70.0  # Neutral default
+        return None
     review_time = journal.get("review_time_months")
     if review_time is None:
-        return 50.0
+        return None  # Unrecorded for 56.6% of the corpus.
     # 3 months or less → 100; 12 months → 0
     return max(0.0, min(100.0, 100 - (review_time - 3) * (100.0 / 9.0)))
 
 
-def score_reviewer_pool(paper: Paper, journal: dict[str, Any]) -> float:
-    """TODO: Implement once we have a way to match paper's theoretical framework
-    against journal's Reviewer Pool Characteristics narrative.
+def score_reviewer_pool(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
+    """Not implemented — matching a paper's theoretical framework against the
+    Reviewer Pool Characteristics narrative needs more than string overlap.
 
-    For now: 50 (neutral) — let other dimensions discriminate.
+    Returns None so it contributes nothing. It previously returned 50.0 for
+    every journal in the corpus while carrying 0.15 of the weight, which put
+    an identical 7.5 points on every candidate and flattened the spread it
+    was supposed to help create.
     """
-    return 50.0
+    return None
 
 
 def compute_score(
     paper: Paper, journal: dict[str, Any], weights: dict[str, float]
-) -> tuple[float, dict[str, float]]:
-    """Compute weighted total score and per-dimension breakdown."""
-    dims = {
+) -> tuple[float, dict[str, Optional[float]]]:
+    """Weighted score over the dimensions that actually have evidence.
+
+    A dimension returning None is dropped and its weight redistributed across
+    the rest, rather than contributing an invented neutral. Measured on this
+    corpus (2026-07-30), the neutrals were most of the score for a typical
+    entry: reviewer_pool was a constant 50 for all 399 with 0.15 of the
+    weight, first-person acceptance is unrecorded for 59.6%, review time for
+    56.6%, methodology scores for 33.6%. Candidates consequently clustered
+    within a point or two of each other, because they were largely being
+    scored on the same fabricated numbers.
+
+    Use score_coverage() alongside the total: a score computed from one
+    dimension is not the same claim as one computed from five, and the
+    number alone cannot show the difference.
+    """
+    dims: dict[str, Optional[float]] = {
         "topic_density": score_topic_density(paper, journal),
         "methodology_fit": score_methodology(paper, journal),
         "reviewer_pool": score_reviewer_pool(paper, journal),
@@ -710,8 +755,42 @@ def compute_score(
         "voice_compatibility": score_voice(paper, journal),
         "strategic_factors": score_strategic(paper, journal),
     }
-    total = sum(dims[k] * weights[k] for k in dims)
-    return total, dims
+    known = {k: v for k, v in dims.items() if v is not None}
+    if not known:
+        return 0.0, dims
+    total_weight = sum(weights[k] for k in known)
+    if total_weight <= 0:
+        return 0.0, dims
+    observed = sum(known[k] * weights[k] for k in known) / total_weight
+
+    # Shrink toward a neutral prior in proportion to how much evidence is
+    # missing. Renormalising alone swapped one bias for another: with the
+    # invented neutrals gone, entries scored on very little data floated to
+    # the top, because "the two things we know look good" beat "all six
+    # things are known and mostly good". Conference entries at 45% coverage
+    # outranked journals at 70%.
+    #
+    # This is not the old neutral by another name. It applies once, at the
+    # aggregate, in proportion to measured coverage, and leaves a
+    # fully-evidenced entry untouched — whereas the old constants were baked
+    # into each dimension and applied equally no matter how much was known.
+    # The claim it encodes is only that a confident-looking number resting on
+    # a third of the evidence should not outrank a solid one.
+    coverage = score_coverage(dims, weights)
+    return coverage * observed + (1 - coverage) * SHRINKAGE_PRIOR, dims
+
+
+def score_coverage(dims: dict[str, Optional[float]], weights: dict[str, float]) -> float:
+    """Fraction of the total weight that was backed by real data (0.0-1.0).
+
+    Surfacing this is what keeps the renormalisation honest: without it, a
+    journal scored on a single dimension is indistinguishable from one scored
+    on all six.
+    """
+    total = sum(weights.values())
+    if total <= 0:
+        return 0.0
+    return sum(weights[k] for k, v in dims.items() if v is not None) / total
 
 
 # ---------- File discovery ----------
@@ -854,7 +933,10 @@ def main() -> int:
             print(f"\n{i}. {r.name}  ({r.score:.1f}/100)")
             print(f"     Cost: {r.cost_note()}")
             for dim, score in r.dimension_scores.items():
-                print(f"     {dim:30s} {score:.1f}")
+                shown = "no data" if score is None else f"{score:.1f}"
+                print(f"     {dim:30s} {shown:>8s}")
+            coverage = score_coverage(r.dimension_scores, DEFAULT_WEIGHTS)
+            print(f"     {'evidence coverage':30s} {coverage * 100:7.0f}%")
         if eliminated:
             print(f"\n=== Eliminated ({len(eliminated)}) ===")
             for r in eliminated:
