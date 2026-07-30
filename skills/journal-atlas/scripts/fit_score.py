@@ -241,19 +241,43 @@ def _extract_word_limit(content: str) -> Optional[int]:
                  cell, re.IGNORECASE):
         return None
 
-    # Prefer a number that actually says "words".
-    worded = re.search(r"([\d,]+)\s*(?:\+|-|–|\s|)?\s*words?\b", cell, re.IGNORECASE)
+    # Take the HIGHEST word figure the cell states, not the first or lowest.
+    # This row feeds a hard constraint that eliminates, so it should read as
+    # the journal's own ceiling. Theory & Psychology says "5,000-8,000
+    # standard; up to 10,000 permitted"; reading 5,000 threw out papers the
+    # journal explicitly accepts, and that elimination was invisible to the
+    # user. Where a range is a soft expectation rather than a cap, the
+    # workflow's read-the-file step surfaces the nuance — the constraint's
+    # only job is to avoid excluding a viable venue.
+    #
+    # "Highest number" alone is not enough: Cell states "~50,000 characters
+    # with spaces (~7,500 words)", where the largest figure is a character
+    # count. So when any figure is labelled as words, only those count.
+    worded = [m.group(1) for m in
+              re.finditer(r"([\d,]+)\s*(?:\+|-|–|\s|)?\s*words?\b", cell, re.IGNORECASE)]
     if worded:
-        candidate = worded.group(1)
+        candidates = worded
     else:
-        match = re.search(r"([\d,]+)", cell)
-        if not match:
+        candidates = []
+        for m in re.finditer(r"([\d,]+)", cell):
+            # A figure carrying a page/figure/character unit is not a word count.
+            if re.match(r"\s*(?:pages?|pp\.?|figures?|tables?|char(?:acter)?s?)\b",
+                        cell[m.end():], re.IGNORECASE):
+                continue
+            candidates.append(m.group(1))
+        if not candidates:
             return None
-        candidate = match.group(1)
-        # A bare number followed by a page/figure unit is not a word count.
-        after = cell[match.end():]
-        if re.match(r"\s*(?:pages?|pp\.?|figures?|tables?)\b", after, re.IGNORECASE):
+
+    def _as_int(text: str) -> Optional[int]:
+        try:
+            return int(text.replace(",", ""))
+        except ValueError:
             return None
+
+    values = [v for v in (_as_int(x) for x in candidates) if v is not None]
+    if not values:
+        return None
+    candidate = str(max(values))
 
     try:
         value = int(candidate.replace(",", ""))

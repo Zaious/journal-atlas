@@ -87,18 +87,17 @@ Ordered. Nothing else matters until these are done.
 
 ### 4.1 The demo must actually run end to end
 
-**Status: not done.** The three-stage pipeline (Haiku extraction → fit_score
-screening → Sonnet synthesis, SSE-streamed) has never completed a real
-request. Everything up to the API boundary is verified — call shapes are
-covered by tests that distinguish an auth failure from a malformed
-request — but no real key has ever been supplied, so the actual output has
-never been seen by anyone.
+**Status: DONE (2026-07-30).** The three-stage pipeline now completes real
+requests on Gemini (`LLM_PROVIDER` selects Gemini or Anthropic; see
+`demo/providers.py`). Verified in the browser: staged progress, tier-badged
+evidence cards, and a streamed recommendation that cites per-row evidence and
+flags tiers correctly.
 
-This blocks the mandatory link. It also blocks knowing whether the output is
-any good, which is a prerequisite for claiming anything about it in a paper.
-
-Needs: a Console API key, one full run, and an honest look at whether the
-synthesis stage produces something worth showing.
+The first real run paid for itself by exposing four defects that only surface
+under real traffic — blank env vars overriding model defaults, page counts and
+years parsed as word limits across 13 entries, field narrowing that starved
+the candidate set, and tier being left to inference which produced a
+self-contradiction. All fixed.
 
 ### 4.2 The repository must be public
 
@@ -109,7 +108,7 @@ done (`main` now carries the full 399-entry corpus rather than the old
 
 ### 4.3 A recorded demo video
 
-**Status: not started**, and dependent on 4.1. Up to 5 minutes. The natural
+**Status: not started**, and now unblocked (4.1 is done). Up to 5 minutes. The natural
 structure follows the pipeline: paste a paper description → watch the stages
 resolve → open an evidence card to show the tier badge and the actual cited
 article counts → show a `Disputed` marker → show an honest blank.
@@ -122,8 +121,16 @@ recall. That is the single most demo-able property of the whole system.
 
 ### 5.1 A small retrospective evaluation
 
-**Status: none exists.** `fit_score.py`'s own docstring states the weights
-"have NOT been validated against ground-truth submission outcomes."
+**Status: partly done (2026-07-30).** A 4-case skill eval now exists at
+`skills/journal-atlas/evals/`, run against a no-skill baseline: 18/18 vs
+11/18. Its most quotable result is the JCR case — asked about a journal
+absent from the corpus, the baseline produced a section headed "Who your
+reviewers will actually be", while the skill declined and said so.
+
+What it is not is an accuracy measurement. The assertions were written by
+the skill's own author, one passes vacuously for the baseline, and n=4.
+`fit_score.py`'s weights remain unvalidated against real submission
+outcomes, which is still the larger gap.
 
 A demo does not require an evaluation, but n=10–20 retrospective cases —
 manuscripts with known submission outcomes, checking whether the ranking is
@@ -189,6 +196,7 @@ For reference when writing the paper. Measured 2026-07-27 on `main`.
 | CI | schema validation + tests + content lint + frontend typecheck on every push/PR |
 | Content lint | 312 known violations, baselined; CI blocks new ones |
 | Governance | Adopted; `Disputed` marker implemented and surfaced in the demo |
-| Data hygiene | 12 ceased journals flagged with named successors; 2 entries corrected off wrong OpenAlex sources |
+| Data hygiene | 12 ceased journals flagged with named successors; 2 entries corrected off wrong OpenAlex sources. Evals showed the banners matter for the deterministic scorer, not the model — a strong model already knows these cessations |
+| Skill evaluation | 4 cases, with-skill vs baseline. 18/18 vs 11/18. The discriminating cases are soft-metadata ones; bibliographic facts do not discriminate |
 | Demo | Built, browser-verified up to the API boundary, never run with a real key |
 | Repository | Private; `main` merged and current |

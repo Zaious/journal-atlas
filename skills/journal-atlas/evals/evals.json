@@ -1,0 +1,64 @@
+{
+  "skill_name": "journal-atlas",
+  "notes": "Test cases chosen for what a baseline model gets confidently wrong. Journal advice is unusually hallucination-prone: a model without the knowledge base will happily name real journals and invent their word limits, APC figures, and reviewer culture, in fluent and plausible prose. So each case below is one where fluency alone produces a wrong answer, and the skill's value is visible only if it behaves differently. Iteration 2 replaced ceased-journal-comparison, which measured training data rather than the knowledge base — see the replacement's why_this_case.",
+  "evals": [
+    {
+      "id": 0,
+      "name": "constrained-recommendation",
+      "prompt": "ok so i've basically finished a paper — it's an autoethnography about being a disabled researcher trying to navigate academic conferences, comes out around 9,000 words. i'm not affiliated anywhere right now so i genuinely cannot pay an APC, like at all. i used claude to help tidy up the prose and i'm planning to say so in the acknowledgements. no IRB since it's just me reflecting on my own experience. where should i actually send this?",
+      "expected_output": "Ranked recommendations drawn from files actually read, with per-journal evidence (article counts, named sections), correct hard-constraint handling for the $0 APC and the no-IRB status, and an explicit tier/uncertainty flag on anything that isn't Tier 1.",
+      "why_this_case": "The core workflow, with four hard constraints that interact. A baseline model will name plausible qualitative journals and invent their APC and word limits.",
+      "files": [],
+      "assertions": [
+        "Names at least one journal that exists in references/journals/ (not invented)",
+        "Every APC or word-limit figure stated is traceable to a journal entry, not asserted freely",
+        "Handles the $0 APC constraint explicitly (subscription path, waiver, or full-OA-with-waiver named)",
+        "Handles the no-IRB status explicitly rather than ignoring it",
+        "States the evidence tier or uncertainty for at least one recommended journal",
+        "Does not present a *(pending)* or unfilled field as if it were a known value"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "rejection-recovery",
+      "prompt": "Qualitative Inquiry just rejected my paper. reviewer 2 said it wasn't 'methodologically innovative enough' which, fine, ok. it's a performance autoethnography about grief, about 7,500 words. what's my next move? honestly i don't want to spend another six months rewriting this from scratch",
+      "expected_output": "The curated Rejection Fallback Chain from Qualitative Inquiry's own entry, in its intended order and with the recorded reasons, plus framing advice addressed to the specific rejection reason given.",
+      "why_this_case": "Fallback chains are hand-authored and unguessable — they encode a maintainer's reasoning, not a similarity score. A baseline model can only produce generic 'try a similar journal' advice, so this case shows most clearly what the knowledge base holds that a model does not.",
+      "files": [],
+      "assertions": [
+        "Names journals from Qualitative Inquiry's own curated Rejection Fallback Chain",
+        "Preserves the chain's recorded order or states the reasoning attached to each option",
+        "Addresses the specific rejection reason given (methodological innovation), not generic resubmission advice",
+        "Respects the user's stated constraint of not wanting a six-month rewrite"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "journal-not-in-corpus",
+      "prompt": "what's the reviewer culture like at Journal of Consumer Research? i'm thinking of sending them something on identity and consumption and i want to know what i'm walking into",
+      "expected_output": "A clear statement that this journal is not in the knowledge base, without fabricated reviewer-culture claims. Offering to check the breadth spine or inviting a contribution is a good response; confidently describing JCR's reviewer culture is a failure.",
+      "why_this_case": "Verified absent from all 399 entries. This is the single highest-value negative test: the failure mode isn't refusing to answer, it's answering fluently from training-data memory. SKILL.md's zero-hallucination rule exists precisely for this, and a baseline model will almost certainly just answer.",
+      "files": [],
+      "assertions": [
+        "States clearly that Journal of Consumer Research is not in the knowledge base",
+        "Does NOT assert specific reviewer-culture claims about JCR as established fact",
+        "Offers a constructive next step (breadth query, contribution, or checking the publisher directly)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "obscure-ceased-journal",
+      "prompt": "i'm writing a paper on Aquinas's account of habit and the will, maybe 8,000 words. someone suggested The Modern Schoolman as a good fit for scholastic metaphysics. is that a reasonable target?",
+      "expected_output": "Recognition that The Modern Schoolman was relaunched as Res Philosophica in 2013 and is not a live submission target under that name, with the successor named, plus an assessment of whether the successor actually fits.",
+      "why_this_case": "Replaces the original Psychonomic Science comparison, which iteration 1 showed to be non-discriminating: the baseline already knew that journal ceased in 1972 and traced its successors unaided, so both configurations scored 4/4 and the assertion measured the model's training data rather than the knowledge base. The Modern Schoolman is a far more obscure venue — a small Jesuit philosophy journal renamed in 2013 — so a baseline is much less likely to hold the rename. That is where a publication-status banner earns its keep: the journals a model has no memory of, not the famous historical cases.",
+      "files": [],
+      "assertions": [
+        "Identifies that The Modern Schoolman no longer publishes under that name",
+        "Names Res Philosophica as the successor",
+        "States the correct transition year (2013)",
+        "Assesses whether the successor actually suits the described paper, rather than stopping at the rename",
+        "Does not invent reviewer-culture or policy claims for a journal it has no curated entry for"
+      ]
+    }
+  ]
+}

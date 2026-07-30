@@ -143,8 +143,26 @@ def test_word_limit_plain_number():
     assert fit_score._extract_word_limit("| **Word limit** | 8,000 |") == 8000
 
 
-def test_word_limit_takes_lower_bound_of_a_range():
-    assert fit_score._extract_word_limit("| **Word limit** | ~8,500-10,000 |") == 8500
+def test_word_limit_takes_the_ceiling_of_a_range():
+    """This test previously asserted the LOWER bound, and that was wrong.
+    An eval run caught it: Theory & Psychology says "5,000-8,000 standard;
+    up to 10,000 permitted" and was eliminating 9,000-word papers it
+    explicitly accepts. The row feeds a hard constraint, so it has to read
+    as the journal's ceiling — an over-permissive limit lets the user judge
+    for themselves, while an over-strict one removes the venue before they
+    ever see it."""
+    assert fit_score._extract_word_limit("| **Word limit** | ~8,500-10,000 |") == 10000
+    assert fit_score._extract_word_limit(
+        "| **Word limit** | 5,000–8,000 standard; up to 10,000 permitted |") == 10000
+    assert fit_score._extract_word_limit(
+        "| **Word limit** | 5,000–10,000 (extensible to 15,000 depending on topic) |") == 15000
+
+
+def test_character_count_does_not_outrank_a_word_count():
+    """Taking the largest number alone would read Cell's limit as 50,000
+    words. When any figure is labelled as words, only those are eligible."""
+    assert fit_score._extract_word_limit(
+        "| **Word limit** | Articles ~50,000 characters with spaces (~7,500 words) |") == 7500
 
 
 def test_page_limit_is_not_a_word_limit():

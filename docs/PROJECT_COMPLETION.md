@@ -130,8 +130,13 @@ this project is most useful for).
 - `Last verified` dates are meaningful, and the skill's 18-month staleness
   warning fires on real staleness rather than on everything at once.
 - Ceased and renamed journals are caught within a reasonable window, with
-  successors named, so the tool never sends someone to a venue that cannot
-  accept them.
+  successors named. Note where this actually matters: skill evals (2026-07-30)
+  found a strong model already knows these cessations unaided — it knew
+  Psychonomic Science ended in 1972 and that The Modern Schoolman became Res
+  Philosophica in 2013, including the continued volume numbering. The banners
+  earn their keep on the **deterministic** path, where `fit_score.py` and
+  `similar_journals.py` have no world knowledge at all and did rank both
+  ceased titles as top candidates in that same run.
 - Policy changes at publisher level (an AI policy revision, an OA conversion)
   propagate without waiting for someone to notice. This one is genuinely hard
   and may stay manual.
