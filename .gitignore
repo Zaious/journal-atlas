@@ -35,3 +35,6 @@ dist/
 # skills/journal-atlas/evals/ ARE tracked)
 skills/journal-atlas-workspace/
 .claude/
+
+# wrangler local cache — account id and project bookkeeping, not source
+.wrangler/
