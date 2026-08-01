@@ -103,6 +103,13 @@ rebuilding and redeploying, not restarting.
 `VITE_SUPPORT_URL` does not need setting; the Buy Me a Coffee link is compiled
 in as a default. Set it to an empty string to hide the link.
 
+Every deployment is also reachable at `journal-atlas.pages.dev` and a
+per-deployment subdomain. Those serve the app but cannot reach the API — CORS
+names one origin — so the page would load and every request would fail with
+"Failed to fetch", which reads as the demo being broken rather than as a wrong
+URL. [`public/_worker.js`](frontend/public/_worker.js) redirects any
+`*.pages.dev` host to the canonical domain instead of widening the allowlist.
+
 **Direct upload means pushing to `main` does not redeploy the site.** That is a
 real cost and it is the one thing to fix first if this gets more than occasional
 changes: connecting the Git integration needs the Cloudflare dashboard (wrangler
