@@ -790,11 +790,30 @@ Eaton 的對應論文 [*On the ethics of working with library technology*](https
 
 ### Journal Atlas 加進譜系的三件事
 
-三個設計選擇把 Journal Atlas 跟前人區分：
+語料庫是看得見的那部分，但它不是貢獻本身。這三件裡有兩件是**方法**，而方法可以
+移轉到這個專案永遠不會涵蓋的領域。
 
-1. **以期刊為單位的知識庫，不是 query-time app。** 持久、可被引用、隨社群貢獻單調改進的 profile。Soft metadata 演算法挖不到，需要人類社群知識，也需要超越任何單一 maintainer 承諾的耐久性。
-2. **Markdown + Git，不是服務基礎設施。** 零代管成本，零單點失效。誰都能 fork。
-3. **為 agent 時代設計。** 包裝為 Claude Agent Skill —— 一行安裝、任何懂 skill 規範的工具都能消費、跨越未來介面變動仍可流通。
+**1. 一套判斷適配性的方法** —— [`fit_score.py`](skills/journal-atlas/scripts/fit_score.py)
+加上 [CONSUMPTION_CONTRACT.md](skills/journal-atlas/CONSUMPTION_CONTRACT.md)。硬性
+條件負責淘汰，六個加權維度負責排序活下來的。真正讓它能用的紀律在於它怎麼處理無知：
+沒有證據的維度回傳**未知**而不是中位數，剩下的權重重新正規化，然後結果依「已知的
+有多少」按比例往中性收縮。所以分數出來時帶著證據覆蓋率，而 `62.5/100 · 45%
+evidence` 讀起來就是一個比 `73.0/100 · 75% evidence` 更弱的主張。這一整套跟期刊
+沒有任何關係，換個領域照樣成立。
+
+**2. 一套用 AI 建語料庫而不編造的方法** ——
+[WO2_SOFT_METADATA_BATCH.md](docs/workorders/WO2_SOFT_METADATA_BATCH.md)。每個場域
+跑三層（政策、定位、經驗），跨語言來源是強制不是選配，而決定一切的只有一條規則：
+**有來源 URL 的事實，或是一個記下了理由的空白。** `review_time：SciRev 回傳 0 篇
+評論` 是一個正確的輸出。這條 pipeline 就是一天之內把語料庫從 163 帶到 399 的東西，
+也是貢獻者可以指向自己領域的東西。
+
+**3. 標準是可以 fork 的，不必吵。** 兩種歧見走兩種機制。如果某個**宣稱**錯了，
+[爭議流程](docs/GOVERNANCE.md)就地更正。如果你覺得**標準**錯了 —— Tier 2 太寬鬆、
+AI-Researched 根本不該出貨、權重校準有問題 —— 你 fork、改規則、跑你自己的版本。
+這件事在這裡特別便宜，正是因為沒有服務需要複製：clone 一個 repo、改 Markdown，
+完成。兩個標準不同的語料庫可以對不同的讀者都是對的，而那是一個只有單一託管答案的
+工具做不到的事。
 
 我們跟 B!SON 互補，不競爭。用 B!SON 發現候選 OA 期刊，再讀 Journal Atlas 該期刊頁面，了解投稿*實際上*會碰到什麼。完整資料來源與參考資料見 [INSPIRATION.md](INSPIRATION.md)。
 

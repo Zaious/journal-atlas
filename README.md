@@ -859,11 +859,37 @@ Eaton's companion paper [*On the ethics of working with library technology*](htt
 
 ### What Journal Atlas Adds
 
-Three design choices distinguish Journal Atlas from the lineage:
+The corpus is the visible part, but it is not the contribution. Two of these
+three are **methods**, and a method transfers to fields this project will never
+cover.
 
-1. **Per-journal knowledge base, not per-query app.** Persistent, citable profiles that improve monotonically with community contribution. Soft metadata algorithms cannot extract from publication data.
-2. **Markdown + Git, not service infrastructure.** Zero hosting cost. Zero single point of failure. Anyone can fork.
-3. **Designed for the agent era.** Structured as a Claude Agent Skill — installable in one command, consumable by any tool that speaks the skill convention, durable across whatever interface comes next.
+**1. A method for judging fit** — [`fit_score.py`](skills/journal-atlas/scripts/fit_score.py)
+plus [CONSUMPTION_CONTRACT.md](skills/journal-atlas/CONSUMPTION_CONTRACT.md).
+Hard constraints eliminate; six weighted dimensions rank what survives. The
+discipline that makes it usable is what it does with ignorance: an unevidenced
+dimension returns *unknown* rather than a midpoint, the remaining weights
+renormalise, and the result shrinks toward neutral in proportion to how little
+is known. So a score arrives with an evidence-coverage figure attached, and
+`62.5/100 · 45% evidence` is legible as a weaker claim than `73.0/100 · 75%
+evidence`. None of that is specific to journals.
+
+**2. A method for building the corpus with AI without inventing it** —
+[WO2_SOFT_METADATA_BATCH.md](docs/workorders/WO2_SOFT_METADATA_BATCH.md). Three
+layers per venue (policy, positioning, experiential), cross-language sources
+mandatory rather than optional, and one rule that decides everything: **a fact
+with a source URL, or a blank with a recorded reason.** `review_time: SciRev
+returned 0 reviews` is a correct output. This is what took the corpus from 163
+to 399 entries in a day, and it is what a contributor points at their own field.
+
+**3. Standards you can fork instead of argue about.** Two kinds of disagreement
+get two mechanisms. If a *claim* is wrong, the [dispute
+process](docs/GOVERNANCE.md) corrects it in place. If you think the *standard*
+is wrong — that Tier 2 is too generous, that AI-Researched entries should not
+ship at all, that the weights are miscalibrated — you fork, change the rules,
+and run your own. That is cheap here specifically because there is no service to
+duplicate: clone the repository, edit Markdown, done. Two corpora with different
+bars can both be right for different readers, which is not true of a tool with
+one hosted answer.
 
 We are complementary to B!SON, not competing. Use B!SON to discover candidate OA journals, then read their Journal Atlas pages to understand what submission *actually* involves. See [INSPIRATION.md](INSPIRATION.md) for the full data sources and reference materials.
 
