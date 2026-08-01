@@ -85,20 +85,30 @@ is live.
 
 ## Frontend
 
-Cloudflare Pages, pointed at this repo:
+Deployed to Cloudflare Pages as project `journal-atlas` by **direct upload**,
+not the Git integration:
 
-| Setting | Value |
-|---|---|
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-| Root directory | `demo/frontend` |
-| Environment variable | `VITE_API_BASE=https://api.journal-atlas.chroniclecore.com` |
+```sh
+cd demo/frontend
+npm run build
+npx wrangler pages deploy dist --project-name journal-atlas --branch main
+```
 
-`VITE_API_BASE` is read at **build** time, not runtime — changing it means
-redeploying, not restarting.
+`VITE_API_BASE` is read at **build** time, not runtime, and lives in the
+committed [`.env.production`](frontend/.env.production) rather than in whoever's
+shell ran the deploy — a public URL is not a secret, and a build that only
+reproduces on one machine is a build nobody else can ship. Changing it means
+rebuilding and redeploying, not restarting.
 
 `VITE_SUPPORT_URL` does not need setting; the Buy Me a Coffee link is compiled
 in as a default. Set it to an empty string to hide the link.
+
+**Direct upload means pushing to `main` does not redeploy the site.** That is a
+real cost and it is the one thing to fix first if this gets more than occasional
+changes: connecting the Git integration needs the Cloudflare dashboard (wrangler
+cannot configure it), after which the settings are root directory
+`demo/frontend`, build `npm run build`, output `dist`. Until then, run the three
+lines above after any frontend change.
 
 ## The Cloudflare-specific part
 
