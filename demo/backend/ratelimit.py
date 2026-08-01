@@ -142,17 +142,58 @@ class RateLimiter:
             }
 
 
+def trusted_hops() -> int:
+    """How many proxies sit in front of this app, from `TRUST_PROXY`.
+
+    A count rather than a boolean, because which entry of `X-Forwarded-For`
+    identifies the caller depends on how many trusted proxies appended to it:
+
+        TRUST_PROXY=1   client → Caddy                    (direct origin)
+        TRUST_PROXY=2   client → Cloudflare → Caddy       (proxied / orange cloud)
+
+    Anything unparseable reads as 0, which ignores the header entirely. That
+    fails in the safe direction — every caller shares one bucket, stricter than
+    intended rather than bypassable.
+    """
+    raw = (os.environ.get("TRUST_PROXY") or "").strip().lower()
+    if raw in ("true", "yes", "on"):
+        return 1
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return 0
+
+
 def client_key(request) -> str:
     """Identify the caller for rate-limiting purposes.
 
-    `X-Forwarded-For` is trusted only when `TRUST_PROXY=1`, because any client
-    can send that header and a limiter that believes it is a limiter that can
-    be bypassed by setting a string. Leaving it unset when deployed behind a
-    proxy fails in the safe direction: every caller shares the proxy's IP and
-    therefore one bucket, which is stricter than intended rather than looser.
+    `X-Forwarded-For` is a list that each proxy **appends** to, so the entries
+    a client controls are on the *left* and the ones added by infrastructure
+    are on the *right*. Reading the leftmost entry — the obvious thing, and
+    what this function did until it was tested against a real deployment —
+    means anyone can send `X-Forwarded-For: <anything>` and get a fresh
+    rate-limit bucket per request.
+
+    So the caller is counted in from the right: with N trusted proxies in
+    front, each of which appended exactly one entry, `chain[-N]` is the address
+    the outermost trusted proxy observed, and nothing to the left of it can
+    change that.
+
+    Caddy hides this bug by default — with no `trusted_proxies` configured it
+    discards a client-supplied `X-Forwarded-For` rather than appending to it,
+    so leftmost and rightmost are the same entry. The moment Cloudflare goes in
+    front and Caddy is told to trust it, they stop being the same entry:
+    Cloudflare appends the client IP to whatever the client sent rather than
+    replacing it. A limiter that reads leftmost is correct right up until that
+    switch, and silently worthless afterwards.
+
+    Falls back to the peer address when the chain is shorter than the
+    configured hop count, which means the deployment is misconfigured; one
+    shared bucket is the right way to be wrong.
     """
-    if os.environ.get("TRUST_PROXY") == "1":
-        forwarded = request.headers.get("x-forwarded-for", "")
-        if forwarded:
-            return forwarded.split(",")[0].strip()
+    hops = trusted_hops()
+    if hops:
+        chain = [p.strip() for p in request.headers.get("x-forwarded-for", "").split(",") if p.strip()]
+        if len(chain) >= hops:
+            return chain[-hops]
     return getattr(getattr(request, "client", None), "host", None) or "unknown"

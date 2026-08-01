@@ -55,11 +55,24 @@ RATE_LIMIT_PER_DAY=30
 GLOBAL_DAILY_LIMIT=250
 ```
 
-`TRUST_PROXY=1` is **required** here. Without it every visitor is seen as the
-Cloudflare edge IP and shares a single per-client bucket, so the tenth search of
-the hour by anyone locks out everyone. Only set it when something you control
-actually terminates the connection in front of the app — otherwise a caller can
-forge `X-Forwarded-For` and get a fresh bucket per request.
+`TRUST_PROXY` is a **hop count, not a boolean**, and it has to match the
+topology exactly:
+
+| Setup | Value |
+|---|---|
+| `client → Caddy` (DNS-only / grey cloud) | `TRUST_PROXY=1` |
+| `client → Cloudflare → Caddy` (proxied / orange cloud) | `TRUST_PROXY=2` |
+
+`X-Forwarded-For` is *appended* to, so entries the caller controls sit on the
+left and the ones infrastructure added sit on the right. The limiter counts in
+from the right by this many hops, which is what makes the value unforgeable.
+
+**Raise it to 2 in the same change that switches Cloudflare to orange cloud.**
+Leave it at 1 and every visitor is bucketed by Cloudflare's edge IP, so the
+tenth search of the hour by anyone locks out everyone. Set it to 2 while still
+on grey cloud and the chain is too short, the fallback puts everyone in one
+bucket, and you get the same symptom. Both directions fail strict rather than
+open, which is why this is a support ticket rather than a breach.
 
 Confirm both after deploy:
 

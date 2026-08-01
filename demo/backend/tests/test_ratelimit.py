@@ -112,7 +112,7 @@ class _FakeRequest:
         self.headers = headers or {}
 
 
-def test_forwarded_header_is_ignored_unless_the_proxy_is_trusted(monkeypatch):
+def test_forwarded_header_is_ignored_unless_a_proxy_is_trusted(monkeypatch):
     """Any client can set X-Forwarded-For. A limiter that believes it is a
     limiter that anyone can bypass by setting a string."""
     monkeypatch.delenv("TRUST_PROXY", raising=False)
@@ -120,10 +120,55 @@ def test_forwarded_header_is_ignored_unless_the_proxy_is_trusted(monkeypatch):
     assert ratelimit.client_key(req) == "10.0.0.1"
 
 
-def test_forwarded_header_is_used_when_the_proxy_is_trusted(monkeypatch):
+def test_one_trusted_hop_reads_the_entry_that_proxy_appended(monkeypatch):
+    """X-Forwarded-For is appended to, so client-controlled entries are on the
+    LEFT. An earlier version of this read chain[0] and was bypassable by
+    sending the header — counting in from the right is what makes the value
+    unforgeable."""
     monkeypatch.setenv("TRUST_PROXY", "1")
-    req = _FakeRequest("10.0.0.1", {"x-forwarded-for": "1.2.3.4, 10.0.0.9"})
-    assert ratelimit.client_key(req) == "1.2.3.4"
+    forged = _FakeRequest("10.0.0.1", {"x-forwarded-for": "1.2.3.4, 203.0.113.9"})
+    assert ratelimit.client_key(forged) == "203.0.113.9"
+    clean = _FakeRequest("10.0.0.1", {"x-forwarded-for": "203.0.113.9"})
+    assert ratelimit.client_key(clean) == "203.0.113.9"
+
+
+def test_two_trusted_hops_skip_the_cdn_and_find_the_real_client(monkeypatch):
+    """client -> Cloudflare -> Caddy. Cloudflare appends the client IP to
+    whatever the client sent rather than replacing it, so with two hops the
+    real caller is second from the right and the forged prefix is inert."""
+    monkeypatch.setenv("TRUST_PROXY", "2")
+    req = _FakeRequest("10.0.0.1",
+                       {"x-forwarded-for": "1.2.3.4, 203.0.113.9, 172.16.0.5"})
+    assert ratelimit.client_key(req) == "203.0.113.9"
+
+
+def test_no_number_of_forged_entries_changes_the_bucket(monkeypatch):
+    """The property that matters: a caller cannot manufacture fresh buckets by
+    varying what it sends, however much it sends."""
+    monkeypatch.setenv("TRUST_PROXY", "1")
+    keys = {
+        ratelimit.client_key(_FakeRequest(
+            "10.0.0.1", {"x-forwarded-for": f"{i}.{i}.{i}.{i}, 203.0.113.9"}))
+        for i in range(1, 20)
+    }
+    assert keys == {"203.0.113.9"}
+
+
+def test_a_chain_shorter_than_the_hop_count_falls_back_to_the_peer(monkeypatch):
+    """Means the deployment is misconfigured. One shared bucket is the right
+    way to be wrong — stricter than intended, never bypassable."""
+    monkeypatch.setenv("TRUST_PROXY", "2")
+    req = _FakeRequest("10.0.0.1", {"x-forwarded-for": "1.2.3.4"})
+    assert ratelimit.client_key(req) == "10.0.0.1"
+
+
+@pytest.mark.parametrize("value,expected", [
+    ("1", 1), ("2", 2), ("true", 1), ("yes", 1), ("on", 1),
+    ("", 0), ("0", 0), ("nonsense", 0), ("-3", 0),
+])
+def test_trust_proxy_parsing_fails_closed(monkeypatch, value, expected):
+    monkeypatch.setenv("TRUST_PROXY", value)
+    assert ratelimit.trusted_hops() == expected
 
 
 def test_client_key_survives_a_request_with_no_client():

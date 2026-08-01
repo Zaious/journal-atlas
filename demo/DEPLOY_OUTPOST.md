@@ -1,5 +1,23 @@
 # Work order — deploy the backend to Outpost
 
+> **Status: deployed 2026-07-30.** `https://api.journal-atlas.chroniclecore.com`
+> is live and verified from outside: `/healthz` 200, `provider_ready true`,
+> 399 entries across 13 fields, SSE arriving progressively (+0.69s, +1.66s),
+> CORS accepting only the apex, rate limiting refusing readably at the tenth
+> request. What follows is the record of how, and what is still pending.
+>
+> **Currently DNS-only (grey cloud).** `api.journal-atlas.chroniclecore.com`
+> resolves straight to `161.97.96.65` and responses carry no `cf-ray`, so
+> Cloudflare is not in the request path yet. Two consequences worth being
+> explicit about:
+>
+> - **The Cloudflare SSE-buffering risk is untested, not solved.** The
+>   streaming check above proves Caddy is fine. It says nothing about the CDN
+>   path, because there isn't one yet.
+> - **`TRUST_PROXY` must change to `2` at the same moment**, along with adding
+>   Cloudflare's ranges to Caddy's `trusted_proxies`. See
+>   [the switch checklist](#switching-to-orange-cloud-later) at the end.
+
 Written to be executed by a session that has the `outpost-deploy` skill and
 access to the factory at `M:\ChronicleCore-Forge\infra\outpost\`. Everything
 below was decided and verified in the repo session on 2026-07-30; nothing here
@@ -29,9 +47,12 @@ Outpost is for.
 
 ## Before touching the factory
 
-1. **DNS.** In Cloudflare, `A` record `api.journal-atlas` → `161.97.96.65`,
-   proxied (orange cloud). The apex `journal-atlas.chroniclecore.com` points at
-   Cloudflare Pages separately and is not Outpost's concern.
+1. **DNS.** In Cloudflare, `A` record `api.journal-atlas` → `161.97.96.65`.
+   DNS-only (grey cloud) is what is deployed and is sufficient; going proxied
+   later is a coordinated change, not a toggle — see
+   [Switching to orange cloud later](#switching-to-orange-cloud-later). The apex
+   `journal-atlas.chroniclecore.com` points at Cloudflare Pages separately and
+   is not Outpost's concern.
 2. **Check the ledger** — `infra/outpost/SERVICES.md`. As of 2026-07-17: 8080
    relaweb, 8081 ats-cv, 8082 catalog-service, 8083 book-search-mcp. Leaving
    `PORT=` blank avoids guessing.
@@ -96,11 +117,16 @@ EOF
 sudo chmod 600 /etc/outpost/journal-atlas-api.env
 ```
 
-`TRUST_PROXY=1` is **required** and only safe here. Caddy terminates the
-connection, so `X-Forwarded-For` is trustworthy. Without it every visitor is
-seen as the proxy's own address and shares one bucket — the tenth search of the
-hour by anyone locks out everyone. Set on a service reachable directly from the
-internet, it would be forgeable and the limiter worthless.
+`TRUST_PROXY` is a **hop count**, and `1` is correct for the deployed
+topology (`client → Caddy`). It must become `2` if Cloudflare is ever put in
+front. Leave it unset and every visitor is bucketed as Caddy's own address, so
+the tenth search of the hour by anyone locks out everyone.
+
+The limiter counts entries in from the *right* of `X-Forwarded-For` because
+that header is appended to — anything a caller sends lands on the left and is
+inert. Caddy also discards a client-supplied `X-Forwarded-For` by default, so
+today there are two independent reasons forgery fails; after the orange-cloud
+switch there is only one, and it is this one.
 
 The corpus is public, so `GEMINI_API_KEY` is the only real secret. It is also
 the only thing standing between this service and an unbounded bill, which is
@@ -173,3 +199,39 @@ Nothing is persisted, so removal loses nothing. To take the demo down without
 undeploying, set `GLOBAL_DAILY_LIMIT=1` and restart — callers then get the
 refusal message pointing them at the locally-run skill, which is a better
 experience than a dead hostname.
+
+## Switching to orange cloud later
+
+Enabling the Cloudflare proxy is not a DNS toggle on its own. Three things move
+together, and doing the toggle alone breaks rate limiting in a way that looks
+like a capacity problem:
+
+1. **Caddy** — add Cloudflare's published ranges to `trusted_proxies`.
+   Without it Caddy discards Cloudflare's `X-Forwarded-For` and every visitor
+   is bucketed as the same edge address.
+2. **`TRUST_PROXY=2`** in `/etc/outpost/journal-atlas-api.env`, then restart.
+   The chain becomes `client → Cloudflare → Caddy`, so the caller is two
+   entries in from the right instead of one. Leave it at `1` and the bucket
+   key becomes Cloudflare's edge IP: the tenth search of the hour by *anyone*
+   locks out *everyone*.
+3. **Cloudflare** — Cache Rule on `/api/*` → Bypass cache; Auto Minify and
+   Rocket Loader off for this hostname.
+
+Then re-run the streaming check from [DEPLOY.md](DEPLOY.md#verifying-the-stream-actually-streams).
+This is the first time it will actually exercise Cloudflare, so treat a pass
+before the switch as meaning nothing about after it.
+
+Restarting the service is required for **any** change to the env file —
+`systemd`'s `EnvironmentFile` is read at start, so editing it and testing with
+`curl` from the box will appear to work (your shell has the new value) while
+the running process still holds the old one.
+
+## Still pending
+
+- [ ] Frontend to Cloudflare Pages at the apex (repo session — settings in
+      [DEPLOY.md](DEPLOY.md#frontend)). The backend already accepts exactly
+      that origin, verified by preflight.
+- [ ] `gh repo edit --homepage https://journal-atlas.chroniclecore.com` once
+      the apex serves.
+- [ ] Spending cap on the Gemini key in Google AI Studio. `GLOBAL_DAILY_LIMIT`
+      bounds this app; it does not bound the key.
