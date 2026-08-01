@@ -461,7 +461,7 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     try:
         paper = await extract_paper(PROVIDER, freeform_text)
     except Exception as exc:
-        yield event("error", {"message": f"extraction failed: {exc}"})
+        yield event("error", {"message": describe_provider_failure(exc, "reading your paper")})
         return
     yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper),
                           "unstated": unstated_constraints(paper)})
@@ -498,7 +498,7 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
         async for text in PROVIDER.stream(prompt):
             yield event("text", {"delta": text})
     except Exception as exc:
-        yield event("error", {"message": f"synthesis failed: {exc}"})
+        yield event("error", {"message": describe_provider_failure(exc, "writing the recommendation")})
         return
     yield event("stage", {"stage": "synthesis", "status": "done"})
 
@@ -519,6 +519,42 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
 # The 100-second origin timeout (Cloudflare 524) is not a risk here for a
 # different reason: it measures silence, and the first `stage` event is emitted
 # before any model call, so bytes are always flowing within milliseconds.
+def describe_provider_failure(exc: Exception, stage: str) -> str:
+    """Turn a provider exception into something a visitor can act on.
+
+    The raw string is an SDK dump — `429 RESOURCE_EXHAUSTED {'error': {...}}` —
+    which tells a researcher nothing and leaks internals to everyone else. The
+    quota case matters most: the provider enforces its own per-day ceiling,
+    separately from and possibly *below* GLOBAL_DAILY_LIMIT, so exhausting it
+    while this page still believes it has budget left is a normal Tuesday
+    rather than an edge case. It should read as "come back later" and point at
+    the version with no cap, not as a crash.
+
+    The real exception still goes to the server log; only the visitor gets the
+    short version.
+    """
+    print(f"provider failure during {stage}: {exc!r}", file=sys.stderr)
+    text = str(exc)
+    lowered = text.lower()
+
+    if any(k in lowered for k in ("429", "resource_exhausted", "quota", "rate limit",
+                                  "too many requests")):
+        return ("The demo has used up its model quota for now. It runs on one person's "
+                "API key, and the provider caps that separately from the limits shown "
+                "on this page. Try again later, or install the skill to run the same "
+                "thing on your own key with no cap.")
+    if any(k in lowered for k in ("401", "403", "api key", "permission denied",
+                                  "unauthenticated", "invalid argument")):
+        return ("The demo's model access is misconfigured — that is the maintainer's "
+                "problem, not anything you did. The skill runs locally against the "
+                "same knowledge base in the meantime.")
+    if any(k in lowered for k in ("timeout", "timed out", "deadline")):
+        return (f"The model took too long during {stage}. This usually clears on a "
+                "retry.")
+    return (f"Something failed during {stage}. If it keeps happening, an issue on the "
+            "repository with what you pasted would help.")
+
+
 SSE_HEADERS = {
     "Cache-Control": "no-cache, no-transform",
     "X-Accel-Buffering": "no",
@@ -587,7 +623,7 @@ async def sse_followup(req: FollowupRequest) -> AsyncIterator[str]:
         async for text in PROVIDER.stream(prompt):
             yield event("text", {"delta": text})
     except Exception as exc:
-        yield event("error", {"message": "follow-up failed: " + str(exc)})
+        yield event("error", {"message": describe_provider_failure(exc, "answering the follow-up")})
         return
     yield event("done", {"remaining": MAX_FOLLOWUPS - req.asked_so_far - 1})
 

@@ -163,3 +163,33 @@ def test_healthz_is_a_cheap_unauthenticated_liveness_probe(client):
         res = client.get("/healthz")
         assert res.status_code == 200
         assert res.json()["status"] == "ok"
+
+
+# ---------- provider failures ----------
+
+
+@pytest.mark.parametrize("raw,expect", [
+    ("429 RESOURCE_EXHAUSTED {'error': {'code': 429}}", "model quota"),
+    ("Quota exceeded for quota metric 'Generate requests'", "model quota"),
+    ("rate limit reached for gemini-3.5-flash-lite", "model quota"),
+    ("403 PERMISSION_DENIED: API key not valid", "misconfigured"),
+    ("401 UNAUTHENTICATED", "misconfigured"),
+    ("Deadline exceeded after 60s", "took too long"),
+    ("ValueError: something unexpected", "keeps happening"),
+])
+def test_provider_errors_read_as_english_not_an_sdk_dump(raw, expect, capsys):
+    """A visitor seeing `429 RESOURCE_EXHAUSTED {...}` learns nothing and the
+    dump leaks internals. The quota case is the one that matters: the provider
+    enforces its own daily ceiling independently of GLOBAL_DAILY_LIMIT and can
+    run out first, so it has to read as "come back later" rather than a crash."""
+    msg = main.describe_provider_failure(Exception(raw), "reading your paper")
+    assert expect in msg
+    assert "RESOURCE_EXHAUSTED" not in msg
+    assert "Traceback" not in msg
+    # The real error still has to reach the operator.
+    assert raw[:20] in capsys.readouterr().err
+
+
+def test_quota_message_points_at_the_uncapped_alternative():
+    msg = main.describe_provider_failure(Exception("429 RESOURCE_EXHAUSTED"), "x")
+    assert "skill" in msg and "own key" in msg

@@ -154,6 +154,19 @@ an unbounded bill. Three layers, in
 | Per-client rate limit | Casual repeated use | 10/hour, 30/day | `RATE_LIMIT_PER_HOUR`, `RATE_LIMIT_PER_DAY` |
 | Global daily cap | **The bill** | 250 requests/day | `GLOBAL_DAILY_LIMIT` |
 
+At roughly 31,600 input and 1,500 output tokens per recommendation (measured,
+not estimated — build the prompts and count), gemini-3.5-flash-lite costs about
+**$0.013 per recommendation**. So the cap converts directly into a worst-case
+bill: 250/day is ~$3.30/day, 500/day is ~$6.60/day, and those are only reached
+on days the cap is actually exhausted.
+
+**The provider enforces its own daily ceiling, independently of this one.** If
+it is lower than `GLOBAL_DAILY_LIMIT`, the provider runs out first and this
+app's cap never fires — and note that each recommendation is **two** provider
+calls (extract + synthesize), so a provider quota of N requests/day allows N/2
+recommendations. Check the real number before raising the cap here; raising it
+past what the provider allows only converts a readable refusal into an error.
+
 The size caps come first deliberately: rate limits are useless if a single
 request can carry 500 KB into a prompt. The global cap comes last and matters
 most — it is the only one that holds regardless of how requests are spread
