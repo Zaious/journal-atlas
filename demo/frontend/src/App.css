@@ -4,15 +4,83 @@
   padding: 3rem 1.5rem 5rem;
 }
 
+.header-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 header h1 {
   font-size: 1.9rem;
   margin-bottom: 0.4rem;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #d4cff0;
+  background: #f4f2fb;
+  color: #4d3fc7;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.repo-link:hover {
+  background: #e9e6fb;
+}
+
+.repo-link svg {
+  flex-shrink: 0;
+}
+
+.eyebrow {
+  margin: 0.5rem 0 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #55506b;
+}
+
+.eyebrow strong {
+  color: #4d3fc7;
 }
 
 .tagline {
   color: var(--text-secondary, #666);
   line-height: 1.5;
   margin-bottom: 2rem;
+}
+
+.colophon blockquote {
+  margin: 0.9rem 0;
+  padding: 0.65rem 0 0.65rem 1rem;
+  border-left: 3px solid #d4cff0;
+  font-style: italic;
+  color: #453f5e;
+}
+
+.colophon blockquote cite {
+  display: block;
+  margin-top: 0.45rem;
+  font-style: normal;
+  font-size: 0.82rem;
+  color: #7b7595;
+}
+
+@media (prefers-color-scheme: dark) {
+  .repo-link { background: #262040; border-color: #3f3a63; color: #a79bf0; }
+  .repo-link:hover { background: #302a4d; }
+  .eyebrow { color: #a9a3c4; }
+  .eyebrow strong { color: #a79bf0; }
+  .colophon blockquote { border-color: #3f3a63; color: #c7c1de; }
+  .colophon blockquote cite { color: #8b85a8; }
 }
 
 .coverage-notice {

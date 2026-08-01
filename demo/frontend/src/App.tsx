@@ -176,6 +176,15 @@ const SUPPORT_LABEL: string =
 const INSTALL_COMMANDS = `/plugin marketplace add Zaious/journal-atlas
 /plugin install journal-atlas@journal-atlas`;
 
+/** GitHub mark, inlined rather than fetched — no external asset for one icon. */
+function GitHubMark() {
+  return (
+    <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+    </svg>
+  );
+}
+
 interface Limits {
   global_daily_limit: number;
   per_client_hourly_limit: number;
@@ -338,6 +347,84 @@ function SiteFooter() {
           <strong>the thing it most needs is co-maintainers</strong>: people who
           will review contributions in their own field and correct entries about
           journals they know. Say so in an issue and you will be taken up on it.
+        </p>
+      </section>
+
+      <section className="colophon">
+        <h2>Who made this, and why</h2>
+        <p>
+          I'm{" "}
+          <a href="https://zaious.dev/" target="_blank" rel="noreferrer">
+            Meng-Han Lee (李孟翰)
+          </a>{" "}
+          — an independent HCI researcher and AI agent architect, working
+          outside an institution. This started as my own problem. I had
+          manuscripts to place, the qualitative and theoretical kind that get
+          judged by standards written for other work, and the question "where
+          does this actually belong?" had no good answer anywhere. Ask a model
+          and it names the most famous journals in the area. Ask a colleague who
+          has published there and you get something worth ten times as much —
+          but only if you happen to know that colleague.
+        </p>
+        <p>
+          So I started writing down what that colleague would have said. The
+          project is what happened when I kept going, and then made the
+          machine-readable version an AI agent could read without inventing the
+          parts nobody had written down yet.
+        </p>
+      </section>
+
+      <section className="colophon">
+        <h2>Picking up where Open Journal Matcher left off</h2>
+        <p>
+          There is a twenty-year line of journal recommenders, and most of them
+          are switched off. The one this project owes most to is{" "}
+          <a
+            href="https://github.com/MarkEEaton/open-journal-matcher"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mark E. Eaton's Open Journal Matcher
+          </a>{" "}
+          (CUNY, 2020–2022) — free, open, matching abstracts against DOAJ. He
+          took it offline in July 2022 and wrote:
+        </p>
+        <blockquote>
+          "My hope is that someone will pick up where I left off."
+          <cite>
+            —{" "}
+            <a
+              href="https://kingsboroughlibtech.commons.gc.cuny.edu/2022/07/29/the-last-days-of-the-open-journal-matcher/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              The last days of the Open Journal Matcher
+            </a>
+            , 2022
+          </cite>
+        </blockquote>
+        <p>
+          This is one response to that invitation. Eaton also argued for{" "}
+          <a
+            href="https://academicworks.cuny.edu/kb_pubs/261"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <em>pervious technology</em>
+          </a>{" "}
+          — tools users can reach into and adapt rather than only consume. OJM
+          was pervious at the code layer. This is pervious at the{" "}
+          <strong>data</strong> layer, and that shift is the whole inheritance:
+          the knowledge is the product, not a service that can be switched off.
+          399 Markdown files in a Git repository under a share-alike licence
+          cannot be taken away from you when one maintainer burns out — which is
+          exactly how OJM ended.
+        </p>
+        <p>
+          That is also why the ask above is co-maintainers rather than users. A
+          corpus that outlives its author is the only version of this that
+          honours what Eaton was pointing at, and files surviving is necessary
+          but not sufficient. Someone has to keep them true.
         </p>
       </section>
 
@@ -534,7 +621,18 @@ function App() {
   return (
     <div className="page">
       <header>
-        <h1>Journal Atlas</h1>
+        <div className="header-top">
+          <h1>Journal Atlas</h1>
+          <a className="repo-link" href={REPO_URL} target="_blank" rel="noreferrer">
+            <GitHubMark />
+            <span>Source on GitHub</span>
+          </a>
+        </div>
+        <p className="eyebrow">
+          A live demo of an open-source <strong>agent skill</strong> — the thing
+          answering you here installs into your own AI session in one command,
+          and runs there without this page or its limits.
+        </p>
         <p className="tagline">
           Paste your abstract or describe your paper. No account, no install —
           this reads the same curated, source-cited knowledge base the real
