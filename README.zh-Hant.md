@@ -7,6 +7,11 @@
 [![Schema](https://img.shields.io/badge/Schema-v1.3-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#%E7%89%88%E6%9C%AC%E8%88%87%E5%93%81%E8%B3%AA%E5%88%86%E5%B1%A4-tier-system)
 
+### ▶ [立刻試用 — journal-atlas.chroniclecore.com](https://journal-atlas.chroniclecore.com)
+
+貼上摘要，拿到帶引註的推薦。不用註冊、不用安裝。跑的是跟下面那個 skill
+完全相同的知識庫與評分程式碼。
+
 **一個由社群維護、為 AI 而生的學術期刊適配性知識庫。**
 
 Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法觸及的東西：學術期刊的**軟性元資料（soft metadata）**——審稿人文化、framing 期待、敏感主題接受度、AI 政策細節、方法論偏好、拒稿後備策略。所有內容封裝為一個 Claude Agent Skill，可跨 Claude Code、Claude Desktop、ChatGPT 安裝。

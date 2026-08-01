@@ -7,6 +7,11 @@
 [![Schema](https://img.shields.io/badge/Schema-v1.3-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#tier-system)
 
+### ▶ [Try it now — journal-atlas.chroniclecore.com](https://journal-atlas.chroniclecore.com)
+
+Paste an abstract, get a cited recommendation. No account, no install. Runs the
+same knowledge base and the same scoring code as the skill below.
+
 **A community-maintained, AI-native knowledge base of academic journal fit metadata.**
 
 Journal Atlas captures what bibliometric tools like Impact Factor and Scimago don't: the **soft metadata** of academic journals — reviewer culture, framing expectations, sensitive-topic tolerance, AI policy nuances, methodological preferences, and rejection-fallback strategies — encoded as a Claude Agent Skill installable across Claude Code, Claude Desktop, and ChatGPT.
@@ -686,7 +691,9 @@ Full setup and example workflows in [scripts/README.md](skills/journal-atlas/scr
 
 ## Try It Without Installing
 
-[`demo/`](demo/) is a small web app that runs the same pipeline the skill uses:
+### **[journal-atlas.chroniclecore.com](https://journal-atlas.chroniclecore.com)** — live, no account, no install
+
+[`demo/`](demo/) is the web app behind it, running the same pipeline the skill uses:
 freeform description → `fit_score.py` screening across all 399 entries → a
 streamed recommendation. Three stages, no database, nothing persisted between
 requests.
