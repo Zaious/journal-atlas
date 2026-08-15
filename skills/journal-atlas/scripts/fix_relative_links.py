@@ -41,7 +41,19 @@ def tracked_markdown(root: str) -> list:
 
 
 def resolve(base: str, target: str, root: str) -> bool:
-    return os.path.exists(os.path.normpath(os.path.join(root, base, target)))
+    """True only if the target exists AND lies inside the repository.
+
+    The boundary check is not pedantry. Without it this script "repaired" a
+    link in use-cases/README.md by walking it up out of the repository to a
+    file in the maintainer's workspace: resolvable on one laptop, a 404 for
+    every reader. A link that works only where it was written is worse than a
+    broken one, because nothing reports it.
+    """
+    p = os.path.abspath(os.path.normpath(os.path.join(root, base, target)))
+    if not os.path.exists(p):
+        return False
+    r = os.path.abspath(root)
+    return os.path.commonpath([p, r]) == r
 
 
 def main() -> int:
