@@ -1,0 +1,662 @@
+[
+ {
+  "file": "hci/information-technology-and-disabilities.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "http://itd.athenpro.org/",
+  "claims": [
+   [
+    "Type",
+    "Described only as \"peer-reviewed journal\" per EASI/ATHEN self-description; specific review model (single/double-blind) not documented in any retrievable source."
+   ]
+  ],
+  "id": 1
+ },
+ {
+  "file": "conferences/hci/acm-dis.md",
+  "field": "hci",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://dis.acm.org/2026/calls/papers/",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes — most major conferences publish AI use disclosure policies (2023+)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based (typical 2025 conference norm)"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4 (disclosure-based)"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue."
+   ]
+  ],
+  "id": 2
+ },
+ {
+  "file": "psychology/personality-and-social-psychology-bulletin.md",
+  "field": "psychology",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "No (follows SAGE publisher default)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — conditional/disclosure-based (assistive use, e.g. language/grammar polishing, is exempt; generative use — content generation, literature review, code, data visualization — must be disclosed at submission)"
+   ],
+   [
+    "Leniency (1-5)",
+    "4"
+   ],
+   [
+    "Summary",
+    "Follows SAGE Group-wide AI policy (no PSPB-specific supplementary page found): AI use is split into \"assistive\" (grammar/language polishing — no disclosure required) and \"generative\" (content generation, literature review, code, data visualization — disclosure required at submission). AI cannot be listed as author. Explicitly prohibited: fabricating content/data/citations via AI, substituting AI for real interviews, presenting AI-generated images as genuine research data, undisclosed AI use, and reviewers/editors using AI to draft review reports or decision letters."
+   ]
+  ],
+  "id": 3
+ },
+ {
+  "file": "psychology/alzheimers-and-dementia.md",
+  "field": "psychology",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://onlinelibrary.wiley.com/page/journal/15525279/homepage/forauthors.html",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes (publisher default + may have journal overlay)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at journal author guidelines."
+   ]
+  ],
+  "id": 4
+ },
+ {
+  "file": "hci/electronic-workshops-in-computing-ewic.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://www.bcs.org/membership-and-registrations/member-communities/interaction-specialist-group/publications/",
+  "claims": [
+   [
+    "Type",
+    "Per-conference (not centrally defined by eWiC). eWiC is a BCS-published proceedings series; each hosted conference/workshop runs its own program committee and review process before eWiC publishes the resulting volume."
+   ]
+  ],
+  "id": 5
+ },
+ {
+  "file": "psychology/the-american-biology-teacher.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://www.ucpress.edu/about/ai-guidelines",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "No journal-specific AI policy page found for ABT itself; only the publisher-level policy from University of California Press (which owns/hosts ABT via online.ucpress.edu) was located. UC Press policy: AI cannot be listed/credited as an author; authors may use AI to improve readability/formatting/grammar of human-written text but must disclose such use to editors and be transparent in the manuscript; AI use to generate original text/images/data analysis requires disclosure; peer reviewers are strictly prohibited from using AI tools to compose review reports or from uploading manuscripts into AI tools (copyright violation); freelance contractors/editors may not use AI to generate original content for UC Press publications. This is publisher-wide, not confirmed as reproduced verbatim in ABT's own author guidelines (the ABT-specific author-guidelines PDF linked from bioone.org could not be opened/parsed in this session)."
+   ]
+  ],
+  "id": 6
+ },
+ {
+  "file": "philosophy/the-journal-of-value-inquiry.md",
+  "field": "philosophy",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://www.springernature.com/gp/policies/editorial-policies",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "2"
+   ],
+   [
+    "Summary",
+    "無期刊專屬 AI 政策，套用 Springer Nature 出版社統一規範：AI/LLM 不得列為作者；可用於語言潤飾/格式但不得用於生成或實質貢獻論文內容；若使用 LLM 需在 Methods（或替代章節）揭露；同儕審查者被要求不得將稿件上傳至生成式 AI 工具；不允許生成式 AI 圖像。此為 Springer 全站政策，未見 Journal of Value Inquiry 期刊層級的加嚴或放寬版本。"
+   ]
+  ],
+  "id": 7
+ },
+ {
+  "file": "hci/acm-pacm-imwut.md",
+  "field": "hci",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes (follows publisher default + may have journal-specific overlay)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at the journal's author guidelines."
+   ]
+  ],
+  "id": 8
+ },
+ {
+  "file": "hci/ieee-computer-graphics-and-applications.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://www.xueshu.com/sci/44355/08.html",
+  "claims": [
+   [
+    "Type",
+    "single-blind (依中文投稿社群回報,非官方頁面明文聲明)"
+   ]
+  ],
+  "id": 9
+ },
+ {
+  "file": "psychology/journal-of-social-and-personal-relationships.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "publisher層級政策(SAGE 通用,非期刊專屬頁面):區分「輔助型 AI」(潤飾自己文字,免揭露)與「生成型 AI」(直接生成內容,如文獻回顧/翻譯/程式碼,須於投稿時揭露並在方法或致謝中說明)。AI 不得列為作者。若編輯發現未揭露的生成式 AI 使用,保留隨時退稿的權利。未查到 JSPR 期刊專屬的加嚴或放寬條款,判斷為沿用 SAGE 通用政策(FACT,非逐字引用)。"
+   ]
+  ],
+  "id": 10
+ },
+ {
+  "file": "hci/codesign-international-journal-of-cocreation-in-design-and-the-arts.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://taylorandfrancis.com/our-policies/ai-policy/",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "This is Taylor & Francis's GROUP-WIDE policy, not a CoDesign-specific one (no journal-level AI policy page found). Fact: Generative AI tools cannot be listed as an author (cannot take accountability/hold copyright). Authors must disclose any GenAI use in the article via a statement naming the tool, version, and how/why it was used. Publisher frames permitted uses as copyediting/language refinement and non-native-English support, i.e. disclosure-gated use is allowed, not an outright ban. Primary policy page returned HTTP 403 on direct fetch; fact is corroborated across secondary summaries (Enago TANDF AI Guidelines page, university LibGuides) that quote the same requirement, so treated as reliable despite indirect access."
+   ]
+  ],
+  "id": 11
+ },
+ {
+  "file": "philosophy/erkenntnis.md",
+  "field": "philosophy",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://link.springer.com/journal/10670/submission-guidelines",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "期刊採用 Springer Nature 通用 AI 政策(non-journal-bespoke,但確認顯示於該刊投稿指南頁):LLM 不得列為作者(無法承擔究責);若用於內容生成/實質寫作需在 Methods 或替代章節揭露;僅供『潤色可讀性/文法』的 AI 輔助編輯不需揭露,但作者需對最終文字負全責。屬有條件許可(disclosure gate),非全面禁止也非完全開放。"
+   ]
+  ],
+  "id": 12
+ },
+ {
+  "file": "hci/mind-culture-and-activity.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://lchc.ucsd.edu/mca/Journal/instructions-to-authors.html",
+  "claims": [
+   [
+    "Type",
+    "Anonymous/blind peer review — journal's own Instructions to Authors states authors must submit a separate cover page with identifying info to enable anonymous review; T&F journal page also states \"All submissions go through an anonymous review process.\" Not explicitly labeled single- vs double-blind, but the cover-page mechanism indicates reviewer-blind-to-author (at minimum single-anonymous, likely double)."
+   ]
+  ],
+  "id": 13
+ },
+ {
+  "file": "psychology/journal-of-marital-and-family-therapy.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://onlinelibrary.wiley.com/page/journal/17520606/homepage/forauthors.html",
+  "claims": [
+   [
+    "Type",
+    "double-blind"
+   ]
+  ],
+  "id": 14
+ },
+ {
+  "file": "philosophy/bioethics.md",
+  "field": "philosophy",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://onlinelibrary.wiley.com/page/journal/14678519/homepage/forauthors.html",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "Journal-specific author guidelines (Section 10, \"Disclosing the Use of Artificial Intelligence (AI)\") state that if authors used AIGC tools (e.g. ChatGPT/LLMs) to develop any portion of a manuscript, use must be disclosed transparently and in detail in the Methods section, pointing to Wiley's publisher-wide Best Practice Guidelines on Research Integrity and Publishing Ethics for full policy. No Bioethics-specific restriction beyond disclosure was found (e.g. no statement banning AI use in idea generation or limiting it to language editing) — journal page just links out to the generic Wiley policy. Wiley's general policy (found via search summary, not directly fetched due to a 402 paywall block on authors.wiley.com) bars listing AI as author/co-author and requires disclosure; permits use for language/grammar, structural clarity, idea development, literature search assistance with transparent disclosure — hence scored as conditional/moderate leniency rather than strict ban or fully open."
+   ]
+  ],
+  "id": 15
+ },
+ {
+  "file": "psychology/omega-journal-of-death-and-dying.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://journals.sagepub.com/author-instructions/ome",
+  "claims": [
+   [
+    "Type",
+    "Double-anonymized (double-blind) peer review per SAGE submission guidelines PDF; manuscripts may be desk-rejected pre-review if out of scope or unsuitable."
+   ]
+  ],
+  "id": 16
+ },
+ {
+  "file": "conferences/hci/acm-chi-play.md",
+  "field": "hci",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://chiplay.acm.org/2026/calls/",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes — most major conferences publish AI use disclosure policies (2023+)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based (typical 2025 conference norm)"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4 (disclosure-based)"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue."
+   ]
+  ],
+  "id": 17
+ },
+ {
+  "file": "hci/acm-transactions-on-computing-education-toce.md",
+  "field": "hci",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://dl.acm.org/journal/toce/author-guidelines",
+  "claims": [
+   [
+    "Type",
+    "double-anonymous (double-blind)"
+   ]
+  ],
+  "id": 18
+ },
+ {
+  "file": "psychology/emotion.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://www.apa.org/pubs/journals/emo/submit",
+  "claims": [
+   [
+    "Type",
+    "Standard single-track peer review; double-masked (blind) review is optional and must be explicitly requested by authors at submission (opt-in, not default) — per Emotion's own submission guidelines."
+   ]
+  ],
+  "id": 19
+ },
+ {
+  "file": "physics/nature-physics.md",
+  "field": "physics",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes (follows publisher default + may have journal-specific overlay)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify current policy at the journal's author guidelines."
+   ]
+  ],
+  "id": 20
+ },
+ {
+  "file": "philosophy/the-monist.md",
+  "field": "philosophy",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://academic.oup.com/pages/for-authors/publishing-policies/author-use-of-artificial-intelligence",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "2"
+   ],
+   [
+    "Summary",
+    "此為 Oxford University Press 全出版社通用政策，非 The Monist 期刊專屬頁面（Monist 的 General Instructions 頁未提及 AI）。政策要點（依 WebSearch 摘要，非逐字引用）：生成式 AI 不得列為作者、不得承擔「主要著者責任」（產生論證、科學洞見、分析或結論）；若要在投稿中使用 AI 生成內容（含資料蒐集分析、圖表產製），須事先取得 OUP 書面許可（許可閘門=conditional）；允許不需許可的用途包括：圖片替代文字、文法拼字校對、翻譯核對、查核引用、產生摘要與關鍵詞、產生索引詞。作者對含 AI 生成內容的作品之準確性、完整性與原創性負全責。另一般說明頁提及 AI 使用需在投稿信與 Methods/Acknowledgements 中揭露。因為是出版社層級政策而非期刊客製化頁面，且未能直接 WebFetch 到原始頁面全文（頁面對自動抓取回傳導覽選單而非正文），故 signal_quality 定為 2。"
+   ]
+  ],
+  "id": 21
+ },
+ {
+  "file": "cognitive-science/journal-of-cognitive-neuroscience.md",
+  "field": "cognitive-science",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://direct.mit.edu/jocn/pages/submission-guidelines",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes — JoCN-specific policy supplementing MIT Press Journal Publication Ethics"
+   ],
+   [
+    "Explicit permission gate?",
+    "Conditional — permitted for language/clarity editing (author-verified) and synthetic/simulated data for methodological development (e.g. algorithm testing); prohibited for generating primary research data (incl. synthetic neuroimaging fMRI/EEG/MEG/fNIRS or fabricated statistical output) or unsupervised generation of substantive research content; agentic AI used for research tasks (e.g. code, data pipelines) must be disclosed in Methods with tool/model name"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "JoCN-specific AI policy (supplements MIT Press default): AI cannot be listed as author; author fully responsible for AI-assisted content; permitted uses limited to text polishing and synthetic data for method development; hard prohibition on AI-generated primary data/images and unsupervised substantive content generation; reviewers discouraged from using AI to evaluate manuscript science but may use it to polish review text, with mandatory disclosure visible only to the handling editor."
+   ]
+  ],
+  "id": 22
+ },
+ {
+  "file": "philosophy/nietzsche-studien.md",
+  "field": "philosophy",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://www.degruyterbrill.com/journal/key/niet/html",
+  "claims": [
+   [
+    "Type",
+    "Double-blind peer review; research articles normally reviewed by 2 external referees, a 3rd may be added if the first two reports don't allow a decision. Editors first screen for scope/fit, methodological soundness, and plagiarism before sending to review. Peer review phase 'normally' takes about 4–6 weeks per journal's own policy statement (may extend depending on submission volume) — this is a publisher-stated figure, not a first-hand reviewer-reported figure."
+   ]
+  ],
+  "id": 23
+ },
+ {
+  "file": "psychology/clinical-psychology-review.md",
+  "field": "psychology",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "No (follows Elsevier publisher default)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No outright pre-approval gate — conditional/disclosure-based: text-generation AI use is permitted subject to mandatory author disclosure; AI-generated/altered images are prohibited outright"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "Follows Elsevier generative AI policies: authors must declare AI use in manuscript preparation (statement before references). AI-generated/altered images prohibited unless AI is research method itself. AI cannot be authors. Reviewers/editors not permitted to use AI during peer review."
+   ]
+  ],
+  "id": 24
+ },
+ {
+  "file": "conferences/ml/aaai.md",
+  "field": "ml",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://aaai.org/aaai-conference/aaai-26/",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes — most major conferences publish AI use disclosure policies (2023+)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based (typical 2025 conference norm)"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4 (disclosure-based)"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue."
+   ]
+  ],
+  "id": 25
+ },
+ {
+  "file": "psychology/journal-of-behavior-therapy-and-experimental-psychiatry.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "此期刊未見獨立於 Elsevier 集團政策之特有 AI 規則(期刊本身 guide-for-authors 頁面回傳 403,無法直接驗證是否有加註)。適用 Elsevier 通用政策:作者可使用生成式 AI 輔助文字潤飾、結構整理、文獻綜整,但須在稿件中揭露(「Declaration of generative AI and AI-assisted technologies」聲明),不得用於捏造/竄改數據或研究影像,不得列 AI 為作者。編輯與審稿人被禁止將未發表稿件上傳至生成式 AI 工具,僅能用於潤飾審稿意見文字或背景文獻搜尋。政策標示為集團層級,且明言「依期刊而異,如有疑問請洽期刊」,故本則資訊屬集團預設值而非期刊特有確認。leniency 給 3 分(允許但需揭露、有明確使用邊界),非完全禁止亦非全開放。"
+   ]
+  ],
+  "id": 26
+ },
+ {
+  "file": "psychology/psychological-science.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "Peer Review",
+  "url": "https://www.psychologicalscience.org/publications/psychological_science/ps-submissions",
+  "claims": [
+   [
+    "Type",
+    "初審為匿名編輯分流（至少兩位編輯團隊成員閱讀已去識別化之稿件：一位為該領域專家 Associate Editor、一位為通才 Senior Editor/主編）；若任一初審者認為有錄取可能，則送兩位以上外部審稿人做延伸審查（extended review），由 Associate Editor 主責並撰寫決議信。條件式接受後另有 STAR（Statistics, Transparency, and Rigor）編輯查核透明度與可重製性。作者身分於初審階段去識別化。"
+   ]
+  ],
+  "id": 27
+ },
+ {
+  "file": "psychology/biological-psychiatry.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "2"
+   ],
+   [
+    "Summary",
+    "適用 Elsevier 通用政策(未見 Biological Psychiatry 專屬加嚴條款,BPS Guide for Authors PDF 為掃描/亂碼無法逐字核對)。作者:僅可用生成式 AI 潤飾語言/文法,不得用於生成論文內容、資料或圖像;須在正文參考文獻前以「Declaration of generative AI and AI-assisted technologies in the writing process」聲明揭露使用細節。審稿人/編輯:不得將投稿全文或部分上傳至 AI 工具(保密考量),僅能用私有 AI 工具做語言潤飾/文獻檢索,且審稿意見中須揭露使用。WebSearch 摘要另指出 Biological Psychiatry 明確要求論文須代表作者自身的想法、分析、詮釋與專業判斷,不得由 AI 生成全部或部分論文——但此句摘自 AI 搜尋引擎聚合結果,未能定位到期刊官方頁面逐字確認,故信心中等(leniency 定為 2,較嚴格,偏向僅允許語言潤飾)。"
+   ]
+  ],
+  "id": 28
+ },
+ {
+  "file": "psychology/sleep.md",
+  "field": "psychology",
+  "tier": "AI-Researched",
+  "section": "AI Policy",
+  "url": "https://academic.oup.com/sleep/pages/author-guidelines",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "*(see summary — defaults to publisher-level policy unless a journal-specific override was found)*"
+   ],
+   [
+    "Explicit permission gate?",
+    "conditional"
+   ],
+   [
+    "Leniency (1-5)",
+    "3"
+   ],
+   [
+    "Summary",
+    "AI use permitted for authors (e.g. content/image generation, code, data processing, translation) but must be disclosed in both the cover letter and the Methods/Acknowledgements section; AI tools cannot be listed as authors and are screened for in author lists. Reviewers are explicitly barred from using LLMs/AI as a substitute for their own expert judgment and must not upload manuscript content to any AI tool (confidentiality breach). This is SLEEP's own author-guidelines page, treated as journal-specific. Leniency scored 3/5: disclosure-gated 'yes with conditions' rather than an outright ban, but reviewer-side use is a hard no."
+   ]
+  ],
+  "id": 29
+ },
+ {
+  "file": "conferences/data-mining/www.md",
+  "field": "data-mining",
+  "tier": "Tier1/2",
+  "section": "AI Policy",
+  "url": "https://www2026.thewebconf.org/cfp.html",
+  "claims": [
+   [
+    "Has journal-specific AI policy?",
+    "Yes — most major conferences publish AI use disclosure policies (2023+)"
+   ],
+   [
+    "Explicit permission gate?",
+    "No — disclosure-based (typical 2025 conference norm)"
+   ],
+   [
+    "Leniency (1-5)",
+    "3-4 (disclosure-based)"
+   ],
+   [
+    "Summary",
+    "AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue."
+   ]
+  ],
+  "id": 30
+ }
+]

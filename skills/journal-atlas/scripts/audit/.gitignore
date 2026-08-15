@@ -1,0 +1,4 @@
+# Regenerated deterministically by sample_audit.py (416K, the full 518-pair
+# enumeration). audit_sample.json is committed instead: it pins exactly which
+# 30 pairs the audit adjudicated.
+audit_pairs.json
