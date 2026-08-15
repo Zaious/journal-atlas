@@ -148,9 +148,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (cell.com/trends/cognitive-sciences submission guidelines) and community-aggregator evidence (manusights.com) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (cell.com/trends/cognitive-sciences submission guidelines) and community-aggregator evidence (manusights.com) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 
@@ -287,9 +287,9 @@ Variable. For established cognitive-science synthesists: low — commissioning t
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | [Cognition](../psychology/cognition.md) | If recast as original empirical work; top cognitive-psychology venue; Elsevier |
+| 1 | [Cognition](cognition.md) | If recast as original empirical work; top cognitive-psychology venue; Elsevier |
 | 2 | [Journal of Cognitive Neuroscience](./journal-of-cognitive-neuroscience.md) | If the work has neuroscience grounding; cross-disciplinary scope |
-| 3 | [Journal of Experimental Psychology General](../psychology/journal-of-experimental-psychology-general.md) | If the work is a general-cognitive empirical synthesis; APA flagship |
+| 3 | [Journal of Experimental Psychology General](journal-of-experimental-psychology-general.md) | If the work is a general-cognitive empirical synthesis; APA flagship |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top empirical cognitive-science venue as "too synthesis-oriented / not enough original data," TiCS is often a better fit because: it specializes in review-essay synthesis; commissioning model rewards established expertise; and Cell Press flagship reputation provides high-prestige outlet for synthesis work.
 

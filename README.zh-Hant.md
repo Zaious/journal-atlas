@@ -602,7 +602,7 @@ SciRev 回傳 0 篇評論` 是一個正確的輸出。中文來源（小木虫�
 背後有多少證據、以及說「我沒有這方面的資料」。它做不到的：涵蓋學界的大部分、對
 399 篇裡的 236 篇講出任何可信的審稿文化、或取代一位真的在那裡發表過的同行。數字
 見[涵蓋範圍與收錄現況](#%e6%b6%b5%e8%93%8b%e7%af%84%e5%9c%8d%e8%88%87%e6%94%b6%e9%8c%84%e7%8f%be%e6%b3%81)，
-「做完」長什麼樣見 [PROJECT_COMPLETION.md](docs/PROJECT_COMPLETION.md)。
+「做完」長什麼樣見 [PROJECT_COMPLETION.md](docs/status/PROJECT_COMPLETION.md)。
 
 ### 覺得關於某期刊的描述有誤？
 

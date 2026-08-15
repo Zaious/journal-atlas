@@ -148,9 +148,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher metadata (University of Illinois Press) and historical-context inference gathered 2026-05. The American Journal of Psychology has a long history (founded 1887) but limited recent web-search yield on operational practices. **Lower-confidence entry**: deep evidence harvest not done; encourage community fill via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher metadata (University of Illinois Press) and historical-context inference gathered 2026-05. The American Journal of Psychology has a long history (founded 1887) but limited recent web-search yield on operational practices. **Lower-confidence entry**: deep evidence harvest not done; encourage community fill via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 
@@ -283,7 +283,7 @@ Reviewer pool likely composed of senior scholars in classical experimental psych
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | [Journal of Experimental Psychology General](./journal-of-experimental-psychology-general.md) | If the work is general-experimental psychology with broader implications |
+| 1 | [Journal of Experimental Psychology General](../cognitive-science/journal-of-experimental-psychology-general.md) | If the work is general-experimental psychology with broader implications |
 | 2 | [Cognition](../cognitive-science/cognition.md) | If the work has theoretical-cognitive advance |
 | 3 | [Review of General Psychology](./review-of-general-psychology.md) | If the work is integrative-historical psychology |
 

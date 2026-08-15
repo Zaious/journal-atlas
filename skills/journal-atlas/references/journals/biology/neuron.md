@@ -150,9 +150,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — The Soft Metadata below has been adapted from family-level reference material rather than journal-specific evidence harvesting. Structural data (Identity / Metrics / Format) is evidence-backed; subjective assessments (Reviewer Pool / Framing / Hard Blockers / Voice & Style) are community-estimate framings derived from venue-family conventions. Use `/ja-validate` if you've submitted to this specific journal to upgrade individual claims with first-hand evidence. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton -> Tier 2 -> Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — The Soft Metadata below has been adapted from family-level reference material rather than journal-specific evidence harvesting. Structural data (Identity / Metrics / Format) is evidence-backed; subjective assessments (Reviewer Pool / Framing / Hard Blockers / Voice & Style) are community-estimate framings derived from venue-family conventions. Use `/ja-validate` if you've submitted to this specific journal to upgrade individual claims with first-hand evidence. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton -> Tier 2 -> Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 

@@ -643,7 +643,7 @@ on this." What it cannot do: cover most of the academy, tell you anything
 trustworthy about reviewer culture at 236 of its 399 entries, or replace one
 colleague who has published there. See
 [Coverage and Inclusion Status](#coverage-and-inclusion-status) for the numbers,
-and [PROJECT_COMPLETION.md](docs/PROJECT_COMPLETION.md) for what finished would
+and [PROJECT_COMPLETION.md](docs/status/PROJECT_COMPLETION.md) for what finished would
 look like.
 
 ### Think a claim about your journal is wrong?

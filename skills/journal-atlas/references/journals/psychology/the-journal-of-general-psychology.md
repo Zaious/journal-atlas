@@ -7,7 +7,7 @@
 > **Last verified**: 2026-07-13
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **1/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: AI-researched, overall signal_quality **1/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ---
 
@@ -158,7 +158,7 @@
 ## Soft Metadata
 
 > [!NOTE]
-> **AI-Researched (2026-07-13)** — the fields below were researched per-journal from public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎) rather than adapted from a family-level template. Every populated field cites its source; fields with no public evidence were left `(pending)` rather than estimated — see "AI-Research Notes" at the end of this section for exactly what was checked and why any field is blank. This entry's overall `signal_quality` is **1/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md).
+> **AI-Researched (2026-07-13)** — the fields below were researched per-journal from public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎) rather than adapted from a family-level template. Every populated field cites its source; fields with no public evidence were left `(pending)` rather than estimated — see "AI-Research Notes" at the end of this section for exactly what was checked and why any field is blank. This entry's overall `signal_quality` is **1/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ### Epistemological & Political Leanings
 
@@ -237,7 +237,7 @@
 
 ## Strategic Notes
 
-> Not part of this pipeline's research scope — these require either deep evidence-harvesting or community contribution. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).
+> Not part of this pipeline's research scope — these require either deep evidence-harvesting or community contribution. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md).
 
 ### Hard Blockers
 

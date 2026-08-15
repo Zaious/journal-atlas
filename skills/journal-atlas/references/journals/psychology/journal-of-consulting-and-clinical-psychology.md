@@ -148,9 +148,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (apa.org/pubs/journals/ccp) and community-aggregator evidence (editage.com) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (apa.org/pubs/journals/ccp) and community-aggregator evidence (editage.com) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 
@@ -288,7 +288,7 @@ Low for RCT-tradition clinical authors. Moderate for non-RCT empirical authors �
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Clinical Psychology Review](./clinical-psychology-review.md) | If recast as systematic review / meta-analysis; Elsevier; clinical-review specialty |
-| 2 | [Journal of Abnormal Psychology](./journal-of-abnormal-psychology.md) | If the work has psychopathology / mechanism focus; APA family |
+| 2 | [Journal of Psychopathology and Clinical Science](./journal-of-psychopathology-and-clinical-science.md) | If the work has psychopathology / mechanism focus; APA family (titled *Journal of Abnormal Psychology* until 2022) |
 | 3 | [Journal of Child Psychology and Psychiatry](./journal-of-child-psychology-and-psychiatry.md) | If the work is child/adolescent focused; ACAMH/Wiley |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top general clinical-psychology venue as "too specialty-focused," JCCP is often a better fit because: it specializes in clinical-treatment outcome research with deep reviewer-pool expertise; RCT-friendly editorial culture; and APA Division 12 affiliation provides built-in clinical audience.

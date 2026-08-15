@@ -44,6 +44,6 @@ Single-question demos (e.g. "give me one journal recommendation") are less usefu
 
 ## How these relate to the test suite
 
-[`E2E_TEST_GUIDE.md`](../E2E_TEST_GUIDE.md) (kept in the workspace, not committed) defines the six scenarios that every release should pass. Each case study here is anchored to one or more of those scenarios so reviewers can verify the skill's behavior hasn't regressed.
+[`E2E_TEST_GUIDE.md`](../../E2E_TEST_GUIDE.md) (kept in the workspace, not committed) defines the six scenarios that every release should pass. Each case study here is anchored to one or more of those scenarios so reviewers can verify the skill's behavior hasn't regressed.
 
 The first use case (Self-state Dynamics) covers all six scenarios end-to-end.

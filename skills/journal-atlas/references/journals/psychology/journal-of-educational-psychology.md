@@ -148,9 +148,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (apa.org/pubs/journals/edu, Registered Reports submission guide) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (apa.org/pubs/journals/edu, Registered Reports submission guide) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 
@@ -286,7 +286,7 @@ Low for educational-psychology empirical authors. Moderate for cross-disciplinar
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [Developmental Psychology](./developmental-psychology.md) | If the work focuses on developmental processes; APA family |
-| 2 | [Journal of Experimental Psychology General](./journal-of-experimental-psychology-general.md) | If the work has general cognitive-experimental angle |
+| 2 | [Journal of Experimental Psychology General](../cognitive-science/journal-of-experimental-psychology-general.md) | If the work has general cognitive-experimental angle |
 | 3 | *(other educational-research journals — community contribution welcome)* | Authors can also consider Educational Researcher, AERA Open, Learning and Instruction (Elsevier) |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top general-psychology venue as "too applied / too education-focused," J Edu Psych is often a better fit because: it specializes in educational psychology with deep reviewer-pool expertise; learning and achievement frameworks are the journal's native scope; and APA Division 15 affiliation provides built-in audience.

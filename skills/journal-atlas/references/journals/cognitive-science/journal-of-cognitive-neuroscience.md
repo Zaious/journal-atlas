@@ -148,9 +148,9 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (direct.mit.edu/jocn submission guidelines) and Wikipedia editorial information gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (direct.mit.edu/jocn submission guidelines) and Wikipedia editorial information gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
-> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md) for guidance.
+> **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 
 ### Epistemological & Political Leanings
 
@@ -287,7 +287,7 @@ Low for cognitive-neuroscience tradition authors. Preregistered Research Reports
 |------|---------|------------------------|
 | 1 | [Cognition](./cognition.md) | If recast as behavioral cognitive work; Elsevier; broader cognitive-psychology scope |
 | 2 | [Trends in Cognitive Sciences](./trends-in-cognitive-sciences.md) | If reframed as theoretical synthesis (pre-submission proposal track); Cell Press |
-| 3 | [Journal of Experimental Psychology General](../psychology/journal-of-experimental-psychology-general.md) | If general-cognitive empirical without neural measurement |
+| 3 | [Journal of Experimental Psychology General](journal-of-experimental-psychology-general.md) | If general-cognitive empirical without neural measurement |
 
 **Reverse direction** *(optional)*: If your paper was rejected from a top cognitive-psychology venue as "too neural-focused," JoCN is often a better fit because: it specializes in cognitive-neuroscience bridging studies; Preregistered Research Reports option provides publication-bias-resistant track; and Cognitive Neuroscience Society affiliation provides built-in audience.
 

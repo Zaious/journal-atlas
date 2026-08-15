@@ -147,7 +147,7 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Specific journal may diverge; submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Tier 2 (community estimate)** — Soft Metadata below adapted from ACM HCI Transactions family conventions (TOHRI / TACCESS / TOCHI editorial norms). Specific journal may diverge; submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
 
 ### Epistemological & Political Leanings
 
@@ -272,7 +272,7 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
 | 1 | [ACM ASSETS conference proceedings](../conferences/hci/acm-assets.md) | Premier accessibility conference |
-| 2 | [Universal Access in the Information Society](./universal-access-in-the-information-society.md) | Springer accessibility peer journal |
+| 2 | [Universal Access in the Information Society](../psychology/universal-access-in-the-information-society.md) | Springer accessibility peer journal |
 | 3 | [ACM CHI](../conferences/hci/acm-chi.md) | Broader HCI venue; if HCI contribution dominates |
 
 ---
