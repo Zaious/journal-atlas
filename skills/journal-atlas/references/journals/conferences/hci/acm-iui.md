@@ -75,10 +75,10 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes — most major conferences publish AI use disclosure policies (2023+) |
-| **Explicit permission gate?** | No — disclosure-based (typical 2025 conference norm) |
-| **Leniency (1-5)** | 3-4 (disclosure-based) |
-| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue. |
+| **Has journal-specific AI policy?** | *(pending — withdrawn 2026-08-15, see Summary)* |
+| **Explicit permission gate?** | *(pending — withdrawn 2026-08-15, see Summary)* |
+| **Leniency (1-5)** | *(pending — withdrawn 2026-08-15, see Summary)* |
+| **Summary** | *(pending — claim withdrawn 2026-08-15.)* This entry previously carried a family-level template asserting that "most major conferences publish AI use disclosure policies (2023+)". That is a generalisation about conferences, not a fact about this venue, and the linked page is the venue's own call for papers or homepage rather than a source for the claim. The [entailment audit](../../../../../../docs/ENTAILMENT_AUDIT.md) found that for some venues in this group the linked page states no AI policy at all, and for others it no longer resolves. The claim was therefore withdrawn rather than re-estimated. Conference AI policies are set per year: read the call for papers for the year you are submitting to. A contributor who has done so can fill this in via `/ja-contribute`. |
 | **Source URL** | https://iui.acm.org/2026/call_for_papers.html |
 
 ### Preprint Policy

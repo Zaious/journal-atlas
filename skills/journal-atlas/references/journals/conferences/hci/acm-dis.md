@@ -75,10 +75,10 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Yes — most major conferences publish AI use disclosure policies (2023+) |
-| **Explicit permission gate?** | No — disclosure-based (typical 2025 conference norm) |
-| **Leniency (1-5)** | 3-4 (disclosure-based) |
-| **Summary** | AI-assisted writing typically requires acknowledgment; AI listed as author prohibited; verify per-year CFP for the venue. |
+| **Has journal-specific AI policy?** | Yes — DIS 2026 states its own LLM policy in the call for papers, in addition to the ACM Policy on Authorship it defers to. |
+| **Explicit permission gate?** | No — marking/disclosure based. |
+| **Leniency (1-5)** | 3 — permitted, but any use beyond editing the author's own text must be marked, and violations risk desk rejection. |
+| **Summary** | Verbatim from the DIS 2026 call for papers: "Text generated from a large-scale language model (LLM), such as ChatGPT, must be clearly marked where such tools are used for purposes beyond editing the author's own text." The page directs authors to the ACM Policy on Authorship (updated 2025-09-16) and to a SIGCHI blog post on acknowledging such use, and states that submissions violating the policy risk desk rejection. Retrieved and quoted 2026-08-15 during the [entailment audit](../../../../../../docs/ENTAILMENT_AUDIT.md); this replaces a family-level template that the audit found unsupported for other venues in its group. |
 | **Source URL** | https://dis.acm.org/2026/calls/papers/ |
 
 ### Preprint Policy

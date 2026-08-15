@@ -52,9 +52,12 @@ did is a separate question from whether the evidence was thin.
 
 ### Finding 1 — the failures are not spread out; they are one template
 
-Both unsupported claims, and the one dead link, come from the same Tier-2 conference
+*Findings below describe the corpus as audited on 2026-08-15. Action 1 has since
+been applied; see Actions.*
+
+Both unsupported claims, and the one dead link, came from the same Tier-2 conference
 template. Four sampled conference entries (AAAI, ACM DIS, ACM CHI PLAY, TheWebConf)
-carry a byte-identical AI Policy summary:
+carried a byte-identical AI Policy summary — as, it turned out, did 14 others:
 
 > AI-assisted writing typically requires acknowledgment; AI listed as author
 > prohibited; verify per-year CFP for the venue.
@@ -63,7 +66,7 @@ cited to the venue's own homepage or CFP. For **ACM DIS** the cited page does ca
 policy ("Text generated from a large-scale language model (LLM) … must be clearly
 marked …"), so the claim is entailed. For **AAAI-26** the cited page says nothing
 about AI at all. For **TheWebConf 2026** the cited URL 404s. And the field the
-template fills — *"Has journal-specific AI policy?"* — is answered
+template filled — *"Has journal-specific AI policy?"* — was answered
 *"Yes — most major conferences publish AI use disclosure policies (2023+)"*, which is
 a generalisation about conferences, not a fact about the cited venue.
 
@@ -126,16 +129,35 @@ Worth recording, because the failure cases are more quotable than the successes:
 
 ## Actions
 
-1. Retire the Tier-2 conference AI-policy template. A field that says "most major
-   conferences" is not a claim about the venue; it should be `(pending)`.
-2. Separate `Source URL` (where someone looked) from `Evidence URL` (what the claim
-   rests on), so an unproductive check stops reading as a citation.
-3. Record retrieval status alongside each source, and re-check on a schedule. A 404
-   after thirteen months is not rare, it is the base rate.
-4. Reconcile the two Elsevier leniency scores.
+**1. Retire the Tier-2 conference AI-policy template — DONE 2026-08-15.**
+A field that says "most major conferences" is not a claim about the venue. All 18
+entries carrying the template had their AI Policy claims withdrawn to `(pending)`
+with the reason recorded in place, except ACM DIS, whose cited page does state a
+policy; that one was filled in with the verbatim quote retrieved during this audit.
+Withdrawing an unsupported claim needs no new research and cannot introduce a new
+error, which is why it was safe to do immediately; re-estimating the other 17 would
+have repeated the mistake being corrected. Conference AI policies are set per year,
+so the recorded blank tells the reader to check the relevant year's call for papers.
 
-None of these were done before submission; they are recorded here as the audit's
-output, not as completed work.
+Withdrawal reduced the checkable claim–source population from 518 pairs across 358
+entries to **501 across 341**. Corpus validation: 399/399 structural pass, content
+lint unchanged against baseline, and the scoring path is unaffected — the AI-policy
+fields feed a hard-constraint gate rather than a scored dimension, so venues with a
+now-`(pending)` gate stop being eliminated on absence of evidence, which is the
+conservative behaviour.
+
+**2. Separate `Source URL` (where someone looked) from `Evidence URL` (what the
+claim rests on)** — not done. Touches the schema and all 399 entries.
+
+**3. Record retrieval status alongside each source, and re-check on a schedule** —
+not done. A 404 after thirteen months is not rare, it is the base rate.
+
+**4. Reconcile the Elsevier leniency scores** — not done. 37 entries defer to
+Elsevier's publisher-wide policy and at least two score its leniency differently
+(3 vs 2); the full spread has not been measured.
+
+Actions 2 and 3 are schema changes and are recorded here as the audit's output, not
+as completed work.
 
 ## Reproducing this
 
