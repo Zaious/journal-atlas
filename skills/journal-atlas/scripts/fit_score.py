@@ -910,20 +910,30 @@ def compute_score(
     observed = sum(known[k] * weights[k] for k in known) / total_weight
 
     # Shrink toward a neutral prior in proportion to how much evidence is
-    # missing. Renormalising alone swapped one bias for another: with the
-    # invented neutrals gone, entries scored on very little data floated to
-    # the top, because "the two things we know look good" beat "all six
-    # things are known and mostly good". Conference entries at 45% coverage
-    # outranked journals at 70%.
+    # missing, but only when doing so LOWERS the score. Renormalising alone
+    # swapped one bias for another: with the invented neutrals gone, entries
+    # scored on very little data floated to the top, because "the two things
+    # we know look good" beat "all six things are known and mostly good".
+    # Conference entries at 45% coverage outranked journals at 70%.
+    #
+    # The one-sidedness is the whole point and was missing until 2026-08-14.
+    # Symmetric shrinkage fixes the good-but-unknown case and creates its
+    # mirror: a venue whose known dimensions score 0 on 20% coverage lands at
+    # 0.2*0 + 0.8*50 = 40, above a venue known across every dimension to
+    # score 35. "Almost certainly wrong for you, but nobody checked" would
+    # outrank "checked, and mediocre". Uncertainty would be promoting a
+    # candidate, which is the one thing it must never do here: acting on a
+    # recommendation costs the author a submission cycle, while missing one
+    # costs a candidate they can still see ranked below. So the prior may
+    # pull a score down and may never push one up.
     #
     # This is not the old neutral by another name. It applies once, at the
     # aggregate, in proportion to measured coverage, and leaves a
     # fully-evidenced entry untouched — whereas the old constants were baked
     # into each dimension and applied equally no matter how much was known.
-    # The claim it encodes is only that a confident-looking number resting on
-    # a third of the evidence should not outrank a solid one.
     coverage = score_coverage(dims, weights)
-    return coverage * observed + (1 - coverage) * SHRINKAGE_PRIOR, dims
+    shrunk = coverage * observed + (1 - coverage) * SHRINKAGE_PRIOR
+    return min(observed, shrunk), dims
 
 
 def score_coverage(dims: dict[str, Optional[float]], weights: dict[str, float]) -> float:

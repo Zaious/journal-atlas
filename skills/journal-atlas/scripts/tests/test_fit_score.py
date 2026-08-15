@@ -637,3 +637,42 @@ def test_strategic_is_unknown_when_nothing_speaks():
 def test_strategic_placeholder_sections_are_not_treated_as_content():
     content = "### Hard Blockers\n\n*(pending)*\n"
     assert fit_score._extract_strategic_text(content, "Hard Blockers") is None
+
+
+# ---------- shrinkage is one-sided (2026-08-14) ----------
+
+
+def test_uncertainty_never_promotes_a_candidate():
+    """Symmetric shrinkage toward 50 had a mirror failure nobody had named:
+    a venue scoring 0 on 20% coverage landed at 40, above a venue known
+    across every dimension to score 35. "Almost certainly wrong, but nobody
+    checked" outranked "checked, and mediocre". Acting on a recommendation
+    costs a submission cycle; missing one costs a candidate still visible
+    further down the list. So the prior may lower a score and never raise
+    one."""
+    def scored(observed, coverage):
+        shrunk = coverage * observed + (1 - coverage) * fit_score.SHRINKAGE_PRIOR
+        return min(observed, shrunk)
+
+    bad_and_unknown = scored(0.0, 0.2)
+    mediocre_and_known = scored(35.0, 1.0)
+    assert bad_and_unknown == 0.0
+    assert bad_and_unknown < mediocre_and_known
+
+
+def test_the_original_over_optimism_is_still_corrected():
+    """The one-sidedness must not undo what shrinkage was added for: a
+    strong-looking score resting on a third of the evidence still gets pulled
+    down toward the prior."""
+    def scored(observed, coverage):
+        shrunk = coverage * observed + (1 - coverage) * fit_score.SHRINKAGE_PRIOR
+        return min(observed, shrunk)
+
+    assert scored(90.0, 0.3) == 62.0
+    assert scored(75.0, 1.0) == 75.0
+
+
+def test_shrinkage_leaves_a_fully_evidenced_entry_untouched():
+    paper = fit_score.Paper(topics=["embodied cognition"], methodology="autoethnography")
+    dims = {k: 60.0 for k in fit_score.DEFAULT_WEIGHTS}
+    assert fit_score.score_coverage(dims, fit_score.DEFAULT_WEIGHTS) == 1.0
