@@ -40,7 +40,7 @@ did is a separate question from whether the evidence was thin.
 
 ## Results
 
-**Of the 19 pairs whose source could be retrieved, 15 were supported (79%).**
+**Eighteen of the thirty sources were retrieved. Of those, 15 entailed the claim (83%).** The other twelve were never read: eleven blocked to an automated client, one dead.
 
 | Verdict | n | % of 30 |
 |---|---:|---:|
@@ -50,13 +50,13 @@ did is a separate question from whether the evidence was thin.
 | Dead (404) | 1 | 3% |
 | Not retrievable | 11 | 37% |
 
-### Finding 1 — the failures are not spread out; they are one template
+### Finding 1 — most of the failures are one template
 
 *Findings below describe the corpus as audited on 2026-08-15. Action 1 has since
 been applied; see Actions.*
 
-Both unsupported claims, and the one dead link, came from the same Tier-2 conference
-template. Four sampled conference entries (AAAI, ACM DIS, ACM CHI PLAY, TheWebConf)
+One of the two unsupported claims, and the dead link, came from the same Tier-2
+conference template; the other is a separate case, in Finding 3. Four sampled conference entries (AAAI, ACM DIS, ACM CHI PLAY, TheWebConf)
 carried a byte-identical AI Policy summary — as, it turned out, did 14 others:
 
 > AI-assisted writing typically requires acknowledgment; AI listed as author
@@ -92,11 +92,13 @@ Eleven of thirty cited pages could not be read by an automated client on 2026-08
 Nature Portfolio and SpringerLink were reachable only after following an identity-provider
 redirect that a naive fetch does not survive.
 
-This is not a defect of the corpus. It is a property of the scholarly web, and it has
-a consequence the corpus must own: **a provenance link the reader's agent cannot
-follow is not, operationally, provenance.** Any project that cites publisher policy
-pages inherits this, including every journal-recommendation tool that claims to work
-from publisher data.
+This is not a defect of the corpus, and it is not evidence that the sources are
+wrong: a 402 or 403 says nothing about whether the page exists, whether a human
+reader can open it, or whether it supports the claim. What it defeats is automated
+verification. The consequence the corpus must own is narrower than it first looks and
+still matters: **a provenance link the reader's agent cannot retrieve is not
+machine-verifiable provenance for that workflow.** Tools that depend on automated
+retrieval from publisher policy pages inherit the same failure mode.
 
 ### Finding 3 — the declaration discipline mostly held
 
