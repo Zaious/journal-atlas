@@ -5,7 +5,7 @@
 # Journal of Psychopathology and Clinical Science
 
 > ⚠️ **Renamed in 2022**: Formerly *Journal of Abnormal Psychology*. Editorial decision driven by anti-stigma framing — see Wikipedia / APA editorial.
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -37,14 +37,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 352 | 2026-05-16 |
+| **h-index** | 354 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.00 | 2026-05-16 |
-| **i10-index** | 5671 | 2026-05-16 |
-| **Total Works** | 7266 | 2026-05-16 |
+| **i10-index** | 5673 | 2026-09-01 |
+| **Total Works** | 7216 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -309,3 +309,4 @@ Low for clinical-science mechanism authors aligned with open-science values. Mod
 | 2026-05-16 | Renamed entry from journal-of-abnormal-psychology.md to journal-of-psychopathology-and-clinical-science.md (per 2022 official rename). H1 updated; rename note added at top. | internal research |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05). Sidecar entry references former name "Journal of Abnormal Psychology"; 2022 rename to current title noted. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

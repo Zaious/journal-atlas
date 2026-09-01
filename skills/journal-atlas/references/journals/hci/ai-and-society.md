@@ -2,7 +2,7 @@
 
 # AI & Society
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 94 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 1,069 | 2026-05-13 (OpenAlex) |
+| **h-index** | 98 | 2026-09-01 |
+| **i10-index** | 1173 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.59 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 3,607 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 4067 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -311,3 +311,4 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

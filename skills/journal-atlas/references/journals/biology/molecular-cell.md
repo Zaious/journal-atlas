@@ -3,7 +3,7 @@
 
 # Molecular Cell
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -35,14 +35,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 530 | 2026-05-16 |
+| **h-index** | 535 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 12.09 | 2026-05-16 |
-| **i10-index** | 8654 | 2026-05-16 |
-| **Total Works** | 10552 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 13.59 | 2026-09-01 |
+| **i10-index** | 8735 | 2026-09-01 |
+| **Total Works** | 10634 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -255,3 +255,4 @@ Descriptive studies; bioinformatics-only work without wet-lab validation; single
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Cell Press family (MIT) | @cardinal |
 | 2026-05-16 | Soft Metadata adapted at family level (Reviewer Pool / Framing / Voice / Hard Blockers / Best & Not Recommended For) — data adapted from ScienceClaw venue-templates reviewer_expectations.md + cell_press_style.md (MIT) | @cardinal |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

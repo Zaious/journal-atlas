@@ -2,7 +2,7 @@
 
 # Proceedings of the ACM on Human-Computer Interaction — CSCW (PACM CSCW)
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Proceedings-Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(not yet JCR-indexed; CSCW papers tracked via h-index)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~80+ | 2026-05-17 |
+| **h-index** | 105 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *Historical only, not current*: CSCW main track ~25–36% (2013–2019; openaccept.org, verified 2026-07-20 as 24.87%–35.64%) — predates CSCW's shift to rolling/multi-round review, so not representative of the current cycle. Other PACM HCI tracks vary independently and are not officially unified: MobileHCI 2025 track ~27.2% (147 submissions, 40 accepted); ISS/ETRA-adjacent special issues ~30%. No official post-rolling-review acceptance-rate figure has been published as of this verification. | 2026-07-20 |
 | **Desk Rejection Rate** | CSCW track only, 2026-cycle projection (official ACM CSCW process page — not a community estimate): ~15–20% desk-rejected at first round; a further ~30% rejected at the assisted-desk-reject stage; ~50% proceed to external review | 2026-07-13 |
@@ -289,3 +289,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Metrics > Acceptance Rate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM SIGCHI conference family conventions (CHI / CSCW / UbiComp norms applied in proceedings-journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

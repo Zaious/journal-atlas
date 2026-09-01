@@ -4,7 +4,7 @@
 
 # Journal of Child Psychology and Psychiatry
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -36,14 +36,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 344 | 2026-05-16 |
+| **h-index** | 346 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | ~50% of submissions rejected without external review, typically within the first week of submission (source: JCPP Author Guidelines, ACAMH/Wiley) | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.64 | 2026-05-16 |
-| **i10-index** | 4951 | 2026-05-16 |
-| **Total Works** | 7872 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 4.35 | 2026-09-01 |
+| **i10-index** | 4982 | 2026-09-01 |
+| **Total Works** | 7938 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -307,3 +307,4 @@ Low for child-psychiatry research authors with strong methodology and data-shari
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

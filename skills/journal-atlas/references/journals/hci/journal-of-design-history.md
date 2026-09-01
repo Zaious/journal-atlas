@@ -2,7 +2,7 @@
 
 # Journal of Design History
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(Q1 in design-history field per SCImago; not separately JCR-indexed)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~30+ | 2026-05-17 |
+| **h-index** | 61 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -285,3 +285,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Explicit permission gate? / Leniency (1-5) / Source URL. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

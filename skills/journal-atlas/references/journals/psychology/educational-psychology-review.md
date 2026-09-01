@@ -4,7 +4,7 @@
 
 # Educational Psychology Review
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -36,14 +36,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 208 | 2026-05-16 |
+| **h-index** | 214 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 11.59 | 2026-05-16 |
-| **i10-index** | 1050 | 2026-05-16 |
-| **Total Works** | 1500 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 14.47 | 2026-09-01 |
+| **i10-index** | 1077 | 2026-09-01 |
+| **Total Works** | 1543 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -302,3 +302,4 @@ Moderate. Integrative-review writing demands extensive engagement with multiple 
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + educational-psychology review editorial culture domain knowledge | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

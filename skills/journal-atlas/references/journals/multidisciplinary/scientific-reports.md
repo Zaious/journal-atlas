@@ -2,7 +2,7 @@
 
 # Scientific Reports
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | 3.8 (2024 JCR) | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~470+ | 2026-05-17 |
+| **h-index** | 464 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -249,3 +249,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 |------|--------|----|
 | 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from OA generalist family conventions (Scientific Reports / PLOS ONE / Heliyon norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

@@ -2,7 +2,7 @@
 
 # International Journal of Human-Computer Studies
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 192 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 2,081 | 2026-05-13 (OpenAlex) |
+| **h-index** | 193 | 2026-09-01 |
+| **i10-index** | 2128 | 2026-09-01 |
 | **2-Year Mean Citedness** | 4.51 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 3,186 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 3254 | 2026-09-01 |
 | **Impact Factor** | *(pending — JCR-indexed, IF ~5 estimated)* | |
 | **5-Year IF** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
@@ -310,3 +310,4 @@ Low for cognitive-engineering empirical authors. Moderate for design-research or
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Elsevier defaults. APC and 24-month AAM embargo confirmed. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

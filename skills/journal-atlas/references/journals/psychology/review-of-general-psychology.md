@@ -2,7 +2,7 @@
 
 # Review of General Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 158 | 2026-05 (OpenAlex) |
-| **i10-index** | 690 | 2026-05 (OpenAlex) |
+| **h-index** | 160 | 2026-09-01 |
+| **i10-index** | 699 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.10 | 2026-05 (OpenAlex) |
-| **Total Works** | 962 | 2026-05 (OpenAlex) |
+| **Total Works** | 979 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -301,3 +301,4 @@ Low for well-framed integrative work. Authors typically invest ~1 revision sessi
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

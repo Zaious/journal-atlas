@@ -3,7 +3,7 @@
 
 # IEEE Access
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -35,14 +35,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 362 | 2026-05-16 |
+| **h-index** | 374 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | ~20% (IEEE Access 官方「At a Glance」統計:"Average Acceptance Rate: 20%"; 注意:社群/二手來源估計偏高,manusights ~27%、AI研究補充引述中文論壇 ~30%〔近年由~50%降至~30%〕,可能反映歷史或非官方推估,以官方數字為準). Source: https://ieeeaccess.ieee.org/about/, https://ieeeaccess.ieee.org/about/rapid-peer-review/ | 2026-07-20 |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 5.09 | 2026-05-16 |
-| **i10-index** | 52572 | 2026-05-16 |
-| **Total Works** | 108195 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 6.10 | 2026-09-01 |
+| **i10-index** | 55340 | 2026-09-01 |
+| **Total Works** | 111822 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -306,3 +306,4 @@ Low for engineering-tradition authors. APC ($1,950+ range) is a barrier for low-
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (ieeeaccess.ieee.org) + community aggregators (manusights, scirev) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > IEEE Access (MIT) | @cardinal |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

@@ -4,7 +4,7 @@
 
 # Proceedings of the American Catholic Philosophical Association
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **1/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 23 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 24 | 2026-09-01 |
 | **2-Year Mean Citedness** | 0.00 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | No first-hand acceptance-rate data found; Wikipedia states only that 'the acceptance rate varies depending on the number of papers submitted.' Structurally, the review pipeline is fast for an academic venue: submission deadline 30 April, decision communicated by 31 July of the same year (~3 months) -- but this is the conference-acceptance timeline, not a standalone journal manuscript review-to-publication timeline, since the paper is only published in the Proceedings after being delivered at the Nov conference. | AI research (see Reviewer Pool Characteristics sources) |
@@ -243,3 +243,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 1/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

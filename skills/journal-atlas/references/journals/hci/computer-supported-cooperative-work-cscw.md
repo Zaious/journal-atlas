@@ -4,7 +4,7 @@
 
 # Computer Supported Cooperative Work (CSCW)
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -41,9 +41,9 @@
 | **Acceptance Rate** | *(no numeric rate found)* — aggregators describe it as high/easy: LetPub rates "平均录用比例：容易" (average acceptance ratio: easy); a separate Chinese ranking-guide aggregator states "录用比例很高，投稿比较容易，但影响因子不算高" (very high acceptance ratio, comparatively easy to get accepted, though IF is not high). Directional aggregator characterization only, not a publisher-disclosed or first-hand figure. | AI-research draft, signal quality 3/5, 2026-07-13 |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.02 | 2026-05-16 |
-| **i10-index** | 570 | 2026-05-16 |
-| **Total Works** | 879 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.63 | 2026-09-01 |
+| **i10-index** | 575 | 2026-09-01 |
+| **Total Works** | 883 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -300,3 +300,4 @@ Low for CSCW tradition authors. CSCW journal (Springer JCSCW) distinct from PACM
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + CSCW / ECSCW community editorial culture domain knowledge | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (two_yr_citedness, i10_index, works_count) | @bot |

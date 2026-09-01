@@ -2,7 +2,7 @@
 
 # Transactions of the Association for Computational Linguistics
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(tracked via ACL community h-index; not separately JCR-indexed)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~80+ | 2026-05-17 |
+| **h-index** | 106 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate; varies by year)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -284,3 +284,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy (整節：Has journal-specific policy? / Explicit permission gate? / Source URL); Policies > Preprint Policy > Pre-submission / Under review rows. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACL community conventions (TACL editorial norms + ACL/EMNLP/NAACL review culture in journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

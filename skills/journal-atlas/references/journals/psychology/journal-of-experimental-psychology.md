@@ -21,7 +21,7 @@
 >
 > This entry is retained as a **cross-reference index** for authors who think of "JEP" as a single venue. Use it to navigate to the correct successor; do not attempt submission here.
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -53,14 +53,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 205 | 2026-05-16 |
+| **h-index** | 206 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.00 | 2026-05-16 |
-| **i10-index** | 4732 | 2026-05-16 |
-| **Total Works** | 7622 | 2026-05-16 |
+| **i10-index** | 4747 | 2026-09-01 |
+| **Total Works** | 7647 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -300,3 +300,4 @@ N/A — historical reference only.
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata upgraded to Tier 2 as HISTORICAL CROSS-REFERENCE INDEX — preserved IMPORTANT banner; clarified that this is the pre-1975 historical journal and routed users to successor JEP titles. | @Zaious |
 | 2026-05-16 | Marked HISTORICAL — JEP was split into 5 successors in 1975. Entry retained as cross-reference index pointing to the correct successor for submission. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

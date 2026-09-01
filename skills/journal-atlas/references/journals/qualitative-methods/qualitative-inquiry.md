@@ -2,7 +2,7 @@
 
 # Qualitative Inquiry
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,11 +30,11 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 141 | 2026-05 (OpenAlex) |
-| **i10-index** | 1,272 | 2026-05 (OpenAlex) |
+| **h-index** | 142 | 2026-09-01 |
+| **i10-index** | 1287 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.67 | 2026-05 (OpenAlex) |
 | **Total Citations** | 108,853 | 2026-05 (OpenAlex) |
-| **Total Works** | 2,831 | 2026-05 (OpenAlex) |
+| **Total Works** | 2852 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -303,3 +303,4 @@ Low for autoethnographic / reflexive manuscripts originating in the qualitative-
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Hard Blockers / Soft Tax / Best Suited For / Not Recommended For / Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

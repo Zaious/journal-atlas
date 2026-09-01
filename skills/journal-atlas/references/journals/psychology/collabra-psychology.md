@@ -2,7 +2,7 @@
 
 # Collabra: Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 42 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 213 | 2026-05-13 (OpenAlex) |
+| **h-index** | 43 | 2026-09-01 |
+| **i10-index** | 229 | 2026-09-01 |
 | **2-Year Mean Citedness** | 2.18 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 733 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 770 | 2026-09-01 |
 | **Impact Factor** | ~3.7 (Web of Science) — sources range 2.454–3.7 | 2024 |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -317,3 +317,4 @@ Variable. For mainstream empirical authors aligned with SIPS values: minimal. Fo
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 42, i10 213, 2yr_citedness 2.18, works_count 733; Top 5 topics filled. APC $975 confirmed via OpenAlex (matches SIPS member rate). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

@@ -4,7 +4,7 @@
 
 # Analysis
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 107 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 108 | 2026-09-01 |
 | **2-Year Mean Citedness** | 0.79 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | The Brains Blog(2009,英文哲學部落格)描述 Analysis 的編輯模式為「業界典範」：編輯親自快速篩選,絕大多數稿件不經外審即拒(desk-reject),只將編輯認為有機會通過的少數稿件送外部審稿人;此模式後來被其他哲學期刊(如 Mind & Language、Synthese)仿效。同一討論串有一則匿名留言(自稱 anecdotal、未經證實)質疑編輯可能對不熟悉機構(如美國小型文理學院)的來稿有偏見 — 此為未經證實的個人觀察,非確鑿事實,僅供參考。SciRev 平台上該刊僅有極少數/近乎無評論資料(large majority 欄位皆為 n/a,僅顯示一筆「立即拒稿,5天」的個案)。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -246,3 +246,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

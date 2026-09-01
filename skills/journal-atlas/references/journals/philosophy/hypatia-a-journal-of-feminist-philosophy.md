@@ -4,7 +4,7 @@
 
 # Hypatia: A Journal of Feminist Philosophy
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 115 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 116 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.48 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 官方公布數字 (非社群回報)：一般投稿接受率 12%-15%；特刊接受率 24%-44%。初審 (editorial screening) 階段若判定不符合主題/品質/引用規範，需兩位編輯共識才會拒稿，且此階段拒稿通常不附詳細意見 (因編輯產能限制)。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -246,3 +246,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

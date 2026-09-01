@@ -2,7 +2,7 @@
 
 # Human Factors
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -31,10 +31,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 205 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 3,078 | 2026-05-13 (OpenAlex) |
+| **h-index** | 207 | 2026-09-01 |
+| **i10-index** | 3105 | 2026-09-01 |
 | **2-Year Mean Citedness** | 2.69 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 4,836 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 4868 | 2026-09-01 |
 | **Impact Factor** | *(pending — JCR-indexed)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -306,3 +306,4 @@ Low for HFES-tradition authors. Very high for HCI design or critical work — ty
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. HFES-affiliated ergonomics/human factors anchor noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

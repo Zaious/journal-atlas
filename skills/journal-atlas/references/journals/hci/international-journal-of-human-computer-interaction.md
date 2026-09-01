@@ -2,7 +2,7 @@
 
 # International Journal of Human-Computer Interaction
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 > ⚠️ **Disambiguation**: This is **IJHCI** (Taylor & Francis), distinct from **IJHCS** (International Journal of Human-Computer **Studies**, Elsevier). They are different journals — see `international-journal-of-human-computer-studies.md` for the Elsevier journal.
@@ -32,10 +32,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 130 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 1,982 | 2026-05-13 (OpenAlex) |
+| **h-index** | 135 | 2026-09-01 |
+| **i10-index** | 2130 | 2026-09-01 |
 | **2-Year Mean Citedness** | 4.46 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 4,974 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 5375 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -310,3 +310,4 @@ Low for technology-adoption empirical authors. Moderate for HCI-canonical empiri
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Disambiguation note added to distinguish IJHCI from IJHCS. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

@@ -2,7 +2,7 @@
 
 # Frontiers in Computer Science — Human-Media Interaction
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 > ℹ️ **Note**: This entry covers the **Human-Media Interaction section** of Frontiers in Computer Science. The journal as a whole has multiple sections; this entry focuses on the HCI-relevant section but uses overall journal metrics (sections share ISSN).
@@ -33,10 +33,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 45 | 2026-05-13 (OpenAlex — whole journal, all sections) |
-| **i10-index** | 277 | 2026-05-13 (OpenAlex — whole journal) |
+| **h-index** | 50 | 2026-09-01 |
+| **i10-index** | 317 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.51 | 2026-05-13 (OpenAlex — whole journal) |
-| **Total Works** | 1,040 | 2026-05-13 (OpenAlex — whole journal) |
+| **Total Works** | 1161 | 2026-09-01 |
 | **Impact Factor** | *(pending — Frontiers in CS is younger journal, IF emerging)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | High (~50%+) — reflects Frontiers editorial model | |
@@ -321,3 +321,4 @@ Variable. For HCI-conceptual papers fitting Hypothesis & Theory: low-moderate. F
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Frontiers in CS is a younger journal with lower APC than Frontiers in Psychology PSP. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

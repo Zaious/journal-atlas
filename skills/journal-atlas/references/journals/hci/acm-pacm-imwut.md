@@ -2,7 +2,7 @@
 
 # Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Proceedings-Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(not yet JCR-indexed; UbiComp papers tracked via h-index)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~70+ | 2026-05-17 |
+| **h-index** | 92 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate; varies by year)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -285,3 +285,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata family-adapted from ACM SIGCHI conference family conventions (CHI / CSCW / UbiComp norms applied in proceedings-journal format). Identity / Metrics / Format authored from publisher / society / community knowledge. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

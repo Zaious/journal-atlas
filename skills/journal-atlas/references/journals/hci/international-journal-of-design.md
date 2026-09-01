@@ -2,7 +2,7 @@
 
 # International Journal of Design
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(community-tracked; Q1 in design per SCImago)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~40+ | 2026-05-17 |
+| **h-index** | 25 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -282,3 +282,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved 3 flagged conflicts vs AI-research pass: (1) Peer Review Type corrected to Double-blind, verified live against official Submission Guidelines; (2) AI Policy table corrected to "no evidence found" after live verification of Submission Guidelines + Editorial Policies pages (previous "Yes, leniency 3-4" was an unverified publisher-default assumption); (3) Review Cycle Time left as placeholder — the AI-research pass's finding was too ambiguous/low-confidence to map to a specific stage. | Conflict-resolution pass |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

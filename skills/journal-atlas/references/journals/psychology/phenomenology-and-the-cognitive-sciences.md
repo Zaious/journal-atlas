@@ -2,7 +2,7 @@
 
 # Phenomenology and the Cognitive Sciences
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -31,10 +31,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 79 | 2026-05 (OpenAlex) |
-| **i10-index** | 525 | 2026-05 (OpenAlex) |
+| **h-index** | 81 | 2026-09-01 |
+| **i10-index** | 549 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.92 | 2026-05 (OpenAlex) |
-| **Total Works** | 1,260 | 2026-05 (OpenAlex) |
+| **Total Works** | 1312 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -308,3 +308,4 @@ Low for well-framed phenomenology-cognitive-science manuscripts. Authors typical
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

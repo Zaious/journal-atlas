@@ -2,7 +2,7 @@
 
 # Assessment
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | 3.8 (2024 JCR) | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~130+ | 2026-05-17 |
+| **h-index** | 140 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | ~22% (SciRev 樣本 n=4,信心度低) | 2026-07-13 |
 | **Desk Rejection Rate** | ~15% (SciRev 樣本 n=4,信心度低) | 2026-07-13 |
@@ -286,3 +286,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > Preprint Policy (Under review / Post-acceptance (AAM) 兩列). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from psychology society-flagship family conventions (APA / SAGE / Psychonomic Society / specialty-society norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

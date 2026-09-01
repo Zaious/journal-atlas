@@ -2,7 +2,7 @@
 
 # Self and Identity
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 99 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 595 | 2026-05-13 (OpenAlex) |
+| **h-index** | 100 | 2026-09-01 |
+| **i10-index** | 607 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.53 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 953 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 968 | 2026-09-01 |
 | **Impact Factor** | Mid-to-high tier social psychology journal (specific value pending) | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -296,3 +296,4 @@ High for qualitative / first-person authors. Adapting a primarily qualitative ma
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 99, i10 595, 2yr_citedness 1.53, works_count 953; Top 5 topics filled. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

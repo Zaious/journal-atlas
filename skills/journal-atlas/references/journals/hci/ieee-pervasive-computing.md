@@ -2,7 +2,7 @@
 
 # IEEE Pervasive Computing
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | 2.8 (2024 JCR) | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~140+ | 2026-05-17 |
+| **h-index** | 123 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(community estimate)* | |
 | **Desk Rejection Rate** | *(community estimate)* | |
@@ -286,3 +286,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 2 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited); Meta-analysis 3->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from HCI magazine + design-research family conventions (IEEE Pervasive / Interactions / Design Studies / Design Issues norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

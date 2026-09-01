@@ -2,7 +2,7 @@
 
 # College Composition and Communication
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(humanities-tracked; flagship of rhetoric and composition field)* | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~70+ | 2026-05-17 |
+| **h-index** | 160 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | ~10-15% (per publisher submission guidance; overall rejection ~75% incl. desk rejects, ~25% receive Revise & Resubmit) | 2026-07-13 |
 | **Desk Rejection Rate** | *(not separately quantified)* — common desk-reject triggers per publisher: failure to anonymize manuscript, exceeding ~8,000-word limit, insufficient engagement with recent composition/rhetoric field literature | 2026-07-13 |
@@ -281,3 +281,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy (Has journal-specific policy? / Explicit permission gate? / Leniency / Summary / Source URL); Review Cycle Time > Time to publication (after acceptance). | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from rhetoric and composition / writing-studies family conventions (NCTE / 4Cs / CCCC norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

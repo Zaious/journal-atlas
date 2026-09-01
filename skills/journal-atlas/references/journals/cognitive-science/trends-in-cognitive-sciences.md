@@ -4,7 +4,7 @@
 
 # Trends in Cognitive Sciences
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -36,14 +36,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 457 | 2026-05-16 |
+| **h-index** | 464 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(Not meaningfully quantifiable as a percentage — TiCS operates primarily via editorial commissioning of review/opinion essays rather than open competitive submission, per convergent community sources (科研通/LetPub/知乎); no quantitative acceptance-rate figure found)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 8.73 | 2026-05-16 |
-| **i10-index** | 2642 | 2026-05-16 |
-| **Total Works** | 4314 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 10.25 | 2026-09-01 |
+| **i10-index** | 2685 | 2026-09-01 |
+| **Total Works** | 4344 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -303,3 +303,4 @@ Variable. For established cognitive-science synthesists: low — commissioning t
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

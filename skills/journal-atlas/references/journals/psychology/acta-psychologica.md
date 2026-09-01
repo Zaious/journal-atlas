@@ -4,7 +4,7 @@
 
 # Acta Psychologica
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 185 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 186 | 2026-09-01 |
 | **2-Year Mean Citedness** | 2.91 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 無官方接受率數據。發表記(fabiaoji)一位使用者自述4次投稿中2次被接受,並形容「錄用率不高」;知乎案例提及曾有一篇稿件因邀請20位外部審稿人均拒絕審查而被拒(非學術品質問題,而是找不到審稿人)。這些僅為個別使用者的一手經驗,非統計代表值。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -261,3 +261,4 @@ SciRev 量化指標:manuscript handling 整體評分3.8/5(「Very good process�
 |------|--------|----|
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 8 field(s) with OpenAlex keyword-count evidence (Autoethnography, Qualitative interviews, Meta-analysis, BDSM / Kink, Drug use, Sex work, Suicide / Self-harm, Political extremism). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

@@ -4,7 +4,7 @@
 
 # Ergo: an Open Access Journal of Philosophy
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 39 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 40 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.68 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 第三方指標網站 PJIP 標示 acceptance rate 9.06%、review speed 11 天，但方法論不透明、非期刊一手揭露，未直接採信為硬事實（見 blanks）。期刊一手資料僅揭露「送外審比例約 1/3」，未給出最終接受率數字。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -247,3 +247,4 @@ Daily Nous「Notably Good Experiences with Philosophy Journals」貼文留言區
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

@@ -4,7 +4,7 @@
 
 # Journal of Experimental Psychology General
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -36,14 +36,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 304 | 2026-05-16 |
+| **h-index** | 307 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.83 | 2026-05-16 |
-| **i10-index** | 3036 | 2026-05-16 |
-| **Total Works** | 5434 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.07 | 2026-09-01 |
+| **i10-index** | 3059 | 2026-09-01 |
+| **Total Works** | 5518 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -305,3 +305,4 @@ Moderate. Long-form preference adds writing time; desk-reject delay (4+ weeks du
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05). Note: community-source review attributes this entry to psychology/ but actual location is cognitive-science/. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

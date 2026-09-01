@@ -7,7 +7,7 @@
 > [!CAUTION]
 > **Publication status:** Appears to have ceased publication — OpenAlex records **no publications since 2020** (checked 2026-07-30, ISSN 0091-0627). This entry is retained for historical reference and for rejection-fallback context, but **should not be recommended as a live submission target**. Renamed **Research on Child and Adolescent Psychopathology** from volume 49(1), January 2021 (Springer). If this is an OpenAlex indexing gap rather than a real closure, please open an issue (see [docs/GOVERNANCE.md](../../../../../docs/GOVERNANCE.md)).
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -44,9 +44,9 @@
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.00 | 2026-05-16 |
-| **i10-index** | 2838 | 2026-05-16 |
-| **Total Works** | 3215 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.61 | 2026-09-01 |
+| **i10-index** | 3123 | 2026-09-01 |
+| **Total Works** | 3991 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -305,3 +305,4 @@ Low for child clinical-psychology empirical authors. Springer Nature Choice OA a
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — adapted from Springer publisher + child clinical-psychology editorial culture domain knowledge. Note: journal renamed to Research on Child and Adolescent Psychopathology in 2021. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (two_yr_citedness, i10_index, works_count) | @bot |

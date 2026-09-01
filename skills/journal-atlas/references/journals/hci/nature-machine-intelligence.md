@@ -3,7 +3,7 @@
 
 # Nature Machine Intelligence
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -35,14 +35,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 143 | 2026-05-16 |
+| **h-index** | 152 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 18.95 | 2026-05-16 |
-| **i10-index** | 738 | 2026-05-16 |
-| **Total Works** | 1234 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 21.99 | 2026-09-01 |
+| **i10-index** | 783 | 2026-09-01 |
+| **Total Works** | 1298 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -300,3 +300,4 @@ High. Nature-family broad-significance framing demands substantial rewriting fro
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from Nature Portfolio publisher + AI/ML high-impact editorial culture domain knowledge | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Nature Methods/Biotech/MI (MIT) | @cardinal |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

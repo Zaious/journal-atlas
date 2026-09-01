@@ -2,7 +2,7 @@
 
 # Cultural Studies ↔ Critical Methodologies
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,8 +30,8 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 57 | 2026-05 (OpenAlex) |
-| **i10-index** | 372 | 2026-05 (OpenAlex) |
+| **h-index** | 58 | 2026-09-01 |
+| **i10-index** | 381 | 2026-09-01 |
 | **2-Year Mean Citedness** | 0.96 | 2026-05 (OpenAlex) |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
@@ -309,3 +309,4 @@ Moderate-to-high. The 8,000-word hard limit **including notes and references** i
 | 2026-05-13 | Initial entry — structural fields populated. Soft Metadata reserved for community. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index) | @bot |

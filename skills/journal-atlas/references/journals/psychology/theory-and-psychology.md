@@ -2,7 +2,7 @@
 
 # Theory & Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -32,8 +32,8 @@
 |--------|-------|------|
 | **Impact Factor** | ~1.9 | 2024 |
 | **5-Year IF** | 1.5 | 2024 |
-| **h-index** | 90 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 876 | 2026-05-13 (OpenAlex) |
+| **h-index** | 92 | 2026-09-01 |
+| **i10-index** | 895 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.66 | 2026-05-13 (OpenAlex) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -300,3 +300,4 @@ Minimal for theoretically-oriented manuscripts. Empirical authors typically inve
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + Sage Author Instructions. Soft Metadata and Strategic Notes reserved for community contributions. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2: added Desk Rejection Rate, Review Cycle Time, Publication Frequency (Metrics); Peer Review (Policies); Word limit negotiability (Format); Rejection Fallback Chain (Strategic Notes). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled; Subject Density Quantitative/Qualitative axis populated. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index) | @bot |

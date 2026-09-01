@@ -4,7 +4,7 @@
 
 # The Philosophical Quarterly
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 197 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 198 | 2026-09-01 |
 | **2-Year Mean Citedness** | 1.49 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | SciRev 未提供可用的接受率/拒絕率數字(該欄位標示 Not available)。有一則 SciRev 評論指出:「審稿人給出非常正面的意見,但編輯仍決定拒稿(顯然只是不合她的口味)。這種情況在該刊發生過不只一次,讓我不想再幫他們審稿——如果編輯反正會推翻審稿人的建議,那審稿意義何在?」(SciRev,單一評論者觀點,非普遍結論,原文為引述其大意非逐字抄錄) | AI research (see Reviewer Pool Characteristics sources) |
@@ -246,3 +246,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

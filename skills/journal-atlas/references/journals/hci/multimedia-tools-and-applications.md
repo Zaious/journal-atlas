@@ -4,7 +4,7 @@
 
 # Multimedia Tools and Applications
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 155 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 158 | 2026-09-01 |
 | **2-Year Mean Citedness** | 5.12 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | SciRev 顯示整體滿意度 3.7/5.0,平均審查輪數 2.4 輪,平均每篇收到 4.3 份審查報告,審查意見品質評分 3.3/5.0,審稿意見「難度」評分 3.7/5.0(偏難);僅 7 筆自願回報樣本,統計量小。小木虫使用者評論此刊「不建議忙碌者投稿」,暗示修改要求耗時、投入門檻不低,但未見具體拒稿率數字。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -264,3 +264,4 @@
 |------|--------|----|
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 8 field(s) with OpenAlex keyword-count evidence (Autoethnography, Qualitative interviews, Meta-analysis, BDSM / Kink, Drug use, Sex work, Suicide / Self-harm, Political extremism). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

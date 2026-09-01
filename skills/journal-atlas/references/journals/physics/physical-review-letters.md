@@ -3,7 +3,7 @@
 
 # Physical Review Letters
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -35,14 +35,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 974 | 2026-05-16 |
+| **h-index** | 982 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 7.73 | 2026-05-16 |
-| **i10-index** | 120674 | 2026-05-16 |
-| **Total Works** | 145609 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 8.52 | 2026-09-01 |
+| **i10-index** | 121307 | 2026-09-01 |
+| **Total Works** | 146197 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -274,3 +274,4 @@ Moderate-High. The 4-page hard limit (including figures and references) demands 
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from publisher (journals.aps.org/prl/about) + community aggregators (manusights, scirev, arxiv 1308.1552) (web search 2026-05) | @Zaious |
 | 2026-05-16 | Format fields enriched (Word limit / Abstract / Article types) - data adapted from ScienceClaw journals_formatting.md > Physical Review Letters (MIT) | @cardinal |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

@@ -2,7 +2,7 @@
 
 # Frontiers in Psychology — Personality and Social Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -31,10 +31,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 302 | 2026-05-13 (OpenAlex — whole Frontiers in Psychology megajournal, not just PSP section) |
-| **i10-index** | 26,156 | 2026-05-13 (OpenAlex — whole journal) |
+| **h-index** | 310 | 2026-09-01 |
+| **i10-index** | 27599 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.001 | 2026-05-13 (OpenAlex — whole journal) |
-| **Total Works** | 50,856 | 2026-05-13 (OpenAlex — whole journal; PSP section is a subset) |
+| **Total Works** | 53180 | 2026-09-01 |
 | **Impact Factor** | 2.6–4.2 (sources vary; 2024 Frontiers in Psychology overall ≈ 2.6) | 2024 |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | ~37% (2024, per publisher's own journal page) — down from previously cited ~50%+; rejection rate has risen in recent years | 2024 (frontiersin.org/journals/psychology/about) |
@@ -330,3 +330,4 @@ Variable. For empirical PSP-aligned papers: low. For conceptual / theoretical pa
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | OpenAlex enrichment: h-index 302, i10 26,156, 2yr_citedness 3.001, works_count 50,856; Top 5 topics filled. Caveat added: metrics reflect whole Frontiers in Psychology megajournal, not just PSP section. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

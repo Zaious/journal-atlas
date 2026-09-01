@@ -2,7 +2,7 @@
 
 # Interaction Studies
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 52 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 257 | 2026-05-13 (OpenAlex) |
+| **h-index** | 53 | 2026-09-01 |
+| **i10-index** | 264 | 2026-09-01 |
 | **2-Year Mean Citedness** | 0.75 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 605 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 609 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -308,3 +308,4 @@ Low for niche-specialty researchers. Moderate for mainstream HCI authors — req
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. Specialty journal at HRI/linguistics/cognitive science crossover. Multiple fields flagged pending due to less-documented publisher (Benjamins). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

@@ -4,7 +4,7 @@
 
 # Social Cognitive and Affective Neuroscience
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-09-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -36,14 +36,14 @@
 |--------|-------|------|
 | **Impact Factor** | *(JCR — fill manually if available)* | |
 | **5-Year IF** | *(JCR — fill manually if available)* | |
-| **h-index** | 165 | 2026-05-16 |
+| **h-index** | 167 | 2026-09-01 |
 | **CiteScore** | *(Scopus — fill manually if available)* | |
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.82 | 2026-05-16 |
-| **i10-index** | 1856 | 2026-05-16 |
-| **Total Works** | 2347 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.19 | 2026-09-01 |
+| **i10-index** | 1871 | 2026-09-01 |
+| **Total Works** | 2366 | 2026-09-01 |
 
 ### Review Cycle Time
 
@@ -298,3 +298,4 @@ Low for SANS tradition authors. OA available via OUP.
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-17 | Soft Metadata filled at Tier 2 — adapted from OUP publisher + SANS social-affective neuroscience editorial culture domain knowledge | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, two_yr_citedness, i10_index, works_count) | @bot |

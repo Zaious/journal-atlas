@@ -4,7 +4,7 @@
 
 # Healthcare (MDPI)
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 114 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 118 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.09 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | First-hand Chinese forum accounts (fabiaoji.com aggregator) report mixed outcomes: one user had 3 desk rejections within a 2-month window (Jan 2025), another was desk-rejected within 4 days of submission, another was desk-rejected after ~1 month (2021); separately, a Zhihu first-hand post describes one manuscript accepted after ~2 months with 3 reviewers giving 40 revision comments (submitted Oct 2023, accepted Dec 2023). No numeric desk-reject percentage could be sourced. | AI research (see Reviewer Pool Characteristics sources) |
@@ -263,3 +263,4 @@ Sparse, mixed, low-confidence. fabiaoji.com aggregator describes reviewers givin
 |------|--------|----|
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 8 field(s) with OpenAlex keyword-count evidence (Autoethnography, Qualitative interviews, Meta-analysis, BDSM / Kink, Drug use, Sex work, Suicide / Self-harm, Political extremism). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

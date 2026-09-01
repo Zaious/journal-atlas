@@ -4,7 +4,7 @@
 
 # Behavioral Sciences (MDPI)
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 84 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 87 | 2026-09-01 |
 | **2-Year Mean Citedness** | 3.35 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 小木蟲案例：一位投稿者2022年底投稿,7天內收到初審(desk)拒稿；另一案例投稿次日進入審稿流程，40天後收到修改意見(4位審稿人,意見積極,主要問題為參考文獻格式)。知乎/LetPub頁面提及該刊為JCR二區、中科院SSCI三區,2019年進SSCI,發文量從每年200篇以內於2022年激增至500+篇(反映刊物擴刊/接受量上升)。版面費(APC)小木蟲估計約人民幣1-2萬元,但未見官方確切數字來源核實。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -263,3 +263,4 @@
 |------|--------|----|
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 8 field(s) with OpenAlex keyword-count evidence (Autoethnography, Qualitative interviews, Meta-analysis, BDSM / Kink, Drug use, Sex work, Suicide / Self-harm, Political extremism). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

@@ -2,7 +2,7 @@
 
 # New Ideas in Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,7 +30,7 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 83 | 2026-05 (OpenAlex) |
+| **h-index** | 84 | 2026-09-01 |
 | **2-Year Mean Citedness** | 2.19 | 2026-05 (OpenAlex) |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
@@ -318,3 +318,4 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 | 2026-05-13 | Initial entry — structural fields populated. AI Policy notably restrictive on AI-generated images; 24-month AAM embargo flagged as a significant departure from Sage publisher norms. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

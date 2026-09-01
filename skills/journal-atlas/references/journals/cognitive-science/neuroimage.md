@@ -2,7 +2,7 @@
 
 # NeuroImage
 
-> **Last verified**: 2026-05-17
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 
@@ -33,7 +33,7 @@
 |--------|-------|------|
 | **Impact Factor** | 4.7 (2024 JCR) | 2026-05-17 |
 | **5-Year IF** | *(see JCR)* | |
-| **h-index** | ~400+ | 2026-05-17 |
+| **h-index** | 534 | 2026-09-01 |
 | **CiteScore** | *(see Scopus)* | |
 | **Acceptance Rate** | *(Not officially disclosed. SciRev sample n=8: ~12.5% (1/8 accepted); one muchong.com user estimate ~20% for domestic-author submissions — both small-sample/unofficial, see Soft Metadata § AI-Research Notes)* | |
 | **Desk Rejection Rate** | *(Not officially disclosed. SciRev sample n=8: ~75% (6/8) desk-rejected; desk-reject turnaround 3–41 days — small sample, see Soft Metadata § AI-Research Notes)* | |
@@ -282,3 +282,4 @@ Variable; depends on closeness of fit between manuscript framing and the journal
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-17 | Initial entry — v1.3 schema, Tier 2 (community estimate). Soft Metadata adapted from neuroscience / cognitive-neuroscience family conventions (Cerebral Cortex / NeuroImage / J Cog Neurosci norms). | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

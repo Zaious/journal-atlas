@@ -2,7 +2,7 @@
 
 # Qualitative Research in Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-09-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 69 | 2026-05 (OpenAlex) |
-| **i10-index** | 374 | 2026-05 (OpenAlex) |
+| **h-index** | 72 | 2026-09-01 |
+| **i10-index** | 386 | 2026-09-01 |
 | **2-Year Mean Citedness** | 5.55 | 2026-05 (OpenAlex) |
-| **Total Works** | 714 | 2026-05 (OpenAlex) |
+| **Total Works** | 723 | 2026-09-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -312,3 +312,4 @@ Low for qualitative-psychology authors. The journal's "exemplary qualitative met
 | 2026-05-13 | Initial entry — structural fields populated. Format details derived from empirical sampling of recent publications (official PDF appears outdated). | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-09-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |
