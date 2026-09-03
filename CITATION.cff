@@ -8,7 +8,10 @@ abstract: >-
   rejection fallback chains — that existing bibliometric tools (Impact Factor,
   SCImago, JCR) do not cover. Distributed as a Claude Agent Skill compatible
   with Claude Desktop, Claude Code, ChatGPT, and other agent platforms.
-type: dataset
+# software rather than dataset: the unit of distribution is a repository you
+# install into an agent client, carrying a scorer as well as the 399 curated
+# entries. Zenodo types the archived releases the same way.
+type: software
 authors:
   - family-names: "Lee"
     given-names: "Meng-Han"

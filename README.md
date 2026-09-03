@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE-CODE)
 [![Schema](https://img.shields.io/badge/Schema-v1.3-green.svg)](skills/journal-atlas/TEMPLATE.md)
 [![Status](https://img.shields.io/badge/Status-Pre--release%20(seeding)-orange.svg)](#tier-system)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22272330.svg)](https://doi.org/10.5281/zenodo.22272330)
 
 ### ▶ [Try it now — journal-atlas.chroniclecore.com](https://journal-atlas.chroniclecore.com)
 
@@ -28,8 +29,41 @@ Journal Atlas captures what bibliometric tools like Impact Factor and Scimago do
 
 ---
 
+## Published version
+
+The corpus keeps growing. A paper's numbers do not. So the state described by a
+published paper is tagged and archived, and the live demonstration says which
+commit it is currently serving — a reader who finds different figures can tell
+"later version" from "that paper was wrong".
+
+**Meng-Han Lee. 2026. Journal Atlas: Venue Fit Scoring Under Incomplete
+Evidence, and the Corpus Method It Requires.** ACM/IEEE Joint Conference on
+Digital Libraries (JCDL 2026), Demonstrations track.
+
+| | |
+|---|---|
+| State the paper describes | tag [`jcdl2026`](https://github.com/Zaious/journal-atlas/releases/tag/jcdl2026) |
+| Archived snapshot | [10.5281/zenodo.22272331](https://doi.org/10.5281/zenodo.22272331) |
+| Cite the project as a whole | [10.5281/zenodo.22272330](https://doi.org/10.5281/zenodo.22272330) — resolves to the newest release |
+
+Everything the paper measures is reproducible from that tag:
+
+```sh
+git checkout jcdl2026
+python skills/journal-atlas/scripts/coverage_by_tier.py   # Table 1
+cat docs/ENTAILMENT_AUDIT.md                              # the audit in Section 4
+```
+
+Use the **version** DOI when you mean the state a paper reports, and the
+**concept** DOI when you mean the project. They differ by one digit and the
+wrong one fails silently: the concept DOI follows the newest release, so a
+citation using it stops matching the numbers it was meant to support.
+
+---
+
 ## Table of Contents
 
+- [Published version](#published-version)
 - [Quick Start](#quick-start)
 - [Installation](#installation)
 - [Skills Overview](#skills-overview)
