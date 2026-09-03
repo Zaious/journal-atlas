@@ -1,7 +1,7 @@
 {
   "venue": "JCDL 2026",
   "title": "Journal Atlas: Venue Fit Scoring Under Incomplete Evidence, and the Corpus Method It Requires",
-  "tag": null,
-  "doi": null,
-  "_note": "Filled once the camera-ready state is tagged and archived. Must be Zenodo's VERSION doi, not the concept doi: the concept doi follows the latest release and would drift with the corpus, which is the one thing naming a version is for. Hand-edited and committed; version.json is generated at deploy time and merges this in."
+  "tag": "jcdl2026",
+  "doi": "10.5281/zenodo.22272331",
+  "_note": "doi is Zenodo's VERSION doi for the jcdl2026 release, which resolves to that tree and nothing else. The concept doi for this record is 10.5281/zenodo.22272330 and must NOT be used here: it follows the latest release, so it would drift with the corpus, which is the one thing naming a version is for. Hand-edited and committed; version.json is generated at deploy time and merges this in."
 }
