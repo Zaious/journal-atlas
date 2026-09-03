@@ -144,9 +144,31 @@ The build step needs the venv to install `google-genai`, `anthropic`, `fastapi`
 and `uvicorn` — the first deploy is slower than a stdlib service. Re-running
 `deploy.sh` after a code change is idempotent.
 
-`build_topic_vocabulary.py` does **not** need running on the VPS:
-`topic_vocabulary.json` is committed and ships with the source. Regenerate it
-in the repo and redeploy if the corpus changes.
+### Run these two in the repo first, every time
+
+Neither runs on the VPS: both write a committed JSON file that ships with the
+source, because the server gets a tarball rather than a git checkout.
+
+```sh
+python demo/backend/build_topic_vocabulary.py   # topic names the extractor may match
+python demo/backend/build_version.py            # which corpus this deploy serves
+```
+
+Skipping the first is silent and expensive. On 2026-09-03 the live vocabulary
+was 42 topic names short of the corpus, so any query touching one of them
+scored `topic_density` against nothing — a scoring failure that looks like a
+weak corpus.
+
+Skipping the second is worse, because it makes the page state something untrue:
+`version.json` is what the coverage panel reads to say which corpus it is
+serving, and a stale one claims a commit that did not ship. `build_version.py`
+refuses to write a commit it cannot verify, and warns when the tree is dirty —
+**commit before deploying**, or the recorded commit will not describe what
+actually went out.
+
+`build_version.py` preserves the hand-edited `paper` block, so filling in the
+tag and DOI after archiving a release is a one-line edit to `version.json` and
+a redeploy — no code change, and regenerating will not drop it.
 
 ## Verify — in this order
 

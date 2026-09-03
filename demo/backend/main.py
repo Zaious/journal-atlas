@@ -83,6 +83,19 @@ except FileNotFoundError:
     print(f"warning: {CONSUMPTION_CONTRACT_PATH} missing — synthesis will run "
           "without the tier/evidence consumption rules", file=sys.stderr)
 
+# Which corpus this process is serving, written by build_version.py before a
+# deploy. The corpus grows and the paper's numbers do not, so a reader who
+# finds different figures here needs to be able to tell "later version" from
+# "that paper was wrong". Absent in a dev checkout, and absent is reported as
+# absent rather than guessed.
+VERSION_PATH = Path(__file__).resolve().parent / "version.json"
+try:
+    VERSION = json.loads(VERSION_PATH.read_text(encoding="utf-8"))
+except (OSError, ValueError):
+    VERSION = {}
+    print(f"warning: {VERSION_PATH} missing or unreadable — run build_version.py; "
+          "the demo will not be able to say which corpus it is serving", file=sys.stderr)
+
 REQUEST_TIMEOUT_SECONDS = 60.0
 MAX_RETRIES = 2
 
@@ -830,6 +843,9 @@ def compute_coverage() -> dict:
             "Chemistry, mathematics, and the earth sciences",
         ],
         "absent_checked": "2026-07-30",
+        # Same disclosure discipline the entries get: every number above is
+        # read off a particular corpus, so say which one.
+        "version": VERSION,
     }
     return _COVERAGE_CACHE
 
@@ -861,4 +877,5 @@ async def health():
         "provider_ready": PROVIDER is not None,
         "provider_error": PROVIDER_ERROR,
         "limits": LIMITER.snapshot(),
+        "version": VERSION,
     }

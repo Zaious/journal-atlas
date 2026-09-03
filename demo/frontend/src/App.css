@@ -472,6 +472,21 @@ button.secondary:hover:not(:disabled) {
   margin: 0;
 }
 
+/* Which corpus the numbers above came off. Quiet by design: it is a provenance
+   footer, not a warning, and it earns its place only when a reader goes looking
+   for why the figures differ from a published one. */
+.corpus-version {
+  margin: 0.9rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid #f0e3c8;
+  font-size: 0.78rem;
+  color: var(--text-secondary, #8a7f63);
+}
+
+.corpus-version code {
+  font-size: 0.95em;
+}
+
 /* Publisher, ISSN and a link to the venue itself. A recommendation the reader
    cannot look up is one they have to take on trust, which is the opposite of
    what the rest of this card is for. */

@@ -222,3 +222,28 @@ def test_the_synthesis_prompt_declares_a_tie_and_forbids_inventing_a_reason():
                                          main.screen_candidates(paper, "conferences"))
     assert "TIED with" in prompt
     assert "inventing a reason to separate" in prompt
+
+
+# ---------------------------------------------------------------- version
+
+def test_the_version_block_reaches_the_disclosure_payload():
+    """The coverage panel is where a reader learns what the corpus does and does
+    not hold; which corpus it is belongs in the same place."""
+    assert "version" in main.compute_coverage()
+
+
+def test_a_missing_version_file_degrades_to_absent_rather_than_wrong():
+    """Absent is a legitimate state — a dev checkout has no version.json. What
+    is not legitimate is claiming a commit that did not ship, so the loader
+    yields an empty mapping and the UI renders nothing at all."""
+    assert isinstance(main.VERSION, dict)
+    if main.VERSION:
+        assert main.VERSION.get("corpus_commit")
+
+
+def test_the_paper_doi_is_never_invented():
+    """Null until a release is actually archived. A placeholder that looked like
+    a DOI would be the one kind of error this whole file exists to prevent."""
+    paper = main.VERSION.get("paper", {})
+    if paper.get("doi") is not None:
+        assert paper["doi"].startswith("10."), paper["doi"]
