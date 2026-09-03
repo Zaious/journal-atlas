@@ -38,3 +38,9 @@ skills/journal-atlas-workspace/
 
 # wrangler local cache — account id and project bookkeeping, not source
 .wrangler/
+
+# Written by demo/backend/build_version.py at deploy time (PREDEPLOY).
+# Not committed: a file cannot record the hash of the commit containing it, so
+# every committed copy would name its own parent. What a human writes lives in
+# demo/backend/paper_version.json, which is committed.
+demo/backend/version.json

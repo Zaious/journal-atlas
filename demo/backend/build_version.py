@@ -17,9 +17,15 @@ opens the demo in a year and finds different figures should be able to conclude
 "this is a later version" rather than "that paper was wrong", and that is only
 possible if the page says which version it is.
 
-The `paper` block is hand-edited and preserved across runs: a published paper's
-tag and DOI change roughly never, and regenerating the commit fields must not
-quietly drop them.
+version.json is a build artifact and is not committed. It is written by the
+deploy's PREDEPLOY step, so it always describes the tree that actually ships and
+cannot be forgotten. Committing it would guarantee it was wrong: a file cannot
+record the hash of the commit that contains it, so every committed copy would
+name its own parent.
+
+What a human writes lives in paper_version.json instead, which is committed and
+merged in here. A published paper's tag and DOI change roughly never, and they
+must survive a fresh clone.
 """
 import io
 import json
@@ -31,6 +37,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "version.json"
+PAPER = HERE / "paper_version.json"
 REPO = HERE.parents[1]
 
 
@@ -45,13 +52,20 @@ def git(*args) -> str | None:
 
 
 def main() -> int:
-    # Preserve whatever a human wrote, so a redeploy cannot drop a DOI.
-    existing = {}
-    if OUT.exists():
+    # Whatever a human wrote about the published version, kept in its own
+    # committed file so a redeploy cannot drop a DOI and a fresh clone still
+    # has one.
+    paper = {}
+    if PAPER.exists():
         try:
-            existing = json.loads(OUT.read_text(encoding="utf-8"))
+            paper = {k: v for k, v in json.loads(PAPER.read_text(encoding="utf-8")).items()
+                     if not k.startswith("_")}
         except ValueError:
-            print("warning: %s was not valid JSON; rewriting it" % OUT.name, file=sys.stderr)
+            print("error: %s is not valid JSON" % PAPER.name, file=sys.stderr)
+            return 1
+    else:
+        print("warning: %s missing — the page will not name a published version"
+              % PAPER.name, file=sys.stderr)
 
     commit = git("rev-parse", "--short=7", "HEAD")
     if commit is None:
@@ -71,17 +85,7 @@ def main() -> int:
         # corpus_commit does not fully describe what shipped.
         "built_from_dirty_tree": dirty,
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        "paper": existing.get("paper", {
-            "venue": "JCDL 2026",
-            "title": "Journal Atlas: Venue Fit Scoring Under Incomplete Evidence, "
-                     "and the Corpus Method It Requires",
-            # Filled once the camera-ready state is tagged and Zenodo has minted
-            # a DOI for that tag. Must be the *version* DOI, not the concept DOI:
-            # the concept DOI follows the latest release, which would make it
-            # drift with the corpus and defeat the point of naming a version.
-            "tag": None,
-            "doi": None,
-        }),
+        "paper": paper,
     }
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(
         json.dumps(data, indent=2, ensure_ascii=False) + "\n")
@@ -93,9 +97,8 @@ def main() -> int:
         print("  NOTE: tree is dirty — commit before deploying, or the recorded")
         print("        commit will not describe what actually ships.")
     if not data["paper"].get("doi"):
-        print("  paper.doi is null — fill it in %s after tagging and archiving;"
-              % OUT.name)
-        print("  no code change is needed for that.")
+        print("  paper.doi is null — fill it in %s after tagging and archiving." % PAPER.name)
+        print("  That file is committed; this one is not, and neither needs a code change.")
     return 0
 
 

@@ -144,31 +144,34 @@ The build step needs the venv to install `google-genai`, `anthropic`, `fastapi`
 and `uvicorn` — the first deploy is slower than a stdlib service. Re-running
 `deploy.sh` after a code change is idempotent.
 
-### Run these two in the repo first, every time
+### Two generated files, and why `PREDEPLOY` runs them for you
 
-Neither runs on the VPS: both write a committed JSON file that ships with the
-source, because the server gets a tarball rather than a git checkout.
+Neither runs on the VPS: both write JSON that ships with the source, because the
+server gets a tarball rather than a git checkout. `service.conf` runs both in
+the repo before the tar, so there is nothing to remember:
 
-```sh
-python demo/backend/build_topic_vocabulary.py   # topic names the extractor may match
-python demo/backend/build_version.py            # which corpus this deploy serves
+```
+PREDEPLOY="python demo/backend/build_topic_vocabulary.py && python demo/backend/build_version.py"
 ```
 
-Skipping the first is silent and expensive. On 2026-09-03 the live vocabulary
-was 42 topic names short of the corpus, so any query touching one of them
-scored `topic_density` against nothing — a scoring failure that looks like a
-weak corpus.
+`topic_vocabulary.json` is the list of topic names the extractor may match, and
+is committed. Letting it go stale is silent and expensive: on 2026-09-03 the
+live one was 42 names short of the corpus, so any query touching one of them
+scored `topic_density` against nothing — a scoring failure that reads as a weak
+corpus rather than an old deploy.
 
-Skipping the second is worse, because it makes the page state something untrue:
-`version.json` is what the coverage panel reads to say which corpus it is
-serving, and a stale one claims a commit that did not ship. `build_version.py`
-refuses to write a commit it cannot verify, and warns when the tree is dirty —
-**commit before deploying**, or the recorded commit will not describe what
-actually went out.
+`version.json` says which corpus this deploy is serving, and is **not**
+committed. A file cannot record the hash of the commit that contains it, so a
+committed copy would always name its own parent; generating it at `PREDEPLOY`
+means it describes the tree that actually ships. `build_version.py` refuses to
+write a commit it cannot verify, and warns when the tree is dirty —
+**commit before deploying**, or the recorded commit will not describe what went
+out.
 
-`build_version.py` preserves the hand-edited `paper` block, so filling in the
-tag and DOI after archiving a release is a one-line edit to `version.json` and
-a redeploy — no code change, and regenerating will not drop it.
+`paper_version.json` is the hand-edited half — venue, tag, DOI — and *is*
+committed, so a fresh clone keeps it and no redeploy can drop it. Filling in the
+tag and DOI after archiving a release is a one-line edit there and a redeploy;
+no code change either side.
 
 ## Verify — in this order
 
