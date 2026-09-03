@@ -431,6 +431,14 @@ button.secondary:hover:not(:disabled) {
   font-weight: 400;
 }
 
+/* Sits beside the coverage figure and reads as the same kind of caveat: both
+   say how much the number above them can be leaned on. Italic rather than
+   coloured, so a list where half the tail is tied does not turn into a wall
+   of warnings. */
+.coverage.tied {
+  font-style: italic;
+}
+
 .candidate-evidence {
   padding: 0 0 0.8rem;
   animation: fadeIn 0.25s ease;
@@ -462,6 +470,20 @@ button.secondary:hover:not(:disabled) {
   color: var(--text-secondary, #888);
   font-style: italic;
   margin: 0;
+}
+
+/* Publisher, ISSN and a link to the venue itself. A recommendation the reader
+   cannot look up is one they have to take on trust, which is the opposite of
+   what the rest of this card is for. */
+.candidate-identity {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #888);
+  margin: 0 0 0.5rem;
+  word-break: break-word;
+}
+
+.candidate-identity a {
+  color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {

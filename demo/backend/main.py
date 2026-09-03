@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from dataclasses import asdict
 from pathlib import Path
@@ -158,6 +159,7 @@ PAPER_SCHEMA = {
         "irb": {"type": ["boolean", "null"], "description": "true if ethics approval was obtained, false ONLY if the text explicitly says there is none, null when the text is silent or the question does not arise (e.g. a purely theoretical paper). false eliminates every journal with a hard IRB requirement, so do not infer it from silence."},
         "preprint_intent": {"type": "boolean"},
         "timeline_priority": {"type": "string", "enum": ["fast", "normal", "flexible"]},
+        "venue_type": {"type": ["string", "null"], "description": "Which venue types the author will submit to, but ONLY when the text says so: \"journals\" if it rules conferences out (e.g. \"journals only\"), \"conferences\" if it rules journals out, \"either\" if it says both are fine. null when the text is silent. null leaves the constraint unapplied and the interface asks once; do not infer a preference from the subject matter."},
         "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
     },
     "required": ["topics", "methodology", "sensitive_content", "fields", "timeline_priority", "oa_required", "ai_usage", "preprint_intent"],
@@ -189,12 +191,33 @@ def _build_extraction_prompt(freeform_text: str) -> str:
     )
 
 
-async def extract_paper(provider, freeform_text: str) -> fit_score.Paper:
+# Values the model may return for venue_type, and the synonyms it reaches for
+# anyway. Anything unrecognised becomes None -- an unreadable answer is an
+# unstated constraint, not a licence to guess which way the author meant it.
+VENUE_TYPE_SYNONYMS = {
+    "journals": "journals", "journal": "journals", "journals only": "journals",
+    "conferences": "conferences", "conference": "conferences",
+    "proceedings": "conferences", "conferences only": "conferences",
+    "either": "either", "both": "either", "any": "either", "no preference": "either",
+}
+
+
+def normalise_venue_type(raw) -> str | None:
+    if not isinstance(raw, str):
+        return None
+    return VENUE_TYPE_SYNONYMS.get(raw.strip().lower())
+
+
+async def extract_paper(provider, freeform_text: str) -> tuple[fit_score.Paper, str | None]:
+    """The Paper the scorer takes, plus the one stated constraint it has no
+    field for. venue_type decides which venues may be recommended at all, so
+    it eliminates like a hard constraint, but fit_score.Paper is the skill's
+    schema and the demo does not get to widen it."""
     data = await provider.extract(_build_extraction_prompt(freeform_text), PAPER_SCHEMA)
-    return fit_score.Paper.from_dict(data)
+    return fit_score.Paper.from_dict(data), normalise_venue_type(data.get("venue_type"))
 
 
-def unstated_constraints(paper: fit_score.Paper) -> list[str]:
+def unstated_constraints(paper: fit_score.Paper, venue_type: str | None = None) -> list[str]:
     """Hard constraints the description never mentioned, so none was applied.
 
     A single-shot request cannot stop and ask, but it can say what it assumed.
@@ -212,10 +235,13 @@ def unstated_constraints(paper: fit_score.Paper) -> list[str]:
                         "Say if your study involves human participants without approval.")
     if paper.word_count is None:
         unstated.append("No word count given, so no journal was ruled out on length.")
+    if venue_type is None:
+        unstated.append("No venue type given, so both journals and conferences were "
+                        "searched. Say \"journals only\" if proceedings are no use to you.")
     return unstated
 
 
-def clarifying_question(paper: fit_score.Paper) -> str | None:
+def clarifying_question(paper: fit_score.Paper, venue_type: str | None = None) -> str | None:
     """One question, asked once, covering whatever would actually change the
     answer. None when nothing material is missing.
 
@@ -240,13 +266,22 @@ def clarifying_question(paper: fit_score.Paper) -> str | None:
     if paper.irb is None and not theoretical:
         asks.append("**Ethics approval** \u2014 does the work involve human participants, and if "
                     "so do you have IRB/ethics approval?")
-    # Venue type is not a scorer field, but it decides whether the conference
-    # directories are searched at all, and extraction reliably omits them.
-    asks.append("**Venue type** \u2014 journals only, or should conference proceedings "
-                "(CHI, CSCW, NeurIPS, ACL and similar) be considered too?")
+    # Asked only when the description did not say. It used to be asked every
+    # time, on the grounds that extraction reliably omitted venue type -- but
+    # extraction omitted it because nothing asked for it, and asking a user to
+    # repeat what they already wrote invites them to skip, which threw the
+    # constraint away. Section 5 promises a question only where the
+    # description leaves a constraint unstated; this is what makes that true.
+    if venue_type is None:
+        asks.append("**Venue type** \u2014 journals only, or should conference proceedings "
+                    "(CHI, CSCW, NeurIPS, ACL and similar) be considered too?")
 
-    if len(asks) == 1:
-        # Only the always-on venue question remains; not worth a round trip.
+    if not asks:
+        return None
+    if len(asks) == 1 and venue_type is None and asks[0].startswith("**Venue type**"):
+        # Venue type alone is not worth a round trip: unlike a fee budget it
+        # cannot silently eliminate everything, and the answer is visible in
+        # the results either way.
         return None
     return ("Before I search, a few things that would change the answer:\n\n"
             + "\n".join("- " + a for a in asks)
@@ -267,7 +302,20 @@ def merge_clarifications(description: str, clarifications: str | None) -> str:
 MIN_CANDIDATES_BEFORE_WIDENING = 3
 
 
-def _score_against(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
+# "Proceedings-Journal" is ACM's PACM titles: a journal that publishes a
+# conference's papers. An author who said "journals only" wants these, and an
+# author who said "conferences" is submitting to the conference, so both
+# answers keep them.
+VENUE_TYPE_EXCLUDES = {"journals": {"conference"}, "conferences": {"journal"}}
+
+
+def _venue_type_of(path: Path) -> str | None:
+    return (identity_fields(path.read_text(encoding="utf-8")).get("Venue type") or "").lower() or None
+
+
+def _score_against(paper: fit_score.Paper,
+                   venue_type: str | None = None) -> list[fit_score.JournalScore]:
+    excluded = VENUE_TYPE_EXCLUDES.get(venue_type or "", set())
     results = []
     for path in fit_score.collect_journals(paper, JOURNALS_ROOT):
         try:
@@ -281,6 +329,8 @@ def _score_against(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
             apc_oa_usd=journal_data.get("apc_usd_oa"),
         )
         elim = fit_score.check_hard_constraints(paper, journal_data)
+        if not elim and excluded and (_venue_type_of(path) or "") in excluded:
+            elim = "venue type: you asked for %s" % venue_type
         if elim:
             js.eliminated, js.elimination_reason = True, elim
         else:
@@ -291,7 +341,8 @@ def _score_against(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
     return sorted((r for r in results if not r.eliminated), key=lambda r: -r.score)
 
 
-def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
+def screen_candidates(paper: fit_score.Paper,
+                      venue_type: str | None = None) -> list[fit_score.JournalScore]:
     """Rank the corpus, widening past the extracted field guess if that guess
     starved the result set.
 
@@ -321,7 +372,7 @@ def screen_candidates(paper: fit_score.Paper) -> list[fit_score.JournalScore]:
     # The scorer already ranks irrelevant fields down; an omitted directory is
     # invisible and cannot be ranked at all.
     from dataclasses import replace
-    return _score_against(replace(paper, fields=[]))[:TOP_N_SCREEN]
+    return _score_against(replace(paper, fields=[]), venue_type)[:TOP_N_SCREEN]
 
 
 # ---------- Stage 3: synthesis (Sonnet, streamed) ----------
@@ -338,6 +389,34 @@ def _find_entry(name: str) -> Path | None:
     return None
 
 
+# The corpus records a missing value as an italicised parenthetical --
+# *(pending)*, *(N/A -- conference proceedings)*, *(varies by year)*. Those
+# are recorded blanks, not values, and a card that printed them would be
+# doing the one thing the corpus rule exists to prevent.
+_RECORDED_BLANK = re.compile(r"^\*+\(.*\)\*+$|^\(.*\)$|^(?:n/?a|-{1,2}|\u2014)$",
+                             re.I | re.S)
+_IDENTITY_ROW = re.compile(r"^\|\s*\*\*(.+?)\*\*\s*\|\s*(.*?)\s*\|\s*$", re.M)
+
+
+def identity_fields(content: str) -> dict:
+    """The Identity table, minus its recorded blanks.
+
+    Not in fit_score.parse_journal_file() because none of it scores: the
+    scorer reads only fields a dimension acts on. It is here because a reader
+    who is shown a venue name and a number cannot check either without a
+    publisher, an ISSN or a link.
+    """
+    block = re.search(r"^## Identity\s*$(.*?)^## ", content, re.S | re.M)
+    if not block:
+        return {}
+    out = {}
+    for key, value in _IDENTITY_ROW.findall(block.group(1)):
+        value = value.strip()
+        if value and not _RECORDED_BLANK.match(value):
+            out[key.strip()] = value
+    return out
+
+
 def build_evidence_card(path: Path) -> dict:
     """Tier + top-cited topic rows for the screening SSE event — real,
     checkable evidence behind a fit_score number, not just the number."""
@@ -347,10 +426,18 @@ def build_evidence_card(path: Path) -> dict:
     except Exception:
         journal_data = {}
     top_topics = sorted(journal_data.get("topics") or [], key=lambda t: -t[1])[:3]
+    ident = identity_fields(content)
+    # Print ISSN first when both exist: it is the one a reader is most likely
+    # to have seen on a call for papers. Absent for conferences, correctly.
+    issn = ident.get("ISSN (Print)") or ident.get("ISSN (Online)")
     return {
         "tier": fit_score.detect_tier(content),
         "disputes": fit_score.detect_disputes(content),
         "top_topics": [{"name": name, "count": count} for name, count in top_topics],
+        "venue_type": ident.get("Venue type"),
+        "publisher": ident.get("Publisher"),
+        "issn": issn,
+        "url": ident.get("URL"),
     }
 
 
@@ -400,8 +487,33 @@ def build_candidate_excerpt(path: Path) -> str:
     return "\n\n".join(parts)
 
 
+def tie_sizes(candidates: list[fit_score.JournalScore]) -> dict[str, int]:
+    """How many candidates share each candidate's exact evidence profile.
+
+    Measured 2026-09-03 on an HCI query restricted to the conference
+    directories: three groups of 8, 7 and 3 venues, each group agreeing to the
+    digit on all six dimensions. It is not a scoring defect. Those entries were
+    built from one family template and none of the 20 conference entries
+    carries topic data at all, so topic_density -- the heaviest dimension at
+    0.25 -- is unknown for every one of them and the remaining five are
+    family-level facts. They are the same record wearing different names.
+
+    Ordering them anyway would manufacture a ranking out of nothing, and the
+    reader has no way to see that the order is arbitrary. Reporting the tie is
+    the same move the scorer already makes for a missing dimension: say that
+    nothing is known rather than supply a number.
+    """
+    groups: dict[tuple, list[str]] = {}
+    for c in candidates:
+        key = (round(c.score, 1),
+               tuple(sorted((k, v) for k, v in c.dimension_scores.items())))
+        groups.setdefault(key, []).append(c.name)
+    return {name: len(names) for names in groups.values() for name in names}
+
+
 def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidates: list[fit_score.JournalScore]) -> str:
     sections = []
+    tied = tie_sizes(candidates)
     for c in candidates:
         try:
             content = c.path.read_text(encoding="utf-8")
@@ -420,6 +532,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         cov = fit_score.score_coverage(c.dimension_scores, fit_score.DEFAULT_WEIGHTS)
         header = (f"=== {c.name} (fit_score {c.score:.1f}/100 from {cov:.0%} of the scoring "
                   f"dimensions — the rest had no data | evidence tier: {tier}")
+        if tied.get(c.name, 1) > 1:
+            header += (f" | TIED with {tied[c.name] - 1} other candidate(s) on an "
+                       f"identical evidence profile — their order here is arbitrary")
         if disputes:
             header += f" | DISPUTED: {'; '.join(disputes)}"
         sections.append(header + f") ===\n{excerpt}")
@@ -438,7 +553,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         + "\n\n".join(sections) + "\n\n---\n\n"
         "Write: (1) your top pick with specific reasoning drawn from that journal's "
         "actual reviewer-culture/framing/sensitive-topics content, (2) 1-2 runners-up "
-        "and why they rank below the top pick, (3) tier/uncertainty flags per the "
+        "and why they rank below the top pick — but where a candidate is marked TIED, "
+        "say it is tied and on what rather than inventing a reason to separate "
+        "them, (3) tier/uncertainty flags per the "
         "rules above for any candidate that isn't Tier 1, (4) one rejection-fallback "
         "suggestion if the top pick doesn't work out. Keep it under 400 words."
     )
@@ -459,31 +576,34 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
 
     yield event("stage", {"stage": "parsing", "status": "start"})
     try:
-        paper = await extract_paper(PROVIDER, freeform_text)
+        paper, venue_type = await extract_paper(PROVIDER, freeform_text)
     except Exception as exc:
         yield event("error", {"message": describe_provider_failure(exc, "reading your paper")})
         return
     yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper),
-                          "unstated": unstated_constraints(paper)})
+                          "unstated": unstated_constraints(paper, venue_type),
+                          "venue_type": venue_type})
 
     # Ask once, before spending screening and synthesis on assumptions the
     # user could have corrected in one sentence. Skipped when they already
     # answered or explicitly chose to proceed.
     if req.clarifications is None and not req.skip_clarify:
-        question = clarifying_question(paper)
+        question = clarifying_question(paper, venue_type)
         if question:
             yield event("clarify", {"question": question})
             return
 
     yield event("stage", {"stage": "screening", "status": "start"})
     try:
-        candidates = screen_candidates(paper)
+        candidates = screen_candidates(paper, venue_type)
     except Exception as exc:
         yield event("error", {"message": f"screening failed: {exc}"})
         return
+    _screen_ties = tie_sizes(candidates)
     yield event("stage", {"stage": "screening", "status": "done", "candidates": [
         {"name": c.name, "score": round(c.score, 1),
          "coverage": fit_score.score_coverage(c.dimension_scores, fit_score.DEFAULT_WEIGHTS),
+         "tied_with": _screen_ties.get(c.name, 1) - 1,
          **build_evidence_card(c.path)}
         for c in candidates
     ]})

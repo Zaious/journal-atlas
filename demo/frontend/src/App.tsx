@@ -26,6 +26,26 @@ interface Candidate {
   tier: string;
   disputes: string[];
   top_topics: TopicEvidence[];
+  // From the entry's Identity table. Any of these can be absent: the corpus
+  // records a missing value as a blank rather than filling it, and a
+  // conference has no ISSN to give. Render only what came back.
+  venue_type?: string | null;
+  publisher?: string | null;
+  issn?: string | null;
+  url?: string | null;
+  // How many other candidates share this one's exact six-dimension profile.
+  // Non-zero means the order between them came out of nothing, and saying so
+  // is cheaper than letting the reader infer a ranking that is not there.
+  tied_with?: number;
+}
+
+/** Hostname only, so a long publisher URL does not wrap the card. */
+function linkLabel(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
 }
 
 function tierClass(tier: string): string {
@@ -125,9 +145,9 @@ function CoverageNotice() {
         <p>
           Entries also differ in <strong>how much of each one is filled in</strong>.
           Unscorable dimensions return "unknown" instead of a midpoint, so every
-          candidate carries an evidence-coverage figure: 163 entries sit at 85–100%,
-          while 236 AI-researched ones sit near 40% and are missing the parts that
-          need lived submission experience. <strong>Philosophy is the sharpest case —
+          candidate carries an evidence-coverage figure: the median curated entry
+          sits at 100%, while the 236 AI-researched ones sit at 40% and are missing
+          the parts that need lived submission experience. <strong>Philosophy is the sharpest case —
           106 entries, none human-verified.</strong> Scores on thin evidence are
           already pulled toward a neutral 50, but treat them as leads to check.
         </p>
@@ -751,6 +771,16 @@ function App() {
                           {" "}· {Math.round(c.coverage * 100)}% evidence
                         </span>
                       )}
+                      {!!c.tied_with && c.tied_with > 0 && (
+                        <span
+                          className="coverage tied"
+                          title={`Scores identically to ${c.tied_with} other candidate${
+                            c.tied_with > 1 ? "s" : ""
+                          } on all six dimensions. The order between them is arbitrary.`}
+                        >
+                          {" "}· tied with {c.tied_with}
+                        </span>
+                      )}
                     </span>
                   </button>
                   {isOpen && (
@@ -761,6 +791,19 @@ function App() {
                             <li key={d}>Disputed claim: {d}</li>
                           ))}
                         </ul>
+                      )}
+                      {(c.publisher || c.issn || c.url) && (
+                        <p className="candidate-identity">
+                          {c.publisher}
+                          {c.publisher && c.issn ? " · " : ""}
+                          {c.issn ? `ISSN ${c.issn}` : ""}
+                          {(c.publisher || c.issn) && c.url ? " · " : ""}
+                          {c.url && (
+                            <a href={c.url} target="_blank" rel="noopener noreferrer">
+                              {linkLabel(c.url)}
+                            </a>
+                          )}
+                        </p>
                       )}
                       {c.top_topics.length > 0 ? (
                         <ul className="topic-evidence-list">
