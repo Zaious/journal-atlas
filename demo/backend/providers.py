@@ -35,6 +35,26 @@ class Provider(Protocol):
 
 # ---------- Anthropic ----------
 
+# How to switch thinking off, per model. The spelling differs between models and a wrong
+# one is a 400. Checked against the API on 2026-10-16:
+#   claude-haiku-5-5   accepts {"type": "disabled"}
+#   claude-sonnet-5-5  rejects that ("To turn thinking off on this model, send
+#                      "thinking": {"type": "between_tools"}") and accepts between_tools
+#   claude-sonnet-5    {"type": "disabled"} per Anthropic's migration guide (not run here)
+# A model that is not listed gets no `thinking` parameter at all, which is the behaviour
+# before this table existed: claude-haiku-4-5, the default extraction model, only thinks
+# when asked to.
+THINKING_OFF: dict[str, dict] = {
+    "claude-haiku-5-5": {"type": "disabled"},
+    "claude-sonnet-5-5": {"type": "between_tools"},
+    "claude-sonnet-5": {"type": "disabled"},
+}
+
+
+def thinking_off(model: str) -> dict | None:
+    """The `thinking` value that turns thinking off for `model`, or None to send nothing."""
+    return THINKING_OFF.get(model)
+
 
 class AnthropicProvider:
     name = "anthropic"
@@ -67,10 +87,20 @@ class AnthropicProvider:
         return next(b for b in response.content if b.type == "tool_use").input
 
     async def stream(self, prompt: str) -> AsyncIterator[str]:
+        # The newer Claude models think by default, and thinking is paid for out of
+        # max_tokens. On the real synthesis prompt (about 49K tokens in) Claude Haiku 5.5,
+        # left alone, spent all 2048 tokens thinking and streamed no text in two of three
+        # measured calls; the third was cut off mid-sentence. Nothing raised, so the page
+        # showed an empty recommendation. This step rewrites excerpts it has already been
+        # handed, under a fixed contract, so thinking is switched off. Sent as `extra_body`
+        # because anthropic 0.69.0's typed `thinking` parameter has no `between_tools`.
+        off = thinking_off(self.synthesis_model)
+        extra = {"extra_body": {"thinking": off}} if off else {}
         async with self._client.messages.stream(
             model=self.synthesis_model,
             max_tokens=2048,
             messages=[{"role": "user", "content": prompt}],
+            **extra,
         ) as stream:
             async for text in stream.text_stream:
                 yield text
@@ -180,6 +210,13 @@ def build_provider(timeout: float, max_retries: int) -> tuple[Provider | None, s
     # the variable to an empty string. A two-arg .get() treats that as "set"
     # and hands back "", producing a "model is required" error far from its
     # cause. Empty means unset here.
+    #
+    # These two variables belong to no provider in particular: whatever they hold is
+    # handed to whichever provider LLM_PROVIDER names. Switch LLM_PROVIDER and leave them
+    # on the old vendor's model IDs and every request fails, so change all three together
+    # (or unset the two). Also: claude-sonnet-5-5 can serve SYNTHESIS_MODEL but not
+    # EXTRACTION_MODEL, because extraction forces a tool call and that model answers a
+    # forced tool_choice with a 400.
     extraction_model = os.environ.get("EXTRACTION_MODEL") or default_extract
     synthesis_model = os.environ.get("SYNTHESIS_MODEL") or default_synth
 
