@@ -1,6 +1,6 @@
 {
   "name": "journal-atlas",
-  "description": "Academic journal fit assessment, submission strategy, and community knowledge contribution. Two skills: journal-atlas (recommend/compare/query/fallback/discover) and journal-atlas-contribute (interview-driven data contribution and entry validation). Eight slash commands prefixed /ja-*.",
+  "description": "Choose where to submit a paper from cited soft metadata (reviewer culture, word limits, fees, AI policy), not model recall. Recommend, compare, query and plan rejection fallbacks over 399 venue profiles; scores come from code and show their evidence coverage. A second skill turns your experience with a journal into a pull request. Eight /ja-* commands.",
   "author": {
     "name": "Meng-Han Lee (Zaious)",
     "email": "zaious.design@gmail.com",

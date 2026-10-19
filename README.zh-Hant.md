@@ -12,9 +12,11 @@
 貼上摘要，拿到帶引註的推薦。不用註冊、不用安裝。跑的是跟下面那個 skill
 完全相同的知識庫與評分程式碼。
 
-**一個由社群維護、為 AI 而生的學術期刊適配性知識庫。**
+**一個開放的知識庫，收錄那些決定投稿能否撐過審查、卻沒有任何期刊索引會記錄的資訊——以及讀取這些資訊的 agent skill。**
 
-Journal Atlas 補上了 Impact Factor 與 Scimago 這類書目計量工具無法觸及的東西：學術期刊的**軟性元資料（soft metadata）**——審稿人文化、framing 期待、敏感主題接受度、AI 政策細節、方法論偏好、拒稿後備策略。所有內容封裝為一個 Claude Agent Skill，可跨 Claude Code、Claude Desktop、ChatGPT 安裝。
+實際被嚴格執行的字數上限、作者付不起的費用、沒人提起的倫理審查要求、審稿人群怎麼看待你的方法：這些就是學術期刊的**軟性元資料（soft metadata）**。以主題比對為主的推薦工具看不到它，語言模型則會用流暢的猜測填補空缺。在這裡，AI 依一條規則完成第一輪蒐集——有來源 URL 的事實，或附上原因的空白——每個 entry 帶有一個 Tier，標示它的證據被查核到什麼程度；投過稿或審過稿的人，可以確認、修正或補上只有他們才知道的事（`/ja-validate`）。內容封裝為 agent skill，可在 Claude Code、Claude Desktop、ChatGPT 安裝。
+
+*生成式資訊應用（generative information access）的一個示範案例，且模型不碰排序：* AI 先把證據收進資料庫；硬性條件、評分與證據涵蓋率由程式碼計算；AI 再解釋留下來的候選，需要時也能比較。 [論文](https://doi.org/10.1145/3805696.3846515) · [線上示範](https://journal-atlas.chroniclecore.com)
 
 > **狀態（2026-07）：Pre-release。** 399 個種子 entries：379 篇期刊跨 9 個領域
 > （新增 `philosophy/`）+ 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。

@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "journal-atlas",
-      "description": "Academic journal fit assessment and submission strategy. Knowledge base of per-journal soft metadata (reviewer culture, framing requirements, sensitive topic tolerance, rejection fallback chains).",
+      "description": "Choose where to submit a paper from cited soft metadata (reviewer culture, word limits, fees, AI policy), not model recall. Recommend, compare, query and plan rejection fallbacks over 399 venue profiles; scores come from code and show their evidence coverage. A second skill turns your experience with a journal into a pull request. Eight /ja-* commands.",
       "author": {
         "name": "Meng-Han Lee (Zaious)"
       },

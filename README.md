@@ -13,9 +13,11 @@
 Paste an abstract, get a cited recommendation. No account, no install. Runs the
 same knowledge base and the same scoring code as the skill below.
 
-**A community-maintained, AI-native knowledge base of academic journal fit metadata.**
+**An open knowledge base of what decides whether a submission survives — the part no journal index records — and the agent skill that reads it.**
 
-Journal Atlas captures what bibliometric tools like Impact Factor and Scimago don't: the **soft metadata** of academic journals — reviewer culture, framing expectations, sensitive-topic tolerance, AI policy nuances, methodological preferences, and rejection-fallback strategies — encoded as a Claude Agent Skill installable across Claude Code, Claude Desktop, and ChatGPT.
+Word limits that are actually enforced, fees an author cannot pay, an ethics approval nobody mentions, how a reviewer pool treats your method: the **soft metadata** of academic journals. Topic-matching recommenders cannot see it, and a language model fills the gap with fluent guesses. Here an AI does the first pass under one rule — a fact with a source URL, or a blank with a recorded reason — each entry carries a tier saying how far its evidence has been checked, and people who have submitted or reviewed can confirm, correct or add what only they know (`/ja-validate`). It ships as an agent skill for Claude Code, Claude Desktop and ChatGPT.
+
+*A worked example of generative information access, with the model kept out of the ranking:* AI gathers the evidence into the corpus; plain code applies the hard constraints, scores what survives and reports how much evidence each score rests on; AI then explains the survivors — and compares venues on request. [Paper](https://doi.org/10.1145/3805696.3846515) · [live demonstration](https://journal-atlas.chroniclecore.com)
 
 > **Status (2026-07): Pre-release.** 399 seed entries — 379 journals across 9 field
 > directories (including new `philosophy/`) + 20 conferences across 4 sub-domains
