@@ -430,7 +430,7 @@ function SiteFooter() {
         <p>
           I'm{" "}
           <a href="https://zaious.dev/" target="_blank" rel="noreferrer">
-            Meng-Han Lee (李孟翰)
+            Meng-Han Lee (Zaious)
           </a>{" "}
           — an independent HCI researcher and AI agent architect, working
           outside an institution. This started as my own problem. I had

@@ -94,6 +94,20 @@ npm run build
 npx wrangler pages deploy dist --project-name journal-atlas --branch main
 ```
 
+`npm run build` prerenders as its last step: it builds
+[`src/entry-server.tsx`](frontend/src/entry-server.tsx) for Node and writes the
+app's first render into `dist/index.html` ([`prerender.js`](frontend/prerender.js)),
+which the client then hydrates. Without that step the served HTML is an empty
+`<div id="root">`, and the footer (source link, licence, who made this) exists
+only for clients that run the bundle. Confirm it on the deployed page:
+
+```sh
+curl -s -A "Mozilla/5.0" https://journal-atlas.chroniclecore.com/ | grep -o 'href="https://zaious.dev[^"]*"'
+```
+
+Scripted checks need a browser User-Agent: the zone answers Python's default
+one with 403.
+
 `VITE_API_BASE` is read at **build** time, not runtime, and lives in the
 committed [`.env.production`](frontend/.env.production) rather than in whoever's
 shell ran the deploy — a public URL is not a secret, and a build that only
