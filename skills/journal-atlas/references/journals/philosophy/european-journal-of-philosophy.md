@@ -4,7 +4,7 @@
 
 # European Journal of Philosophy
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 74 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 75 | 2026-11-01 |
 | **2-Year Mean Citedness** | 0.80 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | APA Journal Survey Project 統計整體接受率 17.83%（230 筆樣本）。期刊官方規定：任何作者 12 個月內僅能投稿一次；且該刊是少數已知『即使 desk reject 也不會將任何審稿意見回饋給作者』的期刊之一（引發部分投稿人不滿，見 Daily Nous 讀者投書）。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -249,3 +249,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

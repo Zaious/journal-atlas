@@ -2,7 +2,7 @@
 
 # Behaviour & Information Technology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 138 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 1,922 | 2026-05-13 (OpenAlex) |
+| **h-index** | 140 | 2026-11-01 |
+| **i10-index** | 2001 | 2026-11-01 |
 | **2-Year Mean Citedness** | 4.04 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 3,622 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 3786 | 2026-11-01 |
 | **Impact Factor** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -306,3 +306,4 @@ Low for technology-adoption / social-media empirical authors. Moderate for HCI-c
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

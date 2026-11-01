@@ -4,7 +4,7 @@
 
 # Utilitas
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 58 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 59 | 2026-11-01 |
 | **2-Year Mean Citedness** | 0.50 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 無法量化。唯一背景訊號:哲學期刊普遍拒稿率極高(常態<10%,見Daily Nous「Insanely Low Acceptance Rates of Philosophy Journals」),但此為產業通論非Utilitas專屬數字,不可套用為期刊具體數值。另有2026-06-30 Daily Nous報導證實Utilitas近年投稿量上升、審稿積壓嚴重、正暫停收件——這是唯一具體、期刊專屬的第一手時效訊號,建議寫入positioning而非虛構的量化acceptance number。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -247,3 +247,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

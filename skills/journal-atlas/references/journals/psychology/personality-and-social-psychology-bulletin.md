@@ -4,7 +4,7 @@
 
 # Personality and Social Psychology Bulletin
 
-> **Last verified**: 2026-05-16
+> **Last verified**: 2026-11-01
 > **Maintainer**: @your-handle
 > **Auto-populated from**: OpenAlex Sources API (CC0). See `scripts/import_openalex.py`.
 
@@ -41,9 +41,9 @@
 | **Acceptance Rate** | *(fill manually if known)* | |
 | **Desk Rejection Rate** | *(fill manually if known)* | |
 | **Quartile (by field)** | *(SCImago — fill manually)* | |
-| **2-yr Mean Citedness (OpenAlex IF proxy)** | 2.51 | 2026-05-16 |
-| **i10-index** | 4506 | 2026-05-16 |
-| **Total Works** | 5792 | 2026-05-16 |
+| **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.43 | 2026-11-01 |
+| **i10-index** | 4538 | 2026-11-01 |
+| **Total Works** | 5845 | 2026-11-01 |
 
 ### Review Cycle Time
 
@@ -304,3 +304,4 @@ Low for SPSP-aligned multi-study quantitative authors. Free OA option likely via
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-16 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-05-16 | Soft Metadata filled at Tier 2 — evidence adapted from internal evidence aggregation (community-source review 2026-05) | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (two_yr_citedness, i10_index, works_count) | @bot |

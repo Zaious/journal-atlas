@@ -2,7 +2,7 @@
 
 # ACM Interactions
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 100 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 846 | 2026-05-13 (OpenAlex) |
+| **h-index** | 101 | 2026-11-01 |
+| **i10-index** | 866 | 2026-11-01 |
 | **2-Year Mean Citedness** | 1.92 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 4,378 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 4425 | 2026-11-01 |
 | **Impact Factor** | *(not indexed by JCR — practitioner-focused magazine)* | |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | *(not disclosed by publisher)* | |
@@ -307,3 +307,4 @@ Low for thought pieces and reflective essays. Moderate for academic researchers 
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — practitioner magazine format flagged distinctly from research journal pattern. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

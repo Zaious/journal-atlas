@@ -4,7 +4,7 @@
 
 # Philosophy and Literature
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 40 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 41 | 2026-11-01 |
 | **2-Year Mean Citedness** | 0.04 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | 2024/10/15 至 2025/8/31 曾實施投稿暫停(moratorium),官方說法是為了消化已接受但未出版的稿件、將接受到出版的等候時間縮回一年以內——側面顯示稿件累積量大、出版排隊時間曾超過一年。此為出版社官方聲明,非第一手投稿者經驗。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -245,3 +245,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index) | @bot |

@@ -2,7 +2,7 @@
 
 # ACM Transactions on Computer-Human Interaction
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 
 ---
@@ -30,10 +30,10 @@
 
 | Metric | Value | Date |
 |--------|-------|------|
-| **h-index** | 144 | 2026-05-13 (OpenAlex) |
-| **i10-index** | 792 | 2026-05-13 (OpenAlex) |
+| **h-index** | 146 | 2026-11-01 |
+| **i10-index** | 831 | 2026-11-01 |
 | **2-Year Mean Citedness** | 5.83 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 1,118 | 2026-05-13 (OpenAlex) |
+| **Total Works** | 1140 | 2026-11-01 |
 | **Impact Factor** | *(pending — ACM journal, JCR-indexed)* | |
 | **5-Year IF** | *(pending)* | |
 | **CiteScore** | *(pending)* | |
@@ -312,3 +312,4 @@ Variable. For HCI-canonical empirical papers: low. For third-wave / critical / a
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Identity, Metrics, Policies, Format, Subject Density populated from OpenAlex + ACM Author Guidelines. Soft Metadata and Strategic Notes reserved for community. Schema v1.2 from inception. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index, i10_index, works_count) | @bot |

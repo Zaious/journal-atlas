@@ -4,7 +4,7 @@
 
 # Sophia (International Journal of Philosophy and Traditions / Philosophy and Traditions)
 
-> **Last verified**: 2026-07-13
+> **Last verified**: 2026-11-01
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
@@ -36,7 +36,7 @@
 |--------|-------|------|
 | **Impact Factor** | *(pending — not baked in; JCR is subscription-only, see docs/ATLAS_V2_DESIGN.md §6.1)* | |
 | **5-Year IF** | *(pending)* | |
-| **h-index** | 26 | 2026-07-13 (OpenAlex, via spine) |
+| **h-index** | 27 | 2026-11-01 |
 | **2-Year Mean Citedness** | 0.50 | 2026-07-13 (OpenAlex, via spine) |
 | **CiteScore** | *(pending)* | |
 | **Acceptance Rate** | APA Journal Survey Project 統計錄取率 66.67%(N=12),平均審稿人數 2.3 人/稿。另,SciRev 平台上該刊「尚無任何審稿人提交評論」(0 reviews),故無法交叉驗證此錄取率與審稿時間數字。 | AI research (see Reviewer Pool Characteristics sources) |
@@ -247,3 +247,4 @@
 | Date | Change | By |
 |------|--------|----|
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 3/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
+| 2026-11-01 | Refreshed metrics from OpenAlex (h_index) | @bot |
