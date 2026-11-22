@@ -2,7 +2,7 @@
 
 # New Ideas in Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 
 ---
@@ -15,45 +15,45 @@
 | **Venue type** | Journal |
 | **Publisher** | Elsevier BV |
 | **ISSN (Print)** | 0732-118X |
-| **ISSN (Online)** | *(pending)* |
-| **Founded** | *(pending)* |
+| **ISSN (Online)** | 1873-3522 (journal home page, Wayback snapshot 2026-10-17: https://web.archive.org/web/20261017152109/https://www.sciencedirect.com/journal/new-ideas-in-psychology ) |
+| **Founded** | 1983 — the earliest Crossref records under this ISSN are dated 1983-01 (e.g. DOI 10.1016/0732-118x(83)90039-9), retrieved 2026-11-23: https://api.crossref.org/works?filter=issn:0732-118X&sort=published&order=asc&rows=2 |
 | **URL** | https://www.sciencedirect.com/journal/new-ideas-in-psychology |
 | **Author Guidelines** | https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors |
-| **Society / Association** | *(pending)* |
-| **Editorial Board Location** | *(pending verification)* |
+| **Society / Association** | None stated on the pages read (home page snapshot 2026-10-17, aims page snapshot 2023-08-03, guide snapshot 2024-03-14). |
+| **Editorial Board Location** | Wayback snapshot 2023-08-03 of the board page (the live ScienceDirect pages return 403): 30 editors and editorial board members in 16 countries; per-entry recount of the archived page on 2026-11-23: United States 9, Canada 5, Poland 2, Turkey 2, one each Australia, Cyprus, Ghana, Greece, Italy, Japan, Kyrgyzstan, Netherlands, Norway, Trinidad and Tobago, United Arab Emirates, United Kingdom (the page's own summary header shows United States 10 and lists Turkey among the single-entry countries, but the entries themselves give 9 and 2). Editor-in-Chief at that date: Bennett L. Schwartz (Florida International University). Source: https://web.archive.org/web/20230803000518/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/editorial-board . The 2026-10-17 home-page snapshot already shows a Senior Associate Editor (Clinical and Health) who is not on the 2023 list, so the current board differs from this snapshot; it was not read. |
 
 ---
 
 ## Metrics
 
-> Source: OpenAlex API + ScienceDirect. Retrieved 2026-05.
+> Sources: OpenAlex API values dated 2026-05 (not refreshed on 2026-11-23: OpenAlex returned HTTP 429 for every keyless request), plus the Elsevier pages named per row.
 
 | Metric | Value | Date |
 |--------|-------|------|
 | **h-index** | 83 | 2026-05 (OpenAlex) |
-| **2-Year Mean Citedness** | 2.19 | 2026-05 (OpenAlex) |
-| **Impact Factor** | *(pending)* | |
-| **CiteScore** | *(pending)* | |
-| **Acceptance Rate** | *(not disclosed by publisher)* | |
-| **Desk Rejection Rate** | *(pending)* | |
-| **Quartile (by field)** | *(pending)* | |
+| **2-Year Mean Citedness** | 2.19 (OpenAlex proxy, not a JCR figure) | 2026-05 (OpenAlex) |
+| **Impact Factor (JCR)** | Not recorded. JCR is paywalled; the ScienceDirect page shows an Impact Factor figure, but the two snapshots read (2023-08-03 and 2026-10-17) show different values, so none is copied here. | 2026-11-23 |
+| **CiteScore** | Not collected (Scopus-licensed). | 2026-11-23 |
+| **Acceptance Rate** | No figure found. SciRev lists "n/a" for the journal (https://scirev.org/journal/new-ideas-in-psychology/ , retrieved 2026-11-23). | 2026-11-23 |
+| **Desk Rejection Rate** | No rate found. The journal home page shows an Elsevier "insights" figure of 4 days from submission to first decision; that is a time, not a rejection rate (home snapshot 2026-10-17, URL above). | 2026-11-23 |
+| **Quartile (by field)** | Not recorded (SCImago not read in this pass). | 2026-11-23 |
 
 ### Review Cycle Time
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
-| **Time to first review** | *(pending)* | |
-| **Time to acceptance (total)** | *(pending)* | |
-| **Time to publication (after acceptance)** | *(pending)* | |
+| **Time to first decision** | 4 days (Elsevier "insights" box: submission to first decision) | Publisher-displayed figure on the journal home page, Wayback snapshot 2026-10-17: https://web.archive.org/web/20261017152109/https://www.sciencedirect.com/journal/new-ideas-in-psychology . The box does not state its sample or period. The very short time suggests it is dominated by decisions made before external review; this is an inference. SciRev, n=1 review: first round 4.7 weeks (https://scirev.org/journal/new-ideas-in-psychology/ , page dated January 2026). |
+| **Time to first review** | No separate figure on any page read. | Searched 2026-11-23. |
+| **Time to acceptance (total)** | 177 days from submission to acceptance (same Elsevier box); 58 days from submission to decision after review. | Same snapshot and caveat. SciRev, n=1 review: 1 round, outcome rejected. |
+| **Time to publication (after acceptance)** | 7 days from acceptance to online publication (same Elsevier box). | Same snapshot and caveat. |
 
 ### Publication Frequency
 
 | Aspect | Detail |
 |--------|--------|
-| **Schedule** | Quarterly |
-| **Articles per year (approx.)** | *(pending)* |
-| **Special issues?** | Yes (active CFPs published) |
+| **Schedule** | The earlier entry said "Quarterly"; no page read states a schedule, so that is not repeated as fact. The 2026-10-17 home snapshot lists latest articles dated January 2027. |
+| **Articles per year (approx.)** | Crossref records of type journal-article by published year: 2021: 61, 2022: 38, 2023: 56, 2024: 36, 2025: 48, 2026 (to 2026-11-23): 52; 291 in total. Source: https://api.crossref.org/journals/0732-118X/works?filter=from-pub-date:2021-01-01,until-pub-date:2026-11-23 , retrieved 2026-11-23. The count may include editorials and book reviews (all are typed journal-article). |
+| **Special issues?** | Yes. The home page (snapshot 2026-10-17) lists four special issues or article collections with deadlines between 2025-05-05 and 2026-03-30, and one open call, "Metaphor and Epistemic Injustice in Mental Illness", with a submission deadline of 15 November 2026 (the earlier entry gave 2026-08-15; the page now shows the later date, which had already passed on 2026-11-23). |
 
 ---
 
@@ -63,74 +63,72 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (double-blind) — editorial team performs initial suitability screening, then manuscript proceeds to double-anonymized peer review with a minimum of one independent expert reviewer; authors submit an anonymized manuscript plus a separate title page (source: journal's own Guide for Authors, verified 2026-07-20) |
-| **Transferable / Cascade?** | *(Elsevier operates cross-journal transfer for some manuscripts — verify for NIP)* |
-| **Reviewer reports published?** | No (per Elsevier default; journal does not allow AI use by reviewers/editors during peer review) |
-| **Typical R+R rounds** | *(pending)* |
-| **Reviewer recommendations** | *(pending)* |
+| **Type** | Double-anonymized. The editor first assesses suitability; suitable papers are "typically" sent to at least one independent expert reviewer; the Editor's decision is final. Authors submit an anonymized manuscript (references, figures, tables and acknowledgements included) plus a separate title page. Source: Guide for Authors, Wayback snapshot 2024-03-14: https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors |
+| **Transferable / Cascade?** | The guide has a paragraph on transferring a manuscript to another journal, which says the new journal will review it independently; the transfer conditions were not read (guide snapshot above). |
+| **Reviewer reports published?** | Not stated on the guide page. |
+| **Typical R+R rounds** | 1.0 (SciRev, n=1 review: https://scirev.org/journal/new-ideas-in-psychology/ ). |
+| **Reviewer recommendations** | Not stated beyond the "minimum of one independent expert reviewer" sentence above. |
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No — follows Elsevier's publisher-wide AI policy. The text-disclosure requirement and the image-generation prohibition quoted below are standard Elsevier boilerplate that appears across Elsevier journals' Guide for Authors pages, not an NIP-specific addition (verified against Elsevier's general "Generative AI policies for journals" page, 2026-07-20) |
-| **Explicit permission gate?** | No — disclosure-based for text; explicit prohibition for images |
-| **Leniency (1-5)** | 3 (text disclosure-based; images prohibited unless AI is the research method) |
-| **Summary** | Authors must declare use of generative AI in manuscript preparation upon submission. Declaration must be placed in a statement before the references. **Image restriction**: "We do not permit the use of Generative AI or AI-assisted tools to create or alter images in submitted manuscripts" (except where AI itself is the research method, fully described). Journal does not currently allow AI use by reviewers or editors during peer review. AI cannot be listed as authors. Non-disclosure or violation is grounds for rejection. |
-| **Source URL** | https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors |
+| **Has journal-specific AI policy?** | No separate journal policy. The journal's Guide for Authors carries Elsevier's standard section "Declaration of generative AI in scientific writing", and Elsevier's publisher-wide journals policy applies (https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals , read live 2026-11-23). |
+| **Explicit permission gate?** | No — disclosure-based. |
+| **Leniency (1-5)** | 3 (my judgment from the rules below: use is allowed with oversight and a disclosure statement). |
+| **Summary** | Guide snapshot 2024-03-14: authors should use AI only to improve readability and language, under human oversight; AI cannot be listed as an author; a statement titled "Declaration of Generative AI and AI-assisted technologies in the writing process" goes at the end of the manuscript, before the references. The current Elsevier journals policy (retrieved 2026-11-23) is broader than that guide wording: it lets authors use AI tools for tasks such as literature synthesis and content organization, requires a disclosure statement at submission, says basic grammar, spelling and punctuation checks need no declaration, and treats images by type — data visualizations may be AI-assisted only if directly derived from the underlying data and disclosed in Methods; primary research images (microscopy, scans and similar) must not be created or altered by AI. Reviewers and editors must not upload a manuscript into an AI tool outside Elsevier's systems. The earlier entry's blanket sentence about creating or altering images is the wording of Elsevier's separate policy for books and commissioned content (https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier ), not the journals page; the journals page applies different rules per image type. |
+| **Source URL** | https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors (live page 403; read via the Wayback URL in Peer Review) and the Elsevier journals policy URL above. |
 
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Yes | Elsevier article sharing policy: "Sharing preprints, such as on a preprint server, will not count as prior publication" |
-| Under review | Recommended no updates (standard practice) | |
-| Post-acceptance | Yes | Can update preprint to accepted manuscript version |
-| Self-archived AAM | Yes | **⚠️ 24-month embargo** before public self-archiving |
-| Version of Record | Restricted unless OA APC paid | |
-
-⚠️ **24-month AAM embargo** is significant: "Subscription articles have a 24-month embargo period before authors can self-archive accepted manuscripts publicly." This is notably longer than Sage's no-embargo policy.
+| Pre-submission | Yes (publisher rule) | Elsevier's article-sharing page says authors can share a preprint anywhere at any time, with a caveat that journals with double-anonymized review may have different preprint rules and the Guide for Authors should be checked (https://www.elsevier.com/about/policies-and-standards/sharing , read live 2026-11-23). The NIP guide snapshot contains no submission-time preprint rule beyond how to cite preprints. |
+| Under review | Not stated by the guide | Nothing journal-specific read; the earlier "recommended no updates (standard practice)" had no source. |
+| Post-acceptance | Yes | Elsevier: the preprint may be updated with the accepted manuscript on arXiv or RePEc under a CC BY-NC-ND licence and should link to the published DOI (sharing page above). |
+| Self-archived AAM | Immediately only on a personal homepage or blog; public repositories after the embargo | Elsevier's "Journal Specific Embargo Periods 2025" sheet lists 24 months for ISSN 0732-118X (https://assets.ctfassets.net/o78em1y1w4i4/B9Hf8A898d6upwp0Uq2Wp/58aab9d0f341d2cf581bcb090d7c7705/Embargos-per-journal.xlsx , the file linked from the sharing page, row read 2026-11-23). The sheet is dated 2025; the 2026 value was not checked. |
+| Version of Record | Subscription articles: share a link, not the full text; gold OA articles follow the author's licence | Sharing page above. |
 
 ### Open Access
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid (Subscription + OA option) |
-| **APC (OpenAlex value)** | $3,280 USD |
-| **APC (ScienceDirect current)** | $3,420 USD |
-| **Subscription submission cost** | $0 (but with 24-month embargo on AAM) |
-| **Waiver mechanism** | Elsevier "best price promise" — discounts possible based on country, institution, society membership |
-| **Read & Publish agreements** | Available through participating institutions |
+| **Model** | Hybrid: the journal page says "Supports open access" and also lists a subscription route (home snapshot 2026-10-17). |
+| **APC (if OA chosen)** | USD 3,610 excluding taxes, "actual APCs may differ based on individual author circumstances" (home snapshot 2026-10-17). This replaces both earlier figures (USD 3,280 from OpenAlex, USD 3,420 from ScienceDirect), which are out of date. |
+| **Subscription submission cost** | "No publication fee charged to authors" for the subscription route (home snapshot). |
+| **Waiver mechanism** | The earlier "best price promise" wording was not found on the pages read; not repeated. |
+| **Read & Publish agreements** | The home page says an institution may have an agreement covering the APC in participating journals. |
 
 ---
 
 ## Format
 
-> Source: Elsevier official Author Guide. Retrieved 2026-05.
+> Source: Guide for Authors, Wayback snapshot 2024-03-14 (https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors ); the live page returned 403 on 2026-11-23, so rules changed after March 2024 are not seen.
 
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | Full-length articles (theory/method), Discussion papers, Interviews, Critical reviews, Brief peer commentaries/rebuttals, Book reviews |
-| **Word limit (Standard papers)** | **7,500 words** |
+| **Article types accepted** | Full-length articles on theory or method; discussion papers and interviews; brief peer commentaries or rebuttals (guide). The 2026 home page also names critical reviews, debates and book reviews in its scope text. |
+| **Word limit (Standard papers)** | 7,500 words ("should not exceed"). The guide does not say whether references, abstract or notes count. |
 | **Word limit (Discussion papers / Interviews)** | 2,500 words |
 | **Word limit (Rebuttals / Commentaries)** | 1,000 words |
-| **Word limit negotiability** | Hard limit (7,500 strictly enforced for standard papers) |
-| **Abstract limit** | 250 words |
-| **Highlights** | 3–5 bullets, 85 characters each |
-| **Reference limit** | *(pending — typical Elsevier conventions apply)* |
-| **Supplementary material** | *(per Elsevier default)* |
-| **Figure/Table limits** | *(per Elsevier default)* |
-| **AI Disclosure placement** | Must be placed in statement section before references |
+| **Word limit negotiability** | The guide says "exceptions to these length guidelines can be granted in special cases". The earlier "hard limit, strictly enforced" is not what the guide says. |
+| **Abstract limit** | 150 words (guide). The earlier entry said 250; that does not match the guide snapshot. |
+| **Highlights** | Mandatory: 3–5 bullets, at most 85 characters each, including spaces (guide). |
+| **Reference limit** | No numeric limit stated. Style: APA 7th edition (guide). |
+| **Supplementary material** | The guide has a Supplementary material section; its rules were not read in detail. |
+| **Figure/Table limits** | No numeric limit found in the guide text. |
+| **AI Disclosure placement** | At the end of the manuscript, before the References list (guide). |
+| **Other requirements** | At most 6 keywords; numbered sections; CRediT author-contribution roles required from the corresponding author; separate anonymized manuscript and title page (guide). |
 
 ---
 
 ## Subject Density
 
-> Source: OpenAlex topic analysis. Retrieved 2026-05.
+> Source: OpenAlex topic analysis, retrieved 2026-05 (not refreshed: OpenAlex returned HTTP 429 on 2026-11-23). **Reading caution:** these are OpenAlex topic-assignment counts, and a work can carry several topics, so the numbers are not article counts; the window is not stated in the earlier entry. Use them as a relative ranking only. For scale, Crossref lists 291 articles for 2021 to 2026-11-23 (https://api.crossref.org/journals/0732-118X/works?filter=from-pub-date:2021-01-01 ).
 
 ### Top Topics
 
-| Topic | Article Count |
+| Topic | OpenAlex topic-assignment count |
 |-------|--------------|
 | Academic and Historical Perspectives in Psychology | 161 |
 | Social Representations and Identity | 151 |
@@ -143,19 +141,22 @@
 | Philosophy and History of Science | 76 |
 | Cultural Differences and Values | 76 |
 
-*(Top 3 of OpenAlex topic ranking shown. Past 6 years (2020–2025) the journal published 33+ articles on self-state / dialogical self / process research themes.)*
+*(Top 10 shown. The earlier note about "33+ articles on self-state / dialogical self / process research themes" was not reproduced by the Crossref counts of this pass: "dialogical" appears in 1 of 291 titles plus available abstracts.)*
 
 ### Orientation
 
+> Counting basis for this section and the Soft Metadata counts: Crossref records for the journal, 2021-01 to 2026-11-23, 291 journal-article records (https://api.crossref.org/journals/0732-118X/works?filter=from-pub-date:2021-01-01,until-pub-date:2026-11-23 ). Elsevier does not deposit abstracts in Crossref, so matching is on all 291 titles, plus 59 abstracts (20% of records) that Semantic Scholar returned for the same DOIs (https://api.semanticscholar.org/graph/v1/paper/batch , retrieved 2026-11-23); 15 DOIs were not found there. Counts are therefore lower bounds. Match = keyword in title or in an available abstract; counts are my own.
+
 | Dimension | Assessment |
 |-----------|------------|
-| **Empirical vs. Theoretical** | Theoretical/conceptual-leaning — explicit scope welcomes new theoretical and speculative ideas |
-| **Quantitative vs. Qualitative** | Mixed; theoretical-conceptual papers welcomed alongside empirical work |
-| **Cross-disciplinary openness** | High — explicit cross-disciplinary scope for "new ideas in psychology" |
+| **Empirical vs. Theoretical** | Theoretical in scope, mixed in practice. Stated scope: "a journal for theoretical psychology in its broadest sense"; "empirical papers are accepted... only as long as they focus on conceptual issues and are theoretically creative" (aims page, Wayback snapshot 2023-08-03: https://web.archive.org/web/20230803002427/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/aims-and-scope ). Count: theor*/conceptual in 55 of 291 records (18.9%; 33 of them in the title). |
+| **Quantitative vs. Qualitative** | Neither dominates in the counts: experiment/experimental 12 of 291 (4.1%), survey/questionnaire 5, interview/qualitative/thematic/grounded theory 5, mixed methods 0, meta-analysis 1. Scale/measure/validity/reliability vocabulary appears in 24 of 291 (8.2%), so psychometric work is visible. |
+| **Cross-disciplinary openness** | The aims page asks for ideas "from other fields that have something to bring to Psychology" and "interdisciplinary" discussion of theory. Counts: philosophy/metaphysics/ontology 7 of 291, consciousness 9, evolution 11, machine/AI vocabulary 11. |
 
-### Active Calls for Papers (as of 2026-05)
+### Active Calls for Papers (as of 2026-10-17 home snapshot)
 
-- **Metaphor and Epistemic Injustice in Mental Illness** — Deadline 2026-08-15; Guest Editors: Francesco Bubbico, Lucienne Huby, Lina Maria Lissia, Martina Montalti
+- **Metaphor and Epistemic Injustice in Mental Illness** — deadline 15 November 2026 (passed by 2026-11-23); Guest Editors: Francesco Bubbico, Lucienne Huby, Lina Maria Lissia, Martina Montalti (https://web.archive.org/web/20261017152109/https://www.sciencedirect.com/journal/new-ideas-in-psychology ).
+- Listed special issues and collections with deadlines already past on the same page: Aesthetic Dis/interestedness and Affects (2026-03-30), Control and Commitment (2026-02-23), Engendering Embodiment in Disability and Neurodiversity (2025-09-15), Probabilistic nature of perception and cognition (2025-05-05).
 
 ---
 
@@ -163,69 +164,75 @@
 
 ### Epistemological & Political Leanings
 
+Evidence base: the Crossref/Semantic Scholar counts described under Orientation (291 records, 59 abstracts, lower bounds), and the most-cited works by Crossref `is-referenced-by-count` for 2021-2026 (https://api.crossref.org/works?filter=issn:0732-118X,from-pub-date:2021-01-01&sort=is-referenced-by-count&order=desc&rows=12 , retrieved 2026-11-23). No editorial statement on political or epistemological stance was found on the pages read.
+
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | Medium — Anglocentric cognitive-psychology tradition dominates, but recent special issues address cross-cultural and global topics |
-| **Non-Western epistemology openness** | Medium — receptive when framed within cognitive-psychology vocabulary; less hospitable to non-Western frameworks presented in their own terms |
-| **Diversity topic receptiveness** | Medium-High — recent issues address autism, neurodiversity, and marginalized-identity disclosure (e.g., autistic camouflaging 2022, with 31+ citations); LGBT and minority topics published when framed conceptually |
-| **Dominant theoretical tradition** | Embodied / extended cognition (4E), dialogical self theory, Bromberg-style self-state ecosystems, process research, theoretical and conceptual psychology (per OpenAlex top-cited frameworks 2020–2025) |
+| **Cross-cultural friendliness** | Present as a modest theme: culture/cross-cultural vocabulary in 11 of 291 records (7 titles); decolonial/indigenous/postcolonial vocabulary in 2. The board snapshot of 2023 lists 16 countries but United States 9 and Canada 5 of 30 people (per-entry recount; the page header says 10 for the United States) (https://web.archive.org/web/20230803000518/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/editorial-board ). The earlier "Medium" label is not a count; left as these figures. |
+| **Non-Western epistemology openness** | Not observable beyond the figures above. The aims page asks for "background metaphysics" and fundamental method issues but names no non-Western tradition (aims snapshot URL in Orientation). |
+| **Diversity topic receptiveness** | Autism/neurodiversity vocabulary in 5 of 291 titles; gender/feminism in 4 records; racism/racial/microaggression in 12 records (10 titles). Three of the 12 most-cited 2021-2026 works concern microaggressions or racial microaffirmations (DOIs 10.1016/j.newideapsych.2021.100895, 10.1016/j.newideapsych.2021.100882, 10.1016/j.newideapsych.2021.100880). A special collection "Engendering Embodiment in Disability and Neurodiversity" was listed with a 2025-09-15 deadline (home snapshot). |
+| **Dominant theoretical tradition** | No single tradition dominates in the counts: embodied/enactive/4E 5 of 291 records, phenomenolog* 4, dialogical 1; measurement-type vocabulary 24. The earlier entry's "embodied/extended cognition (4E), dialogical self theory, Bromberg-style self-state ecosystems" is not supported: none of the 12 most-cited works (top: DOI 10.1016/j.newideapsych.2023.101010 on mental-health awareness, 326 citations; DOI 10.1016/j.newideapsych.2020.100832 on measuring knowledge with alpha, 153) is about those traditions. |
 
 ### Framing Requirements
 
-- **Mandatory framing?** Yes (soft)
-- **If yes, what kind?** Manuscripts must position a **new theoretical or conceptual idea** within cognitive / theoretical psychology. Empirical work accepted, but the "new idea" claim must be foregrounded.
-- **Consequences of ignoring it**: Desk reject likely if editor reads paper as routine empirical work without conceptual novelty; reviewer pushback if the "new idea" is judged derivative.
+- **Mandatory framing?** Stated as scope, not as a numbered submission rule. The journal asks for "new and seminal ideas" and says empirical papers are accepted "only as long as they focus on conceptual issues and are theoretically creative" (aims page, Wayback snapshot 2023-08-03: https://web.archive.org/web/20230803002427/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/aims-and-scope ). The 2026-10-17 home snapshot describes "innovative, conceptual and theoretical contributions across all fields of Psychology" (https://web.archive.org/web/20261017152109/https://www.sciencedirect.com/journal/new-ideas-in-psychology ).
+- **What the guide requires of a submission:** the introduction should state the objectives and background "avoiding a detailed literature survey"; a Theory section "should extend, not repeat" the introduction; mandatory Highlights (3–5 bullets) and an abstract of at most 150 words; accepted types are full-length theory or method articles, discussion papers, interviews and peer commentaries or rebuttals (Guide for Authors, Wayback snapshot 2024-03-14: https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors ).
+- **Consequences of ignoring it:** the only stated consequence is that papers are first assessed by the editor "for suitability" and only suitable ones go to reviewers (guide, Peer review). Whether a routine empirical report is turned away at that stage is an inference from the aims sentence; no page read says so. Context count: experiment/experimental vocabulary appears in 12 of 291 records (4.1%), so empirical work is published but is a minority in the counted records.
 
 ### Methodological Preferences
 
+Scores follow this pass's own count convention (not a publisher rule): hits ÷ 291 records (titles plus the 59 available abstracts, lower bounds because 80% of records have no abstract text) — 0 hits = 0; under 1% = 1; 1–5% = 2; over 5% = 3; a 4–5 needs a cited editorial statement. The score measures how often a method is *named*, not acceptance policy. `scripts/topic_trend_scan.py` was not run (OpenAlex needs an API key and was over budget). Counts: Crossref + Semantic Scholar, retrieved 2026-11-23.
+
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | 3 | Published when paired with theoretical contribution; not the journal's center of gravity |
-| Qualitative interviews | 3 | Accepted when used to ground theoretical claims |
-| Autoethnography | 2 | Rare — only 1 article 2020–2025 per OpenAlex autoethnography topic filter (ISSN 0732-118X); accepted only with strong cognitive-theoretical framing |
-| Theoretical / Conceptual | 5 | Core article type; explicitly welcomed |
-| Mixed methods | 3 | Accepted with conceptual contribution |
-| Meta-analysis | 2 | Uncommon; would need explicit theoretical contribution beyond effect-size synthesis |
+| Quantitative experimental | 2 | experiment/experimental in 12 of 291 records (4.1%); survey/questionnaire in 5 (1.7%). Empirical reports are published; the earlier score of 3 had no count behind it. |
+| Qualitative interviews | 1 | interview/qualitative/thematic/grounded theory in 5 of 291 (1.7%) by the union count, but "qualitative" alone in 2 (0.7%); scored 1 because the narrower term is under 1%. |
+| Autoethnography | 1 | 1 of 291 records matches: DOI 10.1016/j.newideapsych.2024.101122, a 2024 paper titled "Can autoethnography enhance research in health psychology?" (a methods discussion, not an autoethnography; I read the title only). Matches the earlier "1 article". |
+| Theoretical / Conceptual | 5 | Stated scope "theoretical psychology in its broadest sense" (aims page, https://web.archive.org/web/20230803002427/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/aims-and-scope ) plus theor*/conceptual in 55 of 291 records (18.9%). |
+| Mixed methods | 0 | 0 of 291 records match "mixed method". A zero shows non-appearance in the counted text (titles and 20% of abstracts), not a stated bar. |
+| Meta-analysis | 1 | 1 of 291: DOI 10.1016/j.newideapsych.2022.101007, "...A single paper meta-analysis assessing subscale correlations". |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | 2 — third-person scholarly register is the norm; first-person acceptable in positionality framing only |
-| **Expected density** | Rare; cognitive-psychology house style favors objective register |
-| **Writing style notes** | Formal academic register; comfortable with embodied / 4E cognition vocabulary; relatively jargon-tolerant for theoretical framing |
+| **First-person voice acceptance (0-5)** | 3 — measured on the 59 available abstracts only (Semantic Scholar text for Crossref DOIs; skewed toward 2021: 39 of the 59). 43 of 59 (73%) contain a first-person pronoun (I, we, my, our) and 28 of 59 (47%) contain "I" or "we" followed by a reporting verb such as argue, examine, show or propose. Examples of abstracts with first person (DOIs): 10.1016/j.newideapsych.2020.100822 ("I argue"), 10.1016/j.newideapsych.2021.100856 ("We argue"), 10.1016/j.newideapsych.2021.100857 ("we draw"), 10.1016/j.newideapsych.2022.100986 ("I argue"). Not 4-5: the sample is small and no editorial statement was found. The earlier "2, third-person is the norm" is not what these abstracts show. |
+| **Expected density** | Main-text density not measured: full texts are paywalled and ScienceDirect returns 403. The guide contains no first-person guidance (searched the guide text, snapshot 2024-03-14). |
+| **Writing style notes** | From the guide (https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors ): APA 7th edition; numbered sections (1, 1.1, ...); abstract of at most 150 words; at most 6 keywords; mandatory Highlights of 3–5 bullets under 85 characters each; the introduction should avoid a detailed literature survey. The earlier note about "4E vocabulary and jargon tolerance" is not supported by the counts (embodied/enactive in 5 of 291 records). |
 
 ### Reviewer Pool Characteristics
 
-Reviewers draw primarily from theoretical and cognitive-psychology communities — strong representation of 4E cognition, dialogical self theory, embodied cognition, and process-research networks. Expect literacy in Bromberg / Hermans / Winnicott / Gallagher; less common: phenomenological-continental depth (Husserl, Merleau-Ponty direct readings). Common reviewer demand: "What is genuinely *new* here, and how does this advance cognitive-theoretical psychology?"
+Reviewer behaviour itself is not observable from public pages; what follows is the stated review model and countable board data. Review model: double-anonymized; the editor screens first; suitable papers go "typically" to at least one independent expert reviewer (Guide for Authors, https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors ). The earlier statements that reviewers come "primarily from 4E / dialogical self / process-research networks" and the expected-reading list (Bromberg, Hermans, Winnicott, Gallagher) had no source and are removed.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | Cognitive / theoretical psychology, embodied cognition, dialogical self | OpenAlex top topics + editorial board CV survey |
-| **Reviewer competence variance** | Medium — depth in cognitive-theoretical tradition is high; variance in qualitative-methods literacy |
-| **Quantitative mindset bias on qualitative work?** | Mixed — some reviewers may request "representativeness" arguments on purposive samples |
-| **Discourse community signals (editorial board)** | International cognitive-theoretical psychology programs | https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/editorial-board |
+| **Dominant tradition** | Not observable. The board page lists names and affiliations, not traditions; the board was not coded by discipline. | https://web.archive.org/web/20230803000518/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/editorial-board |
+| **Reviewer competence variance** | Blank: not observable from public pages. Searched SciRev, LetPub, Reddit and Chinese sources (see AI-Research Notes). | https://scirev.org/journal/new-ideas-in-psychology/ |
+| **Quantitative mindset bias on qualitative work?** | Blank. The only experiential datum is one SciRev review (n=1): outcome rejected after one round of 4.7 weeks, rating 0/5, the reviewer comments described as "very short and careless". One person's account; not generalisable. | https://scirev.org/journal/new-ideas-in-psychology/ (page dated January 2026) |
+| **Discourse community signals (editorial board)** | Board snapshot 2023-08-03: 30 people in 16 countries; United States 9, Canada 5, Poland 2, Turkey 2, one each in 12 other countries (per-entry recount of the page on 2026-11-23; the page's own header says United States 10). Author side: Crossref author lists for 268 of the 291 records show 85 single-author papers (32%) and 50 with four or more authors (19%). | https://web.archive.org/web/20230803000518/https://www.sciencedirect.com/journal/new-ideas-in-psychology/about/editorial-board ; https://api.crossref.org/journals/0732-118X/works?filter=from-pub-date:2021-01-01 |
 
 ### Sensitive Topics
 
+Counts are keyword matches over the 291 Crossref records (all titles; 59 abstracts), retrieved 2026-11-23 (basis under Orientation); a count shows presence or absence only, and no editorial statement on any topic was found, so no receptiveness above "present" is claimed.
+
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| BDSM / Kink | Untested-Low | 0 articles 2015–2025 (per OpenAlex BDSM keyword search, ISSN 0732-118X) |
-| Drug use | Low-Medium | Rare; published only when framed as cognitive / process research |
-| Sex work | Low | 1 article(s) found (OpenAlex keyword search, 2021-2026, 240 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
-| Suicide / Self-harm | Medium | Published with cognitive-theoretical framing; standard reporting guidelines expected |
-| Political extremism | Low | Rare; framed as theoretical-cognitive analysis if published |
-| Neurodiversity / Autism | High | Recent high-citation articles (e.g., autistic camouflaging 2022); welcomed as new theoretical territory |
+| BDSM / Kink | Not observed | 0 of 291 records match BDSM or kink. The earlier OpenAlex search (2015–2025) also reported 0 articles. |
+| Drug use | Not observed as a topic | 2 of 291 records mention drug or substance use (DOIs 10.1016/j.newideapsych.2020.100834 and 10.1016/j.newideapsych.2022.100935); incidental mentions, not classified further. |
+| Sex work | Not observed | 0 of 291 match "sex work" here; the 2026-07-21 OpenAlex pass recorded 1 article in a 240-work window (kept as recorded, not re-run). |
+| Suicide / Self-harm | Rare | 2 of 291 records (DOIs 10.1016/j.newideapsych.2020.100836, a reflection on qualitative research on suicide in Ghana using IPA, and 10.1016/j.newideapsych.2025.101218). The earlier "Medium" had no source. |
+| Political extremism | Not observed | 0 of 291 match extremism, radicalization or terrorism. |
+| Neurodiversity / Autism | Present | 5 of 291 titles (e.g. DOI 10.1016/j.newideapsych.2022.100992, "Autistic camouflaging across the spectrum"; also 10.1016/j.newideapsych.2024.101112, 10.1016/j.newideapsych.2025.101232), and a special collection on disability and neurodiversity (home snapshot). The earlier "High" is not a count; "present, a small share" is what the counts support. |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | Soft expectation — required for empirical work; theoretical papers exempt |
-| **Single-author acceptance** | Common — theoretical / conceptual papers frequently single-authored |
-| **Independent scholar friendliness** | Medium — no institutional requirement; Elsevier ScienceDirect submission system standard |
-| **Data transparency requirement** | Flexible for theoretical work; Elsevier data-sharing norms apply for empirical work |
-| **OPSEC compatibility** | Medium — note that AAM has 24-month embargo, so preprint strategy becomes more important for early visibility |
+| **IRB requirement strictness** | The guide says work with human or animal subjects must follow the Declaration of Helsinki and EU Directive 2010/63/EU, that authors "should include a statement" that informed consent was obtained for experimentation with human subjects, and that animal studies must comply with ARRIVE (Guide for Authors, https://web.archive.org/web/20240314042246/https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors ). No exemption wording for theoretical papers was found; the earlier "theoretical papers exempt" is the natural reading (no human subjects) but is not stated. |
+| **Single-author acceptance** | 85 of 268 records with author lists (32%) have one listed author (Crossref, 2021–2026, retrieved 2026-11-23: https://api.crossref.org/journals/0732-118X/works?filter=from-pub-date:2021-01-01 ). The earlier "common" is lower than that count suggests; single-authored papers are about a third. |
+| **Independent scholar friendliness** | The guide asks for authors' affiliation addresses "where the actual work was done" and says nothing about unaffiliated authors; no submission fee for the subscription route (guide and home snapshot URLs above). |
+| **Data transparency requirement** | The guide's Research data section says the journal "requires and enables" authors to share supporting data "where appropriate"; data may be linked, deposited or described in a data statement (guide URL above). Not a mandatory deposit for conceptual papers, which have no data. |
+| **OPSEC compatibility** | Double-anonymized: the main body, including references, figures, tables and acknowledgements, must carry no identifying information, with details on a separate title page (guide URL above). Public sharing of the accepted manuscript in repositories waits 24 months (Elsevier embargo sheet, row ISSN 0732-118X: https://assets.ctfassets.net/o78em1y1w4i4/B9Hf8A898d6upwp0Uq2Wp/58aab9d0f341d2cf581bcb090d7c7705/Embargos-per-journal.xlsx ), while a preprint may be shared at any time under Elsevier's sharing policy (https://www.elsevier.com/about/policies-and-standards/sharing ). |
 
 ### AI-Research Notes (supplementary AI research, 2026-07-13)
 
@@ -245,7 +252,6 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 - recent topics: https://en.wikipedia.org/wiki/New_Ideas_in_Psychology
 - scope+article-types+peer-review: https://www.sciencedirect.com/journal/new-ideas-in-psychology/publish/guide-for-authors
 - scope/metrics 中文彙整(知乎專欄): https://zhuanlan.zhihu.com/p/565234238
-- 知乎專欄(scope/metrics 二手彙整): https://zhuanlan.zhihu.com/p/565234238
 - 科研通 ablesci(0 筆網友經驗): https://www.ablesci.com/journal/detail?id=52glyD
 
 **Fields no evidence was found for:**
@@ -264,46 +270,61 @@ Reviewers draw primarily from theoretical and cognitive-psychology communities �
 - Reddit r/AskAcademia:0 結果
 - SciRev(英文):僅 1 筆評論(首輪 4.7 週、1 輪、評分 0/5、Rejected、意見簡短草率)
 
+### AI-Research Notes (upgrade pass, 2026-11-23)
+
+Overall `signal_quality` for this pass: **3/5**. Per layer: policy and format 3/5 (the Guide for Authors was read only as a Wayback copy of 2024-03-14, so rules changed since are unseen; Elsevier's journal AI policy and sharing policy were read live); positioning 4/5 (aims page of 2023-08-03 and home page of 2026-10-17); quantitative layer 2/5 (Crossref has no abstracts for this journal, so counts rest on 291 titles plus 59 abstracts from Semantic Scholar, i.e. 20% abstract coverage); experiential 1/5 (SciRev n=1 only). Reviewer behaviour is not observable from any page read.
+
+**What was searched and what came back:**
+- ScienceDirect live pages (guide for authors, aims, editorial board, open-access options): HTTP 403 on 2026-11-23. Wayback copies read: guide 2024-03-14, board 2023-08-03, aims 2023-08-03, home 2026-10-17. No Wayback copy of the open-access options page exists.
+- Elsevier live pages read: article-sharing policy, journals generative-AI policy, books generative-AI policy, and the embargo spreadsheet (row for 0732-118X: 24 months, sheet titled 2025).
+- Crossref: 291 records, no abstracts. Semantic Scholar batch API: returned a record for 276 DOIs, abstracts for 59 (mostly 2021 records: 39 of 59). The counts are lower bounds and the first-person measure rests on 59 abstracts.
+- OpenAlex: over its keyless budget on 2026-11-23 (HTTP 429); metrics and Subject Density date from 2026-05. `topic_trend_scan.py` not run.
+- SciRev re-read 2026-11-23: 1 review, first round 4.7 weeks, 1 round, outcome rejected, rating 0/5; other fields n/a. LetPub reviewer-rating section: 0 reviews (https://www.letpub.com/journal-selector/journal/13151 , via search summary). A Chinese-language and an English search on 2026-11-23 for 小木虫, 知乎, Reddit and LetPub experience reports: 0 journal-specific posts. Editage publishes a time-to-publication distribution (secondary, unverified, not used as evidence): https://editage.com/research-solutions/journal/new-ideas-in-psychology/17770
+- Not re-checked: SCImago quartile, JCR, CiteScore, the current editorial board, the live Guide for Authors.
+
+**Open problems recorded, not resolved:** abstract limit (150 words per the 2024 guide snapshot) and word-limit scope should be re-read on the live guide; whether the 24-month embargo still applies in 2026; Subject Density counts are topic-assignment counts of unstated window.
+
 ---
 
 ## Strategic Notes
 
+Each line names the recorded fact it rests on.
+
 ### Hard Blockers
 
-- Manuscripts exceeding 7,500 words for Standard papers (strict hard limit)
-- AI-generated images (explicit journal prohibition; only allowed if AI is the research method itself, fully described)
-- Submissions framed as routine empirical reports without a "new idea" claim
-- Non-disclosure of AI-assisted text generation (grounds for rejection)
+- Papers over 7,500 words (full-length) without an editor-granted exception: the guide says papers "should not exceed" 7,500 and that exceptions "can be granted in special cases" (Format > Word limit).
+- A manuscript that is not anonymized, or lacks the Highlights and the AI declaration where AI was used (Format; Policies > Peer Review, AI Policy).
+- Primary research images created or altered with AI: Elsevier's journals policy says AI tools must not be used for them (Policies > AI Policy).
 
 ### Soft Tax
 
-Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscripts originating at 10K+ words require substantial trimming (~2–4 revision sessions). For ethnographic or first-person papers, expect another revision pass to recast the work in third-person cognitive-psychology register. AI Disclosure section must be placed before references (specific format requirement).
+Trimming burden: a 7,500-word ceiling against the normally 5,000–8,000, up to 10,000 range recorded for Theory & Psychology (Format; that entry's Format table). Formatting burden: APA 7th edition, numbered sections, Highlights of 3–5 bullets, an abstract of at most 150 words, CRediT roles, an anonymized manuscript plus a separate title page (Format). Visibility burden: public repository posting of the accepted manuscript waits 24 months, although a preprint may be shared at any time under Elsevier's sharing page (Policies > Preprint Policy). Scope risk, inferred: the aims page accepts empirical papers only if they focus on conceptual issues and are theoretically creative, and only 12 of 291 counted records mention experiments (Orientation); this inference is mine, no page states a rejection pattern.
 
 ### Best Suited For
 
-- Theoretical / conceptual papers proposing new frameworks in cognitive, embodied, or theoretical psychology
-- Critical reviews of self-state, dialogical self, embodied cognition, or process-research literature
-- Empirical work foregrounding a novel theoretical contribution
-- Discussion papers engaging existing NIP theoretical debates
-- Speculative / integrative pieces bridging psychology and adjacent cognitive sciences
+- Theoretical or conceptual papers: stated scope plus theor*/conceptual in 55 of 291 records (Orientation; Methodological Preferences).
+- Discussion papers (2,500 words), interviews and short rebuttals or commentaries (1,000 words), which the guide lists as separate types (Format).
+- Papers on measurement and psychometric critique: scale/measure/validity vocabulary in 24 of 291 records, and 3 of the 12 most-cited 2021-2026 works concern measurement or construct validity (DOIs 10.1016/j.newideapsych.2020.100832, 10.1016/j.newideapsych.2022.100934, 10.1016/j.newideapsych.2024.101111; Epistemological & Political Leanings).
+- Empirical work with an explicit conceptual contribution, per the aims sentence (Framing Requirements).
 
 ### Not Recommended For
 
-- Long-form ethnographic or autoethnographic manuscripts (word-limit incompatibility + low autoethnography precedent)
-- BDSM / kink-focused empirical work (zero published precedent 2015–2025)
-- Manuscripts requiring AI-generated illustrations or figures
-- Authors prioritizing immediate post-acceptance open visibility (24-month AAM embargo)
-- Pure replication studies without theoretical advance
+- Routine empirical reports with no conceptual claim: aims sentence plus experiments named in 12 of 291 records (Framing Requirements; Orientation).
+- Manuscripts that need more than 7,500 words and cannot ask the editor for an exception (Format).
+- Authors who want the accepted manuscript publicly in a repository soon after acceptance and will not use a preprint or the OA route: 24-month embargo (Policies > Preprint Policy; Open Access, APC USD 3,610 in the 2026-10-17 snapshot).
+- Topic-fit check for kink, sex work or extremism work: 0 of 291 records for each (Sensitive Topics). This does not show such work would be refused.
 
 ### Rejection Fallback Chain
 
+Fallbacks are chosen from what the corpus entries themselves record; none of these journals was re-verified in this pass except as noted.
+
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | [Theory & Psychology](./theory-and-psychology.md) | Larger word limit (8K standard, 10K extensible vs. NIP's hard 7,500); no AAM embargo (Sage); welcomes the same theoretical-conceptual register |
-| 2 | [Review of General Psychology](./review-of-general-psychology.md) | 5–15K word limit accommodates longer integrative work; APA Division 1 reputation; no AAM embargo |
-| 3 | [Phenomenology and the Cognitive Sciences](./phenomenology-and-the-cognitive-sciences.md) | Best fit if the "new idea" has phenomenological grounding; no hard word limit; accepts long reference lists |
+| 1 | [Theory & Psychology](./theory-and-psychology.md) | Its entry records a stated scope of theoretical and meta-theoretical analysis and normally 5,000–8,000 words and up to 10,000 including abstract, footnotes and references, a higher ceiling than NIP's 7,500; publisher SAGE Publishing. |
+| 2 | [Review of General Psychology](./review-of-general-psychology.md) | Its entry records a scope of historical, theoretical or critical studies of psychology; see that entry for its word limit and policies. |
+| 3 | [Phenomenology and the Cognitive Sciences](./phenomenology-and-the-cognitive-sciences.md) | Relevant only if the contribution is phenomenological or enactive: such vocabulary is a small share of NIP's own output (phenomenolog* in 4 of 291 records). |
 
-**Reverse direction** *(optional)*: If your paper was rejected from a more selective cognitive-psychology outlet (e.g., *Cognition*, *Psychological Review*), NIP is often a better fit because: it explicitly welcomes speculative and theoretical work without requiring experimental confirmation; its scope rewards "new ideas" over methodological orthodoxy; and conceptual-theoretical papers do not need to fit a positive-empirical-result frame.
+**Reverse direction**: no source read in this pass compares NIP with more selective cognitive-psychology venues, so the earlier claim about papers rejected from *Cognition* or *Psychological Review* is not carried over.
 
 ---
 
@@ -311,6 +332,7 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-11-23 | AI deep research pass; no first-hand human reports. In-place upgrade: Guide for Authors, aims, board and home page re-read via Wayback (live 403); Elsevier AI, sharing and embargo pages re-read live. Corrections: abstract limit 150 words (was 250), word limit is not a strict hard limit (exceptions possible), APC USD 3,610 (was 3,280/3,420), online ISSN 1873-3522, founded 1983, AI image rule now split by image type, "dominant tradition 4E/dialogical" and several uncited scores replaced by Crossref counts (291 records, 20% abstract coverage). Soft Metadata, Strategic Notes rebuilt from recorded facts; IF/quartile not recorded. Banner state unchanged (none). | AI-assisted (maintainer-directed) |
 | 2026-07-21 | Added a numeric Top Topics table (10 topics, OpenAlex Source topic counts) — section previously had no numeric rows, so fit_score.py's topic-density scoring defaulted to neutral for this entry regardless of match quality. | @Zaious (AI-assisted) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: filled 1 field(s) with OpenAlex keyword-count evidence (Sex work). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > Peer Review > Type; Policies > AI Policy > Has journal-specific AI policy?. | @Zaious (AI-assisted) |
@@ -318,3 +340,4 @@ Moderate. The 7,500-word hard limit is the dominant adaptation cost — manuscri
 | 2026-05-13 | Initial entry — structural fields populated. AI Policy notably restrictive on AI-generated images; 24-month AAM embargo flagged as a significant departure from Sage publisher norms. | @Zaious |
 | 2026-05-13 | Schema upgraded v1.0 → v1.2 (Metrics + Policies + Format + Strategic Notes new H3s). | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-11-23 | Verifier corrections: editorial-board counts recounted per entry from the 2023-08-03 archive (United States 9, Turkey 2, one each in 12 other countries; Canada 5, Poland 2 unchanged) | AI-assisted (maintainer-directed) |

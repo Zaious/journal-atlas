@@ -2,7 +2,7 @@
 
 # AI & Society
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 
 ---
@@ -13,49 +13,50 @@
 |-------|-------|
 | **Abbreviation** | AI & Society |
 | **Venue type** | Journal |
-| **Publisher** | Springer Nature |
+| **Publisher** | Springer Nature (https://link.springer.com/journal/146, retrieved 2026-11-23; publishing model shown as Hybrid) |
 | **ISSN (Print)** | 0951-5666 |
 | **ISSN (Online)** | 1435-5655 |
-| **Founded** | 1987 |
+| **Founded** | 1986 per the journal's aims page ("Established in 1986", https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23); the earlier value 1987 was OpenAlex's first indexed year |
 | **URL** | https://link.springer.com/journal/146 |
-| **Author Guidelines** | https://link.springer.com/journal/146/submission-guidelines |
-| **Society / Association** | *(pending)* |
-| **Editorial Board Location** | *(pending verification)* |
+| **Author Guidelines** | https://link.springer.com/journal/146/submission-guidelines (read 2026-11-23) |
+| **Society / Association** | None stated on the journal pages; OpenAlex `societies` is empty (retrieved 2026-11-23) |
+| **Editorial Board Location** | Editor-in-Chief Karamjit Gill, University of Brighton, UK; the board page lists 138 people (see Reviewer Pool Characteristics) at https://link.springer.com/journal/146/editors (retrieved 2026-11-23) |
 
 ---
 
 ## Metrics
 
-> Source: OpenAlex API. Retrieved 2026-05-13.
+> Source: OpenAlex API (2026-05-13 snapshot, source record re-read 2026-11-23) and the journal home page (retrieved 2026-11-23).
 
 | Metric | Value | Date |
 |--------|-------|------|
 | **h-index** | 94 | 2026-05-13 (OpenAlex) |
 | **i10-index** | 1,069 | 2026-05-13 (OpenAlex) |
-| **2-Year Mean Citedness** | 3.59 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 3,607 | 2026-05-13 (OpenAlex) |
-| **Impact Factor** | *(pending)* | |
-| **CiteScore** | *(pending)* | |
-| **Acceptance Rate** | *(not disclosed by publisher)* | |
-| **Desk Rejection Rate** | *(pending)* | |
-| **Quartile (by field)** | *(pending)* | |
+| **2-Year Mean Citedness** | 3.59 (OpenAlex proxy, not a JCR impact factor) | 2026-05-13 (OpenAlex) |
+| **Total Works** | 3,607 at 2026-05-13; 4,075 in the OpenAlex source record on 2026-11-23 | 2026-11-23 (OpenAlex) |
+| **Impact Factor** | Not recorded here (JCR is subscription-only; the journal home page displays its own figure, which this atlas does not copy) | |
+| **CiteScore** | Not recorded | |
+| **Submission to first decision (median)** | 3 days, as displayed on https://link.springer.com/journal/146 (retrieved 2026-11-23); the page does not define the measure or year | 2026-11-23 |
+| **Acceptance Rate** | Not disclosed on the journal pages read | |
+| **Desk Rejection Rate** | Not disclosed; SciRev shows n/a for immediate rejection (https://scirev.org/journal/ai-and-society/, 1 review) | 2026-11-23 |
+| **Quartile (by field)** | Not recorded (SJR/JCR are licensed sources) | |
 
 ### Review Cycle Time
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
-| **Time to first review** | *(pending)* | |
-| **Time to acceptance (total)** | *(pending)* | |
-| **Time to publication (after acceptance)** | *(pending)* | |
+| **Time to first decision** | Median 3 days per the journal home page (publisher-displayed; definition not given) | https://link.springer.com/journal/146 , retrieved 2026-11-23 |
+| **Time to first review** | SciRev, n=1: 52.1 weeks with 0 review reports received; the author withdrew | https://scirev.org/reviews/ai-and-society/ , retrieved 2026-11-23; anecdote, not an estimate |
+| **Time to acceptance (total)** | Not stated by the journal; SciRev n=1 total handling 52.1 weeks, outcome withdrawn | same URL |
+| **Time to publication (after acceptance)** | Not stated by the journal on the pages read | |
 
 ### Publication Frequency
 
 | Aspect | Detail |
 |--------|--------|
-| **Schedule** | Quarterly |
-| **Articles per year (approx.)** | *(pending)* |
-| **Special issues?** | Yes (regular themed special issues) |
+| **Schedule** | The home page shows "Volume 41, Issue 11, November 2026" (https://link.springer.com/journal/146, retrieved 2026-11-23), so at least 11 issues a year; the earlier entry's "Quarterly" was unsourced and is replaced |
+| **Articles per year (approx.)** | OpenAlex source record, works per year: 2022: 283, 2023: 204, 2024: 332, 2025: 647, 2026 to date: 572 (retrieved 2026-11-23) |
+| **Special issues?** | Yes: the journal runs special issues and topical collections handled by Guest Editors (https://link.springer.com/journal/146/submission-guidelines); proposal rules at https://www.springer.com/journal/146/updates/25294732 (retrieved 2026-11-23) |
 
 ---
 
@@ -65,53 +66,61 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized (per Springer default for AI & Society) |
-| **Transferable / Cascade?** | *(pending)* |
-| **Reviewer reports published?** | No (per Springer default) |
-| **Typical R+R rounds** | *(pending)* |
-| **Reviewer recommendations** | *(pending)* |
+| **Type** | Double-blind: authors must anonymise the manuscript and associated files; title page separate (https://link.springer.com/journal/146/submission-guidelines, retrieved 2026-11-23) |
+| **Transferable / Cascade?** | Springer Nature offers a transfer service between its journals for declined papers (https://www.springernature.com/gp/policies/editorial-policies, retrieved 2026-11-23); no journal-specific cascade stated |
+| **Reviewer reports published?** | Not stated; the special-issue page says authors receive the peer review reports with the decision |
+| **Typical R+R rounds** | Not stated as a number; major revisions are usually re-evaluated by the original referees, minor revisions often only by the Editor-in-Chief (submission guidelines) |
+| **Reviewer recommendations** | Accept as is; accept with minor modifications; return for major revision; reject (https://link.springer.com/journal/146/updates/19561448, retrieved 2026-11-23) |
+
+> Process facts (same submission-guidelines page): manuscripts are usually reviewed by two referees; no article is accepted without two complete and final reviews; reviewers are invited by the Editor-in-Chief, and only the Editor-in-Chief makes the final accept/reject decision.
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Follows Springer Nature publisher AI policy |
-| **Explicit permission gate?** | Conditional — no prior permission needed for basic language/formatting AI use (no disclosure required); AI may not be used to generate or substantively contribute content; any AI use beyond basic polishing must be disclosed |
-| **Leniency (1-5)** | 3 |
-| **Summary** | Follows Springer Nature AI policy: LLMs/AI tools cannot satisfy authorship criteria; AI may be used for language polishing/formatting without disclosure, but may not generate or substantively contribute content; any AI use beyond basic polishing must be disclosed in Materials/Methods or Acknowledgments; reviewers may not upload manuscripts to generative AI tools. |
-| **Source URL** | https://www.springer.com/gp/editorial-policies/artificial-intelligence-(ai)/25428500 |
+| **Has journal-specific AI policy?** | Yes, partly: the aims page and the title-page section of the submission guidelines carry journal wording on LLM use, on top of the Springer Nature publisher policy (retrieved 2026-11-23) |
+| **Explicit permission gate?** | Conditional: no prior-permission step; LLM use for tasks other than grammar and translation is "strongly discouraged" by the journal, and Springer Nature lists generating results or scientific claims independently as not permitted |
+| **Leniency (1-5)** | 2 (the earlier 3 rested on the publisher-level text alone; the journal's own "strongly discouraged" wording is stricter) |
+| **Summary** | Journal pages (https://link.springer.com/journal/146/submission-guidelines and https://link.springer.com/journal/146/aims-and-scope): LLMs cannot be authors; LLM use should be documented in the Methods section (or a suitable alternative section); "AI assisted copy editing" of human-written text need not be declared; LLM use beyond grammar and translation is strongly discouraged. Publisher (https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation, retrieved 2026-11-23): risk-tiered, green for grammar, language, translation and summarising author text; amber for outlines or drafting from author input, to be labelled and described; red (not permitted) for independently writing results or discussion and generating claims. Reviewers must not upload manuscripts to AI tools (earlier pass, Springer Nature editorial policies). |
+| **Source URL** | https://link.springer.com/journal/146/submission-guidelines |
 
 ### Preprint Policy
 
+> Source: https://www.springer.com/gp/editorial-policies/preprint-sharing (retrieved 2026-11-23) and the journal's submission guidelines.
+
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Yes | Submitted version has no embargo |
-| Under review | No updates (per Springer default) | |
-| Post-acceptance (AAM) | Yes | Default 12-month embargo for institutional repositories |
-| Version of Record | Restricted unless OA APC paid | |
+| Pre-submission | Yes | Springer Nature encourages preprints on servers of the author's choice; posting is not prior publication |
+| Under review | Yes | Preprints may be posted at any time during peer review; disclose the preprint and licence at submission |
+| Post-acceptance (AAM) | Yes, after embargo | Springer hybrid/subscription journals: 12 months before accepted manuscripts go in repositories; personal website immediately (https://www.springernature.com/gp/open-research/policies/journal-policies, retrieved 2026-11-23) |
+| Version of Record | OA route only | Free sharing of the published version requires gold OA |
+
+The journal adds that pre-publication versions should be acknowledged in the declaration section and that high-similarity submissions (already archived or published) are strongly discouraged (aims page).
 
 ### Open Access
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid (Subscription + OA option) |
-| **APC (if OA chosen)** | $2,890 USD |
-| **Subscription submission cost** | $0 |
-| **Read & Publish agreements** | Available via Springer Read & Publish agreements |
+| **Model** | Hybrid (journal home page, retrieved 2026-11-23): subscription route or Open Choice gold OA |
+| **APC (if OA chosen)** | OpenAlex source record lists 3190 USD (retrieved 2026-11-23); the earlier entry gave 2,890 USD without a source. The guidelines say APCs vary by journal and point to a list that was not read |
+| **Subscription submission cost** | No submission charge is stated on the guidelines page |
+| **Read & Publish agreements** | Not stated on the pages read; the Open Choice section of the guidelines refers to Springer Nature agreements generally |
 
 ---
 
 ## Format
 
+> Source for this section: https://link.springer.com/journal/146/submission-guidelines and https://link.springer.com/journal/146/aims-and-scope (retrieved 2026-11-23).
+
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | Research articles, Open Forum articles, Curmudgeon Corner pieces, Book reviews |
-| **Word limit** | *(pending — Springer typically no hard limit)* |
-| **Word limit negotiability** | Flexible (per Springer default) |
-| **Abstract limit** | 150–250 words (typical Springer format) |
-| **Reference limit** | No specific limit |
-| **Supplementary material** | Accepted |
-| **Figure/Table limits** | *(per Springer default)* |
+| **Article types accepted** | Research articles, Open Forum, Curmudgeon Corner (short opinionated letter), Review articles, Book reviews; reviewer notes also mention a Student Forum |
+| **Word limit** | "Normal word length": Research 10k, Open Forum 8k, Reviews 8k, Curmudgeon 1-1.5k, Book reviews 1-1.5k; whether references count is not stated |
+| **Word limit negotiability** | Stated as a normal length, not a hard cap; no negotiation procedure is described |
+| **Abstract limit** | 150-250 words (up to 450 where reporting guidelines need it); 4-6 keywords; Curmudgeon pieces have no abstract or keywords |
+| **Reference limit** | No overall limit stated; Curmudgeon pieces: at most 3 references and 2 co-authors. Style: name-year in text, DOI links in the list, footnotes not endnotes, decimal headings to three levels |
+| **Supplementary material** | Accepted as "Online Resource", published as received, cited in the text |
+| **Figure/Table limits** | No count limit stated; captions in the manuscript file; colour free online |
 
 ---
 
@@ -133,172 +142,182 @@
 
 ### Orientation
 
+> Keyword counts in this entry come from Crossref records for ISSN 0951-5666, journal articles dated 2021-01-01 to 2026-11-23 (2,232 articles; titles plus deposited abstracts; abstracts exist for only about 40% of them), retrieved 2026-11-23, matched locally. OpenAlex `works` queries were refused that day (daily budget used up), so Crossref was used; terms absent from titles/abstracts are not counted, so all figures are lower bounds.
+
 | Dimension | Assessment |
 |-----------|------------|
-| **Empirical vs. Theoretical** | Mixed — strong theoretical / philosophical / ethics tradition; empirical work also accepted |
-| **Quantitative vs. Qualitative** | Mixed; methodologically pluralistic; STS-leaning qualitative work common |
-| **Cross-disciplinary openness** | Very high — AI ethics, STS, philosophy of technology, HCI, policy crossover |
+| **Empirical vs. Theoretical** | Mixed: "conceptual" in 149 of 2,232 articles (6.7%), "philosoph*" 120 (5.4%); empirical terms are present at comparable rates ("survey" 83, 3.7%; "experiment" 78, 3.5%; "qualitative" 75, 3.4%) |
+| **Quantitative vs. Qualitative** | "qualitative" 75 (3.4%) and "interview" 63 (2.8%) against "quantitative/statistical" 50 (2.2%) and "survey/questionnaire" 83 (3.7%); no method dominates |
+| **Cross-disciplinary openness** | The aims page invites humanities, social sciences, arts, design and digital media contributors and encourages co-authored papers across disciplines (https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23) |
 
 ---
 
 ## Soft Metadata
 
-> [!WARNING]
-> **Tier 2 (community estimate)** — The Soft Metadata below was authored from
-> community knowledge of HCI as a field rather than journal-specific evidence
-> harvesting. Claims with cited article counts (under Subject Density, or
-> methodology receptiveness rows with numbers attached) are evidence-backed.
-> Subjective assessments (Reviewer Pool Characteristics, Framing Requirements,
-> sensitive-topic receptiveness without article counts) should be treated as
-> initial community estimates pending contributor validation — including via
-> `scripts/topic_trend_scan.py` to fact-check keyword presence. See
-> [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Tier 1 /
-> Tier 2 distinction.
+> *2026-11-23 deepening pass:* the seven subsections below were re-evidenced from the journal's own pages, Crossref and OpenAlex records. Earlier uncited judgements were replaced or corrected where the counts disagreed; the banner above is unchanged on purpose.
 
 ### Epistemological & Political Leanings
 
-| Dimension | Assessment |
-|-----------|------------|
-| **Cross-cultural friendliness** | Very High — AI & Society explicitly welcomes global, indigenous, and non-Western perspectives on AI |
-| **Non-Western epistemology openness** | Very High — postcolonial, decolonial, and indigenous AI scholarship welcomed |
-| **Diversity topic receptiveness** | Very High — gender, race, disability, AI fairness papers are core topics |
-| **Dominant theoretical tradition** | STS (science and technology studies), philosophy of technology, AI ethics, critical theory, embodied cognition, neuroethics; bridges to HCI when AI/HCI ethics intersect |
+- Stated values: the aims page says the journal "positions the significance of values for critical thinking" and a diversity of cultural perspectives, and encourages work on values beyond algorithmic optimisation, efficiency or profit (https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23).
+- Reader and author framing: submissions should be accessible to readers from diverse cultural backgrounds who often read English as a second language (same URL).
+- Postcolonial/Indigenous terms in titles/abstracts of 2,232 articles, 2021-2026 (Crossref, retrieved 2026-11-23): "decoloni*|colonial|indigenous" 49 (2.2%); "feminis*|gender" 69 (3.1%); "racis*|race|racial" 29 (1.3%); "disabilit*" 11 (0.5%).
+- Theory terms: "science and technology studies|STS|sociotechnical" 94 (4.2%), "phenomenolog*" 32 (1.4%), Heidegger 12 (0.5%), Foucault 7 (0.3%), "critical theory" 7 (0.3%), "actor-network|Latour" 5 (0.2%), "Habermas|Arendt" 5 (0.2%); no named theorist exceeds 1% of articles.
+- Dominant tradition by editorial statement: the reviewer notes ask for papers on theoretical perspectives and methodological issues in societal contexts that "may challenge existing orthodoxies" (https://link.springer.com/journal/146/updates/19561448, retrieved 2026-11-23).
+- OpenAlex topics (2026-05-13): Ethics and Social Impacts of AI 1,052 articles, Embodied and Extended Cognition 185.
 
 ### Framing Requirements
 
-- **Mandatory framing?** Yes
-- **If yes, what kind?** Manuscripts must engage **AI's social, ethical, philosophical, or critical-theoretical dimensions**. Pure technical AI papers misaligned; pure HCI without AI/society dimension also misaligned.
-- **Consequences of ignoring it**: Desk reject if AI×Society angle is absent.
+- Mandatory framing: yes, as stated by the journal: "submissions should provide a substantial and explicit argument on the societal dimension of research" and its benefits, impacts and implications (https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23).
+- The same page says such arguments should be validated by critical comment on current research in the associated area.
+- Reviewer prompts (https://link.springer.com/journal/146/updates/19561448, retrieved 2026-11-23): critical overview of current research, contribution to AI and society research, a coherent argument with clear theoretical and methodological underpinnings, and, as question 5, whether the proposed method was applied in a practical setting and evaluated.
+- Article types shape framing: Research articles are to be "theoretically grounded, methodologically sound and empirically strong"; Open Forum treats controversial themes with balance and engages foundational works (aims page).
+- Consequence of ignoring it: the earlier entry stated desk rejection without a source; no page read states a consequence. The publisher metric of a 3-day median to first decision (https://link.springer.com/journal/146, retrieved 2026-11-23) is compatible with fast triage but does not show why papers are declined.
 
 ### Methodological Preferences
 
+Scoring rule: hits divided by 2,232 articles; 0 gives 0, under 1% gives 1, 1-5% gives 2, over 5% gives 3; 4-5 only with a cited editorial statement. Source: Crossref titles/abstracts for ISSN 0951-5666, 2021-2026, retrieved 2026-11-23 (abstracts exist for about 40% of records, so scores are conservative).
+
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | 2 | Accepted when central to AI ethics empirical work |
-| Qualitative interviews | 4 | STS-style empirical work welcomed |
-| Autoethnography | 0 | 0 article(s) found (OpenAlex keyword search, 2021-2026, 1908 total in window) — automated evidence-only estimate, capped conservatively; does not confirm higher receptiveness, only rules out near-absence |
-| Theoretical / Conceptual | 5 | Core article type — philosophy of AI, ethics, STS theory |
-| Mixed methods | 4 | Common |
-| Meta-analysis | 2 | Uncommon |
-| Policy / Critical commentary | 5 | Open Forum and Curmudgeon Corner article types |
+| Quantitative experimental | 2 | "experiment" 78 articles (3.5%); "quantitative/statistical" 50 (2.2%) |
+| Qualitative interviews | 2 | "interview" 63 articles (2.8%); "qualitative" 75 (3.4%). Lowered from the earlier 4, which had no count |
+| Survey / questionnaire | 2 | 83 articles (3.7%) |
+| Case study | 2 | 50 articles (2.2%) |
+| Phenomenological | 2 | 32 articles (1.4%) |
+| Ethnography | 1 | 17 articles (0.8%) |
+| Autoethnography | 1 | 2 articles (0.1%) in Crossref abstracts, e.g. DOI 10.1007/s00146-025-02291-0; an OpenAlex pass on 2026-07-21 recorded 0 in 1908 articles, so the two counts differ by two papers |
+| Theoretical / Conceptual | 4 | "conceptual" 149 articles (6.7%), "philosoph*" 120 (5.4%); editorial statement: research articles must be "theoretically grounded" and Open Forum requires engagement with foundational works (aims page, retrieved 2026-11-23) |
+| Mixed methods | 1 | "mixed method*" 11 articles (0.5%). Lowered from the earlier 4 ("Common", no count) |
+| Systematic / literature review, meta-analysis | 2 | 41 articles (1.8%); the aims page lists systematic reviews among accepted types |
+| Policy / critical commentary | 4 | "governance or regulation or policy" 286 articles (12.8%); Open Forum and Curmudgeon Corner are dedicated types (aims page) |
 
 ### Voice & Style
 
-| Aspect | Detail |
-|--------|--------|
-| **First-person voice acceptance (0-5)** | 4 — STS and critical-theoretical traditions accommodate first-person |
-| **Expected density** | Moderate; positionality and reflexivity expected in critical work |
-| **Writing style notes** | Formal academic register with philosophical / STS vocabulary; comfortable with continental-philosophy and critical-theory canon |
+- Register guidance: submissions should be "clear, accessible, and informative" for readers across disciplines and cultures (aims page, https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23); Curmudgeon Corner is described as having a "distinctive argumentative voice" and a combative or contrarian edge, as a straight essay with no abstract.
+- Format rules (https://link.springer.com/journal/146/submission-guidelines, retrieved 2026-11-23): Word files only, abstract 150-250 words, 4-6 keywords, name-year citations, footnotes rather than endnotes, decimal headings to three levels.
+- Abstract sample for first-person use: Crossref abstracts deposited for 2021-2026 articles (denominator 902 articles, retrieved 2026-11-23).
+- Within that sample "we" appears in 485 abstracts (54%), "our" in 257 (28%), "I" in 130 (14%), "my" in 15 (2%); "this article/paper/essay/study" in 640 (71%). Plural first person dominates, consistent with the journal's encouragement of co-authored work.
+- Recent openings sampled (DOIs): 10.1007/s00146-026-03326-w (an argument against mandatory prompt disclosure), 10.1007/s00146-026-03368-0 (a quantitative analysis of AI-companion relationships), 10.1007/s00146-026-03379-x (generative AI and artistic becoming); the three differ widely in method and register.
 
 ### Reviewer Pool Characteristics
 
-Reviewers from STS, philosophy of technology, AI ethics, and critical-HCI communities — interdisciplinary editorial reach. Common reviewer demands: "What's the critical contribution?", "How does this engage existing AI ethics literature?", "Where is the political/social analysis?". Reviewers tolerant of long theoretical pieces; intolerant of pure technical AI without social analysis.
-
-| Aspect | Detail | Evidence |
-|--------|--------|----------|
-| **Dominant tradition** | STS, philosophy of technology, AI ethics, critical theory | https://www.springer.com/journal/146/editors |
-| **Reviewer competence variance** | Medium |
-| **Quantitative mindset bias on qualitative work?** | No |
-| **Discourse community signals (editorial board)** | International STS / AI ethics scholars |
+- Review model: double-blind, two referees minimum, reviewers chosen by the Editor-in-Chief, who alone decides (https://link.springer.com/journal/146/submission-guidelines, retrieved 2026-11-23).
+- Editorial board page (https://link.springer.com/journal/146/editors, retrieved 2026-11-23): 138 people listed — 10 officers (Editor-in-Chief, North America editor, managing editor, Open Forum editors, Curmudgeon Corner editor, review and news editors, special-issue editor, board chair), 26 advisory board members and 102 associate editors (own count of the page text; small parsing errors are possible).
+- Geography of the 128 advisory and associate members (own parse of last affiliation country): United States 29, United Kingdom 16, India 8, Germany 8, Australia 7, Netherlands 7, Italy 6, China 5; about 35 countries in all.
+- Editor-in-Chief: Karamjit Gill, University of Brighton (same page).
+- Reviewer prompts (https://link.springer.com/journal/146/updates/19561448): the guidelines ask referees for a critical overview, contribution to AI and society research, and evaluation of the method in a practical setting.
+- Reviewer behaviour itself (tone, turnaround) is not observable from public pages; the one SciRev review (n=1) describes a handling delay of 52.1 weeks with no reports, not reviewer tone.
+- OpenAlex topic mix (2026-05-13): Ethics and Social Impacts of AI 1,052 articles; Artificial Intelligence in Healthcare and Education 268.
 
 ### Sensitive Topics
 
+Counts of articles mentioning each topic in titles/abstracts, 2,232 articles 2021-2026 (Crossref, retrieved 2026-11-23). "Present" means published at the stated frequency; no editorial statement of receptiveness was read, so none is scored High. Earlier ratings of "Very High" or "High" that had no count are replaced.
+
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| AI ethics / Surveillance | Very High | Core topic (1,052 articles) |
-| Algorithmic bias / Fairness | Very High | Core topic |
-| Neuroethics / Enhancement | Very High | Core topic (324 articles) |
-| Decolonial AI | Very High | Welcome |
-| Gender / Race × AI | Very High | Core topic |
-| LGBTQ × AI | High | Published |
-| BDSM / Sex tech × AI | Untested | Adjacent intimate-AI emerging |
-| AI × Mental health | High | Core topic |
+| AI ethics (general) | Present | "ethic*" 416 articles (18.6%); OpenAlex topic Ethics and Social Impacts of AI 1,052 articles |
+| Algorithmic bias / fairness | Present | "bias or fairness or discriminat*" 159 articles (7.1%) |
+| Surveillance | Present | 28 articles (1.3%) |
+| Neuroethics / enhancement | Present | "neuroethic* or neurotechnolog* or brain" 18 articles (0.8%); OpenAlex topic Neuroethics, Human Enhancement, Biomedical Innovations 324 articles (2026-05-13) |
+| Decolonial / Indigenous AI | Present | 49 articles (2.2%) |
+| Gender / feminism | Present | 69 articles (3.1%) |
+| Race / racism | Present | 29 articles (1.3%) |
+| LGBTQ | Rare | "lgbt* or queer or transgender" 6 articles (0.3%) |
+| Sex tech / intimacy | Rare | "sex robot or sexbot or sex doll or intimate or romantic" 15 articles (0.7%) |
+| Mental health | Rare | 16 articles (0.7%) |
+| Disability | Rare | 11 articles (0.5%) |
+| Military / weapons | Present | "war or military or weapon" 27 articles (1.2%) |
+| Generative AI / LLMs | Present | 300 articles (13.4%); the special-issue topic "Cultural Workers and Generative AI" was recorded by the earlier pass |
 
 ### Practical Concerns
 
-| Concern | Detail |
-|---------|--------|
-| **IRB requirement strictness** | Soft expectation for theoretical work; standard for empirical |
-| **Single-author acceptance** | Very common — philosophical and critical work frequently single-authored |
-| **Independent scholar friendliness** | High |
-| **Data transparency requirement** | Flexible for theoretical work |
-| **OPSEC compatibility** | High — interpretive STS and philosophical work does not require data exposure |
+- Ethics approval: authors are expected to supply formal ethics-committee permission for studies with people (https://link.springer.com/journal/146/submission-guidelines, retrieved 2026-11-23).
+- Data: all original research needs a Data Availability Statement; sharing of research data is strongly encouraged (same URL); for double-blind review the data authorship should be anonymised.
+- Authorship: LLMs cannot be authors; authorship follows four ICMJE-style criteria and cannot be changed after acceptance (same URL).
+- Declarations: Author Contribution and Competing Interest information must be entered in the submission interface at submission, and only that entry appears in the published version (same URL).
+- Originality: no simultaneous submission, no salami-slicing, COPE member, similarity screening software may be used (same URL).
+- Preprints: allowed at any time, acknowledged in the declaration (https://www.springer.com/gp/editorial-policies/preprint-sharing, retrieved 2026-11-23).
+- OA and cost: hybrid; 12-month embargo for accepted manuscripts on the subscription route (https://www.springernature.com/gp/open-research/policies/journal-policies, retrieved 2026-11-23).
+- Independent-scholar rules: for unaffiliated authors the journal records only city and country of residence, not an email address, unless requested (submission guidelines); no other rule on independent scholars was stated.
+- Single-author acceptance and OPSEC-related rules: not stated on any page read; the earlier "Very common" and "High" ratings had no source and are dropped.
 
-### AI-Research Notes (supplementary AI research, 2026-07-13)
+### AI-Research Notes (supplementary AI research, 2026-07-13; updated 2026-11-23)
 
-> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` for this pass: **2/5**.
+> Added as a **supplementary, independent research pass** — it does NOT overwrite or supersede the Tier assessment above. Treat conflicts as a signal to re-verify, not as an automatic correction. Overall `signal_quality` after the 2026-11-23 pass: **4/5** (was 2/5): journal pages were read directly this time; per layer: policy 4, format 4, methodological counts 3 (titles/abstracts, abstracts for about 40% of records), reviewer pool 4 (board page counted), experiential 1 (one SciRev review).
 
-**AI-research finding (policy):** 此為 Springer Nature 全出版社通用政策，非 AI & Society 期刊專屬頁面（該刊 Submission guidelines 頁需登入，未能一手核實期刊層級文字）。要點：AI/LLM 不得列為作者（"SN does not attribute authorship to AI"，因無法承擔究責）；作者可用 AI 做語言潤飾/格式調整，但不得用於生成或實質貢獻內容；超出基本潤飾的 AI 使用須在 Methods（或適當替代段落）揭露；審稿人不得將稿件上傳至生成式 AI 工具；出版品不得用生成式 AI 圖像。leniency=3：允許潤飾類使用但禁止內容生成、且要求揭露，屬中等寬鬆。
+**AI-research finding (positioning — what the journal accepts now):** the aims page covers the societal, cultural, cognitive, economic, ethical and philosophical implications of AI and ICT; 2024 articles on generative AI and authorship (e.g. DOIs 10.1007/s00146-024-02081-0 and 10.1007/s00146-024-02174-w) were recorded by the earlier pass.
 
-**AI-research finding (positioning — what the journal accepts now):** 廣泛跨領域：AI 對社會/文化/倫理/認知/經濟的影響、生成式 AI 與著作權/作者身分議題（如 2024 年刊出之 "Can ChatGPT be an author?" 與 "The role of generative AI in academic and scientific authorship: an autopoietic perspective" 兩篇）、AI 治理與政策、AI 與工作/勞動、文化工作者與生成式 AI 關係
+**Sources cited across this entry:**
+- https://link.springer.com/journal/146
+- https://link.springer.com/journal/146/aims-and-scope
+- https://link.springer.com/journal/146/submission-guidelines
+- https://link.springer.com/journal/146/editors
+- https://link.springer.com/journal/146/updates/19561448 (Notes for Reviewers)
+- https://www.springer.com/journal/146/updates/25294732 (special-issue proposals)
+- https://www.springernature.com/gp/policies/editorial-policies and its ai-manuscript-preparation page
+- https://www.springer.com/gp/editorial-policies/preprint-sharing
+- https://www.springernature.com/gp/open-research/policies/journal-policies
+- https://scirev.org/journal/ai-and-society/ and https://scirev.org/reviews/ai-and-society/
+- Crossref `works` filtered by ISSN 0951-5666 (2,232 articles, 2021-01-01 to 2026-11-23); OpenAlex source record S4210190517
+- https://en.wikipedia.org/wiki/AI_%26_Society, https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=13257&xuanxiangk_id=2 (earlier pass)
 
-**AI-research finding (experiential):** *(not researched)* 
-
-**Sources cited in this pass:**
-- https://en.wikipedia.org/wiki/AI_%26_Society
-- https://letpub.com.cn/index.php?page=journalapp&view=detail&journalid=13257&xuanxiangk_id=2 (平均審稿速度/錄用比例欄位皆為空模板，僅顯示「共2條」投稿經驗分享但內文未展開)
-- https://link.springer.com/article/10.1007/s00146-024-02081-0
-- https://link.springer.com/article/10.1007/s00146-024-02174-w
-- https://link.springer.com/journal/146/updates/17229944 (Special Issue: Cultural Workers and Generative AI，摘要截止2025-06-30，稿件截止延至2026-02-10，客座編輯 Rafael Grohmann, Daphne Idiz, Zoë Glatt)
-- https://scirev.org/journal/ai-and-society (頁面存在但 WebFetch 無法讀取內容，未能確認評論數，須人工複查)
-- https://www.springernature.com/gp/policies/editorial-policies
-
-**Fields no evidence was found for:**
-- **peer_review.type**: 僅來自 Wikipedia 詞條描述，官方 Springer Submission guidelines 頁面因登入牆無法一手核實
-- **preprint.allowed**: 未找到期刊或 Springer Nature 對此刊的明確 preprint 政策公開頁面（登入牆阻擋），無公開一手來源
-- **experiential.review_time_months**: SciRev 頁面抓取失敗；LetPub 審稿速度/錄用比例欄位為空模板；未搜到知乎/小木虫/PTT/Reddit r/AskAcademia 針對此刊的具體討論串
-- **experiential.desk_reject_pct**: 無任何公開來源（SciRev/LetPub/中英論壇）提供具體退稿率數字
-- **experiential.reviewer_culture**: 無具體一手論壇討論佐證審稿人風格或文化傾向，僅有期刊自我描述的跨領域定位（非審稿經驗）
-- **ai_policy(journal-level)**: 政策取自 Springer Nature 集團通用頁面，非本刊 Submission guidelines（登入牆擋住），未確認是否有期刊層級額外規定
+**Fields with no evidence:**
+- Acceptance and desk-rejection rates: not published; SciRev has n/a for immediate rejection.
+- Reviewer culture: no first-hand source beyond the single SciRev review.
+- Review time: the journal's 3-day median and the SciRev 52.1-week report (n=1) cannot be reconciled with each other; neither is a stable estimate.
+- APC: the OpenAlex figure (3190 USD) and the earlier 2,890 USD differ; the Springer APC list was not read.
+- OpenAlex `works` keyword counts: the free daily budget was exhausted (HTTP 429, retry after about 26,800 s); Crossref replaced them.
+- Correction to the 2026-07-13 note: the journal's own pages were recorded then as unreadable (login redirect); on 2026-11-23 they were read with a cookie-following HTTP client, so the policy and format facts above are first-hand.
 
 **Cross-language checks performed:**
-- 知乎 (zhihu.com)：搜尋「AI and Society 期刊 审稿」「小木虫 投稿」，僅返回一般 SCI 分區介紹文，未見此刊審稿經驗討論串
-- 小木虫 (muchong.com)：搜尋未直接命中此刊 SCI期刊點評頁（jid 未知），僅命中不相關期刊（Artificial Intelligence, JAIR）點評頁
-- fabiao.com / fabiaoji：僅顯示影響因子/分區資訊，未含審稿經驗數字
-- LetPub (letpub.com.cn)：抓取成功，平均審稿速度與平均錄用比例欄位皆為空，僅顯示「共2條」投稿經驗分享但未展開內文
-- Reddit r/AskAcademia：site:reddit.com 搜尋「AI and Society journal Springer peer review」與直接搜尋皆為 0 相關結果
+- 知乎 / 小木虫 / fabiao: earlier pass found only general SCI-partition pages, 0 review-experience threads; a 2026-11-23 search combining English and 审稿/投稿经验 terms returned no Chinese-language submission reports.
+- LetPub: earlier pass found empty speed and acceptance fields with a count of 2 submission-experience entries whose text was not shown.
+- Reddit r/AskAcademia: earlier pass 0 results.
+- SciRev: 1 review.
 
 ---
 
 ## Strategic Notes
 
+> Every statement below follows from a fact recorded above and names it.
+
 ### Hard Blockers
 
-- Pure technical AI papers without social / ethical / philosophical dimension
-- Pure HCI without AI/society angle
-- Failure to disclose AI use per Springer publisher policy
-- Manuscripts without engagement with AI ethics / STS canon
+- No societal argument: the aims page requires a "substantial and explicit argument on the societal dimension" (Framing Requirements).
+- A manuscript that is not anonymised, or lacks the separate title page and interface declarations (Peer Review, Practical Concerns).
+- Work under review elsewhere or already published in substance (Practical Concerns, originality rules).
+- Human-subjects work without ethics-committee permission, or original research without a Data Availability Statement (Practical Concerns).
+- Independently generated results, claims or discussion by an AI tool: red tier in the Springer Nature policy (AI Policy).
 
 ### Soft Tax
 
-Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typically requires substantial reframing through critical-theoretical or STS lens. Springer 12-month AAM embargo on subscription path; OA option available.
+- Word files only, footnotes not endnotes, name-year references, decimal headings (Voice & Style).
+- AI use beyond grammar and translation is "strongly discouraged" by the journal itself, on top of the publisher's disclosure labelling (AI Policy).
+- Turnaround is unpredictable: a publisher-displayed median of 3 days to first decision against one SciRev report of 52.1 weeks without reports (Review Cycle Time); neither is a reliable estimate.
+- Subscription-route accepted manuscripts are embargoed for 12 months (Preprint Policy).
 
 ### Best Suited For
 
-- Philosophy of AI / AI ethics papers
-- STS analyses of AI / HCI systems
-- Critical and decolonial AI scholarship
-- Neuroethics, human-enhancement, biomedical-AI critique
-- AI in healthcare / education with critical analysis
-- Open Forum thought pieces on AI societal impacts
-- Embodied / extended cognition × AI work
+- Argued work on AI's societal, ethical or cultural dimensions: "ethic*" appears in 18.6% and "generative/LLM" in 13.4% of 2,232 articles (Sensitive Topics).
+- Policy and governance analysis: 12.8% of articles, plus dedicated Open Forum and Curmudgeon Corner types (Methodological Preferences).
+- Conceptual or philosophical contributions: 6.7% and 5.4% of articles, and an editorial requirement that research be "theoretically grounded" (Methodological Preferences).
+- Empirical studies that carry an explicit societal argument: survey (3.7%), experiment (3.5%) and qualitative (3.4%) papers appear (Methodological Preferences).
+- Authors writing in a plural, co-authored voice: "we" in 54% of sampled abstracts (Voice & Style).
 
 ### Not Recommended For
 
-- Pure technical AI / ML benchmarks
-- Pure usability HCI without AI/society dimension
-- Authors prioritizing top-tier HCI reputation signaling exclusively
-- Empirical user studies without critical framing
+- Technical AI work with no societal argument: excluded by the aims-page requirement (Framing Requirements).
+- Authors who need a documented review time: the journal states only a 3-day median and one SciRev report conflicts with it (Review Cycle Time).
 
 ### Rejection Fallback Chain
 
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | [Frontiers in Computer Science](./frontiers-in-computer-science.md) | OA alternative; broader CS scope including HMI section; faster cycle |
-| 2 | [ACM Interactions](./acm-interactions.md) | If the piece is provocation / manifesto style; SIGCHI audience |
-| 3 | [Theory & Psychology](../psychology/theory-and-psychology.md) | If the theoretical-philosophical contribution can be recast for psychology audience |
+| 1 | [Frontiers in Computer Science](./frontiers-in-computer-science.md) | In the corpus; see that entry for its own scope and policies |
+| 2 | [ACM Interactions](./acm-interactions.md) | In the corpus; this journal's Open Forum and Curmudgeon Corner are essay-type outlets, so an essay-form piece is the only connection drawn here |
+| 3 | [Theory & Psychology](../psychology/theory-and-psychology.md) | In the corpus; relevant only if a conceptual contribution can be recast for that journal's scope, see that entry |
 
-**Reverse direction** *(optional)*: If your paper was rejected from a top philosophy or STS journal as "too applied / too AI-focused," AI & Society is often a better fit because: its scope explicitly bridges philosophy, STS, and technology; AI ethics is the core topic; and the editorial culture rewards interdisciplinary work that other venues treat as out of scope.
+**Reverse direction:** the aims page names philosophical, cultural, cognitive, economic and ethical implications of AI and ICT as scope, so a paper declined elsewhere for being applied or AI-focused falls inside this journal's stated scope (https://link.springer.com/journal/146/aims-and-scope, retrieved 2026-11-23); acceptance odds are not estimated.
 
 ---
 
@@ -306,8 +325,10 @@ Low for STS / AI-ethics authors. Moderate for HCI or technical authors — typic
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-11-23 | AI deep research pass; no first-hand human reports. Journal pages (aims, guidelines, board, reviewer notes) read directly; Crossref keyword counts replace uncited ratings; corrections: founded 1986 (was 1987), issues per year (monthly volume, not quarterly), mixed-methods and interview scores lowered, AI-policy leniency 3 to 2, APC source conflict recorded; Tier 2 banner left unchanged. | AI-assisted (maintainer-directed) |
 | 2026-07-21 | Methodology/Sensitive-Topics evidence pass: corrected 1 unsupported high score(s): Autoethnography 4->0 (0 articles found, was uncited). Automated, evidence-capped (never assigns 4-5/High from count alone) — see docs/ATLAS_V2_DESIGN.md. | @Zaious (AI-assisted) |
 | 2026-07-20 | Resolved conflicts between existing entry and AI-research supplement (deep-reasoning + live-verification pass): Policies > AI Policy > Leniency (1-5) 與 Explicit permission gate. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — Schema v1.2 from inception. AI×STS×HCI crossover positioning noted. | @Zaious |
 | 2026-05-13 | Soft Metadata + Strategic Notes filled. | @Zaious |
+| 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
