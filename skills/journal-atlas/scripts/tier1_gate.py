@@ -14,9 +14,10 @@ a person still has to say yes. It also does not make an entry "human verified":
 passing means the claims cite counts or sources, nothing more.
 
 "Evidence-backed subsection" here = filled (no *(pending)* / *(fill manually)*),
-and it cites at least one source URL, a stated count (articles, n=, %), or an
-OpenAlex-derived figure. A subsection whose only support is "(community
-estimate)" does not count.
+and at least two of its lines cite a source URL, a stated count (articles, n=,
+%) or an OpenAlex-derived figure. A line that records a gap ("unreadable",
+"0 reviews", "not found") does not count even if it carries a URL, and a
+subsection whose only support is "(community estimate)" does not count.
 
 Usage:
     python tier1_gate.py [--json] [--quiet] paths...
@@ -54,12 +55,34 @@ PLACEHOLDER = re.compile(r"\*\(pending[^)]*\)\*|\*\(fill manually\)\*|\(pending\
 COUNT = re.compile(r"\b\d[\d,]*\s*(?:articles?|article\(s\)|publications?|papers?|works|reviews?|threads?)\b|\bn\s*=\s*\d+|\d+\s*%", re.I)
 
 
+# A line that records a gap (blocked page, zero results, "not found") is a
+# recorded blank, not evidence, even though it often carries a URL or a number.
+GAP_LINE = re.compile(
+    r"unreadable|not read\b|could not|couldn.t|\b40[0-9]\b|\b429\b|\b0 (?:reviews|results|hits|articles)\b|"
+    r"\bno (?:public |first-hand |relevant )?(?:evidence|source|data|reviews|results)\b|not found|none found|"
+    r"returned (?:nothing|zero|no)\b|not available|unverified|\bblank\b|\bpending\b",
+    re.I,
+)
+MIN_EVIDENCE_LINES = 2
+
+
+def evidence_lines(body: str) -> list[str]:
+    out = []
+    for line in (body or "").splitlines():
+        low = line.lower()
+        cited = "http" in low or COUNT.search(line) or "openalex" in low
+        if cited and not GAP_LINE.search(line):
+            out.append(line)
+    return out
+
+
 def subsection_state(body: str) -> str:
-    """'empty' | 'estimate' | 'backed'."""
+    """'empty' | 'estimate' | 'backed'. Backed = at least two lines that cite
+    a URL, a count or an OpenAlex figure and do not themselves record a gap."""
     text = (body or "").strip()
     if len(text) < 40 or PLACEHOLDER.search(text):
         return "empty"
-    if "http" in text.lower() or COUNT.search(text) or "openalex" in text.lower():
+    if len(evidence_lines(text)) >= MIN_EVIDENCE_LINES:
         return "backed"
     return "estimate"
 

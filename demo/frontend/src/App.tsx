@@ -199,10 +199,12 @@ function CoverageNotice() {
         <p>
           Entries also differ in <strong>how much of each one is filled in</strong>.
           Unscorable dimensions return "unknown" instead of a midpoint, so every
-          candidate carries an evidence-coverage figure: the median curated entry
-          sits at 100%, while the 236 AI-researched ones sit at 40% and are missing
-          the parts that need lived submission experience. <strong>Philosophy is the sharpest case —
-          106 entries, none human-verified.</strong> Scores on thin evidence are
+          candidate carries an evidence-coverage figure. Coverage counts a filled
+          field, not a verified one: the median Tier 2 entry sits at 100% because
+          every field holds an estimate, the median Tier 1 entry at about 75%, and the
+          231 AI-researched ones at 40%, missing the parts that need lived submission
+          experience. No entry has a first-hand report behind it. <strong>Philosophy is the sharpest case —
+          107 entries, none human-verified.</strong> Scores on thin evidence are
           already pulled toward a neutral 50, but treat them as leads to check.
         </p>
         <VersionLine version={data.version} />
@@ -377,9 +379,9 @@ function SiteFooter() {
       <section>
         <h2>Your field is probably not in here</h2>
         <p>
-          88% of the corpus is psychology, philosophy, HCI and cognitive science.
-          Library science, sociology, anthropology and the physical sciences are
-          at zero. Two things fix that, and neither requires touching code:
+          84% of the corpus is psychology, philosophy, HCI and cognitive science.
+          Library science, general sociology, anthropology and the physical sciences
+          are at zero. Two things fix that, and neither requires touching code:
         </p>
         <ul>
           <li>
@@ -400,7 +402,7 @@ function SiteFooter() {
             to or reviewed for a journal, you hold the part no amount of research
             reaches — whether the word limit is real, how the reviewer pool treats
             qualitative work, what a desk rejection there means. That is exactly
-            what 236 of our 399 entries are missing. Ten minutes on one journal
+            what none of our 422 entries has. Ten minutes on one journal
             you know well beats a hundred scraped ones.
           </li>
         </ul>
@@ -491,7 +493,7 @@ function SiteFooter() {
           was pervious at the code layer. This is pervious at the{" "}
           <strong>data</strong> layer, and that shift is the whole inheritance:
           the knowledge is the product, not a service that can be switched off.
-          399 Markdown files in a Git repository under a share-alike licence
+          422 Markdown files in a Git repository under a share-alike licence
           cannot be taken away from you when one maintainer burns out — which is
           exactly how OJM ended.
         </p>
@@ -522,7 +524,7 @@ function SiteFooter() {
 
 const STAGE_LABELS: Record<StageName, string> = {
   parsing: "Reading your paper",
-  screening: "Screening 399 journals",
+  screening: "Screening 422 entries",
   synthesis: "Writing your recommendation",
 };
 

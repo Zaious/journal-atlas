@@ -173,7 +173,7 @@ PAPER_SCHEMA = {
         "preprint_intent": {"type": "boolean"},
         "timeline_priority": {"type": "string", "enum": ["fast", "normal", "flexible"]},
         "venue_type": {"type": ["string", "null"], "description": "Which venue types the author will submit to, but ONLY when the text says so: \"journals\" if it rules conferences out (e.g. \"journals only\"), \"conferences\" if it rules journals out, \"either\" if it says both are fine. null when the text is silent. null leaves the constraint unapplied and the interface asks once; do not infer a preference from the subject matter."},
-        "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
+        "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, education, ai-society (AI and technology studies, philosophy and sociology of technology), cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
     },
     "required": ["topics", "methodology", "sensitive_content", "fields", "timeline_priority", "oa_required", "ai_usage", "preprint_intent"],
     "additionalProperties": False,
@@ -780,6 +780,8 @@ FIELD_LABELS = {
     "psychology": "Psychology",
     "philosophy": "Philosophy",
     "hci": "HCI (journals)",
+    "education": "Education",
+    "ai-society": "AI and society",
     "cognitive-science": "Cognitive science",
     "biology": "Biology",
     "conferences/hci": "HCI conferences",
@@ -838,7 +840,7 @@ def compute_coverage() -> dict:
         # dated.
         "absent": [
             "Library and information science (including digital libraries)",
-            "Sociology",
+            "General sociology (the ai-society directory covers only science-and-technology studies and media)",
             "Anthropology",
             "Chemistry, mathematics, and the earth sciences",
         ],
