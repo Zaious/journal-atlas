@@ -21,6 +21,13 @@ This document only covers what to do with what you read, not how it was made.
 | `> [!NOTE]` + a `signal_quality` score | **AI-Researched** | Per-journal AI research pass, cited sources, honest blanks where none existed |
 | `> [!NOTE]`, Soft Metadata fields are placeholders | **Skeleton** | Structural data only (Identity / Metrics / Subject Density) — no Soft Metadata exists yet |
 
+None of these tiers means a person has verified the entry. No entry carries a
+first-hand account from someone who submitted to or reviewed for the journal
+(0 of 399). Never describe Tier 1 as "human-verified" or Tier 2 as written or
+checked by a community; say how the claims are sourced. Scoring reads evidence
+coverage, not the tier, so a Tier 2 score is built on estimates even when its
+coverage figure is high.
+
 Separately, `> [!CAUTION]` + **Disputed** marks a claim someone has formally
 contested (see [docs/GOVERNANCE.md](../../docs/GOVERNANCE.md)). It is
 **orthogonal to tier** — it can sit on any tier, and it names the specific

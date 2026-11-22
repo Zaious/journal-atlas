@@ -23,7 +23,7 @@ Usage:
 Design notes:
     - Only touches the Metrics section (rows for h-index / 2-yr citedness /
       i10-index / Total Works). Never touches Soft Metadata, Strategic Notes,
-      Policies, Format, or Identity — those are human-curated.
+      Policies, Format, or Identity — those are not OpenAlex-derived.
     - Skips entries without a recognizable ISSN or OpenAlex ID.
     - Bumps the "Last verified" date and adds a Changelog row when --apply.
 

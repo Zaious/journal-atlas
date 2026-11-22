@@ -240,7 +240,7 @@ python scripts/similar_journals.py --target <journal-slug> --top-n 5
 The script computes weighted similarity across topic overlap (Jaccard), methodology cosine, publisher match, OA model match, h-index proximity, word-limit proximity, AI policy alignment, and embargo match. It often surfaces lateral candidates that the human-curated Rejection Fallback Chain doesn't list — useful for broader exploration.
 
 Distinction from Rejection Fallback Chain:
-- **Fallback Chain**: human-curated, 2-3 ranked options, encodes reasons
+- **Fallback Chain**: written per entry in Strategic Notes, 2-3 ranked options, encodes reasons
 - **similar_journals.py**: algorithmically computed, all entries scored, complements the fallback list
 
 Use both when answering "PCS rejected me, what's next?": present the curated fallback first (it's intentional), then offer "for broader exploration, the algorithm also surfaces X, Y" as lateral candidates.

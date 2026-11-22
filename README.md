@@ -558,6 +558,13 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
 
 Current distribution: **11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 399 total** (379 journals + 20 conferences).
 
+**What the tier names do not mean.** No tier involves a first-hand human report today: **0 of 399 entries** carry a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`). Every entry was written by the maintainer working with an AI model; there are no outside contributors yet.
+
+- **Tier 1** ("evidence-backed") is deeper per-journal research that the maintainer directed and an AI carried out: claims cite article counts and source URLs. It is the default state of an entry with no warning banner. Promotion does not require anyone who has submitted to or reviewed for the journal.
+- **Tier 2** ("community estimate") is a family-level estimate: Soft Metadata adapted from norms shared by a group of similar journals, with no per-journal sources. "Community" names the knowledge it is adapted from, not people who reviewed the entry.
+- **AI-Researched** entries are per-journal research against public sources with honest blanks, and are likewise not human-verified.
+- Scoring does not read the tier. It reads evidence *coverage*, so a Tier 2 estimate counts as a filled field. See [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#what-the-tier-names-do-and-do-not-mean).
+
 Separately from tier, 14 entries carry a **publication-status banner**: 12 verified as ceased or renamed (each naming its successor, so a rejected manuscript has somewhere to go) and 2 flagged dormant where no issue could be confirmed for over a decade but no closure notice exists either. Recommending a venue that cannot accept submissions wastes the one thing an author cannot get back, so these are marked rather than silently ranked. AI-Researched is a third evidence basis introduced by the v2 coverage-first pivot — see [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07) for what it means.
 
 Full methodology + upgrade workflow in [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md).
