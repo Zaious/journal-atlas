@@ -46,12 +46,12 @@ from typing import Optional
 try:
     from pyalex import Sources, config
 except ImportError:
-    print("ERROR: pyalex not installed. Run: pip install pyalex", file=sys.stderr)
-    sys.exit(1)
-
-
-if email := os.environ.get("OPENALEX_EMAIL"):
-    config.email = email
+    # Only fetching needs pyalex. The pure helpers below stay importable so the
+    # tests can run without it; main() reports the missing dependency.
+    Sources = config = None
+else:
+    if email := os.environ.get("OPENALEX_EMAIL"):
+        config.email = email
 
 
 METRIC_PATTERNS: dict[str, re.Pattern] = {
@@ -72,6 +72,26 @@ METRIC_PATTERNS: dict[str, re.Pattern] = {
 LAST_VERIFIED_PATTERN = re.compile(
     r"(\*\*Last verified\*\*:?\s*)(\d{4}-\d{2}-\d{2})"
 )
+
+DATE_PREFIX = re.compile(r"^\d{4}-\d{2}-\d{2}")
+# The July spine pass wrote this after the date. It names where the OLD value
+# came from; a value fetched from the API now is no longer "via spine".
+SPINE_TAG = re.compile(r"\(\s*OpenAlex\s*,\s*via spine\s*\)", re.IGNORECASE)
+
+
+def refresh_date_cell(old_cell: str, today: str) -> str:
+    """New content for the date/source cell of a metric row.
+
+    Only the date is ours to change. Whatever follows it is provenance or a
+    caveat about what the number means, e.g. "(OpenAlex - whole megajournal,
+    not just the PSP section)", and it stays: the first monthly run dropped
+    161 provenance notes and that caveat because the cell was rewritten whole.
+    The one note that is replaced is the spine tag, which stops being true once
+    the value comes from the API.
+    """
+    rest = DATE_PREFIX.sub("", old_cell.strip(), count=1).strip()
+    rest = SPINE_TAG.sub("(OpenAlex)", rest)
+    return f"{today} {rest}".strip()
 
 
 @dataclass
@@ -198,8 +218,9 @@ def apply_file_diff(file_diff: FileDiff, today: str) -> None:
             continue
         pattern = METRIC_PATTERNS[diff.field]
 
-        def replacement(m: re.Match) -> str:
-            return f"{m.group(1)}{diff.new_value}{m.group(3)}{today_iso}{m.group(5)}"
+        def replacement(m: re.Match, diff: MetricDiff = diff) -> str:
+            date_cell = refresh_date_cell(m.group(4), today_iso)
+            return f"{m.group(1)}{diff.new_value}{m.group(3)}{date_cell}{m.group(5)}"
 
         content = pattern.sub(replacement, content, count=1)
 
@@ -322,6 +343,10 @@ def main() -> int:
     parser.add_argument("--json", action="store_true", help="Emit JSON output")
 
     args = parser.parse_args()
+
+    if Sources is None:
+        print("ERROR: pyalex not installed. Run: pip install pyalex", file=sys.stderr)
+        return 1
 
     files = collect_files(args.journals_root, args.field)
     if not files:
