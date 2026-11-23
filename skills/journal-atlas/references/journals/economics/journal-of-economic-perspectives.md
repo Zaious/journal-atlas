@@ -39,7 +39,7 @@
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 440 (OpenAlex) | 2026-11-23 |
 | **CiteScore** | Not stated (Scopus not read) | |
-| **Acceptance Rate** | Blank. No acceptance rate is printed on the journal pages read. The annual report of the editor (DOI 10.1257/pandp.116.777, AEA Papers and Proceedings, May 2026, pp. 777-779, listed by Crossref: https://api.crossref.org/works/10.1257/pandp.116.777) returned HTTP 403 and was not read. The submission page says about 10-15 percent of published articles historically originated as unsolicited proposals (https://www.aeaweb.org/journals/jep/submissions), which is a share of published articles, not an acceptance rate | 2026-11-23 |
+| **Acceptance Rate** | Blank. No acceptance rate is printed on the journal pages read. The annual Report of the Editor (DOI 10.1257/pandp.116.777, AEA Papers and Proceedings, May 2026, pp. 777-779, https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.116.777; HTTP 403 to curl on 2026-11-23) was read in a real browser 2026-11-24: its three pages give page and article counts, downloads and the editorial team, and state no acceptance rate and no submission count. For 2025 it lists 956 pages in 41 full-length articles plus 62 pages in 6 features (1,026 pages in all; the 2021-2024 totals were 1,012, 992, 1,024 and 1,024 pages). The submission page says about 10-15 percent of published articles historically originated as unsolicited proposals (https://www.aeaweb.org/journals/jep/submissions), which is a share of published articles, not an acceptance rate | 2026-11-23 |
 | **Desk Rejection Rate** | Blank. No source. SciRev lists no reviews (https://scirev.org/reviews/journal-of-economic-perspectives/) | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR not read) | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 20.78 (OpenAlex proxy, not JCR) | 2026-11-23 |
@@ -249,7 +249,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: publisher pages (policy, process, board) 5 for what they say, though they say little about format; Crossref abstract-based counts 3 (296 records, 83.8% with abstract, lower bounds); OpenAlex counts 3 (source metrics, author countries, OA status); acceptance, timing and review model 0 (not stated, annual report unreadable); experiential layer 0 (SciRev shows no reviews; no first-hand report found).
+**signal_quality (0-5)**: overall 3. Per layer: publisher pages (policy, process, board) 5 for what they say, though they say little about format; Crossref abstract-based counts 3 (296 records, 83.8% with abstract, lower bounds); OpenAlex counts 3 (source metrics, author countries, OA status); acceptance, timing and review model 0 (not stated on the pages read; the 2026 Report of the Editor was read in a real browser 2026-11-24 and gives no such figure); experiential layer 0 (SciRev shows no reviews; no first-hand report found).
 
 **Sources cited across this entry:**
 - https://www.aeaweb.org/journals/jep (home), /submissions, /editorial-policy, /editors (read 2026-11-23 with curl and a browser User-Agent)
@@ -258,10 +258,10 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://api.openalex.org/sources/S72880728 and https://api.openalex.org/works (filter primary_location.source.id:S72880728, publication_year 2021-2026; group_by authorships.countries and open_access.oa_status)
 - https://scirev.org/journal/journal-of-economic-perspectives/ and https://scirev.org/reviews/journal-of-economic-perspectives/ (popularity score only; no reviews)
 
-**Needs real-browser read:** https://www.aeaweb.org/articles/pdf/doi/10.1257/pandp.116.777 (the 2026 Report of the Editor, Journal of Economic Perspectives, 3 pages; HTTP 403 after 5 curl attempts with a cookie jar and a browser User-Agent; the Wayback availability check returned no snapshot for the 2025 report's PDF). It may state submission volumes and handling practice.
+**Read in a real browser 2026-11-24:** the 2026 Report of the Editor, Journal of Economic Perspectives (https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.116.777), 3 pages. It opened as a PDF in the tab but the viewer exposes no page text, so the text was read by decoding the PDF's own text streams in the page (no external script, no file saved). It reports: 2025 total of 1,026 pages with 41 full-length articles and 6 features; about two million JEP article downloads from the journal site in 2025 and about 600,000 a year from JSTOR; a 2025 team of Heidi Williams (editor), Jonathan Parker and Jeffrey Kling (coeditors) and Timothy Taylor (managing editor). It contains no acceptance rate, no submission count and no timing.
 
 **Fields deliberately left blank, and why:**
-- Acceptance rate, desk rejection rate, timing: no figure on the pages read; the editor's report is unreadable.
+- Acceptance rate, desk rejection rate, timing: no figure on the pages read; the 2026 Report of the Editor was read in a real browser and holds none either.
 - Peer-review model, reviewer list, preprint policy, word and abstract limits: not stated on the pages read.
 - Reviewer competence variance, quantitative bias: no first-hand source.
 - Impact factor, quartile, CiteScore: paywalled or not read, not stated by policy.
@@ -322,7 +322,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - **Odds**: about 10-15 percent of published articles historically began as unsolicited proposals, and the guidelines call the chances for an unsolicited manuscript low (Framing Requirements). This is a share of published articles, so no acceptance rate can be derived.
 - **Revision effort**: agreement on the article's shape may take one or more iterations; the author then gets several months for a draft, followed by detailed editor comments, a full set of managing-editor edits and possibly more rounds (Peer Review; https://www.aeaweb.org/journals/jep/submissions).
 - **Audience**: articles must be readable by 90 percent or more of AEA members, which means translating technical material (Framing Requirements).
-- **Time**: no timing figure exists on the pages read (Review Cycle Time).
+- **Time**: no timing figure exists on the pages read or in the 2026 Report of the Editor (Review Cycle Time).
 
 ### Best Suited For
 
@@ -335,7 +335,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - Original empirical or formal research papers: the journal says research-intensive and highly mathematical papers do not fit (Format), and field-experiment and structural-model wording is rare or absent in abstracts (5 and 0 of 248) (Methodological Preferences).
 - Book or literature reviews: stated exclusion (Format).
 - Qualitative or philosophical methodology work: interview or qualitative wording in 2 of 248 abstracts and philosophy wording in 0 (Methodological Preferences, Orientation). The counts show these are rare, not that they are rejected.
-- Authors who need an acceptance rate or turnaround before choosing: none is printed on the pages read (Metrics, Review Cycle Time).
+- Authors who need an acceptance rate or turnaround before choosing: none is printed on the pages read, nor in the 2026 Report of the Editor read in a real browser (Metrics, Review Cycle Time).
 
 ### Rejection Fallback Chain
 
@@ -357,3 +357,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (regex flag stated as case-sensitive) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; counting-flag statement corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (2026 Report of the Editor: page and article counts, no acceptance or timing figure) | @Zaious |

@@ -294,9 +294,9 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 **Experiential checks**: SciRev journal page and review list (https://scirev.org/journal/teaching-and-teacher-education/ and https://scirev.org/reviews/teaching-and-teacher-education/): 2 reviews, both "Rejected (im.)", decision times 27 and 21 days (the journal page prints a 24-day figure for immediate rejection), no first-review-round, acceptance-time, round-count or report-quality data (all n/a). LetPub (https://www.letpub.com/index.php?page=journalapp&view=search&searchname=Teaching+and+Teacher+Education&searchissn=0742-051X): the search page returned no journal row, so no LetPub data. 小木虫 / 知乎: one web search for the journal name with 投稿 经验 审稿周期 returned only journal-information sites and no muchong or zhihu thread; fabiaoji not reached. Reddit: one web search for the journal name with submission, desk reject and reddit returned no thread. All of these are "0 first-hand reports beyond SciRev n=2".
 
-**Needs real-browser read:** https://www.sciencedirect.com/journal/teaching-and-teacher-education/open-access (returned 403 and then 404 to curl with a browser User-Agent and cookie jar, three tries); Elsevier's journal-specific embargo lookup (not tried).
+**Real browser also failed:** https://www.sciencedirect.com/journal/teaching-and-teacher-education/open-access was opened in a real browser on 2026-11-24 and ScienceDirect answered "Page not found" (a 404, not a bot block), so the address does not exist; Elsevier's journal-specific embargo lookup was not tried.
 
-**Unreadable pages**: none beyond the one above; the Wayback route was not needed because the other publisher pages returned 200.
+**Unreadable pages**: that open-access address (404 in a real browser too); the Wayback route was not needed because the other publisher pages returned 200.
 
 **Fields deliberately left blank, and why**: abbreviation (no page states it), word-limit negotiability, reviewer-report publication, R+R rounds, reviewer suggestion rules, preprint under-review stage, embargo months, independent-scholar rule, desk rejection rate, reviewer competence and quantitative-bias rows (no first-hand source). Impact factor and quartile: paywalled, not stated by policy.
 
@@ -355,3 +355,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Page unreadable by curl re-read in a real browser (the open-access page is a genuine 404, not a block) | @Zaious |

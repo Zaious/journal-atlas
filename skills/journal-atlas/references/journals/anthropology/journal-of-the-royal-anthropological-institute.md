@@ -21,7 +21,7 @@
 | **ISSN (Print)** | 1359-0987 |
 | **ISSN (Online)** | 1467-9655 |
 | **Founded** | Blank. The journal's pages call it the principal journal of "the oldest anthropological organisation in the world" (https://jrai.net/about-the-jrai/) but give no founding year of the journal, and none was read from a first-hand source |
-| **URL** | https://jrai.net/ (journal site, retrieved 2026-11-23); Wiley page https://rai.onlinelibrary.wiley.com/journal/14679655 (HTTP 403 to curl on 2026-11-23; Wayback copy dated 2025-08-06 read) |
+| **URL** | https://jrai.net/ (journal site, retrieved 2026-11-23); Wiley page https://rai.onlinelibrary.wiley.com/journal/14679655 (HTTP 403 to curl on 2026-11-23; Wayback copy dated 2025-08-06 read; live journal and metrics pages read in a real browser 2026-11-24) |
 | **Author Guidelines** | https://jrai.net/author-guidelines/ (read 2026-11-23); submission page https://jrai.net/submit-an-article/ |
 | **Society / Association** | Royal Anthropological Institute (the journal is described as the Institute's principal quarterly journal: https://www.therai.org.uk/publications/journal-of-the-royal-anthropological-institute, retrieved 2026-11-23) |
 | **Editorial Board Location** | OpenAlex source country code: GB. Counted from https://jrai.net/editorial-board-structure/ (retrieved 2026-11-23): editor-in-chief 1 (UK); associate editors 2 (archaeology: Germany; biological anthropology: UK); reviews editor 1 (UK); editorial assistants 2 (UK); publications officer 1 with no affiliation printed; editorial board 33 entries (country counts in Epistemological & Political Leanings) |
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 182 (OpenAlex) | 2026-11-23 |
-| **CiteScore** | Not stated (Scopus; a figure is printed on the publisher's page copy, not recorded) | |
-| **Acceptance Rate** | The journal's own editorial-process page says about 20% of submitted papers are currently accepted (https://jrai.net/editorial-process/, retrieved 2026-11-23). The publisher's journal page prints "33% Acceptance rate" in its metrics block (Wayback copy dated 2025-08-06, https://web.archive.org/web/20250806115613/https://rai.onlinelibrary.wiley.com/journal/14679655). The two figures differ; their bases are not stated on the pages read | 2026-11-23 |
+| **CiteScore** | 2.7 for 2025, as printed by the publisher (Scopus figure on https://rai.onlinelibrary.wiley.com/journal/14679655/journal-metrics, read in a real browser 2026-11-24) | 2026-11-24 |
+| **Acceptance Rate** | The journal's own editorial-process page says about 20% of submitted papers are currently accepted (https://jrai.net/editorial-process/, retrieved 2026-11-23). The publisher's live metrics page prints "2025 Acceptance rate: 25%" (https://rai.onlinelibrary.wiley.com/journal/14679655/journal-metrics, read in a real browser 2026-11-24); the Wayback copy of its journal page dated 2025-08-06 had printed 33% (https://web.archive.org/web/20250806115613/https://rai.onlinelibrary.wiley.com/journal/14679655). The three figures differ; their bases are not stated on the pages read | 2026-11-24 |
 | **Desk Rejection Rate** | About 40% rejected at the first decision before review (https://jrai.net/editorial-process/, retrieved 2026-11-23). Reasons the page names: outside the core remit, insufficiently broad or unclear anthropological contribution, insufficiently robust empirical basis or lack of analytic nuance | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR / JCR not read). Lists that can be named, without reading them as acceptance or prestige: JUFO (Finland) level 3 and Norwegian Register level 2 (spine snapshot 2026-07-13, `scripts/query_spine.py --issn 1359-0987`); Google Scholar Metrics, Social Sciences > Anthropology list, rank 13 with h5-index 24 and h5-median 29 (https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=soc_anthropology, fetched 2026-11-23; that list mixes biological anthropology and human-biology titles) | 2026-11-23 |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.89 (OpenAlex proxy, not JCR; the local spine snapshot of 2026-07-13 shows 0.51 for the same source) | 2026-11-23 |
@@ -50,10 +50,10 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | The journal aims for an initial decision within 5 weeks of submission (https://jrai.net/editorial-process/, retrieved 2026-11-23). The publisher's journal page prints "35 days Submission to first decision" (Wayback copy dated 2025-08-06, https://web.archive.org/web/20250806115613/https://rai.onlinelibrary.wiley.com/journal/14679655); the basis of that figure is not stated | |
+| **Time to first decision** | The journal aims for an initial decision within 5 weeks of submission (https://jrai.net/editorial-process/, retrieved 2026-11-23). The publisher's live metrics page prints "2025 Submission to first decision (median): 58 days" (https://rai.onlinelibrary.wiley.com/journal/14679655/journal-metrics, real browser 2026-11-24); the Wayback copy of 2025-08-06 had printed 35 days. The basis of these figures is not stated | |
 | **Time to first review** | Reviewers are asked to return reviews within 4 weeks; the page says delays arise when reviewers decline or are late (https://jrai.net/editorial-process/, retrieved 2026-11-23). No measured figure | |
-| **Time to acceptance (total)** | Blank. No measured figure: SciRev lists 0 reviews (https://scirev.org/reviews/journal-of-the-royal-anthropological-institute/); the journal says accepting a paper straight after the first reviews is very rare and that revisions often go to further review (https://jrai.net/editorial-process/) | |
-| **Time to publication (after acceptance)** | Blank. The editorial-process page says only that the time from acceptance to publication varies with the number of accepted papers (https://jrai.net/editorial-process/); accepted articles appear online first in Early View per the author guidelines (https://jrai.net/author-guidelines/) | |
+| **Time to acceptance (total)** | 455 days (median submission to acceptance, 2025), publisher metrics page, real browser 2026-11-24 (https://rai.onlinelibrary.wiley.com/journal/14679655/journal-metrics). SciRev lists 0 reviews (https://scirev.org/reviews/journal-of-the-royal-anthropological-institute/); the journal says accepting a paper straight after the first reviews is very rare and that revisions often go to further review (https://jrai.net/editorial-process/) | 2026-11-24 |
+| **Time to publication (after acceptance)** | 149 days (median acceptance to publication, 2025), publisher metrics page, real browser 2026-11-24. The editorial-process page says the time varies with the number of accepted papers (https://jrai.net/editorial-process/); accepted articles appear online first in Early View per the author guidelines (https://jrai.net/author-guidelines/) | 2026-11-24 |
 
 ### Publication Frequency
 
@@ -274,8 +274,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 **Discrepancies recorded rather than resolved:** acceptance rate about 20% (journal's own process page, live) against 33% (publisher's metrics block, copy 2025-08-06); time to first decision aim of 5 weeks against 35 days (publisher block). The bases of the publisher figures are not stated.
 
-**Needs real-browser read:**
-- https://rai.onlinelibrary.wiley.com/journal/14679655 (HTTP 403 to curl with a browser User-Agent and cookie jar after 3 tries; only the Wayback copy of 2025-08-06 was read, so current metrics, the open-access page and the copyright agreement terms are unconfirmed)
+**Read in a real browser 2026-11-24:** https://rai.onlinelibrary.wiley.com/journal/14679655/journal-metrics (2025: CiteScore 2.7, acceptance rate 25%, medians of 58 days to first decision, 455 days to acceptance and 149 days acceptance to publication, 99 articles published; top author countries United Kingdom 37%, United States 16%, Denmark 10%, Germany 5%, Australia 4%; the page also prints Clarivate figures, not recorded here). Not read in the real browser: the open-access page and copyright agreement terms (not retried), so these remain unconfirmed:
 - https://rai.onlinelibrary.wiley.com/hub/journal/14679655/forauthors.html (HTTP 403; only the Wayback copy of 2021-04-14 was read)
 - https://onlinelibrary.wiley.com/page/journal/14679655/homepage/forauthors.html (HTTP 403; no Wayback copy)
 - The "Open Access" page linked from the journal's guidelines ("Further details are available here") was not followed; it points to a Wiley page
@@ -307,7 +306,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 ### Soft Tax
 
 - **Pre-review screening**: about 40% of submissions are rejected before review (Desk Rejection Rate; https://jrai.net/editorial-process/), so the title and abstract carry the first judgement; the title and abstract go to all board members for fit comments.
-- **Revision cycles**: acceptance straight after the first reviews is very rare, and resubmissions are usually reviewed again (Peer Review; https://jrai.net/editorial-process/); no measured total time exists (Review Cycle Time).
+- **Revision cycles**: acceptance straight after the first reviews is very rare, and resubmissions are usually reviewed again (Peer Review; https://jrai.net/editorial-process/); the publisher prints a 2025 median of 455 days from submission to acceptance (Review Cycle Time; real browser 2026-11-24).
 - **Open access cost**: APC USD 4330 per Wiley's price list of 12 October 2026 (Open Access).
 - **House style**: accepted papers are reformatted to the JRAI style sheet, with UK -ize spelling and endnotes (Voice & Style).
 
@@ -344,3 +343,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (APC from Wiley price list; special-issue framing line rewritten per issue) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; the special-issue wording and APC corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (Wiley metrics page: acceptance rate, median decision, acceptance and publication times, CiteScore) | @Zaious |

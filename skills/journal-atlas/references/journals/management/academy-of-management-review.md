@@ -322,9 +322,10 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://letpub.com/journal-selector/journal/11309
 
 **Unreadable pages (never filled from memory):**
-- https://journals.aom.org/journal/amr and https://journals.aom.org/journal/amr/page/submit returned a Cloudflare challenge (HTTP 403) to `curl --compressed -sL` with a cookie jar and a browser User-Agent on 5 attempts each; the aom.org pages above carry the same journal information. A Wayback copy of https://journals.aom.org/journal/amr dated 2025-07-27 (https://web.archive.org/web/20250727093850/https://journals.aom.org/journal/amr) was read: it repeats both ISSNs, the January/April/July/October frequency and the Editor's name, and nothing else of use. No Wayback copy exists for the /page/submit URL.
-
-- Needs real-browser read: https://journals.aom.org/journal/amr ; https://journals.aom.org/toc/amr/current (current issue, article types in practice); https://www.aom.org/events/calls-for-papers/ (check whether an AMR Special Topic Forum call is listed)
+- Read in a real browser 2026-11-24: https://journals.aom.org/journal/amr (the Cloudflare check cleared by itself after a few seconds; no click). The journal page gives both ISSNs (0363-7425, 1930-3807), the frequency (January, April, July, October), the editor's name, and an About text whose mission is theoretical insights that extend theory, with testable knowledge-based claims; it lists the contribution types as new theory, a significant challenge or clarification of existing theory, a synthesis, or a search for new theory through a novel problem. The page also prints Clarivate metrics, which are not recorded here. It links Submit to ScholarOne and "For Authors" to the aom.org submitting page already used above.
+- Read in a real browser 2026-11-24: https://journals.aom.org/toc/amr/current (Volume 51, Issue 4, October 2026). The issue lists 20 entries: 1 From the Editor, 1 Decade Award article, 7 under Articles and 11 under Dialogues (1+1+7+11 = 20). Dialogues items outnumber regular articles in this issue.
+- Read in a real browser 2026-11-24: https://www.aom.org/events/calls-for-papers/ (first page of the list): 4 calls were listed (AMD registered reports, AMP open call, AMD Discoveries-through-Prose, AOM Collections); none is an AMR special topic forum call.
+- Still unreadable, real browser also failed: https://journals.aom.org/journal/amr/page/submit (the real browser got "404 NOT FOUND"; the page does not exist at that address). The aom.org pages cited above carry the submitting rules.
 
 **Fields deliberately left blank, and why:**
 - Acceptance rate, desk rejection rate, time to acceptance, reviewer culture, reviewer competence variance: no first-hand source exists (SciRev 0 reviews; LetPub 0 reviews).
@@ -394,3 +395,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (editorial-team card count 117 and country tally re-parsed) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; board count and country tally corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (journal home, current issue, calls-for-papers list; the /page/submit URL is a 404) | @Zaious |

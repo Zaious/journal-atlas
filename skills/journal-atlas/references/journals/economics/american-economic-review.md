@@ -39,8 +39,8 @@
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 734 (OpenAlex) | 2026-11-23 |
 | **CiteScore** | Not stated (Scopus not read) | |
-| **Acceptance Rate** | Blank. The journal's annual editor's report is the primary source (DOI 10.1257/pandp.116.742, AEA Papers and Proceedings, May 2026, pp. 742-760, listed by Crossref: https://api.crossref.org/works/10.1257/pandp.116.742); its PDF returned HTTP 403 on 2026-11-23, so no figure is taken from it. A third-party guide attributes about 6.5% to that report (https://manusights.com/blog/american-economic-review-submission-guide); secondary, unverified, not used as a fact | 2026-11-23 |
-| **Desk Rejection Rate** | Blank for the same reason. The same third-party guide attributes "around 40 percent" summarily rejected over five years and 39% of first decisions in 2025 to the editor's report (secondary, unverified). SciRev holds one review, an immediate rejection in 2 days (https://scirev.org/reviews/american-economic-review/, n=1) | 2026-11-23 |
+| **Acceptance Rate** | The journal's annual Report of the Editor (DOI 10.1257/pandp.116.742, AEA Papers and Proceedings, May 2026, https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.116.742; the PDF returned HTTP 403 to curl on 2026-11-23 and was opened in a real browser tab and its text read 2026-11-24). Table 3 of the report gives, for manuscripts submitted in 2021, 2022, 2023, 2024 and 2025 (status as of 2025-11-01): 1,909, 1,728, 1,722, 1,897 and 2,114 submissions, of which 116, 83, 87, 30 and 1 were accepted (plus 4, 7, 18, 18 and 2 conditionally accepted; 2025 still has 348 pending, so its figures are incomplete). The text states the "maximum acceptance rate" for the four earlier years as 6.6% (2021), 6.1% (2022), 8.2% (2023) and 8.6% (2024), and the editor writes that maintaining a rate in the 8 to 10 percent range should be possible. The report also offers an alternative estimate in its Table 6, which was not read | 2026-11-24 |
+| **Desk Rejection Rate** | Same report, Table 3: "summary rejections" (manuscripts rejected without referee review) were 779 of 1,909 (41%) for 2021, 768 of 1,728 (44%) for 2022, 612 of 1,722 (36%) for 2023, 736 of 1,897 (39%) for 2024 and 803 of 2,114 (38%, with 348 still pending) for 2025; the five cohorts together are 3,698 of 9,370 (39%, computed here from those counts). The text says these rejections are very fast, typically within a week or two and virtually always within a month. SciRev holds one review, an immediate rejection in 2 days (https://scirev.org/reviews/american-economic-review/, n=1) | 2026-11-24 |
 | **Quartile (by field)** | Not stated (SJR not read) | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 20.23 (OpenAlex proxy, not JCR) | 2026-11-23 |
 | **i10-index** | 8362 (OpenAlex) | 2026-11-23 |
@@ -50,10 +50,10 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Blank. Primary source (editor's report) unreadable, see Acceptance Rate. SciRev: one immediate rejection in 2 days, n=1 (https://scirev.org/reviews/american-economic-review/). LetPub lists "1 Review" but the page text I read shows no timing value (https://www.letpub.com/journal-selector/journal/11303) | Third-party guide cites 77% of 2025 first decisions within 3 months (secondary, unverified) |
-| **Time to first review** | Blank. No source | |
-| **Time to acceptance (total)** | Blank. No source | |
-| **Time to publication (after acceptance)** | Blank. No source | |
+| **Time to first decision** | Report of the Editor 2026, Table 4A (read in a real browser 2026-11-24, https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.116.742): cumulative share of first decisions by month for submission years 2023, 2024 and 2025 (Nov 1 to Oct 31): within 3 months 72%, 73% and 77%; within 4 months 83%, 84% and 88%; within 6 months 96%, 98% and 98%; within 7 months 98%, 99% and 100%. The 2025 column is projected from right-censored data, the earlier two are actual. The text says 98% of first submissions had a decision within six months and notes that the goal of all within six months is not yet met; among papers sent out for review, 62% of first decisions came within three months and 97% within six (the extracted text does not name the year of that last pair). SciRev: one immediate rejection in 2 days, n=1 (https://scirev.org/reviews/american-economic-review/). LetPub lists "1 Review" but the page text I read shows no timing value (https://www.letpub.com/journal-selector/journal/11303) | Journal's own report; years as stated |
+| **Time to first review** | Blank. No source (the report gives time to first decision, not a separate first-review time) | |
+| **Time to acceptance (total)** | Same report: for articles published in 2025, submission to acceptance took 130 weeks, of which 38 weeks were in the AER's own review process (the rest is time with authors); the report calls these lags longer than the year before. The weeks are summed across all revisions | 2026-11-24 |
+| **Time to publication (after acceptance)** | Same report: 11 weeks from acceptance to publication, similar to previous years | 2026-11-24 |
 
 ### Publication Frequency
 
@@ -251,7 +251,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: publisher pages (policy, format, board) 5 (read directly on 2026-11-23, but with the editorial-policy page and the submission page differing on the review model); Crossref abstract-based counts 4 (746 records, 88.6% with abstract, counts are lower bounds); OpenAlex counts 3 (source-level metrics, author countries, OA status; topic-assignment counts are not article counts); acceptance rate, desk-rejection rate and review times 0 (primary source unreadable); experiential layer 1 (SciRev n=1, LetPub shows one review with no readable text).
+**signal_quality (0-5)**: overall 3. Per layer: publisher pages (policy, format, board) 5 (read directly on 2026-11-23, but with the editorial-policy page and the submission page differing on the review model); Crossref abstract-based counts 4 (746 records, 88.6% with abstract, counts are lower bounds); OpenAlex counts 3 (source-level metrics, author countries, OA status; topic-assignment counts are not article counts); acceptance rate, desk-rejection rate and review times 4 (the journal's own 2026 Report of the Editor, read in a real browser 2026-11-24; the 2025 submission-year timing distribution is a projection); experiential layer 1 (SciRev n=1, LetPub shows one review with no readable text).
 
 **Sources cited across this entry:**
 - https://www.aeaweb.org/journals/aer (home), /submissions, /editorial-policy, /editors, /reviewers, /accepted-article-guidelines, /style-guide (all read 2026-11-23 with curl and a browser User-Agent)
@@ -263,10 +263,10 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://scirev.org/journal/american-economic-review/ and https://scirev.org/reviews/american-economic-review/ ; https://www.letpub.com/journal-selector/journal/11303
 - https://manusights.com/blog/american-economic-review-submission-guide (third-party guide, secondary, used only as a pointer to the editor's report)
 
-**Needs real-browser read:** https://www.aeaweb.org/articles/pdf/doi/10.1257/pandp.116.742 (the 2026 Report of the Editor, American Economic Review; the article landing page for the 2025 report loaded but its PDF at https://www.aeaweb.org/articles/pdf/doi/10.1257/pandp.115.743 and at https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.115.743 returned HTTP 403 after 5 curl attempts with a cookie jar and a browser User-Agent; Wayback had no snapshot). It is the primary source for acceptance rate, share of summary rejections and first-decision timing.
+**Read in a real browser 2026-11-24:** the 2026 Report of the Editor, American Economic Review (https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.116.742, redirected from https://www.aeaweb.org/articles/pdf/doi/10.1257/pandp.116.742). It opened as a PDF in the browser tab, but the viewer exposes no page text and a screenshot of the viewer timed out, so the text was read by decoding the PDF's own text streams in the page (no external script, no file saved). Table 3 and 4A and the surrounding text were read; Table 6 (an alternative acceptance estimate) and the rest of pp. 742-760 were not. The 2025 report's PDF (pandp.115.743) was not retried.
 
 **Fields deliberately left blank, and why:**
-- Acceptance rate, desk rejection rate, time to first decision, time to acceptance: the editor's report is unreadable (above); the only figures available are third-party and are recorded as secondary.
+- Table 6 of the 2026 Report of the Editor (an alternative acceptance-rate estimate) was not read; time to first review has no separate figure. The acceptance, summary-rejection and timing figures above come from the journal's own report.
 - Typical revise-and-resubmit rounds, preprint policy, Read and Publish agreements, keywords: no statement on the pages read.
 - Reviewer competence variance, quantitative bias: no first-hand source.
 - Impact factor, quartile, CiteScore: paywalled or not read, not stated by policy.
@@ -332,7 +332,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - **Length**: an average article is 35-36 typeset pages and 40 pages is the recommended ceiling, appendices included (Format).
 - **Replication effort**: a data-editor review after conditional acceptance (Peer Review; Practical Concerns).
 - **Anonymization**: manuscripts must be anonymized and identities placed on a separate title page; prior work is cited in the third person (Voice & Style, Practical Concerns).
-- **Time**: not known. The primary source for timing is unreadable (Review Cycle Time).
+- **Time**: long. For articles published in 2025, submission to acceptance took 130 weeks, of which 38 were in the journal's own review process, plus 11 weeks from acceptance to publication (Review Cycle Time, 2026 Report of the Editor). First decisions: 77% within 3 months for 2025 submissions (projected).
 
 ### Best Suited For
 
@@ -345,7 +345,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 - Qualitative, interview-based, autoethnographic, mixed-methods or philosophical work: 7, 0, 0 and 0 of 661 abstracts respectively (Methodological Preferences). The counts show these are rare, not that they are rejected.
 - Heterodox or institutionalist work: 0 of 661 abstracts with Marx, heterodox, post-Keynesian, institutionalist or evolutionary wording (Orientation), although the journal's classification list includes a heterodox-approaches class.
-- Authors who need a verified turnaround before choosing: the timing figures are unreadable (Review Cycle Time).
+- Authors who cannot wait: about 39% of submissions in 2021-2025 were summarily rejected (usually within a week or two) and the report's maximum acceptance rate was 6.1% to 8.6% for submission years 2021-2024, against an 8 to 10 percent range the editor considers possible (Metrics, 2026 Report of the Editor); accepted papers took 130 weeks from submission to acceptance in 2025.
 
 ### Rejection Fallback Chain
 
@@ -367,3 +367,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (regex flag stated as case-sensitive; trial-announcement wording aligned to the page) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; counting-flag statement and one sentence corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (2026 Report of the Editor: acceptance and summary-rejection counts, first-decision timing, submission-to-acceptance lag) | @Zaious |

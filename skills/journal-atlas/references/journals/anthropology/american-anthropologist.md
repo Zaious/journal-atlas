@@ -21,8 +21,8 @@
 | **ISSN (Print)** | 0002-7294 |
 | **ISSN (Online)** | 1548-1433 |
 | **Founded** | Blank. Not stated on the journal's own pages. A secondary source (https://en.wikipedia.org/wiki/American_Anthropologist, retrieved 2026-11-23) says only that a "New Series" began in 1899; the original founding year was not read from a first-hand source |
-| **URL** | https://www.americananthropologist.org/ (journal site); https://anthrosource.onlinelibrary.wiley.com/journal/15481433 (Wiley page, HTTP 403 to curl on 2026-11-23) |
-| **Author Guidelines** | https://www.americananthropologist.org/how-to-submit (read 2026-11-23). The Wiley author-guidelines page returned 403 (see AI-Research Notes) |
+| **URL** | https://www.americananthropologist.org/ (journal site); https://anthrosource.onlinelibrary.wiley.com/journal/15481433 (Wiley page, HTTP 403 to curl on 2026-11-23; read in a real browser 2026-11-24) |
+| **Author Guidelines** | https://www.americananthropologist.org/how-to-submit (read 2026-11-23). The Wiley author-guidelines page (https://anthrosource.onlinelibrary.wiley.com/hub/journal/15481433/about/author-guidelines, read in a real browser 2026-11-24; curl had returned 403) is a short page: it names the editor-in-chief (Elizabeth J. Chin) and a managing editor, points to the journal's own site for submission detail and to the AAA's author rights and sharing guidelines for copyright and open access, and holds no embargo, supplementary-file or word-limit text |
 | **Society / Association** | American Anthropological Association (https://www.americananthropologist.org/about, retrieved 2026-11-23) |
 | **Editorial Board Location** | OpenAlex source country code: US. Counted from the journal's own about page (https://www.americananthropologist.org/about, retrieved 2026-11-23): editor-in-chief 1 (United States); 18 distinct associate editors (the page lists 19 entries because one person appears under two headings): United States 12, Canada 2, Germany 1, Palestine 1, Hong Kong 1, independent scholar with no country 1 (12+2+1+1+1+1 = 18); editorial board 34 entries (country counts in Epistemological & Political Leanings) |
 | **OpenAlex ID** | https://openalex.org/S102499938 |
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 250 (OpenAlex) | 2026-11-23 |
-| **CiteScore** | Not read (Scopus) | |
-| **Acceptance Rate** | Blank. No figure on the journal's own pages; they say only that many submissions will be rejected (https://www.americananthropologist.org/how-to-submit, retrieved 2026-11-23). SciRev's journal-info block shows "n/a" for % accepted (https://scirev.org/journal/american-anthropologist/). Aggregator sites (editage, researcher.life, LetPub) give no acceptance rate in the excerpts seen | 2026-11-23 |
+| **CiteScore** | 3.9 for 2025, as printed by the publisher (Scopus figure shown on https://anthrosource.onlinelibrary.wiley.com/journal/15481433/journal-metrics, read in a real browser 2026-11-24) | 2026-11-24 |
+| **Acceptance Rate** | 37% for 2025, printed on the Wiley journal-metrics page (https://anthrosource.onlinelibrary.wiley.com/journal/15481433/journal-metrics, read in a real browser 2026-11-24; curl had returned 403). The page does not say how the rate is computed. The journal's own pages give no figure and say only that many submissions will be rejected (https://www.americananthropologist.org/how-to-submit, retrieved 2026-11-23). SciRev's journal-info block shows "n/a" for % accepted (https://scirev.org/journal/american-anthropologist/) | 2026-11-24 |
 | **Desk Rejection Rate** | Blank. No source: SciRev shows "n/a" for immediate rejection (https://scirev.org/journal/american-anthropologist/); LetPub's page was reached by search only and showed no review-based figure | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR / JCR not read). Lists that can be named, without reading them as acceptance or prestige: JUFO (Finland) level 3 and Norwegian Register level 2 (spine snapshot 2026-07-13, `scripts/query_spine.py --issn 0002-7294`); Google Scholar Metrics, Social Sciences > Anthropology list, rank 6 with h5-index 33 and h5-median 45 (https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=soc_anthropology, fetched 2026-11-23; that list mixes biological anthropology and human-biology titles) | 2026-11-23 |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.86 (OpenAlex proxy, not JCR; the local spine snapshot of 2026-07-13 shows 1.00 for the same source) | 2026-11-23 |
@@ -50,10 +50,10 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Blank. No publisher figure read (the Wiley journal page returned 403). SciRev, n=1: first review round 13 weeks (shown as 3.0 months) for a manuscript that was rejected after 5 review reports (https://scirev.org/journal/american-anthropologist/ and https://scirev.org/reviews/american-anthropologist/, retrieved 2026-11-23). One report is an anecdote, not a typical time | |
+| **Time to first decision** | 17 days (median, 2025 submissions to first decision), printed on the Wiley journal-metrics page (https://anthrosource.onlinelibrary.wiley.com/journal/15481433/journal-metrics, real browser 2026-11-24). A median, so it likely includes quick desk decisions; the page does not split them out. SciRev, n=1: first review round 13 weeks (shown as 3.0 months) for a manuscript that was rejected after 5 review reports (https://scirev.org/journal/american-anthropologist/ and https://scirev.org/reviews/american-anthropologist/, retrieved 2026-11-23). One report is an anecdote, not a typical time | |
 | **Time to first review** | Blank. No separate figure found | |
-| **Time to acceptance (total)** | Blank. The single SciRev review ended in rejection (total handling 3.0 months), so it gives no acceptance time; LetPub shows no figure (reached by search only) | |
-| **Time to publication (after acceptance)** | Blank. No source read | |
+| **Time to acceptance (total)** | 253 days (median submission to acceptance, 2025), Wiley journal-metrics page, real browser 2026-11-24. The single SciRev review ended in rejection (total handling 3.0 months), so it gives no acceptance time | 2026-11-24 |
+| **Time to publication (after acceptance)** | 155 days (median acceptance to publication, 2025), Wiley journal-metrics page, real browser 2026-11-24 | 2026-11-24 |
 
 ### Publication Frequency
 
@@ -117,7 +117,7 @@
 | **Word limit negotiability** | Initial limit stated as firm; the 10,500-word extension applies only after acceptance, at the discretion of the associate editors and editor-in-chief (same page) |
 | **Abstract limit** | 200 words (same page) |
 | **Reference limit** | No separate limit; references count toward the 8,000 words. Citations and references in Chicago author-date style, with DOIs where available; free-format submission is accepted and reformatting happens at copyediting (same page) |
-| **Supplementary material** | Not addressed on the journal's page. Figures go in as separate TIF files at 300 dpi or more; tables as Word documents; transcriptions may be submitted outside the word count (same page). Supplementary-file rules are on the Wiley page, which returned 403 |
+| **Supplementary material** | Not addressed on the journal's page. Figures go in as separate TIF files at 300 dpi or more; tables as Word documents; transcriptions may be submitted outside the word count (same page). The Wiley author-guidelines page (read in a real browser 2026-11-24) holds no supplementary-file rules |
 | **Figure/Table limits** | No numeric limit stated. Figures, tables and notes count toward the word limit; each figure needs a caption, alt text and an image description, listed after the references (same page) |
 
 ---
@@ -247,7 +247,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: journal-specific policies and guidelines 4 (the journal's own site read in full; Wiley journal pages unreadable); Crossref abstract-based counts 3 (only 46.2% of records have an abstract, so counts are lower bounds); OpenAlex (author countries, most-cited, metrics) 4; publisher-wide Wiley policies 4; experiential layer 1 (SciRev n=1, one rejected manuscript).
+**signal_quality (0-5)**: overall 3. Per layer: journal-specific policies and guidelines 4 (the journal's own site read in full; the Wiley journal home, metrics and guidelines pages read in a real browser 2026-11-24, the other Wiley pages not); Crossref abstract-based counts 3 (only 46.2% of records have an abstract, so counts are lower bounds); OpenAlex (author countries, most-cited, metrics) 4; publisher-wide Wiley policies 4; experiential layer 1 (SciRev n=1, one rejected manuscript).
 
 **Sources cited across this entry:**
 - https://www.americananthropologist.org/ , https://www.americananthropologist.org/how-to-submit , https://www.americananthropologist.org/about (journal site, retrieved 2026-11-23)
@@ -268,13 +268,10 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Founding year, abbreviation: not on the journal's own pages; only a secondary source mentions the 1899 New Series.
 - Acceptance and desk-rejection rate, time to acceptance, reviewer culture: no first-hand source. SciRev has 1 review (rejection, 13 weeks, 5 reports); LetPub shows no review data.
-- Accepted-manuscript embargo, copyright transfer agreement terms, supplementary-file rules, Read & Publish agreements: on Wiley pages that returned 403 or a stub.
+- Accepted-manuscript embargo, copyright transfer agreement terms, supplementary-file rules, Read & Publish agreements: not on the Wiley pages read in a real browser 2026-11-24 (the guidelines page is a stub that points elsewhere).
 - Impact factor, quartile: paywalled, not stated by policy.
 
-**Needs real-browser read:**
-- https://anthrosource.onlinelibrary.wiley.com/journal/15481433 (HTTP 403 to curl with a browser User-Agent and cookie jar; the Wayback copy dated 2026-05-16 redirected in a loop)
-- https://anthrosource.onlinelibrary.wiley.com/page/journal/15481433/homepage/forauthors.html (HTTP 403; no Wayback snapshot)
-- https://anthrosource.onlinelibrary.wiley.com/page/journal/15481433/homepage/productinformation.html (HTTP 403; no Wayback snapshot)
+**Read in a real browser 2026-11-24:** https://anthrosource.onlinelibrary.wiley.com/journal/15481433 (home: editor Elizabeth J. Chin; Wiley-printed acceptance rate and median times), https://anthrosource.onlinelibrary.wiley.com/journal/15481433/journal-metrics (2025 metrics: CiteScore 3.9, acceptance rate 37%, median 17 days to first decision, 253 days to acceptance, 155 days acceptance to publication, 114 articles published in 2025; top author countries United States 65%, Canada 11%, Australia 4%, United Kingdom 4%, Hong Kong 3%; the page also prints Clarivate figures, not recorded here) and https://anthrosource.onlinelibrary.wiley.com/hub/journal/15481433/about/author-guidelines (stub). Not retried: https://anthrosource.onlinelibrary.wiley.com/page/journal/15481433/homepage/forauthors.html and /productinformation.html (old paths; the live site now uses the /hub/ path above), and the following, still unread:
 - https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/onlineopen.html (returned a stub of 140 bytes)
 - https://www.openanthroresearch.org/ (HTTP 503 on 2026-11-23)
 
@@ -303,7 +300,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### Soft Tax
 
-- **Time**: no publisher turnaround figure was read; the one SciRev report shows 13 weeks to a rejection after 5 reports (Review Cycle Time; n=1).
+- **Time**: Wiley prints a 2025 median of 17 days to first decision, 253 days from submission to acceptance and 155 days from acceptance to publication (Review Cycle Time; real browser 2026-11-24); the one SciRev report shows 13 weeks to a rejection after 5 reports (n=1).
 - **Accessibility work**: every figure and table needs a caption, alt text and an image description supplied at the end of the manuscript (Format; same page).
 - **Word budget**: references and notes count within 8,000 words, which is tight for note-heavy or multi-site ethnography (Format; the claim about note-heavy work is an inference from the stated counting rule, not a reported experience).
 - **Open access**: the optional OnlineOpen route carries an APC, listed at USD 3750 on Wiley's price list of 12 October 2026 (Open Access).
@@ -341,3 +338,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (APC from Wiley price list; 2026 issue count; preprint claim sourced to how-to-submit; multimodal wording; first-person count scope) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 4 supported, 1 partial and 1 unreadable of 6 sampled pairs; wording, APC and issue count corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (Wiley journal home and metrics: acceptance rate, median decision, acceptance and publication times, CiteScore; Wiley author-guidelines page is a stub) | @Zaious |

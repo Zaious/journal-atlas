@@ -21,10 +21,10 @@
 | **ISSN (Print)** | 0002-8312 |
 | **ISSN (Online)** | 1935-1011 (Crossref issn-type list, https://api.crossref.org/journals/0002-8312, retrieved 2026-11-23) |
 | **Founded** | 1964. Earliest Crossref DOIs are dated 1964-01, volume 1 issue 1 (https://doi.org/10.3102/00028312001001001; query https://api.crossref.org/works?filter=issn:0002-8312&sort=published&order=asc&rows=2), retrieved 2026-11-23 |
-| **URL** | https://journals.sagepub.com/home/AER (Sage journal home; it returned 403 to plain HTTP, listed in the notes). Association page: https://www.aera.net/Publications/Journals/American-Educational-Research-Journal |
-| **Author Guidelines** | https://journals.sagepub.com/author-instructions/AER (live page returned 403; read through the archived copy dated 2025-07-16: http://web.archive.org/web/20250716143943/https://journals.sagepub.com/author-instructions/AER) |
+| **URL** | https://journals.sagepub.com/home/AER (Sage journal home; it returned 403 to plain HTTP and was not re-read in a real browser, listed in the notes). Association page: https://www.aera.net/Publications/Journals/American-Educational-Research-Journal |
+| **Author Guidelines** | https://journals.sagepub.com/author-instructions/AER (live page returned 403 to curl; length and abstract rules re-read in a real browser 2026-11-24; the rest read through the archived copy dated 2025-07-16: http://web.archive.org/web/20250716143943/https://journals.sagepub.com/author-instructions/AER) |
 | **Society / Association** | American Educational Research Association (AERA); the association page calls the journal its flagship (https://www.aera.net/Publications/Journals/American-Educational-Research-Journal, retrieved 2026-11-23). Authors of accepted papers are asked to assign copyright to AERA (archived guidelines above) |
-| **Editorial Board Location** | Current editor team (2025-2027) per the association page: 29 entries, 27 at US institutions by name, 1 in Colombia, 1 in Germany (full count in Epistemological & Political Leanings; https://www.aera.net/Publications/Journals/American-Educational-Research-Journal/AERJ-Editors, retrieved 2026-11-23). OpenAlex source country code GB (https://openalex.org/S185455288) |
+| **Editorial Board Location** | Sage live board (real browser 2026-11-24, https://journals.sagepub.com/editorial-board/AER): 131 entries, country tally in the note under Needs real-browser read, now "Read in a real browser". Association page, current editor team (2025-2027): 29 entries, 27 at US institutions by name, 1 in Colombia, 1 in Germany (full count in Epistemological & Political Leanings; https://www.aera.net/Publications/Journals/American-Educational-Research-Journal/AERJ-Editors, retrieved 2026-11-23). OpenAlex source country code GB (https://openalex.org/S185455288) |
 | **OpenAlex ID** | https://openalex.org/S185455288 |
 | **National list placement (pointers only)** | Finnish JUFO channel record 50837 shows level 3 and, in the same record, Norway level 2 and Denmark level 2 (https://jufo-rest.csc.fi/v1.1/kanava/50837, retrieved 2026-11-23). This names a list and a level; it is not a statement of acceptance difficulty |
 
@@ -112,7 +112,7 @@
 
 ## Format
 
-> Source: archived copy (2025-07-16) of the Sage author-instructions page for the journal, http://web.archive.org/web/20250716143943/https://journals.sagepub.com/author-instructions/AER. The live page returned 403, so rules may have changed since that date.
+> Source: archived copy (2025-07-16) of the Sage author-instructions page for the journal, http://web.archive.org/web/20250716143943/https://journals.sagepub.com/author-instructions/AER. The live page returned 403 to curl; a real-browser read on 2026-11-24 confirmed length, abstract and the absence of AI wording only.
 
 | Aspect | Detail |
 |--------|--------|
@@ -285,9 +285,9 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 **Experiential checks**: SciRev (https://scirev.org/journal/american-educational-research-journal/): journal page exists, no reviews, popularity score only. LetPub: the public search URL returned only its landing page, so no journal row. 小木虫 / 知乎: one web search for the journal name with 投稿经验 审稿周期 拒稿 returned no muchong or zhihu thread; fabiaoji not reached. Reddit: one web search for the journal with submission experience, review time, desk reject and reddit returned no thread. Zero first-hand reports found.
 
-**Needs real-browser read:** https://journals.sagepub.com/author-instructions/AER (403 to curl with a browser User-Agent and cookie jar, 3 tries; only the 2025-07-16 archived copy was read); https://journals.sagepub.com/home/AER; https://journals.sagepub.com/aims-scope/AER; https://journals.sagepub.com/editorial-board/AER (current Sage board list, possibly larger than the association's editors page). Also not read: the association's Standards for Research Conduct and Code of Ethics, and the Reviewer Guidelines.
+**Read in a real browser 2026-11-24:** https://journals.sagepub.com/author-instructions/AER (live; the 50 double-spaced page limit and the 100-120 word abstract are unchanged from the 2025-07-16 copy; a keyword search of the live text found no AI wording; its Sage Choice section says gold open access is subject to a publication fee) and https://journals.sagepub.com/editorial-board/AER (live board: 131 entries, 1 Editor-in-Chief, 7 Co-Editors, 19 Associate Editors, 1 Managing Editor, 88 Editorial Board members and 15 Student Editorial Board members, 1+7+19+1+88+15 = 131; 111 entries print a country, of which USA 102, Germany 2, and one each for Colombia, Chile, Belgium, Turkey, Norway, New Zealand and Australia (102+2+7 = 111), and 20 entries print an institution without a country). Real browser not done in the time box: https://journals.sagepub.com/home/AER ; https://journals.sagepub.com/aims-scope/AER ; the association's Standards for Research Conduct and Code of Ethics and the Reviewer Guidelines.
 
-**Unreadable pages**: the four Sage journal pages above (403), covered by archived copies dated 2025-07-16 (instructions) and 2022-12-03 (aims and board).
+**Unreadable pages**: none of the two Sage pages read above is still unreadable; the home and aims pages stay covered by the archived copy of 2022-12-03.
 
 **Fields deliberately left blank, and why**: CiteScore, desk rejection rate, all four review-cycle times, special issues, transfer policy, reviewer-report publication, R+R rounds, reviewer recommendations, word-limit negotiability, read-and-publish list, under-review preprint rule, reviewer competence and quantitative-bias rows (no first-hand source). Impact factor and quartile: paywalled, not stated by policy.
 
@@ -305,7 +305,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - **Anonymisation**: identity, affiliations and funding must be removed from everything outside the title page, own work cited as "Author, year", and the revision response letter anonymized (Format, Practical Concerns; archived guidelines).
 - **Prior publication**: manuscripts previously published, in press or under consideration elsewhere are not accepted (Preprint Policy; archived guidelines).
 - **Abstract**: 100-120 words (Format).
-- The live guidelines page could not be read, so any rule above may have changed since 2025-07-16.
+- The live guidelines page was re-read in a real browser on 2026-11-24 for length, abstract and AI wording only; the other rules above rest on the 2025-07-16 copy.
 
 ### Soft Tax
 
@@ -346,3 +346,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Pages unreadable by curl re-read in a real browser (Sage author guidelines and editorial board, 131 entries) | @Zaious |
