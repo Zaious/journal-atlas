@@ -35,6 +35,23 @@ const studioNode = {
 };
 
 /**
+ * The paper that describes the system. The @id is its DOI URL, which resolves
+ * (checked 2026-11-24); the Zenodo snapshot is the archived state it describes.
+ * No date beyond the year, because the exact publication date was not checked.
+ */
+const paperNode = {
+  "@type": "ScholarlyArticle",
+  "@id": SITE.paper.doiUrl,
+  headline: SITE.paper.title,
+  name: SITE.paper.title,
+  url: SITE.paper.doiUrl,
+  sameAs: [SITE.paper.snapshotUrl],
+  datePublished: SITE.paper.year,
+  author: { "@id": authorNode["@id"] },
+  isPartOf: { "@type": "PublicationEvent", name: SITE.paper.venueFull },
+};
+
+/**
  * Structured data that says only what the page shows. No ratings, no
  * `SearchAction` (there is no public search endpoint), no FAQPage (Google
  * retired the rich result 2026-05-07), no `offers` beyond "free", which is
@@ -73,7 +90,9 @@ export function jsonLd(page: PageMeta): object[] {
             author: { "@id": authorNode["@id"] },
             publisher: { "@id": studioNode["@id"] },
             isBasedOn: SITE.repoUrl,
+            subjectOf: { "@id": SITE.paper.doiUrl },
           },
+          paperNode,
           { ...authorNode, sameAs: [SITE.author.url, "https://github.com/Zaious"] },
           studioNode,
         ],
@@ -91,6 +110,7 @@ export function jsonLd(page: PageMeta): object[] {
         isPartOf: { "@id": `${home}#website` },
         about: { "@id": `${home}#app` },
         author: { ...authorNode, sameAs: [SITE.author.url, "https://github.com/Zaious"] },
+        citation: paperNode,
       },
     ];
   }
@@ -204,6 +224,14 @@ export function llmsTxt(): string {
 ## Pages
 
 ${PAGES.filter((p) => p.lang === DEFAULT_LANG && p.id !== "notfound").map(pageLine).join("\n")}
+
+## Paper
+
+${SITE.paper.author}. ${SITE.paper.year}. ${SITE.paper.title}. ${SITE.paper.venueFull}, ${SITE.paper.track} track.
+
+- [Paper (ACM Digital Library)](${SITE.paper.doiUrl})
+- [Archived state the paper describes (Zenodo)](${SITE.paper.snapshotUrl}); also the tag \`jcdl2026\` in the repository
+- The corpus has grown since; the live API reports which version it serves.
 
 ## Translations
 

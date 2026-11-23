@@ -88,6 +88,7 @@ export interface HomeText {
   heroTitle: string;
   heroSub: string;
   installCta: string;
+  paperLink: ReactNode;
   shotAria: string;
   shotQueryLabel: string;
   shotCaption: (f: ShotFacts) => ReactNode;
@@ -163,6 +164,15 @@ export const HOME: Record<Lang, HomeText> = {
     heroSub:
       "Describe your paper. Journal Atlas ranks journals and conferences from an open knowledge base and shows, for each one, how much of what it says is evidenced. No account, no install.",
     installCta: "Install the skill",
+    paperLink: (
+      <>
+        Paper at{" "}
+        <a href={SITE.paper.doiUrl} target="_blank" rel="noreferrer">
+          {SITE.paper.venue}
+        </a>{" "}
+        ({SITE.paper.track}) · <a href="/about/#paper">How to cite</a>
+      </>
+    ),
     shotAria: "A real screening result: three candidate journals, each with an evidence tier, a score and how much of the score had data behind it.",
     shotQueryLabel: "Example paper",
     shotCaption: (f) => (
@@ -443,6 +453,15 @@ export const HOME: Record<Lang, HomeText> = {
     heroSub:
       "描述你的論文。Journal Atlas 從一份開放知識庫排出期刊與研討會，並為每一個標示它所說的內容有多少有證據。免註冊、免安裝。",
     installCta: "安裝 skill",
+    paperLink: (
+      <>
+        論文發表於{" "}
+        <a href={SITE.paper.doiUrl} target="_blank" rel="noreferrer">
+          {SITE.paper.venue}
+        </a>
+        （展示論文）· <a href="/zh-hant/about/#paper">引用方式</a>
+      </>
+    ),
     shotAria: "一次真實的篩選結果：三本候選期刊，每本都附上證據層級、分數，以及分數中有多少有資料支撐。",
     shotQueryLabel: "範例論文",
     shotCaption: (f) => (

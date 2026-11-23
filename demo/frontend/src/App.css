@@ -1574,3 +1574,27 @@ html:lang(zh-Hant) .faq h2 {
     padding: 2.5rem 0;
   }
 }
+
+/* The paper line under the hero buttons, where SmalLoL puts its release line. */
+.hero-paper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin: -0.4rem 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.hero-paper::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.hero-paper a {
+  color: var(--accent-text);
+}

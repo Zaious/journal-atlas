@@ -85,6 +85,35 @@ export default function About() {
         </p>
       </section>
 
+      <section id="paper">
+        <h2>論文</h2>
+        <p>
+          <strong>
+            {SITE.paper.author}. {SITE.paper.year}. {SITE.paper.title}.
+          </strong>{" "}
+          {SITE.paper.venueFull}，展示論文（{SITE.paper.track}）。
+        </p>
+        <ul>
+          <li>
+            <a href={SITE.paper.doiUrl} target="_blank" rel="noreferrer">
+              ACM 數位圖書館中的論文
+            </a>
+          </li>
+          <li>
+            <a href={SITE.paper.snapshotUrl} target="_blank" rel="noreferrer">
+              論文所描述版本的封存
+            </a>
+            （Zenodo），在儲存庫中的標籤是{" "}
+            <a href={SITE.paper.tagUrl} target="_blank" rel="noreferrer">
+              <code>jcdl2026</code>
+            </a>
+          </li>
+        </ul>
+        <p>
+          語料在那次封存之後持續增加，所以本站上的數字是之後的版本；每個顯示這些數字的頁面都會標明它提供的是哪一版。
+        </p>
+      </section>
+
       <section id="contact">
         <h2>聯絡、更正與貢獻</h2>
         <p>

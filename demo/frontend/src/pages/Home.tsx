@@ -452,6 +452,7 @@ export default function Home() {
                 {m.installCta}
               </a>
             </div>
+            <p className="hero-paper">{m.paperLink}</p>
             <CoverageNotice data={coverage} />
           </div>
         </div>

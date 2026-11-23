@@ -59,6 +59,23 @@ export const SITE = {
     code: "MIT",
     codeUrl: "https://github.com/Zaious/journal-atlas/blob/main/LICENSE-CODE",
   },
+  /**
+   * The paper that describes the system, as README.md cites it. All three links
+   * were fetched anonymously on 2026-11-24 and resolve (doi.org 302 to ACM DL and
+   * Zenodo; the tag page 200). The snapshot DOI is the version DOI of the
+   * `jcdl2026` release, not the concept DOI, so it does not drift with the corpus.
+   */
+  paper: {
+    title: "Journal Atlas: Venue Fit Scoring Under Incomplete Evidence, and the Corpus Method It Requires",
+    author: "Meng-Han Lee",
+    year: "2026",
+    venue: "JCDL 2026",
+    venueFull: "ACM/IEEE Joint Conference on Digital Libraries (JCDL 2026)",
+    track: "Demonstrations",
+    doiUrl: "https://doi.org/10.1145/3805696.3846515",
+    snapshotUrl: "https://doi.org/10.5281/zenodo.22272331",
+    tagUrl: "https://github.com/Zaious/journal-atlas/releases/tag/jcdl2026",
+  },
   /** Matches `--bg` in index.css, light theme. */
   themeColor: "#ffffff",
   ogImage: "/og.png",

@@ -116,6 +116,37 @@ export default function About() {
         </p>
       </section>
 
+      <section id="paper">
+        <h2>The paper</h2>
+        <p>
+          <strong>
+            {SITE.paper.author}. {SITE.paper.year}. {SITE.paper.title}.
+          </strong>{" "}
+          {SITE.paper.venueFull}, {SITE.paper.track} track.
+        </p>
+        <ul>
+          <li>
+            <a href={SITE.paper.doiUrl} target="_blank" rel="noreferrer">
+              The paper in the ACM Digital Library
+            </a>
+          </li>
+          <li>
+            <a href={SITE.paper.snapshotUrl} target="_blank" rel="noreferrer">
+              The archived state it describes
+            </a>{" "}
+            (Zenodo), also tagged{" "}
+            <a href={SITE.paper.tagUrl} target="_blank" rel="noreferrer">
+              <code>jcdl2026</code>
+            </a>{" "}
+            in the repository
+          </li>
+        </ul>
+        <p>
+          The corpus has grown since that snapshot, so the figures on this site are later ones; every page that shows
+          them says which version it is serving.
+        </p>
+      </section>
+
       <section id="contact">
         <h2>Contact, corrections, and contributing</h2>
         <p>

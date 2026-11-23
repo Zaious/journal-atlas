@@ -30,11 +30,11 @@ export default function Ai() {
       <section>
         <h2>What no entry records yet</h2>
         <p className="callout">
-          {coverage ? (
-            <HumanEvidence coverage={coverage} />
-          ) : (
-            "Loading the current record from the API."
-          )}
+          {coverage
+            ? coverage.human_evidence
+              ? <HumanEvidence coverage={coverage} />
+              : "The API this page is talking to does not report this record yet. Until it does, read it as: no entry records a first-hand report that this site can show you."
+            : "Loading the current record from the API."}
         </p>
         <p>
           An entry&apos;s tier says <em>how it was written</em>. It is not a verdict

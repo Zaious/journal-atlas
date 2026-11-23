@@ -24,7 +24,11 @@ export default function Ai() {
       <section>
         <h2>目前還沒有條目記錄的事</h2>
         <p className="callout">
-          {coverage ? <HumanEvidence coverage={coverage} /> : "正在從 API 載入目前的紀錄。"}
+          {coverage
+            ? coverage.human_evidence
+              ? <HumanEvidence coverage={coverage} />
+              : "本頁連線的 API 目前還沒有提供這項紀錄。在它提供之前，請理解為：沒有任何條目記錄了本站能顯示給你的第一手報告。"
+            : "正在從 API 載入目前的紀錄。"}
         </p>
         <p>
           條目的 tier 說的是<em>它是怎麼寫成的</em>
