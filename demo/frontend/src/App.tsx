@@ -202,9 +202,9 @@ function CoverageNotice() {
           candidate carries an evidence-coverage figure. Coverage counts a filled
           field, not a verified one: the median Tier 2 entry sits at 100% because
           every field holds an estimate, the median Tier 1 entry at about 75%, and the
-          227 AI-researched ones at 40%, missing the parts that need lived submission
+          230 AI-researched ones at 40%, missing the parts that need lived submission
           experience. No entry has a first-hand report behind it. <strong>Philosophy is the sharpest case —
-          118 entries, none human-verified.</strong> Scores on thin evidence are
+          119 entries, none human-verified.</strong> Scores on thin evidence are
           already pulled toward a neutral 50, but treat them as leads to check.
         </p>
         <VersionLine version={data.version} />
@@ -379,8 +379,8 @@ function SiteFooter() {
       <section>
         <h2>Your field is probably not in here</h2>
         <p>
-          77% of the corpus is psychology, philosophy, HCI and cognitive science.
-          Library science, sociology, anthropology and five other fields have three
+          75% of the corpus is psychology, philosophy, HCI and cognitive science.
+          Library science, sociology, anthropology and six other fields have four to six
           journals each, and the physical sciences are at zero. Two things fix that, and neither requires touching code:
         </p>
         <ul>
@@ -402,7 +402,7 @@ function SiteFooter() {
             to or reviewed for a journal, you hold the part no amount of research
             reaches — whether the word limit is real, how the reviewer pool treats
             qualitative work, what a desk rejection there means. That is exactly
-            what none of our 477 entries has. Ten minutes on one journal
+            what none of our 493 entries has. Ten minutes on one journal
             you know well beats a hundred scraped ones.
           </li>
         </ul>
@@ -493,7 +493,7 @@ function SiteFooter() {
           was pervious at the code layer. This is pervious at the{" "}
           <strong>data</strong> layer, and that shift is the whole inheritance:
           the knowledge is the product, not a service that can be switched off.
-          477 Markdown files in a Git repository under a share-alike licence
+          493 Markdown files in a Git repository under a share-alike licence
           cannot be taken away from you when one maintainer burns out — which is
           exactly how OJM ended.
         </p>
@@ -524,7 +524,7 @@ function SiteFooter() {
 
 const STAGE_LABELS: Record<StageName, string> = {
   parsing: "Reading your paper",
-  screening: "Screening 477 entries",
+  screening: "Screening 493 entries",
   synthesis: "Writing your recommendation",
 };
 
