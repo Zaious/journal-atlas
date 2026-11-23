@@ -4,10 +4,10 @@
 
 # Educational Theory
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 4 supported and 1 partial of 5 sampled pairs in a real browser; the partial wording corrected afterwards. No first-hand human reports; not human-verified.
 
 ---
 
@@ -21,10 +21,10 @@
 | **ISSN (Print)** | 0013-2004 |
 | **ISSN (Online)** | 1741-5446 |
 | **Founded** | 1951, first published through the University of Illinois Urbana-Champaign College of Education (same news article, retrieved 2026-11-23; OpenAlex `first_publication_year` is also 1951) |
-| **URL** | https://onlinelibrary.wiley.com/journal/17415446 (the former Illinois-hosted journal sites redirect or return 404 as of 2026-11-23) |
-| **Author / Submission Guidelines** | https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html (unreadable by automated fetch: HTTP 403, 2026-11-23). Correction: the earlier entry linked a Wiley PDF that is another journal's AI guideline, not this journal's |
-| **Society / Association** | No publishing society stated; OpenAlex `societies` is empty. The news article says a partnered podcast is sponsored by the Philosophy of Education Society (not an ownership statement) |
-| **Editorial Board Location** | Editor at the University of Illinois Urbana-Champaign (news article above); the board page itself was unreadable (see AI-Research Notes), so board size and countries are not counted here |
+| **URL** | https://onlinelibrary.wiley.com/journal/17415446 (read in a real browser on 2026-11-24; it loaded normally, the earlier 403 was a research-tool block). The former Illinois-hosted journal sites redirect or return 404 as of 2026-11-23 |
+| **Author / Submission Guidelines** | https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html (read in a real browser on 2026-11-24). Submission is through the Research Exchange portal named on that page. The earlier note about a wrong Wiley PDF stands: that PDF was another journal's AI guideline |
+| **Society / Association** | The journal's overview page says it is 'sponsored by the John Dewey Society and the Philosophy of Education Society, and supported by several other scholarly associations', and the home page says it is published on behalf of the University of Illinois (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/productinformation.html and https://onlinelibrary.wiley.com/journal/17415446, read in a real browser on 2026-11-24). OpenAlex `societies` is empty. The editorial board page lists liaison members 'for the University of Illinois', 'for the Philosophy of Education Society' and 'for the John Dewey Society' (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/editorialboard.html) |
+| **Editorial Board Location** | Editor Rebecca M. Taylor, University of Illinois Urbana-Champaign (US); the live board page lists 55 entries in all: 52 with an affiliation printed, across 16 countries or regions, and 3 society liaison entries with no affiliation printed (52 + 3 = 55); per-country recount in Reviewer Pool Characteristics (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/editorialboard.html, read in a real browser on 2026-11-24) |
 
 ---
 
@@ -38,8 +38,8 @@
 | **5-Year IF** | *(not stated: JCR is subscription-only)* | |
 | **h-index** | 78 | 2026-07-13 (OpenAlex, via spine) |
 | **2-Year Mean Citedness** | 1.38 (OpenAlex proxy, not a JCR impact factor) | 2026-07-13 (OpenAlex, via spine) |
-| **CiteScore** | *(not stated)* | |
-| **Acceptance Rate** | Not stated on any page that could be read. Secondary, unverified: a search-result summary of the old Illinois reviewer page says about 80% of submissions are rejected; the page itself now returns 404 | 2026-11-23 |
+| **CiteScore** | 1.8 (2025), a Scopus figure printed on the journal's Wiley metrics page (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24). The page also prints a Clarivate impact factor and Journal Citation Indicator; those are not recorded here by policy | 2025 (per page) |
+| **Acceptance Rate** | 27% for 2025 (journal-metrics page, https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24). The earlier secondary, unverified 'about 80% rejected' search summary of the now-404 Illinois reviewer page differs from this publisher figure and is withdrawn | 2025 (per page) |
 | **Desk Rejection Rate** | Not stated on any page that could be read; SciRev has 0 reviews (https://scirev.org/journal/educational-theory/, 2026-11-23) | 2026-11-23 |
 | **Quality-tier facts (not JCR/SJR quartile)** | CAS 中科院分区: 4 [324/840] (教育学); JUFO (Finland): level 2; Norwegian Register: level 2 | 2026-07-13 (spine) |
 
@@ -47,18 +47,18 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Not stated by the journal on readable pages (2026-11-23) | |
+| **Time to first decision** | Median 13 days from submission to first decision in 2025 (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24; also on the journal home page https://onlinelibrary.wiley.com/journal/17415446) | 2025 (per page) |
 | **Time to first review** | SciRev: n/a, 0 reviews submitted | https://scirev.org/journal/educational-theory/ , retrieved 2026-11-23 |
-| **Time to acceptance (total)** | SciRev: n/a, 0 reviews submitted | same URL |
-| **Time to publication (after acceptance)** | Not stated by the journal on readable pages (2026-11-23) | |
+| **Time to acceptance (total)** | Median 126 days from submission to acceptance in 2025 (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24). SciRev: n/a, 0 reviews submitted (https://scirev.org/journal/educational-theory/, retrieved 2026-11-23) | 2025 (per page) |
+| **Time to publication (after acceptance)** | Median 22 days from acceptance to publication in 2025 (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24) | 2025 (per page) |
 
 ### Publication Frequency
 
 | Aspect | Detail |
 |--------|--------|
-| **Schedule** | Six issues a year (news article above, retrieved 2026-11-23) |
-| **Articles per year (approx.)** | Crossref `journal-article` records by year: 2021: 49, 2022: 51, 2023: 59, 2024: 62, 2025: 87 (works filtered by ISSN 0013-2004, retrieved 2026-11-23); the news article says submissions tripled from 2023 to 2025 |
-| **Special issues?** | A 75th-anniversary year is announced for 2026 (news article); no open call for papers was located in a 2026-11-23 search |
+| **Schedule** | Six issues a year (news article above, retrieved 2026-11-23); the live home page shows Volume 76, Issue 6 (December 2026), a special issue titled 'Philosophy of Education Beyond the Human', and the guidelines page says that from the 2023 volume the journal is published online only (https://onlinelibrary.wiley.com/journal/17415446 and https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Articles per year (approx.)** | Crossref `journal-article` records by year: 2021: 49, 2022: 51, 2023: 59, 2024: 62, 2025: 87 (works filtered by ISSN 0013-2004, retrieved 2026-11-23); the publisher's own metrics page prints 86 total articles published in 2025 (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24), one fewer than Crossref; the news article says submissions tripled from 2023 to 2025 |
+| **Special issues?** | Yes. The live call-for-papers page lists one call, 'PES/Educational Theory Pre-Conference Workshop & Special Issue: Everyday Courage: Ordinary Acts in Daily Life', with a submission deadline of 14 September 2026, which had passed on the retrieval date (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/call-for-papers, read in a real browser on 2026-11-24). The home page lists a symposium 'Philosophical Considerations of Artificial Intelligence in Education' and the current issue as a special issue (https://onlinelibrary.wiley.com/journal/17415446). A 75th-anniversary year is announced for 2026 (news article) |
 
 ---
 
@@ -68,27 +68,27 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymous. Secondary, unverified: search-result summaries of the Wiley guidelines page and the old Illinois reviewer page say so; the pages themselves were unreadable (403 / 404) |
-| **Transferable / Cascade?** | Not stated on readable pages. Secondary, unverified: the old reviewer page lists a "Resubmit elsewhere" recommendation option |
-| **Reviewer reports published?** | Not stated on readable pages |
-| **Typical R+R rounds** | Not stated on readable pages |
+| **Type** | Double-anonymous. The live author page says manuscripts are sent out for anonymous review, that 'reviewers do not know the identity of authors, and authors do not know the identity of reviewers', and that authors should avoid self-identification in the text and in the references (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). This replaces the earlier secondary, unverified status |
+| **Transferable / Cascade?** | Not stated on the live author page (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). Secondary, unverified: the old reviewer page lists a 'Resubmit elsewhere' recommendation option |
+| **Reviewer reports published?** | Not stated on the live author page (read in a real browser on 2026-11-24) |
+| **Typical R+R rounds** | Not stated on the live author page or the metrics page (read in a real browser on 2026-11-24) |
 | **Reviewer recommendations** | Secondary, unverified: options Accept, Revisions Required, Resubmit for Review, Resubmit elsewhere, Decline (search-result summary of the old reviewer page) |
 
-> Source: https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html (unreadable, HTTP 403, 2026-11-23); the news article above does not describe the review process.
+> Source: https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html ('Review Procedures' section, read in a real browser on 2026-11-24). The same section says no editorial consideration is given to manuscripts published elsewhere or under review elsewhere, with rare exceptions; the news article does not describe the review process.
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | None located: the journal's Wiley author page returned HTTP 403, so a journal-level override cannot be ruled out; the Wiley publisher policy is recorded below |
+| **Has journal-specific AI policy?** | Yes, a short journal-level rule: if AI-generated-content tools such as ChatGPT or other large-language-model tools were used to develop any portion of a manuscript, their use 'must be described transparently and in detail in the Methods section'; the page points to Wiley's AI guidelines (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). The detailed rules remain the Wiley publisher policy recorded below |
 | **Explicit permission gate?** | conditional (disclosure, no prior permission step in the Wiley text read) |
 | **Leniency (1-5)** | 3 |
 | **Summary** | Wiley policy (https://authors.wiley.com/ethics-guidelines/index.html, retrieved 2026-11-23): AI tools cannot be authors; authors stay accountable; AI use must be disclosed at submission, stating purpose and how output was checked; where AI substantially edits, develops or translates part of a manuscript it is described in the manuscript text using Wiley's example statements; tools used only for spelling, grammar or general editing are exempt; peer reviewers and editors may use AI technology to improve the clarity or quality of written feedback if the reviewer discloses that use to the handling editor, and beyond that limited use may not upload manuscripts (or parts of them) into AI tools (peer-review section of the same page, re-read 2026-11-23). Correction: the previous entry cited a Wiley PDF that is the Journal of Product Innovation Management's guideline, not this journal's. |
-| **Source URL** | https://authors.wiley.com/ethics-guidelines/index.html |
+| **Source URL** | https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html (journal rule); https://authors.wiley.com/ethics-guidelines/index.html (publisher policy) |
 
 ### Preprint Policy
 
-> Source: https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html (retrieved 2026-11-23). Wiley notes that individual journals may set their own preprint rules; this journal's own rule was unreadable.
+> Source: https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html (retrieved 2026-11-23). Wiley notes that individual journals may set their own preprint rules; the live author-guidelines page of this journal has no preprint rule (searched the page text, read in a real browser on 2026-11-24), so the publisher rule applies as far as the pages show.
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
@@ -101,25 +101,25 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid: the news article says about half of the previous year's articles were open access (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23) |
-| **APC (if OA chosen)** | 2630 USD (spine snapshot 2026-07-13; the journal's APC page was not read, so the 2026 figure is not confirmed) |
-| **Read & Publish agreements** | Not stated on readable pages; the news article says nearly 5,000 institutions have access |
+| **Model** | Hybrid: the live open-access page offers an Open Access option with a Creative Commons licence choice, and the news article says about half of the previous year's articles were open access (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/fundedaccess.html, read in a real browser on 2026-11-24; https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23) |
+| **APC (if OA chosen)** | USD 3,040 / GBP 2,020 / EUR 2,570, excluding taxes, payable if the Open Access option is selected and the article is accepted (journal open-access page, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/fundedaccess.html, read in a real browser on 2026-11-24). The 2026-07-13 spine snapshot said USD 2630; the live page is the later source and the spine figure is older |
+| **Read & Publish agreements** | The live page says that if the corresponding author's institution, funder or society has a Wiley Open Access Account, all or part of the APC might be covered, depending on the acceptance date and an active partnership (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/fundedaccess.html, read in a real browser on 2026-11-24). No list of participating institutions was read; the news article says nearly 5,000 institutions have access |
 
 ---
 
 ## Format
 
-> The journal's Wiley author page was unreadable (HTTP 403, 2026-11-23). Everything in this table is secondary, unverified: summaries returned by two web searches on 2026-11-23, and the two summaries disagree on length (one says 7,000-9,000 words including references and notes, the other 8,000-10,000 words including notes). Treat the length as unconfirmed.
+> Source: the journal's Wiley author-guidelines page, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24 (it had returned HTTP 403 to the earlier research tool). The two secondary length figures recorded in the earlier version of this entry (7,000-9,000 and 8,000-10,000 words) are superseded by this reading.
 
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | Original articles and book reviews (secondary, unverified) |
-| **Word limit** | Conflicting secondary reports: 7,000-9,000 words including references and notes, or 8,000-10,000 including notes; unconfirmed |
-| **Word limit negotiability** | Secondary, unverified: longer or shorter pieces considered if the content warrants it |
-| **Abstract limit** | Secondary, unverified: an abstract and 3-5 keywords; no word limit seen |
-| **Reference limit** | Secondary, unverified: author-date Chicago references, endnotes, double-spaced single Word file |
-| **Supplementary material** | Not stated on readable pages |
-| **Figure/Table limits** | Not stated on readable pages |
+| **Article types accepted** | Original Articles ('scholarly articles that critically engage philosophical and theoretical issues in education') and Book Reviews; the Book Review Editor commissions reviews directly, unsolicited drafts are considered one-on-one and publication is not guaranteed (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Word limit** | Original articles are 'typically 7,000-9,000 words (including references and notes)'. Book reviews: shorter single reviews of 2,500-3,500 words are preferred (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Word limit negotiability** | Stated: 'shorter or longer manuscripts will be considered if warranted by the content' (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Abstract limit** | An abstract and 3-5 keywords are required; no abstract word limit is stated on the page (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Reference limit** | Author-date references per the Chicago Manual of Style, 18th edition, effective June 1, 2025; double-spaced throughout including quotations and endnotes; endnotes numbered and placed at the end of the paper. No reference-count cap stated (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24) |
+| **Supplementary material** | Not stated on the live author page (read in a real browser on 2026-11-24). Format rules: a single Word document with text, references, endnotes and tables; figures uploaded as separate files; the title page, acknowledgements and funding information are added to the final file only after acceptance and must not appear in the submitted document |
+| **Figure/Table limits** | No count limit stated. Tables each need a title and footnotes; figure legends are supplied as a list in the text; figures are uploaded as separate files; the journal is online-only since the 2023 volume, so colour images are free in digital format (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). ORCID is required |
 
 ---
 
@@ -160,12 +160,10 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **AI-Researched (2026-11-23, deepened from the 2026-07-13 pass)** — the fields below were researched per-journal from public sources (publisher policy pages, Crossref and OpenAlex records, SciRev, and cross-language checks against 小木虫/fabiaoji/知乎) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence say what was checked rather than being estimated — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **3/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
-
 ### Epistemological & Political Leanings
 
 - Scope statement: the 2026 news article says the journal covers the purposes of education in a democracy, ethics and values, and injustice in education, including epistemic and environmental injustice (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23); no political stance is stated.
+- Live journal pages (read in a real browser on 2026-11-24): the home page says the journal provides a venue for scholars across education and related disciplines, including philosophy of education, to share conversations about educational ideas, values, policy issues and the philosophical foundations of education, and welcomes work on both theoretical and philosophical perspectives (https://onlinelibrary.wiley.com/journal/17415446). The overview page says it is sponsored by the John Dewey Society and the Philosophy of Education Society, that its scope of theoretical work 'is much broader' than philosophy of education, and that it has been a venue where philosophers and theoretically inclined scholars from other educational disciplines engage in a shared conversation (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/productinformation.html). The current issue (Vol. 76 No. 6, December 2026) is a special issue titled 'Philosophy of Education Beyond the Human'.
 - Terms in titles/abstracts of 348 articles, 2021-2026 (Crossref, retrieved 2026-11-23): "pragmati*" 23 (6.6%), Dewey 22 (6.3%), "aristotle|virtue" 28 (8.0%), "liberal" 20 (5.7%), "democra*" 48 (13.8%), "injustice" 13 (3.7%).
 - Critical and postcolonial strands: "decoloni*/colonial" 14 (4.0%), "critical theory|critical pedagogy" 5 (1.4%), "marx" 6 (1.7%), "neoliberal" 5 (1.4%), "feminis*" 3 (0.9%), "indigenous" 2 (0.6%); one 2026 article develops an Anishinaabe theory of moral education (DOI 10.1111/edth.70112).
 - Named thinkers: Arendt 5 (1.4%), Foucault 4 (1.1%), Heidegger 3 (0.9%), Kant 2 (0.6%), Rancière 2 (0.6%), Wittgenstein 1 (0.3%), Nietzsche 1 (0.3%).
@@ -174,11 +172,11 @@
 
 ### Framing Requirements
 
-- Mandatory framing: no framing rule was readable; the news article describes a focus on conceptual, philosophical and theoretical work about education (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23).
+- Mandatory framing: no mandatory framing rule is stated on the live author page; the scope statement on the overview page is the only one (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/productinformation.html, read in a real browser on 2026-11-24), and the news article describes a focus on conceptual, philosophical and theoretical work about education (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23).
 - The same article says AI and technology in education are a growing share of submissions, with interest in practical and ethical implications; 19 of 348 articles (5.5%) mention AI in titles/abstracts (Crossref, retrieved 2026-11-23).
 - The same article says about half of the authors come from outside the United States and about 70% of readers are outside the US, so work framed for a US-only context is not implied.
-- Article types and length: secondary, unverified (see Format); the official author page was unreadable.
-- Consequence of ignoring scope: not stated on any readable page.
+- Article types and length: Original Articles, typically 7,000-9,000 words including references and notes, with shorter or longer manuscripts considered if the content warrants it; commissioned Book Reviews of 2,500-3,500 words (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24).
+- Consequence of ignoring scope: not stated on the live pages read on 2026-11-24 (author guidelines, overview, home).
 
 ### Methodological Preferences
 
@@ -198,7 +196,7 @@ Scoring rule: hits divided by 348 articles; 0 gives 0, under 1% gives 1, 1-5% gi
 
 ### Voice & Style
 
-- Style: secondary, unverified (author-date Chicago references, endnotes); the official page was unreadable (HTTP 403), see Format.
+- Style: Chicago Manual of Style 18th edition author-date references (effective June 1, 2025), a single double-spaced Word file, numbered endnotes, a short informative title without abbreviations, an abstract and 3-5 keywords (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). The page says nothing on first-person voice.
 - Abstract sample for first-person use: Crossref abstracts deposited for 2021-2026 articles (denominator 263 articles, retrieved 2026-11-23).
 - Within that sample "we" appears in 70 abstracts (27%), "our" in 52 (20%), "I" in 39 (15%), "my" in 7 (3%); "this article/paper/essay/study" in 216 (82%). Plural first person is more common than singular, which differs from Journal of Philosophy of Education (see that entry).
 - Recent openings sampled (DOIs): 10.1111/edth.70110 ("In this article, I argue", on whether machines can perform emotional labor), 10.1111/edth.70113 ("In this article, we examine"), 10.1111/edth.70109 ("This article discusses"), 10.1111/edth.70108 (describes an inquiry group in the first person).
@@ -206,10 +204,10 @@ Scoring rule: hits divided by 348 articles; 0 gives 0, under 1% gives 1, 1-5% gi
 
 ### Reviewer Pool Characteristics
 
-- Review model: double-anonymous per secondary, unverified search summaries; the Wiley page was unreadable (HTTP 403).
+- Review model: double-anonymous, stated on the live author page (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24): reviewers do not know the authors and authors do not know the reviewers.
 - Editor: Rebecca M. Taylor, Department of Education Policy, Organization & Leadership, University of Illinois Urbana-Champaign, editor since 2024; managing editor Robin Maier (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23).
-- The same article says the editorial board was expanded to include associate editors from more regions; it gives no counts, so board size and country spread are not stated here.
-- The same article says about half of authors come from outside the US.
+- Live editorial board (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/editorialboard.html, read in a real browser on 2026-11-24): 55 entries, recounted from the page: 1 editor, 1 book review editor and associate editor, 10 associate editors, 1 managing editor, 3 society liaison members with no affiliation printed, and a 39-member review board with term-expiry years 2027 (11), 2028 (7), 2029 (11) and 2030 (10). Countries across the 52 entries with an affiliation: United States 30, Canada 5, Ireland 3, United Kingdom 2, and one each in Hong Kong, South Africa, Spain, China, Israel, Belgium, Germany, Norway, Cyprus, Denmark, Brazil and Japan (30+5+3+2+12 = 52; Gert Biesta is listed with Maynooth University, Ireland, and the University of Edinburgh, UK, and is counted once, under Ireland). The article's statement that the board was expanded to include associate editors from more regions is consistent with the ten associate editors, who sit in Ireland, South Africa, the United States, Canada, Spain and China, plus the United Kingdom through one dual affiliation.
+- Author mix: the news article says about half of authors come from outside the US; the publisher's metrics page prints 2025 top author countries or regions as United States 50%, United Kingdom 14%, Canada 6%, Germany 3% and Finland 3%, and top reader countries as United States 29%, United Kingdom 11%, Australia 7%, Netherlands 5% and Canada 5% (https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, read in a real browser on 2026-11-24).
 - OpenAlex topic mix (spine, 2026-07-13): Pragmatism in Philosophy and Education 810 articles, Education and Critical Thinking Development 580, Diverse Education Studies and Reforms 435.
 - Reviewer behaviour itself (tone, turnaround) is not observable from public pages; SciRev has 0 reviews.
 
@@ -232,15 +230,15 @@ Counts of articles mentioning each topic in titles/abstracts, 348 articles 2021-
 
 ### Practical Concerns
 
-- Preprints: Wiley allows posting before or at submission and does not treat it as grounds for rejection; journals may set their own rule (https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html, retrieved 2026-11-23).
-- AI use: disclose at submission; spelling/grammar tools exempt (https://authors.wiley.com/ethics-guidelines/index.html, retrieved 2026-11-23).
-- Access and cost: about half of last year's articles open access, nearly 5,000 institutions with access (https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger, retrieved 2026-11-23); APC 2630 USD in the 2026-07-13 spine snapshot.
+- Preprints: Wiley allows posting before or at submission and does not treat it as grounds for rejection; journals may set their own rule (https://authors.wiley.com/author-resources/Journal-Authors/open-access/preprints-policy.html, retrieved 2026-11-23); the live author page has no journal-specific preprint rule, but it does say no consideration is given to work published elsewhere or under review elsewhere (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24).
+- AI use: describe any use of AI-generated-content tools to develop part of a manuscript 'transparently and in detail in the Methods section' (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24); Wiley publisher rules: disclose at submission, spelling/grammar tools exempt (https://authors.wiley.com/ethics-guidelines/index.html, retrieved 2026-11-23).
+- Access and cost: APC USD 3,040 / GBP 2,020 / EUR 2,570 for the Open Access option (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/fundedaccess.html, read in a real browser on 2026-11-24); about half of last year's articles open access, nearly 5,000 institutions with access (news article, retrieved 2026-11-23). No fee for the subscription route is stated on the pages read.
 - Competition: submissions tripled from 2023 to 2025 (same news article); output rose from 62 articles in 2024 to 87 in 2025 (Crossref), so published volume rose by about 40% (87/62).
-- Anonymisation, originality, ethics-approval, data and authorship rules, and independent-scholar rules were not readable (Wiley author page HTTP 403); nothing is asserted for them.
+- Anonymisation: the submitted Word file must not contain author names, affiliations, acknowledgements or funding information, which are added to the final file after acceptance, and authors should avoid self-identification in text and references (https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, read in a real browser on 2026-11-24). ORCID is required (same page). Originality: no consideration for work published elsewhere or under review elsewhere (same page). Not stated on the live author page: ethics-approval and consent rules, data-sharing rules, authorship rules and independent-scholar rules (searched the page text); nothing is asserted for them.
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**Overall `signal_quality`: 3/5.** Per layer: identity 3, policy 3 (Wiley-level pages read, journal page unreadable), format 1 (secondary only), methodological and topic counts 3 (Crossref titles/abstracts, not full text), reviewer pool 2 (editor named, board page unreadable), experiential 0.
+**Overall `signal_quality`: 3/5.** Per layer: identity 4, policy 4 (the journal's own Wiley author page and metrics page read live on 2026-11-24; publisher-wide AI and preprint pages read 2026-11-23), format 4 (live page), methodological and topic counts 3 (Crossref titles/abstracts, not full text), reviewer pool 3 (live board page counted; reviewer behaviour not observable), experiential 0.
 
 **Sources cited across this entry:**
 - https://education.illinois.edu/about/news-events/news/article/2026/04/20/educational-theory--75-years-young-and-growing-stronger
@@ -250,8 +248,10 @@ Counts of articles mentioning each topic in titles/abstracts, 348 articles 2021-
 - https://api.crossref.org/journals/0013-2004 and Crossref `works` filtered by ISSN 0013-2004 (348 articles, 2021-01-01 to 2026-11-23)
 - OpenAlex source record S187520691 (works count 3,511; first publication year 1951; no societies; host Wiley)
 
+**Browser pass of 2026-11-24**: the Wiley pages listed below loaded in the maintainer's Chrome without a challenge and their text was read and saved for the independent verifier: journal home https://onlinelibrary.wiley.com/journal/17415446, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/editorialboard.html, https://onlinelibrary.wiley.com/journal/17415446/journal-metrics, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/call-for-papers, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/fundedaccess.html, https://onlinelibrary.wiley.com/page/journal/17415446/homepage/productinformation.html. They replace the earlier 'unreadable' records for those pages. Still not read: the Wiley AI-guidelines and publishing-ethics pages beyond what 2026-11-23 captured, and any journal-specific ethics, data or preprint page (none is linked from the author page).
+
 **Unreadable pages (recorded, not filled from memory):**
-- https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html and https://onlinelibrary.wiley.com/journal/17415446: HTTP 403.
+- https://onlinelibrary.wiley.com/page/journal/17415446/homepage/forauthors.html and https://onlinelibrary.wiley.com/journal/17415446: HTTP 403 to the earlier research tool on 2026-11-23; both were read in a real browser on 2026-11-24 (see the browser-pass note above).
 - https://edtheory.education.illinois.edu/for-authors, /for-authors/how-to-submit-a-manuscript, /for-reviewers, /about-us, and https://educationjournal.web.illinois.edu/educational-theory/authorojs.html and /reviewersojs.html: HTTP 404 (the home page now redirects to Wiley). Web Archive fetches were refused by the tool.
 - The Wiley PDF cited by the previous entry (Generative%20AI%20Policy_September%202023) was read and is the Journal of Product Innovation Management's guideline, so it is no longer used.
 - OpenAlex `works` keyword counts: the free daily budget was exhausted (HTTP 429, retry after about 26,800 s); Crossref replaced them.
@@ -269,14 +269,14 @@ Counts of articles mentioning each topic in titles/abstracts, 348 articles 2021-
 
 ### Hard Blockers
 
-- Undisclosed substantive AI use: Wiley requires disclosure at submission where AI substantially edits, develops or translates text (AI Policy table).
-- Manuscripts that are not anonymised: double-anonymous review is reported by secondary sources only, so check the live author page before submitting (Peer Review table).
+- Undisclosed AI use in developing any part of a manuscript: the journal's own author page requires it to be described in detail in the Methods section, and Wiley requires disclosure at submission where AI substantially edits, develops or translates text (AI Policy table).
+- Manuscripts that are not anonymised: double-anonymous review is stated on the live author page, which says to avoid self-identification in text and references and to leave names, affiliations, acknowledgements and funding out of the submitted file (Peer Review, Practical Concerns).
 
 ### Soft Tax
 
-- Length and format are unconfirmed: two secondary reports disagree (7,000-9,000 vs 8,000-10,000 words); read the live Wiley author page before cutting or expanding (Format table).
-- Selectivity and delay are unmeasured: SciRev has 0 reviews and the journal states no decision time; the only rejection-rate mention is a secondary, unverified search summary (about 80%).
-- Submission volume tripled from 2023 to 2025 while published articles rose about 40% (Publication Frequency, Practical Concerns), which is consistent with tighter selection but does not prove it.
+- Length and format: typically 7,000-9,000 words including references and notes, Chicago author-date references (18th edition, from June 1, 2025), double-spaced single Word file; the page allows shorter or longer manuscripts if the content warrants it (Format table; the earlier unconfirmed secondary figures are superseded).
+- Selectivity and delay (publisher figures for 2025): 27% acceptance, median 13 days to first decision, median 126 days to acceptance, 22 days to publication (Metrics, Review Cycle Time). The earlier 'about 80% rejected' search summary is not used.
+- Submission volume tripled from 2023 to 2025 while published articles rose about 40% (Publication Frequency, Practical Concerns); with the 27% acceptance rate for 2025 on the publisher page this is consistent with selection but does not by itself show how reviewers decide.
 
 ### Best Suited For
 
@@ -288,7 +288,7 @@ Counts of articles mentioning each topic in titles/abstracts, 348 articles 2021-
 ### Not Recommended For
 
 - A purely quantitative study: "quantitative/statistical" appears in 0.6% of articles and "survey" in 2.0% (Methodological Preferences); this is rarity, not a stated exclusion.
-- Authors who need a documented fast decision: none is stated (Review Cycle Time).
+- Authors who need a decision-time guarantee: the journal prints medians for 2025 (13 days to first decision, 126 days to acceptance), not a commitment (Review Cycle Time).
 
 ### Rejection Fallback Chain
 
@@ -308,3 +308,6 @@ Counts of articles mentioning each topic in titles/abstracts, 348 articles 2021-
 | 2026-07-13 | Auto-generated: Identity/Metrics/Subject Density from spine (OpenAlex + JUFO + CAS + Norwegian Register + DOAJ, snapshot 2026-07-13); Policies/Positioning/Experiential Soft Metadata from AI research (signal_quality 2/5). Subjective Soft Metadata subsections (political leanings, sensitive topics, voice/style, scored methodology preferences) and Strategic Notes intentionally left pending — no evidentiary basis collected by this pipeline. | @Zaious |
 | 2026-11-23 | AI deep research pass; no first-hand human reports. Filled all seven Soft Metadata subsections and Strategic Notes (Crossref keyword counts, Illinois news article, Wiley policy pages); corrected two wrong sources (AI-policy PDF belonged to another journal; Format figures downgraded to secondary, unverified because the author page returned 403); founding year and frequency added. | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Verifier corrections: Publisher row re-cited to Crossref (Wiley) instead of the Illinois news article; Wiley reviewer-AI rule restated (limited, disclosed use, then a ban on uploading manuscripts) | AI-assisted (maintainer-directed) |
+| 2026-11-24 | Browser pass: Wiley home, author-guidelines, editorial-board, journal-metrics, call-for-papers, open-access and overview pages read in a real browser (earlier 403). Filled: acceptance rate 27% (2025), median 13 days to first decision, 126 days to acceptance, 22 days to publication, CiteScore 1.8, APC USD 3,040 (spine's USD 2630 relabelled older), review model double-anonymous (was secondary), word limit and article types, Chicago 18th edition reference rule, journal-level AI rule, 55-entry board recounted by country, 2025 author and reader countries. Corrected: Format and Peer Review upgraded from 'secondary, unverified' to live readings; the 'about 80% rejected' summary withdrawn; Mandatory-framing and Practical Concerns lines rewritten. | AI-assisted (maintainer-directed) |
+| 2026-11-23 | Corrections after Chrome verification (board total stated as 55 = 52 with affiliation + 3 society liaisons, no 'plus' reading as 58) | @Zaious |
+| 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 4 supported and 1 partial of 5 sampled pairs in a real browser; the partial wording corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |

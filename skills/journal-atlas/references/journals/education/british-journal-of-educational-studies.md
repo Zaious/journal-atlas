@@ -4,10 +4,10 @@
 
 # British Journal of Educational Studies
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **2/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported. No first-hand human reports; not human-verified.
+> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported. No first-hand human reports; not human-verified. Addendum 2026-11-24: the publisher's live about-this-journal and instructions-for-authors pages, which had returned HTTP 403 and had no archive copy, were read in a real browser; facts marked "read in a real browser on 2026-11-24" were added or corrected from them after the spot-check, and the spot-check does not cover them.
 
 ---
 
@@ -22,9 +22,9 @@
 | **ISSN (Online)** | 1467-8527 |
 | **Founded** | 1952, the first year of the editors' list kept by the owning society (first editor 1952-1974); source https://soc-for-ed-studies.org.uk/?p=390, retrieved 2026-11-23. This is the date of the first listed editor, not a statement of the founding year by the journal itself |
 | **URL** | https://www.tandfonline.com/toc/rbje20/current |
-| **Author Guidelines** | Unreadable: https://www.tandfonline.com/action/authorSubmission?journalCode=rbje20&page=instructions returned HTTP 403 to curl and to the fetch tool on 2026-11-23, and the Wayback Machine has no snapshot of it. Aims-and-scope page (Wayback copy dated 2026-10-17): https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20 |
+| **Author Guidelines** | https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20 (read in a real browser on 2026-11-24; it had returned HTTP 403 and had no Wayback snapshot on 2026-11-23). Aims, metrics, board and open-access blocks: https://www.tandfonline.com/journals/rbje20/about-this-journal (read in a real browser on 2026-11-24); the older-form aims page read through Wayback on 2026-11-23 remains the earlier reading: https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20 |
 | **Society / Association** | Society for Educational Studies (SES), which sponsors the journal. Source: https://soc-for-ed-studies.org.uk/about/, retrieved 2026-11-23. (The assignment note named SERA; no page read links this journal to SERA, and every page read names SES.) |
-| **Editorial Board Location** | Editor Andrew Peterson, University of Birmingham, UK, per the Wayback copy of the T&F page dated 2026-10-17 and the SES page https://soc-for-ed-studies.org.uk/about/. Board composition is counted under Reviewer Pool Characteristics |
+| **Editorial Board Location** | Editor Andrew Peterson, University of Birmingham, UK, per the live about page (https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24) and the SES page https://soc-for-ed-studies.org.uk/about/. The live page lists 23 entries: 20 board members, the editor, a book reviews editor (Cambridge, UK) and an editorial assistant with no affiliation printed; countries are counted under Reviewer Pool Characteristics |
 | **OpenAlex ID** | Not looked up (OpenAlex out of budget on 2026-11-23). The local spine row is keyed by ISSN-L 00071005 |
 
 ---
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 171 (OpenAlex snapshot via spine) | 2026-07-13 |
-| **CiteScore** | 4.4 for 2025, as displayed by the publisher on its journal page (Wayback copy https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20); Scopus itself was not read | 2026-10-17 |
-| **Acceptance Rate** | 5%, publisher-reported: articles accepted in the previous calendar year as a share of all papers with a final decision (same archived page; the page states the usage and acceptance data are updated each February) | 2026-10-17 |
+| **CiteScore** | 4.4 for 2025, as displayed by the publisher on its journal page (live page https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24; the Wayback copy of 2026-10-17 showed the same). SNIP 1.361 and SJR 0.645 (2025) are printed there too, and annual usage of 272K downloads/views; Scopus itself was not read. The impact factor and quartiles printed on the page are not recorded here by policy | 2025 (per page) |
+| **Acceptance Rate** | 5%, publisher-reported, on both the live page (https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24) and the archived page of 2026-10-17 (https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20): articles accepted in the previous calendar year as a share of all papers with a final decision; the archived page states the usage and acceptance data are updated each February | 2026-11-24 |
 | **Desk Rejection Rate** | Blank. The archived page gives no desk-rejection share; SciRev lists no reviews for this journal (https://scirev.org/reviews/british-journal-of-educational-studies/) | 2026-11-23 |
 | **Quartile (by field)** | Not stated (JCR paywalled; SJR not read). The spine carries a third-party CAS-zone entry "3 [197/840]" (Chinese Academy of Sciences partition via a GitHub dataset, https://raw.githubusercontent.com/hitfyd/ShowJCR/master/); not independently checked | 2026-07-13 |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.62 (OpenAlex snapshot via spine; proxy, not JCR) | 2026-07-13 |
@@ -48,14 +48,14 @@
 
 ### Review Cycle Time
 
-> Publisher-reported speed figures from the archived T&F journal page (https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20, snapshot 2026-10-17). The page says these are averages (medians) over the prior six months and that the first-decision figure includes desk rejections.
+> Publisher-reported speed figures from the live T&F about page (https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24), identical to those on the archived copy of 2026-10-17 (https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20). The archived page said these are averages (medians) over the prior six months and that the first-decision figure includes desk rejections; that wording was not in the live page text read.
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | 2 days (median, submission to first decision, desk rejections included) | Publisher-reported; the page warns that manuscripts sent to review wait much longer than this figure |
-| **Time to first review** | 77 days (median, submission to first post-review decision, i.e. for manuscripts sent out to referees) | Publisher-reported, same snapshot |
+| **Time to first decision** | 2 days (median, submission to first decision; the archived copy said desk rejections are included) | Publisher-reported; the page warns that manuscripts sent to review wait much longer than this figure |
+| **Time to first review** | 77 days (median, submission to first post-review decision, i.e. for manuscripts sent out to referees) | Publisher-reported, live page read in a real browser on 2026-11-24 |
 | **Time to acceptance (total)** | Blank. SciRev lists no reviews (https://scirev.org/reviews/british-journal-of-educational-studies/), retrieved 2026-11-23 | |
-| **Time to publication (after acceptance)** | 15 days (median, acceptance to online publication of the Version of Record) | Publisher-reported, same snapshot |
+| **Time to publication (after acceptance)** | 15 days (median, acceptance to online publication of the Version of Record) | Publisher-reported, live page read in a real browser on 2026-11-24 |
 
 ### Publication Frequency
 
@@ -63,7 +63,7 @@
 |--------|--------|
 | **Schedule** | Six issues per year (the T&F page, Wayback copy dated 2026-10-17, "6 issues per year"); the October 2026 table of contents is Volume 74, issue 5 (https://web.archive.org/web/20261017085705/https://www.tandfonline.com/toc/rbje20/current) |
 | **Articles per year (approx.)** | Crossref journal-article DOIs by publication year: 2021 = 63, 2022 = 40, 2023 = 60, 2024 = 77, 2025 = 50, 2026 = 73 (to 2026-11-19); 363 in total, book reviews included because Crossref does not separate them (https://api.crossref.org/journals/0007-1005/works?filter=from-pub-date:2021-01-01, retrieved 2026-11-23) |
-| **Special issues?** | Yes, normally one per volume per the Society's guidelines (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/, retrieved 2026-11-23). The T&F page also links "Special Issue Proposal Guidelines" (Wayback copy above) |
+| **Special issues?** | Yes, normally one per volume per the Society's guidelines (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/, retrieved 2026-11-23). The live T&F page links 'Special Issue Proposal Guidelines' and has a 'Calls for papers' heading with no call listed under it (https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24) |
 
 ---
 
@@ -73,21 +73,21 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Initial editor screening followed by anonymised refereeing by at least two anonymous referees, per the journal's aims page (Wayback copy dated 2026-10-17, https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20). The page does not say whether author identities are hidden from referees; the publisher-wide policy says each journal states its model on its homepage (https://authorservices.taylorandfrancis.com/editorial-policies/) |
+| **Type** | Double anonymous, stated by the journal's live instructions: after the editor's suitability check the paper is 'double anonymous peer reviewed by two independent, anonymous expert[s]', and a manuscript already on a preprint server carries no anonymity guarantee (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). The live aims block says all research articles undergo editor screening and 'anonymized refereeing by at least two anonymous referees' (https://www.tandfonline.com/journals/rbje20/about-this-journal). This replaces the earlier note that the model was not stated |
 | **Transferable / Cascade?** | Blank. No source read |
 | **Reviewer reports published?** | Blank. No source read; nothing on the pages read suggests it |
 | **Typical R+R rounds** | Blank. No source found |
-| **Reviewer recommendations** | Blank. The publisher-wide policy says authors cannot recommend reviewers (https://authorservices.taylorandfrancis.com/editorial-policies/); a journal-specific rule was not read |
+| **Reviewer recommendations** | Blank for a journal-specific rule. The publisher-wide policy says authors cannot recommend reviewers (https://authorservices.taylorandfrancis.com/editorial-policies/); the live instructions do not address it (read in a real browser on 2026-11-24) |
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No journal-specific policy found; the journal's instructions page was unreadable. The publisher-wide Taylor & Francis policy applies. The publisher page itself says some journals allow AI only for language improvement and tells authors to check the journal's instructions |
+| **Has journal-specific AI policy?** | Partly. The live instructions' checklist has a 'Declaration of generative AI use' item: a statement saying whether and how generative AI was used, and, if not used, saying so (suggested wording given), with a pointer to the publisher's AI guidance (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). The permitted-use rules themselves are the Taylor & Francis publisher-wide policy |
 | **Explicit permission gate?** | No gate found. Use is allowed with a mandatory disclosure statement |
 | **Leniency (1-5)** | 3 (allowed with mandatory disclosure; same rubric as the Mind entry) |
 | **Summary** | Publisher policy: AI tools cannot be listed as authors. Authors must acknowledge any generative AI use, naming the tool and version, how it was used and why, in a specific AI-usage statement. AI-generated text or code submitted without rigorous revision is prohibited, as is AI creation or alteration of research outputs such as results or images. Copyediting, language improvement and translation are named as supported uses. Reviewers and editors may not upload unpublished manuscripts into AI tools. Retrieved 2026-11-23 |
-| **Source URL** | https://taylorandfrancis.com/our-policies/ai-policy/ |
+| **Source URL** | https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20 (journal declaration item); https://taylorandfrancis.com/our-policies/ai-policy/ (publisher policy) |
 
 ### Preprint Policy
 
@@ -104,25 +104,25 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid: "a hybrid open access journal that is part of the Taylor & Francis Open Select publishing program" (Wayback copy of the T&F page dated 2026-10-17, https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20). The October 2026 table of contents marks some articles "Open Access" and others "Free Access" (book reviews) |
-| **APC (if OA chosen)** | Blank. The journal-specific amount sits behind the publisher's cost finder and was not read. The Open Select page says the APC is due only after acceptance and only if open access is chosen (https://authorservices.taylorandfrancis.com/publishing-open-access/open-select/, retrieved 2026-11-23) |
+| **Model** | Hybrid: the live about page calls it 'a hybrid open access journal that is part of the Taylor & Francis Open Select publishing program' (https://www.tandfonline.com/journals/rbje20/about-this-journal, read in a real browser on 2026-11-24); the same wording was on the Wayback copy of 2026-10-17. The October 2026 table of contents marks some articles 'Open Access' and others 'Free Access' (book reviews) |
+| **APC (if OA chosen)** | Amount not readable: the live pages say an APC is charged only if open access is chosen ('If you choose not to publish open access in this journal, there is no APC') and point to an interactive APC finder, which loads without results unless its form is used (https://www.tandfonline.com/journals/rbje20/about-this-journal and https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). The instructions state no submission fees, publication fees or page charges; print colour is GBP 300 per figure |
 | **Read & Publish agreements** | Blank. The Open Select page says institutional agreements may reduce or waive the APC; no list of covered institutions was read |
 
 ---
 
 ## Format
 
-> The journal's instructions for authors were unreadable (HTTP 403, no archived copy). Nothing below about length or style is taken from them. A search-engine query for the journal's word limit returned pages of other journals only.
+> Source: the live instructions for authors, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24 (they had returned HTTP 403 with no archive copy). Retrieved 2026-11-24.
 
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | The aims page lists research-based articles, policy discussions and a book review section with, on average, sixteen reviews per issue (Wayback copy dated 2026-10-17, https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20). The October 2026 table of contents labels items "Research Article" and "Book Review" (https://web.archive.org/web/20261017085705/https://www.tandfonline.com/toc/rbje20/current). Book review proposals go to the Book Reviews Editor and reviews are discursive and thematic rather than summaries (https://soc-for-ed-studies.org.uk/journal/) |
-| **Word limit** | Blank. Instructions unreadable. The Society's special-issue guidelines state no length limit for articles (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/, retrieved 2026-11-23) |
-| **Word limit negotiability** | Blank. No source found |
-| **Abstract limit** | Blank. Instructions unreadable |
-| **Reference limit** | Blank. Instructions unreadable |
-| **Supplementary material** | Blank. Instructions unreadable |
-| **Figure/Table limits** | Blank. Instructions unreadable |
+| **Article types accepted** | Research Article and Book Review; English only (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). Book reviews: direct submissions go to the Book Reviews Editor, reviewers must have suitable knowledge of the book's topic, reviews should be discursive and thematic rather than summaries, books published since 2022 or forthcoming are sought, and the page says 'We do not accept any unsolicited manuscripts' for this type; extended reviews of two or three related titles are welcome. The aims page also describes the book review section as having, on average, sixteen reviews per issue (https://www.tandfonline.com/journals/rbje20/about-this-journal). The Society page repeats the thematic-review guidance (https://soc-for-ed-studies.org.uk/journal/) |
+| **Word limit** | Research Article: 'no more than 7000 words, inclusive of: References' (live instructions, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24); the list of included items names only references, so whether tables, notes and abstract count is not stated. No limit is stated for Book Reviews in the text read. The Society's special-issue guidelines state no length limit for articles (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/, retrieved 2026-11-23) |
+| **Word limit negotiability** | Blank. The page states the limit without saying whether exceptions are made |
+| **Abstract limit** | Unstructured abstract of 200 words and between 3 and 6 keywords for a Research Article; authors are asked to include a Twitter handle and ORCID where available (live instructions, read in a real browser on 2026-11-24) |
+| **Reference limit** | No numeric cap found. The instructions link 'this reference guide' without naming the style in the page text (live instructions, read in a real browser on 2026-11-24). Single quotation marks; any spelling style if consistent |
+| **Supplementary material** | Supplemental material (videos, filesets, audio) is published online via Figshare (live instructions, read in a real browser on 2026-11-24) |
+| **Figure/Table limits** | No count limit found. Papers may be submitted in Word or LaTeX with figures saved separately; Crossref screening of submitted papers for unoriginal material; the live instructions have an 'Ethics of Experimentation' section requiring an ethics-approval statement (see Practical Concerns) (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24) |
 
 ---
 
@@ -164,7 +164,7 @@
 | Dimension | Assessment |
 |-----------|------------|
 | **Cross-cultural friendliness** | The aims page asks for articles that review policy developments outside the UK, "acknowledging the significance of cross-national policy influences" (https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20, snapshot 2026-10-17). Titles naming England, Scotland, Wales, Britain or the UK: 33 of 363 (9.1%); titles naming China or Chinese: 15 of 363 (4.1%) (Crossref, 2021-01 to 2026-11-19, retrieved 2026-11-23) |
-| **Non-Western epistemology openness** | Titles with "indigenous" 2 (0.6%), "decolon-" 1 (0.3%), "Africa" 2 (0.6%) of 363 (Crossref, title-only). Two of 20 listed board members are at institutions outside the UK, in Taiwan and China (board list in the archived T&F page, https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20) |
+| **Non-Western epistemology openness** | Titles with "indigenous" 2 (0.6%), "decolon-" 1 (0.3%), "Africa" 2 (0.6%) of 363 (Crossref, title-only). Two of 20 listed board members are at institutions outside the UK, in Taiwan and China (board list in the archived T&F page; the live page read on 2026-11-24 lists the same 20 members, 18 UK, 1 Taiwan and 1 China, https://www.tandfonline.com/journals/rbje20/about-this-journal; https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20) |
 | **Diversity topic receptiveness** | Titles with "gender" 2 (0.6%), "race/racial/racism" 3 (0.8%), "social justice" 4 (1.1%), "queer/LGBT/transgender" 1 (0.3%), "disabilit-" none, of 363 (Crossref, title-only). No editorial statement about these topics was read |
 | **Dominant theoretical tradition** | The aims page says the articles "draw particularly upon historical, philosophical and sociological analysis and sources" (same archived page). Title counts: "philosoph-" 8 (2.2%), "histor-" 9 (2.5%), "sociolog-" 1 (0.3%), "Bourdieu" 3 (0.8%); no title names Marx, Foucault, Dewey or Arendt. Most-cited records of the window in Crossref (is-referenced-by-count, retrieved 2026-11-23): 10.1080/00071005.2022.2048630 (40, localisation of international schooling in China), 10.1080/00071005.2021.1925085 (38, school data and the student subject), 10.1080/00071005.2023.2255894 (38, England's core content framework), 10.1080/00071005.2023.2242452 (34, the integrity of education and the future of educational studies). No political position is stated on any page read |
 
@@ -194,8 +194,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **First-person voice acceptance (0-5)** | Not scored. Crossref holds no abstracts and the T&F article pages were not readable, so no article openings could be sampled |
-| **Expected density** | Blank. The instructions page was unreadable and the Society's special-issue guidelines set no length limit (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/) |
-| **Writing style notes** | Authorship pattern of the 362 Crossref records that list authors (2021-01 to 2026-11-19, book reviews included): 238 single-author (65.7%), 61 two authors, 39 three authors, 24 four or more (https://api.crossref.org/journals/0007-1005/works?filter=from-pub-date:2021-01-01). Book reviews are asked to be discursive and thematic, not summaries (https://soc-for-ed-studies.org.uk/journal/). Referencing style, abstract limit and anonymisation format are blank because the instructions page was unreadable |
+| **Expected density** | Research Article ceiling of 7000 words including references (live instructions, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24); the Society's special-issue guidelines set no length limit (https://soc-for-ed-studies.org.uk/journal/guidelines-for-special-issues/) |
+| **Writing style notes** | Live instructions (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24): unstructured 200-word abstract, 3 to 6 keywords, single quotation marks, any consistent spelling style, Word or LaTeX. Authorship pattern of the 362 Crossref records that list authors (2021-01 to 2026-11-19, book reviews included): 238 single-author (65.7%), 61 two authors, 39 three authors, 24 four or more (https://api.crossref.org/journals/0007-1005/works?filter=from-pub-date:2021-01-01). Book reviews are asked to be discursive and thematic, not summaries (https://soc-for-ed-studies.org.uk/journal/). The reference style is not named in the page text; the page says nothing on first-person voice |
 
 ### Reviewer Pool Characteristics
 
@@ -203,10 +203,10 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | Not observable for reviewers. The board page lists 20 board members: 18 at UK institutions, 1 in Taiwan and 1 in China; the editor and the book reviews editor are at UK universities (Birmingham, Cambridge) | Archived T&F page, https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20 (snapshot 2026-10-17); counted by hand 2026-11-23 |
+| **Dominant tradition** | Not observable for reviewers. The live board page lists 20 board members: 18 at UK institutions, 1 in Taiwan and 1 in China; the editor and the book reviews editor are at UK universities (Birmingham, Cambridge); with the editorial assistant (no affiliation printed) the page has 23 entries, UK 20, Taiwan 1, China 1, none printed 1 | Live T&F page https://www.tandfonline.com/journals/rbje20/about-this-journal (read in a real browser on 2026-11-24); the archived page https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20 (snapshot 2026-10-17) lists the same members; counted by hand |
 | **Reviewer competence variance** | Blank. No first-hand report exists: SciRev lists no reviews | https://scirev.org/reviews/british-journal-of-educational-studies/ |
 | **Quantitative mindset bias on qualitative work?** | Blank. No source; title counts show both quantitative and qualitative labels are rare (1 and 4 of 363 titles) but cannot show reviewer attitudes | Crossref title counts, see Methodological Preferences |
-| **Discourse community signals (editorial board)** | 20 board members, plus a named editor, book reviews editor and editorial assistant. The Society's executive board lists 12 names; 10 of them are also among the 20 board members and the other two are the editor and the book reviews editor (counted by hand from the same page). The page gives no disciplines for board members. Review model: editor screening, then anonymised refereeing by at least two anonymous referees | https://web.archive.org/web/20261017141114/http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20; https://soc-for-ed-studies.org.uk/about/ |
+| **Discourse community signals (editorial board)** | 20 board members, plus a named editor, book reviews editor and editorial assistant (live page, read in a real browser on 2026-11-24). The Society's executive board lists 12 names; 10 of them are also among the 20 board members and the other two are the editor and the book reviews editor (counted by hand from the live page). The page gives no disciplines for board members. Review model: double anonymous per the live instructions, after editor screening | https://www.tandfonline.com/journals/rbje20/about-this-journal; https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20; https://soc-for-ed-studies.org.uk/about/ |
 
 ### Sensitive Topics
 
@@ -227,19 +227,21 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | Publisher-wide: human-subject studies must follow the Declaration of Helsinki, with ethical approval obtained before the study and the committee named in the manuscript (https://authorservices.taylorandfrancis.com/editorial-policies/, retrieved 2026-11-23). The journal's own ethics wording was not readable |
+| **IRB requirement strictness** | The live instructions require a written statement in the Methods for all original research papers involving humans, animals, plants, biological material, protected or non-public datasets, collections or sites, confirming ethical approval from the appropriate local ethics committee or institutional review board and informed consent where relevant, and say all research on humans must follow the Declaration of Helsinki principles; a consent statement is required for participants in qualitative or quantitative research (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). Publisher-wide wording: https://authorservices.taylorandfrancis.com/editorial-policies/ (retrieved 2026-11-23) |
 | **Single-author acceptance** | Single-author records are 238 of 362 (65.7%) of Crossref records listing authors, 2021-01 to 2026-11-19, book reviews included (https://api.crossref.org/journals/0007-1005/works?filter=from-pub-date:2021-01-01, retrieved 2026-11-23) |
-| **Independent scholar friendliness** | Blank. No policy on affiliation found. The Society asks book reviewers to be affiliated with a university, school or other educational organisation (https://soc-for-ed-studies.org.uk/journal/); that rule is for reviews, not articles |
-| **Data transparency requirement** | Publisher-wide: journals have their own data sharing policies, and custom code must be available to editors and reviewers on request (https://authorservices.taylorandfrancis.com/editorial-policies/, retrieved 2026-11-23). The journal's own policy was not readable |
-| **OPSEC compatibility** | Review is anonymised on the referee side (aims page, Wayback copy dated 2026-10-17); whether authors must be anonymised is not stated. Pre-submission preprints are allowed by the publisher (https://authorservices.taylorandfrancis.com/research-impact/sharing-versions-of-journal-articles/) |
-| **AI use** | Disclosure statement required; AI cannot be an author (https://taylorandfrancis.com/our-policies/ai-policy/), retrieved 2026-11-23 |
-| **Open access and cost** | Hybrid Open Select; the APC is charged only after acceptance and only if open access is chosen; amount not read (https://authorservices.taylorandfrancis.com/publishing-open-access/open-select/, retrieved 2026-11-23) |
+| **Independent scholar friendliness** | No affiliation policy found for articles: the live instructions ask all authors for full name and affiliation on the cover page, defined as where the research was conducted (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). The Society asks book reviewers to be affiliated with a university, school or other educational organisation (https://soc-for-ed-studies.org.uk/journal/); the live Book Review text says reviewers should hold suitable knowledge 'through their own research or from experiences of teaching' and, if affiliated to a university, school or other educational organisation, may contact the Book Reviews Editor |
+| **Data transparency requirement** | No journal-specific data-sharing policy or data-availability item was found in the live instructions text (searched for 'data availability' and 'data sharing': not present; https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24). Publisher-wide: journals have their own data sharing policies, and custom code must be available to editors and reviewers on request (https://authorservices.taylorandfrancis.com/editorial-policies/, retrieved 2026-11-23) |
+| **OPSEC compatibility** | Review is double anonymous (live instructions, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24), with names and affiliations on the cover page; a manuscript on a preprint server has no anonymity guarantee. Pre-submission preprints are allowed by the publisher (https://authorservices.taylorandfrancis.com/research-impact/sharing-versions-of-journal-articles/) |
+| **AI use** | Journal checklist requires a generative-AI declaration statement, including when no AI was used (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24); AI cannot be an author (https://taylorandfrancis.com/our-policies/ai-policy/), retrieved 2026-11-23 |
+| **Open access and cost** | Hybrid Open Select; no submission, publication or page charges; the APC applies only if open access is chosen and its amount was not readable (https://www.tandfonline.com/journals/rbje20/about-this-journal, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20, read in a real browser on 2026-11-24) |
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 2. Per layer: Crossref counts (title-only, no abstracts) 2; publisher-wide policies 4; journal page facts via an archived copy 3; journal instructions for authors 0 (unreadable); experiential layer 0.
+**signal_quality (0-5)**: overall 3 (was 2 before the browser pass). Per layer: Crossref counts (title-only, no abstracts) 2; publisher-wide policies 4; journal page and instructions for authors read live in a real browser on 2026-11-24 4; experiential layer 0.
 
 **Method note:** `scripts/import_openalex.py` could not be used (OpenAlex daily budget exhausted), so Identity, Metrics and Subject Density come from the local spine (an OpenAlex snapshot dated 2026-07-13) and Crossref. Crossref returns 0 abstracts for this journal, so all keyword counts match titles only; the 4-5 band was not used. The word-count scoring thresholds are this pass's own convention.
+
+**Browser pass of 2026-11-24**: the live Taylor & Francis about-this-journal and instructions-for-authors pages loaded in the maintainer's Chrome without a challenge; their text was read and saved for the independent verifier. Changes: word limit 7000 including references, abstract 200 words, 3 to 6 keywords, double anonymous review, journal-level generative-AI declaration, ethics-approval and consent rules, Figshare supplementary material, no data-sharing section, book-review rules including 'We do not accept any unsolicited manuscripts'; speed and acceptance figures and the 20-member board re-confirmed on the live page. Not re-confirmed on the live page: 6 issues per year.
 
 **Sources cited across this entry:**
 - https://api.crossref.org/journals/0007-1005 and https://api.crossref.org/journals/0007-1005/works (filter from-pub-date:2021-01-01; cursor paging; 363 records)
@@ -253,15 +255,15 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://scirev.org/reviews/british-journal-of-educational-studies/
 
 **Unreadable pages (never filled from memory):**
-- unreadable: https://www.tandfonline.com/action/authorSubmission?journalCode=rbje20&page=instructions (403; no Wayback snapshot; variants with show=instructions and the informahealthcare.com mirror also failed)
-- unreadable: https://www.tandfonline.com/journals/rbje20/about-this-journal (403 live; the older-form URL http://www.tandfonline.com/action/aboutThisJournal?journalCode=rbje20 was read through Wayback)
+- Read live on 2026-11-24 in a real browser (it had returned 403 with no Wayback snapshot on 2026-11-23): https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rbje20. Still unreadable: the interactive APC finder (it loads without results unless its form is used).
+- Read live on 2026-11-24 in a real browser (it had returned 403 on 2026-11-23): https://www.tandfonline.com/journals/rbje20/about-this-journal.
 - No Sherpa Romeo or SJR page was read.
-- A summarising fetch of the Society's journal page claimed the journal "does not accept unsolicited manuscripts" in its book-reviews section; that sentence was not found in the page's raw HTML text, so it is not recorded as a fact.
+- Resolved on 2026-11-24: the phrase 'We do not accept any unsolicited manuscripts' is on the live T&F instructions page, in the Book Review article-type text, although it was not in the Society page's raw HTML; it is recorded as a fact about book reviews on the T&F page only.
 
 **Fields deliberately left blank, and why:**
-- Word limit, abstract limit, reference limit, style guide, anonymisation instructions, journal-specific AI and data policies, APC amount: the instructions and cost-finder pages are unreadable.
+- Word-limit negotiability and whether tables, notes and the abstract count in the 7000 words; reference style (linked, not named in the page text); APC amount (interactive finder not readable); issue count not re-confirmed live.
 - Desk rejection rate, time to acceptance, reviewer culture, reviewer competence variance, quantitative bias: no first-hand source exists. SciRev lists no reviews for this journal.
-- First-person voice: Crossref holds no abstracts; article pages unreadable.
+- First-person voice: Crossref holds no abstracts and article pages were not sampled; the live instructions say nothing on voice.
 - Impact factor, quartile: paywalled, not stated by policy.
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
@@ -281,13 +283,13 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 - **AI use**: undisclosed generative AI use, unrevised AI-generated text, or AI-altered research images breach the publisher policy (AI Policy, https://taylorandfrancis.com/our-policies/ai-policy/).
 - **Scope**: the aims page ties the journal to research-based education articles drawing on historical, philosophical and sociological analysis, and to policy discussion informed by research (Framing Requirements). A submission with none of these anchors is outside the stated scope; the journal does not say how it treats such submissions.
-- No other hard blocker is supported by a fact I could read; the word limit, anonymisation format and ethics wording are unknown (Format blanks).
+- **Length**: a Research Article should be no more than 7000 words including references (Format; live instructions). **Ethics**: original research on humans needs an ethics-approval and consent statement in the Methods (Practical Concerns). No other hard blocker is supported by a fact read.
 
 ### Soft Tax
 
 - **Selectivity**: the publisher reports a 5% acceptance rate for the previous calendar year and a 77-day median to the first post-review decision (Metrics, Review Cycle Time; snapshot 2026-10-17). Expect a long wait if the manuscript goes to referees; the 2-day figure includes desk rejections and says little about reviewed papers.
 - **Open access cost**: green deposit of the accepted manuscript is subject to the publisher's 18-month embargo for humanities and social sciences (Preprint Policy; not confirmed for this journal); gold open access carries an APC whose amount was not read (Open Access).
-- **Unknown formatting rules**: word limits and anonymisation format could not be read (Format), so a first submission needs the live instructions page checked.
+- **Formatting**: 7000-word ceiling including references, unstructured 200-word abstract, 3 to 6 keywords, a generative-AI declaration statement and, for research on people, an ethics statement (Format; Practical Concerns); the reference style is not named in the page text, so check the linked guide.
 
 ### Best Suited For
 
@@ -298,7 +300,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### Not Recommended For
 
-- Authors who need a published word limit or a verified turnaround before choosing: neither could be read, and the publisher's own median to first post-review decision is 77 days (Format, Review Cycle Time).
+- Authors who need a decision-time guarantee: the publisher prints medians (2 days to first decision, 77 days to first post-review decision), not a commitment (Review Cycle Time).
 - Primarily technology or AI-in-education work: "artificial intelligence/AI/ChatGPT/generative" in 4 and "digital" in 3 of 363 titles (Sensitive Topics). This shows the topic is rare here, not that it is rejected.
 - Empirical designs whose natural labels are survey or interview: neither word appears in any of the 363 titles (Methodological Preferences); title-only evidence, so this shows rarity in titles, not rejection.
 
@@ -321,3 +323,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (hand-scaffolded from the local spine and Crossref; OpenAlex unavailable) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Browser pass: live Taylor & Francis about and instructions pages read in a real browser (earlier 403, no archive copy). Filled: 7000-word limit including references, 200-word abstract, 3-6 keywords, double anonymous review (was 'not stated'), journal-level generative-AI declaration, ethics-approval and consent rules, Figshare supplementary material, absence of a data-sharing section, SNIP, SJR and usage as printed; confirmed 4.4 CiteScore, 5% acceptance, 2 / 77 / 15 day medians and the 20-member board. Corrected: 'unsolicited manuscripts' sentence for book reviews is on the T&F page; signal_quality 2 to 3. Banner state unchanged (already Tier 1). APC amount unreadable; issue count not re-confirmed | AI-assisted (maintainer-directed) |

@@ -4,10 +4,10 @@
 
 # Information, Communication & Society
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **3/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 5 of 5 sampled pairs supported in a real browser, board count recounted and matching. No first-hand human reports; not human-verified.
 
 ---
 
@@ -22,9 +22,9 @@
 | **ISSN (Online)** | 1468-4462 (same sources) |
 | **Founded** | not found on the pages read |
 | **URL** | https://www.tandfonline.com/journals/rics20 |
-| **Author / Submission Guidelines** | https://www.tandfonline.com/action/authorSubmission?journalCode=rics20&page=instructions (live page returned 403 to automated fetch on 2026-11-23; read through an archive copy of 2022-01-20, now old, see Format) |
+| **Author / Submission Guidelines** | https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20 (read in a real browser on 2026-11-24; before that known only from an archive copy of 2022-01-20 because the live page returned 403 to the earlier tool). Aims, metrics, board and open-access blocks: https://www.tandfonline.com/journals/rics20/about-this-journal (read in a real browser on 2026-11-24) |
 | **Society / Association** | no society named on the journal page (archive 2026-05-28); the page's news box links to the Oxford Internet Institute and the Science and Technology Studies Unit at the University of York. |
-| **Editorial Board Location** | GB (OpenAlex country code in spine); the Editor-in-Chief is at City St George's, University of London, UK (journal page, archive 2026-05-28). |
+| **Editorial Board Location** | GB (OpenAlex country code in spine); the Editor-in-Chief, Dan Mercea, is at City St George's, University of London, UK (live about page, https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24). The page lists 44 entries in all (11 editors and 33 board members; one person, Tanja Bosch, appears in both lists); recount by country in Reviewer Pool Characteristics |
 | **OpenAlex ID** | not recorded (live OpenAlex lookup unavailable on 2026-11-23) |
 
 ---
@@ -40,9 +40,9 @@
 | **h-index** | 173 | 2026-07-13 (OpenAlex, via spine) |
 | **2-Year Mean Citedness (OpenAlex IF proxy)** | 3.12 — an OpenAlex proxy; not comparable to a JCR impact factor | 2026-07-13 (OpenAlex, via spine) |
 | **Total Works** | 3201 | 2026-07-13 (OpenAlex, via spine) |
-| **CiteScore** | not stated (Scopus not read) | |
-| **Acceptance Rate** | 10%: the journal page gives "10% acceptance rate" for the last full calendar year, defined as accepted articles as a share of all papers receiving a final decision (https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal) | archive 2026-05-28 |
-| **Desk Rejection Rate** | no percentage published; the journal's average of 5 days from submission to first decision includes manuscripts not sent for review (same page) | archive 2026-05-28 |
+| **CiteScore** | 10.4 (2025), a Scopus figure printed on the publisher's journal-metrics block (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24); SNIP 2.401 and SJR 1.793 (2025) are printed there too. The impact factor and quartiles printed on that page are not recorded here by policy. Annual usage printed: 1.5M downloads/views | 2025 (per page) |
+| **Acceptance Rate** | 10%: the live journal page gives '10% acceptance rate' (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24), the same figure as the archive copy of 2026-05-28 (https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal). The page says usage and acceptance-rate data are for the last full calendar year; the year is not printed beside the figure | 2026-11-24 |
+| **Desk Rejection Rate** | no percentage published; the journal's average of 5 days from submission to first decision includes manuscripts not sent for review (the archive copy of 2026-05-28 said so; the live page, read in a real browser on 2026-11-24, prints the same 5 days without that explanation) | 2026-11-24 |
 | **Quality-tier facts (not JCR/SJR quartile)** | CAS 中科院分区: 1 [31/1193] (文学), flagged top journal in the spine; JUFO (Finland): level 2; Norwegian Register: level 2; not listed in DOAJ | 2026-07-13 (spine) |
 
 ### Review Cycle Time
@@ -51,18 +51,18 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Journal's own figure: 5 days on average from submission to first decision, including desk rejections; 104 days on average from submission to first post-review decision (T&F journal page, archive 2026-05-28). | The page says speed data cover the prior six months and are averages ("median" in its definition); some manuscripts take longer. |
+| **Time to first decision** | Journal's own figures on the live page (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24): 5 days on average from submission to first decision, and 114 days on average from submission to first post-review decision. The archive copy of 2026-05-28 gave 104 days for the post-review figure, so it moved by 10 days between the two readings. | Averages as printed; some manuscripts take longer |
 | **Time to first review** | not published separately | |
 | **Time to acceptance (total)** | Crossref received and accepted dates, n=1013 accepted articles (2021 to 23 Nov 2026 records): received to accepted median 245 days (interquartile range 182 to 327; range 0 to 793). By acceptance year: 2021 median 227 days (n=167); 2022 255 (n=94); 2023 216 (n=119); 2024 209 (n=170); 2025 281 (n=251); 2026 268 (n=190). | https://api.crossref.org/journals/1369-118X |
-| **Time to publication (after acceptance)** | The journal reports 15 days on average from acceptance to online publication of the Version of Record (page of archive 2026-05-28); Crossref dates, n=994: accepted to online median 23 days (interquartile range 13 to 35). | |
+| **Time to publication (after acceptance)** | The live page reports 14 days on average from acceptance to online publication (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24); the archive of 2026-05-28 said 15. Crossref dates, n=994: accepted to online median 23 days (interquartile range 13 to 35). | |
 
 ### Publication Frequency
 
 | Aspect | Detail |
 |--------|--------|
-| **Schedule** | 16 issues per year (T&F journal page, archive 2026-05-28). |
+| **Schedule** | 16 issues per year per the T&F journal page archived on 2026-05-28 (https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal). The live about page's publication-details block shows no issue count (read in a real browser on 2026-11-24), so the figure is not re-confirmed |
 | **Articles per year (approx.)** | Crossref journal-article records by published-date year: 2021 191; 2022 130; 2023 137; 2024 187; 2025 259; 2026 to 23 Nov 212 (total 1116). The year follows Crossref's published date, which can mix online and issue dates. |
-| **Special issues?** | Yes: the journal menu lists "Special issues" and "Collections" (T&F journal page, archive 2026-05-28; Wayback index shows collection pages such as https://www.tandfonline.com/journals/rics20/collections/digital-divides). The current list was not read. |
+| **Special issues?** | Yes: the journal menu lists 'Special issues' and 'Collections' (Wayback index shows collection pages such as https://www.tandfonline.com/journals/rics20/collections/digital-divides). The live about page has a 'Calls for papers' heading with no call listed under it (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24) |
 
 ---
 
@@ -72,25 +72,25 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-anonymized: "initial editorial screening and double anonymized refereeing by at least two referees" (aims page, archive 2026-05-28: https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal). The instructions snapshot of 2022-01-20 says papers are "double blind peer reviewed by independent, anonymous expert referees". |
+| **Type** | Double anonymous, on both live pages (read in a real browser on 2026-11-24): the aims block says published articles undergo 'initial editorial screening and double anonymized refereeing by at least two referees' (https://www.tandfonline.com/journals/rics20/about-this-journal), and the instructions say that after the editor's suitability check the paper is 'double anonymous peer reviewed by two independent, anonymous expert[s]' (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20). |
 | **Transferable / Cascade?** | not stated on the pages read |
 | **Reviewer reports published?** | Not mentioned on the pages read. |
 | **Typical R+R rounds** | not stated on the pages read |
-| **Reviewer recommendations** | At least two referees; the editor assesses suitability first (instructions snapshot of 2022-01-20). |
+| **Reviewer recommendations** | At least two referees; the editor assesses suitability first (live instructions, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). |
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Publisher-level. Taylor & Francis says "some journals may not allow use of Generative AI tools beyond language improvement" and tells authors to check the journal's instructions; the journal's own instructions were read only in an old archive copy (2022-01-20) that predates the policy. |
+| **Has journal-specific AI policy?** | Partly. The live instructions' checklist asks for a 'Declaration of generative AI use' statement saying whether and how generative AI was used, and, if not used, saying so (suggested wording given), and refers to the publisher's AI guidance for permitted scenarios (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). The permitted-use rules themselves are the Taylor & Francis publisher-wide policy; the 2022 archive copy predated any AI rule. |
 | **Explicit permission gate?** | conditional — disclosure is required for article submissions. |
 | **Leniency (1-5)** | 3 (this atlas's own scale: use is allowed for ideas, copyediting, translation, literature classification and coding help, with a mandatory disclosure statement; replacing core author responsibilities is not allowed) |
 | **Summary** | Taylor & Francis (policy page archive 2026-11-20) supports responsible use for idea exploration, copyediting, language improvement and translation, literature classification and coding assistance; authors must acknowledge any use with the tool's full name and version, how it was used and why, in a specific disclosure statement; AI tools must not be listed as authors; authors stay accountable for content and references. |
-| **Source URL** | https://web.archive.org/web/20261120051400/https://taylorandfrancis.com/our-policies/ai-policy/ |
+| **Source URL** | https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20 (journal checklist item); https://web.archive.org/web/20261120051400/https://taylorandfrancis.com/our-policies/ai-policy/ (publisher policy) |
 
 ### Preprint Policy
 
-> Source: instructions snapshot of 2022-01-20 (https://web.archive.org/web/20220120234923/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20&utm_source=CPB&utm_medium=cms&utm_campaign=JPG15743&). The T&F preprints page behind it (archive 2022-05-24) is a short stub and gives no rules in the text read.
+> Source: the live instructions page, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24 (the 2022-01-20 archive copy gave the same preprint warning). The T&F preprints page behind it (archive 2022-05-24) is a short stub and gives no rules in the text read.
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
@@ -103,25 +103,25 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Hybrid: "part of the Taylor & Francis Open Select publishing program" (journal page, archive 2026-05-28); if the author does not publish open access there is no APC. |
-| **APC (if OA chosen)** | Journal-specific amount not recorded; the page directs authors to T&F's APC finder, which was not read. The spine has no APC for this title. |
+| **Model** | Hybrid: the live about page calls it 'a hybrid open access journal' in the Taylor & Francis Open Select programme; if the author does not publish open access there is no APC (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24). |
+| **APC (if OA chosen)** | Journal-specific amount not readable: the live pages point to an interactive APC finder, which loads without results unless its form is used (https://www.tandfonline.com/journals/rics20/about-this-journal and https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). The spine has no APC for this title. |
 | **Read & Publish agreements** | The page says authors may publish at no cost or a reduced APC if an institution or funder has an agreement or membership with Taylor & Francis (same page). |
 
 ---
 
 ## Format
 
-> Sources: instructions snapshot of 2022-01-20 (https://web.archive.org/web/20220120234923/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20&utm_source=CPB&utm_medium=cms&utm_campaign=JPG15743&), which is old and may have changed; the live page returned 403. Check the live instructions before submitting.
+> Source: the live instructions for authors, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24. Items that differ from the 2022-01-20 archive copy are marked.
 
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | "Original articles, book reviews" (snapshot of 2022-01-20); manuscripts only in English. |
-| **Word limit** | "A typical paper for this journal should be no more than 8000 words", inclusive of abstract, tables, references, figure or table captions and endnotes (snapshot of 2022-01-20). |
+| **Article types accepted** | 'Original articles, book reviews' (live instructions, read in a real browser on 2026-11-24; same as the 2022 copy); manuscripts only in English. |
+| **Word limit** | 'A typical paper for this journal should be no more than 8000 words', inclusive of abstract, tables, references, figure or table captions and endnotes (live instructions, read in a real browser on 2026-11-24; unchanged from the 2022 copy). |
 | **Word limit negotiability** | The text says "typical paper"; no exception procedure is described. |
-| **Abstract limit** | Unstructured abstract of 250 words; 4 to 6 keywords (same snapshot). |
-| **Reference limit** | No numeric limit; the page points to a T&F reference guide and an EndNote output style without naming the style in the text read. Single quotation marks; any spelling style if consistent. |
-| **Supplementary material** | Supplemental material (video, dataset, files) is published online via Figshare (same snapshot). |
-| **Figure/Table limits** | Figures at 300 dpi for colour; Word or LaTeX accepted; the journal uses Crossref's similarity screening for unoriginal material; ScholarOne is the submission system; a data availability statement and a disclosure statement are requested. The snapshot says there are no submission or publication fees, with a charge for colour in print. |
+| **Abstract limit** | Unstructured abstract of 250 words; between 4 and 6 keywords (live instructions, read in a real browser on 2026-11-24; unchanged). |
+| **Reference limit** | No numeric limit. The live instructions name the style: 'this T&F standard APA reference style', with an EndNote output style available (new since the 2022 copy, which did not name it). Single quotation marks; any spelling style if consistent (live instructions, read in a real browser on 2026-11-24). |
+| **Supplementary material** | The live instructions mention Figshare for supplemental online material (found by text search; the sentence was not read in full; https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). |
+| **Figure/Table limits** | No count limit found. Word or LaTeX accepted; the journal uses Crossref screening for unoriginal material; a data availability statement is required (live: 'Authors are required to provide a data availability statement'), and a declaration of interest, funding details and a generative-AI declaration are checklist items; no submission or publication fees, with print colour charged at GBP 300 per figure (live instructions, read in a real browser on 2026-11-24). Survey-based papers must follow the survey research disclosure standards named in the instructions (see Framing Requirements). |
 
 ---
 
@@ -162,23 +162,20 @@
 
 ## Soft Metadata
 
-> [!NOTE]
-> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (journal pages read through archived copies, Crossref publisher metadata, SciRev, LetPub, Chinese-language and Reddit searches) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **3/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
-
 ### Epistemological & Political Leanings
 
-- Aims page (archive 2026-05-28): the journal positions itself "at the centre of contemporary debates about the information age" and asks about segmentation of technologies "for the advancement of commercial aims", surveillance and "social control", and social equity; it asks for "a global, interdisciplinary perspective". https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal
+- Aims page (live, https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24; same wording in archive 2026-05-28): the journal positions itself 'at the centre of contemporary debates about the information age' and asks about segmentation of technologies 'for the advancement of commercial aims', surveillance and 'social control', and social equity; it asks for 'a global, interdisciplinary perspective'.
 - Theory and concept vocabulary in 1116 Crossref TITLES (2021-2026; lower bounds): platform 114 (10.2%); political, participation or activism wording 157 (14.1%); data or datafication 94 (8.4%); algorithm 54 (4.8%); feminist or gender 42 (3.8%); digital divide, inequality or literacy 39 (3.5%); infrastructure 24 (2.2%); decolonial or postcolonial 8 (0.7%).
 - Most-cited 2021-2026 records by Crossref citation count (retrieved 2026-11-23): 10.1080/1369118x.2021.1961007 (174, generational politics and memes), 10.1080/1369118x.2021.1986102 (146, the decolonial turn in data and technology research), 10.1080/1369118x.2021.1994624 (137, shadowbanning), 10.1080/1369118x.2021.1979622 (93, the playful politics of memes), 10.1080/1369118x.2022.2085615 (93, health misinformation, systematic review).
-- Editorial board of archive 2026-05-28: an Editor-in-Chief, 5 associate-level editors, a social media editor, 4 regional editors (North America, Asia, Africa, South America) and 33 board members; 13 board members list the USA and 6 the UK. https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal
+- Live editorial board (https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24): 11 editors (an Editor-in-Chief, 5 associate-level editors including a Reviews Editor and a Data and Ethics editor, a social media editor and 4 regional editors for North America, Asia, Africa and South America) and 33 board members; 13 board members list the USA and 6 the UK. The archive copy of 2026-05-28 gave the same composition (https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal).
 
 ### Framing Requirements
 
-- **Mandatory framing?** Contributions should address the social, political, economic or cultural impact of information and communication technologies (aims page, https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal).
-- **Article-type framing:** original articles and book reviews are the types listed in the instructions snapshot of 2022-01-20 (https://web.archive.org/web/20220120234923/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20&utm_source=CPB&utm_medium=cms&utm_campaign=JPG15743&); the editorial board lists a Reviews Editor.
+- **Mandatory framing?** Contributions should address the social, political, economic or cultural impact of information and communication technologies (live aims text, https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24).
+- **Article-type framing:** original articles and book reviews are the types listed in the live instructions (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24); the board lists a Reviews Editor. The instructions also say iCS follows survey research disclosure standards from an NAS-Sunnylands-APPC retreat: authors disclose sampling design, weighting and modelling assumptions, question wording and order, recruitment and panel attrition, and avoid the phrase 'representative sample' without stating the underlying assumptions.
 - **Topics named by the aims page:** identity, belonging and culture; family, friendships, work, commerce, education, health care and leisure; electronic surveillance and social control; privacy, social equity, public expression and political participation; material objects and spaces (aims page, archive 2026-05-28).
 - **Interdisciplinary framing:** the page asks for contributions "from scholars and practitioners in the social sciences, gender and cultural studies, communication and media studies" and information and computer sciences.
-- **Consequences of ignoring it**: the pages read state no consequence; the journal's own 5-day average to first decision includes desk rejections and its acceptance rate is 10%, which shows most submissions do not pass (journal page, archive 2026-05-28).
+- **Consequences of ignoring it**: the pages read state no consequence; the journal's own 5-day average to first decision and its 10% acceptance rate (live page, https://www.tandfonline.com/journals/rics20/about-this-journal, read in a real browser on 2026-11-24) show that few submissions are accepted, but the page does not say how many are returned for scope.
 
 ### Methodological Preferences
 
@@ -201,16 +198,16 @@
 
 ### Voice & Style
 
-- Instructions snapshot (2022-01-20): unstructured abstract of 250 words, 4 to 6 keywords, single quotation marks, any consistent spelling style, English only; typical paper no more than 8,000 words including references. https://web.archive.org/web/20220120234923/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20&utm_source=CPB&utm_medium=cms&utm_campaign=JPG15743&
+- Live instructions (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24): unstructured abstract of 250 words, 4 to 6 keywords, T&F standard APA reference style, single quotation marks, any consistent spelling style, English only; typical paper no more than 8,000 words including references.
 - First-person use: cannot be measured, because Crossref holds no abstracts for this journal (0 of 1116 records); no sample of article openings was read.
 - Title forms in the Crossref sample include quoted-phrase titles with a subtitle after a colon, for example 10.1080/1369118x.2021.1994624 and 10.1080/1369118x.2021.1961007.
-- Anonymisation: the instructions snapshot asks for full names and affiliations on the cover page of the manuscript and describes double-blind review, but gives no file-level anonymisation steps in the text read.
+- Anonymisation: the live instructions ask all authors for full name and affiliation on the cover page (where the research was conducted) and describe double-anonymous review, with a warning that a preprint voids any anonymity guarantee; they give no file-level anonymisation steps in the text read (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24).
 
 ### Reviewer Pool Characteristics
 
-- Review model: double-anonymized, at least two referees, after initial editorial screening (aims page, archive 2026-05-28: https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal).
-- Board page of archive 2026-05-28: 1 Editor-in-Chief, 5 associate-level editors, 1 social media editor, 4 regional editors and 33 board members; board affiliations by country in the page text: USA 13, UK 6, Sweden 2, and 1 each for South Africa, Australia, Norway, Portugal, Switzerland, Germany, Singapore, Italy, Israel, the Netherlands, Austria and Greece.
-- One associate editor is assigned to "Data and Ethics" (same page).
+- Review model: double-anonymized, at least two referees, after initial editorial screening (live aims block and live instructions, read in a real browser on 2026-11-24; https://www.tandfonline.com/journals/rics20/about-this-journal ; https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20).
+- Live board page recounted on 2026-11-24 (https://www.tandfonline.com/journals/rics20/about-this-journal): 11 editors and 33 board members, 44 entries (Tanja Bosch is in both lists). Board members by the country on the affiliation line: USA 13, UK 6, Sweden 2, and one each in South Africa, Norway, Portugal, Switzerland, Germany, Singapore, Italy, Israel, the Netherlands, Austria and Greece, plus one member (Bruns, Queensland University of Technology) whose line prints no country (13+6+2+11+1 = 33); the archive copy of 2026-05-28 had counted that member under Australia. The 11 editors sit in the UK 5, Sweden 1, the Netherlands 1, Canada 1, Singapore 1, South Africa 1 and Brazil 1. Whole page: USA 13, UK 11, Sweden 3, the Netherlands 2, South Africa 2, Singapore 2, and one each in Norway, Portugal, Switzerland, Germany, Italy, Israel, Austria, Greece, Canada and Brazil, plus Bruns with no country printed (13+11+3+2+2+2+10+1 = 44).
+- One associate editor is assigned to 'Data and Ethics' and one associate editor is also Reviews Editor and is listed as an 'Independent Scholar, York, UK' (same live page, read in a real browser on 2026-11-24). The Journal Administrator is listed as staff and not counted.
 - Observed output (OpenAlex-derived spine, 2026-07-13): the leading topic labels are social media and politics (1185 work-topic assignments), media studies (372), technology and adolescents (325) and gender and media (284), which indicates the subject areas reviewers are drawn from.
 - Reviewer behaviour itself (tone, competence variance, quantitative bias) is not observable from public pages; no SciRev page was found (HTTP 404 on two guessed addresses) and no LetPub page was located.
 
@@ -238,19 +235,21 @@
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | not stated in the instructions text read; the page points to T&F's publishing-ethics guidance (snapshot of 2022-01-20: https://web.archive.org/web/20220120234923/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20&utm_source=CPB&utm_medium=cms&utm_campaign=JPG15743&). |
+| **IRB requirement strictness** | The live instructions require a written statement in the Methods of all original research papers involving humans, animals, plants, biological material, protected or non-public datasets, collections or sites, confirming ethical approval from the appropriate ethics committee or institutional review board and informed consent where relevant; where approval is not required for non-interventional studies such as surveys, authors explain why; where no ethics committee exists, authors are advised to contact the Editor (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). This replaces 'not stated' from the 2022 copy. |
 | **Single-author acceptance** | No restriction stated; all listed authors must meet T&F's authorship criteria and one corresponding author is named (same snapshot). |
-| **Independent scholar friendliness** | No affiliation requirement stated; the affiliation listed is the one where the research was conducted (same snapshot). |
-| **Data transparency requirement** | The journal applies T&F's Basic Data Sharing Policy: sharing is encouraged, not mandated, and a data availability statement is requested; at submission authors say whether a data set exists (same snapshot). |
-| **OPSEC compatibility** | Double-anonymized; the instructions warn that anonymity cannot be guaranteed if an earlier version is on a preprint server (same snapshot). |
-| **Fees and OA** | No submission or publication fee in the 2022 snapshot, with a colour-in-print charge; hybrid Open Select with an APC for open access (journal page, archive 2026-05-28). |
-| **Competing interests** | A disclosure statement of financial and non-financial interests is part of the required items (snapshot of 2022-01-20). |
+| **Independent scholar friendliness** | No affiliation requirement stated; the affiliation listed is the one where the research was conducted (live instructions, read in a real browser on 2026-11-24). One associate editor/Reviews Editor is listed as an independent scholar on the live board page (https://www.tandfonline.com/journals/rics20/about-this-journal). |
+| **Data transparency requirement** | Stricter than the 2022 copy said: the live instructions require a data availability statement ('Authors are required to provide a data availability statement') and the journal applies the Taylor & Francis share-upon-reasonable-request data sharing policy: authors agree to make data and materials available upon reasonable request, with data shared only where ethically appropriate; authors cite any data sets referenced and say at submission whether a data set exists (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). The 2022 copy described the Basic Data Sharing Policy (encouraged, not mandated); that is superseded. |
+| **OPSEC compatibility** | Double-anonymized; the live instructions warn that anonymity cannot be guaranteed if an earlier version is on a preprint server (https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). |
+| **Fees and OA** | No submission, publication or page fee on the live instructions, with a colour-in-print charge (GBP 300 per figure); hybrid Open Select with an APC for open access, amount not readable (https://www.tandfonline.com/journals/rics20/about-this-journal, https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rics20, read in a real browser on 2026-11-24). |
+| **Competing interests** | A disclosure statement of financial and non-financial interests is part of the required items (live instructions, read in a real browser on 2026-11-24). |
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**Overall signal_quality: 3/5.** Layer scores: policy and format 3/5 (aims, metrics and board read from an archive of 2026-05-28, but the instructions for authors only from 2022-01-20, so word limit, abstract limit and preprint text may be out of date); soft-metadata counts 2/5 (Crossref counts over titles only, 0% abstract coverage, so methods and topics are understated); experiential 2/5 (the journal's own speed and acceptance averages, plus Crossref received and accepted dates for 1013 records; no SciRev or LetPub data and no first-hand reports).
+**Overall signal_quality: 3/5.** Layer scores: policy and format 4/5 (aims, metrics, board, open access and instructions for authors read live in a real browser on 2026-11-24; the APC amount stayed unreadable and the live page does not show the issue count); soft-metadata counts 2/5 (Crossref counts over titles only, 0% abstract coverage, so methods and topics are understated); experiential 2/5 (the journal's own speed and acceptance averages, plus Crossref received and accepted dates for 1013 records; no SciRev or LetPub data and no first-hand reports).
 
 **Method note:** the live OpenAlex API was out of budget on 2026-11-23 (HTTP 429, daily budget used). All counts therefore use Crossref-deposited records, not OpenAlex, and Crossref holds no abstracts for this journal, so keyword counts cover titles only. The spine snapshot of 2026-07-13 supplies the OpenAlex-derived metrics and topics. Counts come from regex matching and some patterns are broad (for example "platform", "politic", "data", "participation").
+
+**Browser pass of 2026-11-24**: the live Taylor & Francis about-this-journal and instructions-for-authors pages loaded in the maintainer's Chrome without a challenge; their text was read and saved for the independent verifier. Changes: CiteScore 10.4, SNIP and SJR as printed; 114 days to first post-review decision (archive said 104) and 14 days to online publication (archive said 15); 10% acceptance rate and 5 days to first decision re-read; T&F standard APA reference style named; journal-level generative-AI declaration; ethics-statement rule; data availability statement now required with a share-upon-reasonable-request policy (2022 copy said encouraged only); survey disclosure standards; 44-entry board recounted; one editor listed as independent scholar. Not re-confirmed: 16 issues per year (live page shows no count).
 
 **Sources cited across this entry:**
 - https://web.archive.org/web/20260528120225/https://www.tandfonline.com/journals/rics20/about-this-journal
@@ -262,11 +261,11 @@
 - https://scirev.org/journal/information-communication-and-society/ (HTTP 404)
 
 **Fields deliberately left blank, and why:**
-- **Founded, transferable or cascade, R+R rounds, reviewer-report publication, reference style, IRB wording, APC amount, abstract-based first-person use:** not stated on the pages read, or no abstracts exist in Crossref.
+- **Founded, transferable or cascade, R+R rounds, reviewer-report publication, APC amount, abstract-based first-person use, issue count:** not stated on the live pages read, or no abstracts exist in Crossref.
 - **Impact factor, CiteScore, quartile:** paywalled; the journal page shows them but they are not copied here.
 - **Reviewer culture:** no first-hand source found.
 
-**Unreadable pages:** unreadable: https://www.tandfonline.com/action/authorSubmission?journalCode=rics20&page=instructions (HTTP 403; archive copy of 2022-01-20 used and flagged as old); no archive copy found for https://www.tandfonline.com/journals/rics20/instructions-for-authors or the editorial-board and aims-and-scope sub-pages (the about page of 2026-05-28 carries both); T&F's open-access cost finder and sharing-your-work pages were not read.
+**Unreadable pages:** the live instructions (https://www.tandfonline.com/action/authorSubmission?journalCode=rics20&page=instructions returned 403 to the earlier tool) and the about page were read in a real browser on 2026-11-24 and no longer count as unreadable; the 2022-01-20 archive copy is now only the older reading. Still not read: T&F's interactive open-access cost finder (it loads without results unless its form is used) and the sharing-your-work pages. No separate instructions-for-authors or editorial-board URL was needed, because the about page carries both.
 
 **Cross-language and experiential checks performed:**
 - SciRev: https://scirev.org/journal/information-communication-and-society/ and https://scirev.org/journal/information-communication-society/ both returned HTTP 404; 0 reviews located.
@@ -286,12 +285,12 @@
 - Scope is the social, political, economic and cultural impact of information and communication technologies (Subject Density > Current positioning; Framing Requirements).
 - English only; double-anonymized review requires an anonymised manuscript (Format; Peer Review).
 - A 10% acceptance rate for the last full calendar year, as stated by the journal (Metrics > Acceptance Rate).
-- Typical papers run to no more than 8,000 words including abstract, references and endnotes, per the 2022 instructions snapshot, which may have changed (Format > Word limit).
+- Typical papers run to no more than 8,000 words including abstract, tables, references, captions and endnotes (live instructions, read in a real browser on 2026-11-24; Format > Word limit); a data availability statement is required, and survey-based work must follow the disclosure standards named in the instructions (Format; Framing Requirements).
 
 ### Soft Tax
 
-- Time: the journal reports 104 days on average to a first post-review decision; Crossref dates show a median of 245 days from receipt to acceptance (n=1013), and 281 days for papers accepted in 2025 (Review Cycle Time).
-- A 250-word abstract and a specific AI-use disclosure statement naming tool, version, use and reason (Format; AI Policy).
+- Time: the journal reports 114 days on average to a first post-review decision (live page, read in a real browser on 2026-11-24); Crossref dates show a median of 245 days from receipt to acceptance (n=1013), and 281 days for papers accepted in 2025 (Review Cycle Time).
+- A 250-word abstract, a generative-AI declaration (including a statement when none was used), an ethics-approval statement in the Methods for research on humans, and a data availability statement (Format; AI Policy; Practical Concerns).
 - Open access is a paid option; the amount was not read (Open Access).
 
 ### Best Suited For
@@ -323,3 +322,5 @@
 |------|--------|----|
 | 2026-11-23 | Initial entry: structural fields from OpenAlex-derived spine snapshot (2026-07-13) and Crossref; policies from archived journal pages; counts from Crossref (live OpenAlex unavailable) | @Zaious |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
+| 2026-11-24 | Browser pass: live Taylor & Francis about and instructions pages read in a real browser (the instructions were previously known only from a 2022 archive copy). Filled: CiteScore 10.4, SNIP, SJR as printed, T&F standard APA reference style, journal-level generative-AI declaration, ethics-statement rule, survey disclosure standards, 44-entry board recounted. Corrected: 114 days to first post-review decision (was 104 from the 2026-05-28 archive), 14 days to online publication (was 15), data policy (now data availability statement required, share upon reasonable request; the 2022 'encouraged, not mandated' wording superseded), the board's Australian member recount (no country printed for one member). Not re-confirmed: 16 issues per year; APC amount unreadable | AI-assisted (maintainer-directed) |
+| 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 of 5 sampled pairs supported in a real browser, board count recounted and matching; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |

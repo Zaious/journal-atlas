@@ -4,7 +4,7 @@
 
 # Noûs
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported; a misquoted acceptance rate corrected. No first-hand human reports; not human-verified.
@@ -22,9 +22,9 @@
 | **ISSN (Online)** | 1468-0068 |
 | **Founded** | Blank as a stated date. The earliest year with Crossref-registered DOIs is 1967 (34 DOIs; https://api.crossref.org/journals/0029-4624). The board page names Hector-Neri Castañeda as founder (Wayback copy 2024-01-08, https://web.archive.org/web/20240108174427/https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html) |
 | **URL** | https://onlinelibrary.wiley.com/journal/14680068 |
-| **Author Guidelines** | https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html. Unreadable: HTTP 403 with a Cloudflare challenge (plain curl with a cookie jar and browser headers, a reader proxy and WebFetch were all tried on 2026-11-23), and the Wayback availability API lists no copy of this exact URL for 2018, 2020, 2022 or 2026 timestamps. A copy does exist under the legacy path https://web.archive.org/web/20100824010615id_/http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-0068/homepage/ForAuthors.html (copy of 2010-08-24; it gives ScholarOne submission steps and a temporary pause on new submissions, with no length or anonymisation rules). Later copies of the same legacy path run to 2017-08-15 (CDX index, retrieved 2026-11-23); the 2017-08-15 copy states a 15,000-word limit and a "triple-blind" review policy, but it is nine years old, so it is not used to fill the Format or Peer Review fields |
+| **Author Guidelines** | https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read in a real browser on 2026-11-24 (a Cloudflare check page appeared on the first navigations and cleared by itself on a later one; nothing was clicked). The page carries no date. Submission is through ScholarOne (the page names http://mc.manuscriptcentral.com/nous). Earlier 403 and Wayback attempts (2026-11-23) are superseded by this read; the 2010-08-24 and 2017-08-15 archived copies of the legacy path are older and are no longer used. Excerpts saved in the researcher's scratch folder (chrome2/nous-forauthors.txt) |
 | **Society / Association** | None stated on the pages read |
-| **Editorial Board Location** | OpenAlex source country code: US. The board page copy of 2024-01-08 lists the editor-in-chief at Rutgers University; the editorial assistants are all at Rutgers (see Reviewer Pool Characteristics) |
+| **Editorial Board Location** | OpenAlex source country code: US. The live board page (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html, read 2026-11-24, no date printed) lists the editor-in-chief at Rutgers University and one editorial assistant, also at Rutgers (see Reviewer Pool Characteristics). The 2024-01-08 archived copy named the same editor-in-chief |
 | **OpenAlex ID** | https://openalex.org/S170801797 |
 
 ---
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 189 (OpenAlex) | 2026-11-23 |
-| **CiteScore** | Not stated (Scopus not accessed) | |
-| **Acceptance Rate** | The publisher's metrics page reports 8% for 2023 (Wayback copy 2024-03-10, https://web.archive.org/web/20240310103557/https://onlinelibrary.wiley.com/journal/14680068/journal-metrics); the home page copy of 2025-05-28 shows 9% without naming a period (https://web.archive.org/web/20250528082557/https://onlinelibrary.wiley.com/journal/14680068). On the survey page the "overall acceptance rate" is 10.91%, and of 394 initial verdicts 11 acceptances (2.79%), 349 rejections (88.58%), 31 revise-and-resubmit (7.87%) and 3 conditional acceptances (0.76%); of 52 later verdicts 32 were acceptances (61.54%) and 20 rejections. The 10.91% is (11 + 32) / 394, so it counts later acceptances too (APA Journal Survey Project, https://apasurvey.philx.org/journals/733 and its CSV export https://apasurvey.philx.org/journals/export_csv, all-years aggregate, retrieved 2026-11-23; voluntary sample) | 2023, 2025 snapshot, 2026-11-23 |
+| **CiteScore** | 5.4, labelled "2025 CiteScore (Scopus)" on the publisher's metrics page (https://onlinelibrary.wiley.com/journal/14680068/journal-metrics, read in a real browser 2026-11-24); Scopus itself was not opened. The same page prints Clarivate figures, which are deliberately not recorded here | 2025 (label on page) |
+| **Acceptance Rate** | Live publisher metrics page (https://onlinelibrary.wiley.com/journal/14680068/journal-metrics, read 2026-11-24): 7% under the label "2025 Acceptance rate"; the page also prints 41 as the "2025 Total articles published". Older figures, kept as older: the publisher's metrics page reported 8% for 2023 (Wayback copy 2024-03-10, https://web.archive.org/web/20240310103557/https://onlinelibrary.wiley.com/journal/14680068/journal-metrics); the home page copy of 2025-05-28 shows 9% without naming a period (https://web.archive.org/web/20250528082557/https://onlinelibrary.wiley.com/journal/14680068). On the survey page the "overall acceptance rate" is 10.91%, and of 394 initial verdicts 11 acceptances (2.79%), 349 rejections (88.58%), 31 revise-and-resubmit (7.87%) and 3 conditional acceptances (0.76%); of 52 later verdicts 32 were acceptances (61.54%) and 20 rejections. The 10.91% is (11 + 32) / 394, so it counts later acceptances too (APA Journal Survey Project, https://apasurvey.philx.org/journals/733 and its CSV export https://apasurvey.philx.org/journals/export_csv, all-years aggregate, retrieved 2026-11-23; voluntary sample) | 2025 (live page), 2023, 2025 snapshot, 2026-11-23 |
 | **Desk Rejection Rate** | Blank. No source states a desk-rejection share. SciRev shows "immediately rejected last year: n/a" because the editor supplied no data (https://scirev.org/journal/nous/) | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR not read). SciRev lists its own "discipline popularity" quartile as Q1 (score 37 in philosophy, January 2026), which is a popularity score, not a citation quartile | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.41 (OpenAlex proxy, not JCR) | 2026-11-23 |
@@ -50,9 +50,9 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Publisher-reported: 58 days for 2023 (metrics page copy 2024-03-10, URL above) and 67 days on the 2025-05-28 home copy (period not stated). Survey respondents report an average response time of 3.2 months (APA Journal Survey Project, https://apasurvey.philx.org/journals/733). SciRev (n=2): average first review round 2.6 months (https://scirev.org/journal/nous/) | The three sources differ; the publisher figure is the shortest and the survey figure measures all verdicts, including rejections |
+| **Time to first decision** | Publisher-reported, live page: median 65 days for 2025 ("2025 Submission to first decision (median)", https://onlinelibrary.wiley.com/journal/14680068/journal-metrics, read 2026-11-24). Older: 58 days for 2023 (metrics page copy 2024-03-10, URL above) and 67 days on the 2025-05-28 home copy (period not stated). Survey respondents report an average response time of 3.2 months (APA Journal Survey Project, https://apasurvey.philx.org/journals/733). SciRev (n=2): average first review round 2.6 months (https://scirev.org/journal/nous/) | The three sources differ; the publisher figure is the shortest and the survey figure measures all verdicts, including rejections |
 | **Time to first review** | Blank. No separate figure found | |
-| **Time to acceptance (total)** | Publisher-reported "submission to acceptance" 208 days for 2023 (metrics page copy 2024-03-10). SciRev average total handling time for accepted manuscripts: 4.4 months, from 2 reviews (https://scirev.org/journal/nous/) | |
+| **Time to acceptance (total)** | Publisher-reported, live page: median 278 days for 2025 ("Submission to acceptance (median)", read 2026-11-24); the same page gives a median of 27 days from acceptance to publication for 2025. Older: "submission to acceptance" 208 days for 2023 (metrics page copy 2024-03-10). SciRev average total handling time for accepted manuscripts: 4.4 months, from 2 reviews (https://scirev.org/journal/nous/) | |
 | **Time to publication (after acceptance)** | Survey respondents report an average publication time of 12.4 months (APA Journal Survey Project, https://apasurvey.philx.org/journals/733; the number of respondents who gave this figure is not shown) | Self-reported; measure unclear |
 
 ### Publication Frequency
@@ -71,8 +71,8 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Blank from the journal's own page: the guidelines are unreadable. Secondary, unverified: a search-engine summary of the guidelines page says names and affiliations are not to appear on manuscripts so they can be read without knowledge of authorship, and that editors and reviewers are blind to author identity until a decision. This was not read on the page itself and does not count as evidence here. Survey respondents report an average of 1.6 reviewers per submission (APA Journal Survey Project, https://apasurvey.philx.org/journals/733) |
-| **Transferable / Cascade?** | Blank. No source read |
+| **Type** | Anonymised for editors and reviewers. The guidelines page says editors and reviewers review submissions "blind to authors' identities until after a decision is made", and asks that author names and affiliations not appear on manuscripts so they can be read "in ignorance of authorship" (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read in a real browser 2026-11-24; undated page). Survey respondents report an average of 1.6 reviewers per submission (APA Journal Survey Project, https://apasurvey.philx.org/journals/733) |
+| **Transferable / Cascade?** | Partly. The guidelines page says the journal participates in Wiley's Refer & Transfer programme, so a rejected manuscript may be recommended for transfer to another Wiley journal (same URL, read 2026-11-24) |
 | **Reviewer reports published?** | Blank. No source read |
 | **Typical R+R rounds** | Of 394 initial verdicts reported by survey respondents, 31 (7.87%) were revise-and-resubmit and 3 (0.76%) conditional acceptance; of 52 later verdicts, 32 were acceptances and 20 rejections (https://apasurvey.philx.org/journals/733, all years, retrieved 2026-11-23). SciRev (n=2) shows an average of 1.5 review rounds (https://scirev.org/journal/nous/) |
 | **Reviewer recommendations** | Blank. No source found |
@@ -81,7 +81,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | Unknown: the journal's guidelines are unreadable. The publisher-wide Wiley policy applies |
+| **Has journal-specific AI policy?** | Partly. The journal's guidelines page has an "Artificial Intelligence" paragraph, but it only points to the publisher-wide Wiley policy and adds one rule: the initial submission must carry the disclosure, in the Acknowledgements or in the notes (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read in a real browser 2026-11-24) |
 | **Explicit permission gate?** | No gate found. Use is allowed, with disclosure required when AI generates substantial text, restructures arguments or contributes to methods, analysis or visuals |
 | **Leniency (1-5)** | 3 (allowed with mandatory disclosure; same rubric as other entries in this corpus) |
 | **Summary** | Publisher policy: AI tools cannot be authors; authors remain accountable and must review AI-generated content. Disclosure names the tool and version, date, role and the author's review; simple grammar or formatting help generally needs none. AI-edited photographs and AI generation or alteration of evidential images are not permitted. Reviewers must not upload manuscripts to AI tools, and editors must not share unpublished manuscripts with AI tools without the author's permission. Retrieved 2026-11-23 |
@@ -89,11 +89,11 @@
 
 ### Preprint Policy
 
-> Publisher-level policy, not journal-specific: https://authors.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html (retrieved 2026-11-23). The journal's own preprint rule would sit in the unreadable guidelines.
+> Publisher-level policy, not journal-specific: https://authors.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html (retrieved 2026-11-23). The journal's own guidelines page was read on 2026-11-24 and contains no preprint statement (a keyword search of the page text for "preprint" returned nothing), so only the publisher rule applies.
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Yes (publisher policy) | The submitted version may be shared at any time without embargo on a personal site, an institutional repository or a not-for-profit preprint server. Whether a preprint affects anonymised review at this journal is not known (guidelines unreadable) |
+| Pre-submission | Yes (publisher policy) | The submitted version may be shared at any time without embargo on a personal site, an institutional repository or a not-for-profit preprint server. Whether a preprint affects anonymised review at this journal is not stated: the guidelines page asks only that names and affiliations be kept off the manuscript |
 | Under review | Blank | The Wiley page does not separately address this stage |
 | Post-acceptance (AAM) | Yes, with embargo | Repository posting of the accepted version is delayed by 24 months for social science and humanities journals. Embargo: 24 months (publisher page; whether this journal is classed as humanities was not checked) |
 | Version of Record | Blank | The page says the preprint and accepted versions cannot be replaced with the final version |
@@ -103,24 +103,25 @@
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Hybrid. OpenAlex open-access status of the 300 works dated 2021-2026: hybrid 161, closed 76, bronze 32, green 31 (OpenAlex works API, retrieved 2026-11-23). Crossref carries a Creative Commons licence URL on 154 of 277 journal articles in the same window |
-| **APC (if OA chosen)** | USD 2900 as listed by OpenAlex (https://openalex.org/S170801797); not checked against Wiley's own price page, which was unreadable |
+| **APC (if OA chosen)** | Not confirmed on the publisher page. USD 2900 is the figure OpenAlex lists (https://openalex.org/S170801797), not a publisher-stated amount; the guidelines page confirms the model ("a subscription journal that offers an open access option", chosen after acceptance and "subject to an APC") but prints no amount (read 2026-11-24). The figure was not checked against Wiley's own price list |
 | **Read & Publish agreements** | Blank. No list read |
 
 ---
 
 ## Format
 
-> Every submission-rule field below is blank because the Author Guidelines page is unreadable (see Identity). The length and abstract figures that are filled are measured from published articles, not from a rule.
+> Rules below come from the Author Guidelines page read in a real browser on 2026-11-24 (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html; the page prints no date). Where that page is silent the field is blank and any measured figure is labelled as measured from published articles, not as a rule.
 
 | Aspect | Detail |
 |--------|--------|
 | **Article types accepted** | The publisher overview (Wayback 2023-09-28) says the journal publishes articles on the whole range of philosophical debate "as well as long critical studies of important books". The home page copy of 2025-05-28 says it publishes articles that "make standalone, substantial contributions" across philosophy and its history, and adds "No particular methodology is required". Crossref types in the window: all 277 are journal-article |
-| **Word limit** | Blank. Rule unreadable. Measured instead: Crossref page ranges give a median article length of 21 pages (quartiles 16 to 26) over 243 of 277 records with a parseable range (https://api.crossref.org/journals/0029-4624/works, retrieved 2026-11-23). A job-board aggregator page, seen through a search summary only, gave a numeric range; it is secondary and unverified, so it is not used |
-| **Word limit negotiability** | Blank. No source |
-| **Abstract limit** | Blank. Measured instead: abstract median 138 words (quartiles 110 to 171, maximum 250) over 243 Crossref abstracts |
-| **Reference limit** | Blank. No source |
-| **Supplementary material** | Blank. No source |
-| **Figure/Table limits** | Blank. No source |
+| **Word limit** | 15,000 words, "all words included": the page says the journal "cannot consider papers longer than 15,000 words". It adds that the journal will not consider more than one paper at a time from any one author, nor a paper from an author with a paper in its Early View backlog at the time of submission (applies to authors and co-authors), and that each author certifies the paper is not under consideration elsewhere during review (same URL, read 2026-11-24). Measured for comparison: Crossref page ranges give a median article length of 21 pages (quartiles 16 to 26) over 243 of 277 records with a parseable range (https://api.crossref.org/journals/0029-4624/works, retrieved 2026-11-23). The 2017-08-15 archived copy also said 15,000, so the figure is unchanged in the copies read |
+| **Word limit negotiability** | Not negotiable on the page's wording ("cannot consider"); no exception procedure is stated |
+| **Abstract limit** | Blank: the page states no abstract limit or abstract requirement (keyword search of the page text, 2026-11-24). Measured instead: abstract median 138 words (quartiles 110 to 171, maximum 250) over 243 Crossref abstracts |
+| **Reference limit** | No numeric limit stated. Style: APA author-date, reference list alphabetical at the end, DOI for all references where available; endnotes preferred to footnotes (same page). The page offers "free format submission": minimal formatting is required only if a revision is invited |
+| **Supplementary material** | Blank. The page says nothing about supplementary files |
+| **Figure/Table limits** | No count limit stated. Preferred artwork formats are EPS, PDF and TIFF: line art as EPS, or PDF at 600 dpi or better at final size; photographic images as TIFF at 300 dpi at final size (same page) |
+| **Anonymisation** | Author names and institutional affiliations must not appear on the manuscript (same page) |
 
 ---
 
@@ -169,8 +170,8 @@
 
 - **Mandatory framing?** One scope statement is available: the journal aims to publish articles that make "standalone, substantial contributions" across the breadth of philosophy and its history (https://web.archive.org/web/20250528082557/https://onlinelibrary.wiley.com/journal/14680068, Wayback copy dated 2025-05-28). No required theoretical framing is stated there; the same text says no particular methodology is required. Retrieved 2026-11-23.
 - **What kind of engagement?** The overview copy of 2023-09-28 names "long critical studies of important books" as an accepted form alongside articles (https://web.archive.org/web/20230928161155/https://onlinelibrary.wiley.com/page/journal/14680068/homepage/productinformation.html). Observed practice: 173 of 243 abstracts (71.2%) use argue, defend, thesis or objection language (Crossref, retrieved 2026-11-23).
-- **Article type and length**: observed median 21 pages with quartiles 16 and 26 over 243 records with a page range (https://api.crossref.org/journals/0029-4624/works). The word limit and structure rules are unreadable (see Format).
-- **Consequences of ignoring it**: Blank. No page read states what happens to out-of-scope submissions.
+- **Article type and length**: observed median 21 pages with quartiles 16 and 26 over 243 records with a page range (https://api.crossref.org/journals/0029-4624/works). The stated limit is 15,000 words, all words included (Format; guidelines page read 2026-11-24). The page says the requirements apply "to both articles and reviews" and sets no structure rule beyond that.
+- **Consequences of ignoring it**: the page says the journal "cannot consider" a paper over 15,000 words, and will not consider a second paper from an author who has one under review, or from an author with a paper in the Early View backlog (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read 2026-11-24). It states no consequence for out-of-scope submissions.
 
 ### Methodological Preferences
 
@@ -190,10 +191,10 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | Not scored. Observed: 213 of 243 abstracts (88%) contain I, we, my, our or me under the regex `(?<![A-Za-z.(])(?:I (?=[a-z])\|We \|we \|My \|my \|Our \|our \|me\b)` (plural "we" may be generic). Examples of the most recent items: https://doi.org/10.1111/nous.70070 ("I argue"), https://doi.org/10.1111/nous.70078 ("We argue"), https://doi.org/10.1111/nous.70071 ("I argue"); https://doi.org/10.1111/nous.70076 has none. The guidelines give no first-person rule (unreadable) |
+| **First-person voice acceptance (0-5)** | Not scored. Observed: 213 of 243 abstracts (88%) contain I, we, my, our or me under the regex `(?<![A-Za-z.(])(?:I (?=[a-z])\|We \|we \|My \|my \|Our \|our \|me\b)` (plural "we" may be generic). Examples of the most recent items: https://doi.org/10.1111/nous.70070 ("I argue"), https://doi.org/10.1111/nous.70078 ("We argue"), https://doi.org/10.1111/nous.70071 ("I argue"); https://doi.org/10.1111/nous.70076 has none. The guidelines page (read 2026-11-24) gives no first-person rule |
 | **Expected density** | Median 21 pages per article (quartiles 16 to 26; 243 of 277 records with a page range). Abstracts: median 138 words (quartiles 110 to 171, maximum 250). Source: https://api.crossref.org/journals/0029-4624/works, retrieved 2026-11-23 |
-| **Abstract and keywords** | No limit read (guidelines unreadable). Measured abstract median 138 words, unstructured |
-| **Writing style notes** | Blank. The style guide is unreadable. Article openings read are a one-paragraph problem statement followed by a thesis ("I argue" or "We argue"), e.g. https://doi.org/10.1111/nous.70070 and https://doi.org/10.1111/nous.70072 |
+| **Abstract and keywords** | No abstract or keyword rule on the guidelines page (read 2026-11-24). Measured abstract median 138 words, unstructured |
+| **Writing style notes** | Stated rules are about references only: APA author-date with DOIs, endnotes preferred to footnotes, free-format first submission (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read 2026-11-24); no prose-style guidance. Article openings read are a one-paragraph problem statement followed by a thesis ("I argue" or "We argue"), e.g. https://doi.org/10.1111/nous.70070 and https://doi.org/10.1111/nous.70072 |
 | **Authorship pattern** | Of 253 Crossref records with an author list: 193 single-author (76%), 49 two authors, 9 three, 2 four or more (https://api.crossref.org/journals/0029-4624/works, retrieved 2026-11-23) |
 
 ### Reviewer Pool Characteristics
@@ -202,12 +203,12 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | The board page copy of 2024-01-08 lists 36 people: 1 editor-in-chief, 6 editors and a 29-member editorial board. By listed institution: United States 29, United Kingdom 5 (Oxford 4, Birmingham 1), Spain 1, Canada 1 (total 36). Rutgers University accounts for 7 of the 36, and all 2 editorial assistants are at Rutgers | https://web.archive.org/web/20240108174427/https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html; counted from the page text, 2026-11-23; the board may have changed since (the 2025-05-28 home copy still names the same editor-in-chief) |
+| **Dominant tradition** | Live board page, read in a real browser 2026-11-24 (no date printed): 41 listed people with an institution, namely 1 editor-in-chief, 12 editors and a 28-member editorial board (1 + 12 + 28 = 41), plus a named founder, 1 editorial assistant (Rutgers) and a journal administrator without an institution. By listed institution: United States 32, United Kingdom 6 (Oxford 4, Glasgow 1, Birmingham 1), Spain 1, Canada 1, and 1 at Central European University, whose country the page does not print (32 + 6 + 1 + 1 + 1 = 41). Rutgers University accounts for 6 of the 41. Older copy, kept as older: the archived board page of 2024-01-08 listed 36 people (1 + 6 + 29; United States 29, United Kingdom 5, Spain 1, Canada 1) | https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html (live); https://web.archive.org/web/20240108174427/https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html (2024-01-08); counted from page text, 2026-11-24 |
 | **Reviewer list size** | Blank. No reviewer list was found; the board is not a referee list | |
-| **Review model** | Not confirmed from the journal's own page (unreadable). Secondary summary of the guidelines says manuscripts are read without author names; unverified | See Peer Review |
+| **Review model** | Editors and reviewers are blind to author identity until after a decision; author names and affiliations are to be kept off the manuscript (journal's guidelines page, read 2026-11-24) | See Peer Review |
 | **Reviewer competence variance** | Blank for evidence of reviewers' behaviour. First-hand reports exist in small number: SciRev n=2 rates comment difficulty and report quality, both 5.0 of 5, from 2 reviews; one latest review is a rejection after 11.9 weeks whose recorded email says rejected papers get no comments (https://scirev.org/journal/nous/). Survey respondents report an average comment-quality rating of 3.13 and editor-experience rating of 3.18 (https://apasurvey.philx.org/journals/733; scale not shown on the page read) | Numbers only; n is 2 for SciRev |
 | **Quantitative mindset bias on qualitative work?** | Blank. No source; empirical or qualitative work is almost absent from the journal (Methodological Preferences), so the question does not arise from public data | |
-| **Discourse community signals (author side)** | Author community as a proxy: United States 140 and United Kingdom 50 of 300 works have at least one author there (OpenAlex, 2021-2026). Survey respondents by professional status are shown per submission on the survey page (graduate student, non-tenure-track and tenured entries all appear in the recent list) | OpenAlex works API; https://apasurvey.philx.org/journals/733 |
+| **Discourse community signals (author side)** | Author community as a proxy: United States 140 and United Kingdom 50 of 300 works have at least one author there (OpenAlex, 2021-2026). The publisher's metrics page prints "2025 Top Author Countries/Regions": United States 59%, United Kingdom 15%, Germany 10%, China 5%, Italy 5% (https://onlinelibrary.wiley.com/journal/14680068/journal-metrics, read 2026-11-24; the page does not say how the shares are computed). Survey respondents by professional status are shown per submission on the survey page (graduate student, non-tenure-track and tenured entries all appear in the recent list) | OpenAlex works API; https://apasurvey.philx.org/journals/733 |
 
 ### Sensitive Topics
 
@@ -228,18 +229,19 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | Blank. The guidelines are unreadable. Participant-data studies are almost absent (1 record read, Methodological Preferences), so an ethics rule would rarely apply, but that is not a stated rule |
+| **IRB requirement strictness** | Blank. The guidelines page (read 2026-11-24) states no ethics or IRB rule. Participant-data studies are almost absent (1 record read, Methodological Preferences), so an ethics rule would rarely apply, but that is not a stated rule |
 | **Single-author acceptance** | Single-author papers are the norm: 193 of 253 Crossref records with an author list (76%), 2021-2026 (https://api.crossref.org/journals/0029-4624/works) |
 | **Independent scholar friendliness** | Blank. No rule read and no author-affiliation data collected beyond countries. Survey entries list professional status per respondent, and the all-years list shows graduate students, non-tenure-track and tenured respondents (https://apasurvey.philx.org/journals/733) |
-| **Data transparency requirement** | Blank. Guidelines unreadable |
-| **OPSEC compatibility** | Not confirmed (see Peer Review: the anonymisation rule is only a secondary summary). Wiley's publisher policy permits sharing the submitted version at any time (https://authors.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html); how a preprint interacts with this journal's anonymised review is unknown |
-| **AI use** | Disclosure required when AI contributes substantially; AI cannot be an author (https://www.wiley.com/en-us/publish/article/ai-guidelines/), retrieved 2026-11-23 |
+| **Data transparency requirement** | Blank. The guidelines page (read 2026-11-24) states no data rule |
+| **OPSEC compatibility** | Anonymised review is stated (Peer Review: names and affiliations kept off the manuscript, editors and reviewers blind until after a decision). Wiley's publisher policy permits sharing the submitted version at any time (https://authors.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html); how a preprint interacts with this journal's anonymised review is not stated on the guidelines page |
+| **AI use** | Disclosure required when AI contributes substantially; AI cannot be an author (https://www.wiley.com/en-us/publish/article/ai-guidelines/), retrieved 2026-11-23. The journal asks that the disclosure be in the initial submission, in the Acknowledgements or notes (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, read 2026-11-24) |
+| **Concurrent-submission rules** | One paper at a time per author, and no new paper from an author with a paper in the Early View backlog; applies to co-authors too (guidelines page, read 2026-11-24) |
 | **Open access and cost** | Hybrid; 154 of 277 articles carry a Creative Commons licence URL in Crossref; APC listed by OpenAlex as USD 2900, unverified against the publisher |
 | **Rejection feedback** | Survey respondents: 141 of 394 submissions carry free-text comments (APA Journal Survey Project, https://apasurvey.philx.org/journals/733). A SciRev review records a rejection email saying rejected papers get no comments (https://scirev.org/journal/nous/) |
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref abstract-based counts 4 (277 records, 88% with abstract; regexes written out); OpenAlex group-by counts 4; publisher metrics and aims (Wayback copies, 2024-03-10 to 2025-05-28) 3; journal-specific policies and guidelines 0 (page unreadable, no archive copy); experiential layer 3 (APA Journal Survey Project n=394 voluntary and self-selected; SciRev n=2).
+**signal_quality (0-5)**: overall 3. Per layer: Crossref abstract-based counts 4 (277 records, 88% with abstract; regexes written out); OpenAlex group-by counts 4; publisher metrics, board and guidelines (live pages read in a real browser 2026-11-24) 4, with older Wayback copies (2024-03-10 to 2025-05-28) kept as labelled older figures; journal-specific policies and guidelines 4 (live page read; it is undated and states nothing on abstracts, ethics, data or preprints); experiential layer 3 (APA Journal Survey Project n=394 voluntary and self-selected; SciRev n=2).
 
 **What the APA survey is**: the APA Journal Survey Project (https://apasurvey.philx.org/journals/733) aggregates voluntary submissions by authors. The figures used are the all-years aggregate on the page, retrieved 2026-11-23; the sample is self-selected and includes unfiltered years, so acceptance shares may not describe current practice.
 
@@ -255,10 +257,9 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://scirev.org/journal/nous/
 
 **Unreadable pages (never filled from memory):**
-- unreadable: https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html (403 Cloudflare challenge; no Wayback copy of this URL exists, only 2010-2017 copies of the legacy path, see Identity). Everything about word limit, anonymisation wording, article-type definitions, ethics, data, style guide and preprint interaction is blank for that reason.
-- unreadable: https://onlinelibrary.wiley.com/journal/14680068 live (403); archived copies were read instead.
+- None as of 2026-11-24. The guidelines, metrics and board pages that were unreadable to curl on 2026-11-23 (403 Cloudflare challenge) were read in a real browser on 2026-11-24 (https://onlinelibrary.wiley.com/page/journal/14680068/homepage/forauthors.html, https://onlinelibrary.wiley.com/journal/14680068/journal-metrics, https://onlinelibrary.wiley.com/page/journal/14680068/homepage/editorialboard.html). A Cloudflare check page showed on the first navigations and cleared by itself on a later one; nothing was clicked. None of the three pages prints a date. Excerpts: chrome2/nous-forauthors.txt and chrome2/nous-metrics-board.txt in the researcher's scratch folder.
 
-**Fields deliberately left blank, and why:** word limit, reference limit, supplementary rules, figure limits, peer review type (page-level), IRB and data rules, independent-scholar rule, reviewer list size, transfer policy, special issues: source page unreadable or silent. Desk rejection rate: no source. Impact factor and quartile: paywalled, not stated.
+**Fields deliberately left blank, and why:** abstract limit, supplementary rules, IRB and data rules, preprint interaction with review, independent-scholar rule, reviewer list size, special issues: the live guidelines page is silent. Desk rejection rate: no source. Impact factor and quartile: paywalled, not stated; the live metrics page prints Clarivate figures, which are deliberately not recorded.
 
 **Cross-language and forum checks performed:**
 - SciRev (English): page exists, 2 reviews (https://scirev.org/journal/nous/).
@@ -277,14 +278,14 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### Hard Blockers
 
-- **Unknown submission rules**: the word limit, anonymisation wording and ethics rules are unreadable (Format, Identity). A manuscript should be checked against the live guidelines before submission; nothing here can be relied on for those rules.
+- **Length and concurrency rules**: papers over 15,000 words, all words included, are not considered; no more than one paper at a time per author, and none from an author with a paper in the Early View backlog (Format, guidelines page read 2026-11-24). Names and affiliations must be off the manuscript (Peer Review).
 - **AI use**: undisclosed substantial generative AI use, or AI-altered evidential images, breaches the publisher policy (AI Policy, https://www.wiley.com/en-us/publish/article/ai-guidelines/).
 - **Method fit**: empirical or participant-data studies are almost absent (1 record in 243 abstracts, Methodological Preferences). This is a frequency, not a stated rule; the journal says no particular methodology is required.
 
 ### Soft Tax
 
-- **Time**: publisher-reported first decision 58 days (2023) to 67 days; survey respondents average 3.2 months to a verdict and 12.4 months to publication (Review Cycle Time). SciRev n=2 reports 4.4 months total handling for accepted manuscripts.
-- **Competition**: publisher-reported acceptance rate 8% (2023) and 9% (2025 snapshot); survey respondents report 2.79% of 394 initial verdicts as acceptances (11); the survey's 10.91% "overall acceptance rate" also counts 32 later acceptances, (11 + 32) / 394 (Metrics). These numbers imply that most submissions are rejected.
+- **Time**: publisher-reported median first decision 65 days and median submission to acceptance 278 days for 2025 (live metrics page, read 2026-11-24); older publisher figures 58 days (2023) to 67 days; survey respondents average 3.2 months to a verdict and 12.4 months to publication (Review Cycle Time). SciRev n=2 reports 4.4 months total handling for accepted manuscripts.
+- **Competition**: publisher-reported acceptance rate 7% for 2025 (live metrics page, read 2026-11-24), older figures 8% (2023) and 9% (2025 snapshot); survey respondents report 2.79% of 394 initial verdicts as acceptances (11); the survey's 10.91% "overall acceptance rate" also counts 32 later acceptances, (11 + 32) / 394 (Metrics). These numbers imply that most submissions are rejected.
 - **Feedback**: only 141 of 394 survey entries carry comments, and a SciRev review quotes a rejection email saying rejected papers get no comments (Practical Concerns), so a rejection may come without reviewer text.
 - **Open access cost**: green deposit of the accepted version is delayed 24 months for humanities and social science journals under the publisher page (Preprint Policy); gold access lists an APC of USD 2900 per OpenAlex, unverified.
 
@@ -298,7 +299,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 - Empirical, participant-based or qualitative studies: 1 of 243 abstracts is a participant-data study (Methodological Preferences). The count shows rarity, not rejection.
 - Work centred on continental, decolonial, non-Western or applied political topics: phenomenology and continental names 1.6%, non-Western terms 0.4%, politics, war and violence terms 0% (Sensitive Topics). Again a frequency, not a stated exclusion.
-- Authors who need a published, verified word limit or anonymisation rule before choosing: those rules are unreadable here (Format, Identity).
+- Authors with a manuscript above 15,000 words, or who already have a paper under review or in the Early View backlog at this journal (Format).
 
 ### Rejection Fallback Chain
 
@@ -320,3 +321,5 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports collected by the researcher (third-party survey aggregates cited with n) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Correction after independent verification: acceptance share restated as 11 of 394 initial verdicts (2.79%), with the survey's 10.91% explained as (11 + 32) / 394; legacy-path archived copies of the Author Guidelines page (2010-2017) mentioned | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; a misquoted acceptance rate corrected; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Live Wiley pages read in a real browser: filled the submission rules (15,000-word cap, anonymisation, concurrency rules, reference style, artwork formats, AI disclosure place, Refer & Transfer); replaced stale archived metrics with the live 2025 figures (acceptance 7%, first decision median 65 days, CiteScore 5.4 as labelled on the page) and kept the older ones labelled; board recounted (41 = 1 + 12 + 28); Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-23 | Corrections after Chrome verification (APC row: USD 2900 stated as an OpenAlex-listed figure not confirmed on the publisher page, which prints only 'subject to an APC') | @Zaious |

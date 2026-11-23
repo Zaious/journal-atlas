@@ -4,7 +4,7 @@
 
 # Journal of Economic Methodology
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 5 supported and 1 unreadable of 6 sampled pairs. No first-hand human reports; not human-verified.
@@ -21,10 +21,10 @@
 | **ISSN (Print)** | 1350-178X |
 | **ISSN (Online)** | 1469-9427 |
 | **Founded** | 1994. The earliest Crossref records, "Vision, judgment, and disagreement among economists" (DOI 10.1080/13501789400000004) and a second item, are dated 1994-07 (https://api.crossref.org/journals/1350-178X/works?sort=published&order=asc&rows=2); the 2022 board copy lists a "Founding Editor" (https://web.archive.org/web/20220621130126/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=rjec20). Retrieved 2026-11-23 |
-| **URL** | https://www.tandfonline.com/journals/rjec20 (live page returns 403; Wayback copy dated 2025-11-23: https://web.archive.org/web/20251123103128/https://www.tandfonline.com/journals/rjec20) |
-| **Author Guidelines** | Live pages return 403. Wayback copy of the instructions dated 2022-08-08, the source for Format, Peer Review and Open Access facts below: https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20 (current wording may differ). Aims and scope, Wayback copy dated 2022-06-15: https://web.archive.org/web/20220615120353/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjec20. Retrieved 2026-11-23 |
+| **URL** | https://www.tandfonline.com/journals/rjec20 (the journal home was not opened in the browser; Wayback copy dated 2025-11-23: https://web.archive.org/web/20251123103128/https://www.tandfonline.com/journals/rjec20) |
+| **Author Guidelines** | https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions, read in full in a real browser on 2026-11-24 (it returned HTTP 403 to curl on 2026-11-23; the page prints no date). Aims, metrics block and board: https://www.tandfonline.com/journals/rjec20/about-this-journal (read the same day, undated). The Wayback copy of the instructions dated 2022-08-08 (https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20) and the aims copy dated 2022-06-15 (https://web.archive.org/web/20220615120353/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjec20) are older; the 8000-word typical ceiling, 150-word abstract and double blind review are unchanged on the live page. Notes: chrome2/jem-pages.txt in the researcher's scratch folder. Retrieved 2026-11-24 |
 | **Society / Association** | International Network for Economic Method (INEM): the journal home copy dated 2025-11-23 says "Published on behalf of the International Network for Economic Method" (https://web.archive.org/web/20251123103128/https://www.tandfonline.com/journals/rjec20); the 2022 information copy names Taylor & Francis and INEM in its disclaimer (https://web.archive.org/web/20220805195235/https://www.tandfonline.com/action/journalInformation?journalCode=rjec20). Retrieved 2026-11-23 |
-| **Editorial Board Location** | From the board copy dated 2022-06-21 (https://web.archive.org/web/20220621130126/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=rjec20): 35 listed people, counted by first-listed affiliation: United Kingdom 10, United States 6, Italy 4, France 3, Finland 2, Netherlands 2, Sweden 2, Switzerland 2, Hong Kong 2, Denmark 1, South Africa 1. The two Editors on that copy are in Finland and the Netherlands. The current board was not readable (see Reviewer Pool). The scaffold's earlier value "GB" is OpenAlex's publisher-country field |
+| **Editorial Board Location** | Live about-this-journal page (https://www.tandfonline.com/journals/rjec20/about-this-journal, read in a real browser 2026-11-24, no date printed): 39 listed people, counted by first-listed affiliation (country inferred from the institution where the page prints none): United Kingdom 11, United States 6, France 4, Italy 4, Finland 3, Sweden 2, Netherlands 2, Switzerland 2, Hong Kong 2, Denmark 1, South Africa 1, Portugal 1 (11 + 6 + 4 + 4 + 3 + 2 + 2 + 2 + 2 + 1 + 1 + 1 = 39). Of the United Kingdom 11, 9 have the country printed on the page and 2 are inferred from the institution name alone (one is King's College London; the United States 6 are printed); the Finland count likewise includes an inferred entry (University of Helsinki). The four Editors are in Finland 1, France 2 and the Netherlands 1. Older, kept as older: the board copy dated 2022-06-21 (https://web.archive.org/web/20220621130126/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=rjec20) listed 35 people (United Kingdom 10, United States 6, Italy 4, France 3, Finland 2, Netherlands 2, Sweden 2, Switzerland 2, Hong Kong 2, Denmark 1, South Africa 1) with two Editors, in Finland and the Netherlands. The scaffold's earlier value "GB" is OpenAlex's publisher-country field |
 | **OpenAlex ID** | https://openalex.org/S52333995 |
 
 ---
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 72 (OpenAlex) | 2026-11-23 |
-| **CiteScore** | Not stated (Scopus not accessed) | |
-| **Acceptance Rate** | Blank. A search-engine summary of the live aims page (https://www.tandfonline.com/journals/rjec20/about-this-journal, HTTP 403 to the research tool) reported 16%; the figure and its period are secondary and unverified and are not used for any judgment in this entry | 2026-11-23 |
+| **CiteScore** | 3.4, labelled "(2025) CiteScore (Scopus)" on the publisher's about-this-journal page (https://www.tandfonline.com/journals/rjec20/about-this-journal, read in a real browser 2026-11-24); Scopus itself was not opened. The same page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded here | 2025 (label on page) |
+| **Acceptance Rate** | 16% acceptance rate on the live publisher metrics block (https://www.tandfonline.com/journals/rjec20/about-this-journal, read in a real browser 2026-11-24); the block prints no period next to its speed and acceptance figures. This confirms the figure a search-engine summary had shown on 2026-11-23 | 2026-11-24 (no period on page) |
 | **Desk Rejection Rate** | Blank. No published figure found; SciRev has one self-reported immediate rejection that took 72 days (https://scirev.org/journal/journal-of-economic-methodology/) | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR not read) | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 1.28 (OpenAlex proxy, not JCR) | 2026-11-23 |
@@ -50,10 +50,10 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Blank for any verified figure. Search-engine summaries of the unreadable live aims page gave about 102 days from submission to first decision and about 128 days to the first post-review decision; unverified secondary figures, not counted. SciRev: decision time for an immediate rejection 72 days, from one self-reported review (https://scirev.org/journal/journal-of-economic-methodology/, retrieved 2026-11-23; the same page also says "No reviews yet", so the sample size is unclear) | Unverified |
-| **Time to first review** | Blank. No separate figure found | |
+| **Time to first decision** | Publisher, live block (https://www.tandfonline.com/journals/rjec20/about-this-journal, read 2026-11-24, no period printed): 102 days average from submission to first decision. SciRev: decision time for an immediate rejection 72 days, from one self-reported review (https://scirev.org/journal/journal-of-economic-methodology/, retrieved 2026-11-23; the same page also says "No reviews yet", so the sample size is unclear) | Publisher average, period not stated |
+| **Time to first review** | Publisher, live block (read 2026-11-24, no period printed): 128 days average from submission to first post-review decision | Post-review decision, not the date reviewers were assigned |
 | **Time to acceptance (total)** | Blank. SciRev shows n/a for total handling time of accepted manuscripts (https://scirev.org/journal/journal-of-economic-methodology/) | |
-| **Time to publication (after acceptance)** | Blank. No source found | |
+| **Time to publication (after acceptance)** | Publisher, live block (https://www.tandfonline.com/journals/rjec20/about-this-journal, read 2026-11-24, no period printed): 15 days average from acceptance to online publication | Publisher average, period not stated |
 
 ### Publication Frequency
 
@@ -71,7 +71,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-blind: after the editor assesses suitability, the paper is double blind reviewed by independent anonymous expert referees (instructions copy dated 2022-08-08, https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20). The 2026 special-issue call also states double-blind review (https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo). Retrieved 2026-11-23 |
+| **Type** | Double anonymous: the live instructions say that once the editor has assessed suitability the paper is "double anonymous peer reviewed by two independent, anonymous expert" referees, and warn that anonymity cannot be guaranteed for a manuscript already on a preprint server (https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions, read 2026-11-24). The 2022-08-08 instructions copy said double blind. The 2026 special-issue call also states double-blind review (https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo). Retrieved 2026-11-24 |
 | **Transferable / Cascade?** | Blank. No source read |
 | **Reviewer reports published?** | Blank. Nothing on any page read says so |
 | **Typical R+R rounds** | Blank. SciRev shows n/a (https://scirev.org/journal/journal-of-economic-methodology/) |
@@ -81,7 +81,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No journal-specific policy found. The only journal instructions readable are the 2022 Wayback copy, which predates the publisher policy and contains none; the publisher-wide Taylor & Francis policy applies, and it tells authors to check a journal's own instructions because some journals allow AI only for language improvement |
+| **Has journal-specific AI policy?** | Partly. The live instructions page (read in a real browser 2026-11-24) asks every submission to include a "Declaration of generative AI use": a statement disclosing whether and how generative AI was used in the research and manuscript preparation (https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions). The 2022-08-08 copy predates this. The publisher-wide Taylor & Francis policy applies, and it tells authors to check a journal's own instructions because some journals allow AI only for language improvement |
 | **Explicit permission gate?** | No gate found. Use is allowed with a disclosure statement |
 | **Leniency (1-5)** | 3 (allowed with mandatory disclosure; same rubric as the Mind entry) |
 | **Summary** | Publisher policy: generative AI tools must not be listed as authors. Any use must be acknowledged in the article with the tool name and version, how it was used and why. Permitted uses include idea generation, copyediting, language improvement, translation, literature classification and coding assistance. Generating text or code without rigorous revision, synthetic data replacing missing data without a robust method, and AI creation or manipulation of research outputs are prohibited or high-risk. Editors and reviewers may not upload unpublished manuscripts into AI tools. Retrieved 2026-11-23 |
@@ -103,21 +103,21 @@
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Hybrid (Taylor & Francis Open Select): the instructions copy of 2022-08-08 offers the option to publish open access via Open Select, and the home copy of 2025-11-23 carries the line "Open Select: choose to publish open access" (links in Identity). OpenAlex open-access status of the 181 records of 2021-2026: closed 90, hybrid 50, green 30, bronze 11 (https://api.openalex.org/works?filter=primary_location.source.issn:1350-178X,publication_year:2021-2026&group_by=open_access.oa_status), retrieved 2026-11-23 |
-| **APC (if OA chosen)** | Blank. The instructions point to the publisher's APC finder, which was not read; the figure is therefore not stated |
+| **APC (if OA chosen)** | Blank. The live instructions refer to the publisher's APC finder without printing an amount (read 2026-11-24), and the finder was not read. The live instructions state there are no submission fees, publication fees or page charges for this journal |
 | **Read & Publish agreements** | Blank. No source read |
 
 ---
 
 ## Format
 
-> Source for the general rules: the instructions for authors, Wayback copy dated 2022-08-08 (https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20); the live page returns HTTP 403, so current wording may differ. Retrieved 2026-11-23.
+> Source for the general rules: the live instructions for authors (https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions), read in a real browser on 2026-11-24; the page prints no date. Retrieved 2026-11-24. The Wayback copy dated 2022-08-08 is older; rows that rest only on it say so.
 
 | Aspect | Detail |
 |--------|--------|
 | **Article types accepted** | The instructions copy lists one type: original articles; manuscripts in English only. The aims text also describes symposia and mini-symposia, and a regular book review section with book review symposia (aims copy dated 2022-06-15, https://web.archive.org/web/20220615120353/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjec20). OpenAlex type counts for 2021-2026: 142 articles, 33 book reviews, 4 editorials, 1 erratum, 1 letter |
-| **Word limit** | A typical paper should be no more than 8000 words (instructions copy); the 2026 special-issue call gives 8,000 words as the maximum (https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo) |
-| **Word limit negotiability** | Blank. The instructions word it as a typical-paper ceiling; no statement on exceptions found |
-| **Abstract limit** | Unstructured abstract of 150 words; no more than 6 keywords (instructions copy) |
+| **Word limit** | "A typical paper for this journal should be no more than 8000 words"; authors are asked to include a word count (live instructions, read 2026-11-24; the list of what the count includes, which other T&F pages show, was not in the text read, so whether references count is not established). The 2026 special-issue call gives 8,000 words as the maximum (https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo) |
+| **Word limit negotiability** | Blank. The live instructions word it as a typical-paper ceiling ("a typical paper"); no statement on exceptions found |
+| **Abstract limit** | Unstructured abstract of 150 words (live instructions, read 2026-11-24). The 2022-08-08 copy also gave no more than 6 keywords; that count was not located in the live passages read |
 | **Reference limit** | No separate cap found. Whether references count inside 8000 words is not stated. References follow a publisher reference guide that the copy links without naming a style in the text read |
 | **Supplementary material** | Supplemental material (video, dataset, files) is published online via Figshare (instructions copy) |
 | **Figure/Table limits** | No count limit found. Figure resolution (1200 dpi line art, 600 dpi grayscale, 300 dpi colour), editable tables and editable equations are required (instructions copy) |
@@ -203,8 +203,8 @@
 | Aspect | Detail |
 |--------|--------|
 | **First-person voice acceptance (0-5)** | Not scored (no first-person rule found). In 149 abstract-bearing records of 2021-2026: `I_my_me` 44 (29.5%), of which "I argue"-type phrasing (`I_argue_verbs`) 22 (14.8%); `we_our` 56 (37.6%). Recent examples: https://doi.org/10.1080/1350178x.2026.2686636, https://doi.org/10.1080/1350178x.2026.2672071 (first person), https://doi.org/10.1080/1350178x.2026.2756626 ("we"). Retrieved 2026-11-23 |
-| **Expected density** | A typical paper is no more than 8000 words (instructions copy dated 2022-08-08, https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20); OpenAlex counts 47, 26, 25, 21, 34 records for 2021 to 2025 (all types) |
-| **Abstract and keywords** | Unstructured abstract of 150 words, optional graphical abstract, no more than 6 keywords (same instructions copy) |
+| **Expected density** | A typical paper is no more than 8000 words (live instructions, read 2026-11-24, https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions); OpenAlex counts 47, 26, 25, 21, 34 records for 2021 to 2025 (all types) |
+| **Abstract and keywords** | Unstructured abstract of 150 words, optional graphical abstract (live instructions, read 2026-11-24); the 2022-08-08 copy also gave no more than 6 keywords, not located in the live passages read |
 | **Writing style notes** | Any spelling style if consistent; single quotation marks, long quotations indented without marks; English only; authors told to follow the quick style guidelines rather than copy published articles. The same page lists a generic empirical section order (introduction, materials and methods, results, discussion) that is publisher template text; the abstract-based counts show `empirical` in only 24 of 149 records, so most articles probably do not follow that order, but article structure was not sampled |
 | **Authorship pattern** | OpenAlex author lists for the 181 records: 127 single-author (70.2%), 33 two authors, 16 three, 5 four or more (book reviews and other items included; https://api.openalex.org/works?filter=primary_location.source.issn:1350-178X,publication_year:2021-2026). Retrieved 2026-11-23 |
 
@@ -212,16 +212,16 @@
 
 Reviewer behaviour itself is not observable from public pages; what follows is what the pages show.
 
-> The board copy is Wayback-archived at https://web.archive.org/web/20220621130126/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=rjec20 (dated 2022-06-21; the live page returns 403). It lists 2 Editors, 4 Associate Editors, 1 Book Review Editor, 26 Editorial Board members and 2 Honorary Members = 35 people. A 2026 search summary names editors Aydinonat, Vromen, Hédoin and Lecouteux (secondary, unverified); the 2022 copy does not list the last of these, so the current roster differs from the copy.
+> The board is the live about-this-journal page (https://www.tandfonline.com/journals/rjec20/about-this-journal, read in a real browser 2026-11-24; no date printed). It lists 4 Editors, 5 Associate Editors, 2 Book Review Editors, 26 Editorial Board members and 2 Honorary Members = 39 people (4 + 5 + 2 + 26 + 2 = 39). Older, kept as older: the board copy dated 2022-06-21 (https://web.archive.org/web/20220621130126/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=rjec20) listed 2 Editors, 4 Associate Editors, 1 Book Review Editor, 26 Editorial Board members and 2 Honorary Members = 35 people.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
 | **Dominant tradition** | Board members' printed affiliations are university departments plus one national research centre; the copy does not state members' disciplines, so no discipline split is given | Board copy above |
-| **Board countries (first-listed affiliation)** | Editors 2: Finland 1, Netherlands 1. Associate Editors 4: France 2, Switzerland 1, Italy 1. Book Review Editor 1: South Africa. Editorial Board 26: United Kingdom 10, United States 6, Italy 3, Sweden 2, Denmark 1, Finland 1, France 1, Netherlands 1, Switzerland 1. Honorary Members 2: Hong Kong 2. Totals: United Kingdom 10, United States 6, Italy 4, France 3, Finland 2, Netherlands 2, Sweden 2, Switzerland 2, Hong Kong 2, Denmark 1, South Africa 1 = 35. Two board entries also list a second affiliation in another country (one United Kingdom and United States, one United States and Ireland); counted once each by the first-listed one | Counted from the board copy text, 2026-11-23 |
-| **Review model** | Double-blind; independent anonymous expert referees after editor screening; the 2026 call also says double-blind | Instructions copy dated 2022-08-08, https://web.archive.org/web/20220808212457/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rjec20 ; https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo |
+| **Board countries (first-listed affiliation)** | Live page: Editors 4: Finland 1, France 2, Netherlands 1. Associate Editors 5: United Kingdom 1 (King's College London, no country printed), Switzerland 1, France 1, Italy 1, Finland 1 (University of Helsinki, no country printed). Book Review Editors 2: South Africa 1, Portugal 1. Editorial Board 26: United Kingdom 10, United States 6, Italy 3, Sweden 2, Denmark 1, Finland 1 (University of Helsinki, no country printed), France 1, Netherlands 1, Switzerland 1. Honorary Members 2: Hong Kong 2. Totals: United Kingdom 11 (9 printed + 2 inferred from affiliation names), United States 6 (printed), France 4, Italy 4, Finland 3, Sweden 2, Netherlands 2, Switzerland 2, Hong Kong 2, Denmark 1, South Africa 1, Portugal 1 = 39. Two board entries list a second affiliation in another country (one United Kingdom and United States, one United States and Ireland) and are counted under the first-listed one. Older, kept as older: the 2022-06-21 copy gave 35 people with United Kingdom 10, United States 6, Italy 4, France 3 | Live about page, counted 2026-11-24 |
+| **Review model** | Double anonymous, two independent anonymous expert referees after editor screening; the 2026 call also says double-blind | Live instructions (read 2026-11-24, https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions); https://groups.google.com/g/esa-announce/c/N5kWn8H_KFo |
 | **Reviewer competence variance** | Blank. No first-hand report beyond one SciRev immediate rejection with no quality ratings (all n/a) | https://scirev.org/journal/journal-of-economic-methodology/ |
 | **Quantitative mindset bias on qualitative work?** | Blank. No reviewer source exists; qualitative terms appear in 3 of 149 abstract-bearing records, which cannot show how reviewers treat such work | OpenAlex count, see Methodological Preferences |
-| **Discourse community signals (author side)** | Authors' countries on the 181 OpenAlex records: United States 55, United Kingdom 23, France 22, Netherlands 20, Germany 14. The 2022 board copy has 10 of 35 in the United Kingdom and 6 in the United States | OpenAlex group-by on authorships.countries, retrieved 2026-11-23 |
+| **Discourse community signals (author side)** | Authors' countries on the 181 OpenAlex records: United States 55, United Kingdom 23, France 22, Netherlands 20, Germany 14. The live board page (2026-11-24) has 11 of 39 in the United Kingdom and 6 in the United States (2022 copy: 10 of 35 and 6) | OpenAlex group-by on authorships.countries, retrieved 2026-11-23; live board page |
 
 ### Sensitive Topics
 
@@ -256,7 +256,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts (types, countries, topics, open-access status, authorship) 4; OpenAlex abstract-based keyword counts 3 (149 of 181 records have an abstract, 82.3%, so counts are lower bounds; abstracts rebuilt from an inverted index); publisher-wide policies read live 4; journal-specific policies and guidelines 3 (Wayback copies of the instructions, aims, information and board pages, four months to four years before the retrieval date; every live journal page returns HTTP 403); board and roster 2 (2022 copy, current roster unreadable); experiential layer 1 (one SciRev immediate rejection).
+**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts (types, countries, topics, open-access status, authorship) 4; OpenAlex abstract-based keyword counts 3 (149 of 181 records have an abstract, 82.3%, so counts are lower bounds; abstracts rebuilt from an inverted index); publisher-wide policies read live 4; journal-specific policies and guidelines 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2022 Wayback copies are kept as labelled older figures); board and roster 4 (live board block read 2026-11-24, no date printed); experiential layer 1 (one SciRev immediate rejection).
 
 **Regex register (exact patterns, plain pipes).** Python `re`; text = title + space + abstract; flag `re.IGNORECASE` unless "case-sensitive" is stated; denominator 149 abstract-bearing OpenAlex records of 2021-2026 (181 in total).
 
@@ -312,10 +312,9 @@ autoethnography      \bautoethnograph\w*                                        
 - https://scirev.org/journal/journal-of-economic-methodology/
 
 **Unreadable pages (never filled from memory):**
-- unreadable live: https://www.tandfonline.com/journals/rjec20 , /journals/rjec20/about-this-journal , /journals/rjec20/editorial-board , /journals/rjec20/instructions-for-authors , /action/authorSubmission?journalCode=rjec20&page=instructions , /toc/rjec20/current: all HTTP 403 with a browser user agent and a cookie jar. The Wayback copies above were readable.
-- No Wayback copy exists (availability API returned none) for /journals/rjec20/about-this-journal , /journals/rjec20/instructions-for-authors and /journals/rjec20/editorial-board, so the live "journal metrics" content of the about page (acceptance rate, days to decision) is in no copy read; the figures a search summary reported for it (16%, 102 and 128 days) stay unverified.
+- None among the journal's own main pages as of 2026-11-24: the instructions page (https://www.tandfonline.com/action/authorSubmission?journalCode=rjec20&page=instructions) and the about page with metrics and board (https://www.tandfonline.com/journals/rjec20/about-this-journal), both HTTP 403 to curl on 2026-11-23, were read in a real browser; nothing was clicked. The live metrics block confirms the figures a search summary had reported on 2026-11-23 (16%, 102 and 128 days). The about page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded. Notes: chrome2/jem-pages.txt in the researcher's scratch folder.
 - The publisher's APC finder and open access cost finder were not read, so the APC amount and the journal-specific embargo are blank.
-- Current editorial board: not readable; the 2022 copy is the only roster read.
+- Current editorial board: read from the live about page on 2026-11-24 (39 people); the 2022 copy is kept as older.
 
 **Fields deliberately left blank, and why:**
 - Abbreviation, acceptance rate, desk rejection rate, time to first review, acceptance and publication times, cascade policy, reviewer reports published, R+R rounds, APC, Read & Publish, ethics-approval rule, word-limit negotiability, whether references count: no readable source.
@@ -340,15 +339,15 @@ autoethnography      \bautoethnograph\w*                                        
 ### Hard Blockers
 
 - **Scope**: the journal covers economic methodology and philosophy of economics, and publishes work from other areas of economic inquiry only with a significant epistemological or methodological component (Framing Requirements; archived home and aims text). The aims distinguish "methods" (techniques particular to one field of economics) from methodology and say the pages are reserved for authors and readers with broader epistemic interests, so a paper that only applies a technique within one field, without that component, is outside the stated scope.
-- **Article type**: the instructions copy lists original articles as the type accepted (Format; 2022-08-08 copy). Book reviews and symposia appear in the aims text, but how to propose them is not stated in any copy read.
-- **Length**: a typical paper should not exceed 8000 words; the 2026 call sets 8,000 as the maximum (Format; Special issues). Whether references count is not stated.
+- **Article type**: the 2022-08-08 instructions copy lists original articles as the type accepted (Format; not re-checked on the live page). Book reviews and symposia appear in the aims text, but how to propose them is not stated in any copy read.
+- **Length**: a typical paper should not exceed 8000 words (live instructions read 2026-11-24); the 2026 call sets 8,000 as the maximum (Format; Special issues). Whether references count is not stated.
 - **Language and anonymity**: English only, and review is double-blind; a manuscript already on a preprint server loses any anonymity guarantee (Format, Peer Review, Preprint Policy).
 - **AI use**: undisclosed generative AI use breaches the publisher's disclosure rule (AI Policy).
-- No other hard blocker is supported by a fact I could read; the instructions are a 2022 copy and ethics-approval rules are unknown (Practical Concerns blank).
+- No other hard blocker is supported by a fact I could read; ethics-approval rules are not stated in the passages of the live instructions read (Practical Concerns blank).
 
 ### Soft Tax
 
-- **Time**: no verified turnaround figure exists. A search summary of the unreadable live page gave about 102 days to first decision, which stays unverified; SciRev's single entry is a 72-day immediate rejection (Review Cycle Time).
+- **Time**: the publisher's live block gives an average of 102 days to first decision and 128 days to the first post-review decision (no period printed); SciRev's single entry is a 72-day immediate rejection (Review Cycle Time).
 - **Open access cost**: green deposit of the accepted manuscript for a non-open-access article is subject to a typical 18-month embargo at the publisher level (Preprint Policy; not confirmed for this journal); gold open access via Open Select carries an APC whose amount was not found (Open Access).
 - **Anonymisation**: double-blind review, with a preprint removing any anonymity guarantee (Peer Review, Practical Concerns).
 - **Print colour**: colour figures in print are charged (Practical Concerns).
@@ -385,3 +384,5 @@ autoethnography      \bautoethnograph\w*                                        
 | 2026-11-23 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 unreadable of 6 sampled pairs; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Live T&F pages read in a real browser: instructions (8000-word typical ceiling, 150-word abstract, double anonymous review by two referees, generative-AI declaration, no submission or page charges) and about page; the 16%, 102-day and 128-day figures that had only a search summary are now read on the page (CiteScore 3.4 as labelled; 15 days to publication); board recounted to 39 (4 + 5 + 2 + 26 + 2, was 35); 'unreadable' statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-23 | Corrections after Chrome verification (board countries: United Kingdom 11 stated as 9 printed + 2 inferred from affiliation names; United States 6 printed) | @Zaious |

@@ -4,7 +4,7 @@
 
 # Social Epistemology
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported. No first-hand human reports; not human-verified.
@@ -22,9 +22,9 @@
 | **ISSN (Online)** | 1464-5297 |
 | **Founded** | 1987, founding editor Steve Fuller. Source: https://en.wikipedia.org/wiki/Social_Epistemology_(journal), retrieved 2026-11-23 (secondary source). Crossref reports 1577 DOIs in total for the journal: https://api.crossref.org/journals/0269-1728 |
 | **URL** | https://www.tandfonline.com/toc/tsep20/current |
-| **Author Guidelines** | The live instructions page returns HTTP 403 to the research tool. A Wayback Machine copy dated 2022-08-10 was readable and is the source of the Format, Peer Review, Open Access and Practical Concerns facts below: https://web.archive.org/web/20220810175355/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=tsep20 (current wording may differ). Aims copy dated 2022-06-15: https://web.archive.org/web/20220615115913/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tsep20 |
+| **Author Guidelines** | https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions, read in full in a real browser on 2026-11-24 (it returned HTTP 403 to curl on 2026-11-23; the page prints no date). Aims, peer-review line, metrics block and board: https://www.tandfonline.com/journals/tsep20/about-this-journal (read the same day; the board block ends "Updated 22-09-2026"). The Wayback copies of 2022-08-10 (instructions) and 2022-06-15 (aims) are older; the 6000 to 8000-word range, 200-word abstract and double-anonymous review are unchanged on the live page. Excerpts: chrome2/socepi-pages.txt in the researcher's scratch folder |
 | **Society / Association** | No owning society found. The aims text (copy 2022-06-15) says the journal will operate in collaboration with the Society for Social Studies of Science (4S) and the European Association for the Study of Science and Technology (EASST): https://web.archive.org/web/20220615115913/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tsep20 |
-| **Editorial Board Location** | OpenAlex source country code: GB (https://openalex.org/S113020877). The archived board page (copy 2023-05-23) lists an executive editor at Villanova University (USA) and an associate editor at the National University of Singapore; per Wikipedia the latter has been editor-in-chief since 2024: https://web.archive.org/web/20230523101129/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=tsep20 |
+| **Editorial Board Location** | OpenAlex source country code: GB (https://openalex.org/S113020877). The live about-this-journal page (https://www.tandfonline.com/journals/tsep20/about-this-journal, read 2026-11-24; the board block says "Updated 22-09-2026") lists the Executive Editor as Eric Kerr, National University of Singapore, Singapore, and 50 people in all (see Reviewer Pool Characteristics). Older, kept as older: the archived board page (copy 2023-05-23, https://web.archive.org/web/20230523101129/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=tsep20) listed an executive editor at Villanova University (USA) and an associate editor at the National University of Singapore; per Wikipedia the latter has been editor-in-chief since 2024 |
 | **OpenAlex ID** | https://openalex.org/S113020877 |
 
 ---
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 71 (OpenAlex source record, https://api.openalex.org/sources/S113020877) | 2026-11-23 |
-| **CiteScore** | Not stated (Scopus not accessed) | |
-| **Acceptance Rate** | 41%, as printed on the publisher's journal-metrics page, Wayback copy dated 2022-06-18 (https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20). The page defines its speed and acceptance figures as relating to the last full calendar year and updated each February, so the figure most likely describes 2021; the copy is more than four years old | 2022-06-18 (archived) |
+| **CiteScore** | 4.5, labelled "(2025) CiteScore (Scopus)" on the publisher's about-this-journal page (https://www.tandfonline.com/journals/tsep20/about-this-journal, read in a real browser 2026-11-24); Scopus itself was not opened. The same page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded here | 2025 (label on page) |
+| **Acceptance Rate** | Live publisher metrics block (https://www.tandfonline.com/journals/tsep20/about-this-journal, read 2026-11-24): 28% acceptance rate; the block prints no period next to its speed and acceptance figures. Older, kept as older: 41%, as printed on the publisher's journal-metrics page, Wayback copy dated 2022-06-18 (https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20), which defined its speed and acceptance figures as relating to the last full calendar year (most likely 2021) | 2026-11-24 (no period on live block); 2022-06-18 (archived) |
 | **Desk Rejection Rate** | Blank. No source states it: the publisher metrics copy gives no desk-rejection figure, and https://scirev.org/journal/social-epistemology/ lists "Decision time immediate rejection: n/a" | 2026-11-23 |
 | **Quartile (by field)** | Not stated (SJR not read) | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 3.33 (OpenAlex proxy, not JCR) | 2026-11-23 |
@@ -48,14 +48,14 @@
 
 ### Review Cycle Time
 
-> Two kinds of figures sit side by side below because they differ a lot: the publisher's own median figures (copy of 2022-06-18) and small self-reported author samples.
+> Two kinds of figures sit side by side below because they differ a lot: the publisher's own average figures (live block read 2026-11-24, with the older copy of 2022-06-18 kept as older) and small self-reported author samples.
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Publisher: 52 days median from submission to first decision (https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20). Author reports: 7 reports to the APA Journal Survey (dated 2022-04-16 to 2025-12-12) average 4.5 months to a response, median 3.5, range 2.0 to 9.5 months (https://apasurvey.philx.org/journals/1016 and the CSV https://apasurvey.philx.org/journals/export_csv); the SciRev page (2 reviews) gives 4.8 months for the first review round (https://scirev.org/journal/social-epistemology/) | Publisher median for one calendar year (likely 2021); author figures are self-reported and anonymous, overlap between the two author sources cannot be checked |
-| **Time to first review** | Publisher: 66 days median from submission to first post-review decision (same publisher page, copy 2022-06-18) | Post-review decision, not the date reviewers were assigned |
+| **Time to first decision** | Publisher, live block (https://www.tandfonline.com/journals/tsep20/about-this-journal, read 2026-11-24, no period printed): 51 days average from submission to first decision. Older, kept as older: 52 days median (copy 2022-06-18, https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20). Author reports: 7 reports to the APA Journal Survey (dated 2022-04-16 to 2025-12-12) average 4.5 months to a response, median 3.5, range 2.0 to 9.5 months (https://apasurvey.philx.org/journals/1016 and the CSV https://apasurvey.philx.org/journals/export_csv); the SciRev page (2 reviews) gives 4.8 months for the first review round (https://scirev.org/journal/social-epistemology/) | Publisher median for one calendar year (likely 2021); author figures are self-reported and anonymous, overlap between the two author sources cannot be checked |
+| **Time to first review** | Publisher, live block (read 2026-11-24, no period printed): 114 days average from submission to first post-review decision. Older, kept as older: 66 days median (copy 2022-06-18) | Post-review decision, not the date reviewers were assigned |
 | **Time to acceptance (total)** | SciRev: 7.7 months total handling time for accepted manuscripts, from 2 reviews (https://scirev.org/journal/social-epistemology/); of the 7 APA-survey reports, 3 were revise-and-resubmit verdicts that each ended in acceptance after revision (https://apasurvey.philx.org/surveys/export_csv) | Tiny samples |
-| **Time to publication (after acceptance)** | 30 days on average from acceptance to online publication per the publisher metrics copy of 2022-06-18 (https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20) | Calendar year likely 2021 |
+| **Time to publication (after acceptance)** | Publisher, live block (https://www.tandfonline.com/journals/tsep20/about-this-journal, read 2026-11-24, no period printed): 35 days average from acceptance to online publication. Older, kept as older: 30 days (publisher metrics copy of 2022-06-18, https://web.archive.org/web/20220618072036/https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tsep20) | Calendar year likely 2021 |
 
 ### Publication Frequency
 
@@ -73,7 +73,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double blind: after the editor's suitability check, independent anonymous expert referees review the paper (instructions copy dated 2022-08-10, https://web.archive.org/web/20220810175355/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=tsep20). The aims copy (2022-06-15) adds initial editor screening and anonymised refereeing by at least two referees. The instructions copy warns that a preprint on a server removes any anonymity guarantee. Retrieved 2026-11-23 |
+| **Type** | Double anonymous: the live instructions say that once the editor has assessed suitability the paper is "double anonymous peer reviewed by two independent, anonymous expert" referees, and warn that anonymity cannot be guaranteed for a manuscript shared on a preprint server (https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions, read 2026-11-24). The live about page adds: "All research articles published in this journal have undergone peer review, based on initial editor screening and anonymized refereeing by at least two referees" (https://www.tandfonline.com/journals/tsep20/about-this-journal). The 2022-08-10 instructions copy said double blind; the 2022-06-15 aims copy said the same as the live about page. Retrieved 2026-11-24 |
 | **Transferable / Cascade?** | Blank. No journal-specific source read |
 | **Reviewer reports published?** | Blank. No source read stating that reports are published |
 | **Typical R+R rounds** | SciRev reports an average of 1.5 review rounds and 2.0 review reports per manuscript from 2 reviews (https://scirev.org/journal/social-epistemology/). The 7 APA-survey reports show 3 revise-and-resubmit, 4 rejection and 0 direct acceptance as first verdict, and 3 acceptances after revision (https://apasurvey.philx.org/surveys/export_csv) |
@@ -83,7 +83,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No journal-specific policy was found in the archived instructions (copy 2022-08-10, which predates generative-AI rules); the live page is unreadable. The publisher-wide Taylor & Francis policy applies |
+| **Has journal-specific AI policy?** | Partly. The live instructions page (read in a real browser 2026-11-24) asks every submission to include a "Declaration of generative AI use": a statement disclosing whether and how generative AI was used in the research and manuscript preparation (https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions). The 2022-08-10 copy predates this. The publisher-wide Taylor & Francis policy applies |
 | **Explicit permission gate?** | No gate found. Use is allowed with a mandatory disclosure statement |
 | **Leniency (1-5)** | 3 (allowed with mandatory disclosure; same rubric as the Mind entry) |
 | **Summary** | Publisher policy, retrieved 2026-11-23: AI tools cannot be credited as authors; any AI use must be acknowledged, naming the tool and version, how it was used and why; AI may not be used to create or alter research images or results; unrevised AI output may trigger an editorial investigation. Editors and reviewers must not upload unpublished manuscripts into AI tools, and reviewers must not use AI to write review reports |
@@ -105,21 +105,21 @@
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Hybrid (Open Select option). Evidence: the home page copy dated 2025-12-03 carries the label "Open Select: choose to publish open access" (https://web.archive.org/web/20251203150824/https://www.tandfonline.com/journals/tsep20). OpenAlex open-access status of the 329 articles dated 2021-11-23 to 2026-11-23: hybrid 142, closed 141, green 43, bronze 3 (https://api.openalex.org/works?filter=primary_location.source.id:S113020877), retrieved 2026-11-23 |
-| **APC (if OA chosen)** | Blank. The instructions copy (2022-08-10) refers to the publisher's APC finder and gives no amount; the finder was not read. The same copy states there are no submission fees, publication fees or page charges, and that colour figures in print cost GBP 300 for a first figure (https://web.archive.org/web/20220810175355/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=tsep20) |
+| **APC (if OA chosen)** | Blank. The live about page calls the journal "a hybrid open access journal" in the Open Select programme (https://www.tandfonline.com/journals/tsep20/about-this-journal) and the live instructions refer to the publisher's APC finder without printing an amount (read 2026-11-24); the finder was not read. The live instructions state there are no submission fees, publication fees or page charges for this journal (https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions); the 2022-08-10 copy gave colour figures in print as GBP 300 for a first figure (the live page's colour-charge line was cut off in the passage read) |
 | **Read & Publish agreements** | Blank. No list read |
 
 ---
 
 ## Format
 
-> Source for every row unless stated: the journal's instructions for authors, Wayback copy dated 2022-08-10 (https://web.archive.org/web/20220810175355/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=tsep20). The live page returns HTTP 403, so current wording may differ. Retrieved 2026-11-23.
+> Source for every row unless stated: the journal's live instructions for authors (https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions), read in a real browser on 2026-11-24; the page prints no date. Retrieved 2026-11-24. The Wayback copy of 2022-08-10 is older; rows that rest only on it say so.
 
 | Aspect | Detail |
 |--------|--------|
 | **Article types accepted** | The instructions list "original articles" and English-language manuscripts only. The aims copy (2022-06-15) describes "exchanges" that are collective products (critical syntheses, open peer commentaries, interviews, applications, provocations, reviews, responses). OpenAlex types 2021-11-23 to 2026-11-23: 329 articles, 5 editorials, 2 errata, 1 review (https://api.openalex.org/works?filter=primary_location.source.id:S113020877) |
-| **Word limit** | A typical paper should be between 6000 and 8000 words, inclusive of tables, references, figure or table captions and endnotes. Crossref page ranges give a median article length of 14 pages (25th to 75th percentile 12 to 17 pages) across 336 of 337 records, 2021-11-23 to 2026-11-23 (https://api.crossref.org/works?filter=issn:0269-1728) |
-| **Word limit negotiability** | Blank. The instructions phrase 6000-8000 words as typical; no statement on exceptions |
-| **Abstract limit** | Unstructured abstract of 200 words; 3 to 4 keywords |
+| **Word limit** | "A typical paper for this journal should be between 6000 and 8000 words", inclusive of tables, references, figure or table captions and endnotes; authors are asked to include a word count (live instructions, read 2026-11-24). Crossref page ranges give a median article length of 14 pages (25th to 75th percentile 12 to 17 pages) across 336 of 337 records, 2021-11-23 to 2026-11-23 (https://api.crossref.org/works?filter=issn:0269-1728) |
+| **Word limit negotiability** | Blank. The live instructions phrase 6000-8000 words as typical ("a typical paper"); no statement on exceptions |
+| **Abstract limit** | Unstructured abstract of 200 words (live instructions, read 2026-11-24). The 3 to 4 keywords of the 2022-08-10 copy were not found in the passages of the live page read; the live structure line only lists keywords after the abstract |
 | **Reference limit** | No separate cap; references count inside the 6000-8000 words |
 | **Supplementary material** | Supplemental material (video, dataset, files) is published via Figshare |
 | **Figure/Table limits** | No count limit stated. Figures at 1200 dpi line art, 600 dpi greyscale, 300 dpi colour; editable tables. Colour in print is charged (GBP 300 per figure for the first four, GBP 50 from the fifth) |
@@ -165,7 +165,7 @@
 | Dimension | Assessment |
 |-----------|------------|
 | **Cross-cultural friendliness** | Author countries on the 329 articles (articles with at least one author in the country, OpenAlex): United States 69, United Kingdom 49, Germany 40, Netherlands 22, Italy 22, Australia 18, Spain 12, China 11, Canada 11, Finland 10, South Africa 10, France 10 (https://api.openalex.org/works?filter=primary_location.source.id:S113020877) |
-| **Editorial-board geography** | Of 39 editorial-board members on the archived board page (copy 2023-05-23, https://web.archive.org/web/20230523101129/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=tsep20): United States 15, United Kingdom 4, Canada 3, Denmark 2, Australia 2, and one each in Chile, Austria, Russia, China, Serbia, New Zealand, South Africa, Spain, France, the Netherlands, Sweden, Germany and Japan (15+4+3+2+2+13 = 39). Seven further officer entries (executive, associate, digital, book-review, founding and former editors) are listed in the United States 3, Singapore 1, Australia 1, United Kingdom 1, Canada 1 |
+| **Editorial-board geography** | Live about-this-journal page, read 2026-11-24 (board block "Updated 22-09-2026"): 50 people, namely 1 Executive Editor, 5 Associate Editors, 3 Former Executive Editors, 1 Founding Editor, 1 Founding and Executive Editor of the Social Epistemology Review and Reply Collective, 1 Book Review Editor, 1 Managing Editorial Assistant and 37 Advisory Board members (1 + 5 + 3 + 1 + 1 + 1 + 1 + 37 = 50). By the country named last in each listing: United States 15, Australia 4, Germany 4, the Netherlands 4, China 3, Singapore 2, Canada 2, United Kingdom 2, and one each in Spain, Israel, Chile, Denmark, Norway, Russia, Taiwan, Italy, New Zealand, South Africa, France, Finland, Sweden and Japan (15 + 4 + 4 + 4 + 3 + 2 + 2 + 2 + 14 = 50). Older, kept as older: the archived board page (copy 2023-05-23) had 39 board members (United States 15, United Kingdom 4, Canada 3, Denmark 2, Australia 2, one each in 13 other countries) plus 7 officer entries |
 | **Non-Western epistemology openness** | "decolonial, Indigenous, postcolonial or colonial" appears in 16 of 330 abstracts (4.8%); the 2023 article "'Islamic Epistemology' in a Modern Context: Anatomy of an Evolving Debate" has 81 OpenAlex citations (https://doi.org/10.1080/02691728.2023.2227945). The board copy lists members in China, Japan, South Africa, Russia and Chile (see above) |
 | **Diversity topic receptiveness** | "gender, feminis- or women" in 24 of 330 abstracts (7.3%); "race, racial, racism or whiteness" 8 (2.4%); "queer, trans or LGBT" 6 (1.8%); "epistemic injustice" terms 55 (16.7%). OpenAlex primary topic "Feminist Epistemology and Gender Studies" is assigned to 68 of 337 works. No editorial statement on these topics was found |
 | **Dominant theoretical tradition** | Analytic social epistemology and epistemic-injustice work are visible: "epistemic injustice or testimonial or hermeneutical injustice" 55 of 330 abstracts (16.7%), "Fricker" 14 (4.2%), "social epistemology" 21 (6.4%), "virtue epistemology or intellectual virtue" 10 (3.0%), "feminist" 6 (1.8%), "STS or sociology of knowledge" 7 (2.1%). Named thinkers are rare: Foucault 1, Latour 1, Wittgenstein 1, Goldman 2, Fuller 2, Kuhn 0, Habermas 0, Bourdieu 0 |
@@ -208,12 +208,12 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | Archived board page lists 7 officer entries and 39 editorial-board members (46 entries). Disciplines are not listed on the page, so no discipline split is given. Topic mix of published work: 110 of 337 works have OpenAlex primary topic "Epistemology, Ethics, and Metaphysics" and 68 "Feminist Epistemology and Gender Studies" | https://web.archive.org/web/20230523101129/https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=tsep20 ; OpenAlex works API, retrieved 2026-11-23; board composition may have changed since |
-| **Reviewer list size** | The page names no separate reviewer list; only the 46 editor and board entries | Archived board page above, counted 2026-11-23 |
-| **Review model** | Double blind, anonymous expert referees after editor screening; the aims copy says at least two referees | Instructions copy 2022-08-10 and aims copy 2022-06-15 (URLs in Peer Review) |
+| **Dominant tradition** | Live board block lists 50 people (see Editorial-board geography). Disciplines are not listed on the page, so no discipline split is given. Topic mix of published work: 110 of 337 works have OpenAlex primary topic "Epistemology, Ethics, and Metaphysics" and 68 "Feminist Epistemology and Gender Studies" | https://www.tandfonline.com/journals/tsep20/about-this-journal (live board block, counted 2026-11-24); OpenAlex works API, retrieved 2026-11-23; board composition may change |
+| **Reviewer list size** | The page names no separate reviewer list; only the 50 editor, officer and advisory-board entries (1 + 5 + 3 + 1 + 1 + 1 + 1 + 37 = 50) | Live board block, counted 2026-11-24 |
+| **Review model** | Double anonymous, two independent anonymous expert referees after editor screening; the about page says anonymized refereeing by at least two referees | Live instructions and about page (URLs in Peer Review), read 2026-11-24 |
 | **Reviewer competence variance** | Small author samples only. SciRev (2 reviews) averages 2.5 of 5 for review-report quality and 3.0 of 5 for difficulty of comments; the single published narrative criticises referee quality (n=1, anecdotal). The APA Journal Survey (7 reports, 2022-2025) gives an average comment-quality rating of 3.4 and editor-experience rating of 4.5 on its own 1-5 scale and 1.6 reviewers per paper on average | https://scirev.org/journal/social-epistemology/ ; https://apasurvey.philx.org/journals/export_csv (row "Social Epistemology") |
 | **Quantitative mindset bias on qualitative work?** | Blank. No source states reviewer attitudes; the keyword counts above show qualitative and quantitative work are both rare, which does not show how reviewers treat them | Methodological Preferences counts |
-| **Discourse community signals (author side and editorial board)** | Board: 15 of 39 members in the United States, 4 in the United Kingdom, 3 in Canada. Authors: 69 of 329 articles have a US-based author, 49 a UK-based author, 40 a German-based author (OpenAlex) | Archived board page and OpenAlex works API, retrieved 2026-11-23 |
+| **Discourse community signals (author side and editorial board)** | Board (live, 2026-11-24): 15 of 50 people in the United States, 4 each in Australia, Germany and the Netherlands, 3 in China. Authors: 69 of 329 articles have a US-based author, 49 a UK-based author, 40 a German-based author (OpenAlex) | Live board block and OpenAlex works API, retrieved 2026-11-23/24 |
 
 ### Sensitive Topics
 
@@ -247,7 +247,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts (methods, topics, countries, types) 4 (330 of 337 records have abstracts, regexes are word-bounded and listed below); publisher-wide policies 4; journal-specific policies and guidelines 3 (Wayback copies of the journal's own pages dated 2022-06-15 to 2023-05-23, so up to four years old; live pages unreadable); experiential layer 2 (APA Journal Survey n=7 reports, SciRev n=2 reviews, self-reported and anonymous, possibly overlapping).
+**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts (methods, topics, countries, types) 4 (330 of 337 records have abstracts, regexes are word-bounded and listed below); publisher-wide policies 4; journal-specific policies and guidelines 4 (live instructions and about pages read in a real browser 2026-11-24; undated; the board block says Updated 22-09-2026; the 2022-2023 Wayback copies are kept as labelled older figures); experiential layer 2 (APA Journal Survey n=7 reports, SciRev n=2 reviews, self-reported and anonymous, possibly overlapping).
 
 **Method note:** OpenAlex works were fetched with page-based paging (no key, no email, one request per 2 seconds; no HTTP 429 occurred). Counts are computed locally over title plus reconstructed abstract with the regexes below (case-insensitive unless a name is marked case-sensitive); word-boundary matching avoids substring inflation. Crossref lists the same 337 records but none carries an abstract, so Crossref was used only for the record count and page ranges. Counts are lower bounds for any topic expressed without the listed words. The research pass's own scoring convention is stated in Methodological Preferences.
 
@@ -271,9 +271,8 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://callforpapers.taylorandfrancis.com/?s=social+epistemology
 
 **Unreadable pages (never filled from memory):**
-- unreadable live: https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions and https://www.tandfonline.com/journals/tsep20 (HTTP 403 with and without a cookie jar); readable via Wayback copies listed above
-- unreadable: the live aims page https://www.tandfonline.com/journals/tsep20/about-this-journal (no Wayback copy under that address; the older aims copy of 2022-06-15 was read instead). A search-engine summary quoted an impact-factor figure from this page; it is recorded here only as a pointer and not used
-- unreadable: the publisher's APC finder (amount not obtained)
+- None among the journal's own pages as of 2026-11-24: the instructions page (https://www.tandfonline.com/action/authorSubmission?journalCode=tsep20&page=instructions) and the about page (https://www.tandfonline.com/journals/tsep20/about-this-journal), both 403 to curl on 2026-11-23, were read in a real browser. Nothing was clicked. The about page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded. Excerpts: chrome2/socepi-pages.txt in the researcher's scratch folder.
+- not read: the publisher's APC finder (amount not obtained)
 - LetPub: a search request returned only the generic site page, so no journal record was read
 
 **Fields deliberately left blank, and why:**
@@ -298,15 +297,15 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### Hard Blockers
 
-- **Language**: the instructions copy states that only English-language manuscripts are published (Format; archived instructions, 2022-08-10).
-- **Length**: a typical paper is 6000 to 8000 words including references, endnotes and captions (Format). Whether exceptions are granted is not stated.
+- **Language**: the 2022-08-10 instructions copy states that only English-language manuscripts are published (Format); this sentence was not located in the live page text read on 2026-11-24.
+- **Length**: a typical paper is 6000 to 8000 words including references, endnotes and captions (Format, live instructions read 2026-11-24). Whether exceptions are granted is not stated.
 - **AI use**: undisclosed generative-AI use or AI-altered research images breach the publisher policy (AI Policy, https://taylorandfrancis.com/our-policies/ai-policy/).
-- **Anonymity**: review is double blind and a preprint removes any anonymity guarantee (Peer Review; Practical Concerns), so a paper already on a public server may not stay anonymous in review.
-- No other hard blocker is supported by a fact I could read; ethics-approval rules are unknown (Practical Concerns), and the instructions are a 2022 copy.
+- **Anonymity**: review is double anonymous and a preprint removes any anonymity guarantee (Peer Review; Practical Concerns), so a paper already on a public server may not stay anonymous in review.
+- No other hard blocker is supported by a fact I could read; ethics-approval rules are not stated in the passages of the live instructions read (Practical Concerns).
 
 ### Soft Tax
 
-- **Time**: the publisher's median to first decision was 52 days (copy of 2022-06-18), whereas 7 author reports to the APA survey average 4.5 months to a response (median 3.5, range 2.0 to 9.5) and SciRev's 2 reviews give 4.8 months for the first round (Review Cycle Time). The gap between the publisher figure and the author samples is large; the samples are small.
+- **Time**: the publisher's live block gives an average of 51 days to first decision and 114 days to the first post-review decision (no period printed; older copy of 2022-06-18: median 52 days), whereas 7 author reports to the APA survey average 4.5 months to a response (median 3.5, range 2.0 to 9.5) and SciRev's 2 reviews give 4.8 months for the first round (Review Cycle Time). The gap between the publisher figure and the author samples is large; the samples are small.
 - **Open access cost**: green deposit of the accepted manuscript is subject to an embargo that the publisher page gives as typically 12 months (STM) and 18 months (social sciences and humanities), with each journal's own embargo on a separate list that was not looked up, so this journal's embargo is unverified (Preprint Policy); gold open access carries an APC whose amount was not obtained (Open Access).
 - **Anonymisation work**: names and affiliations go on the cover page while review is double blind (Peer Review; Format), so the author must keep identifying content out of the manuscript body; the text read gives no further instruction.
 
@@ -342,3 +341,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Correction after independent verification: green-deposit embargo restored to the publisher's hedge (typically 12 months STM, 18 months SSH; per-journal embargo on a separate list, not looked up) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Live T&F pages read in a real browser: instructions (6000-8000-word typical range, 200-word abstract, double anonymous review by two referees, generative-AI declaration, no submission or page charges) and about page (acceptance 28%, first decision 51 days, CiteScore 4.5 as labelled); older archived figures (41%, 52 days) kept as older; board recounted to 50 (1 + 5 + 3 + 1 + 1 + 1 + 1 + 37) from a block dated Updated 22-09-2026; 'unreadable' statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |

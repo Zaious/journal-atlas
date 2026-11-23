@@ -4,7 +4,7 @@
 
 # Asian Philosophy
 
-> **Last verified**: 2026-11-23
+> **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
 > **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 6 of 6 sampled pairs supported; one misattributed survey comment corrected. No first-hand human reports; not human-verified.
@@ -22,9 +22,9 @@
 | **ISSN (Online)** | 1469-2961 |
 | **Founded** | 1991: the earliest Crossref record is volume 1, March 1991, "Logic and Language in the Chuang Tzu" (https://api.crossref.org/journals/0955-2367/works?sort=published&order=asc&rows=1), retrieved 2026-11-23 |
 | **URL** | https://www.tandfonline.com/journals/casp20 |
-| **Author Guidelines** | Live page https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions returns HTTP 403 to the research tool. A Wayback Machine copy of the instructions dated 2022-12-25 was readable and is the source for the Format, Peer Review and Open Access facts below: https://web.archive.org/web/20221225040847/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=casp20 (current wording may differ) |
+| **Author Guidelines** | https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions, read in full in a real browser on 2026-11-24 (it returned HTTP 403 to curl on 2026-11-23; the page prints no date). Aims, peer-review line, metrics block and board: https://www.tandfonline.com/journals/casp20/about-this-journal (read the same day; its board block ends "Updated 28-10-2026"). The Wayback copy of the instructions dated 2022-12-25 (https://web.archive.org/web/20221225040847/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=casp20) is older; the 10,000-word ceiling and double blind review are unchanged on the live page, the abstract limit is now stated as 150 words. Notes: chrome2/asian-pages.txt in the researcher's scratch folder |
 | **Society / Association** | No owning society stated on any page read. The journal page copy of 2025-01-05 mentions only a special subscription rate for members of the British Philosophical Association (https://web.archive.org/web/20250105073207/https://www.tandfonline.com/journals/casp20/about-this-journal) |
-| **Editorial Board Location** | OpenAlex source country code GB (https://openalex.org/S89596126). The 2025-01-05 copy of the journal page lists the editor at the University of Surrey, UK, three associate editors in the United States and a 21-member advisory board (page labelled "Updated 09-01-2024"). The 2022-12-25 instructions name Dr Brian Carr as the person to whom submissions go; the journal published "Obituary: Dr Brian Carr (1946-2022)" on 2023-02-01 (https://doi.org/10.1080/09552367.2023.2174483; title and date read, text not read), so the instructions' contact is probably out of date and the current submission route is not established |
+| **Editorial Board Location** | OpenAlex source country code GB (https://openalex.org/S89596126). The live about-this-journal page (https://www.tandfonline.com/journals/casp20/about-this-journal, read 2026-11-24; board block "Updated 28-10-2026") lists the Editor as Professor Indira Mahalingam Carr, University of Surrey, UK, three associate editors in the United States and a 21-member editorial advisory board (25 entries in all). Older, kept as older: the 2025-01-05 copy (board labelled "Updated 09-01-2024") listed the editor at the University of Surrey, UK, with the same 3 associate editors and 21 advisers; the 2022-12-25 instructions named Dr Brian Carr as the person to whom submissions go, and the journal published "Obituary: Dr Brian Carr (1946-2022)" on 2023-02-01 (https://doi.org/10.1080/09552367.2023.2174483) |
 | **OpenAlex ID** | https://openalex.org/S89596126 |
 
 ---
@@ -38,8 +38,8 @@
 | **Impact Factor** | Not stated (JCR is paywalled) | |
 | **5-Year IF** | Not stated (JCR is paywalled) | |
 | **h-index** | 33 (OpenAlex) | 2026-11-23 |
-| **CiteScore** | 0.9 for 2023 as shown on the journal's own page (Wayback copy 2025-01-05, https://web.archive.org/web/20250105073207/https://www.tandfonline.com/journals/casp20/about-this-journal); not re-checked in Scopus | 2025-01-05 |
-| **Acceptance Rate** | Blank. The metrics block of the journal page copy lists usage and citation figures and an acceptance-to-online time but no acceptance rate; SciRev has no data (https://scirev.org/journal/asian-philosophy/) | |
+| **CiteScore** | 0.9, labelled "(2025) CiteScore (Scopus)" on the publisher's about-this-journal page (https://www.tandfonline.com/journals/casp20/about-this-journal, read in a real browser 2026-11-24); Scopus itself was not opened. The same page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded here. Older, kept as older: 0.9 for 2023 on the Wayback copy of 2025-01-05 | 2025 (label on page); 2025-01-05 |
+| **Acceptance Rate** | Blank. The live metrics block (https://www.tandfonline.com/journals/casp20/about-this-journal, read 2026-11-24) lists usage, citation figures and an acceptance-to-online time but no acceptance rate; SciRev has no data (https://scirev.org/journal/asian-philosophy/) | 2026-11-24 |
 | **Desk Rejection Rate** | Blank. No source found | |
 | **Quartile (by field)** | Not stated (SJR not read) | |
 | **2-yr Mean Citedness (OpenAlex IF proxy)** | 0.67 (OpenAlex proxy, not JCR) | 2026-11-23 |
@@ -51,10 +51,10 @@
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | Blank. No publisher figure on any page read; SciRev has no reviews (https://scirev.org/journal/asian-philosophy/) | |
+| **Time to first decision** | Blank. The live metrics block (read 2026-11-24) prints no submission-to-decision figure; SciRev has no reviews (https://scirev.org/journal/asian-philosophy/) | |
 | **Time to first review** | Blank. No source found | |
 | **Time to acceptance (total)** | The blog's author (Matthew Dasti), replying in the comments of a 2014 post, recalls acceptance a few months after submission, after several emails to confirm receipt (https://indianphilosophyblog.org/2014/03/10/new-issue-of-asian-philosophy/, comment of 2014-03-11, re-read 2026-11-23); a single anecdote, more than a decade old | Anecdote, 2014 |
-| **Time to publication (after acceptance)** | 7 days on average from acceptance to online publication, as stated in the journal metrics of the page copy dated 2025-01-05 (https://web.archive.org/web/20250105073207/https://www.tandfonline.com/journals/casp20/about-this-journal) | Publisher-stated, 2025-01-05 copy |
+| **Time to publication (after acceptance)** | 14 days on average from acceptance to online publication, as stated in the live journal metrics block (https://www.tandfonline.com/journals/casp20/about-this-journal, read 2026-11-24; no period printed). Older, kept as older: 7 days in the page copy dated 2025-01-05 | Publisher-stated, live 2026-11-24 |
 
 ### Publication Frequency
 
@@ -72,7 +72,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Double-blind: after assessment of suitability by the editor, the paper is "double blind peer reviewed by independent, anonymous expert referees" (instructions copy dated 2022-12-25, https://web.archive.org/web/20221225040847/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=casp20). The aims text of the 2022-12-24 copy says anonymized refereeing by at least two anonymous referees (https://web.archive.org/web/20221224024909/https://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=casp20). The instructions add that anonymity cannot be guaranteed if an earlier version is on a preprint server. Retrieved 2026-11-23 |
+| **Type** | Double blind: the live instructions say that once the editor has assessed suitability the paper is "double blind peer reviewed by independent, anonymous expert referees", and warn that anonymity cannot be guaranteed for a manuscript already on a preprint server (https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions, read 2026-11-24). The live about page says all research articles have undergone peer review "based on initial editor screening and anonymized refereeing by at least two anonymous referees" (https://www.tandfonline.com/journals/casp20/about-this-journal, read 2026-11-24). Both statements also appear in the 2022-12 copies. Retrieved 2026-11-24 |
 | **Transferable / Cascade?** | Blank. No source read |
 | **Reviewer reports published?** | Blank. Nothing read says reports are published |
 | **Typical R+R rounds** | Blank. No source found |
@@ -82,7 +82,7 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No journal-specific policy found; the instructions copy (2022-12-25) contains no AI statement. The publisher-wide policy applies and tells authors to check each journal's instructions for stricter rules |
+| **Has journal-specific AI policy?** | Partly. The live instructions page (read in a real browser 2026-11-24) asks every submission to include a "Declaration of generative AI use": a statement disclosing whether and how generative AI was used in the research and manuscript preparation (https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions). The 2022-12-25 copy predates this. The publisher-wide Taylor & Francis policy applies |
 | **Explicit permission gate?** | No gate. Use is allowed with a mandatory disclosure statement |
 | **Leniency (1-5)** | 3 (allowed with mandatory disclosure; same rubric as other entries) |
 | **Summary** | Publisher policy: AI tools cannot be listed as authors. Authors must acknowledge any generative-AI use in the article through a statement naming the tool and version, how it was used and why. Submitting text or code generated without rigorous revision, or content that is inaccurate, is not allowed, and AI creation or manipulation of research outputs and images is not permitted. Reviewers and editors may not upload unpublished manuscripts into AI tools. Retrieved 2026-11-23 |
@@ -104,21 +104,21 @@
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Hybrid: authors can choose gold open access through the publisher's Open Select programme (instructions copy 2022-12-25; aims copy 2022-12-24). OpenAlex open-access status of the 181 records dated 2021-01-01 to 2026-11-23: closed 144, hybrid 19, green 12, bronze 6 (OpenAlex works API group_by=open_access.oa_status), retrieved 2026-11-23 |
-| **APC (if OA chosen)** | Blank. The instructions point to the publisher's APC finder, which was not read; the Open Select page says an APC is paid after acceptance and that institutional agreements may reduce or waive it (https://authorservices.taylorandfrancis.com/publishing-open-access/open-select/). The instructions copy (2022-12-25) state there are no submission fees or page charges, and colour figures in print cost 300 GBP for one figure at that date |
+| **APC (if OA chosen)** | Blank. The live instructions refer to the publisher's APC finder without printing an amount (read 2026-11-24), and the finder was not read; the Open Select page says an APC is paid after acceptance and that institutional agreements may reduce or waive it (https://authorservices.taylorandfrancis.com/publishing-open-access/open-select/). The live instructions state there are no submission fees or page charges for this journal; the 2022-12-25 copy gave colour figures in print as GBP 300 for one figure (the live colour line was cut off in the passage read) |
 | **Read & Publish agreements** | Blank. The Open Select page says eligible institutions may get a reduced or waived APC; no list read |
 
 ---
 
 ## Format
 
-> Source for the general rules: the journal's instructions for authors, Wayback copy dated 2022-12-25 (https://web.archive.org/web/20221225040847/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=casp20); the live page returns HTTP 403, so current wording may differ. Retrieved 2026-11-23.
+> Source for the general rules: the journal's live instructions for authors (https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions), read in a real browser on 2026-11-24; the page prints no date. Retrieved 2026-11-24. The Wayback copy of 2022-12-25 is older; rows that rest only on it say so.
 
 | Aspect | Detail |
 |--------|--------|
 | **Article types accepted** | The instructions list one type: original articles; manuscripts in English only. OpenAlex types for 2021-01-01 to 2026-11-23: 180 articles and 1 obituary, no book reviews (181 records) |
-| **Word limit** | A typical paper should be no more than 10,000 words, inclusive of the abstract, tables, references, figure captions and endnotes (instructions, 2022-12-25) |
-| **Word limit negotiability** | Blank. The instructions word it as a typical-paper ceiling; no statement on exceptions found |
-| **Abstract limit** | Unstructured abstract of 150 words; 4 to 5 keywords (instructions, 2022-12-25) |
+| **Word limit** | "A typical paper for this journal should be no more than 10,000 words, inclusive of the abstract, tables, references, figure captions, endnotes" (live instructions, read 2026-11-24; same figure in the 2022-12-25 copy) |
+| **Word limit negotiability** | Blank. The live instructions word it as a typical-paper ceiling; no statement on exceptions found |
+| **Abstract limit** | Unstructured abstract of 150 words (live instructions, read 2026-11-24). The 4 to 5 keywords of the 2022-12-25 copy were not found in the passages of the live page read |
 | **Reference limit** | No separate cap; references count inside the 10,000 words. The instructions link a reference guide without naming the style in the text read |
 | **Supplementary material** | Supplemental material (video, dataset, files) is published via Figshare (instructions, 2022-12-25) |
 | **Figure/Table limits** | No count limit found. Figure resolution: 1200 dpi line art, 600 dpi greyscale, 300 dpi colour; editable tables (instructions, 2022-12-25) |
@@ -204,21 +204,21 @@
 | Aspect | Detail |
 |--------|--------|
 | **First-person voice acceptance (0-5)** | Not scored. Of the 178 abstracts, 94 (52.8%) contain a first-person form: `\b(I|my)\b(?! (?:Am|Ching))` (case-sensitive) matches 63 and `\b(we|our)\b` (case-sensitive) matches 47, overlapping; plural "we" may be generic and "I" can match a Roman numeral, so these are upper bounds. The narrower `\bI (?:argue|examine|show|contend|suggest|propose|will|claim|explore|discuss|defend|seek|aim|analy[sz]e|maintain|offer|present)\b` matches 43 (24.2%). Recent openings use "This paper argues ..." and "This article reconstructs ..." (e.g. https://doi.org/10.1080/09552367.2026.2661483, https://doi.org/10.1080/09552367.2026.2646602). The instructions give no first-person rule |
-| **Expected density** | Length ceiling about 10,000 words including abstract, tables, references, figure captions and endnotes (instructions copy 2022-12-25, https://web.archive.org/web/20221225040847/https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=casp20) |
-| **Abstract and keywords** | Unstructured abstract of 150 words; 4 to 5 keywords (same instructions copy) |
+| **Expected density** | Length ceiling about 10,000 words including abstract, tables, references, figure captions and endnotes (live instructions, read 2026-11-24, https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions) |
+| **Abstract and keywords** | Unstructured abstract of 150 words (live instructions, read 2026-11-24); the 2022-12-25 copy also gave 4 to 5 keywords, not found in the live passages read |
 | **Writing style notes** | Any spelling style if consistent; single quotation marks except for a quotation within a quotation; long quotations indented without quotation marks; authors told to follow the quick style guidelines rather than published articles. The same page lists a generic empirical section order (introduction, materials and methods, results, discussion) that is publisher template text; empirical vocabulary is in 6 of 178 abstracts, so most articles are unlikely to follow that order (article structure was not sampled) |
 | **Authorship pattern** | OpenAlex authorships of the 180 articles (2021-01-01 to 2026-11-23): 163 single-author (90.6%), 16 two-author (8.9%), 1 three-author (0.6%) |
 
 ### Reviewer Pool Characteristics
 
-Reviewer behaviour itself is not observable from public pages; what follows is what the board list and a few dated comments show. Board counts are taken from the journal page copy dated 2025-01-05 (the list is labelled "Updated 09-01-2024"; https://web.archive.org/web/20250105073207/https://www.tandfonline.com/journals/casp20/about-this-journal) and may not reflect the live page, which could not be read.
+Reviewer behaviour itself is not observable from public pages; what follows is what the board list and a few dated comments show. Board counts are taken from the live journal page (https://www.tandfonline.com/journals/casp20/about-this-journal, read in a real browser 2026-11-24; the list is labelled "Updated 28-10-2026"). The earlier copy of 2025-01-05 (labelled "Updated 09-01-2024") is kept below as older.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Board size and roles** | 25 entries under 3 headings: editor 1, associate editors 3, editorial advisory board 21 | Page copy 2025-01-05, counted 2026-11-23 |
-| **Countries of the 25 entries** | United Kingdom 9, United States 7, China (mainland) 3, and one each in Hong Kong, India, Japan, Poland, Slovenia and Canada. 9 + 7 + 3 + 6 = 25. Country is taken from each listed affiliation; one entry (Chinese University of Hong Kong) gives no country on the page and is counted under Hong Kong from the institution's location | Same page copy; counted 2026-11-23 |
-| **Review model** | Double-blind, with at least two referees per the aims text | Instructions copy 2022-12-25 and aims copy 2022-12-24 (URLs in Peer Review) |
-| **Dominant tradition** | The advisory board mixes Chinese, Indian, Islamic and Japanese studies with Western-trained philosophers: for example departments of philosophy, religious studies, Arabic and Islamic studies and Oriental institutes; the page does not say who reviews | Page copy 2025-01-05 |
+| **Board size and roles** | 25 entries under 3 headings: editor 1, associate editors 3, editorial advisory board 21 (1 + 3 + 21 = 25) | Live about page (board block "Updated 28-10-2026"), counted 2026-11-24; the 2025-01-05 copy had the same 25 |
+| **Countries of the 25 entries** | Live page: United Kingdom 7, United States 6, China (mainland) 3, and one each in Hong Kong, Kuwait, Croatia, Ireland, Thailand, Japan, Poland, Slovenia and Canada (7 + 6 + 3 + 9 = 25). Country is taken from each listed affiliation; one entry (Chinese University of Hong Kong) gives no country on the page and is counted under Hong Kong from the institution's location. Older, kept as older: the 2025-01-05 copy gave United Kingdom 9, United States 7, China (mainland) 3 and one each in Hong Kong, India, Japan, Poland, Slovenia and Canada (9 + 7 + 3 + 6 = 25) | Live about page, counted 2026-11-24 |
+| **Review model** | Double blind, with at least two referees per the about page | Live instructions and about page (URLs in Peer Review), read 2026-11-24 |
+| **Dominant tradition** | The advisory board mixes Chinese, Indian, Islamic and Japanese studies with Western-trained philosophers: listed affiliations include departments of philosophy, religious studies, Arabic and Islamic studies, Sinology and Oriental institutes; the page does not say who reviews | Live about page, read 2026-11-24 |
 | **Reviewer competence variance** | On a 2014 blog thread, one anonymous commenter says he published a paper in the journal and received no comments, only an acceptance, and that a colleague had the same experience (one commenter speaking for himself and a colleague); the blog's author (Matthew Dasti), replying, does not report an acceptance without comments: he recalls active copy-editors but says he does not remember much substantive criticism from the referees (an anecdote from 2014 that predates the current board; page re-read 2026-11-23) | https://indianphilosophyblog.org/2014/03/10/new-issue-of-asian-philosophy/ |
 | **Quantitative mindset bias on qualitative work?** | Blank. Empirical work is almost absent from the journal (6 of 178 abstracts), so the question has no observable basis | Orientation section counts |
 | **Discourse community signals (author side)** | Authors' countries (OpenAlex, 181 records): China 70, United States 27, Hong Kong 9, Iran 7, South Korea 7 | OpenAlex works API, retrieved 2026-11-23 |
@@ -252,7 +252,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts with abstracts (methods, topics, countries, types, OA status; 98.9% abstract coverage) 4; Crossref used only for dates, issue labels and citations 3; journal-specific policies and guidelines 2 (Wayback copies of 2022-12 and 2025-01; the live pages are unreadable and the editor named in the instructions appears to have died, so the submission contact is uncertain); publisher-wide policies 4 (live author-services pages read 2026-11-23); experiential layer 1 (four 2014 blog comments, SciRev empty).
+**signal_quality (0-5)**: overall 3. Per layer: OpenAlex counts with abstracts (methods, topics, countries, types, OA status; 98.9% abstract coverage) 4; Crossref used only for dates, issue labels and citations 3; journal-specific policies and guidelines 4 (live instructions and about pages read in a real browser 2026-11-24, undated; board block "Updated 28-10-2026"; the 2022-12 and 2025-01 Wayback copies are kept as labelled older figures); publisher-wide policies 4 (live author-services pages read 2026-11-23); experiential layer 1 (four 2014 blog comments, SciRev empty).
 
 **Corrections to the scaffold**: the scaffold's APC field was a placeholder and was left blank; topic counts relabelled as topic assignments; "founded" filled from the earliest Crossref record.
 
@@ -271,13 +271,13 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - https://doi.org/10.1080/09552367.2023.2174483 (obituary item, title and date only)
 
 **Unreadable pages (never filled from memory):**
-- unreadable live: https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions, https://www.tandfonline.com/journals/casp20, https://www.tandfonline.com/journals/casp20/about-this-journal and https://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=casp20 (403 to the research tool, also with a cookie jar); readable only through Wayback copies dated 2022-12-24, 2022-12-25 and 2025-01-05.
-- unreadable: the journal's "News & call for papers", "Special issues" and "Journal metrics" detail pages (no Wayback copy found); the editorial-board page copy of 2025-01-05 for the editorial-board URL returned a redirect, so the board list was taken from the "about" page copy instead.
+- None among the journal's own main pages as of 2026-11-24: the instructions page (https://www.tandfonline.com/action/authorSubmission?journalCode=casp20&page=instructions) and the about page (https://www.tandfonline.com/journals/casp20/about-this-journal), both 403 to curl on 2026-11-23, were read in a real browser; nothing was clicked. The about page prints Clarivate impact-factor and quartile figures, which are deliberately not recorded, and an editor e-mail address, which is not recorded. Notes: chrome2/asian-pages.txt in the researcher's scratch folder.
+- not opened: the journal's "News & call for papers", "Special issues" and separate board pages.
 - unreadable: the publisher's Open Access Cost Finder and APC finder (interactive; not fetched), so the APC and the embargo length are blank.
 
 **Fields deliberately left blank, and why:**
 - Acceptance rate, desk-rejection rate, time to first decision, R+R rounds, reviewer culture beyond 2014 anecdotes, quantitative bias: no first-hand or publisher source exists. SciRev lists the journal with no reviews and no journal info (popularity score only).
-- Journal-specific APC, embargo, read-and-publish list, ethics-approval rule, special-issue calls, transfer or cascade policy: not readable.
+- Journal-specific APC, embargo, read-and-publish list, special-issue calls, transfer or cascade policy: not stated on the live pages read (2026-11-24) or the finder pages were not read; the live instructions state no ethics-approval rule in the passages read.
 - Impact factor, quartile: paywalled, not stated by policy.
 
 **Cross-language and forum checks performed (all returned zero current journal-specific first-hand reports):**
@@ -299,11 +299,11 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 ### Hard Blockers
 
 - **Scope**: the work must concern one of the Asian philosophical traditions in the aims (Indian, Chinese, Japanese, Buddhist, Islamic) or compare Eastern and Western traditions (Framing Requirements; aims copy 2022-12-24). A paper with no Asian-tradition component is outside the stated scope.
-- **Language and type**: English only, original articles only (Format; instructions copy 2022-12-25).
-- **Length**: a typical paper should not exceed 10,000 words, references and endnotes included (Format); whether exceptions are granted is not stated.
+- **Language and type**: English only, original articles only (instructions copy 2022-12-25; these sentences were not located in the live page text read on 2026-11-24).
+- **Length**: a typical paper should not exceed 10,000 words, references and endnotes included (Format, live instructions read 2026-11-24); whether exceptions are granted is not stated.
 - **Exclusivity and originality**: the manuscript must not be under consideration elsewhere and is screened for similarity (Framing Requirements).
 - **AI use**: undisclosed generative-AI use, or generated text submitted without rigorous revision, breaches the publisher policy (AI Policy).
-- No other hard blocker is supported by a fact I could read; ethics-approval rules are unknown (Practical Concerns blank).
+- No other hard blocker is supported by a fact I could read; ethics-approval rules are not stated in the passages of the live instructions read (Practical Concerns).
 
 ### Soft Tax
 
@@ -347,3 +347,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Correction after independent check: in the 2014 blog thread only the anonymous commenter reports an acceptance with no reviewer comments (for himself and a colleague); the blog author recalls little substantive referee criticism; attribution fixed in Reviewer competence, Time to acceptance and Sources | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; one misattributed survey comment corrected; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-24 | Live T&F pages read in a real browser: instructions (10,000-word typical ceiling unchanged, 150-word abstract, double blind, generative-AI declaration) and about page (CiteScore 0.9 as labelled, acceptance-to-publication 14 days, no acceptance rate printed); older archived figures (7 days) kept as older; board re-read from a block dated Updated 28-10-2026 (25 = 1 + 3 + 21; UK 7, US 6, was 9 and 7); 'unreadable' statements replaced; Clarivate figures and an editor e-mail on the page not recorded | AI-assisted (maintainer-directed) |
