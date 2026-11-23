@@ -51,6 +51,11 @@ function coreLabel(lang: Lang, c: Coverage): string {
   return lang === "zh-Hant" ? (CORE_LABEL_ZH[c.core_label] ?? c.core_label) : c.core_label;
 }
 
+/** One absent field's name in the page's language (falls back to the server's English). */
+export function absentLabel(lang: Lang, a: string): string {
+  return lang === "zh-Hant" ? (ABSENT_ZH[a] ?? a) : a;
+}
+
 function absentList(lang: Lang, absent: string[], sep: string): string {
   return absent.map((a) => (lang === "zh-Hant" ? (ABSENT_ZH[a] ?? a) : a)).join(sep);
 }
@@ -58,14 +63,34 @@ function absentList(lang: Lang, absent: string[], sep: string): string {
 export type StageName = "parsing" | "screening" | "synthesis";
 export type StageStatus = "pending" | "active" | "done";
 
-interface NotesContext {
+interface SectionsContext {
   coverage: Coverage | null;
   limits: Limits | null;
   /** The copyable install command block. */
   install: ReactNode;
+  /** The pictures beside the first two sections (components/HomeVisuals.tsx). */
+  evidenceVisual: ReactNode;
+  unknownVisual: ReactNode;
+  /** The dated "no entry records a first-hand report" sentence. */
+  humanEvidence: ReactNode;
+}
+
+export interface ShotFacts {
+  shown: number;
+  returned: number;
+  corpus: string;
+  date: string;
 }
 
 export interface HomeText {
+  // ---- hero ----
+  kicker: string;
+  heroTitle: string;
+  heroSub: string;
+  installCta: string;
+  shotAria: string;
+  shotQueryLabel: string;
+  shotCaption: (f: ShotFacts) => ReactNode;
   // ---- coverage notice ----
   coverageSummary: (c: Coverage) => ReactNode;
   coverageCaption: string;
@@ -81,8 +106,16 @@ export interface HomeText {
   serverError: (status: number) => string;
   // ---- copy button ----
   copy: { idle: string; copied: string; select: string; copiedSr: string; selectSr: string };
-  // ---- notes under the tool ----
-  notes: (ctx: NotesContext) => ReactNode;
+  // ---- the product page under the hero ----
+  legendTitle: string;
+  legend: { t1: string; t2: string; ai: string };
+  legendScoreLabel: string;
+  unknownTitle: string;
+  unknownLoading: string;
+  unknownNone: string;
+  unstatedTitle: string;
+  unstatedCaption: string;
+  sections: (ctx: SectionsContext) => ReactNode;
   // ---- the tool ----
   stageLabels: (total: number | null) => Record<StageName, string>;
   stageState: Record<StageStatus, string>;
@@ -125,6 +158,21 @@ export interface HomeText {
 
 export const HOME: Record<Lang, HomeText> = {
   en: {
+    kicker: "Open-source agent skill · Free",
+    heroTitle: "Where your paper fits, and how sure we are.",
+    heroSub:
+      "Describe your paper. Journal Atlas ranks journals and conferences from an open knowledge base and shows, for each one, how much of what it says is evidenced. No account, no install.",
+    installCta: "Install the skill",
+    shotAria: "A real screening result: three candidate journals, each with an evidence tier, a score and how much of the score had data behind it.",
+    shotQueryLabel: "Example paper",
+    shotCaption: (f) => (
+      <>
+        A real screening run, not a mock-up: the top {f.shown} of the {f.returned} candidates the scoring script
+        returned for this example, from corpus <code>{f.corpus}</code> on {f.date}. The paper&apos;s attributes were
+        entered by hand; the ranking, tiers, coverage and article counts are the script&apos;s output. Tier 2 is a
+        family-level estimate, not a checked fact.
+      </>
+    ),
     coverageSummary: (c) => (
       <>
         Covers <strong>{coreLabel("en", c)}</strong> in depth — {corePercent(c)}% of {c.total} entries. Many fields are
@@ -177,102 +225,143 @@ export const HOME: Record<Lang, HomeText> = {
       copiedSr: "Copied to clipboard",
       selectSr: "Text selected; press Ctrl+C",
     },
-    notes: ({ coverage, limits, install }) => {
-      const absent = coverage?.absent ?? [];
-      return (
-        <>
-          <section>
-            <h2>This is an experiment, running on one person&apos;s API key</h2>
+    legendTitle: "What the badge means",
+    legend: {
+      t1: "Specific sources, article counts and dates behind each claim.",
+      t2: "A family-level estimate: one claim adapted across similar journals.",
+      ai: "Researched per journal by an AI model from public sources; blanks where nothing was found.",
+    },
+    legendScoreLabel: "From the screening run above",
+    unknownTitle: "Not covered yet",
+    unknownLoading: "Loading the list of fields with no entries from the API…",
+    unknownNone: "0 entries",
+    unstatedTitle: "Not stated, so not applied",
+    unstatedCaption: "The tool's own words for the example paper above.",
+    sections: ({ coverage, limits, install, evidenceVisual, unknownVisual, humanEvidence }) => (
+      <>
+        <section className="feature" aria-labelledby="f-evidence">
+          <div className="feature-copy">
+            <h2 id="f-evidence">Every answer shows its evidence.</h2>
             <p>
-              Journal Atlas is a research project, not a service. There is no company behind it and no uptime promise
-              — the model calls this page makes are billed to the maintainer personally, which is the only reason it
-              is capped
-              {limits
-                ? ` at ${limits.per_client_hourly_limit} searches an hour per person and ${limits.global_daily_limit} a day across everyone`
-                : ""}
-              . The cap is a budget, not a paywall: there is no tier that removes it, because there is nothing to
-              sell.
+              Each entry carries a tier that says how it was written, and every score carries how much of it had data
+              behind it. A score built on little is pulled toward a neutral 50 instead of looking confident.
             </p>
-          </section>
+            <p>
+              <a href="/ai/">How the entries are made</a>
+            </p>
+          </div>
+          <div className="feature-visual">{evidenceVisual}</div>
+        </section>
 
-          <section>
-            <h2>Run it yourself, with no cap at all</h2>
+        <section className="feature flip" aria-labelledby="f-unknown">
+          <div className="feature-copy">
+            <h2 id="f-unknown">When it doesn&apos;t know, it says so.</h2>
             <p>
-              The demo is a shop window. The real thing is a skill that runs inside your own Claude session, against
-              your own key, over the same knowledge base — no limits, no queue, and it can read your actual
-              manuscript instead of a pasted summary. In a Claude Code <strong>main session</strong>:
+              Many fields are not covered at all, and the tool tells you that instead of ranking the nearest journals it
+              happens to hold. Constraints you did not state are listed back to you, not guessed.
             </p>
+          </div>
+          <div className="feature-visual">{unknownVisual}</div>
+        </section>
+
+        <section className="feature" id="install" aria-labelledby="f-install">
+          <div className="feature-copy">
+            <h2 id="f-install">Run it in your own AI, with no cap.</h2>
+            <p>
+              The demo runs on one person&apos;s key, so it is capped. The skill runs inside your own Claude session, on
+              your own key, over the same knowledge base, and can read your actual manuscript instead of a pasted
+              summary. In a Claude Code <strong>main session</strong>:
+            </p>
+          </div>
+          <div className="feature-visual">
             {install}
             <p className="footnote">
-              Then restart Claude Code. Claude Desktop, ChatGPT and plain-git setups are covered in the{" "}
+              Then restart Claude Code. Claude Desktop, ChatGPT and plain-git setups are in the{" "}
               <a href={`${SITE.repoUrl}#installation`} target="_blank" rel="noreferrer">
                 installation guide
               </a>
-              . The knowledge base is {SITE.license.content} — you can also just read it.
+              .
             </p>
-          </section>
+          </div>
+        </section>
 
-          <section>
-            <h2>Your field is probably not in here</h2>
-            <p>
-              {coverage ? (
-                <>
-                  {corePercent(coverage)}% of the corpus is {coreLabel("en", coverage)}.
-                  {absent.length > 0 && <> At zero: {absentList("en", absent, "; ")}.</>}
-                </>
-              ) : (
-                <>
-                  Most of the corpus sits in a few adjacent fields, and many fields have nothing at all. The
-                  coverage note above lists which.
-                </>
-              )}{" "}
-              Two things fix that, and neither requires touching code:
-            </p>
-            <ul>
-              <li>
-                <strong>Bring a whole field in.</strong> The AI-research expansion that added
-                {coverage ? ` the ${coverage.tiers.ai}` : " the"} AI-researched entries was one run over a target
-                list, and{" "}
-                <a
-                  href={`${SITE.repoUrl}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  the procedure is published
-                </a>{" "}
-                so you can point it at yours. Twenty journals is a real contribution.
-              </li>
-              <li>
-                <strong>Tell us how it actually went.</strong> If you have submitted to or reviewed for a journal,
-                you hold the part no amount of research reaches — whether the word limit is real, how the reviewer
-                pool treats qualitative work, what a desk rejection there means. That is exactly what the
-                AI-researched entries are missing, and no entry yet records it. Ten minutes on one journal you know
-                well beats a hundred scraped ones.
-              </li>
-            </ul>
-          </section>
+        <section className="cta-band" aria-labelledby="f-maintain">
+          <h2 id="f-maintain">It needs more than one maintainer.</h2>
+          <p>
+            Scholarly tools die when the one person behind them moves on. The licences ({SITE.license.content} for the
+            knowledge base, {SITE.license.code} for the code) mean nobody can be locked out of a fork. What it needs most
+            is people who will correct entries about journals they know.
+          </p>
+          <div className="cta-actions">
+            <a className="button-link primary" href={ISSUES_URL} target="_blank" rel="noreferrer">
+              Report a wrong entry
+            </a>
+            <a className="button-link secondary" href={`${SITE.repoUrl}/blob/main/CONTRIBUTING.md`} target="_blank" rel="noreferrer">
+              Contribute an entry
+            </a>
+          </div>
+        </section>
 
-          <section>
-            <h2>And it needs more than one maintainer</h2>
+        <section className="faq" aria-labelledby="f-faq">
+          <h2 id="f-faq">Questions</h2>
+          <details>
+            <summary>Is it free? Why is there a limit?</summary>
             <p>
-              Scholarly tools die a specific death: one person builds something genuinely useful, maintains it
-              alone, and then their circumstances change — and the whole thing goes read-only, then stale, then
-              wrong. Anyone who has watched a library or digital-humanities project go dark knows the pattern.
+              Yes. The demo&apos;s model calls are billed to the maintainer personally, which is the only reason it is
+              capped
+              {limits
+                ? ` at ${limits.per_client_hourly_limit} searches an hour per person and ${limits.global_daily_limit} a day across everyone`
+                : ""}
+              . There is no paid tier. The skill runs with no cap on your own key.
             </p>
+          </details>
+          <details>
+            <summary>Where does the data come from?</summary>
             <p>
-              The licence is a partial answer — {SITE.license.content} content and {SITE.license.code} code mean
-              nobody can be locked out of a fork. But a fork nobody maintains is still dead. So if this turns out to
-              be worth keeping, <strong>the thing it most needs is co-maintainers</strong>: people who will review
-              contributions in their own field and correct entries about journals they know. Say so in an{" "}
-              <a href={ISSUES_URL} target="_blank" rel="noreferrer">
-                issue
-              </a>{" "}
-              and you will be taken up on it. <a href="/about/">Who made this, and why</a>.
+              {coverage
+                ? `The knowledge base holds ${coverage.total} entries: ${coverage.tiers.tier1} Tier 1, ${coverage.tiers.tier2} Tier 2 and ${coverage.tiers.ai} AI-researched. `
+                : ""}
+              Tier 1 entries cite specific sources, Tier 2 entries are family-level estimates, and AI-researched
+              entries were researched journal by journal from public sources. {humanEvidence}{" "}
+              <a href="/ai/">How it&apos;s made</a>.
             </p>
-          </section>
-        </>
-      );
-    },
+          </details>
+          <details>
+            <summary>How much of this is written by AI?</summary>
+            <p>
+              Much of it: the site&apos;s code, the AI-researched entries, and every written recommendation. Scores come
+              from a script, not a model. <a href="/ai/">The How it&apos;s made page</a> lists each part.
+            </p>
+          </details>
+          <details>
+            <summary>What happens to the text I paste?</summary>
+            <p>
+              It is sent to a language-model provider to be read, and this site does not save it. Paste an abstract,
+              not a manuscript under review. <a href="/privacy/">Privacy</a>.
+            </p>
+          </details>
+          <details>
+            <summary>My field isn&apos;t covered. What can I do?</summary>
+            <p>
+              Bring it in: the AI-research run that added the AI-researched entries is{" "}
+              <a
+                href={`${SITE.repoUrl}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                published
+              </a>
+              , so you can point it at your field. Or, if you have submitted to or reviewed for a journal, add what no
+              amount of research reaches. No entry records that yet.
+            </p>
+          </details>
+        </section>
+
+        <p className="closing">
+          No account. No cookies. What you paste is not saved. <a href="/privacy/">Privacy</a>
+        </p>
+      </>
+    ),
     stageLabels: (total) => ({
       parsing: "Reading your paper",
       screening: total ? `Screening ${total} entries` : "Screening the knowledge base",
@@ -290,7 +379,7 @@ export const HOME: Record<Lang, HomeText> = {
       "Paste your abstract or describe your paper. No account, no install — this reads the same open knowledge base the real skill uses, and shows for every entry how it was written and how much of it is evidenced.",
     paperLabel: "Your paper",
     paperPlaceholder:
-      "e.g. A qualitative study using autoethnography to explore embodied cognition in collaborative design teams. ~9,000 words, no institutional funding for open access, discloses AI-assisted copyediting...",
+      "e.g. A survey of how graduate students choose and use reference managers, with follow-up interviews. About 7,000 words, no budget for open-access fees, discloses AI-assisted copyediting…",
     paperNote: (provider) => (
       <>
         What you paste is sent to a language-model provider
@@ -333,6 +422,19 @@ export const HOME: Record<Lang, HomeText> = {
   },
 
   "zh-Hant": {
+    kicker: "開源 agent skill · 免費",
+    heroTitle: "你的論文該投哪裡，以及我們有多確定。",
+    heroSub:
+      "描述你的論文。Journal Atlas 從一份開放知識庫排出期刊與研討會，並為每一個標示它所說的內容有多少有證據。免註冊、免安裝。",
+    installCta: "安裝 skill",
+    shotAria: "一次真實的篩選結果：三本候選期刊，每本都附上證據層級、分數，以及分數中有多少有資料支撐。",
+    shotQueryLabel: "範例論文",
+    shotCaption: (f) => (
+      <>
+        這是一次真實的篩選，不是示意圖：評分腳本為這個範例回傳的 {f.returned} 個候選中的前 {f.shown} 名，語料版本 <code>{f.corpus}</code>，{f.date}
+        。論文屬性是手動輸入的；排名、tier、涵蓋率與文章篇數都是腳本的輸出。Tier 2 是家族層級的估計，不是查證過的事實。
+      </>
+    ),
     coverageSummary: (c) => (
       <>
         深入涵蓋<strong>{coreLabel("zh-Hant", c)}</strong>——占 {c.total} 筆條目的 {corePercent(c)}%。許多領域完全沒有涵蓋。
@@ -375,85 +477,132 @@ export const HOME: Record<Lang, HomeText> = {
       copiedSr: "已複製到剪貼簿",
       selectSr: "文字已選取；請按 Ctrl+C",
     },
-    notes: ({ coverage, limits, install }) => {
-      const absent = coverage?.absent ?? [];
-      return (
-        <>
-          <section>
-            <h2>這是一個實驗，跑在一個人的 API 金鑰上</h2>
+    legendTitle: "標章代表什麼",
+    legend: {
+      t1: "每項主張背後都有具體來源、文章篇數與日期。",
+      t2: "家族層級的估計：同一個主張調整後套用到相似的期刊。",
+      ai: "由 AI 模型依公開來源逐刊研究；找不到的就留白。",
+    },
+    legendScoreLabel: "取自上方那次篩選",
+    unknownTitle: "尚未涵蓋",
+    unknownLoading: "正在從 API 載入沒有任何條目的領域清單…",
+    unknownNone: "0 筆",
+    unstatedTitle: "沒有說明，所以沒有套用",
+    unstatedCaption: "工具對上方範例論文的原文輸出（英文）。",
+    sections: ({ coverage, limits, install, evidenceVisual, unknownVisual, humanEvidence }) => (
+      <>
+        <section className="feature" aria-labelledby="f-evidence">
+          <div className="feature-copy">
+            <h2 id="f-evidence">每個答案都標出證據。</h2>
             <p>
-              Journal Atlas 是研究專案，不是服務。它背後沒有公司，也不承諾上線時間——本頁發出的模型呼叫都由維護者個人付費，這是它設有上限的唯一原因
-              {limits ? `：每人每小時 ${limits.per_client_hourly_limit} 次搜尋，所有人合計每天 ${limits.global_daily_limit} 次` : ""}
-              。上限是預算，不是付費牆：沒有任何方案能解除它，因為沒有任何東西在賣。
+              每個條目都帶有一個 tier，說明它是怎麼寫成的；每個分數都附上其中有多少有資料支撐。所知甚少的分數會被拉向中性的 50，而不是看起來很有把握。
             </p>
-          </section>
+            <p>
+              <a href="/zh-hant/ai/">條目是怎麼製作的</a>
+            </p>
+          </div>
+          <div className="feature-visual">{evidenceVisual}</div>
+        </section>
 
-          <section>
-            <h2>自己跑，完全沒有上限</h2>
+        <section className="feature flip" aria-labelledby="f-unknown">
+          <div className="feature-copy">
+            <h2 id="f-unknown">不知道，就說不知道。</h2>
             <p>
-              示範只是櫥窗。真正的東西是一個 skill，跑在你自己的 Claude 工作階段裡、用你自己的金鑰、讀同一份知識庫——沒有限制、不用排隊，還能讀你真正的稿件，而不只是貼上的摘要。在 Claude Code 的<strong>主工作階段</strong>中：
+              許多領域完全沒有涵蓋，工具會直接告訴你，而不是把手上最接近的期刊排給你。你沒有說明的限制條件會列回給你，而不是被猜測。
             </p>
+          </div>
+          <div className="feature-visual">{unknownVisual}</div>
+        </section>
+
+        <section className="feature" id="install" aria-labelledby="f-install">
+          <div className="feature-copy">
+            <h2 id="f-install">裝進你自己的 AI，沒有上限。</h2>
+            <p>
+              示範跑在一個人的金鑰上，所以設有上限。skill 跑在你自己的 Claude 工作階段裡、用你自己的金鑰、讀同一份知識庫，還能讀你真正的稿件，而不只是貼上的摘要。在 Claude Code 的<strong>主工作階段</strong>中：
+            </p>
+          </div>
+          <div className="feature-visual">
             {install}
             <p className="footnote">
               然後重新啟動 Claude Code。Claude Desktop、ChatGPT 與純 git 的設定方式見
               <a href={`${SITE.repoUrl}#installation`} target="_blank" rel="noreferrer">
                 安裝指南
               </a>
-              。知識庫採用 {SITE.license.content}——你也可以直接讀它。
+              。
             </p>
-          </section>
+          </div>
+        </section>
 
-          <section>
-            <h2>你的領域很可能不在裡面</h2>
-            <p>
-              {coverage ? (
-                <>
-                  語料有 {corePercent(coverage)}% 是{coreLabel("zh-Hant", coverage)}。
-                  {absent.length > 0 && <>數量為零：{absentList("zh-Hant", absent, "；")}。</>}
-                </>
-              ) : (
-                <>語料大多集中在少數相鄰領域，許多領域完全沒有。上方的涵蓋說明列出是哪些。</>
-              )}{" "}
-              有兩件事可以改善這個狀況，而且都不必動程式碼：
-            </p>
-            <ul>
-              <li>
-                <strong>把整個領域帶進來。</strong>
-                新增{coverage ? ` ${coverage.tiers.ai} 筆` : ""} AI 研究條目的那次 AI 研究擴充，是對一份目標清單跑一次完成的，而且
-                <a
-                  href={`${SITE.repoUrl}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  流程已經公開
-                </a>
-                ，你可以把它指向你的領域。二十本期刊就是實質的貢獻。
-              </li>
-              <li>
-                <strong>告訴我們實際經過。</strong>
-                如果你投稿過或審查過某本期刊，你握有再多研究也摸不到的部分——字數限制是不是真的、審稿人群體如何看待質性研究、在那裡被 desk reject 代表什麼。這正是 AI 研究條目所缺的，而且目前沒有任何條目記錄這些。在你熟悉的一本期刊上花十分鐘，勝過一百本爬來的。
-              </li>
-            </ul>
-          </section>
+        <section className="cta-band" aria-labelledby="f-maintain">
+          <h2 id="f-maintain">它需要不只一位維護者。</h2>
+          <p>
+            學術工具常在背後那一個人離開時跟著死去。授權（知識庫 {SITE.license.content}、程式碼 {SITE.license.code}
+            ）確保沒有人會被擋在 fork 之外。它最需要的，是願意更正自己熟悉期刊條目的人。
+          </p>
+          <div className="cta-actions">
+            <a className="button-link primary" href={ISSUES_URL} target="_blank" rel="noreferrer">
+              回報錯誤的條目
+            </a>
+            <a className="button-link secondary" href={`${SITE.repoUrl}/blob/main/CONTRIBUTING.md`} target="_blank" rel="noreferrer">
+              貢獻一個條目
+            </a>
+          </div>
+        </section>
 
-          <section>
-            <h2>而且它需要不只一位維護者</h2>
+        <section className="faq" aria-labelledby="f-faq">
+          <h2 id="f-faq">常見問題</h2>
+          <details>
+            <summary>免費嗎？為什麼有上限？</summary>
             <p>
-              學術工具有一種特定的死法：一個人做出真正有用的東西，獨自維護，然後他的處境改變——整個東西先變成唯讀，再變過時，最後變錯。看過圖書館或數位人文專案走向沉寂的人都知道這個模式。
+              免費。示範的模型呼叫由維護者個人付費，這是它設有上限的唯一原因
+              {limits ? `：每人每小時 ${limits.per_client_hourly_limit} 次搜尋，所有人合計每天 ${limits.global_daily_limit} 次` : ""}
+              。沒有付費方案。skill 用你自己的金鑰跑，沒有上限。
             </p>
+          </details>
+          <details>
+            <summary>資料從哪裡來？</summary>
             <p>
-              授權是部分的答案——{SITE.license.content} 內容與 {SITE.license.code} 程式碼意味著沒有人會被擋在 fork 之外。但沒人維護的 fork 還是死的。所以如果這件事值得留下，
-              <strong>它最需要的是共同維護者</strong>
-              ：願意在自己的領域審閱貢獻、更正自己熟悉期刊條目的人。請在{" "}
-              <a href={ISSUES_URL} target="_blank" rel="noreferrer">
-                issue
-              </a>{" "}
-              中說一聲，你會被接納。<a href={localePath("zh-Hant", "/about/")}>誰做的，為什麼</a>。
+              {coverage
+                ? `知識庫共有 ${coverage.total} 筆條目：Tier 1 ${coverage.tiers.tier1} 筆、Tier 2 ${coverage.tiers.tier2} 筆、AI 研究 ${coverage.tiers.ai} 筆。`
+                : ""}
+              Tier 1 條目引用具體來源，Tier 2 條目是家族層級的估計，AI 研究條目則依公開來源逐刊研究。{humanEvidence}
+              <a href="/zh-hant/ai/">如何製作</a>。
             </p>
-          </section>
-        </>
-      );
-    },
+          </details>
+          <details>
+            <summary>這裡有多少是 AI 寫的？</summary>
+            <p>
+              很大一部分：網站程式碼、AI 研究條目，以及每一份撰寫出來的推薦。分數來自腳本，不是模型。
+              <a href="/zh-hant/ai/">「如何製作」頁</a>逐項列出。
+            </p>
+          </details>
+          <details>
+            <summary>我貼上的文字會怎麼處理？</summary>
+            <p>
+              它會送到語言模型供應商閱讀，本站不會儲存。請貼摘要，不要貼審查中的稿件。<a href="/zh-hant/privacy/">隱私</a>。
+            </p>
+          </details>
+          <details>
+            <summary>我的領域不在裡面，可以怎麼做？</summary>
+            <p>
+              把它帶進來：新增 AI 研究條目的那次 AI 研究流程
+              <a
+                href={`${SITE.repoUrl}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                已經公開
+              </a>
+              ，你可以把它指向你的領域。或者，如果你投稿過或審查過某本期刊，請補上再多研究也摸不到的部分。目前沒有任何條目記錄這些。
+            </p>
+          </details>
+        </section>
+
+        <p className="closing">
+          沒有帳號。不設 cookie。你貼上的內容不會被儲存。<a href="/zh-hant/privacy/">隱私</a>
+        </p>
+      </>
+    ),
     stageLabels: (total) => ({
       parsing: "讀取你的論文",
       screening: total ? `篩選 ${total} 筆條目` : "篩選知識庫",
@@ -470,7 +619,7 @@ export const HOME: Record<Lang, HomeText> = {
       "貼上摘要或描述你的論文。免註冊、免安裝——它讀的是真正的 skill 所用的同一份開放知識庫，並為每個條目標示它是怎麼寫成的、有多少內容有證據。",
     paperLabel: "你的論文",
     paperPlaceholder:
-      "例如：以自我民族誌探討協作設計團隊中具身認知的質性研究。約 9,000 字，沒有機構資助開放近用費用，並揭露使用 AI 輔助文字編修…",
+      "例如：一項關於研究生如何選擇與使用書目管理工具的問卷研究，並附追蹤訪談。約 7,000 字，沒有開放近用費用的預算，並揭露使用 AI 輔助文字編修…",
     paperNote: (provider) => (
       <>
         你貼上的內容會送到語言模型供應商{provider ? `（目前為 ${provider}）` : ""}閱讀，本站不會儲存。請貼摘要，不要貼審查中的稿件。{" "}

@@ -316,6 +316,39 @@ Written up here, not decided or built.
    rename the header in `public/_worker.js` to
    `Content-Security-Policy-Report-Only` and redeploy while you look.
 
+7. The home page's product shot and the "not stated" lines are a recorded
+   screening run (`demo/frontend/src/sample/screening-sample.json`), captioned
+   with its corpus version and date. After the corpus changes (for example when
+   the content branches are merged), re-run
+   `python demo/backend/make_hero_sample.py` and rebuild, so the picture
+   matches the corpus the site serves.
+
+### Home page as a product page (decision 13, 2026-11-23)
+
+The maintainer judged the first version a wall of text with no visual, no hook
+and no call to action, and asked whether the sibling product pages had really
+been used. They had been read only as a compliance checklist, not as product
+pages; that was the gap. The home page now follows the basesmall / SmalLoL
+product-page structure, with one change he asked for: the tool stays in the
+first screen.
+
+- Hero: kicker, a one-line hook, one sentence, the paste box with a solid
+  primary button ("Find my journal") and a secondary one ("Install the skill"),
+  and on the right a real screening result in a browser frame with a caption
+  naming the corpus and date. On a phone the tool comes first.
+- Three feature rows, each a short claim and a picture of real output
+  (tier legend and score from the recorded run; fields with no entries, live
+  from `/api/coverage`; the backend's own "not stated" lines; the install
+  command).
+- One contribution band with two buttons, five folded questions that hold what
+  used to be four long paragraphs, and a one-line close.
+- The example paper is neutral (older adults and voice assistants), not
+  related to any manuscript of the maintainer; the old placeholder
+  (autoethnography, embodied cognition) was replaced for the same reason.
+- The recorded run's top three are all Tier 2 at 65 % evidence coverage. That is
+  what the scorer returns today and is shown as is; the example was not chosen
+  to make the picture look better.
+
 ### Decided not to do
 
 - **IndexNow** (decision 12, 2026-11-23): not done. Crawlers will find the

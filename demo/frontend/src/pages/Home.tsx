@@ -8,12 +8,12 @@ import {
   useHealth,
   type Coverage,
 } from "../api";
-import { GitHubMark } from "../components/Layout";
+import { HeroShot } from "../components/HeroShot";
+import { EvidenceVisual, UnknownVisual } from "../components/HomeVisuals";
 import { HumanEvidence } from "../components/HumanEvidence";
 import { VersionLine } from "../components/VersionLine";
 import { useLang } from "../i18n";
 import { HOME, fieldLabel, type HomeText, type StageName, type StageStatus } from "../locales/home";
-import { SITE } from "../site";
 
 interface ParsedPaper {
   topics: string[];
@@ -219,8 +219,15 @@ function HomeNotes({ coverage }: { coverage: Coverage | null }) {
   const health = useHealth().data;
   const m = HOME[useLang()];
   return (
-    <div className="home-notes">
-      {m.notes({ coverage, limits: health?.limits ?? null, install: <CodeBlock text={INSTALL_COMMANDS} /> })}
+    <div className="home-sections">
+      {m.sections({
+        coverage,
+        limits: health?.limits ?? null,
+        install: <CodeBlock text={INSTALL_COMMANDS} />,
+        evidenceVisual: <EvidenceVisual />,
+        unknownVisual: <UnknownVisual coverage={coverage} />,
+        humanEvidence: <HumanEvidence coverage={coverage} />,
+      })}
     </div>
   );
 }
@@ -254,6 +261,9 @@ export default function Home() {
   const [followups, setFollowups] = useState<{ q: string; a: string }[]>([]);
   const [followupBusy, setFollowupBusy] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
+  // The main button stays a solid, clickable call to action, as on the sibling
+  // product pages; with nothing typed it puts the cursor in the box instead.
+  const paperRef = useRef<HTMLTextAreaElement>(null);
   const MAX_FOLLOWUPS = 2;
 
   // Cancel an in-flight stream if the page unmounts, so a navigation does not
@@ -408,40 +418,47 @@ export default function Home() {
 
   return (
     <>
-      <div className="page-head">
-        <div className="header-top">
-          <h1>Journal Atlas</h1>
-          <a className="repo-link" href={SITE.repoUrl} target="_blank" rel="noreferrer">
-            <GitHubMark />
-            <span>{m.repoLink}</span>
-          </a>
+      <section className="hero" aria-labelledby="hero-title">
+        <div className="hero-copy">
+          <p className="hero-kicker">{m.kicker}</p>
+          <h1 id="hero-title">{m.heroTitle}</h1>
+          <p className="hero-sub">{m.heroSub}</p>
+
+          <div className="try">
+            <label className="field-label" htmlFor="paper-text">
+              {m.paperLabel}
+            </label>
+            <textarea
+              ref={paperRef}
+              id="paper-text"
+              value={paperText}
+              onChange={(e) => setPaperText(e.target.value)}
+              placeholder={m.paperPlaceholder}
+              rows={4}
+              disabled={running}
+              aria-describedby="paper-note"
+            />
+            <p className="field-note" id="paper-note">
+              {m.paperNote(provider)}
+            </p>
+            <div className="try-actions">
+              <button
+                onClick={() => (paperText.trim() ? runRecommendation() : paperRef.current?.focus())}
+                disabled={running}
+              >
+                {running ? m.working : m.findJournal}
+              </button>
+              <a className="button-link secondary" href="#install">
+                {m.installCta}
+              </a>
+            </div>
+            <CoverageNotice data={coverage} />
+          </div>
         </div>
-        <p className="eyebrow">{m.eyebrow}</p>
-        <p className="tagline">{m.tagline}</p>
-      </div>
+        <HeroShot />
+      </section>
 
-      <CoverageNotice data={coverage} />
-
-      <label className="field-label" htmlFor="paper-text">
-        {m.paperLabel}
-      </label>
-      <textarea
-        id="paper-text"
-        value={paperText}
-        onChange={(e) => setPaperText(e.target.value)}
-        placeholder={m.paperPlaceholder}
-        rows={6}
-        disabled={running}
-        aria-describedby="paper-note"
-      />
-      <p className="field-note" id="paper-note">
-        {m.paperNote(provider)}
-      </p>
-
-      <button onClick={() => runRecommendation()} disabled={running || !paperText.trim()}>
-        {running ? m.working : m.findJournal}
-      </button>
-
+      <div className="results">
       <noscript>
         <p className="error">{m.noscript}</p>
       </noscript>
@@ -658,6 +675,8 @@ export default function Home() {
           )}
         </div>
       )}
+
+      </div>
 
       <HomeNotes coverage={coverage} />
     </>

@@ -2,10 +2,20 @@
 
 /* ---------- shell: header, main, footer ---------- */
 
+/* The frame is as wide as the sibling product pages (basesmall, SmalLoL);
+   reading text inside it keeps to --measure, set per block below. */
 .shell {
-  max-width: var(--measure);
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
+}
+
+.prose,
+.results,
+.faq,
+.closing,
+.site-footer > p {
+  max-width: var(--measure);
 }
 
 .site-header {
@@ -999,5 +1009,487 @@ button.secondary:hover:not(:disabled) {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ---------- home: hero (product page, after basesmall / SmalLoL) ----------
+   Left: the hook, one sentence, and the tool itself, so a visitor can try it
+   without scrolling. Right: a real screening result (components/HeroShot.tsx).
+   On a phone the tool comes first and the picture follows. */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 3.5rem;
+  align-items: start;
+  padding: 1.75rem 0 3.5rem;
+}
+
+.hero-kicker {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  color: var(--fg-strong);
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+html:lang(zh-Hant) .hero h1 {
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.try .field-label {
+  margin-top: 0;
+}
+
+.try-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.try-actions button {
+  margin-top: 0;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.3rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button-link.secondary {
+  border: 1px solid var(--control);
+  color: var(--accent-text);
+}
+
+.button-link.secondary:hover {
+  background: var(--surface-hover);
+}
+
+.hero-shot {
+  margin: 0;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.shot-window {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--raised);
+  box-shadow: 0 24px 48px -24px color-mix(in srgb, var(--fg) 30%, transparent);
+}
+
+.shot-bar {
+  display: flex;
+  gap: 6px;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.shot-bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.shot-body {
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.shot-query {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.shot-query-label {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.shot-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shot-card {
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line-soft);
+}
+
+.shot-card:first-child {
+  border-top: none;
+  padding-top: 0.2rem;
+}
+
+.shot-card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.shot-rank {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.shot-name {
+  flex: 1;
+  min-width: 0;
+  color: var(--fg-strong);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.shot-score {
+  color: var(--accent-text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.shot-of {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.shot-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  margin: 0.45rem 0 0 1.25rem;
+}
+
+.shot-coverage {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.shot-meter {
+  width: 72px;
+  height: 6px;
+}
+
+.shot-meter-track {
+  fill: var(--line);
+}
+
+.shot-meter-fill {
+  fill: var(--accent);
+}
+
+.shot-topics {
+  margin: 0.6rem 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.shot-topics .topic-count {
+  white-space: nowrap;
+}
+
+.shot-topics li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.hero-shot figcaption {
+  margin-top: 0.85rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding-top: 1.75rem;
+  }
+
+  .hero-shot {
+    position: static;
+  }
+}
+
+/* ---------- home: the product page under the hero ----------
+   Feature rows like basesmall's "As big as you can spare.": a short claim and
+   two sentences on one side, a picture of real output on the other, alternating.
+   Then one call to contribute, the questions, and a one-line close. */
+
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 3.5rem;
+  align-items: center;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.feature.flip .feature-copy {
+  order: 2;
+}
+
+.feature h2,
+.cta-band h2,
+.faq h2 {
+  margin: 0 0 0.9rem;
+  color: var(--fg-strong);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+html:lang(zh-Hant) .feature h2,
+html:lang(zh-Hant) .cta-band h2,
+html:lang(zh-Hant) .faq h2 {
+  letter-spacing: 0;
+}
+
+.feature-copy p {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.feature-copy a {
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.feature-visual .footnote {
+  margin: 0.7rem 0 0;
+}
+
+.visual-card {
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--raised);
+  box-shadow: 0 20px 40px -26px color-mix(in srgb, var(--fg) 30%, transparent);
+}
+
+.visual-title {
+  margin: 0 0 0.75rem;
+  color: var(--fg-strong);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.visual-title-second {
+  margin-top: 1.3rem;
+}
+
+.visual-label {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.legend-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.legend-list li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  color: var(--fg);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.legend-list .tier-badge {
+  justify-self: start;
+}
+
+.legend-score {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.legend-score .visual-label {
+  margin: 0 0 0.4rem;
+}
+
+.legend-score .shot-coverage {
+  margin-top: 0.35rem;
+}
+
+.absent-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.absent-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.85rem;
+}
+
+.absent-count {
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.visual-card .unstated-list {
+  margin-top: 0;
+}
+
+.cta-band {
+  margin: 1rem 0 0;
+  padding: 2.5rem 2.25rem;
+  border: 1px solid var(--accent-line);
+  border-radius: 16px;
+  background: var(--surface-2);
+}
+
+.cta-band p {
+  max-width: var(--measure);
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.button-link.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.button-link.primary:hover {
+  background: var(--accent-hover);
+}
+
+.faq {
+  padding: 3.5rem 0 1rem;
+}
+
+.faq details {
+  border-top: 1px solid var(--line);
+}
+
+.faq details:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.6rem 0;
+  color: var(--fg-strong);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq details p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.faq details a {
+  color: var(--accent-text);
+}
+
+.closing {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.closing a {
+  color: var(--accent-text);
+}
+
+@media (max-width: 900px) {
+  .feature {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .feature.flip .feature-copy {
+    order: 0;
+  }
+
+  .cta-band {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .legend-list li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.3rem;
   }
 }

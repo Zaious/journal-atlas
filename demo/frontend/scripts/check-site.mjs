@@ -38,7 +38,9 @@ const SRC = join(ROOT, "src");
 // SITE_SPEC.md P1): this is a ratchet set about 20% above the first measured
 // build of this design (JS 103 KB, CSS 3 KB), so growth is a decision rather
 // than an accident. Raise it deliberately, with the reason in the commit.
-const BUDGET = { jsGz: 125 * 1024, cssGz: 12 * 1024, ogBytes: 200 * 1024 };
+// Raised 125 -> 140 KB on 2026-11-23 (maintainer's decision): the page now ships
+// both languages' text and the recorded screening sample for the product shot.
+const BUDGET = { jsGz: 140 * 1024, cssGz: 12 * 1024, ogBytes: 200 * 1024 };
 
 const failures = [];
 const fail = (where, msg) => failures.push(`${where}: ${msg}`);
