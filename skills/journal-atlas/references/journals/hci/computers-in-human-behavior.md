@@ -291,7 +291,7 @@ Counts of Crossref titles mentioning each topic among 2,097 records, 2021-2026 (
 
 ### AI-Research Notes (upgrade pass, 2026-11-23)
 
-Plain supplementary block; the Tier 2 warning above is unchanged. Overall `signal_quality`: **3/5**. Per layer: policy and format 3 (the journal's guide read in full but via a snapshot dated 2024-03-19; the Elsevier journal page and board page are recent), counts 1 (title-only Crossref counts; no abstracts exist), reviewer pool 3 (board counted from a 2026-01 snapshot), experiential 2 (SciRev n=6 plus one 2015 forum post).
+Plain supplementary block; the Estimated warning above is unchanged. Overall `signal_quality`: **3/5**. Per layer: policy and format 3 (the journal's guide read in full but via a snapshot dated 2024-03-19; the Elsevier journal page and board page are recent), counts 1 (title-only Crossref counts; no abstracts exist), reviewer pool 3 (board counted from a 2026-01 snapshot), experiential 2 (SciRev n=6 plus one 2015 forum post).
 
 **Sources:**
 - https://www.sciencedirect.com/journal/computers-in-human-behavior/publish/guide-for-authors (Wayback snapshot 2024-03-19)

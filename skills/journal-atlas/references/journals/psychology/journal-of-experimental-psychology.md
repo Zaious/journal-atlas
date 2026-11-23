@@ -165,7 +165,7 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate) — HISTORICAL CROSS-REFERENCE INDEX ONLY** — This entry is the **pre-1975 historical Journal of Experimental Psychology**, which APA split into specialized successor journals (JEP:General, JEP:HPP, JEP:LMC, JEP:Animal Learning, JEP:Applied) in 1975. **DO NOT submit to this name.** Soft Metadata below reflects the historical experimental-psychology paradigm; for actual submission targeting, use the successor JEP titles linked above. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate` only for historical / bibliographic clarification. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Estimated (not sourced per journal; not human-verified) — HISTORICAL CROSS-REFERENCE INDEX ONLY** — This entry is the **pre-1975 historical Journal of Experimental Psychology**, which APA split into specialized successor journals (JEP:General, JEP:HPP, JEP:LMC, JEP:Animal Learning, JEP:Applied) in 1975. **DO NOT submit to this name.** Soft Metadata below reflects the historical experimental-psychology paradigm; for actual submission targeting, use the successor JEP titles linked above. Submission practitioners are invited to upgrade individual claims to Sourced via `/ja-validate` only for historical / bibliographic clarification. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Estimated → Sourced lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 

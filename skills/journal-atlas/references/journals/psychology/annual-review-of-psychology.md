@@ -148,7 +148,7 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (annualreviews.org editorial policies) and Wikipedia editorial history gathered 2026-05. **Important**: Annual Review of Psychology is invitation-only; this entry serves as informational reference, not a submission target. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Estimated (not sourced per journal; not human-verified)** — Soft Metadata below adapted from publisher-disclosed practices (annualreviews.org editorial policies) and Wikipedia editorial history gathered 2026-05. **Important**: Annual Review of Psychology is invitation-only; this entry serves as informational reference, not a submission target. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Estimated → Sourced lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 

@@ -7,7 +7,7 @@
 > **Last verified**: 2026-11-24
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported. No first-hand human reports; not human-verified. Addendum 2026-11-24: the publisher's live about-this-journal and instructions-for-authors pages, which had returned HTTP 403 with no archive copy, were read in a real browser; facts marked "read in a real browser on 2026-11-24" were added after the spot-check, and where they differ from the association's page both are recorded because the spot-check does not cover them.
+> **Evidence basis**: Sourced under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 8 of 8 sampled pairs supported. No first-hand human reports; not human-verified. Addendum 2026-11-24: the publisher's live about-this-journal and instructions-for-authors pages, which had returned HTTP 403 with no archive copy, were read in a real browser; facts marked "read in a real browser on 2026-11-24" were added after the spot-check, and where they differ from the association's page both are recorded because the spot-check does not cover them.
 
 ---
 

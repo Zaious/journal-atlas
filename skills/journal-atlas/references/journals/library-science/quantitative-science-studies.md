@@ -7,7 +7,7 @@
 > **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-fact source URLs with recorded blanks. MIT Press pages (direct.mit.edu) returned HTTP 403 to curl live; the publisher pages were read as Wayback copies: submission guidelines (2026-07-30), editorial information (2026-03-10), and the MIT open-access, release-schedule and authors pages (2026-11-15). The scope statement and the MIT Press generative-AI policy text were not read. Crossref abstract coverage is 96.2% for the window. Distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-fact source URLs with recorded blanks. MIT Press pages (direct.mit.edu) returned HTTP 403 to curl live; the publisher pages were read as Wayback copies: submission guidelines (2026-07-30), editorial information (2026-03-10), and the MIT open-access, release-schedule and authors pages (2026-11-15). The scope statement and the MIT Press generative-AI policy text were not read. Crossref abstract coverage is 96.2% for the window. Distinct from "Sourced" (deeper per-journal research, every claim cites a source) and "Estimated" (family-level estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ---
 
@@ -152,7 +152,7 @@
 ## Soft Metadata
 
 > [!NOTE]
-> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (Crossref counts, a Wayback copy of the publisher's guidelines, SciRev) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **2/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (Crossref counts, a Wayback copy of the publisher's guidelines, SciRev) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **2/5**. This is a *different* evidence basis than "Sourced" (deeper per-journal research, every claim cites a source) or "Estimated" (family-level estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ### Epistemological & Political Leanings
 

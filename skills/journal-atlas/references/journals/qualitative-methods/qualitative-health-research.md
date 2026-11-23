@@ -307,7 +307,7 @@ Counts of records mentioning each topic in titles/abstracts among the 902 with a
 
 ### AI-Research Notes (upgrade pass, 2026-11-23)
 
-Plain supplementary block; the Tier 2 warning above is unchanged. Overall `signal_quality`: **3/5**. Per layer: policy and format 4 (the journal's own guidelines read in full, via a snapshot dated 2025-08-07), counts 4 (Crossref abstracts cover 98%), reviewer pool 1 (the only readable board list is from 2021), experiential 2 (SciRev n=5).
+Plain supplementary block; the Estimated warning above is unchanged. Overall `signal_quality`: **3/5**. Per layer: policy and format 4 (the journal's own guidelines read in full, via a snapshot dated 2025-08-07), counts 4 (Crossref abstracts cover 98%), reviewer pool 1 (the only readable board list is from 2021), experiential 2 (SciRev n=5).
 
 **Sources:**
 - https://journals.sagepub.com/author-instructions/qhr (Wayback snapshot 2025-08-07)

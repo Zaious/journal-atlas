@@ -158,7 +158,7 @@
 ## Soft Metadata
 
 > [!NOTE]
-> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (Crossref counts, Wayback copies of the publisher's pages, SciRev, and searches of Chinese-language and Reddit sources) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **2/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (Crossref counts, Wayback copies of the publisher's pages, SciRev, and searches of Chinese-language and Reddit sources) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **2/5**. This is a *different* evidence basis than "Sourced" (deeper per-journal research, every claim cites a source) or "Estimated" (family-level estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ### Epistemological & Political Leanings
 

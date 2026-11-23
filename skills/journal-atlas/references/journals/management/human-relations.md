@@ -7,7 +7,7 @@
 > **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 6 of 6 sampled pairs supported, then 4 supported and 1 partial of 5 pairs from the corrected content; wrongly 'unreadable' pages found outside the sample were read and used. No first-hand human reports; not human-verified.
+> **Evidence basis**: Sourced under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 6 of 6 sampled pairs supported, then 4 supported and 1 partial of 5 pairs from the corrected content; wrongly 'unreadable' pages found outside the sample were read and used. No first-hand human reports; not human-verified.
 
 ---
 

@@ -7,7 +7,7 @@
 > **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 9 supported and 2 partial of 11 sampled pairs over two independent rounds. No first-hand human reports; not human-verified.
+> **Evidence basis**: Sourced under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **3/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 9 supported and 2 partial of 11 sampled pairs over two independent rounds. No first-hand human reports; not human-verified.
 
 ---
 
