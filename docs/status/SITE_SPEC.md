@@ -141,35 +141,35 @@ crawlers; **P1** the common spec's core; **P2** polish; **D** needs a decision
 
 | ID | JA now | Pri | Status |
 |---|---|---|---|
-| T-live | `App.tsx` hard-codes corpus numbers in 7 places (399, 236, 88%, 106, 40%, 100%); the corpus is growing (live API says 399, the maintainer's branch is further on), so each is already wrong or about to be | P0 | open |
-| T-models | Provider and model names are not on the page; they change | P0 | open |
-| T-human | No statement of how many entries carry first-hand human evidence; footer says "none human-verified" for philosophy only | P0 | open |
-| T7 | No AI-disclosure page | P0 | open |
-| T9 | No privacy statement. The page sends the pasted text to a third-party model provider (Anthropic at the time of writing, from `/api/health`) | P0 | open |
-| S9 | Every unknown path, `robots.txt`, `sitemap.xml`, `llms.txt`, `manifest.webmanifest` returns the SPA shell with 200 (verified by curl: 8,255 bytes each) | P0 | open |
-| S4, S5, S6 | No `robots.txt`, `sitemap.xml`, `llms.txt` (see S9) | P1 | open |
-| S1, S2 | `<title>Journal Atlas</title>` only; no description, canonical, OG, twitter, JSON-LD, `theme-color`, apple-touch-icon | P1 | open |
-| T8, T1 | One page. No About; no studio attribution | P1 | open |
-| T2 | No non-endorsement line for the journals, publishers and data providers it names; no "research prototype / AI-assisted" mark near the brand | P1 | open |
-| T4 | No licence line on the site | P1 | open |
-| T6 | Contact is "Report something wrong" (GitHub issues) only, which is the instruction for this task | P1 | open |
-| T11 | No status page; `/healthz` and `/api/health` exist but are not surfaced | P2 | open |
-| T3 | Declarations live in three JSX blocks and the README; no single source | P1 | open |
-| P3 | Live headers: only `nosniff` and `referrer-policy` (no CSP, HSTS, `X-Frame-Options`, `Permissions-Policy`) | P1 | open |
-| P2 | Hashed assets get `max-age=14400, must-revalidate`, not `immutable` | P2 | open |
-| A1, A2 | No skip link; no `<main>`; textarea focus ring is a 15% alpha shadow with `outline: none`; button has no visible ring | P1 | open |
-| A3 | Several grey and lilac text colours below 4.5:1 on white (to be measured, not estimated) | P1 | open |
-| A5 | Copy button and small controls under 44 px | P2 | open |
-| A6 | Pulse and fade animations ignore `prefers-reduced-motion` | P2 | open |
-| A7 | Errors and stage changes are not announced; stage state is colour-only | P1 | open |
-| A8 | Coverage table has no `scope` on headers | P2 | open |
-| D1 | Colours are 110 hex literals (80 distinct) in `App.css`; no tokens; dark mode by media query only | P2 | open |
-| D4 | No error boundary: a render error blanks the page | P2 | open |
-| S10 | Prerender covers the home page only; one `<h1>` there | P1 | open |
-| S8 | Favicon SVG only | P2 | open |
-| O2 | Gates exist in `demo/README`/`DEPLOY.md` prose, not as a script | P1 | open |
-| O4 | `test_frontend_and_readme_report_the_same_concentration` ties README to the API; nothing stops a number being typed back into the front end | P1 | open |
-| P1 | No size check; first-load JS is 328 KB (103 KB gzip), measured | P2 | open |
+| T-live | `App.tsx` hard-codes corpus numbers in 7 places (399, 236, 88%, 106, 40%, 100%); the corpus is growing (live API says 399, the maintainer's branch is further on), so each is already wrong or about to be | P0 | done |
+| T-models | Provider and model names are not on the page; they change | P0 | done |
+| T-human | No statement of how many entries carry first-hand human evidence; footer says "none human-verified" for philosophy only | P0 | done |
+| T7 | No AI-disclosure page | P0 | done |
+| T9 | No privacy statement. The page sends the pasted text to a third-party model provider (Anthropic at the time of writing, from `/api/health`) | P0 | done |
+| S9 | Every unknown path, `robots.txt`, `sitemap.xml`, `llms.txt`, `manifest.webmanifest` returns the SPA shell with 200 (verified by curl: 8,255 bytes each) | P0 | done |
+| S4, S5, S6 | No `robots.txt`, `sitemap.xml`, `llms.txt` (see S9) | P1 | done |
+| S1, S2 | `<title>Journal Atlas</title>` only; no description, canonical, OG, twitter, JSON-LD, `theme-color`, apple-touch-icon | P1 | done |
+| T8, T1 | One page. No About; no studio attribution | P1 | done |
+| T2 | No non-endorsement line for the journals, publishers and data providers it names; no "research prototype / AI-assisted" mark near the brand | P1 | done |
+| T4 | No licence line on the site | P1 | done |
+| T6 | Contact is "Report something wrong" (GitHub issues) only, which is the instruction for this task | P1 | done |
+| T11 | No status page; `/healthz` and `/api/health` exist but are not surfaced | P2 | done |
+| T3 | Declarations live in three JSX blocks and the README; no single source | P1 | done |
+| P3 | Live headers: only `nosniff` and `referrer-policy` (no CSP, HSTS, `X-Frame-Options`, `Permissions-Policy`) | P1 | done |
+| P2 | Hashed assets get `max-age=14400, must-revalidate`, not `immutable` | P2 | done |
+| A1, A2 | No skip link; no `<main>`; textarea focus ring is a 15% alpha shadow with `outline: none`; button has no visible ring | P1 | done |
+| A3 | Several grey and lilac text colours below 4.5:1 on white (to be measured, not estimated) | P1 | done |
+| A5 | Copy button and small controls under 44 px | P2 | done |
+| A6 | Pulse and fade animations ignore `prefers-reduced-motion` | P2 | done |
+| A7 | Errors and stage changes are not announced; stage state is colour-only | P1 | done |
+| A8 | Coverage table has no `scope` on headers | P2 | done |
+| D1 | Colours are 110 hex literals (80 distinct) in `App.css`; no tokens; dark mode by media query only | P2 | done |
+| D4 | No error boundary: a render error blanks the page | P2 | done |
+| S10 | Prerender covers the home page only; one `<h1>` there | P1 | done |
+| S8 | Favicon SVG only | P2 | done |
+| O2 | Gates exist in `demo/README`/`DEPLOY.md` prose, not as a script | P1 | done |
+| O4 | `test_frontend_and_readme_report_the_same_concentration` ties README to the API; nothing stops a number being typed back into the front end | P1 | done |
+| P1 | No size check; first-load JS is 328 KB (103 KB gzip), measured | P2 | done |
 | S12 | English only; `README.zh-Hant.md` exists | D | open |
 | M1 | None. Nothing to configure | D | n/a by constraint |
 | M2 | No ads. Policy not written down | D | open |
@@ -178,6 +178,23 @@ crawlers; **P1** the common spec's core; **P2** polish; **D** needs a decision
 | T10 | No terms page (siblings only have one where there are accounts or payment) | n/a | n/a |
 | O3 | `npm audit` not run on a schedule | P2 | open |
 | O5 | No uptime monitor or error monitor | D | open |
+
+**What "done" means here.** Implemented on this branch and checked by
+`npm run build` (which runs `scripts/check-site.mjs`: pages, tokens, worker
+headers over `dist/` through a Pages emulator, sitemap, bundle rules), by
+`pytest demo/backend/tests`, and by loading every page in headless Chromium
+through the real worker code, in light and dark and at 390 px, with no console
+error, CSP violation or hydration warning (the 404 page logs the browser's own
+"404" resource line). **Not verified:** behaviour on Cloudflare itself (the
+emulator follows the documented Pages behaviour, it is not Cloudflare), the
+new `/api/coverage` fields on the deployed API (it predates them; the pages
+degrade to wording without the figures, checked against the live JSON), real
+Core Web Vitals (no field data; the only measured number is bundle size:
+JS 107.8 KB and CSS 3.7 KB gzip), and screen-reader behaviour (no screen
+reader was run; the markup follows A1-A9). Run `node scripts/smoke.mjs <url>`
+after deploying. Before this branch the same script, run against the live
+site, failed 13 of 30 checks (no canonical, CSP, HSTS, robots/sitemap/llms
+answered by the SPA shell with 200, unknown URL answered 200).
 
 ## 3. Decisions for the maintainer
 
@@ -224,3 +241,15 @@ Written up here, not decided or built.
    in one line while you look.
 9. **Header badge.** A short "research prototype, AI-assisted" tag sits next to the
    brand. Remove it if you think it undersells the project.
+10. **What the AI page says about who wrote what.** It states the basis of each
+    part (code by Claude models, per the commit trailers; AI-Researched by a
+    per-journal AI run; Tier 2 as family-level estimates; Tier 1 as evidenced)
+    and says outright that it makes no claim about who typed an individual
+    Tier 1 or Tier 2 entry. If you want it to say more (for example that the
+    Tier 1 entries come from your own submission research), that is a sentence
+    you add. It names no agent personas and describes no orchestration, per the
+    red lines in `AGENTS.md`.
+11. **Nothing was deployed, pushed or enabled.** No wrangler, no VPS change, no
+    ads, no analytics, no accounts or keys. Two things need a deploy to take
+    effect: the Pages build (frontend) and a backend restart (the
+    `/api/coverage` additions).
