@@ -45,20 +45,16 @@ export default function About() {
           <a href={SITE.author.url} target="_blank" rel="noreferrer">
             {SITE.author.name} ({SITE.author.handle})
           </a>{" "}
-          — an independent HCI researcher and AI agent architect, working
-          outside an institution. This started as my own problem. I had
-          manuscripts to place, the qualitative and theoretical kind that get
-          judged by standards written for other work, and the question
-          &quot;where does this actually belong?&quot; had no good answer anywhere. Ask a
-          model and it names the most famous journals in the area. Ask a colleague
-          who has published there and you get something worth ten times as much —
-          but only if you happen to know that colleague.
+          — an independent HCI researcher and AI agent architect. The project
+          started from a need of my own: I had to choose where to submit my
+          research, and I wanted that choice to rest on written, checkable
+          information instead of guesswork.
         </p>
         <p>
-          So I started writing down what that colleague would have said. The
-          project is what happened when I kept going, and then made the
-          machine-readable version an AI agent could read without inventing the
-          parts nobody had written down yet.
+          When I came across the Open Journal Matcher (below), I wanted to carry
+          its ideas forward and not start from nothing: open, free to use, and
+          built so the knowledge outlives any one person. This project is that
+          attempt, in a form an AI agent can read.
         </p>
         <p>
           It is a{" "}

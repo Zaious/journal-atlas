@@ -222,7 +222,9 @@ Written up here, not decided or built.
    Options: stay at none and learn nothing about use; first-party counters on
    the API only (no third party, still visitor data, needs a privacy line); or
    a consented tool. Any of the last two needs your yes.
-3. **Ads.** Siblings: riftbound dormant AdSense account, TechnologyStackMap
+3. **Ads.** DECIDED 2026-11-23: stay with no ads and write no policy. Nothing
+   changed; the footer line and the build gate stay. Original description
+   follows. Siblings: riftbound dormant AdSense account, TechnologyStackMap
    env-gated. JA is a tool whose product is trust in a recommendation, which by
    `ccweb-ads` section 5 is a "trust page" where ads cost more than they earn.
    Built: "no ads" is stated on the site. Say if that should change.
@@ -251,14 +253,23 @@ Written up here, not decided or built.
    submission research": that reads as first-hand experience of the maintainer,
    and the page says only what you told me, which is that no entry records a
    first-hand report.
-8. **Strict CSP.** Built and enforced in the Pages worker (`public/_worker.js`).
+8. **Strict CSP.** DECIDED 2026-11-23: keep enforcing; run `npm run smoke`
+   right after deploy; fall back to `Report-Only` with the one-line switch below
+   if it shows a console error. Original description follows. Built and enforced in the Pages worker (`public/_worker.js`).
    It was tested against the built pages and with a headless browser through the
    worker code, not on Cloudflare. If the first post-deploy smoke test shows a
    console CSP error, switch the header name to `Content-Security-Policy-Report-Only`
    in one line while you look.
-9. **Header badge.** A short "research prototype, AI-assisted" tag sits next to the
+9. **Header badge.** DECIDED 2026-11-23: keep as is. Original description
+   follows. A short "research prototype, AI-assisted" tag sits next to the
    brand. Remove it if you think it undersells the project.
-10. **What the AI page says about who wrote what.** It states the basis of each
+10. **What the AI page says about who wrote what.** DECIDED 2026-11-23: keep
+    as is (basis of evidence, no claim about who typed an entry). Open for the
+    content session: `SEED_DATA_QUALITY.md` describes Tier 1 as built from "author
+    submission research", which reads as the maintainer's first-hand experience;
+    the maintainer says in practice it was his direction plus multi-round AI
+    research, with no first-hand human information. The site does not repeat that
+    phrase. Original description follows. It states the basis of each
     part (code by Claude models, per the commit trailers; AI-Researched by a
     per-journal AI run; Tier 2 as family-level estimates; Tier 1 as evidenced)
     and says outright that it makes no claim about who typed an individual
@@ -266,7 +277,16 @@ Written up here, not decided or built.
     Tier 1 entries come from your own submission research), that is a sentence
     you add. It names no agent personas and describes no orchestration, per the
     red lines in `AGENTS.md`.
-11. **Nothing was deployed, pushed or enabled.** No wrangler, no VPS change, no
+11. **About page, first person (found during review).** The first draft had the
+    maintainer saying "I had manuscripts to place" and "I started writing down
+    what that colleague would have said", neither approved, the second
+    contradicting "0 first-hand reports". DECIDED 2026-11-23: keep only the facts,
+    his own need ("I had to choose where to submit my research"), and that
+    coming across the Open Journal Matcher made him want to carry its ideas
+    forward. Rewritten accordingly. The clause "built so the knowledge outlives any
+    one person" is the drafter's wording of that idea (it echoes the OJM section
+    below it); say if it should go.
+12. **Nothing was deployed, pushed or enabled.** No wrangler, no VPS change, no
     ads, no analytics, no accounts or keys. Two things need a deploy to take
     effect: the Pages build (frontend) and a backend restart (the
     `/api/coverage` additions).
