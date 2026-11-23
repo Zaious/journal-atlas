@@ -17,7 +17,13 @@ const api = apiFlag >= 0 ? args.splice(apiFlag, 2)[1] : "https://api.journal-atl
 const base = (args[0] ?? "http://localhost:4600").replace(/\/$/, "");
 
 // The zone answers some default User-Agents with 403, so identify as a browser-like client.
-const headers = { "user-agent": "Mozilla/5.0 (compatible; journal-atlas-smoke)" };
+// Ask like a browser does. Cloudflare injects some scripts (Web Analytics) only
+// into responses for requests that accept HTML, so a bare request sees a page no
+// visitor gets; found on the first deploy, 2026-11-24.
+const headers = {
+  "user-agent": "Mozilla/5.0 (compatible; journal-atlas-smoke)",
+  accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+};
 const results = [];
 const check = (name, ok, detail = "") => results.push({ name, ok, detail });
 
@@ -57,6 +63,11 @@ check("headers: X-Content-Type-Options nosniff", h("x-content-type-options") ===
 check("headers: Referrer-Policy", h("referrer-policy") === "strict-origin-when-cross-origin", h("referrer-policy") || "absent");
 check("headers: X-Frame-Options or frame-ancestors", h("x-frame-options") === "DENY" || /frame-ancestors/.test(h("content-security-policy")));
 check("headers: no cookie is set", !home.r?.headers.get("set-cookie"), home.r?.headers.get("set-cookie") ?? "");
+// The build gate checks dist/; this checks what is actually served, which the
+// CDN can change. The site says it loads no analytics or third-party scripts.
+const thirdParty = [...home.text.matchAll(/<script\b[^>]*\bsrc="(https?:)?\/\/[^"]*"/g)].map((m) => m[0]);
+const analytics = /cloudflareinsights|googletagmanager|google-analytics|gtag\(|posthog|plausible\.io|adsbygoogle|googlesyndication/i;
+check("served HTML has no third-party or analytics script", thirdParty.length === 0 && !analytics.test(home.text), thirdParty.join(" ").slice(0, 160));
 
 const robots = await get(base + "/robots.txt");
 check("/robots.txt is plain text with a Sitemap line", robots.r?.status === 200 && !(robots.r.headers.get("content-type") ?? "").includes("html") && /^Sitemap: /m.test(robots.text), robots.r ? `${robots.r.status} ${robots.r.headers.get("content-type")}` : "no response");

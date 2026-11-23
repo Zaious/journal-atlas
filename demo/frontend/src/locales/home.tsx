@@ -303,7 +303,17 @@ export const HOME: Record<Lang, HomeText> = {
         </section>
 
         <section className="faq" aria-labelledby="f-faq">
-          <h2 id="f-faq">Questions</h2>
+          <div className="faq-head">
+            <h2 id="f-faq">Questions</h2>
+            <p>
+              Something else? Ask in a{" "}
+              <a href={ISSUES_URL} target="_blank" rel="noreferrer">
+                GitHub issue
+              </a>
+              .
+            </p>
+          </div>
+          <div className="faq-list">
           <details>
             <summary>Is it free? Why is there a limit?</summary>
             <p>
@@ -355,11 +365,17 @@ export const HOME: Record<Lang, HomeText> = {
               amount of research reaches. No entry records that yet.
             </p>
           </details>
+          </div>
         </section>
 
-        <p className="closing">
-          No account. No cookies. What you paste is not saved. <a href="/privacy/">Privacy</a>
-        </p>
+        <section className="trust" aria-labelledby="f-trust">
+          <h2 id="f-trust">Nothing to sign up for.</h2>
+          <p>
+            No account, no cookies, no ads. What you paste goes to a language-model provider to be read and is not saved
+            by this site; the API keeps only anonymous daily totals, with no address and no text.{" "}
+            <a href="/privacy/">Privacy</a>
+          </p>
+        </section>
       </>
     ),
     stageLabels: (total) => ({
@@ -550,7 +566,17 @@ export const HOME: Record<Lang, HomeText> = {
         </section>
 
         <section className="faq" aria-labelledby="f-faq">
-          <h2 id="f-faq">常見問題</h2>
+          <div className="faq-head">
+            <h2 id="f-faq">常見問題</h2>
+            <p>
+              還有別的問題？請在{" "}
+              <a href={ISSUES_URL} target="_blank" rel="noreferrer">
+                GitHub issue
+              </a>{" "}
+              提出。
+            </p>
+          </div>
+          <div className="faq-list">
           <details>
             <summary>免費嗎？為什麼有上限？</summary>
             <p>
@@ -596,11 +622,16 @@ export const HOME: Record<Lang, HomeText> = {
               ，你可以把它指向你的領域。或者，如果你投稿過或審查過某本期刊，請補上再多研究也摸不到的部分。目前沒有任何條目記錄這些。
             </p>
           </details>
+          </div>
         </section>
 
-        <p className="closing">
-          沒有帳號。不設 cookie。你貼上的內容不會被儲存。<a href="/zh-hant/privacy/">隱私</a>
-        </p>
+        <section className="trust" aria-labelledby="f-trust">
+          <h2 id="f-trust">什麼都不用註冊。</h2>
+          <p>
+            沒有帳號、不設 cookie、沒有廣告。你貼上的內容會送到語言模型供應商閱讀，本站不會儲存；API 只保存匿名的每日彙總，不含位址、也不含文字。
+            <a href="/zh-hant/privacy/">隱私</a>
+          </p>
+        </section>
       </>
     ),
     stageLabels: (total) => ({

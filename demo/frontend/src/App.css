@@ -11,10 +11,7 @@
 }
 
 .prose,
-.results,
-.faq,
-.closing,
-.site-footer > p {
+.results {
   max-width: var(--measure);
 }
 
@@ -125,6 +122,17 @@ html:lang(zh-Hant) body {
 
 .site-footer p {
   margin: 0 0 0.7rem;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 3.5rem;
+  align-items: start;
+}
+
+.site-footer > .footer-links {
+  grid-column: 1 / -1;
 }
 
 .site-footer a {
@@ -1431,26 +1439,88 @@ html:lang(zh-Hant) .faq h2 {
   background: var(--accent-hover);
 }
 
-.faq {
-  padding: 3.5rem 0 1rem;
+/* Questions and the trust row follow basesmall: heading on the left, content
+   on the right, so the frame is used edge to edge instead of leaving the right
+   half empty. */
+.faq,
+.trust {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem 3.5rem;
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.cta-band + .faq {
+  margin-top: 3.5rem;
+}
+
+.faq-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.faq-head a {
+  color: var(--accent-text);
+}
+
+.trust h2 {
+  margin: 0;
+  color: var(--fg-strong);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.trust p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.trust a {
+  color: var(--accent-text);
 }
 
 .faq details {
   border-top: 1px solid var(--line);
 }
 
-.faq details:last-of-type {
+.faq details {
   border-bottom: 1px solid var(--line);
 }
 
 .faq summary {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
   min-height: 2.75rem;
   padding: 0.6rem 0;
   color: var(--fg-strong);
   font-weight: 600;
   cursor: pointer;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.faq details[open] summary::after {
+  content: "\2212";
+}
+
+.faq details:first-of-type {
+  border-top: none;
 }
 
 .faq details p {
@@ -1491,5 +1561,16 @@ html:lang(zh-Hant) .faq h2 {
   .legend-list li {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.3rem;
+  }
+
+  .faq,
+  .trust,
+  .site-footer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .faq,
+  .trust {
+    padding: 2.5rem 0;
   }
 }
