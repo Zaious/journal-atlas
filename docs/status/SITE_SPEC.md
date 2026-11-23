@@ -170,7 +170,7 @@ crawlers; **P1** the common spec's core; **P2** polish; **D** needs a decision
 | O2 | Gates exist in `demo/README`/`DEPLOY.md` prose, not as a script | P1 | done |
 | O4 | `test_frontend_and_readme_report_the_same_concentration` ties README to the API; nothing stops a number being typed back into the front end | P1 | done |
 | P1 | No size check; first-load JS is 328 KB (103 KB gzip), measured | P2 | done |
-| S12 | English only; `README.zh-Hant.md` exists | D | open |
+| S12 | English only; `README.zh-Hant.md` exists | D | done 2026-11-23, decision 11: Traditional Chinese under `/zh-hant/`, same five pages plus a 404, `hreflang` pairs and `x-default`, sitemap alternates, language-aware `<html lang>`/`og:locale`/JSON-LD. Prose pages are one component per language (`src/pages/zh-Hant/`), Home and Status read a language table (`src/locales/`). The gate fails on: a page missing in a language, different headings/sections/paragraphs/list items/table cells/ids/links from the English one, a link crossing languages, no hreflang pair, "verified by a human/expert" wording in either language. **The Chinese is a translation by the drafting model and has not been read by the maintainer; the footer says the English wins.** Backend messages (rate-limit refusals, errors) and the recommendation text are not translated |
 | M1 | None. Nothing to configure | D | n/a by constraint |
 | M2 | No ads. Policy not written down | D | open |
 | S7 | No `ads.txt` (correct while there are no ads) | n/a | n/a |
@@ -230,9 +230,13 @@ Written up here, not decided or built.
    Built: "no ads" is stated on the site. Say if that should change.
 4. **IndexNow, Search Console, Bing Webmaster.** Outward-facing; not done.
 5. **A zh-Hant interface.** Three siblings ship a second language. JA's
-   audience is international researchers, but `README.zh-Hant.md` exists. The
-   page text now lives in one module so a translation is a data change, not a
-   rewrite; the work and the review are yours to schedule.
+   audience is international researchers, but `README.zh-Hant.md` exists.
+   CORRECTION (2026-11-23): an earlier draft said the page text lives in one
+   module so a translation is only a data change. That was wrong. Site-wide facts
+   (names, URLs, licences) are in `site.ts`, but the prose of every page is JSX
+   in `src/pages/*.tsx` (about 2,000 lines, with inline links and live figures).
+   A second language needs that prose extracted into per-language dictionaries
+   first, then translated and reviewed by the maintainer.
 6. **Content licence wording.** DECIDED 2026-11-23: CC BY-SA 4.0 stands (the
    2026-05-18 change documented in `LICENSE`). `AGENTS.md` was the stale file;
    its two NC-SA lines were corrected (workspace file, not in git). No other

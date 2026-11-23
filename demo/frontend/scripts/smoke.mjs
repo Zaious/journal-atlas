@@ -30,12 +30,24 @@ async function get(url) {
   }
 }
 
-for (const path of ["/", "/about/", "/ai/", "/privacy/", "/status/"]) {
-  const { r, text } = await get(base + path);
-  check(`${path} is a 200 HTML page`, r?.status === 200 && (r.headers.get("content-type") ?? "").includes("text/html"), r ? `${r.status} ${r.headers.get("content-type")}` : "no response");
-  check(`${path} has its own <title> and one <h1>`, /<title>[^<]+<\/title>/.test(text) && (text.match(/<h1[\s>]/g) ?? []).length === 1);
-  check(`${path} canonical points at itself`, path === "/status/" || text.includes(`<link rel="canonical" href="https://journal-atlas.chroniclecore.com${path}"`));
+// Every page in both languages. The Chinese ones live under /zh-hant/ and must
+// say so in <html lang> and point back at their English counterpart.
+const PAGES = ["/", "/about/", "/ai/", "/privacy/", "/status/"];
+for (const lang of ["en", "zh-Hant"]) {
+  for (const page of PAGES) {
+    const path = lang === "en" ? page : `/zh-hant${page}`;
+    const { r, text } = await get(base + path);
+    check(`${path} is a 200 HTML page`, r?.status === 200 && (r.headers.get("content-type") ?? "").includes("text/html"), r ? `${r.status} ${r.headers.get("content-type")}` : "no response");
+    check(`${path} has its own <title> and one <h1>`, /<title>[^<]+<\/title>/.test(text) && (text.match(/<h1[\s>]/g) ?? []).length === 1);
+    check(`${path} is <html lang="${lang}">`, text.includes(`<html lang="${lang}"`));
+    check(`${path} canonical points at itself`, page === "/status/" || text.includes(`<link rel="canonical" href="https://journal-atlas.chroniclecore.com${path}"`));
+    if (page !== "/status/") {
+      check(`${path} names its other-language version (hreflang)`, text.includes('hreflang="zh-Hant"') && text.includes('hreflang="en"') && text.includes('hreflang="x-default"'));
+    }
+  }
 }
+const zhMissing = await get(base + "/zh-hant/no-such-page-smoke-test");
+check("an unknown /zh-hant/ URL is a real 404 with the Chinese page", zhMissing.r?.status === 404 && zhMissing.text.includes("找不到頁面"), zhMissing.r ? String(zhMissing.r.status) : "no response");
 
 const home = await get(base + "/");
 const h = (name) => home.r?.headers.get(name) ?? "";
@@ -49,7 +61,7 @@ check("headers: no cookie is set", !home.r?.headers.get("set-cookie"), home.r?.h
 const robots = await get(base + "/robots.txt");
 check("/robots.txt is plain text with a Sitemap line", robots.r?.status === 200 && !(robots.r.headers.get("content-type") ?? "").includes("html") && /^Sitemap: /m.test(robots.text), robots.r ? `${robots.r.status} ${robots.r.headers.get("content-type")}` : "no response");
 const sitemap = await get(base + "/sitemap.xml");
-check("/sitemap.xml is XML and lists the indexable pages", sitemap.r?.status === 200 && /<urlset/.test(sitemap.text) && ["/about/", "/ai/", "/privacy/"].every((p) => sitemap.text.includes(p)), sitemap.r ? `${sitemap.r.status} ${sitemap.r.headers.get("content-type")}` : "no response");
+check("/sitemap.xml is XML and lists the indexable pages", sitemap.r?.status === 200 && /<urlset/.test(sitemap.text) && ["/about/", "/ai/", "/privacy/", "/zh-hant/about/", "/zh-hant/privacy/"].every((p) => sitemap.text.includes(p)), sitemap.r ? `${sitemap.r.status} ${sitemap.r.headers.get("content-type")}` : "no response");
 check("/sitemap.xml leaves out the noindex status page", !/\/status\//.test(sitemap.text));
 const llms = await get(base + "/llms.txt");
 check("/llms.txt is plain text starting with an H1", llms.r?.status === 200 && /^# /.test(llms.text), llms.r ? `${llms.r.status} ${llms.r.headers.get("content-type")}` : "no response");

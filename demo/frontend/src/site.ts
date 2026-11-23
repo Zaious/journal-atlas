@@ -11,6 +11,9 @@
  * typed into the front end.
  */
 
+import { DEFAULT_LANG, LANGS, langOfPath, localePath, stripLang, type Lang } from "./i18n";
+import { PAGE_TEXT, type PageId } from "./locales/meta";
+
 export const SITE = {
   name: "Journal Atlas",
   url: "https://journal-atlas.chroniclecore.com",
@@ -59,16 +62,16 @@ export const SITE = {
   /** Matches `--bg` in index.css, light theme. */
   themeColor: "#ffffff",
   ogImage: "/og.png",
-  ogImageAlt: "Journal Atlas: journal fit with the evidence shown",
 } as const;
 
 export const ISSUES_URL = `${SITE.repoUrl}/issues`;
 
-export type PageId = "home" | "about" | "ai" | "privacy" | "status" | "notfound";
+export type { PageId };
 
 export interface PageMeta {
   id: PageId;
-  /** Canonical path, with a trailing slash except for the root. */
+  lang: Lang;
+  /** Canonical path, with a trailing slash except for the root and the 404 file. */
   path: string;
   title: string;
   description: string;
@@ -80,70 +83,88 @@ export interface PageMeta {
   sources: string[];
 }
 
-export const PAGES: PageMeta[] = [
+/** What is the same for a page in every language. */
+interface PageBase {
+  id: PageId;
+  /** Language-neutral path; the language prefix is added by `localePath`. */
+  path: string;
+  noindex?: boolean;
+  sources: Record<Lang, string[]>;
+}
+
+const BASE: PageBase[] = [
   {
     id: "home",
     path: "/",
-    title: "Journal Atlas: journal fit with the evidence shown",
-    description:
-      "Describe your paper and get journal and conference candidates scored against an open knowledge base. Every result shows how well each entry is evidenced.",
-    sources: ["src/pages/Home.tsx", "src/App.tsx"],
+    sources: {
+      en: ["src/pages/Home.tsx", "src/App.tsx", "src/locales/home.tsx"],
+      "zh-Hant": ["src/pages/Home.tsx", "src/App.tsx", "src/locales/home.tsx"],
+    },
   },
   {
     id: "about",
     path: "/about/",
-    title: "About Journal Atlas",
-    description:
-      "What Journal Atlas is, who maintains it, why it exists, and where to report a wrong entry.",
-    navLabel: "About",
-    sources: ["src/pages/About.tsx"],
+    sources: { en: ["src/pages/About.tsx"], "zh-Hant": ["src/pages/zh-Hant/About.tsx"] },
   },
   {
     id: "ai",
     path: "/ai/",
-    title: "How Journal Atlas is made, and what is AI",
-    description:
-      "Which parts of Journal Atlas are written by AI, which models run the demo, what no entry yet records, and what the project will not claim.",
-    navLabel: "How it's made",
-    sources: ["src/pages/Ai.tsx"],
+    sources: { en: ["src/pages/Ai.tsx"], "zh-Hant": ["src/pages/zh-Hant/Ai.tsx"] },
   },
   {
     id: "privacy",
     path: "/privacy/",
-    title: "Privacy: what happens to the text you paste",
-    description:
-      "The text you paste is sent to a model provider to be read. This page says what is kept, what is not, and which third parties are involved.",
-    navLabel: "Privacy",
-    sources: ["src/pages/Privacy.tsx"],
+    sources: { en: ["src/pages/Privacy.tsx"], "zh-Hant": ["src/pages/zh-Hant/Privacy.tsx"] },
   },
   {
     id: "status",
     path: "/status/",
-    title: "Status",
-    description: "Live status of the Journal Atlas demo: API reachability, models, daily limits and corpus version.",
-    navLabel: "Status",
     noindex: true,
-    sources: ["src/pages/Status.tsx"],
+    sources: { en: ["src/pages/Status.tsx"], "zh-Hant": ["src/pages/Status.tsx", "src/locales/status.tsx"] },
   },
   {
     id: "notfound",
     path: "/404.html",
-    title: "Page not found",
-    description: "This address does not exist on Journal Atlas. Try the home page, the About page, or report a broken link.",
     noindex: true,
-    sources: ["src/pages/NotFound.tsx"],
+    sources: { en: ["src/pages/NotFound.tsx"], "zh-Hant": ["src/pages/NotFound.tsx"] },
   },
 ];
 
+/** Every page in every language, English first. */
+export const PAGES: PageMeta[] = LANGS.flatMap((lang) =>
+  BASE.map((b) => ({
+    id: b.id,
+    lang,
+    // The English 404 is /404.html, which Cloudflare Pages serves for any unknown
+    // URL. Pages rewrites `x.html` to `x`, so the worker cannot rely on that name
+    // for another language; the Chinese one is a directory page it fetches itself.
+    path: b.id === "notfound" && lang !== DEFAULT_LANG ? localePath(lang, "/404/") : localePath(lang, b.path),
+    ...PAGE_TEXT[lang][b.id],
+    noindex: b.noindex,
+    sources: b.sources[lang],
+  })),
+);
+
 export function pageForPath(pathname: string): PageMeta | undefined {
-  const clean = pathname.replace(/index\.html$/, "");
+  const lang = langOfPath(pathname);
+  const clean = stripLang(pathname).replace(/index\.html$/, "");
   const withSlash = clean.endsWith("/") ? clean : `${clean}/`;
-  return PAGES.find((p) => p.path === withSlash && p.id !== "notfound");
+  return PAGES.find((p) => p.lang === lang && p.id !== "notfound" && stripLang(p.path) === withSlash);
 }
 
-/** The page for a URL path; anything unknown is the 404 page. */
+/** The page for a URL path; anything unknown is the 404 page in that path's language. */
 export function resolvePage(pathname: string): PageMeta {
-  return pageForPath(pathname) ?? PAGES.find((p) => p.id === "notfound")!;
+  const found = pageForPath(pathname);
+  if (found) return found;
+  const lang = langOfPath(pathname);
+  return PAGES.find((p) => p.lang === lang && p.id === "notfound")!;
 }
+
+/** The same page in another language. */
+export function pageInLang(page: PageMeta, lang: Lang): PageMeta {
+  return PAGES.find((p) => p.lang === lang && p.id === page.id)!;
+}
+
+export { DEFAULT_LANG };
 
 export const absoluteUrl = (path: string) => `${SITE.url}${path}`;

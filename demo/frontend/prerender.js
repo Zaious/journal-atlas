@@ -17,7 +17,10 @@
  * Output, from the page list in src/site.ts:
  *   dist/index.html            /
  *   dist/<page>/index.html     /about/, /ai/, /privacy/, /status/
+ *   dist/zh-hant/...           the same set in Traditional Chinese
  *   dist/404.html              served with a 404 status for any unknown URL
+ *   dist/zh-hant/404.html      the same for unknown URLs under /zh-hant/ (the
+ *                              Pages worker picks it, see public/_worker.js)
  *   dist/sitemap.xml, robots.txt, llms.txt
  *
  * Runs as the last build step, after the SSR build of src/entry-server.tsx
@@ -33,7 +36,7 @@ const DIST = join(ROOT, "dist");
 const EMPTY_ROOT = '<div id="root"></div>';
 const SEO_MARKER = "<!--seo-->";
 
-const { render, PAGES, headTags, sitemapXml, robotsTxt, llmsTxt } = await import(
+const { render, PAGES, LANG_TAG, headTags, sitemapXml, robotsTxt, llmsTxt } = await import(
   "./dist-ssr/entry-server.js"
 );
 const template = await readFile(join(DIST, "index.html"), "utf8");
@@ -53,10 +56,13 @@ function outFile(page) {
 for (const page of PAGES) {
   // The path a 404 page is rendered for is irrelevant, but it must resolve to
   // the not-found body, so hand it one nothing else uses.
-  const pathname = page.id === "notfound" ? "/__not-found__/" : page.path;
+  // It must resolve to the not-found page of the page's own language.
+  const unknown = page.lang === "en" ? "/__not-found__/" : "/zh-hant/__not-found__/";
+  const pathname = page.id === "notfound" ? unknown : page.path;
   // No whitespace around the markup: hydration walks the DOM node by node, and
   // a newline inside #root is a text node the server sent and the client did not.
   const html = template
+    .replace('<html lang="en">', `<html lang="${LANG_TAG[page.lang]}">`)
     .replace(SEO_MARKER, headTags(page))
     .replace(EMPTY_ROOT, `<div id="root">${render(pathname)}</div>`);
   const file = outFile(page);

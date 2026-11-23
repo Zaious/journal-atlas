@@ -37,6 +37,25 @@
 
 /* Beside the mark, not in a footnote: a reader who lands on any page should
    see what kind of thing this is before they trust a recommendation. */
+/* The link to the same page in the other language. Pushed to the end of the
+   brand row; a 44 px target like every other control. */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-left: auto;
+  padding: 0 0.2rem;
+  color: var(--accent-text);
+  font-size: 0.9rem;
+}
+
+/* Traditional Chinese: name the Traditional-Chinese faces first, so a browser
+   with several CJK fonts installed does not pick Simplified or Japanese glyph
+   shapes for the same code points. */
+html:lang(zh-Hant) body {
+  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
 .brand-tag {
   padding: 0.18rem 0.6rem;
   border-radius: 999px;

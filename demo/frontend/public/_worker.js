@@ -36,7 +36,8 @@
  *    (SITE_SPEC.md, P2).
  *
  * A request for a URL with no file gets 404.html with a 404 status from the
- * Pages asset layer; this worker passes that status through untouched.
+ * Pages asset layer; this worker passes that status through untouched, except
+ * under /zh-hant/, where it swaps in the Chinese 404 page (see below).
  *
  * This file lives in `public/` so Vite copies it verbatim to `dist/`, where
  * Pages picks it up.
@@ -90,7 +91,15 @@ export default {
       return Response.redirect(url.toString(), 302);
     }
 
-    const upstream = await env.ASSETS.fetch(request);
+    let upstream = await env.ASSETS.fetch(request);
+    // Pages answers every unknown URL with the English /404.html. Under
+    // /zh-hant/ the visitor reads Chinese, so serve the Chinese 404 page with the
+    // same 404 status. It is a directory page (not `404.html`) because Pages
+    // rewrites `x.html` to `x`, and a redirect here would turn the 404 into a 308.
+    if (upstream.status === 404 && /^\/zh-hant(\/|$)/i.test(url.pathname)) {
+      const zh = await env.ASSETS.fetch(new Request(new URL("/zh-hant/404/", url)));
+      if (zh.status === 200) upstream = new Response(zh.body, { status: 404, headers: zh.headers });
+    }
     const response = new Response(upstream.body, upstream);
     for (const [name, value] of Object.entries(SECURITY_HEADERS)) response.headers.set(name, value);
     response.headers.set("Content-Security-Policy", contentSecurityPolicy(env));

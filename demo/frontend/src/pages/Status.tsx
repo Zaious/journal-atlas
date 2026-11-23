@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { API_BASE, providerLabel, useCoverage, useHealth, useUsage } from "../api";
 import { VersionLine } from "../components/VersionLine";
-import { ISSUES_URL } from "../site";
+import { useLang } from "../i18n";
+import { STATUS } from "../locales/status";
 
 type Probe = "checking" | "up" | "down";
 
@@ -14,6 +15,8 @@ type Probe = "checking" | "up" | "down";
  * status page that cannot say "I cannot tell" is worse than none.
  */
 export default function Status() {
+  const lang = useLang();
+  const m = STATUS[lang];
   const health = useHealth();
   const coverage = useCoverage().data;
   const usage = useUsage().data;
@@ -34,38 +37,35 @@ export default function Status() {
 
   return (
     <article className="prose">
-      <h1>Status</h1>
-      <p className="lede">
-        This page asks the API when you open it. If it cannot get an answer it says
-        so; it never assumes the demo is fine.
-      </p>
+      <h1>{m.title}</h1>
+      <p className="lede">{m.lede}</p>
 
       <section aria-live="polite">
-        <h2>Right now</h2>
+        <h2>{m.rightNow}</h2>
         <dl className="facts">
           <div>
-            <dt>API</dt>
+            <dt>{m.api}</dt>
             <dd>
-              {probe === "checking" && "Checking…"}
-              {probe === "up" && "Reachable"}
-              {probe === "down" && "Not reachable from your browser. The demo is down, or something between you and it is."}
+              {probe === "checking" && m.checking}
+              {probe === "up" && m.reachable}
+              {probe === "down" && m.unreachable}
             </dd>
           </div>
           <div>
-            <dt>Model access</dt>
+            <dt>{m.modelAccess}</dt>
             <dd>
               {health.settled
                 ? h
                   ? h.provider_ready
-                    ? `Ready (${provider})`
-                    : "Not ready: the demo cannot call a model right now"
-                  : "Unknown: the API did not answer"
-                : "Checking…"}
+                    ? m.modelReady(provider)
+                    : m.modelNotReady
+                  : m.modelUnknown
+                : m.checking}
             </dd>
           </div>
           {h?.extraction_model && (
             <div>
-              <dt>Reads your description</dt>
+              <dt>{m.readsLabel}</dt>
               <dd>
                 <code>{h.extraction_model}</code>
               </dd>
@@ -73,7 +73,7 @@ export default function Status() {
           )}
           {h?.synthesis_model && (
             <div>
-              <dt>Writes the recommendation</dt>
+              <dt>{m.writesLabel}</dt>
               <dd>
                 <code>{h.synthesis_model}</code>
               </dd>
@@ -81,16 +81,13 @@ export default function Status() {
           )}
           {h?.limits && (
             <div>
-              <dt>Searches today</dt>
-              <dd>
-                {h.limits.global_used_today} of {h.limits.global_daily_limit} (shared by everyone;
-                each visitor gets {h.limits.per_client_hourly_limit} an hour)
-              </dd>
+              <dt>{m.searchesToday}</dt>
+              <dd>{m.searchesTodayValue(h.limits)}</dd>
             </div>
           )}
           {coverage && (
             <div>
-              <dt>Entries served</dt>
+              <dt>{m.entriesServed}</dt>
               <dd>{coverage.total}</dd>
             </div>
           )}
@@ -100,22 +97,18 @@ export default function Status() {
 
       {usage && usage.days.length > 0 && (
         <section>
-          <h2>Recent use</h2>
-          <p>
-            Days are UTC. {usage.note} The most useful column is
-            &ldquo;found nothing&rdquo;: that is where someone asked and the knowledge
-            base had no entry that fit.
-          </p>
+          <h2>{m.recentUse}</h2>
+          <p>{m.recentIntro(lang === "en" ? usage.note : m.recentNote)}</p>
           <table className="plain-table plain-table--numeric">
-            <caption className="sr-only">Searches per day and how they ended</caption>
+            <caption className="sr-only">{m.tableCaption}</caption>
             <thead>
               <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Searches</th>
-                <th scope="col">Finished</th>
-                <th scope="col">Found nothing</th>
-                <th scope="col">Failed</th>
-                <th scope="col">Turned away</th>
+                <th scope="col">{m.cols.day}</th>
+                <th scope="col">{m.cols.searches}</th>
+                <th scope="col">{m.cols.finished}</th>
+                <th scope="col">{m.cols.none}</th>
+                <th scope="col">{m.cols.failed}</th>
+                <th scope="col">{m.cols.refused}</th>
               </tr>
             </thead>
             <tbody>
@@ -135,17 +128,8 @@ export default function Status() {
       )}
 
       <section>
-        <h2>If it is down</h2>
-        <p>
-          There is no uptime promise: this is a research demo on one person&apos;s
-          key and one small server. The knowledge base is plain files in the
-          repository and the skill runs without this site, so a dead demo does not
-          take the data with it. If you see a fault that is not listed here,{" "}
-          <a href={ISSUES_URL} target="_blank" rel="noreferrer">
-            open an issue
-          </a>
-          .
-        </p>
+        <h2>{m.ifDownHeading}</h2>
+        <p>{m.ifDown}</p>
       </section>
     </article>
   );

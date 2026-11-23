@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import {
   API_BASE,
-  corePercent,
   fieldIsAllAi,
   providerLabel,
   useCoverage,
@@ -12,10 +11,9 @@ import {
 import { GitHubMark } from "../components/Layout";
 import { HumanEvidence } from "../components/HumanEvidence";
 import { VersionLine } from "../components/VersionLine";
-import { ISSUES_URL, SITE } from "../site";
-
-type StageName = "parsing" | "screening" | "synthesis";
-type StageStatus = "pending" | "active" | "done";
+import { useLang } from "../i18n";
+import { HOME, fieldLabel, type HomeText, type StageName, type StageStatus } from "../locales/home";
+import { SITE } from "../site";
 
 interface ParsedPaper {
   topics: string[];
@@ -75,31 +73,29 @@ function tierClass(tier: string): string {
  * left to rot; a test fails the build if one is typed back in.
  */
 function CoverageNotice({ data }: { data: Coverage | null }) {
+  const lang = useLang();
+  const m = HOME[lang];
   if (!data) return null;
 
   const philosophy = fieldIsAllAi(data, "philosophy");
 
   return (
     <details className="coverage-notice">
-      <summary>
-        Covers <strong>{data.core_label}</strong> in depth — {corePercent(data)}% of{" "}
-        {data.total} entries. Many fields are not covered at all.{" "}
-        <span className="coverage-more">What&apos;s in here?</span>
-      </summary>
+      <summary>{m.coverageSummary(data)}</summary>
       <div className="coverage-body">
         <table className="coverage-table">
-          <caption className="sr-only">Entries per field, by how each entry was written</caption>
+          <caption className="sr-only">{m.coverageCaption}</caption>
           <thead>
             <tr>
-              <th scope="col">Field</th>
-              <th scope="col">Entries</th>
-              <th scope="col" title="Evidence-backed: specific article counts, source URLs, dates">
+              <th scope="col">{m.colField}</th>
+              <th scope="col">{m.colEntries}</th>
+              <th scope="col" title={m.tierTitles.t1}>
                 T1
               </th>
-              <th scope="col" title="Community estimate: family-level, no per-claim evidence yet">
+              <th scope="col" title={m.tierTitles.t2}>
                 T2
               </th>
-              <th scope="col" title="AI-researched: per-journal sources, honest blanks, no human review recorded">
+              <th scope="col" title={m.tierTitles.ai}>
                 AI
               </th>
             </tr>
@@ -107,7 +103,7 @@ function CoverageNotice({ data }: { data: Coverage | null }) {
           <tbody>
             {data.fields.map((f) => (
               <tr key={f.field}>
-                <th scope="row">{f.label}</th>
+                <th scope="row">{fieldLabel(lang, f)}</th>
                 <td className="num">{f.total}</td>
                 <td className="num">{f.tier1 || "—"}</td>
                 <td className="num">{f.tier2 || "—"}</td>
@@ -117,37 +113,10 @@ function CoverageNotice({ data }: { data: Coverage | null }) {
           </tbody>
         </table>
 
-        <p>
-          <strong>Verifiably absent</strong> (probed {data.absent_checked}):{" "}
-          {data.absent.join(" · ")}. Economics, law and political science exist only
-          as philosophy journals <em>about</em> those subjects. There is no
-          marketing, no nursing science, and no engineering beyond three robotics
-          venues.
-        </p>
-        <p>
-          If your field is on that list, this tool has nothing for you yet — and it
-          will tell you that rather than ranking the nearest journals it happens to
-          hold.
-        </p>
-        <p>
-          Entries also differ in <strong>how much of each one is filled in</strong>.
-          Unscorable dimensions return &quot;unknown&quot; instead of a midpoint, so every
-          candidate carries an evidence-coverage figure. The {data.tiers.ai}{" "}
-          AI-researched entries are missing the parts that need lived submission
-          experience, so they usually show far less coverage than the others.{" "}
-          {philosophy && (
-            <strong>
-              Philosophy is the sharpest case: all {philosophy.total} of its entries are
-              AI-researched.
-            </strong>
-          )}{" "}
-          Scores on thin evidence are already pulled toward a neutral 50, but treat
-          them as leads to check.
-        </p>
-        <p>
-          <HumanEvidence coverage={data} /> See{" "}
-          <a href="/ai/">how the entries were made</a>.
-        </p>
+        <p>{m.coverageAbsent(data)}</p>
+        <p>{m.coverageNotForYou}</p>
+        <p>{m.coverageThin(data, philosophy)}</p>
+        <p>{m.coverageSee(<HumanEvidence coverage={data} />)}</p>
         <VersionLine version={data.version} />
       </div>
     </details>
@@ -161,17 +130,15 @@ function CoverageNotice({ data }: { data: Coverage | null }) {
  * real user is most likely to hit, and both have something actionable to say.
  * "Server error (429)" says none of it.
  */
-async function describeFailure(res: Response): Promise<string> {
+async function describeFailure(res: Response, m: HomeText): Promise<string> {
   try {
     const body = await res.json();
     if (typeof body?.message === "string") return body.message;
-    if (res.status === 422) {
-      return `That description is too long for the demo — paste an abstract or a summary rather than the full manuscript. (Limit: ${MAX_DESCRIPTION_CHARS.toLocaleString()} characters.)`;
-    }
+    if (res.status === 422) return m.tooLong(MAX_DESCRIPTION_CHARS.toLocaleString());
   } catch {
     /* Body was not JSON; fall through to the status line. */
   }
-  return `Server error (${res.status})`;
+  return m.serverError(res.status);
 }
 
 const MAX_DESCRIPTION_CHARS = 12000;
@@ -189,6 +156,7 @@ const INSTALL_COMMANDS = `/plugin marketplace add Zaious/journal-atlas
  * one keystroke away from copying, and the label says which state they are in.
  */
 function CodeBlock({ text }: { text: string }) {
+  const m = HOME[useLang()];
   const [state, setState] = useState<"idle" | "copied" | "select">("idle");
   const preRef = useRef<HTMLPreElement>(null);
 
@@ -230,10 +198,10 @@ function CodeBlock({ text }: { text: string }) {
         {/* Labels stay short: the button is absolutely positioned over the
             command block, and a wider one would sit on top of the text the
             reserved padding is there to keep clear. */}
-        {state === "copied" ? "Copied" : state === "select" ? "Ctrl+C" : "Copy"}
+        {state === "copied" ? m.copy.copied : state === "select" ? m.copy.select : m.copy.idle}
       </button>
       <span className="sr-only" role="status">
-        {state === "copied" ? "Copied to clipboard" : state === "select" ? "Text selected; press Ctrl+C" : ""}
+        {state === "copied" ? m.copy.copiedSr : state === "select" ? m.copy.selectSr : ""}
       </span>
     </div>
   );
@@ -249,134 +217,23 @@ function CodeBlock({ text }: { text: string }) {
  */
 function HomeNotes({ coverage }: { coverage: Coverage | null }) {
   const health = useHealth().data;
-  const limits = health?.limits ?? null;
-  const absent = coverage?.absent ?? [];
-
+  const m = HOME[useLang()];
   return (
     <div className="home-notes">
-      <section>
-        <h2>This is an experiment, running on one person&apos;s API key</h2>
-        <p>
-          Journal Atlas is a research project, not a service. There is no company
-          behind it and no uptime promise — the model calls this page makes are
-          billed to the maintainer personally, which is the only reason it is
-          capped
-          {limits
-            ? ` at ${limits.per_client_hourly_limit} searches an hour per person and ${limits.global_daily_limit} a day across everyone`
-            : ""}
-          . The cap is a budget, not a paywall: there is no tier that removes it,
-          because there is nothing to sell.
-        </p>
-      </section>
-
-      <section>
-        <h2>Run it yourself, with no cap at all</h2>
-        <p>
-          The demo is a shop window. The real thing is a skill that runs inside
-          your own Claude session, against your own key, over the same knowledge
-          base — no limits, no queue, and it can read your actual manuscript
-          instead of a pasted summary. In a Claude Code <strong>main session</strong>:
-        </p>
-        <CodeBlock text={INSTALL_COMMANDS} />
-        <p className="footnote">
-          Then restart Claude Code. Claude Desktop, ChatGPT and plain-git setups
-          are covered in the{" "}
-          <a href={`${SITE.repoUrl}#installation`} target="_blank" rel="noreferrer">
-            installation guide
-          </a>
-          . The knowledge base is {SITE.license.content} — you can also just read it.
-        </p>
-      </section>
-
-      <section>
-        <h2>Your field is probably not in here</h2>
-        <p>
-          {coverage ? (
-            <>
-              {corePercent(coverage)}% of the corpus is {coverage.core_label}.
-              {absent.length > 0 && <> At zero: {absent.join("; ")}.</>}
-            </>
-          ) : (
-            <>
-              Most of the corpus sits in a few adjacent fields, and many fields
-              have nothing at all. The coverage note above lists which.
-            </>
-          )}{" "}
-          Two things fix that, and neither requires touching code:
-        </p>
-        <ul>
-          <li>
-            <strong>Bring a whole field in.</strong> The AI-research expansion that
-            added{coverage ? ` the ${coverage.tiers.ai}` : " the"} AI-researched entries was one
-            run over a target list, and{" "}
-            <a
-              href={`${SITE.repoUrl}/blob/main/docs/workorders/WO2_SOFT_METADATA_BATCH.md`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              the procedure is published
-            </a>{" "}
-            so you can point it at yours. Twenty journals is a real contribution.
-          </li>
-          <li>
-            <strong>Tell us how it actually went.</strong> If you have submitted
-            to or reviewed for a journal, you hold the part no amount of research
-            reaches — whether the word limit is real, how the reviewer pool treats
-            qualitative work, what a desk rejection there means. That is exactly
-            what the AI-researched entries are missing, and no entry yet records
-            it. Ten minutes on one journal you know well beats a hundred scraped
-            ones.
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>And it needs more than one maintainer</h2>
-        <p>
-          Scholarly tools die a specific death: one person builds something
-          genuinely useful, maintains it alone, and then their circumstances
-          change — and the whole thing goes read-only, then stale, then wrong.
-          Anyone who has watched a library or digital-humanities project go dark
-          knows the pattern.
-        </p>
-        <p>
-          The licence is a partial answer — {SITE.license.content} content and{" "}
-          {SITE.license.code} code mean nobody can be locked out of a fork. But a
-          fork nobody maintains is still dead. So if this turns out to be worth
-          keeping,{" "}
-          <strong>the thing it most needs is co-maintainers</strong>: people who
-          will review contributions in their own field and correct entries about
-          journals they know. Say so in an{" "}
-          <a href={ISSUES_URL} target="_blank" rel="noreferrer">
-            issue
-          </a>{" "}
-          and you will be taken up on it. <a href="/about/">Who made this, and why</a>.
-        </p>
-      </section>
+      {m.notes({ coverage, limits: health?.limits ?? null, install: <CodeBlock text={INSTALL_COMMANDS} /> })}
     </div>
   );
 }
 
-function stageLabels(total: number | null): Record<StageName, string> {
-  return {
-    parsing: "Reading your paper",
-    screening: total ? `Screening ${total} entries` : "Screening the knowledge base",
-    synthesis: "Writing your recommendation",
-  };
-}
-
 const STAGE_ORDER: StageName[] = ["parsing", "screening", "synthesis"];
-const STAGE_STATE_TEXT: Record<StageStatus, string> = {
-  pending: "waiting",
-  active: "in progress",
-  done: "done",
-};
 
 export default function Home() {
   const coverage = useCoverage().data;
   const health = useHealth().data;
   const provider = providerLabel(health?.provider);
-  const labels = stageLabels(coverage?.total ?? null);
+  const lang = useLang();
+  const m = HOME[lang];
+  const labels = m.stageLabels(coverage?.total ?? null);
 
   const [paperText, setPaperText] = useState("");
   const [running, setRunning] = useState(false);
@@ -462,7 +319,7 @@ export default function Home() {
         }),
         signal: controller.signal,
       });
-      if (!res.ok || !res.body) throw new Error(await describeFailure(res));
+      if (!res.ok || !res.body) throw new Error(await describeFailure(res, m));
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -510,7 +367,7 @@ export default function Home() {
           asked_so_far: followups.length,
         }),
       });
-      if (!res.ok || !res.body) throw new Error(await describeFailure(res));
+      if (!res.ok || !res.body) throw new Error(await describeFailure(res, m));
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
@@ -556,61 +413,50 @@ export default function Home() {
           <h1>Journal Atlas</h1>
           <a className="repo-link" href={SITE.repoUrl} target="_blank" rel="noreferrer">
             <GitHubMark />
-            <span>Source on GitHub</span>
+            <span>{m.repoLink}</span>
           </a>
         </div>
-        <p className="eyebrow">
-          A live demo of an open-source <strong>agent skill</strong> — the thing
-          answering you here installs into your own AI session in one command,
-          and runs there without this page or its limits.
-        </p>
-        <p className="tagline">
-          Paste your abstract or describe your paper. No account, no install —
-          this reads the same open knowledge base the real skill uses, and shows
-          for every entry how it was written and how much of it is evidenced.
-        </p>
+        <p className="eyebrow">{m.eyebrow}</p>
+        <p className="tagline">{m.tagline}</p>
       </div>
 
       <CoverageNotice data={coverage} />
 
       <label className="field-label" htmlFor="paper-text">
-        Your paper
+        {m.paperLabel}
       </label>
       <textarea
         id="paper-text"
         value={paperText}
         onChange={(e) => setPaperText(e.target.value)}
-        placeholder="e.g. A qualitative study using autoethnography to explore embodied cognition in collaborative design teams. ~9,000 words, no institutional funding for open access, discloses AI-assisted copyediting..."
+        placeholder={m.paperPlaceholder}
         rows={6}
         disabled={running}
         aria-describedby="paper-note"
       />
       <p className="field-note" id="paper-note">
-        What you paste is sent to a language-model provider
-        {provider ? ` (currently ${provider})` : ""} to be read, and this site does
-        not save it. Paste an abstract, not a manuscript that is under review.{" "}
-        <a href="/privacy/">What happens to it</a>.
+        {m.paperNote(provider)}
       </p>
 
       <button onClick={() => runRecommendation()} disabled={running || !paperText.trim()}>
-        {running ? "Working…" : "Find my journal"}
+        {running ? m.working : m.findJournal}
       </button>
 
       <noscript>
-        <p className="error">The recommender needs JavaScript. The knowledge base itself is plain Markdown in the repository.</p>
+        <p className="error">{m.noscript}</p>
       </noscript>
 
       {(running || stages.parsing !== "pending") && (
         <>
           <p className="sr-only" role="status" aria-live="polite">
-            {activeStage ? `${labels[activeStage]}…` : stages.synthesis === "done" ? "Recommendation ready" : ""}
+            {activeStage ? `${labels[activeStage]}…` : stages.synthesis === "done" ? m.recommendationReady : ""}
           </p>
           <ol className="stages">
             {STAGE_ORDER.map((s) => (
               <li key={s} className={`stage stage-${stages[s]}`}>
                 <span className="stage-dot" aria-hidden="true" />
                 {labels[s]}
-                <span className="sr-only"> ({STAGE_STATE_TEXT[stages[s]]})</span>
+                <span className="sr-only"> ({m.stageState[stages[s]]})</span>
               </li>
             ))}
           </ol>
@@ -625,16 +471,16 @@ export default function Home() {
 
       {parsedPaper && (
         <div className="panel">
-          <h2>What I read from your description</h2>
+          <h2>{m.readHeading}</h2>
           <p>
-            <strong>Topics:</strong> {parsedPaper.topics.join(", ") || "—"}
+            <strong>{m.topics}</strong> {parsedPaper.topics.join(lang === "en" ? ", " : "、") || "—"}
             <br />
-            <strong>Methodology:</strong> {parsedPaper.methodology ?? "—"}
+            <strong>{m.methodology}</strong> {parsedPaper.methodology ?? "—"}
             {parsedPaper.sensitive_content.length > 0 && (
               <>
                 <br />
-                <strong>Flagged sensitive content:</strong>{" "}
-                {parsedPaper.sensitive_content.join(", ")}
+                <strong>{m.sensitive}</strong>{" "}
+                {parsedPaper.sensitive_content.join(lang === "en" ? ", " : "、")}
               </>
             )}
           </p>
@@ -650,18 +496,18 @@ export default function Home() {
 
       {clarifyQuestion && (
         <div className="panel clarify">
-          <h2>A couple of questions first</h2>
+          <h2>{m.clarifyHeading}</h2>
           <div className="synthesis-text">
             <ReactMarkdown>{clarifyQuestion}</ReactMarkdown>
           </div>
           <label className="sr-only" htmlFor="clarify-answer">
-            Your answers
+            {m.clarifyAnswersLabel}
           </label>
           <textarea
             id="clarify-answer"
             value={clarifyAnswer}
             onChange={(e) => setClarifyAnswer(e.target.value)}
-            placeholder="e.g. no budget at all; about 8,000 words; conferences are fine too"
+            placeholder={m.clarifyPlaceholder}
             rows={3}
             disabled={running}
           />
@@ -670,14 +516,14 @@ export default function Home() {
               onClick={() => runRecommendation({ clarifications: clarifyAnswer })}
               disabled={running || !clarifyAnswer.trim()}
             >
-              Answer and search
+              {m.clarifyAnswer}
             </button>
             <button
               className="secondary"
               onClick={() => runRecommendation({ skipClarify: true })}
               disabled={running}
             >
-              Skip — search anyway
+              {m.clarifySkip}
             </button>
           </div>
         </div>
@@ -685,7 +531,7 @@ export default function Home() {
 
       {candidates && (
         <div className="panel">
-          <h2>Top {candidates.length} candidates after screening</h2>
+          <h2>{m.candidatesHeading(candidates.length)}</h2>
           <ul className="candidate-list">
             {candidates.map((c) => {
               const isOpen = expanded.has(c.name);
@@ -700,25 +546,23 @@ export default function Home() {
                     <span className="candidate-name">
                       <span className={`tier-badge ${tierClass(c.tier)}`}>{c.tier}</span>
                       {c.disputes?.length > 0 && (
-                        <span className="tier-badge tier-disputed">Disputed</span>
+                        <span className="tier-badge tier-disputed">{m.disputedTag}</span>
                       )}
                       {c.name}
                     </span>
                     <span className="score">
                       {c.score.toFixed(1)}/100
                       {c.coverage !== undefined && (
-                        <span className="coverage" title="Share of the scoring dimensions that had actual data behind them">
-                          {" "}· {Math.round(c.coverage * 100)}% evidence
+                        <span className="coverage" title={m.evidencePctTitle}>
+                          {" "}· {m.evidencePct(Math.round(c.coverage * 100))}
                         </span>
                       )}
                       {!!c.tied_with && c.tied_with > 0 && (
                         <span
                           className="coverage tied"
-                          title={`Scores identically to ${c.tied_with} other candidate${
-                            c.tied_with > 1 ? "s" : ""
-                          } on all six dimensions. The order between them is arbitrary.`}
+                          title={m.tiedTitle(c.tied_with)}
                         >
-                          {" "}· tied with {c.tied_with}
+                          {" "}· {m.tiedWith(c.tied_with)}
                         </span>
                       )}
                     </span>
@@ -728,7 +572,9 @@ export default function Home() {
                       {c.disputes?.length > 0 && (
                         <ul className="dispute-list">
                           {c.disputes.map((d) => (
-                            <li key={d}>Disputed claim: {d}</li>
+                            <li key={d}>
+                              {m.disputedClaim} {d}
+                            </li>
                           ))}
                         </ul>
                       )}
@@ -750,13 +596,13 @@ export default function Home() {
                           {c.top_topics.map((t) => (
                             <li key={t.name}>
                               {t.name}
-                              <span className="topic-count">{t.count} articles</span>
+                              <span className="topic-count">{m.articles(t.count)}</span>
                             </li>
                           ))}
                         </ul>
                       ) : (
                         <p className="no-evidence">
-                          No topic-count data on file for this entry yet.
+                          {m.noTopicData}
                         </p>
                       )}
                     </div>
@@ -770,7 +616,7 @@ export default function Home() {
 
       {synthesisText && (
         <div className="panel synthesis">
-          <h2>Recommendation</h2>
+          <h2>{m.recommendationHeading}</h2>
           <div className="synthesis-text">
             <ReactMarkdown>{synthesisText}</ReactMarkdown>
           </div>
@@ -779,7 +625,7 @@ export default function Home() {
 
       {synthesisText && !running && (
         <div className="panel">
-          <h2>Follow-up {followupsLeft > 0 ? `(${followupsLeft} left)` : "(none left)"}</h2>
+          <h2>{m.followupHeading(followupsLeft)}</h2>
           {followups.map((f, i) => (
             <div key={i} className="followup">
               <p className="followup-q">{f.q}</p>
@@ -791,24 +637,23 @@ export default function Home() {
           {followupsLeft > 0 ? (
             <>
               <label className="sr-only" htmlFor="followup-q">
-                Your follow-up question
+                {m.followupLabel}
               </label>
               <textarea
                 id="followup-q"
                 value={followupQ}
                 onChange={(e) => setFollowupQ(e.target.value)}
-                placeholder="e.g. why not CHI? / what would I need to change for the second choice?"
+                placeholder={m.followupPlaceholder}
                 rows={2}
                 disabled={followupBusy}
               />
               <button onClick={askFollowup} disabled={followupBusy || !followupQ.trim()}>
-                {followupBusy ? "Thinking…" : "Ask"}
+                {followupBusy ? m.thinking : m.ask}
               </button>
             </>
           ) : (
             <p className="no-evidence">
-              Two follow-ups is the limit for this demo. Edit your description above and search
-              again to explore a different angle.
+              {m.followupLimit}
             </p>
           )}
         </div>

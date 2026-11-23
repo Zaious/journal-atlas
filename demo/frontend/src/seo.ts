@@ -8,7 +8,9 @@
  * thing a reader does before the API answers: a description of what the site
  * is, and a pointer to where the live figures are.
  */
-import { PAGES, SITE, absoluteUrl, type PageMeta } from "./site";
+import { DEFAULT_LANG, LANGS, LANG_TAG, OG_LOCALE, localePath } from "./i18n";
+import { OG_IMAGE_ALT } from "./locales/meta";
+import { PAGES, SITE, absoluteUrl, pageInLang, type PageMeta } from "./site";
 
 const esc = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -40,6 +42,9 @@ const studioNode = {
  */
 export function jsonLd(page: PageMeta): object[] {
   const url = absoluteUrl(page.path);
+  // Each language is its own site root for structured data, so the English and
+  // Chinese home pages describe themselves rather than each other.
+  const home = absoluteUrl(localePath(page.lang, "/"));
   if (page.id === "home") {
     return [
       {
@@ -47,17 +52,18 @@ export function jsonLd(page: PageMeta): object[] {
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": `${SITE.url}/#website`,
+            "@id": `${home}#website`,
             name: SITE.name,
-            url: `${SITE.url}/`,
-            inLanguage: "en",
+            url: home,
+            inLanguage: LANG_TAG[page.lang],
             publisher: { "@id": studioNode["@id"] },
           },
           {
             "@type": "WebApplication",
-            "@id": `${SITE.url}/#app`,
+            "@id": `${home}#app`,
             name: SITE.name,
-            url: `${SITE.url}/`,
+            url: home,
+            inLanguage: LANG_TAG[page.lang],
             description: page.description,
             applicationCategory: "ReferenceApplication",
             browserRequirements: "Requires JavaScript",
@@ -81,8 +87,9 @@ export function jsonLd(page: PageMeta): object[] {
         "@type": "AboutPage",
         name: page.title,
         url,
-        isPartOf: { "@id": `${SITE.url}/#website` },
-        about: { "@id": `${SITE.url}/#app` },
+        inLanguage: LANG_TAG[page.lang],
+        isPartOf: { "@id": `${home}#website` },
+        about: { "@id": `${home}#app` },
         author: { ...authorNode, sameAs: [SITE.author.url, "https://github.com/Zaious"] },
       },
     ];
@@ -92,8 +99,24 @@ export function jsonLd(page: PageMeta): object[] {
 
 /** Everything that goes between <head> and </head> except the built asset tags. */
 export function headTags(page: PageMeta): string {
-  const url = absoluteUrl(page.path === "/404.html" ? "/" : page.path);
+  const url = absoluteUrl(page.id === "notfound" ? localePath(page.lang, "/") : page.path);
   const img = absoluteUrl(SITE.ogImage);
+  // Language alternates only where the page is indexable: a noindex page or a
+  // 404 has no use for them, and an alternate that points at a noindex page is
+  // a broken pair.
+  const alternates = page.noindex
+    ? []
+    : [
+        ...LANGS.map(
+          (l) => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${esc(absoluteUrl(pageInLang(page, l).path))}" />`,
+        ),
+        `<link rel="alternate" hreflang="x-default" href="${esc(absoluteUrl(pageInLang(page, DEFAULT_LANG).path))}" />`,
+      ];
+  const otherLocales = page.noindex
+    ? []
+    : LANGS.filter((l) => l !== page.lang).map(
+        (l) => `<meta property="og:locale:alternate" content="${OG_LOCALE[l]}" />`,
+      );
   const lines = [
     `<title>${esc(page.title)}</title>`,
     `<meta name="description" content="${esc(page.description)}" />`,
@@ -102,20 +125,22 @@ export function headTags(page: PageMeta): string {
       : `<meta name="robots" content="index, follow, max-image-preview:large" />`,
     // A 404 page is served at whatever URL was mistyped, so it must not claim one.
     ...(page.id === "notfound" ? [] : [`<link rel="canonical" href="${esc(url)}" />`]),
+    ...alternates,
     `<meta name="theme-color" content="${SITE.themeColor}" />`,
     `<link rel="icon" type="image/svg+xml" href="/favicon.svg" />`,
     `<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />`,
     `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:site_name" content="${esc(SITE.name)}" />`,
-    `<meta property="og:locale" content="en_US" />`,
+    `<meta property="og:locale" content="${OG_LOCALE[page.lang]}" />`,
+    ...otherLocales,
     `<meta property="og:title" content="${esc(page.title)}" />`,
     `<meta property="og:description" content="${esc(page.description)}" />`,
     `<meta property="og:url" content="${esc(url)}" />`,
     `<meta property="og:image" content="${esc(img)}" />`,
     `<meta property="og:image:width" content="1200" />`,
     `<meta property="og:image:height" content="630" />`,
-    `<meta property="og:image:alt" content="${esc(SITE.ogImageAlt)}" />`,
+    `<meta property="og:image:alt" content="${esc(OG_IMAGE_ALT[page.lang])}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${esc(page.title)}" />`,
     `<meta name="twitter:description" content="${esc(page.description)}" />`,
@@ -131,10 +156,18 @@ export function sitemapXml(lastmod: (page: PageMeta) => string | null): string {
   const urls = indexable()
     .map((p) => {
       const lm = lastmod(p);
-      return `  <url>\n    <loc>${esc(absoluteUrl(p.path))}</loc>${lm ? `\n    <lastmod>${lm}</lastmod>` : ""}\n  </url>`;
+      // Every URL lists the full set of its language versions, itself included,
+      // as hreflang requires, plus x-default.
+      const alternates = [
+        ...LANGS.map((l) => ({ hreflang: LANG_TAG[l], href: absoluteUrl(pageInLang(p, l).path) })),
+        { hreflang: "x-default", href: absoluteUrl(pageInLang(p, DEFAULT_LANG).path) },
+      ]
+        .map((a) => `\n    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.href)}" />`)
+        .join("");
+      return `  <url>\n    <loc>${esc(absoluteUrl(p.path))}</loc>${lm ? `\n    <lastmod>${lm}</lastmod>` : ""}${alternates}\n  </url>`;
     })
     .join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`;
 }
 
 /**
@@ -170,7 +203,11 @@ export function llmsTxt(): string {
 
 ## Pages
 
-${PAGES.filter((p) => p.id !== "notfound").map(pageLine).join("\n")}
+${PAGES.filter((p) => p.lang === DEFAULT_LANG && p.id !== "notfound").map(pageLine).join("\n")}
+
+## Translations
+
+The same pages exist in Traditional Chinese under ${SITE.url}/zh-hant/ ; the English pages are the original and win where the two differ. The translations carry the same claims and no stronger ones. The recommendation text the demo writes is produced by a model from English-language entries; this site does not translate it.
 
 ## Source
 

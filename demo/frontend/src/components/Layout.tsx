@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
-import { ISSUES_URL, PAGES, SITE, type PageId } from "../site";
+import { DEFAULT_LANG, LANGS, LANG_NAME, LANG_TAG, localePath, stripLang } from "../i18n";
+import { LAYOUT } from "../locales/layout";
+import { ISSUES_URL, PAGES, SITE, type PageMeta } from "../site";
 
 /** GitHub mark, inlined rather than fetched: no external asset for one icon. */
 export function GitHubMark() {
@@ -10,36 +12,51 @@ export function GitHubMark() {
   );
 }
 
-const NAV_PAGES = PAGES.filter((p) => p.navLabel);
-
 /**
- * The brand, a short honest label for what kind of thing this is, and the
- * page set. The label sits next to the brand rather than in a footnote for the
- * reason skill `ccweb-footer` gives: a disclosure that only a reader of the
- * About page ever sees is not doing its job.
+ * The brand, a short honest label for what kind of thing this is, a link to
+ * the same page in the other language, and the page set. The label sits next to
+ * the brand rather than in a footnote for the reason skill `ccweb-footer`
+ * gives: a disclosure that only a reader of the About page ever sees is not
+ * doing its job.
  */
-function SiteHeader({ current }: { current: PageId }) {
+function SiteHeader({ page }: { page: PageMeta }) {
+  const text = LAYOUT[page.lang];
+  const navPages = PAGES.filter((p) => p.lang === page.lang && p.navLabel);
   return (
     <header className="site-header">
       <div className="brand-row">
-        <a className="brand" href="/">
+        <a className="brand" href={localePath(page.lang, "/")}>
           <img src="/favicon.svg" alt="" width="28" height="28" />
           <span>{SITE.name}</span>
         </a>
-        <span className="brand-tag">Research prototype · AI-assisted</span>
+        <span className="brand-tag">{text.brandTag}</span>
+        {LANGS.filter((l) => l !== page.lang).map((l) => (
+          <a
+            key={l}
+            className="lang-switch"
+            // A 404 has no counterpart page, so it points at the other home page.
+            href={page.id === "notfound" ? localePath(l, "/") : localePath(l, stripLang(page.path))}
+            hrefLang={LANG_TAG[l]}
+            lang={LANG_TAG[l]}
+            title={LAYOUT[l].switchLabel}
+          >
+            {LANG_NAME[l]}
+          </a>
+        ))}
       </div>
-      <nav aria-label="Site">
+      <nav aria-label={text.navAria}>
         <ul className="nav-list">
-          {NAV_PAGES.map((p) => (
+          {navPages.map((p) => (
             <li key={p.id}>
-              <a href={p.path} aria-current={p.id === current ? "page" : undefined}>
+              <a href={p.path} aria-current={p.id === page.id ? "page" : undefined}>
                 {p.navLabel}
               </a>
             </li>
           ))}
           <li>
             <a href={SITE.repoUrl} target="_blank" rel="noreferrer">
-              Source<span className="sr-only"> (opens GitHub)</span>
+              {text.source}
+              <span className="sr-only">{text.sourceHint}</span>
             </a>
           </li>
         </ul>
@@ -49,75 +66,51 @@ function SiteHeader({ current }: { current: PageId }) {
 }
 
 /**
- * The declarations every page carries, defined here once.
+ * The declarations every page carries, defined here once per language
+ * (locales/layout.tsx).
  *
  * What it asserts is limited to what the build can check: no ads, no cookies,
  * no analytics (scripts/check-site.mjs fails on a third-party script or on
  * storage APIs in src/), the licences from LICENSE and LICENSE-CODE, and a
  * non-endorsement line for the venues and data providers the site names.
  */
-function SiteFooter() {
+function SiteFooter({ page }: { page: PageMeta }) {
+  const lang = page.lang;
+  const text = LAYOUT[lang];
+  const nav = PAGES.filter((p) => p.lang === lang && p.navLabel);
+  const label = (id: string) => nav.find((p) => p.id === id)!;
   return (
-    <footer className="site-footer" aria-label="Site information">
-      <p>
-        Journal Atlas is a research project by{" "}
-        <a href={SITE.author.url} target="_blank" rel="noreferrer">
-          {SITE.author.handle}
-        </a>
-        , a{" "}
-        <a href={SITE.studio.url} target="_blank" rel="noreferrer">
-          {SITE.studio.name}
-        </a>{" "}
-        ({SITE.studio.nameZh}) production. Much of it is written by AI;{" "}
-        <a href="/ai/">this page says which parts</a>.
-      </p>
-      <p>
-        Not affiliated with, endorsed by, or sponsored by any journal,
-        conference, publisher or index it names. Those names belong to their
-        owners, and an entry is a description of a venue from public sources,
-        not a statement by the venue.
-      </p>
-      <p>
-        Knowledge base:{" "}
-        <a href={SITE.license.contentUrl} target="_blank" rel="noreferrer">
-          {SITE.license.content}
-        </a>
-        . Code:{" "}
-        <a href={SITE.license.codeUrl} target="_blank" rel="noreferrer">
-          {SITE.license.code}
-        </a>
-        . The site sets no cookies and loads no ads, analytics or third-party
-        scripts.
-      </p>
+    <footer className="site-footer" aria-label={text.footerAria}>
+      {text.declarations(lang)}
       <ul className="footer-links">
         <li>
-          <a href="/about/">About</a>
+          <a href={label("about").path}>{text.footerLinks.about}</a>
         </li>
         <li>
-          <a href="/ai/">How it&apos;s made</a>
+          <a href={label("ai").path}>{text.footerLinks.ai}</a>
         </li>
         <li>
-          <a href="/privacy/">Privacy</a>
+          <a href={label("privacy").path}>{text.footerLinks.privacy}</a>
         </li>
         <li>
-          <a href="/status/">Status</a>
+          <a href={label("status").path}>{text.footerLinks.status}</a>
         </li>
         <li>
           <a href={SITE.repoUrl} target="_blank" rel="noreferrer">
-            Source and knowledge base
+            {text.footerLinks.source}
           </a>
         </li>
         <li>
           <a href={ISSUES_URL} target="_blank" rel="noreferrer">
-            Report something wrong
+            {text.footerLinks.report}
           </a>
         </li>
         {SITE.supportUrl && (
           <li>
             <a href={SITE.supportUrl} target="_blank" rel="noreferrer">
-              {SITE.supportLabel}
+              {lang === DEFAULT_LANG ? SITE.supportLabel : text.support}
             </a>{" "}
-            <span className="footer-aside">(unlocks nothing; every feature is the same for everyone)</span>
+            <span className="footer-aside">{text.supportAside}</span>
           </li>
         )}
         {SITE.contact.email && (
@@ -134,18 +127,18 @@ function SiteFooter() {
  * The frame every page shares: skip link, header, one <main>, footer.
  * `<main>` takes focus on skip (tabIndex -1) so the next Tab starts inside it.
  */
-export function Layout({ current, children }: { current: PageId; children: ReactNode }) {
+export function Layout({ page, children }: { page: PageMeta; children: ReactNode }) {
   return (
     <>
       <a className="skip" href="#main">
-        Skip to main content
+        {LAYOUT[page.lang].skip}
       </a>
       <div className="shell">
-        <SiteHeader current={current} />
+        <SiteHeader page={page} />
         <main id="main" tabIndex={-1} className="page">
           {children}
         </main>
-        <SiteFooter />
+        <SiteFooter page={page} />
       </div>
     </>
   );

@@ -132,6 +132,9 @@ const textOf = (html) =>
 const decode = (s) => s.replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 
 const FORBIDDEN_CLAIMS = /human[- ]verified|expert[- ]reviewed|peer[- ]reviewed by|verified by (a |an )?(human|expert|editor|scholar)/i;
+// The same rule in Chinese. It matches a claim that a person verified or reviewed
+// something, not the sentences that deny it ("未記錄任何人工複核", "不會呈現為已驗證").
+const FORBIDDEN_CLAIMS_ZH = /(已|經|由)(經)?(人工|人類|專家|編輯|學者)(驗證|審查|審核|複核|檢查|校對)|人工驗證|專家審查|專家驗證|經過驗證的人工/;
 const THIRD_PARTY_CODE = /adsbygoogle|googlesyndication|doubleclick|posthog|gtag\(|google-analytics|googletagmanager|cloudflareinsights|plausible\.io|hotjar|mixpanel/i;
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,}/;
 
@@ -141,17 +144,32 @@ function pageFile(page) {
   return join(DIST, page.path, "index.html");
 }
 
-async function checkPages({ PAGES, SITE, absoluteUrl }) {
+async function checkPages({ PAGES, SITE, absoluteUrl, LANG_TAG, LANGS, DEFAULT_LANG, langOfPath }) {
   const titles = new Map();
   const pageHtml = new Map();
   for (const page of PAGES) pageHtml.set(page.path, await read(pageFile(page)));
+  const inLang = (page, lang) => PAGES.find((p) => p.lang === lang && p.id === page.id);
 
   for (const page of PAGES) {
     const where = page.path;
     const html = pageHtml.get(page.path);
     const need = (cond, msg) => cond || fail(where, msg);
 
-    need(/<html lang="en"/.test(html), 'missing <html lang="en">');
+    need(html.includes(`<html lang="${LANG_TAG[page.lang]}"`), `missing <html lang="${LANG_TAG[page.lang]}">`);
+    need(meta(html, "property", "og:locale") === (page.lang === "en" ? "en_US" : "zh_TW"), "og:locale does not match the page language");
+
+    // Every indexable page names all of its language versions and x-default, and
+    // each points at a page that exists; a noindex page names none.
+    const alternates = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1], m[2]]);
+    if (page.noindex) {
+      need(alternates.length === 0, "a noindex page must not declare hreflang alternates");
+    } else {
+      for (const lang of LANGS) {
+        const want = absoluteUrl(inLang(page, lang).path);
+        need(alternates.some(([h, u]) => h === LANG_TAG[lang] && u === want), `missing hreflang ${LANG_TAG[lang]} -> ${want}`);
+      }
+      need(alternates.some(([h, u]) => h === "x-default" && u === absoluteUrl(inLang(page, DEFAULT_LANG).path)), "missing hreflang x-default");
+    }
     need(!html.includes("<!--seo-->"), "the <!--seo--> marker was not replaced");
     need((html.match(/<h1[\s>]/g) ?? []).length === 1, "needs exactly one <h1>");
     need(/<main id="main"/.test(html), 'missing <main id="main">');
@@ -165,7 +183,10 @@ async function checkPages({ PAGES, SITE, absoluteUrl }) {
     titles.set(title, where);
 
     const description = decode(meta(html, "name", "description") ?? "");
-    need(description.length >= 50 && description.length <= 200, `description length ${description.length} (50-200)`);
+    // Counted in characters, and a Chinese character carries about as much as two
+    // Latin ones, so the Chinese bounds are about half.
+    const [dMin, dMax] = page.lang === "en" ? [50, 200] : [30, 110];
+    need(description.length >= dMin && description.length <= dMax, `description length ${description.length} (${dMin}-${dMax})`);
 
     const canonical = html.match(/<link rel="canonical" href="([^"]*)"/)?.[1];
     if (page.id === "notfound") need(!canonical, "a 404 page must not declare a canonical URL");
@@ -203,14 +224,21 @@ async function checkPages({ PAGES, SITE, absoluteUrl }) {
 
     const text = textOf(html);
     need(!THIRD_PARTY_CODE.test(html), "analytics or ad code found (a decision for the maintainer, see SITE_SPEC.md part 3)");
+    // Both rules apply to every page: an English phrase can sit in a Chinese
+    // page (a quoted term) and the other way round.
     need(!FORBIDDEN_CLAIMS.test(text), `wording claims human verification: "${text.match(FORBIDDEN_CLAIMS)?.[0]}"`);
+    need(!FORBIDDEN_CLAIMS_ZH.test(text), `wording claims human verification: "${text.match(FORBIDDEN_CLAIMS_ZH)?.[0]}"`);
     const email = text.match(EMAIL)?.[0];
     if (SITE.contact.email && !/@chroniclecore\.com$/.test(SITE.contact.email)) fail(where, `SITE.contact.email must be on chroniclecore.com, got ${SITE.contact.email}`);
     if (email && email !== SITE.contact.email) fail(where, `an email address is visible: ${email} (set SITE.contact.email in site.ts to allow one)`);
 
     // Links and fragments that point inside the site must land somewhere.
-    for (const [, href] of html.matchAll(/<a [^>]*href="(\/[^"]*)"/g)) {
+    for (const [tag, href] of html.matchAll(/<a [^>]*href="(\/[^"]*)"/g)) {
       const [path, frag] = decode(href).split("#");
+      // A page links to its own language's pages; only the language switch crosses over.
+      if (!/class="lang-switch"/.test(tag) && !/^\/(assets|favicon)/.test(path) && langOfPath(path) !== page.lang) {
+        fail(where, `links to ${href}, a page in the other language (only the language switch may)`);
+      }
       const target = PAGES.find((p) => p.path === path);
       if (!target) {
         if (path !== "/" && !(await exists(join(DIST, path)))) fail(where, `link to ${href} does not resolve`);
@@ -220,6 +248,39 @@ async function checkPages({ PAGES, SITE, absoluteUrl }) {
     }
     for (const [, frag] of html.matchAll(/<a [^>]*href="#([^"]+)"/g)) {
       if (!html.includes(`id="${frag}"`)) fail(where, `link #${frag}: no such id on the page`);
+    }
+  }
+
+  // Translations must not drift from the original. Each non-English page is
+  // compared with its English counterpart by shape: the same number of
+  // headings, sections, paragraphs, list items and table cells, the same ids,
+  // and the same links in the same order (a language prefix aside). A
+  // translator who drops a caveat or a link, or adds a section, fails the build
+  // instead of quietly changing what the page promises.
+  const shape = (html) => {
+    // The language switch and the footer's "this is a translation" line exist
+    // only on the translation, on purpose; nothing else may.
+    const body = html
+      .slice(html.indexOf('<div id="root">'))
+      .replace(/<a class="lang-switch"[^>]*>[^<]*<\/a>/g, "")
+      .replace(/<p class="translation-note">[^<]*<\/p>/g, "");
+    const count = (tag) => (body.match(new RegExp(`<${tag}[\\s>]`, "g")) ?? []).length;
+    const tags = Object.fromEntries(["h1", "h2", "h3", "section", "p", "ul", "ol", "li", "table", "tr", "th", "td", "blockquote"].map((t) => [t, count(t)]));
+    const hrefs = [...body.matchAll(/href="([^"]*)"/g)].map((m) => m[1].replace(/^\/zh-hant\/?/i, "/"));
+    const ids = [...body.matchAll(/\sid="([^"]*)"/g)].map((m) => m[1]).sort();
+    return { tags, hrefs, ids };
+  };
+  for (const page of PAGES.filter((p) => p.lang !== DEFAULT_LANG)) {
+    const original = inLang(page, DEFAULT_LANG);
+    const a = shape(pageHtml.get(original.path));
+    const b = shape(pageHtml.get(page.path));
+    for (const t of Object.keys(a.tags)) {
+      if (a.tags[t] !== b.tags[t]) fail(page.path, `has ${b.tags[t]} <${t}> where ${original.path} has ${a.tags[t]}`);
+    }
+    if (JSON.stringify(a.ids) !== JSON.stringify(b.ids)) fail(page.path, `ids differ from ${original.path}: ${a.ids} vs ${b.ids}`);
+    if (JSON.stringify(a.hrefs) !== JSON.stringify(b.hrefs)) {
+      const i = a.hrefs.findIndex((h, k) => h !== b.hrefs[k]);
+      fail(page.path, `links differ from ${original.path} at link ${i + 1}: "${a.hrefs[i]}" vs "${b.hrefs[i]}"`);
     }
   }
   return pageHtml;
@@ -236,7 +297,7 @@ async function exists(p) {
 
 // ---------- crawler files ----------
 
-async function checkCrawlerFiles({ PAGES, SITE, absoluteUrl }) {
+async function checkCrawlerFiles({ PAGES, SITE, absoluteUrl, LANGS }) {
   const sitemap = await read(join(DIST, "sitemap.xml"));
   const locs = [...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => m[1]);
   const want = PAGES.filter((p) => !p.noindex).map((p) => absoluteUrl(p.path));
@@ -245,6 +306,13 @@ async function checkCrawlerFiles({ PAGES, SITE, absoluteUrl }) {
   }
   for (const [, d] of sitemap.matchAll(/<lastmod>([^<]*)<\/lastmod>/g)) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) fail("sitemap.xml", `lastmod "${d}" is not an ISO date`);
+  }
+  // Each <url> lists every language version and x-default, itself included.
+  for (const [block] of sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)) {
+    const loc = block.match(/<loc>([^<]*)<\/loc>/)?.[1];
+    const links = [...block.matchAll(/<xhtml:link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)];
+    if (links.length !== LANGS.length + 1) fail("sitemap.xml", `${loc} lists ${links.length} language alternates, needs ${LANGS.length + 1}`);
+    if (!links.some((m) => m[2] === loc)) fail("sitemap.xml", `${loc} does not list itself among its alternates`);
   }
 
   const robots = await read(join(DIST, "robots.txt"));
@@ -262,7 +330,7 @@ async function checkCrawlerFiles({ PAGES, SITE, absoluteUrl }) {
   const [w, h] = [og.readUInt32BE(16), og.readUInt32BE(20)];
   if (w !== 1200 || h !== 630) fail("og.png", `is ${w}x${h}, needs 1200x630`);
   if (og.length > BUDGET.ogBytes) fail("og.png", `${og.length} bytes exceeds ${BUDGET.ogBytes}`);
-  for (const f of ["favicon.svg", "favicon-32.png", "apple-touch-icon.png", "_worker.js", "404.html"]) {
+  for (const f of ["favicon.svg", "favicon-32.png", "apple-touch-icon.png", "_worker.js", "404.html", "zh-hant/404/index.html"]) {
     if (!(await exists(join(DIST, f)))) fail(f, "missing from dist/");
   }
 }
@@ -351,6 +419,15 @@ async function checkWorker({ SITE }, js) {
   need("unknown URL", missing.status === 404, `status ${missing.status}: a soft 404 (200 on a missing page) is what this prevents`);
   need("unknown URL", (await missing.text()).includes("Page not found"), "the 404 body is not the 404 page");
   need("unknown URL", /noindex/.test(await (await get("/404.html")).text()), "404.html is indexable");
+
+  // Under /zh-hant/ an unknown URL gets the Chinese 404 page, still with status 404.
+  const zhMissing = await get("/zh-hant/no-such-page-xyz");
+  need("unknown /zh-hant/ URL", zhMissing.status === 404, `status ${zhMissing.status}`);
+  need("unknown /zh-hant/ URL", (await zhMissing.text()).includes("找不到頁面"), "the 404 body is not the Chinese 404 page");
+  const zhHome = await get("/zh-hant/");
+  need("/zh-hant/", zhHome.status === 200, `status ${zhHome.status}`);
+  need("/zh-hant/", /Content-Security-Policy|content-security-policy/i.test([...zhHome.headers.keys()].join(",")), "the Chinese pages lack the security headers");
+  need("/zh-hant", (await get("/zh-hant")).status === 308, "/zh-hant does not redirect to /zh-hant/");
 
   for (const f of ["/robots.txt", "/sitemap.xml", "/llms.txt"]) {
     const r = await get(f);

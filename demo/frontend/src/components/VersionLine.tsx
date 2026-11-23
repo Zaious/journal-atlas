@@ -1,4 +1,5 @@
 import type { Version } from "../api";
+import { useLang } from "../i18n";
 
 /**
  * Which corpus these numbers came off, and where the published one lives.
@@ -11,27 +12,34 @@ import type { Version } from "../api";
  * when it was taken.
  */
 export function VersionLine({ version }: { version?: Version }) {
+  const zh = useLang() === "zh-Hant";
   if (!version?.corpus_commit) return null;
   const paper = version.paper;
   return (
     <p className="corpus-version">
-      Serving corpus <code>{version.corpus_describe || version.corpus_commit}</code>
-      {version.corpus_committed ? ` (${version.corpus_committed})` : ""}
-      {version.built ? `, deployed ${version.built}` : ""}.
+      {zh ? "目前提供的語料版本 " : "Serving corpus "}
+      <code>{version.corpus_describe || version.corpus_commit}</code>
+      {version.corpus_committed ? (zh ? `（${version.corpus_committed}）` : ` (${version.corpus_committed})`) : ""}
+      {version.built ? (zh ? `，部署於 ${version.built}` : `, deployed ${version.built}`) : ""}
+      {zh ? "。" : "."}
       {paper?.doi && (
         <>
           {" "}
-          The version described in the {paper.venue ?? "published"} paper is archived at{" "}
+          {zh
+            ? `${paper.venue ?? "已發表"} 論文所描述的版本封存於 `
+            : `The version described in the ${paper.venue ?? "published"} paper is archived at `}
           <a href={`https://doi.org/${paper.doi}`} target="_blank" rel="noopener noreferrer">
             {paper.doi}
           </a>
           {paper.tag ? (
             <>
               {" "}
-              (tag <code>{paper.tag}</code>)
+              {zh ? "（標籤 " : "(tag "}
+              <code>{paper.tag}</code>
+              {zh ? "）" : ")"}
             </>
           ) : null}
-          .
+          {zh ? "。" : "."}
         </>
       )}
     </p>

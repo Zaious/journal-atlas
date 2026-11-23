@@ -15,4 +15,5 @@ export function render(pathname: string): string {
 // What prerender.js and scripts/check-site.mjs need from the same modules the
 // browser bundle uses, so the build and the gate read one definition of the site.
 export { PAGES, SITE, absoluteUrl } from './site.ts'
+export { LANG_TAG, LANGS, DEFAULT_LANG, langOfPath } from './i18n.ts'
 export { headTags, sitemapXml, robotsTxt, llmsTxt } from './seo.ts'
