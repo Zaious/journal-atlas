@@ -295,6 +295,21 @@ Written up here, not decided or built.
     effect: the Pages build (frontend) and a backend restart (the
     `/api/coverage` additions and `/api/usage`).
 
+### Deployment state (2026-11-24)
+
+- **Frontend: live.** Deployed three times to Cloudflare Pages by direct upload
+  from this branch (`wrangler pages deploy`, at the maintainer's word). Live
+  smoke test 63/65; the two failures are the next two lines.
+- **Backend: not redeployed.** The live API lacks `tiers`, `human_evidence` and
+  `/api/usage`; the pages degrade and say so. The Outpost deploy packs the main
+  checkout, which is on a content branch with an unpushed 493-entry corpus, so
+  redeploying needs a decision on what ships.
+- **Cloudflare Web Analytics** is injected into browser requests by Cloudflare
+  (not by this code). The CSP blocks it; turning it off is a Pages setting that
+  needs the maintainer's yes.
+- **GitHub:** pushed as branch `site/2026-11`, PR to `main`
+  (https://github.com/Zaious/journal-atlas/pull/2), CI green.
+
 ### Before deploying (maintainer's actions)
 
 1. DONE 2026-11-23: the Email Routing rule `journal-atlas@chroniclecore.com`
