@@ -56,13 +56,13 @@ PROFILES = [
                             methodology="system building")),
 ]
 
-TIER_ORDER = ["Tier 1 (evidence-backed)", "Tier 2 (community estimate)",
-              "AI-Researched", "Skeleton"]
+TIER_ORDER = [F.TIER_SOURCED, F.TIER_ESTIMATED, F.TIER_AI_RESEARCHED,
+              F.TIER_SKELETON]
 BASIS = {
-    "Tier 1 (evidence-backed)": "Evidence-backed, sourced",
-    "Tier 2 (community estimate)": "Community estimate, banner-marked",
-    "AI-Researched": "Per-field signal quality, banner",
-    "Skeleton": "Structure only",
+    F.TIER_SOURCED: "Cites sources, not human-verified",
+    F.TIER_ESTIMATED: "Family-level estimate, banner-marked",
+    F.TIER_AI_RESEARCHED: "Per-field signal quality, banner",
+    F.TIER_SKELETON: "Structure only",
 }
 
 
@@ -81,14 +81,18 @@ def main() -> int:
         return 1
 
     paths = sorted(ROOT.rglob("*.md"))
-    tiers, journals = {}, {}
+    tiers, journals, first_hand = {}, {}, {}
     for path in paths:
-        tiers[path] = F.detect_tier(io.open(path, encoding="utf-8").read())
+        text = io.open(path, encoding="utf-8").read()
+        tiers[path] = F.detect_tier(text)
+        first_hand[path] = F.has_first_hand_report(text)
         journals[path] = F.parse_journal_file(path)
 
     counts = defaultdict(int)
+    reports = defaultdict(int)
     for path in paths:
         counts[tiers[path]] += 1
+        reports[tiers[path]] += first_hand[path]
 
     # tier -> profile -> [per-entry coverage]
     per_entry = defaultdict(lambda: defaultdict(list))
@@ -102,17 +106,18 @@ def main() -> int:
     in_domain = [p[0] for p in PROFILES if p[1]]
     out_domain = [p[0] for p in PROFILES if not p[1]]
 
-    print("Evidence coverage by tier (n = %d)" % len(paths))
+    print("Evidence coverage by tier (n = %d; first-hand reports: %d of %d)"
+          % (len(paths), sum(reports.values()), len(paths)))
     print("median and range over entries, pooled across %d in-domain profiles: %s\n"
           % (len(in_domain), ", ".join(in_domain)))
-    print("%-30s %5s  %-34s %s" % ("Tier", "n", "Basis", "Coverage"))
-    print("-" * 96)
+    print("%-30s %5s %11s  %-38s %s" % ("Tier", "n", "first-hand", "Basis", "Coverage"))
+    print("-" * 106)
     for tier in TIER_ORDER:
         if tier not in counts:
             continue
         pooled = [v for label in in_domain for v in per_entry[tier][label]]
-        print("%-30s %5d  %-34s %s"
-              % (tier, counts[tier], BASIS.get(tier, ""), _cell(pooled)))
+        print("%-30s %5d %11d  %-38s %s"
+              % (tier, counts[tier], reports[tier], BASIS.get(tier, ""), _cell(pooled)))
 
     print("\nper profile (median over entries):")
     print("%-30s %s" % ("", "  ".join("%12s" % l for l, _, _ in PROFILES)))

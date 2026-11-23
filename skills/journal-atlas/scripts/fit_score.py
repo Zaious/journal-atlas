@@ -613,11 +613,36 @@ def extract_h2_block(content: str, name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
+# User-facing tier labels. Defined once here; every other module imports these
+# constants instead of repeating the literals. Until 2026-11-24 they were
+# "Tier 1 (evidence-backed)" and "Tier 2 (community estimate)"; those names
+# implied a human check that never happened, so they were renamed (scoring is
+# unchanged). The JCDL 2026 paper (tag jcdl2026) still uses the old names.
+TIER_SOURCED = "Sourced"
+TIER_ESTIMATED = "Estimated"
+TIER_AI_RESEARCHED = "AI-Researched"
+TIER_SKELETON = "Skeleton"
+
+# What a first-hand human report looks like in an entry: the exact markers the
+# contribution skill (journal-atlas-contribute) writes. None of the tiers above
+# means a person verified anything; this is the only thing that does.
+FIRST_HAND_MARKERS = (
+    re.compile(r"personal experience\s+(?:19|20)\d\d", re.IGNORECASE),
+    re.compile(r"contributed by\s+@\w", re.IGNORECASE),
+    re.compile(r"confirmed by personal experience", re.IGNORECASE),
+)
+
+
+def has_first_hand_report(content: str) -> bool:
+    """True if the entry text carries a contributor-attributed first-hand report."""
+    return any(m.search(content) for m in FIRST_HAND_MARKERS)
+
+
 def detect_tier(content: str) -> str:
     """Tier label from Soft Metadata's banner — see CONSUMPTION_CONTRACT.md's
-    table for the full rationale. Tier 2 -> [!WARNING], AI-Researched ->
+    table for the full rationale. Estimated -> [!WARNING], AI-Researched ->
     [!NOTE] + "AI-Researched" text, Skeleton -> [!NOTE] alone (0 entries in
-    the corpus today, kept for completeness), no banner -> Tier 1.
+    the corpus today, kept for completeness), no banner -> Sourced.
 
     Single canonical implementation — previously duplicated ad hoc in
     demo/backend/main.py; import it from here instead of redefining it, so a
@@ -625,12 +650,12 @@ def detect_tier(content: str) -> str:
     """
     banner = (_extract_subsection(content, "Soft Metadata") or "")[:400]
     if "[!WARNING]" in banner:
-        return "Tier 2 (community estimate)"
+        return TIER_ESTIMATED
     if "AI-Researched" in banner:
-        return "AI-Researched"
+        return TIER_AI_RESEARCHED
     if "[!NOTE]" in banner:
-        return "Skeleton"
-    return "Tier 1 (evidence-backed)"
+        return TIER_SKELETON
+    return TIER_SOURCED
 
 
 # Disputed-claim marker, per docs/GOVERNANCE.md §4. Deliberately a distinct

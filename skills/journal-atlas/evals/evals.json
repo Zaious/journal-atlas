@@ -6,7 +6,7 @@
       "id": 0,
       "name": "constrained-recommendation",
       "prompt": "ok so i've basically finished a paper — it's an autoethnography about being a disabled researcher trying to navigate academic conferences, comes out around 9,000 words. i'm not affiliated anywhere right now so i genuinely cannot pay an APC, like at all. i used claude to help tidy up the prose and i'm planning to say so in the acknowledgements. no IRB since it's just me reflecting on my own experience. where should i actually send this?",
-      "expected_output": "Ranked recommendations drawn from files actually read, with per-journal evidence (article counts, named sections), correct hard-constraint handling for the $0 APC and the no-IRB status, and an explicit tier/uncertainty flag on anything that isn't Tier 1.",
+      "expected_output": "Ranked recommendations drawn from files actually read, with per-journal evidence (article counts, named sections), correct hard-constraint handling for the $0 APC and the no-IRB status, and an explicit tier/uncertainty flag on anything that isn't Sourced.",
       "why_this_case": "The core workflow, with four hard constraints that interact. A baseline model will name plausible qualitative journals and invent their APC and word limits.",
       "files": [],
       "assertions": [

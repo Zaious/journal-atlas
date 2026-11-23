@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-test_tier1_gate.py — what counts as an evidence line for the Tier 1 gate.
+test_tier1_gate.py — what counts as an evidence line for the Sourced gate (tier1_gate.py).
 
 A line that records a gap (blocked page, zero results) is a recorded blank and
 must not count as evidence, even when it carries a URL. The first version of the

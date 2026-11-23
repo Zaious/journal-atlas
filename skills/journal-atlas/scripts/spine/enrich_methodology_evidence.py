@@ -265,15 +265,15 @@ def process_file(path: str) -> dict:
     actions = []
 
     is_tier2 = "[!WARNING]" in content
-    # CORRECT actions only ever apply to Tier 2 (community-estimate, uncited-by-design)
-    # entries — never Tier 1. A Tier 1 entry's prose evidence (e.g. "framed as historical/
+    # CORRECT actions only ever apply to Estimated (formerly Tier 2; uncited-by-design)
+    # entries — never Sourced. A Sourced entry's prose evidence (e.g. "framed as historical/
     # theoretical review") can describe a specific, plausible, checkable claim without
     # containing a raw digit or URL; is_uncited()'s crude heuristic can't distinguish that
     # from a genuinely empty hand-wave, and keyword-search term/window mismatches are a more
-    # likely explanation for a disagreement with hand-curated Tier 1 content than the human
+    # likely explanation for a disagreement with hand-curated Sourced content than the human
     # being wrong. Verified empirically 2026-07-20: naive thresholds flagged 3 correction
-    # candidates on Review of General Psychology (Tier 1) that were real human reasoning,
-    # not fabrication — restricting to Tier 2 avoids relitigating gold-standard entries.
+    # candidates on Review of General Psychology (Sourced) that were real human reasoning,
+    # not fabrication — restricting to Estimated avoids relitigating gold-standard entries.
     allow_correction = is_tier2
     methodology_section = find_section(content, "Methodological Preferences")
     sensitive_section = find_section(content, "Sensitive Topics")

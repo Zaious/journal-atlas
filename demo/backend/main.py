@@ -535,9 +535,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
             continue
         # State the tier outright instead of leaving it to be inferred from
         # the banner inside the excerpt. Observed with gemini-3.5-flash-lite:
-        # asked to infer, it cited "Tier 1 evidence" for a journal in one
+        # asked to infer, it cited "Sourced evidence" for a journal in one
         # paragraph and then summarised all candidates as "AI-Researched or
-        # Tier 2" in the next — self-contradicting on the single field the
+        # Estimated" in the next — self-contradicting on the single field the
         # tier system exists to communicate. Removing the inference step
         # removes that failure.
         tier = fit_score.detect_tier(content)
@@ -569,7 +569,7 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         "and why they rank below the top pick — but where a candidate is marked TIED, "
         "say it is tied and on what rather than inventing a reason to separate "
         "them, (3) tier/uncertainty flags per the "
-        "rules above for any candidate that isn't Tier 1, (4) one rejection-fallback "
+        "rules above for any candidate that isn't Sourced, (4) one rejection-fallback "
         "suggestion if the top pick doesn't work out. Keep it under 400 words."
     )
 
@@ -819,9 +819,9 @@ def compute_coverage() -> dict:
         key = "/".join(path.relative_to(JOURNALS_ROOT).parts[:-1])
         tier = fit_score.detect_tier(path.read_text(encoding="utf-8"))
         bucket = fields.setdefault(key, {"tier1": 0, "tier2": 0, "ai": 0, "total": 0})
-        if tier.startswith("Tier 1"):
+        if tier == fit_score.TIER_SOURCED:
             bucket["tier1"] += 1
-        elif tier.startswith("Tier 2"):
+        elif tier == fit_score.TIER_ESTIMATED:
             bucket["tier2"] += 1
         else:
             bucket["ai"] += 1

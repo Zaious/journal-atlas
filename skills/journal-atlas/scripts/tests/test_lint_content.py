@@ -118,14 +118,14 @@ def test_tier1_with_placeholder_flagged():
     assert len(violations) == 1
 
 
-def test_tier2_with_placeholder_not_flagged():
-    """Tier 2's whole point is family-level, not-yet-per-journal content —
+def test_estimated_with_placeholder_not_flagged():
+    """Estimated's whole point is family-level, not-yet-per-journal content —
     an unfilled cell there isn't a defect, it's the honest default state."""
     content = """
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — family-level adaptation.
+> **Estimated (not sourced per journal; not human-verified)** — family-level adaptation.
 
 ### Framing Requirements
 

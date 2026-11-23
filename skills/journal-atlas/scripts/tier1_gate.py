@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-tier1_gate.py — does an entry meet the written promotion rule for Tier 1?
+tier1_gate.py — does an entry meet the written promotion rule for Sourced?
 
-SEED_DATA_QUALITY.md says an entry moves to Tier 1 when:
+(The file keeps its name and CLI; "Tier 1" was renamed "Sourced" on 2026-11-24.)
+
+SEED_DATA_QUALITY.md says an entry moves to Sourced (formerly "Tier 1") when:
   - at least 5 of the 7 Soft Metadata subsections carry evidence-backed claims,
   - Reviewer Pool Characteristics cites OpenAlex publication patterns or personal
     experience (or any source URL),

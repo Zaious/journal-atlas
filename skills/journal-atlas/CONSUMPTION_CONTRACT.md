@@ -16,16 +16,17 @@ This document only covers what to do with what you read, not how it was made.
 
 | Signal in the entry | Tier | What it means |
 |---|---|---|
-| No banner | **Tier 1** | Evidence-backed — specific article counts, source URLs, dates |
-| `> [!WARNING]` in Soft Metadata | **Tier 2** | Community / family-level estimate — no per-claim evidence yet |
+| No banner | **Sourced** | AI-researched, each claim cites a source — specific article counts, source URLs, dates. Not human-verified |
+| `> [!WARNING]` in Soft Metadata | **Estimated** | Family-level estimate — not sourced per journal. Not human-verified |
 | `> [!NOTE]` + a `signal_quality` score | **AI-Researched** | Per-journal AI research pass, cited sources, honest blanks where none existed |
 | `> [!NOTE]`, Soft Metadata fields are placeholders | **Skeleton** | Structural data only (Identity / Metrics / Subject Density) — no Soft Metadata exists yet |
 
 None of these tiers means a person has verified the entry. No entry carries a
 first-hand account from someone who submitted to or reviewed for the journal
-(none, as of 2026-11-23). Never describe Tier 1 as "human-verified" or Tier 2 as written or
-checked by a community; say how the claims are sourced. Scoring reads evidence
-coverage, not the tier, so a Tier 2 score is built on estimates even when its
+(none, as of 2026-11-23). Never describe Sourced as "human-verified" or Estimated as written or
+checked by a community; say how the claims are sourced. (Until 2026-11-24 these were called
+Tier 1 and Tier 2.) Scoring reads evidence
+coverage, not the tier, so an Estimated score is built on estimates even when its
 coverage figure is high.
 
 Separately, `> [!CAUTION]` + **Disputed** marks a claim someone has formally
@@ -46,7 +47,7 @@ and cite the linked issue.
    sensitive-topic receptiveness — needs a specific source in a file you
    actually read this session. If you can't point to one, don't make the
    claim.
-3. **Say the tier out loud when it isn't Tier 1.** Tier 2 → "community
+3. **Say the tier out loud when it isn't Sourced.** Estimated → "family-level
    estimate, not per-journal evidence." AI-Researched → cite the per-field
    or overall `signal_quality` score and name any field the entry honestly
    left blank. Skeleton → say Soft Metadata doesn't exist yet; don't

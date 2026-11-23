@@ -49,8 +49,8 @@ function linkLabel(url: string): string {
 }
 
 function tierClass(tier: string): string {
-  if (tier.startsWith("Tier 1")) return "tier-1";
-  if (tier.startsWith("Tier 2")) return "tier-2";
+  if (tier.startsWith("Sourced")) return "tier-1";
+  if (tier.startsWith("Estimated")) return "tier-2";
   if (tier.startsWith("AI-Researched")) return "tier-ai";
   return "tier-skeleton";
 }
@@ -166,8 +166,8 @@ function CoverageNotice() {
             <tr>
               <th>Field</th>
               <th>Entries</th>
-              <th title="Evidence-backed">T1</th>
-              <th title="Community estimate">T2</th>
+              <th title="AI-researched, each claim cites a source; not human-verified">Sourced</th>
+              <th title="Family-level estimate, not sourced per journal; not human-verified">Estimated</th>
               <th title="AI-researched, awaiting human verification">AI</th>
             </tr>
           </thead>
@@ -200,8 +200,8 @@ function CoverageNotice() {
           Entries also differ in <strong>how much of each one is filled in</strong>.
           Unscorable dimensions return "unknown" instead of a midpoint, so every
           candidate carries an evidence-coverage figure. Coverage counts a filled
-          field, not a verified one: the median Tier 2 entry sits at 100% because
-          every field holds an estimate, the median Tier 1 entry at about 75%, and the
+          field, not a verified one: the median Estimated entry sits at 100% because
+          every field holds an estimate, the median Sourced entry at about 75%, and the
           230 AI-researched ones at 40%, missing the parts that need lived submission
           experience. No entry has a first-hand report behind it. <strong>Philosophy is the sharpest case —
           119 entries, none human-verified.</strong> Scores on thin evidence are

@@ -55,7 +55,7 @@ If the journal has an entry, read it before submitting and compare with your exp
 - **Things the entry got wrong or missing**:
 - **Things the entry didn't anticipate**:
 
-This is the most concrete way to upgrade an entry from community-estimate to evidence-backed.
+This is the most concrete way to upgrade an entry from an estimate to having first-hand evidence behind it.
 
 ## 6. Recommendations for future submitters
 

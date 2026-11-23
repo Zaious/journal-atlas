@@ -323,7 +323,7 @@ a journal isn't in the knowledge base, say so.
 Every response containing journal claims must follow
 [CONSUMPTION_CONTRACT.md](CONSUMPTION_CONTRACT.md) — citing evidence from a
 specific row (never a round number or vague descriptor in its place),
-naming the tier and any `signal_quality`/uncertainty when it isn't Tier 1,
+naming the tier and any `signal_quality`/uncertainty when it isn't Sourced,
 never fabricating a value for a `*(pending)*` field, not ranking by Impact
 Factor alone, and checking `Last verified` staleness.
 

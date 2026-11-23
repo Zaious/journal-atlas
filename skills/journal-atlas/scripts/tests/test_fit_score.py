@@ -215,14 +215,14 @@ def test_no_word_limit_row_at_all():
 # ---------- detect_tier ----------
 
 
-def test_detect_tier_no_banner_is_tier_1():
+def test_detect_tier_no_banner_is_sourced():
     content = "## Soft Metadata\n\n### Epistemological & Political Leanings\n"
-    assert fit_score.detect_tier(content) == "Tier 1 (evidence-backed)"
+    assert fit_score.detect_tier(content) == "Sourced"
 
 
-def test_detect_tier_warning_banner_is_tier_2():
-    content = "## Soft Metadata\n\n> [!WARNING]\n> **Tier 2 (community estimate)** — adapted from family norms.\n\n### Epistemological & Political Leanings\n"
-    assert fit_score.detect_tier(content) == "Tier 2 (community estimate)"
+def test_detect_tier_warning_banner_is_estimated():
+    content = "## Soft Metadata\n\n> [!WARNING]\n> **Estimated (not sourced per journal; not human-verified)** — adapted from family norms.\n\n### Epistemological & Political Leanings\n"
+    assert fit_score.detect_tier(content) == "Estimated"
 
 
 def test_detect_tier_note_with_ai_researched_text():
@@ -235,11 +235,32 @@ def test_detect_tier_note_without_ai_researched_text_is_skeleton():
     assert fit_score.detect_tier(content) == "Skeleton"
 
 
+def test_tier_constants_are_the_user_facing_labels():
+    assert fit_score.TIER_SOURCED == "Sourced"
+    assert fit_score.TIER_ESTIMATED == "Estimated"
+    assert fit_score.TIER_AI_RESEARCHED == "AI-Researched"
+    assert fit_score.TIER_SKELETON == "Skeleton"
+
+
+# ---------- has_first_hand_report ----------
+
+
+def test_first_hand_report_markers_detected():
+    assert fit_score.has_first_hand_report("Desk reject in 6 days (personal experience 2026).")
+    assert fit_score.has_first_hand_report("Reviewer 2 was hostile (contributed by @someone).")
+    assert fit_score.has_first_hand_report("Claim confirmed by personal experience.")
+
+
+def test_no_first_hand_report_for_plain_text():
+    assert not fit_score.has_first_hand_report("Personal experience counts as evidence; label it.")
+    assert not fit_score.has_first_hand_report("Sources: https://example.org (n=40 articles)")
+
+
 # ---------- detect_disputes (docs/GOVERNANCE.md §4) ----------
 
 
 def test_no_dispute_marker_returns_empty():
-    content = "## Soft Metadata\n\n> [!WARNING]\n> **Tier 2 (community estimate)**\n"
+    content = "## Soft Metadata\n\n> [!WARNING]\n> **Estimated (not sourced per journal; not human-verified)**\n"
     assert fit_score.detect_disputes(content) == []
 
 
@@ -251,7 +272,7 @@ def test_dispute_marker_detected_with_field_names():
 > **Disputed** — Reviewer Pool Characteristics. See #42.
 
 > [!WARNING]
-> **Tier 2 (community estimate)**
+> **Estimated (not sourced per journal; not human-verified)**
 """
     disputes = fit_score.detect_disputes(content)
     assert len(disputes) == 1
@@ -268,9 +289,9 @@ def test_dispute_is_orthogonal_to_tier():
 > **Disputed** — Epistemological & Political Leanings. See #7.
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — family-level adaptation.
+> **Estimated (not sourced per journal; not human-verified)** — family-level adaptation.
 """
-    assert fit_score.detect_tier(content) == "Tier 2 (community estimate)"
+    assert fit_score.detect_tier(content) == "Estimated"
     assert len(fit_score.detect_disputes(content)) == 1
 
 

@@ -153,7 +153,7 @@ ScienceClaw attribution is captured in each entry's Changelog where applicable.
 | Writing studies (1) | College Composition and Communication | New `qualitative-writing` family (NCTE/4Cs norms) |
 | Accessibility/affective conferences (2) | ACM ASSETS, ACII | New `accessibility-conference` family (participatory + affective-validity norms) |
 
-Each affected entry's Changelog references the specific family source. Tier 2 (community estimate) banner is applied to all 152 family-adapted entries.
+Each affected entry's Changelog references the specific family source. Estimated (formerly Tier 2, community estimate) banner is applied to all 152 family-adapted entries.
 
 **Conformance with our license model**: ScienceClaw's MIT license permits derivative content. Our adapted Markdown becomes part of the CC BY-SA 4.0 content layer; the underlying schema and tooling remain MIT-compatible. Original ScienceClaw `.md` files are not redistributed in this repo; users wanting their full text should clone the upstream repo directly.
 
