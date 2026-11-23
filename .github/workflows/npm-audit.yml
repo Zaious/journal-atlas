@@ -1,0 +1,60 @@
+name: Dependency audit
+
+# Monthly check of the front end's runtime dependencies for high or critical
+# advisories (the release gate's `npm audit --omit=dev --audit-level=high`).
+# Opens ONE issue on failure and not another while it is open. Needs no secret.
+# Decision 10 in docs/status/SITE_SPEC.md.
+
+on:
+  schedule:
+    - cron: '23 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    name: npm audit (runtime dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Audit
+        id: audit
+        continue-on-error: true
+        working-directory: demo/frontend
+        run: |
+          npm ci --ignore-scripts
+          npm audit --omit=dev --audit-level=high 2>&1 | tee ../../audit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Open an issue if it failed and none is open
+        if: steps.audit.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create dependencies --color 0366D6 --description "Dependency advisories" 2>/dev/null || true
+          if [ -n "$(gh issue list --label dependencies --state open --json number --jq '.[].number')" ]; then
+            echo "A dependencies issue is already open; not opening another."
+            exit 0
+          fi
+          {
+            echo "npm audit reported high or critical advisories in the front end's runtime dependencies on $(date -u +%Y-%m-%d)."
+            echo
+            echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo
+            echo '```'
+            tail -n 60 audit.log
+            echo '```'
+          } > body.md
+          gh issue create --title "Front-end dependency advisories" --label dependencies --body-file body.md
+
+      - name: Fail the run if the audit failed
+        if: steps.audit.outcome == 'failure'
+        run: exit 1

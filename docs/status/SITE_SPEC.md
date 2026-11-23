@@ -176,8 +176,8 @@ crawlers; **P1** the common spec's core; **P2** polish; **D** needs a decision
 | S7 | No `ads.txt` (correct while there are no ads) | n/a | n/a |
 | S11 | No IndexNow | D | open |
 | T10 | No terms page (siblings only have one where there are accounts or payment) | n/a | n/a |
-| O3 | `npm audit` not run on a schedule | P2 | open |
-| O5 | No uptime monitor or error monitor | D | open |
+| O3 | `npm audit` not run on a schedule | P2 | done: `.github/workflows/npm-audit.yml` (monthly, opens one issue). Workflow YAML parses; not run on GitHub (not pushed); `npm audit` run locally: 0 vulnerabilities |
+| O5 | No uptime monitor or error monitor | D | done for uptime: `.github/workflows/site-health.yml` (daily smoke test of the live site, opens one issue; off until repository variable `SITE_HEALTH_ENABLED=true` after deploy). Not run on GitHub. No error-monitoring tool, by decision 10 (none of the siblings has one) |
 
 **What "done" means here.** Implemented on this branch and checked by
 `npm run build` (which runs `scripts/check-site.mjs`: pages, tokens, worker

@@ -1,0 +1,69 @@
+name: Site health
+
+# A daily post-deploy check of the live site, using the same script the release
+# gate uses (demo/frontend/scripts/smoke.mjs: pages, robots/sitemap/llms, a real
+# 404, response headers, API reachability). On failure it opens ONE issue and
+# does not open another while that one is open, so a long outage is one email.
+#
+# It is off until the maintainer turns it on: set the repository variable
+# SITE_HEALTH_ENABLED to "true" (Settings > Secrets and variables > Actions >
+# Variables) AFTER the new site is deployed. Before that, the live site predates
+# the checks and would fail every day. "Run workflow" always runs it once.
+#
+# Needs no secret and no third-party service. Decision 10 in
+# docs/status/SITE_SPEC.md.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  smoke:
+    name: Smoke test the live site
+    if: github.event_name == 'workflow_dispatch' || vars.SITE_HEALTH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run the smoke test
+        id: smoke
+        continue-on-error: true
+        run: |
+          node demo/frontend/scripts/smoke.mjs https://journal-atlas.chroniclecore.com 2>&1 | tee smoke.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Open an issue if it failed and none is open
+        if: steps.smoke.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create site-health --color B60205 --description "Automated live-site check failed" 2>/dev/null || true
+          if [ -n "$(gh issue list --label site-health --state open --json number --jq '.[].number')" ]; then
+            echo "A site-health issue is already open; not opening another."
+            exit 0
+          fi
+          {
+            echo "The daily live-site check failed on $(date -u +%Y-%m-%dT%H:%MZ)."
+            echo
+            echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo
+            echo '```'
+            tail -n 60 smoke.log
+            echo '```'
+            echo
+            echo "Close this issue when the site is healthy again; the next failure opens a new one."
+          } > body.md
+          gh issue create --title "Live site check failed" --label site-health --body-file body.md
+
+      - name: Fail the run if the smoke test failed
+        if: steps.smoke.outcome == 'failure'
+        run: exit 1
