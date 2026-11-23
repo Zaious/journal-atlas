@@ -58,7 +58,10 @@ COUNT = re.compile(r"\b\d[\d,]*\s*(?:articles?|article\(s\)|publications?|papers
 # A line that records a gap (blocked page, zero results, "not found") is a
 # recorded blank, not evidence, even though it often carries a URL or a number.
 GAP_LINE = re.compile(
-    r"unreadable|not read\b|could not|couldn.t|\b40[0-9]\b|\b429\b|\b0 (?:reviews|results|hits|articles)\b|"
+    r"unreadable|not read\b|could not|couldn.t|"
+    # an HTTP status, not a number that happens to look like one ("denominator 405" is a count)
+    r"(?:\bHTTP\s*|\bstatus\s*|\berror\s*|\breturn(?:s|ed)\s*)(?:40[0-9]|429|50[0-9])\b|\b(?:40[0-9]|429)\s*(?:error|forbidden|not found)|"
+    r"\b0 (?:reviews|results|hits|articles)\b|"
     r"\bno (?:public |first-hand |relevant )?(?:evidence|source|data|reviews|results)\b|not found|none found|"
     r"returned (?:nothing|zero|no)\b|not available|unverified|\bblank\b|\bpending\b",
     re.I,
