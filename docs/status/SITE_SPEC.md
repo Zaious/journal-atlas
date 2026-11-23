@@ -200,7 +200,10 @@ answered by the SPA shell with 200, unknown URL answered 200).
 
 Written up here, not decided or built.
 
-1. **Contact mailbox.** Four of five siblings expose a project mailbox
+1. **Contact mailbox.** DECIDED 2026-11-23: show a project mailbox,
+   `journal-atlas@chroniclecore.com`, one value in `site.ts`; the build gate
+   fails for any address not on chroniclecore.com. **The alias must exist and
+   forward before deploy.** Original description follows. Four of five siblings expose a project mailbox
    (`<site>@chroniclecore.com`) and the siblings' `check` scripts forbid typing
    it into prose. This task said "no maintainer email, GitHub issues unless the
    siblings do otherwise". They do, partly. Built with GitHub issues only, and
@@ -208,7 +211,13 @@ Written up here, not decided or built.
    Options: keep GitHub-only (zero spam surface, but researchers without GitHub
    accounts cannot reach you, and the footer already worries about exactly that
    for payments); or create `journal-atlas@chroniclecore.com` as an alias.
-2. **Analytics.** Siblings split: none (basesmall, smallol), first-party
+2. **Analytics.** DECIDED 2026-11-23: anonymous first-party totals on the API
+   only (`demo/backend/usage.py`, public `GET /api/usage`, shown on the Status
+   page, disclosed on the Privacy page). Per UTC day: searches, how each ended,
+   field directory of the best match, follow-ups. No address, no text, no
+   identifier; in memory, restarts from zero with the process. No third party,
+   no cookie, no script. Needs a backend restart to take effect. Tests:
+   `demo/backend/tests/test_usage.py`. Original description follows. Siblings split: none (basesmall, smallol), first-party
    de-identified (summonlibrary), consented PostHog (riftbound). Built: none.
    Options: stay at none and learn nothing about use; first-party counters on
    the API only (no third party, still visitor data, needs a privacy line); or
@@ -222,10 +231,18 @@ Written up here, not decided or built.
    audience is international researchers, but `README.zh-Hant.md` exists. The
    page text now lives in one module so a translation is a data change, not a
    rewrite; the work and the review are yours to schedule.
-6. **Content licence wording.** `AGENTS.md` says CC BY-NC-SA 4.0; `LICENSE`
-   says CC BY-SA 4.0; the site footer already said CC BY-SA. The site follows
-   `LICENSE`. `AGENTS.md` looks stale.
-7. **The human-evidence statement.** "0 of N entries carry a first-hand human
+6. **Content licence wording.** DECIDED 2026-11-23: CC BY-SA 4.0 stands (the
+   2026-05-18 change documented in `LICENSE`). `AGENTS.md` was the stale file;
+   its two NC-SA lines were corrected (workspace file, not in git). No other
+   file in the repo still names NC-SA as the current licence.
+7. **The human-evidence statement.** DECIDED 2026-11-23: count it by code, not
+   by hand. That needs a structured "First-hand reports" field in the entries,
+   which is content/schema work for the content session (proposal handed over in
+   the shared notes folder, `site-session-handover-first-hand-field.md`). Until the
+   field exists the number stays 0 by hand, dated. A text-pattern gate was tried
+   on paper and rejected: all 5 files that match "first-hand experience" in the
+   current corpus match a negative statement, so it would count absence as
+   presence. Original description follows. "0 of N entries carry a first-hand human
    report, no external contributors yet" is not derivable from the corpus. It is
    recorded by hand in `demo/backend/main.py` with a date, like `absent_checked`
    already is, and printed with that date. Someone has to change it when the

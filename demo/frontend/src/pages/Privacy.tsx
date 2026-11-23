@@ -75,6 +75,15 @@ export default function Privacy() {
             the process restarts. The status page shows totals, never addresses.
           </li>
           <li>
+            It also keeps anonymous daily totals so the maintainer can tell whether
+            the demo is used: how many searches ran, how each ended (finished,
+            stopped to ask a question, found nothing, failed, turned away,
+            abandoned), the field of the best match, and how many follow-ups were
+            asked. No address, no part of your text and no identifier goes into
+            them; they sit in memory, restart from zero with the server, and are
+            public on the <a href="/status/">status page</a>.
+          </li>
+          <li>
             If a call to the model provider fails, the error is written to the
             server log so the maintainer can fix it. That is the provider&apos;s error
             message, not your text, but every error format a provider can return
@@ -84,7 +93,8 @@ export default function Privacy() {
             The web servers in front of the site and the API process requests the
             way web servers do, and may record the address, the URL, the time and
             the browser&apos;s user-agent string in their own logs. This project adds
-            no analytics on top of them.
+            no analytics script or tracking on top of them; the anonymous totals
+            above are the only counting it does.
           </li>
         </ul>
       </section>

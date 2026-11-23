@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API_BASE, providerLabel, useCoverage, useHealth } from "../api";
+import { API_BASE, providerLabel, useCoverage, useHealth, useUsage } from "../api";
 import { VersionLine } from "../components/VersionLine";
 import { ISSUES_URL } from "../site";
 
@@ -16,6 +16,7 @@ type Probe = "checking" | "up" | "down";
 export default function Status() {
   const health = useHealth();
   const coverage = useCoverage().data;
+  const usage = useUsage().data;
   const [probe, setProbe] = useState<Probe>("checking");
 
   useEffect(() => {
@@ -96,6 +97,42 @@ export default function Status() {
         </dl>
         <VersionLine version={h?.version ?? coverage?.version} />
       </section>
+
+      {usage && usage.days.length > 0 && (
+        <section>
+          <h2>Recent use</h2>
+          <p>
+            Days are UTC. {usage.note} The most useful column is
+            &ldquo;found nothing&rdquo;: that is where someone asked and the knowledge
+            base had no entry that fit.
+          </p>
+          <table className="plain-table plain-table--numeric">
+            <caption className="sr-only">Searches per day and how they ended</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Searches</th>
+                <th scope="col">Finished</th>
+                <th scope="col">Found nothing</th>
+                <th scope="col">Failed</th>
+                <th scope="col">Turned away</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[...usage.days].reverse().map((d) => (
+                <tr key={d.date}>
+                  <th scope="row">{d.date}</th>
+                  <td>{d.searches}</td>
+                  <td>{d.outcomes.completed ?? 0}</td>
+                  <td>{d.outcomes.no_candidates ?? 0}</td>
+                  <td>{d.outcomes.error ?? 0}</td>
+                  <td>{d.outcomes.refused ?? 0}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )}
 
       <section>
         <h2>If it is down</h2>

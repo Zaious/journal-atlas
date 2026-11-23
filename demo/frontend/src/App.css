@@ -919,6 +919,35 @@ button.secondary:hover:not(:disabled) {
   }
 }
 
+/* A table of numbers is read by column, so it keeps its header row on a phone
+   instead of stacking like the text tables above. */
+@media (max-width: 560px) {
+  .plain-table--numeric {
+    font-size: 0.8rem;
+  }
+
+  .plain-table--numeric thead {
+    position: static;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  .plain-table--numeric tr {
+    display: table-row;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .plain-table--numeric th,
+  .plain-table--numeric td {
+    display: table-cell;
+    padding: 0.45rem 0.3rem;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
 .facts {
   margin: 0 0 1rem;
 }

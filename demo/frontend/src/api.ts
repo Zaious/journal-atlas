@@ -64,6 +64,21 @@ export interface Health {
   version?: Version;
 }
 
+export interface UsageDay {
+  date: string;
+  searches: number;
+  outcomes: Record<string, number>;
+  top_field: Record<string, number>;
+  followups: number;
+}
+
+/** Anonymous daily totals kept in the API's memory (demo/backend/usage.py). */
+export interface Usage {
+  days: UsageDay[];
+  since: string;
+  note: string;
+}
+
 // ---------- fetching ----------
 
 /**
@@ -116,6 +131,7 @@ export function useCoverage(): { data: Coverage | null; settled: boolean } {
   return { data: withTiers(data), settled };
 }
 export const useHealth = () => useApi<Health>("/api/health");
+export const useUsage = () => useApi<Usage>("/api/usage");
 
 // ---------- derived figures ----------
 
