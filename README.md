@@ -19,9 +19,9 @@ Word limits that are actually enforced, fees an author cannot pay, an ethics app
 
 *A worked example of generative information access, with the model kept out of the ranking:* AI gathers the evidence into the corpus; plain code applies the hard constraints, scores what survives and reports how much evidence each score rests on; AI then explains the survivors — and compares venues on request. [Paper](https://doi.org/10.1145/3805696.3846515) · [live demonstration](https://journal-atlas.chroniclecore.com)
 
-> **Status (2026-11): Pre-release.** 438 entries — 418 journals across 11 field
+> **Status (2026-11): Pre-release.** 450 entries — 430 journals across 13 field
 > directories (including `philosophy/`, `education/` and `ai-society/`) + 20 conferences across 4 sub-domains
-> (HCI / ML / NLP / Data Mining). Quality breakdown: **58 Tier 1** (evidence-backed) ·
+> (HCI / ML / NLP / Data Mining). Quality breakdown: **70 Tier 1** (evidence-backed) ·
 > **149 Tier 2** (community estimate) · **231 AI-Researched** (per-journal AI research
 > with cited `signal_quality`, v2 coverage-first pivot) · **0 Skeleton**. None of the
 > tiers means a person verified the entry (see [Tier System](#tier-system)). The JCDL 2026
@@ -455,7 +455,7 @@ read a recommendation.
 
 ### What is actually in the corpus
 
-438 entries, as of 2026-11-23 (the 399-entry table of 2026-07-30 that the JCDL
+450 entries, as of 2026-11-23 (the 399-entry table of 2026-07-30 that the JCDL
 2026 paper describes is the state at tag `jcdl2026`). "Tier 1" here means
 cited per-claim research, not a person's verification; see
 [What the tier names do not mean](#tier-system).
@@ -463,11 +463,13 @@ cited per-claim research, not a person's verification; see
 | Field | Entries | Tier 1 | Tier 2 | AI-Researched |
 |---|---:|---:|---:|---:|
 | Psychology | 160 | 8 | 52 | 100 |
-| Philosophy | 115 | 18 | 0 | **97** |
-| HCI (journals) | 60 | 2 | 28 | 30 |
+| Philosophy | 118 | 21 | 0 | **97** |
+| HCI (journals) | 63 | 5 | 28 | 30 |
 | Cognitive science | 17 | 0 | 17 | 0 |
 | Biology | 15 | 0 | 15 | 0 |
 | Education *(new 2026-11)* | 20 | 18 | 0 | 2 |
+| Economics *(new 2026-11)* | 3 | 3 | 0 | 0 |
+| Organization and management *(new 2026-11)* | 3 | 3 | 0 | 0 |
 | AI and society *(new 2026-11)* | 10 | 8 | 0 | 2 |
 | HCI (conferences) | 10 | 0 | 10 | 0 |
 | Multidisciplinary (*Nature*, *Science*, PNAS, PLOS ONE…) | 8 | 0 | 8 | 0 |
@@ -479,7 +481,7 @@ cited per-claim research, not a person's verification; see
 | Data-mining conferences (KDD, WWW) | 2 | 0 | 2 | 0 |
 
 Four adjacent fields — psychology, philosophy, HCI, cognitive science — are
-**83% of the corpus (362 of 438)**. Everything else is a thin, deliberately
+**82% of the corpus (368 of 450)**. Everything else is a thin, deliberately
 chosen sample of the venues an author in those fields might reach toward: the
 five general-science megajournals, the five general-medicine journals, the major
 ML/NLP conferences. They are landmarks, not coverage.
@@ -536,7 +538,7 @@ a shrunken score by construction — scores are pulled toward the neutral 50 in
 proportion to how little is known — but it is still worth less than the same
 number backed by more.
 
-**Philosophy is the sharpest case: 115 entries, none human-verified.** It is the
+**Philosophy is the sharpest case: 118 entries, none human-verified.** It is the
 second-largest field in the corpus and, with 97 AI-Researched entries still, the
 least substantiated. Treat those
 recommendations as leads to check, not as findings.
@@ -564,9 +566,9 @@ Skeleton ──[Soft Metadata written from community knowledge]──► Tier 2
                                                               (no banner)
 ```
 
-Current distribution: **58 Tier 1 · 149 Tier 2 · 231 AI-Researched · 0 Skeleton = 438 total** (418 journals + 20 conferences). On 2026-11-23, 47 entries moved to Tier 1 after meeting the gate in `scripts/tier1_gate.py` (at least 6 of 7 Soft Metadata subsections with two or more cited lines each) and an independent spot-check of their claim–source pairs; the check found no pair contradicted by its source, but a handful of pairs were only partly supported, and those were corrected.
+Current distribution: **70 Tier 1 · 149 Tier 2 · 231 AI-Researched · 0 Skeleton = 450 total** (430 journals + 20 conferences). On 2026-11-23, 59 entries moved to Tier 1 after meeting the gate in `scripts/tier1_gate.py` (at least 6 of 7 Soft Metadata subsections with two or more cited lines each) and an independent spot-check of their claim–source pairs; the check found no pair contradicted by its source, but a handful of pairs were only partly supported, and those were corrected.
 
-**What the tier names do not mean.** No tier involves a first-hand human report today: **0 of 438 entries** carry a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`). Every entry was written by the maintainer working with an AI model; there are no outside contributors yet.
+**What the tier names do not mean.** No tier involves a first-hand human report today: **0 of 450 entries** carry a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`). Every entry was written by the maintainer working with an AI model; there are no outside contributors yet.
 
 - **Tier 1** ("evidence-backed") is deeper per-journal research that the maintainer directed and an AI carried out: claims cite article counts and source URLs. It is the default state of an entry with no warning banner. Promotion does not require anyone who has submitted to or reviewed for the journal.
 - **Tier 2** ("community estimate") is a family-level estimate: Soft Metadata adapted from norms shared by a group of similar journals, with no per-journal sources. "Community" names the knowledge it is adapted from, not people who reviewed the entry.
@@ -691,7 +693,7 @@ would be.
 What it can do: rank real venues against real constraints, cite article counts
 per topic, tell you the evidence behind each score, and say "I don't have data
 on this." What it cannot do: cover most of the academy, tell you anything
-trustworthy about reviewer culture at any of its 438 entries (none carries a
+trustworthy about reviewer culture at any of its 450 entries (none carries a
 first-hand report), or replace one
 colleague who has published there. See
 [Coverage and Inclusion Status](#coverage-and-inclusion-status) for the numbers,
@@ -765,14 +767,14 @@ Setup and launch instructions in [demo/README.md](demo/README.md).
 The coverage table above states the two holes precisely, and they need two
 different kinds of help. Everything else is secondary.
 
-> **Hole 1 — most of the academy is missing.** Eleven field directories, 83% of
+> **Hole 1 — most of the academy is missing.** Thirteen field directories, 82% of
 > the entries in four adjacent fields. No library science, anthropology or
 > physical sciences, and no general sociology (the `ai-society/` directory holds
 > science-and-technology-studies and media journals only).
 >
 > **Hole 2 — no entry has a human who has submitted or reviewed behind it: 0 of
-> 438.** The 231 AI-Researched entries carry policy and topic facts with sources
-> and nothing about how it actually goes; the 58 Tier 1 entries cite more, and are
+> 450.** The 231 AI-Researched entries carry policy and topic facts with sources
+> and nothing about how it actually goes; the 70 Tier 1 entries cite more, and are
 > just as unreviewed by anyone who has been through the process there.
 
 ### Path 1 — Bring your whole field in, the way we did
