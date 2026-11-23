@@ -450,7 +450,7 @@ def main() -> int:
         required=True,
         choices=["psychology", "hci", "qualitative-methods", "cognitive-science",
                  "multidisciplinary", "medical", "biology", "physics",
-                 "philosophy", "education", "ai-society",
+                 "philosophy", "education", "ai-society", "economics", "management",
                  "conferences/hci", "conferences/ml", "conferences/nlp",
                  "conferences/data-mining"],
         help="Field directory under references/journals/",
