@@ -822,6 +822,9 @@ def compute_coverage() -> dict:
     ]
     _COVERAGE_CACHE = {
         "total": sum(r["total"] for r in rows),
+        # Corpus-wide tier counts, so the front end states them from the
+        # corpus instead of adding up the table (or typing the sum).
+        "tiers": {key: sum(r[key] for r in rows) for key in ("tier1", "tier2", "ai")},
         "fields": rows,
         # The four adjacent fields the corpus actually grew out of. Reported as
         # a share so the concentration is visible without the reader adding up
@@ -843,6 +846,17 @@ def compute_coverage() -> dict:
             "Chemistry, mathematics, and the earth sciences",
         ],
         "absent_checked": "2026-07-30",
+        # How much of the corpus any person has stood behind. Like `absent`
+        # this cannot be derived from the files: a tier says how an entry was
+        # written, not that someone who submitted to or reviewed for the venue
+        # has vouched for it. It is recorded by hand and dated so the site can
+        # say "as of <date>" instead of implying the number is live. Update it
+        # in the same change that merges the first outside contribution.
+        "human_evidence": {
+            "first_hand_reports": 0,
+            "external_contributors": 0,
+            "recorded": "2026-11-23",
+        },
         # Same disclosure discipline the entries get: every number above is
         # read off a particular corpus, so say which one.
         "version": VERSION,

@@ -1,5 +1,6 @@
 /**
- * Write the page's first render into dist/index.html.
+ * Write every page's first render into its own HTML file, plus the files a
+ * crawler asks for: sitemap.xml, robots.txt, llms.txt.
  *
  * Without this the served HTML is an empty <div id="root">, and everything on
  * the page — what the tool is, where the source lives, who made it — exists
@@ -9,28 +10,81 @@
  * replacing it.
  *
  * Only the initial state is rendered. Everything that comes from the API
- * (coverage counts, rate limits) is fetched in effects, which do not run on the
- * server, so this markup is exactly the client's first render and hydration has
- * nothing to reconcile.
+ * (coverage counts, model names, rate limits) is fetched in effects, which do
+ * not run on the server, so this markup is exactly the client's first render
+ * and hydration has nothing to reconcile.
  *
- * Runs as the last step of `npm run build`, after the SSR build of
- * src/entry-server.tsx into dist-ssr/.
+ * Output, from the page list in src/site.ts:
+ *   dist/index.html            /
+ *   dist/<page>/index.html     /about/, /ai/, /privacy/, /status/
+ *   dist/404.html              served with a 404 status for any unknown URL
+ *   dist/sitemap.xml, robots.txt, llms.txt
+ *
+ * Runs as the last build step, after the SSR build of src/entry-server.tsx
+ * into dist-ssr/. scripts/check-site.mjs then inspects what was written.
  */
-import { readFile, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const TEMPLATE = new URL("./dist/index.html", import.meta.url);
+const ROOT = dirname(fileURLToPath(import.meta.url));
+const DIST = join(ROOT, "dist");
 const EMPTY_ROOT = '<div id="root"></div>';
+const SEO_MARKER = "<!--seo-->";
 
-const { render } = await import("./dist-ssr/entry-server.js");
-const template = await readFile(TEMPLATE, "utf8");
+const { render, PAGES, headTags, sitemapXml, robotsTxt, llmsTxt } = await import(
+  "./dist-ssr/entry-server.js"
+);
+const template = await readFile(join(DIST, "index.html"), "utf8");
 
 // A second run would find the root already filled; fail rather than guess.
-if (!template.includes(EMPTY_ROOT)) {
-  console.error(`prerender: no empty ${EMPTY_ROOT} in dist/index.html to fill`);
+if (!template.includes(EMPTY_ROOT) || !template.includes(SEO_MARKER)) {
+  console.error(`prerender: dist/index.html needs an empty ${EMPTY_ROOT} and a ${SEO_MARKER} marker`);
   process.exit(1);
 }
 
-// No whitespace around the markup: hydration walks the DOM node by node, and a
-// newline inside #root is a text node the server sent and the client did not.
-await writeFile(TEMPLATE, template.replace(EMPTY_ROOT, `<div id="root">${render()}</div>`));
-console.log("prerender: wrote the first render into dist/index.html");
+function outFile(page) {
+  if (page.path === "/") return join(DIST, "index.html");
+  if (page.path.endsWith(".html")) return join(DIST, page.path.slice(1));
+  return join(DIST, page.path, "index.html");
+}
+
+for (const page of PAGES) {
+  // The path a 404 page is rendered for is irrelevant, but it must resolve to
+  // the not-found body, so hand it one nothing else uses.
+  const pathname = page.id === "notfound" ? "/__not-found__/" : page.path;
+  // No whitespace around the markup: hydration walks the DOM node by node, and
+  // a newline inside #root is a text node the server sent and the client did not.
+  const html = template
+    .replace(SEO_MARKER, headTags(page))
+    .replace(EMPTY_ROOT, `<div id="root">${render(pathname)}</div>`);
+  const file = outFile(page);
+  await mkdir(dirname(file), { recursive: true });
+  await writeFile(file, html);
+}
+
+/**
+ * The last commit that touched the files a page is built from, as the page's
+ * `lastmod`. Null when git or history is unavailable (a shallow CI checkout,
+ * an exported tarball): the sitemap then omits `lastmod` rather than stamping
+ * every page with the build date, which would say "changed today" for pages
+ * that did not.
+ */
+function lastmod(page) {
+  try {
+    const out = execFileSync("git", ["log", "-1", "--format=%cs", "--", ...page.sources], {
+      cwd: ROOT,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : null;
+  } catch {
+    return null;
+  }
+}
+
+await writeFile(join(DIST, "sitemap.xml"), sitemapXml(lastmod));
+await writeFile(join(DIST, "robots.txt"), robotsTxt());
+await writeFile(join(DIST, "llms.txt"), llmsTxt());
+console.log(`prerender: wrote ${PAGES.length} pages, sitemap.xml, robots.txt, llms.txt`);

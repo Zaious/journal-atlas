@@ -1,22 +1,201 @@
+/*
+ * Design tokens, base styles and the accessibility floor.
+ *
+ * Every colour the site uses is a token defined here, for both themes, and
+ * nothing else in src/ may use a hex literal: scripts/check-site.mjs fails the
+ * build on one, and measures the contrast of the token pairs below against
+ * WCAG AA (4.5:1 for text, 3:1 for the borders that mark a control). That is
+ * the sibling sites' rule (docs/status/SITE_SPEC.md, D1, A3, A4, A10): a
+ * contrast rule that lives in a reviewer's head is the one that gets skipped.
+ *
+ * Dark follows the system unless <html data-theme="light|dark"> forces it.
+ * There is no toggle yet; the attribute is the hook a toggle would use.
+ */
 :root {
   color-scheme: light dark;
-  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.4;
+  --bg: #ffffff;
+  --surface: #f7f6fc;
+  --surface-2: #f4f2fb;
+  --surface-hover: #e9e6fb;
+  --raised: #ffffff;
+  --fg: #1a1a1a;
+  --fg-strong: #2f2a45;
+  --muted: #55506b;
+  --faint: #635e7e;
+  --accent: #4d3fc7;
+  --accent-text: #4d3fc7;
+  --accent-hover: #3d31a8;
+  --accent-line: #d4cff0;
+  --on-accent: #ffffff;
+  --disabled: #b8b2e8;
+  --line: #e4e1f0;
+  --line-soft: #ebe9f7;
+  --control: #7d7798;
+  --focus: #0b57d0;
+  --warn-bg: #fdf8ec;
+  --warn-line: #f0e3c8;
+  --warn-fg: #6d5220;
+  --danger-bg: #fdecec;
+  --danger-line: #f6d8d8;
+  --danger-fg: #a12a2a;
+  --info-bg: #f2f7fd;
+  --info-line: #d8e6f5;
+  --tier1-bg: #e3f5ea;
+  --tier1-fg: #1c6f46;
+  --tier2-bg: #fdf1d9;
+  --tier2-fg: #7f560a;
+  --tierai-bg: #e9e6fb;
+  --tierai-fg: #4c3da8;
+
+  --font: system-ui, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --measure: 640px;
+
+  font-family: var(--font);
+  line-height: 1.5;
 }
 
-* {
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121016;
+    --surface: #232030;
+    --surface-2: #201d31;
+    --surface-hover: #302a4d;
+    --raised: #1a1826;
+    --fg: #eeeeee;
+    --fg-strong: #e6e2f5;
+    --muted: #b4aecd;
+    --faint: #a39dc0;
+    --accent: #4d3fc7;
+    --accent-text: #b3a7f5;
+    --accent-hover: #3d31a8;
+    --accent-line: #3f3a63;
+    --disabled: #3a3558;
+    --line: #322d47;
+    --line-soft: #322d47;
+    --control: #7a7498;
+    --focus: #8ab4ff;
+    --warn-bg: #2b2416;
+    --warn-line: #4a3d1f;
+    --warn-fg: #ddbe7e;
+    --danger-bg: #2a1818;
+    --danger-line: #4a2828;
+    --danger-fg: #f0a0a0;
+    --info-bg: #1a2230;
+    --info-line: #2d3d52;
+    --tier1-bg: #163b28;
+    --tier1-fg: #6fd39a;
+    --tier2-bg: #3a2f10;
+    --tier2-fg: #e0b155;
+    --tierai-bg: #2a2547;
+    --tierai-fg: #b3a7f0;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #121016;
+  --surface: #232030;
+  --surface-2: #201d31;
+  --surface-hover: #302a4d;
+  --raised: #1a1826;
+  --fg: #eeeeee;
+  --fg-strong: #e6e2f5;
+  --muted: #b4aecd;
+  --faint: #a39dc0;
+  --accent: #4d3fc7;
+  --accent-text: #b3a7f5;
+  --accent-hover: #3d31a8;
+  --accent-line: #3f3a63;
+  --disabled: #3a3558;
+  --line: #322d47;
+  --line-soft: #322d47;
+  --control: #7a7498;
+  --focus: #8ab4ff;
+  --warn-bg: #2b2416;
+  --warn-line: #4a3d1f;
+  --warn-fg: #ddbe7e;
+  --danger-bg: #2a1818;
+  --danger-line: #4a2828;
+  --danger-fg: #f0a0a0;
+  --info-bg: #1a2230;
+  --info-line: #2d3d52;
+  --tier1-bg: #163b28;
+  --tier1-fg: #6fd39a;
+  --tier2-bg: #3a2f10;
+  --tier2-fg: #e0b155;
+  --tierai-bg: #2a2547;
+  --tierai-fg: #b3a7f0;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 1rem;
 }
 
 body {
   margin: 0;
-  color: #1a1a1a;
-  background: #fff;
+  color: var(--fg);
+  background: var(--bg);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #eee;
-    background: #121016;
+/* Never remove the ring; make it visible on every background (WCAG 2.4.7, 2.4.13). */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Visually hidden, still read by screen readers. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* The first Tab stop on every page; appears only when focused. */
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 0.75rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }
