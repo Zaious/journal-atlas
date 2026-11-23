@@ -6,6 +6,19 @@ This document explains how the seed journal entries were authored, the differenc
 
 We believe a community-maintained knowledge base only earns trust if it is honest about what it doesn't yet know. This page is that honesty.
 
+## What the tier names do and do not mean
+
+Measured 2026-11-22, because the names suggest more than the entries contain:
+
+- **First-hand human reports: 0 of 399 entries** (Tier 1: 0 of 11, Tier 2: 0 of 152, AI-Researched: 0 of 236), counted by the exact markers the contribution skill writes: `personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`. A first-hand account typed into free text without a marker would not be found by this count.
+- **Who wrote the entries.** The maintainer, working with an AI model, for all three tiers. There are no outside contributors yet. "Tier 1" is not "a human checked it"; it is "the claims cite specific counts and sources". The promotion rule below asks for cited evidence, and accepts OpenAlex publication patterns in place of personal experience.
+- **"Community estimate".** Family-level Soft Metadata adapted from norms shared by similar journals. The word *community* names where the knowledge comes from, not people who reviewed this entry.
+- **Second-hand human data does exist in places**, mainly SciRev review-time statistics with a stated sample size (about 74 entries, found by text match, so possibly more). Review culture, desk-reject behaviour and attitude to methods have no first-hand source in any entry.
+- **Scoring does not read the tier.** It reads evidence coverage: the share of the six scoring dimensions that have a value. A Tier 2 entry has a value in nearly every dimension and so scores as fully covered; an AI-Researched entry leaves unsupported dimensions blank and is scored on about 40%. Across three in-domain profiles, journals only, Tier 2 held 49 of the 60 top-20 slots and AI-Researched held 1, although AI-Researched is 59% of the corpus. `fit_score.py` does not downweight Tier 2; the recommendation workflow must say the tier aloud.
+- **Table 1 of the JCDL 2026 paper** uses the same coverage measure; its Tier 2 row is "100%" for that reason. The paper's numbers belong to tag `jcdl2026`.
+
+A tier is therefore a statement about how an entry's claims are sourced, never about who has verified them. The way to change that is a first-hand report: `/ja-validate`.
+
 ## Two orthogonal dimensions
 
 To avoid confusion, we track entry quality across **two independent axes**:
@@ -19,7 +32,7 @@ A Skeleton entry has **no Tier assignment yet** because there's nothing to evalu
 
 Starting with the v2 "coverage-first" pivot (see [docs/ATLAS_V2_DESIGN.md](docs/ATLAS_V2_DESIGN.md)), a new batch of entries was added via a different process than either Tier 1 or Tier 2: **per-journal AI research** against live public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎), with a per-field `signal_quality` (0–5) score and honest blanks where no public evidence existed — never generic family-level filler.
 
-This is neither Tier 1 (deep manual evidence-harvesting by the maintainer) nor Tier 2 (family-level community estimate adapted across many journals at once): it sits in between, with real per-journal citations but often thinner coverage than Tier 1, especially on the long tail where no public discussion exists. Rather than force these into the existing two-tier vocabulary, they carry their own banner:
+This is neither Tier 1 (deeper per-journal research, directed by the maintainer and carried out with an AI) nor Tier 2 (family-level community estimate adapted across many journals at once): it sits in between, with real per-journal citations but often thinner coverage than Tier 1, especially on the long tail where no public discussion exists. Rather than force these into the existing two-tier vocabulary, they carry their own banner:
 
 > [!NOTE]
 > **AI-Researched (YYYY-MM-DD)** — per-journal sourced facts with an explicit `signal_quality` score; see the entry's "AI-Research Notes" subsection for exactly what was checked and why any field is blank.

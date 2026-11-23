@@ -18,6 +18,8 @@
 
 *生成式資訊應用（generative information access）的一個示範案例，且模型不碰排序：* AI 先把證據收進資料庫；硬性條件、評分與證據涵蓋率由程式碼計算；AI 再解釋留下來的候選，需要時也能比較。 [論文](https://doi.org/10.1145/3805696.3846515) · [線上示範](https://journal-atlas.chroniclecore.com)
 
+> **Tier 名稱的限制（2026-11-22）：** 目前沒有任何一筆 entry 含第一手人類報告（399 筆中 0 筆帶 `personal experience 年份` 或 `contributed by @帳號`）。三種 Tier 都是維護者與 AI 協作寫成，尚無外部貢獻者。Tier 1 指「宣稱附有具體數字與來源」，不是「有人驗證過」；Tier 2 的「community」指它改編自同類期刊的共通常識，不是有社群審過這一筆。詳見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
+
 > **狀態（2026-07）：Pre-release。** 399 個種子 entries：379 篇期刊跨 9 個領域
 > （新增 `philosophy/`）+ 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
 > 品質分層：**11 Tier 1**（有實證後盾）· **152 Tier 2**（社群推估）·
