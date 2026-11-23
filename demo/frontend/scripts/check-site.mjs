@@ -205,6 +205,7 @@ async function checkPages({ PAGES, SITE, absoluteUrl }) {
     need(!THIRD_PARTY_CODE.test(html), "analytics or ad code found (a decision for the maintainer, see SITE_SPEC.md part 3)");
     need(!FORBIDDEN_CLAIMS.test(text), `wording claims human verification: "${text.match(FORBIDDEN_CLAIMS)?.[0]}"`);
     const email = text.match(EMAIL)?.[0];
+    if (SITE.contact.email && !/@chroniclecore\.com$/.test(SITE.contact.email)) fail(where, `SITE.contact.email must be on chroniclecore.com, got ${SITE.contact.email}`);
     if (email && email !== SITE.contact.email) fail(where, `an email address is visible: ${email} (set SITE.contact.email in site.ts to allow one)`);
 
     // Links and fragments that point inside the site must land somewhere.

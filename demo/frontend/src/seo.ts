@@ -175,7 +175,7 @@ ${PAGES.filter((p) => p.id !== "notfound").map(pageLine).join("\n")}
 ## Source
 
 - [Repository and knowledge base](${SITE.repoUrl}): one Markdown file per venue, scoring script, licences
-- [Issues](${SITE.repoUrl}/issues): corrections, contributions, co-maintainers
+- [Issues](${SITE.repoUrl}/issues): corrections, contributions, co-maintainers${SITE.contact.email ? `\n- Project mailbox: ${SITE.contact.email} (for people who do not use GitHub)` : ""}
 
 ## Attribution
 

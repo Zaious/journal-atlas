@@ -1,5 +1,5 @@
 import { providerLabel, useHealth } from "../api";
-import { ISSUES_URL } from "../site";
+import { ISSUES_URL, SITE } from "../site";
 
 /** Bump with any change to what the site or API collects or who receives it. */
 const EFFECTIVE = "2026-11-23";
@@ -118,6 +118,12 @@ export default function Privacy() {
               <th scope="row">The API host</th>
               <td>A rented virtual server run by the maintainer. It receives the text you paste and relays it to the provider below.</td>
             </tr>
+            {SITE.contact.email && (
+              <tr>
+                <th scope="row">The project mailbox</th>
+                <td>Only if you write to it. The address forwards to the maintainer&apos;s own mailbox, so your address and message are kept there for as long as the maintainer keeps them. The site itself does not collect e-mail addresses.</td>
+              </tr>
+            )}
             <tr>
               <th scope="row">{provider ?? "The model provider"}</th>
               <td>Receives the text you paste, and the knowledge-base excerpts sent with it, to produce each answer.</td>
@@ -139,6 +145,13 @@ export default function Privacy() {
             issue on GitHub
           </a>
           ; do not put private information in it, since issues are public.
+          {SITE.contact.email && (
+            <>
+              {" "}
+              For something private, or if you do not use GitHub, write to{" "}
+              <a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a>.
+            </>
+          )}
         </p>
       </section>
     </article>

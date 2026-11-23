@@ -123,8 +123,9 @@ export default function About() {
       <section id="contact">
         <h2>Contact, corrections, and contributing</h2>
         <p>
-          Everything goes through GitHub issues, in public, so a correction helps
-          the next reader too.
+          Corrections and contributions go through GitHub issues, in public, so a
+          correction helps the next reader too.
+          {SITE.contact.email && " If you do not use GitHub, write to the project mailbox below."}
         </p>
         <ul>
           <li>
@@ -151,7 +152,9 @@ export default function About() {
         </ul>
         {SITE.contact.email && (
           <p>
-            Or write to <a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a>.
+            Project mailbox: <a href={`mailto:${SITE.contact.email}`}>{SITE.contact.email}</a>.
+            It is read by the maintainer; replies are not guaranteed, and a message
+            there is private, unlike an issue.
           </p>
         )}
         <p>

@@ -29,13 +29,18 @@ export const SITE = {
     url: "https://zaious.dev/",
   },
   /**
-   * Contact goes through GitHub issues. Set `email` to show a mailbox in the
-   * footer and on the About page; leave it undefined and nothing renders. It is
-   * undefined on purpose (see docs/status/SITE_SPEC.md, decision 1), and
-   * scripts/check-site.mjs fails the build if an address appears in the built
-   * pages without being set here.
+   * Corrections and contributions go through GitHub issues, in public. The
+   * project mailbox is for people who do not use GitHub. It is the only e-mail
+   * address the site may show, and scripts/check-site.mjs fails the build if
+   * another one appears or if this one is not on chroniclecore.com (so a
+   * personal address cannot be put here by mistake). Decided 2026-11-23
+   * (docs/status/SITE_SPEC.md, decision 1).
+   *
+   * The alias must exist and forward to the maintainer BEFORE the site that
+   * shows it is deployed; until then mail to it bounces. Set to undefined to
+   * hide it again.
    */
-  contact: { email: undefined as string | undefined },
+  contact: { email: "journal-atlas@chroniclecore.com" as string | undefined },
   /**
    * Buy Me a Coffee rather than GitHub Sponsors: sponsoring on GitHub needs the
    * *sponsor* to hold a GitHub account, and this audience (psychology and
