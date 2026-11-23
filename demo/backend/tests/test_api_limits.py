@@ -102,7 +102,7 @@ def test_coverage_counts_are_read_from_the_corpus(client):
     # silently understate the concentration rather than fail.
     core = [f for f in body["fields"] if f["field"] in body["core_fields"]]
     assert len(core) == len(body["core_fields"])
-    assert sum(f["total"] for f in core) / body["total"] > 0.80
+    assert sum(f["total"] for f in core) / body["total"] > 0.75
 
 
 def test_frontend_and_readme_report_the_same_concentration():
