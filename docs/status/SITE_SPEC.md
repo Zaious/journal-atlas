@@ -174,7 +174,7 @@ crawlers; **P1** the common spec's core; **P2** polish; **D** needs a decision
 | M1 | None. Nothing to configure | D | n/a by constraint |
 | M2 | No ads. Policy not written down | D | open |
 | S7 | No `ads.txt` (correct while there are no ads) | n/a | n/a |
-| S11 | No IndexNow | D | open |
+| S11 | No IndexNow | D | decided 2026-11-23: not done |
 | T10 | No terms page (siblings only have one where there are accounts or payment) | n/a | n/a |
 | O3 | `npm audit` not run on a schedule | P2 | done: `.github/workflows/npm-audit.yml` (monthly, opens one issue). Workflow YAML parses; not run on GitHub (not pushed); `npm audit` run locally: 0 vulnerabilities |
 | O5 | No uptime monitor or error monitor | D | done for uptime: `.github/workflows/site-health.yml` (daily smoke test of the live site, opens one issue; off until repository variable `SITE_HEALTH_ENABLED=true` after deploy). Not run on GitHub. No error-monitoring tool, by decision 10 (none of the siblings has one) |
@@ -228,7 +228,7 @@ Written up here, not decided or built.
    env-gated. JA is a tool whose product is trust in a recommendation, which by
    `ccweb-ads` section 5 is a "trust page" where ads cost more than they earn.
    Built: "no ads" is stated on the site. Say if that should change.
-4. **IndexNow, Search Console, Bing Webmaster.** Outward-facing; not done.
+4. **IndexNow, Search Console, Bing Webmaster.** DECIDED 2026-11-23: IndexNow not done. Search Console and Bing Webmaster were not raised and are not done. Outward-facing.
 5. **A zh-Hant interface.** Three siblings ship a second language. JA's
    audience is international researchers, but `README.zh-Hant.md` exists.
    CORRECTION (2026-11-23): an earlier draft said the page text lives in one
@@ -291,6 +291,34 @@ Written up here, not decided or built.
     one person" is the drafter's wording of that idea (it echoes the OJM section
     below it); say if it should go.
 12. **Nothing was deployed, pushed or enabled.** No wrangler, no VPS change, no
-    ads, no analytics, no accounts or keys. Two things need a deploy to take
+    third-party analytics, no ads, no accounts or keys. Two things need a deploy to take
     effect: the Pages build (frontend) and a backend restart (the
-    `/api/coverage` additions).
+    `/api/coverage` additions and `/api/usage`).
+
+### Before deploying (maintainer's actions)
+
+1. Create the mail alias `journal-atlas@chroniclecore.com` and forward it to
+   your own mailbox. Until it exists, mail to it bounces, and the site shows it
+   on every page.
+2. Read the Chinese pages (`src/pages/zh-Hant/`, `src/locales/`); they have
+   not been read by a human. Anything that says more, or less, than the English
+   is a bug.
+3. Build with `VITE_API_BASE` unset only if the API is the production one
+   (`npm run build` refuses a build that points at localhost unless
+   `ALLOW_LOCAL_API=1`).
+4. After the deploy: `npm run smoke -- https://journal-atlas.chroniclecore.com`
+   (64 checks, both languages). Then set the repository variable
+   `SITE_HEALTH_ENABLED=true` to switch the daily live-site check on.
+5. Restart the backend so `/api/coverage` (`tiers`, `human_evidence`) and
+   `/api/usage` exist; the pages degrade to wording without the figures until
+   then.
+6. The CSP is enforced. If the smoke test or the console shows a CSP error,
+   rename the header in `public/_worker.js` to
+   `Content-Security-Policy-Report-Only` and redeploy while you look.
+
+### Decided not to do
+
+- **IndexNow** (decision 12, 2026-11-23): not done. Crawlers will find the
+  sitemap on their own.
+- **Ads, third-party analytics, an error-monitoring tool**: not done (decisions
+  3, 4, 10).
