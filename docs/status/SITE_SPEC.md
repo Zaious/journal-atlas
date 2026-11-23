@@ -297,9 +297,11 @@ Written up here, not decided or built.
 
 ### Before deploying (maintainer's actions)
 
-1. Create the mail alias `journal-atlas@chroniclecore.com` and forward it to
-   your own mailbox. Until it exists, mail to it bounces, and the site shows it
-   on every page.
+1. DONE 2026-11-23: the Email Routing rule `journal-atlas@chroniclecore.com`
+   exists and is active, forwarding to the same verified address as the six
+   sibling aliases (created in the Cloudflare dashboard at the maintainer's
+   request). Not yet tested end to end: send one message to it and check it
+   arrives.
 2. Read the Chinese pages (`src/pages/zh-Hant/`, `src/locales/`); they have
    not been read by a human. Anything that says more, or less, than the English
    is a bug.
