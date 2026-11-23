@@ -7,7 +7,7 @@
 > **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **2/5** — per-fact source URLs with recorded blanks. Oxford Academic returned HTTP 403 to curl, so the first pass used Wayback copies; the live instructions, about and board pages were then read in a real browser on 2026-11-24 and replace those copies where a row says so (rows that still cite a Wayback date were not re-read). OpenAlex ran out of daily budget midway, so counts are Crossref-based. Distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: Tier 1 under the written rule (SEED_DATA_QUALITY.md): deeper per-journal research by an AI model, directed by the maintainer, 2026-11-23; overall signal_quality **2/5**. Claims cite source URLs or counts; blanks are recorded with reasons. Independent spot-check on 2026-11-23: 6 of 6 sampled pairs supported before its pages were re-read in a real browser (the browser-read facts were not separately re-checked). No first-hand human reports; not human-verified.
 
 ---
 
@@ -162,9 +162,6 @@
 ---
 
 ## Soft Metadata
-
-> [!NOTE]
-> **AI-Researched (2026-11-23)** — the fields below were researched per-journal from public sources (Crossref counts, Wayback copies of the publisher's pages, SciRev, LetPub, and searches of Chinese-language and Reddit sources) rather than adapted from a family-level template. Every populated field cites its source or a stated count; fields with no public evidence were left blank with the reason recorded — see "AI-Research Notes" at the end of this section. This entry's overall `signal_quality` is **2/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ### Epistemological & Political Leanings
 
@@ -358,3 +355,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (unreadable claims re-tried: live pages still 403, later Wayback copies captcha; additional instruction-copy facts cited in Voice & Style and Practical Concerns) | @Zaious |
 | 2026-11-24 | Pages unreadable by curl re-read in a real browser (author instructions, about-page metrics, editorial board 37 entries, AI-use policy; APC amount still behind an interactive form) | @Zaious |
+| 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported before its pages were re-read in a real browser (the browser-read facts were not separately re-checked); banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
