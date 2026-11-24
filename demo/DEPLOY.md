@@ -131,6 +131,49 @@ cannot configure it), after which the settings are root directory
 `demo/frontend`, build `npm run build`, output `dist`. Until then, run the three
 lines above after any frontend change.
 
+## Pages, headers and the release gate
+
+The site is six prerendered files (`/`, `/about/`, `/ai/`, `/privacy/`,
+`/status/`, and `404.html`) plus `sitemap.xml`, `robots.txt` and `llms.txt`,
+all written by `prerender.js` from the page list in
+[`src/site.ts`](frontend/src/site.ts). Adding a page is one entry there and one
+component. Everything the site says about itself (studio, licence, contact,
+URLs) lives in that file once.
+
+`npm run build` ends with `scripts/check-site.mjs`, which fails the build on a
+missing title or canonical, a contrast failure in the colour tokens, text under
+12 px, a hex colour outside the tokens, an inline script or style, a
+third-party resource, analytics or ad code, a cookie or storage API, a visible
+email address, wording that claims human verification, a broken internal link,
+a bundle over its size budget, an API origin the CSP does not allow, or a
+worker that does not send the headers below. It also builds against
+`localhost:8000` only if you say so (`ALLOW_LOCAL_API=1`).
+
+[`public/_worker.js`](frontend/public/_worker.js) sends HSTS, a strict CSP,
+`nosniff`, `X-Frame-Options`, Referrer-Policy and Permissions-Policy, makes
+`/assets/*` immutable and HTML revalidate, and leaves the 404 status of
+`404.html` alone so an unknown URL is not a soft 404.
+
+Before and after a deploy:
+
+```sh
+npm run build && npm run preview          # http://localhost:4600, worker and 404 page active
+npm run smoke                             # against the preview
+node scripts/smoke.mjs https://journal-atlas.chroniclecore.com   # after deploy; exits 1 on any failure
+```
+
+The preview runs the real worker over `dist/` through a small Pages emulator
+(`scripts/pages-emulator.mjs`); it is faithful to the documented behaviour but
+is not Cloudflare, so the smoke test against the live URL is the last word. If
+the first one shows a CSP error in the browser console, rename the header in
+`_worker.js` to `Content-Security-Policy-Report-Only` while you look.
+
+The backend needs a redeploy for `/api/coverage` to carry `tiers` and
+`human_evidence`; until then the pages fall back to wording without those
+figures and the smoke test says so. `human_evidence` in
+`demo/backend/main.py` is written by hand and dated; change it in the same
+commit that merges the first outside contribution.
+
 ## The Cloudflare-specific part
 
 **Cloudflare buffers `text/event-stream` by default.** A backend that streams

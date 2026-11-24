@@ -55,6 +55,7 @@ import fit_score  # noqa: E402
 
 import providers  # noqa: E402 - local module, imported after sys.path is set
 import ratelimit  # noqa: E402 - local module, imported after sys.path is set
+import usage  # noqa: E402 - local module, imported after sys.path is set
 
 JOURNALS_ROOT = SKILL_SCRIPTS.parent / "references" / "journals"
 TOP_N_SCREEN = 10  # matches SKILL.md's own ">50 entries: read only top 10-15"
@@ -117,6 +118,8 @@ app.add_middleware(
 # follow-ups. /api/coverage and /api/health are not counted: they cost nothing
 # and blocking them would hide the very message explaining the block.
 LIMITER = ratelimit.RateLimiter()
+# Anonymous daily totals, in memory; see usage.py for exactly what is kept.
+USAGE = usage.UsageCounter()
 
 
 # Input size caps. These bound the cost of a *single* request, which rate
@@ -574,11 +577,31 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
     )
 
 
+def _field_of(path: Path) -> str:
+    """Field directory of an entry, or 'other': a closed set, never free text."""
+    try:
+        field = path.relative_to(JOURNALS_ROOT).parent.as_posix()
+    except ValueError:
+        return "other"
+    return field if field in FIELD_LABELS else "other"
+
+
 async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
+    """Run the pipeline and record, anonymously, how it ended."""
+    state = {"outcome": "abandoned", "top_field": None}
+    try:
+        async for chunk in _sse_recommend(req, state):
+            yield chunk
+    finally:
+        USAGE.record(state["outcome"], state["top_field"])
+
+
+async def _sse_recommend(req: RecommendRequest, state: dict) -> AsyncIterator[str]:
     def event(name: str, data: dict) -> str:
         return f"event: {name}\ndata: {json.dumps(data)}\n\n"
 
     if PROVIDER is None:
+        state["outcome"] = "error"
         yield event("error", {"message": PROVIDER_ERROR})
         return
 
@@ -591,6 +614,7 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     try:
         paper, venue_type = await extract_paper(PROVIDER, freeform_text)
     except Exception as exc:
+        state["outcome"] = "error"
         yield event("error", {"message": describe_provider_failure(exc, "reading your paper")})
         return
     yield event("stage", {"stage": "parsing", "status": "done", "paper": asdict(paper),
@@ -603,6 +627,7 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     if req.clarifications is None and not req.skip_clarify:
         question = clarifying_question(paper, venue_type)
         if question:
+            state["outcome"] = "clarified"
             yield event("clarify", {"question": question})
             return
 
@@ -610,8 +635,10 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     try:
         candidates = screen_candidates(paper, venue_type)
     except Exception as exc:
+        state["outcome"] = "error"
         yield event("error", {"message": f"screening failed: {exc}"})
         return
+    state["top_field"] = _field_of(candidates[0].path) if candidates else None
     _screen_ties = tie_sizes(candidates)
     yield event("stage", {"stage": "screening", "status": "done", "candidates": [
         {"name": c.name, "score": round(c.score, 1),
@@ -622,6 +649,7 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
     ]})
 
     if not candidates:
+        state["outcome"] = "no_candidates"
         yield event("error", {"message": "No candidates passed hard constraints — try relaxing budget/word-count assumptions."})
         return
 
@@ -631,8 +659,10 @@ async def sse_recommend(req: RecommendRequest) -> AsyncIterator[str]:
         async for text in PROVIDER.stream(prompt):
             yield event("text", {"delta": text})
     except Exception as exc:
+        state["outcome"] = "error"
         yield event("error", {"message": describe_provider_failure(exc, "writing the recommendation")})
         return
+    state["outcome"] = "completed"
     yield event("stage", {"stage": "synthesis", "status": "done"})
 
 
@@ -705,6 +735,7 @@ def _rate_limited(request: Request) -> JSONResponse | None:
     refusal = LIMITER.check(ratelimit.client_key(request))
     if refusal is None:
         return None
+    USAGE.record("refused")
     return JSONResponse(status_code=429, content={"message": refusal})
 
 
@@ -766,6 +797,7 @@ async def followup(req: FollowupRequest, request: Request):
     limited = _rate_limited(request)
     if limited is not None:
         return limited
+    USAGE.record_followup()
     return StreamingResponse(sse_followup(req), media_type="text/event-stream",
                              headers=SSE_HEADERS)
 
@@ -833,6 +865,9 @@ def compute_coverage() -> dict:
     ]
     _COVERAGE_CACHE = {
         "total": sum(r["total"] for r in rows),
+        # Corpus-wide tier counts, so the front end states them from the
+        # corpus instead of adding up the table (or typing the sum).
+        "tiers": {key: sum(r[key] for r in rows) for key in ("tier1", "tier2", "ai")},
         "fields": rows,
         # The four adjacent fields the corpus actually grew out of. Reported as
         # a share so the concentration is visible without the reader adding up
@@ -854,6 +889,17 @@ def compute_coverage() -> dict:
             "Chemistry, mathematics, and the earth sciences",
         ],
         "absent_checked": "2026-07-30",
+        # How much of the corpus any person has stood behind. Like `absent`
+        # this cannot be derived from the files: a tier says how an entry was
+        # written, not that someone who submitted to or reviewed for the venue
+        # has vouched for it. It is recorded by hand and dated so the site can
+        # say "as of <date>" instead of implying the number is live. Update it
+        # in the same change that merges the first outside contribution.
+        "human_evidence": {
+            "first_hand_reports": 0,
+            "external_contributors": 0,
+            "recorded": "2026-11-23",
+        },
         # Same disclosure discipline the entries get: every number above is
         # read off a particular corpus, so say which one.
         "version": VERSION,
@@ -864,6 +910,12 @@ def compute_coverage() -> dict:
 @app.get("/api/coverage")
 async def coverage():
     return compute_coverage()
+
+
+@app.get("/api/usage")
+async def usage_totals():
+    """Anonymous daily totals (see usage.py). Public: it holds no visitor data."""
+    return USAGE.snapshot()
 
 
 @app.get("/healthz")

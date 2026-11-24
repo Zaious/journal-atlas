@@ -1,0 +1,104 @@
+{
+  "generated": "2026-11-23",
+  "corpus": "jcdl2026-17-gbea5b53",
+  "returned": 10,
+  "example": {
+    "description": "A mixed-methods study of how older adults use voice assistants at home: diaries and interviews with 24 households. About 8,000 words, no budget for open-access fees.",
+    "description_zh": "一項關於高齡者如何在家使用語音助理的混合方法研究：24 個家戶的日記與訪談。約 8,000 字，沒有開放近用費用的預算。",
+    "paper": {
+      "topics": [
+        "older adults",
+        "voice assistants",
+        "smart home",
+        "technology adoption"
+      ],
+      "methodology": "mixed-methods",
+      "word_count": 8000,
+      "apc_budget": 0
+    }
+  },
+  "candidates": [
+    {
+      "name": "Universal Access in the Information Society",
+      "score": 62.0,
+      "coverage": 0.65,
+      "tied_with": 0,
+      "tier": "Estimated",
+      "disputes": [],
+      "top_topics": [
+        {
+          "name": "Digital Accessibility for Disabilities",
+          "count": 341
+        },
+        {
+          "name": "Tactile and Sensory Interactions",
+          "count": 227
+        },
+        {
+          "name": "Technology Use by Older Adults",
+          "count": 217
+        }
+      ],
+      "venue_type": "Journal",
+      "publisher": "Springer Science+Business Media",
+      "issn": "1615-5289",
+      "url": "https://link.springer.com/journal/10209"
+    },
+    {
+      "name": "Interacting with Computers",
+      "score": 55.8,
+      "coverage": 0.65,
+      "tied_with": 0,
+      "tier": "Estimated",
+      "disputes": [],
+      "top_topics": [
+        {
+          "name": "Usability and User Interface Design",
+          "count": 366
+        },
+        {
+          "name": "Innovative Human-Technology Interaction",
+          "count": 266
+        },
+        {
+          "name": "Personal Information Management and User Behavior",
+          "count": 137
+        }
+      ],
+      "venue_type": "Journal",
+      "publisher": "Oxford University Press",
+      "issn": "0953-5438",
+      "url": "https://academic.oup.com/iwc"
+    },
+    {
+      "name": "Behaviour & Information Technology",
+      "score": 54.0,
+      "coverage": 0.65,
+      "tied_with": 2,
+      "tier": "Estimated",
+      "disputes": [],
+      "top_topics": [
+        {
+          "name": "Technology Adoption and User Behaviour",
+          "count": 601
+        },
+        {
+          "name": "Digital Marketing and Social Media",
+          "count": 447
+        },
+        {
+          "name": "Impact of Technology on Adolescents",
+          "count": 426
+        }
+      ],
+      "venue_type": "Journal",
+      "publisher": "Taylor & Francis",
+      "issn": "0144-929X",
+      "url": "https://www.tandfonline.com/toc/tbit20/current"
+    }
+  ],
+  "unstated": [
+    "No ethics/IRB status given, so no journal was ruled out on it. Say if your study involves human participants without approval.",
+    "No venue type given, so both journals and conferences were searched. Say \"journals only\" if proceedings are no use to you."
+  ]
+}

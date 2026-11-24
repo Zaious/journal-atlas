@@ -8,6 +8,7 @@ is worse than no control, because it reads as protection.
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -106,15 +107,73 @@ def test_coverage_counts_are_read_from_the_corpus(client):
 
 
 def test_frontend_and_readme_report_the_same_concentration():
-    """The README states this figure in prose and the demo computes it. Two
-    numbers for one claim is exactly the kind of drift this project exists to
-    argue against."""
+    """The README states this figure in prose; the demo reads it from the
+    API at render time (see the next test for what keeps the front end from
+    growing a typed copy). Two numbers for one claim is exactly the kind of
+    drift this project exists to argue against, so the one place a number is
+    still typed -- the README -- is checked against the corpus."""
     readme = (Path(__file__).resolve().parents[3] / "README.md").read_text(encoding="utf-8")
     body = main.compute_coverage()
     core = [f for f in body["fields"] if f["field"] in body["core_fields"]]
     pct = round(sum(f["total"] for f in core) / body["total"] * 100)
     total = sum(f["total"] for f in core)
     assert f"{pct}% of the corpus ({total} of {body['total']})" in readme
+
+
+FRONTEND_SRC = Path(__file__).resolve().parents[2] / "frontend" / "src"
+
+
+def _frontend_prose_lines():
+    """Source lines that can reach a visitor as text: every .ts/.tsx line that
+    is not a comment. Comments may quote a measurement to explain a decision."""
+    for path in sorted(FRONTEND_SRC.rglob("*.ts*")):
+        in_block = False
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            stripped = line.strip()
+            if in_block:
+                in_block = "*/" not in stripped
+                continue
+            if stripped.startswith("/*"):
+                in_block = "*/" not in stripped
+                continue
+            if stripped.startswith(("//", "*", "{/*")):
+                continue
+            yield path.relative_to(FRONTEND_SRC), number, line
+
+
+def test_frontend_hardcodes_no_corpus_numbers():
+    """The demo used to say "399 entries", "236 of our 399" and "88%" in
+    JSX. The corpus grows, so each of those was wrong the day entries were
+    added and nobody was told. Counts come from /api/coverage at render time;
+    this fails the build when one is typed back in."""
+    noun = (r"(?:[- ]?entr(?:y|ies)|[- ]?journals?|[- ]?venues?|Markdown files|"
+            r"AI-researched|of our|of the corpus|evidence\b)")
+    typed = re.compile(r"(?<![\w.])\d{2,4}%?\s*" + noun + r"|\b\d{1,3}%\s*(?:of|coverage)", re.I)
+    hits = [f"{p}:{n}: {line.strip()}" for p, n, line in _frontend_prose_lines()
+            if typed.search(line)]
+    assert not hits, "corpus numbers typed into the front end:\n" + "\n".join(hits)
+
+
+def test_frontend_names_no_model_or_provider():
+    """The models behind the demo change (it has moved providers twice).
+    /api/health reports the live ones; a name typed into the page is a claim
+    about a deployment the page cannot see."""
+    pattern = re.compile(r"claude-|gemini|haiku|sonnet|opus|gpt-|anthropic|openai", re.I)
+    hits = [f"{p}:{n}: {line.strip()}" for p, n, line in _frontend_prose_lines()
+            if pattern.search(line)]
+    assert not hits, "model or provider names typed into the front end:\n" + "\n".join(hits)
+
+
+def test_coverage_reports_tier_totals_and_a_dated_human_evidence_record(client):
+    body = client.get("/api/coverage").json()
+    assert body["tiers"] == {
+        key: sum(f[key] for f in body["fields"]) for key in ("tier1", "tier2", "ai")}
+    assert sum(body["tiers"].values()) == body["total"]
+    human = body["human_evidence"]
+    # Not derivable from the files, so it must at least say when it was last
+    # written down: a bare 0 reads as live.
+    assert human["first_hand_reports"] >= 0 and human["external_contributors"] >= 0
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", human["recorded"])
 
 
 def test_health_reports_limits_without_leaking_client_addresses(client):

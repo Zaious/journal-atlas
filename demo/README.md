@@ -2,7 +2,11 @@
 
 A throwaway-simple web front end for the [Journal Atlas skill](../skills/journal-atlas/SKILL.md):
 paste a paper description, get a cited journal recommendation. No account,
-no database — every request is stateless.
+no database — every request is stateless. The only state the process keeps
+between requests is in memory: the rate-limit counters and anonymous daily
+totals (`GET /api/usage`: searches per UTC day, how each ended, field of the
+best match; no address, no text; see [`backend/usage.py`](backend/usage.py)).
+Both restart from zero with the process.
 
 ## Architecture
 
