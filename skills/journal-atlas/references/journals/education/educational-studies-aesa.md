@@ -126,13 +126,24 @@
 
 ## Subject Density
 
-> OpenAlex topic data was not available (daily budget exhausted on 2026-11-23, and the spine row carries no topic list). Crossref carries no subject field for this journal. The orientation counts below come from Crossref titles plus abstracts from another source, as explained there.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); OpenAlex had been over its daily budget on 2026-11-23, when the rest of this entry was written. Crossref carries no subject field for this journal. The orientation counts below come from Crossref titles plus abstracts from another source, as explained there.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0013-1946 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (161 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0013-1946,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 140 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 161.
+
 | Topic | Article Count |
 |-------|--------------|
-| Not available: OpenAlex topic assignments could not be retrieved on 2026-11-23; no figure is given rather than an estimate | |
+| Critical Race Theory in Education | 76 |
+| Critical and Liberation Pedagogy | 34 |
+| Teacher Education and Leadership Studies | 25 |
+| Gender, Sexuality, and Education | 16 |
+| Education Discipline and Inequality | 14 |
+| Educator Training and Historical Pedagogy | 13 |
+| Asian American and Pacific Histories | 12 |
+| Decolonial Thought and Epistemologies | 12 |
+| Racial and Ethnic Identity Research | 11 |
+| Higher Education Research Studies | 9 |
 
 ### Orientation
 
@@ -231,7 +242,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref titles plus Semantic Scholar abstracts (methods, topics, authorship) 3 (89% abstract coverage from a third party, text unchecked against the publisher); journal pages (publisher about and instructions read live in a real browser on 2026-11-24; association pages read 2026-11-23) 4, with the two sources disagreeing on review model, word limits, abstract limit, board size and submission portal; publisher-wide policies 4; OpenAlex-derived data 1 (spine snapshot only); experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: Crossref titles plus Semantic Scholar abstracts (methods, topics, authorship) 3 (89% abstract coverage from a third party, text unchecked against the publisher); journal pages (publisher about and instructions read live in a real browser on 2026-11-24; association pages read 2026-11-23) 4, with the two sources disagreeing on review model, word limits, abstract limit, board size and submission portal; publisher-wide policies 4; OpenAlex-derived data 1 (spine snapshot plus one 2026-11-25 request for the Top Topics table); experiential layer 0.
 
 **Sources cited across this entry:**
 - https://www.educationalstudies.org/educational-studies-journal.php (the association's journal page: guidelines, aims, editors)
@@ -257,7 +268,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Desk rejection rate, time to acceptance, reviewer culture, reviewer competence variance, quantitative bias: no first-hand or publisher source attributable to this journal. The one SciRev page titled 'Educational Studies' (1 review) cannot be told apart from the UK journal of the same name, so it is not used. Acceptance rate and the first-decision and post-review figures are now recorded from the publisher's block.
 - Whether references count toward the association's suggested word limits, APC (interactive finder), accepted-manuscript embargo for this journal, figure and table limits: not stated on the pages read. Data-sharing rules are now recorded from the live publisher instructions.
-- OpenAlex topics and ID, i10-index: OpenAlex over its daily budget on 2026-11-23; no estimate given.
+- OpenAlex ID, i10-index: OpenAlex over its daily budget on 2026-11-23; no estimate given. OpenAlex topics: retrieved on 2026-11-25 (see Subject Density).
 - Impact factor, quartile: paywalled, not stated by policy.
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
@@ -322,3 +333,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Browser pass: live Taylor & Francis about and instructions pages read in a real browser (earlier 403, no archive copy). Filled: 15% acceptance rate, 29 / 111 / 24 day averages, CiteScore 2.7, SNIP and SJR as printed, article types with word, abstract and keyword limits, generative-AI declaration, ethics and consent rules, data-sharing policy, live board (39 entries), Routledge Submission Portal. Corrected: review model (publisher page says single anonymous; association page says blind review), the association page's ScholarOne portal, word and abstract limits, associate-editor and advisory-board counts are now recorded as differing between the two sources. Banner state unchanged (already Tier 1). APC amount unreadable | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

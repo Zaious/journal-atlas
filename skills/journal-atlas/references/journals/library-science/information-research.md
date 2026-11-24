@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. OpenAlex topic counts were not pulled in this pass.
+> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. The Top Topics table below is the one OpenAlex-based part (works API, retrieved 2026-11-25).
 
 ### Top Topics (last 5 years)
 
-> Not tabulated: no OpenAlex topic data was fetched. Scope as the journal states it is listed in Orientation and Framing Requirements.
+> Source: OpenAlex works API, journal matched by ISSN 1368-1613 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (643 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:1368-1613,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 643.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not tabulated (OpenAlex not called) | — |
+| Library Science and Information Literacy | 207 |
+| Information Science, Archives and Information Policy | 169 |
+| Library Services and Librarianship | 140 |
+| Library Science and Administration | 89 |
+| Information Retrieval and Search Behavior | 77 |
+| scientometrics and bibliometrics research | 65 |
+| Health Literacy and Information Accessibility | 56 |
+| Digital and Traditional Archives Management | 47 |
+| Misinformation and Its Impacts | 44 |
+| Ethics and Social Impacts of AI | 39 |
 
 ### Orientation
 
@@ -314,3 +323,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (author instructions, submission page and editorial team read from Wayback copies; schedule; M4/M5 label; most-cited list; scope line) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; pages wrongly recorded as unreadable were read from archive copies and used afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

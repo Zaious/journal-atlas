@@ -131,15 +131,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex works pulled for this entry and local keyword counts. Retrieved 2026-11-23. The scaffold's topic table was not retrieved (HTTP 429).
+> Based on OpenAlex works pulled for this entry and local keyword counts. The Top Topics table was retrieved on 2026-11-25; the Orientation counts were retrieved on 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> Not retrieved. The OpenAlex scaffold request returned HTTP 429, and the brief says to stop using OpenAlex after the first 429. These are OpenAlex topic-assignment counts in the pilot entries (a work can carry several topics); none are given here.
+> Source: OpenAlex works API, source S162196882, works of type article dated 2021-11-23 to 2026-11-23 (864 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S162196882,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. The 10th and 11th topics are tied at 41; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 864.
 
 | Topic | Article Count |
 |-------|--------------|
-| (not retrieved: rate limit, 2026-11-23) | |
+| Higher Education Governance and Development | 340 |
+| Higher Education Research Studies | 199 |
+| Doctoral Education Challenges and Solutions | 124 |
+| Higher Education and Employability | 109 |
+| Evaluation of Teaching Practices | 83 |
+| Higher Education Practises and Engagement | 80 |
+| International Student and Expatriate Challenges | 63 |
+| University Challenges and Reforms | 62 |
+| Research, Science, and Academia | 54 |
+| Entrepreneurship Studies and Influences | 41 |
 
 ### Orientation
 
@@ -291,7 +300,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 **Unreadable pages**: the T&F home, instructions and current-issue pages above, covered by the archived copies named in each section. The about page was readable on 2026-11-23 only after a cookie-priming request to the T&F home page.
 
-**Fields deliberately left blank, and why**: i10-index and top topics (rate-limited or unread), transfer policy, reviewer-report publication, reviewer recommendations, word-limit negotiability, read-and-publish list, under-review preprint rule, independent-scholar rule, reviewer quantitative-bias row. Impact factor and quartile: paywalled, not stated by policy.
+**Fields deliberately left blank, and why**: i10-index (rate-limited or unread; top topics were added on 2026-11-25), transfer policy, reviewer-report publication, reviewer recommendations, word-limit negotiability, read-and-publish list, under-review preprint rule, independent-scholar rule, reviewer quantitative-bias row. Impact factor and quartile: paywalled, not stated by policy.
 
 **Method note**: keyword counts come from a paged OpenAlex works pull (978 records, 5 requests at about 2-second spacing, no key, no 429), reconstructing abstracts from the inverted index and applying the regexes listed above locally. The next OpenAlex request, the scaffold call of `scripts/import_openalex.py`, returned HTTP 429, after which OpenAlex was not used again. Crossref supplied year counts, issue numbers and author lists.
 
@@ -350,3 +359,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after independent verification (about-page metrics read: CiteScore, acceptance rate, publisher timings) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; pages wrongly recorded as unreadable were read and used afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

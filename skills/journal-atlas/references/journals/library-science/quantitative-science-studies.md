@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23.
+> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. The Top Topics table below is the one OpenAlex-based part (works API, retrieved 2026-11-25).
 
 ### Top Topics (last 5 years)
 
-> Not tabulated: no OpenAlex topic data was fetched.
+> Source: OpenAlex works API, journal matched by ISSN 2641-3337 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (315 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:2641-3337,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 97 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 315.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not tabulated (OpenAlex not called) | — |
+| scientometrics and bibliometrics research | 286 |
+| Psychology Research and Bibliometrics | 83 |
+| Web visibility and informetrics | 83 |
+| Academic Publishing and Open Access | 77 |
+| Research, Science, and Academia | 42 |
+| Publishing and Scholarly Communication | 41 |
+| Interdisciplinary Research and Collaboration | 24 |
+| Research Data Management Practices | 23 |
+| Library Services and Librarianship | 21 |
+| Complex Network Analysis Techniques | 17 |
 
 ### Orientation
 
@@ -319,3 +328,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (spine and Crossref scaffold) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (society, editorial board and country counts, APC amounts, schedule, AI-policy pointer, submission-site wording) | @Zaious |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

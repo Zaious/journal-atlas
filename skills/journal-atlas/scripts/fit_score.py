@@ -1013,32 +1013,36 @@ def compute_score(
     # into each dimension and applied equally no matter how much was known.
     coverage = score_coverage(dims, weights)
     shrunk = coverage * observed + (1 - coverage) * SHRINKAGE_PRIOR
-    score = min(observed, shrunk)
+    total = min(observed, shrunk)
 
-    # The same rule, for the one dimension that says whether the venue is about
-    # the paper at all: a score may not exceed what the evidence of topical
-    # relevance supports. Added 2026-11-25 after a six-query backtest on the
-    # 493-entry corpus (docs/status/SCORING_2026-11.md):
+    # No topic evidence, no promotion (2026-11-25). When the paper names topics
+    # and a journal has no topic table, topic_density is dropped like any other
+    # unknown dimension. What is left can be two dimensions that do not depend
+    # on the paper's subject at all (sensitive_topic_tolerance is 100 for every
+    # journal when the paper has no sensitive content; strategic_factors is
+    # cost and word limit), so an unrelated journal with 30% coverage scored 61
+    # and outranked journals that had a topic match. On the 2026-11-24 corpus
+    # that put seven journals unrelated to "older adults and voice assistants"
+    # in the top eight. The prior may pull a score down and never push one up,
+    # and a journal about which we cannot say whether it publishes on the
+    # paper's subject is exactly that case: it may rank no higher than the
+    # neutral prior.
     #
-    #   - Relevance unknown: venues with no readable topic data filled 19 of
-    #     the 30 top-five places, e.g. Organization Science and International
-    #     Organization for a paper on teacher feedback. What is left when
-    #     topic_density is unknown are dimensions nearly every venue passes
-    #     (nothing sensitive to accommodate scores 100; budget and length fit).
-    #   - Relevance known to be zero: once the unknowns were capped, venues
-    #     whose listed topics include none of the paper's rose instead, because
-    #     topic_density is a quarter of the weight and family-level estimates
-    #     fill the rest at full marks: Computers and Composition at 71 for the
-    #     same paper.
-    #
-    # So the ceiling is the neutral prior plus half the topical relevance: no
-    # evidence of relevance (unknown or zero) keeps a venue at or below
-    # neutral, partial relevance lifts the ceiling part way (33 -> 66.5), and
-    # full relevance removes it. Like the shrinkage above it only ever lowers a
-    # score; a venue that is shown to be about the paper is untouched.
-    topic = dims["topic_density"]
-    ceiling = SHRINKAGE_PRIOR + (topic / 2.0 if topic is not None else 0.0)
-    return min(score, ceiling), dims
+    # The same holds when the topic table exists and none of its topics is the
+    # paper's (topic_density 0). With unknowns held at the prior, those rose
+    # instead: topic is a quarter of the weight and family-level estimates fill
+    # the rest at full marks, so Computers and Composition scored 71 for a
+    # paper on teacher feedback (docs/status/SCORING_2026-11.md). So the ceiling
+    # is the prior plus half the topical relevance: no evidence of relevance
+    # (unknown or zero) keeps a journal at or below the prior, partial
+    # relevance lifts the ceiling part way (33 -> 66.5), full relevance removes
+    # it. It only ever lowers a score. When the paper names no topics, the topic
+    # dimension is unknown for every journal for a query reason and says
+    # nothing about any one of them, so no ceiling applies.
+    if paper.topics:
+        topic = dims["topic_density"]
+        total = min(total, SHRINKAGE_PRIOR + (topic / 2.0 if topic is not None else 0.0))
+    return total, dims
 
 
 def score_coverage(dims: dict[str, Optional[float]], weights: dict[str, float]) -> float:

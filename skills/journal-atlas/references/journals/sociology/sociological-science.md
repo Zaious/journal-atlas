@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. Crossref holds no abstracts for this journal.
+> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. Crossref holds no abstracts for this journal. The Top Topics table below is the one OpenAlex-based part (works API, retrieved 2026-11-25).
 
 ### Top Topics (last 5 years)
 
-> Not tabulated: no OpenAlex topic data was fetched.
+> Source: OpenAlex works API, journal matched by ISSN 2330-6696 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (183 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:2330-6696,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 170 topics were returned; the top 10 are shown. The 10th and 11th topics are tied at 12; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 183.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not tabulated (OpenAlex not called) | — |
+| Intergenerational and Educational Inequality Studies | 43 |
+| Cultural Capital and Social Class | 22 |
+| Family Dynamics and Relationships | 19 |
+| Labor market dynamics and wage inequality | 18 |
+| Racial and Ethnic Identity Research | 15 |
+| School Choice and Performance | 14 |
+| Names, Identity, and Discrimination Research | 14 |
+| Electoral Systems and Political Participation | 13 |
+| Gender, Labor, and Family Dynamics | 13 |
+| Migration, Refugees, and Integration | 12 |
 
 ### Orientation
 
@@ -313,3 +322,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (AI policy page and reproducibility policy page read; fee-conversion source; most-cited list) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; a wrongly recorded missing AI policy and reproducibility policy were read and added afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

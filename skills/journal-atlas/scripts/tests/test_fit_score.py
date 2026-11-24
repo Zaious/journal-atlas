@@ -746,6 +746,31 @@ def test_unknown_relevance_never_scores_above_neutral():
     assert total <= fit_score.SHRINKAGE_PRIOR
 
 
+# ---------- no topic evidence, no promotion ----------
+
+
+def _constants_only(monkeypatch, topic):
+    """Dimensions that do not depend on the paper's subject (the no-sensitive-
+    content 100 and the cost/word-limit score) plus a chosen topic result."""
+    monkeypatch.setattr(fit_score, "score_topic_density", lambda p, j: topic)
+    monkeypatch.setattr(fit_score, "score_methodology", lambda p, j: None)
+    monkeypatch.setattr(fit_score, "score_reviewer_pool", lambda p, j: None)
+    monkeypatch.setattr(fit_score, "score_voice", lambda p, j: None)
+    monkeypatch.setattr(fit_score, "score_sensitive_topics", lambda p, j: 100.0)
+    monkeypatch.setattr(fit_score, "score_strategic", lambda p, j: 73.3)
+
+
+def test_a_journal_with_no_topic_table_cannot_score_above_the_prior(monkeypatch):
+    """Seven journals unrelated to 'older adults and voice assistants' took
+    ranks 2-8 on two constants at 30% coverage (61 points) because their
+    missing topic table was dropped instead of counted against them."""
+    _constants_only(monkeypatch, None)
+    paper = fit_score.Paper(topics=["older adults", "voice assistants"])
+    total, dims = fit_score.compute_score(paper, {}, fit_score.DEFAULT_WEIGHTS)
+    assert dims["topic_density"] is None
+    assert total <= fit_score.SHRINKAGE_PRIOR
+
+
 def test_zero_relevance_never_scores_above_neutral():
     paper = fit_score.Paper(topics=["teacher feedback"], methodology="qualitative")
     journal = _all_other_dims_perfect({"topics": [("Organizational behaviour", 80)]})
@@ -768,3 +793,18 @@ def test_relevance_ceiling_rises_with_relevance_and_never_raises_a_score():
     full = {"topics": [("Teacher feedback", 50)]}
     total, _ = fit_score.compute_score(paper, full, fit_score.DEFAULT_WEIGHTS)
     assert total <= 100.0 and observed > 0
+
+def test_the_same_dimensions_with_a_topic_match_are_not_capped(monkeypatch):
+    _constants_only(monkeypatch, 40.0)
+    paper = fit_score.Paper(topics=["older adults", "voice assistants"])
+    total, _ = fit_score.compute_score(paper, {}, fit_score.DEFAULT_WEIGHTS)
+    assert total > fit_score.SHRINKAGE_PRIOR
+
+
+def test_a_paper_that_names_no_topics_is_not_capped_by_the_missing_table(monkeypatch):
+    """With no topics in the query, every journal's topic dimension is unknown
+    for a query reason, so it says nothing about any one journal."""
+    _constants_only(monkeypatch, None)
+    paper = fit_score.Paper(topics=[])
+    total, _ = fit_score.compute_score(paper, {}, fit_score.DEFAULT_WEIGHTS)
+    assert total > fit_score.SHRINKAGE_PRIOR

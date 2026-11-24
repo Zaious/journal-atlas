@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Topic names come from the local spine row (OpenAlex snapshot 2026-07-13); the spine stores names only, so no counts are given and no count is copied from the scaffold.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts come from Crossref records, as stated there. The local spine (OpenAlex snapshot 2026-07-13) stores topic names only, with no counts.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0260-2105 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (392 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0260-2105,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 392.
+
 | Topic | Article Count |
 |-------|--------------|
-| International Relations and Foreign Policy | n/a (name only) |
-| Global Peace and Security Dynamics | n/a (name only) |
-| Peacebuilding and International Security | n/a (name only) |
+| International Relations and Foreign Policy | 185 |
+| Political Science Research and Education | 51 |
+| Peacebuilding and International Security | 39 |
+| Decolonial Thought and Epistemologies | 37 |
+| Global Peace and Security Dynamics | 25 |
+| International Law and Human Rights | 21 |
+| Gender, Security, and Conflict | 21 |
+| Political Conflict and Governance | 20 |
+| Global Security and Public Health | 18 |
+| Posthumanist Ethics and Activism | 14 |
 
 ### Orientation
 
@@ -245,7 +254,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Sources cited across this entry:**
 - Cambridge Core pages, all read live on 2026-11-23: https://www.cambridge.org/core/journals/review-of-international-studies (home), and under /information/: about-this-journal, about-this-journal/journal-metrics, about-this-journal/why-choose-this-journal, editorial-board, author-instructions/preparing-your-materials, author-instructions/submitting-your-materials, author-instructions/fees-and-pricing, peer-review-information/review-process, journal-policies/open-access-options, journal-policies/publishing-ethics, journal-policies/research-transparency
 - Crossref: https://api.crossref.org/journals/0260-2105 and works for the window (414 records, 339 with abstract; first-person, topic and author counts computed locally)
-- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; no OpenAlex request was made for this entry
+- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; the only OpenAlex request made for this entry is the one behind the Top Topics table (works API, group_by topics, 2026-11-25)
 - SciRev: https://scirev.org/journal/review-of-international-studies/ (0 reviews)
 
 **Method notes:** Crossref abstracts were stripped of markup and counted locally with the regexes below (Python re, IGNORECASE except the first-person pattern). Counts are over records that have an abstract (title plus abstract text); share = hits / 339. Regex hits count records, not occurrences. Broad patterns over-count: Security matches "war", "conflict" and "military"; Institutions matches "institution"; Conceptual matches "theoretical"; CriticalTheory matches "ontology" and "reflexive"; the first-person pattern's "I" is almost always the pronoun, not a Roman numeral (see the First-person voice row for the counts without it).
@@ -338,3 +347,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (AI-policy wording, regexes written out in full, first-person scoring and Roman-numeral caveat) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; wording slips corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

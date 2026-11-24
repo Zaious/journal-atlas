@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23, which in practice are 2026 articles (233 of 234 records).
+> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23, which in practice are 2026 articles (233 of 234 records). The Top Topics table below is the one OpenAlex-based part (works API, retrieved 2026-11-25).
 
 ### Top Topics (last 5 years)
 
-> Not tabulated: no OpenAlex topic data was fetched.
+> Source: OpenAlex works API, journal matched by ISSN 1932-8036 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (185 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:1932-8036,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 150 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 185.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not tabulated (OpenAlex not called) | — |
+| News Media Framing and Political Communication | 53 |
+| Misinformation and Its Impacts | 47 |
+| Social Media and Politics | 32 |
+| Ethics and Social Impacts of AI | 25 |
+| Media and Digital Communication | 22 |
+| Communication and COVID-19 Impact | 21 |
+| Public Relations and Crisis Communication | 16 |
+| Journalism and Media Studies | 15 |
+| Media Influence and Politics | 15 |
+| Climate Change Communication and Perception | 14 |
 
 ### Orientation
 
@@ -312,3 +321,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (editorial board page read and counted by country; 2026 record counts stated for both endpoints; funding-footnote source; turnaround wording) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; a wrongly recorded 'no editorial board' was corrected from the live page afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

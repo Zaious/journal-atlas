@@ -127,11 +127,30 @@
 
 ## Subject Density
 
-> Source: Crossref journal-article records of ISSN 1556-6501 published 2021-11-23 to 2026-11-23 (685 records; 226 carry an abstract, 33%, concentrated in 2025-2026: 59 of 135 and 74 of 176 records, against 21 of 110 in 2022), retrieved 2026-11-23. Abstract-based shares below use the 226 abstract-bearing records as denominator; title-only shares use all 685. OpenAlex topic counts were not obtained because OpenAlex returned its first rate-limit response during this batch and was not used again, as instructed.
+> Source: Crossref journal-article records of ISSN 1556-6501 published 2021-11-23 to 2026-11-23 (685 records; 226 carry an abstract, 33%, concentrated in 2025-2026: 59 of 135 and 74 of 176 records, against 21 of 110 in 2022), retrieved 2026-11-23. Abstract-based shares below use the 226 abstract-bearing records as denominator; title-only shares use all 685. The Top Topics table comes from the OpenAlex works API (retrieved 2026-11-25), not from these Crossref records.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 1042-1629 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (633 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:1042-1629,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 633.
+
 | Topic | Article Count |
+|-------|--------------|
+| Innovative Teaching and Learning Methods | 131 |
+| Online and Blended Learning | 118 |
+| Visual and Cognitive Learning Processes | 94 |
+| Intelligent Tutoring Systems and Adaptive Learning | 93 |
+| Artificial Intelligence in Education | 87 |
+| Teaching and Learning Programming | 83 |
+| Online Learning and Analytics | 71 |
+| Educational Games and Gamification | 51 |
+| Virtual Reality Applications and Impacts | 44 |
+| Science Education and Pedagogy | 43 |
+
+### Keyword Counts (Crossref)
+
+> Formerly held in the Top Topics table: counts of Crossref records whose title (or title plus abstract, where stated) matches a keyword group, from the earlier pass (retrieved 2026-11-23). They are not OpenAlex topics.
+
+| Term group | Count |
 |-------|--------------|
 | Title or abstract mentions teacher | 83 of 226 abstract records |
 | Title or abstract mentions theory, framework or conceptual | 97 of 226 abstract records |
@@ -246,7 +265,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: journal-own policy, format and board facts 4 (read live on 2026-11-23); Crossref counts 3 (685 records, 226 with abstract; skewed to recent years); OpenAlex 1 (spine snapshot figures only); author-country layer 0 (not obtainable); publisher-wide policies 4; experiential layer 1 (one SciRev review, n=1).
+**signal_quality (0-5)**: overall 3. Per layer: journal-own policy, format and board facts 4 (read live on 2026-11-23); Crossref counts 3 (685 records, 226 with abstract; skewed to recent years); OpenAlex 1 (spine snapshot figures, plus the Top Topics table from one works-API request on 2026-11-25); author-country layer 0 (not obtainable); publisher-wide policies 4; experiential layer 1 (one SciRev review, n=1).
 
 **Sources cited across this entry:**
 - https://link.springer.com/journal/11423 (home page: metrics panel, calls, open-access count, latest issue)
@@ -340,3 +359,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Correction after independent check: "155 consulting editors" recounted as 153 consulting editors plus 2 graduate student editorial assistants; first-person abstract count regex stated as a word-boundary match on we, our and my (101 of 226; with I added case-insensitively it is 111, and the extra hits are "i.e." and "(i)", not pronouns) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |
