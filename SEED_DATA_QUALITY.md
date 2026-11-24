@@ -12,7 +12,7 @@ Until 2026-11-24 these were called Tier 1 and Tier 2; the JCDL 2026 paper (tag `
 
 Measured 2026-11-22, because the names suggest more than the entries contain:
 
-- **First-hand human reports: 0 of 399 entries** (Sourced: 0 of 11, Estimated: 0 of 152, AI-Researched: 0 of 236), counted by the exact markers the contribution skill writes: `personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`. A first-hand account typed into free text without a marker would not be found by this count.
+- **First-hand human reports: <!--n:first_hand-->0<!--/n--> of <!--n:total-->493<!--/n--> entries** (Sourced <!--n:sourced-->114<!--/n-->, Estimated <!--n:estimated-->149<!--/n-->, AI-Researched <!--n:ai-->230<!--/n-->; none carries one), counted by the exact markers the contribution skill writes: `personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`. A first-hand account typed into free text without a marker would not be found by this count.
 - **Who wrote the entries.** The maintainer, working with an AI model, for all three tiers. There are no outside contributors yet. "Sourced" is not "a human checked it"; it is "the claims cite specific counts and sources". The promotion rule below asks for cited evidence, and accepts OpenAlex publication patterns in place of personal experience.
 - **"Estimated" (called "Community estimate" until 2026-11-24).** Family-level Soft Metadata adapted from norms shared by similar journals. The word *community* names where the knowledge comes from, not people who reviewed this entry.
 - **Second-hand human data does exist in places**, mainly SciRev review-time statistics with a stated sample size (about 74 entries, found by text match, so possibly more). Review culture, desk-reject behaviour and attitude to methods have no first-hand source in any entry.
@@ -72,17 +72,17 @@ This is neither Sourced (deeper per-journal research, directed by the maintainer
             └─────────────┘  No banner (default state).
 ```
 
-## Current distribution (2026-07)
+## Current distribution
 
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
 | **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Estimated in Phase 4. |
-| **Estimated** | 152 | `> [!WARNING]` | 132 journals + 20 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
-| **Sourced** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
-| **AI-Researched** | 236 | `> [!NOTE]` | 100 psychology + 106 philosophy (new field) + 30 hci. Per-journal AI research with cited `signal_quality` (0–5); see below. |
-| **Total** | **399** | | |
+| **Estimated** | <!--n:estimated-->149<!--/n--> | `> [!WARNING]` | <!--n:estimated_journals-->129<!--/n--> journals + <!--n:estimated_conferences-->20<!--/n--> conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
+| **Sourced** | <!--n:sourced-->114<!--/n--> | none | Across most field directories. Claims cite specific sources; promoted through `scripts/tier1_gate.py` (at least 6 of 7 Soft Metadata subsections with two or more cited lines) and a spot-check of claim–source pairs. The first 11 (8 psychology, 3 qualitative methods) date from 2026-05. |
+| **AI-Researched** | <!--n:ai-->230<!--/n--> | `> [!NOTE]` | Mostly psychology, philosophy and hci. Per-journal AI research with cited `signal_quality` (0–5); see below. |
+| **Total** | **<!--n:total-->493<!--/n-->** | | |
 
-The 236 AI-Researched entries came from the v2 coverage-first pivot (2026-07-13): three demand-ranked target lists (psychology 185, philosophy 107, hci 64 — 100% covered, zero gaps) minus 114 journals that already had an existing entry (those are candidates for a future patch pass, not yet merged in). `overall_signal_quality` distribution across all 350 researched journals: 0 (4), 1 (50), 2 (219), 3 (71), 4 (6) — the bulk sitting at 2/5 (policy + positioning facts, thin-to-no experiential signal) is the expected shape of the long-tail cliff documented in `docs/ATLAS_V2_DESIGN.md` §2. See `references/_soft_metadata_drafts/GAPS_AND_NOTES.md` for the full merge/dedup log, including 4 defunct-ISSN entries flagged for cleanup.
+The AI-Researched entries (236 when they were added; some have since moved to Sourced) came from the v2 coverage-first pivot (2026-07-13): three demand-ranked target lists (psychology 185, philosophy 107, hci 64 — 100% covered, zero gaps) minus 114 journals that already had an existing entry (those are candidates for a future patch pass, not yet merged in). `overall_signal_quality` distribution across all 350 researched journals: 0 (4), 1 (50), 2 (219), 3 (71), 4 (6) — the bulk sitting at 2/5 (policy + positioning facts, thin-to-no experiential signal) is the expected shape of the long-tail cliff documented in `docs/ATLAS_V2_DESIGN.md` §2. See `references/_soft_metadata_drafts/GAPS_AND_NOTES.md` for the full merge/dedup log, including 4 defunct-ISSN entries flagged for cleanup.
 
 ### Field-directory breakdown
 
@@ -175,11 +175,11 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - Reviewer pool characteristics and framing requirements informed by recent publication patterns and (where available) published reviewer reports
 - Estimated subjective-judgment uncertainty: ~15%
 
-### Estimated (152 entries)
+### Estimated (<!--n:estimated-->149<!--/n--> entries)
 
 **Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community / family-level knowledge rather than per-entry evidence harvesting.
 
-**Composition** (152 entries):
+**Composition** as of 2026-07 (152 entries; some have since moved to Sourced, so the current split is <!--n:estimated_journals-->129<!--/n--> journals + <!--n:estimated_conferences-->20<!--/n--> conferences):
 - **Journals (132)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories) + 10 P3-2 high-leverage additions (Bioinformatics / NAR / Cell Reports / Nature Physics / PRR / 4 ACM HCI journals / TACL) + 19 P3-4 niche additions (3 biology / 1 multidisciplinary / 4 neuroscience / 7 psychology / 3 hci / 1 qual-methods)
 - **Conferences (20)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW) + 2 P3-4 (ACM ASSETS / ACII)
 

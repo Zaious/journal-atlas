@@ -18,7 +18,7 @@
 
 *生成式資訊應用（generative information access）的一個示範案例，且模型不碰排序：* AI 先把證據收進資料庫；硬性條件、評分與證據涵蓋率由程式碼計算；AI 再解釋留下來的候選，需要時也能比較。 [論文](https://doi.org/10.1145/3805696.3846515) · [線上示範](https://journal-atlas.chroniclecore.com)
 
-> **分層名稱的限制（2026-11-22）：** 目前沒有任何一筆 entry 含第一手人類報告（399 筆中 0 筆帶 `personal experience 年份` 或 `contributed by @帳號`）。三種分層都是維護者與 AI 協作寫成，尚無外部貢獻者。Sourced（有附來源）指「宣稱附有具體數字與來源」，不是「有人驗證過」；Estimated（估計值）指它改編自同類期刊的共通常識、並非逐刊查證，也不是有人審過這一筆。詳見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
+> **分層名稱的限制（2026-11-22）：** 目前沒有任何一筆 entry 含第一手人類報告（<!--n:total-->493<!--/n--> 筆中 <!--n:first_hand-->0<!--/n--> 筆帶 `personal experience 年份` 或 `contributed by @帳號`）。三種分層都是維護者與 AI 協作寫成，尚無外部貢獻者。Sourced（有附來源）指「宣稱附有具體數字與來源」，不是「有人驗證過」；Estimated（估計值）指它改編自同類期刊的共通常識、並非逐刊查證，也不是有人審過這一筆。詳見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
 >
 > 2026-11-24 之前這兩層叫 Tier 1 與 Tier 2；JCDL 2026 論文（tag `jcdl2026`）沿用舊名。這些名稱不代表有人驗證過任何內容。
 
@@ -136,7 +136,7 @@ Plugin 包含**兩個 skill**，各自處理不同工作流：
 - 走拒稿後備鏈條（Rejection Fallback Chain）
 - 推薦時附證據引用 + 分層可信度標記
 
-**Entry-count-aware 設計**：從現在 399 entries 繼續擴張：
+**Entry-count-aware 設計**：從現在 <!--n:total-->493<!--/n--> entries 繼續擴張：
 - ≤20 entries：直接全讀
 - 21–50：`scripts/fit_score.py` 預排
 - 50+：強制預排，AI 只讀 top 10–15

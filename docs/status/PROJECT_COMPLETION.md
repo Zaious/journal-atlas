@@ -31,7 +31,7 @@ only where it is irreplaceable — the subjective layer.
 
 ## 1. Coverage
 
-**Now**: 399 entries across 9 field directories plus conferences. Three
+**Now**: <!--n:total-->493<!--/n--> entries across <!--n:journal_fields-->20<!--/n--> journal field directories plus conferences. Three
 demand-ranked target lists (psychology, philosophy, HCI) at 100%.
 
 **Finished**:

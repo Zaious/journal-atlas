@@ -35,10 +35,22 @@ SOURCE_SKILL_DIR = os.path.join(SKILL_ROOT, "journal-atlas")
 NAME_MAX = 64
 DESCRIPTION_MAX = 200
 
+def _entry_count() -> int:
+    """Counted at packaging time: a number typed here went stale (it said 399
+    while the corpus held 493)."""
+    root = os.path.join(SOURCE_SKILL_DIR, "references", "journals")
+    return sum(
+        1
+        for dirpath, _, files in os.walk(root)
+        for f in files
+        if f.endswith(".md") and f != "TEMPLATE.md"
+    )
+
+
 CHAT_DESCRIPTION = (
     "Academic journal fit assessment. Recommends journals for a paper, "
     "compares journals, and suggests fallback options after rejection. "
-    "Covers 399 journals' reviewer culture, framing, and policies."
+    f"Covers {_entry_count()} venues' reviewer culture, framing, and policies."
 )
 
 # Relative to SOURCE_SKILL_DIR — everything else under scripts/ is excluded
