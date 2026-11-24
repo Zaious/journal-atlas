@@ -295,20 +295,35 @@ Written up here, not decided or built.
     effect: the Pages build (frontend) and a backend restart (the
     `/api/coverage` additions and `/api/usage`).
 
-### Deployment state (2026-11-24)
+### Deployment state (2026-11-25)
 
-- **Frontend: live.** Deployed three times to Cloudflare Pages by direct upload
-  from this branch (`wrangler pages deploy`, at the maintainer's word). Live
-  smoke test 63/65; the two failures are the next two lines.
-- **Backend: not redeployed.** The live API lacks `tiers`, `human_evidence` and
-  `/api/usage`; the pages degrade and say so. The Outpost deploy packs the main
-  checkout, which is on a content branch with an unpushed 493-entry corpus, so
-  redeploying needs a decision on what ships.
-- **Cloudflare Web Analytics** is injected into browser requests by Cloudflare
-  (not by this code). The CSP blocks it; turning it off is a Pages setting that
-  needs the maintainer's yes.
-- **GitHub:** pushed as branch `site/2026-11`, PR to `main`
-  (https://github.com/Zaious/journal-atlas/pull/2), CI green.
+- **Merged.** PR #2 (this site) into `main` as a merge commit; `main` also holds
+  the content PR #3 (493 entries; tiers named Sourced, Estimated,
+  AI-Researched).
+- **Backend: live from a clean copy of `main`.** Deployed with the Outpost
+  deploy script unchanged except for `SOURCE`, which pointed at a detached
+  checkout of `main` instead of the shared main checkout (that one is a content
+  session's working copy). The live API reports 493 entries, the tier totals,
+  the dated human-evidence record (0 first-hand reports, 0 outside
+  contributors, recorded 2026-11-23) and `/api/usage`.
+- **Frontend: live, built from the same `main`.** Both went out together so the
+  pages and the API use the same tier names.
+- **Cloudflare Web Analytics stays on** (maintainer, 2026-11-24). Cloudflare
+  injects its beacon into browser requests; the CSP (`script-src 'self'`)
+  blocks it, so nothing loads and the footer's "loads no analytics" stays true.
+  `scripts/smoke.mjs` reports that one line as **EXPECTED**, not as a pass and
+  not hidden, and only while the beacon is the sole third-party script and the
+  CSP still blocks it; anything else is a failure.
+- **Topic vocabulary gate.** The committed `topic_vocabulary.json` was 155
+  topics short of the corpus (second time; the first was 2026-09-03), which also
+  made the deploy record a "-dirty" version. It was regenerated, and
+  `demo/backend/tests/test_topic_vocabulary.py` now fails CI when it drifts.
+- **Open: the home page's product shot.** It still shows the recorded run on
+  the 399-entry corpus (captioned with that version and date, so it is true as
+  a record). Re-recorded on the 493-entry corpus, the same example ranks two
+  unrelated Sourced journals at 30 % evidence second and third. Which run the
+  home page shows is the maintainer's call (it is honest either way, and the
+  newer one shows the scorer's current weakness on the first screen).
 
 ### Before deploying (maintainer's actions)
 
