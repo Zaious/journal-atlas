@@ -318,12 +318,13 @@ Written up here, not decided or built.
   topics short of the corpus (second time; the first was 2026-09-03), which also
   made the deploy record a "-dirty" version. It was regenerated, and
   `demo/backend/tests/test_topic_vocabulary.py` now fails CI when it drifts.
-- **Open: the home page's product shot.** It still shows the recorded run on
-  the 399-entry corpus (captioned with that version and date, so it is true as
-  a record). Re-recorded on the 493-entry corpus, the same example ranks two
-  unrelated Sourced journals at 30 % evidence second and third. Which run the
-  home page shows is the maintainer's call (it is honest either way, and the
-  newer one shows the scorer's current weakness on the first screen).
+- **Home page product shot: re-recorded after the scoring fix (2026-11-25).**
+  Re-recorded on the 493-entry corpus with the old scorer, the example ranked
+  two unrelated Sourced journals second and third. The maintainer chose to fix
+  the scoring first and then re-record (docs/status/SCORING_2026-11.md). The
+  shot now shows the run on the fixed scorer: Universal Access in the
+  Information Society, Interacting with Computers, Journal of Computer-Mediated
+  Communication.
 
 ### Before deploying (maintainer's actions)
 
@@ -377,9 +378,12 @@ first screen.
 - The example paper is neutral (older adults and voice assistants), not
   related to any manuscript of the maintainer; the old placeholder
   (autoethnography, embodied cognition) was replaced for the same reason.
-- The recorded run's top three are all Tier 2 at 65 % evidence coverage. That is
-  what the scorer returns today and is shown as is; the example was not chosen
-  to make the picture look better.
+- The recorded run is shown as the scorer returns it; the example was not
+  chosen to make the picture look better. The first recording (399 entries) had
+  three Estimated entries at 65 %; the current one (493 entries, fixed scorer)
+  has two Estimated entries and one Sourced. Re-record with
+  `python demo/backend/make_hero_sample.py` whenever the corpus or the scorer
+  changes.
 
 ### Decided not to do
 

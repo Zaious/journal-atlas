@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-23",
-  "corpus": "jcdl2026-17-gbea5b53",
+  "generated": "2026-11-25",
+  "corpus": "jcdl2026-52-gb3149d1",
   "returned": 10,
   "example": {
     "description": "A mixed-methods study of how older adults use voice assistants at home: diaries and interviews with 24 households. About 8,000 words, no budget for open-access fees.",
@@ -71,30 +71,30 @@
       "url": "https://academic.oup.com/iwc"
     },
     {
-      "name": "Behaviour & Information Technology",
-      "score": 54.0,
-      "coverage": 0.65,
-      "tied_with": 2,
-      "tier": "Estimated",
+      "name": "Journal of Computer-Mediated Communication",
+      "score": 54.8,
+      "coverage": 0.55,
+      "tied_with": 1,
+      "tier": "Sourced",
       "disputes": [],
       "top_topics": [
         {
-          "name": "Technology Adoption and User Behaviour",
-          "count": 601
+          "name": "Media and Digital Communication",
+          "count": 266
         },
         {
-          "name": "Digital Marketing and Social Media",
-          "count": 447
+          "name": "Social Media and Politics",
+          "count": 191
         },
         {
-          "name": "Impact of Technology on Adolescents",
-          "count": 426
+          "name": "Digital Communication and Language",
+          "count": 172
         }
       ],
       "venue_type": "Journal",
-      "publisher": "Taylor & Francis",
-      "issn": "0144-929X",
-      "url": "https://www.tandfonline.com/toc/tbit20/current"
+      "publisher": "Oxford University Press, an official journal of the International Communication Association (ICA). Source: https://api.crossref.org/journals/1083-6101 (publisher string \"Oxford University Press\"), retrieved 2026-11-23, and the publisher's publish-with-us page (copy 2026-02-10). The scaffold's \"Wiley\" is the earlier publisher; the about page says JCMC \"became an official journal of the International Communication Association\" in 2004 (https://web.archive.org/web/20260208082331/https://academic.oup.com/jcmc/pages/About, snapshot 2026-02-08)",
+      "issn": "None found. Crossref lists a single ISSN, 1083-6101 (https://api.crossref.org/journals/1083-6101); the publisher's pages print \"Online ISSN 1083-6101\" only (call-for-papers copy 2024-05-29). The scaffold's \"print\" label for this number is not supported",
+      "url": "https://academic.oup.com/jcmc"
     }
   ],
   "unstated": [
