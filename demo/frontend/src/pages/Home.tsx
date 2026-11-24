@@ -57,8 +57,8 @@ function linkLabel(url: string): string {
 }
 
 function tierClass(tier: string): string {
-  if (tier.startsWith("Tier 1")) return "tier-1";
-  if (tier.startsWith("Tier 2")) return "tier-2";
+  if (tier.startsWith("Sourced")) return "tier-1";
+  if (tier.startsWith("Estimated")) return "tier-2";
   if (tier.startsWith("AI-Researched")) return "tier-ai";
   return "tier-skeleton";
 }
@@ -90,10 +90,10 @@ function CoverageNotice({ data }: { data: Coverage | null }) {
               <th scope="col">{m.colField}</th>
               <th scope="col">{m.colEntries}</th>
               <th scope="col" title={m.tierTitles.t1}>
-                T1
+                Sourced
               </th>
               <th scope="col" title={m.tierTitles.t2}>
-                T2
+                Estimated
               </th>
               <th scope="col" title={m.tierTitles.ai}>
                 AI

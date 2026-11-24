@@ -30,11 +30,11 @@ export function EvidenceVisual() {
       <p className="visual-title">{m.legendTitle}</p>
       <ul className="legend-list">
         <li>
-          <span className="tier-badge tier-1">Tier 1</span>
+          <span className="tier-badge tier-1">Sourced</span>
           <span>{m.legend.t1}</span>
         </li>
         <li>
-          <span className="tier-badge tier-2">Tier 2</span>
+          <span className="tier-badge tier-2">Estimated</span>
           <span>{m.legend.t2}</span>
         </li>
         <li>

@@ -70,7 +70,7 @@ export default function Ai() {
             </tr>
             <tr>
               <th scope="row">
-                Tier 2 條目
+                估計值（Estimated）條目
                 {coverage ? `（${coverage.tiers.tier2}）` : ""}
               </th>
               <td>家族層級的估計：把同一個主張調整後套用到一群相似的期刊。不是逐刊的證據。</td>
@@ -78,10 +78,10 @@ export default function Ai() {
             </tr>
             <tr>
               <th scope="row">
-                Tier 1 條目
+                有附來源（Sourced）條目
                 {coverage ? `（${coverage.tiers.tier1}）` : ""}
               </th>
-              <td>有證據支持的主張：針對所述主張的具體文章篇數、來源網址與日期。</td>
+              <td>每項主張都引用來源：具體文章篇數、來源網址與日期。由 AI 研究，沒有人核對過。</td>
               <td>沒有橫幅。每項主張都附上它的證據。</td>
             </tr>
             <tr>
@@ -100,7 +100,7 @@ export default function Ai() {
         </table>
         <p className="footnote">
           各 tier 的條目來源記錄在儲存庫的 <code>SEED_DATA_QUALITY.md</code>
-          。除了該檔案所說的之外，本頁不對單一 Tier 1 或 Tier 2 條目是誰打字的做任何主張。
+          。除了該檔案所說的之外，本頁不對單一 Sourced 或 Estimated 條目是誰打字的做任何主張。
         </p>
       </section>
 
@@ -131,7 +131,7 @@ export default function Ai() {
             ) : (
               <>語言模型讀取前幾名候選的條目並撰寫推薦。</>
             )}{" "}
-            它會拿到專案的使用契約（consumption contract），要求它在條目不是 Tier 1 時註明該條目的 tier、在條目沒有說明時寫「條目未載明」而不是猜測，並且只引用它看過的條目。
+            它會拿到專案的使用契約（consumption contract），要求它在條目不是 Sourced 時註明該條目的 tier、在條目沒有說明時寫「條目未載明」而不是猜測，並且只引用它看過的條目。
           </li>
         </ol>
         <p className="footnote">模型可能在程式碼不變的情況下更換；上面的名稱是在你開啟本頁時從 API 讀取的。</p>
@@ -140,7 +140,7 @@ export default function Ai() {
       <section>
         <h2>本專案不會做的事</h2>
         <ul>
-          <li>把 AI 研究或 Tier 2 條目呈現為已驗證，或讓 tier 標章取代「有人檢查過」。</li>
+          <li>把 AI 研究或 Estimated 條目呈現為已驗證，或讓 tier 標章取代「有人檢查過」。</li>
           <li>用看似合理的值填補未知欄位。空白就維持空白，並顯示為空白。</li>
           <li>編造沒有任何來源提供的接受率、審稿時間或審稿人行為。</li>
           <li>隱藏爭議。被人正式提出異議的主張，無論在哪個 tier，都會帶有 Disputed 標記。</li>

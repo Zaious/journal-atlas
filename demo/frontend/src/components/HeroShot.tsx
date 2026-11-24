@@ -24,8 +24,8 @@ export interface SampleCandidate {
 }
 
 function tierClass(tier: string): string {
-  if (tier.startsWith("Tier 1")) return "tier-1";
-  if (tier.startsWith("Tier 2")) return "tier-2";
+  if (tier.startsWith("Sourced")) return "tier-1";
+  if (tier.startsWith("Estimated")) return "tier-2";
   if (tier.startsWith("AI-Researched")) return "tier-ai";
   return "tier-skeleton";
 }

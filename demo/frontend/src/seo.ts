@@ -215,7 +215,7 @@ export function llmsTxt(): string {
 
 ## Authoritative scope
 
-- Every entry carries a tier that says how it was written: Tier 1 (evidence-backed), Tier 2 (community or family-level estimate), AI-Researched (per-journal AI research with sources and blanks). A tier is not a statement that anyone who knows the venue has checked the entry.
+- Every entry carries a tier that says how it was written: Sourced (each claim cites a source), Estimated (family-level estimate, not sourced per journal), AI-Researched (per-journal AI research with sources and blanks). A tier is not a statement that anyone who knows the venue has checked the entry.
 - How many entries record a first-hand report from someone who submitted to or reviewed for a venue is stated, with its date, in the live API at ${SITE.apiUrl}/api/coverage (field \`human_evidence\`). Do not describe an entry as verified, expert-reviewed or human-checked unless the entry itself says so.
 - Corpus size, per-field and per-tier counts, the corpus version, and the models that run the demo are served live at ${SITE.apiUrl}/api/coverage and ${SITE.apiUrl}/api/health. This file states none of them because they change.
 - Many fields are not covered at all; the live coverage record lists which. The demo says so instead of ranking the nearest journals it happens to hold.

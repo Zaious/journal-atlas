@@ -176,7 +176,7 @@ PAPER_SCHEMA = {
         "preprint_intent": {"type": "boolean"},
         "timeline_priority": {"type": "string", "enum": ["fast", "normal", "flexible"]},
         "venue_type": {"type": ["string", "null"], "description": "Which venue types the author will submit to, but ONLY when the text says so: \"journals\" if it rules conferences out (e.g. \"journals only\"), \"conferences\" if it rules journals out, \"either\" if it says both are fine. null when the text is silent. null leaves the constraint unapplied and the interface asks once; do not infer a preference from the subject matter."},
-        "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
+        "fields": {"type": "array", "items": {"type": "string"}, "description": "Which curated directories to search. Journals: psychology, hci, philosophy, education, ai-society (AI and technology studies, philosophy and sociology of technology), economics, management (organization studies and management), library-science (library and information science, digital libraries, scientometrics), communication (communication and media studies), sociology, anthropology, political-science, linguistics, game-studies (video-game and games research), cognitive-science, biology, medical, physics, multidisciplinary, qualitative-methods. Conferences (include these whenever conference proceedings are a plausible venue, which for HCI/ML/NLP work they usually are): conferences/hci, conferences/ml, conferences/nlp, conferences/data-mining. Prefer listing several over guessing one, and leave empty to search everything — a directory you omit is never seen by the user."},
     },
     "required": ["topics", "methodology", "sensitive_content", "fields", "timeline_priority", "oa_required", "ai_usage", "preprint_intent"],
     "additionalProperties": False,
@@ -538,9 +538,9 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
             continue
         # State the tier outright instead of leaving it to be inferred from
         # the banner inside the excerpt. Observed with gemini-3.5-flash-lite:
-        # asked to infer, it cited "Tier 1 evidence" for a journal in one
+        # asked to infer, it cited "Sourced evidence" for a journal in one
         # paragraph and then summarised all candidates as "AI-Researched or
-        # Tier 2" in the next — self-contradicting on the single field the
+        # Estimated" in the next — self-contradicting on the single field the
         # tier system exists to communicate. Removing the inference step
         # removes that failure.
         tier = fit_score.detect_tier(content)
@@ -572,7 +572,7 @@ def build_synthesis_prompt(freeform_text: str, paper: fit_score.Paper, candidate
         "and why they rank below the top pick — but where a candidate is marked TIED, "
         "say it is tied and on what rather than inventing a reason to separate "
         "them, (3) tier/uncertainty flags per the "
-        "rules above for any candidate that isn't Tier 1, (4) one rejection-fallback "
+        "rules above for any candidate that isn't Sourced, (4) one rejection-fallback "
         "suggestion if the top pick doesn't work out. Keep it under 400 words."
     )
 
@@ -812,6 +812,17 @@ FIELD_LABELS = {
     "psychology": "Psychology",
     "philosophy": "Philosophy",
     "hci": "HCI (journals)",
+    "education": "Education",
+    "ai-society": "AI and society",
+    "economics": "Economics",
+    "management": "Organization and management",
+    "library-science": "Library and information science",
+    "communication": "Communication and media",
+    "sociology": "Sociology",
+    "anthropology": "Anthropology",
+    "political-science": "Political science",
+    "linguistics": "Linguistics",
+    "game-studies": "Game studies",
     "cognitive-science": "Cognitive science",
     "biology": "Biology",
     "conferences/hci": "HCI conferences",
@@ -840,9 +851,9 @@ def compute_coverage() -> dict:
         key = "/".join(path.relative_to(JOURNALS_ROOT).parts[:-1])
         tier = fit_score.detect_tier(path.read_text(encoding="utf-8"))
         bucket = fields.setdefault(key, {"tier1": 0, "tier2": 0, "ai": 0, "total": 0})
-        if tier.startswith("Tier 1"):
+        if tier == fit_score.TIER_SOURCED:
             bucket["tier1"] += 1
-        elif tier.startswith("Tier 2"):
+        elif tier == fit_score.TIER_ESTIMATED:
             bucket["tier2"] += 1
         else:
             bucket["ai"] += 1
@@ -873,7 +884,7 @@ def compute_coverage() -> dict:
         # dated.
         "absent": [
             "Library and information science (including digital libraries)",
-            "Sociology",
+            "General sociology (the ai-society directory covers only science-and-technology studies and media)",
             "Anthropology",
             "Chemistry, mathematics, and the earth sciences",
         ],

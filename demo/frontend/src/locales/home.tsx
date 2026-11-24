@@ -179,7 +179,7 @@ export const HOME: Record<Lang, HomeText> = {
       <>
         A real screening run, not a mock-up: the top {f.shown} of the {f.returned} candidates the scoring script
         returned for this example, from corpus <code>{f.corpus}</code> on {f.date}. The paper&apos;s attributes were
-        entered by hand; the ranking, tiers, coverage and article counts are the script&apos;s output. Tier 2 is a
+        entered by hand; the ranking, tiers, coverage and article counts are the script&apos;s output. Estimated is a
         family-level estimate, not a checked fact.
       </>
     ),
@@ -193,8 +193,8 @@ export const HOME: Record<Lang, HomeText> = {
     colField: "Field",
     colEntries: "Entries",
     tierTitles: {
-      t1: "Evidence-backed: specific article counts, source URLs, dates",
-      t2: "Community estimate: family-level, no per-claim evidence yet",
+      t1: "Sourced: each claim cites a source URL or count; AI-researched, not human-verified",
+      t2: "Estimated: family-level, not sourced per journal; not human-verified",
       ai: "AI-researched: per-journal sources, honest blanks, no human review recorded",
     },
     coverageAbsent: (c) => (
@@ -339,9 +339,9 @@ export const HOME: Record<Lang, HomeText> = {
             <summary>Where does the data come from?</summary>
             <p>
               {coverage
-                ? `The knowledge base holds ${coverage.total} entries: ${coverage.tiers.tier1} Tier 1, ${coverage.tiers.tier2} Tier 2 and ${coverage.tiers.ai} AI-researched. `
+                ? `The knowledge base holds ${coverage.total} entries: ${coverage.tiers.tier1} Sourced, ${coverage.tiers.tier2} Estimated and ${coverage.tiers.ai} AI-researched. `
                 : ""}
-              Tier 1 entries cite specific sources, Tier 2 entries are family-level estimates, and AI-researched
+              Sourced entries cite a source for each claim, Estimated entries are family-level estimates, and AI-researched
               entries were researched journal by journal from public sources. {humanEvidence}{" "}
               <a href="/ai/">How it&apos;s made</a>.
             </p>
@@ -467,7 +467,7 @@ export const HOME: Record<Lang, HomeText> = {
     shotCaption: (f) => (
       <>
         這是一次真實的篩選，不是示意圖：評分腳本為這個範例回傳的 {f.returned} 個候選中的前 {f.shown} 名，語料版本 <code>{f.corpus}</code>，{f.date}
-        。論文屬性是手動輸入的；排名、tier、涵蓋率與文章篇數都是腳本的輸出。Tier 2 是家族層級的估計，不是查證過的事實。
+        。論文屬性是手動輸入的；排名、tier、涵蓋率與文章篇數都是腳本的輸出。Estimated 是家族層級的估計，不是查證過的事實。
       </>
     ),
     coverageSummary: (c) => (
@@ -480,8 +480,8 @@ export const HOME: Record<Lang, HomeText> = {
     colField: "領域",
     colEntries: "條目",
     tierTitles: {
-      t1: "有證據支持：具體文章篇數、來源網址與日期",
-      t2: "社群估計：家族層級，尚無逐項主張的證據",
+      t1: "有附來源：每項主張都引用來源網址或計數；AI 研究，沒有人核對過",
+      t2: "估計值：家族層級，非逐刊來源；沒有人核對過",
       ai: "AI 研究：逐刊來源、誠實留白，未記錄任何人工複核",
     },
     coverageAbsent: (c) => (
@@ -608,9 +608,9 @@ export const HOME: Record<Lang, HomeText> = {
             <summary>資料從哪裡來？</summary>
             <p>
               {coverage
-                ? `知識庫共有 ${coverage.total} 筆條目：Tier 1 ${coverage.tiers.tier1} 筆、Tier 2 ${coverage.tiers.tier2} 筆、AI 研究 ${coverage.tiers.ai} 筆。`
+                ? `知識庫共有 ${coverage.total} 筆條目：有附來源 ${coverage.tiers.tier1} 筆、估計值 ${coverage.tiers.tier2} 筆、AI 研究 ${coverage.tiers.ai} 筆。`
                 : ""}
-              Tier 1 條目引用具體來源，Tier 2 條目是家族層級的估計，AI 研究條目則依公開來源逐刊研究。{humanEvidence}
+              「有附來源」條目為每項主張引用來源，「估計值」條目是家族層級的估計，AI 研究條目則依公開來源逐刊研究。{humanEvidence}
               <a href="/zh-hant/ai/">如何製作</a>。
             </p>
           </details>

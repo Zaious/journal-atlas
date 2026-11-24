@@ -3,7 +3,7 @@
 Additive-only patch: for the 114 journals that already have a curated .md entry
 AND also got a AI-research soft-metadata research draft, insert a new "AI-Research Notes
 (AI-research supplement)" subsection under the existing "## Soft Metadata" section, and
-append one Changelog row. Never touches existing Tier 1 / Tier 2 content — this
+append one Changelog row. Never touches existing Sourced / Estimated content — this
 is deliberately conservative (see GAPS_AND_NOTES.md "Not yet done").
 
 Idempotent: skips files that already have the AI-research-supplement marker.

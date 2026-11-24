@@ -85,7 +85,7 @@ export default function Ai() {
             </tr>
             <tr>
               <th scope="row">
-                Tier 2 entries
+                Estimated entries
                 {coverage ? ` (${coverage.tiers.tier2})` : ""}
               </th>
               <td>
@@ -96,12 +96,12 @@ export default function Ai() {
             </tr>
             <tr>
               <th scope="row">
-                Tier 1 entries
+                Sourced entries
                 {coverage ? ` (${coverage.tiers.tier1})` : ""}
               </th>
               <td>
-                Evidence-backed claims: specific article counts, source URLs and
-                dates for the claims made.
+                Each claim cites a source: specific article counts, source URLs and
+                dates. AI-researched; not verified by a person.
               </td>
               <td>No banner. Each claim cites its evidence.</td>
             </tr>
@@ -129,7 +129,7 @@ export default function Ai() {
         <p className="footnote">
           Where each tier&apos;s entries came from is documented in the repository,
           in <code>SEED_DATA_QUALITY.md</code>. This page makes no claim about who
-          typed an individual Tier 1 or Tier 2 entry beyond what that file says.
+          typed an individual Sourced or Estimated entry beyond what that file says.
         </p>
       </section>
 
@@ -172,7 +172,7 @@ export default function Ai() {
               <>A language model reads the top candidates&apos; entries and writes the recommendation.</>
             )}{" "}
             It is given the project&apos;s consumption contract, which tells it to
-            name an entry&apos;s tier when it is not Tier 1, to say &quot;the entry
+            name an entry&apos;s tier when it is not Sourced, to say &quot;the entry
             doesn&apos;t specify&quot; instead of guessing, and to cite only entries it
             was shown.
           </li>
@@ -186,7 +186,7 @@ export default function Ai() {
       <section>
         <h2>What the project will not do</h2>
         <ul>
-          <li>Present an AI-researched or Tier 2 entry as verified, or let a tier badge stand in for a person having checked it.</li>
+          <li>Present an AI-researched or Estimated entry as verified, or let a tier badge stand in for a person having checked it.</li>
           <li>Fill an unknown field with a plausible value. A blank stays blank and is shown as blank.</li>
           <li>Invent acceptance rates, review times or reviewer behaviour that no source gave.</li>
           <li>Hide a dispute. A claim someone has formally contested carries a Disputed marker on whatever tier it sits.</li>

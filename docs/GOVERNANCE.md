@@ -30,9 +30,9 @@ or wrong, not disputed in the reputational sense this document addresses;
 real journal must be traceable to *something* — even a low-confidence
 something:
 
-- Tier 1: a specific citation (article count, source URL, submission
+- Sourced: a specific citation (article count, source URL, submission
   experience).
-- Tier 2: explicitly labeled as family/community-level convention, not
+- Estimated: explicitly labeled as family-level convention, not
   claimed as journal-specific.
 - AI-Researched: a cited source and a `signal_quality` score.
 
@@ -54,7 +54,7 @@ file).
 ## 4. While a dispute is open
 
 The disputed entry gets a **`Disputed`** marker — orthogonal to the
-existing Tier 1 / Tier 2 / AI-Researched / Skeleton labels (a dispute is
+existing Sourced / Estimated / AI-Researched / Skeleton labels (a dispute is
 about one claim's accuracy, not about which evidence-gathering method
 produced it, so it can sit on top of any tier). The marker:
 
@@ -75,7 +75,7 @@ section, above the tier banner:
 ```
 
 `[!CAUTION]` is deliberately a different admonition type from the tier
-banners (`[!WARNING]` for Tier 2, `[!NOTE]` for AI-Researched/Skeleton), so
+banners (`[!WARNING]` for Estimated, `[!NOTE]` for AI-Researched/Skeleton), so
 the two can never be confused for one another. Implemented in
 `fit_score.detect_disputes()` and surfaced in the demo's evidence cards.
 

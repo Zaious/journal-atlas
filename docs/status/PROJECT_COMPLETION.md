@@ -1,5 +1,7 @@
 # What "Finished" Looks Like
 
+> Note (2026-11-24): this status document keeps the original names. Tier 1 is now called Sourced and Tier 2 is now called Estimated; the names do not mean a person verified anything. The JCDL 2026 paper (tag jcdl2026) uses the old names.
+
 The ideal end state for Journal Atlas, independent of any conference
 deadline. For the much narrower question of what a JCDL demo submission
 needs, see [JCDL_DEMO_READINESS.md](JCDL_DEMO_READINESS.md) — most of what

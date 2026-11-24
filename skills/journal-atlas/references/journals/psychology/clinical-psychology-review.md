@@ -148,7 +148,7 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher-disclosed practices (Elsevier author guide) and community-aggregator evidence (manusights.com submission and desk-reject guides) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Tier 1 via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Estimated (not sourced per journal; not human-verified)** — Soft Metadata below adapted from publisher-disclosed practices (Elsevier author guide) and community-aggregator evidence (manusights.com submission and desk-reject guides) gathered 2026-05. Submission practitioners are invited to upgrade individual claims to Sourced via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Estimated → Sourced lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 

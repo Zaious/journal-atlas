@@ -148,7 +148,7 @@
 ## Soft Metadata
 
 > [!WARNING]
-> **Tier 2 (community estimate)** — Soft Metadata below adapted from publisher metadata (University of Illinois Press) and historical-context inference gathered 2026-05. The American Journal of Psychology has a long history (founded 1887) but limited recent web-search yield on operational practices. **Lower-confidence entry**: deep evidence harvest not done; encourage community fill via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Tier 2 → Tier 1 lifecycle.
+> **Estimated (not sourced per journal; not human-verified)** — Soft Metadata below adapted from publisher metadata (University of Illinois Press) and historical-context inference gathered 2026-05. The American Journal of Psychology has a long history (founded 1887) but limited recent web-search yield on operational practices. **Lower-confidence entry**: deep evidence harvest not done; encourage community fill via `/ja-validate`. See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md) for the Skeleton → Estimated → Sourced lifecycle.
 
 > **The core value of this entry.** OpenAlex cannot fill any of these — they require lived experience and community knowledge. See [CONTRIBUTING.md](../../../../../CONTRIBUTING.md) for guidance.
 

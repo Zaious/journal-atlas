@@ -18,11 +18,13 @@
 
 *生成式資訊應用（generative information access）的一個示範案例，且模型不碰排序：* AI 先把證據收進資料庫；硬性條件、評分與證據涵蓋率由程式碼計算；AI 再解釋留下來的候選，需要時也能比較。 [論文](https://doi.org/10.1145/3805696.3846515) · [線上示範](https://journal-atlas.chroniclecore.com)
 
-> **Tier 名稱的限制（2026-11-22）：** 目前沒有任何一筆 entry 含第一手人類報告（399 筆中 0 筆帶 `personal experience 年份` 或 `contributed by @帳號`）。三種 Tier 都是維護者與 AI 協作寫成，尚無外部貢獻者。Tier 1 指「宣稱附有具體數字與來源」，不是「有人驗證過」；Tier 2 的「community」指它改編自同類期刊的共通常識，不是有社群審過這一筆。詳見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
+> **分層名稱的限制（2026-11-22）：** 目前沒有任何一筆 entry 含第一手人類報告（399 筆中 0 筆帶 `personal experience 年份` 或 `contributed by @帳號`）。三種分層都是維護者與 AI 協作寫成，尚無外部貢獻者。Sourced（有附來源）指「宣稱附有具體數字與來源」，不是「有人驗證過」；Estimated（估計值）指它改編自同類期刊的共通常識、並非逐刊查證，也不是有人審過這一筆。詳見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)。
+>
+> 2026-11-24 之前這兩層叫 Tier 1 與 Tier 2；JCDL 2026 論文（tag `jcdl2026`）沿用舊名。這些名稱不代表有人驗證過任何內容。
 
 > **狀態（2026-07）：Pre-release。** 399 個種子 entries：379 篇期刊跨 9 個領域
 > （新增 `philosophy/`）+ 20 個會議跨 4 個子領域（HCI / ML / NLP / Data Mining）。
-> 品質分層：**11 Tier 1**（有實證後盾）· **152 Tier 2**（社群推估）·
+> 品質分層：**11 Sourced**（有附來源）· **152 Estimated**（估計值）·
 > **236 AI-Researched**（v2 覆蓋優先轉向、逐刊 AI 研究並附 signal_quality）· **0 Skeleton**。
 > Schema **v1.3** — 新增 `Venue type` 欄位 + `Conference Specifics` 區塊。
 > 另外 8 個 Society Registry entries（`references/societies/`，schema `society-v1`）
@@ -132,7 +134,7 @@ Plugin 包含**兩個 skill**，各自處理不同工作流：
 - 套用硬性條件（字數、APC 預算、AI 政策、IRB、OA 需求）
 - 依 6 個維度的軟性適配性排序候選
 - 走拒稿後備鏈條（Rejection Fallback Chain）
-- 推薦時附證據引用 + Tier 可信度標記
+- 推薦時附證據引用 + 分層可信度標記
 
 **Entry-count-aware 設計**：從現在 399 entries 繼續擴張：
 - ≤20 entries：直接全讀
@@ -148,7 +150,7 @@ Plugin 包含**兩個 skill**，各自處理不同工作流：
 
 | 模式 | 何時用 | 流程 |
 |------|--------|-----|
-| **Mode B —— Validate & Augment**（預設）| 既有 entry 已存在 | AI 讀既有 entry，把宣稱逐條 quote 給你，捕捉你的確認 / 修正 / 補充，生成帶有 evidence-source 升級的 Markdown patch（例如 `(community estimate)` → `(personal experience 2024)`）。最有效率把 Tier 2 升 Tier 1。 |
+| **Mode B —— Validate & Augment**（預設）| 既有 entry 已存在 | AI 讀既有 entry，把宣稱逐條 quote 給你，捕捉你的確認 / 修正 / 補充，生成帶有 evidence-source 升級的 Markdown patch（例如 `(community estimate)` → `(personal experience 2024)`）。最有效率補上 Estimated entry 缺的第一手證據。 |
 | **Mode A —— Cold Contribute** | 沒有既有 entry | AI 用 OpenAlex 自動生成結構骨架，然後走 7 段結構化訪談填 Soft Metadata + Strategic Notes。 |
 
 **輸出強制持久化** —— patch 會寫到 `dist/contributed_<slug>.md` 或 `dist/patch_<slug>_<date>.md`，方便你後續開 PR。
@@ -264,7 +266,7 @@ Validate & Augment 模式 —— 用你的經驗升級既有 entry。
 
 **流程**：AI 讀 PCS entry → quote Reviewer Pool 的宣稱 → 請你確認 / 修正 / 補充 → 繼續走其他你有經驗的 Soft Metadata 段 → 生成 Markdown patch → 寫入 `dist/patch_pcs_2026-05-16.md` → 引導你開 PR。
 
-**這是推薦的貢獻路徑** —— 把 Tier 2 entry 升 Tier 1 最有效率的方式。
+**這是推薦的貢獻路徑** —— 替 Estimated entry 補上第一手證據最有效率的方式。
 
 ---
 
@@ -418,7 +420,7 @@ Validate & Augment 模式 —— 用你的經驗升級既有 entry。
 
 399 篇 curated entries，截至 2026-07-30：
 
-| 領域 | 篇數 | Tier 1 | Tier 2 | AI-Researched |
+| 領域 | 篇數 | Sourced | Estimated | AI-Researched |
 |---|---:|---:|---:|---:|
 | 心理學 | 160 | 8 | 52 | 100 |
 | 哲學 | 106 | 0 | 0 | **106** |
@@ -469,7 +471,7 @@ Philosophy and Economics*），不是該學科自己的期刊。教育（9）與
 跟「有哪些期刊」無關的另一層問題：每篇 entry 被填寫的程度不同。所有評分維度在
 缺乏證據時回傳「未知」而非中位數，因此每則推薦都會在分數旁附上**證據覆蓋率**：
 
-- **163 篇（Tier 1 + Tier 2）：85–100% 覆蓋。** 幾乎每個維度都評得出來。
+- **163 篇（Sourced + Estimated）：85–100% 覆蓋。** 幾乎每個維度都評得出來。
 - **236 篇（AI-Researched）：約 40% 覆蓋。** 它們缺的是同樣四項 —— 方法論契合度、
   審稿人結構、書寫聲音相容性、策略註記 —— 因為 AI-research pipeline 從設計上就
   不允許在沒有來源的情況下推測這些。它們需要真實的投稿或審稿經驗才填得起來。
@@ -489,24 +491,24 @@ Philosophy and Economics*），不是該學科自己的期刊。教育（9）與
 
 每個 entry 有兩個正交維度：
 
-**Evidence Quality**（`Tier 1` ↔ `Tier 2`）—— Soft Metadata 宣稱的可信度。
+**Evidence Quality**（`Sourced` ↔ `Estimated`）—— Soft Metadata 宣稱有沒有附來源（不是「有沒有人驗證過」；目前沒有任何一筆經人驗證）。
 
 **Completeness**（`Skeleton` ↔ filled）—— Soft Metadata 是否已被書寫。
 
 生命週期：
 
 ```
-Skeleton ──[社群書寫 Soft Metadata]──► Tier 2
-（尚無 Tier 標記，> [!NOTE] banner）   （> [!WARNING] banner）
+Skeleton ──[依同類期刊常識書寫 Soft Metadata]──► Estimated
+（尚無分層標記，> [!NOTE] banner）   （> [!WARNING] banner）
                                               │
                               [證據累積：文章計數、
                                來源 URL、第一手經驗]
                                               ▼
-                                           Tier 1
+                                          Sourced
                                         （無 banner）
 ```
 
-當前分佈：**11 Tier 1 · 152 Tier 2 · 236 AI-Researched · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。
+當前分佈：**11 Sourced · 152 Estimated · 236 AI-Researched · 0 Skeleton = 共 399**（379 期刊 + 20 會議）。
 
 與 tier 無關的另一層標記：14 篇帶有**出版狀態橫幅**——12 篇經查證已停刊或更名（每篇都寫明後繼刊，讓被拒的稿子有地方去），2 篇標為休眠（十餘年查無出刊，但也查不到停刊公告）。推薦一個根本無法收稿的刊物，浪費的是作者要不回來的時間，所以這些寧可標記也不默默排進名次。AI-Researched 是 v2 覆蓋優先轉向引入的第三種證據基礎，見 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md#a-third-evidence-basis-ai-researched-2026-07)。
 
@@ -539,7 +541,7 @@ Scimago 排名。但沒有一個握有作者私下真正在互相打聽的那部
 為了解決一個研究者自己的投稿問題而做，就在他自己的領域。第一天的第二個 commit
 就已經把範圍從那些領域放寬到所有學科 —— 窄是當場就看得出來的。
 
-真正決定後面一切的判斷發生在 **05-14，全庫只有 22 篇的時候**：Tier 2 警告橫幅與
+真正決定後面一切的判斷發生在 **05-14，全庫只有 22 篇的時候**：Estimated（當時叫 Tier 2）警告橫幅與
 [SEED_DATA_QUALITY.md](SEED_DATA_QUALITY.md)，寫在還沒有任何值得辯護的語料庫之前。
 在你幾乎什麼都沒有的時候把自己的資料標成低可信度，很便宜；等到那個數字變成你寧可
 拿來引用的東西之後，就很貴了。在 22 篇的時候做，是 tier 系統今天承重而不是裝飾的
@@ -813,7 +815,7 @@ evidence` 讀起來就是一個比 `73.0/100 · 75% evidence` 更弱的主張。
 也是貢獻者可以指向自己領域的東西。
 
 **3. 標準是可以 fork 的，不必吵。** 兩種歧見走兩種機制。如果某個**宣稱**錯了，
-[爭議流程](docs/GOVERNANCE.md)就地更正。如果你覺得**標準**錯了 —— Tier 2 太寬鬆、
+[爭議流程](docs/GOVERNANCE.md)就地更正。如果你覺得**標準**錯了 —— Estimated 太寬鬆、
 AI-Researched 根本不該出貨、權重校準有問題 —— 你 fork、改規則、跑你自己的版本。
 這件事在這裡特別便宜，正是因為沒有服務需要複製：clone 一個 repo、改 Markdown，
 完成。兩個標準不同的語料庫可以對不同的讀者都是對的，而那是一個只有單一託管答案的

@@ -61,8 +61,8 @@ When an entry **already exists** for the journal the user mentions.
    correct TEMPLATE subsection and mark as `(personal experience YYYY,
    contributed by @handle)`.
 
-7. **Check for Tier 2 banner**: if the entry has a Tier 2 (community estimate)
-   banner, tell the user: "This entry is currently Tier 2 — your direct
+7. **Check for an Estimated banner**: if the entry has an Estimated (family-level estimate)
+   banner, tell the user: "This entry is currently Estimated — your direct
    experience is exactly the kind of evidence that upgrades it. If we can
    confirm or replace enough community-estimate fields with experience-backed
    data, we can propose removing the banner."
@@ -178,7 +178,7 @@ Without persisted output, a 30-minute interview becomes throwaway work the momen
 
 Mode B works on any entry in `../journal-atlas/references/journals/`.
 Currently 22 entries across psychology, HCI, and qualitative methods.
-Tier 2 entries (11 HCI journals with visible warning banners) are the
+Estimated entries (11 HCI journals with visible warning banners) are the
 highest-leverage targets for Mode B — they need community validation most.
 
 ## Output Quality

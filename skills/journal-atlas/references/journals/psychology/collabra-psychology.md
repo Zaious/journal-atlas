@@ -2,7 +2,7 @@
 
 # Collabra: Psychology
 
-> **Last verified**: 2026-05-13
+> **Last verified**: 2026-11-23
 > **Maintainer**: @Zaious
 
 ---
@@ -16,46 +16,46 @@
 | **Publisher** | University of California Press |
 | **ISSN (Print)** | — (online only) |
 | **ISSN (Online)** | 2474-7394 |
-| **Founded** | *(pending)* |
+| **Founded** | Not established. The earliest Crossref record under this ISSN is 10.1525/collabra.70, published 2017-01 (https://api.crossref.org/journals/2474-7394/works?rows=1&sort=published&order=asc , retrieved 2026-11-23); that is the oldest record found, not a founding date. |
 | **URL** | https://online.ucpress.edu/collabra |
-| **Author Guidelines** | https://online.ucpress.edu/collabra/pages/Submission_Guidelines |
-| **Society / Association** | Society for the Improvement of Psychological Science (SIPS) |
-| **Editorial Board Location** | *(pending verification)* |
+| **Author Guidelines** | The journal's "Submission Guidelines" menu entry opens a Google Doc: https://docs.google.com/document/d/1WpA8_6Ko0-jmcqFZythDB7aA51pDRgsRblnL-LkSZJc/ (linked from the journal's submit page, Wayback snapshot 2026-11-12: https://web.archive.org/web/20261112180835/https://online.ucpress.edu/collabra/pages/submit ). The earlier entry's URL `.../pages/Submission_Guidelines` returned 403 on 2026-11-23 and has no archive copy. |
+| **Society / Association** | Society for the Improvement of Psychological Science (SIPS): the journal calls itself "an official publication" of SIPS (About page, Wayback snapshot 2026-11-10: https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About ) |
+| **Editorial Board Location** | Editorial team page (Wayback snapshot 2026-02-04, https://web.archive.org/web/20260204115238/https://online.ucpress.edu/collabra/pages/editorial ): one Editor-in-Chief, 8 Senior Editors and the section Associate Editors. My regex count of entries that end in a country name is 109 (plus 2 entries with no country, both at IGDORE): USA 39, Germany 14, Netherlands 13, UK 10 (incl. Scotland), Canada 5, Australia 5, China 5, Belgium 4, Italy 4, Switzerland 2, Austria 2, one each Ireland, Japan, New Zealand, Israel, Spain, France. The earlier entry's board link (`/pages/editorial-board`) is not the page DOAJ lists; the live page was not read (403). |
 
 ---
 
 ## Metrics
 
-> Source: Web of Science + SCImago + journal materials. Retrieved 2026-05.
+> Sources: OpenAlex figures dated 2026-05-13 (not refreshed on 2026-11-23: OpenAlex had no daily budget left); Crossref and DOAJ read 2026-11-23; SciRev read 2026-11-23.
 
 | Metric | Value | Date |
 |--------|-------|------|
 | **h-index** | 42 | 2026-05-13 (OpenAlex) |
 | **i10-index** | 213 | 2026-05-13 (OpenAlex) |
-| **2-Year Mean Citedness** | 2.18 | 2026-05-13 (OpenAlex) |
-| **Total Works** | 733 | 2026-05-13 (OpenAlex) |
-| **Impact Factor** | ~3.7 (Web of Science) — sources range 2.454–3.7 | 2024 |
-| **CiteScore** | *(pending)* | |
-| **Acceptance Rate** | *(not disclosed by publisher)* | |
-| **Desk Rejection Rate** | *(pending)* | |
-| **Quartile (by field)** | Q1 | 2024 (SCImago) |
+| **2-Year Mean Citedness** | 2.18 (OpenAlex proxy, not a JCR figure) | 2026-05-13 (OpenAlex) |
+| **Total Works** | 733 (OpenAlex, 2026-05-13); Crossref lists 784 DOIs for this ISSN (331 "current" + 453 "backfile") | 2026-11-23 (Crossref) |
+| **Impact Factor (JCR)** | Not recorded. The earlier entry said "~3.7 (Web of Science) — sources range 2.454–3.7"; JCR is paywalled and that figure has no readable source, so it is marked unverified, source unreadable. | 2026-11-23 |
+| **CiteScore** | Not collected (Scopus-licensed; not retrieved in this pass) | 2026-11-23 |
+| **Acceptance Rate** | No figure found. SciRev shows "n/a" for % accepted (https://scirev.org/journal/collabra/ , retrieved 2026-11-23) and the policy page gives none. | 2026-11-23 |
+| **Desk Rejection Rate** | No figure found. The policy page only says Action Editors may desk reject without external review (https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ). | 2026-11-23 |
+| **Quartile (by field)** | Earlier entry said "Q1 (SCImago 2024)"; SCImago was not re-read in this pass, so unverified. SciRev's own "popularity" quartile (Q1 within Psychology) is a SciRev-internal measure, not a citation quartile. | 2026-05-13 (unverified now) |
 
 ### Review Cycle Time
 
 | Stage | Typical Time | Notes |
 |-------|-------------|-------|
-| **Time to first decision** | *(pending)* | |
-| **Time to first review** | *(pending)* | |
-| **Time to acceptance (total)** | *(pending)* | |
-| **Time to publication (after acceptance)** | *(pending)* | OA — typically rapid post-acceptance |
+| **Time to first decision** | 0.5 months (first review round) | SciRev self-reported, n=1 review, very low confidence: https://scirev.org/journal/collabra/ (page dated January 2026, retrieved 2026-11-23; the page title is "Collabra", assumed to be this journal). |
+| **Time to first review** | Initial editorial categorization "within one working week" is promised only for the PCI Psych "category 2" route; no general figure | Author guidelines (Google Doc above, retrieved 2026-11-23). |
+| **Time to acceptance (total)** | 1.0 month total handling time for an accepted manuscript, 2.0 review rounds | SciRev, n=1 review (same URL). The earlier AI-research note's "~16 weeks" came from a Chinese aggregator relaying the journal's own claim and is not repeated as fact. |
+| **Time to publication (after acceptance)** | No figure found. Accepted articles are not published until the APC is received (publication fees page, Wayback 2026-08-15: https://web.archive.org/web/20260815070523/https://online.ucpress.edu/collabra/pages/publicationfees ). | |
 
 ### Publication Frequency
 
 | Aspect | Detail |
 |--------|--------|
-| **Schedule** | Continuous (rolling) — OA continuous publication model |
-| **Articles per year (approx.)** | *(pending)* |
-| **Special issues?** | *(pending — Registered Reports as flagship format)* |
+| **Schedule** | Continuous publication (articles appear as they are accepted); no issue schedule stated on the pages read. The earlier entry's "continuous (rolling)" wording is consistent with the Crossref records but no page states it. |
+| **Articles per year (approx.)** | Crossref journal-article records: 2021: 77, 2022: 81, 2023: 110, 2024: 103, 2025: 127, 2026 to 23 Nov: 110 (608 in total; 605 carry an abstract). Source: https://api.crossref.org/works?filter=issn:2474-7394,from-pub-date:2021-01-01 , retrieved 2026-11-23. |
+| **Special issues?** | Yes, "Special Collections" exist (journal menu, About page snapshot above). A Registered Report track is offered (policy page, section policies). |
 
 ---
 
@@ -65,48 +65,48 @@
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | Default double-blind, with an option for non-anonymous review (reviewers may sign their reports). Review correspondence/reports are published alongside accepted articles; authors retain full control over the review history for rejected manuscripts. |
-| **Transferable / Cascade?** | *(pending)* |
-| **Reviewer reports published?** | *(pending — some Collabra workflows publish reports per open science principles)* |
-| **Typical R+R rounds** | *(pending)* |
-| **Reviewer recommendations** | *(pending)* |
+| **Type** | Two models offered: double-blind (author and reviewer identities concealed from each other) and "non-blind" (reviewers can sign their reports). Journal policy page, Wayback snapshot 2026-11-11: https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies . DOAJ lists "single anonymous" and "double anonymous" (https://doaj.org/api/search/journals/issn%3A2474-7394 , retrieved 2026-11-23). |
+| **Transferable / Cascade?** | Streamlined review: authors rejected by another journal within the previous 365 days for reasons other than rigor may submit the prior reviews and decision letter with a cover-letter request (policy page above). The guidelines also name the journal "PCI:RR-friendly" (accepts PCI:RR-recommended reviews), "PCI:Psych category 2 friendly" and a MetaROR partner (author guidelines Google Doc, retrieved 2026-11-23). |
+| **Reviewer reports published?** | Yes in principle: "Whether double-blind or non-blind", the journal "utilizes an open peer review process", so correspondence is published with an accepted article, excluding confidential comments to the editor (policy page). The same page elsewhere speaks of "an option for authors to choose open peer review", so whether it is default or opt-in is stated both ways; Senior Editors who submit must choose open review. |
+| **Typical R+R rounds** | 2.0 rounds (SciRev n=1: https://scirev.org/journal/collabra/ ). Not stated by the journal. |
+| **Reviewer recommendations** | Typically two independent reviews; an Action Editor may use one, or three or more for contentious perspective or opinion pieces; the editor may desk reject without external review (policy page). Author-suggested reviewers: not mentioned on the pages read. |
 
 ### AI Policy
 
 | Aspect | Detail |
 |--------|--------|
-| **Has journal-specific AI policy?** | No — no Collabra-specific AI policy page found; governed instead by UC Press's publisher-wide AI guidelines. |
-| **Explicit permission gate?** | Conditional — generative AI may assist with readability, formatting, style, and error correction without a disclosure requirement; using AI to generate original text/images or to process data requires the author to disclose this to the editor and transparently in the manuscript. AI cannot be listed as an author; authors remain fully responsible for the text. |
-| **Leniency (1-5)** | 3 |
-| **Summary** | 出版商 UC Press 統一 AI 政策(非期刊專屬):允許以生成式 AI 輔助可讀性、格式、風格與錯誤修正;但未經揭露不得用 AI 生成原創文字或圖像。凡以 AI 產出內容或處理資料,作者須告知編輯並在稿件中透明揭露。AI 不得列為作者,作者對全文負完全責任。屬「助理可、生成受限、揭露為門檻」的中等開放。 |
-| **Source URL** | https://www.ucpress.edu/about/ai-guidelines |
+| **Has journal-specific AI policy?** | No. The author guidelines say "Collabra: Psychology follows the AI policy of UC Press" (Google Doc above, retrieved 2026-11-23). |
+| **Explicit permission gate?** | Conditional: fixing grammar, spelling, punctuation and formatting of human-written text is allowed; using AI to generate text or images, or to collect or process data, requires telling the editor and stating it in the manuscript. AI cannot be an author. Reviewers may not use AI to write reports. Source: https://www.ucpress.edu/about/ai-policies , page marked updated 2026-11-16, retrieved 2026-11-23. |
+| **Leniency (1-5)** | 3 (my judgment from the rule above: assistive use free, generative use allowed with disclosure) |
+| **Summary** | Publisher-wide policy of UC Press, applied by reference. Authors remain fully responsible for the content, notes and citations. Uploading manuscripts to AI tools is prohibited for reviewers and editorial helpers. |
+| **Source URL** | https://www.ucpress.edu/about/ai-policies (the earlier entry cited https://www.ucpress.edu/about/ai-guidelines, which is only a menu page) |
 
 ### Preprint Policy
 
 | Stage | Allowed? | Notes |
 |-------|----------|-------|
-| Pre-submission | Yes (per OA journal norms) | |
-| Under review | Yes — preprint may remain posted during review; double-blind review does not require removing identifying preprint traces | SIPS-Collabra Registered Reports process also expects an OSF preregistration or PsyArXiv preprint |
-| Post-acceptance | N/A — fully Open Access | All articles published OA |
-| Version of Record | Immediately accessible (OA) | |
+| Pre-submission | Yes | Copyright notice: authors "are permitted and encouraged to post their work online ... prior to and during the submission process" (author guidelines Google Doc, retrieved 2026-11-23). |
+| Under review | Yes | Same sentence covers "during the submission process". Whether a public preprint conflicts with double-blind review is not addressed on the pages read; the earlier statement that identifying traces need not be removed had no source and is dropped. |
+| Post-acceptance | Author retains copyright; article published under CC BY | Guidelines copyright notice; DOAJ lists CC BY (https://doaj.org/api/search/journals/issn%3A2474-7394 ). |
+| Version of Record | Immediately open access | Fully open access journal (publication fees page, URL above). |
 
 ### Open Access
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | **Fully Open Access** (Diamond OA leaning, with APC) |
-| **Standard APC** | **$1,450 USD** |
-| **SIPS member discount** | **$975 USD** (saves $475; valid until 2026-07-01) |
-| **UC system authors** | **$0** (fully waived for UC faculty/students) |
-| **Low/middle-income country waiver (Research4Life A/B)** | **$362.50** (75% discount) |
-| **General Fund Waiver** | A portion of each APC auto-funds a waiver pool. Authors must demonstrate exhaustion of other funding before applying. Limit: max 2 waivers per corresponding author per journal per year (UC exempt). |
-| **Subscription submission cost** | N/A — fully OA |
+| **Model** | Fully open access, CC BY. Flat APC; no subscription route (publication fees page, Wayback snapshot 2026-08-15). The earlier entry's "Diamond OA leaning" has no support: authors pay an APC. |
+| **Standard APC** | **$1,450 USD** (publication fees page above; DOAJ also lists 1,450 USD, record updated 2026-09-24: https://doaj.org/api/search/journals/issn%3A2474-7394 ) |
+| **SIPS member discount** | $475 off for active SIPS members whose submissions are made "prior to July 1, 2026" (fees page snapshot of 2026-08-15). That date has passed on 2026-11-23; whether the discount was renewed was not checked. |
+| **UC system authors** | Fees waived for University of California faculty, staff and students who are corresponding authors (fees page). |
+| **Low/middle-income country discount** | 75% discount, applied automatically, for corresponding authors with a primary affiliation eligible for Research4Life Groups A and B (fees page). |
+| **General Fund Waiver** | Requested at submission; subject to fund availability; "will not be considered in editorial decisions"; not granted once an article has been accepted; limited to two waivers per corresponding author per journal per year (UC authors excepted); authors are expected to exhaust other funding first (fees page). |
+| **Subscription submission cost** | N/A: fully open access. Accepted articles are not published until funds are received (fees page). |
 
 ---
 
 ## Format
 
-> Source: Collabra journal page. Retrieved 2026-05.
+> Source: the journal's author guidelines (Google Doc linked from the submit page), read 2026-11-23: https://docs.google.com/document/d/1WpA8_6Ko0-jmcqFZythDB7aA51pDRgsRblnL-LkSZJc/ . The document carries no revision date. The journal's own page https://online.ucpress.edu/collabra/pages/Submission_Guidelines returned 403.
 
 ### Sections (7 total)
 
@@ -118,33 +118,37 @@
 6. Organizational Behavior
 7. Methodology and Research Practice
 
+The About page states that the journal is "open to considering submissions in other areas" and may revise its sections (Wayback snapshot 2026-11-10).
+
 ### Editorial Priorities
 
-- Open Science principles
-- Methodological rigor
-- Reproducibility
-- **Registered Reports** (accepted)
-- Theory papers (accepted)
+- Acceptance criterion: "scientific, methodological, and ethical rigor"; novelty and potential impact "are not considered important criteria" (About page, snapshot above).
+- A mandatory open data policy, with exceptions the editors may grant (policy page, Wayback 2026-11-11).
+- Preregistration "encouraged, but does not require" (same policy page).
+- Registered Reports track, with replication studies welcomed (same policy page).
 
 | Aspect | Detail |
 |--------|--------|
-| **Article types accepted** | Research articles, Theory papers, Registered Reports, Methodology papers |
-| **Word limit** | *(pending)* |
-| **Word limit negotiability** | *(pending)* |
-| **Abstract limit** | *(pending)* |
-| **Reference limit** | *(pending)* |
-| **Supplementary material** | Accepted (open data and code encouraged) |
-| **Figure/Table limits** | *(pending)* |
+| **Article types accepted** | Original research reports (incl. null findings, reanalyses, replications), review articles, perspective/opinion articles, Registered Reports, commentaries (guidelines "Article Types"). The About page also lists meta-analyses, theory papers, methods papers, simulations and data papers. |
+| **Word limit** | No arbitrary limit: "We do not have arbitrary restrictions on manuscript length"; monographs are not accepted and a request to be more concise is "legitimate feedback" in review (guidelines, "Manuscript Organization"). |
+| **Word limit negotiability** | Not applicable (no numeric limit). |
+| **Abstract limit** | 300 words, no sub-headings, no citations; title at most 250 characters (guidelines). |
+| **Reference limit** | No limit stated. APA Publication Manual style for references; DOIs to be provided when available (guidelines, submission checklist). |
+| **Style** | APA style generally "recommended" (with tables and figures embedded in the text). Required closing sections: Contributions, Ethics statement, Competing interests, Data accessibility statement; funding and acknowledgements if applicable (guidelines). |
+| **Anonymisation** | Manuscript must mask author names and affiliations (double-blind); names and affiliations go on a separate title page (guidelines). |
+| **Files** | Word, OpenOffice, RTF, or LaTeX as a compiled PDF for review; figures also uploaded separately as JPEG, at least 150 dpi, each file at most 20 MB (guidelines). |
+| **Supplementary material** | Accepted; no limit on number or type; must be described and cited in sequence (guidelines). |
+| **Figure/Table limits** | No numeric limit stated; tables occupying more than one printed page "should be avoided, if possible" (guidelines). |
 
 ---
 
 ## Subject Density
 
-> Source: Journal section structure + OpenAlex (pending fetch).
+> Source: OpenAlex topic analysis retrieved 2026-05-13 (not refreshed: OpenAlex had no budget on 2026-11-23). **Caution**: these are OpenAlex topic-assignment counts (one work can carry several topics), not counts of articles, and the counting window was not recorded; read them as a relative ranking.
 
 ### Top Topics
 
-| Topic | Article Count | Field |
+| Topic | Topic-assignment count | Field |
 |-------|--------------|-------|
 | Behavioral Health and Interventions | 88 | Applied Psychology |
 | Mental Health Research Topics | 86 | Experimental & Cognitive Psychology |
@@ -152,15 +156,15 @@
 | Psychology of Moral and Emotional Judgment | 76 | Cognitive Neuroscience |
 | Neural and Behavioral Psychology Studies | 43 | Cognitive Neuroscience |
 
-*(Top 5 of OpenAlex topic ranking. Retrieved 2026-05-13. Distributed across the journal's 7 sections — Cognitive, Social, Personality, Clinical, Developmental, Organizational, Methodology.)*
+*(Top 5 of the OpenAlex topic ranking, 2026-05-13.)*
 
 ### Orientation
 
 | Dimension | Assessment |
 |-----------|------------|
-| **Empirical vs. Theoretical** | Predominantly empirical; theory papers also accepted |
-| **Quantitative vs. Qualitative** | Predominantly quantitative — Registered Reports are flagship format; open science / reproducibility movement framing |
-| **Cross-disciplinary openness** | Moderate — 7 distinct sections, but unified by SIPS open science values |
+| **Empirical vs. Theoretical** | Predominantly empirical. Of 605 journal articles with abstracts, 2021-01 to 2026-11 (Crossref, retrieved 2026-11-23; my keyword counts in title plus abstract): "participants" 249 (41.2%), "experiment" 190 (31.4%), "theoretical or conceptual" 96 (15.9%). Theory papers are an accepted type (About page). |
+| **Quantitative vs. Qualitative** | Predominantly quantitative by counts: "survey/questionnaire" 73 (12.1%), "Bayesian" 24 (4.0%), versus "qualitative" 25 (4.1%) and "interview" 17 (2.8%). 136 abstracts (22.5%) mention preregistration. |
+| **Cross-disciplinary openness** | Seven psychology sections plus a methods section (Format); the counts above are all psychological methods vocabulary, with "philosoph*/epistem*" in only 6 abstracts (1.0%). |
 
 ---
 
@@ -168,70 +172,78 @@
 
 ### Epistemological & Political Leanings
 
+Evidence base: Crossref records of 605 journal articles with abstracts, 2021-01 to 2026-11 (https://api.crossref.org/works?filter=issn:2474-7394,from-pub-date:2021-01-01 , retrieved 2026-11-23), keyword counts over title plus abstract, my own counts and thus lower bounds. Editorial statements are from the About page (Wayback snapshot 2026-11-10: https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About ).
+
 | Dimension | Assessment |
 |-----------|------------|
-| **Cross-cultural friendliness** | Medium — SIPS open-science movement is internationalizing; cross-cultural replication papers increasingly published |
-| **Non-Western epistemology openness** | Low-Medium — methodological values (preregistration, transparency, replicability) are framed in mainstream-empirical terms; non-Western epistemological traditions less central |
-| **Diversity topic receptiveness** | Medium-High — diversity, equity, inclusion topics published with quantitative or open-science methodologies; recent SIPS reflection on methodological pluralism |
-| **Dominant theoretical tradition** | Open science / reproducibility movement; mainstream empirical psychology across 7 sections (cognitive, social, personality, clinical, developmental, organizational, methodology) |
+| **Cross-cultural friendliness** | Present as a small theme: "cross-cultural / cross-national / across countries" in 16 of 605 abstracts (2.6%); "WEIRD" or "western" in 14 (2.3%). The journal states it does not "employ any topic bias in accepting articles" (policy page: https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ). |
+| **Non-Western epistemology openness** | "Indigenous / decolonial / postcolonial" in 1 of 605 abstracts and "non-Western" in 1. "philosoph* / epistem*" in 6 (1.0%). The stated criterion is methodological rigor and transparency, set in empirical-psychology terms (About page); no statement about other epistemic traditions was found. |
+| **Diversity topic receptiveness** | "gender / women / sex differences" in 62 of 605 (10.2%), "race / racial / racism / ethnic" in 23 (3.8%), "LGBT / sexual minority / transgender" in 3, "feminis*" in 1. Counts show presence only; no editorial statement on diversity topics was read. |
+| **Dominant theoretical tradition** | Not a single theory: counts show quantitative experimental and measurement work ("measurement / psychometric / validity" 89 abstracts, 14.7%; "replicat*" 102, 16.9%) within the open-science and replication orientation the About and policy pages state (policy page: "supports the principles of Open Science"). |
 
 ### Framing Requirements
 
-- **Mandatory framing?** Yes
-- **If yes, what kind?** Manuscripts must align with **open-science values** — preregistration, data/code sharing, replicability claims, or methodological transparency. The "Methodology and Research Practice" section is the entry point for non-traditional methods.
-- **Consequences of ignoring it**: Desk reject likely if open-science alignment is absent; reviewer demand for data/code sharing even for theory papers.
+- **Mandatory framing?** No framing requirement is stated beyond rigor and transparency. The acceptance criterion is "scientific, methodological, and ethical rigor", and the About page says novelty and potential impact "are not considered important criteria" (https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About , retrieved 2026-11-23). The earlier entry's "Yes, open-science alignment, desk reject likely" is not supported: the policy page says preregistration is "encouraged, but does not require" (https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ).
+- **What the guidelines require of a submission:** a cover letter acknowledging the Transparency and Openness policy (cover letter optional but the policy must be acknowledged there), the Methods and Results sections "must adhere" to that policy, a mandatory data accessibility statement, and APA-style disclosure of excluded data, all conditions and all measures (guidelines Google Doc, https://docs.google.com/document/d/1WpA8_6Ko0-jmcqFZythDB7aA51pDRgsRblnL-LkSZJc/ , retrieved 2026-11-23; policy page "Design and Analysis").
+- **Consequences of ignoring it:** Submissions that do not follow the checklist "may be returned to authors" (guidelines). Failure to keep meeting data conditions after publication "may lead to an editorial expression of concern or retraction" (policy page). Data that cannot be shared for legal or ethical reasons must be reported at submission and "will be taken into account" (policy page); no further stated consequence. 136 of 605 abstracts (22.5%) mention preregistration (Crossref count above), so preregistered work is common but not mandatory.
 
 ### Methodological Preferences
 
+Scores follow this pass's own convention over the 605 abstracts (title or abstract keyword match, Crossref, retrieved 2026-11-23): 0 = none; 1 = under 1%; 2 = 1-5%; 3 = over 5%; 4-5 only with a cited editorial statement. Counts are lower bounds and measure how often a method is named, not acceptance policy. `scripts/topic_trend_scan.py` was not run (its OpenAlex paging needs an API key). The earlier scores of 5 for quantitative, meta-analysis and Registered Reports had no counts behind them and are re-scored.
+
 | Method | Receptiveness (0-5) | Evidence |
 |--------|---------------------|----------|
-| Quantitative experimental | 5 | Core method; Registered Reports flagship |
-| Qualitative interviews | 2 | Uncommon; would need methodology-section framing |
-| Autoethnography | 1 | Very rare; would require strong methodology-innovation framing and explicit engagement with open-science principles |
-| Theoretical / Conceptual | 3 | Theory papers accepted; pure theory less common than empirical work |
-| Mixed methods | 3 | Accepted with transparent methodology |
-| Meta-analysis | 5 | Welcomed; PRISMA reporting expected |
-| Registered Reports | 5 | Dedicated RR track with a specialist editor (Chris Chambers, who pioneered the format at Cortex and Royal Society Open Science); two-stage process with Stage-1 in-principle acceptance before data collection; requires open data, open materials/code, and lab logs. Quantitative, qualitative, confirmatory, exploratory, and computational-modeling approaches all accepted. https://online.ucpress.edu/collabra/pages/About (verified 2026-07-27) |
+| Quantitative experimental | 3 | "experiment" in 190 of 605 articles (31.4%); "survey/questionnaire" 73 (12.1%) (Crossref). No page states a method preference; rigor is the stated criterion (https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About ). |
+| Qualitative interviews | 2 | "qualitative" in 25 of 605 (4.1%); "interview" in 17 (2.8%) (Crossref). Not excluded in the pages read; earlier "2" kept, now with counts. |
+| Autoethnography | 0 | 0 of 605 abstracts match "autoethnograph*" (Crossref). A zero shows non-appearance, not a stated bar. |
+| Theoretical / Conceptual | 3 | "theoretical or conceptual" in 96 of 605 (15.9%); "Perspective/Opinion" and theory papers are listed article types (https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About ). |
+| Mixed methods | 1 | "mixed method*" in 6 of 605 (1.0%) (Crossref). |
+| Meta-analysis | 3 | "meta-analy*" in 33 of 605 (5.5%); review papers and meta-analyses are listed article types (About page). The earlier "PRISMA expected" has no source and is dropped. |
+| Registered Reports | 4 | Dedicated track with its own guidelines and editor (author guidelines and RR Google Doc https://docs.google.com/document/d/1eeXPEC_oc4OYlywC9pRt6seL2xazlT58jAtRsCuEdCI/ , retrieved 2026-11-23): Stage 1 triage, in-principle acceptance, Stage 2 checks. "registered report" in 36 of 605 abstracts (6.0%). |
+| Replication | 4 | The policy page states "Collabra: Psychology welcomes submissions of replication studies" (policy page, snapshot 2026-11-11); "replicat*" in 102 of 605 abstracts (16.9%) (Crossref). |
 
 ### Voice & Style
 
 | Aspect | Detail |
 |--------|--------|
-| **First-person voice acceptance (0-5)** | 2 — open-science / empirical register expected; first-person occasional in methodology-reflection pieces |
-| **Expected density** | Rare in research articles; methodology-reflective work may use first person |
-| **Writing style notes** | APA-style formal academic register; transparent reporting language (preregistration, exploratory vs. confirmatory, effect sizes) expected |
+| **First-person voice acceptance (0-5)** | 4, measured on abstracts only. Of 605 articles with abstracts (Crossref, 2021-2026), "we" appears in 500 (82.6%), "our" in 233 (38.5%), "I" in 14 (2.3%); 442 (73.1%) contain some first-person pronoun. Mostly multi-author "we" (the guidelines list only a cover letter and no first-person rule). Example recent abstract openings (DOIs): 10.1525/collabra.155687 ("I argue"), 10.1525/collabra.154998 ("This report presents"), 10.1525/collabra.151184 (third person, "Theories of donation decisions..."). |
+| **Expected density** | Main-text density not measured: full texts were not read. The author guidelines contain no first-person guidance (searched the guidelines text on 2026-11-23). |
+| **Writing style notes** | From the guidelines (https://docs.google.com/document/d/1WpA8_6Ko0-jmcqFZythDB7aA51pDRgsRblnL-LkSZJc/ ): APA Publication Manual style generally recommended; abstract at most 300 words with no sub-headings or citations; abbreviations kept to a minimum; "clear and concise writing style" requested; title at most 250 characters. The journal recommends copyediting for non-native writers but sets no language-quality rule. |
 
 ### Reviewer Pool Characteristics
 
-Reviewers are drawn primarily from the SIPS (Society for the Improvement of Psychological Science) network and broader open-science psychology community. Expect deep literacy in preregistration, open-data norms, effect-size statistics, Bayesian methods, and reproducibility metascience. Common reviewer demands: "Where is the preregistration?", "Open data and code?", "Effect-size confidence intervals?". Methodological skepticism toward non-quantitative work is high; the Methodology section is the most receptive entry point for non-traditional designs.
+Reviewer behaviour itself is not observable from public pages; what follows is what the journal states and what can be counted. Review model, from the policy page (https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ): double-blind or signed ("non-blind") review, typically two reviewers, an Action Editor decision, open publication of the review correspondence. The earlier statements that reviewers come "primarily from the SIPS network", that they ask "Where is the preregistration?", and that skepticism of non-quantitative work is "high" have no source and are removed.
 
 | Aspect | Detail | Evidence |
 |--------|--------|----------|
-| **Dominant tradition** | Open science, reproducibility movement, mainstream empirical psychology | SIPS affiliation; section structure |
-| **Reviewer competence variance** | Medium — section-specific specialists; high statistical / open-science literacy |
-| **Quantitative mindset bias on qualitative work?** | Yes (strong) — open-science framing was historically developed for quantitative replicability concerns |
-| **Discourse community signals (editorial board)** | International, multi-institutional; strong SIPS leadership representation | https://online.ucpress.edu/collabra/pages/editorial-board |
+| **Dominant tradition** | Not observable. The board page lists names, sections and affiliations, not research traditions. | https://web.archive.org/web/20260204115238/https://online.ucpress.edu/collabra/pages/editorial |
+| **Reviewer competence variance** | Blank: not observable from public pages. | Searched SciRev, Reddit, LetPub, 小木虫, 知乎 (see AI-Research Notes): no reviewer-quality text beyond SciRev n=1. |
+| **Quantitative mindset bias on qualitative work?** | Blank: no source. The only experiential datum is SciRev's "difficulty of reviewer comments 3.0/5, moderate" and "quality of review reports 5.0/5", n=1 review. | https://scirev.org/journal/collabra/ |
+| **Discourse community signals (editorial board)** | Editorial team page, snapshot 2026-02-04: about 111 listed editors in section groups (Cognitive, Clinical, Developmental, Methodology & Research Practice, Organizational, Personality, Social); by country (my regex count, 109 country-tagged): USA 39, Germany 14, Netherlands 13, UK 10, Canada 5, Australia 5, China 5, Belgium 4, Italy 4. The Cognitive group alone lists 36 Associate Editors. | https://web.archive.org/web/20260204115238/https://online.ucpress.edu/collabra/pages/editorial |
 
 ### Sensitive Topics
 
+Counts are title-or-abstract keyword matches over 605 journal articles with abstracts, 2021-01 to 2026-11 (Crossref, https://api.crossref.org/works?filter=issn:2474-7394,from-pub-date:2021-01-01 , retrieved 2026-11-23). A count shows presence or absence only; no editorial statement on any of these topics was found, apart from the journal's "no topic bias" sentence, so no receptiveness above "present" is claimed.
+
 | Topic Category | Receptiveness | Evidence |
 |----------------|---------------|----------|
-| BDSM / Kink | Low-Untested | Few articles in this domain; if submitted, would need quantitative or registered-report framing |
-| Drug use | Medium | Published with quantitative behavioral health framing (88 articles on "Behavioral Health and Interventions") |
-| Sex work | Untested-Low | Not commonly published |
-| Suicide / Self-harm | Medium-High | Published in clinical / behavioral health frameworks |
-| Political extremism | Medium | Published with social-psychology methodology |
-| Methodology critique | High | Methodology and Research Practice section explicitly welcomes critical work |
+| BDSM / Kink | Not observed | 0 of 605 abstracts match BDSM, kink or sadomasochism (Crossref). |
+| Drug use | Rare | 3 of 605 match drug, substance use, alcohol or cannabis (0.5%). |
+| Sex work | Not observed | 1 of 605 matches "sex work" or "prostitution"; "pornograph*" 0. |
+| Suicide / Self-harm | Rare | "suicid*" 0 of 605; "self-harm" 1. The earlier "Medium-High, clinical framing" had no source. |
+| Political extremism | Rare | 3 of 605 match extremism, terror or radicalization (0.5%); "political / partisan / polariz*" 29 (4.8%). |
+| Sexual violence / harassment | Rare | 2 of 605 (0.3%). |
+| Methodology critique | Present, with a dedicated article type | The About page lists "commentaries (including opinion pieces and critiques of other published papers)" as a submission type, and the policy page highlights "Methodology and Research Practice" as a focus area (https://web.archive.org/web/20261110110104/https://online.ucpress.edu/collabra/pages/About ). The earlier "High, explicitly welcomes critical work" is narrowed to what those pages say. |
 
 ### Practical Concerns
 
 | Concern | Detail |
 |---------|--------|
-| **IRB requirement strictness** | Hard gate for empirical work |
-| **Single-author acceptance** | Uncommon — open-science multi-study designs typically require collaboration |
-| **Independent scholar friendliness** | Medium — APC waiver pool helps; institutional access needed for data infrastructure |
-| **Data transparency requirement** | High (open science framework — preregistration, open data, open code strongly expected) |
-| **OPSEC compatibility** | Low — open-data requirements may conflict with sensitive research subjects; pseudonymization may be insufficient |
+| **IRB requirement strictness** | Stated rule: all research with human participants must have approval from an IRB or equivalent ethics committee and follow the Declaration of Helsinki; the ethics statement must say so; the journal "reserves the right to reject work" not conducted to a high ethical standard even with formal approval (guidelines, "Ethics statement": https://docs.google.com/document/d/1WpA8_6Ko0-jmcqFZythDB7aA51pDRgsRblnL-LkSZJc/ , retrieved 2026-11-23). Publication ethics follow COPE and APA Standard 8 (policy page: https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ). |
+| **Single-author acceptance** | 33 of 608 journal articles (5.4%) 2021-2026 list one author; 142 list three, 137 two, 124 four (Crossref, 2026-11-23). Single-author work is published but is uncommon. |
+| **Independent scholar friendliness** | Not stated. Each author "should list an associated department, university, or organizational affiliation" (guidelines, "Affiliations"); no independent-researcher rule was found. Proxy: 8 of 2,611 author records (0.3%) carry no affiliation in Crossref, which may reflect missing metadata. Cost route: APC waivers are available but only requested at submission, are not granted after acceptance, and authors must exhaust other funds first (https://web.archive.org/web/20260815070523/https://online.ucpress.edu/collabra/pages/publicationfees ). |
+| **Data transparency requirement** | Mandatory open data policy: original data go to a trusted digital repository (author websites do not qualify); program code and materials sufficient to reproduce results; a data accessibility statement is required with the submission; embargo of up to one year after publication is possible "under exceptional circumstances"; editors may grant exceptions if the author explains the restriction, describes how others can request access and supplies all unrestricted material (policy page, https://web.archive.org/web/20261111225926/https://online.ucpress.edu/collabra/pages/journalpolicies ; guidelines). |
+| **OPSEC compatibility** | The data policy allows exceptions when "some or all data or materials cannot be shared for legal or ethical reasons", but these must be flagged at submission and are weighed in review (policy page above). The earlier "Low compatibility" is replaced by that stated route; how often exceptions are granted is not observable. |
 
 ### AI-Research Notes (supplementary AI research, 2026-07-13)
 
@@ -248,62 +260,83 @@ Reviewers are drawn primarily from the SIPS (Society for the Improvement of Psyc
 - SciRev(1 則, 2016): https://scirev.org/reviews/collabra/
 - https://www.ucpress.edu/about/ai-guidelines
 - policy(desk reject / streamlined review): https://online.ucpress.edu/collabra/pages/journalpolicies
-- policy: https://online.ucpress.edu/collabra/pages/journalpolicies
 - publisher-scope: https://online.ucpress.edu/collabra/pages/About
 - 中文聚合站(16週自報+APC~975USD, CAS 3區, Q1, 非第一手): https://wdcsci.com/sci/detail/15198
 
 **Fields no evidence was found for:**
 - **experiential.desk_reject_pct**: 無公開第一手 desk-reject 百分比;政策僅定性說明可直接 desk reject 且量大,未給數字。
-- **experiential.review_time_months(第一手)**: SciRev 僅 1 則(2016,4.3 週),樣本過小;16 週為期刊自報經聚合站轉述,非投稿人回報。
+- **experiential.review_time_months(第一手)**: SciRev 僅 1 則,樣本過小;16 週為期刊自報經聚合站轉述,非投稿人回報。
 - **experiential.reviewer_culture(可概括)**: 跨語言(小木虫/知乎/fabiaoji/Reddit)皆 0 則第一手審稿文化討論;僅 SciRev n=1,不足以下概括結論。
 - **ai_policy(期刊專屬)**: 無 Collabra 專屬 AI 政策頁;採用 UC Press 出版商層級指引,故標為非期刊專屬。
 
 **Cross-language checks performed:**
-- 小木虫 muchong.com:未見 Collabra 專屬第一手投稿/審稿討論串;僅命中期刊資料聚合頁(xueshu.com、wanweixueshu、21ks)與一則泛用『審稿人要求公開資料與程式碼如何處理』串(t-5409335,未明確指向本刊)。第一手審稿經驗 ≈ 0 則。
-- 知乎 zhihu.com:未見 Collabra 專屬串;僅命中泛用『哪些 SSCI 期刊好發』問題(386583438)。0 則專屬。
+- 小木虫 muchong.com:未見 Collabra 專屬第一手投稿/審稿討論串;僅命中期刊資料聚合頁。第一手審稿經驗 ≈ 0 則。
+- 知乎 zhihu.com:未見 Collabra 專屬串。0 則專屬。
 - fabiaoji:搜尋結果未出現可用條目,0 則。
-- Reddit r/AskAcademia:0 則第一手投稿討論;唯一命中為一篇使用 Reddit 資料的 Collabra 論文,非論壇經驗貼。
-- 中文期刊聚合站(wdcsci / iikx / haoqikan / 學術之家):非第一手,轉述期刊自報『平均 ~16 週出版』、APC ~975 USD、中科院 3 區、Q1、SCIE/SSCI 收錄。
+- Reddit r/AskAcademia:0 則第一手投稿討論。
+- 中文期刊聚合站(wdcsci / iikx / haoqikan / 學術之家):非第一手,轉述期刊自報『平均 ~16 週出版』、APC ~975 USD、中科院 3 區、Q1、SCIE/SSCI 收錄。(APC 已由 2026-11-23 的期刊費用頁更正為 1,450 USD。)
+
+### AI-Research Notes (upgrade pass, 2026-11-23)
+
+Overall `signal_quality` for this pass: **3/5**. Per layer: policy and format 4/5 (policy page, About page and fees page read as Wayback copies dated 2026-11-10 to 2026-11-11 and 2026-08-15; author guidelines read live from the Google Doc; the live ucpress.edu pages themselves returned 403); quantitative layer 4/5 (Crossref, 608 articles, 605 with abstracts, counts are lower bounds); positioning 3/5; experiential 1/5 (SciRev n=1; a Cardiff Registered Reports tracker page lists 7 ratings but only for the RR process: https://registeredreports.cardiff.ac.uk/feedback/dashboards/journal_info.php?id=64 , speed 3.7, quality 4.4, retrieved 2026-11-23; secondary, not used for any score). Reviewer behaviour is not observable from any page read.
+
+**What was searched and what came back:**
+- Live ucpress.edu pages (journal policies, About, Submission_Guidelines): all HTTP 403 on 2026-11-23. Wayback copies read: journal policies (2026-11-11), About (2026-11-10), publication fees (2026-08-15), editorial team (2026-02-04), submit page (2026-11-12). No archive copy exists of the `/pages/Submission_Guidelines` URL; the journal's own submit page links to a Google Doc, which was read live.
+- UC Press AI page https://www.ucpress.edu/about/ai-policies read through WebFetch (marked updated 2026-11-16).
+- DOAJ record (https://doaj.org/api/search/journals/issn%3A2474-7394 , record updated 2026-09-24) confirms APC 1,450 USD and CC BY, and lists review as single or double anonymous.
+- Crossref journal and works endpoints for all counts.
+- Cross-language re-check 2026-11-23: one Chinese-language search (小木虫, 知乎) and one English search (Reddit, LetPub, SciRev) returned 0 journal-specific experience posts; only the journal's own pages, SciRev (n=1), Cardiff RR tracker, a Medium post on streamlined review, and aggregator pages. The 2026-07-13 results above stand. SciRev's page read today (https://scirev.org/journal/collabra/) differs from the older note's URL (`/reviews/collabra/`, 2016, 4.3 weeks); the older page was not re-read.
+- OpenAlex: no daily budget; Metrics and Subject Density figures date from 2026-05-13.
+
+**Corrections made to the earlier entry:** open-science alignment is not a mandatory framing (preregistration encouraged only); no word limit exists (earlier blank); APC and discount facts re-read; preprint answer found; Diamond-OA wording, "PRISMA expected", RR "lab logs / qualitative and computational all accepted" and all reviewer-culture sentences had no source on the pages read and were removed; IF 3.7 and SCImago Q1 marked unverified.
+
+**Open problems recorded, not resolved:** founding year, JCR impact factor, SCImago quartile, review-time figures beyond SciRev n=1, whether a public preprint conflicts with double-blind review, whether the SIPS discount continues after 2026-07-01.
 
 ---
 
 ## Strategic Notes
 
+Each line names the recorded fact it rests on.
+
 ### Hard Blockers
 
-- Submissions without open-science alignment (preregistration, data sharing, transparency)
-- Pure qualitative or autoethnographic work without methodology-innovation framing
-- Sensitive empirical research where open data conflicts with participant protection
-- Manuscripts that cannot articulate replicability or reproducibility stake
+- No data accessibility statement, or original data not in a trusted repository without a flagged and accepted exception: the statement is mandatory and the checklist says submissions "may be returned" (Policies and Soft Metadata > Practical Concerns).
+- Manuscript not anonymised, or missing the required ethics statement or competing-interests declaration (Format > Anonymisation, Style).
+- Undisclosed AI-generated text, images or data processing (Policies > AI Policy).
+- Human-participant research without IRB or equivalent ethics approval (Practical Concerns > IRB).
+- No funds for the $1,450 APC and no waiver: waivers are requested at submission and not granted after acceptance, and accepted articles are not published until paid (Policies > Open Access).
 
 ### Soft Tax
 
-Variable. For mainstream empirical authors aligned with SIPS values: minimal. For qualitative or theoretical authors: very high — requires substantial reframing through methodology / research-practice lens, and OPSEC-sensitive work may be incompatible with open-data norms. SIPS member discount ($975 vs. $1,450 standard) is a meaningful incentive for SIPS-affiliated authors; window expires 2026-07-01.
+Transparency burden: mandatory data, code and materials deposit, a data accessibility statement and APA-style disclosure of exclusions, conditions and measures (Practical Concerns > Data transparency). Cost: APC of $1,450 unless waived, discounted or covered (Open Access). Review: 2.0 rounds and 1.0 month total from n=1 SciRev review, indicative at best (Review Cycle Time). For qualitative or purely theoretical work the count record is thin: "qualitative" in 25 and "theoretical or conceptual" in 96 of 605 abstracts (Orientation), so such a paper has fewer published precedents here; the journal's stated criterion is rigor, not method (Framing Requirements).
 
 ### Best Suited For
 
-- Registered Reports across 7 sections
-- Replication studies and reproducibility audits
-- Open-science methodology papers (preregistration tools, transparency norms, statistical reform)
-- Meta-analyses with open data
-- Theory papers connecting to open-science values
+- Registered Reports, which have a dedicated track and editor (Methodological Preferences).
+- Replication studies: welcomed by policy and 102 of 605 abstracts mention replication (Methodological Preferences).
+- Quantitative, preregistered empirical studies with shareable data: 190 of 605 abstracts name experiments and 136 mention preregistration (Orientation; Framing Requirements).
+- Methods and measurement papers: "measurement / psychometric / validity" in 89 of 605 abstracts and a dedicated section (Epistemological & Political Leanings; Format).
+- Papers previously rejected elsewhere on impact or scope grounds rather than rigor: the streamlined review route (Policies > Peer Review).
 
 ### Not Recommended For
 
-- Pure autoethnography or first-person reflective work
-- Research where open data conflicts with subject protection (BDSM, sex work, vulnerable populations)
-- Manuscripts that reject preregistration as inappropriate to the research question without engaging the methodology-research-practice framing
-- Independent scholars without institutional data infrastructure
+- Work whose data cannot be shared for ethical reasons and where no exception route is acceptable to the authors (Practical Concerns > Data transparency, OPSEC).
+- Qualitative, autoethnographic or first-person reflective work: autoethnography 0 of 605, "qualitative" 25 (4.1%) (Methodological Preferences). This shows rarity here, not that such work would be refused.
+- Authors needing a fast, certain, cost-free route without an institutional waiver: APC applies and waivers are discretionary (Open Access).
+- Single-author projects, if precedent matters: 33 of 608 articles (5.4%) (Practical Concerns).
+- Topics rarely or never seen here, if topic fit matters: BDSM 0, suicide 0 of 605 (Sensitive Topics). This does not show these topics would be refused.
 
 ### Rejection Fallback Chain
 
+Fallbacks are chosen from what the corpus entries record; none was re-verified in this pass.
+
 | Rank | Journal | Why this fallback works |
 |------|---------|------------------------|
-| 1 | [Frontiers in Psychology](./frontiers-in-psychology.md) | Section-routed OA mega-journal; broader methodological tolerance than Collabra's open-science gating |
-| 2 | [Self and Identity](./self-and-identity.md) | If the work is identity/self-focused empirical psychology with quantitative methods |
-| 3 | [Review of General Psychology](./review-of-general-psychology.md) | If the contribution is theoretical / integrative rather than empirical-open-science |
+| 1 | [Frontiers in Psychology](./frontiers-in-psychology.md) | Its entry records a fully open access model with a collaborative review model and many article types. Relevant if the paper is rejected on fit and not on rigor. |
+| 2 | [Self and Identity](./self-and-identity.md) | Its entry records a Taylor & Francis single-anonymized journal publishing predominantly quantitative or experimental research; relevant only for self- and identity-focused work. |
+| 3 | [Review of General Psychology](./review-of-general-psychology.md) | Its entry records a scope of "historical, theoretical, or critical studies of psychology" and a 5,000–10,000-word limit; relevant if the contribution is theoretical rather than empirical. |
 
-**Reverse direction** *(optional)*: If your paper was rejected from a top open-science venue (e.g., *Advances in Methods and Practices in Psychological Science*, *Psychological Science*), Collabra is often a better fit because: it shares open-science values but with a broader scope across 7 sections; APC structure (with SIPS / UC / waiver options) is more flexible than commercial alternatives; and section-specific editors offer multiple entry routes.
+**Reverse direction**: no source read in this pass compares Collabra with more selective open-science venues, so the earlier claim about papers rejected from *Advances in Methods and Practices in Psychological Science* or *Psychological Science* is not carried over. The journal's own streamlined-review route (rejection within 365 days, prior reviews attached) is the documented way in from another journal.
 
 ---
 
@@ -311,6 +344,7 @@ Variable. For mainstream empirical authors aligned with SIPS values: minimal. Fo
 
 | Date | Change | By |
 |------|--------|----|
+| 2026-11-23 | AI deep research pass; no first-hand human reports. In-place upgrade: policy page, About page, fees page, editorial team and author guidelines (a linked Google Doc) re-read via Wayback copies or live; Corrected: open-science alignment is not a mandatory framing (preregistration encouraged only), no word limit exists, 300-word abstract, preprint posting permitted, APC and waiver terms updated; Methodological Preferences re-scored from Crossref counts (605 abstracts); Voice & Style, Framing, Reviewer Pool, Sensitive Topics and Practical Concerns rewritten with cited counts or recorded blanks; unsourced reviewer-culture, "PRISMA", "Diamond OA" and RR detail claims removed; IF and SCImago quartile marked unverified; Subject Density counts relabelled as topic-assignment counts; Strategic Notes rebuilt from recorded facts. Banner state unchanged (none). | AI-assisted (maintainer-directed) |
 | 2026-07-27 | Replaced the placeholder justification for Registered Reports 5/5 with the journal's own documented RR track (specialist editor, two-stage process, transparency requirements) + source URL. Tier 1 entries must carry checkable evidence, not template defaults. | @Zaious (AI-assisted) |
 | 2026-07-13 | Added AI-research AI-research supplement (see Soft Metadata > AI-Research Notes) — independent research pass, does not alter existing Tier assessment. | @Zaious |
 | 2026-05-13 | Initial entry — structural fields populated. SIPS membership discount window flagged (expires 2026-07-01). | @Zaious |
