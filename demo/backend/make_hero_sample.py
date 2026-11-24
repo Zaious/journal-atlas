@@ -60,7 +60,12 @@ def main_() -> None:
             "score": round(c.score, 1),
             "coverage": fit_score.score_coverage(c.dimension_scores, fit_score.DEFAULT_WEIGHTS),
             "tied_with": ties.get(c.name, 1) - 1,
-            **card,
+            # Only what the picture shows. The full evidence card carries
+            # free-text identity fields (a publisher cell can quote source URLs),
+            # and everything in this file is bundled into the page.
+            "tier": card["tier"],
+            "disputes": card["disputes"],
+            "top_topics": card["top_topics"],
         })
     version = main.VERSION or {}
     out = {

@@ -551,7 +551,10 @@ So `62.5/100 · 45% evidence` and `73.0/100 · 75% evidence` are different claim
 and the interface shows you which one you got. A high score on thin evidence is
 a shrunken score by construction — scores are pulled toward the neutral 50 in
 proportion to how little is known — but it is still worth less than the same
-number backed by more.
+number backed by more. Topical relevance also caps the score: a venue with no
+evidence that it publishes on your topic (its topics are unknown, or none of
+them is yours) stays at or below 50, so it can never outrank one that is shown
+to be relevant ([how and why](docs/status/SCORING_2026-11.md)).
 
 **Philosophy is the sharpest case: <!--n:philosophy-->119<!--/n--> entries, none human-verified.** It is the
 second-largest field in the corpus and, with <!--n:philosophy_ai-->96<!--/n--> AI-Researched entries still, the

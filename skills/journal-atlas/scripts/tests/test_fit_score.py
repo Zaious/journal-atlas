@@ -699,6 +699,53 @@ def test_shrinkage_leaves_a_fully_evidenced_entry_untouched():
     assert fit_score.score_coverage(dims, fit_score.DEFAULT_WEIGHTS) == 1.0
 
 
+# ---------- topical relevance (2026-11-25) ----------
+# docs/status/SCORING_2026-11.md: venues with unreadable or no topic data, and
+# then venues whose listed topics include none of the paper's, filled the top
+# five on the 493-entry corpus. These pin the two fixes.
+
+NAME_ONLY_TABLE = """
+### Top Topics (last 5 years)
+
+| Topic | Article Count |
+|-------|--------------|
+| Higher Education Governance and Development | n/a (name only) |
+| International Science and Diplomacy | not stated |
+| *(see conference CFP for topic areas)* | |
+| Not tabulated (OpenAlex not called) | n/a |
+| Computational biology methods | *(community estimate)* |
+"""
+
+
+def test_name_only_topics_are_read_and_placeholders_are_not():
+    names = fit_score._extract_topic_names(NAME_ONLY_TABLE)
+    assert names == ["Higher Education Governance and Development", "International Science and Diplomacy"]
+    # The counted extractor is unchanged: no count, no counted topic.
+    assert fit_score._extract_top_topics(NAME_ONLY_TABLE) == []
+
+
+def test_name_only_match_scores_the_midpoint_and_a_miss_scores_zero():
+    journal = {"topics": [], "topic_names": ["Higher Education Governance and Development"]}
+    hit = fit_score.Paper(topics=["Higher Education Governance and Development"])
+    miss = fit_score.Paper(topics=["Technology Use by Older Adults"])
+    assert fit_score.score_topic_density(hit, journal) == fit_score.NAME_ONLY_TOPIC_MATCH
+    # Named topics are evidence: none of them is the paper's, which is 0, not unknown.
+    assert fit_score.score_topic_density(miss, journal) == 0.0
+
+
+def _all_other_dims_perfect(topic_dims):
+    """A journal dict whose every dimension but topic scores at the top."""
+    return {**topic_dims, "methodology_scores": {"qualitative": 5}, "first_person_acceptance": 5,
+            "review_time_months": 1.0, "best_suited_for": "qualitative"}
+
+
+def test_unknown_relevance_never_scores_above_neutral():
+    paper = fit_score.Paper(topics=["teacher feedback"], methodology="qualitative")
+    total, dims = fit_score.compute_score(paper, _all_other_dims_perfect({}), fit_score.DEFAULT_WEIGHTS)
+    assert dims["topic_density"] is None
+    assert total <= fit_score.SHRINKAGE_PRIOR
+
+
 # ---------- no topic evidence, no promotion ----------
 
 
@@ -723,6 +770,29 @@ def test_a_journal_with_no_topic_table_cannot_score_above_the_prior(monkeypatch)
     assert dims["topic_density"] is None
     assert total <= fit_score.SHRINKAGE_PRIOR
 
+
+def test_zero_relevance_never_scores_above_neutral():
+    paper = fit_score.Paper(topics=["teacher feedback"], methodology="qualitative")
+    journal = _all_other_dims_perfect({"topics": [("Organizational behaviour", 80)]})
+    total, dims = fit_score.compute_score(paper, journal, fit_score.DEFAULT_WEIGHTS)
+    assert dims["topic_density"] == 0.0
+    assert total <= fit_score.SHRINKAGE_PRIOR
+
+
+def test_relevance_ceiling_rises_with_relevance_and_never_raises_a_score():
+    paper = fit_score.Paper(topics=["teacher feedback"])
+    for count, ceiling in ((50, 100.0), (8, 58.0)):
+        journal = {"topics": [("Teacher feedback", count)]}
+        total, dims = fit_score.compute_score(paper, journal, fit_score.DEFAULT_WEIGHTS)
+        assert total <= ceiling
+    # Fully relevant venue: the ceiling is 100, so the score is whatever the
+    # evidence gave, exactly as before the ceiling existed.
+    dims = {k: 60.0 for k in fit_score.DEFAULT_WEIGHTS}
+    dims["topic_density"] = 100.0
+    observed = sum(dims[k] * w for k, w in fit_score.DEFAULT_WEIGHTS.items())
+    full = {"topics": [("Teacher feedback", 50)]}
+    total, _ = fit_score.compute_score(paper, full, fit_score.DEFAULT_WEIGHTS)
+    assert total <= 100.0 and observed > 0
 
 def test_the_same_dimensions_with_a_topic_match_are_not_capped(monkeypatch):
     _constants_only(monkeypatch, 40.0)

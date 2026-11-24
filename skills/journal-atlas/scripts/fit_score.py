@@ -79,6 +79,13 @@ DEFAULT_WEIGHTS: dict[str, float] = {
 # middle of the pack, neither promoted nor buried.
 SHRINKAGE_PRIOR = 50.0
 
+# A topic named in an entry's Top Topics table without an article count (the
+# name came from a source that stores names only). A match says the paper's
+# topic is one of the venue's main topics but not how many articles it has, so
+# it scores the middle of the scale; a counted match can reach 100. See
+# score_topic_density().
+NAME_ONLY_TOPIC_MATCH = 50.0
+
 
 # ---------- Data structures ----------
 
@@ -200,6 +207,7 @@ def parse_journal_file(path: Path) -> dict[str, Any]:
         "has_ai_permission_gate": _detect_ai_permission_gate(content),
         "irb_strictness": _extract_irb_strictness(content),
         "topics": _extract_top_topics(content),
+        "topic_names": _extract_topic_names(content),
         "methodology_scores": _extract_methodology_scores(content),
         "sensitive_topics": _extract_sensitive_topics(content),
         "first_person_acceptance": _extract_first_person_score(content),
@@ -508,6 +516,42 @@ def _extract_top_topics(content: str) -> list[tuple[str, int]]:
     return topics
 
 
+# The count cell of a row that names a sourced topic but gives no count. Only
+# these two spellings: a cell like "*(community estimate)*" marks an invented
+# topic, which is not evidence and must stay out.
+_NAME_ONLY_COUNT = re.compile(r"^(n/?a\b|not stated\b)", re.I)
+# Placeholder rows that sit in the topic column but are not topics.
+_NOT_A_TOPIC = re.compile(r"^(\*|\(|not (tabulated|available)\b|topic\b)", re.I)
+
+
+def _extract_topic_names(content: str) -> list[str]:
+    """Topic names from Subject Density > Top Topics whose count is blank by
+    design ('n/a (name only)', 'not stated').
+
+    Added 2026-11-25. Entries written while OpenAlex was out of quota list the
+    venue's topics by name with no count. _extract_top_topics() needs a count,
+    so those tables were read as 'no topic data' and the venue's relevance to
+    any paper became unknown. That is not neutral: an unrelated venue with an
+    unknown topic dimension ranked above related ones on the dimensions every
+    venue passes (see compute_score()). The names are evidence of what the
+    venue publishes; this keeps them.
+    """
+    section = _extract_subsection(content, "Top Topics")
+    if not section:
+        return []
+    names: list[str] = []
+    for line in section.splitlines():
+        match = re.match(r"\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|", line)
+        if not match:
+            continue
+        topic, cell = match.group(1).strip(), match.group(2).strip()
+        if topic.startswith("-") or _NOT_A_TOPIC.match(topic):
+            continue
+        if _NAME_ONLY_COUNT.match(cell):
+            names.append(topic)
+    return names
+
+
 def _extract_methodology_scores(content: str) -> dict[str, int]:
     """Extract methodology receptiveness scores (0-5)."""
     section = _extract_subsection(content, "Methodological Preferences")
@@ -729,17 +773,28 @@ def score_topic_density(paper: Paper, journal: dict[str, Any]) -> Optional[float
     compute_score() redistributes the weight of a None dimension over the
     ones that do have evidence, so absence neither helps nor hurts.
     """
-    if not paper.topics or not journal.get("topics"):
+    counted = journal.get("topics") or []
+    named = journal.get("topic_names") or []
+    if not paper.topics or not (counted or named):
         return None
+
+    def overlaps(a: str, b: str) -> bool:
+        a, b = a.lower(), b.lower()
+        return a in b or b in a
+
     total = 0.0
     for paper_topic in paper.topics:
-        best_match = 0
-        for journal_topic, count in journal["topics"]:
-            if paper_topic.lower() in journal_topic.lower() or \
-               journal_topic.lower() in paper_topic.lower():
-                best_match = max(best_match, count)
-        total += min(100, best_match * 2)  # 50 articles → 100 score
-    return total / len(paper.topics) if paper.topics else 50.0
+        best = 0.0
+        for journal_topic, count in counted:
+            if overlaps(paper_topic, journal_topic):
+                best = max(best, min(100.0, count * 2.0))  # 50 articles → 100
+        # A topic named without a count: relevant, size unknown. A topic that
+        # matches none of the venue's listed topics scores 0 either way; that
+        # is evidence the venue's main topics do not include it.
+        if any(overlaps(paper_topic, name) for name in named):
+            best = max(best, NAME_ONLY_TOPIC_MATCH)
+        total += best
+    return total / len(paper.topics)
 
 
 def score_methodology(paper: Paper, journal: dict[str, Any]) -> Optional[float]:
@@ -972,8 +1027,21 @@ def compute_score(
     # and a journal about which we cannot say whether it publishes on the
     # paper's subject is exactly that case: it may rank no higher than the
     # neutral prior.
-    if paper.topics and dims["topic_density"] is None:
-        total = min(total, SHRINKAGE_PRIOR)
+    #
+    # The same holds when the topic table exists and none of its topics is the
+    # paper's (topic_density 0). With unknowns held at the prior, those rose
+    # instead: topic is a quarter of the weight and family-level estimates fill
+    # the rest at full marks, so Computers and Composition scored 71 for a
+    # paper on teacher feedback (docs/status/SCORING_2026-11.md). So the ceiling
+    # is the prior plus half the topical relevance: no evidence of relevance
+    # (unknown or zero) keeps a journal at or below the prior, partial
+    # relevance lifts the ceiling part way (33 -> 66.5), full relevance removes
+    # it. It only ever lowers a score. When the paper names no topics, the topic
+    # dimension is unknown for every journal for a query reason and says
+    # nothing about any one of them, so no ceiling applies.
+    if paper.topics:
+        topic = dims["topic_density"]
+        total = min(total, SHRINKAGE_PRIOR + (topic / 2.0 if topic is not None else 0.0))
     return total, dims
 
 

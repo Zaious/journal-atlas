@@ -36,6 +36,9 @@ def collect_topics() -> list[str]:
         content = path.read_text(encoding="utf-8")
         for topic, _count in fit_score._extract_top_topics(content):
             names.add(topic)
+        # Topics named without a count are real topic names too; the extractor
+        # should be able to align a description to them.
+        names.update(fit_score._extract_topic_names(content))
     return sorted(names)
 
 
