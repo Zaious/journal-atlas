@@ -26,6 +26,10 @@ const headers = {
 };
 const results = [];
 const check = (name, ok, detail = "") => results.push({ name, ok, detail });
+// A known, accepted result: reported as EXPECTED, not hidden and not a failure.
+// Each one says why it is accepted, and is only accepted under the condition
+// written next to it; outside that condition it is an ordinary failure.
+const expected = (name, detail) => results.push({ name, ok: true, expected: true, detail });
 
 async function get(url) {
   try {
@@ -67,7 +71,23 @@ check("headers: no cookie is set", !home.r?.headers.get("set-cookie"), home.r?.h
 // CDN can change. The site says it loads no analytics or third-party scripts.
 const thirdParty = [...home.text.matchAll(/<script\b[^>]*\bsrc="(https?:)?\/\/[^"]*"/g)].map((m) => m[0]);
 const analytics = /cloudflareinsights|googletagmanager|google-analytics|gtag\(|posthog|plausible\.io|adsbygoogle|googlesyndication/i;
-check("served HTML has no third-party or analytics script", thirdParty.length === 0 && !analytics.test(home.text), thirdParty.join(" ").slice(0, 160));
+// Cloudflare Web Analytics is switched on for the Pages project, and Cloudflare
+// injects its beacon into browser requests. The maintainer decided on 2026-11-24
+// to leave that setting on (docs/status/SITE_SPEC.md, "Deployment state"). The
+// CSP allows scripts from 'self' only, so the browser refuses the beacon and
+// nothing is loaded or sent; the footer's "loads no analytics" stays true. So
+// the beacon, and only the beacon, is EXPECTED while the CSP still blocks it.
+const beaconOnly = thirdParty.length > 0 && thirdParty.every((t) => /static\.cloudflareinsights\.com\/beacon/.test(t));
+const otherAnalytics = analytics.test(home.text.replace(/<script\b[^>]*static\.cloudflareinsights\.com[^>]*>(<\/script>)?/g, ""));
+const cspBlocksIt = /script-src 'self'(;|$)/.test(h("content-security-policy")) && !/cloudflareinsights/.test(h("content-security-policy"));
+if (beaconOnly && !otherAnalytics && cspBlocksIt) {
+  expected(
+    "served HTML has no third-party or analytics script",
+    "Cloudflare Web Analytics beacon injected by Cloudflare; left on by decision, blocked by the CSP (script-src 'self'), so nothing loads",
+  );
+} else {
+  check("served HTML has no third-party or analytics script", thirdParty.length === 0 && !analytics.test(home.text), thirdParty.join(" ").slice(0, 160));
+}
 
 const robots = await get(base + "/robots.txt");
 check("/robots.txt is plain text with a Sitemap line", robots.r?.status === 200 && !(robots.r.headers.get("content-type") ?? "").includes("html") && /^Sitemap: /m.test(robots.text), robots.r ? `${robots.r.status} ${robots.r.headers.get("content-type")}` : "no response");
@@ -99,6 +119,13 @@ try {
 check("API /api/health names the provider and both models", Boolean(health?.provider && health?.extraction_model && health?.synthesis_model), health ? JSON.stringify({ provider: health.provider }) : "no JSON");
 
 const failed = results.filter((x) => !x.ok);
-for (const x of results) console.log(`${x.ok ? "PASS" : "FAIL"}  ${x.name}${x.ok || !x.detail ? "" : `  [${x.detail}]`}`);
-console.log(`\nsmoke: ${results.length - failed.length}/${results.length} passed against ${base} (API ${api})`);
+for (const x of results) {
+  const tag = x.expected ? "EXPECTED" : x.ok ? "PASS" : "FAIL";
+  console.log(`${tag}  ${x.name}${(x.ok && !x.expected) || !x.detail ? "" : `  [${x.detail}]`}`);
+}
+const nExpected = results.filter((x) => x.expected).length;
+console.log(
+  `\nsmoke: ${results.length - failed.length}/${results.length} passed against ${base} (API ${api})` +
+    (nExpected ? `, of which ${nExpected} expected (see EXPECTED lines)` : ""),
+);
 process.exit(failed.length ? 1 : 0);
