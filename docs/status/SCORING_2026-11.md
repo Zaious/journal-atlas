@@ -68,10 +68,7 @@ Tests: `tests/test_fit_score.py` carries both sessions' tests.
 
 ## Not changed (open)
 
-- **Estimated entries still count as evidence.** A family-level estimate fills
-  a dimension the same way a sourced claim does (coverage 100% for Estimated,
-  75% for Sourced, see `coverage_by_tier.py`). Whether estimates should weigh
-  less is a separate decision for the maintainer.
+- **Estimated entries count as evidence in the shrinkage: tested, left as is.** A family-level estimate fills a dimension the same way a sourced claim does (coverage 100% for Estimated, 75% for Sourced, see `coverage_by_tier.py`). Tested on 2026-11-25 against main (54ba7b8): the weight of an Estimated entry's soft-metadata dimensions in the coverage used for shrinkage was multiplied by a credit of 1, 0.75, 0.5, 0.25 and 0 (topic data always counts fully), over nine queries (the six above and the three Table 1 profiles). With the relevance rules of #6 and #7 in place the credit changes almost nothing: in eight of the nine queries the top ten is identical at every credit. In the ninth (experimental psychology, memory and attention) the top ten is all Estimated entries, because the relevant journals are the Estimated ones; lowering the credit replaces relevant Estimated journals with less relevant Sourced and AI-Researched ones (mean topic relevance of the top ten: 66.7 at credit 1, 56.7 at 0.5, 53.3 at 0). Across the nine queries the number of top-5 places with positive topical relevance (33 of 45) and the number of weakly relevant Estimated entries in the top ten (14) do not change at any credit. So discounting Estimated entries buys no relevance and costs some in the one field where they are the right answer. Behaviour is unchanged. The label and the coverage figure already say what an Estimated entry is; the ranking does not need to repeat it.
 - The weights themselves are still the educated guesses noted at
   `DEFAULT_WEIGHTS`; no backtest against known submission outcomes exists.
 - The paper's numbers belong to tag `jcdl2026` and are unaffected.
