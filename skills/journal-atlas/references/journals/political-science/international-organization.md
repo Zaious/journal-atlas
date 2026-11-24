@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Topic names come from the local spine row (OpenAlex snapshot 2026-07-13); the spine stores names only, so no counts are given and no count is copied from the scaffold.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts come from Crossref records, as stated there. The local spine (OpenAlex snapshot 2026-07-13) stores topic names only, with no counts.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0020-8183 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (181 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0020-8183,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 116 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 181.
+
 | Topic | Article Count |
 |-------|--------------|
-| Global Peace and Security Dynamics | n/a (name only) |
-| International Development and Aid | n/a (name only) |
-| International Relations and Foreign Policy | n/a (name only) |
+| International Relations and Foreign Policy | 90 |
+| Political Conflict and Governance | 45 |
+| Electoral Systems and Political Participation | 15 |
+| Global Peace and Security Dynamics | 13 |
+| Social and Intergroup Psychology | 11 |
+| Globalization and political ideologies | 9 |
+| Global trade and economics | 8 |
+| Terrorism, Counterterrorism, and Political Violence | 8 |
+| International Development and Aid | 8 |
+| European and Russian Geopolitical Military Strategies | 8 |
 
 ### Orientation
 
@@ -245,7 +254,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Sources cited across this entry:**
 - Cambridge Core pages, all read live on 2026-11-23: https://www.cambridge.org/core/journals/international-organization (home), and under /information/: about-this-journal, about-this-journal/journal-metrics, editorial-board, author-instructions/preparing-your-materials, author-instructions/submitting-your-materials, author-instructions/fees-and-pricing, peer-review-information/review-process, journal-policies/open-access-options, journal-policies/publishing-ethics, journal-policies/research-transparency
 - Crossref: https://api.crossref.org/journals/0020-8183 and works for the window (193 records, 140 with abstract; first-person, topic and author counts computed locally)
-- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; no OpenAlex request was made for this entry
+- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; the only OpenAlex request made for this entry is the one behind the Top Topics table (works API, group_by topics, 2026-11-25)
 - SciRev: https://scirev.org/journal/international-organization/ and https://scirev.org/reviews/international-organization/
 
 **Method notes:** Crossref abstracts were stripped of markup and counted locally with the regexes below (Python re, IGNORECASE except the first-person pattern). Counts are over records that have an abstract (title plus abstract text); share = hits / 140. Regex hits count records, not occurrences. Broad patterns over-count: Security matches "war", "conflict" and "military"; Institutions matches "institution"; Conceptual matches "theoretical"; the first-person pattern's "I" is almost always the pronoun, not a Roman numeral (see the First-person voice row for the counts without it). Crossref's published date for a few records is year-only; they sort last in the "20 most recent" sample.
@@ -338,3 +347,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (board count 60 not 59, AI-declaration wording, SciRev acceptance-time note, home-page wording, first-person scoring and Roman-numeral caveat) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; a board count off by one and two wording slips corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

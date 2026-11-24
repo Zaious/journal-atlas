@@ -128,17 +128,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts are described in their own note below, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> OpenAlex could not be queried for per-topic counts (HTTP 429). The spine lists three top topics without counts: Innovation and Knowledge Management; Management and Organizational Studies; Corporate Finance and Governance (local spine, OpenAlex snapshot 2026-07-13). No counts are given and none are invented.
+> Source: OpenAlex works API, journal matched by ISSN 1047-7039 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (469 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:1047-7039,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 469.
 
 | Topic | Article Count |
 |-------|--------------|
-| Innovation and Knowledge Management | Not available |
-| Management and Organizational Studies | Not available |
-| Corporate Finance and Governance | Not available |
+| Management and Organizational Studies | 132 |
+| Innovation and Knowledge Management | 79 |
+| Job Satisfaction and Organizational Behavior | 67 |
+| Entrepreneurship Studies and Influences | 54 |
+| Team Dynamics and Performance | 51 |
+| Gender Diversity and Inequality | 46 |
+| Corporate Finance and Governance | 37 |
+| Social Power and Status Dynamics | 31 |
+| Political Influence and Corporate Strategies | 27 |
+| Experimental Behavioral Economics Studies | 24 |
 
 ### Orientation
 
@@ -317,12 +324,12 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 **Unreadable pages (never filled from memory):**
 - https://pubsonline.informs.org/journal/orsc, /page/orsc/submission-guidelines, /page/orsc/editorial-board and /page/orsc/about-us returned a Cloudflare challenge (HTTP 403) to `curl --compressed -sL` with a cookie jar and a browser User-Agent on 5 attempts each; the Wayback copies named above were read instead (no Wayback copy exists for /page/orsc/about-us, /page/orsc/author-guidelines, /page/orsc/data-and-methods-transparency or /authorportal/language-editing-and-writing-support). WebFetch of https://pubsonline.informs.org/authorportal/authorship returned HTTP 403.
-- OpenAlex returned HTTP 429 on 2026-11-23 (this entry's first call); per the brief, OpenAlex was not used again by this entry.
+- OpenAlex returned HTTP 429 on 2026-11-23 (this entry's first call); per the brief, OpenAlex was not used again by this entry in that pass; the Top Topics table was retrieved separately on 2026-11-25.
 - Read in a real browser 2026-11-24 (Cloudflare check cleared on its own, no click): https://pubsonline.informs.org/page/orsc/submission-guidelines (length under 50 double-spaced 12-point pages, or 40 pages in 11-point; double-blind; a revision is due within 6 months; final files within 14 days of acceptance; no AI wording), /page/orsc/editorial-board (425 entries, see Reviewer Pool), /authorportal/authorship (AI wording above) and /authorportal/open-option (no fee amount printed).
 - Real browser also not done in the time box: https://pubsonline.informs.org/page/orsc/data-and-methods-transparency ; /page/orsc/calls-for-papers and /page/orsc/special-issues (current calls); /authorportal/language-editing-and-writing-support ; /authorportal/submission-and-peer-review-faq ; /authorportal/journal-statistics/organization-science; https://pubsonline.informs.org/journal/orsc and /page/orsc/about-us.
 
 **Fields deliberately left blank, and why:**
-- Numeric acceptance rate, time to acceptance, transfer policy, reviewer-report publication, AI-policy leniency, OpenAlex ID, i10-index, topic counts: not found or not retrievable (reasons above).
+- Numeric acceptance rate, time to acceptance, transfer policy, reviewer-report publication, AI-policy leniency, OpenAlex ID, i10-index: not found or not retrievable (reasons above); topic counts were retrieved on 2026-11-25 (see Subject Density).
 - Reviewer culture, reviewer competence variance: no first-hand source exists (SciRev 2 reviews, both about immediate rejection; LetPub page not located).
 - Impact factor, quartile: paywalled, not stated by policy.
 
@@ -389,3 +396,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Pages unreadable by curl re-read in a real browser (submission guidelines, board 425 entries, INFORMS AI wording, Open Option page) | @Zaious |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

@@ -129,11 +129,30 @@
 
 ## Subject Density
 
-> Source: Crossref journal-article records of ISSN 1470-1294 published 2021-11-23 to 2026-11-23 (440 records; 0 carry an abstract, so all counts below use titles only and are lower bounds), retrieved 2026-11-23. OpenAlex topic counts were not obtained because OpenAlex returned its first rate-limit response during this batch and was not used again, as instructed.
+> Source: Crossref journal-article records of ISSN 1470-1294 published 2021-11-23 to 2026-11-23 (440 records; 0 carry an abstract, so all counts below use titles only and are lower bounds), retrieved 2026-11-23. The Top Topics table comes from the OpenAlex works API (retrieved 2026-11-25), not from these Crossref records.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 1356-2517 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (431 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:1356-2517,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 197 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 431.
+
 | Topic | Article Count |
+|-------|--------------|
+| Evaluation of Teaching Practices | 102 |
+| Higher Education Practises and Engagement | 88 |
+| Student Assessment and Feedback | 53 |
+| Critical and Liberation Pedagogy | 50 |
+| Higher Education Governance and Development | 45 |
+| Higher Education Research Studies | 43 |
+| Educational Theory and Curriculum Studies | 34 |
+| Doctoral Education Challenges and Solutions | 31 |
+| Artificial Intelligence in Education | 30 |
+| Teacher Education and Leadership Studies | 27 |
+
+### Keyword Counts (Crossref)
+
+> Formerly held in the Top Topics table: counts of Crossref records whose title (or title plus abstract, where stated) matches a keyword group, from the earlier pass (retrieved 2026-11-23). They are not OpenAlex topics.
+
+| Term group | Count |
 |-------|--------------|
 | Titles with "student" or "students" | 92 of 440 |
 | Titles with assessment or feedback | 54 of 440 |
@@ -248,7 +267,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: journal-own policy and aims facts 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2022 and 2025-11-19 Wayback copies are kept as labelled older figures); editors' blog posts 4 (read live, dates stated); Crossref counts 2 (440 records, 0 with abstract, so titles only); OpenAlex 1 (spine snapshot figures only); publisher-wide policies 4; experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: journal-own policy and aims facts 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2022 and 2025-11-19 Wayback copies are kept as labelled older figures); editors' blog posts 4 (read live, dates stated); Crossref counts 2 (440 records, 0 with abstract, so titles only); OpenAlex 1 (spine snapshot figures, plus the Top Topics table from one works-API request on 2026-11-25); publisher-wide policies 4; experiential layer 0.
 
 **Sources cited across this entry:**
 - https://web.archive.org/web/20251119053632/https://www.tandfonline.com/action/journalInformation?journalCode=cthe20 (information page, aims, metrics, board, Wayback copy 2025-11-19)
@@ -341,3 +360,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent check: board recounted from the 2025-11-19 copy (137 names = 1 editor + 1 social media editor + 6 executive + 2 founding + 127 board members, not 115) with country tallies summing to 137; race-title count 10 to 9 (2.0%) after removing the false hit "Opening the black box of degree classification algorithms"; author-affiliation counts replaced by literal country-name counts with stated regexes (UK 51, not 133) because the earlier keyword list was unpublished | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; board counts recounted; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live T&F pages read in a real browser: instructions (three article types; Research Article 7000 words excluding references, was inclusive of abstract and tables in the 2022 copy; Points of Departure around 3000 words; double anonymous review, was double blind; generative-AI declaration; ethics statement; no submission or page charges) and about page (acceptance 8%, first decision 14 days, 93 days to first post-review decision, CiteScore 12.2 as labelled); older 32-day, 98-day and 29-day medians kept as older; board recounted to 134 (1 + 1 + 7 + 2 + 123, was 137); 'unreadable' statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

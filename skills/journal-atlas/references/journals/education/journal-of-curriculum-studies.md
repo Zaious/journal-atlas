@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. The OpenAlex request for topic counts was not made for this entry (the shared rate limit was reached earlier in this research pass, and the local spine has no topic data), so no topic table is given. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts below come from Crossref records, with abstracts from Semantic Scholar where stated there, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> Not obtained. For a keyword-level view of subject density, see the Orientation counts below, taken from Crossref and Semantic Scholar.
+> Source: OpenAlex works API, source S198786835, works of type article dated 2021-11-23 to 2026-11-23 (261 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S198786835,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 156 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 261.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not obtained (OpenAlex rate limit reached; no topic data in the local spine) | n/a |
+| Educational Theory and Curriculum Studies | 142 |
+| Educator Training and Historical Pedagogy | 60 |
+| Education Pedagogy and Practices | 52 |
+| Teacher Education and Leadership Studies | 50 |
+| Mathematics Education and Teaching Techniques | 31 |
+| Global Educational Policies and Reforms | 26 |
+| Education, Philosophy, and Society | 20 |
+| Critical Race Theory in Education | 16 |
+| Historical Education Studies Worldwide | 15 |
+| Citizenship Education and Democracy | 14 |
 
 ### Orientation
 
@@ -241,7 +250,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref plus Semantic Scholar keyword counts 3 (256 of 327 abstracts, lower bounds); Crossref affiliation-based author countries 3; OpenAlex 1 (scaffold values only; no keyword, topic or country counts were obtained because the shared rate limit was reached); publisher-wide policies 4; journal-specific policies and guidelines 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2022 and 2025 Wayback copies are kept as labelled older figures); experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: Crossref plus Semantic Scholar keyword counts 3 (256 of 327 abstracts, lower bounds); Crossref affiliation-based author countries 3; OpenAlex 1 (scaffold values only; no keyword or country counts were obtained because the shared rate limit was reached; the topic table was added on 2026-11-25 from one OpenAlex request); publisher-wide policies 4; journal-specific policies and guidelines 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2022 and 2025 Wayback copies are kept as labelled older figures); experiential layer 0.
 
 **Method note**: keyword counts use Crossref records (journal-article type, published 2021-01-01 to 2026-11-23, `select` fields DOI, title, abstract, author, page) with abstracts from the Semantic Scholar batch API by DOI (256 of 327 returned; the other 71 are counted by title only, which lowers every share). Matching is case-insensitive over title plus abstract with these regexes (Python `re`, `\b` word boundary at the start): qualitative `\bqualitative`; quantitative `\bquantitative`; interview `\binterview`; survey `\bsurvey|\bquestionnaire`; randomised/experiment `\brandomi[sz]ed|\brandomi[sz]ation|\bRCT\b|\bexperiment`; mixed methods `\bmixed[- ]method`; reviews `\bsystematic review|\bmeta-analys|\bscoping review|\bliterature review`; ethnography `\bethnograph`; case study `\bcase stud`; theory `\btheor(y|ies|etical|ising|izing|ise|ize)\b`; conceptual `\bconceptual`; philosophy `\bphilosoph`; regression/longitudinal `\bregression|\blongitudinal|\bpanel data|\bcohort`; discourse `\bdiscourse`; decolonial/Indigenous `\bdecolon|\bindigenous|\bfirst nations|\bm[aā]ori|\baboriginal`; gender `\bgender|\bfeminis|\bwomen\b|\bgirls\b`; race `\brac(e|ism|ist|ial|ialised|ialized)\b|\bwhiteness|\bblack\b|\bethnic`; class/inequality `\bsocial class|\bworking[- ]class|\binequalit|\bsocio-?economic|\bdisadvantage`; AI `\bartificial intelligence|\bAI\b|\bChatGPT|\bgenerative|\bmachine learning|\balgorithm`; queer `\bqueer|\blgbt|\btransgender|\bsexualit`; religion `\breligio|\bislam|\bmuslim|\bchristian|\bspiritual`; named theorists `\bbourdieu|\bfoucault|\bmarx|\bfreire|\bdewey|\bdeleuze|\barendt|\bhabermas`; climate `\bclimate|\bsustainab|\banthropocene|\becolog`; conflict `\bwar\b|\bconflict|\brefugee|\bmigra`; disability `\bdisabilit|\bspecial (educational )?needs|\bautis|\bdyslexi|\bSEND?\b|\binclusi`; first person `\b(I|my|we|our)\b` on abstracts. Country counts match country names and abbreviations (for example `\bUK\b`, `\bUSA\b`, `\bUS\b`) in Crossref affiliation name and place strings; affiliations without a country name (for example a bare university name) are unmatched. Some patterns are broad ("black", "conflict", "experiment", "inclusi") and may over-count.
 
@@ -263,7 +272,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Acceptance rate, desk rejection rate, review times, reviewer culture, reviewer competence variance, quantitative bias: no first-hand source exists; SciRev has no reviews and LetPub 0 reviews (LetPub's displayed 24 weeks and 7% have no stated provenance).
 - APC, ethics-approval rule: the cost finder was not read, and the live instructions state no ethics rule in the passages read.
-- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: rate limit reached.
+- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: added on 2026-11-25 from one works-API request (see Subject Density).
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
 - SciRev (English): journal page exists, no reviews (https://scirev.org/journal/journal-of-curriculum-studies/).
@@ -326,3 +335,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent check: open-access label count on the 2025-05-12 journal home copy is five of the six latest articles, not four | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 7 of 7 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live T&F pages read in a real browser: instructions (10000-word typical ceiling, unstructured 200-word abstract (the 2022 copy said structured), up to 5 keywords, single anonymous review (the 2022 copy said double blind), generative-AI declaration, no submission or page charges) and about page (acceptance 10%, first decision 8 days, 93 days to first post-review decision, CiteScore 4.8 as labelled), which confirm the figures a search summary had shown; board now read from the page (25 = 1 + 2 + 1 + 18 + 1 + 2); 'unreadable' and 'not verified' statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

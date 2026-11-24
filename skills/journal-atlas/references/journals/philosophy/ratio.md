@@ -129,15 +129,24 @@ Further journal rules stated in the live guidelines (read 2026-11-24; the 2024-0
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts are described in their own note below, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> The scaffold's topic counts are OpenAlex topic-assignment counts that are not comparable with the journal's own output (229 works in the window), so they are not copied here. Keyword shares under Orientation are used instead.
+> Source: OpenAlex works API, source S108709262, works of type article dated 2021-11-23 to 2026-11-23 (151 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S108709262,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 63 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 151.
 
-| Topic (OpenAlex name) | Article Count |
-|-----------------------|--------------|
-| See Orientation for keyword shares | not stated |
+| Topic | Article Count |
+|-------|--------------|
+| Epistemology, Ethics, and Metaphysics | 88 |
+| Philosophical Ethics and Theory | 82 |
+| Philosophy and Theoretical Science | 62 |
+| Political Philosophy and Ethics | 24 |
+| Philosophy of Biology and Scientific Explanation | 20 |
+| Ethics, Aesthetics, and Art | 16 |
+| Logic, Reasoning, and Knowledge | 15 |
+| Psychology of Moral and Emotional Judgment | 13 |
+| Ethics and bioethics in healthcare | 13 |
+| Feminist Epistemology and Gender Studies | 11 |
 
 ### Orientation
 
@@ -323,3 +332,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent verification: political/justice regex recounted at 10 hits (6.0%), not 12; abstracts over 200 words recounted at 7, not 5 | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live Wiley pages read in a real browser: guidelines re-read (truncated sentences completed: single referee, feedback for reviewed papers, final decision by the Editor); live 2025 metrics added (acceptance 22%, first decision median 15 days, CiteScore 1.5 as labelled) with older 20% and 13-day figures kept as older; board re-read (19 = 1 + 10 + 8); "unreadable" statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

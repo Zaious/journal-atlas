@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Topic names come from the local spine row (OpenAlex snapshot 2026-07-13); the spine stores names only, so no counts are given and no count is copied from the scaffold.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts come from Crossref records, as stated there. The local spine (OpenAlex snapshot 2026-07-13) stores topic names only, with no counts.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0026-4695 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (196 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0026-4695,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 160 topics were returned; the top 10 are shown. The 10th and 11th topics are tied at 12; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 196.
+
 | Topic | Article Count |
 |-------|--------------|
-| Higher Education Governance and Development | n/a (name only) |
-| International Science and Diplomacy | n/a (name only) |
-| scientometrics and bibliometrics research | n/a (name only) |
+| Research, Science, and Academia | 82 |
+| Higher Education Governance and Development | 47 |
+| Interdisciplinary Research and Collaboration | 35 |
+| scientometrics and bibliometrics research | 31 |
+| International Science and Diplomacy | 17 |
+| Social Science and Policy Research | 17 |
+| University Challenges and Reforms | 15 |
+| Publishing and Scholarly Communication | 14 |
+| Doctoral Education Challenges and Solutions | 12 |
+| Academic Publishing and Open Access | 12 |
 
 ### Orientation
 
@@ -244,7 +253,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - Springer Nature Link pages, all read live on 2026-11-23: https://link.springer.com/journal/11024 (home), /aims-and-scope, /editors, /updates, /submission-guidelines, /how-to-publish-with-us
 - Springer Nature policy pages read live on 2026-11-23: https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation and https://www.springer.com/gp/editorial-policies/preprint-sharing
 - Crossref: https://api.crossref.org/journals/0026-4695 and works for the window (220 records, 138 with abstract; first-person, topic and author counts computed locally)
-- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; no OpenAlex request was made for this entry
+- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; the only OpenAlex request made for this entry is the one behind the Top Topics table (works API, group_by topics, 2026-11-25)
 - SciRev: https://scirev.org/journal/minerva/ and https://scirev.org/reviews/minerva/
 
 **Method notes:** Crossref abstracts were stripped of markup and counted locally with the regexes below (Python re, IGNORECASE except the first-person pattern). Counts are over records that have an abstract (title plus abstract text); share = hits / 138. Regex hits count records, not occurrences. Broad patterns over-count: HE matches "student" and "university"; History matches "historical" and "archive"; ExpertiseDemocracy matches "trust" and "expert"; the first-person pattern's "I" is almost always the pronoun, not a Roman numeral (see the First-person voice row for the counts without it).
@@ -329,3 +338,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (SciRev criticism wording, acceptance-time note, preprint quote, first-person scoring and Roman-numeral caveat) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; wording slips corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

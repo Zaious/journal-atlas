@@ -127,11 +127,30 @@
 
 ## Subject Density
 
-> Source: Crossref journal-article records of ISSN 1366-5898 published 2021-11-23 to 2026-11-23 (642 records; 0 carry an abstract, so all counts below use titles only and are lower bounds), retrieved 2026-11-23. OpenAlex topic counts were not obtained because OpenAlex returned its first rate-limit response during this batch and was not used again, as instructed.
+> Source: Crossref journal-article records of ISSN 1366-5898 published 2021-11-23 to 2026-11-23 (642 records; 0 carry an abstract, so all counts below use titles only and are lower bounds), retrieved 2026-11-23. The Top Topics table comes from the OpenAlex works API (retrieved 2026-11-25), not from these Crossref records.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0951-8398 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (599 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0951-8398,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. The 10th and 11th topics are tied at 37; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 599.
+
 | Topic | Article Count |
+|-------|--------------|
+| Critical Race Theory in Education | 314 |
+| Qualitative Research Methods and Ethics | 103 |
+| Teacher Education and Leadership Studies | 72 |
+| Posthumanist Ethics and Activism | 71 |
+| Gender, Sexuality, and Education | 69 |
+| Critical and Liberation Pedagogy | 58 |
+| Participatory Visual Research Methods | 57 |
+| Feminist Theory and Gender Studies | 47 |
+| Higher Education Research Studies | 45 |
+| Racial and Ethnic Identity Research | 37 |
+
+### Keyword Counts (Crossref)
+
+> Formerly held in the Top Topics table: counts of Crossref records whose title (or title plus abstract, where stated) matches a keyword group, from the earlier pass (retrieved 2026-11-23). They are not OpenAlex topics.
+
+| Term group | Count |
 |-------|--------------|
 | Titles with race, racial, whiteness, Black or anti-Black terms | 147 of 642 |
 | Titles with gender, feminist, women or girls | 95 of 642 |
@@ -251,7 +270,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: journal-own aims, format and review-model facts 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2023-2025 Wayback copies are kept as labelled older figures); board facts 4 (live board read 2026-11-24, no date printed); Crossref counts 2 (642 records, 0 with abstract, so titles only); OpenAlex 1 (spine snapshot figures only); publisher-wide policies 4; experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: journal-own aims, format and review-model facts 4 (live instructions and about pages read in a real browser 2026-11-24, undated; the 2023-2025 Wayback copies are kept as labelled older figures); board facts 4 (live board read 2026-11-24, no date printed); Crossref counts 2 (642 records, 0 with abstract, so titles only); OpenAlex 1 (spine snapshot figures, plus the Top Topics table from one works-API request on 2026-11-25); publisher-wide policies 4; experiential layer 0.
 
 **Sources cited across this entry:**
 - https://web.archive.org/web/20251126131105/https://www.tandfonline.com/journals/tqse20 (home page with aims text, Wayback copy 2025-11-26)
@@ -343,3 +362,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent check: publisher speed and acceptance block filled from the Wayback copy captured 2024-08-31 (46 / 114 / 13 days; 22%; editors-in-chief at Indiana University Indianapolis), replacing the false statements that the metrics and current editors were unreadable; disability title count given with its exact regex (17, of which 16 "disabilit-" and 1 "neurodivergent"; 18 with "disabled"); author-affiliation counts replaced by literal country-name counts with stated regexes (US 155, not 449) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; blank metrics filled from an archived copy; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live T&F pages read in a real browser: instructions (two article types, Research Article and Registered Reports; 9000-word limit now counting the abstract and captions; 200-word unstructured abstract with 4 to 6 keywords, was 150 words and no keywords in the 2023 copy; double anonymous review, was single anonymous; generative-AI declaration; ethics-committee statement; no submission or page charges) and about page (acceptance 24%, first decision 51 days, 178 days to first post-review decision, CiteScore 3.6 as labelled); older 22%, 46-day and 114-day figures kept as older; board recounted to 59 entries (1 + 2 + 1 + 20 + 2 + 33; 57 distinct names, was 54); 'unreadable' statements replaced; Clarivate figures and a street address on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

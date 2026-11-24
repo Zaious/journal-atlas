@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23.
+> Based on Crossref records (not OpenAlex), 2021-11-23 to 2026-11-23. The Top Topics table below is the one OpenAlex-based part (works API, retrieved 2026-11-25).
 
 ### Top Topics (last 5 years)
 
-> Not tabulated: no OpenAlex topic data was fetched.
+> Source: OpenAlex works API, journal matched by ISSN 0886-7356 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (160 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0886-7356,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. The 10th and 11th topics are tied at 7; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 160.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not tabulated (OpenAlex not called) | — |
+| Anthropological Studies and Insights | 55 |
+| Geographies of human-animal interactions | 20 |
+| Migration and Exile Studies | 10 |
+| Migration, Refugees, and Integration | 8 |
+| Gender and Feminist Studies | 8 |
+| Urban Planning and Governance | 7 |
+| Posthumanist Ethics and Activism | 7 |
+| Diaspora, migration, transnational identity | 7 |
+| Agriculture, Land Use, Rural Development | 7 |
+| Decolonial Thought and Epistemologies | 7 |
 
 ### Orientation
 
@@ -314,3 +323,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (editorial team page read and counted by country; review-time quote made verbatim) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 5 supported and 1 partial of 6 sampled pairs; the editorial team page was read and used afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

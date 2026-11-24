@@ -127,15 +127,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts are described in their own note below, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> The scaffold's topic counts are OpenAlex topic-assignment counts that are not comparable with the journal's own output (758 works in the window), so they are not copied here. Keyword shares under Orientation are used instead.
+> Source: OpenAlex works API, source S4210212392, works of type article dated 2021-11-23 to 2026-11-23 (565 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S4210212392,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 183 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 565.
 
-| Topic (OpenAlex name) | Article Count |
-|-----------------------|--------------|
-| See Orientation for keyword shares | not stated |
+| Topic | Article Count |
+|-------|--------------|
+| Philosophical Ethics and Theory | 257 |
+| Epistemology, Ethics, and Metaphysics | 256 |
+| Philosophy and Theoretical Science | 191 |
+| Political Philosophy and Ethics | 67 |
+| Ethics, Aesthetics, and Art | 59 |
+| Free Will and Agency | 50 |
+| Philosophy of Biology and Scientific Explanation | 49 |
+| Theology and Philosophy of Evil | 48 |
+| Phenomenology and Existential Philosophy | 46 |
+| Feminist Epistemology and Gender Studies | 40 |
 
 ### Orientation
 
@@ -317,3 +326,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (auto-populated from OpenAlex; structural fields only) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports collected by the researcher (third-party survey aggregates cited with n) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

@@ -127,19 +127,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts are described in their own note below, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> The scaffold's topic counts (largest 1473) exceed the journal's total output of 820 works in the window, so they are OpenAlex topic-assignment counts or span a different window, and are not copied here. Topic names are listed without counts; use the keyword shares under Orientation instead.
+> Source: OpenAlex works API, source S27428843, works of type article dated 2021-11-23 to 2026-11-23 (640 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S27428843,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 640.
 
-| Topic (OpenAlex name) | Article Count |
-|-----------------------|--------------|
-| Philosophy and Theoretical Science | not stated |
-| Epistemology, Ethics, and Metaphysics | not stated |
-| Embodied and Extended Cognition | not stated |
-| Philosophical Ethics and Theory | not stated |
-| Mental Health and Psychiatry | not stated |
+| Topic | Article Count |
+|-------|--------------|
+| Philosophy and Theoretical Science | 291 |
+| Epistemology, Ethics, and Metaphysics | 203 |
+| Mental Health and Psychiatry | 145 |
+| Philosophical Ethics and Theory | 133 |
+| Embodied and Extended Cognition | 124 |
+| Phenomenology and Existential Philosophy | 85 |
+| Psychology of Moral and Emotional Judgment | 76 |
+| Philosophy of Biology and Scientific Explanation | 61 |
+| Feminist Epistemology and Gender Studies | 50 |
+| Free Will and Agency | 49 |
 
 ### Orientation
 
@@ -326,3 +331,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent verification: board counts and geography filled from the 2025-06-27 about-page copy (42 people) and the stale 2022 team replaced; the false "no archive copy" statement for the board URL corrected; survey comment-quality and editor-experience figures now cite the CSV export | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 supported and 2 partial of 8 sampled pairs; board layer rebuilt from an archived copy; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live T&F pages read in a real browser: instructions (10,000-word typical ceiling, 200-word abstract, double blind, generative-AI declaration, no submission or page charges) and about page (acceptance 27%, first decision 16 days, 72 days to first post-review decision, CiteScore 3.6 as labelled); older archived figures kept as older; board recounted to 45 (1 + 6 + 1 + 1 + 36); 'unreadable' statements replaced; Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

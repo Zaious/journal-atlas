@@ -127,19 +127,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts are described in their own note below, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> The scaffold's topic counts (largest 1821) exceed the journal's total output in the window (300 works), so they are OpenAlex topic-assignment counts or span a different window, and are not copied here. Topic names are listed without counts; use the keyword shares under Orientation instead.
+> Source: OpenAlex works API, source S170801797, works of type article dated 2021-11-23 to 2026-11-23 (211 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S170801797,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 68 topics were returned; the top 10 are shown. The 10th and 11th topics are tied at 13; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 211.
 
-| Topic (OpenAlex name) | Article Count |
-|-----------------------|--------------|
-| Epistemology, Ethics, and Metaphysics | not stated |
-| Philosophy and Theoretical Science | not stated |
-| Philosophical Ethics and Theory | not stated |
-| Logic and Philosophy of Science | not stated |
-| Logic, Reasoning, and Knowledge | not stated |
+| Topic | Article Count |
+|-------|--------------|
+| Epistemology, Ethics, and Metaphysics | 152 |
+| Philosophy and Theoretical Science | 100 |
+| Philosophical Ethics and Theory | 85 |
+| Logic, Reasoning, and Knowledge | 34 |
+| Philosophy of Biology and Scientific Explanation | 28 |
+| Feminist Epistemology and Gender Studies | 28 |
+| Logic and Philosophy of Science | 23 |
+| Syntax, Semantics, Linguistic Variation | 18 |
+| Political Philosophy and Ethics | 17 |
+| Decision-Making and Behavioral Economics | 13 |
 
 ### Orientation
 
@@ -323,3 +328,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; a misquoted acceptance rate corrected; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live Wiley pages read in a real browser: filled the submission rules (15,000-word cap, anonymisation, concurrency rules, reference style, artwork formats, AI disclosure place, Refer & Transfer); replaced stale archived metrics with the live 2025 figures (acceptance 7%, first decision median 65 days, CiteScore 5.4 as labelled on the page) and kept the older ones labelled; board recounted (41 = 1 + 12 + 28); Clarivate figures on the page not recorded | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Corrections after Chrome verification (APC row: USD 2900 stated as an OpenAlex-listed figure not confirmed on the publisher page, which prints only 'subject to an APC') | @Zaious |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |
