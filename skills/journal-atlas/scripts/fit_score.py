@@ -958,7 +958,23 @@ def compute_score(
     # into each dimension and applied equally no matter how much was known.
     coverage = score_coverage(dims, weights)
     shrunk = coverage * observed + (1 - coverage) * SHRINKAGE_PRIOR
-    return min(observed, shrunk), dims
+    total = min(observed, shrunk)
+
+    # No topic evidence, no promotion (2026-11-25). When the paper names topics
+    # and a journal has no topic table, topic_density is dropped like any other
+    # unknown dimension. What is left can be two dimensions that do not depend
+    # on the paper's subject at all (sensitive_topic_tolerance is 100 for every
+    # journal when the paper has no sensitive content; strategic_factors is
+    # cost and word limit), so an unrelated journal with 30% coverage scored 61
+    # and outranked journals that had a topic match. On the 2026-11-24 corpus
+    # that put seven journals unrelated to "older adults and voice assistants"
+    # in the top eight. The prior may pull a score down and never push one up,
+    # and a journal about which we cannot say whether it publishes on the
+    # paper's subject is exactly that case: it may rank no higher than the
+    # neutral prior.
+    if paper.topics and dims["topic_density"] is None:
+        total = min(total, SHRINKAGE_PRIOR)
+    return total, dims
 
 
 def score_coverage(dims: dict[str, Optional[float]], weights: dict[str, float]) -> float:
