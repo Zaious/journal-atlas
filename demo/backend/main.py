@@ -7,7 +7,7 @@ requests):
   1. EXTRACT (Haiku, forced tool-use) — freeform paper description -> the
      same `Paper` dataclass fit_score.py already scores against.
   2. SCREEN (fit_score.py, no LLM) — deterministic pre-ranking across the
-     curated 399 entries, reused as-is, not reimplemented. Each candidate's
+     curated corpus, reused as-is, not reimplemented. Each candidate's
      tier and top cited topic counts ride along in this stage's SSE event
      for the frontend's evidence cards.
   3. SYNTHESIZE (Sonnet, streamed) — inlines CONSUMPTION_CONTRACT.md's

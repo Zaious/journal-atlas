@@ -149,7 +149,7 @@ now-`(pending)` gate stop being eliminated on absence of evidence, which is the
 conservative behaviour.
 
 **2. Separate `Source URL` (where someone looked) from `Evidence URL` (what the
-claim rests on)** — not done. Touches the schema and all 399 entries.
+claim rests on)** — not done. Touches the schema and every entry.
 
 **3. Record retrieval status alongside each source, and re-check on a schedule** —
 not done. A 404 after thirteen months is not rare, it is the base rate.

@@ -26,8 +26,8 @@ IRB" eliminated 33 journals for a theoretical paper, invisibly.
    [`topic_vocabulary.json`](backend/topic_vocabulary.json) (built by
    `build_topic_vocabulary.py`) so it aligns with the real OpenAlex topic
    names `fit_score.py`'s topic-density scoring matches against.
-2. **Screen** (`fit_score.py`, no LLM) — deterministic pre-ranking across the
-   curated 399 entries, reused unmodified from the skill itself. Each
+2. **Screen** (`fit_score.py`, no LLM) — deterministic pre-ranking across every
+   curated entry, reused unmodified from the skill itself. Each
    candidate's tier (Sourced / Estimated / AI-Researched / Skeleton) and top
    cited topic counts ride along in this stage's SSE event, so the frontend
    can render an expandable evidence card per candidate instead of a bare

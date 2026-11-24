@@ -19,8 +19,8 @@ Word limits that are actually enforced, fees an author cannot pay, an ethics app
 
 *A worked example of generative information access, with the model kept out of the ranking:* AI gathers the evidence into the corpus; plain code applies the hard constraints, scores what survives and reports how much evidence each score rests on; AI then explains the survivors — and compares venues on request. [Paper](https://doi.org/10.1145/3805696.3846515) · [live demonstration](https://journal-atlas.chroniclecore.com)
 
-> **Status (2026-11): Pre-release.** 493 entries — 473 journals across 20 field
-> directories (including `philosophy/`, `education/` and `ai-society/`) + 20 conferences across 4 sub-domains
+> **Status (2026-11): Pre-release.** <!--n:total-->493<!--/n--> entries — <!--n:journals-->473<!--/n--> journals across <!--n:journal_fields-->20<!--/n--> field
+> directories (including `philosophy/`, `education/` and `ai-society/`) + <!--n:conferences-->20<!--/n--> conferences across 4 sub-domains
 > (HCI / ML / NLP / Data Mining). Quality breakdown: **114 Sourced** (AI-researched, each claim cites a source) ·
 > **149 Estimated** (family-level estimate, not sourced per journal) · **230 AI-Researched** (per-journal AI research
 > with cited `signal_quality`, v2 coverage-first pivot) · **0 Skeleton**. None of the
@@ -171,7 +171,7 @@ Use when you have a paper and need decisions: recommendations, comparisons, reje
 - Walk Rejection Fallback Chains
 - Present recommendations with cited evidence and Tier-aware confidence flags
 
-**Entry-count-aware design** scales from current 399 entries and beyond:
+**Entry-count-aware design** scales from current <!--n:total-->493<!--/n--> entries and beyond:
 - ≤20 entries: direct read
 - 21–50: `scripts/fit_score.py` pre-ranking
 - 50+: mandatory pre-ranking; AI reads top 10–15
@@ -489,7 +489,7 @@ cited per-claim research, not a person's verification; see
 | Physics | 3 | 0 | 3 | 0 | 0 |
 | Data-mining conferences (KDD, WWW) | 2 | 0 | 2 | 0 | 0 |
 
-**First-hand reports: 0 of 493 entries.** The last column counts entries carrying a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`); `python skills/journal-atlas/scripts/coverage_by_tier.py` prints the same count per tier.
+**First-hand reports: <!--n:first_hand-->0<!--/n--> of <!--n:total-->493<!--/n--> entries.** The last column counts entries carrying a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`); `python skills/journal-atlas/scripts/coverage_by_tier.py` prints the same count per tier.
 
 Four adjacent fields — psychology, philosophy, HCI, cognitive science — are
 **75% of the corpus (369 of 493)**. Everything else is a thin, deliberately
@@ -534,8 +534,14 @@ is filled in. Every scoring dimension returns "unknown" rather than a midpoint
 when the evidence is missing, so a recommendation carries an **evidence
 coverage** percentage alongside its score:
 
-- **163 entries (Sourced + Estimated): 85–100% coverage.** Scored on nearly every dimension.
-- **236 entries (AI-Researched): ~40% coverage.** These are missing the same four
+Measured 2026-11-25 with `python skills/journal-atlas/scripts/coverage_by_tier.py` (median over entries, range in brackets):
+
+- **<!--n:estimated-->149<!--/n--> Estimated entries: 100% (55–100).** A family-level estimate fills nearly every
+  dimension, so these look fully covered. The estimate is not per-journal evidence: see *What the tier names
+  do not mean* below.
+- **<!--n:sourced-->114<!--/n--> Sourced entries: 75% (45–100).** Their claims cite sources; where no source was found
+  the field stays blank, so a Sourced entry can be less covered than an Estimated one.
+- **<!--n:ai-->230<!--/n--> AI-Researched entries: 40% (40–90).** These are missing the same four
   things — methodology fit, reviewer-pool character, voice compatibility, and
   strategic notes — because the AI-research pipeline was built never to estimate
   them without a source. They need lived submission or review experience. See
@@ -547,8 +553,8 @@ a shrunken score by construction — scores are pulled toward the neutral 50 in
 proportion to how little is known — but it is still worth less than the same
 number backed by more.
 
-**Philosophy is the sharpest case: 118 entries, none human-verified.** It is the
-second-largest field in the corpus and, with 97 AI-Researched entries still, the
+**Philosophy is the sharpest case: <!--n:philosophy-->119<!--/n--> entries, none human-verified.** It is the
+second-largest field in the corpus and, with <!--n:philosophy_ai-->96<!--/n--> AI-Researched entries still, the
 least substantiated. Treat those
 recommendations as leads to check, not as findings.
 
@@ -575,9 +581,9 @@ Skeleton ──[Soft Metadata written from family-level norms]──► Estimate
                                                               (no banner)
 ```
 
-Current distribution: **114 Sourced · 149 Estimated · 230 AI-Researched · 0 Skeleton = 493 total** (473 journals + 20 conferences). On 2026-11-23 and 2026-11-24, 103 entries moved to Sourced after meeting the gate in `scripts/tier1_gate.py` (at least 6 of 7 Soft Metadata subsections with two or more cited lines each) and an independent spot-check of their claim–source pairs; the check found no pair contradicted by its source, but a handful of pairs were only partly supported, and those were corrected.
+Current distribution: **<!--n:sourced-->114<!--/n--> Sourced · <!--n:estimated-->149<!--/n--> Estimated · <!--n:ai-->230<!--/n--> AI-Researched · <!--n:skeleton-->0<!--/n--> Skeleton = <!--n:total-->493<!--/n--> total** (<!--n:journals-->473<!--/n--> journals + <!--n:conferences-->20<!--/n--> conferences). On 2026-11-23 and 2026-11-24, 103 entries moved to Sourced after meeting the gate in `scripts/tier1_gate.py` (at least 6 of 7 Soft Metadata subsections with two or more cited lines each) and an independent spot-check of their claim–source pairs; the check found no pair contradicted by its source, but a handful of pairs were only partly supported, and those were corrected.
 
-**What the tier names do not mean.** No tier involves a first-hand human report today: **0 of 493 entries** carry a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`). Every entry was written by the maintainer working with an AI model; there are no outside contributors yet.
+**What the tier names do not mean.** No tier involves a first-hand human report today: **<!--n:first_hand-->0<!--/n--> of <!--n:total-->493<!--/n--> entries** carry a contributor-attributed account of a submission or review (`personal experience YYYY`, `contributed by @handle`). Every entry was written by the maintainer working with an AI model; there are no outside contributors yet.
 
 - **Sourced** is deeper per-journal research that the maintainer directed and an AI carried out: claims cite article counts and source URLs. It is the default state of an entry with no warning banner. Promotion does not require anyone who has submitted to or reviewed for the journal, and it does not mean anyone did. (Formerly "Tier 1 (evidence-backed)".)
 - **Estimated** is a family-level estimate: Soft Metadata adapted from norms shared by a group of similar journals, with no per-journal sources. It is not human-verified either. (Formerly "Tier 2 (community estimate)"; "community" named the knowledge it was adapted from, not people who reviewed the entry.)
@@ -702,7 +708,7 @@ would be.
 What it can do: rank real venues against real constraints, cite article counts
 per topic, tell you the evidence behind each score, and say "I don't have data
 on this." What it cannot do: cover most of the academy, tell you anything
-trustworthy about reviewer culture at any of its 493 entries (none carries a
+trustworthy about reviewer culture at any of its <!--n:total-->493<!--/n--> entries (none carries a
 first-hand report), or replace one
 colleague who has published there. See
 [Coverage and Inclusion Status](#coverage-and-inclusion-status) for the numbers,
@@ -757,7 +763,7 @@ Full setup and example workflows in [scripts/README.md](skills/journal-atlas/scr
 ### **[journal-atlas.chroniclecore.com](https://journal-atlas.chroniclecore.com)** — live, no account, no install
 
 [`demo/`](demo/) is the web app behind it, running the same pipeline the skill uses:
-freeform description → `fit_score.py` screening across all 399 entries → a
+freeform description → `fit_score.py` screening across every entry → a
 streamed recommendation. Three stages, no database, nothing persisted between
 requests.
 
