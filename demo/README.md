@@ -24,7 +24,7 @@ IRB" eliminated 33 journals for a theoretical paper, invisibly.
    names `fit_score.py`'s topic-density scoring matches against.
 2. **Screen** (`fit_score.py`, no LLM) — deterministic pre-ranking across the
    curated 399 entries, reused unmodified from the skill itself. Each
-   candidate's tier (Tier 1 / Tier 2 / AI-Researched / Skeleton) and top
+   candidate's tier (Sourced / Estimated / AI-Researched / Skeleton) and top
    cited topic counts ride along in this stage's SSE event, so the frontend
    can render an expandable evidence card per candidate instead of a bare
    score — real, checkable receipts, not just a number.

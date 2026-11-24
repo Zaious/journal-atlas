@@ -7,7 +7,7 @@ parser that quietly turns a recorded blank into a value, and only real entries
 carry the shapes the corpus actually uses.
 
 Anchors are chosen for what they are rather than for their contents:
-  - a Tier 1 journal with a full Identity table,
+  - a Sourced journal with a full Identity table,
   - a conference, whose ISSN is a recorded blank because conferences have none,
   - an ACM PACM title, whose venue type is neither Journal nor Conference.
 Assertions are about properties, not about a publisher's name, so re-verifying

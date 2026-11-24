@@ -6,16 +6,16 @@ that don't have one yet.
 
 Deliberately does NOT touch existing .md files (114 journals already have one —
 those need a separate, careful patch pass, not a templated overwrite, since some
-are hand-curated Tier 1 entries with subjective content AI-research has no equivalent
+are hand-curated Sourced entries with subjective content AI-research has no equivalent
 for). This script only CREATES new entries.
 
 Design: renders the fixed TEMPLATE.md v1.3 structure. Fields with no data in
 either the spine or the AI-research draft are marked "(pending)" — same convention as
 existing entries — rather than invented. New entries get a distinct banner
-("AI-Researched, AI-research") instead of "Tier 1" / "Tier 2 (community estimate)",
+("AI-Researched, AI-research") instead of "Sourced" / "Estimated",
 since the evidence basis differs: per-journal sourced facts with per-field
 signal_quality, not family-level estimates, but also not the deep manual
-evidence-harvesting behind the original 11 Tier 1 entries.
+evidence-harvesting behind the original 11 Sourced entries.
 
 Usage:
     python merge_soft_metadata.py --dry-run                 # preview N samples, write nothing
@@ -178,7 +178,7 @@ def render_entry(e: dict, spine: dict, conn, today: str) -> str:
 > **Last verified**: {today}
 > **Maintainer**: @Zaious
 > **Venue type**: Journal
-> **Evidence basis**: AI-researched, overall signal_quality **{fmt(sq, "0")}/5** — per-journal sourced facts with honest blanks, distinct from "Tier 1" (deep manual evidence-harvesting) and "Tier 2" (family-level community estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **Evidence basis**: AI-researched, overall signal_quality **{fmt(sq, "0")}/5** — per-journal sourced facts with honest blanks, distinct from "Sourced" (deeper per-journal research, every claim cites a source) and "Estimated" (family-level estimate). See [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ---
 
@@ -320,7 +320,7 @@ def render_entry(e: dict, spine: dict, conn, today: str) -> str:
 ## Soft Metadata
 
 > [!NOTE]
-> **AI-Researched ({today})** — the fields below were researched per-journal from public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎) rather than adapted from a family-level template. Every populated field cites its source; fields with no public evidence were left `(pending)` rather than estimated — see "AI-Research Notes" at the end of this section for exactly what was checked and why any field is blank. This entry's overall `signal_quality` is **{fmt(sq, "0")}/5**. This is a *different* evidence basis than "Tier 1" (deep manual evidence-harvesting) or "Tier 2" (family-level community estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
+> **AI-Researched ({today})** — the fields below were researched per-journal from public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎) rather than adapted from a family-level template. Every populated field cites its source; fields with no public evidence were left `(pending)` rather than estimated — see "AI-Research Notes" at the end of this section for exactly what was checked and why any field is blank. This entry's overall `signal_quality` is **{fmt(sq, "0")}/5**. This is a *different* evidence basis than "Sourced" (deeper per-journal research, every claim cites a source) or "Estimated" (family-level estimate) — see [SEED_DATA_QUALITY.md](../../../../../SEED_DATA_QUALITY.md).
 
 ### Epistemological & Political Leanings
 

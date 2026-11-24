@@ -8,14 +8,18 @@ We believe a community-maintained knowledge base only earns trust if it is hones
 
 ## What the tier names do and do not mean
 
+Until 2026-11-24 these were called Tier 1 and Tier 2; the JCDL 2026 paper (tag `jcdl2026`) uses the old names. The names do not mean a person verified anything.
+
 Measured 2026-11-22, because the names suggest more than the entries contain:
 
-- **First-hand human reports: 0 of 399 entries** (Tier 1: 0 of 11, Tier 2: 0 of 152, AI-Researched: 0 of 236), counted by the exact markers the contribution skill writes: `personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`. A first-hand account typed into free text without a marker would not be found by this count.
-- **Who wrote the entries.** The maintainer, working with an AI model, for all three tiers. There are no outside contributors yet. "Tier 1" is not "a human checked it"; it is "the claims cite specific counts and sources". The promotion rule below asks for cited evidence, and accepts OpenAlex publication patterns in place of personal experience.
-- **"Community estimate".** Family-level Soft Metadata adapted from norms shared by similar journals. The word *community* names where the knowledge comes from, not people who reviewed this entry.
+- **First-hand human reports: 0 of 399 entries** (Sourced: 0 of 11, Estimated: 0 of 152, AI-Researched: 0 of 236), counted by the exact markers the contribution skill writes: `personal experience YYYY`, `contributed by @handle`, `confirmed by personal experience`. A first-hand account typed into free text without a marker would not be found by this count.
+- **Who wrote the entries.** The maintainer, working with an AI model, for all three tiers. There are no outside contributors yet. "Sourced" is not "a human checked it"; it is "the claims cite specific counts and sources". The promotion rule below asks for cited evidence, and accepts OpenAlex publication patterns in place of personal experience.
+- **"Estimated" (called "Community estimate" until 2026-11-24).** Family-level Soft Metadata adapted from norms shared by similar journals. The word *community* names where the knowledge comes from, not people who reviewed this entry.
 - **Second-hand human data does exist in places**, mainly SciRev review-time statistics with a stated sample size (about 74 entries, found by text match, so possibly more). Review culture, desk-reject behaviour and attitude to methods have no first-hand source in any entry.
-- **Scoring does not read the tier.** It reads evidence coverage: the share of the six scoring dimensions that have a value. A Tier 2 entry has a value in nearly every dimension and so scores as fully covered; an AI-Researched entry leaves unsupported dimensions blank and is scored on about 40%. Across three in-domain profiles, journals only, Tier 2 held 49 of the 60 top-20 slots and AI-Researched held 1, although AI-Researched is 59% of the corpus. `fit_score.py` does not downweight Tier 2; the recommendation workflow must say the tier aloud.
-- **Table 1 of the JCDL 2026 paper** uses the same coverage measure; its Tier 2 row is "100%" for that reason. The paper's numbers belong to tag `jcdl2026`.
+- **Scoring does not read the tier.** It reads evidence coverage: the share of the six scoring dimensions that have a value. An Estimated entry has a value in nearly every dimension and so scores as fully covered; an AI-Researched entry leaves unsupported dimensions blank and is scored on about 40%. Across three in-domain profiles, journals only, Estimated held 49 of the 60 top-20 slots and AI-Researched held 1, although AI-Researched is 59% of the corpus. `fit_score.py` does not downweight Estimated; the recommendation workflow must say the tier aloud.
+- **Table 1 of the JCDL 2026 paper** uses the same coverage measure; its Estimated row is "100%" for that reason. The paper's numbers belong to tag `jcdl2026`.
+
+**Update 2026-11-23.** 94 entries were added (23 in `education/`, 11 in `ai-society/`, 13 in `philosophy/`, 6 each in `economics/`, `management/` and the new `game-studies/`, 3 in `hci/`, 5 each in `library-science/` and `political-science/`, and 4 each in `communication/`, `sociology/`, `anthropology/` and `linguistics/`) and 103 entries moved to Sourced, giving 493 entries: **114 Sourced · 149 Estimated · 230 AI-Researched**. First-hand human reports: still **0 of 493**. A move to Sourced required, per entry: `scripts/tier1_gate.py` passing with at least 6 of 7 Soft Metadata subsections carrying two or more cited lines (a line that records a gap, such as an unreadable page or "0 reviews", does not count); and an independent spot-check of 8 to 12 claim–source pairs in which the verifier fetched each source and found no pair contradicted. Verifiers did find defects (a template comment read as policy, an inflated keyword share, board counts that did not add up, claims attributed to the wrong page); each was corrected before promotion and is named in the entry's changelog. Entries whose key facts rested only on search-engine summaries of unreadable pages, or that passed the gate by only 5 of 7, stayed where they were until their pages were read in a real browser (Educational Philosophy and Theory, Educational Theory, Learning, Media and Technology, Information, Communication & Society and Technology in Society were then re-checked there and promoted on 2026-11-23). A second batch of 16 entries (8 education, 8 philosophy) went through the same gate and one independent spot-check before promotion. A third batch of 12 (comparative philosophy, economics, organisation and management, AI) followed the same path, with one more check of what the corrections added for the three entries that were rewritten from newly readable live pages. A fourth batch of 27 entries (library and information science, communication, sociology, anthropology, political science, linguistics, and more education, economics and management) was written from regional and national journal registers and recent field lists, independently spot-checked (6 pairs per entry, sources re-fetched and Crossref counts re-run), corrected, and promoted when the gate and the check both passed; Applied Linguistics was promoted after its pages were re-read in a real browser. Where a live page answered only in a real browser, the maintainer's own browser was used to read public pages; nothing was logged into or downloaded. Figures that depend on OpenAlex are marked "not independently re-run" where the daily request budget ran out. A fifth batch of 10 (information science, communication, sociology, anthropology, international relations, science and technology studies, philosophy of science, linguistics) and a sixth of 6 video-game and game-studies journals went through the same pipeline. Pages that curl could not read were re-read in the maintainer's own browser for about 30 existing entries; those recovered rows were read directly from the pages and have not had a separate independent spot-check. Held back as AI-Researched: Quantitative Science Studies, Game Studies, Simulation & Gaming and IEEE Transactions on Games, whose key pages are readable only from archived copies or only in a real browser without a second check. The 11 entries that were already Sourced were re-researched the same way; none passed the gate before (8 reached 4 of 7, 2 reached 3, 1 reached 1) and all now do. Median evidence coverage across the three Table 1 profiles is now Sourced 75% (range 50–100), Estimated 100%, AI-Researched 40%: Sourced sits below Estimated because it leaves blank the dimensions it could not source, while Estimated holds an estimate in every field and is scored as covered.
 
 A tier is therefore a statement about how an entry's claims are sourced, never about who has verified them. The way to change that is a first-hand report: `/ja-validate`.
 
@@ -23,23 +27,23 @@ A tier is therefore a statement about how an entry's claims are sourced, never a
 
 To avoid confusion, we track entry quality across **two independent axes**:
 
-1. **Evidence Quality** (`Tier 1` vs `Tier 2` vs `AI-Researched`) — how trustworthy are the Soft Metadata claims that have been written?
+1. **Evidence Quality** (`Sourced` vs `Estimated` vs `AI-Researched`) — how trustworthy are the Soft Metadata claims that have been written?
 2. **Completeness** (`Skeleton` vs filled) — has Soft Metadata been written at all, or is the entry still a structural scaffold?
 
-A Skeleton entry has **no Tier assignment yet** because there's nothing to evaluate. Tier 1 / Tier 2 / AI-Researched only apply once Soft Metadata has been authored.
+A Skeleton entry has **no Tier assignment yet** because there's nothing to evaluate. Sourced / Estimated / AI-Researched only apply once Soft Metadata has been authored.
 
 ### A third evidence basis: AI-Researched (2026-07)
 
-Starting with the v2 "coverage-first" pivot (see [docs/ATLAS_V2_DESIGN.md](docs/ATLAS_V2_DESIGN.md)), a new batch of entries was added via a different process than either Tier 1 or Tier 2: **per-journal AI research** against live public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎), with a per-field `signal_quality` (0–5) score and honest blanks where no public evidence existed — never generic family-level filler.
+Starting with the v2 "coverage-first" pivot (see [docs/ATLAS_V2_DESIGN.md](docs/ATLAS_V2_DESIGN.md)), a new batch of entries was added via a different process than either Sourced or Estimated: **per-journal AI research** against live public sources (publisher policy pages, recent publications, SciRev, and mandatory cross-language checks against 小木虫/fabiaoji/知乎), with a per-field `signal_quality` (0–5) score and honest blanks where no public evidence existed — never generic family-level filler.
 
-This is neither Tier 1 (deeper per-journal research, directed by the maintainer and carried out with an AI) nor Tier 2 (family-level community estimate adapted across many journals at once): it sits in between, with real per-journal citations but often thinner coverage than Tier 1, especially on the long tail where no public discussion exists. Rather than force these into the existing two-tier vocabulary, they carry their own banner:
+This is neither Sourced (deeper per-journal research, directed by the maintainer and carried out with an AI) nor Estimated (family-level estimate adapted across many journals at once): it sits in between, with real per-journal citations but often thinner coverage than Sourced, especially on the long tail where no public discussion exists. Rather than force these into the existing two-tier vocabulary, they carry their own banner:
 
 > [!NOTE]
 > **AI-Researched (YYYY-MM-DD)** — per-journal sourced facts with an explicit `signal_quality` score; see the entry's "AI-Research Notes" subsection for exactly what was checked and why any field is blank.
 
 **What AI-Researched entries have**: Identity/Metrics/Subject Density from the spine (OpenAlex + JUFO + CAS 中科院分区 + Norwegian Register + DOAJ — all deterministic, sourced facts, no LLM involved); Policies (AI policy, peer review type, preprint) and Positioning (current acceptance focus) from cited per-journal research; Experiential facts (review time, desk-reject notes, reviewer culture) where a public source existed.
 
-**What they intentionally leave `(pending)`**: the deeply subjective Tier 1/Tier 2 subsections — Epistemological & Political Leanings, scored (0–5) Methodological Preferences, Voice & Style, the Sensitive Topics table, and all of Strategic Notes (Hard Blockers / Soft Tax / Best-vs-Not-Recommended-For / Rejection Fallback Chain). These require either lived submission/review experience or a maintainer's deliberate judgment call — AI-research's pipeline was designed to never estimate them without a source, so they're honest gaps, not oversights. Community contributions via `/ja-validate` are exactly how these get filled.
+**What they intentionally leave `(pending)`**: the deeply subjective Sourced/Estimated subsections — Epistemological & Political Leanings, scored (0–5) Methodological Preferences, Voice & Style, the Sensitive Topics table, and all of Strategic Notes (Hard Blockers / Soft Tax / Best-vs-Not-Recommended-For / Rejection Fallback Chain). These require either lived submission/review experience or a maintainer's deliberate judgment call — AI-research's pipeline was designed to never estimate them without a source, so they're honest gaps, not oversights. Community contributions via `/ja-validate` are exactly how these get filled.
 
 ## Lifecycle
 
@@ -53,18 +57,18 @@ This is neither Tier 1 (deeper per-journal research, directed by the maintainer 
                    │
                    ▼
             ┌─────────────┐
-            │   Tier 2    │  Soft Metadata written from community
-            │ (community  │  knowledge; no per-claim evidence cited.
-            │  estimate)  │  Banner: > [!WARNING]
+            │  Estimated  │  Soft Metadata adapted from family-level
+            │ (not per-   │  norms; no per-claim evidence cited.
+            │  journal)   │  Banner: > [!WARNING]
             └──────┬──────┘
                    │
        evidence    │ accumulates (article counts, source URLs,
                    │ first-hand submission/review experience)
                    ▼
             ┌─────────────┐
-            │   Tier 1    │  Soft Metadata claims have specific
-            │ (evidence-  │  cited evidence (article counts,
-            │  backed)    │  source URLs, publication patterns).
+            │   Sourced   │  Soft Metadata claims have specific
+            │ (cites      │  cited evidence (article counts,
+            │  sources)   │  source URLs, publication patterns).
             └─────────────┘  No banner (default state).
 ```
 
@@ -72,9 +76,9 @@ This is neither Tier 1 (deeper per-journal research, directed by the maintainer 
 
 | State | Count | Banner | Where |
 |-------|-------|--------|-------|
-| **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Tier 2 in Phase 4. |
-| **Tier 2** | 152 | `> [!WARNING]` | 132 journals + 20 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
-| **Tier 1** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
+| **Skeleton** | 0 | `> [!NOTE]` | All Skeleton entries from earlier phases have been promoted to Estimated in Phase 4. |
+| **Estimated** | 152 | `> [!WARNING]` | 132 journals + 20 conferences. Family-level claims; per-journal/per-conference evidence not yet collected. |
+| **Sourced** | 11 | none | The 8 psychology + 3 qualitative-methods entries with deep evidence harvesting from manuscript submission research |
 | **AI-Researched** | 236 | `> [!NOTE]` | 100 psychology + 106 philosophy (new field) + 30 hci. Per-journal AI research with cited `signal_quality` (0–5); see below. |
 | **Total** | **399** | | |
 
@@ -86,7 +90,7 @@ The 236 AI-Researched entries came from the v2 coverage-first pivot (2026-07-13)
 |-------|-------|-------|
 | `psychology/` | 160 | 60 original (cross-disciplinary phenomenology venues + P3-4) + 100 AI-Researched (2026-07) |
 | `hci/` | 60 | 30 original (ScienceClaw + P3-2/P3-4 additions) + 30 AI-Researched (2026-07) |
-| `philosophy/` | 106 | **New field directory (2026-07)** — 100% AI-Researched; no Tier 1/Tier 2 entries yet |
+| `philosophy/` | 106 | **New field directory (2026-07)** — 100% AI-Researched; no Sourced/Estimated entries yet |
 | `qualitative-methods/` | 5 | Includes P3-4 College Composition and Communication |
 | `cognitive-science/` | 17 | Includes P3-2 TACL + P3-4 (Cerebral Cortex / NeuroImage / Neurosci of Consciousness / Clinical Neuropsych) |
 | `multidisciplinary/` | 8 | Nature / Nature Comms / NHB / Science / Science Adv / PNAS / PLOS ONE + P3-4 Scientific Reports |
@@ -141,7 +145,7 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 
 ### Skeleton — Auto-generated scaffold (0 entries — historical reference)
 
-> Phase 4 (2026-05) promoted all earlier Skeleton entries to Tier 2 via family-level Soft Metadata adaptation. This section is retained as documentation for future contributions that introduce new Skeleton entries (e.g., via `scripts/import_openalex.py --field <new-field>`).
+> Phase 4 (2026-05) promoted all earlier Skeleton entries to Estimated via family-level Soft Metadata adaptation. This section is retained as documentation for future contributions that introduce new Skeleton entries (e.g., via `scripts/import_openalex.py --field <new-field>`).
 
 **Backing**: Identity / Metrics / Subject Density / Open Access fields populated automatically via `scripts/import_openalex.py` from the OpenAlex API. Soft Metadata sections (Reviewer Pool Characteristics, Framing Requirements, Methodological Preferences, Voice & Style, Sensitive Topics, Practical Concerns) and Strategic Notes are placeholder text awaiting contributor input.
 
@@ -152,9 +156,9 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - These entries should not be ranked or recommended as if their Soft Metadata existed
 - Estimated subjective-judgment uncertainty: **N/A — no judgment yet recorded**
 
-**How to upgrade a Skeleton entry to Tier 2**: write at least 5 of the 7 Soft Metadata subsections with community-knowledge-level information (no per-claim evidence required yet). This can be done conversationally via `/ja-validate <journal>` or `/ja-contribute`.
+**How to upgrade a Skeleton entry to Estimated**: write at least 5 of the 7 Soft Metadata subsections with community-knowledge-level information (no per-claim evidence required yet). This can be done conversationally via `/ja-validate <journal>` or `/ja-contribute`.
 
-### Tier 1 — Evidence-backed (11 entries)
+### Sourced (11 entries)
 
 **Backing**: Deep evidence harvesting via author submission research + targeted OpenAlex topic queries + reading of recent publications + publisher policy primary sources.
 
@@ -165,13 +169,13 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 | psychology (8) | Collabra: Psychology, Culture & Psychology, Frontiers in Psychology, New Ideas in Psychology, Phenomenology and the Cognitive Sciences, Review of General Psychology, Self and Identity, Theory & Psychology |
 | qualitative-methods (3) | Cultural Studies ↔ Critical Methodologies, Qualitative Inquiry, Qualitative Research in Psychology |
 
-**What Tier 1 means in practice**:
+**What Sourced means in practice**:
 - Soft Metadata claims often include specific article counts ("48 articles on self-state ecosystem 2020–2025") with source attribution
 - AI Policy, Word Limit, Embargo, OA APC pricing all sourced from publisher author guidelines (with retrieval dates)
 - Reviewer pool characteristics and framing requirements informed by recent publication patterns and (where available) published reviewer reports
 - Estimated subjective-judgment uncertainty: ~15%
 
-### Tier 2 — Community estimate (152 entries)
+### Estimated (152 entries)
 
 **Backing**: Identity / Metrics / Policies / Format / Subject Density populated from OpenAlex API and publisher author guidelines (high reliability). Soft Metadata authored from community / family-level knowledge rather than per-entry evidence harvesting.
 
@@ -179,25 +183,25 @@ Each journal entry under `skills/journal-atlas/references/journals/` was authore
 - **Journals (132)**: 11 original HCI journals + 17 ScienceClaw-adapted entries (multidisciplinary / biology / medical) + 75 Phase 4 promotions (across all field directories) + 10 P3-2 high-leverage additions (Bioinformatics / NAR / Cell Reports / Nature Physics / PRR / 4 ACM HCI journals / TACL) + 19 P3-4 niche additions (3 biology / 1 multidisciplinary / 4 neuroscience / 7 psychology / 3 hci / 1 qual-methods)
 - **Conferences (20)**: 8 HCI (ACM SIGCHI family) + 5 ML (NeurIPS-style) + 3 NLP (ACL family + ARR rolling review) + 2 Data Mining (KDD / WWW) + 2 P3-4 (ACM ASSETS / ACII)
 
-**What Tier 2 means in practice**:
+**What Estimated means in practice**:
 - Identity / Metrics / Policies are reliable (OpenAlex + publisher / conference CFP)
 - Subject Density top topics are reliable (OpenAlex output for journals; CFP topic areas for conferences)
-- **Reviewer Pool Characteristics, Framing Requirements, sensitive-topic receptiveness without article counts, and methodology receptiveness scores without numbered evidence are family-level community estimates**
-- Each Tier 2 entry includes a visible warning banner in its Soft Metadata section
+- **Reviewer Pool Characteristics, Framing Requirements, sensitive-topic receptiveness without article counts, and methodology receptiveness scores without numbered evidence are family-level estimates**
+- Each Estimated entry includes a visible warning banner in its Soft Metadata section
 - Conference entries additionally use family-level (HCI / ML / NLP / Data Mining) Soft Metadata templates adapted from ScienceClaw `cs_conference_style.md`, `ml_conference_style.md`, `reviewer_expectations.md` (MIT)
 - Estimated subjective-judgment uncertainty: ~40-50%
 
-A representative example of Tier 2 calibration limits: a `topic_trend_scan.py` audit of TOCHI's last 5 years (374 publications) found 0 articles tagged `autoethnography`, even though the Tier 2 entry rated autoethnography receptiveness at 3/5 based on third-wave HCI generalizations. This is exactly the kind of gap Tier 2 banner contributors are invited to close.
+A representative example of Estimated calibration limits: a `topic_trend_scan.py` audit of TOCHI's last 5 years (374 publications) found 0 articles tagged `autoethnography`, even though the Estimated entry rated autoethnography receptiveness at 3/5 based on third-wave HCI generalizations. This is exactly the kind of gap Estimated banner contributors are invited to close.
 
 ## Why the distinction matters
 
-Tier 1 entries can be used confidently in AI recommendation workflows. Tier 2 entries are useful for filtering and discovery (the structural data is reliable), but Soft Metadata reasoning should be cross-checked before committing to a submission decision.
+Sourced entries cite a source for each claim, so a recommendation built on them can be traced and checked; none has been verified by a person who has submitted there. Estimated entries are useful for filtering and discovery (the structural data is reliable), but their Soft Metadata is a family-level estimate. Cross-check either kind before committing to a submission decision.
 
-The `fit_score.py` and recommendation workflow do not currently downweight Tier 2 entries automatically. AI agents using the skill should consider Tier 2 banners as a hedge when presenting recommendations.
+The `fit_score.py` and recommendation workflow do not currently downweight Estimated entries automatically. AI agents using the skill should consider Estimated banners as a hedge when presenting recommendations.
 
-## Upgrading a Tier 2 entry
+## Upgrading an Estimated entry
 
-Contributors are invited to help upgrade Tier 2 entries. Useful contributions:
+Contributors are invited to help upgrade Estimated entries. Useful contributions:
 
 1. **Run `scripts/topic_trend_scan.py`** against the journal with field-specific keywords; commit the resulting evidence into Subject Density / Sensitive Topics / Methodological Preferences with cited article counts.
 2. **Replace community-estimate phrases** with evidence-backed statements once data is added (banner can be removed when most Soft Metadata fields carry specific cited evidence).
@@ -206,7 +210,7 @@ Contributors are invited to help upgrade Tier 2 entries. Useful contributions:
 Workflow:
 
 ```bash
-# 1. Pick a Tier 2 entry to upgrade (any HCI journal)
+# 1. Pick an Estimated entry to upgrade (any HCI journal)
 # 2. Run a topic scan with field-relevant keywords
 python scripts/topic_trend_scan.py --issn <issn> --years 5 \
     --keywords "autoethnography,critical HCI,AI ethics,embodied interaction"
@@ -215,7 +219,7 @@ python scripts/topic_trend_scan.py --issn <issn> --years 5 \
 #    with evidence-backed values (cite article counts)
 
 # 4. Once Subject Density + Sensitive Topics + Methodological Preferences
-#    all carry numbered evidence, remove the Tier 2 banner from the
+#    all carry numbered evidence, remove the Estimated banner from the
 #    Soft Metadata section
 
 # 5. Validate
@@ -224,7 +228,7 @@ python scripts/validate_structure.py references/journals/hci/<your-entry>.md
 # 6. Open a PR with the rationale for tier promotion in the description
 ```
 
-A Tier 2 entry transitions to Tier 1 when:
+An Estimated entry transitions to Sourced when:
 
 - At least 5 of the 7 Soft Metadata subsections carry evidence-backed claims
 - Reviewer Pool Characteristics references either OpenAlex publication patterns or personal experience as source
@@ -233,7 +237,7 @@ A Tier 2 entry transitions to Tier 1 when:
 
 ## What's not in this document (yet)
 
-- Per-entry confidence breakdown beyond Tier 1 / Tier 2
+- Per-entry confidence breakdown beyond Sourced / Estimated
 - Automated tier-promotion detection (planned for a future `scripts/audit_tiers.py`)
 - Cross-entry consistency checks (e.g. journals from the same publisher should share embargo policy unless one of them explicitly overrides)
 

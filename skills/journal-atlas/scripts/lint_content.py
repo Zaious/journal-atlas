@@ -17,7 +17,7 @@ Checks:
      auto-assign 4-5/High from a count alone) is designed to prevent from
      being introduced in the first place. Mirrors that script's own
      is_uncited() heuristic.
-  2. **Unfilled placeholder inside a Tier 1 entry.** Tier 1 means deep
+  2. **Unfilled placeholder inside a Sourced entry.** Sourced means deep
      evidence harvesting — a literal "*(pending)*" / "*(fill manually)*"
      surviving in one means the entry is presented as complete but isn't.
   3. **AI-Researched entry with no signal_quality score.** The entire point
@@ -111,17 +111,17 @@ def check_uncited_high_scores(content: str) -> list[str]:
 
 
 def check_tier1_placeholders(content: str) -> list[str]:
-    if fit_score.detect_tier(content) != "Tier 1 (evidence-backed)":
+    if fit_score.detect_tier(content) != fit_score.TIER_SOURCED:
         return []
     soft_metadata = fit_score.extract_h2_block(content, "Soft Metadata")
     hits = re.findall(r"\*\(pending\)\*|\*\(fill manually\)\*", soft_metadata)
     if hits:
-        return [f"Tier 1 entry but Soft Metadata still has {len(hits)} unfilled placeholder(s)"]
+        return [f"Sourced entry but Soft Metadata still has {len(hits)} unfilled placeholder(s)"]
     return []
 
 
 def check_ai_researched_has_signal_quality(content: str) -> list[str]:
-    if fit_score.detect_tier(content) != "AI-Researched":
+    if fit_score.detect_tier(content) != fit_score.TIER_AI_RESEARCHED:
         return []
     if not re.search(r"signal_quality", content, re.IGNORECASE):
         return ["AI-Researched banner present but no signal_quality score found anywhere in the file"]
