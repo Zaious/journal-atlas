@@ -38,11 +38,7 @@
           "name": "Technology Use by Older Adults",
           "count": 217
         }
-      ],
-      "venue_type": "Journal",
-      "publisher": "Springer Science+Business Media",
-      "issn": "1615-5289",
-      "url": "https://link.springer.com/journal/10209"
+      ]
     },
     {
       "name": "Interacting with Computers",
@@ -64,11 +60,7 @@
           "name": "Personal Information Management and User Behavior",
           "count": 137
         }
-      ],
-      "venue_type": "Journal",
-      "publisher": "Oxford University Press",
-      "issn": "0953-5438",
-      "url": "https://academic.oup.com/iwc"
+      ]
     },
     {
       "name": "Journal of Computer-Mediated Communication",
@@ -90,11 +82,7 @@
           "name": "Digital Communication and Language",
           "count": 172
         }
-      ],
-      "venue_type": "Journal",
-      "publisher": "Oxford University Press, an official journal of the International Communication Association (ICA). Source: https://api.crossref.org/journals/1083-6101 (publisher string \"Oxford University Press\"), retrieved 2026-11-23, and the publisher's publish-with-us page (copy 2026-02-10). The scaffold's \"Wiley\" is the earlier publisher; the about page says JCMC \"became an official journal of the International Communication Association\" in 2004 (https://web.archive.org/web/20260208082331/https://academic.oup.com/jcmc/pages/About, snapshot 2026-02-08)",
-      "issn": "None found. Crossref lists a single ISSN, 1083-6101 (https://api.crossref.org/journals/1083-6101); the publisher's pages print \"Online ISSN 1083-6101\" only (call-for-papers copy 2024-05-29). The scaffold's \"print\" label for this number is not supported",
-      "url": "https://academic.oup.com/jcmc"
+      ]
     }
   ],
   "unstated": [
