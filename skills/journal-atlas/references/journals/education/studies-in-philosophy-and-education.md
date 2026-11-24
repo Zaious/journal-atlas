@@ -128,13 +128,24 @@ Open access licences offered: CC BY or CC BY-NC-ND 4.0 (same page).
 
 ## Subject Density
 
-> OpenAlex topic data was not available (daily budget exhausted on 2026-11-23, and the spine row carries no topic list). Crossref carries no subject field for this journal. The orientation counts below come from Crossref records instead.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); OpenAlex had been over its daily budget on 2026-11-23, when the rest of this entry was written. Crossref carries no subject field for this journal. The orientation counts below come from Crossref records instead.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0039-3746 (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (185 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0039-3746,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 126 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 185.
+
 | Topic | Article Count |
 |-------|--------------|
-| Not available: OpenAlex topic assignments could not be retrieved on 2026-11-23; no figure is given rather than an estimate | |
+| Education, Philosophy, and Society | 121 |
+| Educational Philosophies and Pedagogies | 47 |
+| Digital Education and Society | 28 |
+| Pragmatism in Philosophy and Education | 19 |
+| Critical and Liberation Pedagogy | 18 |
+| Phenomenology and Existential Philosophy | 15 |
+| Postmodernism in Literature and Education | 14 |
+| University Challenges and Reforms | 13 |
+| Posthumanist Ethics and Activism | 12 |
+| Philosophy and Historical Thought | 11 |
 
 ### Orientation
 
@@ -228,7 +239,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref counts (methods, topics, authorship) 3 (29% abstract coverage); publisher journal-specific pages (guidelines, aims, editorial board, volumes, APC) 4; publisher-wide policies 4; OpenAlex-derived data 1 (spine snapshot only, OpenAlex over budget); experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: Crossref counts (methods, topics, authorship) 3 (29% abstract coverage); publisher journal-specific pages (guidelines, aims, editorial board, volumes, APC) 4; publisher-wide policies 4; OpenAlex-derived data 1 (spine snapshot plus one 2026-11-25 request for the Top Topics table; OpenAlex was over budget on 2026-11-23); experiential layer 0.
 
 **Sources cited across this entry:**
 - https://link.springer.com/journal/11217 (journal page: model, median days to first decision, editors, indexing)
@@ -253,7 +264,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Acceptance rate, desk rejection rate, time to acceptance, reviewer culture, reviewer competence variance, quantitative bias: no first-hand or publisher source; SciRev shows 0 reviews and LetPub shows 0 reviews.
 - Accepted-manuscript embargo, transferable review, review-report publication, R+R rounds, word-limit negotiability: not stated on any page read.
-- OpenAlex topics and ID, i10-index: OpenAlex over its daily budget on 2026-11-23; no estimate given.
+- OpenAlex ID, i10-index: OpenAlex over its daily budget on 2026-11-23; no estimate given. OpenAlex topics: retrieved on 2026-11-25 (see Subject Density).
 - Impact factor, quartile: paywalled, not stated by policy.
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
@@ -317,3 +328,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Initial entry (hand-scaffolded from the pilot structure, spine and Crossref; structural fields only) | @your-handle |
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled claim-source pairs supported; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

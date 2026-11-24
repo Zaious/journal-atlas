@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. The OpenAlex request for topic counts was not made for this entry (the shared rate limit was reached earlier in this research pass, and the local spine has no topic data), so no topic table is given. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts below come from Crossref records, with abstracts from Semantic Scholar where stated there, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> Not obtained. For a keyword-level view of subject density, see the Orientation counts below, taken from Crossref and Semantic Scholar.
+> Source: OpenAlex works API, source S64935255, works of type article dated 2021-11-23 to 2026-11-23 (110 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S64935255,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 82 topics were returned; the top 10 are shown. The 10th and 11th topics are tied at 8; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 110.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not obtained (OpenAlex rate limit reached; no topic data in the local spine) | n/a |
+| Critical Race Theory in Education | 46 |
+| Critical and Liberation Pedagogy | 34 |
+| Educational Theory and Curriculum Studies | 22 |
+| Educator Training and Historical Pedagogy | 16 |
+| Indigenous and Place-Based Education | 14 |
+| Gender, Sexuality, and Education | 13 |
+| Teacher Education and Leadership Studies | 12 |
+| Peace and Human Rights Education | 11 |
+| Decolonial Thought and Epistemologies | 10 |
+| Indigenous Health, Education, and Rights | 8 |
 
 ### Orientation
 
@@ -241,7 +250,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref plus Semantic Scholar keyword counts 3 (149 of 168 abstracts, lower bounds); Crossref affiliation-based author countries 3; the journal's own website 4 (read live, undated); OpenAlex 1 (scaffold values only; no keyword, topic or country counts were obtained because the shared rate limit was reached); publisher-wide policies 4; publisher journal pages 3 (Wayback copies of 2022; live pages unreadable); experiential layer 0.
+**signal_quality (0-5)**: overall 3. Per layer: Crossref plus Semantic Scholar keyword counts 3 (149 of 168 abstracts, lower bounds); Crossref affiliation-based author countries 3; the journal's own website 4 (read live, undated); OpenAlex 1 (scaffold values only; no keyword or country counts were obtained because the shared rate limit was reached; the topic table was added on 2026-11-25 from one OpenAlex request); publisher-wide policies 4; publisher journal pages 3 (Wayback copies of 2022; live pages unreadable); experiential layer 0.
 
 **Method note**: keyword counts use Crossref records (journal-article type, published 2021-01-01 to 2026-11-23, `select` fields DOI, title, abstract, author, page) with abstracts from the Semantic Scholar batch API by DOI (149 of 168 returned; the other 19 are counted by title only, which lowers every share). Matching is case-insensitive over title plus abstract with these regexes (Python `re`, `\b` word boundary at the start): qualitative `\bqualitative`; quantitative `\bquantitative`; interview `\binterview`; survey `\bsurvey|\bquestionnaire`; randomised/experiment `\brandomi[sz]ed|\brandomi[sz]ation|\bRCT\b|\bexperiment`; mixed methods `\bmixed[- ]method`; reviews `\bsystematic review|\bmeta-analys|\bscoping review|\bliterature review`; ethnography `\bethnograph`; autoethnography `\bauto-?ethnograph`; case study `\bcase stud`; narrative `\bnarrative|\bstorytelling|\bcounter-?stor`; arts-based `\barts?-based|\bartistic|\bpoetry|\bpoetic|\bperformance`; theory `\btheor(y|ies|etical|ising|izing|ise|ize)\b`; conceptual `\bconceptual`; philosophy `\bphilosoph`; regression/longitudinal `\bregression|\blongitudinal|\bpanel data|\bcohort`; discourse `\bdiscourse`; decolonial/Indigenous `\bdecolon|\bindigenous|\bfirst nations|\bm[aā]ori|\baboriginal`; gender `\bgender|\bfeminis|\bwomen\b|\bgirls\b`; race `\brac(e|ism|ist|ial|ialised|ialized)\b|\bwhiteness|\bblack\b|\bethnic`; critical race `\bcritical race|\bsettler|\banti-?black|\bblackcrit|\babolition`; Black `\bblack\b|\bblackness`; class/inequality `\bsocial class|\bworking[- ]class|\binequalit|\bsocio-?economic|\bdisadvantage`; AI `\bartificial intelligence|\bAI\b|\bChatGPT|\bgenerative|\bmachine learning|\balgorithm`; queer `\bqueer|\blgbt|\btransgender|\bsexualit`; religion `\breligio|\bislam|\bmuslim|\bchristian|\bspiritual`; named theorists `\bbourdieu|\bfoucault|\bmarx|\bfreire|\bdewey|\bdeleuze|\barendt|\bhabermas`; posthuman `\bposthuman|\bnew materialis|\bmore-than-human`; Palestine `\bpalestin|\bgaza`; climate `\bclimate|\bsustainab|\banthropocene|\becolog`; disability `\bdisabilit|\bspecial (educational )?needs|\bautis|\bdyslexi|\binclusi` plus `(?-i:\bSEND?\b)`, matched case-sensitively as an acronym only (the first version matched `\bSEND?\b` case-insensitively and counted the verb in "to send letters as balms", https://doi.org/10.1080/03626784.2025.2477613; recomputed 2026-11-23 over the same 168 records and 149 abstracts: 16 became 15, 10.1%; the acronym form matches 0 records here); first person `\b(I|my|we|our)\b` on abstracts. Country counts match country names and abbreviations (for example `\bUK\b`, `\bUSA\b`, `\bUS\b`) in Crossref affiliation name and place strings; affiliations without a country name are unmatched, and a string naming Northern Ireland would count for both the United Kingdom and Ireland. Some patterns are broad ("black", "performance", "experiment", "inclusi") and may over-count. Board counts were made from the journal's own page text: the international board has 85 entries (two have no personal-site link and were counted separately by hand).
 
@@ -267,7 +276,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Desk rejection rate, time to acceptance, reviewer culture, reviewer competence variance: no first-hand source exists; SciRev has no reviews and no LetPub page was located.
 - APC, ethics-approval rule, data-sharing rule, current publisher metrics: cost-finder and live publisher pages not readable or not stated.
-- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: rate limit reached.
+- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: added on 2026-11-25 from one works-API request (see Subject Density).
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
 - SciRev (English): journal page exists, no reviews (https://scirev.org/journal/curriculum-inquiry/).
@@ -329,3 +338,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Correction after independent check: disability/special needs/inclusion count 16 (10.7%) to 15 (10.1%) of 149; the case-insensitive \bSEND?\b pattern had matched the verb "send" (DOI 10.1080/03626784.2025.2477613); regex now matches the acronym case-sensitively | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 8 of 8 sampled pairs supported; one inflated count corrected; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

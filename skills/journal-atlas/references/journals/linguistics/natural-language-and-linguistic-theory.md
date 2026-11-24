@@ -128,17 +128,24 @@
 
 ## Subject Density
 
-> Topic names come from the local spine row (OpenAlex snapshot 2026-07-13); the spine stores names only, so no counts are given and no count is copied from the scaffold.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts come from Crossref records, as stated there. The local spine (OpenAlex snapshot 2026-07-13) stores topic names only, with no counts.
 
 ### Top Topics (last 5 years)
 
+> Source: OpenAlex works API, journal matched by ISSN 0167-806X (primary_location.source.issn), works of type article dated 2021-11-23 to 2026-11-23 (200 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.issn:0167-806X,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 26 topics were returned; the top 10 are shown. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 200.
+
 | Topic | Article Count |
 |-------|--------------|
-| Syntax | n/a (name only) |
-| Semantics | n/a (name only) |
-| Linguistic Variation | n/a (name only) |
-| Natural Language Processing Techniques | n/a (name only) |
-| Linguistic Variation and Morphology | n/a (name only) |
+| Syntax, Semantics, Linguistic Variation | 198 |
+| Language Development and Disorders | 76 |
+| Categorization, perception, and language | 73 |
+| Neurobiology of Language and Bilingualism | 60 |
+| Phonetics and Phonology Research | 54 |
+| Linguistics and language evolution | 24 |
+| Linguistic Studies and Language Acquisition | 18 |
+| Turkic and Altaic Linguistics | 17 |
+| Logic, Reasoning, and Knowledge | 16 |
+| Language, Linguistics, Cultural Analysis | 12 |
 
 ### Orientation
 
@@ -247,7 +254,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 - Springer Nature Link pages, all read live on 2026-11-23: https://link.springer.com/journal/11049 (home), /aims-and-scope, /editors, /submission-guidelines, /how-to-publish-with-us (the /updates page returned HTTP 404 on 8 tries)
 - Springer Nature policy pages read live on 2026-11-23: https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation and https://www.springer.com/gp/editorial-policies/preprint-sharing
 - Crossref: https://api.crossref.org/journals/0167-806X and works for the window (207 records, 119 with abstract; first-person, topic and author counts computed locally)
-- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; no OpenAlex request was made for this entry
+- Local journal spine (OpenAlex snapshot 2026-07-13) for h-index, 2-year mean citedness, total works and topic names; the only OpenAlex request made for this entry is the one behind the Top Topics table (works API, group_by topics, 2026-11-25)
 - SciRev: https://scirev.org/journal/natural-language-and-linguistic-theory/ and https://scirev.org/reviews/natural-language-and-linguistic-theory/ (listed there as "Natural Language and Linguistic Theory")
 
 **Method notes:** Crossref abstracts were stripped of markup and counted locally with the regexes below (Python re, IGNORECASE except the first-person pattern). Counts are over records that have an abstract (title plus abstract text); share = hits / 119. Regex hits count records, not occurrences. Broad patterns over-count: Syntax matches "movement"; Phonology matches "stress" and "tone"; Semantics matches "scope" and "modal"; Experimental matches "participants"; Acquisition matches "children"; the first-person pattern's "I" is almost always the pronoun, not a Roman numeral (see the First-person voice row for the counts without it). Formal-linguistics abstracts often name a phenomenon rather than a method, so method counts are low even where the method is present in the article.
@@ -333,3 +340,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | AI deep research pass; no first-hand human reports | AI-assisted (maintainer-directed) |
 | 2026-11-24 | Corrections after independent verification (most-cited tie note, preprint quote, first-person scoring and Roman-numeral caveat) | @Zaious |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 6 of 6 sampled pairs supported; a citation tie and a quote corrected afterwards; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |

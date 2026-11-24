@@ -128,15 +128,24 @@
 
 ## Subject Density
 
-> Based on OpenAlex topic analysis. The OpenAlex request for topic counts was not made (the shared rate limit was reached earlier in this research pass, and the local spine has no topic data), so no topic table is given. Retrieved 2026-11-23.
+> Top Topics come from the OpenAlex works API, retrieved 2026-11-25 (request URL under the table); the Orientation counts below come from Crossref records, with abstracts from Semantic Scholar where stated there, retrieved 2026-11-23.
 
 ### Top Topics (last 5 years)
 
-> Not obtained. For a keyword-level view of subject density, see the Orientation counts below, taken from Crossref abstracts.
+> Source: OpenAlex works API, source S60281869, works of type article dated 2021-11-23 to 2026-11-23 (673 works), grouped by topic: https://api.openalex.org/works?filter=primary_location.source.id:S60281869,type:article,from_publication_date:2021-11-23,to_publication_date:2026-11-23&group_by=topics.id . Retrieved 2026-11-25. 200 topic groups were returned, which is the API's per-page cap of 200, sorted by count; only the top 10 are shown. The 10th and 11th topics are tied at 28; the order between tied topics is the API's. These are OpenAlex topic-assignment counts, not article counts: a work can carry several topics, so the counts do not sum to 673.
 
 | Topic | Article Count |
 |-------|--------------|
-| Not obtained (OpenAlex rate limit reached; no topic data in the local spine) | n/a |
+| Teacher Education and Leadership Studies | 109 |
+| School Choice and Performance | 98 |
+| Higher Education Governance and Development | 53 |
+| Higher Education Research Studies | 50 |
+| Teacher Professional Development and Motivation | 45 |
+| Early Childhood Education and Development | 40 |
+| Global Educational Policies and Reforms | 39 |
+| International Student and Expatriate Challenges | 31 |
+| Cultural Capital and Social Class | 30 |
+| Children's Rights and Participation | 28 |
 
 ### Orientation
 
@@ -241,7 +250,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 
 ### AI-Research Notes (sources, blanks, and cross-language checks)
 
-**signal_quality (0-5)**: overall 3. Per layer: Crossref keyword counts 4 (778 of 839 records with abstracts, lower bounds); Crossref affiliation-based author countries 3; OpenAlex 1 (scaffold values only; no keyword or topic counts were obtained because the shared rate limit was reached before this entry's queries); publisher-wide policies 4; journal-specific policies and guidelines 4 (live guidelines, metrics and board pages read in a real browser 2026-11-24, undated; the 2024 Wayback copies, a 2020 home copy and the 2025 editorial from SHURA are kept as labelled older sources); experiential layer 2 (SciRev n=4).
+**signal_quality (0-5)**: overall 3. Per layer: Crossref keyword counts 4 (778 of 839 records with abstracts, lower bounds); Crossref affiliation-based author countries 3; OpenAlex 1 (scaffold values only; no keyword counts were obtained because the shared rate limit was reached before this entry's queries; the topic table was added on 2026-11-25 from one OpenAlex request); publisher-wide policies 4; journal-specific policies and guidelines 4 (live guidelines, metrics and board pages read in a real browser 2026-11-24, undated; the 2024 Wayback copies, a 2020 home copy and the 2025 editorial from SHURA are kept as labelled older sources); experiential layer 2 (SciRev n=4).
 
 **Method note**: keyword counts use Crossref records (journal-article type, published 2021-01-01 to 2026-11-23, `select` fields DOI, title, abstract, author, page) with Crossref's own abstracts (778 of 839). Matching is case-insensitive over title plus abstract with these regexes (Python `re`, `\b` word boundary at the start): qualitative `\bqualitative`; quantitative `\bquantitative`; interview `\binterview`; survey `\bsurvey|\bquestionnaire`; randomised/experiment `\brandomi[sz]ed|\brandomi[sz]ation|\bRCT\b|\bexperiment`; mixed methods `\bmixed[- ]method`; reviews `\bsystematic review|\bmeta-analys|\bscoping review|\bliterature review`; ethnography `\bethnograph`; case study `\bcase stud`; theory `\btheor(y|ies|etical|ising|izing|ise|ize)\b`; conceptual `\bconceptual`; philosophy `\bphilosoph`; regression/longitudinal `\bregression|\blongitudinal|\bpanel data|\bcohort`; discourse `\bdiscourse`; decolonial/Indigenous `\bdecolon|\bindigenous|\bfirst nations|\bm[aā]ori|\baboriginal`; gender `\bgender|\bfeminis|\bwomen\b|\bgirls\b`; race `\brac(e|ism|ist|ial|ialised|ialized)\b|\bwhiteness|\bblack\b|\bethnic`; class/inequality `\bsocial class|\bworking[- ]class|\binequalit|\bsocio-?economic|\bdisadvantage`; AI `\bartificial intelligence|\bAI\b|\bChatGPT|\bgenerative|\bmachine learning|\balgorithm`; queer `\bqueer|\blgbt|\btransgender|\bsexualit`; religion `\breligio|\bislam|\bmuslim|\bchristian|\bspiritual`; named theorists `\bbourdieu|\bfoucault|\bmarx|\bfreire|\bdewey|\bdeleuze|\barendt|\bhabermas`; climate `\bclimate|\bsustainab|\banthropocene|\becolog`; conflict `\bwar\b|\bconflict|\brefugee|\bmigra`; disability `\bdisabilit|\bspecial (educational )?needs|\bautis|\bdyslexi|\binclusi` plus `(?-i:\bSEND?\b)`, matched case-sensitively as an acronym only (the first version matched `\bSEND?\b` case-insensitively, which also counted the verb "send" and the surname "Sen's": 129 became 125, 16.1%; the same pattern without the acronym gives 124, 15.9%); COVID `\bcovid|\bpandemic`; first person `\b(I|my|we|our)\b` on abstracts. Correction 2026-11-23, same 839 records and 778 abstracts, case-insensitive: policy `\bpolicy\b|\bpolicies\b` 223 (28.7%, reproduces); teacher `\bteachers?\b` 307 (39.5%, reproduces); higher education `\bhigher education\b` 114 (14.7%; adding `|\bHE\b` would add the pronoun "he" and give 115); assessment `\bassessments?\b` 63 (8.1%; the stem `\bassess` gives 110, 14.1%, but also counts the verb in methods sentences). Country counts match country names and abbreviations (for example `\bUK\b`, `\bUSA\b`, `\bUS\b`) in Crossref affiliation name and place strings; affiliations without a country name are unmatched. Some patterns are broad ("black", "conflict", "experiment", "inclusi") and may over-count; others may miss synonyms.
 
@@ -270,7 +279,7 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 **Fields deliberately left blank, and why:**
 - Acceptance rate, desk rejection rate, reviewer culture, reviewer competence variance, quantitative bias: no first-hand source beyond four SciRev reviews; a LetPub page for the title was not located by search.
 - APC: the Open Access page was not read.
-- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: rate limit reached.
+- Impact factor, quartile: paywalled, not stated by policy. OpenAlex topic table: added on 2026-11-25 from one works-API request (see Subject Density).
 
 **Cross-language and forum checks performed (all returned zero journal-specific first-hand reports):**
 - SciRev (English): journal page exists with 4 reviews (https://scirev.org/journal/british-educational-research-journal/).
@@ -332,3 +341,4 @@ Reviewer behaviour itself is not observable from public pages; what follows is w
 | 2026-11-23 | Correction after independent check: founding year 1975 taken from the BERA page; board recounted from the Wayback copy of 2024-02-28 (6 editors, 20 board members, 12 outside the UK), replacing the no-copy statement and readings drawn from the 2019 copy; SHURA editorial PDF read and used (11.5% acceptance in 2024, board of 40); disability count 129 to 125 (16.1%) with the acronym matched case-sensitively; policy, higher-education and assessment counts recomputed with stated regexes (223, 114, 63 of 778) | AI-assisted (maintainer-directed) |
 | 2026-11-23 | Promoted to Tier 1 under the written rule: tier1_gate passes; independent spot-check 7 of 7 sampled pairs supported; wrong 'no copy' and founding-date claims corrected; banner removed; no first-hand human reports | AI-assisted (maintainer-authorised, not human-verified) |
 | 2026-11-24 | Live Wiley pages read in a real browser: guidelines (word range, abstract, double-blind and preprint rules unchanged; a journal-specific AI paragraph and an AI Use Declaration Statement now present), metrics page (2025 acceptance 11%, first decision median 7 days, acceptance median 154 days, CiteScore 5.2 as labelled) and board page (75 = 6 + 1 + 66 + 1 + 1, was 26 names in the 2024-02-28 copy); 'unreadable' statements replaced; Clarivate figures on the metrics page not recorded | AI-assisted (maintainer-directed) |
+| 2026-11-25 | Added the OpenAlex Top Topics table (dimension was missing) | @Zaious |
